@@ -1,0 +1,242 @@
+//main recruitables
+// guaranteed scholar, gunner, priestess, dark hunter, noble, armor, lurker, poet, sniper, apothecary, driver, highlander, and ironking
+// ch 1
+##Name_Nathan
+Nathan[X]
+##Desc_Nathan
+A young Asketan scholar. Dreams[N]
+of leaving his mark on the world.[X]
+##Name_Gore
+Gore[X]
+##Desc_Gore
+A stoic Asketan gunner. Keeps[N]
+his plans close to his chest.[X]
+##Name_Astarte
+Astarte[X]
+##Desc_Astarte
+A fervant Asketan priestess.[N]
+Her force of will is unstoppable.[X]
+
+// ch 2
+##Name_Cleone
+Cleone[X]
+##Desc_Cleone
+A timid huntress with a checkered past.[N]
+Values her friends more than herself.[X]
+##Name_Benthus
+Benthus[X]
+##Desc_Benthus
+An arrogant nobleman of Asketa.[N]
+He craves an adventurer's glory.[X]
+
+// ch 3
+##Name_Helman
+Helman[X]
+##Desc_Helman
+A renegade from Belvarus's armored division.[N]
+He's a hard worker despite his desertion.[X]
+
+// ch 4
+##Name_Rat
+Rat[X]
+##Desc_Rat
+A young mute elected to the Guildboard.[N]
+Their schemes run deeper than most know.[X]
+
+// ch 5
+##Name_Kryst
+Kryst[X]
+##Desc_Kryst
+A Belvarusi performer hired for the feast.[N]
+She's only around to make a quick buck.[X]
+
+// ch 10
+##Name_Galvin
+Galvin[X]
+##Desc_Galvin
+An Asketan hitman assigned to the wastes[N]
+expedition. He only somewhat resents it.[X]
+
+// ch 12
+##Name_Ioria
+Ioria[X]
+##Desc_Ioria
+An aged Belvarusi gardener. She wishes[N]
+to go on one last exciting journey.[X]
+
+// ch 15
+##Name_Fourth
+Fourth[X]
+##Desc_Fourth
+A former imperial driver of Asketa.[N]
+She's more pragmatic than her peers.[X]
+
+// ch 19A
+##Name_Guildmaster ^
+Guildmaster[X]
+##Desc_Guildmaster
+The reigning Guildmaster of Asketa.[N]
+He's a gruff and dependable boss.[X]
+
+// ch 19B
+##Name_Answerer
+Answerer[X]
+##Desc_Answerer
+A friendly ironskin once imprisoned[N]
+deep within the Hallowed Armory.[X]
+
+
+// guild recruitables
+// current numbers
+// 0: gunner, archer, curate, rider, raider, priest, lurker, dark hunter, lancer, hunter, sky knight, scale knight, caller, driver
+// 1: swordfighter, knight, axefighter, scholar, ronin, poet, seeker, apothecary, encircler, noble, duelist, artifice
+// 2: brawler
+// 3+:
+// incoming caller (rw), caller (alg)
+// recruitment opportunities at:
+// ch2x - pick 3
+//ACT 1 classes unlock
+// standard corps, magus guild, special ops
+// standard: pay imperial forces trainer
+// magus: have a level 5 nathan
+// special ops: 
+// ch3x - pick 3 (pre-forest)
+// S1x - pick 3 (pre-boss)
+// ch5x - pick 3 (post-feast)
+// ch8x - pick 4 (post-benthus)
+//ACT 2 classes unlock
+// skyshroud, lifeflow, upper senatus
+// skyshroud: 
+// lifeflow: defeat ratatoskr at least once
+// upper: 
+// automata: bring materials to benjamin (scrap in black market, buried near river, sold by curator, and held by galvin)
+// the cog as white as milk the tape as red as blood the wire as yellow as corn the oil as pure as gold
+// ch9x - pick 4 (pre-imperial job)
+// ch10x - pick 4 (pre-wastes)
+// S3x - pick 4 (pre-belvarus expedition)
+// ch15x - pick 5 (pre-revenge)
+//IMPERIALS unlock
+// ch16x - pick 5 (pre-split)
+// ch18x - pick 5 (the last dance)
+
+// starter classes: swordfighter, knight, axefighter, archer, curate, scholar
+
+//puzon by intsys (archer will give him a class)
+##Name_Puzon
+Puzon[X]
+##Desc_Puzon
+A wandering ???fighter of distinct[N]
+dialect. He detests the free market.[X]
+
+//coast kid by Rivian (swordfighter)
+##Name_CoastKid
+Coast Kid[X]
+##Desc_CoastKid
+A hardened blader serving the Guildleague[N]
+as punishment for her crimes. Also a kid.[X]
+
+//drogo by lorca (knight)
+##Name_Drogo
+Drogo[X]
+##Desc_Drogo
+A lonesome Asketan burdened by his past.[N]
+Illiterate, yet caries a book of poems.[X]
+
+//tristao by alex (axefighter)
+##Name_Tristao
+Tristao[X]
+##Desc_Tristao
+A Belvarusi veteran. He left retirement[N]
+to support his famine-ridden family.[X]
+
+//cassandra by zappy (scholar)
+##Name_Cassandra
+Cassandra[X]
+##Desc_Cassandra
+A foreign scholar who believes magic is[N]
+the next step of evolution. Amoral.[X]
+
+// act 1 - standard corps: ronin, rider, raider, gunner
+//natsuki by lumi
+##Name_Natsuki
+Natsuki[X]
+##Desc_Natsuki
+A lagomorphic warrior from a remote clan.[N]
+She's equal parts prideful and curious.[X]
+
+// act 1 - magus guild: poet, seeker, priest, lurker
+//Leonzio by gold
+##Name_Leonzio
+Leonzio
+##Desc_Leonzio
+A foreign diplomat visiting Asketa.[N]
+He's concerningly loose-lipped.[X]
+
+//Phespher by doob
+##Name_Phespher
+Phespher[X]
+##Desc_Phespher
+A Belvarusi seeker looking to broaden[N]
+his horizons. A nice but blunt guy.[X]
+
+// act 1 - special ops: dark hunter, lancer, brawler, hunter
+//Shīliăng by levin (get accented characters later, brawler)
+##Name_Shiliang
+Shiliang[X]
+##Desc_Shiliang
+An outcast wanderer seeking a purpose.[N]
+Inherits his master's martial prowess.[X]
+
+//Feefasnan by vyland (brawler)
+##Name_Feefasnan
+Feefasnan[X]
+##Desc_Feefasnan
+A once-renowned Asketan priest. He bears[N]
+a curse that's altered his body and mind.[X]
+
+
+// act 2 - skyshroud division: sky knight, scale knight
+
+// act 2 - lifeflow league: apothecary, encircler, caller
+//alg caller - gardener that kills people - Belvarus rural girl. Area ravaged by famine, fields destroyed, salted earth, nothing grows. She has grown an exuberant garden, loads of food, travelers stop on the road and rest, and eat like kings. Then while they sleep with full bellies they're killed and their souls fuel the soil. Caller. She got caught and ran to Asketa.
+//leize by sigma (apothecary)
+##Name_Leize
+Leize[X]
+##Desc_Leize
+A wandering botanist who seeks to preserve[N]
+a flower with ties to her family. Tired.[X]
+
+//compass by roxas (encircler)
+##Name_Compass
+Compass[X]
+##Desc_Compass
+A young Asketan tinkerer searching for[N]
+his grandpa. Anxious yet resolute.[X]
+
+// act 2 - upper senatus: noble, duelist
+
+//marleni by retina (noble)
+##Name_Marleni
+Marleni[X]
+##Desc_Marleni
+An exiled Belvarusi noble. His rough[N]
+manner belies his virtuous character.[X]
+
+//francesca by retina (duelist)
+##Name_Francesca
+Francesca[X]
+##Desc_Francesca
+A modest fencer from the slums of Asketa.[N]
+She wants off this wretched continent.[X]
+
+// act 3 - imperial remnants: driver
+
+// secret lock - automata unit: artifice
+
+//subtractron by retina (artifice)
+##Name_Subtractron ^
+Subtractron[X]
+##Desc_Subtractron
+An artifice recovered from Belvarus.[N]
+It's supposedly good with numbers.[X]
+

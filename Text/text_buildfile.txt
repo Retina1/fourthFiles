@@ -1,0 +1,8 @@
+# 0x0094
+HP Bars[.][X]
+
+# 0x00B2
+Set health bar display[X]
+
+#include "System/PlayerClasses.txt"
+#include "System/UnitNamesDescs.txt"

@@ -1,0 +1,444 @@
+PUSH
+ORG 0x19900
+POIN NewTileConfigPLIST
+
+ORG 0x19968
+POIN NewObjTypePalettePLIST
+
+ORG 0x1999C
+POIN NewObjTypePalettePLIST
+
+ORG 0x30134
+POIN NewTileAnimPLIST
+
+ORG 0x30C78
+POIN NewTileAnimPLIST
+
+ORG 0x34680
+POIN NewMapPLIST
+
+ORG 0x346AC
+POIN NewEventPLIST
+
+ORG 0x346DC
+POIN NewEventPLIST
+POP
+
+NewTileConfigPLIST:
+ORG NewTileConfigPLIST + (0x4 * 0xFF)
+NewObjTypePalettePLIST:
+ORG NewObjTypePalettePLIST + (0x4 * 0xFF)
+NewTileAnimPLIST:
+ORG NewTileAnimPLIST + (0x4 * 0xFF)
+NewMapPLIST:
+ORG NewMapPLIST + (0x4 * 0xFF)
+NewMapChangesPLIST:
+ORG NewMapChangesPLIST + (0x4 * 0xFF)
+NewEventPLIST:
+ORG NewEventPLIST + (0x4 * 0xFF)
+
+#define TileConfigPointerTable(aId, apointer) "PUSH; ORG NewTileConfigPLIST+(0x4 * aId); POIN apointer; POP"
+#define ObjTypePalettePointerTable(aId, apointer) "PUSH; ORG NewObjTypePalettePLIST+(0x4 * aId); POIN apointer; POP"
+#define TileAnimPointerTable(aId, apointer) "PUSH; ORG NewTileAnimPLIST+(0x4 * aId); POIN apointer; POP"
+#define Map_Pointer_Table(aId, apointer) "PUSH; ORG NewMapPLIST+(4*aId); POIN apointer; POP"
+#define MapChangesPointerTable(aId, apointer) "PUSH; ORG NewMapChangesPLIST+(0x4 * aId); POIN apointer; POP"
+#undef EventPointerListOffset
+#define EventPointerListOffset NewEventPLIST
+
+// -------------------------------TILE CONFIG-------------------------------
+
+#define FieldsTileConfig 1
+TileConfigPointerTable(1, 0x1AB69C) //03
+
+#define VillageTileConfig 2
+TileConfigPointerTable(2, 0x1AA140) //10
+
+#define CastleTileConfig 3
+TileConfigPointerTable(3, 0x1A8CCC) //1A
+
+#define PlainsTileConfig 4
+TileConfigPointerTable(4, 0x1A7674) //30
+
+#define FortTileConfig 5
+TileConfigPointerTable(5, 0x1A6604) //3E
+
+#define DesertTileConfig 6
+TileConfigPointerTable(6, DesertTiles) //44
+
+#define LavaCaveTileConfig 7
+TileConfigPointerTable(7, 0x1A4510) //52
+
+#define RuinsTileConfig 8
+TileConfigPointerTable(8, 0x1A3660) //61
+
+#define MountainsTileConfig 9
+TileConfigPointerTable(9, MountainsTileConfigData) //6E
+
+#define StrongholdTileConfig 10
+TileConfigPointerTable(10, 0x1A1440) //7B
+
+#define TempleTileConfig 11
+TileConfigPointerTable(11, 0x1A0514) //8A
+
+// -------------------------------OBJ TYPE-------------------------------
+
+#define FieldsObjType 1
+ObjTypePalettePointerTable(1, 0x198D8C) //01
+
+#define VillageObjType 2
+ObjTypePalettePointerTable(2, 0x191B14) //0E
+
+#define CastleObjType 3
+ObjTypePalettePointerTable(3, 0x18B89C) //18
+
+#define PlainsObjType 4
+ObjTypePalettePointerTable(4, 0x185154) //2E
+
+#define FortObjType 5
+ObjTypePalettePointerTable(5, 0x1816B8) //3C
+
+#define DesertObjType 6
+ObjTypePalettePointerTable(6, DesertObjects) //42
+
+#define LavaCastleObjType 7
+ObjTypePalettePointerTable(7, 0x1756B4) //50
+
+#define RuinsObjType 8
+ObjTypePalettePointerTable(8, 0x170DA8) //5F
+
+#define MountainsObjType 9
+ObjTypePalettePointerTable(9, MountainsGFX) //6C
+
+#define StrongholdObjType 10
+ObjTypePalettePointerTable(10, 0x165F7C) //79
+
+#define TempleObjType 11
+ObjTypePalettePointerTable(11, 0x1609BC) //88
+
+// -------------------------------Palette-------------------------------
+
+#define FieldsPalette1 20
+ObjTypePalettePointerTable(20, FE1StyleTilesetPal) //02
+
+#define FieldsPalette2 21
+ObjTypePalettePointerTable(21, Ch182021TilesetPal) //38
+
+#define FieldsPalette3 22
+ObjTypePalettePointerTable(22, 0x1AEBF0) //4C
+
+#define FieldsPalette4 23
+ObjTypePalettePointerTable(23, 0x1ADCF0) //5B
+
+#define VillagePalette1 24
+ObjTypePalettePointerTable(24, 0x1AEAB0) //0F
+
+#define VillagePalette2 25
+ObjTypePalettePointerTable(25, 0x1AD7F0) //72
+
+#define CastlePalette1 26
+ObjTypePalettePointerTable(26, 0x1AE970) //19
+
+#define CastlePalette2 27
+ObjTypePalettePointerTable(27, 0x1AE1F0) //48
+
+#define CastlePalette3 28
+ObjTypePalettePointerTable(28, 0x1ADE30) //57
+
+#define CastlePalette4 29
+ObjTypePalettePointerTable(29, 0x1AD2F0) //B9
+
+#define PlainsPalette1 30
+ObjTypePalettePointerTable(30, 0x1AE830) //2F
+
+#define PlainsPalette2 31
+ObjTypePalettePointerTable(31, 0x1AE6F0) //34
+
+#define FortPalette1 32
+ObjTypePalettePointerTable(32, 0x1AE470) //3D
+
+#define FortPalette2 33
+ObjTypePalettePointerTable(33, 0x1ADA70) //68
+
+#define FortPalette3 34
+ObjTypePalettePointerTable(34, 0x1AD1B0) //CE
+
+#define DesertPalette1 35
+ObjTypePalettePointerTable(35, DesertPalette) //43
+
+#define LavaCavePalette1 36
+ObjTypePalettePointerTable(36, 0x1ADF70) //51
+
+#define RuinsPalette1 37
+ObjTypePalettePointerTable(37, 0x1ADBB0) //60
+
+#define MountainsPalette1 38
+ObjTypePalettePointerTable(38, 0x1AD930) //6D
+
+#define MountainsPalette2 39
+ObjTypePalettePointerTable(39, 0x1AD430) //A3
+
+#define StrongholdPalette1 40
+ObjTypePalettePointerTable(40, 0x1AD6B0) //7A
+
+#define TemplePalette1 41
+ObjTypePalettePointerTable(41, 0x1AD570) //89
+
+PUSH
+ORG NewTileAnimPLIST
+WORD 0x00 //00 NULL
+WORD 0x00 //01 -EMPTY-
+WORD 0x00 //02 -EMPTY-
+WORD 0x00 //03 -EMPTY-
+WORD 0x00 //04 -EMPTY-
+WORD 0x0859D498 //05 ANIME1  The Fall of Renais
+WORD 0x00 //06 -EMPTY-
+WORD 0x00 //07 -EMPTY-
+WORD 0x00 //08 -EMPTY-
+WORD 0x00 //09 -EMPTY-
+WORD 0x00 //0A -EMPTY-
+WORD 0x00 //0B -EMPTY-
+WORD 0x00 //0C -EMPTY-
+WORD 0x00 //0D -EMPTY-
+WORD 0x00 //0E -EMPTY-
+WORD 0x00 //0F -EMPTY-
+WORD 0x00 //10 -EMPTY-
+WORD 0x00 //11 -EMPTY-
+WORD 0x0859D568 //12 ANIME1 Ch3 The Bandits of Borgo
+WORD 0x00 //13 -EMPTY-
+WORD 0x00 //14 -EMPTY-
+WORD 0x00 //15 -EMPTY-
+WORD 0x00 //16 -EMPTY-
+WORD 0x00 //17 -EMPTY-
+WORD 0x00 //18 -EMPTY-
+WORD 0x00 //19 -EMPTY-
+WORD 0x00 //1A -EMPTY-
+WORD 0x00 //1B -EMPTY-
+WORD 0x0859D6F8 //1C ANIME1 Ch5 Unbroken Heart
+WORD 0x00 //1D -EMPTY-
+WORD 0x00 //1E -EMPTY-
+WORD 0x00 //1F -EMPTY-
+WORD 0x00 //20 -EMPTY-
+WORD 0x00 //21 -EMPTY-
+WORD 0x00 //22 -EMPTY-
+WORD 0x00 //23 -EMPTY-
+WORD 0x00 //24 -EMPTY-
+WORD 0x00 //25 -EMPTY-
+WORD 0x00 //26 -EMPTY-
+WORD 0x00 //27 -EMPTY-
+WORD 0x00 //28 -EMPTY-
+WORD 0x00 //29 -EMPTY-
+WORD 0x00 //2A -EMPTY-
+WORD 0x00 //2B -EMPTY-
+WORD 0x00 //2C -EMPTY-
+WORD 0x00 //2D -EMPTY-
+WORD 0x00 //2E -EMPTY-
+WORD 0x00 //2F -EMPTY-
+WORD 0x00 //30 -EMPTY-
+WORD 0x00 //31 -EMPTY-
+WORD 0x00 //32 -EMPTY-
+WORD 0x00 //33 -EMPTY-
+WORD 0x00 //34 -EMPTY-
+WORD 0x00 //35 -EMPTY-
+WORD 0x00 //36 -EMPTY-
+WORD 0x00 //37 -EMPTY-
+WORD 0x00 //38 -EMPTY-
+WORD 0x00 //39 -EMPTY-
+WORD 0x00 //3A -EMPTY-
+WORD 0x00 //3B -EMPTY-
+WORD 0x00 //3C -EMPTY-
+WORD 0x00 //3D -EMPTY-
+WORD 0x00 //3E -EMPTY-
+WORD 0x00 //3F -EMPTY-
+WORD 0x00 //40 -EMPTY-
+WORD 0x00 //41 -EMPTY-
+WORD 0x00 //42 -EMPTY-
+WORD 0x00 //43 -EMPTY-
+WORD 0x00 //44 -EMPTY-
+WORD 0x00 //45 -EMPTY-
+WORD 0x00 //46 -EMPTY-
+WORD 0x00 //47 -EMPTY-
+WORD 0x00 //48 -EMPTY-
+WORD 0x00 //49 -EMPTY-
+WORD 0x00 //4A -EMPTY-
+WORD 0x00 //4B -EMPTY-
+WORD 0x00 //4C -EMPTY-
+WORD 0x00 //4D -EMPTY-
+WORD 0x00 //4E -EMPTY-
+WORD 0x00 //4F -EMPTY-
+WORD 0x00 //50 -EMPTY-
+WORD 0x00 //51 -EMPTY-
+WORD 0x00 //52 -EMPTY-
+WORD 0x00 //53 -EMPTY-
+WORD 0x0859D800 //54 ANIME2 Ch18 Two Faces of Evil
+WORD 0x00 //55 -EMPTY-
+WORD 0x00 //56 -EMPTY-
+WORD 0x00 //57 -EMPTY-
+WORD 0x00 //58 -EMPTY-
+WORD 0x00 //59 -EMPTY-
+WORD 0x00 //5A -EMPTY-
+WORD 0x00 //5B -EMPTY-
+WORD 0x00 //5C -EMPTY-
+WORD 0x00 //5D -EMPTY-
+WORD 0x00 //5E -EMPTY-
+WORD 0x00 //5F -EMPTY-
+WORD 0x00 //60 -EMPTY-
+WORD 0x00 //61 -EMPTY-
+WORD 0x00 //62 -EMPTY-
+WORD 0x00 //63 -EMPTY-
+WORD 0x00 //64 -EMPTY-
+WORD 0x00 //65 -EMPTY-
+WORD 0x00 //66 -EMPTY-
+WORD 0x00 //67 -EMPTY-
+WORD 0x00 //68 -EMPTY-
+WORD 0x00 //69 -EMPTY-
+WORD 0x00 //6A -EMPTY-
+WORD 0x00 //6B -EMPTY-
+WORD 0x00 //6C -EMPTY-
+WORD 0x00 //6D -EMPTY-
+WORD 0x00 //6E -EMPTY-
+WORD 0x00 //6F -EMPTY-
+WORD 0x00 //70 -EMPTY-
+WORD 0x00 //71 -EMPTY-
+WORD 0x00 //72 -EMPTY-
+WORD 0x00 //73 -EMPTY-
+WORD 0x00 //74 -EMPTY-
+WORD 0x00 //75 -EMPTY-
+WORD 0x00 //76 -EMPTY-
+WORD 0x00 //77 -EMPTY-
+WORD 0x00 //78 -EMPTY-
+WORD 0x00 //79 -EMPTY-
+WORD 0x00 //7A -EMPTY-
+WORD 0x00 //7B -EMPTY-
+WORD 0x00 //7C -EMPTY-
+WORD 0x0859D678 //7D ANIME1 Ch14 Father and Son
+WORD 0x00 //7E -EMPTY-
+WORD 0x00 //7F -EMPTY-
+WORD 0x00 //80 -EMPTY-
+WORD 0x00 //81 -EMPTY-
+WORD 0x00 //82 -EMPTY-
+WORD 0x00 //83 -EMPTY-
+WORD 0x00 //84 -EMPTY-
+WORD 0x00 //85 -EMPTY-
+WORD 0x00 //86 -EMPTY-
+WORD 0x00 //87 -EMPTY-
+WORD 0x00 //88 -EMPTY-
+WORD 0x00 //89 -EMPTY-
+WORD 0x00 //8A -EMPTY-
+WORD 0x00 //8B -EMPTY-
+WORD 0x00 //8C -EMPTY-
+WORD 0x00 //8D -EMPTY-
+WORD 0x00 //8E -EMPTY-
+WORD 0x00 //8F -EMPTY-
+WORD 0x00 //90 -EMPTY-
+WORD 0x00 //91 -EMPTY-
+WORD 0x00 //92 -EMPTY-
+WORD 0x00 //93 -EMPTY-
+WORD 0x00 //94 -EMPTY-
+WORD 0x00 //95 -EMPTY-
+WORD 0x00 //96 -EMPTY-
+WORD 0x00 //97 -EMPTY-
+WORD 0x00 //98 -EMPTY-
+WORD 0x00 //99 -EMPTY-
+WORD 0x00 //9A -EMPTY-
+WORD 0x00 //9B -EMPTY-
+WORD 0x00 //9C -EMPTY-
+WORD 0x00 //9D -EMPTY-
+WORD 0x00 //9E -EMPTY-
+WORD 0x00 //9F -EMPTY-
+WORD 0x00 //A0 -EMPTY-
+WORD 0x00 //A1 -EMPTY-
+WORD 0x00 //A2 -EMPTY-
+WORD 0x00 //A3 -EMPTY-
+WORD 0x00 //A4 -EMPTY-
+WORD 0x00 //A5 -EMPTY-
+WORD 0x00 //A6 -EMPTY-
+WORD 0x00 //A7 -EMPTY-
+WORD 0x00 //A8 -EMPTY-
+WORD 0x00 //A9 -EMPTY-
+WORD 0x00 //AA -EMPTY-
+WORD 0x00 //AB -EMPTY-
+WORD 0x00 //AC -EMPTY-
+WORD 0x00 //AD -EMPTY-
+WORD 0x00 //AE -EMPTY-
+WORD 0x00 //AF -EMPTY-
+WORD 0x00 //B0 -EMPTY-
+WORD 0x00 //B1 -EMPTY-
+WORD 0x00 //B2 -EMPTY-
+WORD 0x00 //B3 -EMPTY-
+WORD 0x00 //B4 -EMPTY-
+WORD 0x00 //B5 -EMPTY-
+WORD 0x00 //B6 -EMPTY-
+WORD 0x00 //B7 -EMPTY-
+WORD 0x00 //B8 -EMPTY-
+WORD 0x00 //B9 -EMPTY-
+WORD 0x00 //BA -EMPTY-
+WORD 0x00 //BB -EMPTY-
+WORD 0x00 //BC -EMPTY-
+WORD 0x00 //BD -EMPTY-
+WORD 0x00 //BE -EMPTY-
+WORD 0x00 //BF -EMPTY-
+WORD 0x00 //C0 -EMPTY-
+WORD 0x00 //C1 -EMPTY-
+WORD 0x00 //C2 -EMPTY-
+WORD 0x00 //C3 -EMPTY-
+WORD 0x00 //C4 -EMPTY-
+WORD 0x00 //C5 -EMPTY-
+WORD 0x00 //C6 -EMPTY-
+WORD 0x00 //C7 -EMPTY-
+WORD 0x00 //C8 -EMPTY-
+WORD 0x00 //C9 -EMPTY-
+WORD 0x00 //CA -EMPTY-
+WORD 0x00 //CB -EMPTY-
+WORD 0x00 //CC -EMPTY-
+WORD 0x00 //CD -EMPTY-
+WORD 0x00 //CE -EMPTY-
+WORD 0x00 //CF -EMPTY-
+WORD 0x00 //D0 -EMPTY-
+WORD 0x00 //D1 -EMPTY-
+WORD 0x00 //D2 -EMPTY-
+WORD 0x0859D520 //D3 ANIME1 Ch11 Phantom Ship
+WORD 0x00 //D4 -EMPTY-
+WORD 0x00 //D5 -EMPTY-
+WORD 0x00 //D6 -EMPTY-
+WORD 0x00 //D7 -EMPTY-
+WORD 0x00 //D8 -EMPTY-
+WORD 0x00 //D9 -EMPTY-
+WORD 0x00 //DA -EMPTY-
+WORD 0x00 //DB -EMPTY-
+WORD 0x00 //DC -EMPTY-
+WORD 0x00 //DD -EMPTY-
+WORD 0x00 //DE -EMPTY-
+WORD 0x00 //DF -EMPTY-
+WORD 0x00 //E0 -EMPTY-
+WORD 0x00 //E1 -EMPTY-
+WORD 0x00 //E2 -EMPTY-
+WORD 0x00 //E3 -EMPTY-
+WORD 0x00 //E4 -EMPTY-
+WORD 0x00 //E5 -EMPTY-
+WORD 0x00 //E6 -EMPTY-
+WORD 0x00 //E7 -EMPTY-
+WORD 0x00 //E8 -EMPTY-
+WORD 0x00 //E9 -EMPTY-
+WORD 0x00 //EA -EMPTY-
+WORD 0x00 //EB -EMPTY-
+WORD 0x00 //EC -EMPTY-
+WORD 0x00 //ED -EMPTY-
+WORD 0x00 //EE -EMPTY-
+WORD 0x00 //EF -EMPTY-
+WORD 0x00 //F0 -EMPTY-
+WORD 0x00 //F1 -EMPTY-
+WORD 0x00 //F2 -EMPTY-
+WORD 0x00 //F3 -EMPTY-
+WORD 0x00 //F4 -EMPTY-
+WORD 0x00 //F5 -EMPTY-
+WORD 0x00 //F6 -EMPTY-
+WORD 0x00 //F7 -EMPTY-
+WORD 0x00 //F8 -EMPTY-
+WORD 0x00 //F9 -EMPTY-
+WORD 0x00 //FA -EMPTY-
+WORD 0x00 //FB -EMPTY-
+WORD 0x00 //FC -EMPTY-
+WORD 0x00 //FD -EMPTY-
+WORD 0x00 //FE -EMPTY-
+WORD 0x00 //FF -EMPTY-
+POP

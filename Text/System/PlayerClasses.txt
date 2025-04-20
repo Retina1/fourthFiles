@@ -1,0 +1,110 @@
+##Class_Swordfighter
+Swordfighter[X]
+##ClassDesc_Swordfighter
+A balanced swordsman. Valiantly[N]
+leads allies into battle.[X]
+##Class_Landsknecht
+Landsknect[X]
+##ClassDesc_Landsknecht
+A proven swordsman, able to mix[N]
+martial skills with magic.[X]
+
+##Class_Knight
+Knight[X]
+##ClassDesc_Knight
+Heavily armored protectors who keep[N]
+allies safe in the face of danger.[X]
+##Class_Hoplite
+Hoplite[X]
+##ClassDesc_Hoplite
+Walking fortresses able to ward off[N]
+almost any manner of assault.[X]
+
+##Class_Axefighter
+Axefighter[X]
+##ClassDesc_Axefighter
+Brawny bruisers who take big risks.[N]
+Their axe swings are devastating.[X]
+##Class_Gladiator
+Gladiator[X]
+##ClassDesc_Gladiator
+Extremely strong axefighters who[N]
+make any hits they get in count.[X]
+
+##Class_Archer
+Archer[X]
+##ClassDesc_Archer
+Strong and steady bowmen who pepper[N]
+enemies with reliable ranged attacks.[X]
+##Class_Sniper
+Sniper[X]
+##ClassDesc_Sniper
+Esteemed marksmen who strike mighty[N]
+and true from great distances.[X]
+
+##Class_Scholar
+Scholar[X]
+##ClassDesc_Scholar
+Focused mages who harness elements[N]
+for powerful magical attacks.[X]
+##Class_Warlock
+Warlock[X]
+##ClassDesc_Warlock
+Mighty scholars who devastate foes[N]
+with extremely powerful magic.[X]
+
+##Class_Curate
+Curate[X]
+##ClassDesc_Curate
+Battlefield healers who use their[N]
+knowledge to work medical wonders.[X]
+##Class_Medic
+Medic[X]
+##ClassDesc_Medic
+Proven healers that serve as a vital[N]
+lifeline. They bear a hidden strength.[X]
+
+##Class_Myrmidon
+Myrmidon[X]
+##ClassDesc_Myrmidon
+Fragile swordsmen who channel their[N]
+power into a mighty dueling stance.[X]
+##Class_Ronin
+Ronin[X]
+##ClassDesc_Ronin
+Feared swordsmen who effortlessly cut[N]
+through foes with their stance's power.[X]
+
+##Class_Rider
+Rider[X]
+##ClassDesc_Rider
+Horseback lancers who bravely charge[N]
+into the fray to lend support.[X]
+##Class_Strider
+Strider[X]
+##ClassDesc_Strider
+Proven lancers whose mastery of the[N]
+steed grants untold versatility.[X]
+
+##Class_Raider
+Raider[X]
+##ClassDesc_Raider
+Horseback axefighters who ferociously[N]
+charge through any adversary.[X]
+##Class_Trailblazer
+Trailblazer[X]
+##ClassDesc_Trailblazer
+Axe riders of unmatched savagery and[N]
+endurance, with a deadly hit-and-run.[X]
+
+##Class_Gunner
+Gunner[X]
+##ClassDesc_Gunner
+Fragile users of powerful artilery.[N]
+They're usually pretty reliable.[X]
+##Class_Dragoon
+Dragoon[X]
+##ClassDesc_Dragoon
+Mighty users of deadly ordinance,[N]
+sacrificing all for more power.[X]
+

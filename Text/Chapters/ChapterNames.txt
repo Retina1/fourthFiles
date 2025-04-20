@@ -1,0 +1,100 @@
+##Name_Hirschring
+Hirschring[X]
+
+##Name_Act1
+Act 1: Catching at Dreams[X]
+
+##Name_Ch1
+Initiation[X]
+##Name_Ch2
+New Friends[X]
+##Name_Ch3
+Caravan Duty[X]
+##Name_St1
+1st Stratum: Lethal Forest[X]
+##Name_Ch4
+Unsituated Beast[X]
+##Name_Ch5
+Heroes's Welcome[X]
+##Name_Ch6
+Endbringer[X]
+##Name_Ch7
+Unto the Brink[X]
+##Name_St2
+2nd Stratum: Shimmering Mines[X]
+##Name_Ch8
+Welcome Home[X]
+
+##Name_Act2
+Act 2: Someday Just Began[X]
+
+##Name_Ch9
+Spinning the Tale Anew[X]
+##Name_Ch10
+Inquisitors[X]
+##Name_St3
+3rd Stratum: Clouded Wastes[X]
+##Name_Ch11
+Proof of Will[X]
+##Name_Ch12
+Infiltration[X]
+##Name_Ch13
+The Gambit[X]
+##Name_Ch14
+The Fall[X]
+##Name_St4
+4th Stratum: Ruined Quarter[X]
+##Name_Ch15
+City on Fire[X]
+##Name_Ch16
+Ends Justify Means[X]
+
+##Name_Act3A
+Act 3: Dreams Don't Die[X]
+
+##Name_Ch17A
+Salt the Earth[X]
+##Name_Ch18A
+Chaos's Grip[X]
+##Name_Ch19A
+The Power[X]
+##Name_St5A
+5th Stratum: Gods' Tableland[X]
+##Name_Ch20A
+No One is Alone[X]
+##Name_Ch21A
+Ascension[X]
+##Name_FinalA
+Yesterday is Done[X]
+
+##Name_Act3B
+Act 3: Pick Yourself a Road[X]
+
+##Name_Ch17B
+Blazing Trails[X]
+##Name_Ch18B
+Crushing Order[X]
+##Name_Ch19B
+The Weapon[X]
+##Name_St5B
+5th Stratum: Hallowed Armory[X]
+##Name_Ch20B
+No One is Alone[X]
+##Name_Ch21B
+Countdown[X]
+##Name_FinalB
+Yesterday is Done[X]
+
+##Name_Act3C
+Act 3: Me and You[X]
+
+##Name_St5C
+5th Stratum: Imperial Palace[X]
+##Name_Ch17C
+Truth Unearthed[X]
+##Name_Ch18C
+A Fading Dream[X]
+##Name_St6C
+6th Stratum: Drowning Hollows[X]
+##Name_FinalC
+Yesterday is Done[X]
