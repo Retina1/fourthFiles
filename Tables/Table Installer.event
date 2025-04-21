@@ -2,7 +2,11 @@
 
 #include "TableDefinitions.event"
 
+#include "ChapterData\ChapterData.event"
+
 #include "CharacterClass\CharacterTable.event"
 
 #include "CharacterClass\ClassTable.event"
+
+#include "Items\ItemTable.event"
 

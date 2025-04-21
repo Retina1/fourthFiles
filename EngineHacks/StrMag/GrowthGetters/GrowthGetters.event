@@ -1,0 +1,71 @@
+#define USE_CHAR_AND_CLASS_GROWTHS 0
+#define STACKABLE_GROWTH_BOOSTS 0
+#define ENEMY_NPC_FIXED_GROWTHS 0
+#define FIXED_GROWTHS_MODE 1
+#define FIXED_GROWTHS_DONT_BOOST 1
+#define METIS_TOME_BOOST 20
+#define USE_STAT_COLORS 0
+#define PRESS_SELECT_TO_VIEW_GROWTHS
+
+//ID of flag to use for fixed growths mode, if enabled
+#define FIXED_GROWTHS_FLAG_ID 0xEF
+//Don't touch these
+#define Growth_Options "FIXED_GROWTHS_MODE|(FIXED_GROWTHS_DONT_BOOST<<1)|(STACKABLE_GROWTH_BOOSTS<<2)|(ENEMY_NPC_FIXED_GROWTHS<<3)|(USE_STAT_COLORS<<4)|(METIS_TOME_BOOST<<8)|((FIXED_GROWTHS_FLAG_ID&0xFF)<<0x10)|((FIXED_GROWTHS_FLAG_ID&0xFF00)<<0x10)"
+#define Stat_Page_Ram_Loc 0x203FFF0
+  ALIGN 4
+	Growth_Getter_Table:
+	POIN Get_Hp_Growth Get_Str_Growth Get_Mag_Growth Get_Skl_Growth Get_Spd_Growth Get_Luk_Growth Get_Def_Growth Get_Res_Growth
+
+	ALIGN 4
+	Get_Hp_Growth:
+	#incbin "Get_Hp_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+	ALIGN 4
+	
+	Get_Str_Growth:
+	#incbin "Get_Str_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+	ALIGN 4
+	
+	Get_Mag_Growth:
+	#incbin "Get_Mag_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+	ALIGN 4
+	
+	Get_Skl_Growth:
+	#incbin "Get_Skl_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+	ALIGN 4
+	
+	Get_Spd_Growth:
+	#incbin "Get_Spd_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+	ALIGN 4
+	
+	Get_Def_Growth:
+	#incbin "Get_Def_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+	ALIGN 4
+	
+	Get_Res_Growth:
+	#incbin "Get_Res_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+	ALIGN 4
+	
+	Get_Luk_Growth:
+	#incbin "Get_Luk_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+
+	ALIGN 4
+	Extra_Growth_Boosts:
+	#incbin "Extra_Growth_Boosts.dmp"
+    WORD Growth_Options
+	

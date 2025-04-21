@@ -4,7 +4,7 @@ Swordfighter[X]
 A balanced swordsman. Valiantly[N]
 leads allies into battle.[X]
 ##Class_Landsknecht
-Landsknect[X]
+Landsknecht[X]
 ##ClassDesc_Landsknecht
 A proven swordsman, able to mix[N]
 martial skills with magic.[X]

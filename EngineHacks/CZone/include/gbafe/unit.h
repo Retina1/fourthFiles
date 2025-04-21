@@ -97,8 +97,8 @@ struct ClassData {
 	/* 11 */ s8 baseCon;
 	/* 12 */ s8 baseMov;
 
-	/* 13 */ s8 maxHP;
-	/* 14 */ s8 maxPow;
+	/* 13 */ s8 baseLck;
+	/* 14 */ s8 baseMag;
 	/* 15 */ s8 maxSkl;
 	/* 16 */ s8 maxSpd;
 	/* 17 */ s8 maxDef;
@@ -115,12 +115,12 @@ struct ClassData {
 	/* 20 */ s8 growthRes;
 	/* 21 */ s8 growthLck;
 
-	/* 22 */ u8 baseLck;
-	/* 23 */ u8 baseMag;
-	/* 24 */ s8 growthMag;
-	/* 25 */ s8 maxMag;
-	/* 26 */ u8 promotionDef;
-	/* 27 */ u8 promotionRes;
+	/* 22 */ s8 growthMag;
+	/* 23 */ u8 pUnk23;
+	/* 24 */ u8 pUnk24;
+	/* 25 */ u8 pUnk25;
+	/* 26 */ u8 pUnk26;
+	/* 27 */ u8 pUnk27;
 
 	/* 28 */ u32 attributes;
 

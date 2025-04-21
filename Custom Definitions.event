@@ -1,6 +1,10 @@
 #define FreeSpace 0x1000000
 #define FreeSpaceBLRange 0x1c1ec0
 
+#ifndef _FE8_
+	#define _FE8_
+#endif
+
 #define ChapterTileset(chapter, object, palette, config) "PUSH; ORG 0x8b0890 + (148* chapter) + 4; SHORT object; BYTE palette config; POP"
 #define ChapterTileAnims(chapter, anim1, anim2) "PUSH; ORG 0x8b0890 + (148* chapter) + 9; BYTE anim1 anim2; POP"
 
@@ -31,3 +35,5 @@ ORG 0x9C154; BYTE MaxStatCap
 ORG 0x9C31C; BYTE MaxStatCap
 ORG 0x2Ba78; BYTE MaxLevelCap
 POP
+
+#include "Definitions/Definitions.event"

@@ -1,0 +1,39 @@
+//macros for installing map sprites
+//moving map sprites are indexed by class ID!
+
+
+#define StandingMapSprite(aId, size, gfxPointer) "PUSH; ORG StandingMapSpriteTable + (aId * 8); SHORT 0 size; POIN gfxPointer; POP"
+#define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG MovingMapSpriteTable + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
+
+#define MapSprite16x16 0
+#define MapSprite16x32 1
+#define MapSprite32x32 2
+
+
+ALIGN 4
+AP1:
+#incbin "AP1.bin"
+
+ALIGN 4
+AP2:
+#incbin "AP2.bin"
+
+ALIGN 4
+AP2General:
+#incbin "AP2(General).bin"
+
+ALIGN 4
+AP2Swordmaster:
+#incbin "AP2(Swordmaster).bin"
+
+ALIGN 4
+AP2Wyvern:
+#incbin "AP2(Wyvern).bin"
+
+ALIGN 4
+AP2Hero:
+#incbin "AP2(Hero).bin"
+
+ALIGN 4
+AP4WyvernLord:
+#incbin "AP4(WyvernLord).bin"

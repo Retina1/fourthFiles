@@ -1,0 +1,4 @@
+##Name_Shortsword
+Shortsword[X]
+##Desc_Shortsword ^
+A cheap and basic slashing weapon.[X]

@@ -1,0 +1,87 @@
+#include "_MapSpriteDefs.event"
+
+//repoint map sprite tables
+PUSH
+ORG $26730
+POIN StandingMapSpriteTable
+ORG $267B0
+POIN StandingMapSpriteTable
+ORG $26838
+POIN StandingMapSpriteTable
+ORG $26C88
+POIN StandingMapSpriteTable
+ORG $272D0
+POIN StandingMapSpriteTable
+ORG $27BB0
+POIN StandingMapSpriteTable
+ORG $27C9C
+POIN StandingMapSpriteTable
+ORG $27D48
+POIN StandingMapSpriteTable
+ORG $27E0C
+POIN StandingMapSpriteTable
+ORG $27E9C
+POIN StandingMapSpriteTable
+ORG $27F74
+POIN StandingMapSpriteTable
+ORG $28064
+POIN StandingMapSpriteTable
+
+ORG $79584
+POIN MovingMapSpriteTable
+ORG $79598
+POIN MovingMapSpriteTable
+ORG $BAC2C
+POIN MovingMapSpriteTable
+ORG $BAC40
+POIN MovingMapSpriteTable
+POP
+
+#define 16Zeroes "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" 
+#define 256Zeroes "16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes"
+
+ALIGN 4
+StandingMapSpriteTable:
+BYTE 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes
+
+ALIGN 4
+MovingMapSpriteTable:
+BYTE 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes
+
+//we need to fill out these tables with the vanilla table contents
+//we'll use dmps because i'm lazy
+
+PUSH
+ORG StandingMapSpriteTable
+#incbin "VanillaStandingMapSpriteTable.dmp"
+ORG MovingMapSpriteTable
+#incbin "VanillaMovingMapSpriteTable.dmp"
+POP
+
+StandingMapSprite(Swordfighter,MapSprite16x16,SwordfighterSMS)
+MovingMapSprite(Swordfighter, AP1, SwordfighterMMS)
+StandingMapSprite(Landsknecht,MapSprite16x16,LandsknechtSMS)
+MovingMapSprite(Landsknecht, AP2Hero, LandsknechtMMS)
+
+
+StandingMapSprite(Scholar,MapSprite16x16,ScholarSMS)
+MovingMapSprite(Scholar, AP1, ScholarMMS)
+
+ALIGN 4
+SwordfighterSMS:
+#incbin "Dmp/Mercenary (M) Sword Improved {Flasuban}-stand.dmp"
+ALIGN 4
+SwordfighterMMS:
+#incbin "Dmp/Mercenary (M) Sword Improved {Flasuban}-walk.dmp"
+ALIGN 4
+LandsknechtSMS:
+#incbin "Dmp/Hero (M) Blue Shield Sword {Pikmin}-stand.dmp"
+ALIGN 4
+LandsknechtMMS:
+#incbin "Dmp/Hero (M) Blue Shield Sword {Pikmin}.png-walk.dmp"
+ALIGN 4
+ScholarSMS:
+#incbin "Dmp/Mage (M) Hatless {Pikmin}-stand.dmp"
+ALIGN 4
+ScholarMMS:
+#incbin "Dmp/Mage (M) Hatless {Pikmin}-walk.dmp"

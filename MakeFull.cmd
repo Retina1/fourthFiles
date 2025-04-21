@@ -10,6 +10,10 @@ echo: | (c2ea "%~dp0FE8_clean.gba")
 cd "%~dp0Text"
 echo: | (text-process-classic text_buildfile.txt)
 
+cd "%~dp0Maps"
+echo: | (tmx2ea -s -O "MasterMapInstaller.event")
+
+
 cd "%~dp0EventAssembler"
 Core A FE8 "-output:%~dp0FE_Hack.gba" "-input:%~dp0Buildfile.event"
 

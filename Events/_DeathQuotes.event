@@ -1,0 +1,16 @@
+#define AlwaysDeathQuote(arg000,arg001,arg002) "BYTE arg000 0x0 0xff 0xff; SHORT arg001;SHORT arg002 ;WORD 0x0 "
+#define ChapterDeathQuote(arg000,arg001,arg002,arg003) "BYTE arg000 0x0 0xff arg001; SHORT arg002 ;SHORT arg003 ;WORD 0x0 "
+#define TaleUnitDeathQuote(arg000,arg001,arg003) "BYTE arg000 0x0 0xff arg001; SHORT 0x65 ;SHORT arg003 ;WORD 0x0 "
+#define KillerDeathQuote(arg000,arg001,arg002,arg003,arg004) "BYTE arg000 arg001 0xff arg002; SHORT arg003;SHORT arg004 ;WORD 0x0 "
+#define EndDeathQuote "BYTE 0xff 0xff 0x0 0x0 0x0 0x0 ;SHORT 0x0 ;WORD 0x0 "
+#define DefeatBossFlag 0x2
+#define GameOverFlag 0x65
+
+ALIGN 4
+DeathQuoteTable:
+EndDeathQuote
+
+PUSH
+ORG $8472C
+POIN DeathQuoteTable
+POP

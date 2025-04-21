@@ -1,0 +1,32 @@
+#ifndef MODULAR_GETTER_AID_EVENT
+#define MODULAR_GETTER_AID_EVENT
+
+#include "_Common.event"
+
+pAidModifiers: // Aid
+	POIN prAddUnitFinalConstitution prSubstractOne prAdjustAidIfMounted
+	#ifdef DEBUFFS_MIN_ZERO
+	POIN prMinZero
+	#endif
+WORD 0
+
+
+prAddUnitFinalConstitution:
+	rAdd(rCallExternal(prConGetter))
+
+prSubstractOne:
+	rSubConst(1)
+
+prAdjustAidIfMounted:
+{
+	rIfUnitHasAttribute(CA_MOUNTEDAID)
+		rCallSequence(_prNegate _prAddBaseMountedAidBonus /*_prAddMoreIfNotFemale*/)
+
+_prNegate:
+	rMinus(rCurrent)
+
+_prAddBaseMountedAidBonus:
+	rConstant(20)
+}
+
+#endif // MODULAR_GETTER_AID_EVENT

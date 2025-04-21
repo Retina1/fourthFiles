@@ -4,5 +4,72 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
+#0x8db SS_TalkText
+Talk[X]
+
+##SS_TalkRText
+Talk: Units that this unit can[N]
+initiate a conversation with.[X]
+
+
+## PersonalDataDesc1
+Press Select to toggle[N]
+between stats and growths.[X]
+
 #include "System/PlayerClasses.txt"
 #include "System/UnitNamesDescs.txt"
+#include "System/ItemNamesDescs.txt"
+#include "Chapters/ChapterNames.txt"
+#include "Chapters/FloorTitles.txt"
+
+
+
+#0x4f6 Mov_Text_ID
+Mov[X]
+#0x4ee
+Luc[X]
+
+#0x542
+Level: A measure of experience.[N]
+Units gain stats and SP per level.[X]
+#0x543
+EXP: 100 experience equals one level.[N]
+EXP falls off if overleveled.[N]
+Make sure to challenge yourself![X]
+#0x544
+Hit Points: A measure of health.[N]
+Units die when reaching zero.[X]
+#0x546
+Strength: Affects the damage[N]
+of physical attacks.[X]
+#0x547
+Magic: Affects the power of[N]
+spells and magical attacks.[X]
+#0x548
+Skill: Full value added to Hit,[N]
+half value added to Crit.[X]
+#0x549
+Speed: Double if outspeeding by 4,[N]
+full value added to Avoid.[X]
+#0x54a
+Luck: Half value added to Hit/Avo,[N]
+full value added to Crit Avo.[N]
+Also impacts ailment afflict/resist.[X]
+#0x54b
+Defense: Reduces the damage of[N]
+incoming physical attacks.[X]
+#0x54c
+Resistance: Reduces the damage of[N]
+incoming magical attacks.[X]
+#0x54d
+Movement: Distance that can be[N]
+traversed in one turn.[X]
+#0x54e
+Constitution: Full value[N]
+offsets weapon weight.[X]
+#0x54f
+Aid: Rescue others whose Con[N]
+is no more than unit's Aid.[X]
+#0x552
+Condition: Any status effect[N]
+impacting the current unit.[X]

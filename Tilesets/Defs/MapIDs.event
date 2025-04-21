@@ -1,0 +1,9 @@
+#define Map1ID 0x1
+#define MapChange1ID 0x2
+#define Events1ID 0x3
+#define Map2ID 0x4
+#define MapChange2ID 0x5
+#define Events2ID 0x6
+#define Map3ID 0x7
+#define MapChange3ID 0x8
+#define Events3ID 0x9

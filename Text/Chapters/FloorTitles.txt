@@ -24,7 +24,7 @@ War's Long-Dormant Spark[X]
 ##Floor_S4F1
 Courage Amidst the Flames[X]
 ##Floor_S4F2
-Darkness at the End of the Tunnel[X]
+Dark at the End of the Tunnel[X]
 ##Floor_S4F3
 Salvation That Shall Never Arise[X]
 ##Floor_S4F4

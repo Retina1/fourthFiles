@@ -1,0 +1,11 @@
+//Credits: Teq for the original FE7 version and WIP FE8 Version
+
+#include "LevelUp/LevelUp.event"
+
+#include "Combat/CombatCalculations.event"
+
+#include "UnitViewer/UnitViewer.event"
+
+#include "AutolevellingSaves/AutolevelSave.event"
+
+#include "MagicSwordRework/MagicSwordRework.event"

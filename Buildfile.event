@@ -1,9 +1,33 @@
 #include "eastdlib.event"
 #include "Extensions\Hack Installation.txt"
-#include "Tools\Tool Helpers.txt"
 #include "Custom Definitions.event"
+#define TextTable NewTextTable // define to not conflict with Tool Helpers
+#define MaxTextEntries 0x8000
+
 ORG FreeSpace
-#include "Essential Fixes.event"
+
+ALIGN 4
+TextTable:
+  #incbin "Text/NewTextTable.dmp"
+  ORG TextTable + (MaxTextEntries) * 4
+
+PUSH
+
+  ORG 0xa2a0
+    POIN TextTable
+
+POP
+
+
+#include "Tools\Tool Helpers.txt"
+
+
+ALIGN 4
+#include "Tilesets\_TilesetInstaller.event"
+ALIGN 4
+#include "Maps\MasterMapInstaller.event
+ALIGN 4
+#include "Graphics\_Graphics.event"
 
 ALIGN 4
 #include "Text\Install Text Data.event"
@@ -12,4 +36,29 @@ ALIGN 4
 #include "Tables\Table Installer.event"
 
 ALIGN 4
-#include "EngineHacks\CZone\Main.lyn.event"
+#include "EngineHacks\MasterHackInstaller.event"
+
+ALIGN 4
+#include "Events\_ChapterEventsInstaller.event"
+
+
+//promo items
+/*
+Protect NPCs in 10: Inquisitors
+Boss of 9: Spinning the Tale Anew
+Chest in S2: Shimmering Mines
+Buy in Black Market (3x onwards)
+Boss of 8: Welcome Home
+Win the final round in the Arena (5x onwards)
+Chest in S3: Clouded Wastes
+Trade Legend Bait with Guildmaster (S3x onwards)
+Buy from Street Market (as Scrap, 9x onwards)
+Defeat Ratatoskr in S3: Clouded Wastes
+Loot from Benthus's grave in 14: The Fall
+Trade Johanna something nice (5x onwards)
+Optional boss of 11: Proof of Will
+Water the Guildleague's potted plant 3 times
+Superboss in S2: Shimmering Mines
+Boss of 16: Ends Justify Means
+From Curator after getting 2 boss conditionals
+Start of preps in 16x*/

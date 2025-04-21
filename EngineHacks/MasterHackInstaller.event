@@ -1,0 +1,37 @@
+PUSH
+ORG FreeSpaceBLRange //defined in custom definitions
+#define inBLRange
+
+  //Talk and Support don't end your turn
+//  #include "QualityOfLife/ContemporaryTalkSupport/ContemporaryTalkSupport.event"
+
+  //Hold L to toggle Anims
+//  #include "QualityOfLife/LToggle/LToggle.event"
+
+  //negative wt/crit
+//  #include "QualityOfLife/NegativeWStatDisplay/NegativeDisplay.event"
+
+	#include "StrMag/BLRange.event"
+ 
+	
+#undef inBLRange
+POP
+
+#include "EssentialFixes.event"
+#include "EMS/ExModularSave.event"
+#include "StatGetters/_InstallStatGetters.event"
+//#include "StrMag/Suspend.event"
+#include "StrMag/GrowthGetters/GrowthGetters.event"
+#include "StrMag/_MasterAsmInstaller.event"
+#include "MSS/ModularStatScreen.event"
+#include "GrowthGrades/GrowthGrades.event"
+#include "CZone/Main.lyn.event"
+#include "NarrowFont/NarrowFontInstaller.event"
+#include "ChapterNames/fe8_chnames.event"
+
+
+//bwl?
+PUSH
+ORG 0x86fe4
+SHORT $46C0 $46C0
+POP
