@@ -108,3 +108,211 @@ Dragoon[X]
 Mighty users of deadly ordinance,[N]
 sacrificing all for more power.[X]
 
+##Class_Poet
+Poet[X]
+##ClassDesc_Poet
+Wandering songwrights who can[N]
+inspire power in their allies.[X]
+##Class_Troubadour
+Troubadour[X]
+##ClassDesc_Troubadour
+Mythical artists whose power of[N]
+inspiration is inspirational.[X]
+
+##Class_Seeker
+Seeker[X]
+##ClassDesc_Seeker
+Swift magi who make use of runes[N]
+to bolster allies and fell foes.[X]
+##Class_Runemaster
+Runemaster[X]
+##ClassDesc_Runemaster
+Proven magi who call upon heavens[N]
+through their versatile runes.[X]
+
+##Class_Priest
+Priest[X]
+##ClassDesc_Priest
+Holy fighters who supplant their[N]
+swordplay with supportive magic.[X]
+##Class_WarMagus
+War Magus[X]
+##ClassDesc_WarMagus
+Holy warriors that serve as both[N]
+mighty swordsmen and mighty healers.[X]
+
+##Class_Lurker
+Lurker[X]
+##ClassDesc_Lurker
+Shadowy magi who call upon fell[N]
+powers to curse their foes.[X]
+##Class_Hexer
+Hexer[X]
+##ClassDesc_Hexer
+Grim magi whose mastery of curses[N]
+is truly terrible to behold.[X]
+
+##Class_DarkHunter
+Dark Hunter[X]
+##ClassDesc_DarkHunter
+Swift and technical fighters who[N]
+use whips to weaken and bind foes.[X]
+##Class_Dominator
+Dominator[X]
+##ClassDesc_Dominator
+Masterful dark hunters whose whips[N]
+weaken, bind, and obliterate.[X]
+
+##Class_Lancer
+Lancer[X]
+##ClassDesc_Lancer
+Durable pikemen who channel their[N]
+lifeforce into their mighty lances.[X]
+##Class_Highlander
+Highlander[X]
+##ClassDesc_Highlander
+Proven lancers who fight unto the[N]
+brink of death, never to falter.[X]
+
+##Class_Brawler
+Brawler[X]
+##ClassDesc_Brawler
+Rough fistfighters with strength,[N]
+endurance, and anatomical knowledge.[X]
+##Class_Pugilist
+Pugilist[X]
+##ClassDesc_Pugilist
+Mighty brawlers who use their power[N]
+to hit enemies right where it hurts.[X]
+
+##Class_Hunter
+Hunter[X]
+##ClassDesc_Hunter
+Swift and evasive bowmen who use[N]
+trickery to overcome obstacles.[X]
+##Class_Survivalist
+Survivalist[X]
+##ClassDesc_Survivalist
+Seasoned woodsmen who evade, trick,[N]
+and bring ruin to the unwitting.[X]
+
+##Class_SkyKnight
+Sky Knight[X]
+##ClassDesc_SkyKnight
+Swift pegasus riders devoted to[N]
+serving good and spearing evil.[X]
+##Class_Seraph
+Seraph[X]
+##ClassDesc_Seraph
+Holy riders who bring winged[N]
+salvation to their allies.[X]
+
+##Class_ScaleKnight
+Scale Knight[X]
+##ClassDesc_ScaleKnight
+Armored dragon riders who swing[N]
+fiercely and harness draconic might.[X]
+##Class_Scalemaster
+Scalemaster[X]
+##ClassDesc_Scalemaster
+Almighty tamers whose connection to[N]
+their mount brings untold power.[X]
+
+##Class_Apothecary
+Apothecary[X]
+##ClassDesc_Apothecary
+Skilled herbalists who can both[N]
+heal allies and disorient foes.[X]
+##Class_Botanist
+Botanist[X]
+##ClassDesc_Botanist
+Paragon apothecaries whose herbs[N]
+almost defy the natural order.[X]
+
+##Class_Encircler
+Encircler[X]
+##ClassDesc_Encircler
+Imposing magi who channel powerful[N]
+effects into the earth beneath them.[X]
+##Class_Arcanist
+Arcanist[X]
+##ClassDesc_Arcanist
+Mighty magi who bring widespread ruin[N]
+through their all-powerful circles.[X]
+
+##Class_Caller
+Caller[X]
+##ClassDesc_Caller
+Shadowy magi who call upon spirits[N]
+to shield and power their spells.[X]
+##Class_Necromancer
+Necromancer[X]
+##ClassDesc_Necromancer
+Harrowing magi whose mastery of[N]
+spirits inspires awe and fear.[X]
+
+##Class_Noble
+Noble[X]
+##ClassDesc_Noble
+Inspiring figures who rally their[N]
+troops and fight with rapiers.[X]
+##Class_Sovereign
+Sovereign[X]
+##ClassDesc_Sovereign
+Glorious figures who command the[N]
+hearts and minds of all before them.[X]
+
+##Class_Duelist
+Duelist[X]
+##ClassDesc_Duelist
+Evasive fighters who use rapiers.[N]
+They prefer to dodge attacks.[X]
+##Class_Fencer
+Fencer[X]
+##ClassDesc_Fencer
+Graceful duelists whose rapierplay[N]
+and evasion are a marvel to behold.[X]
+
+##Class_Driver
+Driver[X]
+##ClassDesc_Driver
+Heavily armored users of drive blades,[N]
+mighty weapons with costly cooldowns.[X]
+##Class_Imperial
+Imperial[X]
+##ClassDesc_Imperial
+Mastersful drive blade users who[N]
+can tear through any and all.[X]
+
+##Class_Artifice
+Artifice[X]
+##ClassDesc_Artifice
+Strange machines with many bizarre[N]
+functions and remarkable durability.[X]
+##Class_Automaton
+Automaton[X]
+##ClassDesc_Automaton
+Incredible machines with wondrous[N]
+functions and terrific durability.[X]
+
+##Class_DivineMagus
+Divine Magus[X]
+##ClassDesc_DivineMagus
+A war magus that has ascended[N]
+and recieved immense power.[X]
+
+##Name_Turret
+Turret[X]
+##Desc_Turret
+A remotely-controlled stationary turret,[N]
+summoned by an Artifice or Automaton.[X]
+##Name_Soul
+Soul[X]
+##Desc_Soul
+A lost soul called to battle[N]
+by a Caller or Necromancer.[X]
+##Name_Souldier
+Souldier[X]
+##Desc_Souldier
+A mighty soul called to battle[N]
+by a Caller or Necromancer.[X]

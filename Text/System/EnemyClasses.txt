@@ -1,0 +1,5 @@
+##Class_Squirrel
+Squirrel[X]
+##ClassDesc_Squirrel
+A small rodent. Far craftier and[N]
+far more malicious than it seems.[X]

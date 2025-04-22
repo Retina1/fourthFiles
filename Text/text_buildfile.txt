@@ -4,7 +4,7 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
-#0x8db SS_TalkText
+#0x0903 SS_TalkText
 Talk[X]
 
 ##SS_TalkRText
@@ -17,6 +17,7 @@ Press Select to toggle[N]
 between stats and growths.[X]
 
 #include "System/PlayerClasses.txt"
+#include "System/EnemyClasses.txt"
 #include "System/UnitNamesDescs.txt"
 #include "System/ItemNamesDescs.txt"
 #include "Chapters/ChapterNames.txt"
@@ -34,7 +35,7 @@ Level: A measure of experience.[N]
 Units gain stats and SP per level.[X]
 #0x543
 EXP: 100 experience equals one level.[N]
-EXP falls off if overleveled.[N]
+EXP gain falls off if overleveled.[N]
 Make sure to challenge yourself![X]
 #0x544
 Hit Points: A measure of health.[N]
@@ -73,3 +74,54 @@ is no more than unit's Aid.[X]
 #0x552
 Condition: Any status effect[N]
 impacting the current unit.[X]
+
+# 0x0561
+Slash mastery level.[X]
+
+# 0x0562
+Pierce mastery level.[X]
+
+# 0x0563
+Bash mastery level.[X]
+
+# 0x0564
+Ranged mastery level.[X]
+
+# 0x0565
+Magic mastery level.[X]
+
+# 0x0566
+Light mastery level.[X]
+
+# 0x0567
+Dark mastery level.[.][X]
+
+# 0x0568
+Support mastery level.[X]
+
+# 0x0505 ^
+Slash[X]
+
+# 0x0506 ^
+Pierce[X]
+
+# 0x0507 ^
+Bash[X]
+
+# 0x0508 ^
+Ranged[X]
+
+# 0x0509 ^
+Support[X]
+
+# 0x050A ^
+Magic[X]
+
+# 0x050B
+Light[X]
+
+# 0x050C
+Dark[X]
+
+# 0x04F5
+Avo[X]

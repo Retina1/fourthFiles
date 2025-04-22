@@ -1,0 +1,13 @@
+0x59ba90,Weapon 1,Weapon 2,Hit Modifier,Might Modifier
+Sword -> Lance,0,0,0,0
+Sword -> Axe,0,0,0,0
+Lance -> Axe,0,0,0,0
+Lance -> Sword,0,0,0,0
+Axe -> Sword,0,0,0,0
+Axe -> Lance,0,0,0,0
+Anima -> Dark,0,0,0,0
+Anima -> Light,0,0,0,0
+Light -> Anima,0,0,0,0
+Light -> Dark,0,0,0,0
+Dark -> Light,0,0,0,0
+Dark -> Anima,0,0,0,0

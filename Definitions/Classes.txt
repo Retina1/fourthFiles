@@ -56,3 +56,4 @@ Soul
 Souldier
 DivineMagus
 AnswererClass
+Squirrel 0x7F

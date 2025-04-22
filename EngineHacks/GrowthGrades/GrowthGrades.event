@@ -68,129 +68,129 @@ b		NextColumn
 
 ALIGN 4
 StrengthGrowthGradeList:
-BYTE 5		Grade_E		NoSign
-BYTE 10		Grade_E		PlusSign
-BYTE 20		Grade_D		NoSign
-BYTE 25		Grade_D		PlusSign
-BYTE 35		Grade_C		NoSign
-BYTE 50		Grade_C		PlusSign
-BYTE 60		Grade_B		NoSign
-BYTE 70		Grade_B		PlusSign
-BYTE 80		Grade_A		NoSign
-BYTE 90		Grade_A		PlusSign
-BYTE 100	Grade_S		NoSign
+BYTE 10		Grade_E		NoSign
+BYTE 20		Grade_E		PlusSign
+BYTE 25		Grade_D		NoSign
+BYTE 35		Grade_D		PlusSign
+BYTE 50		Grade_C		NoSign
+BYTE 60		Grade_C		PlusSign
+BYTE 70		Grade_B		NoSign
+BYTE 80		Grade_B		PlusSign
+BYTE 90		Grade_A		NoSign
+BYTE 100	Grade_A		PlusSign
+BYTE 250	Grade_S		NoSign
 // "terminator" since growths can't exceed 255
 BYTE 255 	Grade_S		PlusSign
 
 ALIGN 4
 MagicGrowthGradeList:
-BYTE 5		Grade_E		NoSign
-BYTE 10		Grade_E		PlusSign
-BYTE 20		Grade_D		NoSign
-BYTE 25		Grade_D		PlusSign
-BYTE 35		Grade_C		NoSign
-BYTE 50		Grade_C		PlusSign
-BYTE 60		Grade_B		NoSign
-BYTE 70		Grade_B		PlusSign
-BYTE 80		Grade_A		NoSign
-BYTE 90		Grade_A		PlusSign
-BYTE 100	Grade_S		NoSign
+BYTE 10		Grade_E		NoSign
+BYTE 20		Grade_E		PlusSign
+BYTE 25		Grade_D		NoSign
+BYTE 35		Grade_D		PlusSign
+BYTE 50		Grade_C		NoSign
+BYTE 60		Grade_C		PlusSign
+BYTE 70		Grade_B		NoSign
+BYTE 80		Grade_B		PlusSign
+BYTE 90		Grade_A		NoSign
+BYTE 100	Grade_A		PlusSign
+BYTE 250	Grade_S		NoSign
 // "terminator" since growths can't exceed 255
 BYTE 255 	Grade_S		PlusSign
 
 ALIGN 4
 SkillGrowthGradeList:
-BYTE 5		Grade_E		NoSign
-BYTE 10		Grade_E		PlusSign
-BYTE 20		Grade_D		NoSign
-BYTE 25		Grade_D		PlusSign
-BYTE 35		Grade_C		NoSign
-BYTE 55		Grade_C		PlusSign
-BYTE 65		Grade_B		NoSign
-BYTE 75		Grade_B		PlusSign
-BYTE 90		Grade_A		NoSign
-BYTE 105	Grade_A		PlusSign
-BYTE 125	Grade_S		NoSign
+BYTE 10		Grade_E		NoSign
+BYTE 20		Grade_E		PlusSign
+BYTE 25		Grade_D		NoSign
+BYTE 35		Grade_D		PlusSign
+BYTE 55		Grade_C		NoSign
+BYTE 65		Grade_C		PlusSign
+BYTE 75		Grade_B		NoSign
+BYTE 90		Grade_B		PlusSign
+BYTE 105	Grade_A		NoSign
+BYTE 125	Grade_A		PlusSign
+BYTE 250	Grade_S		NoSign
 // "terminator" since growths can't exceed 255
 BYTE 255 	Grade_S		PlusSign
 
 ALIGN 4
 SpeedGrowthGradeList:
-BYTE 5		Grade_E		NoSign
-BYTE 10		Grade_E		PlusSign
-BYTE 20		Grade_D		NoSign
-BYTE 25		Grade_D		PlusSign
-BYTE 35		Grade_C		NoSign
-BYTE 50		Grade_C		PlusSign
-BYTE 60		Grade_B		NoSign
-BYTE 70		Grade_B		PlusSign
-BYTE 80		Grade_A		NoSign
-BYTE 90		Grade_A		PlusSign
-BYTE 100	Grade_S		NoSign
+BYTE 10		Grade_E		NoSign
+BYTE 20		Grade_E		PlusSign
+BYTE 25		Grade_D		NoSign
+BYTE 35		Grade_D		PlusSign
+BYTE 50		Grade_C		NoSign
+BYTE 60		Grade_C		PlusSign
+BYTE 70		Grade_B		NoSign
+BYTE 80		Grade_B		PlusSign
+BYTE 90		Grade_A		NoSign
+BYTE 100	Grade_A		PlusSign
+BYTE 250	Grade_S		NoSign
 // "terminator" since growths can't exceed 255
 BYTE 255 	Grade_S		PlusSign
 
 ALIGN 4
 LuckGrowthGradeList:
-BYTE 5		Grade_E		NoSign
-BYTE 10		Grade_E		PlusSign
-BYTE 20		Grade_D		NoSign
-BYTE 25		Grade_D		PlusSign
-BYTE 35		Grade_C		NoSign
-BYTE 55		Grade_C		PlusSign
-BYTE 65		Grade_B		NoSign
-BYTE 75		Grade_B		PlusSign
-BYTE 90		Grade_A		NoSign
-BYTE 105	Grade_A		PlusSign
-BYTE 125	Grade_S		NoSign
+BYTE 10		Grade_E		NoSign
+BYTE 20		Grade_E		PlusSign
+BYTE 25		Grade_D		NoSign
+BYTE 35		Grade_D		PlusSign
+BYTE 55		Grade_C		NoSign
+BYTE 65		Grade_C		PlusSign
+BYTE 75		Grade_B		NoSign
+BYTE 90		Grade_B		PlusSign
+BYTE 105	Grade_A		NoSign
+BYTE 125	Grade_A		PlusSign
+BYTE 250	Grade_S		NoSign
 // "terminator" since growths can't exceed 255
 BYTE 255 	Grade_S		PlusSign
 
 ALIGN 4
 DefenseGrowthGradeList:
-BYTE 5		Grade_E		NoSign
-BYTE 10		Grade_E		PlusSign
-BYTE 15		Grade_D		NoSign
-BYTE 20		Grade_D		PlusSign
-BYTE 25		Grade_C		NoSign
-BYTE 30		Grade_C		PlusSign
-BYTE 35		Grade_B		NoSign
-BYTE 40		Grade_B		PlusSign
-BYTE 50		Grade_A		NoSign
-BYTE 70		Grade_A		PlusSign
-BYTE 100	Grade_S		NoSign
+BYTE 10		Grade_E		NoSign
+BYTE 15		Grade_E		PlusSign
+BYTE 20		Grade_D		NoSign
+BYTE 25		Grade_D		PlusSign
+BYTE 30		Grade_C		NoSign
+BYTE 35		Grade_C		PlusSign
+BYTE 40		Grade_B		NoSign
+BYTE 50		Grade_B		PlusSign
+BYTE 70		Grade_A		NoSign
+BYTE 100	Grade_A		PlusSign
+BYTE 250	Grade_S		NoSign
 // "terminator" since growths can't exceed 255
 BYTE 255 	Grade_S		PlusSign
 
 ALIGN 4
 ResistanceGrowthGradeList:
-BYTE 5		Grade_E		NoSign
-BYTE 10		Grade_E		PlusSign
-BYTE 15		Grade_D		NoSign
-BYTE 20		Grade_D		PlusSign
-BYTE 25		Grade_C		NoSign
-BYTE 30		Grade_C		PlusSign
-BYTE 35		Grade_B		NoSign
-BYTE 40		Grade_B		PlusSign
-BYTE 50		Grade_A		NoSign
-BYTE 70		Grade_A		PlusSign
-BYTE 100	Grade_S		NoSign
+BYTE 10		Grade_E		NoSign
+BYTE 15		Grade_E		PlusSign
+BYTE 20		Grade_D		NoSign
+BYTE 25		Grade_D		PlusSign
+BYTE 30		Grade_C		NoSign
+BYTE 35		Grade_C		PlusSign
+BYTE 40		Grade_B		NoSign
+BYTE 50		Grade_B		PlusSign
+BYTE 70		Grade_A		NoSign
+BYTE 100	Grade_A		PlusSign
+BYTE 250	Grade_S		NoSign
 // "terminator" since growths can't exceed 255
 BYTE 255 	Grade_S		PlusSign
 
 ALIGN 4
 HPGrowthGradeList:
-BYTE 30		Grade_E		NoSign
-BYTE 35		Grade_E		PlusSign
-BYTE 40		Grade_D		NoSign
-BYTE 45		Grade_D		PlusSign
-BYTE 55		Grade_C		NoSign
-BYTE 65		Grade_C		PlusSign
-BYTE 75		Grade_B		NoSign
-BYTE 90		Grade_B		PlusSign
-BYTE 110	Grade_A		NoSign
-BYTE 130	Grade_A		PlusSign
-BYTE 145	Grade_S		NoSign
+BYTE 35		Grade_E		NoSign
+BYTE 40		Grade_E		PlusSign
+BYTE 45		Grade_D		NoSign
+BYTE 55		Grade_D		PlusSign
+BYTE 65		Grade_C		NoSign
+BYTE 75		Grade_C		PlusSign
+BYTE 90		Grade_B		NoSign
+BYTE 110	Grade_B		PlusSign
+BYTE 130	Grade_A		NoSign
+BYTE 145	Grade_A		PlusSign
+BYTE 250	Grade_S		NoSign
 // "terminator" since growths can't exceed 255
 BYTE 255 	Grade_S		MinusSign
 

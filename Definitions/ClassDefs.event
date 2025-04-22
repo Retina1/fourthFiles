@@ -56,3 +56,4 @@
 #define Souldier 0x38
 #define DivineMagus 0x39
 #define AnswererClass 0x3A
+#define Squirrel 0x7F

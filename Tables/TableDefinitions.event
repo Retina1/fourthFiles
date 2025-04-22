@@ -45,8 +45,8 @@
 #endif
 #define MonsterWeapon 0x00000400
 #define WeaponLock1 0x00000800
-#define SwordmasterLock 0x00001000
-#define WeaponLock2 0x00002000
+#define SwordmasterLock 0x00002000
+#define WeaponLock2 0x00001000
 #define NegateFlyingEffectiveness 0x00004000
 #define NegateCriticals 0x00008000
 #define CannotUse 0x00010000
@@ -92,6 +92,7 @@
 #define IsFemale 0x00004000
 #define IsBoss 0x00008000
 #define UnlockLock1 0x00010000
+#define UnlockLock2 0x00010000
 #define SwordmasterUnlock 0x00020000
 #define UseMonsterWeapons 0x00040000
 #ifdef _FE7_

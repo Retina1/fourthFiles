@@ -1,0 +1,20 @@
+//Favoritism
+//Exp
+//Level
+//TilesMoved
+//Deploy
+//AddWinLossSeemsIrrelevant
+//80A4A34
+//80A49FC
+//80A478C
+//80A49C8
+//80A49A4(?)
+//80A487C
+//80A49C8
+//80A4978
+//80A481C
+//80A474C
+//80A47CC
+//80A4684
+.thumb
+bx		r14

@@ -1,3 +1,4 @@
 #include "ClassDefs.event"
 #include "UnitDefs.event"
 #include "ChapterDefs.event"
+#include "PortraitDefs.event"

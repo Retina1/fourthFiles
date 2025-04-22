@@ -1,0 +1,91 @@
+	#define BWL_LOCATION 0x02026EB0
+
+	PUSH
+
+		//change save data shit to actually use the new ram location
+		ORG 0xA4280
+		WORD BWL_LOCATION
+		ORG 0xA4240
+		WORD BWL_LOCATION
+		ORG 0xA4184
+		WORD BWL_LOCATION
+
+		//adjust vanilla code to save and load 0x500 bytes
+		ORG 0xA426A
+		BYTE 0x05 0x22//mov r2,#0x05
+		BYTE 0x12 0x02//lsl r2,#0x08
+
+		ORG 0xA4224
+		BYTE 0x05 0x22//mov r2,#0x05
+		BYTE 0x12 0x02//lsl r2,#0x08
+
+		ORG 0xA44DC
+		jumpToHack(AddBattle)
+
+		ORG 0xA453C
+		jumpToHack(AddWin)
+
+		ORG 0xA45AC
+		jumpToHack(AddLoss)
+	
+		ORG 0xA4CFC
+		jumpToHack(GetEntry)
+	
+		ORG 0x87048
+		jumpToHack(StatScreenDraw)
+////////////////////////////////////////
+	
+		ORG 0xA4A34
+		jumpToHack(DummyFunction)
+		ORG 0xA49FC
+		jumpToHack(DummyFunction)
+		ORG 0xA478C
+		jumpToHack(DummyFunction)
+		ORG 0xA49C8
+		jumpToHack(DummyFunction)
+		ORG 0xA49A4
+		jumpToHack(DummyFunction)
+		ORG 0xA487C
+		jumpToHack(DummyFunction)
+		ORG 0xA49C8
+		jumpToHack(DummyFunction)
+		ORG 0xA4978
+		jumpToHack(DummyFunction)
+		ORG 0xA481C
+		jumpToHack(DummyFunction)
+		ORG 0xA474C
+		jumpToHack(DummyFunction)
+		ORG 0xA47CC
+		jumpToHack(DummyFunction)
+		ORG 0xA4684
+		jumpToHack(DummyFunction)
+
+
+		
+	POP
+
+	ALIGN 4
+	AddBattle:
+	#incbin "AddBattle.dmp"
+
+	ALIGN 4
+	AddWin:
+	#incbin "AddWin.dmp"
+
+	ALIGN 4
+	AddLoss:
+	#incbin "AddLoss.dmp"
+
+	ALIGN 4
+	GetEntry:
+	#incbin "GetEntry.dmp"
+
+	ALIGN 4
+	StatScreenDraw:
+	#incbin "StatScreenDraw.dmp"
+
+	ALIGN 4
+	DummyFunction:
+	#incbin "DummyFunction.dmp"
+	
+	

@@ -18,6 +18,7 @@ ORG FreeSpaceBLRange //defined in custom definitions
 POP
 
 #include "EssentialFixes.event"
+#include "AddressPatches.event"
 #include "EMS/ExModularSave.event"
 #include "StatGetters/_InstallStatGetters.event"
 //#include "StrMag/Suspend.event"
@@ -28,6 +29,8 @@ POP
 #include "CZone/Main.lyn.event"
 #include "NarrowFont/NarrowFontInstaller.event"
 #include "ChapterNames/fe8_chnames.event"
+#include "BWLRework/BWLNEW.event"
+#include "WalkSounds/WalkSounds.txt"
 
 
 //bwl?

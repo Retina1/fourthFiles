@@ -63,9 +63,398 @@ MovingMapSprite(Swordfighter, AP1, SwordfighterMMS)
 StandingMapSprite(Landsknecht,MapSprite16x16,LandsknechtSMS)
 MovingMapSprite(Landsknecht, AP2Hero, LandsknechtMMS)
 
+StandingMapSprite(Knight,MapSprite16x16,KnightSMS)
+MovingMapSprite(Knight, AP1, KnightMMS)
+StandingMapSprite(Hoplite,MapSprite16x32,HopliteSMS)
+MovingMapSprite(Hoplite, AP1, HopliteMMS)
+
+StandingMapSprite(Axefighter,MapSprite16x16,AxefighterSMS)
+MovingMapSprite(Axefighter, AP1, AxefighterMMS)
+StandingMapSprite(Gladiator,MapSprite16x32,GladiatorSMS)
+MovingMapSprite(Gladiator, AP1, GladiatorMMS)
+
+StandingMapSprite(Archer,MapSprite16x16,ArcherSMS)
+MovingMapSprite(Archer, AP1, ArcherMMS)
+StandingMapSprite(Sniper,MapSprite16x16,SniperSMS)
+MovingMapSprite(Sniper, AP1, SniperMMS)
 
 StandingMapSprite(Scholar,MapSprite16x16,ScholarSMS)
 MovingMapSprite(Scholar, AP1, ScholarMMS)
+StandingMapSprite(Warlock,MapSprite16x16,WarlockSMS)
+MovingMapSprite(Warlock, AP1, WarlockMMS)
+
+StandingMapSprite(Curate,MapSprite16x16,CurateSMS)
+MovingMapSprite(Curate, AP1, CurateMMS)
+StandingMapSprite(Medic,MapSprite16x16,MedicSMS)
+MovingMapSprite(Medic, AP1, MedicMMS)
+
+StandingMapSprite(Myrmidon,MapSprite16x16,MyrmidonSMS)
+MovingMapSprite(Myrmidon, AP1, MyrmidonMMS)
+StandingMapSprite(Ronin,MapSprite16x16,RoninSMS)
+MovingMapSprite(Ronin, AP1, RoninMMS)
+
+StandingMapSprite(Rider,MapSprite16x32,RiderSMS)
+MovingMapSprite(Rider, AP1, RiderMMS)
+StandingMapSprite(Strider,MapSprite16x32,StriderSMS)
+MovingMapSprite(Strider, AP1, StriderMMS)
+
+StandingMapSprite(Raider,MapSprite16x32,RaiderSMS)
+MovingMapSprite(Raider, AP1, RaiderMMS)
+StandingMapSprite(Trailblazer,MapSprite16x32,TrailblazerSMS)
+MovingMapSprite(Trailblazer, AP1, TrailblazerMMS)
+
+//GUNNER AND DRAGOON NEEDED - probably custom
+
+StandingMapSprite(Poet,MapSprite16x16,PoetSMS)
+MovingMapSprite(Poet, AP1, PoetMMS)
+StandingMapSprite(Troubadour,MapSprite16x16,TroubadourSMS)
+MovingMapSprite(Troubadour, AP1, TroubadourMMS)
+
+StandingMapSprite(Seeker,MapSprite16x16,SeekerSMS)
+MovingMapSprite(Seeker, AP1, SeekerMMS)
+StandingMapSprite(Runemaster,MapSprite16x16,RunemasterSMS)
+MovingMapSprite(Runemaster, AP1, RunemasterMMS)
+
+StandingMapSprite(Priest,MapSprite16x16,PriestSMS)
+MovingMapSprite(Priest, AP1, PriestMMS)
+StandingMapSprite(WarMagus,MapSprite16x16,WarMagusSMS)
+MovingMapSprite(WarMagus, AP1, WarMagusMMS)
+
+StandingMapSprite(Lurker,MapSprite16x16,LurkerSMS)
+MovingMapSprite(Lurker, AP1, LurkerMMS)
+StandingMapSprite(Hexer,MapSprite16x16,HexerSMS)
+MovingMapSprite(Hexer, AP1, HexerMMS)
+
+//DARK HUNTER AND DOMINATOR NEEDED - custom
+
+StandingMapSprite(Lancer,MapSprite16x16,LancerSMS)
+MovingMapSprite(Lancer, AP1, LancerMMS)
+StandingMapSprite(Highlander,MapSprite16x32,HighlanderSMS)
+MovingMapSprite(Highlander, AP1, HighlanderMMS)
+
+StandingMapSprite(Brawler,MapSprite16x16,BrawlerSMS)
+MovingMapSprite(Brawler, AP1, BrawlerMMS)
+StandingMapSprite(Pugilist,MapSprite16x32,PugilistSMS)
+MovingMapSprite(Pugilist, AP1, PugilistMMS)
+
+StandingMapSprite(Hunter,MapSprite16x16,HunterSMS)
+MovingMapSprite(Hunter, AP1, HunterMMS)
+StandingMapSprite(Survivalist,MapSprite16x16,SurvivalistSMS)
+MovingMapSprite(Survivalist, AP1, SurvivalistMMS)
+
+StandingMapSprite(SkyKnight,MapSprite16x32,SkyKnightSMS)
+MovingMapSprite(SkyKnight, AP1, SkyKnightMMS)
+StandingMapSprite(Seraph,MapSprite16x32,SeraphSMS)
+MovingMapSprite(Seraph, AP1, SeraphMMS)
+
+StandingMapSprite(ScaleKnight,MapSprite16x32,ScaleKnightSMS)
+MovingMapSprite(ScaleKnight, AP1, ScaleKnightMMS)
+StandingMapSprite(Scalemaster,MapSprite16x32,ScalemasterSMS)
+MovingMapSprite(Scalemaster, AP1, ScalemasterMMS)
+
+//APOTHCARY AND BOTANIST NEEDED - maybe dig?
+
+//ENCIRCLER AND ARCANIST NEEDED - dig more
+
+//CALLER AND NECROMANCER NEEDED - dig more
+
+StandingMapSprite(Noble,MapSprite16x16,NobleSMS)
+MovingMapSprite(Noble, AP1, NobleMMS)
+StandingMapSprite(Sovereign,MapSprite16x16,SovereignSMS)
+MovingMapSprite(Sovereign, AP1, SovereignMMS)
+
+StandingMapSprite(Duelist,MapSprite16x16,DuelistSMS)
+MovingMapSprite(Duelist, AP1, DuelistMMS)
+StandingMapSprite(Fencer,MapSprite16x16,FencerSMS)
+MovingMapSprite(Fencer, AP1, FencerMMS)
+
+//DRIVER AND IMPERIAL NEEDED - maybe sword armors, maybe custom
+
+//ARTIFICE AND AUTOMATON NEEDED - custom rpobably
+
+StandingMapSprite(Soul,MapSprite16x16,SoulSMS)
+MovingMapSprite(Soul, AP1, SoulMMS)
+StandingMapSprite(Souldier,MapSprite16x16,SouldierSMS)
+MovingMapSprite(Souldier, AP1, SouldierMMS)
+
+StandingMapSprite(Squirrel,MapSprite16x16,SquirrelSMS)
+MovingMapSprite(Squirrel, AP1, SquirrelMMS)
+
+ALIGN 4
+SquirrelSMS:
+#incbin "Dmp/Squirrel-stand.dmp"
+ALIGN 4
+SquirrelMMS:
+#incbin "Dmp/Squirrel-move.dmp"
+
+ALIGN 4
+SoulSMS:
+#incbin "Dmp/Ghost (U) 16x16 {Eldritch Abomination}-stand.dmp"
+ALIGN 4
+SoulMMS:
+#incbin "Dmp/Ghost (U) {Eldritch Abomination}-walk.dmp"
+
+ALIGN 4
+SouldierSMS:
+#incbin "Dmp/Phantom (U) {IS, Pushwall}-stand.dmp"
+ALIGN 4
+SouldierMMS:
+#incbin "Dmp/Phantom (U) {IS}-walk.dmp"
+
+ALIGN 4
+DuelistSMS:
+#incbin "Dmp/Lord (F) Lucina Sword {BatimaTheBat}-stand.dmp"
+ALIGN 4
+DuelistMMS:
+#incbin "Dmp/Lord (F) Lucina Sword {BatimaTheBat}-walk.dmp"
+
+ALIGN 4
+FencerSMS:
+#incbin "Dmp/Lord (F) Priestess Sword {blood}-stand.dmp"
+ALIGN 4
+FencerMMS:
+#incbin "Dmp/Lord (F) Priestess Celica Sword {blood}-walk.dmp"
+
+ALIGN 4
+NobleSMS:
+#incbin "Dmp/Prince (M) Standing {EldritchAbomination}.dmp"
+ALIGN 4
+NobleMMS:
+#incbin "Dmp/Prince (M) Moving {EldritchAbomination}.dmp"
+
+ALIGN 4
+SovereignSMS:
+#incbin "Dmp/Outlander (M) 16x16 {J-Treecko}-stand.dmp"
+ALIGN 4
+SovereignMMS:
+#incbin "Dmp/Outlander (M) {J-Treecko}-walk.dmp"
+
+ALIGN 4
+ScaleKnightSMS:
+#incbin "Dmp/Wyvern Rider (U) Axe {Unknown}-stand.dmp"
+ALIGN 4
+ScaleKnightMMS:
+#incbin "Dmp/Wyvern Rider (U) Axe {Unknown}-walk.dmp"
+
+ALIGN 4
+ScalemasterSMS:
+#incbin "Dmp/Wyvern Lord (M) Helmless Axe {flasuban}-stand.dmp"
+ALIGN 4
+ScalemasterMMS:
+#incbin "Dmp/Wyvern Lord (M) Helmless Axe {flasuban}-walk.dmp"
+
+ALIGN 4
+SkyKnightSMS:
+#incbin "Dmp/Pegasi (F) T1 Lance {flasuban}-stand.dmp"
+ALIGN 4
+SkyKnightMMS:
+#incbin "Dmp/Pegasi (F) T1 Lance (Flasuban)-walk.dmp"
+
+ALIGN 4
+SeraphSMS:
+#incbin "Dmp/Seraph Knight (F) Lance {CamusZekeSirius, flasuban}-stand.dmp"
+ALIGN 4
+SeraphMMS:
+#incbin "Dmp/Seraph Knight (F) Lance {CamusZekeSirius, flasuban}-walk.dmp"
+
+ALIGN 4
+HunterSMS:
+#incbin "Dmp/Hunter (M) {MeatOfJustice}-stand.dmp"
+ALIGN 4
+HunterMMS:
+#incbin "Dmp/Hunter (M) {MeatOfJustice}-walk.dmp"
+
+ALIGN 4
+SurvivalistSMS:
+#incbin "Dmp/Marksman (M) Nuramon-style {ArcherBias}-stand.dmp"
+ALIGN 4
+SurvivalistMMS:
+#incbin "Dmp/Marksman (M) Nuramon-style {ArcherBias}-walk.dmp"
+
+ALIGN 4
+BrawlerSMS:
+#incbin "Dmp/Boxer (M) {ShadowAllyX}-stand.dmp"
+ALIGN 4
+BrawlerMMS:
+#incbin "Dmp/Boxer (M) {ShadowAllyX}-walk.dmp"
+
+ALIGN 4
+PugilistSMS:
+#incbin "Dmp/Berserker (M) Magic {ZoramineFae}-stand.dmp"
+ALIGN 4
+PugilistMMS:
+#incbin "Dmp/Berserker (M) Magic {ZoramineFae}-walk.dmp"
+
+ALIGN 4
+LancerSMS:
+#incbin "Dmp/Dismounted (M) Lance {ArcherBias}-stand.dmp"
+ALIGN 4
+LancerMMS:
+#incbin "Dmp/Dismounted (M) Lance {ArcherBias}-walk.dmp"
+
+ALIGN 4
+HighlanderSMS:
+#incbin "Dmp/Sergeant (M) {Spud}-stand.dmp"
+ALIGN 4
+HighlanderMMS:
+#incbin "Dmp/Sergeant (M) {Spud}-walk.dmp"
+
+ALIGN 4
+LurkerSMS:
+#incbin "Dmp/Shaman (M) Occultist {Devisian_Nights, Pikmin}-stand.dmp"
+ALIGN 4
+LurkerMMS:
+#incbin "Dmp/Shaman (M) Occultist {Devisian_Nights, Pikmin}-walk.dmp"
+
+ALIGN 4
+HexerSMS:
+#incbin "Dmp/Summoner (M) 16x16 {IS}-stand.dmp"
+ALIGN 4
+HexerMMS:
+#incbin "Dmp/Summoner (M) {IS}-walk.dmp"
+
+ALIGN 4
+PriestSMS:
+#incbin "Dmp/Dismounted (F) Sword {ArcherBias}-stand.dmp"
+ALIGN 4
+PriestMMS:
+#incbin "Dmp/Dismounted (F) Sword {ArcherBias}-walk.dmp"
+
+ALIGN 4
+WarMagusSMS:
+#incbin "Dmp/Sage (F) Battle Sage Sword {Leif, L95}-stand.dmp"
+ALIGN 4
+WarMagusMMS:
+#incbin "Dmp/Sage (F) Battle Sage Sword {Leif, L95}-walk.dmp"
+
+
+ALIGN 4
+SeekerSMS:
+#incbin "Dmp/Monk (F) {Teraspark}-stand.dmp"
+ALIGN 4
+SeekerMMS:
+#incbin "Dmp/Monk (F) {Teraspark}-walk.dmp"
+
+ALIGN 4
+RunemasterSMS:
+#incbin "Dmp/Sage (F) Better {Shtick, L95, Hanakko}-stand.dmp"
+ALIGN 4
+RunemasterMMS:
+#incbin "Dmp/Sage (F) Better {Shtick, L95}-walk.dmp"
+
+ALIGN 4
+PoetSMS:
+#incbin "Dmp/Bard (M) FE5 {ArcherBias}-stand.dmp"
+ALIGN 4
+PoetMMS:
+#incbin "Dmp/Bard (M) FE5 {ArcherBias}-walk.dmp"
+
+ALIGN 4
+TroubadourSMS:
+#incbin "Dmp/Bard (M) Fancy {MeatOfJustice}-stand.dmp"
+ALIGN 4
+TroubadourMMS:
+#incbin "Dmp/Bard (M) Fancy {MeatOfJustice}-walk.dmp"
+
+
+ALIGN 4
+RaiderSMS:
+#incbin "Dmp/Axe Cavalier (M) {Leo_Link}-stand.dmp"
+ALIGN 4
+RaiderMMS:
+#incbin "Dmp/Axe Cavalier (M) {Leo_Link}-walk.dmp"
+
+ALIGN 4
+TrailblazerSMS:
+#incbin "Dmp/Great Knight (M) Alt Axe {Pikmin, L95, Der}-stand.dmp"
+ALIGN 4
+TrailblazerMMS:
+#incbin "Dmp/Great Knight (M) Alt Axe {Pikmin, L95, Der}-walk.dmp"
+
+ALIGN 4
+RiderSMS:
+#incbin "Dmp/Cavalier (M) Lance {SALVAGED}-stand.dmp"
+ALIGN 4
+RiderMMS:
+#incbin "Dmp/Cavalier (M) Lance {SALVAGED}-walk.dmp"
+
+ALIGN 4
+StriderSMS:
+#incbin "Dmp/Gold Knight (U) Lance {Hypergammaspaces}-stand.dmp"
+ALIGN 4
+StriderMMS:
+#incbin "Dmp/Gold Knight (U) Lance {Hypergammaspaces}-walk.dmp"
+
+ALIGN 4
+MyrmidonSMS:
+#incbin "Dmp/Myrmidon (M) Awakening-Style {Leo_link}-stand.dmp"
+ALIGN 4
+MyrmidonMMS:
+#incbin "Dmp/Myrmidon (M) Awakening-Style {Leo_link}-walk.dmp"
+
+ALIGN 4
+RoninSMS:
+#incbin "Dmp/Dread Fighter (M) {Nuramon}-stand.dmp"
+ALIGN 4
+RoninMMS:
+#incbin "Dmp/Dread Fighter (M) {Nuramon}-walk.dmp"
+
+ALIGN 4
+CurateSMS:
+#incbin "Dmp/Cleric (M) Trainee {Tdim}-stand.png.dmp"
+ALIGN 4
+CurateMMS:
+#incbin "Dmp/Cleric (M) Trainee {Tdim}-walk.png.dmp"
+
+ALIGN 4
+MedicSMS:
+#incbin "Dmp/Bishop (M) Hatless Pants {Permafrost}-stand.dmp"
+ALIGN 4
+MedicMMS:
+#incbin "Dmp/Bishop (M) Hatless Pants {Permafrost}-walk.dmp"
+
+ALIGN 4
+ArcherSMS:
+#incbin "Dmp/Archer (M) Improved v1 {Der}-stand.dmp"
+ALIGN 4
+ArcherMMS:
+#incbin "Dmp/Archer (M) Improved v1 {Der}-walk.dmp"
+
+ALIGN 4
+SniperSMS:
+#incbin "Dmp/Sniper (M) v2 {ArcherBias}-stand.dmp"
+ALIGN 4
+SniperMMS:
+#incbin "Dmp/Sniper (M) v2 {ArcherBias}-walk.dmp"
+
+
+ALIGN 4
+AxefighterSMS:
+#incbin "Dmp/Fighter (M) Revamped Axe {Alusq}-stand.dmp"
+ALIGN 4
+AxefighterMMS:
+#incbin "Dmp/Fighter (M) Revamped Axe {Alusq}-walk.dmp"
+
+ALIGN 4
+GladiatorSMS:
+#incbin "Dmp/Warrior (M) Tellius + helmet {Rasdel, Jey the Count}-stand.dmp"
+ALIGN 4
+GladiatorMMS:
+#incbin "Dmp/Warrior (M) Tellius + helmet {Rasdel, Jey the Count}-walk.dmp"
+
+ALIGN 4
+KnightSMS:
+#incbin "Dmp/Knight (U) FE10-Hybrid-Style Lance {Nuramon, flasuban}-stand.dmp"
+ALIGN 4
+KnightMMS:
+#incbin "Dmp/Knight (U) FE10-Hybrid-Style Lance {Nuramon, flasuban}-walk.dmp"
+
+ALIGN 4
+HopliteSMS:
+#incbin "Dmp/Baron (U) Lance {Topazlight, Nuramon, Its_Just_Jay}-stand.dmp"
+ALIGN 4
+HopliteMMS:
+#incbin "Dmp/Baron (U) Lance {Topazlight, Nuramon, Its_Just_Jay}-walk.dmp"
 
 ALIGN 4
 SwordfighterSMS:
@@ -85,3 +474,9 @@ ScholarSMS:
 ALIGN 4
 ScholarMMS:
 #incbin "Dmp/Mage (M) Hatless {Pikmin}-walk.dmp"
+ALIGN 4
+WarlockSMS:
+#incbin "Dmp/Sage (M) FE2 (Leif, MeatofJustice)-stand.dmp"
+ALIGN 4
+WarlockMMS:
+#incbin "Dmp/Sage (M) FE2 (Leif, MeatofJustice)-walk.dmp"

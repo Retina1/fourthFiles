@@ -10,9 +10,10 @@ mov		r14,r0
 ldr		r0,[r4]
 ldrb	r0,[r0,#0x4]		@char number
 lsl		r0,#0x1
-ldr		r1,MagCharTable
+ldr		r1,CharTable
 add		r0,r1
-ldrb	r0,[r0,#0x1]
+mov		r1,#0x23
+ldrb	r0,[r0,r1]
 mov		r1,r5
 .short	0xF800
 mov		r1,r4
@@ -46,4 +47,4 @@ bx		r1
 .align
 GetGrowthChance:
 .long 0x0802B9C4
-MagCharTable:
+CharTable:

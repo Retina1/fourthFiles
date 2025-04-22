@@ -2,3 +2,73 @@
 Shortsword[X]
 ##Desc_Shortsword ^
 A cheap and basic slashing weapon.[X]
+
+##Name_Scramasax
+Scramasax[X]
+##Desc_Scramasax ^
+A large and crude combat knife.[X]
+
+##Name_Boarblade
+Boarblade[X]
+##Desc_Boarblade ^
+A heavy weapon named for its prey.[X]
+
+##Name_Claymore
+Claymore[X]
+##Desc_Claymore ^
+A massively powerful and weighty blade.[X]
+
+##Name_Executor
+Executor[X]
+##Desc_Executor ^
+A brutal blade used by headsmen.[X]
+
+##Name_Zweihander
+Zweihander[X]
+##Desc_Zweihander ^
+An awkward but mighty two-handed sword.[X]
+
+##Name_DvergrSword
+Dvergr Swd.[X]
+##Desc_DvergrSword ^
+The legendary long sword itself.[X]
+
+##Name_Caladbolg
+Caladbolg[X]
+##Desc_Caladbolg ^
+A legendary sword that can cut through all.[X]
+
+##Name_Brightsword
+Brightsword[X]
+##Desc_Brightsword ^
+A blessed sword effective against monsters.[X]
+
+##Name_Magebane
+Magebane[X]
+##Desc_Magebane ^
+A warding blade effective against magic users.[X]
+
+##Name_Bluntblade
+Bluntblade[X]
+##Desc_Bluntblade ^
+A weighty blade effective against lances/rapiers.[X]
+
+##Name_Roughslash
+Roughslash[X]
+##Desc_Roughslash ^
+A rugged sword effective against axes/fists.[X]
+
+##Name_Muzzler
+Muzzler[X]
+##Desc_Muzzler ^
+A bizarre sword effective against bows/guns.[X]
+
+##Name_Headhunter
+Headhunter[X]
+##Desc_Headhunter ^
+A regal blade effective vs. Noble/Driver classes.[X]
+
+##Name_SuperiorBlade
+Superior Bld.[X]
+##Desc_SuperiorBlade ^
+A mighty blade eff. vs. swords/whips/drive blades.[X]

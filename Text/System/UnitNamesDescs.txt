@@ -33,8 +33,8 @@ He craves an adventurer's glory.[X]
 ##Name_Helman
 Helman[X]
 ##Desc_Helman
-A renegade from Belvarus's armored division.[N]
-He's a hard worker despite his desertion.[X]
+An armored renegade from Belvarus.[N]
+He's reliable despite his desertion.[X]
 
 // ch 4
 ##Name_Rat
@@ -54,8 +54,8 @@ She's only around to make a quick buck.[X]
 ##Name_Galvin
 Galvin[X]
 ##Desc_Galvin
-An Asketan hitman assigned to the wastes[N]
-expedition. He only somewhat resents it.[X]
+An Asketan hitman forced into the[N]
+wastes expedition. He's resentful.[X]
 
 // ch 12
 ##Name_Ioria
@@ -156,6 +156,13 @@ Cassandra[X]
 A foreign scholar who believes magic is[N]
 the next step of evolution. Amoral.[X]
 
+//trish by benfrosh (curate)
+##Name_Trish
+Trish[X]
+##Desc_Trish
+A Belvarusi medic who's down on[N]
+her luck. Kindly and well-kept.[X]
+
 // act 1 - standard corps: ronin, rider, raider, gunner
 //natsuki by lumi
 ##Name_Natsuki
@@ -167,7 +174,7 @@ She's equal parts prideful and curious.[X]
 // act 1 - magus guild: poet, seeker, priest, lurker
 //Leonzio by gold
 ##Name_Leonzio
-Leonzio
+Leonzio[X]
 ##Desc_Leonzio
 A foreign diplomat visiting Asketa.[N]
 He's concerningly loose-lipped.[X]
@@ -178,6 +185,13 @@ Phespher[X]
 ##Desc_Phespher
 A Belvarusi seeker looking to broaden[N]
 his horizons. A nice but blunt guy.[X]
+
+//Saewynn by hiraya
+##Name_Saewynn
+Saewynn[X]
+##Desc_Saewynn
+A Belvarusi priest and former Endbringer.[N]
+She's unsure of where to go in life.[X]
 
 // act 1 - special ops: dark hunter, lancer, brawler, hunter
 //Shīliăng by levin (get accented characters later, brawler)
@@ -196,6 +210,12 @@ a curse that's altered his body and mind.[X]
 
 
 // act 2 - skyshroud division: sky knight, scale knight
+##Name_Atilius
+Atilius[X]
+##Desc_Atilius
+A former magical prodigy trying out[N]
+dragon taming. ...He'll be fine.[X]
+
 
 // act 2 - lifeflow league: apothecary, encircler, caller
 //alg caller - gardener that kills people - Belvarus rural girl. Area ravaged by famine, fields destroyed, salted earth, nothing grows. She has grown an exuberant garden, loads of food, travelers stop on the road and rest, and eat like kings. Then while they sleep with full bellies they're killed and their souls fuel the soil. Caller. She got caught and ran to Asketa.
@@ -203,8 +223,8 @@ a curse that's altered his body and mind.[X]
 ##Name_Leize
 Leize[X]
 ##Desc_Leize
-A wandering botanist who seeks to preserve[N]
-a flower with ties to her family. Tired.[X]
+A botanist who seeks to preserve[N]
+a flower with familial ties. Tired.[X]
 
 //compass by roxas (encircler)
 ##Name_Compass
@@ -212,6 +232,13 @@ Compass[X]
 ##Desc_Compass
 A young Asketan tinkerer searching for[N]
 his grandpa. Anxious yet resolute.[X]
+
+//hiraya again
+##Name_Katrin
+Katrin[X]
+##Desc_Katrin
+A sharp encircler raised in the Guild.[N]
+She believes the strong should thrive.[X]
 
 // act 2 - upper senatus: noble, duelist
 
@@ -226,7 +253,7 @@ manner belies his virtuous character.[X]
 ##Name_Francesca
 Francesca[X]
 ##Desc_Francesca
-A modest fencer from the slums of Asketa.[N]
+A modest fencer from the Asketan slums.[N]
 She wants off this wretched continent.[X]
 
 // act 3 - imperial remnants: driver

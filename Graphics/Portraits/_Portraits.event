@@ -1,0 +1,82 @@
+#define PortraitTable NewPortraitTable
+#define MaxPortraitEntries 0x1ff
+
+#define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y) "PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
+ALIGN 4
+NewPortraitTable:
+	#incbin "NewPortraitTable.bin"
+	ORG NewPortraitTable + (MaxPortraitEntries * 28)
+
+PUSH
+	ORG $5524
+	POIN PortraitTable
+
+POP
+
+#include "mug_exceed/EA.txt"
+
+ALIGN 4
+//Rivian
+CoastKidDMP:
+#incbin "dmps/rivianCoastKid.dmp"
+setMugEntry(CoastKidMug,CoastKidDMP,4,7,4,5)
+
+ALIGN 4
+//alex
+TristaoDMP:
+#incbin "dmps/alexTristao.dmp"
+setMugEntryExtend(TristaoMug,TristaoDMP, 3,4, 3,2, 12,8, 12,6)
+
+ALIGN 4
+//doob
+PhespherDMP:
+#incbin "dmps/doobPhespher.dmp"
+setMugEntry(PhespherMug,PhespherDMP,2,5,3,3)
+
+ALIGN 4
+//gold
+LeonzioDMP:
+#incbin "dmps/goldLeonzio.dmp"
+setMugEntry(LeonzioMug,LeonzioDMP,3,5,3,3)
+
+ALIGN 4
+//lorca
+DrogoDMP:
+#incbin "dmps/lorcaDrogo.dmp"
+setMugEntry(DrogoMug,DrogoDMP,3,5,3,3)
+
+ALIGN 4
+//lumi
+NatsukiDMP:
+#incbin "dmps/lumiNatsuki.dmp"
+setMugEntryExtend(NatsukiMug,NatsukiDMP,3,5,3,3, 5,(-2), 7,(-2))
+
+ALIGN 4
+//retina
+AstarteDMP:
+#incbin "dmps/retinaAstarte.dmp"
+setMugEntry(AstarteMug,AstarteDMP,3,5,3,3)
+
+ALIGN 4
+//roxas
+CompassDMP:
+#incbin "dmps/roxasCompass.dmp"
+setMugEntry(CompassMug,CompassDMP,3,7,3,5)
+
+ALIGN 4
+//sigma
+LeizeDMP:
+#incbin "dmps/sigmaLeize.dmp"
+setMugEntry(LeizeMug,LeizeDMP,3,6,3,4)
+
+ALIGN 4
+//vyland
+FeefasnanDMP:
+#incbin "dmps/vylandFeefasnan.dmp"
+setMugEntry(FeefasnanMug,FeefasnanDMP,3,6,5,3)
+
+ALIGN 4
+//zappy
+CassandraDMP:
+#incbin "dmps/zappyCassandra.dmp"
+setMugEntry(CassandraMug,CassandraDMP,3,5,3,3)

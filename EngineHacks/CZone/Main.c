@@ -3,4 +3,7 @@
 #include "LoadUnitBases.c"
 #include "NewPromoGains.c"
 #include "Caps.c"
+#include "BattleStats.c"
+#include "ExpCalcs.c"
+#include "NewAutoLeveling.c"
 

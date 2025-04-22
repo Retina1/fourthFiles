@@ -1,1 +1,3 @@
 #include "MapSprites/_MapSpriteInstaller.event"
+#include "Portraits/_Portraits.event"
+#include "Portraits/_PortraitHeight.event"

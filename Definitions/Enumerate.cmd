@@ -3,3 +3,4 @@
 enumerate "Units.txt" "UnitDefs.event"
 enumerate "Classes.txt" "ClassDefs.event"
 enumerate "Chapters.txt" "ChapterDefs.event"
+enumerate "Portraits.txt" "PortraitDefs.event"
