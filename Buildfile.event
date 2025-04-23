@@ -18,14 +18,13 @@ PUSH
 
 POP
 
-
 #include "Tools\Tool Helpers.txt"
 
 
 ALIGN 4
 #include "Tilesets\_TilesetInstaller.event"
 ALIGN 4
-#include "Maps\MasterMapInstaller.event
+#include "Maps\MasterMapInstaller.event"
 ALIGN 4
 #include "Graphics\_Graphics.event"
 
@@ -35,11 +34,21 @@ ALIGN 4
 ALIGN 4
 #include "Tables\Table Installer.event"
 
+#undef ItemTable
+#define ItemTable NewItemTable
+
 ALIGN 4
 #include "EngineHacks\MasterHackInstaller.event"
 
 ALIGN 4
 #include "Events\_ChapterEventsInstaller.event"
+
+
+ // CRC Correction
+    ALIGN 16
+    WORD 0 0 0 0
+    MESSAGE Used free space ends at currentOffset
+	MESSAGE it is time to live again
 
 
 //promo items

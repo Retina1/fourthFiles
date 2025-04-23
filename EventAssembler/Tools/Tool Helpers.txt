@@ -21,16 +21,15 @@
 #endif
 
 
-/*
 #ifdef _FE8_
 #ifndef TextTable
     #define TextTable 0x15D48C
 #endif
-#ifndef PortraitTable
-    #define PortraitTable 0x8ACBC4
+//#ifndef PortraitTable
+//    #define PortraitTable 0x8ACBC4
+//#endif
 #endif
-#endif
-*/
+
 
 //For use with ParseFile
 #define setText(textID, offset) "PUSH; ORG (TextTable+4*textID); POIN (offset | 0x80000000); POP" //Anti-huffman

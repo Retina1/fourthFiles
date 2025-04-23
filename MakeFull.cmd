@@ -15,9 +15,9 @@ echo: | (tmx2ea -s -O "MasterMapInstaller.event")
 
 
 cd "%~dp0EventAssembler"
-Core A FE8 "-output:%~dp0FE_Hack.gba" "-input:%~dp0Buildfile.event"
+ColorzCore A FE8 "-output:%~dp0FE_Hack.gba" "-input:%~dp0Buildfile.event"
 
 cd "%~dp0ups"
-ups diff -b "%~dp0FE8_clean.gba" -m "%~dp0FE_Hack.gba" -o "%~dp0Release\Fourthhack.ups"
+ups diff -b "%~dp0FE8_clean.gba" -m "%~dp0FE_Hack.gba" -o "%~dp0Fourthhack.ups"
 
 pause

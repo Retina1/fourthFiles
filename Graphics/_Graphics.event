@@ -1,3 +1,38 @@
 #include "MapSprites/_MapSpriteInstaller.event"
 #include "Portraits/_Portraits.event"
 #include "Portraits/_PortraitHeight.event"
+#include "RemoveFog/RemoveEffects.event"
+
+//doing this now to save maximal freespace
+#include "BattlePlatforms/BattlePlatformInstaller.event"
+
+//remove glowy circle?
+PUSH
+ORG $88590
+SHORT 0x0000 0x0000
+POP
+
+
+PUSH
+ORG $88638
+POIN NewStatScreen
+ORG $88640
+POIN NewStatScreenPal
+//ORG 0xA06460 
+//#incbin "Dmp/SD9K_StatScreen_pal.dmp"
+ORG $88644
+POIN NewStatScreenTSA
+ORG $88590
+SHORT 0x0000 0x0000
+POP
+
+
+ALIGN 4
+NewStatScreen:
+#incbin "BuilderDumped/StatusBG.png.dmp"
+ALIGN 4
+NewStatScreenPal:
+#incbin "BuilderDumped/StatusBG.png.pal.dmp"
+ALIGN 4
+NewStatScreenTSA:
+#incbin "BuilderDumped/StatusBG.png.tsa.dmp"

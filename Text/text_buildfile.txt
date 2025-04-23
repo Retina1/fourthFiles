@@ -18,11 +18,16 @@ between stats and growths.[X]
 
 #include "System/PlayerClasses.txt"
 #include "System/EnemyClasses.txt"
+#include "System/GenericFactions.txt"
 #include "System/UnitNamesDescs.txt"
 #include "System/ItemNamesDescs.txt"
+#include "System/Objectives.txt"
+
 #include "Chapters/ChapterNames.txt"
 #include "Chapters/FloorTitles.txt"
 
+## HealArrowText
+->[X]
 
 
 #0x4f6 Mov_Text_ID
@@ -125,3 +130,8 @@ Dark[X]
 
 # 0x04F5
 Avo[X]
+
+# 0x009d
+Assist Anims[X]
+# 0x00B9
+Disable staff/dance animations.[X]

@@ -10,6 +10,7 @@ pMovModifiers: // Movement
 	#endif
 WORD 0
 
+
 prAddUnitBaseMov: // byte 0x12 in ROM class data is base class movement
 	rAdd(rForWordAt(UNIT_ROMCLASS, rSByteAt(0x12))) 
 

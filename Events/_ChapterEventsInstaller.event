@@ -1,11 +1,36 @@
 //use braces here to avoid name conflicts. If you don't know what that means, surround all #includes in this files in braces like done below.
 #include "REDAs.event"
+
 	PUSH
 	ORG $A39768
 	EVBIT_MODIFY 0x1
 	SKIPWN
 	ENDA
 	POP
+	
+	
+#define LoadUnitsByDifficulty(easy,normal,hard) "CHECK_TUTORIAL ; BNE 4034 rC r0 ; CHECK_HARD ; BNE 4035 rC r0 ; LOAD1 0x1 normal ; GOTO 4036 ; LABEL 4034 ; LOAD1 0x1 easy ; GOTO 4036 ; LABEL 4035 ; LOAD1 0x1 hard ; LABEL 4036 ; ENUN;"
+#define SystemText(textid) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textid; TEXTEND; REMA"
+#define SystemText(bgid,textid) "CenterTutorialTextBox; SetBackground(bgid); TUTORIALTEXTBOXSTART; TEXTSHOW textid; TEXTEND; FADI 16"
+#define EndEvent "EVBIT_T 0x7; ENDA"
+#define CleanTextNoMap(bgid,textid) "SetBackground(bgid); TEXTSTART; TEXTSHOW textid; TEXTEND; FADI 16"
+#define CleanText(bgid,textid) "SetBackground(bgid); TEXTSTART; TEXTSHOW textid; TEXTEND; ClearBackgroundSmooth"
+#define GiveItem(item) "SMOV 0x3 item; GIVEITEMTO 0xFFFF;"
+#define GiveItem(item,character) "SMOV 0x3 item; GIVEITEMTO character;"
+#define CamOn "EVBIT_T 9"
+#define CamOff "EVBIT_F 9"
+#define StartGameOver "ASMC 0x800D391" // Game over ASMC 
+#define RefreshSMS "ASMC 0x8026689" //see how this looks when loading stuff
+#define RefreshLordSplitTiles "ASMC 0x8003D21" //see how this looks when loading stuff
+#define Reinforcements(pointer) "CamOn ; LOAD1 0x0 pointer; ENUN; RefreshSMS; CamOff"
+#define HardReinforcements(pointer) "CHECK_HARD ; BNE 6789 rC r0 ; Reinforcements(pointer); LABEL 6789"
+#define DifficultyReinforcements(easy,normal,hard) "CHECK_TUTORIAL ; BNE 4034 rC r0 ; CHECK_HARD ; BNE 4035 rC r0 ; Reinforcements(normal) ; GOTO 4036 ; LABEL 4034 ; Reinforcements(easy) ; GOTO 4036 ; LABEL 4035 ; Reinforcements(hard) ; LABEL 4036 ; ENUN;"
+#define RemoveUnit(unit) "CHECK_EXISTS unit; BEQ unit 0xc 0x0; REMU unit; LABEL unit"
+#define UnremoveUnit(unit) "CHECK_EXISTS unit; BEQ unit 0xc 0x0; REVEAL unit; LABEL unit"
+#define TurnAllyIfAlive(unit) "CHECK_ALIVE unit; BEQ unit 0xc 0x0; TurnAlly(unit); LABEL unit"
+#define SilentKillUnit(unit) "DISA_IF unit; DISA unit"
+#define SFXKillUnit(unit) "SET_SOMETHING unit; DISA unit"
+#define DisaIfDead(unit) "CHECK_ALIVE unit; BNE unit 0xc 0x0; DISA unit; LABEL unit"
 	
 #include "_BattleQuotes.event"
 #include "_DeathQuotes.event"
@@ -14,7 +39,7 @@
 #include "WorldMapEvents.event"
 
 {
-#include "DMTemplate.event"
+#include "Chapters/Chapter1.event"
 }
 
 ALIGN 4

@@ -171,7 +171,7 @@ int GetItemDefBonus(int item); //! FE8U = (0x080164B0+1)
 int GetItemResBonus(int item); //! FE8U = (0x080164E0+1)
 int GetItemLckBonus(int item); //! FE8U = (0x08016510+1)
 
-int MakeNewItem(int id); //! FE8U = (0x08016540+1)
+int MakeNewItem(u8 id); //! FE8U = (0x08016540+1)
 
 int CanUnitUseWeapon(const struct Unit*, int item); //! FE8U = (0x08016574+1)
 int CanUnitUseWeaponNow(const struct Unit*, int item); //! FE8U = (0x08016750+1)

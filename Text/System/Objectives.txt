@@ -1,0 +1,10 @@
+##RoutLabel
+Defeat all[X]
+##DefeatBossLabel
+Defeat boss[X]
+##SeizeLabel
+Seize[X]
+##SurviveLabel
+Survive[X]
+##EscapeLabel
+Escape[X]

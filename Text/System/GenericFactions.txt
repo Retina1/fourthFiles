@@ -1,0 +1,5 @@
+##Name_Guild
+Guildleague[X]
+##Desc_Guild
+A member of the Asketan Guildleague,[N]
+fighting under some guild's banner.[X]

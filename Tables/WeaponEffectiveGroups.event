@@ -1,0 +1,40 @@
+ALIGN 4
+BowEff:
+BYTE SkyKnight Seraph ScaleKnight Scalemaster 0
+
+ALIGN 4
+MonsterEff:
+BYTE Squirrel 0
+
+ALIGN 4
+MagiEff:
+BYTE Scholar Warlock Curate Medic Poet Troubadour Seeker Runemaster Priest WarMagus
+BYTE Lurker Hexer Apothecary Botanist Encircler Arcanist Caller Necromancer
+BYTE DivineMagus 0
+
+ALIGN 4
+PierceEff:
+BYTE Knight Hoplite Rider Strider Lancer Highlander SkyKnight Seraph
+BYTE Noble Sovereign Duelist Fencer
+BYTE 0
+
+ALIGN 4
+BashEff:
+BYTE Axefighter Gladiator Raider Trailblazer Brawler Pugilist ScaleKnight Scalemaster
+BYTE 0
+
+ALIGN 4
+RangedEff:
+BYTE Archer Sniper Gunner Dragoon Hunter Survivalist
+BYTE 0
+
+ALIGN 4
+HeadEff:
+BYTE Noble Sovereign Driver Imperial
+BYTE 0
+
+ALIGN 4
+SlashEff:
+BYTE Swordfighter Landsknecht Myrmidon Ronin Priest WarMagus DarkHunter Dominator
+BYTE Driver Imperial DivineMagus
+BYTE 0

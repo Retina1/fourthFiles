@@ -1,4 +1,7 @@
 //ifndef guards
+#define defStatBoosts(hp, str, mag, skl, spd, luk, def, res) "BYTE hp str skl spd def res luk mag"
+#include "WeaponEffectiveGroups.event"
+#include "WeaponStatBoosts.event"
 
 #ifndef TABLE_DEFINITIONS
 
@@ -92,7 +95,7 @@
 #define IsFemale 0x00004000
 #define IsBoss 0x00008000
 #define UnlockLock1 0x00010000
-#define UnlockLock2 0x00010000
+#define UnlockLock2 0x00020000
 #define SwordmasterUnlock 0x00020000
 #define UseMonsterWeapons 0x00040000
 #ifdef _FE7_
@@ -141,7 +144,7 @@
   #define defWTADisadvantage(attackingType, defendingType) "BYTE defendingType attackingType" //"BYTE attackingType defendingType 0xF1 0xFF"
   #define endWTATable "BYTE 0xFF 0xFF"
 
-  #define defStatBoosts(hp, str, mag, skl, spd, luk, def, res) "BYTE hp str skl spd def res luk mag"
+
   #define defWeaponDebuffs(str, skl, spd, luk, def, res, mag) "BYTE (str|(skl<<4)) (spd|(def<<4)) (res|(luk<<4)) mag"
 
   // Higher bit debuff definitions for use in the item table debuff table index byte

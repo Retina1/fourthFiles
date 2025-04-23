@@ -1,8 +1,5 @@
-#include "Defs/TileConfigs.event"
-#include "Defs/ObjPalettes.event"
-#include "Defs/TileAnims.event"
-#include "Defs/MapIDs.event"
 // split plist
+
 PUSH
 ORG 0x19900
 POIN TileConfigPLIST
@@ -18,6 +15,8 @@ POIN TileAnimPLIST
 
 ORG 0x30C78
 POIN TileAnimPLIST
+
+
 
 //we don't actually need to split the map plist i think
 /*ORG 0x34680
@@ -36,19 +35,23 @@ POP
 
 ALIGN 4
 TileConfigPLIST:
-ORG TileConfigPLIST + (0xFF * 4)
+FILL (0xFF * 4)
 
+ALIGN 4
 ObjTypePalettePLIST:
-ORG ObjTypePalettePLIST + (0xFF * 4)
+FILL (0xFF * 4)
 
+ALIGN 4
 TileAnimPLIST:
-ORG TileAnimPLIST + (0xFF * 4)
+FILL (0xFF * 4)
 
+ALIGN 4
 MapPLIST:
-ORG MapPLIST + (0xFF * 4)
+FILL (0xFF * 4)
 
+ALIGN 4
 MapChangesPLIST:
-ORG MapChangesPLIST + (0xFF * 4)
+FILL (0xFF * 4)
 
 #define TileConfigPointerTable(aId, apointer) "PUSH; ORG TileConfigPLIST+(0x4 * aId); POIN apointer; POP"
 #define ObjTypePalettePointerTable(aId, apointer) "PUSH; ORG ObjTypePalettePLIST+(0x4 * aId); POIN apointer; POP"

@@ -121,7 +121,7 @@ struct ChapterState {
 	u32 unk42_3:1;
 	u32 unk42_4:1;
 	u32 unk42_5:1;
-	u32 unk42_6:1;//set in easy mode
+	u32 unk42_6:1;
 	u32 unk42_7:1;
 	u32 unk42_8:1;
 

@@ -72,3 +72,87 @@ A regal blade effective vs. Noble/Driver classes.[X]
 Superior Bld.[X]
 ##Desc_SuperiorBlade ^
 A mighty blade eff. vs. swords/whips/drive blades.[X]
+
+##Name_VineWhip
+Vine Whip[X]
+##Desc_VineWhip ^
+A cheap novice's whip made of greenery.[X]
+
+##Name_ThornWhip
+Thorn Whip[X]
+##Desc_ThornWhip ^
+A lightweight whip with a thorned tip.[X]
+
+##Name_ChainWhip
+Chain Whip[X]
+##Desc_ChainWhip ^
+A somewhat cumbersome whip made of metal.[X]
+
+##Name_RougeWhip
+Rouge Whip[X]
+##Desc_RougeWhip ^
+A widely used whip glazed in a deep crimson.[X]
+
+##Name_Ninetails
+Ninetails[X]
+##Desc_Ninetails ^
+A lovely whip with nine distinct tips.[X]
+
+##Name_RazorWhip
+Razor Whip[X]
+##Desc_RazorWhip ^
+A horrific whip made of deadly sharp wires.[X]
+
+##Name_Heavensfall
+Heavensfall[X]
+##Desc_Heavensfall ^
+A legendary whip that's said to fell angels.[X]
+
+##Name_Scorpio
+Scorpio[X]
+##Desc_Scorpio ^
+A whip coated in toxin. Attacks can poison.[X]
+
+##Name_HazeWhip
+Haze Whip[X]
+##Desc_HazeWhip ^
+A whip coated in anesthetic. Attacks can sleep.[X]
+
+##Name_Stonesting
+Stonesting[X]
+##Desc_Stonesting ^
+A whip with a ruinous tip. Attacks can petrify.[X]
+
+//DRIVE BLADES
+
+//SPEARS
+
+##Name_Epee
+Epee[X]
+##Desc_Epee ^
+A simple thrusting sword used for sport. +1 Luc.[X]
+
+##Name_Sabre
+Sabre[X]
+##Desc_Sabre ^
+A defensive thrusting sword. +3 Def/Res.[X]
+
+##Name_Rapier
+Rapier[X]
+##Desc_Rapier ^
+A sword with an extraordinary point. +10 Skl.[X]
+
+##Name_Estoc
+Estoc[X]
+##Desc_Estoc ^
+A curved sword used by agile fighters. +5 Spd.[X]
+
+##Name_JollyRoger
+Jolly Roger[X]
+##Desc_JollyRoger ^
+A rapier once used by a famed captain. +40 Luc.[X]
+
+##Name_TheFable
+The Fable[X]
+##Desc_TheFable ^
+A legendary rapier forged by the fae. +5 All.[X]

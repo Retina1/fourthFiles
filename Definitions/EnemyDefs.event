@@ -1,0 +1,12 @@
+#define GuildGeneric 0xF4
+#define BossGuildmaster 0xF5
+#define BossCleone 0xF6
+#define BossBenthus 0xF7
+#define Turret1 0xF8
+#define Turret2 0xF9
+#define Soul1 0xFA
+#define Soul2 0xFB
+#define Soul3 0xFC
+#define ArenaEnemy 0xFD
+#define Wall 0xFE
+#define Snag 0xFF

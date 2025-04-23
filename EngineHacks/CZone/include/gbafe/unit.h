@@ -12,6 +12,8 @@ typedef struct Unit Unit;
 typedef struct BattleUnit BattleUnit;
 typedef struct EventUnit EventUnit;
 
+typedef struct SkillField SkillField;
+
 typedef struct CharacterData CharacterData;
 typedef struct ClassData ClassData;
 
@@ -99,7 +101,7 @@ struct ClassData {
 
 	/* 13 */ s8 baseLck;
 	/* 14 */ s8 baseMag;
-	/* 15 */ s8 maxSkl;
+	/* 15 */ u8 skillID;
 	/* 16 */ s8 maxSpd;
 	/* 17 */ s8 maxDef;
 	/* 18 */ s8 maxRes;
@@ -134,6 +136,84 @@ struct ClassData {
 	/* 4C */ const s8* pTerrainResistanceLookup;
 
 	/* 50 */ const void* pUnk50;
+};
+
+struct SkillField {
+	/* 00 */ u8 hpUp1: 1
+	/* 00 */ u8 hpUp2: 1
+	/* 00 */ u8 strUp1: 1
+	/* 00 */ u8 strUp2: 1
+	/* 00 */ u8 magUp1: 1
+	/* 00 */ u8 magUp2: 1
+	/* 00 */ u8 sklUp1: 1
+	/* 00 */ u8 sklUp2: 1
+	
+	
+	/* 01 */ u8 spdUp1: 1
+	/* 01 */ u8 spdUp2: 1
+	/* 01 */ u8 lucUp1: 1
+	/* 01 */ u8 lucUp2: 1
+	/* 01 */ u8 defUp1: 1
+	/* 01 */ u8 defUp2: 1
+	/* 01 */ u8 resUp1: 1
+	/* 01 */ u8 resUp2: 1
+	
+	
+	/* 02 */ u8 skill_111: 1
+	/* 02 */ u8 skill_121: 1
+	/* 02 */ u8 skill_131: 1
+	/* 02 */ u8 promoSkill_141: 1
+	
+	/* 02 */ u8 skill_211: 1
+	/* 02 */ u8 skill_212: 1
+	
+	/* 02 */ u8 skill_221: 1
+	/* 02 */ u8 skill_222: 1
+	
+	
+	/* 03 */ u8 skill_231: 1
+	/* 03 */ u8 skill_232: 1
+	
+	/* 03 */ u8 skill_311: 1
+	/* 03 */ u8 skill_312: 1
+	/* 03 */ u8 skill_313: 1
+	
+	/* 03 */ u8 skill_321: 1
+	/* 03 */ u8 skill_322: 1
+	/* 03 */ u8 skill_323: 1
+	
+	
+	/* 04 */ u8 skill_331: 1
+	/* 04 */ u8 skill_332: 1
+	/* 04 */ u8 skill_333: 1
+	
+	/* 04 */ u8 skill_511: 1
+	/* 04 */ u8 skill_512: 1
+	/* 04 */ u8 skill_513: 1
+	/* 04 */ u8 skill_514: 1
+	/* 04 */ u8 skill_515: 1
+	
+	
+	/* 05 */ u8 skill_341: 1
+	/* 05 */ u8 skill_342: 1
+	/* 05 */ u8 skill_343: 1
+	
+	/* 05 */ u8 skill_521: 1
+	/* 05 */ u8 skill_522: 1
+	/* 05 */ u8 skill_523: 1
+	/* 05 */ u8 skill_524: 1
+	/* 05 */ u8 skill_525: 1
+	
+	
+	/* 06 */ u8 promoSkill_351: 1
+	/* 06 */ u8 promoSkill_352: 1
+	/* 06 */ u8 promoSkill_353: 1
+	
+	/* 06 */ u8 promoSkill_531: 1
+	/* 06 */ u8 promoSkill_532: 1
+	/* 06 */ u8 promoSkill_533: 1
+	/* 06 */ u8 promoSkill_534: 1
+	/* 06 */ u8promoSskill_535: 1
 };
 
 struct Unit {
@@ -174,8 +254,8 @@ struct Unit {
 	/* 31 */ u8 torchDuration : 4;
 	/* 31 */ u8 barrierDuration : 4;
 
-	/* 32 */ u8 supports[6];
-	/* 38 */ u8 unitLeader;
+	/* 32 */ struct Skills skillField;
+//hopefully nothing breaks from removing unit leader
 	/* 39 */ u8 supportBits;
 	/* 3A */ s8 mag;
 	/* 3B */ u8 fatigue;
@@ -342,7 +422,7 @@ enum {
 
 #define UNIT_IS_VALID(aUnit) ((aUnit) && (aUnit)->pCharacterData)
 
-#define UNIT_FACTION(aUnit) ((aUnit).index & 0xC0)
+#define UNIT_FACTION(aUnit) ((aUnit)->index & 0xC0)
 
 #define UNIT_CATTRIBUTES(aUnit) ((aUnit)->pCharacterData->attributes | (aUnit)->pClassData->attributes)
 

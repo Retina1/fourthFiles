@@ -1,0 +1,12 @@
+GuildGeneric 0xf4
+BossGuildmaster
+BossCleone
+BossBenthus
+Turret1
+Turret2
+Soul1
+Soul2
+Soul3
+ArenaEnemy
+Wall
+Snag

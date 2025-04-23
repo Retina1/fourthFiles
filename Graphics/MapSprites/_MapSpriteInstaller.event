@@ -37,16 +37,13 @@ ORG $BAC40
 POIN MovingMapSpriteTable
 POP
 
-#define 16Zeroes "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" 
-#define 256Zeroes "16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes 16Zeroes"
-
 ALIGN 4
 StandingMapSpriteTable:
-BYTE 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes
+FILL (256*8)
 
 ALIGN 4
 MovingMapSpriteTable:
-BYTE 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes 256Zeroes
+FILL (256*8)
 
 //we need to fill out these tables with the vanilla table contents
 //we'll use dmps because i'm lazy
@@ -152,11 +149,20 @@ MovingMapSprite(ScaleKnight, AP1, ScaleKnightMMS)
 StandingMapSprite(Scalemaster,MapSprite16x32,ScalemasterSMS)
 MovingMapSprite(Scalemaster, AP1, ScalemasterMMS)
 
-//APOTHCARY AND BOTANIST NEEDED - maybe dig?
+StandingMapSprite(Apothecary,MapSprite16x16,ApothecarySMS)
+MovingMapSprite(Apothecary, AP1, ApothecaryMMS)
+StandingMapSprite(Botanist,MapSprite16x16,BotanistSMS)
+MovingMapSprite(Botanist, AP1, BotanistMMS)
 
-//ENCIRCLER AND ARCANIST NEEDED - dig more
+StandingMapSprite(Encircler,MapSprite16x16,EncirclerSMS)
+MovingMapSprite(Encircler, AP1, EncirclerMMS)
+StandingMapSprite(Arcanist,MapSprite16x16,ArcanistSMS)
+MovingMapSprite(Arcanist, AP1, ArcanistMMS)
 
-//CALLER AND NECROMANCER NEEDED - dig more
+StandingMapSprite(Caller,MapSprite16x16,CallerSMS)
+MovingMapSprite(Caller, AP1, CallerMMS)
+StandingMapSprite(Necromancer,MapSprite16x16,NecromancerSMS)
+MovingMapSprite(Necromancer, AP1, NecromancerMMS)
 
 StandingMapSprite(Noble,MapSprite16x16,NobleSMS)
 MovingMapSprite(Noble, AP1, NobleMMS)
@@ -168,7 +174,10 @@ MovingMapSprite(Duelist, AP1, DuelistMMS)
 StandingMapSprite(Fencer,MapSprite16x16,FencerSMS)
 MovingMapSprite(Fencer, AP1, FencerMMS)
 
-//DRIVER AND IMPERIAL NEEDED - maybe sword armors, maybe custom
+StandingMapSprite(Driver,MapSprite16x32,DriverSMS)
+MovingMapSprite(Driver, AP1, DriverMMS)
+StandingMapSprite(Imperial,MapSprite32x32,ImperialSMS)
+MovingMapSprite(Imperial, AP1, ImperialMMS)
 
 //ARTIFICE AND AUTOMATON NEEDED - custom rpobably
 
@@ -179,6 +188,65 @@ MovingMapSprite(Souldier, AP1, SouldierMMS)
 
 StandingMapSprite(Squirrel,MapSprite16x16,SquirrelSMS)
 MovingMapSprite(Squirrel, AP1, SquirrelMMS)
+
+
+
+ALIGN 4
+DriverSMS:
+#incbin "Dmp/Knight (U) Sword {SALVAGED}-stand.dmp"
+ALIGN 4
+DriverMMS:
+#incbin "Dmp/Knight (U) Sword {SALVAGED}-walk.dmp"
+
+ALIGN 4
+ImperialSMS:
+#incbin "Dmp/Marshall (U) Sword {Nuramon}-stand.dmp"
+ALIGN 4
+ImperialMMS:
+#incbin "Dmp/Marshall (U) Sword {Nuramon}-walk.dmp"
+
+
+ALIGN 4
+CallerSMS:
+#incbin "Dmp/Seer (M) {Devisian_Nights}-stand.dmp"
+ALIGN 4
+CallerMMS:
+#incbin "Dmp/Seer (M) {Devisian_Nights}-walk.dmp"
+
+ALIGN 4
+NecromancerSMS:
+#incbin "Dmp/Necromancer (M) Generic {Rasdel}-stand.dmp"
+ALIGN 4
+NecromancerMMS:
+#incbin "Dmp/Necromancer (M) Generic {Rasdel}-walk.dmp"
+
+ALIGN 4
+EncirclerSMS:
+#incbin "Dmp/Shaman (F) Staff {CanDy}-stand.dmp"
+ALIGN 4
+EncirclerMMS:
+#incbin "Dmp/Shaman (F) Staff {CanDy}-walk.dmp"
+
+ALIGN 4
+ArcanistSMS:
+#incbin "Dmp/Druid (F) Staff {CanDy, Hanakko}-stand.dmp"
+ALIGN 4
+ArcanistMMS:
+#incbin "Dmp/Druid (F) Staff {CanDy, Hanakko}-walk.dmp"
+
+ALIGN 4
+ApothecarySMS:
+#incbin "Dmp/Supplier (F) Unarmed {N426}-stand.dmp"
+ALIGN 4
+ApothecaryMMS:
+#incbin "Dmp/Supplier v2 (F) Unarmed {N426}-walk.dmp"
+
+ALIGN 4
+BotanistSMS:
+#incbin "Dmp/Noble (F) Noble Lyon {N426}-stand.dmp"
+ALIGN 4
+BotanistMMS:
+#incbin "Dmp/Noble (F) Noble Lyon {N426}-walk.dmp"
 
 ALIGN 4
 SquirrelSMS:

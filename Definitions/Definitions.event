@@ -1,4 +1,9 @@
 #include "ClassDefs.event"
+#include "ItemDefs.event"
+#include "SkillIDDefs.event"
 #include "UnitDefs.event"
+#include "EnemyDefs.event"
 #include "ChapterDefs.event"
 #include "PortraitDefs.event"
+
+#define SupportAnimFlag 0xae

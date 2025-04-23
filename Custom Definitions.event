@@ -1,5 +1,6 @@
-#define FreeSpace 0x1000000
+#define FreeSpace 0xb2a610
 #define FreeSpaceBLRange 0x1c1ec0
+#define IsPointer 0x8000000
 
 #ifndef _FE8_
 	#define _FE8_
@@ -37,3 +38,7 @@ ORG 0x2Ba78; BYTE MaxLevelCap
 POP
 
 #include "Definitions/Definitions.event"
+#include "Tilesets/Defs/TileConfigs.event"
+#include "Tilesets/Defs/ObjPalettes.event"
+#include "Tilesets/Defs/TileAnims.event"
+#include "Tilesets/Defs/MapIDs.event"

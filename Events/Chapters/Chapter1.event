@@ -1,0 +1,81 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events1ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,9] 0x0 0x0 0x1 REDA3R8 [0x0,0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(3,Ally,0) [8,9] 0x0 0x0 0x1 REDA2R7 [Shortsword,0x0] NoAI
+UNIT Gore 0x0 0x1 Level(2,Ally,0) [8,9] 0x0 0x0 0x1 REDA2R9 [0x0,0x0] NoAI
+UNIT
+
+NPCGuildmaster:
+UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,1) [4,0] 0x0 0x0 0x0 0x0 [Fengyan,0x0] NeverMoveAI
+UNIT
+
+EnemyUnits:
+UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [VineWhip,0x0] AttackInRangeAI
+UNIT BossBenthus Noble 0x0 Level(12,Enemy,0) [8,0] 0x0 0x0 0x1 REDA12R7 [Epee,0x0] AttackInRangeAI
+UNIT GuildGeneric Swordfighter 0x0 Level(1,Enemy,1) [12,6] 0x0 0x0 0x1 REDA6R2 [Shortsword,0x0] NoAI
+UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [12,6] 0x0 0x0 0x1 REDA4R5 [Shortmace,0x0] NoAI
+UNIT GuildGeneric Archer 0x0 Level(1,Enemy,1) [12,6] 0x0 0x0 0x1 REDA14R5 [0x0,0x0] AttackInRangeAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 NPCGuildmaster
+ENUN
+LOAD1 0x1 Units
+ENUN
+LOAD1 0x1 EnemyUnits
+ENUN
+EndEvent
+
+EndingScene:
+MoveToChapter(0x1)
+ENDA
+
+//MESSAGE Events end at offset CURRENTOFFSET
