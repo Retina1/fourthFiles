@@ -47,20 +47,25 @@ ALIGN 4
 
 Units:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,9] 0x0 0x0 0x1 REDA3R8 [0x0,0x0] NoAI
-UNIT Astarte 0x0 0x1 Level(3,Ally,0) [8,9] 0x0 0x0 0x1 REDA2R7 [Shortsword,0x0] NoAI
-UNIT Gore 0x0 0x1 Level(2,Ally,0) [8,9] 0x0 0x0 0x1 REDA2R9 [0x0,0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(2,Ally,0) [8,9] 0x0 0x0 0x1 REDA2R7 [Shortsword,0x0] NoAI
+UNIT Gore 0x0 0x1 Level(2,Ally,0) [8,9] 0x0 0x0 0x1 REDA2R9 [Handgonne,0x0] NoAI
 UNIT
 
 NPCGuildmaster:
-UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,1) [4,0] 0x0 0x0 0x0 0x0 [Fengyan,0x0] NeverMoveAI
+//put gerson here once he exists
+//imperial testing - fucking gorgon egg hardcoding
+UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,1) [4,0] 0x0 0x0 0x0 0x0 [Fengyan] NeverMoveAI
+UNIT GuildGeneric Imperial 0x0 Level(30,NPC,1) [3,0] 0x0 0x0 0x0 0x0 [RagingWave] NeverMoveAI
+UNIT GuildGeneric Driver 0x0 Level(15,NPC,1) [2,0] 0x0 0x0 0x0 0x0 [Dominance] NeverMoveAI
 UNIT
 
 EnemyUnits:
-UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [VineWhip,0x0] AttackInRangeAI
-UNIT BossBenthus Noble 0x0 Level(12,Enemy,0) [8,0] 0x0 0x0 0x1 REDA12R7 [Epee,0x0] AttackInRangeAI
-UNIT GuildGeneric Swordfighter 0x0 Level(1,Enemy,1) [12,6] 0x0 0x0 0x1 REDA6R2 [Shortsword,0x0] NoAI
-UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [12,6] 0x0 0x0 0x1 REDA4R5 [Shortmace,0x0] NoAI
-UNIT GuildGeneric Archer 0x0 Level(1,Enemy,1) [12,6] 0x0 0x0 0x1 REDA14R5 [0x0,0x0] AttackInRangeAI
+UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [VineWhip] AttackInRangeAI
+//lmao he can't be level 12 i don't need fucked up boss abusers
+UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] 0x0 0x0 0x1 REDA12R7 [Epee] AttackInRangeAI
+UNIT GuildGeneric Swordfighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Shortsword] NoAI
+UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [Shortmace] NoAI
+UNIT GuildGeneric Archer 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Shortbow] AttackInRangeAI
 UNIT
 
 ALIGN 4

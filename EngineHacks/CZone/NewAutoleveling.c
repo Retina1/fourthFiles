@@ -7,10 +7,10 @@ int GetAutoleveledStatIncrease(u8 growth, int levelCount)
 		return result;
 	}
 	else if (!(gChapterData.chapterStateBits & PLAY_FLAG_HARD)){
-		return result * 11 / 10;
+		return result * 6 / 5;
 	}
 	else {
-		return result * 5 / 4;
+		return result * 3 / 2;
 	}
 }
 

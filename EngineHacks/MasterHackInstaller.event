@@ -18,6 +18,7 @@ POP
 #include "EssentialFixes.event"
 #include "AddressPatches.event"
 #include "QualityOfLife/QOL.event"
+#include "IconRework/IconRework.event"
 #include "EMS/ExModularSave.event"
 #include "StatGetters/_InstallStatGetters.event"
 #include "StrMag/GrowthGetters/GrowthGetters.event"

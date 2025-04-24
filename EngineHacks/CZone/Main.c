@@ -7,3 +7,23 @@
 #include "ExpCalcs.c"
 #include "NewAutoLeveling.c"
 
+//ok
+//ok
+void BattleInitTargetCanCounter(void) {
+
+    // Target cannot counter if either units are using "uncounterable" weapons
+
+    if ((gBattleActor.weaponAttributes | gBattleTarget.weaponAttributes) & IA_UNCOUNTERABLE) {
+        gBattleTarget.weapon = 0;
+        gBattleTarget.canCounter = FALSE;
+    }
+
+    // Target cannot counter if a berserked player unit is attacking another player unit
+
+    if (gBattleActor.unit.statusIndex == UNIT_STATUS_BERSERK) {
+        if ((UNIT_FACTION(&gBattleActor.unit) == FACTION_BLUE) && (UNIT_FACTION(&gBattleTarget.unit) == FACTION_BLUE)) {
+            gBattleTarget.weapon = 0;
+            gBattleTarget.canCounter = FALSE;
+        }
+    }
+}

@@ -53,7 +53,21 @@ int GetUnitExpLevel(struct Unit* unit) {
 
 int GetUnitExpMultiplier(struct Unit* actor, struct Unit* target) {
 //exp mods from classes
-    return 1;
+	int mult = 1;
+    if ((UNIT_CATTRIBUTES(target) & CA_BOSS)){
+		if (target->curHP == 0){
+			mult = mult * 3;
+		}
+	}
+
+    return mult;
+}
+
+int GetUnitExpDivisor(struct Unit* actor, struct Unit* target) {
+//exp mods from classes
+	int div = 1;
+	
+    return div;
 }
 
 int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
@@ -284,8 +298,10 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
 			 }
 		}
 	}
-	
-	result *= GetUnitExpMultiplier(&actor->unit, &target->unit);
+	int mul = GetUnitExpMultiplier(&actor->unit, &target->unit);
+	int div = GetUnitExpDivisor(&actor->unit, &target->unit);
+	result = result * mul;
+	result = result / div;
 
     if (result > 100)
         result = 100;

@@ -31,10 +31,10 @@ RagingWave
 GreatMountain
 Shortspear
 Pike
+Partizan
 Sarissa
 Ahlspiess
 Omiyari
-Partizan
 Fengyan
 Ron
 HandSpear
@@ -49,3 +49,34 @@ Estoc
 JollyRoger
 TheFable
 Shortmace
+Broadaxe
+Yue
+Greataxe
+Khopesh
+Labrys
+Parashu
+Ukonvasara
+DevilAxe
+BrassKnuckles 0x42
+Caestus
+Gauntlets
+Claws
+SpikedFist
+Katar
+Kirikindad
+Shortbow
+Recurve
+Composite
+Gakgung
+Warbow
+Sureshot
+FalconBow
+ArcDrawer
+Handgonne 0x57
+Arquebus
+Sakaloz
+Caliver
+Musket
+Repeater
+BoltRifle
+Agneyastra

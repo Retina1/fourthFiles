@@ -10,5 +10,7 @@
 
 #include "Items\ItemTable.event"
 
+#include "Items\SpellAssociationList.event"
+
 #include "Weapon Triangle\Weapon Triangle.event"
 

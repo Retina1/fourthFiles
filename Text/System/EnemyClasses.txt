@@ -3,3 +3,9 @@ Squirrel[X]
 ##ClassDesc_Squirrel
 A small rodent. Far craftier and[N]
 far more malicious than it seems.[X]
+
+##fuckeggs
+i hate eggs[X]
+##reallyfuckeggs
+hardcoding more like[N]
+hardsucking gottem[X]

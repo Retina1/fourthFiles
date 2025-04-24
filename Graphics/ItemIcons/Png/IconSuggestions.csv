@@ -1,0 +1,257 @@
+INLINE NewItemTable,
+Nothing,
+ShortswordIcon,{Zane} icon 031 
+ScramasaxIcon,{Jubby} Dagger 6
+BoarbladeIcon,{LordGlenn} Sword 1
+ClaymoreIcon,{SacredStones} Light Brand (Feh) (Sacred Stones)
+ExecutorIcon,{SN_Ivan} Steel Blade (Radiant Dawn)
+ZweihanderIcon,{MeatOfJustice} Sword 11
+DvergrSwordIcon,{GabrielKnight} (Blessed&Killer) Sword 1
+CaladbolgIcon,{LordGlenn} (ArchaneaIconProject) tile010
+BrightswordIcon,{Zarg} Sword 15
+MagebaneIcon,{Batima} Runesword(FE9)
+BluntbladeIcon,{JPN} 2a
+RoughslashIcon,{Ereshkigal} Blade 7
+MuzzlerIcon,{Beansy} Crystal Sword
+HeadhunterIcon,{Kyrads} Dragonslayer
+SuperiorBladeIcon,{Seliost1} Soul Saber
+VineWhipIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 1"
+ThornWhip,
+ChainWhipIcon,{milom} VampireKiller
+RougeWhipIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 4"
+Ninetails,
+RazorWhipIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 2"
+HeavensfallIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 3"
+Scorpio,
+HazeWhip,
+Stonesting,
+Type0,
+Parabola,
+Dominance,
+BlackSun,
+RagingWave,
+GreatMountain,
+ShortspearIcon,{LordGlenn} Lance 22
+PartizanIcon,{Zelix} icon 054
+PikeIcon,{Celice} Lance 2
+SarissaIcon,{Zane} (Icon Blitz 1) Lance 1
+AhlspiessIcon,{Seal} (SacredWar) Lance 5
+OmiyariIcon,{Batima} Silver Naginata
+FengyanIcon,{Batima} Steel Naginata - Fancy
+RonIcon,{Jubby} Lance 9
+HandSpearIcon,{Zane} (Icon Blitz 1) Lance 10
+ShieldlanceIcon,{Ereshkigal} Extra 49
+SoarSpearIcon,{Kyrads} Silver Halberd
+LonginusIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Lance 8"
+ImpalerIcon,{Batima} Maltet
+EpeeIcon,{Seal} (SacredWar) Sword 1
+SabreIcon,{Kyrads} Dussack
+RapierIcon,{WhydidImakethisaccount} Sword 1
+EstocIcon,{Zane} icon 107
+JollyRogerIcon,{Topazlight } Sea Sword
+TheFableIcon,{LordGlenn} (ArchaneaIconProject) tile047
+ShortmaceIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Axe 12"
+BroadaxeIcon,{Zelix} icon 056
+YueIcon,{Zarg} Axe 10
+GreataxeIcon,{Zane} icon 090
+KhopeshIcon,{Zane} Axe 29
+LabrysIcon,{Zarg} Axe 7
+ParashuIcon,{Ereshkigal} Axe 26
+UkonvasaraIcon,{Beansy} Killer Axe+
+AXE (SPECIAL),
+AXE (SPECIAL),
+AXE (SPECIAL),
+AXE (SPECIAL),
+AXE (SPECIAL),
+AXE (SPECIAL),
+AXE (SPECIAL),
+BrassKnuckleIcon,{SMITHYGCN} Knucles 1
+CaestusIcon,{SMITHYGCN} Knucles 4
+GauntletsIcon,{SMITHYGCN} Knucles 2
+ClawsIcon,{FuriousHaunter} Duel Slashers
+SpikedFistIcon,{SMITHYGCN} Knucles 2 with spikes on it. {Maxim} Gauntlet 6 can work in a pinch.
+KatarIcon,{LordGlenn } Sword 50
+KirikindadIcon,{Maxim} Gauntlet 4
+ShortbowIcon,{Zane} icon 216
+RecurveIcon,{LordGlenn} Bow 1
+CompositeIcon,{Zane} icon 096
+GakgungIcon,{2WB} (Vanilla + Blitz) Brave Bow
+WarbowIcon,{Lisandra Brave} (FE5 Recolor) 62 8x8
+SureshotIcon,{FuriousHaunter} Viper
+FalconBowIcon,{Zarg} (Icon Blitz 3) Bow
+ArcDrawerIcon,{2WB} (Icon Blitz 1) Silver Arch1
+BOWS (SPECIAL),
+BOWS (SPECIAL),
+BOWS (SPECIAL),
+BOWS (SPECIAL),
+BOWS (SPECIAL),
+BOWS (SPECIAL),
+Handgonne,
+Arquebus,
+Sakaloz,
+Caliver,
+Musket,
+Repeater,
+BoltRifle,
+Agneyastra,
+GUNS (SPECIAL),
+GUNS (SPECIAL),
+GUNS (SPECIAL),
+GUNS (SPECIAL),
+GUNS (SPECIAL),
+GUNS (SPECIAL),
+GUNS (SPECIAL),
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+Vulnerary,
+Elixir,
+Medica (heal ally),
+Soma (heal mult. allies),
+Bravant (atk buff),
+Stonard (def buff),
+Arm Binder,
+Leg Binder,
+Head Binder,
+Blind Gas,
+Stun Gas,
+Poison Gas,
+Mute Gas,
+Panic Gas,
+Stoning Gas,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+Hero Crest (swd/axefighter),
+Knight Proof (knight/rider),
+Orion's Bolt (archer/hunter),
+Hippokos (curate),
+Guiding Ring (scholar/seeker),
+Ruby Blade (myrmidon),
+Sighting Lens (gunner),
+Outland Shield (lancer/strider),
+Spirit Wrappings (brawler),
+Elysian Whip (sky/scale knight),
+Perfect Rose (poet/noble),
+Baneful Doll (lurker/encircler),
+Dark Brooch (dark hunter/caller),
+Deus Herb (apothecary),
+Holy Cloak (priest/duelist),
+Drive Gear (driver),
+Paradox Core (artifice),
+Guild Seal (promotes all),
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,
+0x0,

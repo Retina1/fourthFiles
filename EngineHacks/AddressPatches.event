@@ -1,3 +1,32 @@
+//gorgonegg
+#define FuckGorgonEggs(address) "ORG address; BYTE 0x0; ORG address+4; BYTE 0x0"
+PUSH
+FuckGorgonEggs($1c92E)
+FuckGorgonEggs($17cf8)
+FuckGorgonEggs($17c00)
+FuckGorgonEggs($17d96)
+FuckGorgonEggs($2c4f8)
+//experimental but probably important
+FuckGorgonEggs($17ca4)
+FuckGorgonEggs($180da)
+FuckGorgonEggs($39dec)
+FuckGorgonEggs($879c6)
+FuckGorgonEggs($874ae)
+FuckGorgonEggs($87544)
+FuckGorgonEggs($87584)
+//used 62 ?? ?? ?? 34 i think everything after this is non-egg
+
+
+//testing - 0x2c84e important fucked
+
+POP
+
+//autolevel prfs
+PUSH
+ORG 0x17f88 
+BYTE 0x00 0x21
+POP
+
 //prologue supply
 PUSH
 ORG $23f6e //Access Supply

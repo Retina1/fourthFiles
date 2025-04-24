@@ -1,0 +1,162 @@
+#define ItemIconEntry(ItemIconID) "ORG NewItemIcons + (ItemIconID*128)"
+
+//defs now handled elsewhere
+
+ALIGN 4
+NewItemIcons:
+// Sheet with all icons goes here 
+#incbin "Icon Sheet.dmp"
+ 
+PUSH 
+// Individual Icons go here
+//SWORDS
+ItemIconEntry(ShortswordIcon)
+#incbin "Dmp/{Zane} icon 031.dmp"
+ItemIconEntry(ScramasaxIcon)
+#incbin "Dmp/{Jubby} Dagger 6.dmp"
+ItemIconEntry(BoarbladeIcon)
+#incbin "Dmp/{LordGlenn} Sword 1.dmp"
+ItemIconEntry(ClaymoreIcon)
+#incbin "Dmp/{SacredStones} Light Brand (FEH) (SacredStones).dmp"
+ItemIconEntry(ExecutorIcon)
+#incbin "Dmp/{SN_Ivan} Steel Blade (Radiant Dawn).dmp"
+ItemIconEntry(ZweihanderIcon)
+#incbin "Dmp/{MeatOfJustice} Sword 11.dmp"
+ItemIconEntry(DvergrSwordIcon)
+#incbin "Dmp/{GabrielKnight} (Blessed&Killer) Sword 1.dmp"
+ItemIconEntry(CaladbolgIcon)
+#incbin "Dmp/{LordGlenn} (ArchaneaIconProject) tile010.dmp"
+ItemIconEntry(BrightswordIcon)
+#incbin "Dmp/{Zarg} Sword 15.dmp"
+ItemIconEntry(MagebaneIcon)
+#incbin "Dmp/{Batima} Runesword(FE9).dmp"
+ItemIconEntry(BluntbladeIcon)
+#incbin "Dmp/{JPN} 2a.dmp"
+ItemIconEntry(RoughslashIcon)
+#incbin "Dmp/{Ereshkigal} Blade 7.dmp"
+ItemIconEntry(MuzzlerIcon)
+#incbin "Dmp/{Beansy} Crystal Sword.dmp"
+ItemIconEntry(HeadhunterIcon)
+#incbin "Dmp/{Kyrads} Dragonslayer.dmp"
+ItemIconEntry(SuperiorBladeIcon)
+#incbin "Dmp/{Seliost1} Soul Saber.dmp"
+
+//WHIPS
+ItemIconEntry(VineWhipIcon)
+#incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 1.dmp"
+ItemIconEntry(ChainWhipIcon)
+#incbin "Dmp/{milom} VampireKiller.dmp"
+ItemIconEntry(RougeWhipIcon)
+#incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 4.dmp"
+ItemIconEntry(RazorWhipIcon)
+#incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 2.dmp"
+ItemIconEntry(HeavensfallIcon)
+#incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 3.dmp"
+
+//DRIVE BLADES
+
+//LANCES
+ItemIconEntry(ShortspearIcon)
+#incbin "Dmp/{LordGlenn} Lance 22.dmp"
+ItemIconEntry(PartizanIcon)
+#incbin "Dmp/{Zelix} icon 054.dmp"
+ItemIconEntry(PikeIcon)
+#incbin "Dmp/{Celice} Lance 2.dmp"
+ItemIconEntry(SarissaIcon)
+#incbin "Dmp/{Zane} (Icon Blitz 1) Lance 1.dmp"
+ItemIconEntry(AhlspiessIcon)
+#incbin "Dmp/{Seal} (SacredWar) Lance 5.dmp"
+ItemIconEntry(OmiyariIcon)
+#incbin "Dmp/{Batima} Silver Naginata.dmp"
+ItemIconEntry(FengyanIcon)
+#incbin "Dmp/{Batima} Steel Naginata - Fancy.dmp"
+ItemIconEntry(RonIcon)
+#incbin "Dmp/{Jubby} Lance 9.dmp"
+ItemIconEntry(HandSpearIcon)
+#incbin "Dmp/{Zane} (Icon Blitz 1) Lance 10.dmp"
+ItemIconEntry(ShieldlanceIcon)
+#incbin "Dmp/{Ereshkigal} Extra 49.dmp"
+ItemIconEntry(SoarSpearIcon)
+#incbin "Dmp/{Kyrads} Silver Halberd.dmp"
+ItemIconEntry(LonginusIcon)
+#incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Lance 8.dmp"
+ItemIconEntry(ImpalerIcon)
+#incbin "Dmp/{Batima} Maltet.dmp"
+
+//RAPIERS
+ItemIconEntry(EpeeIcon)
+#incbin "Dmp/{Seal} (SacredWar) Sword 1.dmp"
+ItemIconEntry(SabreIcon)
+#incbin "Dmp/{Kyrads} Dussack.dmp"
+ItemIconEntry(RapierIcon)
+#incbin "Dmp/{WhydidImakethisaccount} Sword 1.dmp"
+ItemIconEntry(EstocIcon)
+#incbin "Dmp/{Zane} icon 107.dmp"
+ItemIconEntry(JollyRogerIcon)
+#incbin "Dmp/{Topazlight} Sea Sword.dmp"
+ItemIconEntry(TheFableIcon)
+#incbin "Dmp/{LordGlenn} (ArchaneaIconProject) tile047.dmp"
+
+//AXES
+ItemIconEntry(ShortmaceIcon)
+#incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Axe 12.dmp"
+ItemIconEntry(BroadaxeIcon)
+#incbin "Dmp/{Zelix} icon 056.dmp"
+ItemIconEntry(YueIcon)
+#incbin "Dmp/{Zarg} Axe 10.dmp"
+ItemIconEntry(GreataxeIcon)
+#incbin "Dmp/{Zane} icon 090.dmp"
+ItemIconEntry(KhopeshIcon)
+#incbin "Dmp/{Zane} Axe 29.dmp"
+ItemIconEntry(LabrysIcon)
+#incbin "Dmp/{Zarg} Axe 7.dmp"
+ItemIconEntry(ParashuIcon)
+#incbin "Dmp/{Ereshkigal} Axe 26.dmp"
+ItemIconEntry(UkonvasaraIcon)
+#incbin "Dmp/{Beansy} Killer Axe+.dmp"
+
+//FISTS
+ItemIconEntry(BrassKnucklesIcon)
+#incbin "Dmp/{SMITHYGCN} Knucles 1.dmp"
+ItemIconEntry(CaestusIcon)
+#incbin "Dmp/{SMITHYGCN} Knucles 4.dmp"
+ItemIconEntry(GauntletsIcon)
+#incbin "Dmp/{SMITHYGCN} Knucles 2.dmp"
+ItemIconEntry(ClawsIcon)
+#incbin "Dmp/{FuriousHaunter} Duel Slashers.dmp"
+ItemIconEntry(SpikedFistIcon)
+#incbin "Dmp/{SMITHYGCN} Knucles 2 Alt.dmp"
+ItemIconEntry(KatarIcon)
+#incbin "Dmp/{LordGlenn} Sword 50.dmp"
+ItemIconEntry(KirikindadIcon)
+#incbin "Dmp/{Maxim} Gauntlet 4.dmp"
+
+//BOWS
+ItemIconEntry(ShortbowIcon)
+#incbin "Dmp/{Zane} icon 216.dmp"
+ItemIconEntry(RecurveIcon)
+#incbin "Dmp/{LordGlenn} Bow 1.dmp"
+ItemIconEntry(CompositeIcon)
+#incbin "Dmp/{Zane} icon 096.dmp"
+ItemIconEntry(GakgungIcon)
+#incbin "Dmp/{2WB} (Vanilla + Blitz) Brave Bow.dmp"
+ItemIconEntry(WarbowIcon)
+#incbin "Dmp/{Lisandra Brave} (FE5 Recolor) 62 8x8.dmp"
+ItemIconEntry(SureshotIcon)
+#incbin "Dmp/{FuriousHaunter} Viper.dmp"
+ItemIconEntry(FalconBowIcon)
+#incbin "Dmp/{Zarg} (Icon Blitz 3) Bow.dmp"
+ItemIconEntry(ArcDrawerIcon)
+#incbin "Dmp/{2WB} (Icon Blitz 1) Silver Arch1.dmp"
+
+
+POP 
+
+
+
+PUSH
+ORG $36B4
+POIN NewItemIcons
+ORG $3788
+POIN NewItemIcons
+POP

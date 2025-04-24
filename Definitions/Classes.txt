@@ -56,4 +56,5 @@ Soul
 Souldier
 DivineMagus
 AnswererClass
+Turret
 Squirrel 0x7F

@@ -5,5 +5,6 @@
 #include "EnemyDefs.event"
 #include "ChapterDefs.event"
 #include "PortraitDefs.event"
+#include "ItemIconDefs.event"
 
 #define SupportAnimFlag 0xae

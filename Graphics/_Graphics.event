@@ -2,6 +2,7 @@
 #include "Portraits/_Portraits.event"
 #include "Portraits/_PortraitHeight.event"
 #include "RemoveFog/RemoveEffects.event"
+#include "ItemIcons/IconInstaller.event"
 
 //doing this now to save maximal freespace
 #include "BattlePlatforms/BattlePlatformInstaller.event"

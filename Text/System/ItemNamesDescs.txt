@@ -123,7 +123,35 @@ Stonesting[X]
 ##Desc_Stonesting ^
 A whip with a ruinous tip. Attacks can petrify.[X]
 
-//DRIVE BLADES
+##Name_Type0
+Type-0[X]
+##Desc_Type0 ^
+A basic drive blade that's as economic as they come.[X]
+
+##Name_Parabola
+Parabola[X]
+##Desc_Parabola ^
+A heavy drive blade named for the arc of its swing.[X]
+
+##Name_Dominance
+Dominance[X]
+##Desc_Dominance ^
+A slimmer drive blade with sleek internals.[X]
+
+##Name_BlackSun
+Black Sun[X]
+##Desc_BlackSun ^
+A towering drive blade that blots out the sun.[X]
+
+##Name_RagingWave
+Raging Wave[X]
+##Desc_RagingWave ^
+A mighty drive blade that strikes like the tide.[X]
+
+##Name_GreatMountain ^
+Great Mountain[X]
+##Desc_GreatMountain ^
+A prototype drive blade that can move mountains.[X]
 
 //SPEARS
 
@@ -156,3 +184,101 @@ A rapier once used by a famed captain. +40 Luc.[X]
 The Fable[X]
 ##Desc_TheFable ^
 A legendary rapier forged by the fae. +5 All.[X]
+
+
+
+
+//PROMO
+##Use_PromoItem
+Promote units for[N]
+stats and +3 SP.[X]
+##Name_HeroCrest
+Hero Crest[X]
+##Desc_HeroCrest ^
+A medal that honors one's martial prowess.[N]
+Promotes Swordfighters and Axefighters.[X]
+##Name_KnightProof
+Knight Proof[X]
+##Desc_KnightProof ^
+A medal that honors one's chivalric[N]
+virtue. Promotes Knights and Riders.[X]
+##Name_OrionsBolt
+Orion's Bolt[X]
+##Desc_OrionsBolt ^
+A prized arrow that never misses its[N]
+mark. Promotes Archers and Hunters.[X]
+##Name_Hippokos
+Hippokos[X]
+##Desc_Hippokos ^
+An emblem symbolic of one's devotion[N]
+to healing arts. Promotes Curates.[X]
+##Name_GuidingRing
+Guiding Ring[X]
+##Desc_GuidingRing ^
+A priceless ring set with an arcane[N]
+crystal. Promotes Scholars and Seekers.[X]
+##Name_RubyBlade
+Ruby Blade[X]
+##Desc_RubyBlade ^
+A ceremonial blade of pristine ruby,[N]
+given as an honor. Promotes Myrmidons.[X]
+##Name_SightingLens
+Sighting Lens[X]
+##Desc_SightingLens ^
+An attachable lens that can make anything[N]
+clear from miles away. Promotes Gunners.[X]
+##Name_OutlandShield
+Outland Shield[X]
+##Desc_OutlandShield ^
+A well-worn shield once worn by a legendary[N]
+frontiersman. Promotes Lancers and Raiders.[X]
+##Name_SpiritWrap
+Spirit Wrap[X]
+##Desc_SpiritWrap ^
+An unassuming cloth that provides perfect[N]
+comfort when wrapped. Promotes Brawlers.[X]
+##Name_ElysianWhip
+Elysian Whip[X]
+##Desc_ElysianWhip ^
+A mythical whip that can tame any mount.[N]
+Promotes Sky Knights and Scale Knights.[X]
+##Name_PerfectRose
+Perfect Rose[X]
+##Desc_PerfectRose ^
+An unimaginably beautiful flower for musing[N]
+and display alike. Promotes Poets and Nobles.[X]
+##Name_BanefulDoll
+Baneful Doll[X]
+##Desc_BanefulDoll ^
+A cute plush doll that harbors an inert[N]
+curse. Promotes Lurkers and Encirclers.[X]
+##Name_DarkBrooch
+Dark Brooch[X]
+##Desc_DarkBrooch ^
+A profane medallion said to connect one to the[N]
+dark arts. Promotes Dark Hunters and Callers.[X]
+##Name_DeusHerb
+Deus Herb[X]
+##Desc_DeusHerb ^
+A legendary bud said to only bloom once[N]
+a millennium. Promotes Apothecaries.[X]
+##Name_HolyCloak
+Holy Cloak[X]
+##Desc_HolyCloak ^
+A blessed tunic that offers a divine's[N]
+protection. Promotes Priests and Duelists.[X]
+##Name_DriveGear
+Drive Gear[X]
+##Desc_DriveGear ^
+A forbidden gear that can deactivate a[N]
+drive blade's limits. Promotes Drivers.[X]
+##Name_ParadoxCore
+Paradox Core[X]
+##Desc_ParadoxCore ^
+A baffling object that appears to resonate[N]
+with some machines. Promotes Artifices.[X]
+##Name_GuildSeal
+Guild Seal[X]
+##Desc_GuildSeal ^
+A medal from the Guildmaster that proves[N]
+your incredible deeds. Promotes all classes.[X]
