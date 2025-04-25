@@ -63,8 +63,8 @@ void FullInventoryDroppable_Dynamic(struct PlayerInterfaceProc* proc, struct Uni
   if ( (udp->unit->state & US_DROP_ITEM) )
   {
     CallARM_PushToSecondaryOAM(
-        ((base_coords.x + ((itemCount - 1) * 2)) * 8) + INVENTORY_ICON_X,
-        (base_coords.y * 8) + INVENTORY_ICON_Y + 8,
+        (base_coords.x * 8) + INVENTORY_ICON_X,
+        ((base_coords.y + ((itemCount - 1) * 2)) * 8)+ INVENTORY_ICON_Y + 8,
         &gObj_8x8,
         DROPPABLE_ICON_TILE
       );
@@ -73,8 +73,8 @@ void FullInventoryDroppable_Dynamic(struct PlayerInterfaceProc* proc, struct Uni
   for ( i = 0; i < itemCount; i++ )
   {
     CallARM_PushToSecondaryOAM(
-        ((base_coords.x + (i * 2)) * 8) + INVENTORY_ICON_X,
-        (base_coords.y * 8) + INVENTORY_ICON_Y,
+        (base_coords.x * 8) + INVENTORY_ICON_X,
+        ((base_coords.y + (i * 2)) * 8) + INVENTORY_ICON_Y,
         &gObj_16x16,
         INVENTORY_ICON_TILE + (2 * i)
       );

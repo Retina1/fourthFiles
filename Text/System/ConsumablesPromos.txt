@@ -1,0 +1,99 @@
+//SCROLLS
+
+//CONSUMABLES
+
+
+//PROMO
+##Use_PromoItem
+Promote units for[N]
+stats and +3 SP.[X]
+##Name_HeroCrest
+Hero Crest[X]
+##Desc_HeroCrest ^
+A medal that honors one's martial prowess.[N]
+Promotes Swordfighters and Axefighters.[X]
+##Name_KnightProof
+Knight Proof[X]
+##Desc_KnightProof ^
+A medal that honors one's chivalric[N]
+virtue. Promotes Knights and Riders.[X]
+##Name_OrionsBolt
+Orion's Bolt[X]
+##Desc_OrionsBolt ^
+A prized arrow that never misses its[N]
+mark. Promotes Archers and Hunters.[X]
+##Name_Hippokos
+Hippokos[X]
+##Desc_Hippokos ^
+An emblem symbolic of one's devotion[N]
+to healing arts. Promotes Curates.[X]
+##Name_GuidingRing
+Guiding Ring[X]
+##Desc_GuidingRing ^
+A priceless ring set with an arcane[N]
+crystal. Promotes Scholars and Seekers.[X]
+##Name_RubyBlade
+Ruby Blade[X]
+##Desc_RubyBlade ^
+A ceremonial blade of pristine ruby,[N]
+given as an honor. Promotes Myrmidons.[X]
+##Name_SightingLens
+Sighting Lens[X]
+##Desc_SightingLens ^
+An attachable lens that can make anything[N]
+clear from miles away. Promotes Gunners.[X]
+##Name_OutlandShield
+Outland Shield[X]
+##Desc_OutlandShield ^
+A well-worn shield once worn by a legendary[N]
+frontiersman. Promotes Lancers and Raiders.[X]
+##Name_SpiritWrap
+Spirit Wrap[X]
+##Desc_SpiritWrap ^
+An unassuming cloth that provides perfect[N]
+comfort when wrapped. Promotes Brawlers.[X]
+##Name_ElysianWhip
+Elysian Whip[X]
+##Desc_ElysianWhip ^
+A mythical whip that can tame any mount.[N]
+Promotes Sky Knights and Scale Knights.[X]
+##Name_PerfectRose
+Perfect Rose[X]
+##Desc_PerfectRose ^
+An unimaginably beautiful flower for musing[N]
+and display alike. Promotes Poets and Nobles.[X]
+##Name_BanefulDoll
+Baneful Doll[X]
+##Desc_BanefulDoll ^
+A cute plush doll that harbors an inert[N]
+curse. Promotes Lurkers and Encirclers.[X]
+##Name_DarkBrooch
+Dark Brooch[X]
+##Desc_DarkBrooch ^
+A profane medallion said to connect one to the[N]
+dark arts. Promotes Dark Hunters and Callers.[X]
+##Name_DeusHerb
+Deus Herb[X]
+##Desc_DeusHerb ^
+A legendary bud said to only bloom once[N]
+a millennium. Promotes Apothecaries.[X]
+##Name_HolyCloak
+Holy Cloak[X]
+##Desc_HolyCloak ^
+A blessed tunic that offers a divine's[N]
+protection. Promotes Priests and Duelists.[X]
+##Name_DriveGear
+Drive Gear[X]
+##Desc_DriveGear ^
+A forbidden gear that can deactivate a[N]
+drive blade's limits. Promotes Drivers.[X]
+##Name_ParadoxCore
+Paradox Core[X]
+##Desc_ParadoxCore ^
+A baffling object that appears to resonate[N]
+with some machines. Promotes Artifices.[X]
+##Name_GuildSeal
+Guild Seal[X]
+##Desc_GuildSeal ^
+A medal from the Guildmaster that proves[N]
+your incredible deeds. Promotes all classes.[X]

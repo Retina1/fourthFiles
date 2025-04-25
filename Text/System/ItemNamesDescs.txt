@@ -1,284 +1,371 @@
+//SWORDS
 ##Name_Shortsword
 Shortsword[X]
 ##Desc_Shortsword ^
 A cheap and basic slashing weapon.[X]
-
 ##Name_Scramasax
 Scramasax[X]
 ##Desc_Scramasax ^
 A large and crude combat knife.[X]
-
 ##Name_Boarblade
 Boarblade[X]
 ##Desc_Boarblade ^
 A heavy weapon named for its prey.[X]
-
 ##Name_Claymore
 Claymore[X]
 ##Desc_Claymore ^
 A massively powerful and weighty blade.[X]
-
 ##Name_Executor
 Executor[X]
 ##Desc_Executor ^
 A brutal blade used by headsmen.[X]
-
 ##Name_Zweihander
 Zweihander[X]
 ##Desc_Zweihander ^
 An awkward but mighty two-handed sword.[X]
-
 ##Name_DvergrSword
 Dvergr Swd.[X]
 ##Desc_DvergrSword ^
 The legendary long sword itself.[X]
-
 ##Name_Caladbolg
 Caladbolg[X]
 ##Desc_Caladbolg ^
 A legendary sword that can cut through all.[X]
-
 ##Name_Brightsword
 Brightsword[X]
 ##Desc_Brightsword ^
 A blessed sword effective against monsters.[X]
-
 ##Name_Magebane
 Magebane[X]
 ##Desc_Magebane ^
 A warding blade effective against magic users.[X]
-
 ##Name_Bluntblade
 Bluntblade[X]
 ##Desc_Bluntblade ^
 A weighty blade effective against lances/rapiers.[X]
-
 ##Name_Roughslash
 Roughslash[X]
 ##Desc_Roughslash ^
 A rugged sword effective against axes/fists.[X]
-
 ##Name_Muzzler
 Muzzler[X]
 ##Desc_Muzzler ^
 A bizarre sword effective against bows/guns.[X]
-
 ##Name_Headhunter
 Headhunter[X]
 ##Desc_Headhunter ^
 A regal blade effective vs. Noble/Driver classes.[X]
-
 ##Name_SuperiorBlade
 Superior Bld.[X]
 ##Desc_SuperiorBlade ^
 A mighty blade eff. vs. swords/whips/drive blades.[X]
 
+//WHIPS
 ##Name_VineWhip
 Vine Whip[X]
 ##Desc_VineWhip ^
 A cheap novice's whip made of greenery.[X]
-
 ##Name_ThornWhip
 Thorn Whip[X]
 ##Desc_ThornWhip ^
 A lightweight whip with a thorned tip.[X]
-
 ##Name_ChainWhip
 Chain Whip[X]
 ##Desc_ChainWhip ^
 A somewhat cumbersome whip made of metal.[X]
-
 ##Name_RougeWhip
 Rouge Whip[X]
 ##Desc_RougeWhip ^
 A widely used whip glazed in a deep crimson.[X]
-
 ##Name_Ninetails
 Ninetails[X]
 ##Desc_Ninetails ^
 A lovely whip with nine distinct tips.[X]
-
 ##Name_RazorWhip
 Razor Whip[X]
 ##Desc_RazorWhip ^
 A horrific whip made of deadly sharp wires.[X]
-
 ##Name_Heavensfall
 Heavensfall[X]
 ##Desc_Heavensfall ^
 A legendary whip that's said to fell angels.[X]
-
 ##Name_Scorpio
 Scorpio[X]
 ##Desc_Scorpio ^
 A whip coated in toxin. Attacks can poison.[X]
-
 ##Name_HazeWhip
 Haze Whip[X]
 ##Desc_HazeWhip ^
 A whip coated in anesthetic. Attacks can sleep.[X]
-
 ##Name_Stonesting
 Stonesting[X]
 ##Desc_Stonesting ^
 A whip with a ruinous tip. Attacks can petrify.[X]
 
+//DRIVE BLADES
 ##Name_Type0
 Type-0[X]
 ##Desc_Type0 ^
 A basic drive blade that's as economic as they come.[X]
-
 ##Name_Parabola
 Parabola[X]
 ##Desc_Parabola ^
 A heavy drive blade named for the arc of its swing.[X]
-
 ##Name_Dominance
 Dominance[X]
 ##Desc_Dominance ^
 A slimmer drive blade with sleek internals.[X]
-
 ##Name_BlackSun
 Black Sun[X]
 ##Desc_BlackSun ^
 A towering drive blade that blots out the sun.[X]
-
 ##Name_RagingWave
 Raging Wave[X]
 ##Desc_RagingWave ^
 A mighty drive blade that strikes like the tide.[X]
-
 ##Name_GreatMountain ^
 Great Mountain[X]
 ##Desc_GreatMountain ^
 A prototype drive blade that can move mountains.[X]
 
 //SPEARS
+##Name_Shortspear
+Shortspear[X]
+##Desc_Shortspear ^
+A cheap and durable piercing weapon.[X]
+##Name_Pike
+Pike[X]
+##Desc_Pike ^
+A weighty and cumbersome spear of great power.[X]
+##Name_Partizan
+Partizan[X]
+##Desc_Partizan ^
+A standard-issue spear that's well balanced.[X]
+##Name_Sarissa
+Sarissa[X]
+##Desc_Sarissa ^
+A long and weighty spear that's surprisingly nimble.[X]
+##Name_Ahlspiess
+Ahlspiess[X]
+##Desc_Ahlspiess ^
+A mighty spear with an exceptionally heavy head.[X]
+##Name_Omiyari
+Omiyari[X]
+##Desc_Omiyari ^
+A nimble and light spear with a straight point.[X]
+##Name_Fengyan
+Fengyan[X]
+##Desc_Fengyan ^
+An exceptional spear made for commanders.[X]
+##Name_Ron
+Ron[X]
+##Desc_Ron ^
+A legendary spear used by a divinely protected king.[X]
+##Name_HandSpear
+Hand Spear[X]
+##Desc_HandSpear ^
+A spear designed to be thrown at nearby foes.[X]
+##Name_Shieldlance
+Shieldlance[X]
+##Desc_Shieldlance ^
+A spear with an enduring sigil. +10 Def.[X]
+##Name_SoarSpear
+Soar Spear[X]
+##Desc_SoarSpear ^
+A throwing spear that can't be used point-blank.[X]
+##Name_Longinus
+Longinus[X]
+##Desc_Longinus ^
+A lighter throwing spear with good resilience.[X]
+##Name_Impaler
+Impaler[X]
+##Desc_Impaler ^
+A massive, brutal, and brittle throwing spear.[X]
 
+//RAPIERS
 ##Name_Epee
 Epee[X]
 ##Desc_Epee ^
 A simple thrusting sword used for sport. +1 Luc.[X]
-
 ##Name_Sabre
 Sabre[X]
 ##Desc_Sabre ^
 A defensive thrusting sword. +3 Def/Res.[X]
-
 ##Name_Rapier
 Rapier[X]
 ##Desc_Rapier ^
 A sword with an extraordinary point. +10 Skl.[X]
-
 ##Name_Estoc
 Estoc[X]
 ##Desc_Estoc ^
 A curved sword used by agile fighters. +5 Spd.[X]
-
 ##Name_JollyRoger
 Jolly Roger[X]
 ##Desc_JollyRoger ^
 A rapier once used by a famed captain. +40 Luc.[X]
-
 ##Name_TheFable
 The Fable[X]
 ##Desc_TheFable ^
 A legendary rapier forged by the fae. +5 All.[X]
 
+//AXES
+##Name_Shortmace
+Shortmace[X]
+##Desc_Shortmace ^
+A cheap and compact bashing weapon.[X]
+##Name_Broadaxe
+Broadaxe[X]
+##Desc_Broadaxe ^
+A large and weighty axe made for combat.[X]
+##Name_Yue
+Yue[X]
+##Desc_Yue ^
+A well-made axe with some light ornamentation.[X]
+##Name_Greataxe
+Greataxe[X]
+##Desc_Greataxe ^
+A massive axe that's a bit tricky to use.[X]
+##Name_Khopesh
+Khopesh[X]
+##Desc_Khopesh ^
+A very light and nimble axe-like sickle.[X]
+##Name_Labrys
+Labrys[X]
+##Desc_Labrys ^
+A mighty and well-rounded battleaxe.[X]
+##Name_Parashu
+Parashu[X]
+##Desc_Parashu ^
+A massive and lethal axe with a spiked tip.[X]
+##Name_Ukonvasara
+Ukonvasara[X]
+##Desc_Ukonvasara ^
+A legendary axe said to strike like lightning.[X]
+##Name_DevilAxe
+Devil Axe[X]
+##Desc_DevilAxe ^
+A baneful cursed axe. Zeroes out Def/Res/Luc.[X]
+##Name_SerratedAxe
+Serrated Axe[X]
+##Desc_SerratedAxe ^
+An abominable axe with a gruesome edge.[X]
+##Name_HandAxe
+Hand Axe[X]
+##Desc_HandAxe ^
+A hefty axe designed to be thrown at targets.[X]
+##Name_TheFeller
+The Feller[X]
+##Desc_TheFeller ^
+A bizarre axe that almost always misses its mark.[X]
+##Name_ImposingAxe
+Imposing Axe[X]
+##Desc_ImposingAxe ^
+An axe that's almost too large to miss with.[X]
+##Name_Mindcrush
+Mindcrush[X]
+##Desc_Mindcrush ^
+An axe with a furious curse. Attacks can enrage.[X]
+##Name_Juggernaut
+Juggernaut[X]
+##Desc_Juggernaut ^
+An abhorrent axe that crushes all. Briefly.[X]
 
+//FISTS
+##Name_BrassKnuckles
+Brass Knuc.[X]
+##Desc_BrassKnuckles ^
+A pair of crude knuckle guards made of metal.[X]
+##Name_Caestus
+Caestus[X]
+##Desc_Caestus ^
+A pair of gloves worn for hand-to-hand combat.[X]
+##Name_Gauntlets
+Gauntlets[X]
+##Desc_Gauntlets ^
+A pair of well-forged metallic gauntlets.[X]
+##Name_Claws
+Claws[X]
+##Desc_Claws ^
+A pair of brutal claws, strapped to one's hands.[X]
+##Name_SpikedFist
+Spiked Fist[X]
+##Desc_SpikedFist ^
+A pair of gauntlets fitted with embedded spikes.[X]
+##Name_Katar
+Katar[X]
+##Desc_Katar ^
+A pair of artisinal daggers with unique grips.[X]
+##Name_Kirikindad
+Kirikindad[X]
+##Desc_Kirikindad ^
+A pair of legendary gloves imbued with prayers.[X]
 
+//BOWS
+##Name_Shortbow
+Shortbow[X]
+##Desc_Shortbow ^
+A cheap and simple ranged weapon.[X]
+##Name_Recurve
+Recurve[X]
+##Desc_Recurve ^
+A curved bow with a stronger draw.[X]
+##Name_Composite
+Composite[X]
+##Desc_Composite ^
+A well-made bow of semi-light materials.[X]
+##Name_Gakgung
+Gakgung[X]
+##Desc_Gakgung ^
+A reflex bow made from flexible animal horns.[X]
+##Name_Warbow
+Warbow[X]
+##Desc_Warbow ^
+A heavy standard-issue bow used by soldiers.[X]
+##Name_Sureshot
+Sureshot[X]
+##Desc_Sureshot ^
+A quality bow said to never err from its mark.[X]
+##Name_FalconBow
+Falcon Bow[X]
+##Desc_FalconBow ^
+A sleek bow that's light yet very powerful.[X]
+##Name_ArcDrawer
+Arc Drawer[X]
+##Desc_ArcDrawer ^
+A legendary bow once used by the ocean's king.[X]
+##Name_CompactBow
+Compact Bow[X]
+##Desc_CompactBow ^
+A slim and light bow for close quarters combat.[X]
+##Name_Longbow
+Longbow[X]
+##Desc_Longbow ^
+A large bow that can fight at extended range.[X]
+##Name_ToxinBow
+Toxin Bow[X]
+##Desc_ToxinBow ^
+A bow with venomous arrows. Attacks can poison.[X]
+##Name_Trickshot
+Trickshot[X]
+##Desc_Trickshot ^
+An enchanted bow whose arrows almost never falter.[X]
+##Name_Greatbow
+Greatbow[X]
+##Desc_Greatbow ^
+A massive bow with equally massive range.[X]
+##Name_OmegaArch
+Omega Arch[X]
+##Desc_OmegaArch ^
+A bespoke bow that's more a ballista.[X]
 
-//PROMO
-##Use_PromoItem
-Promote units for[N]
-stats and +3 SP.[X]
-##Name_HeroCrest
-Hero Crest[X]
-##Desc_HeroCrest ^
-A medal that honors one's martial prowess.[N]
-Promotes Swordfighters and Axefighters.[X]
-##Name_KnightProof
-Knight Proof[X]
-##Desc_KnightProof ^
-A medal that honors one's chivalric[N]
-virtue. Promotes Knights and Riders.[X]
-##Name_OrionsBolt
-Orion's Bolt[X]
-##Desc_OrionsBolt ^
-A prized arrow that never misses its[N]
-mark. Promotes Archers and Hunters.[X]
-##Name_Hippokos
-Hippokos[X]
-##Desc_Hippokos ^
-An emblem symbolic of one's devotion[N]
-to healing arts. Promotes Curates.[X]
-##Name_GuidingRing
-Guiding Ring[X]
-##Desc_GuidingRing ^
-A priceless ring set with an arcane[N]
-crystal. Promotes Scholars and Seekers.[X]
-##Name_RubyBlade
-Ruby Blade[X]
-##Desc_RubyBlade ^
-A ceremonial blade of pristine ruby,[N]
-given as an honor. Promotes Myrmidons.[X]
-##Name_SightingLens
-Sighting Lens[X]
-##Desc_SightingLens ^
-An attachable lens that can make anything[N]
-clear from miles away. Promotes Gunners.[X]
-##Name_OutlandShield
-Outland Shield[X]
-##Desc_OutlandShield ^
-A well-worn shield once worn by a legendary[N]
-frontiersman. Promotes Lancers and Raiders.[X]
-##Name_SpiritWrap
-Spirit Wrap[X]
-##Desc_SpiritWrap ^
-An unassuming cloth that provides perfect[N]
-comfort when wrapped. Promotes Brawlers.[X]
-##Name_ElysianWhip
-Elysian Whip[X]
-##Desc_ElysianWhip ^
-A mythical whip that can tame any mount.[N]
-Promotes Sky Knights and Scale Knights.[X]
-##Name_PerfectRose
-Perfect Rose[X]
-##Desc_PerfectRose ^
-An unimaginably beautiful flower for musing[N]
-and display alike. Promotes Poets and Nobles.[X]
-##Name_BanefulDoll
-Baneful Doll[X]
-##Desc_BanefulDoll ^
-A cute plush doll that harbors an inert[N]
-curse. Promotes Lurkers and Encirclers.[X]
-##Name_DarkBrooch
-Dark Brooch[X]
-##Desc_DarkBrooch ^
-A profane medallion said to connect one to the[N]
-dark arts. Promotes Dark Hunters and Callers.[X]
-##Name_DeusHerb
-Deus Herb[X]
-##Desc_DeusHerb ^
-A legendary bud said to only bloom once[N]
-a millennium. Promotes Apothecaries.[X]
-##Name_HolyCloak
-Holy Cloak[X]
-##Desc_HolyCloak ^
-A blessed tunic that offers a divine's[N]
-protection. Promotes Priests and Duelists.[X]
-##Name_DriveGear
-Drive Gear[X]
-##Desc_DriveGear ^
-A forbidden gear that can deactivate a[N]
-drive blade's limits. Promotes Drivers.[X]
-##Name_ParadoxCore
-Paradox Core[X]
-##Desc_ParadoxCore ^
-A baffling object that appears to resonate[N]
-with some machines. Promotes Artifices.[X]
-##Name_GuildSeal
-Guild Seal[X]
-##Desc_GuildSeal ^
-A medal from the Guildmaster that proves[N]
-your incredible deeds. Promotes all classes.[X]
+//GUNS
+##Name_Handgonne
+Handgonne[X]
+##Desc_Handgonne ^
+A simple yet powerful piece of artillery.[X]
+
+//STAVES
+##Name_Wand
+Wand[X]
+##Desc_Wand ^
+A basic wand for use in casting spells.[X]

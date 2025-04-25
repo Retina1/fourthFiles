@@ -17,20 +17,27 @@ POP
 
 #include "EssentialFixes.event"
 #include "AddressPatches.event"
+
+#include "NegativeStatBoosts/NegativeStatBoosts.event"
 #include "QualityOfLife/QOL.event"
 #include "IconRework/IconRework.event"
 #include "EMS/ExModularSave.event"
+#include "ItemRangeFix/ItemRangeFix.event"
+
 #include "StatGetters/_InstallStatGetters.event"
 #include "StrMag/GrowthGetters/GrowthGetters.event"
 #include "StrMag/_MasterAsmInstaller.event"
 #include "MSS/ModularStatScreen.event"
 #include "GrowthGrades/GrowthGrades.event"
-#include "CZone/Main.lyn.event"
 #include "NarrowFont/NarrowFontInstaller.event"
 #include "ChapterNames/fe8_chnames.event"
 #include "BWLRework/BWLNEW.event"
 #include "WalkSounds/WalkSounds.txt"
 #include "GORGONEGG/output/Installer.event"
+
+#include "CZone/Main.lyn.event"
+#include "CZone/Durability/Installer.event"
+
 
 
 //bwl?

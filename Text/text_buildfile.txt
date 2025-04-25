@@ -21,6 +21,7 @@ between stats and growths.[X]
 #include "System/GenericFactions.txt"
 #include "System/UnitNamesDescs.txt"
 #include "System/ItemNamesDescs.txt"
+#include "System/ConsumablesPromos.txt"
 #include "System/Objectives.txt"
 
 #include "Chapters/ChapterNames.txt"

@@ -114,6 +114,20 @@ ItemIconEntry(ParashuIcon)
 #incbin "Dmp/{Ereshkigal} Axe 26.dmp"
 ItemIconEntry(UkonvasaraIcon)
 #incbin "Dmp/{Beansy} Killer Axe+.dmp"
+ItemIconEntry(DevilAxeIcon)
+#incbin "Dmp/{Beansy} Devil Axe.dmp"
+ItemIconEntry(SerratedAxeIcon)
+#incbin "Dmp/{Zelix} icon 066.dmp"
+ItemIconEntry(HandAxeIcon)
+#incbin "Dmp/{Zelix} icon 199.dmp"
+ItemIconEntry(TheFellerIcon)
+#incbin "Dmp/{Batima} Wolf Berg.dmp"
+ItemIconEntry(ImposingAxeIcon)
+#incbin "Dmp/{Celice} Axe 10.dmp"
+ItemIconEntry(MindcrushIcon)
+#incbin "Dmp/{Zane} Axe 6.dmp"
+ItemIconEntry(JuggernautIcon)
+#incbin "Dmp/{Zane} Axe 9.dmp"
 
 //FISTS
 ItemIconEntry(BrassKnucklesIcon)
@@ -148,7 +162,41 @@ ItemIconEntry(FalconBowIcon)
 #incbin "Dmp/{Zarg} (Icon Blitz 3) Bow.dmp"
 ItemIconEntry(ArcDrawerIcon)
 #incbin "Dmp/{2WB} (Icon Blitz 1) Silver Arch1.dmp"
+ItemIconEntry(CompactBowIcon)
+#incbin "Dmp/{Zarg} Bow 11.dmp"
+ItemIconEntry(LongbowIcon)
+#incbin "Dmp/{Zelix} LongBow.dmp"
+ItemIconEntry(ToxinBowIcon)
+#incbin "Dmp/{2WB} (Icon Blitz 1) Poison Bow.dmp"
+ItemIconEntry(TrickshotIcon)
+#incbin "Dmp/{Zarg} Bow 9.dmp"
+ItemIconEntry(GreatbowIcon)
+#incbin "Dmp/Greatbow.dmp"
+ItemIconEntry(OmegaArchIcon)
+#incbin "Dmp/{CamTech075} (Pack 1) icon 041.dmp"
 
+//GUNS
+
+//STAVES
+ItemIconEntry(WandIcon)
+#incbin "Dmp/{Lisandra Brave} (FE5 Recolor) 107 8x8.dmp"
+ItemIconEntry(StaffIcon)
+#incbin "Dmp/{Zelix} icon 110.dmp"
+ItemIconEntry(DownStaffIcon)
+#incbin "Dmp/{AtelierLabs} staff 1.dmp"
+ItemIconEntry(GemStaffIcon)
+#incbin "Dmp/{Zarg} Staff 4.dmp"
+ItemIconEntry(GodendagIcon)
+#incbin "Dmp/{Zelix} icon 108.dmp"
+ItemIconEntry(SageWandIcon)
+#incbin "Dmp/{Zarg} Staff 5.dmp"
+
+ItemIconEntry(ShieldRodIcon)
+#incbin "Dmp/{Seal} (SacredWar) Staff 21.dmp"
+ItemIconEntry(LuckStaffIcon)
+#incbin "Dmp/{Lisandra Brave} (FE5 Recolor) 119 8x8.dmp"
+ItemIconEntry(AsclepiusIcon)
+#incbin "Dmp/{Seal} (SacredWar) Staff 19.dmp"
 
 POP 
 

@@ -9,6 +9,10 @@
 
 #include "_Common.event"
 
+#ifndef DEBUFFS_MIN_ZERO
+	#define DEBUFFS_MIN_ZERO
+#endif
+
 #include "MaxHP.event"
 #include "CurHP.event"
 #include "Power.event"

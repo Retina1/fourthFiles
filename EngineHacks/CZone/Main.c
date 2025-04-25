@@ -6,9 +6,14 @@
 #include "BattleStats.c"
 #include "ExpCalcs.c"
 #include "NewAutoLeveling.c"
+#include "Durability/PerChapterItems.c"
 
+//add autorepair just for S ranks
 //ok
 //ok
+//handle status weapons in C for inflictions?
+
+
 void BattleInitTargetCanCounter(void) {
 
     // Target cannot counter if either units are using "uncounterable" weapons
@@ -27,3 +32,13 @@ void BattleInitTargetCanCounter(void) {
         }
     }
 }
+
+//unbreakable enemy items
+/*
+inline int GetItemUses(int item) {
+    if (GetItemAttributes(item) & IA_UNBREAKABLE)
+        return 0xFF;
+    else
+        return ITEM_USES(item);
+}
+*/

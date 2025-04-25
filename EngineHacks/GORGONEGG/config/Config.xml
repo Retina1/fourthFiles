@@ -3,7 +3,13 @@
   <Module Name="TilemapRetina"/>
   <Module Name="DrawVertical"/>
 
-  <Module Name="MinimugEnemyFlipped"/>
+<!-- 
+<Module Name="FullInventoryDroppable"/>
+<Definition Name="INVENTORY_ICON_X" Value="112"/>
+<Definition Name="INVENTORY_ICON_Y" Value="0"/>
+-->
+
+  <Module Name="MinimugStandard"/>
     <Definition Name="MINIMUG_X" Value="1"/>
     <Definition Name="MINIMUG_Y" Value="1"/>
 

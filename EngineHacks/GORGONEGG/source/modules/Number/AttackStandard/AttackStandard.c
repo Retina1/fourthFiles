@@ -12,7 +12,7 @@ void AttackStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataPro
   if ( proc->busyFlag )
     return;
 
-  GenericNumberTwoDigits(udp->battleAttack, ATK_X, ATK_Y, proc);
+  GenericNumberThreeDigits(udp->battleAttack, ATK_X, ATK_Y, proc);
 
   return;
 }

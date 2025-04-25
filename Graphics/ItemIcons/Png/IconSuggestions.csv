@@ -1,27 +1,27 @@
 INLINE NewItemTable,
 Nothing,
-ShortswordIcon,{Zane} icon 031 
-ScramasaxIcon,{Jubby} Dagger 6
-BoarbladeIcon,{LordGlenn} Sword 1
-ClaymoreIcon,{SacredStones} Light Brand (Feh) (Sacred Stones)
-ExecutorIcon,{SN_Ivan} Steel Blade (Radiant Dawn)
-ZweihanderIcon,{MeatOfJustice} Sword 11
-DvergrSwordIcon,{GabrielKnight} (Blessed&Killer) Sword 1
-CaladbolgIcon,{LordGlenn} (ArchaneaIconProject) tile010
-BrightswordIcon,{Zarg} Sword 15
-MagebaneIcon,{Batima} Runesword(FE9)
-BluntbladeIcon,{JPN} 2a
-RoughslashIcon,{Ereshkigal} Blade 7
-MuzzlerIcon,{Beansy} Crystal Sword
-HeadhunterIcon,{Kyrads} Dragonslayer
-SuperiorBladeIcon,{Seliost1} Soul Saber
-VineWhipIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 1"
+Shortsword,{Zane} icon 031 
+Scramasax,{Jubby} Dagger 6
+Boarblade,{LordGlenn} Sword 1
+Claymore,{SacredStones} Light Brand (Feh) (Sacred Stones)
+Executor,{SN_Ivan} Steel Blade (Radiant Dawn)
+Zweihander,{MeatOfJustice} Sword 11
+DvergrSword,{GabrielKnight} (Blessed&Killer) Sword 1
+Caladbolg,{LordGlenn} (ArchaneaIconProject) tile010
+Brightsword,{Zarg} Sword 15
+Magebane,{Batima} Runesword(FE9)
+Bluntblade,{JPN} 2a
+Roughslash,{Ereshkigal} Blade 7
+Muzzler,{Beansy} Crystal Sword
+Headhunter,{Kyrads} Dragonslayer
+SuperiorBlade,{Seliost1} Soul Saber
+VineWhip,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 1"
 ThornWhip,
-ChainWhipIcon,{milom} VampireKiller
-RougeWhipIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 4"
+ChainWhip,{milom} VampireKiller
+RougeWhip,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 4"
 Ninetails,
-RazorWhipIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 2"
-HeavensfallIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 3"
+RazorWhip,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 2"
+Heavensfall,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 3"
 Scorpio,
 HazeWhip,
 Stonesting,
@@ -31,61 +31,61 @@ Dominance,
 BlackSun,
 RagingWave,
 GreatMountain,
-ShortspearIcon,{LordGlenn} Lance 22
-PartizanIcon,{Zelix} icon 054
-PikeIcon,{Celice} Lance 2
-SarissaIcon,{Zane} (Icon Blitz 1) Lance 1
-AhlspiessIcon,{Seal} (SacredWar) Lance 5
-OmiyariIcon,{Batima} Silver Naginata
-FengyanIcon,{Batima} Steel Naginata - Fancy
-RonIcon,{Jubby} Lance 9
-HandSpearIcon,{Zane} (Icon Blitz 1) Lance 10
-ShieldlanceIcon,{Ereshkigal} Extra 49
-SoarSpearIcon,{Kyrads} Silver Halberd
-LonginusIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Lance 8"
-ImpalerIcon,{Batima} Maltet
-EpeeIcon,{Seal} (SacredWar) Sword 1
-SabreIcon,{Kyrads} Dussack
-RapierIcon,{WhydidImakethisaccount} Sword 1
-EstocIcon,{Zane} icon 107
-JollyRogerIcon,{Topazlight } Sea Sword
-TheFableIcon,{LordGlenn} (ArchaneaIconProject) tile047
-ShortmaceIcon,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Axe 12"
-BroadaxeIcon,{Zelix} icon 056
-YueIcon,{Zarg} Axe 10
-GreataxeIcon,{Zane} icon 090
-KhopeshIcon,{Zane} Axe 29
-LabrysIcon,{Zarg} Axe 7
-ParashuIcon,{Ereshkigal} Axe 26
-UkonvasaraIcon,{Beansy} Killer Axe+
-AXE (SPECIAL),
-AXE (SPECIAL),
-AXE (SPECIAL),
-AXE (SPECIAL),
-AXE (SPECIAL),
-AXE (SPECIAL),
-AXE (SPECIAL),
-BrassKnuckleIcon,{SMITHYGCN} Knucles 1
-CaestusIcon,{SMITHYGCN} Knucles 4
-GauntletsIcon,{SMITHYGCN} Knucles 2
-ClawsIcon,{FuriousHaunter} Duel Slashers
-SpikedFistIcon,{SMITHYGCN} Knucles 2 with spikes on it. {Maxim} Gauntlet 6 can work in a pinch.
-KatarIcon,{LordGlenn } Sword 50
-KirikindadIcon,{Maxim} Gauntlet 4
-ShortbowIcon,{Zane} icon 216
-RecurveIcon,{LordGlenn} Bow 1
-CompositeIcon,{Zane} icon 096
-GakgungIcon,{2WB} (Vanilla + Blitz) Brave Bow
-WarbowIcon,{Lisandra Brave} (FE5 Recolor) 62 8x8
-SureshotIcon,{FuriousHaunter} Viper
-FalconBowIcon,{Zarg} (Icon Blitz 3) Bow
-ArcDrawerIcon,{2WB} (Icon Blitz 1) Silver Arch1
-BOWS (SPECIAL),
-BOWS (SPECIAL),
-BOWS (SPECIAL),
-BOWS (SPECIAL),
-BOWS (SPECIAL),
-BOWS (SPECIAL),
+Shortspear,{LordGlenn} Lance 22
+Pike,{Celice} Lance 2
+Partizan,{Zelix} icon 054
+Sarissa,{Zane} (Icon Blitz 1) Lance 1
+Ahlspiess,{Seal} (SacredWar) Lance 5
+Omiyari,{Batima} Silver Naginata
+Fengyan,{Batima} Steel Naginata - Fancy
+Ron,{Jubby} Lance 9
+HandSpear,{Zane} (Icon Blitz 1) Lance 10
+Shieldlance,{Ereshkigal} Extra 49
+SoarSpear,{Kyrads} Silver Halberd
+Longinus,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Lance 8"
+Impaler,{Batima} Maltet
+Epee,{Seal} (SacredWar) Sword 1
+Sabre,{Kyrads} Dussack
+Rapier,{WhydidImakethisaccount} Sword 1
+Estoc,{Zane} icon 107
+JollyRoger,{Topazlight } Sea Sword
+TheFable,{LordGlenn} (ArchaneaIconProject) tile047
+Shortmace,"{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Axe 12"
+Broadaxe,{Zelix} icon 056
+Yue,{Zarg} Axe 10
+Greataxe,{Zane} icon 090
+Khopesh,{Zane} Axe 29
+Labrys,{Zarg} Axe 7
+Parashu,{Ereshkigal} Axe 26
+Ukonvasara,{Beansy} Killer Axe+
+DevilAxe,{Beansy} Devil Axe
+SerratedAxe,{Zelix} icon 066
+HandAxe,{Zelix} icon 199
+TheFeller,{Batima} Wolf Berg
+ImposingAxe,{Celice} Axe 10
+Mindcrush, {Zane} Axe 6
+Juggernaut,{Zane} Axe 9
+BrassKnuckles,{SMITHYGCN} Knucles 1
+Caestus,{SMITHYGCN} Knucles 4
+Gauntlets,{SMITHYGCN} Knucles 2
+Claws,{FuriousHaunter} Duel Slashers
+SpikedFist,{SMITHYGCN} Knucles 2 with spikes on it. {Maxim} Gauntlet 6 can work in a pinch.
+Katar,{LordGlenn } Sword 50
+Kirikindad,{Maxim} Gauntlet 4
+Shortbow,{Zane} icon 216
+Recurve,{LordGlenn} Bow 1
+Composite,{Zane} icon 096
+Gakgung,{2WB} (Vanilla + Blitz) Brave Bow
+Warbow,{Lisandra Brave} (FE5 Recolor) 62 8x8
+Sureshot,{FuriousHaunter} Viper
+FalconBow,{Zarg} (Icon Blitz 3) Bow
+ArcDrawer,{2WB} (Icon Blitz 1) Silver Arch1
+CompactBow,{Zarg} Bow 11
+Longbow, {Zelix} LongBow
+ToxinBow, {2WB} (Icon Blitz 1) Poison Bow
+Trickshot, {Zarg} Bow 9
+Greatbow,Greatbow
+OmegaArch,{CamTech075} (Pack 1) icon 041
 Handgonne,
 Arquebus,
 Sakaloz,
@@ -94,40 +94,40 @@ Musket,
 Repeater,
 BoltRifle,
 Agneyastra,
-GUNS (SPECIAL),
-GUNS (SPECIAL),
-GUNS (SPECIAL),
-GUNS (SPECIAL),
-GUNS (SPECIAL),
-GUNS (SPECIAL),
-GUNS (SPECIAL),
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
-0x0,
+Twinshot,
+Snipistol,
+Pepperbox,
+Stunshot,
+Furybox,
+Meisterkugel,
+Stoneshot,
+Wand,{Lisandra Brave} (FE5 Recolor) 107 8x8
+Staff, {Zelix} icon 110
+DownStaff, {AtelierLabs} staff 1
+GemStaff,{Zarg} Staff 4
+Godendag, {Zelix} icon 108
+SageWand,{Zarg} Staff 5
+Kerykeion,
+ShieldRod,{Seal} (SacredWar) Staff 21
+LuckStaff,{Lisandra Brave} (FE5 Recolor) 119 8x8
+Asclepius, {Seal} (SacredWar) Staff 19
+FlameScroll,
+BoltScroll,
+FreezeScroll,
+GaleScroll,
+ShineScroll,
+CleaveScroll,
+SparkingScroll,
+SoulstealScroll,
+PyreScroll,
+ThorScroll,
+CocytusScroll,
+TempestScroll,
+HealScroll,
+RestoreScroll,
+RepairScroll,
+RescueScroll,
+WarpScroll,
 0x0,
 0x0,
 0x0,

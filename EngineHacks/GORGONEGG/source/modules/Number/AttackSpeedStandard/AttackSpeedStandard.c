@@ -12,7 +12,7 @@ void AttackSpeedStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDa
   if ( proc->busyFlag )
     return;
 
-  GenericNumberTwoDigits(udp->battleSpeed, AS_X, AS_Y, proc);
+  GenericNumberThreeDigits(udp->battleSpeed, AS_X, AS_Y, proc);
 
   return;
 }

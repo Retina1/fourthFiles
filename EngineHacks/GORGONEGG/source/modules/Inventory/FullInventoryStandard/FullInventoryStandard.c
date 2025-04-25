@@ -52,8 +52,8 @@ void FullInventoryStandard_Dynamic(struct PlayerInterfaceProc* proc, struct Unit
   for ( i = 0; i < itemCount; i++ )
   {
     CallARM_PushToSecondaryOAM(
-        ((base_coords.x + (i * 2)) * 8) + INVENTORY_ICON_X,
-        (base_coords.y * 8) + INVENTORY_ICON_Y,
+        (base_coords.x * 8) + INVENTORY_ICON_X,
+        ((base_coords.y + (i * 2)) * 8) + INVENTORY_ICON_Y,
         &gObj_16x16,
         INVENTORY_ICON_TILE + (2 * i)
       );

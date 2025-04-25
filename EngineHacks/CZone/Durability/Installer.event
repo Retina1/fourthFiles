@@ -1,0 +1,12 @@
+ALIGN 4
+ConvoySize_Link:
+WORD 200
+
+ALIGN 4
+PerChapterItemsList:
+BYTE Caladbolg Heavensfall GreatMountain
+BYTE Ron TheFable
+BYTE Ukonvasara Kirikindad
+BYTE ArcDrawer Agneyastra
+BYTE Kerykeion
+BYTE 0 // terminator
