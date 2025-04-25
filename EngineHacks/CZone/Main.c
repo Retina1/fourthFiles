@@ -9,8 +9,6 @@
 #include "Durability/PerChapterItems.c"
 
 //add autorepair just for S ranks
-//ok
-//ok
 //handle status weapons in C for inflictions?
 
 

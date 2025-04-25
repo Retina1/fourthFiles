@@ -1,0 +1,24 @@
+PUSH
+//ORG 0x74BEC	//FE8J
+ORG 0x72710	//FE8U
+jumpToHack(ChangeArenaBGM)
+
+POP
+
+
+ALIGN 4
+ChangeArenaBGM:
+#incbin "ChangeArenaBGM.dmp"
+POIN ChangeArenaBGM_Table
+WORD 0x39
+
+ALIGN 4
+ChangeArenaBGM_Table:   //sizeof == 0x8
+//		EnemyClass	PlayerUnit	EnemyLV>=	Option		Flag	BGM
+BYTE	0xFF		0			0			0	;SHORT	0		0	//term
+//EnemyClass		1
+//PlayerUnit		1
+//EnemyLV>=		1
+//Option			1
+//Flag			2
+//BGM			2

@@ -22,7 +22,7 @@ void ComputeBattleUnitAttack(struct BattleUnit* attacker, struct BattleUnit* def
     }
 
     attacker->battleAttack = attack;
-	if ((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(defender->weapon) & IA_MAGIC))
+	if ((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))
 		attacker->battleAttack += attacker->unit.mag;
 	else
 		attacker->battleAttack += attacker->unit.pow;

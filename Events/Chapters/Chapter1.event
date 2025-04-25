@@ -67,6 +67,7 @@ UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] 0x0 0x0 0x1 REDA12R7 [Epee] At
 UNIT GuildGeneric Swordfighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Shortsword] NoAI
 UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [Shortmace] NoAI
 UNIT GuildGeneric Archer 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Shortbow] AttackInRangeAI
+UNIT GuildGeneric Brawler 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA8R0 [BrassKnuckles] AttackInRangeAI
 UNIT
 
 ALIGN 4

@@ -115,8 +115,8 @@ FreezeScroll
 GaleScroll
 ShineScroll
 CleaveScroll
-SparkingScroll
-SoulstealScroll
+Sparkcroll
+DrainScroll
 PyreScroll
 ThorScroll
 CocytusScroll

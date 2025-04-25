@@ -363,9 +363,177 @@ A bespoke bow that's more a ballista.[X]
 Handgonne[X]
 ##Desc_Handgonne ^
 A simple yet powerful piece of artillery.[X]
+##Name_Arquebus
+Arquebus[X]
+##Desc_Arquebus ^
+A powerful gun aimed and fired from the shoulder.[X]
+##Name_Sakaloz
+Sakaloz[X]
+##Desc_Sakaloz ^
+A heavy gun said to have the force of a cannon.[X]
+##Name_Caliver
+Caliver[X]
+##Desc_Caliver ^
+A military gun that uses a standardized round.[X]
+##Name_Musket
+Musket[X]
+##Desc_Musket ^
+A long and slow-loading gun with a mighty round.[X]
+##Name_Repeater
+Repeater[X]
+##Desc_Repeater ^
+A gun that can hold several rounds at once.[X]
+##Name_BoltRifle
+Bolt Rifle[X]
+##Desc_BoltRifle ^
+A sleek and powerful gun with quality sights.[X]
+##Name_Agneyastra
+Agneyastra[X]
+##Desc_Agneyastra ^
+A prototype gun said to spit a dragon's fire.[X]
+##Name_Twinshot
+Twinshot[X]
+##Desc_Twinshot ^
+A small gun that can fire two inaccurate rounds.[X]
+##Name_Snipistol
+Snipistol[X]
+##Desc_Snipistol ^
+A covert gun with great accuracy and range.[X]
+##Name_Pepperbox
+Pepperbox[X]
+##Desc_Pepperbox ^
+A gun with irritant-laced bullets. Attacks can blind.[X]
+##Name_Stunshot
+Stunshot[X]
+##Desc_Stunshot ^
+A gun with paralytic bullets. Attacks can paralyze.[X]
+##Name_Furybox
+Furybox[X]
+##Desc_Furybox ^
+A gun with hallucinogenic bullets. Attacks can enrage.[X]
+##Name_Meisterkugel ^
+Meisterkugel[X]
+##Desc_Meisterkugel ^
+A refined gun that can fire two rounds at once.[X]
+##Name_Stoneshot
+Stoneshot[X]
+##Desc_Stoneshot ^
+A gun with baneful bullets. Attacks can petrify.[X]
+
 
 //STAVES
 ##Name_Wand
 Wand[X]
 ##Desc_Wand ^
 A basic wand for use in casting spells.[X]
+##Name_Staff
+Staff[X]
+##Desc_Staff ^
+A simple staff made of quality wood. +2 Mag.[X]
+##Name_DownStaff
+Down Staff[X]
+##Desc_DownStaff ^
+A staff adorned with feathers. +5 Mag, +1 Skl.[X]
+##Name_GemStaff
+Gem Staff[X]
+##Desc_GemStaff ^
+A staff of beautiful crystals. +8 Mag, +5 Skl.[X]
+##Name_Godendag
+Godendag[X]
+##Desc_Godendag ^
+A sturdy staff. +12 Mag, +3 Def/Res/Luc.[X]
+##Name_SageWand
+Sage Wand[X]
+##Desc_SageWand ^
+A nigh-mythical wand of scholars. +15 Mag/Skl.[X]
+##Name_Kerykeion
+Kerykeion[X]
+##Desc_Kerykeion ^
+A legendary staff. +25 Mag, +10 Skl/Res/Luc.[X]
+##Name_Shieldrod
+Shieldrod[X]
+##Desc_Shieldrod ^
+A wand that protects its holder. +20 Def.[X]
+##Name_LuckStaff
+Luck Staff[X]
+##Desc_LuckStaff ^
+A staff crafted under a lucky star. +30 Luc.[X]
+##Name_Asclepius
+Asclepius[X]
+##Desc_Asclepius ^
+A staff that empowers the body. +30 Str/Res.[X]
+
+//SCROLLS
+##Name_FlameScroll
+Flame Scr.[X]
+##Desc_FlameScroll ^
+A scroll that calls upon a flame pillar.[X]
+##Name_BoltScroll
+Bolt Scr.[X]
+##Desc_BoltScroll ^
+A scroll that calls upon lightning's might.[X]
+##Name_FreezeScroll
+Freeze Scr.[X]
+##Desc_FreezeScroll ^
+A scroll that calls upon a coldsnap.[X]
+##Name_GaleScroll
+Gale Scr.[X]
+##Desc_GaleScroll ^
+A scroll that calls upon fierce winds.[X]
+##Name_ShineScroll
+Shine Scr.[X]
+##Desc_ShineScroll ^
+A scroll that calls upon heavenly light.[X]
+##Name_CleaveScroll
+Cleave Scr.[X]
+##Desc_CleaveScroll ^
+A scroll of forbidden power. Halves HP.[X]
+##Name_SparkScroll
+Spark Scr.[X]
+##Desc_SparkScroll ^
+A scroll that unleashes far-range bolts.[X]
+##Nmae_DrainScroll
+Drain Scr.[X]
+##Desc_DrainScroll ^
+A scroll of corruption. Steals target HP.[X]
+##Name_PyreScroll
+Pyre Scr.[X]
+##Desc_PyreScroll ^
+A mighty scroll that calls upon hellfire.[X]
+##Name_ThorScroll
+Thor Scr.[X]
+##Desc_ThorScroll ^
+A mighty scroll that calls upon storms.[X]
+##Name_CocytusScroll
+Cocytus Scr.[X]
+##Desc_CocytusScroll ^
+A mighty scroll that calls upon bitter cold.[X]
+##Name_TempestScroll
+Tempest Scr.[X]
+##Desc_TempestScroll ^
+A mighty scroll that calls upon hurricanes.[X]
+##Name_HealScroll
+Heal Scr.[X]
+##Desc_HealScroll ^
+A scroll that calls upon healing magics.[N]
+Restores HP scaling with magic.[X]
+##Name_RestoreScroll
+Restore Scr.[X]
+##Desc_RestoreScroll ^
+A scroll that calls upon cleansing magics.[N]
+Cures an ally of binds and ailments.[X]
+##Name_RepairScroll
+Repair Scr.[X]
+##Desc_RepairScroll ^
+A scroll that calls upon mending magics.[N]
+Replenishes the uses of another item.[X]
+##Name_RescueScroll
+Rescue Scr.[X]
+##Desc_RescueScroll ^
+A mighty scroll that rewrites reality.[N]
+Brings an ally to an adjacent space.[X]
+##Name_WarpScroll
+Warp Scr.[X]
+##Desc_WarpScroll ^
+A mighty scroll that rewrites reality.[N]
+Warps an adjacent ally to an afar space.[X]

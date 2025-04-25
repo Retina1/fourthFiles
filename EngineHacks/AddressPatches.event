@@ -1,3 +1,9 @@
+//fix staff display
+PUSH
+ORG 0x1E7F4
+SHORT 0x46C0 0x46C0
+POP
+
 //gorgonegg
 #define FuckGorgonEggs(address) "ORG address; BYTE 0x0; ORG address+4; BYTE 0x0"
 PUSH

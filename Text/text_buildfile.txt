@@ -23,6 +23,7 @@ between stats and growths.[X]
 #include "System/ItemNamesDescs.txt"
 #include "System/ConsumablesPromos.txt"
 #include "System/Objectives.txt"
+#include "System/Music.txt"
 
 #include "Chapters/ChapterNames.txt"
 #include "Chapters/FloorTitles.txt"

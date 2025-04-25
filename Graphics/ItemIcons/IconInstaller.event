@@ -9,6 +9,13 @@ NewItemIcons:
  
 PUSH 
 // Individual Icons go here
+//SCROLLS
+ItemIconEntry(FlameScrollIcon)
+#incbin "Dmp/FlameScroll.dmp"
+
+ItemIconEntry(PyreScrollIcon)
+#incbin "Dmp/PyreScroll.dmp"
+
 //SWORDS
 ItemIconEntry(ShortswordIcon)
 #incbin "Dmp/{Zane} icon 031.dmp"

@@ -27,9 +27,10 @@ ALIGN 4
 #include "Maps\MasterMapInstaller.event"
 ALIGN 4
 #include "Graphics\_Graphics.event"
-
 ALIGN 4
 #include "Text\Install Text Data.event"
+ALIGN 4
+#include "Music\_MusicInstaller.event"
 
 ALIGN 4
 #include "Tables\Table Installer.event"

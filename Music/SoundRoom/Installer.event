@@ -1,0 +1,62 @@
+
+// credit to pikmin1211
+
+#define SoundRoomSongTable newMusicTable
+
+ALIGN 4
+#include "DrawSoundRoomText.lyn.event"
+
+gSoundRoomUIProc:
+WORD 0x8A21338
+
+PUSH
+
+// dont draw the completion number
+ORG 0xAF4F4 // DrawUiNumber()
+SHORT 0x46C0 0x46C0 // nop nop
+
+ORG 0xB0094
+jumpToHack(DrawSoundRoomSongSourceHook)
+
+// center the title text properly
+ORG 0xB0052
+BYTE 0xA8
+
+POP
+
+#define SoundRoomEntry(songId, nameId, originID,entrycount) "WORD songId 10000 0 nameId; PUSH; ORG SoundRoomSourceTable+(entrycount*16); WORD songId; SHORT originID 0; POP"
+
+ALIGN 4
+SoundRoomSourceTable:
+FILL 200*16
+WORD 0 0 // term
+
+ALIGN 4
+newMusicTable:
+SoundRoomEntry(Song_TheFirstCampaign, SongTitle_TheFirstCampaign, SourceTitle_EtrianOdyssey2,0)
+WORD 0xFFFFFFFF 0 0 0
+
+PUSH
+ORG $1BC14
+POIN newMusicTable
+ORG $1BCC4
+POIN newMusicTable
+ORG $AECA8
+POIN newMusicTable
+ORG $AECD0
+POIN newMusicTable
+ORG $AED2C
+POIN newMusicTable
+ORG $AEEBC
+POIN newMusicTable
+ORG $AF438
+POIN newMusicTable
+ORG $AF830
+POIN newMusicTable
+ORG $AFE30
+POIN newMusicTable
+ORG $B0080
+POIN newMusicTable
+ORG $B042C
+POIN newMusicTable
+POP

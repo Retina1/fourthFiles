@@ -194,8 +194,8 @@
 	ORG $22C7C //After moving to a specific square, for weapons
 	gotoHackWithR3(All_Weapons_One_Square)
 	
-	//ORG $22DB0 //When selecting target (technically it's one weapon, but uses the same functions, so yay)
-	//gotoHackWithR3(All_Weapons_One_Square)
+	ORG $22DB0 //When selecting target (technically it's one weapon, but uses the same functions, so yay)
+	gotoHackWithR3(All_Weapons_One_Square)
 	
 	ORG $34554 //Dunno when this is called, or even why it exists, but I'm putting it here just in case. 
 	SHORT 0x4B01
