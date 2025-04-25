@@ -1,0 +1,13 @@
+ALIGN 4
+PUSH
+ORG CURRENTOFFSET+$1;GE_GetWindowPosition:
+POP
+WORD $4B03B507 $F0002100 $B003F805 $4708BC02
+POIN DrawVertical_TilemapDestination
+WORD $46C04718
+ALIGN 4
+PUSH
+ORG CURRENTOFFSET+$0;gGetWindowPosition:
+POP
+POIN DrawVertical_TilemapDestination
+WORD $0
