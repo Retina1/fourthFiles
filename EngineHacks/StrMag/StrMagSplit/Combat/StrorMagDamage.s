@@ -7,9 +7,12 @@ mov		r7,#0x14
 
 mov 	r0,#0x4C	@weaponAttributes
 ldr		r0,[r4,r0]
+mov		r5,#0x2	@Magic Sword
+tst		r5,r0
+bne		Magic		@IsMagicWeapon?
 mov		r5,#0x40	@Magic Sword
 tst		r5,r0
-bne		Magic		@IsMagicSword?
+bne		Magic		@IsMagicWeapon?
 
 mov 	r0,#0x50	@weaponType
 ldrb	r0,[r4,r0]
