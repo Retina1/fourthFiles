@@ -2,6 +2,7 @@
 #define defStatBoosts(hp, str, mag, skl, spd, luk, def, res) "BYTE hp str skl spd def res luk mag"
 #include "WeaponEffectiveGroups.event"
 #include "WeaponStatBoosts.event"
+#include "SpellDefinitions.event"
 
 #ifndef TABLE_DEFINITIONS
 

@@ -2,10 +2,10 @@
 	#define _StaffAITemplate
 	// comment out if using the nightmare csvs
 	#ifndef AI_ItemArray
-		#define AI_ItemArray 0xD86F4
+//		#define AI_ItemArray 0xD86F4
 	#endif
 	#ifndef AI_StaffArray
-		#define AI_StaffArray 0xD868C
+//		#define AI_StaffArray 0xD868C
 	#endif
 	
 

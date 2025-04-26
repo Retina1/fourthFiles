@@ -1,0 +1,3 @@
+INLINE PromotionItemTable,Promotion Item ID,##UNKNOWN##,Promotion Class List Pointer,Promo Item Usability Pointer
+0x0,HeroCrest,0x0,HeroCrestClassList|IsPointer,0x0
+End of Table,0xFFFF,0x0,0x0,0x0

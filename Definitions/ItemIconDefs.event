@@ -115,8 +115,8 @@
 #define GaleScrollIcon 0x73
 #define ShineScrollIcon 0x74
 #define CleaveScrollIcon 0x75
-#define SparkingScrollIcon 0x76
-#define SoulstealScrollIcon 0x77
+#define SparkScrollIcon 0x76
+#define DrainScrollIcon 0x77
 #define PyreScrollIcon 0x78
 #define ThorScrollIcon 0x79
 #define CocytusScrollIcon 0x7A

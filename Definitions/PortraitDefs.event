@@ -26,3 +26,7 @@
 #define FrancescaMug 0x1A
 #define SubtractronMug 0x1B
 #define TrishMug 0x1C
+#define AtiliusMug 0x1D
+#define SaewynnMug 0x1E
+#define KatrinMug 0x1F
+#define NadjaMug 0x20

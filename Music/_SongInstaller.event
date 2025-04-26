@@ -10,3 +10,10 @@
 SongTable(Song_TheFirstCampaign,TheFirstCampaign,1)
 #include "songs/TheFirstCampaign.event"
 }
+
+//0x43 - title screen
+#define Song_SpinningTheTale 0x43
+{
+SongTable(Song_SpinningTheTale,SpinningTheTale,1)
+#include "songs/SpinningTheTale.event"
+}

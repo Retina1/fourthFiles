@@ -1,7 +1,41 @@
-//SCROLLS
-
 //CONSUMABLES
-
+##Name_Vulnerary
+Vulnerary[X]
+##Desc_Vulnerary ^
+A traditional potion of healing.[N]
+Restores 15 HP to the user.[X]
+##Name_Elixir
+Elixir[X]
+##Desc_Elixir ^
+A profound potion of healing.[N]
+Restores all HP to the user.[X]
+##Name_Medica
+Medica[X]
+##Desc_Medica ^
+A healing salve for use on allies.[N]
+Restores 15 HP to an ally within[N]
+three tiles of the user.[X]
+##Name_Soma
+Soma[X]
+##Desc_Soma ^
+A bountiful salve for use on allies.[N]
+Restores 15 HP to all allies within[N]
+three tiles of the user.[X]
+##Use_SelfHeal
+Restores the[N]
+user's HP.[X]
+##Use_AllyHeal
+Restores anN]
+ally's HP.[X]
+##Name_AriadneShard
+Ariadne Shd.[X]
+##Desc_AriadneShard ^
+An adventurer's most important failsafe.[N]
+Saves the game, allowing one to restart[N]
+from that point after resetting.[X]
+##Use_AriadneShard
+Save your[N]
+progress.[X]
 
 //PROMO
 ##Use_PromoItem
@@ -38,12 +72,12 @@ Ruby Blade[X]
 A ceremonial blade of pristine ruby,[N]
 given as an honor. Promotes Myrmidons.[X]
 ##Name_SightingLens
-Sighting Lens[X]
+Sighting[0xBC]Lens[X]
 ##Desc_SightingLens ^
 An attachable lens that can make anything[N]
 clear from miles away. Promotes Gunners.[X]
 ##Name_OutlandShield
-Outland Shield[X]
+Outland Shd.[X]
 ##Desc_OutlandShield ^
 A well-worn shield once worn by a legendary[N]
 frontiersman. Promotes Lancers and Raiders.[X]
@@ -88,7 +122,7 @@ Drive Gear[X]
 A forbidden gear that can deactivate a[N]
 drive blade's limits. Promotes Drivers.[X]
 ##Name_ParadoxCore
-Paradox Core[X]
+Prdx. Core[X]
 ##Desc_ParadoxCore ^
 A baffling object that appears to resonate[N]
 with some machines. Promotes Artifices.[X]

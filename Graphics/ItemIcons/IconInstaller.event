@@ -12,9 +12,39 @@ PUSH
 //SCROLLS
 ItemIconEntry(FlameScrollIcon)
 #incbin "Dmp/FlameScroll.dmp"
-
+ItemIconEntry(BoltScrollIcon)
+#incbin "Dmp/BoltScroll.dmp"
+ItemIconEntry(FreezeScrollIcon)
+#incbin "Dmp/FreezeScroll.dmp"
+ItemIconEntry(GaleScrollIcon)
+#incbin "Dmp/GaleScroll.dmp"
+ItemIconEntry(ShineScrollIcon)
+#incbin "Dmp/ShineScroll.dmp"
+ItemIconEntry(CleaveScrollIcon)
+#incbin "Dmp/CleaveScroll.dmp"
+ItemIconEntry(SparkScrollIcon)
+#incbin "Dmp/SparkScroll.dmp"
+ItemIconEntry(DrainScrollIcon)
+#incbin "Dmp/DrainScroll.dmp"
 ItemIconEntry(PyreScrollIcon)
 #incbin "Dmp/PyreScroll.dmp"
+ItemIconEntry(ThorScrollIcon)
+#incbin "Dmp/ThorScroll.dmp"
+ItemIconEntry(CocytusScrollIcon)
+#incbin "Dmp/CocytusScroll.dmp"
+ItemIconEntry(TempestScrollIcon)
+#incbin "Dmp/TempestScroll.dmp"
+ItemIconEntry(HealScrollIcon)
+#incbin "Dmp/HealScroll.dmp"
+ItemIconEntry(RestoreScrollIcon)
+#incbin "Dmp/RestoreScroll.dmp"
+ItemIconEntry(RepairScrollIcon)
+#incbin "Dmp/RepairScroll.dmp"
+ItemIconEntry(RescueScrollIcon)
+#incbin "Dmp/RescueScroll.dmp"
+ItemIconEntry(WarpScrollIcon)
+#incbin "Dmp/WarpScroll.dmp"
+
 
 //SWORDS
 ItemIconEntry(ShortswordIcon)

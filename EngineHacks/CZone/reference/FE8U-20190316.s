@@ -20,6 +20,7 @@ SET_FUNC __aeabi_uidivmod, Div @ WARNING: this one won't work for large numbers
 SET_FUNC sub_80230F0, 0x80230F1
 
 SET_DATA gHitCountRAMAddress, 0x030017c4
+SET_DATA gStatScreen, 0x02003BFC
 
 SET_FUNC SetPidDefeatedFlag,0x08083571
 

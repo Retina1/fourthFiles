@@ -233,7 +233,14 @@ void DrawItemStatScreenLine(struct TextHandle* text, int item, int nameColor, u1
 		i++;
 	}
 	
-    DrawUiNumberOrDoubleDashes(mapOut + 11, color, GetItemUses(item));
+	int allegiance = (gStatScreen.unit->index & 0xC0);
+	
+	if(allegiance != FACTION_BLUE) {
+		DrawUiNumberOrDoubleDashes(mapOut + 11, color, 255);
+	}
+	else {
+		DrawUiNumberOrDoubleDashes(mapOut + 11, color, GetItemUses(item));
+	}
     DrawUiNumberOrDoubleDashes(mapOut + 14, color, GetItemMaxUses(item));
 
     Text_Display(text, mapOut + 2);

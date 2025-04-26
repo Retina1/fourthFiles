@@ -24,7 +24,7 @@ BYTE 0xA8
 
 POP
 
-#define SoundRoomEntry(songId, nameId, originID,entrycount) "WORD songId 10000 0 nameId; PUSH; ORG SoundRoomSourceTable+(entrycount*16); WORD songId; SHORT originID 0; POP"
+#define SoundRoomEntry(songId, nameId, originID,entrycount) "WORD songId 10000 0 nameId; PUSH; ORG SoundRoomSourceTable+(entrycount*8); WORD songId; SHORT originID 0; POP"
 
 ALIGN 4
 SoundRoomSourceTable:
@@ -33,6 +33,9 @@ WORD 0 0 // term
 
 ALIGN 4
 newMusicTable:
+//title
+SoundRoomEntry(Song_SpinningTheTale, SongTitle_SpinningTheTale, SourceTitle_EtrianOdyssey,1)
+//player phase
 SoundRoomEntry(Song_TheFirstCampaign, SongTitle_TheFirstCampaign, SourceTitle_EtrianOdyssey2,0)
 WORD 0xFFFFFFFF 0 0 0
 

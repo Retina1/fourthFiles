@@ -4,19 +4,19 @@ ORG CURRENTOFFSET+$1;GE_Dynamic:
 POP
 WORD $5B570 $4C06000E $314B06 $34040028 $F80AF000 $2B006823 $BC70D1F7 $4700BC01
 POIN CURRENTOFFSET+12
-POIN ResistanceStandard_Dynamic
+POIN AttackStandard_Dynamic
 WORD $46C04718
 ALIGN 4
 PUSH
 ORG CURRENTOFFSET+$0;gDynamicFunctions:
 POP
-POIN ResistanceStandard_Dynamic
-POIN HPOrStatus_Dynamic
-POIN LevelStandard_Dynamic
-POIN DefenseStandard_Dynamic
 POIN AttackStandard_Dynamic
-POIN HitStandard_Dynamic
+POIN HPOrStatus_Dynamic
+POIN ResistanceStandard_Dynamic
 POIN AttackSpeedStandard_Dynamic
-POIN ExperienceStandard_Dynamic
+POIN LevelStandard_Dynamic
 POIN CritStandard_Dynamic
+POIN HitStandard_Dynamic
+POIN ExperienceStandard_Dynamic
+POIN DefenseStandard_Dynamic
 WORD $0

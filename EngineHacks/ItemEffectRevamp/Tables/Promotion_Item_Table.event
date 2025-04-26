@@ -1,0 +1,27 @@
+#define _C2EA_Promotion_Item_Table(arg000,arg001,arg002,arg003) "SHORT arg000 arg001 ;WORD arg002 arg003 "
+
+PUSH
+ORG $29218
+POIN PromotionItemTable
+POP
+ALIGN 4
+PromotionItemTable:
+_C2EA_Promotion_Item_Table(HeroCrest,0x0,HeroCrestClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(KnightProof,0x0,KnightProofClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(OrionsBolt,0x0,OrionsBoltClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(Hippokos,0x0,HippokosClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(GuidingRing,0x0,GuidingRingClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(RubyBlade,0x0,RubyBladeClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(SightingLens,0x0,SightingLensClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(OutlandShield,0x0,OutlandShieldClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(SpiritWrap,0x0,SpiritWrapClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(ElysianWhip,0x0,ElysianWhipClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(PerfectRose,0x0,PerfectRoseClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(BanefulDoll,0x0,BanefulDollClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(DarkBrooch,0x0,DarkBroochClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(DeusHerb,0x0,DeusHerbClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(HolyCloak,0x0,HolyCloakClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(DriveGear,0x0,DriveGearClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(ParadoxCore,0x0,ParadoxCoreClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(GuildSeal,0x0,GuildSealClassList|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(0xFFFF,0x0,0x0,0x0)

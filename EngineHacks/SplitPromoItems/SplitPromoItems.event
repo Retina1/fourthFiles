@@ -1,0 +1,170 @@
+#ifdef _FE8_
+#ifndef SPLIT_PROMO_ITEMS
+
+//hide weapons
+PUSH
+ORG $2F6A0
+BYTE 0x00 0x20 0x00 0x20
+ORG $CD0EC
+BYTE 0x00 0x20 0x00 0x20
+POP
+
+PUSH
+ORG $CC5F6
+SHORT 0x46C0 //nop
+jumpToHack(SplitPromoItems)
+ORG $CC5DE
+SHORT 0x46C0 //nop
+jumpToHack(SplitPromoItemsPrep)
+POP
+
+#include "SplitPromoItems.lyn.event"
+#include "SplitPromoPrepScreen.lyn.event"
+#include "PromotionBranchEditor.event"
+
+
+#define PromoItemEntry(itemID,promoList) "BYTE itemID 0 0 0; POIN promoList"
+#define PromoItemsEnd "WORD 0 0"
+
+ALIGN 4
+PromoItemsList:
+PromoItemEntry(HeroCrest,GuildSealPromoList)
+PromoItemEntry(KnightProof,GuildSealPromoList)
+PromoItemEntry(OrionsBolt,GuildSealPromoList)
+PromoItemEntry(Hippokos,GuildSealPromoList)
+PromoItemEntry(GuidingRing,GuildSealPromoList)
+PromoItemEntry(RubyBlade,GuildSealPromoList)
+PromoItemEntry(SightingLens,GuildSealPromoList)
+PromoItemEntry(OutlandShield,GuildSealPromoList)
+PromoItemEntry(SpiritWrap,GuildSealPromoList)
+PromoItemEntry(ElysianWhip,GuildSealPromoList)
+PromoItemEntry(PerfectRose,GuildSealPromoList)
+PromoItemEntry(BanefulDoll,GuildSealPromoList)
+PromoItemEntry(DarkBrooch,GuildSealPromoList)
+PromoItemEntry(DeusHerb,GuildSealPromoList)
+PromoItemEntry(HolyCloak,GuildSealPromoList)
+PromoItemEntry(DriveGear,GuildSealPromoList)
+PromoItemEntry(ParadoxCore,GuildSealPromoList)
+PromoItemEntry(GuildSeal,GuildSealPromoList)
+PromoItemsEnd
+
+ALIGN 4
+SplitPromoItemsList:
+BYTE 0
+
+#define PromoListEntry(baseClass,promoClass) "BYTE baseClass promoClass"
+#define PromoListEnd "SHORT 0"
+
+//only need the one list because no splits and they don't share usability
+ALIGN 4
+GuildSealPromoList:
+PromoListEntry(Swordfighter,Landsknecht)
+PromoListEntry(Knight,Hoplite)
+PromoListEntry(Axefighter,Gladiator)
+PromoListEntry(Archer,Sniper)
+PromoListEntry(Scholar,Warlock)
+PromoListEntry(Curate,Medic)
+PromoListEntry(Myrmidon,Ronin)
+PromoListEntry(Rider,Strider)
+PromoListEntry(Raider,Trailblazer)
+PromoListEntry(Gunner,Dragoon)
+PromoListEntry(Poet,Troubadour)
+PromoListEntry(Seeker,Runemaster)
+PromoListEntry(Lurker,Hexer)
+PromoListEntry(Priest,WarMagus)
+PromoListEntry(DarkHunter,Dominator)
+PromoListEntry(Lancer,Highlander)
+PromoListEntry(Brawler,Pugilist)
+PromoListEntry(Hunter,Survivalist)
+PromoListEntry(SkyKnight,Seraph)
+PromoListEntry(ScaleKnight,Scalemaster)
+PromoListEntry(Apothecary,Botanist)
+PromoListEntry(Encircler,Arcanist)
+PromoListEntry(Caller,Necromancer)
+PromoListEntry(Noble,Sovereign)
+PromoListEntry(Duelist,Fencer)
+PromoListEntry(Driver,Imperial)
+PromoListEntry(Artifice,Automaton)
+PromoListEnd
+
+ALIGN 4
+HeroCrestClassList:
+BYTE Swordfighter Axefighter
+BYTE 0x00 0x00
+ALIGN 4
+KnightProofClassList:
+BYTE Knight Rider
+BYTE 0x00 0x00
+ALIGN 4
+OrionsBoltClassList:
+BYTE Archer Hunter
+BYTE 0x00 0x00
+ALIGN 4
+HippokosClassList:
+BYTE Curate
+BYTE 0x00 0x00
+ALIGN 4
+GuidingRingClassList:
+BYTE Scholar Seeker
+BYTE 0x00 0x00
+ALIGN 4
+RubyBladeClassList:
+BYTE Myrmidon
+BYTE 0x00 0x00
+ALIGN 4
+SightingLensClassList:
+BYTE Gunner
+BYTE 0x00 0x00
+ALIGN 4
+OutlandShieldClassList:
+BYTE Raider Lancer
+BYTE 0x00 0x00
+ALIGN 4
+SpiritWrapClassList:
+BYTE Brawler
+BYTE 0x00 0x00
+ALIGN 4
+ElysianWhipClassList:
+BYTE SkyKnight ScaleKnight
+BYTE 0x00 0x00
+ALIGN 4
+PerfectRoseClassList:
+BYTE Poet Noble
+BYTE 0x00 0x00
+ALIGN 4
+BanefulDollClassList:
+BYTE Lurker Encircler
+BYTE 0x00 0x00
+ALIGN 4
+DarkBroochClassList:
+BYTE DarkHunter Caller
+BYTE 0x00 0x00
+ALIGN 4
+DeusHerbClassList:
+BYTE Apothecary
+BYTE 0x00 0x00
+ALIGN 4
+HolyCloakClassList:
+BYTE Priest Duelist
+BYTE 0x00 0x00
+ALIGN 4
+DriveGearClassList:
+BYTE Driver
+BYTE 0x00 0x00
+ALIGN 4
+ParadoxCoreClassList:
+BYTE Artifice
+BYTE 0x00 0x00
+ALIGN 4
+GuildSealClassList:
+BYTE Swordfighter Knight Axefighter Archer Scholar Curate
+BYTE Myrmidon Rider Raider Gunner Poet Seeker Lurker Priest
+BYTE DarkHunter Lancer Brawler Hunter SkyKnight ScaleKnight
+BYTE Apothecary Encircler Caller Noble Duelist Driver Artifice
+BYTE 0x00 0x00
+
+
+#endif // SPLIT_PROMO_ITEMS
+#else
+ERROR Split Promo Items is only for FE8!
+#endif // _FE8_

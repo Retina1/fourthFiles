@@ -186,6 +186,13 @@ Phespher[X]
 A Belvarusi seeker looking to broaden[N]
 his horizons. A nice but blunt guy.[X]
 
+//Nadja by doob
+##Name_Nadja
+Nadja[X]
+##Desc_Nadja
+A Belvarusi seeker with a terminal curse.[N]
+She's well-mannered yet reckless.[X]
+
 //Saewynn by hiraya
 ##Name_Saewynn
 Saewynn[X]

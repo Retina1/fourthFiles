@@ -115,7 +115,7 @@ FreezeScroll
 GaleScroll
 ShineScroll
 CleaveScroll
-Sparkcroll
+SparkScroll
 DrainScroll
 PyreScroll
 ThorScroll
@@ -126,3 +126,37 @@ RestoreScroll
 RepairScroll
 RescueScroll
 WarpScroll
+Vulnerary 0xC8
+Elixir
+Medica
+Soma
+Bravant
+Stonard
+ArmBinder
+LegBinder
+HeadBinder
+BlindGas
+StunGas
+PoisonGas
+MuteGas
+PanicGas
+StoningGas
+AriadneShard
+HeroCrest 0xe6
+KnightProof
+OrionsBolt
+Hippokos
+GuidingRing
+RubyBlade
+SightingLens
+OutlandShield
+SpiritWrap
+ElysianWhip
+PerfectRose
+BanefulDoll
+DarkBrooch
+DeusHerb
+HolyCloak
+DriveGear
+ParadoxCore
+GuildSeal

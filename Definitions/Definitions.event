@@ -8,3 +8,15 @@
 #include "ItemIconDefs.event"
 
 #define SupportAnimFlag 0xae
+
+//movement types
+#define HeroMovement 0x880B808
+#define BrigandMovement 0x880b90c
+#define ArmorMovement 0x880B88A
+#define CavMovement 0x880BA92
+#define PalMovement 0x880BAD3
+#define InfantryMovement 0x880B849 
+#define MageMovement 0x880BA10
+#define FlierMovement 0x880BB96
+#define ThiefMovement 0x880B9CF
+#define RangerMovement 0x880BB55

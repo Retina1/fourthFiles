@@ -3,6 +3,7 @@
 #include "Portraits/_PortraitHeight.event"
 #include "RemoveFog/RemoveEffects.event"
 #include "ItemIcons/IconInstaller.event"
+#include "Animation/AnimationPointers.event"
 
 //doing this now to save maximal freespace
 #include "BattlePlatforms/BattlePlatformInstaller.event"

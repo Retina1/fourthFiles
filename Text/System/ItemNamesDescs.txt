@@ -516,7 +516,7 @@ A mighty scroll that calls upon hurricanes.[X]
 Heal Scr.[X]
 ##Desc_HealScroll ^
 A scroll that calls upon healing magics.[N]
-Restores HP scaling with magic.[X]
+Restores Mag+10 HP to an ally.[X]
 ##Name_RestoreScroll
 Restore Scr.[X]
 ##Desc_RestoreScroll ^

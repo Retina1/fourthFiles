@@ -137,3 +137,9 @@ Avo[X]
 Assist Anims[X]
 # 0x00B9
 Disable staff/dance animations.[X]
+
+# 0x67C
+ Assist[X]
+# 0x6c1
+Call upon some magical power to[N]
+heal or otherwise assist allies.[X]

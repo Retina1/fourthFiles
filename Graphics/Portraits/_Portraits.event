@@ -80,3 +80,6 @@ ALIGN 4
 CassandraDMP:
 #incbin "dmps/zappyCassandra.dmp"
 setMugEntry(CassandraMug,CassandraDMP,3,5,3,3)
+NadjaDMP:
+#incbin "dmps/zappyNadja.dmp"
+setMugEntry(NadjaMug,NadjaDMP,3,5,3,3)

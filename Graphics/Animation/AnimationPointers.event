@@ -1,0 +1,220 @@
+#define AnimTableEntry(index) "ORG ClassAnimTable - 0x20 + (index * 0x20)"
+#define animSword 0
+#define animLance 1
+#define animAxe 2
+#define animBow 3
+#define animStaff 4
+#define animAnima 5
+#define animLight 6
+#define animDark 7
+#define animNone 9
+#define weaponTypeAnim(weaponType, ID) "BYTE weaponType 1 ID 0;"
+#define weaponAnim(weaponID, ID) "BYTE weaponID 0 ID 0;"
+#define weaponAnimEnd "WORD 0"
+#define SetAnimationPointers(class, pointer) "PUSH; ORG 0x807110 + (class*84) + 52; POIN pointer; POP"
+
+#define SlashAnim(Animation) "BYTE 0x00 0x01 ; SHORT Animation"
+#define PierceAnim(Animation) "BYTE 0x01 0x01 ; SHORT Animation"
+#define BashAnim(Animation) "BYTE 0x02 0x01 ; SHORT Animation"
+#define HandaxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation"
+#define RangedAnim(Animation) "BYTE 0x03 0x01 ; SHORT Animation"
+#define SupportAnim(Animation) "BYTE 0x04 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE 0x09 0x01 ; SHORT Animation"
+#define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+#define EndAnim "WORD 0x0 0x0"
+
+#include "AnimDefs.event"
+#include "RepointedTable.event"
+#include "PRFAnims/Installer.event"
+
+//Swordfighter
+{
+#include "ClassAnims/Swordfighter/Sword Installer.event"
+#include "ClassAnims/Swordfighter/Unarmed Installer.event"
+}
+ALIGN 4
+SwordfighterAnims:
+SlashAnim(Swordfighter_Sword)
+UnarmedAnim(Swordfighter_Unarmed)
+EndAnim
+//Landsknecht
+{
+#include "ClassAnims/Landsknecht/Sword Installer.event"
+#include "ClassAnims/Landsknecht/Unarmed Installer.event"
+}
+ALIGN 4
+LandsknechtAnims:
+SlashAnim(Landsknecht_Sword)
+UnarmedAnim(Landsknecht_Unarmed)
+EndAnim
+
+//Knight
+{
+#include "ClassAnims/Knight/Lance Installer.event"
+#include "ClassAnims/Knight/Unarmed Installer.event"
+}
+ALIGN 4
+KnightAnims:
+PierceAnim(Knight_Lance)
+UnarmedAnim(Knight_Unarmed)
+EndAnim
+//Hoplite
+{
+#include "ClassAnims/Hoplite/Lance Installer.event"
+#include "ClassAnims/Hoplite/Unarmed Installer.event"
+}
+ALIGN 4
+HopliteAnims:
+PierceAnim(Hoplite_Lance)
+UnarmedAnim(Hoplite_Unarmed)
+EndAnim
+
+//Axefighter
+{
+#include "ClassAnims/Axefighter/Axe Installer.event"
+#include "ClassAnims/Axefighter/Handaxe Installer.event"
+#include "ClassAnims/Axefighter/Unarmed Installer.event"
+}
+ALIGN 4
+AxefighterAnims:
+BashAnim(Axefighter_Axe)
+HandaxeAnim(Axefighter_Handaxe)
+UnarmedAnim(Axefighter_Unarmed)
+EndAnim
+//Gladiator
+{
+#include "ClassAnims/Gladiator/Axe Installer.event"
+#include "ClassAnims/Gladiator/Handaxe Installer.event"
+#include "ClassAnims/Gladiator/Unarmed Installer.event"
+}
+ALIGN 4
+GladiatorAnims:
+BashAnim(Gladiator_Axe)
+HandaxeAnim(Gladiator_Handaxe)
+UnarmedAnim(Gladiator_Unarmed)
+EndAnim
+
+//Archer
+{
+#include "ClassAnims/Archer/Bow Installer.event"
+#include "ClassAnims/Archer/Unarmed Installer.event"
+}
+ALIGN 4
+ArcherAnims:
+RangedAnim(Archer_Bow)
+UnarmedAnim(Archer_Unarmed)
+EndAnim
+//Sniper
+{
+#include "ClassAnims/Sniper/Bow Installer.event"
+#include "ClassAnims/Sniper/Unarmed Installer.event"
+}
+ALIGN 4
+SniperAnims:
+RangedAnim(Sniper_Bow)
+UnarmedAnim(Sniper_Unarmed)
+EndAnim
+
+//Scholar
+{
+#include "ClassAnims/Scholar/Magic Installer.event"
+}
+ALIGN 4
+ScholarAnims:
+SupportAnim(Scholar_Magic)
+UnarmedAnim(Scholar_Magic)
+EndAnim
+//Warlock
+{
+#include "ClassAnims/Warlock/Magic Installer.event"
+}
+ALIGN 4
+WarlockAnims:
+SupportAnim(Warlock_Magic)
+UnarmedAnim(Warlock_Magic)
+EndAnim
+
+//Curate
+{
+#include "ClassAnims/Curate/Staff Installer.event"
+#include "ClassAnims/Curate/Unarmed Installer.event"
+}
+ALIGN 4
+CurateAnims:
+SupportAnim(Curate_Staff)
+UnarmedAnim(Curate_Unarmed)
+EndAnim
+//Medic
+{
+#include "ClassAnims/Medic/Magic Installer.event"
+#include "ClassAnims/Medic/Unarmed Installer.event"
+}
+ALIGN 4
+MedicAnims:
+SupportAnim(Medic_Magic)
+UnarmedAnim(Medic_Unarmed)
+EndAnim
+
+//Myrmidon
+{
+#include "ClassAnims/Myrmidon/Sword Installer.event"
+#include "ClassAnims/Myrmidon/Unarmed Installer.event"
+}
+ALIGN 4
+MyrmidonAnims:
+SlashAnim(Myrmidon_Sword)
+UnarmedAnim(Myrmidon_Unarmed)
+EndAnim
+//Ronin
+{
+#include "ClassAnims/Ronin/Sword Installer.event"
+#include "ClassAnims/Ronin/Unarmed Installer.event"
+}
+ALIGN 4
+RoninAnims:
+SlashAnim(Ronin_Sword)
+UnarmedAnim(Ronin_Unarmed)
+EndAnim
+
+
+//Seeker
+{
+#include "ClassAnims/Seeker/Magic Installer.event"
+}
+ALIGN 4
+SeekerAnims:
+SupportAnim(Seeker_Magic)
+UnarmedAnim(Seeker_Magic)
+EndAnim
+//Runemaster
+{
+#include "ClassAnims/Runemaster/Magic Installer.event"
+}
+ALIGN 4
+RunemasterAnims:
+SupportAnim(Runemaster_Magic)
+UnarmedAnim(Runemaster_Magic)
+EndAnim
+
+//Priest
+{
+#include "ClassAnims/Priest/Sword Installer.event"
+#include "ClassAnims/Priest/Unarmed Installer.event"
+}
+ALIGN 4
+PriestAnims:
+SlashAnim(Priest_Sword)
+UnarmedAnim(Priest_Unarmed)
+EndAnim
+//WarMagus
+{
+#include "ClassAnims/WarMagus/Sword Installer.event"
+#include "ClassAnims/WarMagus/Magic Installer.event"
+}
+ALIGN 4
+WarMagusAnims:
+SlashAnim(WarMagus_Sword)
+SupportAnim(WarMagus_Magic)
+UnarmedAnim(WarMagus_Magic)
+EndAnim

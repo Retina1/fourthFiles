@@ -17,12 +17,15 @@ POP
 
 #include "EssentialFixes.event"
 #include "AddressPatches.event"
+#include "AriadneShards/SaveStuff.event"
 
 #include "NegativeStatBoosts/NegativeStatBoosts.event"
 #include "QualityOfLife/QOL.event"
 #include "IconRework/IconRework.event"
 #include "EMS/ExModularSave.event"
 #include "ItemRangeFix/ItemRangeFix.event"
+#include "SplitPromoItems/SplitPromoItems.event"
+#include "ItemEffectRevamp/IERevamp_Installer.event"
 
 #include "StatGetters/_InstallStatGetters.event"
 #include "StrMag/GrowthGetters/GrowthGetters.event"

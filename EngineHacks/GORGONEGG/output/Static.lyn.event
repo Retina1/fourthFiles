@@ -5,21 +5,21 @@ POP
 WORD $2600B573 $4000D $4A0D490C $A8014B0D $F0009601 $4B0CF81F $F0000028 $1DA3F81B $4E0A87DE $294B0A $36040020 $F812F000 $2B006833 $BC73D1F7 $4700BC01 $2003D2C $1000080 $80D1675
 POIN ResetUnitDataProc
 POIN CURRENTOFFSET+12
-POIN NameStandard_Static
+POIN CritLabelStandard_Static
 WORD $46C04718
 ALIGN 4
 PUSH
 ORG CURRENTOFFSET+$0;gStaticFunctions:
 POP
-POIN NameStandard_Static
-POIN TilemapRetina_Static
-POIN DefenseLabelStandard_Static
-POIN ExperienceLabelStandard_Static
-POIN AttackLabelStandard_Static
-POIN AttackSpeedLabelStandard_Static
-POIN HitLabelStandard_Static
 POIN CritLabelStandard_Static
+POIN AttackSpeedLabelStandard_Static
 POIN MinimugStandard_Static
-POIN ResistanceLabelStandard_Static
 POIN LevelLabelStandard_Static
+POIN DefenseLabelStandard_Static
+POIN TilemapRetina_Static
+POIN AttackLabelStandard_Static
+POIN ExperienceLabelStandard_Static
+POIN HitLabelStandard_Static
+POIN ResistanceLabelStandard_Static
+POIN NameStandard_Static
 WORD $0
