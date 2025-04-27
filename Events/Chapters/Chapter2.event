@@ -1,0 +1,84 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events2ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,0] 0x0 0x0 0x1 REDA7R2 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(2,Ally,0) [8,0] 0x0 0x0 0x1 REDA8R2 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(2,Ally,0) [6,0] 0x0 0x0 0x1 REDA6R1 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [9,0] 0x0 0x0 0x1 REDA9R1 [VineWhip] NoAI
+UNIT Benthus 0x0 0x1 Level(12,Ally,0) [8,0] 0x0 0x0 0x1 REDA8R1 [Epee,Sabre,Medica] NoAI
+UNIT
+
+EnemyUnits:
+UNIT MonsterGeneric Crawler 0x0 Level(2,Enemy,1) [7,6] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(2,Enemy,1) [8,9] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [14,6] 0x0 0x0 0x0 0x0 [EvilEye] NoAI
+UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [0,8] 0x0 0x0 0x0 0x0 [Tackle] NoAI
+UNIT MonsterGeneric Wight 0x0 Level(2,Enemy,1) [9,7] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
+UNIT MonsterGeneric Wight 0x0 Level(2,Enemy,1) [1,4] 0x0 0x0 0x0 0x0 [Pike] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [10,11] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [1,13] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,1) [3,13] 0x0 0x0 0x0 0x0 [GreatTalon] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+LOAD1 0x1 EnemyUnits
+ENUN
+EndEvent
+
+EndingScene:
+MoveToChapter(0x2)
+ENDA
+
+//MESSAGE Events end at offset CURRENTOFFSET

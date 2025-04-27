@@ -126,6 +126,11 @@ RestoreScroll
 RepairScroll
 RescueScroll
 WarpScroll
+VileClaw
+SharpBite
+Tackle
+GreatTalon
+EvilEye
 Vulnerary 0xC8
 Elixir
 Medica

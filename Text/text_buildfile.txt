@@ -4,6 +4,27 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
+# 0x0149 ^
+The baseline difficulty.[N]
+Highly recommended for[N]
+a first run. A fun and[N]
+fair experience that all[N]
+should be able to enjoy.[X]
+
+# 0x014A ^
+An elevated difficulty[N]
+for those who wish to[N]
+show their skills. Foes[N]
+will not hold back, but[N]
+victory will be glorious.[X]
+
+# 0x014B ^
+A brutal and twisted[N]
+difficulty for those[N]
+who wish to know true[N]
+pain and suffering.[N]
+...Godspeed.[X]
+
 #0x0903 SS_TalkText
 Talk[X]
 
@@ -20,7 +41,9 @@ between stats and growths.[X]
 #include "System/EnemyClasses.txt"
 #include "System/GenericFactions.txt"
 #include "System/UnitNamesDescs.txt"
+#include "System/NPCS.txt"
 #include "System/ItemNamesDescs.txt"
+#include "System/MonsterWeapons.txt"
 #include "System/ConsumablesPromos.txt"
 #include "System/Objectives.txt"
 #include "System/Music.txt"
@@ -119,16 +142,16 @@ Bash[X]
 Ranged[X]
 
 # 0x0509 ^
-Support[X]
+Staff[X]
 
 # 0x050A ^
-Magic[X]
+Scroll[X]
 
-# 0x050B
-Light[X]
+# 0x050B ^
+Scroll[X]
 
-# 0x050C
-Dark[X]
+# 0x050C ^
+Promo[X]
 
 # 0x04F5
 Avo[X]

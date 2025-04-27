@@ -126,6 +126,11 @@
 #define RepairScroll 0x7E
 #define RescueScroll 0x7F
 #define WarpScroll 0x80
+#define VileClaw 0x81
+#define SharpBite 0x82
+#define Tackle 0x83
+#define GreatTalon 0x84
+#define EvilEye 0x85
 #define Vulnerary 0xC8
 #define Elixir 0xC9
 #define Medica 0xCA

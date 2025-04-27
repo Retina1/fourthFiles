@@ -517,23 +517,38 @@ Heal Scr.[X]
 ##Desc_HealScroll ^
 A scroll that calls upon healing magics.[N]
 Restores Mag+10 HP to an ally.[X]
+##Use_HealScroll
+Restores an[N]
+ally's HP.[X]
 ##Name_RestoreScroll
 Restore Scr.[X]
 ##Desc_RestoreScroll ^
 A scroll that calls upon cleansing magics.[N]
 Cures an ally of binds and ailments.[X]
+##Use_RestoreScroll
+Heals an ally's[N]
+conditions.[X]
 ##Name_RepairScroll
 Repair Scr.[X]
 ##Desc_RepairScroll ^
 A scroll that calls upon mending magics.[N]
 Replenishes the uses of another item.[X]
+##Use_RepairScroll
+Fixes up an[N]
+ally's item.[X]
 ##Name_RescueScroll
 Rescue Scr.[X]
 ##Desc_RescueScroll ^
 A mighty scroll that rewrites reality.[N]
 Brings an ally to an adjacent space.[X]
+##Use_RescueScroll
+Brings distant[N]
+allies near.[X]
 ##Name_WarpScroll
 Warp Scr.[X]
 ##Desc_WarpScroll ^
 A mighty scroll that rewrites reality.[N]
 Warps an adjacent ally to an afar space.[X]
+##Use_WarpScroll
+Warps near[N]
+allies afar.[X]

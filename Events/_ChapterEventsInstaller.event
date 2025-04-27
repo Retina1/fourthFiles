@@ -41,6 +41,9 @@
 {
 #include "Chapters/Chapter1.event"
 }
+{
+#include "Chapters/Chapter2.event"
+}
 
 ALIGN 4
 BlankEscape:

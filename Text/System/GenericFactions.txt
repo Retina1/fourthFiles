@@ -3,3 +3,23 @@ Guildleague[X]
 ##Desc_Guild
 A member of the Asketan Guildleague,[N]
 fighting under some guild's banner.[X]
+##Name_Asketa
+Asketa[X]
+##Desc_Asketa
+A soldier of the Asketan Empire,[N]
+fighting under the imperial banner.[X]
+##Name_Belvarus
+Belvarus[X]
+##Desc_Belvarus
+A member of the Belvarus Republic,[N]
+fighting under the united banner.[X]
+##Name_Monster
+Monster[X]
+##Desc_Monster
+A creature born of the wilds,[N]
+fighting under no banner.[X]
+##Name_Endbringer
+Endbringer[X]
+##Desc_Endbringer
+A member of Endbringer, fighting[N]
+to bring an end to civilization.[X]

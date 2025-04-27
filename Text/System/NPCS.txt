@@ -1,0 +1,5 @@
+##Name_Gerson
+Gerson[X]
+##Desc_Gerson
+The Guildmaster's young apprentice.[N]
+He's the successor to the Guildleague.[X]

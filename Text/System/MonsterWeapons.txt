@@ -1,0 +1,25 @@
+##Name_VileClaw
+Vile Claw[X]
+##Desc_VileClaw ^
+A monster's claw, able to rend flesh.[X]
+##Name_SharpBite
+Sharp Bite[X]
+##Desc_SharpBite ^
+A monster's bite, fangs bared to shred.[X]
+##Name_Tackle
+Tackle[X]
+##Desc_Tackle ^
+A full-body collision, bound to hurt.[X]
+##Name_GreatTalon
+Great Talon[X]
+##Desc_GreatTalon ^
+A monster's talon, massive and mighty.[X]
+##Name_EvilEye
+Evil Eye[X]
+##Desc_EvilEye ^
+A monster's gaze, mighty as a spell.[X]
+
+##Name_ScissorWrath ^
+Scissor Wrath[X]
+##Desc_ScissorWrath ^
+The unsurvivable wrath of an Iron Crab.[X]

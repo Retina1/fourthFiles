@@ -14,6 +14,7 @@ PUSH
 POP
 
 #include "mug_exceed/EA.txt"
+#include "_ClassCards.event"
 
 ALIGN 4
 //Rivian

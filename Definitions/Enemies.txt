@@ -1,4 +1,9 @@
-GuildGeneric 0xf4
+Gerson 0xef
+EndbringerGeneric 
+MonsterGeneric
+BelvarusGeneric
+AsketaGeneric
+GuildGeneric
 BossGuildmaster
 BossCleone
 BossBenthus

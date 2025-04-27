@@ -22,6 +22,7 @@ POP
 #include "NegativeStatBoosts/NegativeStatBoosts.event"
 #include "QualityOfLife/QOL.event"
 #include "IconRework/IconRework.event"
+#include "Convoy/FE8-Convoy_Stuff_EA.event"
 #include "EMS/ExModularSave.event"
 #include "ItemRangeFix/ItemRangeFix.event"
 #include "SplitPromoItems/SplitPromoItems.event"

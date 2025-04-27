@@ -49,6 +49,16 @@ u8 ItemUseTrue(void){
    return TRUE;
 }
 
+void ItemUseTrueWrapper() {
+    asm("mov r0,r4;    \
+         mov r1,r5; \
+         bl ItemUseTrue; \
+         pop {r4,r5}; \
+         pop {r1}; \
+         bx r1; \
+    ");    
+}
+
 extern void BattleApplyItemEffect(Proc*);
 extern void BeginBattleAnimations();
 extern void BattleInitItemEffect(Unit*, u16);
@@ -66,11 +76,56 @@ PlaySoundEffect(SONG_5A);
 */
 
 void ExecSaveItem(Proc* proc) {
+	BattleInitItemEffect(GetUnit(gActionData.subjectIndex),gActionData.itemSlotIndex);
     gActionData.suspendPointType = SUSPEND_POINT_DURINGACTION;
     SaveSuspendedGame(SAVE_BLOCK_SUSPEND);
+	BattleApplyItemEffect(proc);
     BeginLightRuneMapAnim(proc, gActionData.xMove, gActionData.yMove);
 
     gBattleTarget.statusOut = -1;
 
     return;
 }
+
+void ExecSaveItemWrapper() {
+    asm("     mov r0,r6; \
+            bl ExecSaveItem; \
+            ldr r0,=#0x802FF77; \
+            bx r0; \
+    ");
+
+}
+
+
+/* IER Ref
+void ItemUsabilityWrapper() {
+    asm("mov r0,r4;    \
+         mov r1,r5; \
+         bl ItemUsability; \
+         pop {r4,r5}; \
+         pop {r1}; \
+         bx r1; \
+    ");    
+}
+
+
+void ItemTargetingWrapper() {
+    asm("    mov r0, r5; \
+            mov r2, r4; \
+            bl ItemTargeting; \
+            pop {r4-r5}; \
+            pop {r0}; \
+            bx r0; \
+    ");
+}
+
+
+void ExecItemWrapper() {
+    asm("     mov r0,r6; \
+            bl ExecItem; \
+            ldr r0,=#0x802FF77; \
+            bx r0; \
+    ");
+
+}
+*/

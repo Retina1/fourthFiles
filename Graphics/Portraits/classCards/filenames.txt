@@ -1,0 +1,60 @@
+#incbin "classCards\Evergrim {Almirage}Palette.dmp"
+#incbin "classCards\Fire Dragon {IS}.dmp"
+#incbin "classCards\Fire Dragon {IS}Palette.dmp"
+
+
+
+#incbin "classCards\Phantom (U) Axe {IS}Palette.dmp"
+
+
+#incbin "classCards\Succubus {SkidMarc25}.dmp"
+#incbin "classCards\Succubus {SkidMarc25}Palette.dmp"
+
+
+
+
+#incbin "classCards\Wyvern Wild - WK-Style {L95}.dmp"
+#incbin "classCards\Wyvern Wild - WK-Style {L95}Palette.dmp"
+
+#incbin "classCards\Ghost {Eldritch Abomination}.dmp"
+#incbin "classCards\Ghost {Eldritch Abomination}Palette.dmp"
+#incbin "classCards\Harpy (U) {Sphealnuke}.dmp"
+#incbin "classCards\Harpy (U) {Sphealnuke}Palette.dmp"
+#incbin "classCards\Living Armor (U) {Sphealnuke}.dmp"
+#incbin "classCards\Living Armor (U) {Sphealnuke}Palette.dmp"
+
+
+
+
+#incbin "classCards\Mermaid (F) {N426}.dmp"
+#incbin "classCards\Mermaid (F) {N426}Palette.dmp"
+
+
+
+
+#incbin "classCards\Ophanim (U) {Sphealnuke}.dmp"
+#incbin "classCards\Ophanim (U) {Sphealnuke}Palette.dmp"
+#incbin "classCards\Phantom (U) Axe {IS}.dmp"
+
+#incbin "classCards\Cyclops Axe {IS}.dmp"
+#incbin "classCards\Cyclops Axe {IS}Palette.dmp"
+#incbin "classCards\Dragon (U) Divine {L95}.dmp"
+#incbin "classCards\Dragon (U) Divine {L95}Palette.dmp"
+#incbin "classCards\Dragon (U) Earth {L95}.dmp"
+#incbin "classCards\Dragon (U) Earth {L95}Palette.dmp"
+#incbin "classCards\Dragon (U) Magic {L95}.dmp"
+#incbin "classCards\Dragon (U) Magic {L95}Palette.dmp"
+#incbin "classCards\Dragon {L95}.dmp"
+#incbin "classCards\Dragon {L95}Palette.dmp"
+#incbin "classCards\Evergrim {Almirage}.dmp"
+#incbin "classCards\Gorgon {IS}.dmp"
+#incbin "classCards\Gorgon {IS}Palette.dmp"
+
+
+
+
+
+
+
+
+

@@ -25,7 +25,7 @@ three tiles of the user.[X]
 Restores the[N]
 user's HP.[X]
 ##Use_AllyHeal
-Restores anN]
+Restores an[N]
 ally's HP.[X]
 ##Name_AriadneShard
 Ariadne Shd.[X]

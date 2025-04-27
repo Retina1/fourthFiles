@@ -31,6 +31,7 @@ LocationBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
+DefeatAll(EndingScene)
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -54,10 +55,10 @@ UNIT
 NPCGuildmaster:
 //put gerson here once he exists
 //imperial testing - fucking gorgon egg hardcoding
-UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,1) [4,0] DropItem 0x0 0x0 0x0 [Fengyan,GuildSeal] NeverMoveAI
-UNIT GuildGeneric Imperial 0x0 Level(30,NPC,1) [3,0] 0x0 0x0 0x0 0x0 [RagingWave] NeverMoveAI
-UNIT GuildGeneric Driver 0x0 Level(15,NPC,1) [2,0] 0x0 0x0 0x0 0x0 [Dominance] NeverMoveAI
-UNIT GuildGeneric Gladiator 0x0 Level(15,NPC,1) [1,0] 0x0 0x0 0x0 0x0 [DevilAxe] NeverMoveAI
+UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,0) [4,0] DropItem 0x0 0x0 0x0 [Fengyan,OutlandShield] NeverMoveAI
+UNIT Gerson Lancer 0x0 Level(1,NPC,0) [3,0] 0x0 0x0 0x0 0x0 [Shortspear,RepairScroll] NeverMoveAI
+UNIT AsketaGeneric Driver 0x0 Level(15,NPC,1) [2,0] 0x0 0x0 0x0 0x0 [Dominance] NeverMoveAI
+UNIT GuildGeneric Gladiator 0x0 Level(15,NPC,1) [1,0] 0x0 0x0 0x0 0x0 [Greataxe] NeverMoveAI
 UNIT
 
 EnemyUnits:

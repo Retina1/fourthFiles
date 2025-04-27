@@ -238,7 +238,7 @@ struct Unit {
 	/* 18 */ u8 res;
 	/* 19 */ u8 lck;
 
-	/* 1A */ s8 conBonus;
+	/* 1A */ u8 classSkillState;
 	/* 1B */ u8 rescueOtherUnit;
 	/* 1C */ u8 ballistaIndex;
 	/* 1D */ s8 movBonus;

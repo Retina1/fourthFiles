@@ -186,9 +186,144 @@ MovingMapSprite(Soul, AP1, SoulMMS)
 StandingMapSprite(Souldier,MapSprite16x16,SouldierSMS)
 MovingMapSprite(Souldier, AP1, SouldierMMS)
 
+StandingMapSprite(AnswererClass,MapSprite16x32,AnswererSMS)
+MovingMapSprite(AnswererClass, AP1, AnswererMMS)
+StandingMapSprite(Ironskin,MapSprite16x32,AnswererSMS)
+MovingMapSprite(Ironskin, AP1, AnswererMMS)
+
 StandingMapSprite(Squirrel,MapSprite16x16,SquirrelSMS)
 MovingMapSprite(Squirrel, AP1, SquirrelMMS)
 
+StandingMapSprite(Crawler,MapSprite16x16,CrawlerSMS)
+MovingMapSprite(Crawler, AP1, CrawlerMMS)
+StandingMapSprite(Shambler,MapSprite16x16,ShamblerSMS)
+MovingMapSprite(Shambler, AP1, CrawlerMMS)
+
+StandingMapSprite(Wight,MapSprite16x16,WightSMS)
+MovingMapSprite(Wight, AP1, WightMMS)
+StandingMapSprite(Wightsworn,MapSprite16x16,WightswornSMS)
+MovingMapSprite(Wightsworn, AP1, WightswornMMS)
+
+StandingMapSprite(BowWight,MapSprite16x16,BowWightSMS)
+MovingMapSprite(BowWight, AP1, BowWightMMS)
+StandingMapSprite(Archrypt,MapSprite16x16,ArchryptSMS)
+MovingMapSprite(Archrypt, AP1, ArchryptMMS)
+
+StandingMapSprite(Gargoyle,MapSprite16x32,GargoyleSMS)
+MovingMapSprite(Gargoyle, AP1, GargoyleMMS)
+StandingMapSprite(Gargantoyle,MapSprite16x32,GargantoyleSMS)
+MovingMapSprite(Gargantoyle, AP1, GargantoyleMMS)
+
+StandingMapSprite(Bigle,MapSprite16x16,BigleSMS)
+MovingMapSprite(Bigle, AP1, BigleMMS)
+StandingMapSprite(Bigerle,MapSprite16x16,BigerleSMS)
+MovingMapSprite(Bigerle, AP1, BigerleMMS)
+
+StandingMapSprite(Spider,MapSprite16x16,SpiderSMS)
+MovingMapSprite(Spider, AP1, SpiderMMS)
+StandingMapSprite(Entwiner,MapSprite16x16,EntwinerSMS)
+MovingMapSprite(Entwiner, AP1, EntwinerMMS)
+
+StandingMapSprite(Wolf,MapSprite16x16,WolfSMS)
+MovingMapSprite(Wolf, AP1, WolfMMS)
+StandingMapSprite(Triwolf,MapSprite16x32,TriwolfSMS)
+MovingMapSprite(Triwolf, AP1, TriwolfMMS)
+
+ALIGN 4
+GargoyleSMS:
+#incbin "Dmp/Goyle (U) T1 Lance Resize {Pikmin}-stand.dmp"
+ALIGN 4
+GargoyleMMS:
+#incbin "Dmp/Goyle (U) T1 Lance {IS}-walk.dmp"
+ALIGN 4
+GargantoyleSMS:
+#incbin "Dmp/Goyle (U) T2 Lance Resize {Pikmin}-stand.dmp"
+ALIGN 4
+GargantoyleMMS:
+#incbin "Dmp/Goyle (U) T2 Lance {L95}-walk.dmp"
+
+ALIGN 4
+BigleSMS:
+#incbin "Dmp/Mogall (U) Resize {Huichelaar}-stand.dmp"
+ALIGN 4
+BigleMMS:
+#incbin "Dmp/Mogall (U) {IS}-walk.dmp"
+ALIGN 4
+BigerleSMS:
+#incbin "Dmp/Mogall (U) Arch Mogall Resize {Huichelaar}-stand.dmp"
+ALIGN 4
+BigerleMMS:
+#incbin "Dmp/Mogall (U) Arch Mogall {IS}-walk.dmp"
+
+ALIGN 4
+SpiderSMS:
+#incbin "Dmp/Bael (U) Resize {Pikmin}-stand.dmp"
+ALIGN 4
+SpiderMMS:
+#incbin "Dmp/Bael (U) {IS}-walk.dmp"
+ALIGN 4
+EntwinerSMS:
+#incbin "Dmp/Bael (U) Elder Resize {Pikmin}-stand.dmp"
+ALIGN 4
+EntwinerMMS:
+#incbin "Dmp/Bael (U) Elder {IS}-walk.dmp"
+
+ALIGN 4
+WolfSMS:
+#incbin "Dmp/Wolf (U) Resize {Pikmin}-stand.dmp"
+ALIGN 4
+WolfMMS:
+#incbin "Dmp/Wolf (U) {IS}-walk.dmp"
+ALIGN 4
+TriwolfSMS:
+#incbin "Dmp/Wolf (U) Gwyllgi Resize {Pikmin}-stand.dmp"
+ALIGN 4
+TriwolfMMS:
+#incbin "Dmp/Wolf (U) Gwyllgi {IS}-walk.dmp"
+
+ALIGN 4
+AnswererSMS:
+#incbin "Dmp/Manakete (U) Morva {EA}-stand.dmp"
+ALIGN 4
+AnswererMMS:
+#incbin "Dmp/Manakete (U) Morva {EA}-walk.dmp"
+
+
+ALIGN 4
+BowWightSMS:
+#incbin "Dmp/Bonewalker (U) Bow Resize {Pikmin}-stand.dmp"
+ALIGN 4
+BowWightMMS:
+#incbin "Dmp/Bonewalker (U) Bow {IS}-walk.dmp"
+ALIGN 4
+ArchryptSMS:
+#incbin "Dmp/Bonewalker (U) Wight Bow {IS}-stand.dmp"
+ALIGN 4
+ArchryptMMS:
+#incbin "Dmp/Bonewalker (U) Wight Bow {IS}-walk.dmp"
+
+ALIGN 4
+WightSMS:
+#incbin "Dmp/Bonewalker (U) Lance {Epicer}-stand.dmp"
+ALIGN 4
+WightMMS:
+#incbin "Dmp/Bonewalker (U) Lance {Epicer}-walk.dmp"
+ALIGN 4
+WightswornSMS:
+#incbin "Dmp/Bonewalker (U) Wight Sword {IS}-stand.dmp"
+ALIGN 4
+WightswornMMS:
+#incbin "Dmp/Bonewalker (U) Wight Sword {IS}-walk.dmp"
+
+ALIGN 4
+CrawlerSMS:
+#incbin "Dmp/Zombie (U) Resize {Pikmin}-stand.dmp"
+ALIGN 4
+CrawlerMMS:
+#incbin "Dmp/Zombie (U) {IS}-walk.dmp"
+ALIGN 4
+ShamblerSMS:
+#incbin "Dmp/Zombie (U) Entombed Resize {Pikmin}-stand.dmp"
 
 
 ALIGN 4

@@ -4,8 +4,97 @@ Squirrel[X]
 A small rodent. Far craftier and[N]
 far more malicious than it seems.[X]
 
+##Class_Ironskin
+Ironskin[X]
+##Desc_Ironskin
+Mysterious shapeshifters who can[N]
+harness the power of dragons.[X]
+
+##Class_Crawler
+Crawler[X]
+##Desc_Crawler
+A basic monster with high endurance[N]
+and very little else notable.[X]
+##Class_Shambler
+Shambler[X]
+##Desc_Shambler
+A more powerful relative of a crawler.[N]
+Still not notable for very much.[X]
+
+##Class_Wight
+Wight[X]
+##Desc_Wight
+A skeletal warrior capable of using[N]
+almost any melee weapon. Somewhat.[X]
+##Class_Wightsworn
+Wightsworn[X]
+##Desc_Wightsworn
+A skeletal knight that inherits[N]
+its past life's martial prowess.[X]
+##Class_BowWight
+Bow Wight[X]
+##Desc_BowWight
+A skeletal warrior that can use[N]
+ranged weaponry to some success.[X]
+##Class_Archrypt
+Archrypt[X]
+##Desc_Archrypt
+A marksman risen from its crypt[N]
+for the purpose of shooting stuff.[X]
+
+##Class_Wolf
+Wolf[X]
+##Desc_Wolf
+A feral wolf with blazing speed[N]
+and a truly painful bite.[X]
+##Class_Triwolf
+Triwolf[X]
+##Desc_Triwolf
+A mutated wolf with incredible speed,[N]
+plus triple the normal bark and bite.[X]
+
+##Class_Bigle
+Bigle[X]
+##Desc_Bigle
+A curious eyeball creature that[N]
+can call upon dark powers.[X]
+##Class_Bigerle
+Bigerle[X]
+##Desc_Bigerle
+A confounding eyeball that can[N]
+bring upon widespread ruin.[X]
+
+##Class_Spider
+Spider[X]
+##Desc_Spider
+A massive spider with truly immense[N]
+endurance and a penchant for binding.[X]
+##Class_Entwiner
+Entwiner[X]
+##Desc_Entwiner
+A baneful spider whose webs are[N]
+nigh-inescapable deathtraps.[X]
+
+##Name_Gargoyle
+Gargoyle[X]
+##Desc_Gargoyle
+A living statue that soars through[N]
+the air, stabbing indiscriminately.[X]
+##Name_Gargantoyle
+Gargantoyle[X]
+##Desc_Gargantoyle
+A massive gargoyle of impressive[N]
+resilience and brutality.[X]
+
+
 ##fuckeggs
 i hate eggs[X]
 ##reallyfuckeggs
 hardcoding more like[N]
 hardsucking gottem[X]
+
+##Class_IronCrab
+Iron Crab[X]
+##Desc_IronCrab
+A nearly immortal crab in a metal shell.[N]
+Slaughters those who threaten its pack.[X]

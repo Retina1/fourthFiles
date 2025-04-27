@@ -18,7 +18,7 @@
 #define BashAnim(Animation) "BYTE 0x02 0x01 ; SHORT Animation"
 #define HandaxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation"
 #define RangedAnim(Animation) "BYTE 0x03 0x01 ; SHORT Animation"
-#define SupportAnim(Animation) "BYTE 0x04 0x01 ; SHORT Animation"
+#define SupportAnim(Animation) "BYTE 0x04 0x01 ; SHORT Animation; BYTE 0x05 0x01 ; SHORT Animation; BYTE 0x06 0x01 ; SHORT Animation"
 #define UnarmedAnim(Animation) "BYTE 0x09 0x01 ; SHORT Animation"
 #define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"

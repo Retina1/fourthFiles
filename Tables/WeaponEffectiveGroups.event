@@ -4,7 +4,7 @@ BYTE SkyKnight Seraph ScaleKnight Scalemaster 0
 
 ALIGN 4
 MonsterEff:
-BYTE Squirrel 0
+BYTE Squirrel Shambler Crawler Wight Wightsworn BowWight Archrypt 0
 
 ALIGN 4
 MagiEff:

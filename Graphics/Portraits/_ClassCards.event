@@ -1,0 +1,370 @@
+#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
+/*
+ALIGN 4
+Portrait:
+
+PortraitPalette:
+
+setCardEntry(,Portrait,PortraitPalette)
+*/
+
+ALIGN 4
+WightCardPortrait:
+#incbin "classCards\Bonewalker Lance {Epicer}.dmp"
+WightCardPortraitPalette:
+#incbin "classCards\Bonewalker Lance {Epicer}Palette.dmp"
+setCardEntry(WightCard,WightCardPortrait,WightCardPortraitPalette)
+
+ALIGN 4
+WightswornCardPortrait:
+#incbin "classCards\Bonewalker Wight Sword {IS}.dmp"
+WightswornCardPortraitPalette:
+#incbin "classCards\Bonewalker Wight Sword {IS}Palette.dmp"
+setCardEntry(WightswornCard,WightswornCardPortrait,WightswornCardPortraitPalette)
+
+ALIGN 4
+CrawlerCardPortrait:
+#incbin "classCards\Revenant {IS}.dmp"
+CrawlerCardPortraitPalette:
+#incbin "classCards\Revenant {IS}Palette.dmp"
+setCardEntry(CrawlerCard,CrawlerCardPortrait,CrawlerCardPortraitPalette)
+
+ALIGN 4
+ShamblerCardPortrait:
+#incbin "classCards\Revenant Entombed {IS}.dmp"
+ShamblerCardPortraitPalette:
+#incbin "classCards\Revenant Entombed {IS}Palette.dmp"
+setCardEntry(ShamblerCard,ShamblerCardPortrait,ShamblerCardPortraitPalette)
+
+ALIGN 4
+WolfCardPortrait:
+#incbin "classCards\Mauthe Doog {IS}.dmp"
+WolfCardPortraitPalette:
+#incbin "classCards\Mauthe Doog {IS}Palette.dmp"
+setCardEntry(WolfCard,WolfCardPortrait,WolfCardPortraitPalette)
+
+ALIGN 4
+TriwolfCardPortrait:
+#incbin "classCards\Mauthe Doog Gwyllgi {IS}.dmp"
+TriwolfCardPortraitPalette:
+#incbin "classCards\Mauthe Doog Gwyllgi {IS}Palette.dmp"
+setCardEntry(TriwolfCard,TriwolfCardPortrait,TriwolfCardPortraitPalette)
+
+ALIGN 4
+BigleCardPortrait:
+#incbin "classCards\Mogall {IS}.dmp"
+BigleCardPortraitPalette:
+#incbin "classCards\Mogall {IS}Palette.dmp"
+setCardEntry(BigleCard,BigleCardPortrait,BigleCardPortraitPalette)
+
+ALIGN 4
+BigerleCardPortrait:
+#incbin "classCards\Mogall Arch Mogall {IS}.dmp"
+BigerleCardPortraitPalette:
+#incbin "classCards\Mogall Arch Mogall {IS}Palette.dmp"
+setCardEntry(BigerleCard,BigerleCardPortrait,BigerleCardPortraitPalette)
+
+ALIGN 4
+GargoyleCardPortrait:
+#incbin "classCards\Gargoyle Lance {IS}.dmp"
+GargoyleCardPortraitPalette:
+#incbin "classCards\Gargoyle Lance {IS}Palette.dmp"
+setCardEntry(GargantoyleCard,GargantoyleCardPortrait,GargantoyleCardPortraitPalette)
+
+ALIGN 4
+GargantoyleCardPortrait:
+#incbin "classCards\Gargoyle Strigoi {Seal}.dmp"
+GargantoyleCardPortraitPalette:
+#incbin "classCards\Gargoyle Strigoi {Seal}Palette.dmp"
+setCardEntry(GargantoyleCard,GargantoyleCardPortrait,GargantoyleCardPortraitPalette)
+
+ALIGN 4
+SpiderCardPortrait:
+#incbin "classCards\Bael {IS}.dmp"
+SpiderCardPortraitPalette:
+#incbin "classCards\Bael {IS}Palette.dmp"
+setCardEntry(SpiderCard,SpiderCardPortrait,SpiderCardPortraitPalette)
+
+ALIGN 4
+EntwinerCardPortrait:
+#incbin "classCards\Bael Elder {IS}.dmp"
+EntwinerCardPortraitPalette:
+#incbin "classCards\Bael Elder {IS}Palette.dmp"
+setCardEntry(EntwinerCard,EntwinerCardPortrait,EntwinerCardPortraitPalette)
+
+ALIGN 4
+CentaurCardPortrait:
+#incbin "classCards\Tarvos (M) Axe {IS}.dmp"
+CentaurCardPortraitPalette:
+#incbin "classCards\Tarvos (M) Axe {IS}Palette.dmp"
+setCardEntry(CentaurCard,CentaurCardPortrait,CentaurCardPortraitPalette)
+
+ALIGN 4
+CentinelCardPortrait:
+#incbin "classCards\Tarvos (M) Maelduin Axe {IS}.dmp"
+CentinelCardPortraitPalette:
+#incbin "classCards\Tarvos (M) Maelduin Axe {IS}Palette.dmp"
+setCardEntry(CentinelCard,CentinelCardPortrait,CentinelCardPortraitPalette)
+
+ALIGN 4
+SwordfighterCardPortrait:
+#incbin "classCards\Mercenary (M) Armored Sword {Rasdel}.dmp"
+SwordfighterCardPortraitPalette:
+#incbin "classCards\Mercenary (M) Armored Sword {Rasdel}Palette.dmp"
+setCardEntry(SwordfighterCard,SwordfighterCardPortrait,SwordfighterCardPortraitPalette)
+
+ALIGN 4
+LandsknechtCardPortrait:
+#incbin "classCards\Hero (M) Sword Shield {IS, SamirPlayz}.dmp"
+LandsknechtCardPortraitPalette:
+#incbin "classCards\Hero (M) Sword Shield {IS, SamirPlayz}Palette.dmp"
+setCardEntry(LandsknechtCard,LandsknechtCardPortrait,LandsknechtCardPortraitPalette)
+
+ALIGN 4
+KnightCardPortrait:
+#incbin "classCards\Knight (M) SALVAGED Lance {SALVAGED}.dmp"
+KnightCardPortraitPalette:
+#incbin "classCards\Knight (M) SALVAGED Lance {SALVAGED}Palette.dmp"
+setCardEntry(KnightCard,KnightCardPortrait,KnightCardPortraitPalette)
+
+ALIGN 4
+HopliteCardPortrait:
+#incbin "classCards\General Shield (U) Cape Lance {Topazlight,SamirPlayz,}.dmp"
+HopliteCardPortraitPalette:
+#incbin "classCards\General Shield (U) Cape Lance {Topazlight,SamirPlayz,}Palette.dmp"
+setCardEntry(HopliteCard,HopliteCardPortrait,HopliteCardPortraitPalette)
+
+ALIGN 4
+AxefighterCardPortrait:
+#incbin "classCards\Fighter (M) Improved Axe {flasuban}.dmp"
+AxefighterCardPortraitPalette:
+#incbin "classCards\Fighter (M) Improved Axe {flasuban}Palette.dmp"
+setCardEntry(AxefighterCard,AxefighterCardPortrait,AxefighterCardPortraitPalette)
+
+ALIGN 4
+GladiatorCardPortrait:
+#incbin "classCards\Warrior (M) Tellius + helmet {Rasdel, Jey the Count}.dmp"
+GladiatorCardPortraitPalette:
+#incbin "classCards\Warrior (M) Tellius + helmet {Rasdel, Jey the Count}Palette.dmp"
+setCardEntry(GladiatorCard,GladiatorCardPortrait,GladiatorCardPortraitPalette)
+
+ALIGN 4
+ArcherCardPortrait:
+#incbin "classCards\Archer (M) Improved {Der}.dmp"
+ArcherCardPortraitPalette:
+#incbin "classCards\Archer (M) Improved {Der}Palette.dmp"
+setCardEntry(ArcherCard,ArcherCardPortrait,ArcherCardPortraitPalette)
+
+ALIGN 4
+SniperCardPortrait:
+#incbin "classCards\Sniper (M) Hatless Bow {RobertFPY}.dmp"
+SniperCardPortraitPalette:
+#incbin "classCards\Sniper (M) Hatless Bow {RobertFPY}Palette.dmp"
+setCardEntry(SniperCard,SniperCardPortrait,SniperCardPortraitPalette)
+
+ALIGN 4
+ScholarCardPortrait:
+#incbin "classCards\Mage (M) Hatless Magic {RobertFPY}.dmp"
+ScholarCardPortraitPalette:
+#incbin "classCards\Mage (M) Hatless Magic {RobertFPY}Palette.dmp"
+setCardEntry(ScholarCard,ScholarCardPortrait,ScholarCardPortraitPalette)
+
+ALIGN 4
+WarlockCardPortrait:
+#incbin "classCards\Sage (M) Magic {IS}.dmp"
+WarlockCardPortraitPalette:
+#incbin "classCards\Sage (M) Magic {IS}Palette.dmp"
+setCardEntry(WarlockCard,WarlockCardPortrait,WarlockCardPortraitPalette)
+
+ALIGN 4
+CurateCardPortrait:
+#incbin "classCards\Priest (M) Staff {GratedShtick}.dmp"
+CurateCardPortraitPalette:
+#incbin "classCards\Priest (M) Staff {GratedShtick}Palette.dmp"
+setCardEntry(CurateCard,CurateCardPortrait,CurateCardPortraitPalette)
+
+ALIGN 4
+MedicCardPortrait:
+#incbin "classCards\Bishop (M) Staff {IS}.dmp"
+MedicCardPortraitPalette:
+#incbin "classCards\Bishop (M) Staff {IS}Palette.dmp"
+setCardEntry(MedicCard,MedicCardPortrait,MedicCardPortraitPalette)
+
+ALIGN 4
+MyrmidonCardPortrait:
+#incbin "classCards\Myrmidon (F) Sword and Pants {GigaExcalibur}.dmp"
+MyrmidonCardPortraitPalette:
+#incbin "classCards\Myrmidon (F) Sword and Pants {GigaExcalibur}Palette.dmp"
+setCardEntry(MyrmidonCard,MyrmidonCardPortrait,MyrmidonCardPortraitPalette)
+
+ALIGN 4
+RoninCardPortrait:
+#incbin "classCards\Dread Fighter (M) T2 Sword {Nuramon}.dmp"
+RoninCardPortraitPalette:
+#incbin "classCards\Dread Fighter (M) T2 Sword {Nuramon}Palette.dmp"
+setCardEntry(RoninCard,RoninCardPortrait,RoninCardPortraitPalette)
+
+ALIGN 4
+RiderCardPortrait:
+#incbin "classCards\Cavalier (M) Helmless Lance {RobertFPY}.dmp"
+RiderCardPortraitPalette:
+#incbin "classCards\Cavalier (M) Helmless Lance {RobertFPY}Palette.dmp"
+setCardEntry(RiderCard,RiderCardPortrait,RiderCardPortraitPalette)
+
+//maybe change later?
+ALIGN 4
+StriderCardPortrait:
+#incbin "classCards\Paladin (M) SALVAGED-style Lance {flasuban, RobertFPY}.dmp"
+StriderCardPortraitPalette:
+#incbin "classCards\Paladin (M) SALVAGED-style Lance {flasuban, RobertFPY}Palette.dmp"
+setCardEntry(StriderCard,StriderCardPortrait,StriderCardPortraitPalette)
+
+ALIGN 4
+RaiderCardPortrait:
+#incbin "classCards\Cavalier (M) Helmless Axe {RobertFPY}.dmp"
+RaiderCardPortraitPalette:
+#incbin "classCards\Cavalier (M) Helmless Axe {RobertFPY}Palette.dmp"
+setCardEntry(RaiderCard,RaiderCardPortrait,RaiderCardPortraitPalette)
+
+ALIGN 4
+TrailblazerCardPortrait:
+#incbin "classCards\Great Knight (U) Axe {Leo_Link, DerTheVaporeon}.dmp"
+TrailblazerCardPortraitPalette:
+#incbin "classCards\Great Knight (U) Axe {Leo_Link, DerTheVaporeon}Palette.dmp"
+setCardEntry(TrailblazerCard,TrailblazerCardPortrait,TrailblazerCardPortraitPalette)
+
+ALIGN 4
+SeekerCardPortrait:
+#incbin "classCards\Monk (F) Magic {RobertFPY, ltranc}.dmp"
+SeekerCardPortraitPalette:
+#incbin "classCards\Monk (F) Magic {RobertFPY, ltranc}Palette.dmp"
+setCardEntry(SeekerCard,SeekerCardPortrait,SeekerCardPortraitPalette)
+
+ALIGN 4
+RunemasterCardPortrait:
+#incbin "classCards\Sage (F) Reshade {L95, HyperGammaSpaces}.dmp"
+RunemasterCardPortraitPalette:
+#incbin "classCards\Sage (F) Reshade {L95, HyperGammaSpaces}Palette.dmp"
+setCardEntry(RunemasterCard,RunemasterCardPortrait,RunemasterCardPortraitPalette)
+
+ALIGN 4
+WarMagusCardPortrait:
+#incbin "classCards\Sage (F) Reshade and Sword {Topazlight, L95, HyperGammaSpaces}.dmp"
+WarMagusCardPortraitPalette:
+#incbin "classCards\Sage (F) Reshade and Sword {Topazlight, L95, HyperGammaSpaces}Palette.dmp"
+setCardEntry(WarMagusCard,WarMagusCardPortrait,WarMagusCardPortraitPalette)
+
+ALIGN 4
+LurkerCardPortrait:
+#incbin "classCards\Occultist (M) Magic {Valak}.png.dmp"
+LurkerCardPortraitPalette:
+#incbin "classCards\Occultist (M) Magic {Valak}.pngPalette.dmp"
+setCardEntry(LurkerCard,LurkerCardPortrait,LurkerCardPortraitPalette)
+
+//edit ghost out?
+ALIGN 4
+HexerCardPortrait:
+#incbin "classCards\Summoner (M) {Uncredited}.dmp"
+HexerCardPortraitPalette:
+#incbin "classCards\Summoner (M) {Uncredited}Palette.dmp"
+setCardEntry(HexerCard,HexerCardPortrait,HexerCardPortraitPalette)
+
+ALIGN 4
+LancerCardPortrait:
+#incbin "classCards\Militia (M) Deserter Lance {Rasdel}.dmp"
+LancerCardPortraitPalette:
+#incbin "classCards\Militia (M) Deserter Lance {Rasdel}Palette.dmp"
+setCardEntry(LancerCard,LancerCardPortrait,LancerCardPortraitPalette)
+
+//get better card
+ALIGN 4
+HighlanderCardPortrait:
+#incbin "classCards\Sergeant (M)  {Jj09, Der, Spud} 1.dmp"
+HighlanderCardPortraitPalette:
+#incbin "classCards\Sergeant (M)  {Jj09, Der, Spud} 1Palette.dmp"
+setCardEntry(HighlanderCard,HighlanderCardPortrait,HighlanderCardPortraitPalette)
+
+//remove axe
+ALIGN 4
+BrawlerCardPortrait:
+#incbin "classCards\Brigand (M) Clothed {Flasuban}.dmp"
+BrawlerCardPortraitPalette:
+#incbin "classCards\Brigand (M) Clothed {Flasuban}Palette.dmp"
+setCardEntry(BrawlerCard,BrawlerCardPortrait,BrawlerCardPortraitPalette)
+
+ALIGN 4
+PugilistCardPortrait:
+#incbin "classCards\Berserker (M) Unarmed {ZoramineFae}.dmp"
+PugilistCardPortraitPalette:
+#incbin "classCards\Berserker (M) Unarmed {ZoramineFae}Palette.dmp"
+setCardEntry(PugilistCard,PugilistCardPortrait,PugilistCardPortraitPalette)
+
+ALIGN 4
+HunterCardPortrait:
+#incbin "classCards\Hunter (M) {Spud}.dmp"
+HunterCardPortraitPalette:
+#incbin "classCards\Hunter (M) {Spud}Palette.dmp"
+setCardEntry(HunterCard,HunterCardPortrait,HunterCardPortraitPalette)
+
+ALIGN 4
+SurvivalistCardPortrait:
+#incbin "classCards\Surv (M) Bow {Aruka, Yggdra, N426}.dmp"
+SurvivalistCardPortraitPalette:
+#incbin "classCards\Surv (M) Bow {Aruka, Yggdra, N426}Palette.dmp"
+setCardEntry(SurvivalistCard,SurvivalistCardPortrait,SurvivalistCardPortraitPalette)
+
+ALIGN 4
+SkyKnightCardPortrait:
+#incbin "classCards\Pegasus Knight (F) Lance  (Flasuban).dmp"
+SkyKnightCardPortraitPalette:
+#incbin "classCards\Pegasus Knight (F) Lance  (Flasuban)Palette.dmp"
+setCardEntry(SkyKnightCard,SkyKnightCardPortrait,SkyKnightCardPortraitPalette)
+
+ALIGN 4
+SeraphCardPortrait:
+#incbin "classCards\Falcoknight (F) Lance {flasuban}.dmp"
+SeraphCardPortraitPalette:
+#incbin "classCards\Falcoknight (F) Lance {flasuban}Palette.dmp"
+setCardEntry(SeraphCard,SeraphCardPortrait,SeraphCardPortraitPalette)
+
+ALIGN 4
+ScaleKnightCardPortrait:
+#incbin "classCards\Wyvern Rider (U) Axe {flasuban}.dmp"
+ScaleKnightCardPortraitPalette:
+#incbin "classCards\Wyvern Rider (U) Axe {flasuban}Palette.dmp"
+setCardEntry(ScaleKnightCard,ScaleKnightCardPortrait,ScaleKnightCardPortraitPalette)
+
+ALIGN 4
+ScalemasterCardPortrait:
+#incbin "classCards\Wyvern Lord (U) Axe {flasuban}.dmp"
+ScalemasterCardPortraitPalette:
+#incbin "classCards\Wyvern Lord (U) Axe {flasuban}Palette.dmp"
+setCardEntry(ScalemasterCard,ScalemasterCardPortrait,ScalemasterCardPortraitPalette)
+
+ALIGN 4
+EncirclerCardPortrait:
+#incbin "classCards\Shaman (F) Staff {VelvetKitsune, Pushwall, RobertFPY, Uncredited}.dmp"
+EncirclerCardPortraitPalette:
+#incbin "classCards\Shaman (F) Staff {VelvetKitsune, Pushwall, RobertFPY, Uncredited}Palette.dmp"
+setCardEntry(EncirclerCard,EncirclerCardPortrait,EncirclerCardPortraitPalette)
+
+ALIGN 4
+ArcanistCardPortrait:
+#incbin "classCards\Druid (F) Magic {L95}.dmp"
+ArcanistCardPortraitPalette:
+#incbin "classCards\Druid (F) Magic {L95}Palette.dmp"
+setCardEntry(ArcanistCard,ArcanistCardPortrait,ArcanistCardPortraitPalette)
+
+ALIGN 4
+DriverCardPortrait:
+#incbin "classCards\Knight (M) SALVAGED Sword {SALVAGED}.dmp"
+DriverCardPortraitPalette:
+#incbin "classCards\Knight (M) SALVAGED Sword {SALVAGED}Palette.dmp"
+setCardEntry(DriverCard,DriverCardPortrait,DriverCardPortraitPalette)
+
+ALIGN 4
+ImperialCardPortrait:
+#incbin "classCards\General Shield (U) Cape Sword {Topazlight,SamirPlayz,Nura}.dmp"
+ImperialCardPortraitPalette:
+#incbin "classCards\General Shield (U) Cape Sword {Topazlight,SamirPlayz,Nura}Palette.dmp"
+setCardEntry(ImperialCard,ImperialCardPortrait,ImperialCardPortraitPalette)
