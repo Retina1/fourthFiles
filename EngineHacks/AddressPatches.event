@@ -1,3 +1,9 @@
+//pick usability
+PUSH
+ORG 0x23e93
+BYTE 0xE0
+POP
+
 //movement script
 PUSH
 ORG 0x01A77E

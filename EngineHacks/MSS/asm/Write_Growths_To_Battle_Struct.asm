@@ -213,17 +213,7 @@ b CheckCaps
 @End of normal growths routine
 FixedGrowths:
 ldrb	r6,[r7,#0x8]	@ unit's level
-sub		r6,#1			@subtract 1 from it (this is the number of previous level-ups)
-ldr		r0,[r7]			@ rom character data pointer
-ldr		r1,[r7,#0x4]	@ rom class data pointer
-ldr		r0,[r0,#0x28]	@ character abilities
-ldr		r1,[r1,#0x28]	@ class abilities
-orr		r0,r1			@ bitwise 'or', which puts all of this unit's abilities in r0
-mov		r1,#0x80
-lsl		r1,#1			@multiply by 2^1 = 0x100, which is 'promoted'
-tst		r0,r1
-beq		FixedHpGrowth
-@add		r6,#19			@ add 2 levels if the unit is promoted (otherwise, without 100+ growths the first level-up will always be empty)
+sub		r6,#1			@ subtract 1 from it (this is the number of previous level-ups)
 
 FixedHpGrowth:
 ldr		r0,Get_Hp_Growth

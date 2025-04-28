@@ -11,13 +11,16 @@
 
 
 ALIGN 4
-ExampleMenu:
-MenuDefinition(6, 8, 18, 0, 1, ExampleMenuOptions)
+GrowthModeMenu:
+MenuDefinition(6, 5, 18, 0, 1, GrowthModeMenuOptions)
 
 ALIGN 4
-ExampleMenuOptions:
-MenuOption(0xC15, 0xC16, 0)
-MenuOption(0xC16, 0xC15, 0x11)
+GrowthModeMenuOptions:
+MenuOption(NormalGrowthsLabel, NormalGrowthsRText, 0)
+MenuOption(FixedGrowthsLabel, FixedGrowthsRText, 0)
+MenuOption(ZeroGrowthsLabel, ZeroGrowthsRText, 0)
+MenuOption(MinGrowthsLabel, MinGrowthsRText, 0)
+MenuOption(MaxGrowthsLabel, MaxGrowthsRText, 0)
 MenuTerminator
 
 

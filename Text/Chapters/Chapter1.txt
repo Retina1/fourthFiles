@@ -1,21 +1,35 @@
-##C1_Premonition
-[Left][Nathan]
-[...][AN][MidRight][Astarte]
-[...][AN][Left]
-[...][AN][FarLeft][Gore]
-[...][AN][Left][MoveLeft]
-[...][AN][MidRight]
-[...]Where did it go wrong?[AN]
+##C1_Premonition_Silence
+...[A][X]
+
+##C1_Premonition_Astarte1
+Where did it go wrong?[AN]
 Where did you lose the road?[N]
-Where did any of us lose it?[AN][FarLeft]
+Where did any of us lose it?[A][X]
+
+##C1_Premonition_Gore1
 Was it all worth it?[AN]
 To have and to lose it all?[N]
-Do you miss being blind?[AN][MidRight]
+Do you miss being blind?[A][X]
+
+##C1_Premonition_Astarte2
 Who'll remember me?[N]
-Who'll remember you?[AN][Clear][FarLeft]
+Who'll remember you?[A][X]
+
+##C1_Premonition_Gore2
 Who'll you remember?[N]
-Who'll remember you?[AN][Clear][Left]
-[...][A][CloseEyes][...][A][X]
+Who'll remember you?[A][X]
+
+##C1_Premonition_Cleone
+Who'll stand by you?[N]
+Who'll remember you?[A][X]
+
+##C1_Premonition_Rat
+Who'll change you?[N]
+Who'll remember you?[A][X]
+
+##C1_Premonition_Ending
+How did you get to[N]
+be here, Nathan?[A][X]
 
 ##C1_Opening_1
 [MidLeft][Nathan]
@@ -34,7 +48,7 @@ Sure wouldn't think that with[N]
 how common adventurers are.[AN]
 [...]You still sure this all's[N]
 a good idea, Astarte?[AN][MidRight][CloseEyes]
-For the love of[...][AN]
+For the love of[...][AN][OpenEyes]
 I swear you're far too[N]
 indecisive, Nathan.[AN]
 This is what we've dreamed[N]
@@ -83,7 +97,219 @@ either one of us.[AN]
 Less likely to make a scene.[AN][MidRight]
 Are you trying to call[N]
 him boring?[AN][FarLeft]
-Not one bit.[N]
+Not one bit.[AN]
 Trust me, Nathan.[N]
 You'll do fine.[AN][Left]
 If you're certain.[A][X]
+
+##C1_Opening_2
+[MidLeft][Nathan][MidRight][Guildmaster]
+Mhm[...] Nathan, correct?[AN]
+Tell me, lad. What makes you[N]
+lot think you got the stuff?[AN]
+I've seen hundreds of youths[N]
+over my time as Guildmaster,[AN]
+and I always ask them that[N]
+very question.[AN][MidLeft]
+To[...] To be honest, it was[N]
+hardly my idea.[AN]
+Gore and Astarte out there[...][N]
+They're the real adventurers.[AN]
+I just can't face the idea[N]
+of leaving them behind.[AN]
+So here I am with them.[AN][MidRight]
+Loyalty's good a cause as any.[AN]
+[...]Just hope it'll hold fast.[AN]
+In this life, there's no room[N]
+to doubt your line of work.[AN]
+You live and die on your instinct.[N]
+Hesitation'll get you in a flash.[AN][MidLeft]
+Why are you telling me this?[AN][MidRight]
+Part of judging your character.[N]
+All of this is true, of course.[AN]
+But I see in your eyes that for as[N]
+uncertain as you are about this,[AN]
+you're also unwavering. Unafraid.[N]
+[...]Things I look for in a recruit.[AN]
+Get your mates and follow me.[N]
+Your initiation trial begins now.[AN][Clear][MidLeft]
+Of[...] Of course, sir![A][X]
+
+##C1_Opening_3
+[MidLeft][Guildmaster]
+Hm. A caster, a gunner, and what[N]
+I believe is[...] a spellsword?[AN]
+You'll match well with[...] I'd say[N]
+Cleone and Benthus.[AN]
+Two recent additions to our numbers[N]
+who're without guildmates.[AN]
+They've proven themselves already,[N]
+so now you can prove yourselves.[AN]
+Step forward, initiates![A][X]
+
+##C1_Opening_4
+[MidLeft][Guildmaster][Right][Cleone][FarRight][Benthus][Right]
+Ready, Guildmaster![AN][FarRight]
+Hmph. This better[N]
+be interesting.[AN][MidLeft]
+Your task is simple.[AN]
+Best this small force I've[N]
+assembled in combat.[AN]
+Treat this as seriously as you[N]
+would any real world skirmish.[AN]
+If you're knocked out, initiates,[N]
+I fear I'll have to send you off.[AN]
+[...]But I know you've the resolve[N]
+to see this trial through.[AN]
+I shall watch from up here.[AN]
+Don't mind my presence, or[N]
+that of my apprentice.[AN][FarRight]
+You've even got an imperial[N]
+troop there with you, sport.[AN]
+What, thinking of whisking us[N]
+off to the military after this?[AN][MidLeft]
+Benthus. This soldier is just[N]
+observing guild activity.[AN][FarRight]
+Well, then.[AN]
+Let them observe[N]
+my superiority![AN][Right][CloseEyes]
+[...][AN][MidLeft]
+Ahem. Let the trial[...] commence![A][X]
+
+##C1_Opening_5
+[MidLeft][Gore][Right][Nathan][FarRight][Astarte][Right]
+Alright[...] Alright![AN][Smile]
+We're doing this![AN][FarRight]
+Remember our strategy.[N]
+I'll take the front.[AN]
+You two support from[N]
+the rear.[AN][MidLeft]
+'Course. We'll make 'em[N]
+all know our names.[AN][Right]
+Nothing to it, then![A][X]
+
+##C1NathanBattle
+[MidRight][Nathan]
+I[...] I can do this.[N]
+Nothing to fear.[AN]
+Exactly like we've[N]
+been practicing.[AN][ToggleSmile]
+[...]I've got this.[A][X]
+
+##C1NathanCleoneBattle
+[MidRight][Nathan]
+Is[...] Is that[N]
+a whip?[AN][Clear][MidLeft][Cleone]
+It[...] It is.[AN]
+I-I'm[...] I'm good[N]
+with it.[AN][Clear][MidRight][Nathan]
+I wasn't[...][AN]
+Just never something[N]
+I'd expect as a weapon.[AN]
+[...]Right.[N]
+We should fight.[A][X]
+
+##C1NathanBenthusBattle
+[MidLeft][Benthus]
+My name is Benthus.[N]
+Remember it well.[AN]
+It is a name that[N]
+shall ring in history.[AN][Clear][MidRight][Nathan]
+Perhaps it will.[A][N]
+But I'd like mine to[N]
+as well, one day.[A][X]
+
+
+##C1AstarteBattle
+[MidRight][Astarte][ToggleSmile]
+Nothing's gonna stop[N]
+me now![A] I've worked[N]
+my whole life for this![AN]
+You'll soon all sing of[N]
+me, Astarte![A][X]
+
+##C1AstarteCleoneBattle
+[MidRight][Astarte]
+A dark hunter![N]
+A worthy foe![AN][Clear][MidLeft][Cleone]
+Are[...] Are you afraid?[N]
+I-I'm[...] sorry.[AN]
+If I'm bothering you,[N]
+I can just[...] leave[...][AN][Clear][MidRight][Astarte]
+Hardly! I'm looking[N]
+forward to this.[A][X]
+
+##C1AstarteBenthusBattle
+[MidLeft][Benthus]
+My name is Benthus.[N]
+Remember it well.[AN]
+It is a name that[N]
+shall ring in history.[AN][Clear][MidRight][Astarte]
+Who starts a conversation[N]
+like that?[A] [...]Name's[N]
+Astarte. En garde![A][X]
+
+##C1GoreBattle
+[MidRight][Gore]
+Locked and loaded.[N]
+Target in sight.[AN][ToggleSmile]
+Nothing more to it.[A][X]
+
+##C1GoreCleoneBattle
+[MidRight][Gore]
+[...]Hm.[AN][Clear][MidLeft][Cleone]
+A-Are you alright[...][N]
+Gore, right?[AN][Clear][MidRight][Gore]
+Fine. Just surprised to[N]
+see a dark hunter.[AN][Clear][MidLeft][Cleone]
+Oh[...] I can just[...][AN][Clear][MidRight][Gore]
+You've done nothing[N]
+wrong.[A] Just don't[N]
+see 'em much.[AN]
+[...]Let's focus on[N]
+our trial, please.[A][X]
+
+##C1GoreBenthusBattle
+[MidLeft][Benthus]
+My name is Benthus.[N]
+Remember it well.[AN]
+It is a name that[N]
+shall ring in history.[AN][Clear][MidRight][Gore]
+[...]Yeah, sure.[N]
+Gore.[AN]
+Good to meet you.[A][X]
+
+##C1NathanDefeat
+[MidRight][Nathan]
+I'm[...] sorry, guys[...][AN]
+I[...] yield.[AN][Clear][MidLeft][Guildmaster]
+[...]I had hoped for better.[N]
+Perhaps another day.[A][X]
+
+##C1AstarteDefeat
+[MidRight][Astarte]
+No[...] Not like this[...][N]
+How could I blow it?[AN][Clear][MidLeft][Guildmaster]
+[...]I had hoped for better.[N]
+Perhaps another day.[A][X]
+
+##C1GoreDefeat
+[MidRight][Gore]
+Damn it[...] I guess I[N]
+should be thankful[...][AN]
+I wasn't cut out[...][N]
+for this[...][AN][Clear][MidLeft][Guildmaster]
+[...]I had hoped for better.[N]
+Perhaps another day.[A][X]
+
+##C1CleoneDefeat
+[MidLeft][Cleone]
+You[...] got me.[AN][ToggleSmile]
+Well done.[A][X]
+
+##C1BenthusDefeat
+[MidLeft][Benthus]
+Hmph. I was merely[N]
+holding back.[AN]
+If we rematch, don't[N]
+expect this again.[A][X]

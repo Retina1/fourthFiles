@@ -28,6 +28,9 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+//doors are locked
+//Door(1,5)
+//Door(11,3)
 END_MAIN
 
 MiscBasedEvents:
@@ -46,25 +49,44 @@ ENDTRAP
 
 ALIGN 4
 
-Units:
-UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,9] 0x0 0x0 0x1 REDA3R8 [Wand,FlameScroll,AriadneShard] NoAI
-UNIT Astarte 0x0 0x1 Level(2,Ally,0) [8,9] 0x0 0x0 0x1 REDA2R7 [Shortsword,Wand,HealScroll] NoAI
-UNIT Gore 0x0 0x1 Level(2,Ally,0) [8,9] 0x0 0x0 0x1 REDA2R9 [Handgonne,Vulnerary,Medica,Soma] NoAI
+OpeningCutscene1:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,9] 0x0 0x0 0x1 REDA7R7 [Wand,Vulnerary,FlameScroll] NoAI
+UNIT
+OpeningCutscene2:
+UNIT Astarte 0x0 0x1 Level(1,NPC,0) [10,0] 0x0 0x0 0x1 REDA10R2 [0x0] NoAI
+UNIT
+OpeningCutscene3:
+UNIT Gore 0x0 0x1 Level(1,NPC,0) [4,0] 0x0 0x0 0x1 REDA4R2 [0x0] NoAI
+UNIT
+OpeningCutscene4:
+UNIT Cleone 0x0 0x1 Level(1,NPC,0) [5,9] 0x0 0x0 0x1 REDA5R8 [0x0] NoAI
+UNIT
+OpeningCutscene5:
+UNIT Rat 0x0 0x1 Level(1,NPC,0) [9,9] 0x0 0x0 0x1 REDA9R8 [0x0] NoAI
 UNIT
 
-NPCGuildmaster:
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [0,4] 0x0 0x0 0x1 REDA3R8 [Wand,Vulnerary,FlameScroll] NoAI
+UNIT Astarte 0x0 0x1 Level(2,Ally,0) [0,4] 0x0 0x0 0x1 REDA2R7 [Shortsword,Wand,Vulnerary] NoAI
+UNIT Gore 0x0 0x1 Level(2,Ally,0) [0,3] 0x0 0x0 0x1 REDA2R9 [Handgonne,Medica] NoAI
+UNIT
+
+NPCGuildmaster1:
+UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,0) [0,3] 0x0 0x0 0x1 REDA0R5 [Fengyan,OutlandShield] NeverMoveAI
+UNIT
+
+NPCGuildmaster2:
 //put gerson here once he exists
 //imperial testing - fucking gorgon egg hardcoding
-UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,0) [4,0] DropItem 0x0 0x0 0x0 [Fengyan,OutlandShield] NeverMoveAI
-UNIT Gerson Lancer 0x0 Level(1,NPC,0) [3,0] 0x0 0x0 0x0 0x0 [Shortspear,RepairScroll] NeverMoveAI
-UNIT AsketaGeneric Driver 0x0 Level(15,NPC,1) [2,0] 0x0 0x0 0x0 0x0 [Dominance] NeverMoveAI
-UNIT GuildGeneric Gladiator 0x0 Level(15,NPC,1) [1,0] 0x0 0x0 0x0 0x0 [Greataxe] NeverMoveAI
+UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,0) [0,0] 0x0 0x0 0x1 REDA4R0 [Fengyan,OutlandShield] NeverMoveAI
+UNIT Gerson Lancer 0x0 Level(1,NPC,0) [0,0] 0x0 0x0 0x1 REDA3R0 [Shortspear,RepairScroll] NeverMoveAI
+UNIT AsketaGeneric Driver 0x0 Level(15,NPC,1) [0,0] 0x0 0x0 0x1 REDA2R0 [Dominance] NeverMoveAI
 UNIT
 
 EnemyUnits:
 UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [VineWhip] AttackInRangeAI
 //lmao he can't be level 12 i don't need fucked up boss abusers
-UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] 0x0 0x0 0x1 REDA12R7 [Epee] AttackInRangeAI
+UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] DropItem 0x0 0x1 REDA12R7 [Epee,AriadneShard] AttackInRangeAI
 UNIT GuildGeneric Swordfighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Shortsword] NoAI
 UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [Shortmace] NoAI
 UNIT GuildGeneric Archer 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Shortbow] AttackInRangeAI
@@ -74,16 +96,124 @@ UNIT
 ALIGN 4
 
 BeginningScene:
-LOAD1 0x1 NPCGuildmaster
-ENUN
-LOAD1 0x1 Units
-ENUN
-LOAD1 0x1 EnemyUnits
-ENUN
+EVBIT_MODIFY 4
+EVBIT_F 2
+CALL CampaignCustomizers
+FADI 16
+CLEAN
+EVBIT_MODIFY 0
+CALL PremonitionScene
+CleanTextNoMap(0x0,C1_Opening_1)
+CleanText(0x1,C1_Opening_2)
+LOAD1 0x1 NPCGuildmaster1; ENUN
+STAL 15
+SOUN 0xb1
+TILECHANGE 0
+STAL 25
+LOAD1 0x1 Units; ENUN
+TILEREVERSE 0
+MOVE 10 BossGuildmaster [0,3]; ENUN
+SilentKillUnit(BossGuildmaster)
+STAL 30
+LOAD1 0x1 NPCGuildmaster2; ENUN
+Text(C1_Opening_3)
+LOAD1 0x1 EnemyUnits; ENUN
+FlashCursor(BossCleone,60)
+FlashCursor(BossBenthus,60)
+Text(C1_Opening_4)
+FlashCursor(Nathan,60)
+MUSC Song_TheFirstCampaign
+Text(C1_Opening_5)
 EndEvent
 
 EndingScene:
 MoveToChapter(0x1)
+ENDA
+
+CampaignCustomizers:
+SetBackground(0x35)
+SystemText(CampaignCustomPrompt)
+IfNoSelectedGoto(0x2000)
+SystemText(RTextExplanation)
+LABEL 0x1000
+RefreshLordSplitTiles
+ENUF FIXED_GROWTHS_FLAG_ID; ENUF ZERO_GROWTHS_FLAG_ID; ENUF MIN_GROWTHS_FLAG_ID; ENUF MAX_GROWTHS_FLAG_ID
+CallMenu(GrowthModeMenu)
+//normal
+	SVAL 0x1 0x0
+	BNE 0x1 0xc 0x1
+		SystemText(NormalGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		GOTO 0x2000
+	LABEL 0x1
+//fixed
+	SVAL 0x1 0x1
+	BNE 0x2 0xc 0x1
+		SystemText(FixedGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		ENUT FIXED_GROWTHS_FLAG_ID
+		GOTO 0x2000
+	LABEL 0x2
+//zero
+	SVAL 0x1 0x2
+	BNE 0x3 0xc 0x1
+		SystemText(ZeroGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		ENUT ZERO_GROWTHS_FLAG_ID
+		GOTO 0x2000
+	LABEL 0x3
+//min
+	SVAL 0x1 0x3
+	BNE 0x4 0xc 0x1
+		SystemText(MinimumGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		ENUT MIN_GROWTHS_FLAG_ID
+		GOTO 0x2000
+	LABEL 0x4
+//max
+	SVAL 0x1 0x4
+	BNE 0x5 0xc 0x1
+		SystemText(MaxGrowthsLabel)
+		IfNoSelectedGoto(0x1000)
+		ENUT MAX_GROWTHS_FLAG_ID
+		GOTO 0x2000
+	LABEL 0x5
+LABEL 0x2000
+ENDA
+
+PremonitionScene:
+TILECHANGE 0x2
+FADU 4
+LOAD1 0x1 OpeningCutscene1; ENUN; STAL 30
+FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30
+LOAD1 0x1 OpeningCutscene2; ENUN; STAL 30
+FlashCursor(Astarte,30); SoloText(C1_Premonition_Silence); STAL 30
+FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30
+LOAD1 0x1 OpeningCutscene3; ENUN; STAL 30
+FlashCursor(Gore,30); SoloText(C1_Premonition_Silence); STAL 30
+FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30
+FlashCursor(Astarte,30); SoloText(C1_Premonition_Astarte1)
+FlashCursor(Gore,30); SoloText(C1_Premonition_Gore1)
+TurnEnemy(Astarte); STAL 30
+FlashCursor(Astarte,30); SoloText(C1_Premonition_Astarte2)
+TurnEnemy(Gore);STAL 30
+FlashCursor(Gore,30); SoloText(C1_Premonition_Gore2); STAL 30
+//FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30
+LOAD1 0x1 OpeningCutscene4; ENUN; STAL 30
+FlashCursor(Cleone,30); SoloText(C1_Premonition_Cleone); STAL 30
+LOAD1 0x1 OpeningCutscene5; ENUN; STAL 30
+FlashCursor(Rat,30); SoloText(C1_Premonition_Rat); STAL 30
+TurnEnemy(Cleone); STAL 30
+TurnEnemy(Rat); STAL 30
+FlashCursor(Astarte,30);FlashCursor(Gore,30)
+FlashCursor(Cleone,30);FlashCursor(Rat,30)
+SoloText(C1_Premonition_Ending); FADI 10; CLEE 0
+FADU 10
+FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30
+FADI 4
+CLEA 0
+TILEREVERSE 0x2
+STAL 60
 ENDA
 
 //MESSAGE Events end at offset CURRENTOFFSET

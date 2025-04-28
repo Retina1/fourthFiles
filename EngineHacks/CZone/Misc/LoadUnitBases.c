@@ -10,6 +10,7 @@ void UnitLoadStatsFromChracter(struct Unit* unit, const struct CharacterData* ch
     unit->lck   = character->baseLck + unit->pClassData->baseLck;
     unit->mag   = character->baseMag + unit->pClassData->baseMag;
 
+    unit->classSkillState = 0;
     unit->conBonus = 0;
 
     for (i = 0; i < 8; ++i) {

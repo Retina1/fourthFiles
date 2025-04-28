@@ -47,9 +47,11 @@ between stats and growths.[X]
 #include "System/ConsumablesPromos.txt"
 #include "System/Objectives.txt"
 #include "System/Music.txt"
+#include "System/CampaignCustomizers.txt"
 
 #include "Chapters/ChapterNames.txt"
 #include "Chapters/FloorTitles.txt"
+#include "Chapters/Chapter1.txt"
 
 ## HealArrowText
 ->[X]
@@ -166,3 +168,11 @@ Disable staff/dance animations.[X]
 # 0x6c1
 Call upon some magical power to[N]
 heal or otherwise assist allies.[X]
+
+# 0x694
+ Open[X]
+# 0x6de
+Open a door or a chest.[N]
+Who could resist?[X]
+# 0x0881
+Select which lock to open up.[.][X]

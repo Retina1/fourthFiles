@@ -1,0 +1,54 @@
+##CampaignCustomPrompt
+Enable gameplay modifiers?[N]
+[No][X]
+
+##RTextExplanation
+Press the R button to get[N]
+an explanation of any of[N]
+the following options.[A][X]
+
+##NormalGrowthsLabel
+Enable Regular Growths.[X]
+##NormalGrowthsRText
+Stats will randomly grow[N]
+as usual on level-up.[X]
+##NormalGrowthsConfirm
+Activate Regular Growths?[N]
+[No][X]
+
+##FixedGrowthsLabel
+Enable Fixed Growths.[X]
+##FixedGrowthsRText
+Stats will grow to follow[N]
+the unit's averages.[X]
+##FixedGrowthsConfirm
+Activate Fixed Growths?[N]
+[No][X]
+
+##ZeroGrowthsLabel
+Enable 0% Growths.[X]
+##ZeroGrowthsRText
+Stats will not grow[N]
+at all on level-up.[X]
+##ZeroGrowthsConfirm
+Activate 0% Growths?[N]
+[No][X]
+
+##MinGrowthsLabel
+Enable Minimum Growths.[X]
+##MinGrowthsRText
+Stats will grow as poorly[N]
+as they possibly can.[X]
+##MinimumGrowthsConfirm
+Activate Minimum Growths?[N]
+[No][X]
+
+##MaxGrowthsLabel
+Enable Maximum Growths.[X]
+##MaxGrowthsRText
+Stats will grow as good[N]
+as they possibly can.[X]
+##MaxGrowthsConfirm
+Activate Maximum Growths?[N]
+[No][X]
+

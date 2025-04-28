@@ -11,10 +11,12 @@
 	
 #define LoadUnitsByDifficulty(easy,normal,hard) "CHECK_TUTORIAL ; BNE 4034 rC r0 ; CHECK_HARD ; BNE 4035 rC r0 ; LOAD1 0x1 normal ; GOTO 4036 ; LABEL 4034 ; LOAD1 0x1 easy ; GOTO 4036 ; LABEL 4035 ; LOAD1 0x1 hard ; LABEL 4036 ; ENUN;"
 #define SystemText(textid) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textid; TEXTEND; REMA"
+#define SoloText(textid) "CenterTutorialTextBox; SOLOTEXTBOXSTART; TEXTSHOW textid; TEXTEND; REMA"
 #define SystemText(bgid,textid) "CenterTutorialTextBox; SetBackground(bgid); TUTORIALTEXTBOXSTART; TEXTSHOW textid; TEXTEND; FADI 16"
 #define EndEvent "EVBIT_T 0x7; ENDA"
 #define CleanTextNoMap(bgid,textid) "SetBackground(bgid); TEXTSTART; TEXTSHOW textid; TEXTEND; FADI 16"
 #define CleanText(bgid,textid) "SetBackground(bgid); TEXTSTART; TEXTSHOW textid; TEXTEND; ClearBackgroundSmooth"
+#define CGText(textid) "CGTEXTSTART; TEXTSHOW textid; TEXTEND"
 #define GiveItem(item) "SMOV 0x3 item; GIVEITEMTO 0xFFFF;"
 #define GiveItem(item,character) "SMOV 0x3 item; GIVEITEMTO character;"
 #define CamOn "EVBIT_T 9"
@@ -37,6 +39,7 @@
 #include "_BossMusic.event"
 #include "_ForceDeployer.event"
 #include "WorldMapEvents.event"
+#include "LordSplitMenus/LordSplitMenuPlus.event"
 
 {
 #include "Chapters/Chapter1.event"

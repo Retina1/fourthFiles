@@ -238,7 +238,7 @@ struct Unit {
 	/* 18 */ u8 res;
 	/* 19 */ u8 lck;
 
-	/* 1A */ u8 classSkillState;
+	/* 1A */ u8 conBonus;
 	/* 1B */ u8 rescueOtherUnit;
 	/* 1C */ u8 ballistaIndex;
 	/* 1D */ s8 movBonus;
@@ -256,7 +256,7 @@ struct Unit {
 //hopefully nothing breaks from removing unit leader
 	/* 39 */ u8 supportBits;
 	/* 3A */ u8 mag;
-	/* 3B */ u8 fatigue;
+	/* 3B */ u8 classSkillState;
 
 	/* 3C */ struct SMSHandle* pMapSpriteHandle;
 

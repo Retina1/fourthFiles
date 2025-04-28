@@ -25,9 +25,6 @@ void UnitCheckStatCaps(struct Unit* unit) {
     if (unit->lck > 99)
         unit->lck = 99;
 
-    if (unit->conBonus > (UNIT_CON_MAX(unit) - UNIT_CON_BASE(unit)))
-        unit->conBonus = (UNIT_CON_MAX(unit) - UNIT_CON_BASE(unit));
-
     if (unit->movBonus > (UNIT_MOV_MAX(unit) - UNIT_MOV_BASE(unit)))
         unit->movBonus = (UNIT_MOV_MAX(unit) - UNIT_MOV_BASE(unit));
 }
