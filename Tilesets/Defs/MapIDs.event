@@ -7,3 +7,15 @@
 #define Map3ID 0x7
 #define MapChange3ID 0x8
 #define Events3ID 0x9
+#define GuildhallMapID 0xA
+#define GuildhallMapChangeID 0xB
+#define GuildhallEventsID 0xC
+#define Stratum1F1MapID 0xD
+#define Stratum1F1MapChangeID 0xE
+#define Stratum1F1EventsID 0xF
+#define Stratum1F2MapID 0x10
+#define Stratum1F2MapChangeID 0x11
+#define Stratum1F2EventsID 0x12
+#define Stratum1F3MapID 0x13
+#define Stratum1F3MapChangeID 0x14
+#define Stratum1F3EventsID 0x15

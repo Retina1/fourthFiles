@@ -1,2 +1,4 @@
 #define Village1OBJ 0x1
 #define Village1PAL 0x2
+#define Fields1OBJ 0x3
+#define Fields1PAL 0x4

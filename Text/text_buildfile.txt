@@ -1,3 +1,34 @@
+#0x0903 SS_TalkText
+Talk[X]
+
+##SS_TalkRText
+Talk: Units that this unit can[N]
+initiate a conversation with.[X]
+
+## PersonalDataDesc1
+Press Select to toggle[N]
+between stats and growths.[X]
+
+#include "System/PlayerClasses.txt"
+#include "System/EnemyClasses.txt"
+#include "System/GenericFactions.txt"
+#include "System/UnitNamesDescs.txt"
+#include "System/NPCS.txt"
+#include "System/ItemNamesDescs.txt"
+#include "System/MonsterWeapons.txt"
+#include "System/ConsumablesPromos.txt"
+#include "System/Objectives.txt"
+#include "System/Music.txt"
+#include "System/CampaignCustomizers.txt"
+#include "System/DeathQuotes.txt"
+
+#include "Chapters/ChapterNames.txt"
+#include "Chapters/FloorTitles.txt"
+#include "Chapters/Chapter1.txt"
+
+## HealArrowText
+->[X]
+
 # 0x0094
 HP Bars[.][X]
 
@@ -24,37 +55,6 @@ difficulty for those[N]
 who wish to know true[N]
 pain and suffering.[N]
 ...Godspeed.[X]
-
-#0x0903 SS_TalkText
-Talk[X]
-
-##SS_TalkRText
-Talk: Units that this unit can[N]
-initiate a conversation with.[X]
-
-
-## PersonalDataDesc1
-Press Select to toggle[N]
-between stats and growths.[X]
-
-#include "System/PlayerClasses.txt"
-#include "System/EnemyClasses.txt"
-#include "System/GenericFactions.txt"
-#include "System/UnitNamesDescs.txt"
-#include "System/NPCS.txt"
-#include "System/ItemNamesDescs.txt"
-#include "System/MonsterWeapons.txt"
-#include "System/ConsumablesPromos.txt"
-#include "System/Objectives.txt"
-#include "System/Music.txt"
-#include "System/CampaignCustomizers.txt"
-
-#include "Chapters/ChapterNames.txt"
-#include "Chapters/FloorTitles.txt"
-#include "Chapters/Chapter1.txt"
-
-## HealArrowText
-->[X]
 
 
 #0x4f6 Mov_Text_ID

@@ -10,6 +10,25 @@
 SongTable(Song_TheFirstCampaign,TheFirstCampaign,1)
 #include "songs/TheFirstCampaign.event"
 }
+//0xa
+#define Song_Revolution 0xa
+{
+SongTable(Song_Revolution,Revolution,1)
+#include "songs/Revolution.event"
+}
+//0xb
+#define Song_VastLands 0xb
+{
+SongTable(Song_VastLands,VastLands,1)
+#include "songs/VastLands.event"
+}
+//0xc
+#define Song_Escape 0xc
+{
+SongTable(Song_Escape,Escape,1)
+#include "songs/Escape.event"
+}
+
 
 //0x43 - title screen
 #define Song_SpinningTheTale 0x43

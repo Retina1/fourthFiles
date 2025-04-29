@@ -41,11 +41,40 @@
 #include "WorldMapEvents.event"
 #include "LordSplitMenus/LordSplitMenuPlus.event"
 
+PUSH
+ORG 0x592104
+CALL NewGameOverEvent
+ENDA
+POP
+
+NewGameOverUnit:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+NewGameOverEvent:
+EVBIT_MODIFY 4
+FADI 10
+CLEA 0; CLEN 0; CLEE 0
+LOMA Chapter1
+TILECHANGE 0x2
+LOAD1 0x1 NewGameOverUnit; ENUN
+SVAL 0x1 99
+SET_HP Nathan
+FADU 5
+STAL 15
+FlashCursor(Nathan,30); SoloText(GameOverText); STAL 30
+SFXKillUnit(Nathan); STAL 30
+ASMC $8085375
+ENDA
+
 {
 #include "Chapters/Chapter1.event"
 }
 {
 #include "Chapters/Chapter2.event"
+}
+{
+#include "City/Guildhall.event"
 }
 
 ALIGN 4

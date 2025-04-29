@@ -75,3 +75,16 @@ Village1Tiles:
 TileConfigPointerTable(VillageCONFIG, Village1Tiles)
 ObjTypePalettePointerTable(Village1OBJ, VillageObjects)
 ObjTypePalettePointerTable(Village1PAL, Village1Palette)
+
+ALIGN 4
+FieldsObjects:
+#incbin "Fields1.dmp"
+ALIGN 4
+Fields1Palette:
+#incbin "Fields1_pal.dmp"
+ALIGN 4
+Fields1Tiles:
+#incext compress "Fields.mapchip_config"
+TileConfigPointerTable(FieldsCONFIG, Fields1Tiles)
+ObjTypePalettePointerTable(Fields1OBJ, FieldsObjects)
+ObjTypePalettePointerTable(Fields1PAL, Fields1Palette)

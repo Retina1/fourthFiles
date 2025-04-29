@@ -65,6 +65,22 @@ OpeningCutscene5:
 UNIT Rat 0x0 0x1 Level(1,NPC,0) [9,9] 0x0 0x0 0x1 REDA9R8 [0x0] NoAI
 UNIT
 
+CutsceneParty:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,11] 0x0 0x0 0x0 0x0 [Wand,Vulnerary,FlameScroll] NoAI
+UNIT Astarte 0x0 0x1 Level(2,Ally,0) [9,10] 0x0 0x0 0x0 0x0 [Shortsword,Wand,Vulnerary] NoAI
+UNIT Gore 0x0 0x1 Level(2,Ally,0) [7,10] 0x0 0x0 0x0 0x0 [Handgonne,Medica] NoAI
+UNIT BossGuildmaster Highlander 0x1 Level(26,NPC,0) [12,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gerson Lancer 0x1 Level(1,NPC,0) [7,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Swordfighter 0x1 Level(1,NPC,0) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Brawler 0x1 Level(1,NPC,0) [5,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Fencer 0x1 Level(1,NPC,0) [7,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Caller 0x1 Level(1,NPC,0) [6,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Hunter 0x1 Level(1,NPC,0) [12,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Scholar 0x1 Level(1,NPC,0) [13,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Medic 0x1 Level(1,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Apothecary 0x1 Level(1,NPC,0) [12,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
 Units:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [0,4] 0x0 0x0 0x1 REDA3R8 [Wand,Vulnerary,FlameScroll] NoAI
 UNIT Astarte 0x0 0x1 Level(2,Ally,0) [0,4] 0x0 0x0 0x1 REDA2R7 [Shortsword,Wand,Vulnerary] NoAI
@@ -93,6 +109,15 @@ UNIT GuildGeneric Archer 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Shortb
 UNIT GuildGeneric Brawler 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA8R0 [BrassKnuckles] AttackInRangeAI
 UNIT
 
+EndingUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(2,Ally,0) [7,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(2,Ally,0) [6,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,NPC,0) [7,5] 0x0 0x0 0x0 0x0 [VineWhip,Medica] NoAI
+UNIT Benthus 0x0 0x1 Level(12,NPC,0) [9,4] 0x0 0x0 0x0 0x0 [Epee,Sabre,Vulnerary] NoAI
+UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,0) [8,1] 0x0 0x0 0x0 0x0 [Fengyan,OutlandShield] NoAI
+UNIT
+
 ALIGN 4
 
 BeginningScene:
@@ -103,8 +128,22 @@ FADI 16
 CLEAN
 EVBIT_MODIFY 0
 CALL PremonitionScene
+//opening text, walk to GM
 CleanTextNoMap(0x0,C1_Opening_1)
-CleanText(0x1,C1_Opening_2)
+LOMA Guildhall
+LOAD1 0x1 CutsceneParty; ENUN
+FADU 10
+STAL 40
+EVBIT_T 9
+MOVE 5 Nathan [10,11]; ENUN
+MOVE 5 Nathan [10,9]; ENUN
+MOVE 5 Nathan [13,9]; ENUN
+MOVE 5 Nathan [13,0]; ENUN
+//talk to GM, walk to map positions
+CleanTextNoMap(0x1,C1_Opening_2)
+CLEA 0; CLEN 0; CLEE 0
+LOMA Chapter1
+FADU 10
 LOAD1 0x1 NPCGuildmaster1; ENUN
 STAL 15
 SOUN 0xb1
@@ -116,6 +155,7 @@ MOVE 10 BossGuildmaster [0,3]; ENUN
 SilentKillUnit(BossGuildmaster)
 STAL 30
 LOAD1 0x1 NPCGuildmaster2; ENUN
+//intro text
 Text(C1_Opening_3)
 LOAD1 0x1 EnemyUnits; ENUN
 FlashCursor(BossCleone,60)
@@ -127,9 +167,24 @@ Text(C1_Opening_5)
 EndEvent
 
 EndingScene:
-MoveToChapter(0x1)
+//benthus and cleone join, provisional guild
+//promise of naming your guild eventually
+//music here later
+MUSC 0x0
+FADI 10
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingUnits; ENUN
+FADU 10
+STAL 30
+FlashCursor(Cleone,30)
+TurnAlly(Cleone)
+FlashCursor(Benthus,30)
+TurnAlly(Benthus); STAL 30
+CleanTextNoMap(0x0,C1_Ending_1)
+MoveToChapter(Chapter2)
 ENDA
 
+//todo - free class choosing, 1RN, picnic mode
 CampaignCustomizers:
 SetBackground(0x35)
 SystemText(CampaignCustomPrompt)

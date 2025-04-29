@@ -3,3 +3,47 @@ Gerson[X]
 ##Desc_Gerson
 The Guildmaster's young apprentice.[N]
 He's the successor to the Guildleague.[X]
+
+##Name_Benjamin
+Benjamin[X]
+##Desc_Benjamin
+An Asketan blacksmith who supplies the[N]
+Guildleague. He's earnest yet weary.[X]
+##Name_Johanna
+Johanna[X]
+##Desc_Johanna
+Benjamin's bright young daughter.[N]
+She's peppy and eager to help.[X]
+
+##Name_Bobby
+Bobby[X]
+##Desc_Bobby
+An Asketan barkeep who runs Bobby's.[N]
+He's personable yet somewhat lonely.[X]
+
+##Name_Claire
+Claire[X]
+##Desc_Claire
+An Asketan historian who runs a small[N]
+museum. She lives to collect things.[X]
+
+##Name_Rana
+Rana[X]
+##Desc_Rana
+The head of Endbringer. She's a[N]
+nihilistic and broken adventurer.[X]
+##Name_Harla
+Harla[X]
+##Desc_Harla
+Second in command of Endbringer.[N]
+Their will is one with Rana's will.[X]
+##Name_Egil
+Egil[X]
+##Desc_Egil
+A lieutenant of Endbringer. He's a[N]
+solemn and mournful Old War veteran.[X]
+##Name_Xavens
+Xavens[X]
+##Desc_Xavens
+A lieutenant of Endbringer. He's the[N]
+raving spokesman of the organization.[X]

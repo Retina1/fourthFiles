@@ -7,3 +7,12 @@ Spinning The Tale[X]
 Etrian Odyssey 2[X]
 ##SongTitle_TheFirstCampaign
 The First Campaign (Alusq)[X]
+##SongTitle_VastLands
+Vast Lands Spreading in the North[X]
+
+##SourceTitle_Original
+Original Song[X]
+##SongTitle_Escape
+Escape (Runa)[X]
+##SongTitle_Revolution
+Revolution (Runa)[X]

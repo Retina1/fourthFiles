@@ -1,28 +1,28 @@
 	.include "MPlayDef.s"
 
-	.equ	song0185_grp, voicegroup000
-	.equ	song0185_pri, 0
-	.equ	song0185_rev, 0
-	.equ	song0185_mvl, 127
-	.equ	song0185_key, 0
-	.equ	song0185_tbs, 1
-	.equ	song0185_exg, 0
-	.equ	song0185_cmp, 1
+	.equ	VastLands_grp, voicegroup000
+	.equ	VastLands_pri, 0
+	.equ	VastLands_rev, 0
+	.equ	VastLands_mvl, 127
+	.equ	VastLands_key, 0
+	.equ	VastLands_tbs, 1
+	.equ	VastLands_exg, 0
+	.equ	VastLands_cmp, 1
 
 	.section .rodata
-	.global	song0185
+	.global	VastLands
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song0185_001:
+VastLands_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0191D88A:
- .byte   TEMPO , 88*song0185_tbs/2
+ .byte   TEMPO , 88*VastLands_tbs/2
  .byte   VOICE , 38
- .byte   VOL , 53*song0185_mvl/mxv
+ .byte   VOL , 53*VastLands_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N32 ,Dn2 ,v127
  .byte   W36
@@ -262,12 +262,12 @@ Label_0191D95C:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song0185_002:
+VastLands_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0191D54A:
  .byte   VOICE , 13
- .byte   VOL , 53*song0185_mvl/mxv
+ .byte   VOL , 53*VastLands_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N32 ,Dn4 ,v088
  .byte   W36
@@ -500,12 +500,12 @@ Label_0191D590:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song0185_003:
+VastLands_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0174CB9A:
  .byte   VOICE , 75
- .byte   VOL , 52*song0185_mvl/mxv
+ .byte   VOL , 52*VastLands_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N32 ,Dn4 ,v096
  .byte   W36
@@ -716,12 +716,12 @@ Label_0174CC16:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song0185_004:
+VastLands_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0191DBBA:
  .byte   VOICE , 4
- .byte   VOL , 53*song0185_mvl/mxv
+ .byte   VOL , 53*VastLands_mvl/mxv
  .byte   PAN , c_v+35
  .byte   N92 ,Dn3 ,v064
  .byte   N92 ,Fs3
@@ -903,12 +903,12 @@ Label_0191DC0F:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song0185_005:
+VastLands_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0174CCB2:
  .byte   VOICE , 40
- .byte   VOL , 50*song0185_mvl/mxv
+ .byte   VOL , 50*VastLands_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #05 @001   ----------------------------------------
@@ -1029,12 +1029,12 @@ Label_0174CCC0:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song0185_006:
+VastLands_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0174CD2E:
  .byte   VOICE , 13
- .byte   VOL , 35*song0185_mvl/mxv
+ .byte   VOL , 35*VastLands_mvl/mxv
  .byte   PAN , c_v+33
  .byte   BEND , c_v+1
  .byte   W12
@@ -1259,12 +1259,12 @@ Label_0174CDB4:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song0185_007:
+VastLands_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0174CE5A:
  .byte   VOICE , 1
- .byte   VOL , 20*song0185_mvl/mxv
+ .byte   VOL , 20*VastLands_mvl/mxv
  .byte   PAN , c_v-63
  .byte   BEND , c_v+0
  .byte   W09
@@ -1505,12 +1505,12 @@ Label_0174CEB2:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song0185_008:
+VastLands_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0174CF92:
  .byte   VOICE , 1
- .byte   VOL , 16*song0185_mvl/mxv
+ .byte   VOL , 16*VastLands_mvl/mxv
  .byte   PAN , c_v+63
  .byte   W96
 @  #08 @001   ----------------------------------------
@@ -1656,12 +1656,12 @@ Label_0174CF92:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song0185_009:
+VastLands_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song0185_key+0
+ .byte   KEYSH , VastLands_key+0
 Label_0174D03E:
  .byte   VOICE , 124
- .byte   VOL , 53*song0185_mvl/mxv
+ .byte   VOL , 53*VastLands_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N09 ,Cn1 ,v120
  .byte   N03 ,Fs1 ,v088
@@ -2290,22 +2290,22 @@ Label_0174D3C5:
 @******************************************************@
 	.align	2
 
-song0185:
+VastLands:
 	.byte	9	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song0185_pri	@ Priority
-	.byte	song0185_rev	@ Reverb.
+	.byte	VastLands_pri	@ Priority
+	.byte	VastLands_rev	@ Reverb.
     
-	.word	song0185_grp
+	.word	VastLands_grp
     
-	.word	song0185_001
-	.word	song0185_002
-	.word	song0185_003
-	.word	song0185_004
-	.word	song0185_005
-	.word	song0185_006
-	.word	song0185_007
-	.word	song0185_008
-	.word	song0185_009
+	.word	VastLands_001
+	.word	VastLands_002
+	.word	VastLands_003
+	.word	VastLands_004
+	.word	VastLands_005
+	.word	VastLands_006
+	.word	VastLands_007
+	.word	VastLands_008
+	.word	VastLands_009
 
 	.end

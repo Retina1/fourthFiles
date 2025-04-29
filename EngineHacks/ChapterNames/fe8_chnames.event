@@ -26,6 +26,51 @@ ChTable:
 ALIGN 4
 //Final and Prologue.
 SpecialChapter:
+SHORT Stratum1F1 Label_St1
+SHORT Stratum1F2 Label_St1
+SHORT Stratum1F3 Label_St1
+
+SHORT Stratum2F1 Label_St2
+SHORT Stratum2F2 Label_St2
+SHORT Stratum2F3 Label_St2
+
+SHORT Stratum3F1 Label_St3
+SHORT Stratum3F2 Label_St3
+SHORT Stratum3F3 Label_St3
+SHORT Stratum3F4 Label_St3
+
+SHORT Stratum4F1 Label_St4
+SHORT Stratum4F2 Label_St4
+SHORT Stratum4F3 Label_St4
+SHORT Stratum4F4 Label_St4
+
+SHORT Stratum5AF1 Label_St5
+SHORT Stratum5AF2 Label_St5
+SHORT Stratum5AF3 Label_St5
+SHORT Stratum5AF4 Label_St5
+SHORT Stratum5AF5 Label_St5
+
+SHORT Stratum5BF1 Label_St5
+SHORT Stratum5BF2 Label_St5
+SHORT Stratum5BF3 Label_St5
+SHORT Stratum5BF4 Label_St5
+SHORT Stratum5BF5 Label_St5
+
+SHORT Stratum5CF1 Label_St5
+SHORT Stratum5CF2 Label_St5
+SHORT Stratum5CF3 Label_St5
+SHORT Stratum5CF4 Label_St5
+
+SHORT Stratum6F1 Label_St6
+SHORT Stratum6F2 Label_St6
+SHORT Stratum6F3 Label_St6
+SHORT Stratum6F4 Label_St6
+SHORT Stratum6F5 Label_St6
+SHORT Stratum6F6 Label_St6
+SHORT Stratum6F7 Label_St6
+SHORT Stratum6F8 Label_St6
+
+SHORT HirschringSquare Label_City
 WORD 0x0
 
 ALIGN 4

@@ -1,1 +1,2 @@
 #define VillageCONFIG 0x1
+#define FieldsCONFIG 0x2

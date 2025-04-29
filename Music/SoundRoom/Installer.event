@@ -34,9 +34,13 @@ WORD 0 0 // term
 ALIGN 4
 newMusicTable:
 //title
-SoundRoomEntry(Song_SpinningTheTale, SongTitle_SpinningTheTale, SourceTitle_EtrianOdyssey,1)
+SoundRoomEntry(Song_SpinningTheTale, SongTitle_SpinningTheTale, SourceTitle_EtrianOdyssey,0)
 //player phase
-SoundRoomEntry(Song_TheFirstCampaign, SongTitle_TheFirstCampaign, SourceTitle_EtrianOdyssey2,0)
+SoundRoomEntry(Song_TheFirstCampaign, SongTitle_TheFirstCampaign, SourceTitle_EtrianOdyssey2,1)
+SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
+SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)
+//city 
+SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4)
 WORD 0xFFFFFFFF 0 0 0
 
 PUSH

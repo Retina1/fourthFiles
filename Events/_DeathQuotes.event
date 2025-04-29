@@ -13,6 +13,12 @@ ChapterDeathQuote(Astarte,Chapter1,0x65,C1AstarteDefeat)
 ChapterDeathQuote(Gore,Chapter1,0x65,C1GoreDefeat)
 ChapterDeathQuote(BossCleone,Chapter1,0x0,C1CleoneDefeat)
 ChapterDeathQuote(BossBenthus,Chapter1,0x0,C1BenthusDefeat)
+
+AlwaysDeathQuote(Nathan,0x65,NathanDeath)
+AlwaysDeathQuote(Astarte,0x65,AstarteDeath)
+AlwaysDeathQuote(Gore,0x65,GoreDeath)
+AlwaysDeathQuote(Cleone,0x65,CleoneDeath)
+AlwaysDeathQuote(Benthus,0x0,BenthusRetreat)
 EndDeathQuote
 
 PUSH

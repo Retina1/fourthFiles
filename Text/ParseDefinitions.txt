@@ -74,3 +74,5 @@
 [Cleone] = [LoadFace][0x04][0x1]
 [Benthus] = [LoadFace][0x05][0x1]
 [Guildmaster] = [LoadFace][0x0C][0x1]
+
+[CoastKid] = [LoadFace][0x0E][0x1]

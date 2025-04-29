@@ -7,3 +7,15 @@ Events2ID
 Map3ID
 MapChange3ID
 Events3ID
+GuildhallMapID
+GuildhallMapChangeID
+GuildhallEventsID
+Stratum1F1MapID
+Stratum1F1MapChangeID
+Stratum1F1EventsID
+Stratum1F2MapID
+Stratum1F2MapChangeID
+Stratum1F2EventsID
+Stratum1F3MapID
+Stratum1F3MapChangeID
+Stratum1F3EventsID

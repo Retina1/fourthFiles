@@ -1,0 +1,71 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(GuildhallEventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [0,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+NPCUnits:
+UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Fengyan,OutlandShield] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+LOAD1 0x1 NPCUnits
+ENDA
+
+//guildhall concept
+//second .event to store recruitable units
+//macro that handles playing each town visit's events based on progression flag
+
+EndingScene:
+MoveToChapter(0x1)
+ENDA
+
+//MESSAGE Events end at offset CURRENTOFFSET
