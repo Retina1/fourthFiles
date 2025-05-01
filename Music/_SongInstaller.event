@@ -29,6 +29,9 @@ SongTable(Song_Escape,Escape,1)
 #include "songs/Escape.event"
 }
 
+//0x3e - game over
+
+//0x3f - unit death
 
 //0x43 - title screen
 #define Song_SpinningTheTale 0x43

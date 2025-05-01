@@ -88,11 +88,9 @@ deep within the Hallowed Armory.[X]
 
 // guild recruitables
 // current numbers
-// 0: gunner, archer, curate, rider, raider, priest, lurker, dark hunter, lancer, hunter, sky knight, scale knight, caller, driver
-// 1: swordfighter, knight, axefighter, scholar, ronin, poet, seeker, apothecary, encircler, noble, duelist, artifice
-// 2: brawler
-// 3+:
-// incoming caller (rw), caller (alg)
+// 0: gunner, archer, rider, raider, lurker, dark hunter, lancer, hunter, driver
+// nonzero: swordfighter, knight, axefighter, scholar, curate, ronin, poet, seeker, priest, brawler, sky knight, scale knight, apothecary, encircler, caller, noble, duelist, artifice
+// incoming caller (alg)
 // recruitment opportunities at:
 // ch2x - pick 3
 //ACT 1 classes unlock
@@ -149,12 +147,55 @@ Tristao[X]
 A Belvarusi veteran. He left retirement[N]
 to support his famine-ridden family.[X]
 
+//rekekka
+##Name_Finn
+Finn[X]
+##Desc_Finn
+A smithy turned fighter turned fugitive.[N]
+He wants to avenge his hometown's fall.[X]
+
+//Feier
+##Name_Eight
+Eight[X]
+##Desc_Eight
+A lonesome woman from outer Hirschring.[N]
+Her large stature belies a calm demeanor.[X]
+
+//scubaluigi
+##Name_Randellan
+Randellan[X]
+##Desc_Randellan
+A gruff loner and former merc from the[N]
+Asketan wilds. He doesn't like city folk.[X]
+
+//hannahkitty
+##Name_Hallie
+Hallie[X]
+##Desc_Hallie
+An aimless scavenger with an odd sense[N]
+of humor. She likes women. A lot.[X]
+
+
 //cassandra by zappy (scholar)
 ##Name_Cassandra
 Cassandra[X]
 ##Desc_Cassandra
 A foreign scholar who believes magic is[N]
-the next step of evolution. Amoral.[X]
+the next step of evolution. She's amoral.[X]
+
+//hannahkitty
+##Name_Waves
+Waves[X]
+##Desc_Waves
+A bubbly scholar with a flair for[N]
+water. She indeed goes with the flow.[X]
+
+//monas
+##Name_Cyanne
+Cyanne[X]
+##Desc_Cyanne
+A Belvarusi scholar wishing to control[N]
+her powers. She's a forward thinker.[X]
 
 //trish by benfrosh (curate)
 ##Name_Trish
@@ -179,6 +220,27 @@ Leonzio[X]
 A foreign diplomat visiting Asketa.[N]
 He's concerningly loose-lipped.[X]
 
+//green
+##Name_Gunther
+Gunther[X]
+##Desc_Gunther
+An enthusiastic historian and author who[N]
+joined the Guild to indulge his interests.[X]
+
+//freelia
+##Name_Jacqwil
+Jacqwil[X]
+##Desc_Jacqwil
+A reserved poet and victim of Endbringer.[N]
+She'll sing to anyone willing to listen.[X]
+
+//hell
+##Name_Aaron
+Aaron[X]
+##Desc_Aaron
+A frail and loathsome man who will do[N]
+anything to survive. He fakes sincerity.[X]
+
 //Phespher by doob
 ##Name_Phespher
 Phespher[X]
@@ -200,7 +262,42 @@ Saewynn[X]
 A Belvarusi priest and former Endbringer.[N]
 She's unsure of where to go in life.[X]
 
+//guard
+##Name_Szess
+S'zess[X]
+##Desc_Szess
+A kindly scientist who barely survived[N]
+an accident. They wish to save lives.[X]
+
+//nice
+##Name_Zoe
+Zoe[X]
+##Desc_Zoe
+A Belvarusi orphan supposedly given[N]
+power by the void. She's amicable.[X]
+
 // act 1 - special ops: dark hunter, lancer, brawler, hunter
+//hell
+##Name_Luis
+Luis[X]
+##Desc_Luis
+A godless preacher serving his father's[N]
+memory. He's standoffish yet protective.[X]
+
+//yunnuyun6969
+##Name_Amos
+Amos[X]
+##Desc_Amos
+A deserter from Belvarus indebted to his[N]
+superior. He's informal yet personable.[X]
+
+//nickname776
+##Name_Mackayla
+Mackayla[X]
+##Desc_Mackayla
+A Belvarusi lancer who wishes to explore[N]
+and meet people. She's bubbly but clumsy.[X]
+
 //Shīliăng by levin (get accented characters later, brawler)
 ##Name_Shiliang
 Shiliang[X]
@@ -215,17 +312,39 @@ Feefasnan[X]
 A once-renowned Asketan priest. He bears[N]
 a curse that's altered his body and mind.[X]
 
+//greatdoot
+##Name_Philmore
+Philmore[X]
+##Desc_Philmore
+A young Asketan hunter who wishes to[N]
+slay dragons. He's very energetic.[X]
+
 
 // act 2 - skyshroud division: sky knight, scale knight
+//riv and levin
 ##Name_Atilius
 Atilius[X]
 ##Desc_Atilius
 A former magical prodigy trying out[N]
 dragon taming. ...He'll be fine.[X]
 
+//ru
+##Name_June
+June[X]
+##Desc_June
+A resentful desertee from Belvarus.[N]
+A quiet exterior hides her bitterness.[X]
+
+//alex
+##Name_Eneida
+Eneida[X]
+##Desc_Eneida
+A flirty Asketan flier from the slums.[N]
+Loves nothing more than her husband.[X]
+
 
 // act 2 - lifeflow league: apothecary, encircler, caller
-//alg caller - gardener that kills people - Belvarus rural girl. Area ravaged by famine, fields destroyed, salted earth, nothing grows. She has grown an exuberant garden, loads of food, travelers stop on the road and rest, and eat like kings. Then while they sleep with full bellies they're killed and their souls fuel the soil. Caller. She got caught and ran to Asketa.
+//alg caller/apothecary - gardener that kills people - Belvarus rural girl. Area ravaged by famine, fields destroyed, salted earth, nothing grows. She has grown an exuberant garden, loads of food, travelers stop on the road and rest, and eat like kings. Then while they sleep with full bellies they're killed and their souls fuel the soil. Caller. She got caught and ran to Asketa.
 //leize by sigma (apothecary)
 ##Name_Leize
 Leize[X]
@@ -247,6 +366,20 @@ Katrin[X]
 A sharp encircler raised in the Guild.[N]
 She believes the strong should thrive.[X]
 
+//benfrosh
+##Name_Sharon
+Sharon[X]
+##Desc_Sharon
+A gloomy Asketan encircler who joined[N]
+the Guild to take her mind off lost love.[X]
+
+//rw
+##Name_DreadJenny ^
+Dread Jenny[X]
+##Desc_DreadJenny
+An ambitious teenager who aspires to be[N]
+a villainous necromancer. ...She's trying.[X]
+
 // act 2 - upper senatus: noble, duelist
 
 //marleni by retina (noble)
@@ -264,6 +397,8 @@ A modest fencer from the Asketan slums.[N]
 She wants off this wretched continent.[X]
 
 // act 3 - imperial remnants: driver
+
+
 
 // secret lock - automata unit: artifice
 

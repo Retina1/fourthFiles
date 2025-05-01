@@ -17,6 +17,51 @@ POP
 #include "_ClassCards.event"
 
 ALIGN 4
+//scuba
+RandellanDMP:
+#incbin "dmps/scubaRandellan.dmp"
+setMugEntryExtend(RandellanMug,RandellanDMP,2,4,2,2,  0,2,  0,4)
+
+
+ALIGN 4
+//benfrosh, comming john
+TrishDMP:
+#incbin "dmps/froshTrish.dmp"
+setMugEntry(TrishMug,TrishDMP,4,5,4,3)
+
+
+
+ALIGN 4
+//monas
+CyanneDMP:
+#incbin "dmps/monasCyanne.dmp"
+setMugEntry(CyanneMug,CyanneDMP,3,5,3,3)
+
+ALIGN 4
+//nicee
+ZoeDMP:
+#incbin "dmps/niceZoe.dmp"
+setMugEntry(ZoeMug,ZoeDMP,3,6,3,4)
+
+ALIGN 4
+//freelia
+JacqwilDMP:
+#incbin "dmps/freeliaJacqwil.dmp"
+setMugEntry(JacqwilMug,JacqwilDMP,3,6,3,4)
+
+ALIGN 4
+//feier
+EightDMP:
+#incbin "dmps/feierEight.dmp"
+setMugEntry(EightMug,EightDMP,3,5,3,3)
+
+ALIGN 4
+//Ru
+JuneDMP:
+#incbin "dmps/ruJune.dmp"
+setMugEntry(JuneMug,JuneDMP,3,6,3,4)
+
+ALIGN 4
 //Rivian
 CoastKidDMP:
 #incbin "dmps/rivianCoastKid.dmp"
@@ -27,6 +72,11 @@ ALIGN 4
 TristaoDMP:
 #incbin "dmps/alexTristao.dmp"
 setMugEntryExtend(TristaoMug,TristaoDMP, 3,4, 3,2, 12,8, 12,6)
+ALIGN 4
+//alex
+EneidaDMP:
+#incbin "dmps/alexEneida.dmp"
+setMugEntry(EneidaMug,EneidaDMP, 3,5, 3,3)
 
 ALIGN 4
 //doob

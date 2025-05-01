@@ -1,4 +1,14 @@
-Gerson 0xef
+Bertram 0xe5
+Ayda
+Claire
+Bobby
+Johanna
+Benjamin
+Xavens
+Egil
+Harla
+Rana
+Gerson
 EndbringerGeneric 
 MonsterGeneric
 BelvarusGeneric

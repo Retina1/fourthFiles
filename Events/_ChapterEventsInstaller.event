@@ -41,7 +41,12 @@
 #include "WorldMapEvents.event"
 #include "LordSplitMenus/LordSplitMenuPlus.event"
 
+//GAME OVER STUFF
 PUSH
+ORG $837B8
+BYTE 0x0
+ORG $837CA
+SHORT 0x0
 ORG 0x592104
 CALL NewGameOverEvent
 ENDA
@@ -61,8 +66,8 @@ LOAD1 0x1 NewGameOverUnit; ENUN
 SVAL 0x1 99
 SET_HP Nathan
 FADU 5
-STAL 15
-FlashCursor(Nathan,30); SoloText(GameOverText); STAL 30
+STAL 45
+SoloText(GameOverText); STAL 30
 SFXKillUnit(Nathan); STAL 30
 ASMC $8085375
 ENDA
@@ -73,6 +78,9 @@ ENDA
 {
 #include "Chapters/Chapter2.event"
 }
+//special city recruit possibilities
+//sfl swordmaster
+//bertram?
 {
 #include "City/Guildhall.event"
 }

@@ -47,3 +47,24 @@ Xavens[X]
 ##Desc_Xavens
 A lieutenant of Endbringer. He's the[N]
 raving spokesman of the organization.[X]
+
+//DICK SLATER
+//possibly not a normal guild recruit
+//shows up in the city
+//give him stuff and talk to him to make him friend
+//very attention to detail to befriend him
+//not a good person at all
+//vulgar, offensive, not likable at all, no heart of gold
+//strong power hungry guy, tinkers with or steals drive blades
+//petty man who leaves if you don't do certain stuff
+##Name_Bertram
+Bertram[X]
+##Desc_Bertram
+An ex-imperial wandering Hirschring.[N]
+He was dishonorably discharged.[X]
+
+##Name_Ayda
+Ayda[X]
+##Desc_Ayda
+A wandering immortal swordswoman.[N]
+She's looking for reason to live.[X]

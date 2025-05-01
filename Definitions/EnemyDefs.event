@@ -1,3 +1,13 @@
+#define Bertram 0xE5
+#define Ayda 0xE6
+#define Claire 0xE7
+#define Bobby 0xE8
+#define Johanna 0xE9
+#define Benjamin 0xEA
+#define Xavens 0xEB
+#define Egil 0xEC
+#define Harla 0xED
+#define Rana 0xEE
 #define Gerson 0xEF
 #define EndbringerGeneric 0xF0
 #define MonsterGeneric 0xF1
