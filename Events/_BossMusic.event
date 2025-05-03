@@ -3,6 +3,8 @@
 
 ALIGN 4
 BossBGMTable:
+//ACT 1
+BossBGMEntry(BossBenthus2,Song_Rhapsody)
 BossBGMTerminator
 
 PUSH

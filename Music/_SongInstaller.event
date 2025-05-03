@@ -28,6 +28,13 @@ SongTable(Song_VastLands,VastLands,1)
 SongTable(Song_Escape,Escape,1)
 #include "songs/Escape.event"
 }
+//0xd
+#define Song_Rhapsody 0xd
+{
+SongTable(Song_Rhapsody,Rhapsody,1)
+#include "songs/Rhapsody.event"
+}
+
 
 //0x3e - game over
 

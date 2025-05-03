@@ -48,6 +48,10 @@ Xavens[X]
 A lieutenant of Endbringer. He's the[N]
 raving spokesman of the organization.[X]
 
+##Desc_Benthus2
+A former member of Guild Hedge, driven[N]
+by hubris to leave the group for dead.[X]
+
 //DICK SLATER
 //possibly not a normal guild recruit
 //shows up in the city

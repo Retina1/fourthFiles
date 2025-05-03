@@ -20,9 +20,9 @@ mov		r1,#0x10		@set if stat name color should reflect growth
 and		r0,r1
 mov		r1,r8
 ldrb	r1,[r1,#0xB]
-mov		r2,#0xC0
+mov		r2,#0x80
 tst		r1,r2
-beq		IsPlayerUnit
+bne		IsPlayerUnit
 mov		r0,#0
 IsPlayerUnit:
 str		r0,[sp,#0x14]
@@ -43,7 +43,7 @@ ldr		r0,=StatScreenStruct
 sub		r0,#1
 mov		r1,r8
 ldrb	r1,[r1,#0xB]
-mov		r2,#0xC0
+mov		r2,#0x80
 tst		r1,r2
 beq		Label2
 ldrb	r1,[r0]

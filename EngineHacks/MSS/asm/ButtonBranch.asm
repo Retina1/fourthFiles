@@ -20,7 +20,7 @@ cmp		r0,#0x0				@stat screen
 bne		NotStatScreen
 ldr		r2,[r1,#0xC]
 ldrb	r2,[r2,#0xB]
-mov		r3,#0xC0
+mov		r3,#0x80
 tst		r2,r3
 bne		NotStatScreen
 sub		r1,#0x2

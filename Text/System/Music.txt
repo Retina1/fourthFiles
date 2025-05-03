@@ -10,6 +10,11 @@ The First Campaign (Alusq)[X]
 ##SongTitle_VastLands
 Vast Lands Spreading in the North[X]
 
+##SourceTitle_OrderOfEcclesia ^
+Castlevania: Order of Ecclesia[X]
+##SongTitle_Rhapsody ^
+Rhapsody of the Forsaken (Trikki Nikki)[X]
+
 ##SourceTitle_Original
 Original Song[X]
 ##SongTitle_Escape

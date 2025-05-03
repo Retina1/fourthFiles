@@ -56,3 +56,7 @@ BYTE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 PortraitUpshift(AstarteMug)
 PortraitUpshift(CoastKidMug)
 PortraitUpshift(CompassMug)
+PortraitUpshift(FeefasnanMug)
+PortraitUpshift(LuisMug)
+//shift plus exceed doesn't work nice
+//PortraitUpshift(WendyMug)

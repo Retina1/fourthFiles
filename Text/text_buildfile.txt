@@ -26,6 +26,8 @@ between stats and growths.[X]
 #include "Chapters/FloorTitles.txt"
 #include "Chapters/Chapter1.txt"
 
+#include "City/CityGeneral.txt"
+
 ## HealArrowText
 ->[X]
 

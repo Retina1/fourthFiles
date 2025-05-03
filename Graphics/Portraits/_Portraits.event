@@ -17,6 +17,84 @@ POP
 #include "_ClassCards.event"
 
 ALIGN 4
+//puzon
+PuzonDMP:
+#incbin "dmps/Puzon.dmp"
+setMugEntry(PuzonMug,PuzonDMP,2,5,2,3)
+
+ALIGN 4
+//hell, touchups by zappy
+LuisDMP:
+#incbin "dmps/hellLuis.dmp"
+setMugEntry(LuisMug,LuisDMP,3,6,3,4)
+
+ALIGN 4
+//rye
+YasakiDMP:
+#incbin "dmps/ryeYasaki.dmp"
+setMugEntry(YasakiMug,YasakiDMP,3,6,3,4)
+ALIGN 4
+//rye
+YajirushiDMP:
+#incbin "dmps/ryeYajirushi.dmp"
+setMugEntry(YajirushiMug,YajirushiDMP,3,6,3,4)
+
+ALIGN 4
+//alguien
+WendyDMP:
+#incbin "dmps/alguienWendy.dmp"
+setMugEntryExtend(WendyMug,WendyDMP,4,6,4,4, 0,1, 0,3)
+
+ALIGN 4
+//rekekka
+FinnDMP:
+#incbin "dmps/rekekkaFinn.dmp"
+setMugEntry(FinnMug,FinnDMP,3,6,3,4)
+
+ALIGN 4
+//lynn
+LeviaDMP:
+#incbin "dmps/lynnLevia.dmp"
+setMugEntry(LeviaMug,LeviaDMP,2,5,3,3)
+
+ALIGN 4
+//muna
+CelesteDMP:
+#incbin "dmps/munaCeleste.dmp"
+setMugEntry(CelesteMug,CelesteDMP,3,5,3,3)
+
+ALIGN 4
+//slater
+GuildmasterDMP:
+#incbin "dmps/slaterGuildmaster.dmp"
+setMugEntry(GuildmasterMug,GuildmasterDMP,3,5,3,3)
+ALIGN 4
+AllbringerDMP:
+#incbin "dmps/slaterAllbringer.dmp"
+//wonky exceed tiles currently
+setMugEntryExtend(AllbringerMug,AllbringerDMP,3,4,3,2, 3,(-2), 5,(-2))
+
+ALIGN 4
+//rw
+DreadJennyDMP:
+#incbin "dmps/rwDreadJenny.dmp"
+setMugEntry(DreadJennyMug,DreadJennyDMP,3,6,3,4)
+
+ALIGN 4
+//scraiza
+MoomfieDMP:
+#incbin "dmps/scraizaMoomfie.dmp"
+setMugEntryExtend(MoomfieMug,MoomfieDMP,3,6,3,4, 12,8, 10,4)
+
+
+ALIGN 4
+//striker
+AizenDMP:
+#incbin "dmps/strikerAizen.dmp"
+setMugEntry(AizenMug,AizenDMP,3,6,3,4)
+
+
+ALIGN 4
 //scuba
 RandellanDMP:
 #incbin "dmps/scubaRandellan.dmp"
@@ -28,6 +106,12 @@ ALIGN 4
 TrishDMP:
 #incbin "dmps/froshTrish.dmp"
 setMugEntry(TrishMug,TrishDMP,4,5,4,3)
+
+ALIGN 4
+//john
+AmosDMP:
+#incbin "dmps/johnAmos.dmp"
+setMugEntry(AmosMug,AmosDMP,5,5,5,3)
 
 
 

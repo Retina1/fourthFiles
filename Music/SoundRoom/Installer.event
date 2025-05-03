@@ -41,6 +41,9 @@ SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
 SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)
 //city 
 SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4)
+//combat
+//boss
+SoundRoomEntry(Song_Rhapsody, SongTitle_Rhapsody, SourceTitle_OrderOfEcclesia,5)
 WORD 0xFFFFFFFF 0 0 0
 
 PUSH
