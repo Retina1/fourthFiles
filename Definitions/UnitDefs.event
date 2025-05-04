@@ -67,3 +67,8 @@
 #define Wendy 0x43
 #define Allbringer 0x44
 #define Felicity 0x45
+#define Heri 0x46
+#define Kolette 0x47
+#define Anjelica 0x48
+#define Saoirse 0x49
+#define Pallas 0x4A

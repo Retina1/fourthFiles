@@ -228,7 +228,7 @@ CallMenu(GrowthModeMenu)
 //max
 	SVAL 0x1 0x4
 	BNE 0x5 0xc 0x1
-		SystemText(MaxGrowthsLabel)
+		SystemText(MaxGrowthsConfirm)
 		IfNoSelectedGoto(0x1000)
 		ENUT MAX_GROWTHS_FLAG_ID
 		GOTO 0x2000

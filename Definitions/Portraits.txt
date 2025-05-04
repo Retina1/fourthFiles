@@ -67,6 +67,12 @@ YasakiMug
 WendyMug
 AllbringerMug
 FelicityMug
+HeriMug
+KoletteMug
+AnjelicaMug
+SaoirseMug
+PallasMug
+BertramMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

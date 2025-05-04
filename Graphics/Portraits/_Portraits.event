@@ -23,10 +23,19 @@ PuzonDMP:
 setMugEntry(PuzonMug,PuzonDMP,2,5,2,3)
 
 ALIGN 4
+//doot
+KoletteDMP:
+#incbin "dmps/dootKolette.dmp"
+setMugEntry(KoletteMug,KoletteDMP,3,6,3,4)
+
+ALIGN 4
 //hell, touchups by zappy
 LuisDMP:
 #incbin "dmps/hellLuis.dmp"
 setMugEntry(LuisMug,LuisDMP,3,6,3,4)
+PaulDMP:
+#incbin "dmps/hellPaul.dmp"
+setMugEntry(PaulMug,PaulDMP,3,6,3,4)
 
 ALIGN 4
 //rye
@@ -71,8 +80,11 @@ setMugEntry(GuildmasterMug,GuildmasterDMP,3,5,3,3)
 ALIGN 4
 AllbringerDMP:
 #incbin "dmps/slaterAllbringer.dmp"
-//wonky exceed tiles currently
 setMugEntryExtend(AllbringerMug,AllbringerDMP,3,4,3,2, 3,(-2), 5,(-2))
+ALIGN 4
+BertramDMP:
+#incbin "dmps/slaterBertram.dmp"
+setMugEntryExtend(BertramMug,BertramDMP,3,4,3,2, 0,4, 10, 4)
 
 ALIGN 4
 //rw
@@ -98,7 +110,7 @@ ALIGN 4
 //scuba
 RandellanDMP:
 #incbin "dmps/scubaRandellan.dmp"
-setMugEntryExtend(RandellanMug,RandellanDMP,2,4,2,2,  0,2,  0,4)
+setMugEntryExtend(RandellanMug,RandellanDMP,2,4,2,2,  0,0,  0,4)
 
 
 ALIGN 4
@@ -132,6 +144,10 @@ ALIGN 4
 JacqwilDMP:
 #incbin "dmps/freeliaJacqwil.dmp"
 setMugEntry(JacqwilMug,JacqwilDMP,3,6,3,4)
+ALIGN 4
+AnjelicaDMP:
+#incbin "dmps/freeliaAnjelica.dmp"
+setMugEntry(AnjelicaMug,AnjelicaDMP,2,5,3,3)
 
 ALIGN 4
 //feier

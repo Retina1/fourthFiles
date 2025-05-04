@@ -1,0 +1,75 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(HirschringSquareEventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+NPCUnits:
+UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Fengyan,OutlandShield] NoAI
+UNIT
+
+#define LoadUnitsByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x418C 0x0 0xc; LOAD1 0x0 ch18C; GOTO 0x4000; LABEL 0x418C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x418B 0x0 0xc; LOAD1 0x0 ch18B; GOTO 0x4000; LABEL 0x418B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x418A 0x0 0xc; LOAD1 0x0 ch18A; GOTO 0x4000; LABEL 0x418A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x4160 0x0 0xc; LOAD1 0x0 ch16; GOTO 0x4000; LABEL 0x4160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x4150 0x0 0xc; LOAD1 0x0 ch15; GOTO 0x4000; LABEL 0x4150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x4130 0x0 0xc; LOAD1 0x0 ch13; GOTO 0x4000; LABEL 0x4130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x413A 0x0 0xc; LOAD1 0x0 chS3; GOTO 0x4000; LABEL 0x413A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x4100 0x0 0xc; LOAD1 0x0 ch10; GOTO 0x4000; LABEL 0x4100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x4090 0x0 0xc; LOAD1 0x0 ch9; GOTO 0x4000; LABEL 0x4090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x4080 0x0 0xc; LOAD1 0x0 ch8; GOTO 0x4000; LABEL 0x4080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x4050 0x0 0xc; LOAD1 0x0 ch5; GOTO 0x4000; LABEL 0x4050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x403a 0x0 0xc; LOAD1 0x0 chS1; GOTO 0x4000; LABEL 0x403a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x4030 0x0 0xc; LOAD1 0x0 ch3; GOTO 0x4000; LABEL 0x4030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x4020 0x0 0xc; LOAD1 0x0 ch2; GOTO 0x4000; LABEL 0x4020; LABEL 0x4000"
+#define RunTextByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x518C 0x0 0xc; Text(ch18C); GOTO 0x5000; LABEL 0x518C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x518B 0x0 0xc; Text(ch18B); GOTO 0x5000; LABEL 0x518B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x518A 0x0 0xc; Text(ch18A); GOTO 0x5000; LABEL 0x518A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x5160 0x0 0xc; Text(ch16); GOTO 0x5000; LABEL 0x5160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x5150 0x0 0xc; Text(ch15); GOTO 0x5000; LABEL 0x5150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x5130 0x0 0xc; Text(ch13); GOTO 0x5000; LABEL 0x5130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x513A 0x0 0xc; Text(chS3); GOTO 0x5000; LABEL 0x513A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x5100 0x0 0xc; Text(ch10); GOTO 0x5000; LABEL 0x5100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x5090 0x0 0xc; Text(ch9); GOTO 0x5000; LABEL 0x5090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x5080 0x0 0xc; Text(ch8); GOTO 0x5000; LABEL 0x5080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x5050 0x0 0xc; Text(ch5); GOTO 0x5000; LABEL 0x5050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x503a 0x0 0xc; Text(chS1); GOTO 0x5000; LABEL 0x503a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x5030 0x0 0xc; Text(ch3); GOTO 0x5000; LABEL 0x5030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x5020 0x0 0xc; Text(ch2); GOTO 0x5000; LABEL 0x5020; LABEL 0x5000"
+//#define GuildRecruit(recruitee,introText,confirmText,denyText,followupText)
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+LOAD1 0x1 NPCUnits
+ENDA
+
+//guildhall concept
+//second .event to store recruitable units
+//macro that handles playing each town visit's events based on progression flag
+
+EndingScene:
+MoveToChapter(0x1)
+ENDA
+
+//MESSAGE Events end at offset CURRENTOFFSET

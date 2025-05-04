@@ -177,6 +177,52 @@ SlashAnim(Ronin_Sword)
 UnarmedAnim(Ronin_Unarmed)
 EndAnim
 
+//Rider
+{
+#include "ClassAnims/Rider/Lance Installer.event"
+#include "ClassAnims/Rider/Unarmed Installer.event"
+}
+ALIGN 4
+RiderAnims:
+PierceAnim(Rider_Lance)
+UnarmedAnim(Rider_Unarmed)
+EndAnim
+//Strider
+{
+#include "ClassAnims/Strider/Lance Installer.event"
+#include "ClassAnims/Strider/Unarmed Installer.event"
+}
+ALIGN 4
+StriderAnims:
+PierceAnim(Strider_Lance)
+UnarmedAnim(Strider_Unarmed)
+EndAnim
+
+//Raider
+{
+#include "ClassAnims/Raider/Axe Installer.event"
+#include "ClassAnims/Raider/Handaxe Installer.event"
+#include "ClassAnims/Raider/Unarmed Installer.event"
+}
+ALIGN 4
+RaiderAnims:
+BashAnim(Raider_Axe)
+HandaxeAnim(Raider_Handaxe)
+UnarmedAnim(Raider_Unarmed)
+EndAnim
+//Trailblazer
+{
+#include "ClassAnims/Trailblazer/Axe Installer.event"
+#include "ClassAnims/Trailblazer/Handaxe Installer.event"
+#include "ClassAnims/Trailblazer/Unarmed Installer.event"
+}
+ALIGN 4
+TrailblazerAnims:
+BashAnim(Trailblazer_Axe)
+HandaxeAnim(Trailblazer_Handaxe)
+UnarmedAnim(Trailblazer_Unarmed)
+EndAnim
+
 
 //Seeker
 {
@@ -217,4 +263,25 @@ WarMagusAnims:
 SlashAnim(WarMagus_Sword)
 SupportAnim(WarMagus_Magic)
 UnarmedAnim(WarMagus_Magic)
+EndAnim
+
+//Lancer
+{
+#include "ClassAnims/Lancer/Lance Installer.event"
+#include "ClassAnims/Lancer/Unarmed Installer.event"
+}
+ALIGN 4
+LancerAnims:
+PierceAnim(Lancer_Lance)
+UnarmedAnim(Lancer_Unarmed)
+EndAnim
+//Highlander
+{
+#include "ClassAnims/Highlander/Lance Installer.event"
+#include "ClassAnims/Highlander/Unarmed Installer.event"
+}
+ALIGN 4
+HighlanderAnims:
+PierceAnim(Highlander_Lance)
+UnarmedAnim(Highlander_Unarmed)
 EndAnim

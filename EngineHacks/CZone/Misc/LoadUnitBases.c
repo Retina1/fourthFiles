@@ -1,14 +1,26 @@
 void UnitLoadStatsFromChracter(struct Unit* unit, const struct CharacterData* character) {
     int i;
-
-    unit->maxHP = character->baseHP + unit->pClassData->baseHP;
-    unit->pow   = character->basePow + unit->pClassData->basePow;
-    unit->skl   = character->baseSkl + unit->pClassData->baseSkl;
-    unit->spd   = character->baseSpd + unit->pClassData->baseSpd;
-    unit->def   = character->baseDef + unit->pClassData->baseDef;
-    unit->res   = character->baseRes + unit->pClassData->baseRes;
-    unit->lck   = character->baseLck + unit->pClassData->baseLck;
-    unit->mag   = character->baseMag + unit->pClassData->baseMag;
+	if ((UNIT_CATTRIBUTES(unit) & CA_FEMALE)){
+		unit->maxHP = character->baseHP + unit->pClassData->baseHP;
+		unit->pow   = character->basePow + unit->pClassData->basePow;
+		unit->skl   = character->baseSkl + unit->pClassData->baseSkl;
+		unit->spd   = character->baseSpd + unit->pClassData->baseSpd;
+		unit->def   = character->baseDef + unit->pClassData->baseDef;
+		unit->res   = character->baseRes + unit->pClassData->baseRes;
+		unit->lck   = character->baseLck + unit->pClassData->baseLck;
+		unit->mag   = character->baseMag + unit->pClassData->baseMag;
+	}
+	else {
+		unit->maxHP = character->baseHP;
+		unit->pow   = character->basePow;
+		unit->skl   = character->baseSkl;
+		unit->spd   = character->baseSpd;
+		unit->def   = character->baseDef;
+		unit->res   = character->baseRes;
+		unit->lck   = character->baseLck;
+		unit->mag   = character->baseMag;		
+	}
+	
 
     unit->classSkillState = 0;
     unit->conBonus = 0;

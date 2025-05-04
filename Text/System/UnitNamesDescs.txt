@@ -196,6 +196,13 @@ Hallie[X]
 An aimless scavenger with an odd sense[N]
 of humor. She likes women. A lot.[X]
 
+//freelia
+##Name_Anjelica
+Anjelica[X]
+##Desc_Anjelica
+A passionate archer who joined the[N]
+military to seek her childhood love.[X]
+
 
 //cassandra by zappy (scholar)
 ##Name_Cassandra
@@ -246,6 +253,19 @@ Johnnie[X]
 ##Desc_Johnnie
 A rash yet dour Belvarusi rider.[N]
 His friends all fell to famine.[X]
+
+//doot
+##Name_Kolette
+Kolette[X]
+##Desc_Kolette
+WEEZER RIDER[X]
+
+//RW
+##Name_Pallas
+Pallas[X]
+##Desc_Pallas
+A scarred ex-soldier from Belvarus.[N]
+She fights just to feel again.[X]
 
 //rasta
 ##Name_Esketit
@@ -354,6 +374,13 @@ Luis[X]
 A godless preacher serving his father's[N]
 memory. He's standoffish yet protective.[X]
 
+//corgaylia
+##Name_Saoirse
+Saoirse[X]
+##Desc_Saoirse
+A cheerful Asketan who unleashes their[N]
+sadism in battle. She's a bit awkward.[X]
+
 //yunnuyun6969
 ##Name_Amos
 Amos[X]
@@ -367,6 +394,13 @@ Mackayla[X]
 ##Desc_Mackayla
 A Belvarusi lancer who wishes to explore[N]
 and meet people. She's bubbly but clumsy.[X]
+
+//misha
+##Name_Heri
+Heri[X]
+##Desc_Heri
+A cheery Belvarusi lancer with a bit of a[N]
+savior complex. They're violent but peppy.[X]
 
 //Shīliăng by levin (get accented characters later, brawler)
 ##Name_Shiliang

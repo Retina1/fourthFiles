@@ -94,6 +94,7 @@
 #define PegIcon 0x00001000
 #define IsLord 0x00002000
 #define IsFemale 0x00004000
+#define IsGeneric IsFemale
 #define IsBoss 0x00008000
 #define UnlockLock1 0x00010000
 #define UnlockLock2 0x00020000

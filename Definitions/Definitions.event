@@ -9,6 +9,22 @@
 
 #define SupportAnimFlag 0xae
 
+//flags for each chapter's base
+#define Chapter2DoneFlag 0x8b
+#define Chapter3DoneFlag 0x8c
+#define Stratum1DoneFlag 0x8d
+#define Chapter5DoneFlag 0x8e
+#define Chapter8DoneFlag 0x8f
+#define Chapter9DoneFlag 0x90
+#define Chapter10DoneFlag 0x91
+#define Stratum3DoneFlag 0x92
+#define Chapter13DoneFlag 0x93
+#define Chapter15DoneFlag 0x94
+#define Chapter16DoneFlag 0x95
+#define Chapter18ADoneFlag 0x96
+#define Chapter18BDoneFlag 0x97
+#define Chapter18CDoneFlag 0x98
+
 //movement types
 #define HeroMovement 0x880B808
 #define BrigandMovement 0x880b90c

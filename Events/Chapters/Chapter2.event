@@ -60,15 +60,15 @@ UNIT
 EnemyUnits:
 UNIT MonsterGeneric Crawler 0x0 Level(2,Enemy,1) [7,6] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(2,Enemy,1) [8,9] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
-UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [14,6] 0x0 0x0 0x0 0x0 [EvilEye] NoAI
-UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [0,8] 0x0 0x0 0x0 0x0 [Tackle] NoAI
+UNIT MonsterGeneric Bigle 0x0 Level(1,Enemy,1) [14,9] 0x0 0x0 0x0 0x0 [Tackle] AttackInRangeAI
+UNIT MonsterGeneric Bigle 0x0 Level(1,Enemy,1) [0,8] 0x0 0x0 0x0 0x0 [Tackle] AttackInRangeAI
 UNIT MonsterGeneric Wight 0x0 Level(2,Enemy,1) [9,7] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
 UNIT MonsterGeneric Wight 0x0 Level(2,Enemy,1) [1,4] 0x0 0x0 0x0 0x0 [Pike] NoAI
-UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
-UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [Shortbow] DelayedAI
+UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [Shortbow] DelayedAI
 UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [10,11] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
-UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [1,13] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
-UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,1) [3,13] 0x0 0x0 0x0 0x0 [GreatTalon] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [1,13] 0x0 0x0 0x0 0x0 [SharpBite] DelayedAI
+UNIT MonsterGeneric Spider 0x0 Level(1,Enemy,1) [3,13] 0x0 0x0 0x0 0x0 [GreatTalon] AttackInRangeAI
 UNIT
 
 ALIGN 4
@@ -81,7 +81,8 @@ ENUN
 EndEvent
 
 EndingScene:
-MoveToChapter(0x2)
+ENUT Chapter2DoneFlag
+MoveToChapter(HirschringSquare)
 ENDA
 
 //MESSAGE Events end at offset CURRENTOFFSET

@@ -24,6 +24,16 @@ Medic_Magic
 Medic_Unarmed
 Myrmidon_Sword
 Myrmidon_Unarmed
+Rider_Lance
+Rider_Unarmed
+Strider_Lance
+Strider_Unarmed
+Raider_Axe
+Raider_Handaxe
+Raider_Unarmed
+Trailblazer_Axe
+Trailblazer_Handaxe
+Trailblazer_Unarmed
 Ronin_Sword
 Ronin_Unarmed
 Seeker_Magic
@@ -32,3 +42,7 @@ Priest_Sword
 Priest_Unarmed
 WarMagus_Sword
 WarMagus_Magic
+Lancer_Lance
+Lancer_Unarmed
+Highlander_Lance
+Highlander_Unarmed
