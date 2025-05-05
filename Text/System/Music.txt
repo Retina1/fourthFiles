@@ -2,6 +2,8 @@
 Etrian Odyssey[X]
 ##SongTitle_SpinningTheTale
 Spinning The Tale[X]
+##SongTitle_EO1Guild ^
+Name Engraved Into the 100th Volume![X]
 
 ##SourceTitle_EtrianOdyssey2
 Etrian Odyssey 2[X]
@@ -14,6 +16,11 @@ Vast Lands Spreading in the North[X]
 Castlevania: Order of Ecclesia[X]
 ##SongTitle_Rhapsody ^
 Rhapsody of the Forsaken (Trikki Nikki)[X]
+
+##SourceTitle_LiveALive
+Live a Live[X]
+##SongTitle_HeroicStruggle
+Heroic Struggle (Trikki Nikki)[X]
 
 ##SourceTitle_Original
 Original Song[X]

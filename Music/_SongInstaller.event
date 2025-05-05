@@ -31,8 +31,20 @@ SongTable(Song_Escape,Escape,1)
 //0xd
 #define Song_Rhapsody 0xd
 {
-SongTable(Song_Rhapsody,Rhapsody,1)
+SongTable(Song_Rhapsody,Rhapsody,0)
 #include "songs/Rhapsody.event"
+}
+//0xe
+#define Song_HeroicStruggle 0xe
+{
+SongTable(Song_HeroicStruggle,HeroicStruggle,1)
+#include "songs/HeroicStruggle.event"
+}
+//0xf
+#define Song_EO1Guild 0xf
+{
+SongTable(Song_EO1Guild,EO1Guild,0)
+#include "songs/EO1Guild.event"
 }
 
 

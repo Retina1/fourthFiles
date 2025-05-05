@@ -11,20 +11,7 @@ extern bool CanBattleUnitGainLevels(BattleUnit* bu);
 int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target);
 extern bool CheckEventId_(u16 flag); 
 
-enum PlaySt_chapterStateBits {
-    PLAY_FLAG_STATSCREENPAGE0 = (1 << 0),
-    PLAY_FLAG_STATSCREENPAGE1 = (1 << 1),
-    PLAY_FLAG_POSTGAME        = (1 << 2),
-    PLAY_FLAG_TUTORIAL        = (1 << 3),
-    PLAY_FLAG_PREPSCREEN      = (1 << 4),
-    PLAY_FLAG_COMPLETE        = (1 << 5),
-    PLAY_FLAG_HARD            = (1 << 6),
-    PLAY_FLAG_7               = (1 << 7),
-
-    PLAY_FLAG_STATSCREENPAGE_SHIFT = 0,
-    PLAY_FLAG_STATSCREENPAGE_MASK = PLAY_FLAG_STATSCREENPAGE0 | PLAY_FLAG_STATSCREENPAGE1,
-};
-
+extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 
 void BattleApplyMiscActionExpGains(void) {
     if ((gBattleActor.unit.index & 0xC0) != FACTION_BLUE)
@@ -33,7 +20,7 @@ void BattleApplyMiscActionExpGains(void) {
     if (!CanBattleUnitGainLevels(&gBattleActor))
         return;
 
-    if (gChapterData.chapterStateBits & PLAY_FLAG_7){
+    if (gChapterData.chapterStateBits & PLAY_FLAG_EXTRA_MAP){
         return;
 	}
 	
@@ -83,7 +70,7 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
         return 0;
 	}
 	//normal
-	if (!gChapterData.unk42_6){
+	if (!(gChapterData.config.controller)){
 		if (target->unit.curHP != 0){
 			 switch (levelDiff) {
 				case -3:

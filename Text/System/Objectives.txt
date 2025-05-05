@@ -8,3 +8,6 @@ Seize[X]
 Survive[X]
 ##EscapeLabel
 Escape[X]
+
+##PrepareLabel
+Prepare![X]

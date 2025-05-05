@@ -1,4 +1,4 @@
-#include "include/gbafe.h"
+#include "gbafe.h"
 
 #include "Misc/LoadUnitBases.c"
 #include "Misc/NewPromoGains.c"
@@ -9,6 +9,7 @@
 #include "Misc/NewAutoLeveling.c"
 #include "Misc/HealAmounts.c"
 #include "Durability/PerChapterItems.c"
+#include "StatPassives/StatPassives.c"
 
 //add autorepair just for S ranks
 //handle status weapons in C for inflictions?
@@ -59,11 +60,10 @@ void ItemUseTrueWrapper() {
     ");    
 }
 
-extern void BattleApplyItemEffect(Proc*);
 extern void BeginBattleAnimations();
-extern void BattleInitItemEffect(Unit*, u16);
+extern void BattleInitItemEffect(Unit*, int);
 extern void BattleInitItemEffectTarget(Unit*);
-extern void BeginLightRuneMapAnim(Proc*, int, int);
+extern void BeginLightRuneMapAnim(ProcPtr*, int, int);
 
 
 //CallEvent(&SaveItemEvent, 1)
@@ -75,10 +75,10 @@ PlaySoundEffect(SONG_5A);
     NewPopup2_PlanA(proc, GetItemIconId(item), GetStringFromIndex(messageId));
 */
 
-void ExecSaveItem(Proc* proc) {
+void ExecSaveItem(ProcPtr proc) {
 	BattleInitItemEffect(GetUnit(gActionData.subjectIndex),gActionData.itemSlotIndex);
     gActionData.suspendPointType = SUSPEND_POINT_DURINGACTION;
-    SaveSuspendedGame(SAVE_BLOCK_SUSPEND);
+    SaveSuspendedGame(SAVE_ID_SUSPEND);
 	BattleApplyItemEffect(proc);
     BeginLightRuneMapAnim(proc, gActionData.xMove, gActionData.yMove);
 
@@ -129,3 +129,13 @@ void ExecItemWrapper() {
 
 }
 */
+
+extern struct Unit * GetUnitStructFromEventParameter(s16 pid);
+
+void RefreshActiveUnitASMC(struct EventEngineProc* proc) {
+    struct Unit* unit = GetUnitStructFromEventParameter(gActionData.subjectIndex);
+    unit->state &= ~0x42;
+    RefreshEntityBmMaps(); //maybe not needed?
+	RefreshUnitSprites();
+	RenderBmMap();
+}

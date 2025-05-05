@@ -72,7 +72,13 @@ KoletteMug
 AnjelicaMug
 SaoirseMug
 PallasMug
+RadagastMug
+AydaMug
 BertramMug
+ArmoryMug 101
+ShopMug
+ArenaMug
+SecretShopMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

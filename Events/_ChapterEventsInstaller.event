@@ -33,6 +33,7 @@
 #define SilentKillUnit(unit) "DISA_IF unit; DISA unit"
 #define SFXKillUnit(unit) "SET_SOMETHING unit; DISA unit"
 #define DisaIfDead(unit) "CHECK_ALIVE unit; BNE unit 0xc 0x0; DISA unit; LABEL unit"
+#define CallPreps "CALL $591FD8"
 	
 #include "_BattleQuotes.event"
 #include "_DeathQuotes.event"
@@ -72,6 +73,12 @@ SFXKillUnit(Nathan); STAL 30
 ASMC $8085375
 ENDA
 
+MoveResetter:
+SET_ACTIVE 0
+SVAL 0x1 0x42
+UNSET_CONDITION Nathan
+EndEvent
+
 {
 #include "Chapters/Chapter1.event"
 }
@@ -82,7 +89,7 @@ ENDA
 //sfl swordmaster
 //bertram?
 {
-#include "City/Guildhall.event"
+#include "City/HirschringSquare.event"
 }
 
 ALIGN 4

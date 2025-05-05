@@ -109,6 +109,24 @@ UNIT GuildGeneric Archer 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Shortb
 UNIT GuildGeneric Brawler 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA8R0 [BrassKnuckles] AttackInRangeAI
 UNIT
 
+EnemyUnitsExpert:
+UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [ThornWhip] AttackInRangeAI
+UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] DropItem 0x0 0x1 REDA12R7 [Epee,AriadneShard] AttackInRangeAI
+UNIT GuildGeneric Swordfighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Scramasax] NoAI
+UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [Shortmace] NoAI
+UNIT GuildGeneric Gunner 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Handgonne] AttackInRangeAI
+UNIT GuildGeneric Brawler 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA8R0 [BrassKnuckles] AttackInRangeAI
+UNIT
+
+EnemyUnitsHeroic:
+UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [ThornWhip] AttackInRangeAI
+UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] DropItem 0x0 0x1 REDA12R7 [Sabre,AriadneShard] AttackInRangeAI
+UNIT GuildGeneric Myrmidon 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Scramasax] NoAI
+UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [HandAxe] NoAI
+UNIT GuildGeneric Gunner 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Handgonne] AttackInRangeAI
+UNIT GuildGeneric Duelist 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA8R0 [Sabre] AttackInRangeAI
+UNIT
+
 EndingUnits:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Astarte 0x0 0x1 Level(2,Ally,0) [7,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
@@ -157,7 +175,7 @@ STAL 30
 LOAD1 0x1 NPCGuildmaster2; ENUN
 //intro text
 Text(C1_Opening_3)
-LOAD1 0x1 EnemyUnits; ENUN
+LoadUnitsByDifficulty(EnemyUnits,EnemyUnitsExpert,EnemyUnitsHeroic)
 FlashCursor(BossCleone,60)
 FlashCursor(BossBenthus,60)
 Text(C1_Opening_4)

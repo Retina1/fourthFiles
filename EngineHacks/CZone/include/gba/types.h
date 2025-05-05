@@ -1,15 +1,7 @@
-#ifndef GBA_TYPES_INCLUDED
-#define GBA_TYPES_INCLUDED
+#ifndef GUARD_GBA_TYPES_H
+#define GUARD_GBA_TYPES_H
 
 #include <stdint.h>
-#include <stddef.h>
-#include <stdbool.h>
-
-#ifdef __cplusplus
-#  define noreturn
-#else
-#  include <stdnoreturn.h>
-#endif
 
 typedef uint8_t   u8;
 typedef uint16_t u16;
@@ -29,131 +21,89 @@ typedef volatile s16 vs16;
 typedef volatile s32 vs32;
 typedef volatile s64 vs64;
 
-struct DispControl
+typedef float  f32;
+typedef double f64;
+
+typedef u8  bool8;
+typedef u16 bool16;
+typedef u32 bool32;
+
+struct PlttData
 {
-    unsigned bgMode : 3;
-    unsigned : 1; // cgbMode
-    unsigned bmpFrameNum : 1;
-    unsigned hblankIntervalFree : 1;
-    unsigned obj1dMap : 1;
-    unsigned forcedBlank : 1;
-    unsigned enableBg0 : 1;
-    unsigned enableBg1 : 1;
-    unsigned enableBg2 : 1;
-    unsigned enableBg3 : 1;
-    unsigned enableObj : 1;
-    unsigned enableWin0 : 1;
-    unsigned enableWin1 : 1;
-    unsigned enableObjWin : 1;
+    u16 r:5; // red
+    u16 g:5; // green
+    u16 b:5; // blue
+    u16 unused_15:1;
+} /*__attribute__((packed))*/;
+
+struct OamData
+{
+    /*0x00*/ u32 y:8;
+    /*0x01*/ u32 affineMode:2;  // 0x1, 0x2 = 0x3
+             u32 objMode:2;     // 0x4, 0x8 = 0xC
+             u32 mosaic:1;      // 0x10
+             u32 bpp:1;         // 0x20
+             u32 shape:2;       // 0x40, 0x80
+
+    /*0x02*/ u32 x:9;
+             u32 matrixNum:5; // bits 3/4 are h-flip/v-flip if not in affine mode
+             u32 size:2;
+
+    /*0x04*/ u16 tileNum:10;
+             u16 priority:2;
+             u16 paletteNum:4;
+    /*0x06*/ u16 affineParam;
 };
 
-struct DispStat
+#define ST_OAM_OBJ_NORMAL 0
+#define ST_OAM_OBJ_BLEND  1
+#define ST_OAM_OBJ_WINDOW 2
+
+#define ST_OAM_AFFINE_OFF    0
+#define ST_OAM_AFFINE_NORMAL 1
+#define ST_OAM_AFFINE_ERASE  2
+#define ST_OAM_AFFINE_DOUBLE 3
+
+#define ST_OAM_AFFINE_ON_MASK     1
+#define ST_OAM_AFFINE_DOUBLE_MASK 2
+
+#define ST_OAM_4BPP 0
+#define ST_OAM_8BPP 1
+
+#define ST_OAM_SQUARE      0
+#define ST_OAM_H_RECTANGLE 1
+#define ST_OAM_V_RECTANGLE 2
+
+struct BgAffineSrcData
 {
-    unsigned vblank : 1;
-    unsigned hblank : 1;
-    unsigned vcount : 1;
-    unsigned vblankIrqEnable : 1;
-    unsigned hblankIrqEnable : 1;
-    unsigned vcountIrqEnable : 1;
-    unsigned : 2;
-    unsigned vcountCompare : 8;
+    s32 texX;
+    s32 texY;
+    s16 scrX;
+    s16 scrY;
+    s16 sx;
+    s16 sy;
+    u16 alpha;
 };
 
-struct BgControl
+struct BgAffineDstData
 {
-    unsigned priority : 2;
-    unsigned tileBaseBlock : 2;
-    unsigned : 2;
-    unsigned mosaic : 1;
-    unsigned colorMode : 1;
-    unsigned mapBaseBlock : 5;
-    unsigned wrap : 1;
-    unsigned screenSize : 2;
+    s16 pa;
+    s16 pb;
+    s16 pc;
+    s16 pd;
+    s32 dx;
+    s32 dy;
 };
 
-struct WinControl
+struct ObjAffineSrcData
 {
-    unsigned win0_enableBg0 : 1;
-    unsigned win0_enableBg1 : 1;
-    unsigned win0_enableBg2 : 1;
-    unsigned win0_enableBg3 : 1;
-    unsigned win0_enableObj : 1;
-    unsigned win0_enableBlend : 1;
-    unsigned : 2;
-
-    unsigned win1_enableBg0 : 1;
-    unsigned win1_enableBg1 : 1;
-    unsigned win1_enableBg2 : 1;
-    unsigned win1_enableBg3 : 1;
-    unsigned win1_enableObj : 1;
-    unsigned win1_enableBlend : 1;
-    unsigned : 2;
-
-    unsigned wout_enableBg0 : 1;
-    unsigned wout_enableBg1 : 1;
-    unsigned wout_enableBg2 : 1;
-    unsigned wout_enableBg3 : 1;
-    unsigned wout_enableObj : 1;
-    unsigned wout_enableBlend : 1;
-    unsigned : 2;
-
-    unsigned wobj_enableBg0 : 1;
-    unsigned wobj_enableBg1 : 1;
-    unsigned wobj_enableBg2 : 1;
-    unsigned wobj_enableBg3 : 1;
-    unsigned wobj_enableObj : 1;
-    unsigned wobj_enableBlend : 1;
-    unsigned : 2;
-};
-
-struct BlendControl
-{
-    unsigned target1_enableBg0 : 1;
-    unsigned target1_enableBg1 : 1;
-    unsigned target1_enableBg2 : 1;
-    unsigned target1_enableBg3 : 1;
-    unsigned target1_enableObj : 1;
-    unsigned target1_backdrop : 1;
-
-    unsigned effect : 2;
-
-    unsigned target2_enableBg0 : 1;
-    unsigned target2_enableBg1 : 1;
-    unsigned target2_enableBg2 : 1;
-    unsigned target2_enableBg3 : 1;
-    unsigned target2_enableObj : 1;
-    unsigned target2_backdrop : 1;
-
-    unsigned : 2;
-};
-
-enum
-{
-    // for use with BlendControl::effect
-
-    BLEND_EFFECT_NONE     = 0,
-    BLEND_EFFECT_ALPHA    = 1,
-    BLEND_EFFECT_BRIGHTEN = 2,
-    BLEND_EFFECT_DARKEN   = 3,
-};
-
-struct BlendAlpha
-{
-    unsigned eva : 5;
-    unsigned : 3;
-    unsigned evb : 5;
-    unsigned : 3;
-};
-
-struct KeyControl
-{
-    unsigned keys : 14;
-    unsigned enable : 1;
-    unsigned condition : 1;
+    s16 xScale;
+    s16 yScale;
+    u16 rotation;
 };
 
 // Multi-player SIO Control Structure
-struct SioMultiControl
+struct SioMultiCnt
 {
     u16 baudRate:2;    // baud rate
     u16 si:1;          // SI terminal
@@ -176,99 +126,19 @@ struct SioMultiControl
 #define ST_SIO_57600_BPS  2 //  57600 bps
 #define ST_SIO_115200_BPS 3 // 115200 bps
 
-struct WaitControl
+struct WaitCnt
 {
-    unsigned sramWait : 2;
-
-    unsigned ws0WaitFirst : 2;
-    unsigned ws0WaitSecond : 1;
-
-    unsigned ws1WaitFirst : 2;
-    unsigned ws1WaitSecond : 1;
-
-    unsigned ws2WaitFirst : 2;
-    unsigned ws2WaitSecond : 1;
-
-    unsigned phi : 2;
-    unsigned : 1;
-
-    unsigned prefetch : 1;
-    unsigned gamepakType : 1;
+    u16 sramWait:2;
+    u16 rom0_1stAcc:2;
+    u16 rom0_2ndAcc:1;
+    u16 rom1_1stAcc:2;
+    u16 rom1_2ndAcc:1;
+    u16 rom2_1stAcc:2;
+    u16 rom2_2ndAcc:1;
+    u16 phiTerminalClock:2;
+    u16 dummy:1;
+    u16 prefetchBufEnable:1;
+    u16 gamePakType:1;
 };
 
-enum
-{
-    WAIT_FIRST_4CYCLES = 0,
-    WAIT_FIRST_3CYCLES = 1,
-    WAIT_FIRST_2CYCLES = 2,
-    WAIT_FIRST_8CYCLES = 3,
-};
-
-enum
-{
-    WAIT_SECOND_XCYCLES = 0,
-    WAIT_SECOND_1CYCLES = 1,
-};
-
-struct BgAffine
-{
-    u16 pa;
-    u16 pb;
-    u16 pc;
-    u16 pd;
-    u32 x;
-    u32 y;
-};
-
-// For use with BitUnPack
-struct BitUnPackInfo
-{
-    unsigned sourceLength : 16;
-    unsigned widthSource : 8; // 1, 2, 4, 8
-    unsigned widthDest : 8; // 1, 2, 4, 8, 16, 32
-    unsigned addend : 31;
-    unsigned addToZero : 1;
-};
-
-// Key masks
-enum
-{
-    KEY_BUTTON_A      = (1 << 0),
-    KEY_BUTTON_B      = (1 << 1),
-    KEY_BUTTON_SELECT = (1 << 2),
-    KEY_BUTTON_START  = (1 << 3),
-    KEY_DPAD_RIGHT    = (1 << 4),
-    KEY_DPAD_LEFT     = (1 << 5),
-    KEY_DPAD_UP       = (1 << 6),
-    KEY_DPAD_DOWN     = (1 << 7),
-    KEY_BUTTON_R      = (1 << 8),
-    KEY_BUTTON_L      = (1 << 9),
-};
-
-// Interrupt masks
-enum
-{
-    INTERRUPT_VBLANK = (1 << 0),
-    INTERRUPT_HBLANK = (1 << 1),
-    INTERRUPT_VCOUNT = (1 << 2),
-    INTERRUPT_TIMER0 = (1 << 3),
-    INTERRUPT_TIMER1 = (1 << 4),
-    INTERRUPT_TIMER2 = (1 << 5),
-    INTERRUPT_TIMER3 = (1 << 6),
-    INTERRUPT_SIO    = (1 << 7),
-    INTERRUPT_DMA0   = (1 << 8),
-    INTERRUPT_DMA1   = (1 << 9),
-    INTERRUPT_DMA2   = (1 << 10),
-    INTERRUPT_DMA3   = (1 << 11),
-    INTERRUPT_KEYPAD = (1 << 12),
-    INTERRUPT_13     = (1 << 13),
-};
-
-// Utility types
-
-struct Vec2   { short          x, y; };
-struct Vec2l  { int            x, y; };
-struct Vec2u  { unsigned short x, y; };
-struct Vec2lu { unsigned       x, y; };
-
-#endif // GBA_TYPES_INCLUDED
+#endif // GUARD_GBA_TYPES_H

@@ -1,35 +1,11 @@
-enum text_colors {
-    TEXT_COLOR_0123 = 0,
-    TEXT_COLOR_0456 = 1,
-    TEXT_COLOR_0789 = 2,
-    TEXT_COLOR_0ABC = 3,
-    TEXT_COLOR_0DEF = 4,
-    TEXT_COLOR_0030 = 5,
-    TEXT_COLOR_4DEF = 6,
-    TEXT_COLOR_456F = 7,
-    TEXT_COLOR_47CF = 8,
-    TEXT_COLOR_MASK = 9,
-
-    TEXT_COLOR_COUNT,
-
-    TEXT_COLOR_SYSTEM_WHITE = TEXT_COLOR_0123,
-    TEXT_COLOR_SYSTEM_GRAY  = TEXT_COLOR_0456,
-    TEXT_COLOR_SYSTEM_BLUE  = TEXT_COLOR_0789,
-    TEXT_COLOR_SYSTEM_GOLD  = TEXT_COLOR_0ABC,
-    TEXT_COLOR_SYSTEM_GREEN = TEXT_COLOR_0DEF,
-    TEXT_COLOR_SYSTEM_BLACK = TEXT_COLOR_0030,
-
-    // TEXT_COLOR_TALK_...
-};
-
 extern u8 ConvoySize_Link;
 extern u8 gHitCountRAMAddress;
 extern u8 PerChapterItemsList[];
 int GetBattleUnitHitCount(struct BattleUnit* attacker);
 s8 BattleGenerateHit(struct BattleUnit* attacker, struct BattleUnit* defender);
 
-void RefreshItemsASMC(Proc* proc) {
-	u8 target = gEventSlot[1];
+void RefreshItemsASMC(ProcPtr* proc) {
+	u8 target = gEventSlots[1];
 	
 	int unitID = 1;
 	int maxCount = 62;
@@ -127,7 +103,7 @@ s8 BattleGenerateRoundHits(struct BattleUnit* attacker, struct BattleUnit* defen
     return FALSE;
 }
 
-int CanUnitUseWeapon(const struct Unit* unit, int item) {
+s8 CanUnitUseWeapon(struct Unit* unit, int item) {
     if (item == 0) {
         return FALSE;
 	}
@@ -183,7 +159,7 @@ int CanUnitUseWeapon(const struct Unit* unit, int item) {
     }
 }
 
-int CanUnitUseStaff(const struct Unit* unit, int item) {
+s8 CanUnitUseStaff(struct Unit* unit, int item) {
     if (item == 0){
         return FALSE;
 	}
@@ -211,18 +187,18 @@ int CanUnitUseStaff(const struct Unit* unit, int item) {
     }
 }
 
-void DrawItemStatScreenLine(struct TextHandle* text, int item, int nameColor, u16* mapOut) {
+void DrawItemStatScreenLine(struct Text* text, int item, int nameColor, u16* mapOut) {
     int color;
 
-    Text_Clear(text);
+    ClearText(text);
 
     color = nameColor;
-    Text_SetColorId(text, color);
+    Text_SetColor(text, color);
 
     Text_DrawString(text, GetItemName(item));
 
     color = (nameColor == TEXT_COLOR_SYSTEM_GRAY) ? TEXT_COLOR_SYSTEM_GRAY : TEXT_COLOR_SYSTEM_WHITE;
-    DrawSpecialUiChar(mapOut + 12, color, 0x16); // draw the UI slash
+    PutSpecialChar(mapOut + 12, color, 0x16); // draw the UI slash
 	
 	color = (nameColor != TEXT_COLOR_SYSTEM_GRAY) ? TEXT_COLOR_SYSTEM_BLUE : TEXT_COLOR_SYSTEM_GRAY;
 	int i = 0;
@@ -236,23 +212,23 @@ void DrawItemStatScreenLine(struct TextHandle* text, int item, int nameColor, u1
 	int allegiance = (gStatScreen.unit->index & 0xC0);
 	
 	if(allegiance != FACTION_BLUE) {
-		DrawUiNumberOrDoubleDashes(mapOut + 11, color, 255);
+		PutNumberOrBlank(mapOut + 11, color, 255);
 	}
 	else {
-		DrawUiNumberOrDoubleDashes(mapOut + 11, color, GetItemUses(item));
+		PutNumberOrBlank(mapOut + 11, color, GetItemUses(item));
 	}
-    DrawUiNumberOrDoubleDashes(mapOut + 14, color, GetItemMaxUses(item));
+    PutNumberOrBlank(mapOut + 14, color, GetItemMaxUses(item));
 
-    Text_Display(text, mapOut + 2);
+    PutText(text, mapOut + 2);
 
     DrawIcon(mapOut, GetItemIconId(item), 0x4000);
 }
 
-void DrawItemMenuLineLong(struct TextHandle* text, int item, s8 isUsable, u16* mapOut) {
-    Text_SetParameters(text, 0, (isUsable ? TEXT_COLOR_SYSTEM_WHITE : TEXT_COLOR_SYSTEM_GRAY));
+void DrawItemMenuLineLong(struct Text* text, int item, s8 isUsable, u16* mapOut) {
+    Text_SetParams(text, 0, (isUsable ? TEXT_COLOR_SYSTEM_WHITE : TEXT_COLOR_SYSTEM_GRAY));
     Text_DrawString(text, GetItemName(item));
 
-    Text_Display(text, mapOut + 2);
+    PutText(text, mapOut + 2);
 	
 	int color = TEXT_COLOR_SYSTEM_BLUE;
 
@@ -264,20 +240,20 @@ void DrawItemMenuLineLong(struct TextHandle* text, int item, s8 isUsable, u16* m
 		i++;
 		}
 
-    DrawUiNumberOrDoubleDashes(mapOut + 10, isUsable ? color : TEXT_COLOR_SYSTEM_GRAY, GetItemUses(item));
-    DrawUiNumberOrDoubleDashes(mapOut + 13, isUsable ? color : TEXT_COLOR_SYSTEM_GRAY, GetItemMaxUses(item));
-    DrawSpecialUiChar(mapOut + 11, isUsable ? TEXT_COLOR_SYSTEM_WHITE : TEXT_COLOR_SYSTEM_GRAY, 0x16);
+    PutNumberOrBlank(mapOut + 10, isUsable ? color : TEXT_COLOR_SYSTEM_GRAY, GetItemUses(item));
+    PutNumberOrBlank(mapOut + 13, isUsable ? color : TEXT_COLOR_SYSTEM_GRAY, GetItemMaxUses(item));
+    PutSpecialChar(mapOut + 11, isUsable ? TEXT_COLOR_SYSTEM_WHITE : TEXT_COLOR_SYSTEM_GRAY, 0x16);
 
     DrawIcon(mapOut, GetItemIconId(item), 0x4000);
 }
 
-void DrawItemMenuLineNoColor(struct TextHandle* text, int item, u16* mapOut) {
-    Text_SetXCursor(text, 0);
+void DrawItemMenuLineNoColor(struct Text* text, int item, u16* mapOut) {
+    Text_SetCursor(text, 0);
     Text_DrawString(text, GetItemName(item));
 
-    Text_Display(text, mapOut + 2);
+    PutText(text, mapOut + 2);
 
-    DrawUiNumberOrDoubleDashes(mapOut + 11, Text_GetColorId(text), GetItemUses(item));
+    PutNumberOrBlank(mapOut + 11, Text_GetColor(text), GetItemUses(item));
 
     DrawIcon(mapOut, GetItemIconId(item), 0x4000);
 }

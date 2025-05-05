@@ -3,7 +3,7 @@ int GetAutoleveledStatIncrease(u8 growth, int levelCount)
 	
 	int result = (growth * levelCount + 50) / 100;
 	
-	if (!gChapterData.unk42_6){
+	if (!(gChapterData.config.controller)){
 		return result;
 	}
 	else if (!(gChapterData.chapterStateBits & PLAY_FLAG_HARD)){
@@ -14,7 +14,7 @@ int GetAutoleveledStatIncrease(u8 growth, int levelCount)
 	}
 }
 
-void UnitAutolevelCore(struct Unit* unit, int classId, int levelCount) {
+void UnitAutolevelCore(struct Unit* unit, u8 classId, int levelCount) {
     if (levelCount) {
         unit->maxHP += GetAutoleveledStatIncrease(unit->pClassData->growthHP,  levelCount);
         unit->pow   += GetAutoleveledStatIncrease(unit->pClassData->growthPow, levelCount);

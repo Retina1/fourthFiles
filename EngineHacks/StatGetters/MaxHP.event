@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pMaxHPModifiers: // Maximum HP
-	POIN prAddUnitMaxHP prAddEquipHP 
+	POIN prAddUnitMaxHP prAddEquipHP SkillPointHPBoost
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -15,6 +15,5 @@ prAddUnitMaxHP:
 
 prAddEquipHP:
 	rAdd(rForUnitEquipped(rCallExternal(prGetItemHPBonus)))
-
 
 #endif // MODULAR_GETTER_MAXHP_EVENT

@@ -1,4 +1,4 @@
-int GetUnitItemHealAmount(const struct Unit* unit, int item) {
+int GetUnitItemHealAmount(struct Unit* unit, int item) {
     int result = 0;
 
     result += GetItemMight(item);

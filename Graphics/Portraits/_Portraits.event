@@ -23,6 +23,12 @@ PuzonDMP:
 setMugEntry(PuzonMug,PuzonDMP,2,5,2,3)
 
 ALIGN 4
+//misha
+HeriDMP:
+#incbin "dmps/mishaHeri.dmp"
+setMugEntry(HeriMug,HeriDMP,3,6,3,4)
+
+ALIGN 4
 //doot
 KoletteDMP:
 #incbin "dmps/dootKolette.dmp"
@@ -81,6 +87,10 @@ ALIGN 4
 AllbringerDMP:
 #incbin "dmps/slaterAllbringer.dmp"
 setMugEntryExtend(AllbringerMug,AllbringerDMP,3,4,3,2, 3,(-2), 5,(-2))
+ALIGN 4
+RadagastDMP:
+#incbin "dmps/slaterRadagast.dmp"
+setMugEntryExtend(RadagastMug,RadagastDMP,3,4,3,2, 3,(-2), 5,(-2))
 ALIGN 4
 BertramDMP:
 #incbin "dmps/slaterBertram.dmp"
@@ -189,6 +199,11 @@ ALIGN 4
 LeonzioDMP:
 #incbin "dmps/goldLeonzio.dmp"
 setMugEntry(LeonzioMug,LeonzioDMP,3,5,3,3)
+ALIGN 4
+//gold
+AydaDMP:
+#incbin "dmps/goldAyda.dmp"
+setMugEntryExtend(AydaMug,AydaDMP,4,5,4,3, 10,4, 0,0)
 
 ALIGN 4
 //lorca

@@ -18,7 +18,7 @@ ARCH	:= -mcpu=arm7tdmi -mthumb -mthumb-interwork
 CFLAGS	:= $(ARCH) -Wall -O3 -mtune=arm7tdmi
 
 # header files location
-HEADER_FILES := $(abspath .)/FE-CLib/include
+HEADER_FILES := $(abspath .)/include
 ASSEMBLY_HEADERS := $(wildcard $(abspath .)/Tools/AssemblyHeaders/*.h.s)
 
 # getting all source files to compile

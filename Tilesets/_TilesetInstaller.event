@@ -88,3 +88,16 @@ Fields1Tiles:
 TileConfigPointerTable(FieldsCONFIG, Fields1Tiles)
 ObjTypePalettePointerTable(Fields1OBJ, FieldsObjects)
 ObjTypePalettePointerTable(Fields1PAL, Fields1Palette)
+
+ALIGN 4
+CityObjects:
+#incbin "City1.dmp"
+ALIGN 4
+City1Palette:
+#incbin "City1_pal.dmp"
+ALIGN 4
+City1Tiles:
+#incext compress "City.mapchip_config"
+TileConfigPointerTable(CityCONFIG, City1Tiles)
+ObjTypePalettePointerTable(City1OBJ, CityObjects)
+ObjTypePalettePointerTable(City1PAL, City1Palette)

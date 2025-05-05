@@ -19,6 +19,7 @@ POP
 #include "AddressPatches.event"
 #include "AriadneShards/SaveStuff.event"
 
+#include "SetCondition/Installer.event"
 #include "NegativeStatBoosts/NegativeStatBoosts.event"
 #include "QualityOfLife/QOL.event"
 #include "IconRework/IconRework.event"
@@ -38,6 +39,9 @@ POP
 #include "BWLRework/BWLNEW.event"
 #include "WalkSounds/WalkSounds.txt"
 #include "GORGONEGG/output/Installer.event"
+#include "../Events/ShoppingEdits/ShoppingEdits.event"
+
+#include "SetStatus/SetStatusInstaller.event"
 
 #include "CZone/Main.lyn.event"
 #include "CZone/Durability/Installer.event"

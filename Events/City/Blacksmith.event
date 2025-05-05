@@ -1,0 +1,18 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+EnteringNathan:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [0,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Ch2Blacksmith:
+UNIT Benjamin Gladiator 0x0 Level(19,NPC,0) [7,3] 0x0 0x0 0x0 0x0 [HandAxe,RepairScroll] NeverMoveAI
+UNIT Johanna Curate 0x0 Level(1,NPC,0) [7,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+ALIGN 4
+Ch2Shop:
+SHLI AriadneShard Shortsword VineWhip Shortlance Epee Shortmace BrassKnuckles Shortbow Handgonne Wand Vulnerary Medica
+BYTE 0x0 0x0

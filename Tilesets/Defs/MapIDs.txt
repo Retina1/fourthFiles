@@ -7,9 +7,11 @@ Events2ID
 Map3ID
 MapChange3ID
 Events3ID
+HirschringSquareMapID
+HirschringSquareMapChangeID
 GuildhallMapID
 GuildhallMapChangeID
-GuildhallEventsID
+HirschringSquareEventsID
 Stratum1F1MapID
 Stratum1F1MapChangeID
 Stratum1F1EventsID

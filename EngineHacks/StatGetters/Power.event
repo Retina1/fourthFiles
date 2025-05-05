@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pPowerModifiers: // Power
-	POIN prAddUnitPower prAddEquipPower
+	POIN prAddUnitPower prAddEquipPower SkillPointStrBoost
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
