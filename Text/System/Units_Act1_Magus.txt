@@ -1,0 +1,78 @@
+
+// act 1 - magus guild: poet, seeker, priest, lurker
+//Leonzio by gold
+##Name_Leonzio
+Leonzio[X]
+##Desc_Leonzio
+A foreign diplomat visiting Asketa.[N]
+He's concerningly loose-lipped.[X]
+
+//green
+##Name_Gunther
+Gunther[X]
+##Desc_Gunther
+An enthusiastic historian and author who[N]
+joined the Guild to indulge his interests.[X]
+
+//freelia
+##Name_Jacqwil
+Jacqwil[X]
+##Desc_Jacqwil
+A reserved poet and victim of Endbringer.[N]
+She'll sing to anyone willing to listen.[X]
+
+//Phespher by doob
+##Name_Phespher
+Phespher[X]
+##Desc_Phespher
+A Belvarusi seeker looking to broaden[N]
+his horizons. A nice but blunt guy.[X]
+
+//Nadja by zappy
+##Name_Nadja
+Nadja[X]
+##Desc_Nadja
+A Belvarusi seeker with a terminal curse.[N]
+She's well-mannered yet reckless.[X]
+
+//lynn
+##Name_Levia
+Levia[X]
+##Desc_Levia
+An excitable seeker from a sheltered[N]
+upbringing. She's a bit overconfident.[X]
+
+//Saewynn by hiraya
+##Name_Saewynn
+Saewynn[X]
+##Desc_Saewynn
+A Belvarusi priest and former Endbringer.[N]
+She's unsure of where to go in life.[X]
+
+//owaiin
+##Name_Ellie
+Ellie[X]
+##Desc_Ellie
+A chef and priest from Hirschring seeking[N]
+the Gods' Tableland. He's a bit hedonistic.[X]
+
+//guard
+##Name_Szess
+S'zess[X]
+##Desc_Szess
+A kindly scientist who barely survived[N]
+an accident. They wish to save lives.[X]
+
+//nice
+##Name_Zoe
+Zoe[X]
+##Desc_Zoe
+A Belvarusi orphan supposedly given[N]
+power by the void. She's amicable.[X]
+
+//hell
+##Name_Paul
+Paul[X]
+##Desc_Paul
+A former curate who couldn't heal[N]
+himself. ...He went slightly mad.[X]

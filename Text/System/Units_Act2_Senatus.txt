@@ -1,0 +1,39 @@
+
+
+// act 2 - upper senatus: noble, duelist
+
+//marleni by retina (noble)
+##Name_Marleni
+Marleni[X]
+##Desc_Marleni
+An exiled Belvarusi noble. His rough[N]
+manner belies his virtuous character.[X]
+
+//ellerie
+##Name_Ophelia
+Ophelia[X]
+##Desc_Ophelia
+A Belvarusi lady seeking a life outside[N]
+of politics. She's lavish yet warm.[X]
+
+//rekekka
+##Name_Cherryl
+Cherryl[X]
+##Desc_Cherryl
+A young Belvarusi noble sent to an abbey[N]
+for her safety. She's naive and idealistic.[X]
+
+//francesca by retina (duelist)
+##Name_Francesca
+Francesca[X]
+##Desc_Francesca
+A modest fencer from the Asketan slums.[N]
+She wants off this wretched continent.[X]
+
+//corgaylia
+##Name_Felicity
+Felicity[X]
+##Desc_Felicity
+A disgraced vassal of a Belvarusi[N]
+house. She's resentful and brooding.[X]
+

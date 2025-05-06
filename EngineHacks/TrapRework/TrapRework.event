@@ -1,21 +1,4 @@
 
-#ifndef TRAP_REWORK
-
-#ifdef DRAGON_VEINS
-	#define TRAP_REWORK
-#endif // DRAGON_VEINS
-
-#ifdef HEAL_TILES
-	#define TRAP_REWORK
-#endif // HEAL_TILES
-
-#endif // TRAP_REWORK
-
-#ifdef TRAP_REWORK
-
-#ifndef TRAP_REWORK_INSTALLED
-	#define TRAP_REWORK_INSTALLED
-
 	
 	//vanilla trap ID defs
 	#define BallistaTrapID 1
@@ -44,7 +27,7 @@
 	
 	#define ExampleMapSpriteTrapID 0x10
 	#define ExampleMapSpriteID 0x66
-	#define SigilTrapMapSprite 0x42
+	
 	
 	
 	#include "TrapRework_Internal.event"
@@ -163,7 +146,3 @@
 	HealTileTrapIDLink:
 	WORD 0
 	#endif // HEAL_TILES
-	
-#endif // TRAP_REWORK_INSTALLED
-
-#endif // TRAP_REWORK

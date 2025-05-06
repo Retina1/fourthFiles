@@ -1,0 +1,76 @@
+// act 1 - special ops: dark hunter, lancer, brawler, hunter
+//hell
+##Name_Luis
+Luis[X]
+##Desc_Luis
+A godless preacher serving his father's[N]
+memory. He's standoffish yet protective.[X]
+
+//corgaylia
+##Name_Saoirse
+Saoirse[X]
+##Desc_Saoirse
+A cheerful Asketan who unleashes their[N]
+sadism in battle. She's a bit awkward.[X]
+
+//misha
+##Name_Heri
+Heri[X]
+##Desc_Heri
+A cheery Belvarusi lancer with a bit of a[N]
+savior complex. They're violent but peppy.[X]
+
+//slater
+##Name_Radagast
+Radagast[X]
+##Desc_Radagast
+A battle-hardened mercenary of towering[N]
+presence. He's pragmatic yet loyal.[X]
+
+//Shīliăng by levin (get accented characters later, brawler)
+##Name_Shiliang
+Shiliang[X]
+##Desc_Shiliang
+An outcast wanderer seeking a purpose.[N]
+Inherits his master's martial prowess.[X]
+
+//Feefasnan by vyland (brawler)
+##Name_Feefasnan
+Feefasnan[X]
+##Desc_Feefasnan
+A once-renowned Asketan priest. He bears[N]
+a curse that's altered his body and mind.[X]
+
+//sarkan
+##Name_Brie
+Brie[X]
+##Desc_Brie
+A brawler on the run from Asketan[N]
+authorities. She's a bit aloof.[X]
+
+//greatdoot
+##Name_Philmore
+Philmore[X]
+##Desc_Philmore
+A young Asketan hunter who wishes to[N]
+slay dragons. He's very energetic.[X]
+
+//rye
+##Name_Yajirushi
+Yajirushi[X]
+##Desc_Yajirushi
+A Belvarusi hunter and twin of Yasaki.[N]
+He's opportunistic and fleetfooted.[X]
+##Name_Yasaki
+Yasaki[X]
+##Desc_Yasaki
+A Belvarusi hunter and twin of Yajirushi.[N]
+She's tempered, disciplined, and honest.[X]
+
+//lotus
+##Name_Ammi
+Ammi[X]
+##Desc_Ammi
+A prodigy washed ashore in Asketa.[N]
+She hunts to make money for scrolls.[X]
+

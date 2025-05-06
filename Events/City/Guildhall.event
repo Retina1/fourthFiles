@@ -14,3 +14,13 @@ UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [8,5] 0x0 0x0 0x0 0x0 [Fengyan] Nev
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
+
+GuildhallMoveToSquare:
+SwapToMap(HirschringSquare,4,3)
+ENUF LocationFlagHirschringSquare
+AddSigil(4,3)
+AddSigil(14,5)
+AddSigil(15,11)
+LoadUnitsByVisit(Chapter2SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
+EndEvent

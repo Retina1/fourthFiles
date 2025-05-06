@@ -1,0 +1,35 @@
+// act 2 - skyshroud division: sky knight, scale knight
+//riv and levin
+##Name_Atilius
+Atilius[X]
+##Desc_Atilius
+A former magical prodigy trying out[N]
+dragon taming. ...He'll be fine.[X]
+
+//muna
+##Name_Celeste
+Celeste[X]
+##Desc_Celeste
+A principled mercenary and compulsive[N]
+liar. She's hard to get a handle on.[X]
+
+//ru
+##Name_June
+June[X]
+##Desc_June
+A resentful desertee from Belvarus.[N]
+A quiet exterior hides her bitterness.[X]
+
+//alex
+##Name_Eneida
+Eneida[X]
+##Desc_Eneida
+A flirty Asketan flier from the slums.[N]
+Loves nothing more than her husband.[X]
+
+//rivian
+##Name_Patrice
+Patrice[X]
+##Desc_Patrice
+A legendary sky racer who found herself[N]
+in debt. Wants her former rival dead.[X]

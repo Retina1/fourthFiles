@@ -582,4 +582,9 @@ void UnitRemoveItem(struct Unit* unit, int slot);
 // NOTE: if this ends up being only used in [Get|Set]UnitLeaderCharId, having this as a macro may end up being unnecessary
 #define UNIT_LEADER_CHARACTER(aUnit) ((aUnit)->supports[UNIT_SUPPORT_MAX_COUNT-1])
 
+
+#define UNIT_HAS_SKILL(aUnit,aSkillset,aSkill) (((aUnit)->pClassData->skillID == (aSkillset)) && ((aUnit)->skills.(aSKILL)))
+
+
+
 #endif // GUARD_BM_UNIT_H

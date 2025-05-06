@@ -42,8 +42,7 @@ AmosMug
 WavesMug
 PhilmoreMug
 RandellanMug
-MackaylaMug
-AaronMug
+MikaylaMug
 SzessMug
 LuisMug
 HallieMug
@@ -73,6 +72,12 @@ AnjelicaMug
 SaoirseMug
 PallasMug
 RadagastMug
+PatriceMug
+AmmiMug
+GloriaMug
+OpheliaMug
+CherrylMug
+PipsyMug
 AydaMug
 BertramMug
 ArmoryMug 101

@@ -46,6 +46,12 @@ SongTable(Song_HeroicStruggle,HeroicStruggle,1)
 SongTable(Song_EO1Guild,EO1Guild,0)
 #include "songs/EO1Guild.event"
 }
+//0x10
+#define Song_DiscoDescent 0x10
+{
+SongTable(Song_DiscoDescent,DiscoDescent,1)
+#include "songs/DiscoDescent.event"
+}
 
 
 //0x3e - game over

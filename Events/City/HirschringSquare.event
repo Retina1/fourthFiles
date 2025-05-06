@@ -5,6 +5,11 @@
 
 EventPointerTable(HirschringSquareEventsID,ThisChapter)
 
+//flag on means we're there
+#define LocationFlagHirschringSquare 0xf0
+#define LocationFlagGuildhall 0xf1
+#define LocationFlagBlacksmith 0xf2
+#define LocationFlagTavern 0xf3
 
 ALIGN 4
 
@@ -34,6 +39,11 @@ END_MAIN
 MiscBasedEvents:
 //give nathan infinite moves
 AFEV 0x0 MoveResetter Chapter2DoneFlag
+//in square
+AreaEvent(LocationFlagHirschringSquare,SquareMoveToGuildhall,4,3)
+
+//in guildhall
+AreaEvent(LocationFlagGuildhall,GuildhallMoveToSquare,3,15,4,15)
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -52,8 +62,8 @@ Units:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
-NPCUnits:
-UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Fengyan,OutlandShield] NoAI
+Chapter2SquareUnits:
+UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [4,7] 0x0 0x0 0x0 0x0 [Fengyan,OutlandShield] NoAI
 UNIT
 
 
@@ -63,24 +73,39 @@ UNIT
 //#define GuildRecruit(recruitee,introText,confirmText,denyText,followupText)
 //#define LoadAtChapterIfAlive(unit,flagID,unitGroup,label) "CHECK_ALIVE unit; BEQ label 0xc 0x0; CHECK_EVENTID flagID; BEQ label 0xc 0x0; CHECK_EVENTID flagID+1; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
 //#define GuildLoad(unitID,unitGroup,label) "CHECK_EXISTS unitID; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
+#define AddSigil(x,y) "AddTrap(SigilTrapID,x,y)"
+#define AddRedSigil(x,y) "AddTrap(RedSigilTrapID,x,y)"
+#define AddGreenSigil(x,y) "AddTrap(GreenSigilTrapID,x,y)"
 
-//flow for map changing
-//fadi
-//set active 0
-//clea clen clee
-//loma
-//set new music
-//load units
-//move nathan instantly
-//set flags for entry direction
-//fadu
+#define ResetMapFlags "ENUT LocationFlagHirschringSquare; ENUT LocationFlagGuildhall; ENUT LocationFlagBlacksmith; ENUT LocationFlagTavern"
+#define EndingMapFlags "ENUF LocationFlagHirschringSquare; ENUF LocationFlagGuildhall; ENUF LocationFlagBlacksmith; ENUF LocationFlagTavern"
+#define ClearMap "FADI 10; SET_ACTIVE 0; CLEA 0; CLEN 0; CLEE 0"
+#define MoveToMap(mapid) "LOMA mapid"
+#define InitializeNathan(x,y) "MOVE 0xFF Nathan [x,y]; ENUN; CAM1 Nathan"
+#define SwapToMap(mapid,x,y) "ResetMapFlags; ClearMap; MoveToMap(mapid); InitializeNathan(x,y)"
+
 
 ALIGN 4
 
 BeginningScene:
-LoadUnitsByVisit(0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(Chapter2SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0,0)
+AddSigil(4,3)
+AddSigil(14,5)
+AddSigil(15,11)
+AddRedSigil(7,5)
+ResetMapFlags
+ENUF LocationFlagHirschringSquare
 CallPreps
 SetUnitStatus(Nathan,MovBonus,10) 
+EndEvent
+
+SquareMoveToGuildhall:
+SwapToMap(Guildhall,4,15)
+ENUF LocationFlagGuildhall
+AddSigil(4,15)
+AddSigil(3,15)
+LoadUnitsByVisit(BehindCounterGerson,0,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
 EndEvent
 
 //guildhall concept
@@ -95,6 +120,7 @@ RunTextByVisit(0,0,0,0,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 
 EndingScene:
+EndingMapFlags
 SetUnitStatus(Nathan,MovBonus,0) 
 //add route split logic
 RunTextByVisit(0,0,0,0,0,0,0,0,0,0,0,0,0,0)

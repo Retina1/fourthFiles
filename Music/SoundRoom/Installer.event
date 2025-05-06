@@ -39,6 +39,7 @@ SoundRoomEntry(Song_SpinningTheTale, SongTitle_SpinningTheTale, SourceTitle_Etri
 SoundRoomEntry(Song_EO1Guild, SongTitle_EO1Guild, SourceTitle_EtrianOdyssey,7)
 //player phase
 SoundRoomEntry(Song_TheFirstCampaign, SongTitle_TheFirstCampaign, SourceTitle_EtrianOdyssey2,1)
+SoundRoomEntry(Song_DiscoDescent, SongTitle_DiscoDescent, SourceTitle_Necrodancer,8)
 SoundRoomEntry(Song_HeroicStruggle, SongTitle_HeroicStruggle, SourceTitle_LiveALive,6)
 SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
 SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)

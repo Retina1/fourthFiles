@@ -139,3 +139,4 @@ void RefreshActiveUnitASMC(struct EventEngineProc* proc) {
 	RefreshUnitSprites();
 	RenderBmMap();
 }
+

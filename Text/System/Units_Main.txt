@@ -1,0 +1,86 @@
+//main recruitables
+// guaranteed scholar, gunner, priestess, dark hunter, noble, armor, lurker, poet, sniper, apothecary, driver, highlander, and ironking
+// ch 1
+##Name_Nathan
+Nathan[X]
+##Desc_Nathan
+A young Asketan scholar. Dreams[N]
+of leaving his mark on the world.[X]
+##Name_Gore
+Gore[X]
+##Desc_Gore
+A stoic Asketan gunner. Keeps[N]
+his plans close to his chest.[X]
+##Name_Astarte
+Astarte[X]
+##Desc_Astarte
+A fervant Asketan priestess.[N]
+Her force of will is unstoppable.[X]
+
+// ch 2
+##Name_Cleone
+Cleone[X]
+##Desc_Cleone
+A timid huntress with a checkered past.[N]
+Values her friends more than herself.[X]
+##Name_Benthus
+Benthus[X]
+##Desc_Benthus
+An arrogant nobleman of Asketa.[N]
+He craves an adventurer's glory.[X]
+
+// ch 3
+##Name_Helman
+Helman[X]
+##Desc_Helman
+An armored renegade from Belvarus.[N]
+He's reliable despite his desertion.[X]
+
+// ch 4
+##Name_Rat
+Rat[X]
+##Desc_Rat
+A young mute elected to the Guildboard.[N]
+Their schemes run deeper than most know.[X]
+
+// ch 5
+##Name_Kryst
+Kryst[X]
+##Desc_Kryst
+A Belvarusi performer hired for the feast.[N]
+She's only around to make a quick buck.[X]
+
+// ch 10
+##Name_Galvin
+Galvin[X]
+##Desc_Galvin
+An Asketan hitman forced into the[N]
+wastes expedition. He's resentful.[X]
+
+// ch 12
+##Name_Ioria
+Ioria[X]
+##Desc_Ioria
+An aged Belvarusi gardener. She wishes[N]
+to go on one last exciting journey.[X]
+
+// ch 15
+##Name_Fourth
+Fourth[X]
+##Desc_Fourth
+A former imperial driver of Asketa.[N]
+She's more pragmatic than her peers.[X]
+
+// ch 19A
+##Name_Guildmaster ^
+Guildmaster[X]
+##Desc_Guildmaster
+The reigning Guildmaster of Asketa.[N]
+He's a gruff and dependable boss.[X]
+
+// ch 19B
+##Name_Answerer
+Answerer[X]
+##Desc_Answerer
+A friendly ironskin once imprisoned[N]
+deep within the Hallowed Armory.[X]

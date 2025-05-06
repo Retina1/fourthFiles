@@ -22,6 +22,11 @@ Live a Live[X]
 ##SongTitle_HeroicStruggle
 Heroic Struggle (Trikki Nikki)[X]
 
+##SourceTitle_Necrodancer
+Crypt of the Necrodancer[X]
+##SongTitle_DiscoDescent
+Disco Descent (Zappy McCraw)[X]
+
 ##SourceTitle_Original
 Original Song[X]
 ##SongTitle_Escape

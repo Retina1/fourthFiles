@@ -1,0 +1,149 @@
+// guild recruitables
+// recruitment opportunities at:
+// ch2x - pick 3
+//ACT 1 classes unlock
+// standard corps, magus guild, special ops
+// standard: pay imperial forces trainer (3x onwards)
+// magus: have a level 5 nathan (3x onwards)
+// special ops: do guildmaster's errands (5x onwards)
+// ch3x - pick 3 (pre-forest)
+// S1x - pick 3 (pre-boss)
+// ch5x - pick 3 (post-feast)
+// ch8x - pick 4 (post-benthus)
+//ACT 2 classes unlock
+// skyshroud, lifeflow, upper senatus
+// skyshroud: deliver feed to imperial stables (9x onwards)
+// lifeflow: defeat ratatoskr at least once (10x onwards)
+// upper: find benthus's precious treasure (10x onwards)
+// automata: bring materials to benjamin (scrap in black market, buried near river, sold by curator, and held by galvin)
+// the cog as white as milk the tape as red as blood the wire as yellow as corn the oil as pure as gold
+// ch9x - pick 3 (pre-imperial job)
+// ch10x - pick 3 (pre-wastes)
+// S3x - pick 3 (pre-belvarus expedition)
+// ch13x - pick 4 (pre-asketan assassination)
+// ch15x - pick 4 (pre-revenge)
+//ACT 3
+// imperials: automatic if fourth is recruited and alive
+// ch16x - pick 4 (pre-split)
+// ch18x - pick 5 (the last dance)
+// starter classes: swordfighter, knight, axefighter, archer, curate, scholar
+
+//puzon by intsys (swdfight)
+##Name_Puzon
+Puzon[X]
+##Desc_Puzon
+A wandering swordfighter of distinct[N]
+dialect. He detests the free market.[X]
+
+//coast kid by Rivian (swordfighter)
+##Name_CoastKid
+Coast Kid[X]
+##Desc_CoastKid
+A hardened blader serving the Guildleague[N]
+as punishment for her crimes. Also a kid.[X]
+
+//trante
+##Name_Cam
+Cam[X]
+##Desc_Cam
+An optimistic Asketan adventuring for[N]
+their orphanage. They're protective.[X]
+
+//drogo by lorca (knight)
+##Name_Drogo
+Drogo[X]
+##Desc_Drogo
+A lonesome Asketan burdened by his past.[N]
+Illiterate, yet caries a book of poems.[X]
+
+//kingofthracia
+##Name_Gretchen
+Gretchen[X]
+##Desc_Gretchen
+A just Belvarusi man with amnesia.[N]
+He remembers a life as a knight.[X]
+
+//slater
+##Name_Allbringer
+Allbringer[X]
+##Desc_Allbringer
+A warm and righteous Asketan knight.[N]
+He's the model of an altruistic man.[X]
+
+//tristao by alex (axefighter)
+##Name_Tristao
+Tristao[X]
+##Desc_Tristao
+A Belvarusi veteran. He left retirement[N]
+to support his famine-ridden family.[X]
+
+//rekekka
+##Name_Finn
+Finn[X]
+##Desc_Finn
+A smithy turned fighter turned fugitive.[N]
+He wants to avenge his hometown's fall.[X]
+
+//Feier
+##Name_Eight
+Eight[X]
+##Desc_Eight
+A lonesome woman from outer Hirschring.[N]
+Her large stature belies a calm demeanor.[X]
+
+//scubaluigi
+##Name_Randellan
+Randellan[X]
+##Desc_Randellan
+A gruff loner and former merc from the[N]
+Asketan wilds. He doesn't like city folk.[X]
+
+//hannahkitty
+##Name_Hallie
+Hallie[X]
+##Desc_Hallie
+An aimless scavenger with an odd sense[N]
+of humor. She likes women. A lot.[X]
+
+//freelia
+##Name_Anjelica
+Anjelica[X]
+##Desc_Anjelica
+A passionate archer who joined the[N]
+military to seek her childhood love.[X]
+
+
+//cassandra by zappy (scholar)
+##Name_Cassandra
+Cassandra[X]
+##Desc_Cassandra
+A foreign scholar who believes magic is[N]
+the next step of evolution. She's amoral.[X]
+
+//hannahkitty
+##Name_Waves
+Waves[X]
+##Desc_Waves
+A bubbly scholar with a flair for[N]
+water. She indeed goes with the flow.[X]
+
+//monas
+##Name_Cyanne
+Cyanne[X]
+##Desc_Cyanne
+A Belvarusi scholar wishing to control[N]
+her powers. She's a forward thinker.[X]
+
+//trish by benfrosh (curate)
+##Name_Trish
+Trish[X]
+##Desc_Trish
+A Belvarusi medic who's down on[N]
+her luck. Kindly and well-kept.[X]
+
+//yunnuyun6969
+##Name_Amos
+Amos[X]
+##Desc_Amos
+A curate from Belvarus indebted to his[N]
+superior. He's informal yet personable.[X]

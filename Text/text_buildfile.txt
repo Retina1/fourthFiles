@@ -12,7 +12,17 @@ between stats and growths.[X]
 #include "System/PlayerClasses.txt"
 #include "System/EnemyClasses.txt"
 #include "System/GenericFactions.txt"
-#include "System/UnitNamesDescs.txt"
+
+#include "System/Units_Main.txt"
+#include "System/Units_Act1_Initial.txt"
+#include "System/Units_Act1_Standard.txt"
+#include "System/Units_Act1_Magus.txt"
+#include "System/Units_Act1_Special.txt"
+#include "System/Units_Act2_Skyshroud.txt"
+#include "System/Units_Act2_Lifeflow.txt"
+#include "System/Units_Act2_Senatus.txt"
+#include "System/Units_Act3.txt"
+
 #include "System/NPCS.txt"
 #include "System/ItemNamesDescs.txt"
 #include "System/MonsterWeapons.txt"
@@ -178,3 +188,80 @@ Open a door or a chest.[N]
 Who could resist?[X]
 # 0x0881
 Select which lock to open up.[.][X]
+
+
+
+# 0x057A ^
+Select who to deploy.[N]
+You must always bring Nathan,[N]
+and some maps may require[N]
+other units. Pick carefully![X]
+
+# 0x057C ^
+Manage your units' items.[N]
+An armory with some basic[N]
+equipment is also available.[X]
+
+
+# 0x057F ^
+Access the Skill menu for[N]
+a unit. You can also do this[N]
+during the map, if you wish.[X]
+
+# 0x0580 ^
+View the map and reposition[N]
+your allies. You can also[N]
+check enemy formations,[N]
+as well as shop stock.[X]
+
+# 0x0581 ^
+Save any changes to your[N]
+unit formation, items,[N]
+and skill expenditures.[N]
+Choose Restart Chapter[N]
+to continue your game.[X]
+
+# 0x06C4
+Steal an enemy's items.[X]
+
+# 0x06D1
+A secret shop.[N]
+For members only.[X]
+
+# 0x05BB
+Check the map and any[N]
+shops' inventories.[X]
+
+# 0x882
+An Ariadne Shard save will[N]
+be lost. Continue anyway?[X]
+
+# 0x069F
+ Quit[X]
+
+# 0x08FE
+[Left][Guildmaster]
+Wanna go to the title screen?[N]
+[Yes][X]
+
+# 0x08FF
+[Left]Sounds good. See you[N]
+later, bud.[A][X]
+
+# 0x06E4
+Return to the title screen.[NL]
+Unsaved progress will be lost.[X]
+
+# 0x067E
+ Play[X]
+ 
+# 0x069C
+ Journal[X]
+ 
+# 0x06C2
+Perform a song that allows[.][NL]
+your allies to move again.[X]
+
+# 0x06E5
+Read up on new mechanics and[N]
+the pasts of your Guild.[X]

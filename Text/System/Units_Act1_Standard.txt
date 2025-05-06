@@ -1,0 +1,71 @@
+
+// act 1 - standard corps: ronin, rider, raider, gunner
+//natsuki by lumi
+##Name_Natsuki
+Natsuki[X]
+##Desc_Natsuki
+A lagomorphic warrior from a remote clan.[N]
+She's equal parts prideful and curious.[X]
+
+//nickname776
+##Name_Mikayla
+Mikayla[X]
+##Desc_Mikayla
+A Belvarusi myrmidon working to overcome[N]
+her blindness. She's eccentric but sweet.[X]
+
+//striker
+##Name_Aizen
+Aizen[X]
+##Desc_Aizen
+A charismatic Belvarusi rider wishing to[N]
+make a name for himself. He's determined.[X]
+
+//kingofthracia
+##Name_Johnnie
+Johnnie[X]
+##Desc_Johnnie
+A rash yet dour Belvarusi rider.[N]
+His friends all fell to famine.[X]
+
+//doot
+##Name_Kolette
+Kolette[X]
+##Desc_Kolette
+A frail rider who ran away from her[N]
+merchant family. She's resolute.[X]
+
+//RW
+##Name_Pallas
+Pallas[X]
+##Desc_Pallas
+A scarred ex-soldier from Belvarus.[N]
+She fights just to feel again.[X]
+
+//rasta
+##Name_Esketit
+Esketit[X]
+##Desc_Esketit
+A Belvarusi raider wounded as a civilian[N]
+during the old war. He craves a purpose.[X]
+
+//missmidori
+##Name_Gloria
+Gloria[X]
+##Desc_Gloria
+A gentle woman from a village in the[N]
+Asketan wilds. She's handy with animals.[X]
+
+//hannah
+##Name_Pipsy
+Pipsy[X]
+##Desc_Pipsy
+A Belvarusi scion who faces problems[N]
+head on. Her size belies her might.[X]
+
+//mancalledm
+##Name_Martin
+Martin[X]
+##Desc_Martin
+A wandering gunslinger who's truly[N]
+seen it all. He takes many odd jobs.[X]

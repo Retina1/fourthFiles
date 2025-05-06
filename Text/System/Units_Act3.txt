@@ -1,0 +1,17 @@
+// act 3 - imperial remnants: driver
+//scraiza
+##Name_Moomfie
+Moomfie[X]
+##Desc_Moomfie
+An extremely wealthy young woman with[N]
+a simple and whimsical outlook on life.[X]
+
+// secret lock - automata unit: artifice
+
+//subtractron by retina (artifice)
+##Name_Subtractron ^
+Subtractron[X]
+##Desc_Subtractron
+An artifice recovered from Belvarus.[N]
+It's supposedly good with numbers.[X]
+

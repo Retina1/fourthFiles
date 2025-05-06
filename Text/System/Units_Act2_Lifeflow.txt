@@ -1,0 +1,43 @@
+
+// act 2 - lifeflow league: apothecary, encircler, caller
+//leize by sigma (apothecary)
+##Name_Leize
+Leize[X]
+##Desc_Leize
+A botanist who seeks to preserve[N]
+a flower with familial ties. Tired.[X]
+
+//alguien
+##Name_Wendy
+Wendy[X]
+##Desc_Wendy
+A sweet and doting Belvarusi farmer.[N]
+Her opulent garden is fed by blood.[X]
+
+//compass by roxas (encircler)
+##Name_Compass
+Compass[X]
+##Desc_Compass
+A young Asketan tinkerer searching for[N]
+his grandpa. Anxious yet resolute.[X]
+
+//hiraya again
+##Name_Katrin
+Katrin[X]
+##Desc_Katrin
+A sharp encircler raised in the Guild.[N]
+She believes the strong should thrive.[X]
+
+//benfrosh
+##Name_Sharon
+Sharon[X]
+##Desc_Sharon
+A gloomy Asketan encircler who joined[N]
+the Guild to take her mind off lost love.[X]
+
+//rw
+##Name_DreadJenny ^
+Dread Jenny[X]
+##Desc_DreadJenny
+An ambitious teenager who aspires to be[N]
+a villainous necromancer. ...She's trying.[X]

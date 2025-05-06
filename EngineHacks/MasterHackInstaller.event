@@ -42,6 +42,7 @@ POP
 #include "../Events/ShoppingEdits/ShoppingEdits.event"
 
 #include "SetStatus/SetStatusInstaller.event"
+#include "TrapRework/TrapRework.event"
 
 #include "CZone/Main.lyn.event"
 #include "CZone/Durability/Installer.event"

@@ -29,6 +29,12 @@ HeriDMP:
 setMugEntry(HeriMug,HeriDMP,3,6,3,4)
 
 ALIGN 4
+//nickname
+MikaylaDMP:
+#incbin "dmps/nicknameMikayla.dmp"
+setMugEntry(MikaylaMug,MikaylaDMP,3,6,3,4)
+
+ALIGN 4
 //doot
 KoletteDMP:
 #incbin "dmps/dootKolette.dmp"
@@ -65,6 +71,10 @@ ALIGN 4
 FinnDMP:
 #incbin "dmps/rekekkaFinn.dmp"
 setMugEntry(FinnMug,FinnDMP,3,6,3,4)
+ALIGN 4
+CherrylDMP:
+#incbin "dmps/rekekkaCherryl.dmp"
+setMugEntry(CherrylMug,CherrylDMP,2,6,3,4)
 
 ALIGN 4
 //lynn
@@ -128,6 +138,11 @@ ALIGN 4
 TrishDMP:
 #incbin "dmps/froshTrish.dmp"
 setMugEntry(TrishMug,TrishDMP,4,5,4,3)
+ALIGN 4
+//benfrosh, comming john
+SharonDMP:
+#incbin "dmps/froshSharon.dmp"
+setMugEntry(SharonMug,SharonDMP,4,6,4,4)
 
 ALIGN 4
 //john
@@ -176,6 +191,10 @@ ALIGN 4
 CoastKidDMP:
 #incbin "dmps/rivianCoastKid.dmp"
 setMugEntry(CoastKidMug,CoastKidDMP,4,7,4,5)
+ALIGN 4
+PatriceDMP:
+#incbin "dmps/rivianPatrice.dmp"
+setMugEntryExtend(PatriceMug,PatriceDMP,3,5,3,3, 10,2, 10,4)
 
 ALIGN 4
 //alex

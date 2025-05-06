@@ -229,6 +229,14 @@ MovingMapSprite(Wolf, AP1, WolfMMS)
 StandingMapSprite(Triwolf,MapSprite16x32,TriwolfSMS)
 MovingMapSprite(Triwolf, AP1, TriwolfMMS)
 
+#define SigilTrapMapSprite 0x3c
+
+StandingMapSprite(SigilTrapMapSprite,MapSprite16x16,SigilSMS)
+
+ALIGN 4
+SigilSMS:
+#incbin "Dmp/Sigil.dmp"
+
 ALIGN 4
 GargoyleSMS:
 #incbin "Dmp/Goyle (U) T1 Lance Resize {Pikmin}-stand.dmp"

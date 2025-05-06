@@ -1,3 +1,4 @@
+//play when talking to guildmaster during recruitment
 ##the_funny_guildmaster_line
 [MidLeft][Nathan][MidRight][Guildmaster]
 You sign up a good crew?[AN]
