@@ -1,0 +1,9 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+Recruit_Atilius:
+UNIT Atilius 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+
+GuildhallSkyMenuEvent:
+ENDA

@@ -13,14 +13,104 @@ GuildmasterCalledIn:
 UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [8,5] 0x0 0x0 0x0 0x0 [Fengyan] NeverMoveAI
 UNIT
 
+#include "Guildhall/GuildhallInitial.event"
+#include "Guildhall/GuildhallStandard.event"
+#include "Guildhall/GuildhallMagi.event"
+#include "Guildhall/GuildhallSpecial.event"
+#include "Guildhall/GuildhallSky.event"
+#include "Guildhall/GuildhallLifeflow.event"
+#include "Guildhall/GuildhallSenatus.event"
+#include "Guildhall/GuildhallImpArt.event"
+
 //MESSAGE Events end at offset CURRENTOFFSET
+
+#define EnableRecruitFlag1 "CHECK_EVENTID Recruited1Flag; BEQ 0x9000 0xc 0x0; ENUF Recruited1Flag; GOTO 0x9005; LABEL 0x9000"
+#define EnableRecruitFlag2 "CHECK_EVENTID Recruited2Flag; BEQ 0x9001 0xc 0x0; ENUF Recruited2Flag; GOTO 0x9005; LABEL 0x9001"
+#define EnableRecruitFlag3 "CHECK_EVENTID Recruited3Flag; BEQ 0x9002 0xc 0x0; ENUF Recruited3Flag; GOTO 0x9005; LABEL 0x9002"
+#define EnableRecruitFlag4 "CHECK_EVENTID Recruited4Flag; BEQ 0x9003 0xc 0x0; ENUF Recruited4Flag; GOTO 0x9005; LABEL 0x9003"
+#define EnableRecruitFlag5 "CHECK_EVENTID Recruited5Flag; BEQ 0x9004 0xc 0x0; ENUF Recruited5Flag; GOTO 0x9005; LABEL 0x9004"
+#define EnableNextRecruitFlag "EnableRecruitFlag5; EnableRecruitFlag4; EnableRecruitFlag3; EnableRecruitFlag2; EnableRecruitFlag1; LABEL 0x9005"
+
+#define GuildLoad(unitID,unitGroup,label) "CHECK_EXISTS unitID; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
+//#define GuildRecruit(recruitee,introText,confirmText,denyText,followupText,eventID) "CHECK_EVENTID eventID; BNE 0x8000 0xc 0x0; Text(introText); SystemText(RecruitChosenUnitPrompt)
+
+// when swapping groups, fadi, clear all greens, reload gerson/master, load new untis, fadu
+
+LoadGuildhallSigils:
+ENUF LocationFlagGuildhall
+AddSigil(4,15)
+AddSigil(3,15)
+AddGreenSigil(7,5)
+ENDA
 
 GuildhallMoveToSquare:
 SwapToMap(HirschringSquare,4,3)
-ENUF LocationFlagHirschringSquare
-AddSigil(4,3)
-AddSigil(14,5)
-AddSigil(15,11)
+CALL LoadHirschringSigils
 LoadUnitsByVisit(Chapter2SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0,0)
 FADU 10
+EndEvent
+
+GuildhallRecruitmentMenuEvent:
+CallMenu(RecruitOuterMenu)
+SVAL 0x1 0
+BNE 0x2000 0xc 0x1
+CALL GuildhallInitialMenuEvent
+GOTO 0x2008
+LABEL 0x2000
+SVAL 0x1 1
+BNE 0x2001 0xc 0x1
+CALL GuildhallStandardMenuEvent
+GOTO 0x2008
+LABEL 0x2001
+SVAL 0x1 2
+BNE 0x2002 0xc 0x1
+CALL GuildhallMagiMenuEvent
+GOTO 0x2008
+LABEL 0x2002
+SVAL 0x1 3
+BNE 0x2003 0xc 0x1
+CALL GuildhallSpecialMenuEvent
+GOTO 0x2008
+LABEL 0x2003
+SVAL 0x1 4
+BNE 0x2004 0xc 0x1
+CALL GuildhallSkyMenuEvent
+GOTO 0x2008
+LABEL 0x2004
+SVAL 0x1 5
+BNE 0x2005 0xc 0x1
+CALL GuildhallLifeflowMenuEvent
+GOTO 0x2008
+LABEL 0x2005
+SVAL 0x1 6
+BNE 0x2006 0xc 0x1
+CALL GuildhallSenatusMenuEvent
+GOTO 0x2008
+LABEL 0x2006
+SVAL 0x1 7
+BNE 0x2007 0xc 0x1
+CALL GuildhallOtherMenuEvent
+GOTO 0x2008
+LABEL 0x2007
+SystemText(ErrorHandlerText)
+LABEL 0x2008
+ENDA
+
+GuildhallRecruitmentPromptBegin:
+//if this flag off, out of recruits
+CHECK_EXISTS BossGuildmaster
+BNE 0x1002 0xc 0x0
+CHECK_EVENTID Recruited1Flag
+BEQ 0x1000 0xc 0x0
+Text(MoreRecruits)
+GOTO 0x1003
+LABEL 0x1002
+Text(MoreRecruitsGuildmasterOut)
+LABEL 0x1003
+CALL GuildhallRecruitmentMenuEvent
+GOTO 0x1001
+LABEL 0x1000
+Text(NoMoreRecruits)
+LABEL 0x1001
+ENUF LocationFlagGuildhall
 EndEvent

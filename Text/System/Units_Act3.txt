@@ -15,3 +15,10 @@ Subtractron[X]
 An artifice recovered from Belvarus.[N]
 It's supposedly good with numbers.[X]
 
+//cygnus
+##Name_Ambrose
+AMBR-053[X]
+##Desc_Ambrose
+An optimistic Belvarusi artifice.[N]
+He wishes to be more than a weapon.[X]
+

@@ -29,8 +29,8 @@ END_MAIN
 
 LocationBasedEvents:
 //doors are locked
-//Door(1,5)
-//Door(11,3)
+Door(1,5)
+Door(11,3)
 END_MAIN
 
 MiscBasedEvents:
@@ -255,7 +255,7 @@ LABEL 0x2000
 ENDA
 
 PremonitionScene:
-TILECHANGE 0x2
+TILECHANGE 0x0
 FADU 4
 LOAD1 0x1 OpeningCutscene1; ENUN; STAL 30
 FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30
@@ -285,7 +285,7 @@ FADU 10
 FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30
 FADI 4
 CLEA 0
-TILEREVERSE 0x2
+TILEREVERSE 0x0
 STAL 60
 ENDA
 

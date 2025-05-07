@@ -32,6 +32,9 @@ $RECYCLE.BIN/
 *.ss8
 *.ss9
 
+# fe text
+*.fetxt
+
 # python cache
 __pycache__
 

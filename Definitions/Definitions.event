@@ -24,6 +24,7 @@
 #define Chapter18ADoneFlag 0x96
 #define Chapter18BDoneFlag 0x97
 #define Chapter18CDoneFlag 0x98
+#define NoRescuingFlag 0x120
 
 //movement types
 #define HeroMovement 0x880B808

@@ -147,3 +147,10 @@ Amos[X]
 ##Desc_Amos
 A curate from Belvarus indebted to his[N]
 superior. He's informal yet personable.[X]
+
+//applanthropist
+##Name_Roslin
+Roslin[X]
+##Desc_Roslin
+A former clerk from the Guildleague.[N]
+She wanted to give adventuring a try.[X]

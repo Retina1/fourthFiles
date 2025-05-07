@@ -78,9 +78,14 @@ GloriaMug
 OpheliaMug
 CherrylMug
 PipsyMug
+AmbroseMug
+DemicoMug
+RoslinMug
+KarlMug
 AydaMug
 BertramMug
-ArmoryMug 101
+GersonMug 100
+ArmoryMug 
 ShopMug
 ArenaMug
 SecretShopMug

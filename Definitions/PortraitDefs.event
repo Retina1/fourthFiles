@@ -78,8 +78,13 @@
 #define OpheliaMug 0x4E
 #define CherrylMug 0x4F
 #define PipsyMug 0x50
-#define AydaMug 0x51
-#define BertramMug 0x52
+#define AmbroseMug 0x51
+#define DemicoMug 0x52
+#define RoslinMug 0x53
+#define KarlMug 0x54
+#define AydaMug 0x55
+#define BertramMug 0x56
+#define GersonMug 0x64
 #define ArmoryMug 0x65
 #define ShopMug 0x66
 #define ArenaMug 0x67

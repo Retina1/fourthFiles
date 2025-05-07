@@ -78,3 +78,7 @@
 #define Ophelia 0x4E
 #define Cherryl 0x4F
 #define Pipsy 0x50
+#define Ambrose 0x51
+#define Demico 0x52
+#define Roslin 0x53
+#define Karl 0x54

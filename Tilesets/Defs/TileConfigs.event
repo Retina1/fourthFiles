@@ -1,3 +1,4 @@
 #define VillageCONFIG 0x1
 #define FieldsCONFIG 0x2
 #define CityCONFIG 0x3
+#define GuildhallCONFIG 0x4

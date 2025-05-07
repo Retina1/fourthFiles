@@ -69,3 +69,17 @@ Martin[X]
 ##Desc_Martin
 A wandering gunslinger who's truly[N]
 seen it all. He takes many odd jobs.[X]
+
+//applanthropist
+##Name_Demico
+Demico[X]
+##Desc_Demico
+A soft-spoken wanderer from nobility.[N]
+He thinks he's strong and silent.[X]
+
+//monas
+##Name_Karl
+Karl[X]
+##Desc_Karl
+A stubborn coal miner from Asketa who[N]
+insists he's a gunslinging adventurer.[X]

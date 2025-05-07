@@ -29,6 +29,12 @@ HeriDMP:
 setMugEntry(HeriMug,HeriDMP,3,6,3,4)
 
 ALIGN 4
+//cygnus
+AmbroseDMP:
+#incbin "dmps/cygnusAmbrose.dmp"
+setMugEntry(AmbroseMug,AmbroseDMP,3,6,3,4)
+
+ALIGN 4
 //nickname
 MikaylaDMP:
 #incbin "dmps/nicknameMikayla.dmp"
@@ -157,6 +163,9 @@ ALIGN 4
 CyanneDMP:
 #incbin "dmps/monasCyanne.dmp"
 setMugEntry(CyanneMug,CyanneDMP,3,5,3,3)
+KarlDMP:
+#incbin "dmps/monasKarl.dmp"
+setMugEntry(KarlMug,KarlDMP,2,6,2,3)
 
 ALIGN 4
 //nicee

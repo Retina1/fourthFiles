@@ -71,6 +71,7 @@ SHORT Stratum6F7 Label_St6
 SHORT Stratum6F8 Label_St6
 
 SHORT HirschringSquare Label_City
+SHORT Guildhall Label_City
 WORD 0x0
 
 ALIGN 4

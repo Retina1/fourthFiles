@@ -1,3 +1,4 @@
 VillageCONFIG
 FieldsCONFIG
 CityCONFIG
+GuildhallCONFIG

@@ -76,3 +76,5 @@
 [Guildmaster] = [LoadFace][0x0C][0x1]
 
 [CoastKid] = [LoadFace][0x0E][0x1]
+
+[Gerson] = [LoadFace][0x64][0x1]

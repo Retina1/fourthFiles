@@ -1,6 +1,93 @@
+##HubEndPrompt
+End exploration and[N]
+go to the next map?[N]
+[No][X]
+
+##RecruitChosenUnitPrompt
+Recruit this unit?[N]
+[No][X]
+
+##OneRecruitLeftText
+One recruit left.[A][X]
+##TwoRecruitLeftText
+Two recruits left.[A][X]
+##ThreeRecruitLeftText
+Three recruits left.[A][X]
+##FourRecruitLeftText
+Four recruits left.[A][X]
+##FiveRecruitLeftText
+Five recruits left.[A][X]
+
 //play when talking to guildmaster during recruitment
 ##the_funny_guildmaster_line
 [MidLeft][Nathan][MidRight][Guildmaster]
 You sign up a good crew?[AN]
 If you didn't give it some[N]
 thought,[A] you'll regret it later.[A][X]
+
+##NoMoreRecruits
+[MidLeft][Nathan][MidRight][Gerson]
+Sorry, Nathan. No more[N]
+recruits for you today.[A][X]
+
+##MoreRecruits
+[MidLeft][Nathan][MidRight][Gerson]
+Sure thing, Nathan.[AN]
+I'll get Guildmaster.[N]
+Who'd you wanna see?[A][X]
+##MoreRecruitsGuildmasterOut
+[MidLeft][Nathan][MidRight][Gerson]
+You're done with this group?[N]
+Who else do you want?[A][X]
+
+##InitialRecruitLabel
+Basic Adventurers[X]
+##InitialRecruitRText
+Simple adventuring classes[N]
+anybody can understand.[X]
+
+##StandardRecruitLabel
+Standard Corps[X]
+##StandardRecruitRText
+Army-grade classes built[N]
+for efficient usability.[X]
+
+##MagiRecruitLabel
+Magus Guild[X]
+##MagiRecruitRText
+Standard magi of varied[N]
+skillsets and expertise.[X]
+
+##SpecialRecruitLabel
+Special Ops[X]
+##SpecialRecruitRText
+Technical infantry classes with[N]
+a special emphasis on ailments.[X]
+
+##SkyRecruitLabel
+Skyshroud Division[X]
+##SkyRecruitRText
+Very highly specialized riders[N]
+of rare pegasi and wyverns.[X]
+
+##LifeflowRecruitLabel
+Lifeflow League[X]
+##LifeflowRecruitRText
+Advanced magi with highly[N]
+unusual gimmicks and powers.[X]
+
+##SenatusRecruitLabel
+Upper Senatus[X]
+##SenatusRecruitRText
+High-class classes that[N]
+happen to use rapiers.[X]
+
+##OtherRecruitLabel
+Exotic Classes[X]
+##OtherRecruitRText
+Rare and unusual classes[N]
+not within other labels.[X]
+
+##ErrorHandlerText
+If you see this, I screwed[N]
+up the eventing. Tell me![A][X]

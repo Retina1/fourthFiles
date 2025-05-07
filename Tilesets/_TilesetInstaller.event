@@ -72,7 +72,11 @@ Village1Palette:
 ALIGN 4
 Village1Tiles:
 #incext compress "Village.mapchip_config"
+ALIGN 4
+GuildhallTiles:
+#incext compress "Guildhall.mapchip_config"
 TileConfigPointerTable(VillageCONFIG, Village1Tiles)
+TileConfigPointerTable(GuildhallCONFIG, GuildhallTiles)
 ObjTypePalettePointerTable(Village1OBJ, VillageObjects)
 ObjTypePalettePointerTable(Village1PAL, Village1Palette)
 

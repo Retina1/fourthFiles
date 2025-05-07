@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pAidModifiers: // Aid
-	POIN prAddUnitFinalConstitution prSubstractOne prAdjustAidIfMounted
+	POIN prAddUnitFinalConstitution prSubstractOne prAdjustAidIfMounted prNoRescueDuringInterludes
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -28,5 +28,14 @@ _prNegate:
 _prAddBaseMountedAidBonus:
 	rConstant(20)
 }
+
+prNoRescueDuringInterludes:
+	rIf(CheckMyFlag)
+		rConstant(0)
+
+CheckMyFlag:
+  rForConstant(NoRescuingFlag)
+    // CheckEventId
+    rCallExternal(0x8083da8)
 
 #endif // MODULAR_GETTER_AID_EVENT
