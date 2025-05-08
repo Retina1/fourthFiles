@@ -39,6 +39,10 @@ ALIGN 4
 MikaylaDMP:
 #incbin "dmps/nicknameMikayla.dmp"
 setMugEntry(MikaylaMug,MikaylaDMP,3,6,3,4)
+ALIGN 4
+OpheliaDMP:
+#incbin "dmps/nicknameOphelia.dmp"
+setMugEntry(OpheliaMug,OpheliaDMP,3,6,4,4)
 
 ALIGN 4
 //doot
@@ -76,7 +80,7 @@ ALIGN 4
 //rekekka
 FinnDMP:
 #incbin "dmps/rekekkaFinn.dmp"
-setMugEntry(FinnMug,FinnDMP,3,6,3,4)
+setMugEntry(FinnMug,FinnDMP,2,6,3,4)
 ALIGN 4
 CherrylDMP:
 #incbin "dmps/rekekkaCherryl.dmp"

@@ -1,0 +1,26 @@
+#define GuildRecruitEvent(eventPointer,targetUnit) "CharacterEvent(LocationFlagGuildhall,eventPointer,Nathan,targetUnit)"
+
+//swordfighters
+GuildRecruitEvent(CoastKid_RecruitEvent,CoastKid)
+GuildRecruitEvent(Puzon_RecruitEvent,Puzon)
+GuildRecruitEvent(Cam_RecruitEvent,Cam)
+//knights
+GuildRecruitEvent(Drogo_RecruitEvent,Drogo)
+GuildRecruitEvent(Gretchen_RecruitEvent,Gretchen)
+GuildRecruitEvent(Allbringer_RecruitEvent,Allbringer)
+//axefighters
+GuildRecruitEvent(Tristao_RecruitEvent,Tristao)
+GuildRecruitEvent(Finn_RecruitEvent,Finn)
+GuildRecruitEvent(Eight_RecruitEvent,Eight)
+GuildRecruitEvent(Randellan_RecruitEvent,Randellan)
+//archers
+GuildRecruitEvent(Hallie_RecruitEvent,Hallie)
+GuildRecruitEvent(Anjelica_RecruitEvent,Anjelica)
+//scholars
+GuildRecruitEvent(Cassandra_RecruitEvent,Cassandra)
+GuildRecruitEvent(Waves_RecruitEvent,Waves)
+GuildRecruitEvent(Cyanne_RecruitEvent,Cyanne)
+//curates
+GuildRecruitEvent(Trish_RecruitEvent,Trish)
+GuildRecruitEvent(Amos_RecruitEvent,Amos)
+GuildRecruitEvent(Roslin_RecruitEvent,Roslin)

@@ -25,6 +25,12 @@
 #define Chapter18BDoneFlag 0x97
 #define Chapter18CDoneFlag 0x98
 #define NoRescuingFlag 0x120
+/*
+#define FIXED_GROWTHS_FLAG_ID 0xEF
+#define ZERO_GROWTHS_FLAG_ID 0xEE
+#define MAX_GROWTHS_FLAG_ID 0xED
+#define MIN_GROWTHS_FLAG_ID 0xEC
+*/
 
 //movement types
 #define HeroMovement 0x880B808

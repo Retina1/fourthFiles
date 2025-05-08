@@ -23,13 +23,13 @@ MenuOption(MinGrowthsLabel, MinGrowthsRText, 0)
 MenuOption(MaxGrowthsLabel, MaxGrowthsRText, 0)
 MenuTerminator
 
-#define StandardUnlockedFlag 0x121
-#define MagiUnlockedFlag 0x122
-#define SpecialUnlockedFlag 0x123
-#define SkyUnlockedFlag 0x124
-#define LifeflowUnlockedFlag 0x125
-#define SenatusUnlockedFlag 0x126
-#define OtherUnlockedFlag 0x127
+#define StandardUnlockedFlag 0xf9
+#define MagiUnlockedFlag 0xfa
+#define SpecialUnlockedFlag 0xfb
+#define SkyUnlockedFlag 0xfc
+#define LifeflowUnlockedFlag 0xfd
+#define SenatusUnlockedFlag 0xfe
+#define OtherUnlockedFlag 0xff
 
 ALIGN 4
 RecruitOuterMenu:
@@ -38,13 +38,27 @@ MenuDefinition(8, 1, 14, 0, 1, RecruitOuterMenuOptions)
 ALIGN 4
 RecruitOuterMenuOptions:
 MenuOption(InitialRecruitLabel, InitialRecruitRText, 0)
-MenuOption(StandardRecruitLabel, StandardRecruitRText, MagiUnlockedFlag)
+MenuOption(StandardRecruitLabel, StandardRecruitRText, StandardUnlockedFlag)
 MenuOption(MagiRecruitLabel, MagiRecruitRText, MagiUnlockedFlag)
 MenuOption(SpecialRecruitLabel, SpecialRecruitRText, SpecialUnlockedFlag)
 MenuOption(SkyRecruitLabel, SkyRecruitRText, SkyUnlockedFlag)
 MenuOption(LifeflowRecruitLabel, LifeflowRecruitRText, LifeflowUnlockedFlag)
 MenuOption(SenatusRecruitLabel, SenatusRecruitRText, SenatusUnlockedFlag)
 MenuOption(OtherRecruitLabel, OtherRecruitRText, OtherUnlockedFlag)
+MenuTerminator
+
+ALIGN 4
+RecruitInitialMenu:
+MenuDefinition(8, 3, 14, 0, 1, RecruitInitialMenuOptions)
+
+ALIGN 4
+RecruitInitialMenuOptions:
+MenuOption(Class_Swordfighter, ClassDesc_Swordfighter, 0)
+MenuOption(Class_Knight, ClassDesc_Knight, 0)
+MenuOption(Class_Axefighter, ClassDesc_Axefighter, 0)
+MenuOption(Class_Archer, ClassDesc_Archer, 0)
+MenuOption(Class_Scholar, ClassDesc_Scholar, 0)
+MenuOption(Class_Curate, ClassDesc_Curate, 0)
 MenuTerminator
 
 

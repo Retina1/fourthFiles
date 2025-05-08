@@ -7,6 +7,9 @@ go to the next map?[N]
 Recruit this unit?[N]
 [No][X]
 
+##NoRecruitLeftText
+No recruits left.[N]
+Come back next time![A][X]
 ##OneRecruitLeftText
 One recruit left.[A][X]
 ##TwoRecruitLeftText
@@ -37,7 +40,7 @@ I'll get Guildmaster.[N]
 Who'd you wanna see?[A][X]
 ##MoreRecruitsGuildmasterOut
 [MidLeft][Nathan][MidRight][Gerson]
-You're done with this group?[N]
+Sure thing, Nathan.[N]
 Who else do you want?[A][X]
 
 ##InitialRecruitLabel

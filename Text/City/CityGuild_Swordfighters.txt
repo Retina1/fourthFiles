@@ -1,3 +1,8 @@
+##Guild_Test_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][FarLeft]
+This dialogue is a placeholder[N]
+to test recruitment events.[A][X]
+
 ##Guild_CoastKid_Intro
 [FarLeft][Guildmaster][Left][Nathan][MidRight][CoastKid]
 [...][AN][Left]

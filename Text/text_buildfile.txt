@@ -37,6 +37,7 @@ between stats and growths.[X]
 #include "Chapters/Chapter1.txt"
 
 #include "City/CityGeneral.txt"
+#include "City/CityGuild_Swordfighters.txt"
 
 ## HealArrowText
 ->[X]

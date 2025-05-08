@@ -3378,112 +3378,136 @@ __TEXTPROCESSC4C:
 setText($C4C, __TEXTPROCESSC4C)
 
 __TEXTPROCESSC4D:
-#incext ParseFile ".TextEntries\text_buildfileOneRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNoRecruitLeftText.fetxt"
 setText($C4D, __TEXTPROCESSC4D)
 
 __TEXTPROCESSC4E:
-#incext ParseFile ".TextEntries\text_buildfileTwoRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileOneRecruitLeftText.fetxt"
 setText($C4E, __TEXTPROCESSC4E)
 
 __TEXTPROCESSC4F:
-#incext ParseFile ".TextEntries\text_buildfileThreeRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileTwoRecruitLeftText.fetxt"
 setText($C4F, __TEXTPROCESSC4F)
 
 __TEXTPROCESSC50:
-#incext ParseFile ".TextEntries\text_buildfileFourRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileThreeRecruitLeftText.fetxt"
 setText($C50, __TEXTPROCESSC50)
 
 __TEXTPROCESSC51:
-#incext ParseFile ".TextEntries\text_buildfileFiveRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFourRecruitLeftText.fetxt"
 setText($C51, __TEXTPROCESSC51)
 
 __TEXTPROCESSC52:
-#incext ParseFile ".TextEntries\text_buildfilethe_funny_guildmaster_line.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFiveRecruitLeftText.fetxt"
 setText($C52, __TEXTPROCESSC52)
 
 __TEXTPROCESSC53:
-#incext ParseFile ".TextEntries\text_buildfileNoMoreRecruits.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilethe_funny_guildmaster_line.fetxt"
 setText($C53, __TEXTPROCESSC53)
 
 __TEXTPROCESSC54:
-#incext ParseFile ".TextEntries\text_buildfileMoreRecruits.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNoMoreRecruits.fetxt"
 setText($C54, __TEXTPROCESSC54)
 
 __TEXTPROCESSC55:
-#incext ParseFile ".TextEntries\text_buildfileMoreRecruitsGuildmasterOut.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMoreRecruits.fetxt"
 setText($C55, __TEXTPROCESSC55)
 
 __TEXTPROCESSC56:
-#incext ParseFile ".TextEntries\text_buildfileInitialRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMoreRecruitsGuildmasterOut.fetxt"
 setText($C56, __TEXTPROCESSC56)
 
 __TEXTPROCESSC57:
-#incext ParseFile ".TextEntries\text_buildfileInitialRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileInitialRecruitLabel.fetxt"
 setText($C57, __TEXTPROCESSC57)
 
 __TEXTPROCESSC58:
-#incext ParseFile ".TextEntries\text_buildfileStandardRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileInitialRecruitRText.fetxt"
 setText($C58, __TEXTPROCESSC58)
 
 __TEXTPROCESSC59:
-#incext ParseFile ".TextEntries\text_buildfileStandardRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileStandardRecruitLabel.fetxt"
 setText($C59, __TEXTPROCESSC59)
 
 __TEXTPROCESSC5A:
-#incext ParseFile ".TextEntries\text_buildfileMagiRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileStandardRecruitRText.fetxt"
 setText($C5A, __TEXTPROCESSC5A)
 
 __TEXTPROCESSC5B:
-#incext ParseFile ".TextEntries\text_buildfileMagiRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMagiRecruitLabel.fetxt"
 setText($C5B, __TEXTPROCESSC5B)
 
 __TEXTPROCESSC5C:
-#incext ParseFile ".TextEntries\text_buildfileSpecialRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMagiRecruitRText.fetxt"
 setText($C5C, __TEXTPROCESSC5C)
 
 __TEXTPROCESSC5D:
-#incext ParseFile ".TextEntries\text_buildfileSpecialRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSpecialRecruitLabel.fetxt"
 setText($C5D, __TEXTPROCESSC5D)
 
 __TEXTPROCESSC5E:
-#incext ParseFile ".TextEntries\text_buildfileSkyRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSpecialRecruitRText.fetxt"
 setText($C5E, __TEXTPROCESSC5E)
 
 __TEXTPROCESSC5F:
-#incext ParseFile ".TextEntries\text_buildfileSkyRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSkyRecruitLabel.fetxt"
 setText($C5F, __TEXTPROCESSC5F)
 
 __TEXTPROCESSC60:
-#incext ParseFile ".TextEntries\text_buildfileLifeflowRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSkyRecruitRText.fetxt"
 setText($C60, __TEXTPROCESSC60)
 
 __TEXTPROCESSC61:
-#incext ParseFile ".TextEntries\text_buildfileLifeflowRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLifeflowRecruitLabel.fetxt"
 setText($C61, __TEXTPROCESSC61)
 
 __TEXTPROCESSC62:
-#incext ParseFile ".TextEntries\text_buildfileSenatusRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLifeflowRecruitRText.fetxt"
 setText($C62, __TEXTPROCESSC62)
 
 __TEXTPROCESSC63:
-#incext ParseFile ".TextEntries\text_buildfileSenatusRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSenatusRecruitLabel.fetxt"
 setText($C63, __TEXTPROCESSC63)
 
 __TEXTPROCESSC64:
-#incext ParseFile ".TextEntries\text_buildfileOtherRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSenatusRecruitRText.fetxt"
 setText($C64, __TEXTPROCESSC64)
 
 __TEXTPROCESSC65:
-#incext ParseFile ".TextEntries\text_buildfileOtherRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileOtherRecruitLabel.fetxt"
 setText($C65, __TEXTPROCESSC65)
 
 __TEXTPROCESSC66:
-#incext ParseFile ".TextEntries\text_buildfileErrorHandlerText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileOtherRecruitRText.fetxt"
 setText($C66, __TEXTPROCESSC66)
 
 __TEXTPROCESSC67:
-#incext ParseFile ".TextEntries\text_buildfileHealArrowText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileErrorHandlerText.fetxt"
 setText($C67, __TEXTPROCESSC67)
+
+__TEXTPROCESSC68:
+#incext ParseFile ".TextEntries\text_buildfileGuild_Test_Dialogue.fetxt"
+setText($C68, __TEXTPROCESSC68)
+
+__TEXTPROCESSC69:
+#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Intro.fetxt"
+setText($C69, __TEXTPROCESSC69)
+
+__TEXTPROCESSC6A:
+#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Accept.fetxt"
+setText($C6A, __TEXTPROCESSC6A)
+
+__TEXTPROCESSC6B:
+#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Deny.fetxt"
+setText($C6B, __TEXTPROCESSC6B)
+
+__TEXTPROCESSC6C:
+#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Return.fetxt"
+setText($C6C, __TEXTPROCESSC6C)
+
+__TEXTPROCESSC6D:
+#incext ParseFile ".TextEntries\text_buildfileHealArrowText.fetxt"
+setText($C6D, __TEXTPROCESSC6D)
 
 __TEXTPROCESS094:
 #incext ParseFile ".TextEntries\text_buildfile094.fetxt"

@@ -13,6 +13,18 @@ GuildmasterCalledIn:
 UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [8,5] 0x0 0x0 0x0 0x0 [Fengyan] NeverMoveAI
 UNIT
 
+#define EnableRecruitFlag1 "CHECK_EVENTID Recruited1Flag; BEQ 0x9000 0xc 0x0; ENUF Recruited1Flag; SystemText(NoRecruitLeftText); GOTO 0x9005; LABEL 0x9000"
+#define EnableRecruitFlag2 "CHECK_EVENTID Recruited2Flag; BEQ 0x9001 0xc 0x0; ENUF Recruited2Flag; SystemText(OneRecruitLeftText); GOTO 0x9005; LABEL 0x9001"
+#define EnableRecruitFlag3 "CHECK_EVENTID Recruited3Flag; BEQ 0x9002 0xc 0x0; ENUF Recruited3Flag; SystemText(TwoRecruitLeftText); GOTO 0x9005; LABEL 0x9002"
+#define EnableRecruitFlag4 "CHECK_EVENTID Recruited4Flag; BEQ 0x9003 0xc 0x0; ENUF Recruited4Flag; SystemText(ThreeRecruitLeftText); GOTO 0x9005; LABEL 0x9003"
+#define EnableRecruitFlag5 "CHECK_EVENTID Recruited5Flag; BEQ 0x9004 0xc 0x0; ENUF Recruited5Flag; SystemText(FourRecruitLeftText); GOTO 0x9005; LABEL 0x9004"
+#define EnableNextRecruitFlag "EnableRecruitFlag5; EnableRecruitFlag4; EnableRecruitFlag3; EnableRecruitFlag2; EnableRecruitFlag1; LABEL 0x9005"
+
+#define GuildLoad(unitID,unitGroup,label) "CHECK_EXISTS unitID; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
+#define GuildRecruit(recruitee,introText,confirmText,denyText,followupText,eventID) "CHECK_EVENTID eventID; BNE 0x8000 0xc 0x0; ENUT eventID; Text(introText); LABEL 0x8001; SystemText(RecruitChosenUnitPrompt); IfNoSelectedGoto(0x8002); Text(confirmText); TurnAlly(recruitee); EnableNextRecruitFlag; FADI 10; SetUnitStatus(recruitee,MovBonus,(-15)); SET_ACTIVE 0; SVAL 0x1 9; SET_CONDITION recruitee; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn; FADU 10; GOTO 0x8003; LABEL 0x8002; Text(denyText); GOTO 0x8003; LABEL 0x8000; Text(followupText); GOTO 0x8001; LABEL 0x8003; ENUF LocationFlagGuildhall"
+//0x20-0x28 reserved for recruitment eventids
+#define GuildLoadFlagReset "ENUF 0x20; ENUF 0x21; ENUF 0x22; ENUF 0x23; ENUF 0x24; ENUF 0x25; ENUF 0x26; ENUF 0x27; ENUF 0x28;"
+
 #include "Guildhall/GuildhallInitial.event"
 #include "Guildhall/GuildhallStandard.event"
 #include "Guildhall/GuildhallMagi.event"
@@ -24,15 +36,7 @@ UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
-#define EnableRecruitFlag1 "CHECK_EVENTID Recruited1Flag; BEQ 0x9000 0xc 0x0; ENUF Recruited1Flag; GOTO 0x9005; LABEL 0x9000"
-#define EnableRecruitFlag2 "CHECK_EVENTID Recruited2Flag; BEQ 0x9001 0xc 0x0; ENUF Recruited2Flag; GOTO 0x9005; LABEL 0x9001"
-#define EnableRecruitFlag3 "CHECK_EVENTID Recruited3Flag; BEQ 0x9002 0xc 0x0; ENUF Recruited3Flag; GOTO 0x9005; LABEL 0x9002"
-#define EnableRecruitFlag4 "CHECK_EVENTID Recruited4Flag; BEQ 0x9003 0xc 0x0; ENUF Recruited4Flag; GOTO 0x9005; LABEL 0x9003"
-#define EnableRecruitFlag5 "CHECK_EVENTID Recruited5Flag; BEQ 0x9004 0xc 0x0; ENUF Recruited5Flag; GOTO 0x9005; LABEL 0x9004"
-#define EnableNextRecruitFlag "EnableRecruitFlag5; EnableRecruitFlag4; EnableRecruitFlag3; EnableRecruitFlag2; EnableRecruitFlag1; LABEL 0x9005"
 
-#define GuildLoad(unitID,unitGroup,label) "CHECK_EXISTS unitID; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
-//#define GuildRecruit(recruitee,introText,confirmText,denyText,followupText,eventID) "CHECK_EVENTID eventID; BNE 0x8000 0xc 0x0; Text(introText); SystemText(RecruitChosenUnitPrompt)
 
 // when swapping groups, fadi, clear all greens, reload gerson/master, load new untis, fadu
 
@@ -43,6 +47,11 @@ AddSigil(3,15)
 AddGreenSigil(7,5)
 ENDA
 
+HallGuildmasterTalk:
+Text(the_funny_guildmaster_line)
+ENUF LocationFlagGuildhall
+EndEvent
+
 GuildhallMoveToSquare:
 SwapToMap(HirschringSquare,4,3)
 CALL LoadHirschringSigils
@@ -51,6 +60,18 @@ FADU 10
 EndEvent
 
 GuildhallRecruitmentMenuEvent:
+CHECK_EVENTID Recruited5Flag
+BEQ 0x3005 0xc 0x0; SystemText(FiveRecruitLeftText); GOTO 0x3000; LABEL 0x3005
+CHECK_EVENTID Recruited4Flag
+BEQ 0x3004 0xc 0x0; SystemText(FourRecruitLeftText); GOTO 0x3000; LABEL 0x3004
+CHECK_EVENTID Recruited3Flag
+BEQ 0x3003 0xc 0x0; SystemText(ThreeRecruitLeftText); GOTO 0x3000; LABEL 0x3003
+CHECK_EVENTID Recruited2Flag
+BEQ 0x3002 0xc 0x0; SystemText(TwoRecruitLeftText); GOTO 0x3000; LABEL 0x3002
+CHECK_EVENTID Recruited1Flag
+BEQ 0x3001 0xc 0x0; SystemText(OneRecruitLeftText); GOTO 0x3000; LABEL 0x3001
+SystemText(NoRecruitLeftText)
+LABEL 0x3000
 CallMenu(RecruitOuterMenu)
 SVAL 0x1 0
 BNE 0x2000 0xc 0x1
@@ -98,10 +119,10 @@ ENDA
 
 GuildhallRecruitmentPromptBegin:
 //if this flag off, out of recruits
-CHECK_EXISTS BossGuildmaster
-BNE 0x1002 0xc 0x0
 CHECK_EVENTID Recruited1Flag
 BEQ 0x1000 0xc 0x0
+CHECK_EXISTS BossGuildmaster
+BNE 0x1002 0xc 0x0
 Text(MoreRecruits)
 GOTO 0x1003
 LABEL 0x1002
