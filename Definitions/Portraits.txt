@@ -89,6 +89,12 @@ ArmoryMug
 ShopMug
 ArenaMug
 SecretShopMug
+MonkMug 105
+GenericLandsknechtMug
+GenericNecromancerMug
+GenericPugilistMug
+GenericAutomatonMug
+GenericImperialMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

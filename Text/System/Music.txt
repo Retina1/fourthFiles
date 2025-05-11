@@ -6,11 +6,16 @@ Spinning The Tale[X]
 Name Engraved Into the 100th Volume![X]
 
 ##SourceTitle_EtrianOdyssey2
-Etrian Odyssey 2[X]
+Etrian Odyssey II[X]
 ##SongTitle_TheFirstCampaign
 The First Campaign (Alusq)[X]
 ##SongTitle_VastLands
 Vast Lands Spreading in the North[X]
+
+##SourceTitle_EtrianOdyssey5
+Etrian Odyssey V[X]
+##SongTitle_UntamedGarden
+Untamed Garden[X]
 
 ##SourceTitle_OrderOfEcclesia ^
 Castlevania: Order of Ecclesia[X]

@@ -35,6 +35,8 @@ between stats and growths.[X]
 #include "Chapters/ChapterNames.txt"
 #include "Chapters/FloorTitles.txt"
 #include "Chapters/Chapter1.txt"
+#include "Chapters/Chapter2.txt"
+#include "Chapters/Chapter3.txt"
 
 #include "City/CityGeneral.txt"
 #include "City/CityGuild_Swordfighters.txt"
@@ -241,13 +243,13 @@ be lost. Continue anyway?[X]
  Quit[X]
 
 # 0x08FE
-[Left][Guildmaster]
+[Left][Monk]
 Wanna go to the title screen?[N]
 [Yes][X]
 
 # 0x08FF
-[Left]Sounds good. See you[N]
-later, bud.[A][X]
+[Left]Sounds good. Make sure[N]
+you come back again![A][X]
 
 # 0x06E4
 Return to the title screen.[NL]

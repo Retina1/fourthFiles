@@ -52,3 +52,26 @@ as they possibly can.[X]
 Activate Maximum Growths?[N]
 [No][X]
 
+##PicnicModeLabel
+Enable Picnic Mode.[X]
+##PicnicModeRText
+Player units will have 1.5x[N]
+applied to most combat stats.[N]
+(Atk/Def/Spd/Hit/Crit/Avo/C.Avo)[X]
+##PicnicModeConfirm
+Activate Picnic Mode?[N]
+[No][X]
+
+##ClearModifiersLabel
+Clear Modifiers.[X]
+##ClearModifiersLabelRText
+Reset all non-growth related[N]
+campaign modifiers.[X]
+##ClearModifiers
+Resetting modifiers.[A][X]
+
+##FinishLabel
+Finish Customization.[X]
+##FinishRText
+Conclude campaign customization[N]
+and begin with current modifiers.[X]

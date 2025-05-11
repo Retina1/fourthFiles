@@ -182,6 +182,19 @@ void FloorDamage(struct BattleUnit* attacker, struct BattleUnit* defender) {
 		attacker->battleAttack = rawOffense / 3 + defender->battleDefense;
 }
 
+void ApplyPicnicMode(struct BattleUnit* attacker) {
+	int allegiance = (attacker->unit.index & 0xC0);
+	if (allegiance == FACTION_BLUE && CheckEventId_(0xaf)){
+		 attacker->battleAttack = attacker->battleAttack * 3/2;
+		 attacker->battleDefense = attacker->battleDefense * 3/2;
+		 attacker->battleSpeed = attacker->battleSpeed * 3/2;
+		 attacker->battleHitRate = attacker->battleHitRate * 3/2;
+		 attacker->battleCritRate = attacker->battleCritRate * 3/2;
+		 attacker->battleAvoidRate = attacker->battleAvoidRate * 3/2;
+		 attacker->battleDodgeRate = attacker->battleDodgeRate * 3/2;
+	}
+}
+
 void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defender) {
     ComputeBattleUnitDefense(attacker, defender);
     ComputeBattleUnitAttack(attacker, defender);
@@ -192,6 +205,7 @@ void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defe
     ComputeBattleUnitDodgeRate(attacker);
     ComputeBattleUnitWeaponRankBonuses(attacker);
     ComputeBattleUnitStatusBonuses(attacker);
+	ApplyPicnicMode(attacker);
 }
 
 void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleUnit* defender) {

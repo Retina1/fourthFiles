@@ -148,6 +148,10 @@ CallPreps
 CALL LoadPostPrepsUnits
 FADU 10
 GiveMoneyByVisit(2000,0,0,0,0,0,0,0,0,0,0,0,0,0)
+CHECK_EVENTID Chapter3DoneFlag
+BNE 0x1 0xc 0x0
+SystemText(TownTutorial)
+LABEL 0x1
 MovementSetter
 EndEvent
 

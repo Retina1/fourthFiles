@@ -67,7 +67,7 @@
 	SetTrapMapSprite(InstantFireTrapID,0)
 	SetTrapMapSprite(PossiblyUnusedTrapID,0)
 	SetTrapMapSprite(TorchStaffTrapID,0)
-	SetTrapMapSprite(MineTrapID,0)
+	SetTrapMapSprite(MineTrapID,SigilTrapMapSprite)
 	SetTrapMapSprite(GorgonEggTrapID,0)
 	SetTrapMapSprite(LightRuneTrapID,0x66) //light rune map sprite
 	SetTrapMapSprite(SigilTrapID,SigilTrapMapSprite)
@@ -85,6 +85,8 @@
 	SetTrapMapSpritePalette(LightRuneTrapID,LightRuneTrapPaletteWord)
 	SetTrapMapSpritePalette(SigilTrapID,PlayerTrapPaletteWord)
 	SetTrapMapSpritePalette(RedSigilTrapID,EnemyTrapPaletteWord)
+	//visible mines
+	SetTrapMapSpritePalette(MineTrapID,GreyTrapPaletteWord)
 	SetTrapMapSpritePalette(GreenSigilTrapID,NPCTrapPaletteWord)
 	
 	

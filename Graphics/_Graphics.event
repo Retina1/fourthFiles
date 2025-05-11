@@ -4,6 +4,7 @@
 #include "RemoveFog/RemoveEffects.event"
 #include "ItemIcons/IconInstaller.event"
 #include "Animation/AnimationPointers.event"
+#include "UnitPalettes/_Installer.event"
 
 //doing this now to save maximal freespace
 #include "BattlePlatforms/BattlePlatformInstaller.event"

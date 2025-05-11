@@ -1,5 +1,7 @@
 #include "gbafe.h"
 
+extern bool CheckEventId_(u16 flag); 
+
 #include "Misc/LoadUnitBases.c"
 #include "Misc/NewPromoGains.c"
 #include "Misc/Caps.c"
@@ -13,7 +15,6 @@
 
 //add autorepair just for S ranks
 //handle status weapons in C for inflictions?
-
 
 void SaveSuspendedGame(int saveBlockId);
 

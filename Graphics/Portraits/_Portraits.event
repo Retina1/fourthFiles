@@ -17,10 +17,52 @@ POP
 #include "_ClassCards.event"
 
 ALIGN 4
+//slatergenerics
+GenericLandsknechtDMP:
+#incbin "dmps/slaterGenericLandsknecht.dmp"
+setMugEntry(GenericLandsknechtMug,GenericLandsknechtDMP,3,5,3,3)
+ALIGN 4
+GenericNecromancerDMP:
+#incbin "dmps/slaterGenericNecromancer.dmp"
+setMugEntryExtend(GenericNecromancerMug,GenericNecromancerDMP,3,5,3,3, 0,4, 10,4)
+ALIGN 4
+GenericPugilistDMP:
+#incbin "dmps/slaterGenericPugilist.dmp"
+setMugEntryExtend(GenericPugilistMug,GenericPugilistDMP,3,4,3,2, (-2),8, 3,(-2))
+ALIGN 4
+GenericAutomatonDMP:
+#incbin "dmps/slaterGenericAutomaton.dmp"
+setMugEntryExtend(GenericAutomatonMug,GenericAutomatonDMP,3,2,3,0, 0,4, 10,4)
+ALIGN 4
+GenericImperialDMP:
+#incbin "dmps/slaterGenericImperial.dmp"
+setMugEntry(GenericImperialMug,GenericImperialDMP,3,4,3,2)
+ALIGN 4
+MonkDMP:
+#incbin "dmps/slaterMonk.dmp"
+setMugEntry(MonkMug,MonkDMP,3,6,3,4)
+
+ALIGN 4
 //puzon
 PuzonDMP:
 #incbin "dmps/Puzon.dmp"
 setMugEntry(PuzonMug,PuzonDMP,2,5,2,3)
+
+ALIGN 4
+//sarkan
+BrieDMP:
+#incbin "dmps/sarkanBrie.dmp"
+setMugEntry(BrieMug,BrieDMP,3,5,3,3)
+
+ALIGN 4
+//applanthropist
+RoslinDMP:
+#incbin "dmps/applanthropistRoslin.dmp"
+setMugEntry(RoslinMug,RoslinDMP,3,6,3,4)
+ALIGN 4
+DemicoDMP:
+#incbin "dmps/applanthropistDemico.dmp"
+setMugEntry(DemicoMug,DemicoDMP,3,5,3,3)
 
 ALIGN 4
 //misha

@@ -9,7 +9,7 @@ int GetUnitExpMultiplier(struct Unit* actor, struct Unit* target);
 int GetUnitKillExpBonus(struct Unit* actor, struct Unit* target);
 extern bool CanBattleUnitGainLevels(BattleUnit* bu);
 int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target);
-extern bool CheckEventId_(u16 flag); 
+
 
 extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 

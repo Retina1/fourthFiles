@@ -11,3 +11,10 @@ Escape[X]
 
 ##PrepareLabel
 Prepare![X]
+
+##Ch1RoutDesc
+Prove your[N]
+competence![X]
+##MonsterRoutDesc
+Defeat all[N]
+monsters![X]

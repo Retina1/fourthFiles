@@ -52,6 +52,12 @@ SongTable(Song_EO1Guild,EO1Guild,0)
 SongTable(Song_DiscoDescent,DiscoDescent,1)
 #include "songs/DiscoDescent.event"
 }
+//0x11
+#define Song_UntamedGarden 0x11
+{
+SongTable(Song_UntamedGarden,UntamedGarden,1)
+#include "songs/UntamedGarden.event"
+}
 
 
 //0x3e - game over

@@ -43,6 +43,7 @@ POP
 
 #include "SetStatus/SetStatusInstaller.event"
 #include "TrapRework/TrapRework.event"
+#include "Emotions/EmotionInstaller.event"
 
 #include "CZone/Main.lyn.event"
 #include "CZone/Durability/Installer.event"

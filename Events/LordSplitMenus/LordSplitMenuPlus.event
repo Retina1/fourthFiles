@@ -23,6 +23,17 @@ MenuOption(MinGrowthsLabel, MinGrowthsRText, 0)
 MenuOption(MaxGrowthsLabel, MaxGrowthsRText, 0)
 MenuTerminator
 
+ALIGN 4
+CustomizersMenu:
+MenuDefinition(6, 5, 18, 0, 1, CustomizersMenuOptions)
+
+ALIGN 4
+CustomizersMenuOptions:
+MenuOption(PicnicModeLabel, PicnicModeRText, 0x8)
+MenuOption(ClearModifiersLabel, ClearModifiersLabelRText, 0)
+MenuOption(FinishLabel, FinishRText, 0)
+MenuTerminator
+
 #define StandardUnlockedFlag 0xf9
 #define MagiUnlockedFlag 0xfa
 #define SpecialUnlockedFlag 0xfb

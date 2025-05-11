@@ -8,6 +8,7 @@
 #include "ItemIconDefs.event"
 
 #define SupportAnimFlag 0xae
+#define PicnicModeFlag 0xaf
 
 //flags for each chapter's base
 #define Chapter2DoneFlag 0x8b

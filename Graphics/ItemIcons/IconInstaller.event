@@ -9,6 +9,53 @@ NewItemIcons:
  
 PUSH 
 // Individual Icons go here
+//MONSTERS
+ItemIconEntry(VileClawIcon)
+#incbin "Dmp/{Beansy} Sharp Claw.dmp"
+ItemIconEntry(SharpBiteIcon)
+#incbin "Dmp/{Zarg} Monster 13.dmp"
+ItemIconEntry(TackleIcon)
+#incbin "Dmp/{Seal} (SacredWar) Monster 6.dmp"
+ItemIconEntry(GreatTalonIcon)
+#incbin "Dmp/{2WB} (Vanilla + Blitz) Sharp Talon.dmp"
+ItemIconEntry(EvilEyeIcon)
+#incbin "Dmp/{Seal} (SacredWar) Monster 1.dmp"
+
+//CONSUMABLES
+ItemIconEntry(VulneraryIcon)
+#incbin "Dmp/{2WB} (Icon Blitz 1) Vulnerary.dmp"
+ItemIconEntry(ElixirIcon)
+#incbin "Dmp/{2WB} (Icon Blitz 1) Elixir.dmp"
+ItemIconEntry(MedicaIcon)
+#incbin "Dmp/{2WB} (Icon Blitz 1) Concoction.dmp"
+ItemIconEntry(SomaIcon)
+#incbin "Dmp/{Batima} Elixir.dmp"
+ItemIconEntry(AriadneShardIcon)
+#incbin "Dmp/{Cardcafe} (FE15) Item 12.dmp"
+
+
+//PROMOS
+ItemIconEntry(HeroCrestIcon)
+#incbin "Dmp/{2WB} (Vanilla + Blitz) Hero Crest.dmp"
+ItemIconEntry(KnightProofIcon)
+#incbin "Dmp/{Batima} Paladin's Honor.dmp"
+ItemIconEntry(OrionsBoltIcon)
+#incbin "Dmp/{Beansy} Orion Bolt.dmp"
+ItemIconEntry(ElysianWhipIcon)
+#incbin "Dmp/{Batima} Skydrake Whip.dmp"
+ItemIconEntry(GuidingRingIcon)
+#incbin "Dmp/{Batima} Bishop's Ring.dmp"
+ItemIconEntry(RubyBladeIcon)
+#incbin "Dmp/{SN_Ivan} Vague Katti (Radiant Dawn).dmp"
+ItemIconEntry(PerfectRoseIcon)
+#incbin "Dmp/{Zarg} Item 19.dmp"
+ItemIconEntry(DarkBroochIcon)
+#incbin "Dmp/{Zarg} Item 18.dmp"
+ItemIconEntry(BanefulDollIcon)
+#incbin "Dmp/Plush {base by DoinThangs}.dmp"
+ItemIconEntry(HolyCloakIcon)
+#incbin "Dmp/{SMITHYGCN} Goods 8.dmp"
+
 //SCROLLS
 ItemIconEntry(FlameScrollIcon)
 #incbin "Dmp/FlameScroll.dmp"
