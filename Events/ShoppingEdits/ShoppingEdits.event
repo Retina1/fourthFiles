@@ -23,6 +23,7 @@ the shopkeeper will ask the player if they want the purchased item with the unit
 
 ALIGN 4
 #include "ShoppingEditsText.event"
+#include "MakeShop/MakeShop.event"
 ALIGN 4
 
 //Include RemoveItem routine if not already included

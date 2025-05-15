@@ -48,25 +48,37 @@ Xavens[X]
 A lieutenant of Endbringer. He's the[N]
 raving spokesman of the organization.[X]
 
+##Name_Weber
+Weber[X]
+##Desc_Weber
+The acting Imperial Prince of Asketa.[N]
+He strives for might and prosperity.[X]
+##Name_First
+First[X]
+##Desc_First
+A senior imperial general of Asketa.[N]
+He's unerring in his loyalty.[X]
+##Name_Second
+Second[X]
+##Desc_Second
+A senior imperial general of Asketa.[N]
+She descends from a military lineage.[X]
+##Desc_FourthNPC
+A rising imperial driver of Asketa.[N]
+She's pragmatic about her duties.[X]
+
 ##Desc_Benthus2
 A former member of Guild Hedge, driven[N]
 by hubris to leave the group for dead.[X]
 
-//DICK SLATER
-//possibly not a normal guild recruit
-//shows up in the city
-//give him stuff and talk to him to make him friend
-//very attention to detail to befriend him
-//not a good person at all
-//vulgar, offensive, not likable at all, no heart of gold
-//strong power hungry guy, tinkers with or steals drive blades
-//petty man who leaves if you don't do certain stuff
+//shows up early in bar, guild recruit later
 ##Name_Bertram
 Bertram[X]
 ##Desc_Bertram
 An ex-imperial wandering Hirschring.[N]
 He was dishonorably discharged.[X]
 
+//win arena
 ##Name_Ayda
 Ayda[X]
 ##Desc_Ayda

@@ -2,3 +2,4 @@
 #define FieldsCONFIG 0x2
 #define CityCONFIG 0x3
 #define GuildhallCONFIG 0x4
+#define TavernCONFIG 0x5

@@ -49,6 +49,61 @@ PuzonDMP:
 setMugEntry(PuzonMug,PuzonDMP,2,5,2,3)
 
 ALIGN 4
+//hannah
+WavesDMP:
+#incbin "dmps/hannahWaves.dmp"
+setMugEntry(WavesMug,WavesDMP,3,6,3,4)
+
+ALIGN 4
+//aaron
+LaiteuseDMP:
+#incbin "dmps/aaronLaiteuse.dmp"
+setMugEntry(LaiteuseMug,LaiteuseDMP,4,5,4,3)
+
+ALIGN 4
+//kyrnish
+//red mage hat anim eventually
+SeleneDMP:
+#incbin "dmps/kyrnishSelene.dmp"
+setMugEntry(SeleneMug,SeleneDMP,3,5,2,3)
+
+ALIGN 4
+//guard
+SzessDMP:
+#incbin "dmps/guardSzess.dmp"
+setMugEntry(SzessMug,SzessDMP,3,5,3,3)
+
+ALIGN 4
+//thicc
+JimDMP:
+#incbin "dmps/thiccJim.dmp"
+setMugEntry(JimMug,JimDMP,3,5,3,3)
+
+ALIGN 4
+//kingdom
+DamienDMP:
+#incbin "dmps/kingdomDamien.dmp"
+setMugEntry(DamienMug,DamienDMP,3,5,3,3)
+
+ALIGN 4
+//menthol
+MargitteDMP:
+#incbin "dmps/mentholMargitte.dmp"
+setMugEntry(MargitteMug,MargitteDMP,2,6,4,4)
+
+ALIGN 4
+//grns
+MerileeDMP:
+#incbin "dmps/grnsMerilee.dmp"
+setMugEntry(MerileeMug,MerileeDMP,2,5,3,3)
+
+ALIGN 4
+//trybel
+CardamDMP:
+#incbin "dmps/trybelCardam.dmp"
+setMugEntry(CardamMug,CardamDMP,4,5,4,3)
+
+ALIGN 4
 //sarkan
 BrieDMP:
 #incbin "dmps/sarkanBrie.dmp"
@@ -117,6 +172,14 @@ ALIGN 4
 WendyDMP:
 #incbin "dmps/alguienWendy.dmp"
 setMugEntryExtend(WendyMug,WendyDMP,4,6,4,4, 0,1, 0,3)
+ALIGN 4
+WaspDMP:
+#incbin "dmps/alguienWasp.dmp"
+setMugEntry(WaspMug,WaspDMP,3,5,3,3)
+ALIGN 4
+WitericoDMP:
+#incbin "dmps/alguienWiterico.dmp"
+setMugEntry(WitericoMug,WitericoDMP,3,5,3,3)
 
 ALIGN 4
 //rekekka
@@ -163,6 +226,10 @@ ALIGN 4
 DreadJennyDMP:
 #incbin "dmps/rwDreadJenny.dmp"
 setMugEntry(DreadJennyMug,DreadJennyDMP,3,6,3,4)
+ALIGN 4
+PallasDMP:
+#incbin "dmps/rwPallas.dmp"
+setMugEntry(PallasMug,PallasDMP,3,5,3,3)
 
 ALIGN 4
 //scraiza
@@ -278,6 +345,10 @@ ALIGN 4
 AydaDMP:
 #incbin "dmps/goldAyda.dmp"
 setMugEntryExtend(AydaMug,AydaDMP,4,5,4,3, 10,4, 0,0)
+ALIGN 4
+ArsofDMP:
+#incbin "dmps/goldArsof.dmp"
+setMugEntryExtend(ArsofMug,ArsofDMP,2,4,2,2, 2,(-2), 4,(-2))
 
 ALIGN 4
 //lorca
@@ -314,6 +385,10 @@ ALIGN 4
 FeefasnanDMP:
 #incbin "dmps/vylandFeefasnan.dmp"
 setMugEntry(FeefasnanMug,FeefasnanDMP,3,6,5,3)
+ALIGN 4
+SonDMP:
+#incbin "dmps/arinSon.dmp"
+setMugEntry(SonMug,SonDMP,2,5,3,3)
 
 ALIGN 4
 //zappy

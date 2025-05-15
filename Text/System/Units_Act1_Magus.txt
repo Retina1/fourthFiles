@@ -21,6 +21,20 @@ Jacqwil[X]
 A reserved poet and victim of Endbringer.[N]
 She'll sing to anyone willing to listen.[X]
 
+//serif
+##Name_Polymnia
+Polymnia[X]
+##Desc_Polymnia
+A Belvarusi bastard wishing to aid her[N]
+adoptive father. She's softspoken.[X]
+
+//devvy
+##Name_Lucien
+Lucien[X]
+##Desc_Lucien
+A Belvarusi statesman who seeks peace[N]
+among the nations. ...He's suspicious.[X]
+
 //Phespher by doob
 ##Name_Phespher
 Phespher[X]
@@ -55,6 +69,20 @@ Ellie[X]
 ##Desc_Ellie
 A chef and priest from Hirschring seeking[N]
 the Gods' Tableland. He's a bit hedonistic.[X]
+
+//krynish
+##Name_Selene
+Selene[X]
+##Desc_Selene
+An orphaned priest picked up by a band of[N]
+mercenaries. She's guarded and practical.[X]
+
+//grottos
+##Name_Nina
+Nina[X]
+##Desc_Nina
+An altruistic young priest wandering the[N]
+land. She's been likened to an angel.[X]
 
 //guard
 ##Name_Szess

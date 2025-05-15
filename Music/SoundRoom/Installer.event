@@ -43,8 +43,11 @@ SoundRoomEntry(Song_DiscoDescent, SongTitle_DiscoDescent, SourceTitle_Necrodance
 SoundRoomEntry(Song_HeroicStruggle, SongTitle_HeroicStruggle, SourceTitle_LiveALive,6)
 SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
 SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)
+//somewhere probably player phase
+SoundRoomEntry(Song_LuckyBreak, SongTitle_LuckyBreak, SourceTitle_RhythmDoctor,11)
 //city 
 SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4)
+SoundRoomEntry(Song_DrawHeroes, SongTitle_DrawHeroes, SourceTitle_EtrianOdyssey2,10)
 //dungeon
 SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOdyssey5,9)
 //combat

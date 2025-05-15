@@ -268,3 +268,186 @@ your allies to move again.[X]
 # 0x06E5
 Read up on new mechanics and[N]
 the pasts of your Guild.[X]
+
+
+# 0x089A
+Here's what we've got.[A][0x02][NL]
+Lemme know what you need.[.][NL]
+[Buy/Sell][X]
+
+# 0x089B
+Hi, Mister Nathan![.][A][0x02][NL]
+Have a look, please![.][NL]
+[Buy/Sell][X]
+
+# 0x089C
+Shhh... Hee hee...[A][0x02][NL]
+This is a secret shop![NL]
+[Buy/Sell][X]
+
+# 0x089D
+Anything else, lad?[NL]
+[Buy/Sell][X]
+
+# 0x089E
+That all, mister?[NL]
+[Buy/Sell][X]
+
+# 0x089F
+Well? Anything else for you?[NL]
+[Buy/Sell][X]
+
+# 0x08A0
+Need anything else?[NL]
+[0x1B][X]
+
+# 0x08A1
+Anything else, please?[.][NL]
+[0x1B][X]
+
+# 0x08A2
+Is there anything else you need?[NL]
+[0x1B][X]
+
+# 0x08A3
+Sure. What do you need?[X]
+
+# 0x08A4
+I'll get anything you need![.][X]
+
+# 0x08A5
+What do you need?[.][X]
+
+# 0x08A6
+Anything more?[X]
+
+# 0x08A7
+Is that all?[X]
+
+# 0x08A8
+Any other requests?[.][X]
+
+# 0x08A9
+Sure, I'll buy.[.][X]
+
+# 0x08AA
+Ooh! That's pretty![.][X]
+
+# 0x08AB
+What would you sell?[X]
+
+# 0x08AC
+You've got nothing, lad.[.][A][X]
+
+# 0x08AD
+You don't have anything, silly![.][A][X]
+
+# 0x08AE
+You've got nothing to sell![.][A][X]
+
+# 0x08AF
+You tryin' to bankrupt me?[X]
+
+# 0x08B0
+Wait, you have more?[X]
+
+# 0x08B1
+What else are you selling?[X]
+
+# 0x08B2
+Sorry. I can't give this away.[.][A][X]
+
+# 0x08B3
+Sorry, mister. Nothing's free.[A][X]
+
+# 0x08B4
+Heh! Not enough money![A][X]
+
+# 0x08B5
+Is [.][G] gold a[N]
+fair price?[Yes][X]
+
+# 0x08B6
+That's... [.][G] gold.[NL]
+...I think.[Yes][X]
+
+# 0x08B7
+That is worth [G] gold.[NL]
+Is that acceptable?[.][Yes][X]
+
+# 0x08B8
+Come back, lad.[A][X]
+
+# 0x08B9
+Come back soon![A][X]
+
+# 0x08BA
+Hee hee... Buh-bye![.][A][X]
+
+# 0x08BB
+Not buyin' that. Sorry.[.][A][X]
+
+# 0x08BC
+That's too nice to buy![.][A][X]
+
+# 0x08BD
+Hee hee... Wait a minute.[.][NL]
+I can't buy that![.][A][X]
+
+# 0x08BE
+Your hands look full.[.][A][0x02][NL]
+Send this to storage?[.][NL]
+[Yes][X]
+
+# 0x08BF
+You've got a lot, mister![A][0x02][NL]
+Send this to storage?[.][NL]
+[Yes][X]
+
+# 0x08C0
+Your hands are full.[A][0x02][NL]
+Send it to storage?[.][NL]
+[Yes][X]
+
+# 0x08C1
+Your hands look full.[.][A][X]
+
+# 0x08C2
+You've got a lot, mister![A][X]
+
+# 0x08C3
+Your hands are full.[A][X]
+
+# 0x08C4
+It'll arrive safe and sound.[A][X]
+
+# 0x08C5
+I'll wrap that up for you![.][A][X]
+
+# 0x08C6
+Heh heh... I'll send it then.[.][A][X]
+
+# 0x08C7
+No? Fair enough.[NL]
+Maybe empty your hands.[.][A][X]
+
+# 0x08C8
+No? Alrighty, mister.[.][NL]
+Maybe empty your hands.[A][X]
+
+# 0x08C9
+Ah, well... You could take[NL]
+it if you made room.[A][X]
+
+
+# 0x08CD
+You've got too much.[NL]
+Clean your storage![A][X]
+
+# 0x08CE
+Wait, you have how much?[.][NL]
+Please, clean it up![.][A][X]
+
+# 0x08CF
+Heh... Your storage is full,[NL]
+too. Rearrange things...[A][X]

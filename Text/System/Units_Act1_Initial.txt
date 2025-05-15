@@ -98,6 +98,13 @@ Randellan[X]
 A gruff loner and former merc from the[N]
 Asketan wilds. He doesn't like city folk.[X]
 
+//trybel
+##Name_Juniper
+Juniper[X]
+##Desc_Juniper
+A vain woman who joined the Guildleague[N]
+to build her reputation. Aims to please.[X]
+
 //hannahkitty
 ##Name_Hallie
 Hallie[X]
@@ -134,6 +141,13 @@ Cyanne[X]
 A Belvarusi scholar wishing to control[N]
 her powers. She's a forward thinker.[X]
 
+//skullgoblin
+##Name_Victor
+Victor[X]
+##Desc_Victor
+A Belvarusi scholar with interest in[N]
+Asketan mythos. He's openminded.[X]
+
 //trish by benfrosh (curate)
 ##Name_Trish
 Trish[X]
@@ -154,3 +168,10 @@ Roslin[X]
 ##Desc_Roslin
 A former clerk from the Guildleague.[N]
 She wanted to give adventuring a try.[X]
+
+//alg
+##Name_Witerico ^
+Witerico II[X]
+##Desc_Witerico
+The aged son of a famed warrior. He's[N]
+adventuring to earn his inheritance.[X]

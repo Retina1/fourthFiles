@@ -2,3 +2,4 @@ VillageCONFIG
 FieldsCONFIG
 CityCONFIG
 GuildhallCONFIG
+TavernCONFIG

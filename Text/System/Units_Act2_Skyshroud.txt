@@ -13,6 +13,13 @@ Celeste[X]
 A principled mercenary and compulsive[N]
 liar. She's hard to get a handle on.[X]
 
+//grns
+##Name_Merilee
+Merilee[X]
+##Desc_Merilee
+A solemn woman and former Belvarusi[N]
+knight. She's efficient and distant.[X]
+
 //ru
 ##Name_June
 June[X]

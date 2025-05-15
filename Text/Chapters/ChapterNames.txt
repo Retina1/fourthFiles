@@ -4,6 +4,10 @@ The City[X]
 Hirschring[X]
 ##Name_Guildhall
 Guildhall[X]
+##Name_Blacksmith
+Blacksmith[X]
+##Name_Tavern
+Bobby's Tavern[X]
 
 ##Name_Act1
 Act 1: Catching at Dreams[X]

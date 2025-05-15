@@ -1,7 +1,7 @@
 #define MenuDefinition(x, y, w, h, style, commands) "BYTE x y w h; WORD style; POIN commands; WORD 0 0 0 0 0x0804F521 0x0804F459"
 #define MenuOption(name, desc, flag) "WORD 0; SHORT name desc; BYTE 0 flag 0 0; POIN FlagUsabilityMenuOption 0 ChoiceMenu_OnSelect 0 0 0"
 #define MenuTerminator "WORD 0 0 0 0 0 0 0 0 0"
-#define CallMenu(menu) "SVAL s1 menu|IsPointer; ASMC CallChoiceMenuASMC|1"
+#define CallMenu(menu) "RefreshLordSplitTiles; SVAL s1 menu|IsPointer; ASMC CallChoiceMenuASMC|1"
 
 
 // example menu provided below. there are a couple moving parts but it's not as daunting as it looks.

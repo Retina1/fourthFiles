@@ -10,6 +10,26 @@ ORG 0x01A77E
 BYTE 0xFF 0x2D 0x29 0xDA 0x02 0x99 0x08 0x70 0x04 0x9B 0x02 0x93
 POP
 
+//remove shop music
+PUSH
+
+ORG 0xB4C06 // start armory bgm on initializing armory
+SHORT 0x46C0 0x46C0
+ORG 0xB4C10 // start shop bgm on initializing all other shops
+SHORT 0x46C0 0x46C0
+
+ORG 0xA391A8 // fade map music out on entering shop
+BYTE $0E $00 $01 $00 $00 $00 $00 $00
+
+ORG 0xA391E8 // restart map music from the top on exiting shop
+BYTE $0E $00 $01 $00 $00 $00 $00 $00
+
+ORG 0xA39430 // fade shop music out on exiting shop
+BYTE $0E $00 $01 $00 $00 $00 $00 $00
+
+POP
+
+
 //fix weapon icon display
 PUSH
 ORG 0x1E7F2

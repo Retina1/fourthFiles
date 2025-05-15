@@ -33,6 +33,9 @@ UNIT
 Recruit_Randellan:
 UNIT Randellan 0x0 0x1 Level(3,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Broadaxe] NoAI
 UNIT
+Recruit_Juniper:
+UNIT Juniper 0x0 0x1 Level(0,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
 
 Recruit_Hallie:
 UNIT Hallie 0x0 0x1 Level(0,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
@@ -50,6 +53,9 @@ UNIT
 Recruit_Cyanne:
 UNIT Cyanne 0x0 0x1 Level(0,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
+Recruit_Victor:
+UNIT Victor 0x0 0x1 Level(0,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
 
 Recruit_Trish:
 UNIT Trish 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Wand] NoAI
@@ -59,6 +65,9 @@ UNIT Amos 0x0 0x1 Level(0,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 Recruit_Roslin:
 UNIT Roslin 0x0 0x1 Level(0,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+Recruit_Witerico:
+UNIT Witerico 0x0 0x1 Level(0,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 //swd
@@ -96,6 +105,9 @@ EndEvent
 Randellan_RecruitEvent:
 GuildRecruit(Randellan,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
 EndEvent
+Juniper_RecruitEvent:
+GuildRecruit(Juniper,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x24)
+EndEvent
 
 //arch
 Hallie_RecruitEvent:
@@ -115,6 +127,9 @@ EndEvent
 Cyanne_RecruitEvent:
 GuildRecruit(Cyanne,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
 EndEvent
+Victor_RecruitEvent:
+GuildRecruit(Victor,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+EndEvent
 
 //cur
 Trish_RecruitEvent:
@@ -125,6 +140,9 @@ GuildRecruit(Amos,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Gu
 EndEvent
 Roslin_RecruitEvent:
 GuildRecruit(Roslin,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+EndEvent
+Witerico_RecruitEvent:
+GuildRecruit(Witerico,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
 EndEvent
 
 
@@ -154,6 +172,7 @@ GuildLoad(Tristao,Recruit_Tristao,0x1)
 GuildLoad(Finn,Recruit_Finn,0x2)
 GuildLoad(Eight,Recruit_Eight,0x3)
 GuildLoad(Randellan,Recruit_Randellan,0x4)
+GuildLoad(Juniper,Recruit_Juniper,0x5)
 FADU 10
 ENDA
 
@@ -171,6 +190,7 @@ GuildLoadFlagReset
 GuildLoad(Cassandra,Recruit_Cassandra,0x1)
 GuildLoad(Waves,Recruit_Waves,0x2)
 GuildLoad(Cyanne,Recruit_Cyanne,0x3)
+GuildLoad(Victor,Recruit_Victor,0x4)
 FADU 10
 ENDA
 
@@ -180,6 +200,7 @@ GuildLoadFlagReset
 GuildLoad(Trish,Recruit_Trish,0x1)
 GuildLoad(Amos,Recruit_Amos,0x2)
 GuildLoad(Roslin,Recruit_Roslin,0x3)
+GuildLoad(Witerico,Recruit_Witerico,0x4)
 FADU 10
 ENDA
 

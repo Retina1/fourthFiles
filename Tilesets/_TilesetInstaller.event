@@ -105,3 +105,16 @@ City1Tiles:
 TileConfigPointerTable(CityCONFIG, City1Tiles)
 ObjTypePalettePointerTable(City1OBJ, CityObjects)
 ObjTypePalettePointerTable(City1PAL, City1Palette)
+
+ALIGN 4
+TavernObjects:
+#incbin "Tavern1.dmp"
+ALIGN 4
+Tavern1Palette:
+#incbin "Tavern1_pal.dmp"
+ALIGN 4
+Tavern1Tiles:
+#incext compress "Tavern.mapchip_config"
+TileConfigPointerTable(TavernCONFIG, Tavern1Tiles)
+ObjTypePalettePointerTable(Tavern1OBJ, TavernObjects)
+ObjTypePalettePointerTable(Tavern1PAL, Tavern1Palette)

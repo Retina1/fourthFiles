@@ -11,6 +11,10 @@ HirschringSquareMapID
 HirschringSquareMapChangeID
 GuildhallMapID
 GuildhallMapChangeID
+BlacksmithMapID
+BlacksmithMapChangeID
+TavernMapID
+TavernMapChangeID
 HirschringSquareEventsID
 Stratum1F1MapID
 Stratum1F1MapChangeID

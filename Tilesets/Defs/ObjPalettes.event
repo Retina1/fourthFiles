@@ -4,3 +4,5 @@
 #define Fields1PAL 0x4
 #define City1OBJ 0x5
 #define City1PAL 0x6
+#define Tavern1OBJ 0x7
+#define Tavern1PAL 0x8

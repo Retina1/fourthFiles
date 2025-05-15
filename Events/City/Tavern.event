@@ -1,0 +1,44 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+TavernUnitsC2:
+//idk probably swap these for generics/bar specific npcs
+UNIT Bobby 0x0 0x0 Level(14,NPC,0) [5,1] 0x0 0x0 0x0 0x0 [Elixir] NeverMoveAI
+UNIT Bertram 0x0 0x0 Level(18,NPC,0) [12,8] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Yasaki 0x0 0x0 Level(5,NPC,0) [1,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Yajirushi 0x0 0x0 Level(5,NPC,0) [3,6] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Leonzio 0x0 0x0 Level(2,NPC,0) [1,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Brie 0x0 0x0 Level(8,NPC,0) [7,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Levia 0x0 0x0 Level(5,NPC,0) [4,5] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Claire 0x0 0x0 Level(17,NPC,0) [9,2] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Leize 0x0 0x0 Level(8,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+LoadTavernSigils:
+ENUF LocationFlagTavern
+AddSigil(1,9)
+AddSigil(2,9)
+AddSigil(3,9)
+AddGreenSigil(5,3)
+ENDA
+
+TavernMoveToSquare:
+SwapToMap(HirschringSquare,15,12)
+CALL LoadHirschringSigils
+//causes visual bug? not needed anyway
+//SetMapBGM(Song_VastLands)
+MUSC Song_VastLands
+LoadUnitsByVisit(Chapter2SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
+EndEvent
+
+//figure o
+
+TavernQuestBegin:
+//do later
+ENUF LocationFlagTavern
+EndEvent

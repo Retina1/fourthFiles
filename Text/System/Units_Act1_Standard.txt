@@ -14,6 +14,13 @@ Mikayla[X]
 A Belvarusi myrmidon working to overcome[N]
 her blindness. She's eccentric but sweet.[X]
 
+//idiotmonk
+##Name_Calliope
+Calliope[X]
+##Desc_Calliope
+A myrmidon from a failed supersoldier[N]
+project. She's haunted by unknown past.[X]
+
 //striker
 ##Name_Aizen
 Aizen[X]
@@ -63,6 +70,13 @@ Pipsy[X]
 A Belvarusi scion who faces problems[N]
 head on. Her size belies her might.[X]
 
+//arin
+##Name_Son
+Son[X]
+##Desc_Son
+A sorrowful foreigner sent to live in[N]
+Asketa. He thinks he's beset by ghosts.[X]
+
 //mancalledm
 ##Name_Martin
 Martin[X]
@@ -83,3 +97,24 @@ Karl[X]
 ##Desc_Karl
 A stubborn coal miner from Asketa who[N]
 insists he's a gunslinging adventurer.[X]
+
+//alguien
+##Name_Wasp
+Wasp[X]
+##Desc_Wasp
+A wary gunner. His former guild fell to[N]
+treachery, and she struggles to trust.[X]
+
+//serif
+##Name_Victoria
+Victoria[X]
+##Desc_Victoria
+A bold gunner from the Asketan Wilds.[N]
+She's got a contagious enthusiasm.[X]
+
+//aaron
+##Name_Laiteuse
+Laiteuse[X]
+##Desc_Laiteuse
+A confident Guildleague clerk forced to[N]
+serve to repay debt. She's a klutz.[X]

@@ -37,3 +37,10 @@ Felicity[X]
 A disgraced vassal of a Belvarusi[N]
 house. She's resentful and brooding.[X]
 
+//cardam
+##Name_Cardam
+Cardam[X]
+##Desc_Cardam
+A small and novice duelist with an odd[N]
+fighting style. He's driven by anger.[X]
+

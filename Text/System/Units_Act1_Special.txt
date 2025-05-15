@@ -27,7 +27,15 @@ Radagast[X]
 A battle-hardened mercenary of towering[N]
 presence. He's pragmatic yet loyal.[X]
 
+//rw
+##Name_Fourfinger ^
+Fourfinger[X]
+##Desc_Fourfinger
+A reckless kid from the streets of[N]
+Hirschring. They fight for family.[X]
+
 //Shīliăng by levin (get accented characters later, brawler)
+//eventually they're a [0xE3] and i [0xE5]
 ##Name_Shiliang
 Shiliang[X]
 ##Desc_Shiliang
@@ -47,6 +55,12 @@ Brie[X]
 ##Desc_Brie
 A brawler on the run from Asketan[N]
 authorities. She's a bit aloof.[X]
+
+//gold
+##Name_Arsof
+Arsof[X]
+##Desc_Arsof
+PLACEHOLDER[X]
 
 //greatdoot
 ##Name_Philmore

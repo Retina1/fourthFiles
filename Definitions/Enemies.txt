@@ -1,4 +1,8 @@
-BossBenthus2 0xe4
+First 0xe0
+Second
+NPCFourth
+Weber
+BossBenthus2
 Bertram
 Ayda
 Claire

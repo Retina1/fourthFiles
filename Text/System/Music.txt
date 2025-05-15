@@ -11,6 +11,8 @@ Etrian Odyssey II[X]
 The First Campaign (Alusq)[X]
 ##SongTitle_VastLands
 Vast Lands Spreading in the North[X]
+##SongTitle_DrawHeroes
+The Wind Doesn't Draw Heroes[X]
 
 ##SourceTitle_EtrianOdyssey5
 Etrian Odyssey V[X]
@@ -31,6 +33,11 @@ Heroic Struggle (Trikki Nikki)[X]
 Crypt of the Necrodancer[X]
 ##SongTitle_DiscoDescent
 Disco Descent (Zappy McCraw)[X]
+
+##SourceTitle_RhythmDoctor
+Rhythm Doctor[X]
+##SongTitle_LuckyBreak
+Lucky Break[X]
 
 ##SourceTitle_Original
 Original Song[X]

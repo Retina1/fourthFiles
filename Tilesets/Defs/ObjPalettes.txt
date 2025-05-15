@@ -4,3 +4,5 @@ Fields1OBJ
 Fields1PAL
 City1OBJ
 City1PAL
+Tavern1OBJ
+Tavern1PAL

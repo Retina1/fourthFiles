@@ -2595,8 +2595,8 @@ Label_01000D1C:
 Revolution_003:
 //  #03 //000   ----------------------------------------
  BYTE   KEYSH   Revolution_key+0
- BYTE   VOICE   100
- BYTE   VOL   54*Revolution_mvl/mxv
+ BYTE   VOICE   30
+ BYTE   VOL   44*Revolution_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   En3  v064
  BYTE   PAN   c_v+0

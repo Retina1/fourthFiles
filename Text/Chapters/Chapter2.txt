@@ -114,7 +114,7 @@ But we can't be too safe.[AN]
 Not with the Belvarus Republic.[AN][Left]
 [...]Right. Well if that's all,[N]
 no time like the present.[AN][FarLeft][Clear][Gore]
-You're tellin' me.[AN][FarRight][Clear][Astarte]
+You're tellin' me.[AN][Right]
 Just say the word.[AN][Left]
 Hedge, move out![A][X]
 
@@ -176,3 +176,7 @@ And if it's life or death,[N]
 I guess it may matter.[AN][MidRight]
 Heh. I win again.[AN][MidLeft]
 [...]Sure?[A][X]
+
+##C2_Ending_1
+[FarLeft][Astarte][Left][Nathan][Right][Benthus][FarRight][Cleone]
+we win[A][X]

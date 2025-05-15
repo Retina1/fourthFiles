@@ -1,5 +1,7 @@
+#include "CityMaps\Blacksmith.event"
 #include "CityMaps\Guildhall.event"
 #include "CityMaps\HirschringSquare.event"
+#include "CityMaps\Tavern.event"
 #include "DungeonMaps\Stratum1\LethalForest1.event"
 #include "DungeonMaps\Stratum1\LethalForest2.event"
 #include "DungeonMaps\Stratum1\LethalForest3.event"

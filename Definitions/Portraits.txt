@@ -82,14 +82,39 @@ AmbroseMug
 DemicoMug
 RoslinMug
 KarlMug
-AydaMug
-BertramMug
+CardamMug
+CalliopeMug
+VictorMug
+WaspMug
+ArsofMug
+MerileeMug
+SeleneMug
+QuinnMug
+WeberMug 93
+ClaireMug 94
+BobbyMug 95
+BenjaminMug 96
+JohannaMug 97
+AydaMug 98
+BertramMug 99
 GersonMug 100
 ArmoryMug 
 ShopMug
 ArenaMug
 SecretShopMug
 MonkMug 105
+MargitteMug
+DamienMug
+JuniperMug
+PolymniaMug
+JimMug
+SonMug
+VictoriaMug
+LaiteuseMug
+LucienMug
+NinaMug
+WitericoMug
+FourfingerMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug

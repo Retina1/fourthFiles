@@ -5,7 +5,7 @@
 Leize[X]
 ##Desc_Leize
 A botanist who seeks to preserve[N]
-a flower with familial ties. Tired.[X]
+a familial flower. She's tired.[X]
 
 //alguien
 ##Name_Wendy
@@ -13,6 +13,13 @@ Wendy[X]
 ##Desc_Wendy
 A sweet and doting Belvarusi farmer.[N]
 Her opulent garden is fed by blood.[X]
+
+//thicc
+##Name_Jim
+Jim[X]
+##Desc_Jim
+A knowledgeable Belvarusi healer[N]
+in search of his missing husband.[X]
 
 //compass by roxas (encircler)
 ##Name_Compass
@@ -41,3 +48,24 @@ Dread Jenny[X]
 ##Desc_DreadJenny
 An ambitious teenager who aspires to be[N]
 a villainous necromancer. ...She's trying.[X]
+
+//hope
+##Name_Quinn
+Quinn[X]
+##Desc_Quinn
+A melancholic farmer with talent for[N]
+dark arts. He strives to be heroic.[X]
+
+//menthol
+##Name_Margitte
+Margitte[X]
+##Desc_Margitte
+A scholar with an interest in evil[N]
+spirits. She's awkward yet joyful.[X]
+
+//21st kingdom
+##Name_Damien
+Damien[X]
+##Desc_Damien
+A caller ashamed of his powers and his[N]
+past. He fights for a better future.[X]

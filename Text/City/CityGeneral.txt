@@ -22,7 +22,12 @@ talk and eventually take on quests.[AN]
 More features will unlock over the[N]
 storyline, so keep exploring![AN]
 By the way, you get three recruits[N]
-this time, so don't forget them![A][X]
+this time, so don't forget them![AN]
+Important note: You can check the[N]
+growths of blue or green units,[AN]
+including anyone you're debating[N]
+recruiting in the Guildhall,[AN]
+by pressing Select.[A][X]
 
 ##HubEndPrompt
 End exploration and[N]

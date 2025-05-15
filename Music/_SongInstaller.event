@@ -58,7 +58,20 @@ SongTable(Song_DiscoDescent,DiscoDescent,1)
 SongTable(Song_UntamedGarden,UntamedGarden,1)
 #include "songs/UntamedGarden.event"
 }
+//0x12
+#define Song_LuckyBreak 0x12
+{
+SongTable(Song_LuckyBreak,LuckyBreak,1)
+#include "songs/LuckyBreak.event"
+}
 
+
+//0x36 - wind doesn't draw heroes
+#define Song_DrawHeroes 0x36
+{
+SongTable(Song_DrawHeroes,DrawHeroes,0)
+#include "songs/DrawHeroes.event"
+}
 
 //0x3e - game over
 
