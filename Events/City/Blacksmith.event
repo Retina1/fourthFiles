@@ -36,6 +36,15 @@ EndEvent
 
 BlacksmithShopBegin:
 //rewrite shop text to be benjamin-y
+CHECK_EVENTID 0x1e
+BNE 0x1 0xc 0x0
+RunTextByVisit(City02_BenjaminIntro,0,0,0,0,0,0,0,0,0,0,0,0,0)
+ENUT 0x1e
+LABEL 0x1
 MakeArmory(Ch2Shop)
 ENUF LocationFlagBlacksmith
+EndEvent
+
+TownBenjaminJohannaTalk:
+RunTextByVisit(0,0,0,0,0,0,0,0,0,0,0,0,0,0)
 EndEvent

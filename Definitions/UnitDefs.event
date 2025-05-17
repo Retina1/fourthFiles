@@ -102,3 +102,7 @@
 #define Nina 0x66
 #define Witerico 0x67
 #define Fourfinger 0x68
+#define Rodney 0x69
+#define Melody 0x6A
+#define Wund 0x6B
+#define Peabody 0x6C

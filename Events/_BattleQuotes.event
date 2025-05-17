@@ -8,6 +8,7 @@ POP
 
 ALIGN 4
 BattleQuoteTable:
+//chapter 1
 SpecifiedBattleConvo(Nathan,BossCleone,Chapter1,0x13,C1NathanCleoneBattle)
 SpecifiedBattleConvo(Nathan,BossBenthus,Chapter1,0x14,C1NathanBenthusBattle)
 SpecifiedBattleConvo(Astarte,BossCleone,Chapter1,0x15,C1AstarteCleoneBattle)
@@ -17,4 +18,5 @@ SpecifiedBattleConvo(Gore,BossBenthus,Chapter1,0x18,C1GoreBenthusBattle)
 UnspecifiedBattleConvo(Nathan,Chapter1,0x10,C1NathanBattle)
 UnspecifiedBattleConvo(Astarte,Chapter1,0x11,C1AstarteBattle)
 UnspecifiedBattleConvo(Gore,Chapter1,0x12,C1GoreBattle)
+//nothing for ch 2, unless i give astarte and benthus strike quotes
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 

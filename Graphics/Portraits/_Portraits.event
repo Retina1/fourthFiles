@@ -49,6 +49,18 @@ PuzonDMP:
 setMugEntry(PuzonMug,PuzonDMP,2,5,2,3)
 
 ALIGN 4
+//epicer
+PeabodyDMP:
+#incbin "dmps/epicerPeabody.dmp"
+setMugEntry(PeabodyMug,PeabodyDMP,5,5,5,3)
+
+ALIGN 4
+//abzinthian
+RodneyDMP:
+#incbin "dmps/abzinthianRodney.dmp"
+setMugEntry(RodneyMug,RodneyDMP,2,5,2,3)
+
+ALIGN 4
 //hannah
 WavesDMP:
 #incbin "dmps/hannahWaves.dmp"
@@ -173,6 +185,10 @@ WendyDMP:
 #incbin "dmps/alguienWendy.dmp"
 setMugEntryExtend(WendyMug,WendyDMP,4,6,4,4, 0,1, 0,3)
 ALIGN 4
+WundDMP:
+#incbin "dmps/alguienWund.dmp"
+setMugEntryExtend(WundMug,WundDMP,3,3,3,1, 3,(-2), 5,(-2))
+ALIGN 4
 WaspDMP:
 #incbin "dmps/alguienWasp.dmp"
 setMugEntry(WaspMug,WaspDMP,3,5,3,3)
@@ -230,6 +246,10 @@ ALIGN 4
 PallasDMP:
 #incbin "dmps/rwPallas.dmp"
 setMugEntry(PallasMug,PallasDMP,3,5,3,3)
+ALIGN 4
+FourfingerDMP:
+#incbin "dmps/rwFourfinger.dmp"
+setMugEntry(FourfingerMug,FourfingerDMP,3,6,3,4)
 
 ALIGN 4
 //scraiza
@@ -264,7 +284,7 @@ SharonDMP:
 setMugEntry(SharonMug,SharonDMP,4,6,4,4)
 
 ALIGN 4
-//john
+//john tezuka
 AmosDMP:
 #incbin "dmps/johnAmos.dmp"
 setMugEntry(AmosMug,AmosDMP,5,5,5,3)

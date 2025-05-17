@@ -2,7 +2,7 @@
 ##Name_Vulnerary
 Vulnerary[X]
 ##Desc_Vulnerary ^
-A traditional potion of healing.[N]
+A sack of simple healing herbs.[N]
 Restores 15 HP to the user.[X]
 ##Name_Elixir
 Elixir[X]

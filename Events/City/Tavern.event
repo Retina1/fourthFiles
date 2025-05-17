@@ -39,6 +39,14 @@ EndEvent
 //figure o
 
 TavernQuestBegin:
-//do later
+CHECK_EVENTID 0x1f
+BNE 0x1 0xc 0x0
+RunTextByVisit(City02_BobbyIntro,0,0,0,0,0,0,0,0,0,0,0,0,0)
+ENUT 0x1f
+LABEL 0x1
 ENUF LocationFlagTavern
+EndEvent
+
+TownBertramTalk:
+RunTextByVisit(City02_Bertram,0,0,0,0,0,0,0,0,0,0,0,0,0)
 EndEvent

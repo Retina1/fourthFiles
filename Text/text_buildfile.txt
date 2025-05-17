@@ -38,6 +38,7 @@ between stats and growths.[X]
 #include "Chapters/Chapter2.txt"
 #include "Chapters/Chapter3.txt"
 
+#include "City/CityChapter02.txt"
 #include "City/CityGeneral.txt"
 #include "City/CityGuild_Swordfighters.txt"
 

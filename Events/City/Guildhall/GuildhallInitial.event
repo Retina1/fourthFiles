@@ -43,6 +43,9 @@ UNIT
 Recruit_Anjelica:
 UNIT Anjelica 0x0 0x1 Level(3,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
 UNIT
+Recruit_Rodney:
+UNIT Rodney 0x0 0x1 Level(1,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
+UNIT
 
 Recruit_Cassandra:
 UNIT Cassandra 0x0 0x1 Level(3,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Wand] NoAI
@@ -116,6 +119,9 @@ EndEvent
 Anjelica_RecruitEvent:
 GuildRecruit(Anjelica,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
 EndEvent
+Rodney_RecruitEvent:
+GuildRecruit(Rodney,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+EndEvent
 
 //sch
 Cassandra_RecruitEvent:
@@ -181,6 +187,7 @@ FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 GuildLoad(Hallie,Recruit_Hallie,0x1)
 GuildLoad(Anjelica,Recruit_Anjelica,0x2)
+GuildLoad(Rodney,Recruit_Rodney,0x3)
 FADU 10
 ENDA
 

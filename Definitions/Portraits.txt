@@ -115,6 +115,10 @@ LucienMug
 NinaMug
 WitericoMug
 FourfingerMug
+RodneyMug
+MelodyMug
+WundMug
+PeabodyMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug

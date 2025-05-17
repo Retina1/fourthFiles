@@ -48,8 +48,13 @@ CharacterBasedEvents:
 //the funny
 CharacterEvent(LocationFlagGuildhall,HallGuildmasterTalk,Nathan,BossGuildmaster)
 
-//outside
+//outside/position independent
 CharacterEvent(0x8,TownGuildmasterTalk,Nathan,BossGuildmaster)
+CharacterEvent(0x9,TownBertramTalk,Nathan,Bertram)
+CharacterEvent(0xa,TownAstarteTalk,Nathan,Astarte)
+CharacterEvent(0xb,TownGoreTalk,Nathan,Gore)
+CharacterEvent(0xd,TownCleoneTalk,Nathan,Cleone)
+CharacterEvent(0xe,TownBenthusTalk,Nathan,Benthus)
 //yeah i'm not making this take up space here
 #include "Guildhall/GuildCharacterEventStorage.event"
 END_MAIN
@@ -202,7 +207,23 @@ EndEvent
 #include "Tavern.event"
 
 TownGuildmasterTalk:
-RunTextByVisit(0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Guildmaster,0,0,0,0,0,0,0,0,0,0,0,0,0)
+EndEvent
+
+TownAstarteTalk:
+RunTextByVisit(City02_Astarte,0,0,0,0,0,0,0,0,0,0,0,0,0)
+EndEvent
+
+TownGoreTalk:
+RunTextByVisit(City02_Gore,0,0,0,0,0,0,0,0,0,0,0,0,0)
+EndEvent
+
+TownCleoneTalk:
+RunTextByVisit(City02_Cleone,0,0,0,0,0,0,0,0,0,0,0,0,0)
+EndEvent
+
+TownBenthusTalk:
+RunTextByVisit(City02_Benthus,0,0,0,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 
 SquareMoveToEnd:

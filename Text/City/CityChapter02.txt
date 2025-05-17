@@ -1,3 +1,23 @@
+##City02_Astarte
+[MidLeft][Nathan][MidRight][Astarte]
+filler[...][A][X]
+
+##City02_Gore
+[MidLeft][Nathan][MidRight][Gore]
+filler[...][A][X]
+
+##City02_Cleone
+[MidLeft][Nathan][MidRight][Cleone]
+filler[...][A][X]
+
+##City02_Benthus
+[MidLeft][Nathan][MidRight][Benthus]
+filler[...][A][X]
+
+##City02_Guildmaster
+[MidLeft][Nathan][MidRight][Guildmaster]
+filler[...][A][X]
+
 ##City02_BenjaminIntro
 [MidLeft][Nathan][MidRight][Benjamin]
 'aven't seen you here.[N]
@@ -19,7 +39,7 @@ joy, Johanna.[A] She helps[N]
 Lil' darling, she is.[AN]
 Anyways, stop by whenever[N]
 you need some supplies.[AN]
-Not always cheap, but they'll[N]
+Not always cheap, but it'll[N]
 always be reliable.[AN]
 That's my promise.[AN]
 I'll also be gettin' in more[N]
@@ -36,7 +56,8 @@ you somethin' good to work with.[AN]
 Bring it over and I'll try and[N]
 get you something nice outta it.[AN][MidLeft]
 Sounds wonderful.[N]
-Thank you![A][X]
+Thank you![AN][Right]
+On that note[...][A][X]
 
 ##City02_BobbyIntro
 [MidLeft][Nathan][MidRight][Bobby]
@@ -57,3 +78,14 @@ Then, you can get into one of[N]
 the best parts of adventurin'.[AN]
 For now, though. Relax, and[N]
 enjoy the atmosphere.[A][X]
+
+##City02_Bertram
+[MidLeft][Nathan][MidRight][Bertram]
+[...]New blood.[AN][MidLeft]
+W-Wha-[AN][MidRight]
+Hmph. I didn't say bark, dog.[AN]
+Just observin'. [...]See yourself[N]
+off now, little man.[AN]
+This's my corner of Bobby's.[N]
+Not yours.[AN][MidLeft]
+[...][A][X]

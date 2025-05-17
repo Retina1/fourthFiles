@@ -125,3 +125,9 @@ not within other labels.[X]
 ##ErrorHandlerText
 If you see this, I screwed[N]
 up the eventing. Tell me![A][X]
+
+
+##City_NoQuests
+[MidLeft][Nathan][MidRight][Bobby]
+Nothin' for you today.[N]
+Take a load off, Nathan.[A][X]

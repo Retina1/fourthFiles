@@ -13,6 +13,20 @@ Saoirse[X]
 A cheerful Asketan who unleashes their[N]
 sadism in battle. She's a bit awkward.[X]
 
+//alguien
+##Name_Wund
+Wund[X]
+##Desc_Wund
+A former innkeep who lost everything and[N]
+had to take up adventuring. She's timid.[X]
+
+//epicer
+##Name_Peabody
+Peabody[X]
+##Desc_Peabody
+An evasive man with a professional[N]
+front. He's truly unskilled and naive.[X]
+
 //misha
 ##Name_Heri
 Heri[X]

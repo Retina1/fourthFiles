@@ -40,3 +40,10 @@ Patrice[X]
 ##Desc_Patrice
 A legendary sky racer who found herself[N]
 in debt. Wants her former rival dead.[X]
+
+//scepti
+##Name_Melody
+Melody[X]
+##Desc_Melody
+A high-energy Asketan who works as a[N]
+guide. She's not good with weapons.[X]
