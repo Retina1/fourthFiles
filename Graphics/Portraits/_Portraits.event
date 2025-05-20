@@ -17,6 +17,16 @@ POP
 #include "_ClassCards.event"
 
 ALIGN 4
+//retina
+AstarteDMP:
+#incbin "dmps/retinaAstarte.dmp"
+setMugEntry(AstarteMug,AstarteDMP,3,5,3,3)
+ALIGN 4
+NathanDMP:
+#incbin "dmps/retinaNathan.dmp"
+setMugEntry(NathanMug,NathanDMP,3,5,3,3)
+
+ALIGN 4
 //slatergenerics
 GenericLandsknechtDMP:
 #incbin "dmps/slaterGenericLandsknecht.dmp"
@@ -47,6 +57,18 @@ ALIGN 4
 PuzonDMP:
 #incbin "dmps/Puzon.dmp"
 setMugEntry(PuzonMug,PuzonDMP,2,5,2,3)
+
+ALIGN 4
+//shinzen
+MyloDMP:
+#incbin "dmps/shinzenMylo.dmp"
+setMugEntry(MyloMug,MyloDMP,4,6,4,4)
+
+ALIGN 4
+//grotto
+NinaDMP:
+#incbin "dmps/grottoNina.dmp"
+setMugEntry(NinaMug,NinaDMP,2,6,3,4)
 
 ALIGN 4
 //epicer
@@ -96,12 +118,20 @@ ALIGN 4
 DamienDMP:
 #incbin "dmps/kingdomDamien.dmp"
 setMugEntry(DamienMug,DamienDMP,3,5,3,3)
+ALIGN 4
+GamonDMP:
+#incbin "dmps/kingdomGamon.dmp"
+setMugEntry(GamonMug,GamonDMP,3,4,3,2)
 
 ALIGN 4
 //menthol
 MargitteDMP:
 #incbin "dmps/mentholMargitte.dmp"
 setMugEntry(MargitteMug,MargitteDMP,2,6,4,4)
+ALIGN 4
+ShassoDMP:
+#incbin "dmps/mentholShasso.dmp"
+setMugEntry(ShassoMug,ShassoDMP,2,5,3,3)
 
 ALIGN 4
 //grns
@@ -381,12 +411,6 @@ ALIGN 4
 NatsukiDMP:
 #incbin "dmps/lumiNatsuki.dmp"
 setMugEntryExtend(NatsukiMug,NatsukiDMP,3,5,3,3, 5,(-2), 7,(-2))
-
-ALIGN 4
-//retina
-AstarteDMP:
-#incbin "dmps/retinaAstarte.dmp"
-setMugEntry(AstarteMug,AstarteDMP,3,5,3,3)
 
 ALIGN 4
 //roxas

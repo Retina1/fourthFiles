@@ -45,6 +45,9 @@ MakeArmory(Ch2Shop)
 ENUF LocationFlagBlacksmith
 EndEvent
 
+//redundant now
+/*
 TownBenjaminJohannaTalk:
 RunTextByVisit(0,0,0,0,0,0,0,0,0,0,0,0,0,0)
 EndEvent
+*/

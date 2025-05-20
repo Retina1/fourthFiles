@@ -1,3 +1,4 @@
+#define MonsterBoss 0xDF
 #define First 0xE0
 #define Second 0xE1
 #define NPCFourth 0xE2

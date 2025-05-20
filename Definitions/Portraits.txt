@@ -119,6 +119,9 @@ RodneyMug
 MelodyMug
 WundMug
 PeabodyMug
+ShassoMug
+MyloMug
+GamonMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug

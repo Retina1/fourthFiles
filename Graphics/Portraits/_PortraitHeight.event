@@ -63,5 +63,6 @@ PortraitUpshift(CherrylMug)
 PortraitUpshift(MargitteMug)
 PortraitUpshift(WaspMug)
 PortraitUpshift(FourfingerMug)
+PortraitUpshift(MyloMug)
 //shift plus exceed doesn't work nice
 //PortraitUpshift(WendyMug)

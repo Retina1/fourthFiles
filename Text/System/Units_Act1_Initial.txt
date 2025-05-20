@@ -126,6 +126,13 @@ Rodney[X]
 A farmer from modest means with a love[N]
 for heroic tales. He's brazen but kind.[X]
 
+//kingdom
+##Name_Gamon
+Gamon[X]
+##Desc_Gamon
+A Belvarusi deserter and ex-mercenary.[N]
+He's left retirement seeking purpose.[X]
+
 
 //cassandra by zappy (scholar)
 ##Name_Cassandra

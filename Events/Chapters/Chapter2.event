@@ -83,19 +83,21 @@ UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,0) [0,8] 0x0 0x0 0x0 0x0 [Tackle] At
 UNIT MonsterGeneric Wight 0x0 Level(2,Enemy,1) [9,7] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
 UNIT MonsterGeneric Wight 0x0 Level(2,Enemy,1) [1,4] 0x0 0x0 0x0 0x0 [Pike] NoAI
 UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [Shortbow] DelayedAI
-UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [Shortbow] DelayedAI
+//UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [Shortbow] DelayedAI
 UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [10,11] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
 UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [2,13] 0x0 0x0 0x0 0x0 [SharpBite] DelayedAI
 UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,0) [5,12] 0x0 0x0 0x0 0x0 [GreatTalon] AttackInRangeAI
 UNIT MonsterGeneric BowWight 0x0 Level(3,Enemy,1) [0,0] 0x0 0x0 0x0 0x0 [Shortbow] NeverMoveAI
+UNIT MonsterBoss Wightsworn 0x0 Level(3,Enemy,1) [14,13] 0x0 0x0 0x0 0x0 [HandSpear] DelayedAI
 UNIT
 
 ALIGN 4
 
 BeginningScene:
 //intro to rat
-CleanTextNoMap(0x0,C2_Opening_1)
+SetBackground(0x0); TEXTSTART; TEXTSHOW C2_Opening_1; TEXTEND; MUSC Song_Salem; TEXTCONT; TEXTEND; FADI 16
 //send off on task
+MUSC 0x0
 LOMA Guildhall
 LOAD1 0x1 CutsceneParty; ENUN
 CAM1 [0,8]
@@ -107,6 +109,8 @@ FADI 10
 CLEA 0; CLEN 0
 LOMA Chapter2
 LOAD1 0x1 EnemyUnits
+SetUnitStatline(MonsterBoss,28,10,5,10,8,1,7,3)
+SetUnitWEXP(MonsterBoss,71,71,71,0,0)
 ENUN
 CAM1 [0,14]
 FADU 10

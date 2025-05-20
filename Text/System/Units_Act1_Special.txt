@@ -74,7 +74,15 @@ authorities. She's a bit aloof.[X]
 ##Name_Arsof
 Arsof[X]
 ##Desc_Arsof
-PLACEHOLDER[X]
+A pious and aged brawler from Asketa.[N]
+He's calm except against reptilians.[X]
+
+//mylo
+##Name_Mylo
+Mylo[X]
+##Desc_Mylo
+An Asketan scrapper who found himself[N]
+in underground scraps. He's resourceful.[X]
 
 //greatdoot
 ##Name_Philmore

@@ -64,6 +64,18 @@ SongTable(Song_UntamedGarden,UntamedGarden,1)
 SongTable(Song_LuckyBreak,LuckyBreak,1)
 #include "songs/LuckyBreak.event"
 }
+//0x13
+#define Song_InnocenceGlitched 0x13
+{
+SongTable(Song_InnocenceGlitched,InnocenceGlitched,1)
+#include "songs/InnocenceGlitched.event"
+}
+//0x13
+#define Song_Salem 0x14
+{
+SongTable(Song_Salem,Salem,0)
+#include "songs/Salem.event"
+}
 
 
 //0x36 - wind doesn't draw heroes

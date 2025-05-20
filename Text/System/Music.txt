@@ -29,6 +29,11 @@ Live a Live[X]
 ##SongTitle_HeroicStruggle
 Heroic Struggle (Trikki Nikki)[X]
 
+##SourceTitle_DrawnToLife2 ^
+Drawn to Life: The Next Chapter[X]
+##SongTitle_Salem
+Salem (Trikki Nikki)[X]
+
 ##SourceTitle_Necrodancer
 Crypt of the Necrodancer[X]
 ##SongTitle_DiscoDescent
@@ -38,6 +43,11 @@ Disco Descent (Zappy McCraw)[X]
 Rhythm Doctor[X]
 ##SongTitle_LuckyBreak
 Lucky Break[X]
+
+##SourceTitle_Antibirth ^
+The Binding of Isaac: Antibirth[X]
+##SongTitle_InnocenceGlitched
+Innocence Glitched[X]
 
 ##SourceTitle_Original
 Original Song[X]

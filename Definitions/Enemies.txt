@@ -1,4 +1,5 @@
-First 0xe0
+MonsterBoss 0xdf
+First
 Second
 NPCFourth
 Weber

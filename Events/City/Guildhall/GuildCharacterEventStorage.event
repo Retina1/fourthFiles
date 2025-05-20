@@ -18,6 +18,7 @@ GuildRecruitEvent(Juniper_RecruitEvent,Juniper)
 GuildRecruitEvent(Hallie_RecruitEvent,Hallie)
 GuildRecruitEvent(Anjelica_RecruitEvent,Anjelica)
 GuildRecruitEvent(Rodney_RecruitEvent,Rodney)
+GuildRecruitEvent(Gamon_RecruitEvent,Gamon)
 //scholars
 GuildRecruitEvent(Cassandra_RecruitEvent,Cassandra)
 GuildRecruitEvent(Waves_RecruitEvent,Waves)

@@ -20,6 +20,13 @@ Merilee[X]
 A solemn woman and former Belvarusi[N]
 knight. She's efficient and distant.[X]
 
+//menthol
+##Name_Shasso
+Shasso[X]
+##Desc_Shasso
+A smug Asketan rider with something of[N]
+a shady past. He loves a good rival.[X]
+
 //ru
 ##Name_June
 June[X]

@@ -273,12 +273,12 @@ the pasts of your Guild.[X]
 
 # 0x089A
 Here's what we've got.[A][0x02][NL]
-Lemme know what you need.[.][NL]
+Lemme know what you need.[NL]
 [Buy/Sell][X]
 
 # 0x089B
-Hi, Mister Nathan![.][A][0x02][NL]
-Have a look, please![.][NL]
+Hi, Mister Nathan![A][0x02][NL]
+Have a look, please![NL]
 [Buy/Sell][X]
 
 # 0x089C
@@ -303,7 +303,7 @@ Need anything else?[NL]
 [0x1B][X]
 
 # 0x08A1
-Anything else, please?[.][NL]
+Anything else, please?[NL]
 [0x1B][X]
 
 # 0x08A2
@@ -314,10 +314,10 @@ Is there anything else you need?[NL]
 Sure. What do you need?[X]
 
 # 0x08A4
-I'll get anything you need![.][X]
+I'll get anything you need![X]
 
 # 0x08A5
-What do you need?[.][X]
+What do you need?[X]
 
 # 0x08A6
 Anything more?[X]
@@ -326,25 +326,25 @@ Anything more?[X]
 Is that all?[X]
 
 # 0x08A8
-Any other requests?[.][X]
+Any other requests?[X]
 
 # 0x08A9
-Sure, I'll buy.[.][X]
+Sure, I'll buy.[X]
 
 # 0x08AA
-Ooh! That's pretty![.][X]
+Ooh! That's pretty![X]
 
 # 0x08AB
 What would you sell?[X]
 
 # 0x08AC
-You've got nothing, lad.[.][A][X]
+You've got nothing, lad.[A][X]
 
 # 0x08AD
-You don't have anything, silly![.][A][X]
+You don't have anything, silly![A][X]
 
 # 0x08AE
-You've got nothing to sell![.][A][X]
+You've got nothing to sell![A][X]
 
 # 0x08AF
 You tryin' to bankrupt me?[X]
@@ -356,7 +356,7 @@ Wait, you have more?[X]
 What else are you selling?[X]
 
 # 0x08B2
-Sorry. I can't give this away.[.][A][X]
+Sorry. I can't give this away.[A][X]
 
 # 0x08B3
 Sorry, mister. Nothing's free.[A][X]
@@ -365,53 +365,53 @@ Sorry, mister. Nothing's free.[A][X]
 Heh! Not enough money![A][X]
 
 # 0x08B5
-Is [.][G] gold a[N]
+Is [G] gold a[N]
 fair price?[Yes][X]
 
 # 0x08B6
-That's... [.][G] gold.[NL]
+That's... [G] gold.[NL]
 ...I think.[Yes][X]
 
 # 0x08B7
 That is worth [G] gold.[NL]
-Is that acceptable?[.][Yes][X]
+Is that acceptable?[Yes][X]
 
 # 0x08B8
-Come back, lad.[A][X]
+Come back alive, please.[A][X]
 
 # 0x08B9
 Come back soon![A][X]
 
 # 0x08BA
-Hee hee... Buh-bye![.][A][X]
+Hee hee... Buh-bye![A][X]
 
 # 0x08BB
-Not buyin' that. Sorry.[.][A][X]
+Not buyin' that. Sorry.[A][X]
 
 # 0x08BC
-That's too nice to buy![.][A][X]
+That's too nice to buy![A][X]
 
 # 0x08BD
-Hee hee... Wait a minute.[.][NL]
-I can't buy that![.][A][X]
+Hee hee... Wait a minute.[NL]
+I can't buy that![A][X]
 
 # 0x08BE
-Your hands look full.[.][A][0x02][NL]
-Send this to storage?[.][NL]
+Your hands look full.[A][0x02][NL]
+Send this to storage?[NL]
 [Yes][X]
 
 # 0x08BF
 You've got a lot, mister![A][0x02][NL]
-Send this to storage?[.][NL]
+Send this to storage?[NL]
 [Yes][X]
 
 # 0x08C0
 Your hands are full.[A][0x02][NL]
-Send it to storage?[.][NL]
+Send it to storage?[NL]
 [Yes][X]
 
 # 0x08C1
-Your hands look full.[.][A][X]
+Your hands look full.[A][X]
 
 # 0x08C2
 You've got a lot, mister![A][X]
@@ -423,17 +423,17 @@ Your hands are full.[A][X]
 It'll arrive safe and sound.[A][X]
 
 # 0x08C5
-I'll wrap that up for you![.][A][X]
+I'll wrap that up for you![A][X]
 
 # 0x08C6
-Heh heh... I'll send it then.[.][A][X]
+Heh heh... I'll send it then.[A][X]
 
 # 0x08C7
 No? Fair enough.[NL]
-Maybe empty your hands.[.][A][X]
+Maybe empty your hands.[A][X]
 
 # 0x08C8
-No? Alrighty, mister.[.][NL]
+No? Alrighty, mister.[NL]
 Maybe empty your hands.[A][X]
 
 # 0x08C9
@@ -446,8 +446,8 @@ You've got too much.[NL]
 Clean your storage![A][X]
 
 # 0x08CE
-Wait, you have how much?[.][NL]
-Please, clean it up![.][A][X]
+Wait, you have HOW much?[NL]
+Please, clean it up![A][X]
 
 # 0x08CF
 Heh... Your storage is full,[NL]

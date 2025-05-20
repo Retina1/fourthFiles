@@ -106,3 +106,6 @@
 #define Melody 0x6A
 #define Wund 0x6B
 #define Peabody 0x6C
+#define Shasso 0x6D
+#define Mylo 0x6E
+#define Gamon 0x6F

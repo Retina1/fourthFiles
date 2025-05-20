@@ -8,6 +8,10 @@
 	ENDA
 	POP
 	
+#define SetUnitStatline(unit,mhp,str,mag,skl,spd,luk,def,res) "SetUnitStatus(unit,MaxHP,mhp);SetUnitStatus(unit,CurrentHP,mhp);SetUnitStatus(unit,Strength,str);SetUnitStatus(unit,Magic,mag);SetUnitStatus(unit,Skill,skl);SetUnitStatus(unit,Speed,spd);SetUnitStatus(unit,LuckStat,luk);SetUnitStatus(unit,Defence,def);SetUnitStatus(unit,Resistance,res)"
+#define SetUnitWEXP(unit,swd,lnc,axe,bow,stf) "SetUnitStatus(unit,SwordExp,swd);SetUnitStatus(unit,LanceExp,lnc);SetUnitStatus(unit,AxeExp,axe);SetUnitStatus(unit,BowExp,bow);SetUnitStatus(unit,StaffExp,stf)"
+
+	
 #define AreaEvent(eventID,EventPointer,corner1x,corner1y,corner2x,corner2y)   "AREA eventID EventPointer [corner1x,corner1y] [corner2x,corner2y]" 
 #define AreaEvent(flag,label,x,y) "AreaEvent(flag,label,x,y,x,y)"
 	
@@ -86,6 +90,9 @@ EndEvent
 }
 {
 #include "Chapters/Chapter2.event"
+}
+{
+#include "Chapters/Chapter3.event"
 }
 //special city recruit possibilities
 //sfl swordmaster
