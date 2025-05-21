@@ -13,6 +13,10 @@ The First Campaign (Alusq)[X]
 Vast Lands Spreading in the North[X]
 ##SongTitle_DrawHeroes
 The Wind Doesn't Draw Heroes[X]
+##SongTitle_EverScarletForest
+Ever-Scarlet Forest[X]
+##SongTitle_CherryTreesAndWings
+Cherry Trees and Wings[X]
 
 ##SourceTitle_EtrianOdyssey5
 Etrian Odyssey V[X]
@@ -33,6 +37,8 @@ Heroic Struggle (Trikki Nikki)[X]
 Drawn to Life: The Next Chapter[X]
 ##SongTitle_Salem
 Salem (Trikki Nikki)[X]
+##SongTitle_OohWilfre
+Ooh Wilfre! (ArcherBias)[X]
 
 ##SourceTitle_Necrodancer
 Crypt of the Necrodancer[X]
@@ -48,6 +54,12 @@ Lucky Break[X]
 The Binding of Isaac: Antibirth[X]
 ##SongTitle_InnocenceGlitched
 Innocence Glitched[X]
+
+##SourceTitle_IntoTheWoods
+Into the Woods[X]
+##SongTitle_NoOneIsAlone
+No One is Alone[X]
+
 
 ##SourceTitle_Original
 Original Song[X]

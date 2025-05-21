@@ -108,7 +108,7 @@
    <tile gid="471"/>
    <tile gid="502"/>
    <tile gid="616"/>
-   <tile gid="420"/>
+   <tile gid="584"/>
    <tile gid="548"/>
    <tile gid="769"/>
    <tile gid="738"/>
@@ -127,9 +127,9 @@
    <tile gid="500"/>
    <tile gid="531"/>
    <tile gid="499"/>
+   <tile gid="420"/>
    <tile gid="584"/>
-   <tile gid="194"/>
-   <tile gid="666"/>
+   <tile gid="616"/>
    <tile gid="500"/>
    <tile gid="499"/>
    <tile gid="769"/>

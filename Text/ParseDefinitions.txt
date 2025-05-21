@@ -64,6 +64,9 @@
 [......v.] = [FarRight]
 [.......v] = [FarFarRight]
 
+[OpenQuote] = [0x93]
+[CloseQuote] = [0x94]
+
 [CurrentPortrait] = [0xFF][0xFF]
 [LoadCurrent] = [LoadFace][0xFF][0xFF]
 [LoadPlayer] = [LoadFace][0xE0][0xE0]
@@ -88,3 +91,7 @@
 [Bertram] = [LoadFace][0x63][0x1]
 [Gerson] = [LoadFace][0x64][0x1]
 [Monk] = [LoadFace][0x69][0x1]
+[Rana] = [LoadFace][0x6a][0x1]
+[Harla] = [LoadFace][0x6b][0x1]
+[Egil] = [LoadFace][0x6c][0x1]
+[Xavens] = [LoadFace][0x6d][0x1]

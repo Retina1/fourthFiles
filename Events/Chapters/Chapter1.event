@@ -147,7 +147,9 @@ CLEAN
 EVBIT_MODIFY 0
 CALL PremonitionScene
 //opening text, walk to GM
+MUSC Song_OohWilfre
 CleanTextNoMap(0x0,C1_Opening_1)
+MUSC 0
 LOMA Guildhall
 LOAD1 0x1 CutsceneParty; ENUN
 FADU 10

@@ -70,11 +70,35 @@ SongTable(Song_LuckyBreak,LuckyBreak,1)
 SongTable(Song_InnocenceGlitched,InnocenceGlitched,1)
 #include "songs/InnocenceGlitched.event"
 }
-//0x13
+//0x14
 #define Song_Salem 0x14
 {
 SongTable(Song_Salem,Salem,0)
 #include "songs/Salem.event"
+}
+//0x15
+#define Song_OohWilfre 0x15
+{
+SongTable(Song_OohWilfre,OohWilfre,0)
+#include "songs/OohWilfre.event"
+}
+//0x16
+#define Song_NoOneIsAlone 0x16
+{
+SongTable(Song_NoOneIsAlone,NoOneIsAlone,1)
+#include "songs/NoOneIsAlone.event"
+}
+//0x16
+#define Song_EverScarletForest 0x17
+{
+SongTable(Song_EverScarletForest,EverScarletForest,1)
+#include "songs/EverScarletForest.event"
+}
+//0x16
+#define Song_CherryTreesAndWings 0x18
+{
+SongTable(Song_CherryTreesAndWings,CherryTreesAndWings,0)
+#include "songs/CherryTreesAndWings.event"
 }
 
 

@@ -144,6 +144,10 @@ ALIGN 4
 CardamDMP:
 #incbin "dmps/trybelCardam.dmp"
 setMugEntry(CardamMug,CardamDMP,4,5,4,3)
+ALIGN 4
+JuniperDMP:
+#incbin "dmps/trybelJuniper.dmp"
+setMugEntry(JuniperMug,JuniperDMP,2,5,3,3)
 
 ALIGN 4
 //sarkan
@@ -160,6 +164,10 @@ ALIGN 4
 DemicoDMP:
 #incbin "dmps/applanthropistDemico.dmp"
 setMugEntry(DemicoMug,DemicoDMP,3,5,3,3)
+ALIGN 4
+FrostDMP:
+#incbin "dmps/applanthropistFrost.dmp"
+setMugEntryExtend(FrostMug,FrostDMP,3,5,3,3, 10, 2, 0,0)
 
 ALIGN 4
 //misha

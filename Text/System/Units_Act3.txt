@@ -6,6 +6,13 @@ Moomfie[X]
 An extremely wealthy young woman with[N]
 a simple and whimsical outlook on life.[X]
 
+//applanthropist
+##Name_Frost
+Frost[X]
+##Desc_Frost
+An ex-retainer to an Asketan lineage.[N]
+She's stoic in the face of her past.[X]
+
 // secret lock - automata unit: artifice
 
 //subtractron by retina (artifice)

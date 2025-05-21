@@ -103,7 +103,13 @@ ShopMug
 ArenaMug
 SecretShopMug
 MonkMug 105
-MargitteMug
+RanaMug
+HarlaMug
+EgilMug
+XavensMug
+FirstMug
+SecondMug
+MargitteMug 112
 DamienMug
 JuniperMug
 PolymniaMug
@@ -122,6 +128,7 @@ PeabodyMug
 ShassoMug
 MyloMug
 GamonMug
+FrostMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug

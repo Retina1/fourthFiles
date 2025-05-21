@@ -91,6 +91,10 @@ UNIT MonsterGeneric BowWight 0x0 Level(3,Enemy,1) [0,0] 0x0 0x0 0x0 0x0 [Shortbo
 UNIT MonsterBoss Wightsworn 0x0 Level(3,Enemy,1) [14,13] 0x0 0x0 0x0 0x0 [HandSpear] DelayedAI
 UNIT
 
+CutsceneXavens:
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [7,12] 0x0 0x0 0x0 0x0 [Kerykeion] NoAI
+UNIT
+
 ALIGN 4
 
 BeginningScene:
@@ -103,8 +107,10 @@ LOAD1 0x1 CutsceneParty; ENUN
 CAM1 [0,8]
 FADU 10
 STAL 40
+MUSC Song_OohWilfre
 Text(C2_Opening_2)
 STAL 10
+MUSC 0
 FADI 10
 CLEA 0; CLEN 0
 LOMA Chapter2
@@ -135,6 +141,21 @@ Text(C2_DoorHint)
 EndEvent
 
 EndingScene:
+MUSC 0x0
+CleanTextNoMap(0x3,C2_Ending_1)
+REMA
+CLEAN
+CLEA 0; CLEE 0
+LOAD1 0x1 CutsceneXavens; ENUN
+CAM1 Xavens
+FADU 10
+MUSC Song_CherryTreesAndWings
+Text(C2_Ending_2)
+STAL 10
+WARPOUT [7,12]
+SilentKillUnit(Xavens)
+ENDWARP
+STAL 5
 ENUT Chapter2DoneFlag
 MoveToChapter(HirschringSquare)
 ENDA
