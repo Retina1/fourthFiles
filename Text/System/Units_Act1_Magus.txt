@@ -56,6 +56,13 @@ Levia[X]
 An excitable seeker from a sheltered[N]
 upbringing. She's a bit overconfident.[X]
 
+//matt
+##Name_Vasily
+Vasily[X]
+##Desc_Vasily
+A Belvarusi seeker cursed to be blind[N]
+to magic. He's proud of his wolf pelt.[X]
+
 //Saewynn by hiraya
 ##Name_Saewynn
 Saewynn[X]

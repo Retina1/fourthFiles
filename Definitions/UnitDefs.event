@@ -110,3 +110,7 @@
 #define Mylo 0x6E
 #define Gamon 0x6F
 #define Frost 0x70
+#define Ghari 0x71
+#define Vasily 0x72
+#define Anastas 0x73
+#define Alva 0x74

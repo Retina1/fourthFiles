@@ -129,6 +129,10 @@ ShassoMug
 MyloMug
 GamonMug
 FrostMug
+GhariMug
+VasilyMug
+AnastasMug
+AlvaMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug

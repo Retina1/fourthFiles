@@ -13,6 +13,13 @@ Frost[X]
 An ex-retainer to an Asketan lineage.[N]
 She's stoic in the face of her past.[X]
 
+//guard
+##Name_Alva
+Alva[X]
+##Desc_Alva
+A scion of an Asketan house looking for[N]
+action. She respects fellow warriors.[X]
+
 // secret lock - automata unit: artifice
 
 //subtractron by retina (artifice)

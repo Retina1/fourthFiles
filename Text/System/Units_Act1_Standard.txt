@@ -21,6 +21,13 @@ Calliope[X]
 A myrmidon from a failed supersoldier[N]
 project. She's haunted by unknown past.[X]
 
+//701
+##Name_Ghari
+Ghari[X]
+##Desc_Ghari
+A wandering warrior poet who's very[N]
+defensive of his honor. Craves respect.[X]
+
 //striker
 ##Name_Aizen
 Aizen[X]

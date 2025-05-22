@@ -54,3 +54,10 @@ Melody[X]
 ##Desc_Melody
 A high-energy Asketan who works as a[N]
 guide. She's not good with weapons.[X]
+
+//menthol
+##Name_Anastas
+Anastas[X]
+##Desc_Anastas
+A Belvarusi merc from a border village.[N]
+He's underhanded yet inspirational.[X]
