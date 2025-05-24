@@ -133,11 +133,16 @@ GhariMug
 VasilyMug
 AnastasMug
 AlvaMug
+HopfMug
+KelainoMug
+DalaiMug
+RiverMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug
 GenericAutomatonMug
 GenericImperialMug
+GenericRoninMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

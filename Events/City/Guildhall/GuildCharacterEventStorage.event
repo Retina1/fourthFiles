@@ -8,6 +8,7 @@ GuildRecruitEvent(Cam_RecruitEvent,Cam)
 GuildRecruitEvent(Drogo_RecruitEvent,Drogo)
 GuildRecruitEvent(Gretchen_RecruitEvent,Gretchen)
 GuildRecruitEvent(Allbringer_RecruitEvent,Allbringer)
+GuildRecruitEvent(Hopf_RecruitEvent,Hopf)
 //axefighters
 GuildRecruitEvent(Tristao_RecruitEvent,Tristao)
 GuildRecruitEvent(Finn_RecruitEvent,Finn)

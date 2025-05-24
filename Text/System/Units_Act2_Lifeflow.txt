@@ -21,6 +21,13 @@ Jim[X]
 A knowledgeable Belvarusi healer[N]
 in search of his missing husband.[X]
 
+//bobby
+##Name_Dalai
+Dalai[X]
+##Desc_Dalai
+An Asketan noble exiled after a failed[N]
+escape from that life. He's desperate.[X]
+
 //compass by roxas (encircler)
 ##Name_Compass
 Compass[X]

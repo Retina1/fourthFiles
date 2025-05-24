@@ -20,6 +20,9 @@ UNIT
 Recruit_Allbringer:
 UNIT Allbringer 0x0 0x1 Level(5,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Shortspear,Vulnerary] NoAI
 UNIT
+Recruit_Hopf:
+UNIT Hopf 0x0 0x1 Level(4,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
+UNIT
 
 Recruit_Tristao:
 UNIT Tristao 0x0 0x1 Level(5,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace] NoAI
@@ -96,6 +99,9 @@ GuildRecruit(Gretchen,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogu
 EndEvent
 Allbringer_RecruitEvent:
 GuildRecruit(Allbringer,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+EndEvent
+Hopf_RecruitEvent:
+GuildRecruit(Hopf,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
 EndEvent
 
 //axe
@@ -174,6 +180,7 @@ GuildLoadFlagReset
 GuildLoad(Drogo,Recruit_Drogo,0x1)
 GuildLoad(Gretchen,Recruit_Gretchen,0x2)
 GuildLoad(Allbringer,Recruit_Allbringer,0x3)
+GuildLoad(Hopf,Recruit_Hopf,0x4)
 FADU 10
 ENDA
 

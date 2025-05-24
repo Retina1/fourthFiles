@@ -27,6 +27,13 @@ Shasso[X]
 A smug Asketan rider with something of[N]
 a shady past. He loves a good rival.[X]
 
+//hiraya
+##Name_River
+River[X]
+##Desc_River
+A Belvarusi flier whose laid-back[N]
+persona masks his research's passion.[X]
+
 //ru
 ##Name_June
 June[X]

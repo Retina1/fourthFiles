@@ -70,6 +70,14 @@ Allbringer[X]
 A warm and righteous Asketan knight.[N]
 He's the model of an altruistic man.[X]
 
+//catball
+##Name_Hopf
+Hopf[X]
+##Desc_Hopf
+An Asketan guard from a remote town.[N]
+He drunkenly left his old life behind.[X]
+
+
 //tristao by alex (axefighter)
 ##Name_Tristao
 Tristao[X]

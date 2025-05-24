@@ -20,7 +20,7 @@
 #define RangedAnim(Animation) "BYTE 0x03 0x01 ; SHORT Animation"
 #define SupportAnim(Animation) "BYTE 0x04 0x01 ; SHORT Animation; BYTE 0x05 0x01 ; SHORT Animation; BYTE 0x06 0x01 ; SHORT Animation"
 #define UnarmedAnim(Animation) "BYTE 0x09 0x01 ; SHORT Animation"
-#define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation"
+#define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation; BYTE 0x09 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 #define EndAnim "WORD 0x0 0x0"
 
@@ -284,4 +284,81 @@ ALIGN 4
 HighlanderAnims:
 PierceAnim(Highlander_Lance)
 UnarmedAnim(Highlander_Unarmed)
+EndAnim
+
+
+//Noble
+{
+#include "ClassAnims/Noble/Sword Installer.event"
+#include "ClassAnims/Noble/Unarmed Installer.event"
+}
+ALIGN 4
+NobleAnims:
+PierceAnim(Noble_Sword)
+UnarmedAnim(Noble_Unarmed)
+EndAnim
+//Sovereign
+{
+#include "ClassAnims/Sovereign/Sword Installer.event"
+#include "ClassAnims/Sovereign/Unarmed Installer.event"
+}
+ALIGN 4
+SovereignAnims:
+PierceAnim(Sovereign_Sword)
+UnarmedAnim(Sovereign_Unarmed)
+EndAnim
+
+//Crawler
+{
+#include "MonsterAnims/Crawler/Monster Installer.event"
+}
+ALIGN 4
+CrawlerAnims:
+MonsterAnim(Crawler_Monster)
+EndAnim
+//Shambler
+{
+#include "MonsterAnims/Shambler/Monster Installer.event"
+}
+ALIGN 4
+ShamblerAnims:
+MonsterAnim(Shambler_Monster)
+EndAnim
+
+//Wight
+{
+#include "MonsterAnims/Wight/Sword Installer.event"
+#include "MonsterAnims/Wight/Lance Installer.event"
+#include "MonsterAnims/Wight/Axe Installer.event"
+#include "MonsterAnims/Wight/Handaxe Installer.event"
+#include "MonsterAnims/Wight/Bow Installer.event"
+#include "MonsterAnims/Wight/Unarmed Installer.event"
+}
+ALIGN 4
+WightAnims:
+SlashAnim(Wight_Sword)
+PierceAnim(Wight_Lance)
+BashAnim(Wight_Axe)
+HandaxeAnim(Wight_Handaxe)
+RangedAnim(Wight_Bow)
+UnarmedAnim(Wight_Unarmed)
+EndAnim
+//Wightsworn
+{
+#include "MonsterAnims/Wightsworn/Sword Installer.event"
+#include "MonsterAnims/Wightsworn/Lance Installer.event"
+#include "MonsterAnims/Wightsworn/Axe Installer.event"
+//#include "MonsterAnims/Wightsworn/Handaxe Installer.event"
+#include "MonsterAnims/Wightsworn/Bow Installer.event"
+#include "MonsterAnims/Wightsworn/Unarmed Installer.event"
+}
+ALIGN 4
+WightswornAnims:
+SlashAnim(Wightsworn_Sword)
+PierceAnim(Wightsworn_Lance)
+BashAnim(Wightsworn_Axe)
+//not handaxe!
+HandaxeAnim(Wightsworn_Axe)
+RangedAnim(Wightsworn_Bow)
+UnarmedAnim(Wightsworn_Unarmed)
 EndAnim

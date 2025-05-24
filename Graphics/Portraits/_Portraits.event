@@ -26,6 +26,10 @@ NathanDMP:
 #incbin "dmps/retinaNathan.dmp"
 setMugEntry(NathanMug,NathanDMP,3,5,3,3)
 ALIGN 4
+GoreDMP:
+#incbin "dmps/retinaGore.dmp"
+setMugEntry(GoreMug,GoreDMP,3,5,3,3)
+ALIGN 4
 CleoneDMP:
 #incbin "dmps/applanthropistCleone.dmp"
 setMugEntry(CleoneMug,CleoneDMP,3,5,3,3)
@@ -52,9 +56,25 @@ GenericImperialDMP:
 #incbin "dmps/slaterGenericImperial.dmp"
 setMugEntry(GenericImperialMug,GenericImperialDMP,3,4,3,2)
 ALIGN 4
+GenericRoninDMP:
+#incbin "dmps/slaterGenericRonin.dmp"
+setMugEntry(GenericRoninMug,GenericRoninDMP,2,5,2,3)
+ALIGN 4
 MonkDMP:
 #incbin "dmps/slaterMonk.dmp"
 setMugEntry(MonkMug,MonkDMP,3,6,3,4)
+
+ALIGN 4
+//hiraya
+RiverDMP:
+#incbin "dmps/hirayaRiver.dmp"
+setMugEntry(RiverMug,RiverDMP,2,5,3,3)
+
+ALIGN 4
+//hope
+QuinnDMP:
+#incbin "dmps/hopeQuinn.dmp"
+setMugEntry(QuinnMug,QuinnDMP,3,6,3,4)
 
 ALIGN 4
 //puzon
@@ -67,6 +87,12 @@ ALIGN 4
 VasilyDMP:
 #incbin "dmps/mattVasily.dmp"
 setMugEntry(VasilyMug,VasilyDMP,3,5,3,3)
+
+ALIGN 4
+//catball
+HopfDMP:
+#incbin "dmps/catballHopf.dmp"
+setMugEntry(HopfMug,HopfDMP,3,5,3,3)
 
 ALIGN 4
 //rasta
@@ -300,6 +326,7 @@ ALIGN 4
 BertramDMP:
 #incbin "dmps/slaterBertram.dmp"
 setMugEntryExtend(BertramMug,BertramDMP,3,4,3,2, 0,4, 10, 4)
+
 
 ALIGN 4
 //rw

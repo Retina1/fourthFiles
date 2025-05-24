@@ -114,3 +114,7 @@
 #define Vasily 0x72
 #define Anastas 0x73
 #define Alva 0x74
+#define Hopf 0x75
+#define Kelaino 0x76
+#define Dalai 0x77
+#define River 0x78

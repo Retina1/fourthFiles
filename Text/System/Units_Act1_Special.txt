@@ -48,6 +48,13 @@ Fourfinger[X]
 A reckless kid from the streets of[N]
 Hirschring. They fight for family.[X]
 
+//bobby
+##Name_Kelaino
+Kelaino[X]
+##Desc_Kelaino
+A no-nonsense Asketan lancer from the[N]
+slums. She was raised by the Closer.[X]
+
 //Shīliăng by levin (get accented characters later, brawler)
 //eventually they're a [0xE3] and i [0xE5]
 ##Name_Shiliang

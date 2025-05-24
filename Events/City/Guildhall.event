@@ -10,7 +10,7 @@ UNIT Gerson Lancer 0x0 Level(1,NPC,0) [7,3] 0x0 0x0 0x0 0x0 [Shortspear,RepairSc
 UNIT
 
 GuildmasterCalledIn:
-UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [8,5] 0x0 0x0 0x0 0x0 [Fengyan] NeverMoveAI
+UNIT BossGuildmaster 0x0 0x0 Level(26,NPC,0) [4,5] 0x0 0x0 0x0 0x0 [Fengyan] NeverMoveAI
 UNIT
 
 #define EnableRecruitFlag1 "CHECK_EVENTID Recruited1Flag; BEQ 0x9000 0xc 0x0; ENUF Recruited1Flag; SystemText(NoRecruitLeftText); GOTO 0x9005; LABEL 0x9000"
