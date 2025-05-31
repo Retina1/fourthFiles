@@ -1,8 +1,8 @@
 extern u16 gPal_PlayerInterface_Blue[];
 extern u16 gPal_PlayerInterface_Red[];
 extern u16 gPal_PlayerInterface_Green[];
-#define GE_WIDTH 14
-#define GE_HEIGHT 8
+#define GE_WIDTH 17
+#define GE_HEIGHT 6
 #define GE_TILEMAP_PALETTE 3
 #define MINIMUG_WIDTH 4
 #define MINIMUG_HEIGHT 4
@@ -13,7 +13,7 @@ extern u16 gPal_PlayerInterface_Green[];
 #define NAME_X 5
 #define NAME_Y 1
 #define NAME_WIDTH 7
-#define NAME_COLOR TEXT_COLOR_BLACK
+#define NAME_COLOR TEXT_COLOR_NORMAL
 #define HPORSTATUS_X 5
 #define HPORSTATUS_Y 3
 #define NUMBER_BASE_TILE 0x02E0
@@ -36,89 +36,69 @@ extern u16 gPal_PlayerInterface_Green[];
 #define EXP_LABEL_Y 4
 #define EXP_LABEL_BASE_TILE 0x0164
 #define EXP_LABEL_PALETTE 2
-#define EXP_X 89
+#define EXP_X 88
 #define EXP_Y 32
-#define DEF_LABEL_X 5
-#define DEF_LABEL_Y 5
-#define DEF_LABEL_BASE_TILE 0x0167
-#define DEF_LABEL_PALETTE 2
-#define DEF_X 64
-#define DEF_Y 40
-#define RES_LABEL_X 5
-#define RES_LABEL_Y 6
-#define RES_LABEL_BASE_TILE 0x0165
-#define RES_LABEL_PALETTE 2
-#define RES_X 64
-#define RES_Y 48
-#define ATK_LABEL_X 1
-#define ATK_LABEL_Y 5
-#define ATK_LABEL_BASE_TILE 0x0169
+#define ATK_LABEL_X 12
+#define ATK_LABEL_Y 1
+#define ATK_LABEL_BASE_TILE 0x016a
 #define ATK_LABEL_PALETTE 2
-#define ATK_X 32
-#define ATK_Y 40
-#define AS_LABEL_X 1
-#define AS_LABEL_Y 6
+#define ATK_X 120
+#define ATK_Y 8
+#define AS_LABEL_X 12
+#define AS_LABEL_Y 2
 #define AS_LABEL_BASE_TILE 0x0160
 #define AS_LABEL_PALETTE 2
-#define AS_X 32
-#define AS_Y 48
-#define HIT_LABEL_X 9
-#define HIT_LABEL_Y 5
-#define HIT_LABEL_BASE_TILE 0x016B
-#define HIT_LABEL_PALETTE 2
-#define HIT_X 96
-#define HIT_Y 40
-#define CRT_LABEL_X 9
-#define CRT_LABEL_Y 6
-#define CRT_LABEL_BASE_TILE 0x016D
-#define CRT_LABEL_PALETTE 2
-#define CRT_X 96
-#define CRT_Y 48
+#define AS_X 120
+#define AS_Y 16
+#define DEF_LABEL_X 12
+#define DEF_LABEL_Y 3
+#define DEF_LABEL_BASE_TILE 0x0168
+#define DEF_LABEL_PALETTE 2
+#define DEF_X 120
+#define DEF_Y 24
+#define RES_LABEL_X 12
+#define RES_LABEL_Y 4
+#define RES_LABEL_BASE_TILE 0x0166
+#define RES_LABEL_PALETTE 2
+#define RES_X 120
+#define RES_Y 32
 #define gMinimugTempBuffer ((u8*)(0x0201F148))
 
 void ExperienceLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void HitLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void MinimugStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void AttackSpeedLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void ResistanceLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void AttackLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void CritLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void AttackSpeedLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void NameStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void LevelLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void TilemapRetina_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void NameStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void DefenseLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 #define STATIC_CALLS \
   ExperienceLabelStandard_Static, \
-  HitLabelStandard_Static, \
   MinimugStandard_Static, \
+  AttackSpeedLabelStandard_Static, \
   ResistanceLabelStandard_Static, \
   AttackLabelStandard_Static, \
-  CritLabelStandard_Static, \
-  AttackSpeedLabelStandard_Static, \
-  NameStandard_Static, \
   LevelLabelStandard_Static, \
   TilemapRetina_Static, \
+  NameStandard_Static, \
   DefenseLabelStandard_Static, \
   NULL
 
+void ResistanceStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void AttackStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void AttackSpeedStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void HPOrStatus_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void DefenseStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void HitStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void AttackSpeedStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void LevelStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void ResistanceStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void CritStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void ExperienceStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 #define DYNAMIC_CALLS \
+  ResistanceStandard_Dynamic, \
   AttackStandard_Dynamic, \
-  AttackSpeedStandard_Dynamic, \
   HPOrStatus_Dynamic, \
   DefenseStandard_Dynamic, \
-  HitStandard_Dynamic, \
+  AttackSpeedStandard_Dynamic, \
   LevelStandard_Dynamic, \
-  ResistanceStandard_Dynamic, \
-  CritStandard_Dynamic, \
   ExperienceStandard_Dynamic, \
   NULL
 
@@ -143,20 +123,16 @@ void DrawVertical_Retract(struct PlayerInterfaceProc* proc);
   NULL
 
 void ExperienceLabelStandard_Init(struct PlayerInterfaceProc* proc);
-void DefenseLabelStandard_Init(struct PlayerInterfaceProc* proc);
-void HitLabelStandard_Init(struct PlayerInterfaceProc* proc);
-void CritLabelStandard_Init(struct PlayerInterfaceProc* proc);
+void AttackSpeedLabelStandard_Init(struct PlayerInterfaceProc* proc);
 void LevelLabelStandard_Init(struct PlayerInterfaceProc* proc);
 void AttackLabelStandard_Init(struct PlayerInterfaceProc* proc);
+void DefenseLabelStandard_Init(struct PlayerInterfaceProc* proc);
 void ResistanceLabelStandard_Init(struct PlayerInterfaceProc* proc);
-void AttackSpeedLabelStandard_Init(struct PlayerInterfaceProc* proc);
 #define INIT_CALLS \
   ExperienceLabelStandard_Init, \
-  DefenseLabelStandard_Init, \
-  HitLabelStandard_Init, \
-  CritLabelStandard_Init, \
+  AttackSpeedLabelStandard_Init, \
   LevelLabelStandard_Init, \
   AttackLabelStandard_Init, \
+  DefenseLabelStandard_Init, \
   ResistanceLabelStandard_Init, \
-  AttackSpeedLabelStandard_Init, \
   NULL

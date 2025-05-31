@@ -6,7 +6,72 @@ Portrait:
 PortraitPalette:
 
 setCardEntry(,Portrait,PortraitPalette)
+
+needed player cards
+gunner
+dragoon
+poet
+troub
+priest
+darkhunter
+dominator
+apothecary
+botanist
+caller
+necromancer
+noble
+sovereign
+duelist
+fencer
+artifice
+automaton
 */
+//as temp anti-crash measure, give all these wight
+setCardEntry(GunnerCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(DragoonCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(PoetCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(TroubadourCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(PriestCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(DarkHunterCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(DominatorCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(ApothecaryCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(BotanistCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(CallerCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(NecromancerCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(NobleCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(SovereignCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(DuelistCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(FencerCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(ArtificeCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(AutomatonCard,WightCardPortrait,WightCardPortraitPalette)
+
+ALIGN 4
+SoulCardPortrait:
+#incbin "classCards\Ghost {Eldritch Abomination}.dmp"
+SoulCardPortraitPalette:
+#incbin "classCards\Ghost {Eldritch Abomination}Palette.dmp"
+setCardEntry(SoulCard,SoulCardPortrait,SoulCardPortraitPalette)
+
+ALIGN 4
+SouldierCardPortrait:
+#incbin "classCards\Phantom (U) Axe {IS}.dmp"
+SouldierCardPortraitPalette:
+#incbin "classCards\Phantom (U) Axe {IS}Palette.dmp"
+setCardEntry(SouldierCard,SouldierCardPortrait,SouldierCardPortraitPalette)
+
+ALIGN 4
+CyclopsCardPortrait:
+#incbin "classCards\Cyclops Axe {IS}.dmp"
+CyclopsCardPortraitPalette:
+#incbin "classCards\Cyclops Axe {IS}Palette.dmp"
+setCardEntry(CyclopsCard,CyclopsCardPortrait,CyclopsCardPortraitPalette)
+
+ALIGN 4
+BiclopsCardPortrait:
+#incbin "classCards\biclops.dmp"
+BiclopsCardPortraitPalette:
+#incbin "classCards\biclopsPalette.dmp"
+setCardEntry(BiclopsCard,BiclopsCardPortrait,BiclopsCardPortraitPalette)
 
 ALIGN 4
 WightCardPortrait:
@@ -69,7 +134,7 @@ GargoyleCardPortrait:
 #incbin "classCards\Gargoyle Lance {IS}.dmp"
 GargoyleCardPortraitPalette:
 #incbin "classCards\Gargoyle Lance {IS}Palette.dmp"
-setCardEntry(GargantoyleCard,GargantoyleCardPortrait,GargantoyleCardPortraitPalette)
+setCardEntry(GargoyleCard,GargoyleCardPortrait,GargoyleCardPortraitPalette)
 
 ALIGN 4
 GargantoyleCardPortrait:

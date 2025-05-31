@@ -52,6 +52,7 @@ SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4
 SoundRoomEntry(Song_DrawHeroes, SongTitle_DrawHeroes, SourceTitle_EtrianOdyssey2,10)
 //dungeon
 SoundRoomEntry(Song_EverScarletForest, SongTitle_EverScarletForest, SourceTitle_EtrianOdyssey2,16)
+SoundRoomEntry(Song_ExcavationWorkersQuarters, SongTitle_ExcavationWorkersQuarters, SourceTitle_SMT4,18)
 SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOdyssey5,9)
 //combat
 //boss

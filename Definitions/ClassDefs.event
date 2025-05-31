@@ -76,7 +76,7 @@
 #define Spider 0x63
 #define Entwiner 0x64
 #define Cyclops 0x65
-#define Biclips 0x66
+#define Biclops 0x66
 #define Gorgon 0x67
 #define Gassergon 0x68
 #define Gargoyle 0x69

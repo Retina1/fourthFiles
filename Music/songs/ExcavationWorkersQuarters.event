@@ -1,0 +1,919 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	ExcavationWorkersQuarters_grp  voicegroup000
+	#define	ExcavationWorkersQuarters_pri  0
+	#define	ExcavationWorkersQuarters_rev  0
+	#define	ExcavationWorkersQuarters_mvl  127
+	#define	ExcavationWorkersQuarters_key  0
+	#define	ExcavationWorkersQuarters_tbs  1
+	#define	ExcavationWorkersQuarters_exg  0
+	#define	ExcavationWorkersQuarters_cmp  1
+
+	// .rodata
+	//	ExcavationWorkersQuarters
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+ExcavationWorkersQuarters_001:
+//  #01 //000   ----------------------------------------
+ BYTE   KEYSH   ExcavationWorkersQuarters_key+0
+Label_01771472:
+ BYTE   TEMPO   90*ExcavationWorkersQuarters_tbs/2
+ BYTE   VOICE   100
+ BYTE   VOL   56*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   N96  Gn2  v096
+ BYTE   N96  Bn2
+ BYTE   N96  En3  v040
+ BYTE   W96
+//  #01 //001   ----------------------------------------
+Label_01771481:
+ BYTE   TIE  Cn2  v096
+ BYTE   TIE  En2
+ BYTE   TIE  Cn3  v040
+ BYTE   N01  En3
+ BYTE   W96
+ BYTE   PEND 
+//  #01 //002   ----------------------------------------
+ BYTE   W24
+ BYTE   EOT
+ BYTE   Cn2  v052
+ BYTE   Cn3
+ BYTE   N48  Dn2  v096
+ BYTE   N48  Fn2
+ BYTE   N48  An2  v044
+ BYTE   W48
+ BYTE   TIE  Fn2  v096
+ BYTE   TIE  An2
+ BYTE   TIE  Cn3  v040
+ BYTE   W24
+//  #01 //003   ----------------------------------------
+ BYTE   W96
+//  #01 //004   ----------------------------------------
+ BYTE   W24
+ BYTE   W03
+ BYTE   VOL   56*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W68
+ BYTE   W01
+//  #01 //005   ----------------------------------------
+ BYTE   EOT
+ BYTE   Fn2  v057
+ BYTE   Cn3
+ BYTE   N72  An1
+ BYTE   N72  An2  v100
+ BYTE   N68  Dn3  v092
+ BYTE   W72
+ BYTE   N96  Gn2  v096
+ BYTE   N96  Bn2
+ BYTE   TIE  En3  v040
+ BYTE   W24
+//  #01 //006   ----------------------------------------
+ BYTE   W72
+ BYTE   N48  En2  v100
+ BYTE   N48  Gn2  v096
+ BYTE   W01
+ BYTE   EOT
+ BYTE   En3
+ BYTE   W23
+//  #01 //007   ----------------------------------------
+ BYTE   W24
+ BYTE   N48  Dn2
+ BYTE   N48  Fn2
+ BYTE   N48  An2  v044
+ BYTE   W48
+ BYTE   TIE  Fn2  v096
+ BYTE   TIE  An2
+ BYTE   TIE  Cn3  v040
+ BYTE   W24
+//  #01 //008   ----------------------------------------
+ BYTE   W96
+//  #01 //009   ----------------------------------------
+ BYTE   W96
+//  #01 //010   ----------------------------------------
+ BYTE   EOT
+ BYTE   Fn2  v057
+ BYTE   Cn3
+ BYTE   N96  Gn2  v096
+ BYTE   N96  Bn2
+ BYTE   N96  En3  v040
+ BYTE   W96
+//  #01 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01771481
+//  #01 //012   ----------------------------------------
+ BYTE   W24
+ BYTE   EOT
+ BYTE   Cn2  v052
+ BYTE   Cn3
+ BYTE   N24  Dn2  v096
+ BYTE   N24  Fn2
+ BYTE   N24  An2  v044
+ BYTE   W24
+ BYTE   TIE  Fn2  v096
+ BYTE   TIE  An2
+ BYTE   TIE  Cn3  v040
+ BYTE   W30
+ BYTE   W01
+ BYTE   VOL   55*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W17
+//  #01 //013   ----------------------------------------
+ BYTE   W96
+//  #01 //014   ----------------------------------------
+ BYTE   EOT
+ BYTE   Fn2  v057
+ BYTE   Cn3
+ BYTE   TIE  An1
+ BYTE   TIE  An2  v100
+ BYTE   TIE  Dn3  v092
+ BYTE   W96
+//  #01 //015   ----------------------------------------
+ BYTE   W24
+ BYTE   EOT
+ BYTE   An1  v057
+ BYTE   Dn3
+ BYTE   TIE  An1  v040
+ BYTE   TIE  An2  v100
+ BYTE   TIE  Dn3  v092
+ BYTE   W72
+//  #01 //016   ----------------------------------------
+ BYTE   W72
+ BYTE   EOT
+ BYTE   An1  v057
+ BYTE   Dn3
+ BYTE   TIE  An1  v040
+ BYTE   TIE  An2  v100
+ BYTE   TIE  Dn3  v092
+ BYTE   W24
+//  #01 //017   ----------------------------------------
+ BYTE   W09
+ BYTE   VOL   54*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   54*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   53*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   52*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   52*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   51*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   51*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   50*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   49*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   49*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   48*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   47*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   47*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   46*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   45*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   44*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   44*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   43*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   42*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   42*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   41*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   40*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   40*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   39*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   39*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   38*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   37*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   37*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   36*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   35*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   34*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   34*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   33*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   32*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   32*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   31*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   30*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   30*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   29*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   28*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   28*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   27*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   27*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   26*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   25*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   24*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   23*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   23*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   22*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   22*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   21*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   20*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   20*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   19*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   18*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   18*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   17*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   17*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   16*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   15*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   14*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   EOT
+ BYTE   An1  v057
+ BYTE   Dn3
+ BYTE   VOL   13*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+//  #01 //018   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_01771472
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+ExcavationWorkersQuarters_002:
+//  #02 //000   ----------------------------------------
+ BYTE   KEYSH   ExcavationWorkersQuarters_key+0
+Label_01771716:
+ BYTE   VOICE   81
+ BYTE   VOL   23*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   TIE  An0  v096
+ BYTE   TIE  An1  v048
+ BYTE   W03
+ BYTE   VOL   24*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   25*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   25*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   26*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   27*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   27*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   28*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   28*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   29*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   30*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   30*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   31*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   32*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   32*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   33*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   34*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   34*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   35*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   35*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   36*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+//  #02 //001   ----------------------------------------
+Label_0177174A:
+ BYTE   W03
+ BYTE   VOL   37*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   37*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   38*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   39*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   39*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   40*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   40*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   41*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   42*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   42*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   43*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   44*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   44*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   45*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   45*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   46*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   47*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   47*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   48*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   49*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   PEND 
+//  #02 //002   ----------------------------------------
+Label_01771775:
+ BYTE   W04
+ BYTE   VOL   49*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   50*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   51*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   51*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   52*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   52*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   53*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   54*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   54*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   55*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   56*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   56*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   57*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   57*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   58*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   59*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   59*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   60*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   61*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   PEND 
+//  #02 //003   ----------------------------------------
+Label_0177179E:
+ BYTE   VOL   61*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   62*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   62*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   63*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   64*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   64*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   65*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   66*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   66*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   67*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   68*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   68*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   69*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   69*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   70*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   71*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   71*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   72*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   73*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   73*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   PEND 
+//  #02 //004   ----------------------------------------
+ BYTE   Dn4
+ BYTE   W06
+ BYTE   Dn4
+ BYTE   W04
+ BYTE   Ds4
+ BYTE   W05
+ BYTE   En4
+ BYTE   W05
+ BYTE   En4
+ BYTE   W04
+ BYTE   Fn4
+ BYTE   W06
+ BYTE   Fs4
+ BYTE   W04
+ BYTE   Fs4
+ BYTE   W05
+ BYTE   Gn4
+ BYTE   W05
+ BYTE   Gs4
+ BYTE   W02
+ BYTE   Gs4
+ BYTE   W01
+ BYTE   Gn4
+ BYTE   W01
+ BYTE   Fn4
+ BYTE   W01
+ BYTE   En4
+ BYTE   W01
+ BYTE   En4
+ BYTE   W01
+ BYTE   Dn4
+ BYTE   W01
+ BYTE   Cs4
+ BYTE   W01
+ BYTE   Cs4
+ BYTE   W01
+ BYTE   Bn3
+ BYTE   W01
+ BYTE   Bn3
+ BYTE   W01
+ BYTE   An3
+ BYTE   W01
+ BYTE   Gs3
+ BYTE   W01
+ BYTE   Gs3
+ BYTE   W01
+ BYTE   Gn3
+ BYTE   W01
+ BYTE   Fn3
+ BYTE   W01
+ BYTE   En3
+ BYTE   W01
+ BYTE   En3
+ BYTE   W01
+ BYTE   Dn3
+ BYTE   W01
+ BYTE   Cs3
+ BYTE   W01
+ BYTE   Cs3
+ BYTE   W01
+ BYTE   Bn2
+ BYTE   W01
+ BYTE   As2
+ BYTE   W01
+ BYTE   An2
+ BYTE   W01
+ BYTE   Gs2
+ BYTE   W01
+ BYTE   Gs2
+ BYTE   W01
+ BYTE   Fs2
+ BYTE   W01
+ BYTE   Fn2
+ BYTE   W01
+ BYTE   En2
+ BYTE   W01
+ BYTE   En2
+ BYTE   W01
+ BYTE   Dn2
+ BYTE   W01
+ BYTE   Cs2
+ BYTE   W01
+ BYTE   Cs2
+ BYTE   W01
+ BYTE   Bn1
+ BYTE   W01
+ BYTE   As1
+ BYTE   W01
+ BYTE   An1
+ BYTE   W01
+ BYTE   Gs1
+ BYTE   W01
+ BYTE   Gs1
+ BYTE   W01
+ BYTE   Fs1
+ BYTE   W01
+ BYTE   Fn1
+ BYTE   W01
+ BYTE   En1
+ BYTE   W01
+ BYTE   En1
+ BYTE   W01
+ BYTE   Dn1
+ BYTE   W01
+ BYTE   Cs1
+ BYTE   W01
+ BYTE   Cs1
+ BYTE   W01
+ BYTE   Bn0
+ BYTE   W01
+ BYTE   As0
+ BYTE   W01
+ BYTE   As0
+ BYTE   W01
+ BYTE   Gs0
+ BYTE   W01
+ BYTE   Gn0
+ BYTE   W01
+ BYTE   Fs0
+ BYTE   W01
+//  #02 //005   ----------------------------------------
+ BYTE   EOT
+ BYTE   An0  v045
+ BYTE   W96
+//  #02 //006   ----------------------------------------
+ BYTE   W96
+//  #02 //007   ----------------------------------------
+ BYTE   W96
+//  #02 //008   ----------------------------------------
+ BYTE   VOL   23*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   TIE  An0  v096
+ BYTE   TIE  An1  v048
+ BYTE   W03
+ BYTE   VOL   24*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   25*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   25*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   26*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   27*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   27*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   28*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   28*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   29*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   30*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   30*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   31*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   32*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   32*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   33*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   34*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   34*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   35*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   35*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   36*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+//  #02 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0177174A
+//  #02 //010   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01771775
+//  #02 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0177179E
+//  #02 //012   ----------------------------------------
+ BYTE   VOL   74*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   74*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   75*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   76*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   76*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   77*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W06
+ BYTE   VOL   78*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W04
+ BYTE   VOL   78*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   79*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W05
+ BYTE   VOL   80*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   80*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   79*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   78*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   78*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   77*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   76*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   76*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   75*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   74*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   73*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   73*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   72*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   71*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   70*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   69*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   69*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   68*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   68*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   67*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   66*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   66*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   65*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   64*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   64*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   63*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   62*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   62*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   61*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   61*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   60*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   59*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   58*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   57*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   57*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   56*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   55*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   54*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   54*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   53*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+//  #02 //013   ----------------------------------------
+ BYTE   VOL   52*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   52*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   51*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   51*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   50*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   49*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   49*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   47*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   47*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   46*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   45*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   44*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   44*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   43*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   42*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   41*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   40*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   40*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   39*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   39*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   38*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   37*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   37*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   36*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   35*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   35*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   34*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   33*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   32*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   32*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   31*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   30*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   29*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   28*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   28*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   27*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   26*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   25*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   25*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   24*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   23*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   23*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   22*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   22*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   21*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   20*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   20*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   18*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   18*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   17*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   17*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   15*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   15*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   14*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   13*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   12*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   11*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   11*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   10*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   10*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   9*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   8*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   8*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   7*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   6*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   6*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   5*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   4*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W02
+ BYTE   VOL   3*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   3*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   2*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+ BYTE   VOL   1*ExcavationWorkersQuarters_mvl/mxv
+ BYTE   W01
+//  #02 //014   ----------------------------------------
+ BYTE   EOT
+ BYTE   An0  v045
+ BYTE   W96
+//  #02 //015   ----------------------------------------
+ BYTE   W96
+//  #02 //016   ----------------------------------------
+ BYTE   W96
+//  #02 //017   ----------------------------------------
+ BYTE   W96
+//  #02 //018   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_01771716
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+ExcavationWorkersQuarters:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	ExcavationWorkersQuarters_pri	// Priority
+	BYTE	ExcavationWorkersQuarters_rev	// Reverb.
+    
+	POIN2	ExcavationWorkersQuarters_grp
+    
+	POIN2	ExcavationWorkersQuarters_001
+	POIN2	ExcavationWorkersQuarters_002
+
+	

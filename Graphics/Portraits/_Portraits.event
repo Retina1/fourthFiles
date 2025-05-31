@@ -71,6 +71,34 @@ RiverDMP:
 setMugEntry(RiverMug,RiverDMP,2,5,3,3)
 
 ALIGN 4
+//lotus
+AmmiDMP:
+#incbin "dmps/lotusAmmi.dmp"
+setMugEntry(AmmiMug,AmmiDMP,4,6,4,4)
+
+ALIGN 4
+//renoud
+AzaghalDMP:
+#incbin "dmps/renoudAzaghal.dmp"
+setMugEntry(AzaghalMug,AzaghalDMP,3,5,3,3)
+
+ALIGN 4
+//amalgaphone
+MaragDMP:
+#incbin "dmps/amalgaphoneMarag.dmp"
+setMugEntry(MaragMug,MaragDMP,2,6,3,4)
+
+ALIGN 4
+//thorn
+AwilDMP:
+#incbin "dmps/thornAwil.dmp"
+setMugEntry(AwilMug,AwilDMP,2,4,0,0)
+ALIGN 4
+JebetDMP:
+#incbin "dmps/thornJebet.dmp"
+setMugEntry(JebetMug,JebetDMP,4,6,4,4)
+
+ALIGN 4
 //hope
 QuinnDMP:
 #incbin "dmps/hopeQuinn.dmp"
@@ -105,6 +133,10 @@ ALIGN 4
 MyloDMP:
 #incbin "dmps/shinzenMylo.dmp"
 setMugEntry(MyloMug,MyloDMP,4,6,4,4)
+ALIGN 4
+AnnaDMP:
+#incbin "dmps/shinzenAnna.dmp"
+setMugEntry(AnnaMug,AnnaDMP,3,6,3,4)
 
 ALIGN 4
 //grotto
@@ -129,6 +161,10 @@ ALIGN 4
 WavesDMP:
 #incbin "dmps/hannahWaves.dmp"
 setMugEntry(WavesMug,WavesDMP,3,6,3,4)
+ALIGN 4
+HallieDMP:
+#incbin "dmps/hannahHallie.dmp"
+setMugEntry(HallieMug,HallieDMP,3,5,3,3)
 
 ALIGN 4
 //aaron
@@ -154,6 +190,10 @@ ALIGN 4
 JimDMP:
 #incbin "dmps/thiccJim.dmp"
 setMugEntry(JimMug,JimDMP,3,5,3,3)
+ALIGN 4
+BeepoDMP:
+#incbin "dmps/thiccBeepo.dmp"
+setMugEntryExtend(BeepoMug,BeepoDMP,4,4,4,2, 0,4, 10,4)
 
 ALIGN 4
 //kingdom
@@ -189,7 +229,7 @@ ALIGN 4
 //trybel
 CardamDMP:
 #incbin "dmps/trybelCardam.dmp"
-setMugEntry(CardamMug,CardamDMP,4,5,4,3)
+setMugEntry(CardamMug,CardamDMP,3,5,4,3)
 ALIGN 4
 JuniperDMP:
 #incbin "dmps/trybelJuniper.dmp"
@@ -210,6 +250,14 @@ ALIGN 4
 DemicoDMP:
 #incbin "dmps/applanthropistDemico.dmp"
 setMugEntry(DemicoMug,DemicoDMP,3,5,3,3)
+ALIGN 4
+EmberDMP:
+#incbin "dmps/applanthropistEmber.dmp"
+setMugEntry(EmberMug,EmberDMP,3,6,4,4)
+ALIGN 4
+SwiftDMP:
+#incbin "dmps/applanthropistSwift.dmp"
+setMugEntry(SwiftMug,SwiftDMP,3,5,3,3)
 ALIGN 4
 FrostDMP:
 #incbin "dmps/applanthropistFrost.dmp"
@@ -279,6 +327,10 @@ WundDMP:
 #incbin "dmps/alguienWund.dmp"
 setMugEntryExtend(WundMug,WundDMP,3,3,3,1, 3,(-2), 5,(-2))
 ALIGN 4
+WundClothedDMP:
+#incbin "dmps/alguienWundClothed.dmp"
+setMugEntryExtend(WundClothedMug,WundClothedDMP,3,3,3,1, 3,(-2), 5,(-2))
+ALIGN 4
 WaspDMP:
 #incbin "dmps/alguienWasp.dmp"
 setMugEntry(WaspMug,WaspDMP,3,5,3,3)
@@ -313,7 +365,7 @@ ALIGN 4
 //slater
 GuildmasterDMP:
 #incbin "dmps/slaterGuildmaster.dmp"
-setMugEntry(GuildmasterMug,GuildmasterDMP,3,5,3,3)
+setMugEntryExtend(GuildmasterMug,GuildmasterDMP,3,4,3,2, 4,(-2), 6,(-2))
 ALIGN 4
 AllbringerDMP:
 #incbin "dmps/slaterAllbringer.dmp"
@@ -326,6 +378,10 @@ ALIGN 4
 BertramDMP:
 #incbin "dmps/slaterBertram.dmp"
 setMugEntryExtend(BertramMug,BertramDMP,3,4,3,2, 0,4, 10, 4)
+ALIGN 4
+SubtiliorDMP:
+#incbin "dmps/slaterSubtilior.dmp"
+setMugEntryExtend(SubtiliorMug,SubtiliorDMP,5,3,0,2, 0,4, 0, 2)
 
 
 ALIGN 4
@@ -460,6 +516,10 @@ ALIGN 4
 ArsofDMP:
 #incbin "dmps/goldArsof.dmp"
 setMugEntryExtend(ArsofMug,ArsofDMP,2,4,2,2, 2,(-2), 4,(-2))
+ALIGN 4
+BenjaminDMP:
+#incbin "dmps/goldBenjamin.dmp"
+setMugEntry(BenjaminMug,BenjaminDMP,3,5,3,3)
 
 ALIGN 4
 //lorca
@@ -472,6 +532,10 @@ ALIGN 4
 NatsukiDMP:
 #incbin "dmps/lumiNatsuki.dmp"
 setMugEntryExtend(NatsukiMug,NatsukiDMP,3,5,3,3, 5,(-2), 7,(-2))
+ALIGN 4
+NatsubunDMP:
+#incbin "dmps/lumiNatsuBUN.dmp"
+setMugEntry(NatsubunMug,NatsubunDMP,5,7,0,0)
 
 ALIGN 4
 //roxas

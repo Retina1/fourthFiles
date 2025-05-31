@@ -33,6 +33,16 @@ FILL 0xFF * 0x07 // Allocate 0xFF entries for the CharClassTable.
 
 #include "PaletteDefs.event"
 
+setPalette(Nathan_Scholar, Nathan_ScholarDMP)
+setPalette(Nathan_Warlock, Nathan_WarlockDMP)
+CharPalette(Nathan,Nathan_Scholar,Scholar,Nathan_Warlock,Warlock)
+ALIGN 4
+Nathan_ScholarDMP:
+#incbin "paletteFiles/Nathan_Scholar.dmp"
+ALIGN 4
+Nathan_WarlockDMP:
+#incbin "paletteFiles/Nathan_Warlock.dmp"
+
 setPalette(Astarte_Priest, Astarte_PriestDMP)
 setPalette(Astarte_WarMagus, Astarte_WarMagusDMP)
 CharPalette(Astarte,Astarte_Priest,Priest,Astarte_WarMagus,WarMagus)
@@ -42,6 +52,14 @@ Astarte_PriestDMP:
 ALIGN 4
 Astarte_WarMagusDMP:
 #incbin "paletteFiles/Astarte_WarMagus.dmp"
+
+setPalette(Guildmaster_Highlander, Guildmaster_HighlanderDMP)
+CharPalette(Guildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)
+CharPalette(BossGuildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)
+ALIGN 4
+Guildmaster_HighlanderDMP:
+#incbin "paletteFiles/Guildmaster_Highlander.dmp"
+
 
 PUSH
 ORG $59BFC

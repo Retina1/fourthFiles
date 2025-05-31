@@ -18,6 +18,7 @@ add another row for avo/dodge/min damage?
     <Definition Name="NAME_X" Value="5"/>
     <Definition Name="NAME_Y" Value="1"/>
     <Definition Name="NAME_WIDTH" Value="7"/>
+	<Definition Name="NAME_COLOR" Value="TEXT_COLOR_NORMAL"/>
 
   <Module Name="HPOrStatus"/>
     <Definition Name="HPORSTATUS_X" Value="5"/>
@@ -36,41 +37,42 @@ add another row for avo/dodge/min damage?
     <Definition Name="EXP_LABEL_Y" Value="4"/>
 
   <Module Name="ExperienceStandard"/>
-    <Definition Name="EXP_X" Value="89"/>
+    <Definition Name="EXP_X" Value="88"/>
     <Definition Name="EXP_Y" Value="32"/>
 
-  <Module Name="DefenseLabelStandard"/>
-    <Definition Name="DEF_LABEL_X" Value="5"/>
-    <Definition Name="DEF_LABEL_Y" Value="5"/>
-
-  <Module Name="DefenseStandard"/>
-    <Definition Name="DEF_X" Value="64"/>
-    <Definition Name="DEF_Y" Value="40"/>
-
-  <Module Name="ResistanceLabelStandard"/>
-    <Definition Name="RES_LABEL_X" Value="5"/>
-    <Definition Name="RES_LABEL_Y" Value="6"/>
-
-  <Module Name="ResistanceStandard"/>
-    <Definition Name="RES_X" Value="64"/>
-    <Definition Name="RES_Y" Value="48"/>
-
   <Module Name="AttackLabelStandard"/>
-    <Definition Name="ATK_LABEL_X" Value="1"/>
-    <Definition Name="ATK_LABEL_Y" Value="5"/>
+    <Definition Name="ATK_LABEL_X" Value="12"/>
+    <Definition Name="ATK_LABEL_Y" Value="1"/>
 
   <Module Name="AttackStandard"/>
-    <Definition Name="ATK_X" Value="32"/>
-    <Definition Name="ATK_Y" Value="40"/>
+    <Definition Name="ATK_X" Value="120"/>
+    <Definition Name="ATK_Y" Value="8"/>
 	
   <Module Name="AttackSpeedLabelStandard"/>
-    <Definition Name="AS_LABEL_X" Value="1"/>
-    <Definition Name="AS_LABEL_Y" Value="6"/>
+    <Definition Name="AS_LABEL_X" Value="12"/>
+    <Definition Name="AS_LABEL_Y" Value="2"/>
 
   <Module Name="AttackSpeedStandard"/>
-    <Definition Name="AS_X" Value="32"/>
-    <Definition Name="AS_Y" Value="48"/>
+    <Definition Name="AS_X" Value="120"/>
+    <Definition Name="AS_Y" Value="16"/>
+	
+  <Module Name="DefenseLabelStandard"/>
+    <Definition Name="DEF_LABEL_X" Value="12"/>
+    <Definition Name="DEF_LABEL_Y" Value="3"/>
 
+  <Module Name="DefenseStandard"/>
+    <Definition Name="DEF_X" Value="120"/>
+    <Definition Name="DEF_Y" Value="24"/>
+
+  <Module Name="ResistanceLabelStandard"/>
+    <Definition Name="RES_LABEL_X" Value="12"/>
+    <Definition Name="RES_LABEL_Y" Value="4"/>
+
+  <Module Name="ResistanceStandard"/>
+    <Definition Name="RES_X" Value="120"/>
+    <Definition Name="RES_Y" Value="32"/>
+
+<!-- 
   <Module Name="HitLabelStandard"/>
     <Definition Name="HIT_LABEL_X" Value="9"/>
     <Definition Name="HIT_LABEL_Y" Value="5"/>
@@ -86,7 +88,7 @@ add another row for avo/dodge/min damage?
   <Module Name="CritStandard"/>
     <Definition Name="CRT_X" Value="96"/>
     <Definition Name="CRT_Y" Value="48"/>
-
+-->
 
 
   <Module Name="FixMinimugPalette"/>

@@ -36,3 +36,23 @@ AMBR-053[X]
 An optimistic Belvarusi artifice.[N]
 He wishes to be more than a weapon.[X]
 
+//thicc
+##Name_Beepo
+BEEP-o[X]
+##Desc_Beepo
+A killing machine built to hunt small[N]
+vermin. He's got some loose screws.[X]
+
+//slater
+##Name_Subtilior
+Subtilior[X]
+##Desc_Subtilior
+An unknown being transformed into a[N]
+living weapon. He's blunt and driven.[X]
+
+//thorn
+##Name_Awil
+Awil[X]
+##Desc_Awil
+A lost artifice that's eager to help[N]
+anyone it sees. It's quite chipper.[X]

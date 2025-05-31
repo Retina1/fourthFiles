@@ -125,6 +125,52 @@ enum {
 
 
 struct SkillField {
+	
+	/* 02 */ u8 skill_111: 1;
+	/* 02 */ u8 skill_121: 1;
+	/* 02 */ u8 skill_131: 1;
+	/* 02 */ u8 promoSkill_141: 1;
+	/* 02 */ u8 skill_211: 1;
+	/* 02 */ u8 skill_212: 1;
+	/* 02 */ u8 skill_221: 1;
+	/* 02 */ u8 skill_222: 1;
+	
+	/* 03 */ u8 skill_231: 1;
+	/* 03 */ u8 skill_232: 1;
+	/* 03 */ u8 skill_311: 1;
+	/* 03 */ u8 skill_312: 1;
+	/* 03 */ u8 skill_313: 1;
+	/* 03 */ u8 skill_321: 1;
+	/* 03 */ u8 skill_322: 1;
+	/* 03 */ u8 skill_323: 1;
+
+	/* 04 */ u8 skill_331: 1;
+	/* 04 */ u8 skill_332: 1;
+	/* 04 */ u8 skill_333: 1;
+	/* 05 */ u8 skill_341: 1;
+	/* 05 */ u8 skill_342: 1;
+	/* 05 */ u8 skill_343: 1;
+	/* 06 */ u8 promoSkill_351: 1;
+	/* 06 */ u8 promoSkill_352: 1;
+	
+	/* 06 */ u8 promoSkill_353: 1;
+	/* 04 */ u8 skill_511: 1;
+	/* 04 */ u8 skill_512: 1;
+	/* 04 */ u8 skill_513: 1;
+	/* 04 */ u8 skill_514: 1;
+	/* 04 */ u8 skill_515: 1;
+	/* 05 */ u8 skill_521: 1;
+	/* 05 */ u8 skill_522: 1;
+	
+	/* 05 */ u8 skill_523: 1;
+	/* 05 */ u8 skill_524: 1;
+	/* 05 */ u8 skill_525: 1;
+	/* 06 */ u8 promoSkill_531: 1;
+	/* 06 */ u8 promoSkill_532: 1;
+	/* 06 */ u8 promoSkill_533: 1;
+	/* 06 */ u8 promoSkill_534: 1;
+	/* 06 */ u8 promoSkill_535: 1;
+	
 	/* 00 */ u8 hpUp1: 1;
 	/* 00 */ u8 hpUp2: 1;
 	/* 00 */ u8 strUp1: 1;
@@ -142,62 +188,6 @@ struct SkillField {
 	/* 01 */ u8 defUp2: 1;
 	/* 01 */ u8 resUp1: 1;
 	/* 01 */ u8 resUp2: 1;
-	
-	/* 02 */ u8 skill_111: 1;
-	/* 02 */ u8 skill_121: 1;
-	/* 02 */ u8 skill_131: 1;
-	/* 02 */ u8 promoSkill_141: 1;
-	
-	/* 02 */ u8 skill_211: 1;
-	/* 02 */ u8 skill_212: 1;
-	
-	/* 02 */ u8 skill_221: 1;
-	/* 02 */ u8 skill_222: 1;
-	
-	
-	/* 03 */ u8 skill_231: 1;
-	/* 03 */ u8 skill_232: 1;
-	
-	/* 03 */ u8 skill_311: 1;
-	/* 03 */ u8 skill_312: 1;
-	/* 03 */ u8 skill_313: 1;
-	
-	/* 03 */ u8 skill_321: 1;
-	/* 03 */ u8 skill_322: 1;
-	/* 03 */ u8 skill_323: 1;
-	
-	
-	/* 04 */ u8 skill_331: 1;
-	/* 04 */ u8 skill_332: 1;
-	/* 04 */ u8 skill_333: 1;
-	
-	/* 04 */ u8 skill_511: 1;
-	/* 04 */ u8 skill_512: 1;
-	/* 04 */ u8 skill_513: 1;
-	/* 04 */ u8 skill_514: 1;
-	/* 04 */ u8 skill_515: 1;
-	
-	
-	/* 05 */ u8 skill_341: 1;
-	/* 05 */ u8 skill_342: 1;
-	/* 05 */ u8 skill_343: 1;
-	
-	/* 05 */ u8 skill_521: 1;
-	/* 05 */ u8 skill_522: 1;
-	/* 05 */ u8 skill_523: 1;
-	/* 05 */ u8 skill_524: 1;
-	/* 05 */ u8 skill_525: 1;
-	
-	
-	/* 06 */ u8 promoSkill_351: 1;
-	/* 06 */ u8 promoSkill_352: 1;
-	/* 06 */ u8 promoSkill_353: 1;
-	
-	/* 06 */ u8 promoSkill_531: 1;
-	/* 06 */ u8 promoSkill_532: 1;
-	/* 06 */ u8 promoSkill_533: 1;
-	/* 06 */ u8 promoSkill_534: 1;
-	/* 06 */ u8 promoSkill_535: 1;
 };
 
 
@@ -218,16 +208,16 @@ struct Unit
     /* 10 */ s8 xPos;
     /* 11 */ s8 yPos;
 
-    /* 12 */ s8 maxHP;
-    /* 13 */ s8 curHP;
-    /* 14 */ s8 pow;
-    /* 15 */ s8 skl;
-    /* 16 */ s8 spd;
-    /* 17 */ s8 def;
-    /* 18 */ s8 res;
-    /* 19 */ s8 lck;
+    /* 12 */ u8 maxHP;
+    /* 13 */ u8 curHP;
+    /* 14 */ u8 pow;
+    /* 15 */ u8 skl;
+    /* 16 */ u8 spd;
+    /* 17 */ u8 def;
+    /* 18 */ u8 res;
+    /* 19 */ u8 lck;
 
-    /* 1A */ s8 conBonus;
+    /* 1A */ u8 conBonus;
     /* 1B */ u8 rescue;
     /* 1C */ u8 ballistaIndex;
     /* 1D */ s8 movBonus;

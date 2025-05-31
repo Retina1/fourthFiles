@@ -9,3 +9,5 @@
 #include "AutolevellingSaves/AutolevelSave.event"
 
 #include "MagicSwordRework/MagicSwordRework.event"
+
+#include "PrepScreenMagBooster/PrepScreen.event"

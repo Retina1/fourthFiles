@@ -109,7 +109,8 @@ EgilMug
 XavensMug
 FirstMug
 SecondMug
-MargitteMug 112
+WundClothedMug 112
+MargitteMug 113
 DamienMug
 JuniperMug
 PolymniaMug
@@ -137,6 +138,16 @@ HopfMug
 KelainoMug
 DalaiMug
 RiverMug
+BeepoMug
+EmberMug
+SubtiliorMug
+AwilMug
+JebetMug
+SwiftMug 146
+MaragMug
+AzaghalMug
+NatsubunMug 149
+AnnaMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug
@@ -199,32 +210,24 @@ ArtificeCard
 AutomatonCard
 SoulCard
 SouldierCard
-WoodratCard
-ArchratCard
-AirflyCard
-ArchflyCard
-VenomflyCard
-MaulMoleCard
 CrawlerCard
 ShamblerCard
 WightCard
 WightswornCard
-BowWightCard
-ArchryptCard
 WolfCard
 TriwolfCard
 BigleCard
 BigerleCard
 SpiderCard
 EntwinerCard
-CyclopsCard
-BiclipsCard
-GorgonCard
-GassergonCard
 GargoyleCard
 GargantoyleCard
 CentaurCard
 CentinelCard
+CyclopsCard
+BiclopsCard
+GorgonCard
+GassergonCard
 WyvernCard
 DrakeCard
 WyrmCard
@@ -244,3 +247,9 @@ GuardrakeCard
 OphanimCard
 WorldcoreCard
 SquirrelCard
+WoodratCard
+ArchratCard
+AirflyCard
+ArchflyCard
+VenomflyCard
+MaulMoleCard

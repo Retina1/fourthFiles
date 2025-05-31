@@ -4,10 +4,52 @@ ORG 0x23e93
 BYTE 0xE0
 POP
 
+//supplyMug
+PUSH
+ORG 0x9d70E
+BYTE NathanMug
+POP
+
 //movement script
 PUSH
 ORG 0x01A77E
 BYTE 0xFF 0x2D 0x29 0xDA 0x02 0x99 0x08 0x70 0x04 0x9B 0x02 0x93
+POP
+
+//Prevent Portraits being semi-transparent when loaded before text box
+PUSH
+ORG 0x13BEA
+BYTE 0x0
+ORG 0x13BEE
+BYTE 0x0
+ORG 0x13BF0
+BYTE 0x0
+POP
+
+//i think this does prep screen caps?
+PUSH
+//hp
+ORG $9c0e4; SHORT 0x2163
+ORG $9c0ea; SHORT 0x2163
+//str
+ORG $9c106; SHORT 0x2163
+//skl
+ORG $9c122; SHORT 0x2163
+//spd
+ORG $9c13e; SHORT 0x2163
+//def
+ORG $9c170; SHORT 0x2163
+//res
+ORG $9c18a; SHORT 0x2163
+//green numbers
+//hp - might not work?
+ORG $9c27c; SHORT 0x2a63
+//non hp
+ORG $9c2a4; SHORT 0x2863
+ORG $9c2ce; SHORT 0x2863
+ORG $9c2fa; SHORT 0x2863
+ORG $9c346; SHORT 0x2863
+ORG $9c370; SHORT 0x2863
 POP
 
 //remove shop music

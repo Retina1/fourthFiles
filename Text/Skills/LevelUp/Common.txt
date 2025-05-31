@@ -1,0 +1,213 @@
+##TemplateDesc0 ^
+Level: 0 ()[N]
+[N]
+[N]
+Next:[N]
+[N]
+Req: [X]
+##TemplateDesc1 ^
+Level: 1 ()[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+##TemplateDescMax ^
+Level: MAX ()[N]
+[N]
+[N]
+[N]
+[N]
+[X]
+
+##HPUpSkill
+Hit Points Up[X]
+##HPUpDesc0 ^
+Level: 0 (Passive)[N]
+Train body and soul[N]
+to increase endurance.[N]
+Next: +4 max HP.[N]
+[N]
+Req: None[X]
+##HPUpDesc1 ^
+Level: 1 (Passive)[N]
+Train body and soul[N]
+to increase endurance.[N]
+Grants +4 max HP.[N]
+Next: +9 max HP.[N]
+[X]
+##HPUpDesc2 ^
+Level: MAX (Passive)[N]
+Train body and soul[N]
+to increase endurance.[N]
+Grants +9 max HP.[N]
+[N]
+[X]
+
+##StrUpSkill
+Strength Up[X]
+##StrUpDesc0 ^
+Level: 0 (Passive)[N]
+Train body and soul[N]
+to increase might.[N]
+Next: +2 Str.[N]
+[N]
+Req: None[X]
+##StrUpDesc1 ^
+Level: 1 (Passive)[N]
+Train body and soul[N]
+to increase might.[N]
+Grants +2 Str.[N]
+Next: +5 Str.[N]
+[X]
+##StrUpDesc2 ^
+Level: MAX (Passive)[N]
+Train body and soul[N]
+to increase might.[N]
+Grants +5 Str.[N]
+[N]
+[X]
+
+##MagUpSkill
+Magic Up[X]
+##MagUpDesc0 ^
+Level: 0 (Passive)[N]
+Train body and soul[N]
+to increase power.[N]
+Next: +2 Mag.[N]
+[N]
+Req: None[X]
+##MagUpDesc1 ^
+Level: 1 (Passive)[N]
+Train body and soul[N]
+to increase power.[N]
+Grants +2 Mag.[N]
+Next: +5 Mag.[N]
+[X]
+##MagUpDesc2 ^
+Level: MAX (Passive)[N]
+Train body and soul[N]
+to increase power.[N]
+Grants +5 Mag.[N]
+[N]
+[X]
+
+##SklUpSkill
+Skill Up[X]
+##SklUpDesc0 ^
+Level: 0 (Passive)[N]
+Train body and soul[N]
+to increase skill.[N]
+Next: +3 Skl.[N]
+[N]
+Req: None[X]
+##SklUpDesc1 ^
+Level: 1 (Passive)[N]
+Train body and soul[N]
+to increase skill.[N]
+Grants +3 Skl.[N]
+Next: +7 Skl.[N]
+[X]
+##SklUpDesc2 ^
+Level: MAX (Passive)[N]
+Train body and soul[N]
+to increase skill.[N]
+Grants +7 Skl.[N]
+[N]
+[X]
+
+##SpdUpSkill
+Speed Up[X]
+##SpdUpDesc0 ^
+Level: 0 (Passive)[N]
+Train body and soul[N]
+to increase speed.[N]
+Next: +2 Spd.[N]
+[N]
+Req: None[X]
+##SpdUpDesc1 ^
+Level: 1 (Passive)[N]
+Train body and soul[N]
+to increase speed.[N]
+Grants +2 Spd.[N]
+Next: +5 Spd.[N]
+[X]
+##SpdUpDesc2 ^
+Level: MAX (Passive)[N]
+Train body and soul[N]
+to increase speed.[N]
+Grants +5 Spd.[N]
+[N]
+[X]
+
+##LucUpSkill
+Luck Up[X]
+##LucUpDesc0 ^
+Level: 0 (Passive)[N]
+Train body and soul[N]
+to increase fortune.[N]
+Next: +3 Luc.[N]
+[N]
+Req: None[X]
+##LucUpDesc1 ^
+Level: 1 (Passive)[N]
+Train body and soul[N]
+to increase fortune.[N]
+Grants +3 Luc.[N]
+Next: +7 Luc.[N]
+[X]
+##LucUpDesc2 ^
+Level: MAX (Passive)[N]
+Train body and soul[N]
+to increase fortune.[N]
+Grants +7 Luc.[N]
+[N]
+[X]
+
+##DefUpSkill
+Defense Up[X]
+##DefUpDesc0 ^
+Level: 0 (Passive)[N]
+Train body and soul[N]
+to increase toughness.[N]
+Next: +2 Def.[N]
+[N]
+Req: None[X]
+##DefUpDesc1 ^
+Level: 1 (Passive)[N]
+Train body and soul[N]
+to increase toughness.[N]
+Grants +2 Def.[N]
+Next: +5 Def.[N]
+[X]
+##DefUpDesc2 ^
+Level: MAX (Passive)[N]
+Train body and soul[N]
+to increase toughness.[N]
+Grants +5 Def.[N]
+[N]
+[X]
+
+##ResUpSkill
+Resistance Up[X]
+##ResUpDesc0 ^
+Level: 0 (Passive)[N]
+Train body and soul[N]
+to increase faith.[N]
+Next: +3 Res.[N]
+[N]
+Req: None[X]
+##ResUpDesc1 ^
+Level: 1 (Passive)[N]
+Train body and soul[N]
+to increase faith.[N]
+Grants +3 Res.[N]
+Next: +7 Res.[N]
+[X]
+##ResUpDesc2 ^
+Level: MAX (Passive)[N]
+Train body and soul[N]
+to increase faith.[N]
+Grants +7 Res.[N]
+[N]
+[X]

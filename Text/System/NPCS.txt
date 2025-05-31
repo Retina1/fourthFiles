@@ -67,6 +67,12 @@ She descends from a military lineage.[X]
 A rising imperial driver of Asketa.[N]
 She's pragmatic about her duties.[X]
 
+##Name_Swift
+Swift[X]
+##Desc_Swift
+An Asketan scale knight who has lost[N]
+itself chasing the Hallowed Armory.[X]
+
 ##Desc_Benthus2
 A former member of Guild Hedge, driven[N]
 by hubris to leave the group for dead.[X]

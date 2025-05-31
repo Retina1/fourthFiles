@@ -15,7 +15,7 @@ void ResistanceStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDat
   if ( proc->busyFlag )
     return;
 
-  GenericNumberTwoDigits(GetUnitResistance(udp->unit), RES_X, RES_Y, proc);
+  GenericNumberThreeDigits(GetUnitResistance(udp->unit), RES_X, RES_Y, proc);
 
   return;
 }

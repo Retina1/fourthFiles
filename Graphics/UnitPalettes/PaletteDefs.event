@@ -1,2 +1,5 @@
 #define Astarte_Priest 0x1
 #define Astarte_WarMagus 0x2
+#define Nathan_Scholar 0x3
+#define Nathan_Warlock 0x4
+#define Guildmaster_Highlander 0x5

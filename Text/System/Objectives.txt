@@ -18,3 +18,10 @@ competence![X]
 ##MonsterRoutDesc
 Defeat all[N]
 monsters![X]
+##Ch3RoutDesc
+Rout and keep[N]
+Lucien alive![X]
+
+##Ch5RoutDesc
+Defeat the[N]
+unknown foe![X]

@@ -12,5 +12,9 @@
 
 #include "Items\SpellAssociationList.event"
 
+#include "Terrain\FE8 Movement Cost Editor.event"
+
+#include "Terrain\FE8 Terrain Bonus Editor.event"
+
 #include "Weapon Triangle\Weapon Triangle.event"
 

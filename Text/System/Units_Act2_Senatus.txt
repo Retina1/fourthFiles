@@ -44,3 +44,10 @@ Cardam[X]
 A small and novice duelist with an odd[N]
 fighting style. He's driven by anger.[X]
 
+//shinzen
+##Name_Anna
+Anna[X]
+##Desc_Anna
+A merchant with innumberable identical[N]
+siblings. Her two loves are gold and Jake.[X]
+

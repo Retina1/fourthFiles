@@ -75,16 +75,38 @@ Entwiner[X]
 A baneful spider whose webs are[N]
 nigh-inescapable deathtraps.[X]
 
-##Name_Gargoyle
+##Class_Gargoyle
 Gargoyle[X]
 ##Desc_Gargoyle
 A living statue that soars through[N]
 the air, stabbing indiscriminately.[X]
-##Name_Gargantoyle
+##Class_Gargantoyle
 Gargantoyle[X]
 ##Desc_Gargantoyle
 A massive gargoyle of impressive[N]
 resilience and brutality.[X]
+
+##Class_Centaur
+Centaur[X]
+##Desc_Centaur
+A horse beast that rages through[N]
+foes with mighty axes and hooves.[X]
+##Class_Centinel
+Centinel[X]
+##Desc_Centinel
+A massive centaur with unstoppable[N]
+endurance and deadly axe skill.[X]
+
+##Class_Cyclops
+Cyclops[X]
+##Desc_Cyclops
+A hardy titan with a single eye[N]
+and might that can move mountains.[X]
+##Class_Biclops
+Biclops[X]
+##Desc_Biclops
+A mutated cyclops with two heads,[N]
+two eyes, and too much power.[X]
 
 
 ##fuckeggs

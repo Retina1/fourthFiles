@@ -40,7 +40,34 @@ between stats and growths.[X]
 
 #include "City/CityChapter02.txt"
 #include "City/CityGeneral.txt"
-#include "City/CityGuild_Swordfighters.txt"
+
+#include "Guild/Initial/Swordfighters.txt"
+#include "Guild/Initial/Knights.txt"
+#include "Guild/Initial/Axefighters.txt"
+#include "Guild/Initial/Archers.txt"
+#include "Guild/Initial/Scholars.txt"
+#include "Guild/Initial/Curates.txt"
+#include "Guild/Standard/Myrmidons.txt"
+#include "Guild/Standard/Riders.txt"
+#include "Guild/Standard/Raiders.txt"
+#include "Guild/Standard/Gunners.txt"
+#include "Guild/Magus/Poets.txt"
+#include "Guild/Magus/Seekers.txt"
+#include "Guild/Magus/Priests.txt"
+#include "Guild/Magus/Lurkers.txt"
+#include "Guild/Special/DarkHunters.txt"
+#include "Guild/Special/Lancers.txt"
+#include "Guild/Special/Brawlers.txt"
+#include "Guild/Special/Hunters.txt"
+#include "Guild/Sky/SkyKnights.txt"
+#include "Guild/Sky/ScaleKnights.txt"
+#include "Guild/Lifeflow/Apothecaries.txt"
+#include "Guild/Lifeflow/Encirclers.txt"
+#include "Guild/Lifeflow/Callers.txt"
+#include "Guild/Upper/Nobles.txt"
+#include "Guild/Upper/Duelists.txt"
+#include "Guild/ImpArt/Drivers.txt"
+#include "Guild/ImpArt/Artifices.txt"
 
 ## HealArrowText
 ->[X]
@@ -452,3 +479,22 @@ Please, clean it up![A][X]
 # 0x08CF
 Heh... Your storage is full,[NL]
 too. Rearrange things...[A][X]
+
+# 0x05B6
+Put items in storage. Up to[.][NL]
+200 items can be put in storage.[X]
+
+# 0x0212 ^
+One Pointers[X]
+
+# 0x0213 ^
+Two Pointers[X]
+
+# 0x0214 ^
+Three Pointers[X]
+
+# 0x0215 ^
+Five Pointers[X]
+
+# 0x0216 ^
+Stat Boosters[X]

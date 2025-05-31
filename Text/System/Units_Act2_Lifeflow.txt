@@ -49,6 +49,13 @@ Sharon[X]
 A gloomy Asketan encircler who joined[N]
 the Guild to take her mind off lost love.[X]
 
+//applanthropist
+##Name_Ember
+Ember[X]
+##Desc_Ember
+A ex-retainer to an Asketan lineage.[N]
+He's a curious and brash individual.[X]
+
 //rw
 ##Name_DreadJenny ^
 Dread Jenny[X]

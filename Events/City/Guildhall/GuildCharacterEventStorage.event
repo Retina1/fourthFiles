@@ -4,6 +4,7 @@
 GuildRecruitEvent(CoastKid_RecruitEvent,CoastKid)
 GuildRecruitEvent(Puzon_RecruitEvent,Puzon)
 GuildRecruitEvent(Cam_RecruitEvent,Cam)
+GuildRecruitEvent(Marag_RecruitEvent,Marag)
 //knights
 GuildRecruitEvent(Drogo_RecruitEvent,Drogo)
 GuildRecruitEvent(Gretchen_RecruitEvent,Gretchen)

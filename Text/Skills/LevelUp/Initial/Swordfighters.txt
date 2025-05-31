@@ -1,0 +1,161 @@
+##TemplateDesc0 ^
+Level: 0[N]
+[N]
+[N]
+Next:[N]
+[N]
+Req: [X]
+##TemplateDesc1 ^
+Level: 1[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+##TemplateDescMax ^
+Level: MAX[N]
+[N]
+[N]
+[N]
+[N]
+[X]
+
+##InitiativeSkill
+Initiative[X]
+##InitiativeDesc0 ^
+Level: 0 (Passive)[N]
+Rush into battle,[N]
+drawing first blood.[N]
+Next: 1.5x Atk if no[N]
+allies have acted.[N]
+Req: None[X]
+##InitiativeDescMax ^
+Level: MAX (Passive)[N]
+Rush into battle,[N]
+drawing first blood.[N]
+Gain 1.5x Atk if no[N]
+allies have acted.[N]
+[X]
+
+##VanguardSkill
+Vanguard[X]
+##VanguardDesc0 ^
+Level: 0 (Active)[N]
+Assume a risky but[N]
+powerful stance.[N]
+Next: 1.2x Atk/AS,[N]
+0.8x Def for 3 turns.[N]
+Req: None[X]
+##VanguardDescMax ^
+Level: MAX (Active)[N]
+Assume a risky but[N]
+powerful stance.[N]
+Grants 1.2x Atk/AS,[N]
+0.8x Def for 3 turns.[N]
+[X]
+
+##TenacitySkill
+Tenacity[X]
+##TenacityDesc0 ^
+Level: 0 (Passive)[N]
+Overcome the odds.[N]
+Next: 1.2x Atk (AS)[N]
+if user Atk (AS) less[N]
+than foe Def (AS).[N]
+Req: Vanguard 1[X]
+##VanguardDescMax ^
+Level: MAX (Passive)[N]
+Overcome the odds.[N]
+Grants 1.2x Atk (AS)[N]
+if user Atk (AS) less[N]
+than foe Def (AS).[N]
+[X]
+
+##NaturalLeaderSkill
+Natural Leader[X]
+##NaturalLeaderDesc0 ^
+Level: 0 (Passive)[N]
+Bolster companions.[N]
+Next: Adjacent allies[N]
+get 1.2x Atk/AS for[N]
+the turn at turn start.[N]
+Req: Tier 2[X]
+##NaturalLeaderDescMax ^
+Level: MAX (Passive)[N]
+Bolster companions.[N]
+All adjacent allies[N]
+get 1.2x Atk/AS for[N]
+the turn at turn start.[N]
+[X]
+
+##GuardBreakSkill
+Guard Break[X]
+##GuardBreakDesc0 ^
+Level: 0 (Active)[N]
+A glancing blow that[N]
+breaks one's guard.[N]
+Next: 2 Dur, 0.9x Atk.[N]
+0.8x Def for 2 turns.[N]
+Req: None[X]
+##GuardBreakDesc1 ^
+Level: 1 (Active)[N]
+A glancing blow that[N]
+breaks one's guard.[N]
+2 Dur, 0.9x Atk.[N]
+0.8x Def for 2 turns.[N]
+Next: 1.1x Atk.[X]
+##GuardBreakDescMax ^
+Level: MAX (Active)[N]
+A glancing blow that[N]
+breaks one's guard.[N]
+2 Dur, 1.1x Atk.[N]
+0.8x Def for 2 turns.[N]
+[X]
+
+##PowerBreakSkill
+Power Break[X]
+##PowerBreakDesc0 ^
+Level: 0 (Active)[N]
+A glancing blow that[N]
+breaks one's power.[N]
+Next: 2 Dur, 0.9x Atk.[N]
+0.8x Atk for 2 turns.[N]
+Req: Guard Break 1[X]
+##PowerBreakDesc1 ^
+Level: 1 (Active)[N]
+A glancing blow that[N]
+breaks one's power.[N]
+2 Dur, 0.9x Atk.[N]
+0.8x Atk for 2 turns.[N]
+Next: 1.1x Atk.[X]
+##PowerBreakDescMax ^
+Level: MAX (Active)[N]
+A glancing blow that[N]
+breaks one's power.[N]
+2 Dur, 1.1x Atk.[N]
+0.8x Atk for 2 turns.[N]
+[X]
+
+##AgilityBreakSkill
+Agility Break[X]
+##AgilityBreakDesc0 ^
+Level: 0 (Active)[N]
+A glancing blow that[N]
+breaks one's agility.[N]
+Next: 2 Dur, 0.9x Atk.[N]
+0.8x AS for 2 turns.[N]
+Req: Power Break 1[X]
+##AgilityBreakDesc1 ^
+Level: 1 (Active)[N]
+A glancing blow that[N]
+breaks one's agility.[N]
+2 Dur, 0.9x Atk.[N]
+0.8x AS for 2 turns.[N]
+Next: 1.1x Atk.[X]
+##AgilityBreakDescMax ^
+Level: MAX (Active)[N]
+A glancing blow that[N]
+breaks one's agility.[N]
+2 Dur, 1.1x Atk.[N]
+0.8x AS for 2 turns.[N]
+[X]

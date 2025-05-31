@@ -5,9 +5,37 @@
 #include "ItemIcons/IconInstaller.event"
 #include "Animation/AnimationPointers.event"
 #include "UnitPalettes/_Installer.event"
+#include "SystemMenus/MenuInstaller.event"
+
+//TODO
+//https://feuniverse.us/t/custom-ui-graphics-tutorial/25292
+//preps missing use tiles
+//gold count
+//map animations
+//battle animations
+//exp bars
+//levelup menu
 
 //doing this now to save maximal freespace
 #include "BattlePlatforms/BattlePlatformInstaller.event"
+
+//transparency murder
+PUSH
+		ORG 0x8D01A
+		BYTE $00 $20 //disable transparency
+				ORG 0x91AB8
+		BYTE $00 $20 //disable transparency
+				ORG 0x8E3AC
+		BYTE $00 $20 //disable transparency
+				ORG 0xB1B12
+		BYTE $00 $20 //disable transparency
+				ORG 0xAF744
+		BYTE $00 $20 //disable transparency
+				ORG 0xCEF14
+		BYTE $00 $20 //disable transparency
+				ORG 0x4c50c
+		BYTE 0x00 0x20 //disable transparency
+POP
 
 //remove glowy circle?
 PUSH
@@ -47,3 +75,15 @@ NewGameOver:
 ALIGN 4
 NewGameOverPal:
 #incbin "BuilderDumped/GameOver.png.pal.dmp"
+PUSH
+ORG $C5830
+POIN NewTitle
+ORG $C5790
+POIN NewTitlePal
+POP
+ALIGN 4
+NewTitle:
+#incbin "BuilderDumped/Fourthhack.png.dmp" 
+ALIGN 4
+NewTitlePal:
+#incbin "BuilderDumped/Fourthhack.png.pal.dmp"

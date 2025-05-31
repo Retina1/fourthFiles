@@ -100,6 +100,14 @@ EndEvent
 {
 #include "City/HirschringSquare.event"
 }
+//dungeon FOES
+//lethal forest: lv 10 triwolf
+//shimmering mines: lv 13 shieldlance gargantoyle
+//clouded wastes: lv 17 imposing axe centinel
+
+//C route chapter 18 is endbringer all at once, early - have fun
+
+//benthus conditional drop - kill while silenced
 
 ALIGN 4
 BlankEscape:

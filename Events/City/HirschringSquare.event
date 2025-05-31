@@ -123,6 +123,7 @@ UNIT
 #define LoadUnitsByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x418C 0x0 0xc; LOAD1 0x0 ch18C; GOTO 0x4000; LABEL 0x418C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x418B 0x0 0xc; LOAD1 0x0 ch18B; GOTO 0x4000; LABEL 0x418B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x418A 0x0 0xc; LOAD1 0x0 ch18A; GOTO 0x4000; LABEL 0x418A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x4160 0x0 0xc; LOAD1 0x0 ch16; GOTO 0x4000; LABEL 0x4160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x4150 0x0 0xc; LOAD1 0x0 ch15; GOTO 0x4000; LABEL 0x4150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x4130 0x0 0xc; LOAD1 0x0 ch13; GOTO 0x4000; LABEL 0x4130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x413A 0x0 0xc; LOAD1 0x0 chS3; GOTO 0x4000; LABEL 0x413A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x4100 0x0 0xc; LOAD1 0x0 ch10; GOTO 0x4000; LABEL 0x4100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x4090 0x0 0xc; LOAD1 0x0 ch9; GOTO 0x4000; LABEL 0x4090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x4080 0x0 0xc; LOAD1 0x0 ch8; GOTO 0x4000; LABEL 0x4080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x4050 0x0 0xc; LOAD1 0x0 ch5; GOTO 0x4000; LABEL 0x4050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x403a 0x0 0xc; LOAD1 0x0 chS1; GOTO 0x4000; LABEL 0x403a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x4030 0x0 0xc; LOAD1 0x0 ch3; GOTO 0x4000; LABEL 0x4030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x4020 0x0 0xc; LOAD1 0x0 ch2; GOTO 0x4000; LABEL 0x4020; LABEL 0x4000; RefreshSMS"
 #define GiveMoneyByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x318C 0x0 0xc; GiveMoney(ch18C); GOTO 0x3000; LABEL 0x318C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x318B 0x0 0xc; GiveMoney(ch18B); GOTO 0x3000; LABEL 0x318B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x318A 0x0 0xc; GiveMoney(ch18A); GOTO 0x3000; LABEL 0x318A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x3160 0x0 0xc; GiveMoney(ch16); GOTO 0x3000; LABEL 0x3160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x3150 0x0 0xc; GiveMoney(ch15); GOTO 0x3000; LABEL 0x3150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x3130 0x0 0xc; GiveMoney(ch13); GOTO 0x3000; LABEL 0x3130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x313A 0x0 0xc; GiveMoney(chS3); GOTO 0x3000; LABEL 0x313A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x3100 0x0 0xc; GiveMoney(ch10); GOTO 0x3000; LABEL 0x3100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x3090 0x0 0xc; GiveMoney(ch9); GOTO 0x3000; LABEL 0x3090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x3080 0x0 0xc; GiveMoney(ch8); GOTO 0x3000; LABEL 0x3080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x3050 0x0 0xc; GiveMoney(ch5); GOTO 0x3000; LABEL 0x3050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x303a 0x0 0xc; GiveMoney(chS1); GOTO 0x3000; LABEL 0x303a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3030 0x0 0xc; GiveMoney(ch3); GOTO 0x3000; LABEL 0x3030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x3020 0x0 0xc; GiveMoney(ch2); GOTO 0x3000; LABEL 0x3020; LABEL 0x3000"
 #define RunTextByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x518C 0x0 0xc; Text(ch18C); GOTO 0x5000; LABEL 0x518C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x518B 0x0 0xc; Text(ch18B); GOTO 0x5000; LABEL 0x518B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x518A 0x0 0xc; Text(ch18A); GOTO 0x5000; LABEL 0x518A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x5160 0x0 0xc; Text(ch16); GOTO 0x5000; LABEL 0x5160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x5150 0x0 0xc; Text(ch15); GOTO 0x5000; LABEL 0x5150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x5130 0x0 0xc; Text(ch13); GOTO 0x5000; LABEL 0x5130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x513A 0x0 0xc; Text(chS3); GOTO 0x5000; LABEL 0x513A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x5100 0x0 0xc; Text(ch10); GOTO 0x5000; LABEL 0x5100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x5090 0x0 0xc; Text(ch9); GOTO 0x5000; LABEL 0x5090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x5080 0x0 0xc; Text(ch8); GOTO 0x5000; LABEL 0x5080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x5050 0x0 0xc; Text(ch5); GOTO 0x5000; LABEL 0x5050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x503a 0x0 0xc; Text(chS1); GOTO 0x5000; LABEL 0x503a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x5030 0x0 0xc; Text(ch3); GOTO 0x5000; LABEL 0x5030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x5020 0x0 0xc; Text(ch2); GOTO 0x5000; LABEL 0x5020; LABEL 0x5000"
+#define RunEventByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x718C 0x0 0xc; CALL ch18C; GOTO 0x7000; LABEL 0x718C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x718B 0x0 0xc; CALL ch18B; GOTO 0x7000; LABEL 0x718B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x718A 0x0 0xc; CALL ch18A; GOTO 0x7000; LABEL 0x718A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x7160 0x0 0xc; CALL ch16; GOTO 0x7000; LABEL 0x7160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x7150 0x0 0xc; CALL ch15; GOTO 0x7000; LABEL 0x7150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x7130 0x0 0xc; CALL ch13; GOTO 0x7000; LABEL 0x7130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x713A 0x0 0xc; CALL chS3; GOTO 0x7000; LABEL 0x713A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x7100 0x0 0xc; CALL ch10; GOTO 0x7000; LABEL 0x7100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x7090 0x0 0xc; CALL ch9; GOTO 0x7000; LABEL 0x7090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x7080 0x0 0xc; CALL ch8; GOTO 0x7000; LABEL 0x7080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x7050 0x0 0xc; CALL ch5; GOTO 0x7000; LABEL 0x7050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x703a 0x0 0xc; CALL chS1; GOTO 0x7000; LABEL 0x703a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x7030 0x0 0xc; CALL ch3; GOTO 0x7000; LABEL 0x7030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x7020 0x0 0xc; CALL ch2; GOTO 0x7000; LABEL 0x7020; LABEL 0x7000"
 #define MoveToNextChapter(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15) "CHECK_EVENTID Chapter15DoneFlag; BEQ 0x6150 0x0 0xc; MNC2 ch15; GOTO 0x6000; LABEL 0x6150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x6130 0x0 0xc; MNC2 ch13; GOTO 0x6000; LABEL 0x6130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x613A 0x0 0xc; MNC2 chS3; GOTO 0x6000; LABEL 0x613A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x6100 0x0 0xc; MNC2 ch10; GOTO 0x6000; LABEL 0x6100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x6090 0x0 0xc; MNC2 ch9; GOTO 0x6000; LABEL 0x6090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x6080 0x0 0xc; MNC2 ch8; GOTO 0x6000; LABEL 0x6080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x6050 0x0 0xc; MNC2 ch5; GOTO 0x6000; LABEL 0x6050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x603a 0x0 0xc; MNC2 chS1; GOTO 0x6000; LABEL 0x603a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x6030 0x0 0xc; MNC2 ch3; GOTO 0x6000; LABEL 0x6030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x6020 0x0 0xc; MNC2 ch2; GOTO 0x6000; LABEL 0x6020; LABEL 0x6000"
 
 //#define LoadAtChapterIfAlive(unit,flagID,unitGroup,label) "CHECK_ALIVE unit; BEQ label 0xc 0x0; CHECK_EVENTID flagID; BEQ label 0xc 0x0; CHECK_EVENTID flagID+1; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
@@ -153,16 +154,22 @@ AddSigil(15,11)
 AddRedSigil(6,9)
 ENDA
 
+IntroTexts:
+RunEventByVisit(Chapter2CityOpen,0,0,0,0,0,0,0,0,0,0,0,0,0)
+ENDA
+
 BeginningScene:
 LoadUnitsByVisit(Chapter2SquareUnitsPreps,0,0,0,0,0,0,0,0,0,0,0,0,0)
 CALL LoadHirschringSigils
 ResetMapFlags
 InitializeRecruitFlags
 ENUF LocationFlagHirschringSquare
+CALL IntroTexts
 CallPreps
 CALL LoadPostPrepsUnits
 FADU 10
-GiveMoneyByVisit(2000,0,0,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_PostPreps,0,0,0,0,0,0,0,0,0,0,0,0,0)
+GiveMoneyByVisit(2000,2000,1000,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x1 0xc 0x0
 SystemText(TownTutorial)
@@ -175,7 +182,7 @@ LoadUnitsByVisit(Chapter2SquareUnitsBlues,0,0,0,0,0,0,0,0,0,0,0,0,0)
 ENDA
 
 SquareMoveToGuildhall:
-SwapToMap(Guildhall,4,15)
+SwapToMap(Guildhall,4,14)
 CALL LoadGuildhallSigils
 LoadUnitsByVisit(BehindCounterGerson,0,0,0,0,0,0,0,0,0,0,0,0,0)
 FADU 10
@@ -205,6 +212,9 @@ EndEvent
 #include "Guildhall.event"
 #include "Blacksmith.event"
 #include "Tavern.event"
+
+#include "IntroEvents.event"
+#include "EndEvents.event"
 
 TownGuildmasterTalk:
 RunTextByVisit(City02_Guildmaster,0,0,0,0,0,0,0,0,0,0,0,0,0)
@@ -238,7 +248,7 @@ EndingScene:
 EndingMapFlags
 MovementUnsetter 
 //add route split logic
-RunTextByVisit(0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(Chapter2CityEnd,0,0,0,0,0,0,0,0,0,0,0,0,0)
 MoveToNextChapter(Chapter3,Stratum1F1,Chapter4,Chapter6,Chapter9,Chapter10,Stratum3F1,Chapter11,Chapter14,Chapter16)
 ENDA
 

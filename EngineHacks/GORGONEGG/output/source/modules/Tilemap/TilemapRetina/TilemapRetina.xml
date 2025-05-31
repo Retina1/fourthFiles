@@ -7,7 +7,7 @@
   <Definition Name="gPal_PlayerInterface_Blue">extern u16 gPal_PlayerInterface_Blue[];</Definition>
   <Definition Name="gPal_PlayerInterface_Red">extern u16 gPal_PlayerInterface_Red[];</Definition>
   <Definition Name="gPal_PlayerInterface_Green">extern u16 gPal_PlayerInterface_Green[];</Definition>
-  <Definition Name="GE_WIDTH" Value="14"/>
-  <Definition Name="GE_HEIGHT" Value="8"/>
+  <Definition Name="GE_WIDTH" Value="17"/>
+  <Definition Name="GE_HEIGHT" Value="6"/>
   <Definition Name="GE_TILEMAP_PALETTE" Value="3"/>
 </Module>

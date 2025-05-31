@@ -1,10 +1,13 @@
 ALIGN 4
 BowEff:
-BYTE SkyKnight Seraph ScaleKnight Scalemaster 0
+BYTE SkyKnight Seraph ScaleKnight Scalemaster 
+BYTE Bigle Bigerle Gargoyle Gargantoyle 0
 
 ALIGN 4
 MonsterEff:
-BYTE Squirrel Shambler Crawler Wight Wightsworn BowWight Archrypt 0
+BYTE Squirrel Shambler Crawler Wight Wightsworn BowWight Archrypt
+BYTE Bigle Bigerle Gargoyle Gargantoyle Wolf Triwolf Spider Entwiner
+BYTE Centaur Centinel Cyclops Biclops 0
 
 ALIGN 4
 MagiEff:

@@ -69,12 +69,12 @@ void ComputeBattleUnitDodgeRate(struct BattleUnit* bu) {
 
 void ComputeBattleUnitEffectiveHitRate(struct BattleUnit* attacker, struct BattleUnit* defender) {
     attacker->battleEffectiveHitRate = attacker->battleHitRate - defender->battleAvoidRate;
+	
+	if (attacker->battleEffectiveHitRate < attacker->unit.skl)
+        attacker->battleEffectiveHitRate = attacker->unit.skl;
 
     if (attacker->battleEffectiveHitRate > 100)
         attacker->battleEffectiveHitRate = 100;
-
-    if (attacker->battleEffectiveHitRate < attacker->unit.skl)
-        attacker->battleEffectiveHitRate = attacker->unit.skl;
 }
 
 void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct BattleUnit* defender) {

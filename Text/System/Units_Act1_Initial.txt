@@ -49,6 +49,13 @@ Cam[X]
 An optimistic Asketan adventuring for[N]
 their orphanage. They're protective.[X]
 
+//amalga
+##Name_Marag
+Marag[X]
+##Desc_Marag
+A Belvarusi [OpenQuote]veteran[CloseQuote] who was wounded[N]
+and dodged fighting. He's quite cynical.[X]
+
 //drogo by lorca (knight)
 ##Name_Drogo
 Drogo[X]

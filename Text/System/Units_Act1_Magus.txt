@@ -63,6 +63,13 @@ Vasily[X]
 A Belvarusi seeker cursed to be blind[N]
 to magic. He's proud of his wolf pelt.[X]
 
+//thorn
+##Name_Jebet
+Jebet[X]
+##Desc_Jebet
+A studied Asketan seeker who loves[N]
+artifacts. He's otherwise aloof.[X]
+
 //Saewynn by hiraya
 ##Name_Saewynn
 Saewynn[X]

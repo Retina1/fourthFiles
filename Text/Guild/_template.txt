@@ -1,0 +1,12 @@
+##Guild_UNIT_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][UNIT]
+unit here[A][X]
+##Guild_UNIT_Accept
+[FarLeft][Guildmaster][Left][Nathan][MidRight][UNIT]
+accept here[A][X]
+##Guild_UNIT_Deny
+[FarLeft][Guildmaster][Left][Nathan][MidRight][UNIT]
+deny here[A][X]
+##Guild_UNIT_Return
+[FarLeft][Guildmaster][Left][Nathan][MidRight][UNIT]
+return here[A][X]

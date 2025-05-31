@@ -23,6 +23,11 @@ Etrian Odyssey V[X]
 ##SongTitle_UntamedGarden
 Untamed Garden[X]
 
+##SourceTitle_SMT4
+Shin Megami Tensei IV[X]
+##SongTitle_ExcavationWorkersQuarters
+Excavation Worker's Quarters[X]
+
 ##SourceTitle_OrderOfEcclesia ^
 Castlevania: Order of Ecclesia[X]
 ##SongTitle_Rhapsody ^

@@ -1,0 +1,56 @@
+
+
+	PUSH
+		ORG 0x5B6470
+		POIN MenuTileset
+		POIN MenuTileset
+		POIN MenuTileset
+		POIN MenuTileset
+		
+		ORG 0x5B6BB4//Palettes
+		#incbin "blue.dmp"
+		#incbin "red.dmp"
+		#incbin "green.dmp"
+		#incbin "grey.dmp"//actually purple but w/e
+		//Darkened palettes will just be the same
+		#incbin "darkblue.dmp"
+		#incbin "darkred.dmp"
+		#incbin "darkgreen.dmp"
+		#incbin "darkgrey.dmp"
+		
+		ORG 0xA1738C//MMB Palettes
+		#incbin "blue.dmp"
+		#incbin "red.dmp"
+		#incbin "green.dmp"
+		ORG 0x9A8D8
+		POIN ExtraTiles
+		ORG 0x098CB4
+		POIN MenuDecoration
+		ORG 0x09C7FC
+		POIN UseMenu
+		ORG 0x0B4E70
+		POIN MoreExtra
+		ORG 0x098468
+		POIN MoreMoreExtra
+		
+
+	POP
+
+		ALIGN 4
+		MenuTileset:
+		#incbin "MenuTiles.png.dmp"
+		ALIGN 4
+		ExtraTiles:
+		#incbin "ExtraTiles.png.dmp"
+		ALIGN 4
+		MoreExtra:
+		#incbin "MoreExtra.png.dmp"
+		ALIGN 4
+		MoreMoreExtra:
+		#incbin "MoreMoreExtra.png.dmp"
+		ALIGN 4
+		MenuDecoration:
+		#incbin "MenuDecoration.png.dmp"
+		ALIGN 4
+		UseMenu:
+		#incbin "UseMenu.png.dmp"

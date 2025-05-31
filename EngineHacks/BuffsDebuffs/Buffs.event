@@ -5,3 +5,5 @@
 //also code them i guess
 //start of turn loop for decay
 //various combat loops for other effects
+
+//all buffs but def buffs hit combat stats, def res buffs hit actual stats

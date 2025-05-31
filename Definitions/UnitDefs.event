@@ -118,3 +118,11 @@
 #define Kelaino 0x76
 #define Dalai 0x77
 #define River 0x78
+#define Beepo 0x79
+#define Ember 0x7A
+#define Subtilior 0x7B
+#define Awil 0x7C
+#define Jebet 0x7D
+#define Marag 0x7E
+#define Azaghal 0x7F
+#define Anna 0x80

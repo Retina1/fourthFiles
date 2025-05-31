@@ -10,6 +10,9 @@ UNIT
 Recruit_Cam:
 UNIT Cam 0x0 0x1 Level(1,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Shortsword,Medica] NoAI
 UNIT
+Recruit_Marag:
+UNIT Marag 0x0 0x1 Level(3,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
+UNIT
 
 Recruit_Drogo:
 UNIT Drogo 0x0 0x1 Level(1,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
@@ -84,10 +87,13 @@ CoastKid_RecruitEvent:
 GuildRecruit(CoastKid,Guild_CoastKid_Intro,Guild_CoastKid_Accept,Guild_CoastKid_Deny,Guild_CoastKid_Return,0x20)
 EndEvent
 Puzon_RecruitEvent:
-GuildRecruit(Puzon,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+GuildRecruit(Puzon,Guild_Puzon_Intro,Guild_Puzon_Accept,Guild_Puzon_Deny,Guild_Puzon_Return,0x21)
 EndEvent
 Cam_RecruitEvent:
-GuildRecruit(Cam,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+GuildRecruit(Cam,Guild_Cam_Intro,Guild_Cam_Accept,Guild_Cam_Deny,Guild_Cam_Return,0x22)
+EndEvent
+Marag_RecruitEvent:
+GuildRecruit(Marag,Guild_Marag_Intro,Guild_Marag_Accept,Guild_Marag_Deny,Guild_Marag_Return,0x23)
 EndEvent
 
 //knt
@@ -171,6 +177,7 @@ GuildLoadFlagReset
 GuildLoad(CoastKid,Recruit_CoastKid,0x1)
 GuildLoad(Puzon,Recruit_Puzon,0x2)
 GuildLoad(Cam,Recruit_Cam,0x3)
+GuildLoad(Marag,Recruit_Marag,0x4)
 FADU 10
 ENDA
 

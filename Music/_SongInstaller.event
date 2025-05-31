@@ -100,6 +100,13 @@ SongTable(Song_EverScarletForest,EverScarletForest,1)
 SongTable(Song_CherryTreesAndWings,CherryTreesAndWings,0)
 #include "songs/CherryTreesAndWings.event"
 }
+//0x17
+//workers quarters for S4 sewers as somber thing, something more chaotic for aboveground S4
+#define Song_ExcavationWorkersQuarters 0x19
+{
+SongTable(Song_ExcavationWorkersQuarters,ExcavationWorkersQuarters,1)
+#include "songs/ExcavationWorkersQuarters.event"
+}
 
 
 //0x36 - wind doesn't draw heroes

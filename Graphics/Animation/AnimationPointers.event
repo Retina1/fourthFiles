@@ -223,6 +223,25 @@ HandaxeAnim(Trailblazer_Handaxe)
 UnarmedAnim(Trailblazer_Unarmed)
 EndAnim
 
+//Poet
+{
+#include "ClassAnims/Poet/Magic Installer.event"
+}
+ALIGN 4
+PoetAnims:
+SupportAnim(Poet_Magic)
+UnarmedAnim(Poet_Magic)
+EndAnim
+//Troubadour
+{
+#include "ClassAnims/Troubadour/Magic Installer.event"
+#include "ClassAnims/Troubadour/Refresh Installer.event"
+}
+ALIGN 4
+TroubadourAnims:
+SupportAnim(Troubadour_Magic)
+UnarmedAnim(Troubadour_Refresh)
+EndAnim
 
 //Seeker
 {
@@ -265,6 +284,25 @@ SupportAnim(WarMagus_Magic)
 UnarmedAnim(WarMagus_Magic)
 EndAnim
 
+//Lurker
+{
+#include "ClassAnims/Lurker/Magic Installer.event"
+}
+ALIGN 4
+LurkerAnims:
+SupportAnim(Lurker_Magic)
+UnarmedAnim(Lurker_Magic)
+EndAnim
+//Hexer
+{
+#include "ClassAnims/Hexer/Magic Installer.event"
+}
+ALIGN 4
+HexerAnims:
+SupportAnim(Hexer_Magic)
+UnarmedAnim(Hexer_Magic)
+EndAnim
+
 //Lancer
 {
 #include "ClassAnims/Lancer/Lance Installer.event"
@@ -286,6 +324,129 @@ PierceAnim(Highlander_Lance)
 UnarmedAnim(Highlander_Unarmed)
 EndAnim
 
+//Hunter
+{
+#include "ClassAnims/Hunter/Bow Installer.event"
+#include "ClassAnims/Hunter/Unarmed Installer.event"
+}
+ALIGN 4
+HunterAnims:
+RangedAnim(Hunter_Bow)
+UnarmedAnim(Hunter_Unarmed)
+EndAnim
+//Survivalist
+{
+#include "ClassAnims/Survivalist/Bow Installer.event"
+#include "ClassAnims/Survivalist/Unarmed Installer.event"
+}
+ALIGN 4
+SurvivalistAnims:
+RangedAnim(Survivalist_Bow)
+UnarmedAnim(Survivalist_Unarmed)
+EndAnim
+
+//SkyKnight
+{
+#include "ClassAnims/SkyKnight/Lance Installer.event"
+#include "ClassAnims/SkyKnight/Unarmed Installer.event"
+}
+ALIGN 4
+SkyKnightAnims:
+PierceAnim(SkyKnight_Lance)
+UnarmedAnim(SkyKnight_Unarmed)
+EndAnim
+//Seraph
+{
+#include "ClassAnims/Seraph/Lance Installer.event"
+#include "ClassAnims/Seraph/Unarmed Installer.event"
+}
+ALIGN 4
+SeraphAnims:
+PierceAnim(Seraph_Lance)
+UnarmedAnim(Seraph_Unarmed)
+EndAnim
+
+//ScaleKnight
+{
+#include "ClassAnims/ScaleKnight/Axe Installer.event"
+#include "ClassAnims/ScaleKnight/Handaxe Installer.event"
+#include "ClassAnims/ScaleKnight/Unarmed Installer.event"
+}
+ALIGN 4
+ScaleKnightAnims:
+BashAnim(ScaleKnight_Axe)
+HandaxeAnim(ScaleKnight_Handaxe)
+UnarmedAnim(ScaleKnight_Unarmed)
+EndAnim
+//Scalemaster
+{
+#include "ClassAnims/Scalemaster/Axe Installer.event"
+#include "ClassAnims/Scalemaster/Handaxe Installer.event"
+#include "ClassAnims/Scalemaster/Unarmed Installer.event"
+}
+ALIGN 4
+ScalemasterAnims:
+BashAnim(Scalemaster_Axe)
+HandaxeAnim(Scalemaster_Handaxe)
+UnarmedAnim(Scalemaster_Unarmed)
+EndAnim
+
+//Apothecary
+{
+#include "ClassAnims/Apothecary/Staff Installer.event"
+}
+ALIGN 4
+ApothecaryAnims:
+SupportAnim(Apothecary_Staff)
+UnarmedAnim(Apothecary_Staff)
+EndAnim
+//Botanist
+{
+#include "ClassAnims/Botanist/Staff Installer.event"
+}
+ALIGN 4
+BotanistAnims:
+SupportAnim(Botanist_Staff)
+UnarmedAnim(Botanist_Staff)
+EndAnim
+
+//Encircler
+{
+#include "ClassAnims/Encircler/Magic Installer.event"
+}
+ALIGN 4
+EncirclerAnims:
+SupportAnim(Encircler_Magic)
+UnarmedAnim(Encircler_Magic)
+EndAnim
+//Arcanist
+{
+#include "ClassAnims/Arcanist/Magic Installer.event"
+}
+ALIGN 4
+ArcanistAnims:
+SupportAnim(Arcanist_Magic)
+UnarmedAnim(Arcanist_Magic)
+EndAnim
+
+//Caller
+{
+#include "ClassAnims/Caller/Magic Installer.event"
+}
+ALIGN 4
+CallerAnims:
+SupportAnim(Caller_Magic)
+UnarmedAnim(Caller_Magic)
+EndAnim
+//Necromancer
+{
+#include "ClassAnims/Necromancer/Magic Installer.event"
+}
+ALIGN 4
+NecromancerAnims:
+SupportAnim(Necromancer_Magic)
+UnarmedAnim(Necromancer_Magic)
+EndAnim
 
 //Noble
 {
@@ -308,6 +469,48 @@ PierceAnim(Sovereign_Sword)
 UnarmedAnim(Sovereign_Unarmed)
 EndAnim
 
+//Duelist
+{
+#include "ClassAnims/Duelist/Sword Installer.event"
+#include "ClassAnims/Duelist/Unarmed Installer.event"
+}
+ALIGN 4
+DuelistAnims:
+PierceAnim(Duelist_Sword)
+UnarmedAnim(Duelist_Unarmed)
+EndAnim
+//Fencer
+{
+#include "ClassAnims/Fencer/Sword Installer.event"
+#include "ClassAnims/Fencer/Unarmed Installer.event"
+}
+ALIGN 4
+FencerAnims:
+PierceAnim(Fencer_Sword)
+UnarmedAnim(Fencer_Unarmed)
+EndAnim
+
+//Driver
+{
+#include "ClassAnims/Driver/Sword Installer.event"
+#include "ClassAnims/Driver/Unarmed Installer.event"
+}
+ALIGN 4
+DriverAnims:
+SlashAnim(Driver_Sword)
+UnarmedAnim(Driver_Unarmed)
+EndAnim
+//Imperial
+{
+#include "ClassAnims/Imperial/Sword Installer.event"
+#include "ClassAnims/Imperial/Unarmed Installer.event"
+}
+ALIGN 4
+ImperialAnims:
+SlashAnim(Imperial_Sword)
+UnarmedAnim(Imperial_Unarmed)
+EndAnim
+
 //Crawler
 {
 #include "MonsterAnims/Crawler/Monster Installer.event"
@@ -324,6 +527,64 @@ ALIGN 4
 ShamblerAnims:
 MonsterAnim(Shambler_Monster)
 EndAnim
+
+//Wolf
+{
+#include "MonsterAnims/Wolf/Monster Installer.event"
+}
+ALIGN 4
+WolfAnims:
+MonsterAnim(Wolf_Monster)
+EndAnim
+//Triwolf
+{
+#include "MonsterAnims/Triwolf/Monster Installer.event"
+}
+ALIGN 4
+TriwolfAnims:
+MonsterAnim(Triwolf_Monster)
+EndAnim
+
+//Spider
+{
+#include "MonsterAnims/Spider/Monster Installer.event"
+}
+ALIGN 4
+SpiderAnims:
+MonsterAnim(Spider_Monster)
+EndAnim
+//Entwiner
+{
+#include "MonsterAnims/Entwiner/Monster Installer.event"
+}
+ALIGN 4
+EntwinerAnims:
+MonsterAnim(Entwiner_Monster)
+EndAnim
+
+//Bigle
+{
+#include "MonsterAnims/Bigle/Magic Installer.event"
+#include "MonsterAnims/Bigle/Monster Installer.event"
+}
+ALIGN 4
+BigleAnims:
+SpecialAnim(Bigle_Magic,EvilEye)
+MonsterAnim(Bigle_Monster)
+EndAnim
+//Bigerle
+{
+#include "MonsterAnims/Bigerle/Magic Installer.event"
+#include "MonsterAnims/Bigerle/Monster Installer.event"
+}
+ALIGN 4
+BigerleAnims:
+SpecialAnim(Bigerle_Magic,EvilEye)
+MonsterAnim(Bigerle_Monster)
+EndAnim
+
+
+
 
 //Wight
 {
@@ -361,4 +622,76 @@ BashAnim(Wightsworn_Axe)
 HandaxeAnim(Wightsworn_Axe)
 RangedAnim(Wightsworn_Bow)
 UnarmedAnim(Wightsworn_Unarmed)
+EndAnim
+
+
+//Gargoyle
+{
+#include "MonsterAnims/Gargoyle/Lance Installer.event"
+#include "MonsterAnims/Gargoyle/Unarmed Installer.event"
+}
+ALIGN 4
+GargoyleAnims:
+PierceAnim(Gargoyle_Lance)
+UnarmedAnim(Gargoyle_Unarmed)
+EndAnim
+//Gargantoyle
+{
+#include "MonsterAnims/Gargantoyle/Lance Installer.event"
+#include "MonsterAnims/Gargantoyle/Unarmed Installer.event"
+}
+ALIGN 4
+GargantoyleAnims:
+PierceAnim(Gargantoyle_Lance)
+UnarmedAnim(Gargantoyle_Unarmed)
+EndAnim
+
+//Centaur
+{
+#include "MonsterAnims/Centaur/Axe Installer.event"
+#include "MonsterAnims/Centaur/Handaxe Installer.event"
+#include "MonsterAnims/Centaur/Unarmed Installer.event"
+}
+ALIGN 4
+CentaurAnims:
+BashAnim(Centaur_Axe)
+HandaxeAnim(Centaur_Handaxe)
+UnarmedAnim(Centaur_Unarmed)
+EndAnim
+//Centinel
+{
+#include "MonsterAnims/Centinel/Axe Installer.event"
+#include "MonsterAnims/Centinel/Handaxe Installer.event"
+#include "MonsterAnims/Centinel/Unarmed Installer.event"
+}
+ALIGN 4
+CentinelAnims:
+BashAnim(Centinel_Axe)
+HandaxeAnim(Centinel_Handaxe)
+UnarmedAnim(Centinel_Unarmed)
+EndAnim
+
+//Cyclops
+{
+#include "MonsterAnims/Cyclops/Axe Installer.event"
+#include "MonsterAnims/Cyclops/Handaxe Installer.event"
+#include "MonsterAnims/Cyclops/Unarmed Installer.event"
+}
+ALIGN 4
+CyclopsAnims:
+BashAnim(Cyclops_Axe)
+HandaxeAnim(Cyclops_Handaxe)
+UnarmedAnim(Cyclops_Unarmed)
+EndAnim
+//Biclops
+{
+#include "MonsterAnims/Biclops/Axe Installer.event"
+#include "MonsterAnims/Biclops/Handaxe Installer.event"
+#include "MonsterAnims/Biclops/Unarmed Installer.event"
+}
+ALIGN 4
+BiclopsAnims:
+BashAnim(Biclops_Axe)
+HandaxeAnim(Biclops_Handaxe)
+UnarmedAnim(Biclops_Unarmed)
 EndAnim

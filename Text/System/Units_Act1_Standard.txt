@@ -28,6 +28,13 @@ Ghari[X]
 A wandering warrior poet who's very[N]
 defensive of his honor. Craves respect.[X]
 
+//renoud
+##Name_Azaghal
+Azaghal[X]
+##Desc_Azaghal
+An amnesiac swordsman washed ashore[N]
+in Asketa. His health is fading.[X]
+
 //striker
 ##Name_Aizen
 Aizen[X]

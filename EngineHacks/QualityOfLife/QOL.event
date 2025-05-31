@@ -7,3 +7,5 @@
 #include "ShowHealAmount/ShowHealAmount.txt"
 #include "AnimsOff/AnimsOff.txt"
 #include "DrawMapActionAnimation/Installer.event"
+#include "SupplyView/SupplyView.event"
+#include "UpdatedLButtonCycling/Installer.event"

@@ -229,6 +229,16 @@ MovingMapSprite(Wolf, AP1, WolfMMS)
 StandingMapSprite(Triwolf,MapSprite16x32,TriwolfSMS)
 MovingMapSprite(Triwolf, AP1, TriwolfMMS)
 
+StandingMapSprite(Centaur,MapSprite16x32,CentaurSMS)
+MovingMapSprite(Centaur, AP1, CentaurMMS)
+StandingMapSprite(Centinel,MapSprite16x32,CentinelSMS)
+MovingMapSprite(Centinel, AP1, CentinelMMS)
+
+StandingMapSprite(Cyclops,MapSprite16x32,CyclopsSMS)
+MovingMapSprite(Cyclops, $81F49B8, CyclopsMMS)
+StandingMapSprite(Biclops,MapSprite16x32,BiclopsSMS)
+MovingMapSprite(Biclops, $81F49B8, BiclopsMMS)
+
 #define SigilTrapMapSprite 0x3c
 
 StandingMapSprite(SigilTrapMapSprite,MapSprite16x16,SigilSMS)
@@ -236,6 +246,33 @@ StandingMapSprite(SigilTrapMapSprite,MapSprite16x16,SigilSMS)
 ALIGN 4
 SigilSMS:
 #incbin "Dmp/Sigil.dmp"
+
+ALIGN 4
+CyclopsSMS:
+#incbin "Dmp/Cyclops (U) Axe {IS}-stand.dmp"
+ALIGN 4
+CyclopsMMS:
+#incbin "Dmp/Cyclops (U) Axe {IS}-walk.dmp"
+ALIGN 4
+BiclopsSMS:
+#incbin "Dmp/Cyclops (U) Two-Headed Axe {Teelvade}-stand.dmp"
+ALIGN 4
+BiclopsMMS:
+#incbin "Dmp/Cyclops (U) Two-Headed Axe {Teelvade}-walk.dmp"
+
+
+ALIGN 4
+CentaurSMS:
+#incbin "Dmp/Tarvos (M) Axe {IS}-stand.dmp"
+ALIGN 4
+CentaurMMS:
+#incbin "Dmp/Tarvos (M) Axe {IS}-walk.dmp"
+ALIGN 4
+CentinelSMS:
+#incbin "Dmp/Tarvos (M) Elder Centaur Axe 16x32 {Seal}-stand.dmp"
+ALIGN 4
+CentinelMMS:
+#incbin "Dmp/Tarvos (M) Elder Centaur Axe {Seal}-walk.dmp"
 
 ALIGN 4
 GargoyleSMS:
