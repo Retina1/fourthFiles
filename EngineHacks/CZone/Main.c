@@ -17,6 +17,7 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "Durability/PerChapterItems.c"
 #include "StatPassives/StatPassives.c"
 
+
 //add autorepair just for S ranks
 //handle status weapons in C for inflictions?
 
@@ -145,3 +146,10 @@ void RefreshActiveUnitASMC(struct EventEngineProc* proc) {
 	RenderBmMap();
 }
 
+void NewExecVulneraryItemWrapper() {
+    asm("   mov r0,r6; \
+            bl NewExecVulneraryItem; \
+            ldr r0,=#0x802FF77; \
+            bx r0; \
+    ");
+}

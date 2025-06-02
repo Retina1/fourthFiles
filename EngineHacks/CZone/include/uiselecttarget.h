@@ -74,6 +74,8 @@ struct SelectTarget* GetLinkedTargetsNear(void);
 struct SelectTarget* GetLinkedTargetsFar(void);
 struct SelectTarget* GetLinkedTargets(void);
 int GetSelectTargetCount(void);
+//same func?
+int GetTargetListSize(void);
 struct SelectTarget* GetTarget(int index);
 
 #endif // GUARD_UI_SELECTTARGET_H

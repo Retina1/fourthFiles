@@ -127,3 +127,5 @@
 #define Azaghal 0x7F
 #define Anna 0x80
 #define SlynSpire 0x81
+#define Orion 0x82
+#define Leovetus 0x83

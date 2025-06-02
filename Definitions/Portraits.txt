@@ -149,6 +149,8 @@ AzaghalMug
 NatsubunMug 149
 AnnaMug
 SlynSpireMug
+OrionMug
+LeovetusMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug

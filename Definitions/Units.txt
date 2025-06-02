@@ -127,3 +127,5 @@ Marag
 Azaghal
 Anna
 SlynSpire
+Orion
+Leovetus

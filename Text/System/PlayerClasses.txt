@@ -1,12 +1,12 @@
 ##Class_Swordfighter
 Swordfighter[X]
 ##ClassDesc_Swordfighter
-A balanced swordsman. Valiantly[N]
-leads allies into battle.[X]
+Balanced swordsmen who bravely[N]
+lead their allies into battle.[X]
 ##Class_Landsknecht
 Landsknecht[X]
 ##ClassDesc_Landsknecht
-A proven swordsman, able to mix[N]
+Proven swordsmen, able to mix[N]
 martial skills with magic.[X]
 
 ##Class_Knight
@@ -304,15 +304,15 @@ and recieved immense power.[X]
 ##Name_Turret
 Turret[X]
 ##Desc_Turret
-A remotely-controlled stationary turret,[N]
+Remotely-controlled stationary turrets,[N]
 summoned by an Artifice or Automaton.[X]
 ##Name_Soul
 Soul[X]
 ##Desc_Soul
-A lost soul called to battle[N]
+Lost souls called to battle[N]
 by a Caller or Necromancer.[X]
 ##Name_Souldier
 Souldier[X]
 ##Desc_Souldier
-A mighty soul called to battle[N]
+Mighty souls called to battle[N]
 by a Caller or Necromancer.[X]

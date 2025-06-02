@@ -820,7 +820,7 @@ SET_FUNC UnitApplyBonusLevels, 0x80180CD
 SET_FUNC UnitAutolevel, 0x8018121
 SET_FUNC UnitAutolevelRealistic, 0x8018161
 SET_FUNC UnitCheckStatCaps, 0x80181C9
-SET_FUNC GetUnitByCharId, 0x801829D
+SET_FUNC GetUnitFromCharId, 0x801829D
 SET_FUNC GetUnitFromCharIdAndFaction, 0x80182D9
 SET_FUNC CanUnitRescue, 0x801831D
 SET_FUNC UnitRescue, 0x801834D
@@ -1384,7 +1384,7 @@ SET_FUNC ExecFortify, 0x802F155
 SET_FUNC ExecUnlock, 0x802F275
 SET_FUNC ExecHammerne, 0x802F2B5
 SET_FUNC ExecLatona, 0x802F30D
-SET_FUNC ExecSomeSelfHeal, 0x802F381
+SET_FUNC ExecVulneraryItem, 0x802F381
 SET_FUNC ApplyStatBoosterAndGetMessageId, 0x802F809
 SET_FUNC ExecStatBooster, 0x802F915
 SET_FUNC ExecItemMine, 0x802FA4D

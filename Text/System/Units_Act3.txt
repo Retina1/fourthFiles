@@ -57,3 +57,11 @@ Awil[X]
 A lost artifice that's eager to help[N]
 anyone it sees. It's quite chipper.[X]
 
+//athath
+##Name_Orion
+OR-10-N[X]
+##Desc_Orion
+A war machine with a minimalistic and[N]
+binary worldview. Nuance eludes it.[X]
+
+

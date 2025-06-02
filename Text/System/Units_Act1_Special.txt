@@ -91,6 +91,13 @@ Mylo[X]
 An Asketan scrapper who found himself[N]
 in underground scraps. He's resourceful.[X]
 
+//701
+##Name_Leovetus
+Leovetus[X]
+##Desc_Leovetus
+A solitary brawler who has devoted his[N]
+life to mastering the Godhand technique.[X]
+
 //greatdoot
 ##Name_Philmore
 Philmore[X]
