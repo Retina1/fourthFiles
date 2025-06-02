@@ -77,6 +77,12 @@ AmmiDMP:
 setMugEntry(AmmiMug,AmmiDMP,4,6,4,4)
 
 ALIGN 4
+//devvy
+LucienDMP:
+#incbin "dmps/devvyLucien.dmp"
+setMugEntry(LucienMug,LucienDMP,3,5,3,3)
+
+ALIGN 4
 //renoud
 AzaghalDMP:
 #incbin "dmps/renoudAzaghal.dmp"
@@ -484,6 +490,10 @@ ALIGN 4
 PatriceDMP:
 #incbin "dmps/rivianPatrice.dmp"
 setMugEntryExtend(PatriceMug,PatriceDMP,3,5,3,3, 10,2, 10,4)
+ALIGN 4
+SlynSpireDMP:
+#incbin "dmps/rivianSlynSpire.dmp"
+setMugEntryExtend(SlynSpireMug,SlynSpireDMP,1,7,2,5, 0,2, 0,4)
 
 ALIGN 4
 //alex

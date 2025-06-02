@@ -546,13 +546,13 @@ void UnitRemoveItem(struct Unit* unit, int slot);
 
 #define UNIT_NAME_ID(aUnit) ((aUnit)->pCharacterData->nameTextId)
 
-#define UNIT_MHP_MAX(aUnit) (UNIT_FACTION(unit) == FACTION_RED ? 120 : 60)
-#define UNIT_POW_MAX(aUnit) ((aUnit)->pClassData->maxPow)
-#define UNIT_SKL_MAX(aUnit) ((aUnit)->pClassData->maxSkl)
-#define UNIT_SPD_MAX(aUnit) ((aUnit)->pClassData->maxSpd)
-#define UNIT_DEF_MAX(aUnit) ((aUnit)->pClassData->maxDef)
-#define UNIT_RES_MAX(aUnit) ((aUnit)->pClassData->maxRes)
-#define UNIT_LCK_MAX(aUnit) (30)
+#define UNIT_MHP_MAX(aUnit) (99)
+#define UNIT_POW_MAX(aUnit) (99)
+#define UNIT_SKL_MAX(aUnit) (99)
+#define UNIT_SPD_MAX(aUnit) (99)
+#define UNIT_DEF_MAX(aUnit) (99)
+#define UNIT_RES_MAX(aUnit) (99)
+#define UNIT_LCK_MAX(aUnit) (99)
 #define UNIT_CON_MAX(aUnit) ((aUnit)->pClassData->maxCon)
 #define UNIT_MOV_MAX(aUnit) (15)
 
@@ -573,7 +573,8 @@ void UnitRemoveItem(struct Unit* unit, int slot);
 #define UNIT_LEADER_CHARACTER(aUnit) ((aUnit)->supports[UNIT_SUPPORT_MAX_COUNT-1])
 
 
-#define UNIT_HAS_SKILL(aUnit,aSkillset,aSkill) (((aUnit)->pClassData->skillID == (aSkillset)) && ((aUnit)->skills.(aSKILL)))
+#define UNIT_HAS_SKILL(aUnit,aSkillset,aSkill) (((aUnit)->pClassData->skillID == (aSkillset)) && ((aUnit)->skills.aSkill))
+#define BATTLE_UNIT_HAS_SKILL(aUnit,aSkillset,aSkill) (((aUnit).pClassData->skillID == (aSkillset)) && ((aUnit).skills.aSkill))
 
 
 

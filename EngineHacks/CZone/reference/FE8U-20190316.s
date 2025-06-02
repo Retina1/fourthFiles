@@ -22,6 +22,8 @@ SET_FUNC sub_80230F0, 0x80230F1
 SET_DATA gHitCountRAMAddress, 0x030017c4
 SET_DATA gStatScreen, 0x02003BFC
 
+SET_DATA gUnitRangeBuffer, 0x0202764C
+
 SET_FUNC SetPidDefeatedFlag,0x08083571
 
 SET_FUNC GetChapterAllyUnitDataPointer,0x08083348

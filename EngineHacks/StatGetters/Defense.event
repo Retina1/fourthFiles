@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pDefenseModifiers: // Defense
-	POIN prAddUnitDefense prAddEquipDefense SkillPointDefBoost
+	POIN prAddUnitDefense prAddEquipDefense SkillPointDefBoost ClassSkillDefsBoost
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif

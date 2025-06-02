@@ -5,16 +5,16 @@ POP
 WORD $B5700003 $422FF $701A3357 $4B090021 $F0004809 $4D09F817 $204B09 $F0003504 $682BF811 $D1F82B00 $345665A3 $BC707023 $4700BC01 $8002C7D
 POIN ProcUnitData
 POIN CURRENTOFFSET+12
-POIN ExperienceLabelStandard_Init
+POIN AttackLabelStandard_Init
 WORD $46C04718
 ALIGN 4
 PUSH
 ORG CURRENTOFFSET+$0;gInitFunctions:
 POP
-POIN ExperienceLabelStandard_Init
-POIN ResistanceLabelStandard_Init
 POIN AttackLabelStandard_Init
+POIN ResistanceLabelStandard_Init
 POIN DefenseLabelStandard_Init
+POIN ExperienceLabelStandard_Init
 POIN LevelLabelStandard_Init
 POIN AttackSpeedLabelStandard_Init
 WORD $0

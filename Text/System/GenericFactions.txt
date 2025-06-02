@@ -6,7 +6,7 @@ fighting under some guild's banner.[X]
 ##Name_Asketa
 Asketa[X]
 ##Desc_Asketa
-A soldier of the Asketan Empire,[N]
+A member of the Asketan Empire,[N]
 fighting under the imperial banner.[X]
 ##Name_Belvarus
 Belvarus[X]
@@ -23,3 +23,28 @@ Endbringer[X]
 ##Desc_Endbringer
 A member of Endbringer, fighting[N]
 to bring an end to civilization.[X]
+##Name_Dragon
+Dragon[X]
+##Desc_Dragon
+A monstrous dragon of immense power.[N]
+Extremely dangerous to approach.[X]
+##Name_Worldcore
+Worldcore[X]
+##Desc_Worldcore
+A fragment of primordial darkness,[N]
+buried within the Drowning Hollows.[X]
+##Name_Unknown
+Unknown[X]
+##Desc_Unknown
+A member of some unknown forces,[N]
+fighting under some unknown banner.[X]
+##Name_Elite
+Elite[X]
+##Desc_Elite
+An elite soldier of the Asketan Empire,[N]
+fighting under the prince's command.[X]
+##Name_Hallowed
+Hallowed[X]
+##Desc_Hallowed
+An artificial being, sculpted within[N]
+the walls of the Hallowed Armory.[X]

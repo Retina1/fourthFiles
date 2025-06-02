@@ -126,3 +126,4 @@
 #define Marag 0x7E
 #define Azaghal 0x7F
 #define Anna 0x80
+#define SlynSpire 0x81

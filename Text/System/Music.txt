@@ -65,6 +65,11 @@ Into the Woods[X]
 ##SongTitle_NoOneIsAlone
 No One is Alone[X]
 
+##SourceTitle_TheLorax
+The Lorax[X]
+##SongTitle_Biggering
+Biggering[X]
+
 
 ##SourceTitle_Original
 Original Song[X]

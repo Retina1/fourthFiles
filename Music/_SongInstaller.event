@@ -107,7 +107,12 @@ SongTable(Song_CherryTreesAndWings,CherryTreesAndWings,0)
 SongTable(Song_ExcavationWorkersQuarters,ExcavationWorkersQuarters,1)
 #include "songs/ExcavationWorkersQuarters.event"
 }
-
+//0x18 - biggering
+#define Song_Biggering 0x1a
+{
+SongTable(Song_Biggering,Biggering,1)
+#include "songs/Biggering.event"
+}
 
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36

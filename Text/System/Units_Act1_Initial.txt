@@ -84,6 +84,13 @@ Hopf[X]
 An Asketan guard from a remote town.[N]
 He drunkenly left his old life behind.[X]
 
+//rivian
+##Name_SlynSpire ^
+Slyn & Spire[X]
+##Desc_SlynSpire
+A young child and his friend(?), Spire.[N]
+Slyn feels remorse for Spire's deeds.[X]
+
 
 //tristao by alex (axefighter)
 ##Name_Tristao

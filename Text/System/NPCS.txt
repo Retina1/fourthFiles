@@ -73,6 +73,12 @@ Swift[X]
 An Asketan scale knight who has lost[N]
 itself chasing the Hallowed Armory.[X]
 
+##Name_Ratatoskr
+Ratatoskr[X]
+##Desc_Ratatoskr
+A mythical squirrel wandering the[N]
+land. They're a nutty trickster.[X]
+
 ##Desc_Benthus2
 A former member of Guild Hedge, driven[N]
 by hubris to leave the group for dead.[X]

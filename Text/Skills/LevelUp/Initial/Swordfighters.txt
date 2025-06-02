@@ -61,14 +61,14 @@ Level: 0 (Passive)[N]
 Overcome the odds.[N]
 Next: 1.2x Atk (AS)[N]
 if user Atk (AS) less[N]
-than foe Def (AS).[N]
+than foe Atk (AS).[N]
 Req: Vanguard 1[X]
 ##VanguardDescMax ^
 Level: MAX (Passive)[N]
 Overcome the odds.[N]
 Grants 1.2x Atk (AS)[N]
 if user Atk (AS) less[N]
-than foe Def (AS).[N]
+than foe Atk (AS).[N]
 [X]
 
 ##NaturalLeaderSkill

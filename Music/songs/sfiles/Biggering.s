@@ -1,30 +1,30 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	Biggering_grp, voicegroup000
+	.equ	Biggering_pri, 0
+	.equ	Biggering_rev, 0
+	.equ	Biggering_mvl, 127
+	.equ	Biggering_key, 0
+	.equ	Biggering_tbs, 1
+	.equ	Biggering_exg, 0
+	.equ	Biggering_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	Biggering
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+Biggering_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Biggering_key+0
 Label_EDD3DE:
- .byte   TEMPO , 108*song09_tbs/2
+ .byte   TEMPO , 108*Biggering_tbs/2
  .byte   VOICE , 20
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #01 @001   ----------------------------------------
@@ -356,7 +356,7 @@ Label_EDD4CD:
  .byte   W06
  .byte   W06
 @  #01 @054   ----------------------------------------
- .byte   TEMPO , 82*song09_tbs/2
+ .byte   TEMPO , 82*Biggering_tbs/2
  .byte   N11 ,As2 ,v096
  .byte   N11 ,Ds3
  .byte   W72
@@ -560,7 +560,7 @@ Label_EDD616:
  .byte   Bn2
  .byte   W01
 @  #01 @074   ----------------------------------------
- .byte   TEMPO , 72*song09_tbs/2
+ .byte   TEMPO , 72*Biggering_tbs/2
  .byte   W96
 @  #01 @075   ----------------------------------------
  .byte   W96
@@ -639,14 +639,14 @@ Label_EDD616:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+Biggering_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Biggering_key+0
 Label_EDC7F2:
  .byte   VOICE , 48
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #02 @001   ----------------------------------------
@@ -1389,14 +1389,14 @@ Label_EDCB2A:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+Biggering_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Biggering_key+0
 Label_01059746:
  .byte   VOICE , 30
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N32 ,Dn1 ,v080
  .byte   W36
@@ -3327,12 +3327,12 @@ Label_0105A0B0:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+Biggering_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Biggering_key+0
 Label_0105A256:
  .byte   VOICE , 100
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N32 ,An2 ,v064
  .byte   N32 ,Dn3
@@ -4520,12 +4520,12 @@ Label_0105A76E:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+Biggering_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Biggering_key+0
 Label_0105A87A:
  .byte   VOICE , 28
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N32 ,Fn2 ,v064
  .byte   W36
@@ -5803,14 +5803,14 @@ Label_0105AE07:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+Biggering_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Biggering_key+0
 Label_0105AF52:
  .byte   VOICE , 124
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*Biggering_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #06 @001   ----------------------------------------
@@ -7327,19 +7327,19 @@ Label_0105B765:
 @******************************************************@
 	.align	2
 
-song09:
+Biggering:
 	.byte	6	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	Biggering_pri	@ Priority
+	.byte	Biggering_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	Biggering_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
+	.word	Biggering_001
+	.word	Biggering_002
+	.word	Biggering_003
+	.word	Biggering_004
+	.word	Biggering_005
+	.word	Biggering_006
 
 	.end

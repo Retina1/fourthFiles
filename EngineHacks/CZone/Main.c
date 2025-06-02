@@ -1,10 +1,14 @@
 #include "gbafe.h"
 
 extern bool CheckEventId_(u16 flag); 
+extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
+
+#include "SkillSystem/SkillHelpers.c"
 
 #include "Misc/LoadUnitBases.c"
 #include "Misc/NewPromoGains.c"
 #include "Misc/Caps.c"
+#include "PassiveSkills/_PassiveSkills.c"
 #include "BattleStats.c"
 #include "BattleProc.c"
 #include "Misc/ExpCalcs.c"

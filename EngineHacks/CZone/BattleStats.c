@@ -186,6 +186,7 @@ void ApplyPicnicMode(struct BattleUnit* attacker) {
 	int allegiance = (attacker->unit.index & 0xC0);
 	if (allegiance == FACTION_BLUE && CheckEventId_(0xaf)){
 		 attacker->battleAttack = attacker->battleAttack * 3/2;
+		 //move defense boost to stat getter?
 		 attacker->battleDefense = attacker->battleDefense * 3/2;
 		 attacker->battleSpeed = attacker->battleSpeed * 3/2;
 		 attacker->battleHitRate = attacker->battleHitRate * 3/2;
@@ -205,6 +206,7 @@ void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defe
     ComputeBattleUnitDodgeRate(attacker);
     ComputeBattleUnitWeaponRankBonuses(attacker);
     ComputeBattleUnitStatusBonuses(attacker);
+	ApplyPassiveSkills(attacker, defender);
 	ApplyPicnicMode(attacker);
 }
 
@@ -213,6 +215,8 @@ void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleU
     ComputeBattleUnitEffectiveCritRate(attacker, defender);
     ComputeBattleUnitSilencerRate(attacker, defender);
     ComputeBattleUnitSpecialWeaponStats(attacker, defender);
+	//skill thing here, another loop later?
+	ApplyArcherKillerAim(attacker,defender);
 	FloorDamage(attacker, defender);
 }
 

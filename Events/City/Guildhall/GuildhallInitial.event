@@ -26,6 +26,9 @@ UNIT
 Recruit_Hopf:
 UNIT Hopf 0x0 0x1 Level(4,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
 UNIT
+Recruit_SlynSpire:
+UNIT SlynSpire 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
+UNIT
 
 Recruit_Tristao:
 UNIT Tristao 0x0 0x1 Level(5,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace] NoAI
@@ -109,6 +112,9 @@ EndEvent
 Hopf_RecruitEvent:
 GuildRecruit(Hopf,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
 EndEvent
+SlynSpire_RecruitEvent:
+GuildRecruit(SlynSpire,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x24)
+EndEvent
 
 //axe
 Tristao_RecruitEvent:
@@ -188,6 +194,7 @@ GuildLoad(Drogo,Recruit_Drogo,0x1)
 GuildLoad(Gretchen,Recruit_Gretchen,0x2)
 GuildLoad(Allbringer,Recruit_Allbringer,0x3)
 GuildLoad(Hopf,Recruit_Hopf,0x4)
+GuildLoad(SlynSpire,Recruit_SlynSpire,0x5)
 FADU 10
 ENDA
 

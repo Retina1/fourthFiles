@@ -6,6 +6,7 @@
 #include "Animation/AnimationPointers.event"
 #include "UnitPalettes/_Installer.event"
 #include "SystemMenus/MenuInstaller.event"
+#include "MinimugBoxNumbers/Installer.event"
 
 //TODO
 //https://feuniverse.us/t/custom-ui-graphics-tutorial/25292

@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pResistanceModifiers: // Resistance
-	POIN prAddUnitResistance prAddEquipResistance prAddPureWaterBarrierMod SkillPointResBoost
+	POIN prAddUnitResistance prAddEquipResistance prAddPureWaterBarrierMod SkillPointResBoost ClassSkillDefsBoost
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif

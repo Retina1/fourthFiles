@@ -10,9 +10,6 @@ int GetUnitKillExpBonus(struct Unit* actor, struct Unit* target);
 extern bool CanBattleUnitGainLevels(BattleUnit* bu);
 int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target);
 
-
-extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
-
 void BattleApplyMiscActionExpGains(void) {
     if ((gBattleActor.unit.index & 0xC0) != FACTION_BLUE)
         return;
@@ -46,6 +43,11 @@ int GetUnitExpMultiplier(struct Unit* actor, struct Unit* target) {
 			mult = mult * 3;
 		}
 	}
+		
+	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
+		mult = mult * 6;
+	}
+		
 
     return mult;
 }
@@ -53,7 +55,10 @@ int GetUnitExpMultiplier(struct Unit* actor, struct Unit* target) {
 int GetUnitExpDivisor(struct Unit* actor, struct Unit* target) {
 //exp mods from classes
 	int div = 1;
-	
+	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
+		div = div * 5;
+	}
+		
     return div;
 }
 
@@ -289,6 +294,7 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
 	int div = GetUnitExpDivisor(&actor->unit, &target->unit);
 	result = result * mul;
 	result = result / div;
+
 
     if (result > 100)
         result = 100;

@@ -12,7 +12,8 @@ void DefenseStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataPr
   if ( proc->busyFlag )
     return;
 
-  GenericNumberThreeDigits(udp->battleDefense, DEF_X, DEF_Y, proc);
+  //GenericNumberThreeDigits(udp->battleDefense, DEF_X, DEF_Y, proc);
+  GenericNumberThreeDigits(GetUnitDefense(udp->unit), DEF_X, DEF_Y, proc);
 
   return;
 }

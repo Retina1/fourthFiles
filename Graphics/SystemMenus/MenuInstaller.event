@@ -11,13 +11,18 @@
 		#incbin "blue.dmp"
 		#incbin "red.dmp"
 		#incbin "green.dmp"
-		#incbin "grey.dmp"//actually purple but w/e
+		#incbin "grey.dmp"
 		//Darkened palettes will just be the same
 		#incbin "darkblue.dmp"
 		#incbin "darkred.dmp"
 		#incbin "darkgreen.dmp"
 		#incbin "darkgrey.dmp"
-		
+		ORG $9AD648//palettes of the anims off btl screen 
+		#incbin "blue.dmp"
+		#incbin "red.dmp"
+		#incbin "green.dmp"
+		#incbin "grey.dmp"
+
 		ORG 0xA1738C//MMB Palettes
 		#incbin "blue.dmp"
 		#incbin "red.dmp"
