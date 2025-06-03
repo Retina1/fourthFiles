@@ -129,6 +129,12 @@ PuzonDMP:
 setMugEntry(PuzonMug,PuzonDMP,2,5,2,3)
 
 ALIGN 4
+//cordelia
+FelicityDMP:
+#incbin "dmps/cordeliaFelicity.dmp"
+setMugEntry(FelicityMug,FelicityDMP,4,5,3,3)
+
+ALIGN 4
 //matt
 VasilyDMP:
 #incbin "dmps/mattVasily.dmp"

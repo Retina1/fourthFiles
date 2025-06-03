@@ -19,7 +19,7 @@ void ApplySwordfighterInitiative(struct BattleUnit* attacker, struct BattleUnit*
 	}
 }
 
-// bug - doesn't quite properly apply in forecast
+// bug - atk boost doesn't quite properly apply in forecast
 void ApplySwordfighterTenacity(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (BATTLE_UNIT_HAS_SKILL(attacker->unit,LND,skill_131)){
 		if (attacker->battleAttack < defender->battleAttack) {

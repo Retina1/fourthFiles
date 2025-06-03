@@ -4,7 +4,7 @@
 #include "_Common.event"
 ALIGN 4
 pMovModifiers: // Movement
-	POIN prAddUnitBaseMov prAddUnitMovBonus (prGetItemMovBonus-1) prNullifyIfGuardAI prMaxFifteen
+	POIN prAddUnitBaseMov prAddUnitMovBonus (prGetItemMovBonus-1) ClassSkillMovBoost prNullifyIfGuardAI prMaxFifteen
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif

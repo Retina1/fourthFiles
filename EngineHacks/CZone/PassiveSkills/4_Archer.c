@@ -7,7 +7,7 @@ void ApplyArcherSighting(struct BattleUnit* attacker){
 		int index = unitBuffer[i];
 		Unit* other = gUnitLookup[index];
 		if (UNIT_HAS_SKILL(other,SNP,skill_111)){
-			attacker->battleHitRate = attacker->battleHitRate * 7/5;
+			attacker->battleHitRate = attacker->battleHitRate * 6/5;
 		}
 		i++;
 	}
