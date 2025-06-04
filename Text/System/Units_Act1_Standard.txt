@@ -91,6 +91,13 @@ Son[X]
 A sorrowful foreigner sent to live in[N]
 Asketa. He thinks he's beset by ghosts.[X]
 
+//raiden
+##Name_Hart
+Hart[X]
+##Desc_Hart
+An unfiltered Asketan rider who fights[N]
+for his mother and sister's sake. [X]
+
 //mancalledm
 ##Name_Martin
 Martin[X]

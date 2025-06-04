@@ -120,3 +120,7 @@
 #define Gargoyle_Unarmed 0x78
 #define Gargantoyle_Lance 0x79
 #define Gargantoyle_Unarmed 0x7A
+#define CoastKid_Swordfighter_Sword 0x7B
+#define CoastKid_Swordfighter_Unarmed 0x7C
+#define CoastKid_Landsknecht_Sword 0x7D
+#define CoastKid_Landsknecht_Unarmed 0x7E

@@ -17,6 +17,27 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "Durability/PerChapterItems.c"
 #include "StatPassives/StatPassives.c"
 
+/*
+inline int GetUnitMaxHp(struct Unit* unit) {
+	int stat = unit->maxHP + GetItemHpBonus((u16) GetUnitEquippedWeapon(unit));
+	if (unit->skills.hpUp2){
+		stat += 9;
+	}
+	else if (unit->skills.hpUp1){
+		stat += 4;
+	}
+	stat = ApplyCurateCardio(stat,unit);
+	
+    return stat;
+}
+
+inline int GetUnitCurrentHp(struct Unit* unit) {
+    if (unit->curHP > GetUnitMaxHp(unit))
+        unit->curHP = GetUnitMaxHp(unit);
+
+    return unit->curHP;
+}
+*/
 
 //add autorepair just for S ranks
 //handle status weapons in C for inflictions?

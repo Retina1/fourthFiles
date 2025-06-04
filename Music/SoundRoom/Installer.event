@@ -62,6 +62,8 @@ SoundRoomEntry(Song_Rhapsody, SongTitle_Rhapsody, SourceTitle_OrderOfEcclesia,5)
 SoundRoomEntry(Song_OohWilfre, SongTitle_OohWilfre, SourceTitle_DrawnToLife2,14)
 SoundRoomEntry(Song_Salem, SongTitle_Salem, SourceTitle_DrawnToLife2,13)
 SoundRoomEntry(Song_CherryTreesAndWings, SongTitle_CherryTreesAndWings, SourceTitle_EtrianOdyssey2,17)
+//death and game over
+SoundRoomEntry(Song_NameEntry, SongTitle_NameEntry, SourceTitle_Persona,20)
 WORD 0xFFFFFFFF 0 0 0
 
 PUSH

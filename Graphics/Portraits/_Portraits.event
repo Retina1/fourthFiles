@@ -64,11 +64,13 @@ MonkDMP:
 #incbin "dmps/slaterMonk.dmp"
 setMugEntry(MonkMug,MonkDMP,3,6,3,4)
 
+
+
 ALIGN 4
-//701
-LeovetusDMP:
-#incbin "dmps/701Leovetus.dmp"
-setMugEntryExtend(LeovetusMug,LeovetusDMP,3,4,3,2, (-2),10, 4,(-2))
+//green
+GuntherDMP:
+#incbin "dmps/greenGunther.dmp"
+setMugEntry(GuntherMug,GuntherDMP,3,5,3,3)
 
 ALIGN 4
 //athath
@@ -292,6 +294,11 @@ ALIGN 4
 GhariDMP:
 #incbin "dmps/701Ghari.dmp"
 setMugEntryExtend(GhariMug,GhariDMP,3,4,3,2, 10, 4, 0,0)
+ALIGN 4
+//701
+LeovetusDMP:
+#incbin "dmps/701Leovetus.dmp"
+setMugEntryExtend(LeovetusMug,LeovetusDMP,3,4,3,2, (-2),10, 4,(-2))
 
 ALIGN 4
 //misha
@@ -362,6 +369,10 @@ ALIGN 4
 WitericoDMP:
 #incbin "dmps/alguienWiterico.dmp"
 setMugEntry(WitericoMug,WitericoDMP,3,5,3,3)
+ALIGN 4
+WontDMP:
+#incbin "dmps/alguienWont.dmp"
+setMugEntryExtend(WontMug,WontDMP,4,6,4,4, 10,3, 0,0)
 
 ALIGN 4
 //rekekka

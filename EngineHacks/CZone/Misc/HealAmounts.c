@@ -1,3 +1,14 @@
+
+void LimitCurrentHPToMax(void) {
+    Unit* target = GetUnit(gActionData.targetIndex);
+    if (target) {
+        if (GetUnitCurrentHp(target) > GetUnitMaxHp(target)) {
+            SetUnitHp(target, GetUnitMaxHp(target));
+        }
+    }
+}
+
+
 int GetUnitItemHealAmount(struct Unit* unit, int item) {
     int result = 0;
 

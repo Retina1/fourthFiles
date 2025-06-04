@@ -24,9 +24,10 @@
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 #define EndAnim "WORD 0x0 0x0"
 
+#include "PRFAnims/Installer.event"
 #include "AnimDefs.event"
 #include "RepointedTable.event"
-#include "PRFAnims/Installer.event"
+
 
 //Swordfighter
 {
@@ -695,3 +696,5 @@ BashAnim(Biclops_Axe)
 HandaxeAnim(Biclops_Handaxe)
 UnarmedAnim(Biclops_Unarmed)
 EndAnim
+
+#include "CharacterAnims.event"

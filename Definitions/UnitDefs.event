@@ -129,3 +129,5 @@
 #define SlynSpire 0x81
 #define Orion 0x82
 #define Leovetus 0x83
+#define Wont 0x84
+#define Hart 0x85

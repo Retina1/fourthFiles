@@ -314,7 +314,7 @@ This is a secret shop![NL]
 [Buy/Sell][X]
 
 # 0x089D
-Anything else, lad?[NL]
+Anything else, bud?[NL]
 [Buy/Sell][X]
 
 # 0x089E
@@ -365,7 +365,7 @@ Ooh! That's pretty![X]
 What would you sell?[X]
 
 # 0x08AC
-You've got nothing, lad.[A][X]
+You've got nothing, bud.[A][X]
 
 # 0x08AD
 You don't have anything, silly![A][X]
@@ -498,3 +498,12 @@ Five Pointers[X]
 
 # 0x0216 ^
 Stat Boosters[X]
+
+# 0x05A5
+What's needed?[.][X]
+
+# 0x05A6
+Right here, then.[.][X]
+
+# 0x05A7
+Take this, then.[X]

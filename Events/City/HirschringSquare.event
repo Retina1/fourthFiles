@@ -140,6 +140,9 @@ UNIT
 #define ThreeRecruitInterlude "ENUT Recruited3Flag; ENUT Recruited2Flag; ENUT Recruited1Flag"
 #define FourRecruitInterlude "ENUT Recruited4Flag; ThreeRecruitInterlude"
 #define FiveRecruitInterlude "ENUT Recruited5Flag; FourRecruitInterlude"
+//three in 2, 3, S1, 5, 9, 10, S3 - 21 total
+//four in 8, 13, 15, 16 - 21+16 total
+//five in 18 - 21+16+5=42 total
 #define InitializeRecruitFlags "CHECK_EVENTID Chapter18CDoneFlag; BNE 0x1001 0xc 0x0; CHECK_EVENTID Chapter18BDoneFlag; BNE 0x1001 0xc 0x0; CHECK_EVENTID Chapter18ADoneFlag; BNE 0x1001 0xc 0x0; CHECK_EVENTID Chapter16DoneFlag; BNE 0x1002 0xc 0x0; CHECK_EVENTID Chapter15DoneFlag; BNE 0x1002 0xc 0x0; CHECK_EVENTID Chapter13DoneFlag; BNE 0x1002 0xc 0x0; CHECK_EVENTID Stratum3DoneFlag; BNE 0x1003 0xc 0x0; CHECK_EVENTID Chapter10DoneFlag; BNE 0x1003 0xc 0x0; CHECK_EVENTID Chapter9DoneFlag; BNE 0x1003 0xc 0x0; CHECK_EVENTID Chapter8DoneFlag; BNE 0x1002 0xc 0x0; CHECK_EVENTID Chapter5DoneFlag; BNE 0x1003 0xc 0x0; CHECK_EVENTID Stratum1DoneFlag; BNE 0x1003 0xc 0x0; CHECK_EVENTID Chapter3DoneFlag; BNE 0x1003 0xc 0x0; CHECK_EVENTID Chapter2DoneFlag; BNE 0x1003 0xc 0x0; LABEL 0x1001; FiveRecruitInterlude; GOTO 0x1004; LABEL 0x1002; FourRecruitInterlude; GOTO 0x1004; LABEL 0x1003; ThreeRecruitInterlude; LABEL 0x1004"
 #define MovementSetter "SetUnitStatus(Nathan,MovBonus,15); SetUnitStatusAll(0x2*0x100+0xff , MovBonus, (-15), AnyDeployed, PlayerArmy,AnyClass,AnyRange,AnyItem)"
 #define MovementUnsetter "SetUnitStatusAll(0x1*0x100+0xff , MovBonus, 0, AnyDeployed, PlayerArmy,AnyClass,AnyRange,AnyItem)"

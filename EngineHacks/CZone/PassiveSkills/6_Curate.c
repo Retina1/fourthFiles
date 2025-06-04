@@ -1,6 +1,6 @@
 int ApplyCurateQuickFeet(u8 stat, struct Unit* unit) {
 	if (UNIT_HAS_SKILL(unit,MED,skill_121)){
-		if (2 * (unit->curHP) <= (unit->maxHP)){
+		if (2 * (unit->curHP) <= (GetUnitMaxHp(unit))){
 		stat = stat + 1;
 		}
 	}

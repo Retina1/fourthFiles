@@ -22,12 +22,14 @@ IndividualAnimation7743_CC:
 #incbin "IndividualAnimation7743_CC.dmp"
 POIN CustomAnimeTable
 
-#define CustomAnimationSet(unit,class,pointer) "BYTE unit; BYTE class; BYTE 0x00; BYTE 0x00; WORD pointer"
-#define CustomAnimationSet(unit,class,flag,pointer) "BYTE unit; BYTE class; BYTE flag; BYTE 0x00; WORD pointer"
+#define CustomAnimationSet(unit,class,pointer) "BYTE unit; BYTE class; BYTE 0x00; BYTE 0x00; POIN pointer"
+#define CustomAnimationSet(unit,class,flag,pointer) "BYTE unit; BYTE class; BYTE flag; BYTE 0x00; POIN pointer"
 CustomAnimeTable:
 //flag users
 
 //no flag
+CustomAnimationSet(CoastKid,Swordfighter,CoastKid_SwordfighterAnims)
+CustomAnimationSet(CoastKid,Landsknecht,CoastKid_LandsknechtAnims)
 
 BYTE 0x00  //Unit: term data
 BYTE 0x00  //dummy

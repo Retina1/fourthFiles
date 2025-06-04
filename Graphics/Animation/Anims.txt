@@ -120,3 +120,7 @@ Gargoyle_Lance
 Gargoyle_Unarmed
 Gargantoyle_Lance
 Gargantoyle_Unarmed
+CoastKid_Swordfighter_Sword
+CoastKid_Swordfighter_Unarmed
+CoastKid_Landsknecht_Sword
+CoastKid_Landsknecht_Unarmed

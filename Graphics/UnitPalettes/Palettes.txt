@@ -1,0 +1,7 @@
+Nathan_Scholar
+Nathan_Warlock
+Astarte_Priest
+Astarte_WarMagus
+Guildmaster_Highlander
+CoastKid_Swordfighter
+CoastKid_Landsknecht

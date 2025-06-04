@@ -123,26 +123,14 @@ str		r2,[sp,#0x8]			@sp+8 = y - y'
 ldr		r1,=#0x201
 str		r1,[sp,#0xC]			@constant to determine where things get drawn
 @Find out whether we even need to display an hp bar
-@.if FE8 == 1 @ TODO: other games
-@	mov		r0, r4				@ arg r0 = Unit
-@	ldr		r1, =Get_Unit_Max_Hp
-@	mov		r14,r1
-@	.short	0xF800
-@.else
-	mov		r0,#maximum_hp
-	ldsb	r0,[r4,r0]
-@.endif
+	mov		r0, r4				@ arg r0 = Unit
+	ldr		r1, =Get_Unit_Max_Hp
+	mov		r14,r1
+	.short	0xF800
 push {r7}
 mov		r7,r0
-@.if FE8 == 1
-@	mov r0,r4
-@	ldr r1,=Get_Unit_Cur_HP
-@	mov r14,r1
-@	.short 0xF800
-@.else
 mov		r0,#current_hp
 ldsb	r0,[r4,r0]
-@.endif
 
 mov 	r2,r0
 mov 	r0,r7
@@ -245,7 +233,7 @@ beq		TalkEventCheck			@if not enemy, no need for this check
 .endif
 mov		r5,#inventory_slot1
 LoopThroughItems:
-@8,15,18,22,2b,30,da, all should always show icons
+
 ldrh	r1,[r4,r5]
 cmp		r1,#0
 beq		TalkEventCheck
@@ -268,23 +256,6 @@ mov		r14,r1
 .short	0xF800
 cmp		r0,#crit_warning_cutoff
 bgt		IsCritty
-ldrh	r1,[r4,r5]
-mov 	r0,#0xff
-and		r1,r1,r0
-cmp		r1,#0x8
-beq 	IsEffective
-cmp		r1,#0x15
-beq 	IsEffective
-cmp		r1,#0x18
-beq 	IsEffective
-cmp		r1,#0x22
-beq 	IsEffective
-cmp		r1,#0x2b
-beq 	IsEffective
-cmp		r1,#0x30
-beq 	IsEffective
-cmp		r1,#0xda
-beq 	IsEffective
 NextItem:
 add		r5,#2
 cmp		r5,#inventory_slot1+8

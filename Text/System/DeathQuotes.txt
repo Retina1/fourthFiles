@@ -31,3 +31,48 @@ I will[...] not die[...][N]
 like a dog[...][AN]
 Cover my retreat![A][X]
 
+##HelmanDeath
+[MidRight][Helman]
+Life was[...] good to me,[N]
+after all[...][AN][CloseEyes]
+Shame, then[...][A][X]
+
+//swordfighters
+##CoastKidDeath
+[MidRight][CoastKid]
+You can't just[...] kill a kid[...][N]
+Meanie[...][A][CloseEyes][X]
+##PuzonDeath
+[MidRight][Puzon]
+Unbelievable[...] I was helpless[N]
+to stop them[...][CloseEyes][X]
+##CamDeath
+[MidRight][Cam]
+Sorry, everyone[...][N]
+I won't[...] be home[...][A][CloseEyes][X]
+##MaragDeath
+[MidRight][Marag]
+Alas, damnable Marag[...][N]
+Culled in his prime[...][A][CloseEyes][X]
+
+//knights
+##DrogoDeath
+[MidRight][Drogo]
+No[...] I'll never know[...][N]
+what she wrote me[...][A][CloseEyes][X]
+##GretchenDeath
+[MidRight][Gretchen]
+My past[...] None of it[...][N]
+matters one bit now[...][A][CloseEyes][X]
+##AllbringerDeath
+[MidRight][Allbringer]
+Find my boy[...] Tell 'im[...][N]
+his dad loves him[...][A][CloseEyes][X]
+##HopfDeath
+[MidRight][Hopf]
+My life[...] really sucked[...][N]
+Where's my[...] mulligan[...][A][CloseEyes][X]
+##SlynSpireDeath
+[MidRight][SlynSpire]
+Spire[...] Please don't leave[...][A][CloseEyes][N]
+Don't leave me behind[...][A][X]

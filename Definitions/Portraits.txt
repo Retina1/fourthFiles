@@ -151,6 +151,8 @@ AnnaMug
 SlynSpireMug
 OrionMug
 LeovetusMug
+WontMug
+HartMug
 GenericLandsknechtMug
 GenericNecromancerMug
 GenericPugilistMug

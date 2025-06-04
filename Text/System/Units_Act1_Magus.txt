@@ -70,6 +70,14 @@ Jebet[X]
 A studied Asketan seeker who loves[N]
 artifacts. He's otherwise aloof.[X]
 
+
+//alguien
+##Name_Wont
+Won't[X]
+##Desc_Wont
+A mage who has peered into the Void,[N]
+or so he says. He's a bit delusional.[X]
+
 //Saewynn by hiraya
 ##Name_Saewynn
 Saewynn[X]

@@ -60,6 +60,16 @@ ALIGN 4
 Guildmaster_HighlanderDMP:
 #incbin "paletteFiles/Guildmaster_Highlander.dmp"
 
+setPalette(CoastKid_Swordfighter, CoastKid_SwordfighterDMP)
+setPalette(CoastKid_Landsknecht, CoastKid_LandsknechtDMP)
+CharPalette(CoastKid,CoastKid_Swordfighter,Swordfighter,CoastKid_Landsknecht,Landsknecht)
+ALIGN 4
+CoastKid_SwordfighterDMP:
+#incbin "paletteFiles/CoastKid_Swordfighter.dmp"
+ALIGN 4
+CoastKid_LandsknechtDMP:
+#incbin "paletteFiles/CoastKid_Landsknecht.dmp"
+
 
 PUSH
 ORG $59BFC

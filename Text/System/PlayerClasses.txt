@@ -281,7 +281,7 @@ mighty weapons with costly cooldowns.[X]
 ##Class_Imperial
 Imperial[X]
 ##ClassDesc_Imperial
-Mastersful drive blade users who[N]
+Masterful drive blade users who[N]
 can tear through any and all.[X]
 
 ##Class_Artifice

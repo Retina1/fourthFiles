@@ -121,9 +121,16 @@ SongTable(Song_DrawHeroes,DrawHeroes,0)
 #include "songs/DrawHeroes.event"
 }
 
+
+
 //0x3e - game over
 
 //0x3f - unit death
+#define Song_NameEntry 0x3f
+{
+SongTable(Song_NameEntry,NameEntry,0)
+#include "songs/NameEntry.event"
+}
 
 //0x43 - title screen
 #define Song_SpinningTheTale 0x43

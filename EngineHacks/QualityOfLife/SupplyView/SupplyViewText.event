@@ -26,7 +26,7 @@
 	BYTE 0 //[X]
 	
 	SupplyConvoyResponse_ViewText:
-	String("Take a look.")
+	String("Let's see...")
 	BYTE 0 //[X]
 	
 	ALIGN 4

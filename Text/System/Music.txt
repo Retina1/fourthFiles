@@ -23,6 +23,11 @@ Etrian Odyssey V[X]
 ##SongTitle_UntamedGarden
 Untamed Garden[X]
 
+##SourceTitle_Persona
+Persona[X]
+##SongTitle_NameEntry
+Name Entry[X]
+
 ##SourceTitle_SMT4
 Shin Megami Tensei IV[X]
 ##SongTitle_ExcavationWorkersQuarters

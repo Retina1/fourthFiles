@@ -1,0 +1,21 @@
+//CoastKid_Swordfighter
+{
+#include "CharAnims/CoastKid_Swordfighter/Sword Installer.event"
+#include "CharAnims/CoastKid_Swordfighter/Unarmed Installer.event"
+}
+ALIGN 4
+CoastKid_SwordfighterAnims:
+SlashAnim(CoastKid_Swordfighter_Sword)
+UnarmedAnim(CoastKid_Swordfighter_Unarmed)
+EndAnim
+
+//CoastKid_Landsknecht
+{
+#include "CharAnims/CoastKid_Landsknecht/Sword Installer.event"
+#include "CharAnims/CoastKid_Landsknecht/Unarmed Installer.event"
+}
+ALIGN 4
+CoastKid_LandsknechtAnims:
+SlashAnim(CoastKid_Landsknecht_Sword)
+UnarmedAnim(CoastKid_Landsknecht_Unarmed)
+EndAnim
