@@ -16,6 +16,41 @@ static bool IsUnitOnField(Unit* unit) {
     return TRUE;
 }
 
+u8* GetUnitsOfAllegiance(Unit* unit, int allyOption) {
+    const s8(*pAllegianceChecker)(int, int) = ((allyOption & 1) ? AreAllegiancesAllied : AreAllegiancesEqual);
+
+	u8 unitIndex = unit->index; //Loading as unsigned to prevent faulty comparisons
+    int count = 0;
+    int check = 0;
+
+    for (int i = 0; i < 0x100; ++i) {
+        Unit* other = gUnitLookup[i];
+
+        if (!IsUnitOnField(other) || unitIndex == i) {
+            continue;
+        }
+
+        //Check if other matches allyOption's criteria
+        if (allyOption & 2) {
+            check = !pAllegianceChecker(unit->index, other->index);
+        }
+        else {
+            check =  pAllegianceChecker(unit->index, other->index);
+        }
+
+        if (check || (allyOption & 4)) {
+            gUnitRangeBuffer[count++] = i;
+        }
+    }
+
+    //Terminator
+    gUnitRangeBuffer[count++] = 0;
+    if (!gUnitRangeBuffer[0])
+        return FALSE;
+
+    return gUnitRangeBuffer;
+}
+
 u8* GetUnitsInRange(Unit* unit, int allyOption, int range) {
     const s8(*pAllegianceChecker)(int, int) = ((allyOption & 1) ? AreAllegiancesAllied : AreAllegiancesEqual);
 

@@ -7,30 +7,25 @@ What was the moment?[A][X]
 I wanted[...] to make[...][N]
 something of my life[...][AN][CloseEyes]
 Is that[...] so wrong[...]?[A][X]
-
 ##AstarteDeath
 [MidRight][Astarte]
 I can't[...] die[...][AN][CloseEyes]
 I haven't[...] gotten[...][N]
 my dreams[...][A][X]
-
 ##GoreDeath
 [MidRight][Gore]
 Nathan[...] Astarte[...][AN]
 Make this mean[...][N]
 anything[...][A][CloseEyes][X]
-
 ##CleoneDeath
 [MidRight][Cleone]
 This is[...] simply what[...][N]
 I deserve[...][A][CloseEyes][X]
-
 ##BenthusRetreat
 [MidRight][Benthus]
 I will[...] not die[...][N]
 like a dog[...][AN]
 Cover my retreat![A][X]
-
 ##HelmanDeath
 [MidRight][Helman]
 Life was[...] good to me,[N]
@@ -71,7 +66,7 @@ his dad loves him[...][A][CloseEyes][X]
 ##HopfDeath
 [MidRight][Hopf]
 My life[...] really sucked[...][N]
-Where's my[...] mulligan[...][A][CloseEyes][X]
+Where's my[...] mulligan[...]?[A][CloseEyes][X]
 ##SlynSpireDeath
 [MidRight][SlynSpire]
 Spire[...] Please don't leave[...][A][CloseEyes][N]

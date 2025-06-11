@@ -27,6 +27,14 @@ Peabody[X]
 An evasive man with a professional[N]
 front. He's truly unskilled and naive.[X]
 
+//jet
+##Name_Dalman
+Dalman[X]
+##Desc_Dalman
+A blunt and cynical bounty hunter from[N]
+Hirschring. He wants better for others.[X]
+
+
 //misha
 ##Name_Heri
 Heri[X]

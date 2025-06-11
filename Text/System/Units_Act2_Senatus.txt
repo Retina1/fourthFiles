@@ -51,3 +51,10 @@ Anna[X]
 A merchant with innumberable identical[N]
 siblings. Her two loves are gold and Jake.[X]
 
+//matt
+##Name_Revati
+Revati[X]
+##Desc_Revati
+A blind duelist favored by a deity of[N]
+snakes. She's serious and dutiful.[X]
+

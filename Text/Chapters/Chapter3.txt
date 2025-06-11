@@ -3,3 +3,31 @@
 You worthless[...] There'll[N]
 be no[...] peace[...] now[...][AN][CloseEyes]
 Belvarus[...] shall[...][A][X]
+
+##Chapter3_NathanHelmanRecruit
+[MidLeft][Nathan][MidRight][Helman]
+sure[A][X]
+
+##Chapter3_GoreHelmanRecruit
+[MidLeft][Gore][MidRight][Helman]
+sure[A][X]
+
+##Chapter3_AstarteHelmanRecruit
+[MidLeft][Astarte][MidRight][Helman]
+sure[A][X]
+
+##Chapter3_CleoneHelmanRecruit
+[MidLeft][Cleone][MidRight][Helman]
+sure[A][X]
+
+##Chapter3_BenthusHelmanRecruit
+[MidLeft][Benthus][MidRight][Helman]
+sure[A][X]
+
+##Chapter3_NathanLucienTalk
+[MidLeft][Nathan][MidRight][Lucien]
+like i give a shit[A][X]
+
+##Chapter3_HouseText
+[MidRight][Landsknecht][MidLeft][UNIT][MidRight]
+have thing[A][X]

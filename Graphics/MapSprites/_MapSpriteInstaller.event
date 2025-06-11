@@ -101,6 +101,7 @@ StandingMapSprite(Trailblazer,MapSprite16x32,TrailblazerSMS)
 MovingMapSprite(Trailblazer, AP1, TrailblazerMMS)
 
 //GUNNER AND DRAGOON NEEDED - probably custom
+StandingMapSprite(Gunner,MapSprite16x16,GunnerSMS)
 
 StandingMapSprite(Poet,MapSprite16x16,PoetSMS)
 MovingMapSprite(Poet, AP1, PoetMMS)
@@ -145,9 +146,9 @@ StandingMapSprite(Seraph,MapSprite16x32,SeraphSMS)
 MovingMapSprite(Seraph, AP1, SeraphMMS)
 
 StandingMapSprite(ScaleKnight,MapSprite16x32,ScaleKnightSMS)
-MovingMapSprite(ScaleKnight, AP1, ScaleKnightMMS)
+MovingMapSprite(ScaleKnight, AP2Wyvern, ScaleKnightMMS)
 StandingMapSprite(Scalemaster,MapSprite16x32,ScalemasterSMS)
-MovingMapSprite(Scalemaster, AP1, ScalemasterMMS)
+MovingMapSprite(Scalemaster, AP2Wyvern, ScalemasterMMS)
 
 StandingMapSprite(Apothecary,MapSprite16x16,ApothecarySMS)
 MovingMapSprite(Apothecary, AP1, ApothecaryMMS)
@@ -246,6 +247,10 @@ StandingMapSprite(SigilTrapMapSprite,MapSprite16x16,SigilSMS)
 ALIGN 4
 SigilSMS:
 #incbin "Dmp/Sigil.dmp"
+
+ALIGN 4
+GunnerSMS:
+#incbin "Dmp/mattGunnerStand.dmp"
 
 ALIGN 4
 CyclopsSMS:

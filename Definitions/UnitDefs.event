@@ -131,3 +131,5 @@
 #define Leovetus 0x83
 #define Wont 0x84
 #define Hart 0x85
+#define Revati 0x86
+#define Dalman 0x87

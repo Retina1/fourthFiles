@@ -26,10 +26,18 @@ ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
 //helman
+CharacterEvent(0x8,Chapter3_NathanHelman,Nathan,Helman)
+CharacterEvent(0x8,Chapter3_AstarteHelman,Astarte,Helman)
+CharacterEvent(0x8,Chapter3_GoreHelman,Gore,Helman)
+CharacterEvent(0x8,Chapter3_CleoneHelman,Cleone,Helman)
+CharacterEvent(0x8,Chapter3_BenthusHelman,Benthus,Helman)
+//lucien
+CharacterEvent(0x9,Chapter3_NathanLucien,Nathan,Lucien)
 END_MAIN
 
 LocationBasedEvents:
 //village
+Village(0x10,Chapter3_House,4,1)
 END_MAIN
 
 MiscBasedEvents:
@@ -107,6 +115,40 @@ SetUnitWEXP(MonsterBoss,0,0,0,0,0)
 CallPreps
 EndEvent
 
+
+Chapter3_House:
+VillageEventItem(Chapter3_HouseText, 0x0, ThornWhip)
+
+Chapter3_NathanHelman:
+MUSC 0x0 //recruitment theme
+Text(Chapter3_NathanHelmanRecruit)
+TurnAlly(Helman)
+EndEvent
+Chapter3_GoreHelman:
+MUSC 0x0 //recruitment theme
+Text(Chapter3_GoreHelmanRecruit)
+TurnAlly(Helman)
+EndEvent
+Chapter3_AstarteHelman:
+MUSC 0x0 //recruitment theme
+Text(Chapter3_AstarteHelmanRecruit)
+TurnAlly(Helman)
+EndEvent
+Chapter3_CleoneHelman:
+MUSC 0x0 //recruitment theme
+Text(Chapter3_CleoneHelmanRecruit)
+TurnAlly(Helman)
+EndEvent
+Chapter3_BenthusHelman:
+MUSC 0x0 //recruitment theme
+Text(Chapter3_BenthusHelmanRecruit)
+TurnAlly(Helman)
+EndEvent
+
+Chapter3_NathanLucien:
+MUSC Song_OohWilfre
+Text(Chapter3_NathanLucienTalk)
+EndEvent
 
 EndingScene:
 ENUT Chapter3DoneFlag

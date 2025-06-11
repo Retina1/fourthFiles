@@ -21,7 +21,7 @@ UNIT
 #define EnableNextRecruitFlag "EnableRecruitFlag5; EnableRecruitFlag4; EnableRecruitFlag3; EnableRecruitFlag2; EnableRecruitFlag1; LABEL 0x9005"
 
 #define GuildLoad(unitID,unitGroup,label) "CHECK_EXISTS unitID; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
-#define GuildRecruit(recruitee,introText,confirmText,denyText,followupText,eventID) "CHECK_EVENTID eventID; BNE 0x8000 0xc 0x0; ENUT eventID; Text(introText); LABEL 0x8001; SystemText(RecruitChosenUnitPrompt); IfNoSelectedGoto(0x8002); Text(confirmText); TurnAlly(recruitee); EnableNextRecruitFlag; FADI 10; SetUnitStatus(recruitee,MovBonus,(-15)); SET_ACTIVE 0; SVAL 0x1 9; SET_CONDITION recruitee; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn; FADU 10; GOTO 0x8003; LABEL 0x8002; Text(denyText); GOTO 0x8003; LABEL 0x8000; Text(followupText); GOTO 0x8001; LABEL 0x8003; ENUF LocationFlagGuildhall"
+#define GuildRecruit(recruitee,introText,confirmText,denyText,followupText,eventID) "EVBIT_MODIFY 3; CHECK_EVENTID eventID; BNE 0x8000 0xc 0x0; ENUT eventID; Text(introText); LABEL 0x8001; SystemText(RecruitChosenUnitPrompt); IfNoSelectedGoto(0x8002); Text(confirmText); TurnAlly(recruitee); EnableNextRecruitFlag; FADI 10; SetUnitStatus(recruitee,MovBonus,(-15)); SET_ACTIVE 0; SVAL 0x1 9; SET_CONDITION recruitee; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn; FADU 10; GOTO 0x8003; LABEL 0x8002; Text(denyText); GOTO 0x8003; LABEL 0x8000; Text(followupText); GOTO 0x8001; LABEL 0x8003; ENUF LocationFlagGuildhall"
 //0x20-0x28 reserved for recruitment eventids
 #define GuildLoadFlagReset "ENUF 0x20; ENUF 0x21; ENUF 0x22; ENUF 0x23; ENUF 0x24; ENUF 0x25; ENUF 0x26; ENUF 0x27; ENUF 0x28;"
 
@@ -60,6 +60,7 @@ FADU 10
 EndEvent
 
 GuildhallRecruitmentMenuEvent:
+EVBIT_MODIFY 3
 CHECK_EVENTID Recruited5Flag
 BEQ 0x3005 0xc 0x0; SystemText(FiveRecruitLeftText); GOTO 0x3000; LABEL 0x3005
 CHECK_EVENTID Recruited4Flag
@@ -118,6 +119,7 @@ LABEL 0x2008
 ENDA
 
 GuildhallRecruitmentPromptBegin:
+EVBIT_MODIFY 3
 //if this flag off, out of recruits
 CHECK_EVENTID Recruited1Flag
 BEQ 0x1000 0xc 0x0

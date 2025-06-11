@@ -1,4 +1,4 @@
-void ApplyAxefighterEndlessBattle(struct BattleUnit* attacker, struct BattleUnit* defender) {
+void ApplyAxefighterEndlessBattle(struct BattleUnit* attacker) {
 	if (BATTLE_UNIT_HAS_SKILL(attacker->unit,GLD,skill_111)){
 		attacker->battleAttack = attacker->battleAttack + gChapterData.chapterTurnNumber;
 	}
@@ -17,7 +17,7 @@ void ApplyAxefighterOverpowering(struct BattleUnit* attacker, struct BattleUnit*
 
 
 void ApplyAxefighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
-	ApplyAxefighterEndlessBattle(attacker,defender);
+	ApplyAxefighterEndlessBattle(attacker);
 	if (IsBattleReal()){
 		ApplyAxefighterOverpowering(attacker,defender);
 	}

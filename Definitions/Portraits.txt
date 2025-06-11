@@ -153,12 +153,14 @@ OrionMug
 LeovetusMug
 WontMug
 HartMug
-GenericLandsknechtMug
+RevatiMug
+GenericLandsknechtMug 157
 GenericNecromancerMug
 GenericPugilistMug
 GenericAutomatonMug
 GenericImperialMug
 GenericRoninMug
+DalmanMug 163
 SwordfighterCard
 LandsknechtCard
 KnightCard

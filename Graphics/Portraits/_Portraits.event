@@ -65,6 +65,17 @@ MonkDMP:
 setMugEntry(MonkMug,MonkDMP,3,6,3,4)
 
 
+ALIGN 4
+//raiden
+HartDMP:
+#incbin "dmps/raidenHart.dmp"
+setMugEntry(HartMug,HartDMP,3,5,3,3)
+
+ALIGN 4
+//jet
+DalmanDMP:
+#incbin "dmps/jetDalman.dmp"
+setMugEntry(DalmanMug,DalmanDMP,2,5,3,3)
 
 ALIGN 4
 //green
@@ -141,6 +152,10 @@ ALIGN 4
 VasilyDMP:
 #incbin "dmps/mattVasily.dmp"
 setMugEntry(VasilyMug,VasilyDMP,3,5,3,3)
+ALIGN 4
+RevatiDMP:
+#incbin "dmps/mattRevati.dmp"
+setMugEntry(RevatiMug,RevatiDMP,4,4,0,4)
 
 ALIGN 4
 //catball
@@ -191,6 +206,10 @@ ALIGN 4
 HallieDMP:
 #incbin "dmps/hannahHallie.dmp"
 setMugEntry(HallieMug,HallieDMP,3,5,3,3)
+ALIGN 4
+PipsyDMP:
+#incbin "dmps/hannahPipsy.dmp"
+setMugEntryExtend(PipsyMug,PipsyDMP,4,7,4,5, 10,0, 10,4)
 
 ALIGN 4
 //aaron
@@ -210,6 +229,10 @@ ALIGN 4
 SzessDMP:
 #incbin "dmps/guardSzess.dmp"
 setMugEntry(SzessMug,SzessDMP,3,5,3,3)
+ALIGN 4
+AlvaDMP:
+#incbin "dmps/guardAlva.dmp"
+setMugEntryExtend(AlvaMug,AlvaDMP,4,4,3,2, 4,(-2), 6,(-2))
 
 ALIGN 4
 //thicc

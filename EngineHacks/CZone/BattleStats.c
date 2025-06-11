@@ -94,6 +94,12 @@ void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct Batt
             break;
         }
     }
+	//blood fortune
+	if (UNIT_HAS_SKILL(&defender->unit,HLD,skill_121)){
+		if ((defender->unit.curHP) < (GetUnitMaxHp(&defender->unit))){
+			attacker->battleEffectiveCritRate = 0;
+		}
+	}
 }
 
 void ComputeBattleUnitSilencerRate(struct BattleUnit* attacker, struct BattleUnit* defender) {
@@ -178,8 +184,14 @@ void FloorDamage(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	else
 		rawOffense = attacker->unit.pow;
 	
-    if ((attacker->battleAttack - defender->battleDefense) < (rawOffense / 3))
+    if ((attacker->battleAttack - defender->battleDefense) < (rawOffense / 3)) {
 		attacker->battleAttack = rawOffense / 3 + defender->battleDefense;
+	//apply unbreakable
+		if (UNIT_HAS_SKILL(&defender->unit,HOP,promoSkill_141)){
+			attacker->battleAttack = attacker->battleAttack / 2;
+			defender->battleDefense = defender->battleDefense / 2;
+		}
+	}
 }
 
 void ApplyPicnicMode(struct BattleUnit* attacker) {
@@ -216,6 +228,7 @@ void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleU
     ComputeBattleUnitSilencerRate(attacker, defender);
     ComputeBattleUnitSpecialWeaponStats(attacker, defender);
 	//skill thing here, another loop later?
+	ApplyArtificeMachinePrecision(attacker,defender);
 	ApplyArcherKillerAim(attacker,defender);
 	FloorDamage(attacker, defender);
 }
