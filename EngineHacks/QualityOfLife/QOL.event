@@ -9,3 +9,4 @@
 #include "DrawMapActionAnimation/Installer.event"
 #include "SupplyView/SupplyView.event"
 #include "UpdatedLButtonCycling/Installer.event"
+#include "BigPromos/HigherNumberGains.event"

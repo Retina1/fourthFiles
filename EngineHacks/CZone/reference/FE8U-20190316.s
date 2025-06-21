@@ -508,7 +508,7 @@ SET_FUNC EventEngine_Loop, 0x800CE4D
 SET_FUNC EventEngine_OnEnd, 0x800CF5D
 SET_FUNC EqueueEventEngineCall, 0x800D00D
 SET_FUNC HandleNextEventEngineCall, 0x800D045
-SET_FUNC CallMapEventEngine, 0x800D07D
+SET_FUNC CallEvent, 0x800D07D
 SET_FUNC StartMapEventEngine, 0x800D0B1
 SET_FUNC StartBattleEventEngine, 0x800D141
 SET_FUNC MapEventEngineExists, 0x800D199
@@ -1309,7 +1309,7 @@ SET_FUNC ComputeBattleObstacleStats, 0x802C949
 SET_FUNC UpdateObstacleFromBattle, 0x802C985
 SET_FUNC BeginBattleAnimations, 0x802CA15
 SET_FUNC GetUnitSoloBattleAnimType, 0x802CA71
-SET_FUNC GetBattleAnimType, 0x802CA99
+SET_FUNC GetBattleAnimPreconfType, 0x802CA99
 SET_FUNC BattlePrintDebugUnitInfo, 0x802CAF9
 SET_FUNC BattlePrintDebugHitInfo, 0x802CAFD
 SET_FUNC BattleInitItemEffect, 0x802CB25
@@ -1552,7 +1552,7 @@ SET_FUNC FireTrap_StartGfx, 0x8037511
 SET_FUNC MineTrap_StartGfx, 0x8037529
 SET_FUNC MineFireTrap_8037540, 0x8037541
 SET_FUNC MineFireTrap_80375A0, 0x80375A1
-SET_FUNC GetTriggeredTrapType, 0x80375E9
+SET_FUNC GetPickTrapType, 0x80375E9
 SET_FUNC ExecTrap, 0x8037661
 SET_FUNC HandlePostActionTraps, 0x8037745
 SET_FUNC ExecTrapForActionTarget, 0x80377CD
@@ -2381,8 +2381,8 @@ SET_FUNC CheckForCharacterEvents, 0x8083F69
 SET_FUNC RunCharacterEvents, 0x8083FB1
 SET_FUNC GetLocationEventCommandAt, 0x8084079
 SET_FUNC RunLocationEvents, 0x80840C5
-SET_FUNC CheckForPostActionEvents, 0x8084331
-SET_FUNC RunPostActionEvents, 0x80843C1
+SET_FUNC CheckForWaitEvents, 0x8084331
+SET_FUNC RunWaitEvents, 0x80843C1
 SET_FUNC RunSelectEvents, 0x808445D
 SET_FUNC RunMoveEventsMaybe, 0x80844B1
 SET_FUNC RunPostMoveEvents, 0x8084509

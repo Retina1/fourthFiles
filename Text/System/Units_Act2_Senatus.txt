@@ -23,6 +23,13 @@ Cherryl[X]
 A young Belvarusi noble sent to an abbey[N]
 for her safety. She's naive and idealistic.[X]
 
+//halcyon
+##Name_Cato
+Cato[X]
+##Desc_Cato
+A Belvarusi noble from a duchy that deals[N]
+in rumor. He's snappy, rude, and clever.[X]
+
 //francesca by retina (duelist)
 ##Name_Francesca
 Francesca[X]

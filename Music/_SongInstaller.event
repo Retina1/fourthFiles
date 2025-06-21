@@ -4,6 +4,8 @@
 #define SFXGroup 6
 */
 
+//black knife for drowning hollows or worldcore battle theme
+
 //0x9 - Distant Roads
 #define Song_TheFirstCampaign 0x9
 {
@@ -124,6 +126,12 @@ SongTable(Song_DrawHeroes,DrawHeroes,0)
 
 
 //0x3e - game over
+#define Song_NoMore 0x3e
+{
+SongTable(Song_NoMore,NoMore,0)
+#include "songs/NoMore.event"
+}
+
 
 //0x3f - unit death
 #define Song_NameEntry 0x3f
@@ -135,6 +143,6 @@ SongTable(Song_NameEntry,NameEntry,0)
 //0x43 - title screen
 #define Song_SpinningTheTale 0x43
 {
-SongTable(Song_SpinningTheTale,SpinningTheTale,1)
+SongTable(Song_SpinningTheTale,SpinningTheTale,0)
 #include "songs/SpinningTheTale.event"
 }

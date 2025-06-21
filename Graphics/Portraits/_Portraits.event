@@ -66,10 +66,20 @@ setMugEntry(MonkMug,MonkDMP,3,6,3,4)
 
 
 ALIGN 4
+//space
+JulietteDMP:
+#incbin "dmps/spaceJuliette.dmp"
+setMugEntry(JulietteMug,JulietteDMP,2,6,3,4)
+
+ALIGN 4
 //raiden
 HartDMP:
 #incbin "dmps/raidenHart.dmp"
 setMugEntry(HartMug,HartDMP,3,5,3,3)
+ALIGN 4
+SarinaDMP:
+#incbin "dmps/raidenSarina.dmp"
+setMugEntry(SarinaMug,SarinaDMP,4,5,4,3)
 
 ALIGN 4
 //jet
@@ -493,6 +503,11 @@ ALIGN 4
 AmosDMP:
 #incbin "dmps/johnAmos.dmp"
 setMugEntry(AmosMug,AmosDMP,5,5,5,3)
+ALIGN 4
+//john tezuka
+HaustenDMP:
+#incbin "dmps/tezukaHausten.dmp"
+setMugEntryExtend(HaustenMug,HaustenDMP,3,5,3,3, 2,(-2), 4,(-2))
 
 
 

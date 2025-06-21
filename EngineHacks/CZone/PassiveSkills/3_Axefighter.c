@@ -4,6 +4,13 @@ void ApplyAxefighterEndlessBattle(struct BattleUnit* attacker) {
 	}
 }
 
+void ApplyAxefighterSteadyMorale(struct Unit* attacker, struct Unit* defender) {
+	if (UNIT_HAS_SKILL(attacker,GLD,skill_121)){
+		AddUnitHp(attacker, 10);
+		CallEvent(&GenericHealEvent, 0x1);
+	}
+}
+
 // bug - doesn't quite properly apply in forecast
 void ApplyAxefighterOverpowering(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (BATTLE_UNIT_HAS_SKILL(attacker->unit,GLD,skill_131)){
@@ -21,4 +28,8 @@ void ApplyAxefighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit
 	if (IsBattleReal()){
 		ApplyAxefighterOverpowering(attacker,defender);
 	}
+}
+
+void ApplyAxefighterPostcombatSkills(struct Unit* attacker, struct Unit* defender) {
+	ApplyAxefighterSteadyMorale(attacker,defender);
 }

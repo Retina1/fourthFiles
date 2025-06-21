@@ -161,6 +161,10 @@ GenericAutomatonMug
 GenericImperialMug
 GenericRoninMug
 DalmanMug 163
+CatoMug
+HaustenMug
+SarinaMug
+JulietteMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

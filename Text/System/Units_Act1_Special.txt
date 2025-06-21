@@ -132,3 +132,10 @@ Ammi[X]
 A prodigy washed ashore in Asketa.[N]
 She hunts to make money for scrolls.[X]
 
+//raiden
+##Name_Sarina
+Sarina[X]
+##Desc_Sarina
+An esoteric and eccentric Asketan who[N]
+fights for her wife and children's sake. [X]
+

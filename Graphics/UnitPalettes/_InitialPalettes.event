@@ -1,0 +1,32 @@
+//swd
+setPalette(CoastKid_Swordfighter, CoastKid_SwordfighterDMP)
+setPalette(CoastKid_Landsknecht, CoastKid_LandsknechtDMP)
+CharPalette(CoastKid,CoastKid_Swordfighter,Swordfighter,CoastKid_Landsknecht,Landsknecht)
+ALIGN 4
+CoastKid_SwordfighterDMP:
+#incbin "paletteFiles/Initial/CoastKid_Swordfighter.dmp"
+ALIGN 4
+CoastKid_LandsknechtDMP:
+#incbin "paletteFiles/Initial/CoastKid_Landsknecht.dmp"
+
+//kn
+setPalette(Drogo_Knight, Drogo_KnightDMP)
+setPalette(Drogo_Hoplite, Drogo_HopliteDMP)
+CharPalette(Drogo,Drogo_Knight,Knight,Drogo_Hoplite,Hoplite)
+ALIGN 4
+Drogo_KnightDMP:
+#incbin "paletteFiles/Initial/Drogo_Knight.dmp"
+ALIGN 4
+Drogo_HopliteDMP:
+#incbin "paletteFiles/Initial/Drogo_Hoplite.dmp"
+
+//axe
+setPalette(Tristao_Axefighter, Tristao_AxefighterDMP)
+setPalette(Tristao_Gladiator, Tristao_GladiatorDMP)
+CharPalette(Tristao,Tristao_Axefighter,Axefighter,Tristao_Gladiator,Gladiator)
+ALIGN 4
+Tristao_AxefighterDMP:
+#incbin "paletteFiles/Initial/Tristao_Axefighter.dmp"
+ALIGN 4
+Tristao_GladiatorDMP:
+#incbin "paletteFiles/Initial/Tristao_Gladiator.dmp"

@@ -260,6 +260,10 @@ ItemIconEntry(OmegaArchIcon)
 #incbin "Dmp/{CamTech075} (Pack 1) icon 041.dmp"
 
 //GUNS
+ItemIconEntry(HandgonneIcon)
+#incbin "Dmp/appGun.dmp"
+ItemIconEntry(CaliverIcon)
+#incbin "Dmp/tezukaGun.dmp"
 
 //STAVES
 ItemIconEntry(WandIcon)

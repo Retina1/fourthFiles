@@ -100,8 +100,11 @@ MovingMapSprite(Raider, AP1, RaiderMMS)
 StandingMapSprite(Trailblazer,MapSprite16x32,TrailblazerSMS)
 MovingMapSprite(Trailblazer, AP1, TrailblazerMMS)
 
-//GUNNER AND DRAGOON NEEDED - probably custom
+//thanks matt oomfie
 StandingMapSprite(Gunner,MapSprite16x16,GunnerSMS)
+MovingMapSprite(Gunner, AP1, GunnerMMS)
+StandingMapSprite(Dragoon,MapSprite16x16,DragoonSMS)
+MovingMapSprite(Dragoon, AP1, DragoonMMS)
 
 StandingMapSprite(Poet,MapSprite16x16,PoetSMS)
 MovingMapSprite(Poet, AP1, PoetMMS)
@@ -117,6 +120,8 @@ StandingMapSprite(Priest,MapSprite16x16,PriestSMS)
 MovingMapSprite(Priest, AP1, PriestMMS)
 StandingMapSprite(WarMagus,MapSprite16x16,WarMagusSMS)
 MovingMapSprite(WarMagus, AP1, WarMagusMMS)
+StandingMapSprite(DivineMagus,MapSprite16x16,DivineMagusSMS)
+MovingMapSprite(DivineMagus, AP1, DivineMagusMMS)
 
 StandingMapSprite(Lurker,MapSprite16x16,LurkerSMS)
 MovingMapSprite(Lurker, AP1, LurkerMMS)
@@ -178,7 +183,7 @@ MovingMapSprite(Fencer, AP1, FencerMMS)
 StandingMapSprite(Driver,MapSprite16x32,DriverSMS)
 MovingMapSprite(Driver, AP1, DriverMMS)
 StandingMapSprite(Imperial,MapSprite32x32,ImperialSMS)
-MovingMapSprite(Imperial, AP1, ImperialMMS)
+MovingMapSprite(Imperial, AP2General, ImperialMMS)
 
 //ARTIFICE AND AUTOMATON NEEDED - custom rpobably
 
@@ -251,6 +256,15 @@ SigilSMS:
 ALIGN 4
 GunnerSMS:
 #incbin "Dmp/mattGunnerStand.dmp"
+ALIGN 4
+GunnerMMS:
+#incbin "Dmp/mattGunnerMove.dmp"
+ALIGN 4
+DragoonSMS:
+#incbin "Dmp/mattDragoonStand.dmp"
+ALIGN 4
+DragoonMMS:
+#incbin "Dmp/mattDragoonMove.dmp"
 
 ALIGN 4
 CyclopsSMS:
@@ -378,18 +392,21 @@ ShamblerSMS:
 
 ALIGN 4
 DriverSMS:
-#incbin "Dmp/Knight (U) Sword {SALVAGED}-stand.dmp"
+//#incbin "Dmp/Knight (U) Sword {SALVAGED}-stand.dmp"
+#incbin "Dmp/appDriverStand.dmp"
 ALIGN 4
 DriverMMS:
-#incbin "Dmp/Knight (U) Sword {SALVAGED}-walk.dmp"
+//#incbin "Dmp/Knight (U) Sword {SALVAGED}-walk.dmp"
+#incbin "Dmp/appDriverMove.dmp"
 
 ALIGN 4
 ImperialSMS:
-#incbin "Dmp/Marshall (U) Sword {Nuramon}-stand.dmp"
+//#incbin "Dmp/Marshall (U) Sword {Nuramon}-stand.dmp"
+#incbin "Dmp/appImperialStand.dmp"
 ALIGN 4
 ImperialMMS:
-#incbin "Dmp/Marshall (U) Sword {Nuramon}-walk.dmp"
-
+//#incbin "Dmp/Marshall (U) Sword {Nuramon}-walk.dmp"
+#incbin "Dmp/appImperialMove.dmp"
 
 ALIGN 4
 CallerSMS:
@@ -579,6 +596,12 @@ WarMagusSMS:
 ALIGN 4
 WarMagusMMS:
 #incbin "Dmp/Sage (F) Battle Sage Sword {Leif, L95}-walk.dmp"
+ALIGN 4
+DivineMagusSMS:
+#incbin "Dmp/appDivineMagusStand.dmp"
+ALIGN 4
+DivineMagusMMS:
+#incbin "Dmp/appDivineMagusMove.dmp"
 
 
 ALIGN 4

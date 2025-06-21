@@ -35,6 +35,13 @@ Lucien[X]
 A Belvarusi statesman who seeks peace[N]
 among the nations. ...He's suspicious.[X]
 
+//space
+##Name_Juliette
+Juliette[X]
+##Desc_Juliette
+A noblewoman and proclaimed [OpenQuote]ar-teest[CloseQuote][N]
+of [OpenQuote]dark.[CloseQuote] She's a fair bit ignorant.[X]
+
 //Phespher by doob
 ##Name_Phespher
 Phespher[X]
@@ -126,3 +133,10 @@ Paul[X]
 ##Desc_Paul
 A former curate who couldn't heal[N]
 himself. ...He went slightly mad.[X]
+
+//tezuka
+##Name_Hausten
+Hausten[X]
+##Desc_Hausten
+A former Belvarusi noble who wishes to[N]
+share her performances with the world.[X]

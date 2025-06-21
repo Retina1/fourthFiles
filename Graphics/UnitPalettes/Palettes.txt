@@ -5,3 +5,7 @@ Astarte_WarMagus
 Guildmaster_Highlander
 CoastKid_Swordfighter
 CoastKid_Landsknecht
+Drogo_Knight
+Drogo_Hoplite
+Tristao_Axefighter
+Tristao_Gladiator

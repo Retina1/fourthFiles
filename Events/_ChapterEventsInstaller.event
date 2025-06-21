@@ -85,6 +85,13 @@ UNSET_CONDITION 0xffff
 SET_ACTIVE 0
 EndEvent
 
+GenericHealEvent:
+CAM1 0xFFFF
+PlayEmotionEffect(HeartEffect)
+SOUN 0x10F
+STAL 0x16
+EndEvent
+
 {
 #include "Chapters/Chapter1.event"
 }

@@ -38,38 +38,36 @@ setPalette(Nathan_Warlock, Nathan_WarlockDMP)
 CharPalette(Nathan,Nathan_Scholar,Scholar,Nathan_Warlock,Warlock)
 ALIGN 4
 Nathan_ScholarDMP:
-#incbin "paletteFiles/Nathan_Scholar.dmp"
+#incbin "paletteFiles/MainStory/Nathan_Scholar.dmp"
 ALIGN 4
 Nathan_WarlockDMP:
-#incbin "paletteFiles/Nathan_Warlock.dmp"
+#incbin "paletteFiles/MainStory/Nathan_Warlock.dmp"
 
 setPalette(Astarte_Priest, Astarte_PriestDMP)
 setPalette(Astarte_WarMagus, Astarte_WarMagusDMP)
 CharPalette(Astarte,Astarte_Priest,Priest,Astarte_WarMagus,WarMagus)
 ALIGN 4
 Astarte_PriestDMP:
-#incbin "paletteFiles/Astarte_Priest.dmp"
+#incbin "paletteFiles/MainStory/Astarte_Priest.dmp"
 ALIGN 4
 Astarte_WarMagusDMP:
-#incbin "paletteFiles/Astarte_WarMagus.dmp"
+#incbin "paletteFiles/MainStory/Astarte_WarMagus.dmp"
 
 setPalette(Guildmaster_Highlander, Guildmaster_HighlanderDMP)
 CharPalette(Guildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)
 CharPalette(BossGuildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)
 ALIGN 4
 Guildmaster_HighlanderDMP:
-#incbin "paletteFiles/Guildmaster_Highlander.dmp"
+#incbin "paletteFiles/MainStory/Guildmaster_Highlander.dmp"
 
-setPalette(CoastKid_Swordfighter, CoastKid_SwordfighterDMP)
-setPalette(CoastKid_Landsknecht, CoastKid_LandsknechtDMP)
-CharPalette(CoastKid,CoastKid_Swordfighter,Swordfighter,CoastKid_Landsknecht,Landsknecht)
-ALIGN 4
-CoastKid_SwordfighterDMP:
-#incbin "paletteFiles/CoastKid_Swordfighter.dmp"
-ALIGN 4
-CoastKid_LandsknechtDMP:
-#incbin "paletteFiles/CoastKid_Landsknecht.dmp"
-
+#include "_InitialPalettes.event"
+#include "_StandardPalettes.event"
+#include "_MagusPalettes.event"
+#include "_SpecialPalettes.event"
+#include "_SkyshroudPalettes.event"
+#include "_LifeflowPalettes.event"
+#include "_SenatusPalettes.event"
+#include "_ImpAutoPalettes.event"
 
 PUSH
 ORG $59BFC

@@ -9,6 +9,7 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "Misc/NewPromoGains.c"
 #include "Misc/Caps.c"
 #include "PassiveSkills/_PassiveSkills.c"
+#include "PostBattle/PostCombat.c"
 #include "BattleStats.c"
 #include "BattleProc.c"
 #include "Misc/ExpCalcs.c"

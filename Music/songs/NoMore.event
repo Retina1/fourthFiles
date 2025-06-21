@@ -1,0 +1,239 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	NoMore_grp  voicegroup000
+	#define	NoMore_pri  0
+	#define	NoMore_rev  0
+	#define	NoMore_mvl  127
+	#define	NoMore_key  0
+	#define	NoMore_tbs  1
+	#define	NoMore_exg  0
+	#define	NoMore_cmp  1
+
+	// .rodata
+	//	NoMore
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+NoMore_001:
+//  #01 //000   ----------------------------------------
+ BYTE   KEYSH   NoMore_key+0
+ BYTE   TEMPO   72*NoMore_tbs/2
+ BYTE   VOICE   13
+ BYTE   VOL   53*NoMore_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W96
+//  #01 //001   ----------------------------------------
+Label_F1DAFB:
+ BYTE   W84
+ BYTE   N11  As2  v052
+ BYTE   W12
+ BYTE   PEND 
+//  #01 //002   ----------------------------------------
+Label_F1DB01:
+ BYTE   N11  Dn3  v052
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+ BYTE   Dn3
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+ BYTE   PEND 
+//  #01 //003   ----------------------------------------
+ BYTE   Dn3
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   N32  Gn2
+ BYTE   W12
+ BYTE   W48
+//  #01 //004   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_F1DAFB
+//  #01 //005   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_F1DB01
+//  #01 //006   ----------------------------------------
+ BYTE   N11  Dn3  v052
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   N32  Gs2
+ BYTE   W12
+ BYTE   W48
+//  #01 //007   ----------------------------------------
+ BYTE   W96
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+NoMore_002:
+//  #02 //000   ----------------------------------------
+ BYTE   KEYSH   NoMore_key+0
+ BYTE   VOICE   1
+ BYTE   VOL   53*NoMore_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   N44  Fn2  v036
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   TIE  As3
+ BYTE   W24
+ BYTE   N22  Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+//  #02 //001   ----------------------------------------
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W14
+ BYTE   EOT
+ BYTE   As3
+ BYTE   W10
+//  #02 //002   ----------------------------------------
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   TIE  As3
+ BYTE   W24
+ BYTE   N22  Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+//  #02 //003   ----------------------------------------
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+//  #02 //004   ----------------------------------------
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  Dn3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  Ds3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W09
+ BYTE   EOT
+ BYTE   As3
+ BYTE   W15
+//  #02 //005   ----------------------------------------
+Label_F1DC2F:
+ BYTE   N44  Fn2  v036
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gs2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   N44  Fn2
+ BYTE   N22  Fs2
+ BYTE   N22  As2
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   Gs2
+ BYTE   N22  Cn3
+ BYTE   N22  Fn3
+ BYTE   W24
+ BYTE   PEND 
+//  #02 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_F1DC2F
+//  #02 //007   ----------------------------------------
+ BYTE   N96  Fn2  v036
+ BYTE   N96  Fs2
+ BYTE   N96  As2
+ BYTE   N96  Ds3
+ BYTE   W96
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+NoMore:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	NoMore_pri	// Priority
+	BYTE	NoMore_rev	// Reverb.
+    
+	POIN2	NoMore_grp
+    
+	POIN2	NoMore_001
+	POIN2	NoMore_002
+
+	

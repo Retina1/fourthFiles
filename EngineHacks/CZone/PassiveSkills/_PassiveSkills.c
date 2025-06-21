@@ -1,3 +1,5 @@
+extern u16 GenericHealEvent;
+
 #include "1_Swordfighter.c"
 #include "2_Knight.c"
 #include "3_Axefighter.c"
@@ -13,7 +15,7 @@
 #include "13_Priest.c"
 #include "14_Lurker.c"
 //#include "15_DarkHunter.c"
-//#include "16_Lancer.c"
+#include "16_Lancer.c"
 #include "17_Brawler.c"
 #include "18_Hunter.c"
 #include "19_SkyKnight.c"

@@ -1,0 +1,20 @@
+PUSH
+ORG $9ACC98
+#incext Png2Dmp "SmallNumber.png"
+
+ORG $74C10
+jumpToHack(BigNumberGet)
+POP
+
+ALIGN 4
+POIN BigNumber2
+POIN BigNumber
+BigNumberGet:
+#incbin "Numberproc.dmp"
+
+ALIGN 4
+BigNumber:
+#incext Png2Dmp "BigNumber.png"
+ALIGN 4
+BigNumber2:
+#incext Png2Dmp "BigNumber2.png"

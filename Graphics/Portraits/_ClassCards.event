@@ -34,16 +34,28 @@ setCardEntry(TroubadourCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(PriestCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(DarkHunterCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(DominatorCard,WightCardPortrait,WightCardPortraitPalette)
-setCardEntry(ApothecaryCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(BotanistCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(CallerCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(NecromancerCard,WightCardPortrait,WightCardPortraitPalette)
-setCardEntry(NobleCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(SovereignCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(DuelistCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(FencerCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(ArtificeCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(AutomatonCard,WightCardPortrait,WightCardPortraitPalette)
+
+ALIGN 4
+NobleCardPortrait:
+#incbin "classCards\nobleCard.dmp"
+NobleCardPortraitPalette:
+#incbin "classCards\nobleCardPalette.dmp"
+setCardEntry(NobleCard,NobleCardPortrait,NobleCardPortraitPalette)
+
+ALIGN 4
+ApothecaryCardPortrait:
+#incbin "classCards\apothecaryCard.dmp"
+ApothecaryCardPortraitPalette:
+#incbin "classCards\apothecaryCardPalette.dmp"
+setCardEntry(ApothecaryCard,ApothecaryCardPortrait,ApothecaryCardPortraitPalette)
 
 ALIGN 4
 SoulCardPortrait:
@@ -344,9 +356,10 @@ setCardEntry(LancerCard,LancerCardPortrait,LancerCardPortraitPalette)
 //get better card
 ALIGN 4
 HighlanderCardPortrait:
-#incbin "classCards\Sergeant (M)  {Jj09, Der, Spud} 1.dmp"
+#incbin "classCards\highlanderCard.dmp"
+//#incbin "classCards\Sergeant (M)  {Jj09, Der, Spud} 1.dmp"
 HighlanderCardPortraitPalette:
-#incbin "classCards\Sergeant (M)  {Jj09, Der, Spud} 1Palette.dmp"
+#incbin "classCards\highlanderCardPalette.dmp"
 setCardEntry(HighlanderCard,HighlanderCardPortrait,HighlanderCardPortraitPalette)
 
 //remove axe
