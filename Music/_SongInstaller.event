@@ -90,31 +90,39 @@ SongTable(Song_OohWilfre,OohWilfre,0)
 SongTable(Song_NoOneIsAlone,NoOneIsAlone,1)
 #include "songs/NoOneIsAlone.event"
 }
-//0x16
+//0x17
 #define Song_EverScarletForest 0x17
 {
 SongTable(Song_EverScarletForest,EverScarletForest,1)
 #include "songs/EverScarletForest.event"
 }
-//0x16
+//0x18
 #define Song_CherryTreesAndWings 0x18
 {
 SongTable(Song_CherryTreesAndWings,CherryTreesAndWings,0)
 #include "songs/CherryTreesAndWings.event"
 }
-//0x17
+//0x19
 //workers quarters for S4 sewers as somber thing, something more chaotic for aboveground S4
 #define Song_ExcavationWorkersQuarters 0x19
 {
 SongTable(Song_ExcavationWorkersQuarters,ExcavationWorkersQuarters,1)
 #include "songs/ExcavationWorkersQuarters.event"
 }
-//0x18 - biggering
+//0x1a - biggering
 #define Song_Biggering 0x1a
 {
 SongTable(Song_Biggering,Biggering,1)
 #include "songs/Biggering.event"
 }
+//0x1b - pandemonic planet
+#define Song_PandemonicPlanet 0x1b
+{
+SongTable(Song_PandemonicPlanet,PandemonicPlanet,1)
+#include "songs/PandemonicPlanet.event"
+}
+
+//promo is 0x23, healing is 21/22
 
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36

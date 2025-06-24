@@ -199,7 +199,7 @@ ALIGN 4
 //epicer
 PeabodyDMP:
 #incbin "dmps/epicerPeabody.dmp"
-setMugEntry(PeabodyMug,PeabodyDMP,5,5,5,3)
+setMugEntry(PeabodyMug,PeabodyDMP,6,5,6,3)
 
 ALIGN 4
 //abzinthian

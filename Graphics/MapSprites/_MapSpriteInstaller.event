@@ -128,7 +128,9 @@ MovingMapSprite(Lurker, AP1, LurkerMMS)
 StandingMapSprite(Hexer,MapSprite16x16,HexerSMS)
 MovingMapSprite(Hexer, AP1, HexerMMS)
 
-//DARK HUNTER AND DOMINATOR NEEDED - custom
+//DOMINATOR NEEDED - custom
+StandingMapSprite(DarkHunter,MapSprite16x16,DarkHunterSMS)
+MovingMapSprite(DarkHunter, AP1, DarkHunterMMS)
 
 StandingMapSprite(Lancer,MapSprite16x16,LancerSMS)
 MovingMapSprite(Lancer, AP1, LancerMMS)
@@ -248,6 +250,13 @@ MovingMapSprite(Biclops, $81F49B8, BiclopsMMS)
 #define SigilTrapMapSprite 0x3c
 
 StandingMapSprite(SigilTrapMapSprite,MapSprite16x16,SigilSMS)
+
+ALIGN 4
+DarkHunterSMS:
+#incbin "Dmp/appDarkHunterStand.dmp"
+ALIGN 4
+DarkHunterMMS:
+#incbin "Dmp/appDarkHunterMove.dmp"
 
 ALIGN 4
 SigilSMS:

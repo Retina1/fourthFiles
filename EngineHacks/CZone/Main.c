@@ -175,3 +175,44 @@ void NewExecVulneraryItemWrapper() {
             bx r0; \
     ");
 }
+
+void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
+	struct Unit* unit;
+	u16 unitID = gEventSlots[1];
+	int targetLevel = gEventSlots[2];
+	if (unitID == 0xFFFF) {
+		unit = gActiveUnit;
+	} else {
+		unit = GetUnitFromCharId(unitID);
+	}
+    struct BattleUnit tmpBattleUnit;
+    short levelsLeft;
+
+    tmpBattleUnit.expGain = 0;
+
+    levelsLeft = (targetLevel - unit->level);
+
+    if (levelsLeft > 0) {
+        for (unit->level -= levelsLeft; levelsLeft > 0; --levelsLeft) {
+            InitBattleUnit(&tmpBattleUnit, unit);
+
+            tmpBattleUnit.unit.exp += 100;
+            CheckBattleUnitLevelUp(&tmpBattleUnit);
+
+            UpdateUnitFromBattle(unit, &tmpBattleUnit);
+			unit->level++;
+        }
+    }
+}
+
+void AutoLevelAllASMC(ProcPtr proc) { //target level in slot2 
+   	int unitIndex = 1;
+	int maxCount = 62;
+	
+	while(unitIndex < maxCount) {
+		int unitID = UNIT_CHAR_ID(GetUnit(unitIndex));
+		gEventSlots[1] = unitID;
+		AutoLevelASMC(proc);
+        unitIndex++;
+    }    
+}

@@ -1,3 +1,25 @@
+//null skills
+PUSH
+ORG 0x2b34a
+BYTE 0
+ORG 0x2b346
+BYTE 0
+ORG 0x24506
+BYTE 0
+ORG 0x16c98
+BYTE 0
+ORG 0x16c94
+BYTE 0
+ORG 0x2b22a
+BYTE 0
+ORG 0x2b226
+BYTE 0
+ORG 0x2b2ae
+BYTE 0
+ORG 0x2b2aa
+BYTE 0
+POP
+
 //ending transparency
 PUSH
 ORG $b6f14

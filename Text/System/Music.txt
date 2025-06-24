@@ -23,6 +23,11 @@ Etrian Odyssey V[X]
 ##SongTitle_UntamedGarden
 Untamed Garden[X]
 
+##SourceTitle_Touhou
+Touhou Series[X]
+##SongTitle_PandemonicPlanet
+Pandemonic Planet (ArcherBias)[X]
+
 ##SourceTitle_Persona
 Persona[X]
 ##SongTitle_NameEntry

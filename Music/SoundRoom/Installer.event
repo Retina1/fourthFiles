@@ -58,10 +58,11 @@ SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOd
 //combat
 //boss
 SoundRoomEntry(Song_Rhapsody, SongTitle_Rhapsody, SourceTitle_OrderOfEcclesia,5)
-//character
+//character and event
 SoundRoomEntry(Song_OohWilfre, SongTitle_OohWilfre, SourceTitle_DrawnToLife2,14)
 SoundRoomEntry(Song_Salem, SongTitle_Salem, SourceTitle_DrawnToLife2,13)
 SoundRoomEntry(Song_CherryTreesAndWings, SongTitle_CherryTreesAndWings, SourceTitle_EtrianOdyssey2,17)
+SoundRoomEntry(Song_PandemonicPlanet, SongTitle_PandemonicPlanet, SourceTitle_Touhou,22)
 //death and game over
 SoundRoomEntry(Song_NameEntry, SongTitle_NameEntry, SourceTitle_Persona,20)
 SoundRoomEntry(Song_NoMore, SongTitle_NoMore, SourceTitle_IntoTheWoods,21)

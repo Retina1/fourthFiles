@@ -59,6 +59,12 @@ CALL NewGameOverEvent
 ENDA
 POP
 
+//bugs currently
+MassAutolevelEvent:
+ASMC ValueChooser_OnSelect|1
+ASMC AutoLevelAllASMC|1
+ENDA
+
 NewGameOverUnit:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT

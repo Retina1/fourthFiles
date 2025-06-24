@@ -3366,1040 +3366,1060 @@ __TEXTPROCESSC49:
 setText($C49, __TEXTPROCESSC49)
 
 __TEXTPROCESSC4A:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Persona.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Touhou.fetxt"
 setText($C4A, __TEXTPROCESSC4A)
 
 __TEXTPROCESSC4B:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_NameEntry.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_PandemonicPlanet.fetxt"
 setText($C4B, __TEXTPROCESSC4B)
 
 __TEXTPROCESSC4C:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_SMT4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Persona.fetxt"
 setText($C4C, __TEXTPROCESSC4C)
 
 __TEXTPROCESSC4D:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_ExcavationWorkersQuarters.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_NameEntry.fetxt"
 setText($C4D, __TEXTPROCESSC4D)
 
 __TEXTPROCESSC4E:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_OrderOfEcclesia.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_SMT4.fetxt"
 setText($C4E, __TEXTPROCESSC4E)
 
 __TEXTPROCESSC4F:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_Rhapsody.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_ExcavationWorkersQuarters.fetxt"
 setText($C4F, __TEXTPROCESSC4F)
 
 __TEXTPROCESSC50:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_LiveALive.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_OrderOfEcclesia.fetxt"
 setText($C50, __TEXTPROCESSC50)
 
 __TEXTPROCESSC51:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_HeroicStruggle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_Rhapsody.fetxt"
 setText($C51, __TEXTPROCESSC51)
 
 __TEXTPROCESSC52:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_DrawnToLife2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_LiveALive.fetxt"
 setText($C52, __TEXTPROCESSC52)
 
 __TEXTPROCESSC53:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_Salem.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_HeroicStruggle.fetxt"
 setText($C53, __TEXTPROCESSC53)
 
 __TEXTPROCESSC54:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_OohWilfre.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_DrawnToLife2.fetxt"
 setText($C54, __TEXTPROCESSC54)
 
 __TEXTPROCESSC55:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Necrodancer.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_Salem.fetxt"
 setText($C55, __TEXTPROCESSC55)
 
 __TEXTPROCESSC56:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_DiscoDescent.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_OohWilfre.fetxt"
 setText($C56, __TEXTPROCESSC56)
 
 __TEXTPROCESSC57:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_RhythmDoctor.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Necrodancer.fetxt"
 setText($C57, __TEXTPROCESSC57)
 
 __TEXTPROCESSC58:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_LuckyBreak.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_DiscoDescent.fetxt"
 setText($C58, __TEXTPROCESSC58)
 
 __TEXTPROCESSC59:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Antibirth.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_RhythmDoctor.fetxt"
 setText($C59, __TEXTPROCESSC59)
 
 __TEXTPROCESSC5A:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_InnocenceGlitched.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_LuckyBreak.fetxt"
 setText($C5A, __TEXTPROCESSC5A)
 
 __TEXTPROCESSC5B:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_IntoTheWoods.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Antibirth.fetxt"
 setText($C5B, __TEXTPROCESSC5B)
 
 __TEXTPROCESSC5C:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_NoOneIsAlone.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_InnocenceGlitched.fetxt"
 setText($C5C, __TEXTPROCESSC5C)
 
 __TEXTPROCESSC5D:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_NoMore.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_IntoTheWoods.fetxt"
 setText($C5D, __TEXTPROCESSC5D)
 
 __TEXTPROCESSC5E:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_TheLorax.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_NoOneIsAlone.fetxt"
 setText($C5E, __TEXTPROCESSC5E)
 
 __TEXTPROCESSC5F:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_Biggering.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_NoMore.fetxt"
 setText($C5F, __TEXTPROCESSC5F)
 
 __TEXTPROCESSC60:
-#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Original.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_TheLorax.fetxt"
 setText($C60, __TEXTPROCESSC60)
 
 __TEXTPROCESSC61:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_Escape.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_Biggering.fetxt"
 setText($C61, __TEXTPROCESSC61)
 
 __TEXTPROCESSC62:
-#incext ParseFile ".TextEntries\text_buildfileSongTitle_Revolution.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSourceTitle_Original.fetxt"
 setText($C62, __TEXTPROCESSC62)
 
 __TEXTPROCESSC63:
-#incext ParseFile ".TextEntries\text_buildfileCampaignCustomPrompt.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_Escape.fetxt"
 setText($C63, __TEXTPROCESSC63)
 
 __TEXTPROCESSC64:
-#incext ParseFile ".TextEntries\text_buildfileRTextExplanation.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSongTitle_Revolution.fetxt"
 setText($C64, __TEXTPROCESSC64)
 
 __TEXTPROCESSC65:
-#incext ParseFile ".TextEntries\text_buildfileNormalGrowthsLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCampaignCustomPrompt.fetxt"
 setText($C65, __TEXTPROCESSC65)
 
 __TEXTPROCESSC66:
-#incext ParseFile ".TextEntries\text_buildfileNormalGrowthsRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRTextExplanation.fetxt"
 setText($C66, __TEXTPROCESSC66)
 
 __TEXTPROCESSC67:
-#incext ParseFile ".TextEntries\text_buildfileNormalGrowthsConfirm.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNormalGrowthsLabel.fetxt"
 setText($C67, __TEXTPROCESSC67)
 
 __TEXTPROCESSC68:
-#incext ParseFile ".TextEntries\text_buildfileFixedGrowthsLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNormalGrowthsRText.fetxt"
 setText($C68, __TEXTPROCESSC68)
 
 __TEXTPROCESSC69:
-#incext ParseFile ".TextEntries\text_buildfileFixedGrowthsRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNormalGrowthsConfirm.fetxt"
 setText($C69, __TEXTPROCESSC69)
 
 __TEXTPROCESSC6A:
-#incext ParseFile ".TextEntries\text_buildfileFixedGrowthsConfirm.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFixedGrowthsLabel.fetxt"
 setText($C6A, __TEXTPROCESSC6A)
 
 __TEXTPROCESSC6B:
-#incext ParseFile ".TextEntries\text_buildfileZeroGrowthsLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFixedGrowthsRText.fetxt"
 setText($C6B, __TEXTPROCESSC6B)
 
 __TEXTPROCESSC6C:
-#incext ParseFile ".TextEntries\text_buildfileZeroGrowthsRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFixedGrowthsConfirm.fetxt"
 setText($C6C, __TEXTPROCESSC6C)
 
 __TEXTPROCESSC6D:
-#incext ParseFile ".TextEntries\text_buildfileZeroGrowthsConfirm.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileZeroGrowthsLabel.fetxt"
 setText($C6D, __TEXTPROCESSC6D)
 
 __TEXTPROCESSC6E:
-#incext ParseFile ".TextEntries\text_buildfileMinGrowthsLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileZeroGrowthsRText.fetxt"
 setText($C6E, __TEXTPROCESSC6E)
 
 __TEXTPROCESSC6F:
-#incext ParseFile ".TextEntries\text_buildfileMinGrowthsRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileZeroGrowthsConfirm.fetxt"
 setText($C6F, __TEXTPROCESSC6F)
 
 __TEXTPROCESSC70:
-#incext ParseFile ".TextEntries\text_buildfileMinimumGrowthsConfirm.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMinGrowthsLabel.fetxt"
 setText($C70, __TEXTPROCESSC70)
 
 __TEXTPROCESSC71:
-#incext ParseFile ".TextEntries\text_buildfileMaxGrowthsLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMinGrowthsRText.fetxt"
 setText($C71, __TEXTPROCESSC71)
 
 __TEXTPROCESSC72:
-#incext ParseFile ".TextEntries\text_buildfileMaxGrowthsRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMinimumGrowthsConfirm.fetxt"
 setText($C72, __TEXTPROCESSC72)
 
 __TEXTPROCESSC73:
-#incext ParseFile ".TextEntries\text_buildfileMaxGrowthsConfirm.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMaxGrowthsLabel.fetxt"
 setText($C73, __TEXTPROCESSC73)
 
 __TEXTPROCESSC74:
-#incext ParseFile ".TextEntries\text_buildfilePicnicModeLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMaxGrowthsRText.fetxt"
 setText($C74, __TEXTPROCESSC74)
 
 __TEXTPROCESSC75:
-#incext ParseFile ".TextEntries\text_buildfilePicnicModeRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMaxGrowthsConfirm.fetxt"
 setText($C75, __TEXTPROCESSC75)
 
 __TEXTPROCESSC76:
-#incext ParseFile ".TextEntries\text_buildfilePicnicModeConfirm.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePicnicModeLabel.fetxt"
 setText($C76, __TEXTPROCESSC76)
 
 __TEXTPROCESSC77:
-#incext ParseFile ".TextEntries\text_buildfileClearModifiersLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePicnicModeRText.fetxt"
 setText($C77, __TEXTPROCESSC77)
 
 __TEXTPROCESSC78:
-#incext ParseFile ".TextEntries\text_buildfileClearModifiersLabelRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePicnicModeConfirm.fetxt"
 setText($C78, __TEXTPROCESSC78)
 
 __TEXTPROCESSC79:
-#incext ParseFile ".TextEntries\text_buildfileClearModifiers.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileClearModifiersLabel.fetxt"
 setText($C79, __TEXTPROCESSC79)
 
 __TEXTPROCESSC7A:
-#incext ParseFile ".TextEntries\text_buildfileFinishLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileClearModifiersLabelRText.fetxt"
 setText($C7A, __TEXTPROCESSC7A)
 
 __TEXTPROCESSC7B:
-#incext ParseFile ".TextEntries\text_buildfileFinishRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileClearModifiers.fetxt"
 setText($C7B, __TEXTPROCESSC7B)
 
 __TEXTPROCESSC7C:
-#incext ParseFile ".TextEntries\text_buildfileGameOverText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFinishLabel.fetxt"
 setText($C7C, __TEXTPROCESSC7C)
 
 __TEXTPROCESSC7D:
-#incext ParseFile ".TextEntries\text_buildfileNathanDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFinishRText.fetxt"
 setText($C7D, __TEXTPROCESSC7D)
 
 __TEXTPROCESSC7E:
-#incext ParseFile ".TextEntries\text_buildfileAstarteDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGameOverText.fetxt"
 setText($C7E, __TEXTPROCESSC7E)
 
 __TEXTPROCESSC7F:
-#incext ParseFile ".TextEntries\text_buildfileGoreDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNathanDeath.fetxt"
 setText($C7F, __TEXTPROCESSC7F)
 
 __TEXTPROCESSC80:
-#incext ParseFile ".TextEntries\text_buildfileCleoneDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAstarteDeath.fetxt"
 setText($C80, __TEXTPROCESSC80)
 
 __TEXTPROCESSC81:
-#incext ParseFile ".TextEntries\text_buildfileBenthusRetreat.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGoreDeath.fetxt"
 setText($C81, __TEXTPROCESSC81)
 
 __TEXTPROCESSC82:
-#incext ParseFile ".TextEntries\text_buildfileHelmanDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCleoneDeath.fetxt"
 setText($C82, __TEXTPROCESSC82)
 
 __TEXTPROCESSC83:
-#incext ParseFile ".TextEntries\text_buildfileCoastKidDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBenthusRetreat.fetxt"
 setText($C83, __TEXTPROCESSC83)
 
 __TEXTPROCESSC84:
-#incext ParseFile ".TextEntries\text_buildfilePuzonDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHelmanDeath.fetxt"
 setText($C84, __TEXTPROCESSC84)
 
 __TEXTPROCESSC85:
-#incext ParseFile ".TextEntries\text_buildfileCamDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCoastKidDeath.fetxt"
 setText($C85, __TEXTPROCESSC85)
 
 __TEXTPROCESSC86:
-#incext ParseFile ".TextEntries\text_buildfileMaragDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePuzonDeath.fetxt"
 setText($C86, __TEXTPROCESSC86)
 
 __TEXTPROCESSC87:
-#incext ParseFile ".TextEntries\text_buildfileDrogoDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCamDeath.fetxt"
 setText($C87, __TEXTPROCESSC87)
 
 __TEXTPROCESSC88:
-#incext ParseFile ".TextEntries\text_buildfileGretchenDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMaragDeath.fetxt"
 setText($C88, __TEXTPROCESSC88)
 
 __TEXTPROCESSC89:
-#incext ParseFile ".TextEntries\text_buildfileAllbringerDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDrogoDeath.fetxt"
 setText($C89, __TEXTPROCESSC89)
 
 __TEXTPROCESSC8A:
-#incext ParseFile ".TextEntries\text_buildfileHopfDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGretchenDeath.fetxt"
 setText($C8A, __TEXTPROCESSC8A)
 
 __TEXTPROCESSC8B:
-#incext ParseFile ".TextEntries\text_buildfileSlynSpireDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAllbringerDeath.fetxt"
 setText($C8B, __TEXTPROCESSC8B)
 
 __TEXTPROCESSC8C:
-#incext ParseFile ".TextEntries\text_buildfileLabel_City.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHopfDeath.fetxt"
 setText($C8C, __TEXTPROCESSC8C)
 
 __TEXTPROCESSC8D:
-#incext ParseFile ".TextEntries\text_buildfileName_Hirschring.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSlynSpireDeath.fetxt"
 setText($C8D, __TEXTPROCESSC8D)
 
 __TEXTPROCESSC8E:
-#incext ParseFile ".TextEntries\text_buildfileName_Guildhall.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLabel_City.fetxt"
 setText($C8E, __TEXTPROCESSC8E)
 
 __TEXTPROCESSC8F:
-#incext ParseFile ".TextEntries\text_buildfileName_Blacksmith.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Hirschring.fetxt"
 setText($C8F, __TEXTPROCESSC8F)
 
 __TEXTPROCESSC90:
-#incext ParseFile ".TextEntries\text_buildfileName_Tavern.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Guildhall.fetxt"
 setText($C90, __TEXTPROCESSC90)
 
 __TEXTPROCESSC91:
-#incext ParseFile ".TextEntries\text_buildfileName_Act1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Blacksmith.fetxt"
 setText($C91, __TEXTPROCESSC91)
 
 __TEXTPROCESSC92:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Tavern.fetxt"
 setText($C92, __TEXTPROCESSC92)
 
 __TEXTPROCESSC93:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Act1.fetxt"
 setText($C93, __TEXTPROCESSC93)
 
 __TEXTPROCESSC94:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch1.fetxt"
 setText($C94, __TEXTPROCESSC94)
 
 __TEXTPROCESSC95:
-#incext ParseFile ".TextEntries\text_buildfileLabel_St1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch2.fetxt"
 setText($C95, __TEXTPROCESSC95)
 
 __TEXTPROCESSC96:
-#incext ParseFile ".TextEntries\text_buildfileName_St1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch3.fetxt"
 setText($C96, __TEXTPROCESSC96)
 
 __TEXTPROCESSC97:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLabel_St1.fetxt"
 setText($C97, __TEXTPROCESSC97)
 
 __TEXTPROCESSC98:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch5.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_St1.fetxt"
 setText($C98, __TEXTPROCESSC98)
 
 __TEXTPROCESSC99:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch6.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch4.fetxt"
 setText($C99, __TEXTPROCESSC99)
 
 __TEXTPROCESSC9A:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch7.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch5.fetxt"
 setText($C9A, __TEXTPROCESSC9A)
 
 __TEXTPROCESSC9B:
-#incext ParseFile ".TextEntries\text_buildfileLabel_St2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch6.fetxt"
 setText($C9B, __TEXTPROCESSC9B)
 
 __TEXTPROCESSC9C:
-#incext ParseFile ".TextEntries\text_buildfileName_St2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch7.fetxt"
 setText($C9C, __TEXTPROCESSC9C)
 
 __TEXTPROCESSC9D:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch8.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLabel_St2.fetxt"
 setText($C9D, __TEXTPROCESSC9D)
 
 __TEXTPROCESSC9E:
-#incext ParseFile ".TextEntries\text_buildfileName_Act2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_St2.fetxt"
 setText($C9E, __TEXTPROCESSC9E)
 
 __TEXTPROCESSC9F:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch9.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch8.fetxt"
 setText($C9F, __TEXTPROCESSC9F)
 
 __TEXTPROCESSCA0:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch10.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Act2.fetxt"
 setText($CA0, __TEXTPROCESSCA0)
 
 __TEXTPROCESSCA1:
-#incext ParseFile ".TextEntries\text_buildfileLabel_St3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch9.fetxt"
 setText($CA1, __TEXTPROCESSCA1)
 
 __TEXTPROCESSCA2:
-#incext ParseFile ".TextEntries\text_buildfileName_St3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch10.fetxt"
 setText($CA2, __TEXTPROCESSCA2)
 
 __TEXTPROCESSCA3:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch11.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLabel_St3.fetxt"
 setText($CA3, __TEXTPROCESSCA3)
 
 __TEXTPROCESSCA4:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch12.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_St3.fetxt"
 setText($CA4, __TEXTPROCESSCA4)
 
 __TEXTPROCESSCA5:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch13.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch11.fetxt"
 setText($CA5, __TEXTPROCESSCA5)
 
 __TEXTPROCESSCA6:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch14.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch12.fetxt"
 setText($CA6, __TEXTPROCESSCA6)
 
 __TEXTPROCESSCA7:
-#incext ParseFile ".TextEntries\text_buildfileLabel_St4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch13.fetxt"
 setText($CA7, __TEXTPROCESSCA7)
 
 __TEXTPROCESSCA8:
-#incext ParseFile ".TextEntries\text_buildfileName_St4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch14.fetxt"
 setText($CA8, __TEXTPROCESSCA8)
 
 __TEXTPROCESSCA9:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch15.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLabel_St4.fetxt"
 setText($CA9, __TEXTPROCESSCA9)
 
 __TEXTPROCESSCAA:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch16.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_St4.fetxt"
 setText($CAA, __TEXTPROCESSCAA)
 
 __TEXTPROCESSCAB:
-#incext ParseFile ".TextEntries\text_buildfileName_Act3A.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch15.fetxt"
 setText($CAB, __TEXTPROCESSCAB)
 
 __TEXTPROCESSCAC:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch17A.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch16.fetxt"
 setText($CAC, __TEXTPROCESSCAC)
 
 __TEXTPROCESSCAD:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch18A.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Act3A.fetxt"
 setText($CAD, __TEXTPROCESSCAD)
 
 __TEXTPROCESSCAE:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch19A.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch17A.fetxt"
 setText($CAE, __TEXTPROCESSCAE)
 
 __TEXTPROCESSCAF:
-#incext ParseFile ".TextEntries\text_buildfileLabel_St5.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch18A.fetxt"
 setText($CAF, __TEXTPROCESSCAF)
 
 __TEXTPROCESSCB0:
-#incext ParseFile ".TextEntries\text_buildfileName_St5A.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch19A.fetxt"
 setText($CB0, __TEXTPROCESSCB0)
 
 __TEXTPROCESSCB1:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch20A.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLabel_St5.fetxt"
 setText($CB1, __TEXTPROCESSCB1)
 
 __TEXTPROCESSCB2:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch21A.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_St5A.fetxt"
 setText($CB2, __TEXTPROCESSCB2)
 
 __TEXTPROCESSCB3:
-#incext ParseFile ".TextEntries\text_buildfileName_FinalA.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch20A.fetxt"
 setText($CB3, __TEXTPROCESSCB3)
 
 __TEXTPROCESSCB4:
-#incext ParseFile ".TextEntries\text_buildfileName_Act3B.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch21A.fetxt"
 setText($CB4, __TEXTPROCESSCB4)
 
 __TEXTPROCESSCB5:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch17B.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_FinalA.fetxt"
 setText($CB5, __TEXTPROCESSCB5)
 
 __TEXTPROCESSCB6:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch18B.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Act3B.fetxt"
 setText($CB6, __TEXTPROCESSCB6)
 
 __TEXTPROCESSCB7:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch19B.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch17B.fetxt"
 setText($CB7, __TEXTPROCESSCB7)
 
 __TEXTPROCESSCB8:
-#incext ParseFile ".TextEntries\text_buildfileName_St5B.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch18B.fetxt"
 setText($CB8, __TEXTPROCESSCB8)
 
 __TEXTPROCESSCB9:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch20B.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch19B.fetxt"
 setText($CB9, __TEXTPROCESSCB9)
 
 __TEXTPROCESSCBA:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch21B.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_St5B.fetxt"
 setText($CBA, __TEXTPROCESSCBA)
 
 __TEXTPROCESSCBB:
-#incext ParseFile ".TextEntries\text_buildfileName_FinalB.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch20B.fetxt"
 setText($CBB, __TEXTPROCESSCBB)
 
 __TEXTPROCESSCBC:
-#incext ParseFile ".TextEntries\text_buildfileName_Act3C.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch21B.fetxt"
 setText($CBC, __TEXTPROCESSCBC)
 
 __TEXTPROCESSCBD:
-#incext ParseFile ".TextEntries\text_buildfileName_St5C.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_FinalB.fetxt"
 setText($CBD, __TEXTPROCESSCBD)
 
 __TEXTPROCESSCBE:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch17C.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Act3C.fetxt"
 setText($CBE, __TEXTPROCESSCBE)
 
 __TEXTPROCESSCBF:
-#incext ParseFile ".TextEntries\text_buildfileName_Ch18C.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_St5C.fetxt"
 setText($CBF, __TEXTPROCESSCBF)
 
 __TEXTPROCESSCC0:
-#incext ParseFile ".TextEntries\text_buildfileLabel_St6.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch17C.fetxt"
 setText($CC0, __TEXTPROCESSCC0)
 
 __TEXTPROCESSCC1:
-#incext ParseFile ".TextEntries\text_buildfileName_St6C.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_Ch18C.fetxt"
 setText($CC1, __TEXTPROCESSCC1)
 
 __TEXTPROCESSCC2:
-#incext ParseFile ".TextEntries\text_buildfileName_FinalC.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLabel_St6.fetxt"
 setText($CC2, __TEXTPROCESSCC2)
 
 __TEXTPROCESSCC3:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S1F1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_St6C.fetxt"
 setText($CC3, __TEXTPROCESSCC3)
 
 __TEXTPROCESSCC4:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S1F2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileName_FinalC.fetxt"
 setText($CC4, __TEXTPROCESSCC4)
 
 __TEXTPROCESSCC5:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S1F3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S1F1.fetxt"
 setText($CC5, __TEXTPROCESSCC5)
 
 __TEXTPROCESSCC6:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S2F1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S1F2.fetxt"
 setText($CC6, __TEXTPROCESSCC6)
 
 __TEXTPROCESSCC7:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S2F2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S1F3.fetxt"
 setText($CC7, __TEXTPROCESSCC7)
 
 __TEXTPROCESSCC8:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S2F3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S2F1.fetxt"
 setText($CC8, __TEXTPROCESSCC8)
 
 __TEXTPROCESSCC9:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S3F1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S2F2.fetxt"
 setText($CC9, __TEXTPROCESSCC9)
 
 __TEXTPROCESSCCA:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S3F2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S2F3.fetxt"
 setText($CCA, __TEXTPROCESSCCA)
 
 __TEXTPROCESSCCB:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S3F3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S3F1.fetxt"
 setText($CCB, __TEXTPROCESSCCB)
 
 __TEXTPROCESSCCC:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S3F4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S3F2.fetxt"
 setText($CCC, __TEXTPROCESSCCC)
 
 __TEXTPROCESSCCD:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S4F1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S3F3.fetxt"
 setText($CCD, __TEXTPROCESSCCD)
 
 __TEXTPROCESSCCE:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S4F2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S3F4.fetxt"
 setText($CCE, __TEXTPROCESSCCE)
 
 __TEXTPROCESSCCF:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S4F3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S4F1.fetxt"
 setText($CCF, __TEXTPROCESSCCF)
 
 __TEXTPROCESSCD0:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S4F4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S4F2.fetxt"
 setText($CD0, __TEXTPROCESSCD0)
 
 __TEXTPROCESSCD1:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S4F3.fetxt"
 setText($CD1, __TEXTPROCESSCD1)
 
 __TEXTPROCESSCD2:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S4F4.fetxt"
 setText($CD2, __TEXTPROCESSCD2)
 
 __TEXTPROCESSCD3:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF1.fetxt"
 setText($CD3, __TEXTPROCESSCD3)
 
 __TEXTPROCESSCD4:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF2.fetxt"
 setText($CD4, __TEXTPROCESSCD4)
 
 __TEXTPROCESSCD5:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF5.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF3.fetxt"
 setText($CD5, __TEXTPROCESSCD5)
 
 __TEXTPROCESSCD6:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF4.fetxt"
 setText($CD6, __TEXTPROCESSCD6)
 
 __TEXTPROCESSCD7:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5AF5.fetxt"
 setText($CD7, __TEXTPROCESSCD7)
 
 __TEXTPROCESSCD8:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF1.fetxt"
 setText($CD8, __TEXTPROCESSCD8)
 
 __TEXTPROCESSCD9:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF2.fetxt"
 setText($CD9, __TEXTPROCESSCD9)
 
 __TEXTPROCESSCDA:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF5.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF3.fetxt"
 setText($CDA, __TEXTPROCESSCDA)
 
 __TEXTPROCESSCDB:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5CF1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF4.fetxt"
 setText($CDB, __TEXTPROCESSCDB)
 
 __TEXTPROCESSCDC:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5CF2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5BF5.fetxt"
 setText($CDC, __TEXTPROCESSCDC)
 
 __TEXTPROCESSCDD:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5CF3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5CF1.fetxt"
 setText($CDD, __TEXTPROCESSCDD)
 
 __TEXTPROCESSCDE:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S5CF4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5CF2.fetxt"
 setText($CDE, __TEXTPROCESSCDE)
 
 __TEXTPROCESSCDF:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S6F1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5CF3.fetxt"
 setText($CDF, __TEXTPROCESSCDF)
 
 __TEXTPROCESSCE0:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S6F2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S5CF4.fetxt"
 setText($CE0, __TEXTPROCESSCE0)
 
 __TEXTPROCESSCE1:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S6F3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S6F1.fetxt"
 setText($CE1, __TEXTPROCESSCE1)
 
 __TEXTPROCESSCE2:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S6F4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S6F2.fetxt"
 setText($CE2, __TEXTPROCESSCE2)
 
 __TEXTPROCESSCE3:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S6F5.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S6F3.fetxt"
 setText($CE3, __TEXTPROCESSCE3)
 
 __TEXTPROCESSCE4:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S6F6.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S6F4.fetxt"
 setText($CE4, __TEXTPROCESSCE4)
 
 __TEXTPROCESSCE5:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S6F7.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S6F5.fetxt"
 setText($CE5, __TEXTPROCESSCE5)
 
 __TEXTPROCESSCE6:
-#incext ParseFile ".TextEntries\text_buildfileFloor_S6F8.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S6F6.fetxt"
 setText($CE6, __TEXTPROCESSCE6)
 
 __TEXTPROCESSCE7:
-#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Silence.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S6F7.fetxt"
 setText($CE7, __TEXTPROCESSCE7)
 
 __TEXTPROCESSCE8:
-#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Astarte1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFloor_S6F8.fetxt"
 setText($CE8, __TEXTPROCESSCE8)
 
 __TEXTPROCESSCE9:
-#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Gore1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Silence.fetxt"
 setText($CE9, __TEXTPROCESSCE9)
 
 __TEXTPROCESSCEA:
-#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Astarte2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Astarte1.fetxt"
 setText($CEA, __TEXTPROCESSCEA)
 
 __TEXTPROCESSCEB:
-#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Gore2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Gore1.fetxt"
 setText($CEB, __TEXTPROCESSCEB)
 
 __TEXTPROCESSCEC:
-#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Cleone.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Astarte2.fetxt"
 setText($CEC, __TEXTPROCESSCEC)
 
 __TEXTPROCESSCED:
-#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Rat.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Gore2.fetxt"
 setText($CED, __TEXTPROCESSCED)
 
 __TEXTPROCESSCEE:
-#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Ending.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Cleone.fetxt"
 setText($CEE, __TEXTPROCESSCEE)
 
 __TEXTPROCESSCEF:
-#incext ParseFile ".TextEntries\text_buildfileC1_Opening_1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Rat.fetxt"
 setText($CEF, __TEXTPROCESSCEF)
 
 __TEXTPROCESSCF0:
-#incext ParseFile ".TextEntries\text_buildfileC1_Opening_2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Premonition_Ending.fetxt"
 setText($CF0, __TEXTPROCESSCF0)
 
 __TEXTPROCESSCF1:
-#incext ParseFile ".TextEntries\text_buildfileC1_Opening_3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Opening_1.fetxt"
 setText($CF1, __TEXTPROCESSCF1)
 
 __TEXTPROCESSCF2:
-#incext ParseFile ".TextEntries\text_buildfileC1_Opening_4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Opening_2.fetxt"
 setText($CF2, __TEXTPROCESSCF2)
 
 __TEXTPROCESSCF3:
-#incext ParseFile ".TextEntries\text_buildfileC1_Opening_5.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Opening_3.fetxt"
 setText($CF3, __TEXTPROCESSCF3)
 
 __TEXTPROCESSCF4:
-#incext ParseFile ".TextEntries\text_buildfileC1_Ending_1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Opening_4.fetxt"
 setText($CF4, __TEXTPROCESSCF4)
 
 __TEXTPROCESSCF5:
-#incext ParseFile ".TextEntries\text_buildfileC1NathanBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Opening_5.fetxt"
 setText($CF5, __TEXTPROCESSCF5)
 
 __TEXTPROCESSCF6:
-#incext ParseFile ".TextEntries\text_buildfileC1NathanCleoneBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1_Ending_1.fetxt"
 setText($CF6, __TEXTPROCESSCF6)
 
 __TEXTPROCESSCF7:
-#incext ParseFile ".TextEntries\text_buildfileC1NathanBenthusBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1NathanBattle.fetxt"
 setText($CF7, __TEXTPROCESSCF7)
 
 __TEXTPROCESSCF8:
-#incext ParseFile ".TextEntries\text_buildfileC1AstarteBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1NathanCleoneBattle.fetxt"
 setText($CF8, __TEXTPROCESSCF8)
 
 __TEXTPROCESSCF9:
-#incext ParseFile ".TextEntries\text_buildfileC1AstarteCleoneBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1NathanBenthusBattle.fetxt"
 setText($CF9, __TEXTPROCESSCF9)
 
 __TEXTPROCESSCFA:
-#incext ParseFile ".TextEntries\text_buildfileC1AstarteBenthusBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1AstarteBattle.fetxt"
 setText($CFA, __TEXTPROCESSCFA)
 
 __TEXTPROCESSCFB:
-#incext ParseFile ".TextEntries\text_buildfileC1GoreBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1AstarteCleoneBattle.fetxt"
 setText($CFB, __TEXTPROCESSCFB)
 
 __TEXTPROCESSCFC:
-#incext ParseFile ".TextEntries\text_buildfileC1GoreCleoneBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1AstarteBenthusBattle.fetxt"
 setText($CFC, __TEXTPROCESSCFC)
 
 __TEXTPROCESSCFD:
-#incext ParseFile ".TextEntries\text_buildfileC1GoreBenthusBattle.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1GoreBattle.fetxt"
 setText($CFD, __TEXTPROCESSCFD)
 
 __TEXTPROCESSCFE:
-#incext ParseFile ".TextEntries\text_buildfileC1NathanDefeat.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1GoreCleoneBattle.fetxt"
 setText($CFE, __TEXTPROCESSCFE)
 
 __TEXTPROCESSCFF:
-#incext ParseFile ".TextEntries\text_buildfileC1AstarteDefeat.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1GoreBenthusBattle.fetxt"
 setText($CFF, __TEXTPROCESSCFF)
 
 __TEXTPROCESSD00:
-#incext ParseFile ".TextEntries\text_buildfileC1GoreDefeat.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1NathanDefeat.fetxt"
 setText($D00, __TEXTPROCESSD00)
 
 __TEXTPROCESSD01:
-#incext ParseFile ".TextEntries\text_buildfileC1CleoneDefeat.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1AstarteDefeat.fetxt"
 setText($D01, __TEXTPROCESSD01)
 
 __TEXTPROCESSD02:
-#incext ParseFile ".TextEntries\text_buildfileC1BenthusDefeat.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1GoreDefeat.fetxt"
 setText($D02, __TEXTPROCESSD02)
 
 __TEXTPROCESSD03:
-#incext ParseFile ".TextEntries\text_buildfileC2_Opening_1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1CleoneDefeat.fetxt"
 setText($D03, __TEXTPROCESSD03)
 
 __TEXTPROCESSD04:
-#incext ParseFile ".TextEntries\text_buildfileC2_Opening_2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC1BenthusDefeat.fetxt"
 setText($D04, __TEXTPROCESSD04)
 
 __TEXTPROCESSD05:
-#incext ParseFile ".TextEntries\text_buildfileC2_Opening_3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC2_Opening_1.fetxt"
 setText($D05, __TEXTPROCESSD05)
 
 __TEXTPROCESSD06:
-#incext ParseFile ".TextEntries\text_buildfileC2_DoorHint.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC2_Opening_2.fetxt"
 setText($D06, __TEXTPROCESSD06)
 
 __TEXTPROCESSD07:
-#incext ParseFile ".TextEntries\text_buildfileC2_Ending_1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC2_Opening_3.fetxt"
 setText($D07, __TEXTPROCESSD07)
 
 __TEXTPROCESSD08:
-#incext ParseFile ".TextEntries\text_buildfileC2_Ending_2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC2_DoorHint.fetxt"
 setText($D08, __TEXTPROCESSD08)
 
 __TEXTPROCESSD09:
-#incext ParseFile ".TextEntries\text_buildfileC3LucienDeath.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC2_Ending_1.fetxt"
 setText($D09, __TEXTPROCESSD09)
 
 __TEXTPROCESSD0A:
-#incext ParseFile ".TextEntries\text_buildfileChapter3_NathanHelmanRecruit.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC2_Ending_2.fetxt"
 setText($D0A, __TEXTPROCESSD0A)
 
 __TEXTPROCESSD0B:
-#incext ParseFile ".TextEntries\text_buildfileChapter3_GoreHelmanRecruit.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileC3LucienDeath.fetxt"
 setText($D0B, __TEXTPROCESSD0B)
 
 __TEXTPROCESSD0C:
-#incext ParseFile ".TextEntries\text_buildfileChapter3_AstarteHelmanRecruit.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_NathanHelmanRecruit.fetxt"
 setText($D0C, __TEXTPROCESSD0C)
 
 __TEXTPROCESSD0D:
-#incext ParseFile ".TextEntries\text_buildfileChapter3_CleoneHelmanRecruit.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_GoreHelmanRecruit.fetxt"
 setText($D0D, __TEXTPROCESSD0D)
 
 __TEXTPROCESSD0E:
-#incext ParseFile ".TextEntries\text_buildfileChapter3_BenthusHelmanRecruit.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_AstarteHelmanRecruit.fetxt"
 setText($D0E, __TEXTPROCESSD0E)
 
 __TEXTPROCESSD0F:
-#incext ParseFile ".TextEntries\text_buildfileChapter3_NathanLucienTalk.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_CleoneHelmanRecruit.fetxt"
 setText($D0F, __TEXTPROCESSD0F)
 
 __TEXTPROCESSD10:
-#incext ParseFile ".TextEntries\text_buildfileChapter3_HouseText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_BenthusHelmanRecruit.fetxt"
 setText($D10, __TEXTPROCESSD10)
 
 __TEXTPROCESSD11:
-#incext ParseFile ".TextEntries\text_buildfileCity02_PrePreps.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_Opening_3.fetxt"
 setText($D11, __TEXTPROCESSD11)
 
 __TEXTPROCESSD12:
-#incext ParseFile ".TextEntries\text_buildfileCity02_PostPreps.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_Opening_2.fetxt"
 setText($D12, __TEXTPROCESSD12)
 
 __TEXTPROCESSD13:
-#incext ParseFile ".TextEntries\text_buildfileCity02_EndText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_Opening_1.fetxt"
 setText($D13, __TEXTPROCESSD13)
 
 __TEXTPROCESSD14:
-#incext ParseFile ".TextEntries\text_buildfileCity02_Astarte.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_NathanLucienTalk.fetxt"
 setText($D14, __TEXTPROCESSD14)
 
 __TEXTPROCESSD15:
-#incext ParseFile ".TextEntries\text_buildfileCity02_Gore.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter3_HouseText.fetxt"
 setText($D15, __TEXTPROCESSD15)
 
 __TEXTPROCESSD16:
-#incext ParseFile ".TextEntries\text_buildfileCity02_Cleone.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_PrePreps.fetxt"
 setText($D16, __TEXTPROCESSD16)
 
 __TEXTPROCESSD17:
-#incext ParseFile ".TextEntries\text_buildfileCity02_Benthus.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_PostPreps.fetxt"
 setText($D17, __TEXTPROCESSD17)
 
 __TEXTPROCESSD18:
-#incext ParseFile ".TextEntries\text_buildfileCity02_Guildmaster.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_EndText.fetxt"
 setText($D18, __TEXTPROCESSD18)
 
 __TEXTPROCESSD19:
-#incext ParseFile ".TextEntries\text_buildfileCity02_BenjaminIntro.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_Astarte.fetxt"
 setText($D19, __TEXTPROCESSD19)
 
 __TEXTPROCESSD1A:
-#incext ParseFile ".TextEntries\text_buildfileCity02_BobbyIntro.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_Gore.fetxt"
 setText($D1A, __TEXTPROCESSD1A)
 
 __TEXTPROCESSD1B:
-#incext ParseFile ".TextEntries\text_buildfileCity02_Bertram.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_Cleone.fetxt"
 setText($D1B, __TEXTPROCESSD1B)
 
 __TEXTPROCESSD1C:
-#incext ParseFile ".TextEntries\text_buildfileTownTutorial.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_Benthus.fetxt"
 setText($D1C, __TEXTPROCESSD1C)
 
 __TEXTPROCESSD1D:
-#incext ParseFile ".TextEntries\text_buildfileHubEndPrompt.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_Guildmaster.fetxt"
 setText($D1D, __TEXTPROCESSD1D)
 
 __TEXTPROCESSD1E:
-#incext ParseFile ".TextEntries\text_buildfileRecruitChosenUnitPrompt.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_BenjaminIntro.fetxt"
 setText($D1E, __TEXTPROCESSD1E)
 
 __TEXTPROCESSD1F:
-#incext ParseFile ".TextEntries\text_buildfileNoRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_BobbyIntro.fetxt"
 setText($D1F, __TEXTPROCESSD1F)
 
 __TEXTPROCESSD20:
-#incext ParseFile ".TextEntries\text_buildfileOneRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity02_Bertram.fetxt"
 setText($D20, __TEXTPROCESSD20)
 
 __TEXTPROCESSD21:
-#incext ParseFile ".TextEntries\text_buildfileTwoRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileTownTutorial.fetxt"
 setText($D21, __TEXTPROCESSD21)
 
 __TEXTPROCESSD22:
-#incext ParseFile ".TextEntries\text_buildfileThreeRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHubEndPrompt.fetxt"
 setText($D22, __TEXTPROCESSD22)
 
 __TEXTPROCESSD23:
-#incext ParseFile ".TextEntries\text_buildfileFourRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRecruitChosenUnitPrompt.fetxt"
 setText($D23, __TEXTPROCESSD23)
 
 __TEXTPROCESSD24:
-#incext ParseFile ".TextEntries\text_buildfileFiveRecruitLeftText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNoRecruitLeftText.fetxt"
 setText($D24, __TEXTPROCESSD24)
 
 __TEXTPROCESSD25:
-#incext ParseFile ".TextEntries\text_buildfilethe_funny_guildmaster_line.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileOneRecruitLeftText.fetxt"
 setText($D25, __TEXTPROCESSD25)
 
 __TEXTPROCESSD26:
-#incext ParseFile ".TextEntries\text_buildfileNoMoreRecruits.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileTwoRecruitLeftText.fetxt"
 setText($D26, __TEXTPROCESSD26)
 
 __TEXTPROCESSD27:
-#incext ParseFile ".TextEntries\text_buildfileMoreRecruits.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileThreeRecruitLeftText.fetxt"
 setText($D27, __TEXTPROCESSD27)
 
 __TEXTPROCESSD28:
-#incext ParseFile ".TextEntries\text_buildfileMoreRecruitsGuildmasterOut.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFourRecruitLeftText.fetxt"
 setText($D28, __TEXTPROCESSD28)
 
 __TEXTPROCESSD29:
-#incext ParseFile ".TextEntries\text_buildfileInitialRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFiveRecruitLeftText.fetxt"
 setText($D29, __TEXTPROCESSD29)
 
 __TEXTPROCESSD2A:
-#incext ParseFile ".TextEntries\text_buildfileInitialRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilethe_funny_guildmaster_line.fetxt"
 setText($D2A, __TEXTPROCESSD2A)
 
 __TEXTPROCESSD2B:
-#incext ParseFile ".TextEntries\text_buildfileStandardRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNoMoreRecruits.fetxt"
 setText($D2B, __TEXTPROCESSD2B)
 
 __TEXTPROCESSD2C:
-#incext ParseFile ".TextEntries\text_buildfileStandardRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMoreRecruits.fetxt"
 setText($D2C, __TEXTPROCESSD2C)
 
 __TEXTPROCESSD2D:
-#incext ParseFile ".TextEntries\text_buildfileMagiRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMoreRecruitsGuildmasterOut.fetxt"
 setText($D2D, __TEXTPROCESSD2D)
 
 __TEXTPROCESSD2E:
-#incext ParseFile ".TextEntries\text_buildfileMagiRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileInitialRecruitLabel.fetxt"
 setText($D2E, __TEXTPROCESSD2E)
 
 __TEXTPROCESSD2F:
-#incext ParseFile ".TextEntries\text_buildfileSpecialRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileInitialRecruitRText.fetxt"
 setText($D2F, __TEXTPROCESSD2F)
 
 __TEXTPROCESSD30:
-#incext ParseFile ".TextEntries\text_buildfileSpecialRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileStandardRecruitLabel.fetxt"
 setText($D30, __TEXTPROCESSD30)
 
 __TEXTPROCESSD31:
-#incext ParseFile ".TextEntries\text_buildfileSkyRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileStandardRecruitRText.fetxt"
 setText($D31, __TEXTPROCESSD31)
 
 __TEXTPROCESSD32:
-#incext ParseFile ".TextEntries\text_buildfileSkyRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMagiRecruitLabel.fetxt"
 setText($D32, __TEXTPROCESSD32)
 
 __TEXTPROCESSD33:
-#incext ParseFile ".TextEntries\text_buildfileLifeflowRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMagiRecruitRText.fetxt"
 setText($D33, __TEXTPROCESSD33)
 
 __TEXTPROCESSD34:
-#incext ParseFile ".TextEntries\text_buildfileLifeflowRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSpecialRecruitLabel.fetxt"
 setText($D34, __TEXTPROCESSD34)
 
 __TEXTPROCESSD35:
-#incext ParseFile ".TextEntries\text_buildfileSenatusRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSpecialRecruitRText.fetxt"
 setText($D35, __TEXTPROCESSD35)
 
 __TEXTPROCESSD36:
-#incext ParseFile ".TextEntries\text_buildfileSenatusRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSkyRecruitLabel.fetxt"
 setText($D36, __TEXTPROCESSD36)
 
 __TEXTPROCESSD37:
-#incext ParseFile ".TextEntries\text_buildfileOtherRecruitLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSkyRecruitRText.fetxt"
 setText($D37, __TEXTPROCESSD37)
 
 __TEXTPROCESSD38:
-#incext ParseFile ".TextEntries\text_buildfileOtherRecruitRText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLifeflowRecruitLabel.fetxt"
 setText($D38, __TEXTPROCESSD38)
 
 __TEXTPROCESSD39:
-#incext ParseFile ".TextEntries\text_buildfileErrorHandlerText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLifeflowRecruitRText.fetxt"
 setText($D39, __TEXTPROCESSD39)
 
 __TEXTPROCESSD3A:
-#incext ParseFile ".TextEntries\text_buildfileCity_NoQuests.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSenatusRecruitLabel.fetxt"
 setText($D3A, __TEXTPROCESSD3A)
 
 __TEXTPROCESSD3B:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Test_Dialogue.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSenatusRecruitRText.fetxt"
 setText($D3B, __TEXTPROCESSD3B)
 
 __TEXTPROCESSD3C:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Marag_Intro.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileOtherRecruitLabel.fetxt"
 setText($D3C, __TEXTPROCESSD3C)
 
 __TEXTPROCESSD3D:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Marag_Accept.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileOtherRecruitRText.fetxt"
 setText($D3D, __TEXTPROCESSD3D)
 
 __TEXTPROCESSD3E:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Marag_Deny.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileErrorHandlerText.fetxt"
 setText($D3E, __TEXTPROCESSD3E)
 
 __TEXTPROCESSD3F:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Marag_Return.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCity_NoQuests.fetxt"
 setText($D3F, __TEXTPROCESSD3F)
 
 __TEXTPROCESSD40:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Cam_Intro.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Test_Dialogue.fetxt"
 setText($D40, __TEXTPROCESSD40)
 
 __TEXTPROCESSD41:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Cam_Accept.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Marag_Intro.fetxt"
 setText($D41, __TEXTPROCESSD41)
 
 __TEXTPROCESSD42:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Cam_Deny.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Marag_Accept.fetxt"
 setText($D42, __TEXTPROCESSD42)
 
 __TEXTPROCESSD43:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Cam_Return.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Marag_Deny.fetxt"
 setText($D43, __TEXTPROCESSD43)
 
 __TEXTPROCESSD44:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Puzon_Intro.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Marag_Return.fetxt"
 setText($D44, __TEXTPROCESSD44)
 
 __TEXTPROCESSD45:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Puzon_Accept.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Cam_Intro.fetxt"
 setText($D45, __TEXTPROCESSD45)
 
 __TEXTPROCESSD46:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Puzon_Deny.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Cam_Accept.fetxt"
 setText($D46, __TEXTPROCESSD46)
 
 __TEXTPROCESSD47:
-#incext ParseFile ".TextEntries\text_buildfileGuild_Puzon_Return.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Cam_Deny.fetxt"
 setText($D47, __TEXTPROCESSD47)
 
 __TEXTPROCESSD48:
-#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Intro.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Cam_Return.fetxt"
 setText($D48, __TEXTPROCESSD48)
 
 __TEXTPROCESSD49:
-#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Accept.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Puzon_Intro.fetxt"
 setText($D49, __TEXTPROCESSD49)
 
 __TEXTPROCESSD4A:
-#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Deny.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Puzon_Accept.fetxt"
 setText($D4A, __TEXTPROCESSD4A)
 
 __TEXTPROCESSD4B:
-#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Return.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Puzon_Deny.fetxt"
 setText($D4B, __TEXTPROCESSD4B)
 
 __TEXTPROCESSD4C:
-#incext ParseFile ".TextEntries\text_buildfileHealArrowText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGuild_Puzon_Return.fetxt"
 setText($D4C, __TEXTPROCESSD4C)
+
+__TEXTPROCESSD4D:
+#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Intro.fetxt"
+setText($D4D, __TEXTPROCESSD4D)
+
+__TEXTPROCESSD4E:
+#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Accept.fetxt"
+setText($D4E, __TEXTPROCESSD4E)
+
+__TEXTPROCESSD4F:
+#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Deny.fetxt"
+setText($D4F, __TEXTPROCESSD4F)
+
+__TEXTPROCESSD50:
+#incext ParseFile ".TextEntries\text_buildfileGuild_CoastKid_Return.fetxt"
+setText($D50, __TEXTPROCESSD50)
+
+__TEXTPROCESSD51:
+#incext ParseFile ".TextEntries\text_buildfileHealArrowText.fetxt"
+setText($D51, __TEXTPROCESSD51)
 
 __TEXTPROCESS094:
 #incext ParseFile ".TextEntries\text_buildfile094.fetxt"
