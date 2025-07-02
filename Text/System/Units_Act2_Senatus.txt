@@ -34,7 +34,7 @@ in rumor. He's snappy, rude, and clever.[X]
 ##Name_Francesca
 Francesca[X]
 ##Desc_Francesca
-A modest fencer from the Asketan slums.[N]
+A bitter fencer from the Asketan slums.[N]
 She wants off this wretched continent.[X]
 
 //corgaylia

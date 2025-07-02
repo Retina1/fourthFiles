@@ -365,9 +365,9 @@ setCardEntry(HighlanderCard,HighlanderCardPortrait,HighlanderCardPortraitPalette
 //remove axe
 ALIGN 4
 BrawlerCardPortrait:
-#incbin "classCards\Brigand (M) Clothed {Flasuban}.dmp"
+#incbin "classCards\appBrawler.dmp"
 BrawlerCardPortraitPalette:
-#incbin "classCards\Brigand (M) Clothed {Flasuban}Palette.dmp"
+#incbin "classCards\appBrawlerPalette.dmp"
 setCardEntry(BrawlerCard,BrawlerCardPortrait,BrawlerCardPortraitPalette)
 
 ALIGN 4

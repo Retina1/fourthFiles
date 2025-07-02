@@ -114,9 +114,12 @@ EndEvent
 #include "City/HirschringSquare.event"
 }
 //dungeon FOES
+//dungeon fights use initial strike/resounding weapons/shiver
 //lethal forest: lv 10 triwolf
 //shimmering mines: lv 13 shieldlance gargantoyle
 //clouded wastes: lv 17 imposing axe centinel
+
+//drain scroll callers in endbringer chapters (ch5)
 
 //C route chapter 18 is endbringer all at once, early - have fun
 

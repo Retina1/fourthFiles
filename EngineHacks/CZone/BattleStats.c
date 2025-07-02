@@ -1,3 +1,18 @@
+//todo - get base hitrate of used status somehow
+/*
+int GetOffensiveStaffAccuracy(struct Unit* actor, struct Unit* target) {
+    int attackerLuc = GetUnitLuck(actor);
+	int defenderLuc = GetUnitLuck(target);
+	
+	int baseAtk = attackerLuc + 10;
+	int baseDef = defenderLuc + 10;
+	
+	int result = baseRate * baseAtk / baseDef;
+
+    return result;
+}
+*/
+
 void ComputeBattleUnitDefense(struct BattleUnit* attacker, struct BattleUnit* defender) {
     if (GetItemAttributes(defender->weapon) & IA_MAGICDAMAGE)
         attacker->battleDefense = attacker->terrainResistance + attacker->unit.res;

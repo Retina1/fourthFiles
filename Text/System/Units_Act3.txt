@@ -20,6 +20,13 @@ Alva[X]
 A scion of an Asketan house looking for[N]
 action. She respects fellow warriors.[X]
 
+//cygnus
+##Name_Dai
+Dai[X]
+##Desc_Dai
+A wandering warrior and dragonslayer.[N]
+He's vengeance-driven yet friendly.[X]
+
 // secret lock - automata unit: artifice
 
 //subtractron by retina (artifice)

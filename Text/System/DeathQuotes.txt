@@ -71,3 +71,10 @@ Where's my[...] mulligan[...]?[A][CloseEyes][X]
 [MidRight][SlynSpire]
 Spire[...] Please don't leave[...][A][CloseEyes][N]
 Don't leave me behind[...][A][X]
+
+##FrancescaDeath
+[MidRight][Francesca]
+Fuck being born[...] in this[N]
+piece of shit place[...][AN][CloseEyes]
+Fuck all the fucking[...][N]
+piece of shit people[...][A][X]

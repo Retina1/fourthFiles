@@ -1,9 +1,211 @@
 ﻿//Made by Camtech075 of SerenesForest
 //Modified by Nintenlord
+/*
+3,8
+7,10
+10,6
+11,12
+1,12
+13,10
+*/
 
 Recruit_Natsuki:
 UNIT Natsuki 0x0 0x1 Level(9,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
 UNIT
+Recruit_Mikayla:
+UNIT Mikayla 0x0 0x1 Level(2,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Scramasax,Vulnerary] NoAI
+UNIT
+Recruit_Calliope:
+UNIT Calliope 0x0 0x1 Level(5,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Boarblade] NoAI
+UNIT
+Recruit_Ghari:
+UNIT Ghari 0x0 0x1 Level(4,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Shortsword,HealScroll] NoAI
+UNIT
+Recruit_Azaghal:
+UNIT Azaghal 0x0 0x1 Level(7,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortsword,Vulnerary,Medica] NoAI
+UNIT
+
+Recruit_Aizen:
+UNIT Aizen 0x0 0x1 Level(6,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortspear,Bravant] NoAI
+UNIT
+Recruit_Johnnie:
+UNIT Johnnie 0x0 0x1 Level(2,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Pike] NoAI
+UNIT
+Recruit_Kolette:
+UNIT Kolette 0x0 0x1 Level(3,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Shortspear,Medica] NoAI
+UNIT
+Recruit_Pallas:
+UNIT Pallas 0x0 0x1 Level(11,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Ahlspiess] NoAI
+UNIT
+
+Recruit_Esketit:
+UNIT Esketit 0x0 0x1 Level(6,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace] NoAI
+UNIT
+Recruit_Gloria:
+UNIT Gloria 0x0 0x1 Level(6,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Shortmace,Medica] NoAI
+UNIT
+Recruit_Pipsy:
+UNIT Pipsy 0x0 0x1 Level(3,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Broadaxe] NoAI
+UNIT
+Recruit_Son:
+UNIT Son 0x0 0x1 Level(5,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [HandAxe] NoAI
+UNIT
+Recruit_Hart:
+UNIT Hart 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortmace,Stonard] NoAI
+UNIT
+
+Recruit_Martin:
+UNIT Martin 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Handgonne] NoAI
+UNIT
+Recruit_Demico:
+UNIT Demico 0x0 0x1 Level(3,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Handgonne,Wand] NoAI
+UNIT
+Recruit_Karl:
+UNIT Karl 0x0 0x1 Level(5,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Handgonne] NoAI
+UNIT
+Recruit_Wasp:
+UNIT Wasp 0x0 0x1 Level(7,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Handgonne,Bravant] NoAI
+UNIT
+Recruit_Victoria:
+UNIT Victoria 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Arquebus] NoAI
+UNIT
+Recruit_Laiteuse:
+UNIT Laiteuse 0x0 0x1 Level(1,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Handgonne,Vulnerary] NoAI
+UNIT
+
+//myrm
+Natsuki_RecruitEvent:
+GuildRecruit(Natsuki,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+EndEvent
+Mikayla_RecruitEvent:
+GuildRecruit(Mikayla,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+EndEvent
+Calliope_RecruitEvent:
+GuildRecruit(Calliope,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+EndEvent
+Ghari_RecruitEvent:
+GuildRecruit(Ghari,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+EndEvent
+Azaghal_RecruitEvent:
+GuildRecruit(Azaghal,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x24)
+EndEvent
+
+//riders
+Aizen_RecruitEvent:
+GuildRecruit(Aizen,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+EndEvent
+Johnnie_RecruitEvent:
+GuildRecruit(Johnnie,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+EndEvent
+Kolette_RecruitEvent:
+GuildRecruit(Kolette,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+EndEvent
+Pallas_RecruitEvent:
+GuildRecruit(Pallas,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+EndEvent
+
+//raider
+Esketit_RecruitEvent:
+GuildRecruit(Esketit,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+EndEvent
+Gloria_RecruitEvent:
+GuildRecruit(Gloria,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+EndEvent
+Pipsy_RecruitEvent:
+GuildRecruit(Pipsy,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+EndEvent
+Son_RecruitEvent:
+GuildRecruit(Son,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+EndEvent
+Hart_RecruitEvent:
+GuildRecruit(Hart,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x24)
+EndEvent
+
+//gunner
+Martin_RecruitEvent:
+GuildRecruit(Martin,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+EndEvent
+Demico_RecruitEvent:
+GuildRecruit(Demico,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+EndEvent
+Karl_RecruitEvent:
+GuildRecruit(Karl,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+EndEvent
+Wasp_RecruitEvent:
+GuildRecruit(Wasp,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+EndEvent
+Victoria_RecruitEvent:
+GuildRecruit(Victoria,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x24)
+EndEvent
+Laiteuse_RecruitEvent:
+GuildRecruit(Laiteuse,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x25)
+EndEvent
+
+GuildhallLoadMyrmidons:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Natsuki,Recruit_Natsuki,0x1)
+GuildLoad(Mikayla,Recruit_Mikayla,0x2)
+GuildLoad(Calliope,Recruit_Calliope,0x3)
+GuildLoad(Ghari,Recruit_Ghari,0x4)
+GuildLoad(Azaghal,Recruit_Azaghal,0x5)
+FADU 10
+ENDA
+
+GuildhallLoadRiders:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Aizen,Recruit_Aizen,0x1)
+GuildLoad(Johnnie,Recruit_Johnnie,0x2)
+GuildLoad(Kolette,Recruit_Kolette,0x3)
+GuildLoad(Pallas,Recruit_Pallas,0x4)
+FADU 10
+ENDA
+
+GuildhallLoadRaiders:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Esketit,Recruit_Esketit,0x1)
+GuildLoad(Gloria,Recruit_Gloria,0x2)
+GuildLoad(Pipsy,Recruit_Pipsy,0x3)
+GuildLoad(Son,Recruit_Son,0x4)
+GuildLoad(Hart,Recruit_Hart,0x5)
+FADU 10
+ENDA
+
+GuildhallLoadGunners:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Martin,Recruit_Martin,0x1)
+GuildLoad(Demico,Recruit_Demico,0x2)
+GuildLoad(Karl,Recruit_Karl,0x3)
+GuildLoad(Wasp,Recruit_Wasp,0x4)
+GuildLoad(Victoria,Recruit_Victoria,0x5)
+GuildLoad(Laiteuse,Recruit_Laiteuse,0x6)
+FADU 10
+ENDA
 
 GuildhallStandardMenuEvent:
+CallMenu(RecruitStandardMenu)
+SVAL 0x1 0
+BNE 0x2000 0xc 0x1
+CALL GuildhallLoadMyrmidons
+GOTO 0x2008
+LABEL 0x2000
+SVAL 0x1 1
+BNE 0x2001 0xc 0x1
+CALL GuildhallLoadRiders
+GOTO 0x2008
+LABEL 0x2001
+SVAL 0x1 2
+BNE 0x2002 0xc 0x1
+CALL GuildhallLoadRaiders
+GOTO 0x2008
+LABEL 0x2002
+SVAL 0x1 3
+BNE 0x2003 0xc 0x1
+CALL GuildhallLoadGunners
+GOTO 0x2008
+SystemText(ErrorHandlerText)
+LABEL 0x2008
 ENDA

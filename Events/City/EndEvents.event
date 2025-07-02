@@ -2,3 +2,8 @@ Chapter2CityEnd:
 MUSC Song_OohWilfre
 CleanTextNoMap(0x0, City02_EndText)
 ENDA
+
+Chapter3CityEnd:
+MUSC Song_OohWilfre
+CleanTextNoMap(0x0, City03_EndText)
+ENDA

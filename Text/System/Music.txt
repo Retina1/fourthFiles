@@ -4,6 +4,10 @@ Etrian Odyssey[X]
 Spinning The Tale[X]
 ##SongTitle_EO1Guild ^
 Name Engraved Into the 100th Volume![X]
+##SongTitle_InitialStrike
+Initial Strike (PacoScarso)[X]
+##SongTitle_DyedInBlood
+Dyed in Blood (PacoScarso)[X]
 
 ##SourceTitle_EtrianOdyssey2
 Etrian Odyssey II[X]
@@ -15,8 +19,15 @@ Vast Lands Spreading in the North[X]
 The Wind Doesn't Draw Heroes[X]
 ##SongTitle_EverScarletForest
 Ever-Scarlet Forest[X]
+##SongTitle_FrozenGrounds
+Frozen Grounds (PacoScarso)[X]
 ##SongTitle_CherryTreesAndWings
 Cherry Trees and Wings[X]
+
+##SourceTitle_EtrianOdyssey4
+Etrian Odyssey IV[X]
+##SongTitle_FaithIsMyPillar
+Faith is My Pillar (PacoScarso)[X]
 
 ##SourceTitle_EtrianOdyssey5
 Etrian Odyssey V[X]

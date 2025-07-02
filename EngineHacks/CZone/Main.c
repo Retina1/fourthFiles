@@ -40,6 +40,29 @@ inline int GetUnitCurrentHp(struct Unit* unit) {
 }
 */
 
+//new poison damage
+void MakePoisonDamageTargetList(int faction) {
+    int i;
+    InitTargets(0, 0);
+    for (i = faction + 1; i < faction + 0x40; i++) {
+        struct Unit* unit = GetUnit(i);
+        if (!UNIT_IS_VALID(unit)) {
+            continue;
+        }
+        if (unit->state & (US_DEAD | US_NOT_DEPLOYED | US_RESCUED | US_BIT16)) {
+            continue;
+        }
+        if (unit->statusIndex != UNIT_STATUS_POISON) {
+            continue;
+        }
+		int damage = 5 + GetUnitMaxHp(unit) / 5;
+        AddTarget(unit->xPos, unit->yPos, unit->index, damage);
+    }
+
+    return;
+}
+
+
 //add autorepair just for S ranks
 //handle status weapons in C for inflictions?
 

@@ -28,6 +28,15 @@
 #include "AnimDefs.event"
 #include "RepointedTable.event"
 
+//Gunner
+{
+#include "ClassAnims/Gunner/Gun Installer.event"
+}
+ALIGN 4
+GunnerAnims:
+RangedAnim(Gunner_Gun)
+UnarmedAnim(Gunner_Gun) //todo replace
+EndAnim
 
 //Swordfighter
 {

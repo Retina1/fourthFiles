@@ -121,6 +121,31 @@ SongTable(Song_Biggering,Biggering,1)
 SongTable(Song_PandemonicPlanet,PandemonicPlanet,1)
 #include "songs/PandemonicPlanet.event"
 }
+//0x1c - faith is my pillar (recruitment)
+#define Song_FaithIsMyPillar 0x1c
+{
+SongTable(Song_FaithIsMyPillar,FaithIsMyPillar,0)
+#include "songs/FaithIsMyPillar.event"
+}
+//0x1d - frozen grounds
+#define Song_FrozenGrounds 0x1d
+{
+SongTable(Song_FrozenGrounds,FrozenGrounds,1)
+#include "songs/FrozenGrounds.event"
+}
+//0x1e
+#define Song_InitialStrike 0x1e
+{
+SongTable(Song_InitialStrike,InitialStrike,1)
+#include "songs/InitialStrike.event"
+}
+//0x1f
+#define Song_DyedInBlood 0x1f
+{
+SongTable(Song_DyedInBlood,DyedInBlood,1)
+#include "songs/DyedInBlood.event"
+}
+
 
 //promo is 0x23, healing is 21/22
 

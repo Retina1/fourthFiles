@@ -27,6 +27,23 @@ user's HP.[X]
 ##Use_AllyHeal
 Restores an[N]
 ally's HP.[X]
+
+##Name_Bravant
+Bravant[X]
+##Desc_Bravant ^
+A candied fruit of great might.[N]
+Grants user 1.5x Atk for 3 turns.[X]
+##Name_Stonard
+Stonard[X]
+##Desc_Stonard ^
+A boiled fruit of great endurance.[N]
+Grants user 1.5x Def/Res for 3 turns.[X]
+##Use_BuffItem
+Boosts the user's[N]
+stats for a bit.[X]
+
+
+
 ##Name_AriadneShard
 Ariadne Shd.[X]
 ##Desc_AriadneShard ^

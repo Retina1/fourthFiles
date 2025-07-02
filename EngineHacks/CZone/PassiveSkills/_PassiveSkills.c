@@ -206,7 +206,15 @@ long long ClassSkillMovBoost(u8 stat, struct Unit* unit) {
 	stat = ApplyDuelistFleetfoot(stat,unit);
 	//mul
 	
-	stat = Apply255Cap(stat,unit);
+	//if no rescue flag is on, nathan gets 15 move and everyone else gets none
+	if (CheckEventId_(0x120)){
+		if (UNIT_CHAR_ID(unit) == 0x1){
+			stat = 15;
+		}
+		else {
+			stat = 0;
+		}
+	}
 	union {
 		long long asLongLong;
 		struct {

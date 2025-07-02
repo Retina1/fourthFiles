@@ -39,6 +39,7 @@ between stats and growths.[X]
 #include "Chapters/Chapter3.txt"
 
 #include "City/CityChapter02.txt"
+#include "City/CityChapter03.txt"
 #include "City/CityGeneral.txt"
 
 #include "Guild/Initial/Swordfighters.txt"
@@ -128,9 +129,9 @@ half value added to Crit.[X]
 Speed: Double if outspeeding by 4,[N]
 full value added to Avoid.[X]
 #0x54a
-Luck: Half value added to Hit/Avo,[N]
-full value added to Crit Avo.[N]
-Also impacts ailment afflict/resist.[X]
+Luck: Adds to C.Avo, half to Hit/Avo.[N]
+(UserLuc+10)/(TargetLuc+10) scales all[N]
+status ailment affliction chances.[X]
 #0x54b
 Defense: Reduces the damage of[N]
 incoming physical attacks.[X]

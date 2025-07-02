@@ -2,6 +2,8 @@ Nathan_Scholar
 Nathan_Warlock
 Astarte_Priest
 Astarte_WarMagus
+Gore_Gunner
+Gore_Dragoon
 Guildmaster_Highlander
 CoastKid_Swordfighter
 CoastKid_Landsknecht

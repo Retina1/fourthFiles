@@ -80,7 +80,7 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
 			 switch (levelDiff) {
 				case -3:
 					result = 0;
-					break;
+					return result;
 				case -2:
 					result = 1;
 					break;
@@ -151,7 +151,7 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
 			 switch (levelDiff) {
 				case -3:
 					result = 0;
-					break;
+					return result;
 				case -2:
 					result = 1;
 					break;
@@ -222,7 +222,7 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
 			 switch (levelDiff) {
 				case -3:
 					result = 0;
-					break;
+					return result;
 				case -2:
 					result = 1;
 					break;

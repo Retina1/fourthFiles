@@ -1,4 +1,10 @@
-//null skills
+//i think this fixes staff music playing?
+PUSH
+ORG 0x72860
+SHORT 0xE002
+POP
+
+//null vanilla skills
 PUSH
 ORG 0x2b34a
 BYTE 0

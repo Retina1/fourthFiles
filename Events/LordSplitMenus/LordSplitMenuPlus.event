@@ -72,5 +72,17 @@ MenuOption(Class_Scholar, ClassDesc_Scholar, 0)
 MenuOption(Class_Curate, ClassDesc_Curate, 0)
 MenuTerminator
 
+ALIGN 4
+RecruitStandardMenu:
+MenuDefinition(8, 5, 14, 0, 1, RecruitStandardMenuOptions)
+
+ALIGN 4
+RecruitStandardMenuOptions:
+MenuOption(Class_Myrmidon, ClassDesc_Myrmidon, 0)
+MenuOption(Class_Rider, ClassDesc_Rider, 0)
+MenuOption(Class_Raider, ClassDesc_Raider, 0)
+MenuOption(Class_Gunner, ClassDesc_Gunner, 0)
+MenuTerminator
+
 
 #include "LordSplitMenuPlus.lyn.event"

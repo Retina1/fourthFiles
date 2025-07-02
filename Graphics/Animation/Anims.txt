@@ -36,6 +36,8 @@ Raider_Unarmed
 Trailblazer_Axe
 Trailblazer_Handaxe
 Trailblazer_Unarmed
+Gunner_Gun
+Gunner_Unarmed
 Poet_Magic
 Troubadour_Magic
 Troubadour_Refresh

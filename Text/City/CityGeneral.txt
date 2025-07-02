@@ -1,3 +1,38 @@
+##IntroBuyStandardClasses
+[MidLeft][Nathan][MidRight][Second]
+class buy for 1500[A][X]
+##BuyStandardClassesNoMoney
+[MidLeft][Nathan][MidRight][Second]
+no money[A][X]
+##BuyStandardClassesYes
+[MidLeft][Nathan][MidRight][Second]
+yippee[A][X]
+##BuyStandardClassesNo
+[MidLeft][Nathan][MidRight][Second]
+ok then[A][X]
+
+##StandardClassesBuySys
+Unlock the Standard Corps[N]
+for 1500 gold?[AN]
+This will let you recruit[N]
+four new classes -[AN]
+the swift stance-based[N]
+swordfighter Myrmidon,[AN]
+the utility-based lance[N]
+cavalier Rider,[AN]
+the rough and tumble axe[N]
+cavalier Raider,[AN]
+and the unreliable yet[N]
+mighty Gunner.[AN]
+It's well worth it![N]
+[No][X]
+
+##StandardClassesBuyYesSys
+Standard Corps have been[N]
+unlocked for recruitment![AN]
+Head over to the Guildhall[N]
+to check them out.[A][X]
+
 ##TownTutorial
 Welcome to Hirschring! Here, you can[N]
 explore, prepare, and recruit units.[AN]

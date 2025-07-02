@@ -41,6 +41,7 @@ SoundRoomEntry(Song_EO1Guild, SongTitle_EO1Guild, SourceTitle_EtrianOdyssey,7)
 SoundRoomEntry(Song_TheFirstCampaign, SongTitle_TheFirstCampaign, SourceTitle_EtrianOdyssey2,1)
 SoundRoomEntry(Song_DiscoDescent, SongTitle_DiscoDescent, SourceTitle_Necrodancer,8)
 SoundRoomEntry(Song_InnocenceGlitched, SongTitle_InnocenceGlitched, SourceTitle_Antibirth,12)
+SoundRoomEntry(Song_DyedInBlood, SongTitle_DyedInBlood, SourceTitle_EtrianOdyssey,26)
 SoundRoomEntry(Song_HeroicStruggle, SongTitle_HeroicStruggle, SourceTitle_LiveALive,6)
 SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
 SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)
@@ -53,12 +54,16 @@ SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4
 SoundRoomEntry(Song_DrawHeroes, SongTitle_DrawHeroes, SourceTitle_EtrianOdyssey2,10)
 //dungeon
 SoundRoomEntry(Song_EverScarletForest, SongTitle_EverScarletForest, SourceTitle_EtrianOdyssey2,16)
+SoundRoomEntry(Song_FrozenGrounds, SongTitle_FrozenGrounds, SourceTitle_EtrianOdyssey2,24)
 SoundRoomEntry(Song_ExcavationWorkersQuarters, SongTitle_ExcavationWorkersQuarters, SourceTitle_SMT4,18)
 SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOdyssey5,9)
 //combat
+SoundRoomEntry(Song_InitialStrike, SongTitle_InitialStrike, SourceTitle_EtrianOdyssey,25)
+
 //boss
 SoundRoomEntry(Song_Rhapsody, SongTitle_Rhapsody, SourceTitle_OrderOfEcclesia,5)
 //character and event
+SoundRoomEntry(Song_FaithIsMyPillar, SongTitle_FaithIsMyPillar, SourceTitle_EtrianOdyssey4,23)
 SoundRoomEntry(Song_OohWilfre, SongTitle_OohWilfre, SourceTitle_DrawnToLife2,14)
 SoundRoomEntry(Song_Salem, SongTitle_Salem, SourceTitle_DrawnToLife2,13)
 SoundRoomEntry(Song_CherryTreesAndWings, SongTitle_CherryTreesAndWings, SourceTitle_EtrianOdyssey2,17)

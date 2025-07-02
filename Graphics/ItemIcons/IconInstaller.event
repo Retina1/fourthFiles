@@ -53,8 +53,12 @@ ItemIconEntry(DarkBroochIcon)
 #incbin "Dmp/{Zarg} Item 18.dmp"
 ItemIconEntry(BanefulDollIcon)
 #incbin "Dmp/Plush {base by DoinThangs}.dmp"
+ItemIconEntry(DeusHerbIcon)
+#incbin "Dmp/appDeusHerb.dmp"
 ItemIconEntry(HolyCloakIcon)
 #incbin "Dmp/{SMITHYGCN} Goods 8.dmp"
+ItemIconEntry(DriveGearIcon)
+#incbin "Dmp/appDriveGear.dmp"
 
 //SCROLLS
 ItemIconEntry(FlameScrollIcon)
@@ -132,6 +136,8 @@ ItemIconEntry(ChainWhipIcon)
 #incbin "Dmp/{milom} VampireKiller.dmp"
 ItemIconEntry(RougeWhipIcon)
 #incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 4.dmp"
+ItemIconEntry(NinetailsIcon)
+#incbin "Dmp/tezukaWhip.dmp"
 ItemIconEntry(RazorWhipIcon)
 #incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 2.dmp"
 ItemIconEntry(HeavensfallIcon)
@@ -262,8 +268,14 @@ ItemIconEntry(OmegaArchIcon)
 //GUNS
 ItemIconEntry(HandgonneIcon)
 #incbin "Dmp/appGun.dmp"
+ItemIconEntry(SakalozIcon)
+#incbin "Dmp/tezukaGun2.dmp"
 ItemIconEntry(CaliverIcon)
 #incbin "Dmp/tezukaGun.dmp"
+ItemIconEntry(SnipistolIcon)
+#incbin "Dmp/tezukaGun3.dmp"
+ItemIconEntry(MeisterkugelIcon)
+#incbin "Dmp/tezukaGun4.dmp"
 
 //STAVES
 ItemIconEntry(WandIcon)

@@ -131,9 +131,10 @@
 #define Moomfie 0x83
 #define Frost 0x84
 #define Alva 0x85
-#define Subtractron 0x86
-#define Ambrose 0x87
-#define Beepo 0x88
-#define Subtilior 0x89
-#define Awil 0x8A
-#define Orion 0x8B
+#define Dai 0x86
+#define Subtractron 0x87
+#define Ambrose 0x88
+#define Beepo 0x89
+#define Subtilior 0x8A
+#define Awil 0x8B
+#define Orion 0x8C

@@ -76,30 +76,31 @@ UNIT Benthus 0x0 0x1 Level(12,Ally,0) [8,11] 0x0 0x0 0x1 REDA8R10 [Epee,Sabre,Vu
 UNIT
 
 EnemyUnits:
+//one or two more stationaryish guys in right/lower right
 UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [Agneyastra] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [2,7] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [1,8] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [17,6] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
-UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [1,2] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
-UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [1,2] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [6,3] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [7,2] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
-UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [4,2] DropItem 0x0 0x0 0x0 [Epee,HealScroll] AttackInRangeAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [4,2] DropItem 0x0 0x0 0x0 [Epee,HealScroll] DelayedAI
 UNIT MonsterGeneric Gargoyle 0x0 Level(3,Enemy,1) [12,10] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
-//UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [0,11] 0x0 0x0 0x0 0x0 [Tackle] AttackInRangeAI
+UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [20,11] 0x0 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
 UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,1) [4,1] DropItem 0x0 0x0 0x0 [GreatTalon,AriadneShard] AttackInRangeAI
 UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [17,0] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
 UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
-UNIT MonsterGeneric Centaur 0x0 Level(3,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Yue] AttackInRangeAI
-UNIT MonsterBoss Wolf 0x0 Level(4,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Centaur 0x0 Level(3,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
+UNIT MonsterBoss Wolf 0x0 Level(4,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [SharpBite] ChaseOnceApproachedAI
 UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [16,8] 0x0 0x0 0x0 0x0 [Shortmace] AttackWallAI
 UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [17,9] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
 UNIT MonsterGeneric BowWight 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
 UNIT
 
 AllyUnits:
-UNIT Helman 0x0 0x0 Level(4,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Shortspear] [0x3,0x3,0x4,0x0]
-UNIT BelvarusGeneric Knight 0x0 Level(3,NPC,1) [13,2] 0x0 0x0 0x0 0x0 [Shortspear] [0x3,0x3,0x4,0x0]
+UNIT Helman 0x0 0x0 Level(4,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Partizan,Medica] [0x3,0x3,0x4,0x0]
+UNIT BelvarusGeneric Lancer 0x0 Level(3,NPC,1) [13,2] 0x0 0x0 0x0 0x0 [Partizan] [0x3,0x3,0x4,0x0]
 UNIT BelvarusGeneric Curate 0x0 Level(3,NPC,1) [12,2] 0x0 0x0 0x0 0x0 [HealScroll] [0x3,0x3,0x4,0x0]
 //lucien is a game over fuck it
 UNIT Lucien Poet 0x0 Level(4,NPC,0) [11,2] 0x0 0x0 0x0 0x0 [FlameScroll] [0x3,0x3,0x4,0x0]
@@ -157,7 +158,6 @@ SilentKillUnit(Egil)
 //preps leadin
 Text(Chapter3_Opening_3)
 CallPreps
-
 EndEvent
 
 
@@ -165,27 +165,27 @@ Chapter3_House:
 VillageEventItem(Chapter3_HouseText, 0x0, ThornWhip)
 
 Chapter3_NathanHelman:
-MUSC 0x0 //recruitment theme
+MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_NathanHelmanRecruit)
 TurnAlly(Helman)
 EndEvent
 Chapter3_GoreHelman:
-MUSC 0x0 //recruitment theme
+MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_GoreHelmanRecruit)
 TurnAlly(Helman)
 EndEvent
 Chapter3_AstarteHelman:
-MUSC 0x0 //recruitment theme
+MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_AstarteHelmanRecruit)
 TurnAlly(Helman)
 EndEvent
 Chapter3_CleoneHelman:
-MUSC 0x0 //recruitment theme
+MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_CleoneHelmanRecruit)
 TurnAlly(Helman)
 EndEvent
 Chapter3_BenthusHelman:
-MUSC 0x0 //recruitment theme
+MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_BenthusHelmanRecruit)
 TurnAlly(Helman)
 EndEvent
@@ -197,6 +197,10 @@ EndEvent
 
 EndingScene:
 ENUT Chapter3DoneFlag
+MUSC 0x0
+CleanTextNoMap(0x18,Chapter3_Ending_1)
+MUSC Song_Salem
+CleanTextNoMap(0x0,Chapter3_Ending_2)
 MoveToChapter(HirschringSquare)
 ENDA
 

@@ -597,6 +597,10 @@ ALIGN 4
 BenjaminDMP:
 #incbin "dmps/goldBenjamin.dmp"
 setMugEntry(BenjaminMug,BenjaminDMP,3,5,3,3)
+ALIGN 4
+BobbyDMP:
+#incbin "dmps/goldBobby.dmp"
+setMugEntry(BobbyMug,BobbyDMP,3,5,3,3)
 
 ALIGN 4
 //lorca

@@ -1,0 +1,90 @@
+##City03_PrePreps
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Figured I'd let you know[N]
+what you're in for, kid.[AN]
+Your next assignment'll be[N]
+in the Lethal Forest.[AN]
+It's something of a tradition[N]
+for guilds to test their mettle.[AN]
+I believe you passed near[N]
+its entrance.[AN][MidRight]
+That's right. [...]Lots of[N]
+wolves, I noticed.[AN][MidLeft]
+That's the least of your[N]
+worries, kid.[AN]
+There's monsters galore.[N]
+Wolves, crawlers, centaurs.[AN]
+And venomflies. Real hellspawn,[N]
+those bastards are.[AN]
+It'll be a long trek, so you[N]
+really wanna supply well.[AN]
+Prepare to fight a fair number[N]
+of monsters,[A] and bring some[N]
+Ariadne shards.[A] Trust me,[N]
+they'll save your hide.[AN][MidRight]
+Alright.[AN][MidLeft]
+You've done well so far.[N]
+Nothing to fear.[AN]
+I'll give the finer details[N]
+once you're prepared.[AN]
+Just follow me a moment to[N]
+sort out your funds.[AN][Clear][MidRight]
+[...]Lethal Forest. Can't say[N]
+I'm not a bit tense.[AN]
+But this is my chance to[N]
+truly prove Hedge's strength.[A][X]
+
+##City03_PostPreps
+[MidLeft][Nathan]
+[...]Guildmaster gave me some[N]
+more money,[A] and said I[N]
+can roam a bit farther.[AN]
+Not sure what to expect from[N]
+Hirschring,[A] but I should[N]
+explore as much as I can.[AN]
+Anything to help survive[N]
+the Lethal Forest.[AN]
+And of course, I'd better[N]
+bolster our numbers.[AN]
+[...]Maybe if I'm lucky, I can find[N]
+a way to expand our options.[A][X]
+
+##City03_EndText
+[MidLeft][Guildmaster][MidRight][Nathan]
+lethal forest coming real[A][X]
+
+##City03_Astarte
+[MidLeft][Nathan][MidRight][Astarte]
+talk[A][X]
+
+##City03_Gore
+[MidLeft][Nathan][MidRight][Gore]
+talk[A][X]
+
+##City03_Cleone
+[MidLeft][Nathan][MidRight][Cleone][MidLeft]
+talk[A][X]
+
+##City03_Benthus
+[MidLeft][Nathan][MidRight][Benthus]
+talk[A][X]
+
+##City03_Guildmaster
+[MidLeft][Nathan][MidRight][Guildmaster]
+talk[A][X]
+
+##City03_Benjamin
+[MidLeft][Nathan][Right][Johanna][FarRight][Benjamin]
+johanna running store[A][X]
+
+##City03_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+talk[A][X]
+
+##City03_Claire
+[MidLeft][Nathan][MidRight][Claire]
+talk[A][X]
+
+##City03_Bertram
+[MidLeft][Nathan][MidRight][Bertram]
+talk[A][X]
