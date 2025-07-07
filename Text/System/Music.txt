@@ -44,6 +44,12 @@ Persona[X]
 ##SongTitle_NameEntry
 Name Entry[X]
 
+
+##SourceTitle_GuiltyGearStrive
+Guilty Gear Strive[X]
+##SongTitle_ArmorCladFaith
+Armor-Clad Faith[X]
+
 ##SourceTitle_SMT4
 Shin Megami Tensei IV[X]
 ##SongTitle_ExcavationWorkersQuarters
@@ -81,6 +87,11 @@ The Binding of Isaac: Antibirth[X]
 ##SongTitle_InnocenceGlitched
 Innocence Glitched[X]
 
+##SourceTitle_LisaThePointless
+Lisa the Pointless[X]
+##SongTitle_ModernDayOuroboros ^
+Modern Day Ouroboros (BobbyAsaka)[X]
+
 ##SourceTitle_IntoTheWoods
 Into the Woods[X]
 ##SongTitle_NoOneIsAlone
@@ -100,3 +111,5 @@ Original Song[X]
 Escape (Runa)[X]
 ##SongTitle_Revolution
 Revolution (Runa)[X]
+##SongTitle_Fracas
+Fracas! (Chair)[X]

@@ -2,6 +2,50 @@
 How did you get to be here?[N]
 What was the moment?[A][X]
 
+##XavensDeath
+[MidLeft][Xavens]
+I can't fall[...][N]
+I'm mighty[...][AN]
+I'm power itself[...][N]
+I'm the heart[...][N]
+of the end[...][AN][CloseEyes]
+I[...] I am[...] inimitable[...][A][X]
+##EgilDeath
+[MidLeft][Egil]
+Lady Rana[...][N]
+Ser Harla[...][AN][CloseEyes]
+Forgive me[...][N]
+My atonement[...][A][X]
+##HarlaDeath
+[MidLeft][Harla][CloseEyes]
+Rana[...] I wasn't[...][N]
+I'm not[...] ready[...][A][X]
+##RanaDeath
+[MidLeft][Rana]
+I[...] get it[...][N]
+At last[...][AN][CloseEyes]
+Live your life[...][N]
+Not for the end[...][AN]
+But for it all[...][AN]
+[...]Piorin[...] I see[...][N]
+you[...] once[...][A][X]
+##WeberDeath
+[MidLeft][Weber]
+And so[...] Asketa is[N]
+cast into the abyss[...][AN][CloseEyes]
+It'll all burn[...][N]
+All on your head[...][AN]
+Ask yourselves[...] if it[N]
+was all worth it[...][A][X]
+##BenthusDeath
+[MidLeft][Benthus]
+I will[...] not die[...][N]
+like a dog[...][AN][CloseEyes]
+Not before I find[...][N]
+the Armory[...][AN]
+Not before[...] you[...][N]
+bow to[...] me[...][A][X]
+
 ##NathanDeath
 [MidRight][Nathan]
 I wanted[...] to make[...][N]
@@ -71,6 +115,94 @@ Where's my[...] mulligan[...]?[A][CloseEyes][X]
 [MidRight][SlynSpire]
 Spire[...] Please don't leave[...][A][CloseEyes][N]
 Don't leave me behind[...][A][X]
+
+//fighters
+##TristaoDeath
+[MidRight][Tristao]
+I'll be[...] alright[...][AN][CloseEyes]
+But please[...] Look after[...][N]
+my[...] family[...][A][X]
+##FinnDeath
+[MidRight][Finn]
+My vengeance[...][N]
+My[...] home[...][A][CloseEyes][X]
+##EightDeath
+[MidRight][Eight]
+Fortune's wheel has[...][N]
+passed[...] me by[...][A][CloseEyes]][X]
+##RandellanDeath
+[MidRight][Randellan]
+It's a[...] gods[N]
+damned[...] shame[...][N][A][CloseEyes][X]
+##JuniperDeath
+[MidRight][Juniper]
+Useless pieces of[...][N]
+I can't[...] like this[...][A][CloseEyes][X]
+
+//archers
+##HallieDeath
+[MidRight][Hallie]
+Waves[...] I'm so[...][N]
+sorry[...] my love[...][A][CloseEyes][X]
+##AnjelicaDeath
+[MidRight][Anjelica]
+Serafina[...] I only[...][N]
+wanted[...] you[...][A][CloseEyes][X]
+##RodneyDeath
+[MidRight][Rodney]
+Live like a hero[...][N]
+Die like a hero[...][A][CloseEyes][X]
+##GamonDeath
+[MidRight][Gamon]
+Wasn't so bad[...][N]
+Not a bad ending[...][AN][CloseEyes]
+If it's gotta[...][N]
+be this way[...][A][X]
+
+//scholars
+##CassandraDeath
+[MidRight][Cassandra]
+Go ahead[...] Kill me[...][AN]
+Man is nothing[...][N]
+without my knowledge[...][A][CloseEyes][X]
+##WavesDeath
+[MidRight][Waves]
+Hallie[...] Where[...][N]
+Where are[...] you[...][A][CloseEyes][X]
+##CyanneDeath
+[MidRight][Cyanne]
+I'll never[...] return home[...][N]
+Where I belong[...][A][CloseEyes][X]
+##VictorDeath
+[MidRight][Victor]
+I lived[...] I died[...][N]
+All[...] my way[...][A][CloseEyes][X]
+
+//medics
+##TrishDeath
+[MidRight][Trish]
+Don't worry[...] about me[...][N]
+This is[...] my own[...][A][CloseEyes][X]
+##AmosDeath
+[MidRight][Amos]
+June[...] I am unfit[...][N]
+for your side[...][A][CloseEyes][X]
+##RoslinDeath
+[MidRight][Roslin]
+I knew this might[...][N]
+I should've known[...][AN][CloseEyes]
+I wasn't cut out[...][N]
+for this life[...][A][X]
+##WitericoDeath
+[MidRight][Witerico]
+Shit[...] I'll never get[...][N]
+my inheritance[...] now[...][A][CloseEyes][X]
+
+
+##LaiteuseDeath
+[MidRight][Laiteuse]
+Whoopsie[...] Guess I[...][N]
+goofed again[...][A][CloseEyes][X]
 
 ##FrancescaDeath
 [MidRight][Francesca]

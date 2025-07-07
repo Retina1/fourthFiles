@@ -1,0 +1,143 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Stratum1F1EventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(AriadneShard,21,19)
+Chest(GaleScroll,7,0)
+END_MAIN
+
+MiscBasedEvents:
+AFEV 0x0 MoveResetter 0x6
+AreaEvent(0x0,EndingScene,0,0,2,1)
+AreaEvent(0x9,Encounter1,14,8,20,14)
+AreaEvent(0xa,Encounter2,17,0,24,6)
+AFEV 0x8 UnitCleanup 0x6
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,18] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,18] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,18] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,19] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,19] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,19] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [20,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Enemies:
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [15,11] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [16,9] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [19,11] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT
+
+Encounter2Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter2Enemies:
+//air scales blind
+//make infliction weapons use weapon-dependent rates (byte 21? 23?)
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [23,0] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [24,1] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [22,2] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [17,2] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT
+
+
+ALIGN 4
+
+BeginningScene:
+CallPreps
+CLEA 0
+//set all deployed units to be undeployed but with the not deployed last chapter thing unset
+//that'll clean it up
+InitializeNathan(12,18)
+//initialize flag so we don't have a first screen flash
+ENUT 0x8
+EndEvent
+
+Encounter1:
+ENUF 0x6; ENUF 0x8; FADI 16; CLEA 0
+LOAD3 0x0 Encounter1Units; ENUN
+LOAD1 0x0 Encounter1Enemies; ENUN
+FADU 16
+MUSC Song_InitialStrike
+SetMapBGM(Song_InitialStrike)
+EndEvent
+
+Encounter2:
+ENUF 0x6; ENUF 0x8; FADI 16; CLEA 0
+LOAD3 0x0 Encounter2Units; ENUN
+LOAD1 0x0 Encounter2Enemies; ENUN
+FADU 16
+MUSC Song_InitialStrike
+SetMapBGM(Song_InitialStrike)
+EndEvent
+
+UnitCleanup:
+FADI 16
+CLEA 0
+ResetNathan
+FADU 16
+MUSC Song_EverScarletForest
+SetMapBGM(Song_EverScarletForest)
+EndEvent
+
+EndingScene:
+MNC3 Stratum1F2
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

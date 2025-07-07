@@ -131,6 +131,8 @@ SharpBite
 Tackle
 GreatTalon
 EvilEye
+AirScales
+VenomScales
 Vulnerary 0xC8
 Elixir
 Medica

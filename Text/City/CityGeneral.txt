@@ -11,6 +11,14 @@ yippee[A][X]
 [MidLeft][Nathan][MidRight][Second]
 ok then[A][X]
 
+##UnlockMagusClassesYes
+[MidLeft][Nathan][MidRight][Lucien]
+level 5 yippee![N]
+surpass my experience[A][X]
+##UnlockMagusClassesNo
+[MidLeft][Nathan][MidRight][Lucien]
+no level 5 unyippee![A][X]
+
 ##StandardClassesBuySys
 Unlock the Standard Corps[N]
 for 1500 gold?[AN]
@@ -29,6 +37,11 @@ It's well worth it![N]
 
 ##StandardClassesBuyYesSys
 Standard Corps have been[N]
+unlocked for recruitment![AN]
+Head over to the Guildhall[N]
+to check them out.[A][X]
+##UnlockMagusClassesYesSys
+The Magus Guild has been[N]
 unlocked for recruitment![AN]
 Head over to the Guildhall[N]
 to check them out.[A][X]

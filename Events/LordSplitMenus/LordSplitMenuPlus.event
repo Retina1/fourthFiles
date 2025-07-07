@@ -36,6 +36,7 @@ MenuTerminator
 
 #define StandardUnlockedFlag 0xf9
 #define MagiUnlockedFlag 0xfa
+#define MagusUnlockedFlag MagiUnlockedFlag
 #define SpecialUnlockedFlag 0xfb
 #define SkyUnlockedFlag 0xfc
 #define LifeflowUnlockedFlag 0xfd
@@ -82,6 +83,18 @@ MenuOption(Class_Myrmidon, ClassDesc_Myrmidon, 0)
 MenuOption(Class_Rider, ClassDesc_Rider, 0)
 MenuOption(Class_Raider, ClassDesc_Raider, 0)
 MenuOption(Class_Gunner, ClassDesc_Gunner, 0)
+MenuTerminator
+
+ALIGN 4
+RecruitMagusMenu:
+MenuDefinition(8, 5, 14, 0, 1, RecruitMagusMenuOptions)
+
+ALIGN 4
+RecruitMagusMenuOptions:
+MenuOption(Class_Poet, ClassDesc_Poet, 0)
+MenuOption(Class_Seeker, ClassDesc_Seeker, 0)
+MenuOption(Class_Priest, ClassDesc_Priest, 0)
+MenuOption(Class_Lurker, ClassDesc_Lurker, 0)
 MenuTerminator
 
 

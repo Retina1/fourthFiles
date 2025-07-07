@@ -18,6 +18,14 @@ A monster's talon, massive and mighty.[X]
 Evil Eye[X]
 ##Desc_EvilEye ^
 A monster's gaze, mighty as a spell.[X]
+##Name_AirScales
+Air Scales[X]
+##Desc_AirScales ^
+Scattered monster scales that can blind.[X]
+##Name_VenomScales
+Venom Scls.[X]
+##Desc_VenomScales ^
+Deadly monster scales that can poison.[X]
 
 ##Name_ScissorWrath ^
 Scissor Wrath[X]

@@ -1,79 +1,115 @@
 ##Floor_S1F1
-An Endless Road Awaits[X]
+An Endless[N]
+Road Awaits[X]
 ##Floor_S1F2
-Meadow of Just Promise[X]
+Meadow of[N]
+Just Promise[X]
 ##Floor_S1F3
-Amidst the Beast's Den[X]
+Amidst the[N]
+Beast's Den[X]
 
 ##Floor_S2F1
-A Faintly Shining Hope[X]
+A Faintly[N]
+Shining Hope[X]
 ##Floor_S2F2
-Shattered Refracting Paths[X]
+Shattered[N]
+Refracting Paths[X]
 ##Floor_S2F3
-Arise Towards Destiny[X]
+Arise Towards[N]
+Destiny[X]
 
 ##Floor_S3F1
-Haven of Seared Prayers[X]
+Haven of[N]
+Seared Prayers[X]
 ##Floor_S3F2
-Cliffsides of Contrition[X]
+Cliffsides of[N]
+Contrition[X]
 ##Floor_S3F3
-A Hail of Empty Dreams[X]
+A Hail of[N]
+Empty Dreams[X]
 ##Floor_S3F4
-War's Long-Dormant Spark[X]
+War's Long[N]
+Dormant Spark[X]
 
 ##Floor_S4F1
-Courage Amidst the Flames[X]
+Courage Amidst[N]
+the Flames[X]
 ##Floor_S4F2
-Dark at the End of the Tunnel[X]
+Dark at the End[N]
+of the Tunnel[X]
 ##Floor_S4F3
-Salvation That Shall Never Arise[X]
+Salvation That[N]
+Shall Never Arise[X]
 ##Floor_S4F4
-Loyalties of a Dying Lineage[X]
+Loyalties of a[N]
+Dying Lineage[X]
 
 ##Floor_S5AF1
-A Paradise Unfit for Man[X]
+A Paradise[N]
+Unfit for Man[X]
 ##Floor_S5AF2
-Sentinels of the Divine[X]
+Sentinels of[N]
+the Divine[X]
 ##Floor_S5AF3
-Tempest of Will and Steel[X]
+Tempest of[N]
+Will and Steel[X]
 ##Floor_S5AF4
-Epiphanies Amidst the End[X]
+Epiphanies[N]
+Amidst the End[X]
 ##Floor_S5AF5
-The Final Pinnacle of Life[X]
+The Final[N]
+Pinnacle of Life[X]
 
 ##Floor_S5BF1
-A Monument to Avarice[X]
+A Monument[N]
+to Avarice[X]
 ##Floor_S5BF2
-Docents of Perfection[X]
+Docents of[N]
+Perfection[X]
 ##Floor_S5BF3
-An Iteration Most Grim[X]
+An Iteration[N]
+Most Grim[X]
 ##Floor_S5BF4
-Ambition Forever Sealed[X]
+Ambition[N]
+Forever Sealed[X]
 ##Floor_S5BF5
-The Weapon That Fells Hope[X]
+The Weapon[N]
+That Fells Hope[X]
 
 ##Floor_S5CF1
-Secrets of the Fallen[X]
+Secrets of[N]
+the Fallen[X]
 ##Floor_S5CF2
-Echoing Hall of Nullity[X]
+Echoing Hall[N]
+of Nullity[X]
 ##Floor_S5CF3
-Collapsed Bastion of Purpose[X]
+Collapsed Bastion[N]
+of Purpose[X]
 ##Floor_S5CF4
-Revelations Amidst Ruin[X]
+Revelations[N]
+Amidst Ruin[X]
 
 ##Floor_S6F1
-Demons' Dreams of the End[X]
+Demons' Dreams[N]
+of the End[X]
 ##Floor_S6F2
-Inexorable Fall to Madness[X]
+Inexorable Fall[N]
+to Madness[X]
 ##Floor_S6F3
-Trials to Fell a God[X]
+Trials to[N]
+Fell a God[X]
 ##Floor_S6F4
-Respite Amongst the Darkness[X]
+Respite Amongst[N]
+the Darkness[X]
 ##Floor_S6F5
-The Fiend Which Brings Finality[X]
+The Fiend Which[N]
+Brings Finality[X]
 ##Floor_S6F6
-Endurance of a Long Dead Hope[X]
+Endurance of a[N]
+Long Dead Hope[X]
 ##Floor_S6F7
-A Broken Unyielding Soul[X]
+A Broken[N]
+Unyielding Soul[X]
 ##Floor_S6F8
-A New Vision of Liberation[X]
+A New Vision[N]
+of Liberation[X]

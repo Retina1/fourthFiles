@@ -108,6 +108,12 @@ Biclops[X]
 A mutated cyclops with two heads,[N]
 two eyes, and too much power.[X]
 
+##Class_Airfly
+Airfly[X]
+##Desc_Airfly
+A forest-dwelling insect whose[N]
+scales vex rookie adventurers.[X]
+
 
 ##fuckeggs
 i hate eggs[X]

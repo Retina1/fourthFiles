@@ -56,6 +56,8 @@ CharacterEvent(0xb,TownGoreTalk,Nathan,Gore)
 CharacterEvent(0xd,TownCleoneTalk,Nathan,Cleone)
 CharacterEvent(0xe,TownBenthusTalk,Nathan,Benthus)
 CharacterEvent(StandardUnlockedFlag,BuyStandardClasses,Nathan,Second)
+//this should be fine
+CharacterEvent(MagusUnlockedFlag,UnlockMagusClasses,Nathan,Lucien)
 //yeah i'm not making this take up space here
 #include "Guildhall/GuildCharacterEventStorage.event"
 END_MAIN
@@ -128,6 +130,9 @@ UNIT
 TownVendorSecondUnit:
 UNIT Second 0x0 0x0 Level(22,NPC,0) [1,4] 0x0 0x0 0x0 0x0 [Shieldlance,Longinus] NoAI
 UNIT
+MagusUnlockerUnit:
+UNIT Lucien 0x0 0x0 Level(4,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
+UNIT
 
 
 #define LoadUnitsByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x418C 0x0 0xc; LOAD1 0x0 ch18C; GOTO 0x4000; LABEL 0x418C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x418B 0x0 0xc; LOAD1 0x0 ch18B; GOTO 0x4000; LABEL 0x418B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x418A 0x0 0xc; LOAD1 0x0 ch18A; GOTO 0x4000; LABEL 0x418A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x4160 0x0 0xc; LOAD1 0x0 ch16; GOTO 0x4000; LABEL 0x4160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x4150 0x0 0xc; LOAD1 0x0 ch15; GOTO 0x4000; LABEL 0x4150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x4130 0x0 0xc; LOAD1 0x0 ch13; GOTO 0x4000; LABEL 0x4130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x413A 0x0 0xc; LOAD1 0x0 chS3; GOTO 0x4000; LABEL 0x413A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x4100 0x0 0xc; LOAD1 0x0 ch10; GOTO 0x4000; LABEL 0x4100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x4090 0x0 0xc; LOAD1 0x0 ch9; GOTO 0x4000; LABEL 0x4090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x4080 0x0 0xc; LOAD1 0x0 ch8; GOTO 0x4000; LABEL 0x4080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x4050 0x0 0xc; LOAD1 0x0 ch5; GOTO 0x4000; LABEL 0x4050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x403a 0x0 0xc; LOAD1 0x0 chS1; GOTO 0x4000; LABEL 0x403a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x4030 0x0 0xc; LOAD1 0x0 ch3; GOTO 0x4000; LABEL 0x4030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x4020 0x0 0xc; LOAD1 0x0 ch2; GOTO 0x4000; LABEL 0x4020; LABEL 0x4000; RefreshSMS"
@@ -137,6 +142,7 @@ UNIT
 #define MoveToNextChapter(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15) "CHECK_EVENTID Chapter15DoneFlag; BEQ 0x6150 0x0 0xc; MNC2 ch15; GOTO 0x6000; LABEL 0x6150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x6130 0x0 0xc; MNC2 ch13; GOTO 0x6000; LABEL 0x6130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x613A 0x0 0xc; MNC2 chS3; GOTO 0x6000; LABEL 0x613A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x6100 0x0 0xc; MNC2 ch10; GOTO 0x6000; LABEL 0x6100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x6090 0x0 0xc; MNC2 ch9; GOTO 0x6000; LABEL 0x6090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x6080 0x0 0xc; MNC2 ch8; GOTO 0x6000; LABEL 0x6080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x6050 0x0 0xc; MNC2 ch5; GOTO 0x6000; LABEL 0x6050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x603a 0x0 0xc; MNC2 chS1; GOTO 0x6000; LABEL 0x603a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x6030 0x0 0xc; MNC2 ch3; GOTO 0x6000; LABEL 0x6030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x6020 0x0 0xc; MNC2 ch2; GOTO 0x6000; LABEL 0x6020; LABEL 0x6000"
 
 #define LoadVenderSecond "CHECK_EVENTID Chapter15DoneFlag; BNE 0x3333 0xc 0x0; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3333 0xc 0x0; CHECK_EVENTID StandardUnlockedFlag; BNE 0x3333 0xc 0x0; LOAD1 0x1 TownVendorSecondUnit; ENUN; LABEL 0x3333"
+#define LoadMagusUnlocker "CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3334 0xc 0x0; CHECK_EVENTID MagusUnlockedFlag; BNE 0x3334 0xc 0x0; LOAD1 0x1 MagusUnlockerUnit; ENUN; LABEL 0x3334"
 
 //#define LoadAtChapterIfAlive(unit,flagID,unitGroup,label) "CHECK_ALIVE unit; BEQ label 0xc 0x0; CHECK_EVENTID flagID; BEQ label 0xc 0x0; CHECK_EVENTID flagID+1; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
 #define AddSigil(x,y) "AddTrap(SigilTrapID,x,y)"
@@ -148,6 +154,7 @@ UNIT
 #define ClearMap "FADI 10; SET_ACTIVE 0; CLEA 0; CLEN 0; CLEE 0"
 #define MoveToMap(mapid) "LOMA mapid"
 #define InitializeNathan(x,y) "MOVE 0xFF Nathan [x,y]; ENUN; CAM1 Nathan"
+#define ResetNathan "SVAL 4 0x03; SetUnitStatus(Nathan,0xc,0x0)"
 #define SwapToMap(mapid,x,y) "ResetMapFlags; ClearMap; MoveToMap(mapid); InitializeNathan(x,y)"
 #define ThreeRecruitInterlude "ENUT Recruited3Flag; ENUT Recruited2Flag; ENUT Recruited1Flag"
 #define FourRecruitInterlude "ENUT Recruited4Flag; ThreeRecruitInterlude"
@@ -221,6 +228,7 @@ CALL LoadTavernSigils
 //SetMapBGM(Song_DrawHeroes)
 MUSC Song_DrawHeroes
 LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadMagusUnlocker
 FADU 10
 EndEvent
 
@@ -255,7 +263,7 @@ RunTextByVisit(City02_Benthus,City03_Benthus,0,0,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 
 BuyStandardClasses:
-EVBIT_MODIFY 4
+EVBIT_MODIFY 3
 Text(IntroBuyStandardClasses)
 CHECK_MONEY
 SVAL 0x1 1500
@@ -264,9 +272,11 @@ Text(BuyStandardClassesNoMoney)
 ENUF 0xe
 GOTO 0x2
 LABEL 0x1
+EVBIT_MODIFY 4
 SystemText(StandardClassesBuySys)
 IfNoSelectedGoto(0x3)
 MUSC Song_FaithIsMyPillar
+EVBIT_MODIFY 3
 Text(BuyStandardClassesYes)
 SVAL 0x3 1500
 TAKEMONEY
@@ -274,10 +284,27 @@ SystemText(StandardClassesBuyYesSys)
 MUSC Song_VastLands
 GOTO 0x2
 LABEL 0x3
+EVBIT_MODIFY 3
 Text(BuyStandardClassesNo)
 ENUF StandardUnlockedFlag
 LABEL 0x2
 EndEvent
+
+UnlockMagusClasses:
+GetUnitStatus(Nathan, Level)
+SVAL 0x1 5
+BLT 0x1 0xc 0x1 
+MUSC Song_FaithIsMyPillar
+Text(UnlockMagusClassesYes)
+SystemText(UnlockMagusClassesYesSys)
+MUSC Song_DrawHeroes
+GOTO 0x2
+LABEL 0x1
+Text(UnlockMagusClassesNo)
+ENUF MagusUnlockedFlag
+LABEL 0x2
+EndEvent
+
 
 SquareMoveToEnd:
 SystemText(HubEndPrompt)

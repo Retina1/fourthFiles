@@ -1,5 +1,23 @@
 //a grace too powerful to name
 
+##FirstFloor
+1st Floor[X]
+##SecondFloor
+2nd Floor[X]
+##ThirdFloor
+3rd Floor[X]
+##FourthFloor
+4th Floor[X]
+##FifthFloor
+5th Floor[X]
+##SixthFloor
+6th Floor[X]
+##SeventhFloor
+7th Floor[X]
+##FinalFloor
+Final Floor[X]
+
+
 ##Label_City
 The City[X]
 ##Name_Hirschring

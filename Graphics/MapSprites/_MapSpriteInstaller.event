@@ -128,9 +128,11 @@ MovingMapSprite(Lurker, AP1, LurkerMMS)
 StandingMapSprite(Hexer,MapSprite16x16,HexerSMS)
 MovingMapSprite(Hexer, AP1, HexerMMS)
 
-//DOMINATOR NEEDED - custom
+//thanks app oomfie
 StandingMapSprite(DarkHunter,MapSprite16x16,DarkHunterSMS)
 MovingMapSprite(DarkHunter, AP1, DarkHunterMMS)
+StandingMapSprite(Dominator,MapSprite16x16,DominatorSMS)
+MovingMapSprite(Dominator, AP1, DominatorMMS)
 
 StandingMapSprite(Lancer,MapSprite16x16,LancerSMS)
 MovingMapSprite(Lancer, AP1, LancerMMS)
@@ -247,9 +249,20 @@ MovingMapSprite(Cyclops, $81F49B8, CyclopsMMS)
 StandingMapSprite(Biclops,MapSprite16x32,BiclopsSMS)
 MovingMapSprite(Biclops, $81F49B8, BiclopsMMS)
 
+StandingMapSprite(Airfly,MapSprite16x16,AirflySMS)
+MovingMapSprite(Airfly, AP1, AirflyMMS)
+
+
 #define SigilTrapMapSprite 0x3c
 
 StandingMapSprite(SigilTrapMapSprite,MapSprite16x16,SigilSMS)
+
+ALIGN 4
+AirflySMS:
+#incbin "Dmp/Mosquito (U) {Dutch Introvert}-stand.dmp"
+ALIGN 4
+AirflyMMS:
+#incbin "Dmp/Mosquito (U) {Dutch Introvert}-walk.dmp"
 
 ALIGN 4
 DarkHunterSMS:
@@ -257,6 +270,13 @@ DarkHunterSMS:
 ALIGN 4
 DarkHunterMMS:
 #incbin "Dmp/appDarkHunterMove.dmp"
+
+ALIGN 4
+DominatorSMS:
+#incbin "Dmp/appDominatorStand.dmp"
+ALIGN 4
+DominatorMMS:
+#incbin "Dmp/appDominatorMove.dmp"
 
 ALIGN 4
 SigilSMS:

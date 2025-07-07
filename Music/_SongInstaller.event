@@ -145,6 +145,24 @@ SongTable(Song_InitialStrike,InitialStrike,1)
 SongTable(Song_DyedInBlood,DyedInBlood,1)
 #include "songs/DyedInBlood.event"
 }
+//0x20
+#define Song_ArmorCladFaith 0x20
+{
+SongTable(Song_ArmorCladFaith,ArmorCladFaith,1)
+#include "songs/ArmorCladFaith.event"
+}
+//0x21
+#define Song_ModernDayOuroboros 0x21
+{
+SongTable(Song_ModernDayOuroboros,ModernDayOuroboros,1)
+#include "songs/ModernDayOuroboros.event"
+}
+//0x22
+#define Song_Fracas 0x22
+{
+SongTable(Song_Fracas,Fracas,0)
+#include "songs/Fracas.event"
+}
 
 
 //promo is 0x23, healing is 21/22

@@ -2,8 +2,58 @@
 //Modified by Nintenlord
 
 Recruit_Leonzio:
-UNIT Leonzio 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT Leonzio 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Medica] NoAI
 UNIT
 
+GuildhallLoadPoets:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+//GuildLoad(Martin,Recruit_Martin,0x1)
+FADU 10
+ENDA
+
+GuildhallLoadSeekers:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+//GuildLoad(Martin,Recruit_Martin,0x1)
+FADU 10
+ENDA
+
+GuildhallLoadPriests:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+//GuildLoad(Martin,Recruit_Martin,0x1)
+FADU 10
+ENDA
+
+GuildhallLoadLurkers:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+//GuildLoad(Martin,Recruit_Martin,0x1)
+FADU 10
+ENDA
+
 GuildhallMagiMenuEvent:
+CallMenu(RecruitMagusMenu)
+SVAL 0x1 0
+BNE 0x2000 0xc 0x1
+CALL GuildhallLoadPoets
+GOTO 0x2008
+LABEL 0x2000
+SVAL 0x1 1
+BNE 0x2001 0xc 0x1
+CALL GuildhallLoadSeekers
+GOTO 0x2008
+LABEL 0x2001
+SVAL 0x1 2
+BNE 0x2002 0xc 0x1
+CALL GuildhallLoadPriests
+GOTO 0x2008
+LABEL 0x2002
+SVAL 0x1 3
+BNE 0x2003 0xc 0x1
+CALL GuildhallLoadLurkers
+GOTO 0x2008
+SystemText(ErrorHandlerText)
+LABEL 0x2008
 ENDA

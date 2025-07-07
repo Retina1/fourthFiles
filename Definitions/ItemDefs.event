@@ -131,6 +131,8 @@
 #define Tackle 0x83
 #define GreatTalon 0x84
 #define EvilEye 0x85
+#define AirScales 0x86
+#define VenomScales 0x87
 #define Vulnerary 0xC8
 #define Elixir 0xC9
 #define Medica 0xCA

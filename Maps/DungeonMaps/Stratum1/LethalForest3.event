@@ -26,7 +26,7 @@ ALIGN 4
 MapData:
   #incbin "LethalForest3_data.dmp"
 
-SetChapterData(Stratum1F3, Fields1OBJ, 0, Fields1PAL, FieldsCONFIG, Stratum1F3MapID, MapData, 0, 0, Stratum1F2MapChangeID)
+SetChapterData(Stratum1F3, Fields1OBJ, 0, Fields1PAL, FieldsCONFIG, Stratum1F3MapID, MapData, 0, 0, Stratum1F3MapChangeID)
 
 ALIGN 4
 Map_Change_0:
@@ -77,6 +77,6 @@ MapChangesData:
   TileMap(8, 6, 19, 3, 1, Map_Change_8)
   TileMapEnd
 
-EventPointerTable(Stratum1F2MapChangeID, MapChangesData)
+EventPointerTable(Stratum1F3MapChangeID, MapChangesData)
 
 }

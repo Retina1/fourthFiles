@@ -4,6 +4,9 @@
 ALIGN 4
 BossBGMTable:
 //ACT 1
+BossBGMEntry(BossCleone,Song_Fracas)
+BossBGMEntry(BossBenthus,Song_Fracas)
+BossBGMEntry(MonsterBoss,Song_Fracas)
 BossBGMEntry(BossBenthus2,Song_Rhapsody)
 BossBGMTerminator
 

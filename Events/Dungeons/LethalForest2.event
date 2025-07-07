@@ -1,0 +1,90 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Stratum1F2EventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(Bravant,16,13)
+Chest(Brightsword,21,2)
+END_MAIN
+
+MiscBasedEvents:
+AFEV 0x0 MoveResetter 0x8
+AreaEvent(0x9,TestEncounter,7,4,11,8)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [20,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Enemies:
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [7,0] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT
+
+
+ALIGN 4
+
+BeginningScene:
+InitializeNathan(1,1)
+ENUT 0x8
+EndEvent
+
+TestEncounter:
+ENUF 0x8
+CLEA 0
+LOAD3 0x0 Encounter1Units
+ENUN
+EndEvent
+
+
+EndingScene:
+MNC3 Stratum1F3
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

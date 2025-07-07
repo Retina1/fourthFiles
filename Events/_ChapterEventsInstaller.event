@@ -113,6 +113,12 @@ EndEvent
 {
 #include "City/HirschringSquare.event"
 }
+{
+#include "Dungeons/LethalForest1.event"
+}
+{
+#include "Dungeons/LethalForest2.event"
+}
 //dungeon FOES
 //dungeon fights use initial strike/resounding weapons/shiver
 //lethal forest: lv 10 triwolf

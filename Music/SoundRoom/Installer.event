@@ -45,6 +45,8 @@ SoundRoomEntry(Song_DyedInBlood, SongTitle_DyedInBlood, SourceTitle_EtrianOdysse
 SoundRoomEntry(Song_HeroicStruggle, SongTitle_HeroicStruggle, SourceTitle_LiveALive,6)
 SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
 SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)
+SoundRoomEntry(Song_ArmorCladFaith, SongTitle_ArmorCladFaith, SourceTitle_GuiltyGearStrive,27)
+SoundRoomEntry(Song_ModernDayOuroboros, SongTitle_ModernDayOuroboros, SourceTitle_LisaThePointless,28)
 SoundRoomEntry(Song_NoOneIsAlone, SongTitle_NoOneIsAlone, SourceTitle_IntoTheWoods,15)
 //somewhere probably player phase
 SoundRoomEntry(Song_LuckyBreak, SongTitle_LuckyBreak, SourceTitle_RhythmDoctor,11)
@@ -59,6 +61,7 @@ SoundRoomEntry(Song_ExcavationWorkersQuarters, SongTitle_ExcavationWorkersQuarte
 SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOdyssey5,9)
 //combat
 SoundRoomEntry(Song_InitialStrike, SongTitle_InitialStrike, SourceTitle_EtrianOdyssey,25)
+SoundRoomEntry(Song_Fracas, SongTitle_Fracas, SourceTitle_Original,29)
 
 //boss
 SoundRoomEntry(Song_Rhapsody, SongTitle_Rhapsody, SourceTitle_OrderOfEcclesia,5)
