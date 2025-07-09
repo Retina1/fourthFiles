@@ -17,6 +17,8 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "Misc/HealAmounts.c"
 #include "Durability/PerChapterItems.c"
 #include "StatPassives/StatPassives.c"
+#include "WaitEventTraps/WaitEventTraps.c"
+#include "WaitEventTraps/TilemapBorders.c"
 
 /*
 inline int GetUnitMaxHp(struct Unit* unit) {
@@ -134,6 +136,20 @@ void ExecSaveItem(ProcPtr proc) {
     BeginLightRuneMapAnim(proc, gActionData.xMove, gActionData.yMove);
 
     gBattleTarget.statusOut = -1;
+
+    struct Trap* trap;
+
+    for (trap = GetTrap(0); trap->type != TRAP_NONE; ++trap)
+    {
+        switch (trap->type)
+        {
+
+        case TRAP_LIGHT_RUNE:
+            TilemapBordersLightRunes(trap->xPos,trap->yPos);
+            break;
+
+        }
+    }
 
     return;
 }

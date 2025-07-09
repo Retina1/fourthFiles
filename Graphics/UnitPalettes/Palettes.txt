@@ -7,6 +7,8 @@ Gore_Dragoon
 Guildmaster_Highlander
 CoastKid_Swordfighter
 CoastKid_Landsknecht
+Puzon_Swordfighter
+Puzon_Landsknecht
 Drogo_Knight
 Drogo_Hoplite
 Tristao_Axefighter

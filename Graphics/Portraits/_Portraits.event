@@ -66,6 +66,12 @@ setMugEntry(MonkMug,MonkDMP,3,6,3,4)
 
 
 ALIGN 4
+//auri
+AuriDMP:
+#incbin "dmps/iciAuri.dmp"
+setMugEntry(AuriMug,AuriDMP,3,6,3,4)
+
+ALIGN 4
 //space
 JulietteDMP:
 #incbin "dmps/spaceJuliette.dmp"

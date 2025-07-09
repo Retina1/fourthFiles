@@ -11,6 +11,7 @@
 #define PicnicModeFlag 0xaf
 
 //flags for each chapter's base
+#define WaitEventTrapsFlag 0x8a
 #define Chapter2DoneFlag 0x8b
 #define Chapter3DoneFlag 0x8c
 #define Stratum1DoneFlag 0x8d

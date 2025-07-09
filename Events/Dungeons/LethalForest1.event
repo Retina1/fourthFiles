@@ -37,7 +37,9 @@ AFEV 0x0 MoveResetter 0x6
 AreaEvent(0x0,EndingScene,0,0,2,1)
 AreaEvent(0x9,Encounter1,14,8,20,14)
 AreaEvent(0xa,Encounter2,17,0,24,6)
-AFEV 0x8 UnitCleanup 0x6
+AreaEvent(0xb,Encounter3,6,8,11,13)
+AreaEvent(0xc,Encounter4,0,5,5,15)
+AFEV WaitEventTrapsFlag UnitCleanup 0x6
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -90,9 +92,43 @@ Encounter2Enemies:
 //air scales blind
 //make infliction weapons use weapon-dependent rates (byte 21? 23?)
 UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [23,0] 0x0 0x0 0x0 0x0 [AirScales] NoAI
-UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [24,1] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [24,1] 0x0 0x0 0x0 0x0 [AirScales] NoAI
 UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [22,2] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [17,2] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT
+
+Encounter3Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter3Enemies:
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [8,11] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [9,10] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [10,11] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [11,10] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT
+
+Encounter4Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter4Enemies:
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [1,6] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [2,7] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [1,10] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(4,Enemy,1) [2,11] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [3,5] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
 UNIT
 
 
@@ -105,22 +141,45 @@ CLEA 0
 //that'll clean it up
 InitializeNathan(12,18)
 //initialize flag so we don't have a first screen flash
-ENUT 0x8
+ENUT WaitEventTrapsFlag
 EndEvent
 
 Encounter1:
-ENUF 0x6; ENUF 0x8; FADI 16; CLEA 0
+ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
 LOAD3 0x0 Encounter1Units; ENUN
 LOAD1 0x0 Encounter1Enemies; ENUN
+CreateArenaBorders(13,8,21,15)
 FADU 16
 MUSC Song_InitialStrike
 SetMapBGM(Song_InitialStrike)
 EndEvent
 
 Encounter2:
-ENUF 0x6; ENUF 0x8; FADI 16; CLEA 0
+ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
 LOAD3 0x0 Encounter2Units; ENUN
 LOAD1 0x0 Encounter2Enemies; ENUN
+CreateArenaSingleCorner(14,8)
+FADU 16
+MUSC Song_InitialStrike
+SetMapBGM(Song_InitialStrike)
+EndEvent
+
+Encounter3:
+ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+LOAD3 0x0 Encounter3Units; ENUN
+LOAD1 0x0 Encounter3Enemies; ENUN
+CreateArenaBorders(6,6,14,12)
+FADU 16
+MUSC Song_InitialStrike
+SetMapBGM(Song_InitialStrike)
+EndEvent
+
+Encounter4:
+ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+LOAD3 0x0 Encounter4Units; ENUN
+LOAD1 0x0 Encounter4Enemies; ENUN
+CreateArenaSingleCorner(5,4)
+CreateArenaSingleCorner(5,15)
 FADU 16
 MUSC Song_InitialStrike
 SetMapBGM(Song_InitialStrike)
@@ -128,6 +187,7 @@ EndEvent
 
 UnitCleanup:
 FADI 16
+ClearArenaBorders
 CLEA 0
 ResetNathan
 FADU 16

@@ -7,7 +7,9 @@
 #define Guildmaster_Highlander 0x7
 #define CoastKid_Swordfighter 0x8
 #define CoastKid_Landsknecht 0x9
-#define Drogo_Knight 0xA
-#define Drogo_Hoplite 0xB
-#define Tristao_Axefighter 0xC
-#define Tristao_Gladiator 0xD
+#define Puzon_Swordfighter 0xA
+#define Puzon_Landsknecht 0xB
+#define Drogo_Knight 0xC
+#define Drogo_Hoplite 0xD
+#define Tristao_Axefighter 0xE
+#define Tristao_Gladiator 0xF

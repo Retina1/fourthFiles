@@ -40,6 +40,12 @@
 #define SFXKillUnit(unit) "SET_SOMETHING unit; DISA unit"
 #define DisaIfDead(unit) "CHECK_ALIVE unit; BNE unit 0xc 0x0; DISA unit; LABEL unit"
 #define CallPreps "CALL $591FD8"
+#define RefreshLightRunes "ASMC 0x080271A1"
+
+#define CreateArenaBorders(x1,y1,x2,y2) "SVAL 0x1 x1; SVAL 0x2 x2; SVAL 0x3 y1; SVAL 0x4 y2; ASMC TilemapBordersASMC|1;  AddTrap(LightRuneTrapID,x1,y1);AddTrap(LightRuneTrapID,x2,y1);AddTrap(LightRuneTrapID,x1,y2);AddTrap(LightRuneTrapID,x2,y2);RefreshLightRunes"
+#define CreateArenaSingleCorner(x,y) "SVAL 0x1 x; SVAL 0x2 y; ASMC TilemapBordersSingleCornerASMC|1;AddTrap(LightRuneTrapID,x,y);RefreshLightRunes"
+//second clears traps
+#define ClearArenaBorders "ASMC 0x0802E1C9; RefreshLightRunes;ASMC 0x8019A65"
 	
 #include "_BattleQuotes.event"
 #include "_DeathQuotes.event"

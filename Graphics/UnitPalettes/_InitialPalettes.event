@@ -8,6 +8,15 @@ CoastKid_SwordfighterDMP:
 ALIGN 4
 CoastKid_LandsknechtDMP:
 #incbin "paletteFiles/Initial/CoastKid_Landsknecht.dmp"
+setPalette(Puzon_Swordfighter, Puzon_SwordfighterDMP)
+setPalette(Puzon_Landsknecht, Puzon_LandsknechtDMP)
+CharPalette(Puzon,Puzon_Swordfighter,Swordfighter,Puzon_Landsknecht,Landsknecht)
+ALIGN 4
+Puzon_SwordfighterDMP:
+#incbin "paletteFiles/Initial/Puzon_Swordfighter.dmp"
+ALIGN 4
+Puzon_LandsknechtDMP:
+#incbin "paletteFiles/Initial/Puzon_Landsknecht.dmp"
 
 //kn
 setPalette(Drogo_Knight, Drogo_KnightDMP)

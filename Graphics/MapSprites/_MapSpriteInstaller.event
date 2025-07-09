@@ -254,8 +254,14 @@ MovingMapSprite(Airfly, AP1, AirflyMMS)
 
 
 #define SigilTrapMapSprite 0x3c
+#define LightRuneMapSprite 0x3d
 
 StandingMapSprite(SigilTrapMapSprite,MapSprite16x16,SigilSMS)
+StandingMapSprite(LightRuneMapSprite,MapSprite16x16,LightRuneSMS)
+
+ALIGN 4
+LightRuneSMS:
+#incbin "Dmp/Save Points {serif}-stand.dmp"
 
 ALIGN 4
 AirflySMS:

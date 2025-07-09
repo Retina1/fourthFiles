@@ -17,6 +17,7 @@
 	#define SigilTrapID 0x11
 	#define RedSigilTrapID 0x12
 	#define GreenSigilTrapID 0x13
+	#define GreySigilTrapID 0x14
 	
 	#define LightRuneTrapPaletteWord 0xFFFFB080
 	#define PlayerTrapPaletteWord 0xFFFFC080
@@ -52,6 +53,7 @@
 	SetTrapEventInit(SigilTrapID,TrapRework_GenericInitializer)
 	SetTrapEventInit(RedSigilTrapID,TrapRework_GenericInitializer)
 	SetTrapEventInit(GreenSigilTrapID,TrapRework_GenericInitializer)
+	SetTrapEventInit(GreySigilTrapID,TrapRework_GenericInitializer)
 	
 	
 	#define SetTrapMapSprite(trapID,mapSpriteID) "PUSH; ORG TrapMapSpriteTable+(trapID-1); BYTE mapSpriteID; POP"
@@ -69,10 +71,11 @@
 	SetTrapMapSprite(TorchStaffTrapID,0)
 	SetTrapMapSprite(MineTrapID,SigilTrapMapSprite)
 	SetTrapMapSprite(GorgonEggTrapID,0)
-	SetTrapMapSprite(LightRuneTrapID,0x66) //light rune map sprite
+	SetTrapMapSprite(LightRuneTrapID,LightRuneMapSprite) //light rune map sprite
 	SetTrapMapSprite(SigilTrapID,SigilTrapMapSprite)
 	SetTrapMapSprite(RedSigilTrapID,SigilTrapMapSprite)
 	SetTrapMapSprite(GreenSigilTrapID,SigilTrapMapSprite)
+	SetTrapMapSprite(GreySigilTrapID,SigilTrapMapSprite)
 	
 	//Macro for setting unique cases on trap map sprites
 	#define SetTrapMapSpriteFunc(trapID,ptr) "PUSH; ORG (TrapMapSpriteFuncTable+((trapID-1)*4)); POIN ptr; POP"
@@ -82,12 +85,14 @@
 
 	#define SetTrapMapSpritePalette(trapID,paletteWord) "PUSH; ORG TrapMapSpritePaletteTable+(4*(trapID-1)); WORD paletteWord; POP"
 	
-	SetTrapMapSpritePalette(LightRuneTrapID,LightRuneTrapPaletteWord)
+	//SetTrapMapSpritePalette(LightRuneTrapID,LightRuneTrapPaletteWord)
+	SetTrapMapSpritePalette(LightRuneTrapID,PlayerTrapPaletteWord)
 	SetTrapMapSpritePalette(SigilTrapID,PlayerTrapPaletteWord)
 	SetTrapMapSpritePalette(RedSigilTrapID,EnemyTrapPaletteWord)
 	//visible mines
 	SetTrapMapSpritePalette(MineTrapID,GreyTrapPaletteWord)
 	SetTrapMapSpritePalette(GreenSigilTrapID,NPCTrapPaletteWord)
+	SetTrapMapSpritePalette(GreySigilTrapID,GreyTrapPaletteWord)
 	
 	
 
@@ -142,6 +147,7 @@
 	#define BlueSigil(x,y) "MapSpriteTrap(SigilTrapID,x,y)"
 	#define RedSigil(x,y) "MapSpriteTrap(RedSigilTrapID,x,y)"
 	#define GreenSigil(x,y) "MapSpriteTrap(GreenSigilTrapID,x,y)"
+	#define GreySigil(x,y) "MapSpriteTrap(GreySigilTrapID,x,y)"
 	
 	//This is here to satiate a hardcoded requirement if heal tiles are not installed.
 	#ifndef HEAL_TILES

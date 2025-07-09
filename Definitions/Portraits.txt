@@ -166,6 +166,7 @@ HaustenMug
 SarinaMug
 JulietteMug
 DaiMug
+AuriMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

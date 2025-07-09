@@ -1,0 +1,28 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.1.0.0                              //
+// Game: FE8                                      //
+// File: Fourthhack.event_assembler.gba           //
+// Offset: $10BA610                               //
+//                                                //
+////////////////////////////////////////////////////
+
+
+
+ORG $10BA610
+SET_ACTIVE 0x0
+SVAL 0x2 0x1
+CALL 0x9EE51C
+WM_WAITFORFX
+CAM1 [13,4]
+WM_WAITFORCAM
+SVAL 0xB 0x4000D
+WARP_IN
+STAL 20
+_WARP 0xFFFF 0x1 [13,4]
+ENUN
+EVBIT_T 0x7
+ENDA
+

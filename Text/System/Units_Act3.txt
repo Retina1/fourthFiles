@@ -27,6 +27,13 @@ Dai[X]
 A wandering warrior and dragonslayer.[N]
 He's vengeance-driven yet friendly.[X]
 
+//ici
+##Name_Auri
+Auri[X]
+##Desc_Auri
+A reckless yet loyal adventurer taken[N]
+in by Asketa. She's eager to destroy.[X]
+
 // secret lock - automata unit: artifice
 
 //subtractron by retina (artifice)
