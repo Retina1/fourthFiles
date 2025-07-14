@@ -42,6 +42,8 @@ between stats and growths.[X]
 #include "City/CityChapter03.txt"
 #include "City/CityGeneral.txt"
 
+#include "Dungeons/_System.txt"
+
 #include "Guild/Initial/Swordfighters.txt"
 #include "Guild/Initial/Knights.txt"
 #include "Guild/Initial/Axefighters.txt"
@@ -69,6 +71,18 @@ between stats and growths.[X]
 #include "Guild/Upper/Duelists.txt"
 #include "Guild/ImpArt/Drivers.txt"
 #include "Guild/ImpArt/Artifices.txt"
+
+## StaffExpLabel
+EXP[X]
+
+## StaffWexpLabel
+WEXP[X]
+
+## RankCurrentLabel
+WEXP[X]
+
+## RankNextLabel
+Rank Up[X]
 
 ## HealArrowText
 ->[X]
@@ -150,6 +164,29 @@ is no more than unit's Aid.[X]
 #0x552
 Condition: Any status effect[N]
 impacting the current unit.[X]
+
+# 0x0553
+Poison: Poisoned units take[N]
+(Max HP / 5) + 5 damage[N]
+at turn's start. Can kill.[X]
+
+# 0x0554
+Sleep: Asleep units can't dodge,[N]
+take 1.5x damage, and wake up[N]
+after being attacked.[X]
+
+# 0x0555
+Berserk: Berserk units will attack[N]
+any unit in range, whether that[N]
+be a friend or a foe.[X]
+
+# 0x0556
+idk we're reworking silence[X]
+
+# 0x0557
+Petrify: Petrified units can't[N]
+dodge or act, and face 1.5x[N]
+crit from all attacks.[X]
 
 # 0x0561
 Slash mastery level.[X]

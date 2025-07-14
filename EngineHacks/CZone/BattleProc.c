@@ -1,3 +1,7 @@
+inline int GetItemStatusOdds(int item) {
+    return GetItemData(ITEM_INDEX(item))->ailmentRate;
+}
+
 void BattleApplyStatus(struct BattleUnit* battleUnit, u8 status) {
 	battleUnit->statusOut = status;
 	gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_12;
@@ -37,7 +41,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 
         case WPN_EFFECT_POISON:
             // Poison defender
-			if (StatusOddsRollBattle(attacker, defender, 50)){
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 				defender->statusOut = UNIT_STATUS_POISON;
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
 				// "Ungray" defender if it was petrified (as it won't be anymore
@@ -52,7 +56,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 			
 		
         case WPN_EFFECT_PETRIFY:
-			if (StatusOddsRollBattle(attacker, defender, 30)){
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 				defender->statusOut = UNIT_STATUS_PETRIFY;
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_PETRIFY;
 			}

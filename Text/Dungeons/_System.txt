@@ -1,0 +1,16 @@
+##NextFloorOneWay
+Proceed to next floor?[N]
+There's no turning back.[N]
+[No][X]
+
+##FOEWarning
+You feel your life is at risk.[N]
+It's not too late to turn back.[N]
+...Proceed on ahead anyway?[N]
+[No][X]
+
+##SuperbossWarning
+An immensely dangerous presence lies[N]
+ahead. It's not too late to turn back.[N]
+...Proceed on ahead anyway?[N]
+[No][X]

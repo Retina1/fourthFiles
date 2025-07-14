@@ -163,14 +163,23 @@ SongTable(Song_ModernDayOuroboros,ModernDayOuroboros,1)
 SongTable(Song_Fracas,Fracas,0)
 #include "songs/Fracas.event"
 }
-
-
 //promo is 0x23, healing is 21/22
+//0x24
+#define Song_IsThatBloodThine 0x24
+{
+SongTable(Song_IsThatBloodThine,IsThatBloodThine,1)
+#include "songs/IsThatBloodThine.event"
+}
+#define Song_EndOfRagingWaves 0x25
+{
+SongTable(Song_EndOfRagingWaves,EndOfRagingWaves,1)
+#include "songs/EndOfRagingWaves.event"
+}
 
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36
 {
-SongTable(Song_DrawHeroes,DrawHeroes,0)
+SongTable(Song_DrawHeroes,DrawHeroes,1)
 #include "songs/DrawHeroes.event"
 }
 

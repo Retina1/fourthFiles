@@ -6,3 +6,11 @@
 #define City1PAL 0x6
 #define Tavern1OBJ 0x7
 #define Tavern1PAL 0x8
+#define Metropolis1OBJ 0x9
+#define Metropolis1PAL 0xA
+#define Mineshaft1OBJ 0xB
+#define Mineshaft1PAL 0xC
+#define Caves1OBJ 0xD
+#define Caves1PAL 0xE
+#define Frontier1OBJ 0xF
+#define Frontier1PAL 0x10

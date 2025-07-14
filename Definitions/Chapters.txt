@@ -69,3 +69,16 @@ HirschringSquare
 Guildhall
 Blacksmith
 Tavern
+NorthernPass
+Museum
+BlackMarket
+ShadyRow
+DuelingGrounds
+Shadesong
+ImperialPost
+MinisterPark
+RiverHirsch
+EmeraldGrove
+Underground
+Gamerspace
+ImperialCourtyard

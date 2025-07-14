@@ -48,3 +48,8 @@ Hallowed[X]
 ##Desc_Hallowed
 An artificial being, sculpted within[N]
 the walls of the Hallowed Armory.[X]
+##Name_FOE
+F.O.E.[X]
+##Desc_FOE
+A mighty Flammeus Obstaculum Exemplum,[N]
+far too dangerous for most explorers.[X]

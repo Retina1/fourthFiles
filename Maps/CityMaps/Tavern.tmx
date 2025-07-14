@@ -9,7 +9,7 @@
    <property name="Anims2" value="0"/>
    <property name="ChapterID" value="Tavern"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="TavernMapChangeID"/>
+   <property name="MapChangesID" value="0"/>
    <property name="MapID" value="TavernMapID"/>
    <property name="ObjectType" value="Tavern1OBJ"/>
    <property name="PaletteID" value="Tavern1PAL"/>

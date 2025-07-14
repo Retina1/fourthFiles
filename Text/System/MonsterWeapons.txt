@@ -21,11 +21,18 @@ A monster's gaze, mighty as a spell.[X]
 ##Name_AirScales
 Air Scales[X]
 ##Desc_AirScales ^
-Scattered monster scales that can blind.[X]
+Scattered monster scales that can blind.[N]
+Base Blind Affliction Rate: 60%.[X]
 ##Name_VenomScales
 Venom Scls.[X]
 ##Desc_VenomScales ^
-Deadly monster scales that can poison.[X]
+Deadly monster scales that can poison.[N]
+Base Poison Affliction Rate: 70%.[X]
+##Name_AtrocityScales
+Atrocity Sc.[X]
+##Desc_AtrocityScales ^
+Abominable monster scales that will poison.[N]
+Base Poison Affliction Rate: 250%.[X]
 
 ##Name_ScissorWrath ^
 Scissor Wrath[X]

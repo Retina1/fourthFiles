@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="15" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
  <tileset firstgid="1" name="27006D2D" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="01000201.png" trans="ffffff" width="512" height="512"/>
+  <image source="01000201 (2).png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Tile Layer 1" width="15" height="16">
   <properties>
@@ -9,7 +9,7 @@
    <property name="Anims2" value="0"/>
    <property name="ChapterID" value="Guildhall"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="GuildhallMapChangeID"/>
+   <property name="MapChangesID" value="0"/>
    <property name="MapID" value="GuildhallMapID"/>
    <property name="ObjectType" value="Village1OBJ"/>
    <property name="PaletteID" value="Village1PAL"/>

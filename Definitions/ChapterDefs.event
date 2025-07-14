@@ -69,3 +69,16 @@
 #define Guildhall 0x44
 #define Blacksmith 0x45
 #define Tavern 0x46
+#define NorthernPass 0x47
+#define Museum 0x48
+#define BlackMarket 0x49
+#define ShadyRow 0x4A
+#define DuelingGrounds 0x4B
+#define Shadesong 0x4C
+#define ImperialPost 0x4D
+#define MinisterPark 0x4E
+#define RiverHirsch 0x4F
+#define EmeraldGrove 0x50
+#define Underground 0x51
+#define Gamerspace 0x52
+#define ImperialCourtyard 0x53

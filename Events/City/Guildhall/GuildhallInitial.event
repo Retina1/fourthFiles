@@ -270,6 +270,7 @@ SVAL 0x1 5
 BNE 0x2005 0xc 0x1
 CALL GuildhallLoadCurates
 GOTO 0x2008
+LABEL 0x2005
 SystemText(ErrorHandlerText)
 LABEL 0x2008
 ENDA

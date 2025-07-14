@@ -534,13 +534,16 @@ push    {r4,r5,r14}
 mov     r4,r0
 cmp     r4,#0x0                 @if negative number -> nodata_text
 blt     nodata_text
+
+@reorg lmao
+b       chapter_text
+
 cmp     r4,#0x55                @Epilogue
 beq     epilogue_text
 cmp     r4,#0x57                @Creature Campaign
 beq     postgame_text
 cmp     r4,#0x46                @world map skirmishes
 bge     worldmap_node_text
-b       chapter_text
 
 nodata_text:
 mov     r0,#0xCC      @NO DATA	{U}

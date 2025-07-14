@@ -3,3 +3,7 @@
 #define CityCONFIG 0x3
 #define GuildhallCONFIG 0x4
 #define TavernCONFIG 0x5
+#define MetropolisCONFIG 0x6
+#define MineshaftCONFIG 0x7
+#define CavesCONFIG 0x8
+#define FrontierCONFIG 0x9

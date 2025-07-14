@@ -9,7 +9,7 @@
    <property name="Anims2" value="0"/>
    <property name="ChapterID" value="HirschringSquare"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="HirschringSquareMapChangeID"/>
+   <property name="MapChangesID" value="0"/>
    <property name="MapID" value="HirschringSquareMapID"/>
    <property name="ObjectType" value="City1OBJ"/>
    <property name="PaletteID" value="City1PAL"/>

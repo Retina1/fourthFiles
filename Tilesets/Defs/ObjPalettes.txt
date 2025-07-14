@@ -6,3 +6,11 @@ City1OBJ
 City1PAL
 Tavern1OBJ
 Tavern1PAL
+Metropolis1OBJ
+Metropolis1PAL
+Mineshaft1OBJ
+Mineshaft1PAL
+Caves1OBJ
+Caves1PAL
+Frontier1OBJ
+Frontier1PAL

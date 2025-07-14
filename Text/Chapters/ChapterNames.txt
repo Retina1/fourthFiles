@@ -28,6 +28,32 @@ Guildhall[X]
 Blacksmith[X]
 ##Name_Tavern
 Bobby's Tavern[X]
+##Name_North
+Northern Pass[X]
+##Name_Museum
+Clairiosities[X]
+##Name_BlackMarket
+Black Market[X]
+##Name_Shady
+Shady Row[X]
+##Name_Dueling
+Dueling Grounds[X]
+##Name_Shadesong
+Shadesong[X]
+##Name_Post
+Imperial Post[X]
+##Name_Park
+Minister's Park[X]
+##Name_RiverHirsch
+River Hirsch[X]
+##Name_Grove
+Emerald Grove[X]
+##Name_Underground
+Underground[X]
+##Name_Gamerspace
+Gamerspace[X]
+##Name_Courtyard
+Imperial Courtyard[X]
 
 ##Name_Act1
 Act 1: Catching at Dreams[X]

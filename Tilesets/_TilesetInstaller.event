@@ -118,3 +118,55 @@ Tavern1Tiles:
 TileConfigPointerTable(TavernCONFIG, Tavern1Tiles)
 ObjTypePalettePointerTable(Tavern1OBJ, TavernObjects)
 ObjTypePalettePointerTable(Tavern1PAL, Tavern1Palette)
+
+ALIGN 4
+MetropolisObjects:
+#incbin "Metropolis1.dmp"
+ALIGN 4
+Metropolis1Palette:
+#incbin "Metropolis1_pal.dmp"
+ALIGN 4
+Metropolis1Tiles:
+#incext compress "Metropolis.mapchip_config"
+TileConfigPointerTable(MetropolisCONFIG, Metropolis1Tiles)
+ObjTypePalettePointerTable(Metropolis1OBJ, MetropolisObjects)
+ObjTypePalettePointerTable(Metropolis1PAL, Metropolis1Palette)
+
+ALIGN 4
+MineshaftObjects:
+#incbin "Mineshaft1.dmp"
+ALIGN 4
+Mineshaft1Palette:
+#incbin "Mineshaft1_pal.dmp"
+ALIGN 4
+Mineshaft1Tiles:
+#incext compress "Mineshaft.mapchip_config"
+TileConfigPointerTable(MineshaftCONFIG, Mineshaft1Tiles)
+ObjTypePalettePointerTable(Mineshaft1OBJ, MineshaftObjects)
+ObjTypePalettePointerTable(Mineshaft1PAL, Mineshaft1Palette)
+
+ALIGN 4
+CavesObjects:
+#incbin "Caves1.dmp"
+ALIGN 4
+Caves1Palette:
+#incbin "Caves1_pal.dmp"
+ALIGN 4
+Caves1Tiles:
+#incext compress "Caves.mapchip_config"
+TileConfigPointerTable(CavesCONFIG, Caves1Tiles)
+ObjTypePalettePointerTable(Caves1OBJ, CavesObjects)
+ObjTypePalettePointerTable(Caves1PAL, Caves1Palette)
+
+ALIGN 4
+FrontierObjects:
+#incbin "Frontier1.dmp"
+ALIGN 4
+Frontier1Palette:
+#incbin "Frontier1_pal.dmp"
+ALIGN 4
+Frontier1Tiles:
+#incext compress "Frontier.mapchip_config"
+TileConfigPointerTable(FrontierCONFIG, Frontier1Tiles)
+ObjTypePalettePointerTable(Frontier1OBJ, FrontierObjects)
+ObjTypePalettePointerTable(Frontier1PAL, Frontier1Palette)

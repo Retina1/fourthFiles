@@ -57,3 +57,38 @@ void TilemapBordersLightRunes(s8 x,s8 y) {
 		yCursor++;
 	}
 }
+
+void RefreshAllLightRunes(void)
+{
+    struct Trap* trap;
+
+    for (trap = GetTrap(0); trap->type != TRAP_NONE; ++trap)
+    {
+        switch (trap->type)
+        {
+
+        case TRAP_LIGHT_RUNE:
+            gBmMapTerrain[trap->yPos][trap->xPos] = TERRAIN_TILE_00;
+			TilemapBordersLightRunes(trap->xPos,trap->yPos);
+            break;
+
+        }
+    }
+}
+
+void ClearLightRunes(void)
+{
+    struct Trap* trap;
+
+    for (trap = GetTrap(0); trap->type != TRAP_NONE; ++trap)
+    {
+        switch (trap->type)
+        {
+
+        case TRAP_LIGHT_RUNE:
+            trap->type = TRAP_NONE;
+            break;
+
+        }
+    }
+}

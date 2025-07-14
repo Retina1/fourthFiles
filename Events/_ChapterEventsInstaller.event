@@ -45,8 +45,10 @@
 #define CreateArenaBorders(x1,y1,x2,y2) "SVAL 0x1 x1; SVAL 0x2 x2; SVAL 0x3 y1; SVAL 0x4 y2; ASMC TilemapBordersASMC|1;  AddTrap(LightRuneTrapID,x1,y1);AddTrap(LightRuneTrapID,x2,y1);AddTrap(LightRuneTrapID,x1,y2);AddTrap(LightRuneTrapID,x2,y2);RefreshLightRunes"
 #define CreateArenaSingleCorner(x,y) "SVAL 0x1 x; SVAL 0x2 y; ASMC TilemapBordersSingleCornerASMC|1;AddTrap(LightRuneTrapID,x,y);RefreshLightRunes"
 //second clears traps
-#define ClearArenaBorders "ASMC 0x0802E1C9; RefreshLightRunes;ASMC 0x8019A65"
-	
+#define ClearArenaBorders "ASMC ClearLightRunes|1; RefreshLightRunes; ASMC 0x8019A65"
+
+#define WarpNathan(x,y)	"SET_ACTIVE Nathan; SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX; CAM1 [x,y]; WM_WAITFORCAM; SVAL 0xB y*0x10000+x; WARP_IN; STAL 20; MOVE 0xFFFF Nathan [x,y]; ENUN; WM_WAITFORFX; STAL 12; NathanIsHere"
+
 #include "_BattleQuotes.event"
 #include "_DeathQuotes.event"
 #include "_BossMusic.event"
@@ -125,11 +127,16 @@ EndEvent
 {
 #include "Dungeons/LethalForest2.event"
 }
+
+{
+#include "Dungeons/ShimmeringMines1.event"
+}
+
 //dungeon FOES
 //dungeon fights use initial strike/resounding weapons/shiver
-//lethal forest: lv 10 triwolf
-//shimmering mines: lv 13 shieldlance gargantoyle
-//clouded wastes: lv 17 imposing axe centinel
+//lethal forest: lv 5 triwolf
+//shimmering mines: lv 10 shieldlance gargantoyle
+//clouded wastes: lv 15 imposing axe centinel
 
 //drain scroll callers in endbringer chapters (ch5)
 

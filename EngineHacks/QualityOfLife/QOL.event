@@ -9,4 +9,7 @@
 #include "DrawMapActionAnimation/Installer.event"
 #include "SupplyView/SupplyView.event"
 #include "UpdatedLButtonCycling/Installer.event"
+#include "UnitMenuUpdateWarningCache/UnitMenuUpdateWarningCache.event"
 #include "BigPromos/HigherNumberGains.event"
+#include "HelpText/Installer.event"
+#include "RW Cloud Fix\Cloud_Fix_EA.event"

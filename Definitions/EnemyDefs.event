@@ -1,3 +1,4 @@
+#define FOEUnit 0xD7
 #define Bertram 0xD8
 #define Ayda 0xD9
 #define Gerson 0xDA

@@ -141,7 +141,7 @@ UNIT
 #define RunEventByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x718C 0x0 0xc; CALL ch18C; GOTO 0x7000; LABEL 0x718C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x718B 0x0 0xc; CALL ch18B; GOTO 0x7000; LABEL 0x718B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x718A 0x0 0xc; CALL ch18A; GOTO 0x7000; LABEL 0x718A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x7160 0x0 0xc; CALL ch16; GOTO 0x7000; LABEL 0x7160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x7150 0x0 0xc; CALL ch15; GOTO 0x7000; LABEL 0x7150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x7130 0x0 0xc; CALL ch13; GOTO 0x7000; LABEL 0x7130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x713A 0x0 0xc; CALL chS3; GOTO 0x7000; LABEL 0x713A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x7100 0x0 0xc; CALL ch10; GOTO 0x7000; LABEL 0x7100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x7090 0x0 0xc; CALL ch9; GOTO 0x7000; LABEL 0x7090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x7080 0x0 0xc; CALL ch8; GOTO 0x7000; LABEL 0x7080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x7050 0x0 0xc; CALL ch5; GOTO 0x7000; LABEL 0x7050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x703a 0x0 0xc; CALL chS1; GOTO 0x7000; LABEL 0x703a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x7030 0x0 0xc; CALL ch3; GOTO 0x7000; LABEL 0x7030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x7020 0x0 0xc; CALL ch2; GOTO 0x7000; LABEL 0x7020; LABEL 0x7000"
 #define MoveToNextChapter(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15) "CHECK_EVENTID Chapter15DoneFlag; BEQ 0x6150 0x0 0xc; MNC2 ch15; GOTO 0x6000; LABEL 0x6150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x6130 0x0 0xc; MNC2 ch13; GOTO 0x6000; LABEL 0x6130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x613A 0x0 0xc; MNC2 chS3; GOTO 0x6000; LABEL 0x613A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x6100 0x0 0xc; MNC2 ch10; GOTO 0x6000; LABEL 0x6100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x6090 0x0 0xc; MNC2 ch9; GOTO 0x6000; LABEL 0x6090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x6080 0x0 0xc; MNC2 ch8; GOTO 0x6000; LABEL 0x6080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x6050 0x0 0xc; MNC2 ch5; GOTO 0x6000; LABEL 0x6050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x603a 0x0 0xc; MNC2 chS1; GOTO 0x6000; LABEL 0x603a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x6030 0x0 0xc; MNC2 ch3; GOTO 0x6000; LABEL 0x6030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x6020 0x0 0xc; MNC2 ch2; GOTO 0x6000; LABEL 0x6020; LABEL 0x6000"
 
-#define LoadVenderSecond "CHECK_EVENTID Chapter15DoneFlag; BNE 0x3333 0xc 0x0; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3333 0xc 0x0; CHECK_EVENTID StandardUnlockedFlag; BNE 0x3333 0xc 0x0; LOAD1 0x1 TownVendorSecondUnit; ENUN; LABEL 0x3333"
+#define LoadVendorSecond "CHECK_EVENTID Chapter15DoneFlag; BNE 0x3333 0xc 0x0; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3333 0xc 0x0; CHECK_EVENTID StandardUnlockedFlag; BNE 0x3333 0xc 0x0; LOAD1 0x1 TownVendorSecondUnit; ENUN; LABEL 0x3333"
 #define LoadMagusUnlocker "CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3334 0xc 0x0; CHECK_EVENTID MagusUnlockedFlag; BNE 0x3334 0xc 0x0; LOAD1 0x1 MagusUnlockerUnit; ENUN; LABEL 0x3334"
 
 //#define LoadAtChapterIfAlive(unit,flagID,unitGroup,label) "CHECK_ALIVE unit; BEQ label 0xc 0x0; CHECK_EVENTID flagID; BEQ label 0xc 0x0; CHECK_EVENTID flagID+1; BNE label 0xc 0x0; LOAD1 0x1 unitGroup; LABEL label"
@@ -203,7 +203,7 @@ EndEvent
 
 LoadPostPrepsUnits:
 LoadUnitsByVisit(Chapter2SquareUnitsBlues,Chapter3SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0)
-LoadVenderSecond
+LoadVendorSecond
 ENDA
 
 SquareMoveToGuildhall:
@@ -238,6 +238,32 @@ EndEvent
 #include "Guildhall.event"
 #include "Blacksmith.event"
 #include "Tavern.event"
+//todo for chapter 3
+//give blacksmith variable shops by visit
+//intro quests (just 1 or 2 for now) in tavern
+//new outside area that has museum, street shops, connection to the park (with river and emeral grove)
+//street shops unlock black market if you do certain things
+//arena opens in 5x so no need for that yet
+/*
+3x
+northern pass - hustle and or bustle
+	merchant stalls - rare rotating goods, maybe not a separate building
+		black market - unlocked by buying garbage in the right order
+	claire's museum - bring her artifacts
+5x	
+the shades - seedy area
+	dueling grounds - out of duty training/bloodsport
+	shadesong - jazz club type place, maybe listen to rare music here (COME TO THE CA BA RET)
+	imperial post - peacekeeping
+8x	
+minister's park - classy plaza, holds lots of gossip
+	the gamer - the gamer
+	river hirsch - fish a bit, maybe find some good shit
+	emerald grove - outdoor public area
+		underground den - emmett's hole, he's some goober trying to dig into the hallowed armory
+10x
+imperial courtyard - meet with the prince
+*/
 
 #include "IntroEvents.event"
 #include "EndEvents.event"

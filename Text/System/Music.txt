@@ -24,6 +24,13 @@ Frozen Grounds (PacoScarso)[X]
 ##SongTitle_CherryTreesAndWings
 Cherry Trees and Wings[X]
 
+##SourceTitle_EtrianOdyssey3
+Etrian Odyssey III[X]
+##SongTitle_IsThatBloodThine ^
+Is That Blood Thine...? (PacoScarso)[X]
+##SongTitle_EndOfRagingWaves ^
+The End of Raging Waves (PacoScarso)[X]
+
 ##SourceTitle_EtrianOdyssey4
 Etrian Odyssey IV[X]
 ##SongTitle_FaithIsMyPillar

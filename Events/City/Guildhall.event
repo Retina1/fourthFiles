@@ -56,7 +56,7 @@ GuildhallMoveToSquare:
 SwapToMap(HirschringSquare,4,3)
 CALL LoadHirschringSigils
 LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0)
-LoadVenderSecond
+LoadVendorSecond
 FADU 10
 EndEvent
 

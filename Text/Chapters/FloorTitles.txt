@@ -28,8 +28,8 @@ Contrition[X]
 A Hail of[N]
 Empty Dreams[X]
 ##Floor_S3F4
-War's Long[N]
-Dormant Spark[X]
+The Boundless[N]
+Bitter Horizon[X]
 
 ##Floor_S4F1
 Courage Amidst[N]

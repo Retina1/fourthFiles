@@ -65,6 +65,10 @@ Map_Change_8:
   SHORT $110 $90 $114
 
 ALIGN 4
+Map_Change_9:
+  SHORT $110 $90 $114
+
+ALIGN 4
 MapChangesData:
   TileMap(0, 24, 5, 1, 1, Map_Change_0)
   TileMap(1, 0, 1, 1, 1, Map_Change_1)
@@ -75,6 +79,7 @@ MapChangesData:
   TileMap(6, 2, 16, 3, 1, Map_Change_6)
   TileMap(7, 0, 19, 3, 1, Map_Change_7)
   TileMap(8, 6, 19, 3, 1, Map_Change_8)
+  TileMap(9, 0, 10, 3, 1, Map_Change_9)
   TileMapEnd
 
 EventPointerTable(Stratum1F3MapChangeID, MapChangesData)

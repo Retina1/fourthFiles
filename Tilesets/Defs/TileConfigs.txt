@@ -3,3 +3,7 @@ FieldsCONFIG
 CityCONFIG
 GuildhallCONFIG
 TavernCONFIG
+MetropolisCONFIG
+MineshaftCONFIG
+CavesCONFIG
+FrontierCONFIG

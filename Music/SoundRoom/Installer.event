@@ -61,6 +61,8 @@ SoundRoomEntry(Song_ExcavationWorkersQuarters, SongTitle_ExcavationWorkersQuarte
 SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOdyssey5,9)
 //combat
 SoundRoomEntry(Song_InitialStrike, SongTitle_InitialStrike, SourceTitle_EtrianOdyssey,25)
+SoundRoomEntry(Song_IsThatBloodThine, SongTitle_IsThatBloodThine, SourceTitle_EtrianOdyssey3,30)
+SoundRoomEntry(Song_EndOfRagingWaves, SongTitle_EndOfRagingWaves, SourceTitle_EtrianOdyssey3,31)
 SoundRoomEntry(Song_Fracas, SongTitle_Fracas, SourceTitle_Original,29)
 
 //boss

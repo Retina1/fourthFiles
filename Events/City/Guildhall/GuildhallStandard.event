@@ -206,6 +206,7 @@ SVAL 0x1 3
 BNE 0x2003 0xc 0x1
 CALL GuildhallLoadGunners
 GOTO 0x2008
+LABEL 0x2003
 SystemText(ErrorHandlerText)
 LABEL 0x2008
 ENDA

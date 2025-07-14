@@ -72,6 +72,21 @@ SHORT Stratum6F8 Name_St6C
 
 SHORT HirschringSquare Label_City
 SHORT Guildhall Label_City
+SHORT Blacksmith Label_City
+SHORT Tavern Label_City
+SHORT NorthernPass Label_City
+SHORT Museum Label_City
+SHORT BlackMarket Label_City
+SHORT ShadyRow Label_City
+SHORT DuelingGrounds Label_City
+SHORT Shadesong Label_City
+SHORT ImperialPost Label_City
+SHORT MinisterPark Label_City
+SHORT RiverHirsch Label_City
+SHORT EmeraldGrove Label_City
+SHORT Underground Label_City
+SHORT Gamerspace Label_City
+SHORT ImperialCourtyard Label_City
 WORD 0x0
 
 ALIGN 4
