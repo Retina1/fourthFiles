@@ -20,6 +20,7 @@
 [Clear] = [ClearFace]
 [Close] = [CloseSpeechSlow]
 [Smile] = [ToggleSmile]
+[Guild] = [Tact]
 
 [HorseIcon] = [0x7B]
 [PegIcon] = [0x7D]

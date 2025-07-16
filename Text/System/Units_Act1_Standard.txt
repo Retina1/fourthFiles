@@ -96,7 +96,7 @@ Asketa. He thinks he's beset by ghosts.[X]
 Hart[X]
 ##Desc_Hart
 An unfiltered Asketan rider who fights[N]
-for his mother and sister's sake. [X]
+for his mother and sister's sake.[X]
 
 //mancalledm
 ##Name_Martin

@@ -77,6 +77,7 @@ enum {
     IA_LOCK_5         = (1 << 19),
     IA_LOCK_6         = (1 << 20),
     IA_LOCK_7         = (1 << 21),
+    IA_SOUL_SHIELD    = (1 << 22),
 
     // Helpers
     IA_REQUIRES_WEXP = (IA_WEAPON | IA_STAFF),

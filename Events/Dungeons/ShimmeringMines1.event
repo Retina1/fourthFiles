@@ -36,6 +36,7 @@ END_MAIN
 
 MiscBasedEvents:
 AFEV 0x0 MoveResetter 0x6
+AreaEvent(0x0,EndingScene,29,21,29,23)
 //AreaEvent(0xd,EncounterFOE,18,0,24,5)
 AreaEvent(0x0,Warp3_6,3,6)
 AreaEvent(0x0,Warp6_0,6,0)
@@ -116,8 +117,14 @@ SetMapBGM(0)
 EndEvent
 
 EndingScene:
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
 MNC3 Stratum2F2
-ENDA
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(28,22); FADU 16
+LABEL 0x2
+EndEvent
 
 Warp3_6:
 WarpNathan(3,12)

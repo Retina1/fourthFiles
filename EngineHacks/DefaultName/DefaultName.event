@@ -1,0 +1,33 @@
+
+ALIGN 4
+#define SetDefaultName(textID) "BYTE 0x40 0x0D ; SHORT textID; POIN DefaultNameFunction+1"
+DefaultNameFunction:
+#incbin "CopyTactName.dmp"
+
+//return 1 to slot C if match, use to refuse naming guild Piorin
+ALIGN 4
+#define CheckName(textID) "BYTE 0x40 0x0D ; SHORT textID; POIN CheckNameFunction+1"
+CheckNameFunction:
+#incbin "StrcmpTactName.dmp"
+
+/*
+naming event from tmgc
+ALIGN 4
+C19UnlimitedPowerEvent:
+EVBIT_MODIFY 3
+SetBackground(LowlandsRiverCG)
+MUSC S_Ameno
+Text(C19_Unlimited_Power)
+FADI 0x5
+CLEAN
+ASMC2 0x48281
+FADI 0x5
+CLEAN
+SetBackground(LowlandsRiverCG)
+Text(C19_Unlimited_Power2)
+LOAD1 0x1 C19Horatio
+FADI 0x5
+CLEAN
+NoFade
+ENDA
+*/

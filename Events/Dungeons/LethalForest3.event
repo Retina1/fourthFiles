@@ -3,7 +3,7 @@
 
 #include EAstdlib.event
 
-EventPointerTable(Stratum1F2EventsID,ThisChapter)
+EventPointerTable(Stratum1F3EventsID,ThisChapter)
 
 
 ALIGN 4
@@ -28,14 +28,21 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Chest(Bravant,16,13)
-Chest(Brightsword,21,2)
+Chest(RestoreScroll,24,5)
+Chest(Soma,0,1)
+Chest(Sabre,16,17)
 END_MAIN
 
 MiscBasedEvents:
 AFEV 0x0 MoveResetter 0x6
-AreaEvent(0x0,EndingScene,23,8,24,10)
-AreaEvent(0xd,EncounterFOE,18,0,24,5)
+AreaEvent(0x0,EndingScene,12,10)
+AreaEvent(0x0,Warp19_7,19,7)
+AreaEvent(0x0,Warp17_4,17,4)
+AreaEvent(0x0,Warp10_2,10,2)
+AreaEvent(0x0,Warp5_7,5,7)
+AreaEvent(0x0,Warp12_15,12,15)
+AreaEvent(0x0,Warp12_12,12,12)
+//AreaEvent(0xd,EncounterFOE,18,0,24,5)
 AFEV WaitEventTrapsFlag UnitCleanup 0x6
 CauseGameOverIfLordDies
 END_MAIN
@@ -52,7 +59,7 @@ ENDTRAP
 ALIGN 4
 
 Units:
-UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [24,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 EncounterFOEUnits:
@@ -75,7 +82,7 @@ UNIT
 ALIGN 4
 
 BeginningScene:
-InitializeNathan(1,1)
+InitializeNathan(24,9)
 ENUT WaitEventTrapsFlag
 EndEvent
 
@@ -107,14 +114,33 @@ SetMapBGM(Song_EverScarletForest)
 EndEvent
 
 EndingScene:
-SystemText(NextFloorOneWay)
+SystemText(CompleteDungeonSys)
 IfNoSelectedGoto(0x1)
-MNC3 Stratum1F3
+ENUT Stratum1DoneFlag
+MoveToChapter(HirschringSquare)
 GOTO 0x2
 LABEL 0x1
-FADI 16; InitializeNathan(22,9); FADU 16
+FADI 16; InitializeNathan(12,9); FADU 16
 LABEL 0x2
 EndEvent
 
+Warp19_7:
+SilentWarpNathan(17,5)
+EndEvent
+Warp17_4:
+SilentWarpNathan(19,8)
+EndEvent
+Warp10_2:
+SilentWarpNathan(5,8)
+EndEvent
+Warp5_7:
+SilentWarpNathan(10,3)
+EndEvent
+Warp12_15:
+SilentWarpNathan(12,13)
+EndEvent
+Warp12_12:
+SilentWarpNathan(12,16)
+EndEvent
 
 //MESSAGE Events end at offset CURRENTOFFSET

@@ -30,6 +30,26 @@ extern u16 GenericHealEvent;
 // skill_[maxSP][number][level]
 //
 
+void ApplyItemPassives(struct BattleUnit* attacker, struct BattleUnit* defender) {
+
+	//soul shield
+	if (IsBattleReal()){
+		for(int j = 0; j < GetUnitItemCount(&attacker->unit); j++) {
+			u16 curItem = attacker->unit.items[j];
+			if(GetItemAttributes(curItem) & IA_SOUL_SHIELD) {
+				attacker->battleDefense = attacker->battleDefense * 1/2;
+			}
+
+		}
+		for(int j = 0; j < GetUnitItemCount(&defender->unit); j++) {
+			u16 curItem = defender->unit.items[j];
+			if(GetItemAttributes(curItem) & IA_SOUL_SHIELD) {
+				attacker->battleAttack = attacker->battleAttack * 1/2;
+			}
+
+		}
+	}
+}
 
 void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	//move presences first since they're flat bonuses
@@ -69,6 +89,7 @@ void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender
 	//ApplyDuelistPassiveSkills(attacker, defender);
 	ApplyDriverPassiveSkills(attacker, defender);
 	//ApplyArtificePassiveSkills(attacker, defender);
+	ApplyItemPassives(attacker, defender);
 }
 
 int ApplyDevilAxeZero(u8 stat, struct Unit* unit) {

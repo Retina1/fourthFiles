@@ -2323,7 +2323,7 @@ FrozenGrounds_005:
 //  #05 //000   ----------------------------------------
  BYTE   KEYSH   FrozenGrounds_key+0
 Label_F16C62:
- BYTE   VOICE   38
+ BYTE   VOICE   28
  BYTE   VOL   67*FrozenGrounds_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   N32  Fn2  v092

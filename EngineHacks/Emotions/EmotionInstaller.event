@@ -6,6 +6,7 @@
 
 #define PlayEmotionEffect(unitID,emotionID) "BYTE 0x40 0x0D unitID emotionID; POIN Show_map_emotion_Install+1; STAL 0x30"
 #define PlayEmotionEffect(emotionID) "CHECK_ACTIVE; SADD 0xc01; BYTE 0x41 0x0D 0x0 emotionID; POIN Show_map_emotion_Install+1; STAL 0x30"
+#define PlayEmotionEffectCoords(emotionID) "BYTE 0x4B 0x0D 0x0 emotionID; POIN Show_map_emotion_Install+1; STAL 0x30"
 #define ExclamationEffect 0
 #define ThinkingEffect 1
 #define HeartEffect 2

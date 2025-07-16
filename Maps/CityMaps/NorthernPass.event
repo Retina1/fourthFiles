@@ -26,6 +26,6 @@ ALIGN 4
 MapData:
   #incbin "NorthernPass_data.dmp"
 
-SetChapterData(NorthernPass, City1OBJ, 0, City1PAL, CityCONFIG, NorthernPassMapID, MapData, 0, 0, 0)
+SetChapterData(NorthernPass, Metropolis1OBJ, 0, Metropolis1PAL, MetropolisCONFIG, NorthernPassMapID, MapData, 0, 0, 0)
 
 }

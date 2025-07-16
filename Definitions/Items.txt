@@ -133,6 +133,7 @@ GreatTalon
 EvilEye
 AirScales
 VenomScales
+SoulShield
 Vulnerary 0xC8
 Elixir
 Medica

@@ -8,6 +8,16 @@ Seize[X]
 Survive[X]
 ##EscapeLabel
 Escape[X]
+##KillBenthusLabel
+Kill Benthus[X]
+##KillWeberLabel
+Kill Weber[X]
+##KillGoreLabel
+Kill Gore[X]
+##KillAstarteLabel
+Kill Astarte[X]
+##EndgameObjLabel
+End this[X]
 
 ##PrepareLabel
 Prepare![X]
@@ -21,7 +31,28 @@ monsters![X]
 ##Ch3RoutDesc
 Rout and keep[N]
 Lucien alive![X]
-
+##Ch4DefeatDesc
+Defeat the[N]
+Beast King![X]
 ##Ch5RoutDesc
 Defeat the[N]
 unknown foe![X]
+
+##Ch8KillDesc
+Take your[N]
+revenge.[X]
+
+##Ch16KillDesc
+Bring upon[N]
+Asketa's end.[X]
+
+##Ch20KillDesc
+There's no[N]
+going back.[X]
+
+##Ch18CRoutDesc
+Finish off[N]
+Endbringer![X]
+##EndgameCKillDesc
+Defeat the[N]
+Worldcore![X]

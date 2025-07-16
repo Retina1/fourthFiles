@@ -24,7 +24,7 @@ He's personable yet somewhat lonely.[X]
 ##Name_Claire
 Claire[X]
 ##Desc_Claire
-An Asketan historian who runs a small[N]
+An Asketan historian with a thriving[N]
 museum. She lives to collect things.[X]
 
 ##Name_Rana
@@ -80,8 +80,23 @@ A mythical squirrel wandering the[N]
 land. They're a nutty trickster.[X]
 
 ##Desc_Benthus2
-A former member of Guild Hedge, driven[N]
-by hubris to leave the group for dead.[X]
+A founder of Guild Hedge, driven to[N]
+rise above through hubris and avarice.[X]
+##Desc_Gore2
+A founder of Guild [Guild], driven[N]
+to bring the world to its deserved end.[X]
+##Desc_Astarte2
+A founder of Guild [Guild], driven[N]
+to bring the world to heel under her rule.[X]
+##Desc_Cleone2
+A founder of Guild [Guild], driven[N]
+to pave the road her companions walk.[X]
+##Desc_Nathan2
+A founder of Guild [Guild], driven[N]
+to change the world no matter what.[X]
+##Desc_Rat2
+A representative of Guild [Guild],[N]
+driven to make all pawns in a game.[X]
 
 //shows up early in bar, guild recruit later
 ##Name_Bertram

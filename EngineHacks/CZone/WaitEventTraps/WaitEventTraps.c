@@ -11,6 +11,8 @@ struct EvCheck0B {
     u32 unk8;
 };
 
+extern u16 GenericTrappedEvent;
+
 int EvCheck00_Always(struct EventInfo* info);
 int EvCheck01_AFEV(struct EventInfo* info);
 int EvCheck02_TURN(struct EventInfo* info);
@@ -182,7 +184,10 @@ void UnitApplyWorkingMovementScript(struct Unit* unit, int x, int y)
                 gActionData.unitActionType = UNIT_ACTION_TRAPPED;
                 gActionData.xMove = x;
                 gActionData.yMove = y;
-				
+/*
+				gEventSlots[0xB] = x + (y << 16);
+				CallEvent(&GenericTrappedEvent, 0x1);
+*/
 
                 return;
             }

@@ -1,0 +1,235 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Stratum2F2EventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(Bravant,9,1)
+Chest(Bravant,13,1)
+Chest(Bravant,8,8)
+Chest(Bravant,25,9)
+Chest(Bravant,25,16)
+END_MAIN
+
+MiscBasedEvents:
+AFEV 0x0 MoveResetter 0x6
+AreaEvent(0x0,EndingScene,0,4,0,5)
+//AreaEvent(0xd,EncounterFOE,18,0,24,5)
+AreaEvent(0x0,Warp5_0,5,0)
+AreaEvent(0x0,Warp16_0,16,0)
+AreaEvent(0x0,Warp23_0,23,0)
+AreaEvent(0x0,Warp29_0,29,0)
+AreaEvent(0x0,Warp11_2,11,2)
+AreaEvent(0x0,Warp14_2,14,2)
+AreaEvent(0x0,Warp14_3,14,3)
+AreaEvent(0x0,Warp12_4,12,4)
+AreaEvent(0x0,Warp10_5,10,5)
+AreaEvent(0x0,Warp11_5,11,5)
+AreaEvent(0x0,Warp13_5,13,5)
+AreaEvent(0x0,Warp18_5,18,5)
+AreaEvent(0x0,Warp5_6,5,6)
+AreaEvent(0x0,Warp12_7,12,7)
+AreaEvent(0x0,Warp27_7,27,7)
+AreaEvent(0x0,Warp23_8,23,8)
+AreaEvent(0x0,Warp12_10,12,10)
+AreaEvent(0x0,Warp15_11,15,11)
+AreaEvent(0x0,Warp12_12,12,12)
+AreaEvent(0x0,Warp25_12,25,12)
+AreaEvent(0x0,Warp6_13,6,13)
+AreaEvent(0x0,Warp26_13,26,13)
+AreaEvent(0x0,Warp2_17,2,17)
+AreaEvent(0x0,Warp21_17,21,17)
+AreaEvent(0x0,Warp6_18,6,18)
+AreaEvent(0x0,Warp8_18,8,18)
+AreaEvent(0x0,Warp22_19,22,19)
+AreaEvent(0x0,Warp4_20,4,20)
+AreaEvent(0x0,Warp15_21,15,21)
+AreaEvent(0x0,Warp24_21,24,21)
+AreaEvent(0x0,Warp6_22,6,22)
+AreaEvent(0x0,Warp16_22,16,22)
+AreaEvent(0x0,Warp26_22,26,22)
+AreaEvent(0x0,Warp2_23,2,23)
+AreaEvent(0x0,Warp25_23,25,23)
+AFEV WaitEventTrapsFlag UnitCleanup 0x6
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [28,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+InitializeNathan(28,22)
+ENUT WaitEventTrapsFlag
+EndEvent
+
+UnitCleanup:
+FADI 16
+ClearArenaBorders
+CLEA 0
+ResetNathan
+FADU 16
+MUSC 0
+SetMapBGM(0)
+EndEvent
+
+EndingScene:
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+MNC3 Stratum2F3
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(1,4); FADU 16
+LABEL 0x2
+EndEvent
+
+
+Warp2_23:
+WarpNathan(11,23)
+EndEvent
+Warp25_23:
+WarpNathan(25,14)
+EndEvent
+Warp6_22:
+WarpNathan(24,22)
+EndEvent
+Warp16_22:
+WarpNathan(16,12)
+EndEvent
+Warp26_22:
+WarpNathan(8,22)
+EndEvent
+Warp15_21:
+WarpNathan(22,21)
+EndEvent
+Warp24_21:
+WarpNathan(17,21)
+EndEvent
+Warp4_20:
+WarpNathan(23,20)
+EndEvent
+Warp22_19:
+WarpNathan(22,1)
+EndEvent
+Warp6_18:
+WarpNathan(21,18)
+Warp8_18:
+WarpNathan(1,18)
+EndEvent
+Warp2_17:
+WarpNathan(19,17)
+EndEvent
+Warp21_17:
+WarpNathan(4,17)
+EndEvent
+Warp6_13:
+WarpNathan(24,13)
+EndEvent
+Warp26_13:
+WarpNathan(8,13)
+EndEvent
+Warp25_12:
+WarpNathan(25,21)
+EndEvent
+Warp12_12:
+WarpNathan(20,12)
+EndEvent
+Warp15_11:
+WarpNathan(28,11)
+EndEvent
+Warp12_10:
+WarpNathan(12,6)
+EndEvent
+Warp23_8:
+WarpNathan(23,20)
+EndEvent
+Warp12_7:
+WarpNathan(6,7)
+EndEvent
+Warp27_7:
+WarpNathan(27,14)
+EndEvent
+Warp5_6:
+WarpNathan(5,19)
+EndEvent
+Warp10_5:
+WarpNathan(10,15)
+EndEvent
+Warp11_5:
+WarpNathan(20,5)
+EndEvent
+Warp13_5:
+WarpNathan(9,5)
+EndEvent
+Warp15_5:
+WarpNathan(15,3)
+EndEvent
+Warp18_5:
+WarpNathan(18,2)
+EndEvent
+Warp12_4:
+WarpNathan(12,8)
+EndEvent
+Warp14_3:
+WarpNathan(12,3)
+EndEvent
+Warp14_2:
+WarpNathan(19,2)
+EndEvent
+Warp11_2:
+WarpNathan(11,6)
+EndEvent
+Warp29_0:
+WarpNathan(29,10)
+EndEvent
+Warp5_0:
+WarpNathan(21,0)
+EndEvent
+Warp23_0:
+WarpNathan(7,0)
+EndEvent
+Warp16_0:
+WarpNathan(16,10)
+EndEvent
+
+
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

@@ -45,6 +45,7 @@ POP
 #include "TrapRework/TrapRework.event"
 #include "Emotions/EmotionInstaller.event"
 #include "ValueChooser/ValueChooser.lyn.event"
+#include "DefaultName/DefaultName.event"
 
 #include "CZone/Main.lyn.event"
 #include "CZone/Durability/Installer.event"

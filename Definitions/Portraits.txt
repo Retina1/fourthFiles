@@ -167,6 +167,7 @@ SarinaMug
 JulietteMug
 DaiMug
 AuriMug
+AlexandraMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

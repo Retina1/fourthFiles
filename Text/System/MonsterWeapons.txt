@@ -38,3 +38,10 @@ Base Poison Affliction Rate: 250%.[X]
 Scissor Wrath[X]
 ##Desc_ScissorWrath ^
 The unsurvivable wrath of an Iron Crab.[X]
+
+##Name_SoulShield
+Soul Shield[X]
+##Desc_SoulShield ^
+A powerful being's will to survive. Unit[N]
+takes halved damage from attacks and has[N]
+halved chance to be afflicted with ailments.[X]

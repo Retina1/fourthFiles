@@ -133,6 +133,7 @@
 #define EvilEye 0x85
 #define AirScales 0x86
 #define VenomScales 0x87
+#define SoulShield 0x88
 #define Vulnerary 0xC8
 #define Elixir 0xC9
 #define Medica 0xCA

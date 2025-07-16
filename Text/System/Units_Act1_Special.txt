@@ -137,5 +137,12 @@ She hunts to make money for scrolls.[X]
 Sarina[X]
 ##Desc_Sarina
 An esoteric and eccentric Asketan who[N]
-fights for her wife and children's sake. [X]
+fights for her wife and children's sake.[X]
+
+//kurasao
+##Name_Alexandra
+Alexandra[X]
+##Desc_Alexandra
+A fierce young hunter who's survived[N]
+alone in the wilds. She's a bit feral.[X]
 

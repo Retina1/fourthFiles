@@ -1,6 +1,15 @@
 //main recruitables
 // guaranteed scholar, gunner, priestess, dark hunter, noble, armor, lurker, poet, sniper, apothecary, driver, highlander, and ironking
 // ch 1
+
+//banned guild names include piorin, benthus, weber, rivian (crashes game)
+//guild names with special responses include nathan, astarte, gore, cleone, rat, (guild) master
+//hedge, returner, overspill, retina, fucker, morrow, aercolyn, etrian, guild, endbringe, slop
+##GuildDefaultName
+Returner[X]
+##GuildBannedName
+Piorin[X]
+
 ##Name_Nathan
 Nathan[X]
 ##Desc_Nathan

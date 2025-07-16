@@ -1,4 +1,6 @@
-FOEUnit 0xd7
+BossAstarte 0xd5
+BossGore
+FOEUnit
 Bertram
 Ayda
 Gerson

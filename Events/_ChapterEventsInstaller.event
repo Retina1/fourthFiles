@@ -48,6 +48,7 @@
 #define ClearArenaBorders "ASMC ClearLightRunes|1; RefreshLightRunes; ASMC 0x8019A65"
 
 #define WarpNathan(x,y)	"SET_ACTIVE Nathan; SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX; CAM1 [x,y]; WM_WAITFORCAM; SVAL 0xB y*0x10000+x; WARP_IN; STAL 20; MOVE 0xFFFF Nathan [x,y]; ENUN; WM_WAITFORFX; STAL 12; NathanIsHere"
+#define SilentWarpNathan(x,y)	"SET_ACTIVE Nathan; FADI 16; CAM1 [x,y]; WM_WAITFORCAM; MOVE 0xFFFF Nathan [x,y]; ENUN; FADU 16"
 
 #include "_BattleQuotes.event"
 #include "_DeathQuotes.event"
@@ -106,6 +107,11 @@ SOUN 0x10F
 STAL 0x16
 EndEvent
 
+GenericTrappedEvent:
+CAM1 0xFFFF
+PlayEmotionEffectCoords(ExclamationEffect)
+EndEvent
+
 {
 #include "Chapters/Chapter1.event"
 }
@@ -118,6 +124,8 @@ EndEvent
 //special city recruit possibilities
 //sfl swordmaster
 //bertram?
+//item based things in calc loops
+//bitter fang - cold magic (add 25% of mag to might)
 {
 #include "City/HirschringSquare.event"
 }
@@ -127,9 +135,18 @@ EndEvent
 {
 #include "Dungeons/LethalForest2.event"
 }
+{
+#include "Dungeons/LethalForest3.event"
+}
 
 {
 #include "Dungeons/ShimmeringMines1.event"
+}
+{
+#include "Dungeons/ShimmeringMines2.event"
+}
+{
+#include "Dungeons/ShimmeringMines3.event"
 }
 
 //dungeon FOES

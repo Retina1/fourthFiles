@@ -225,6 +225,9 @@ struct Unit
     /* 1E */ u16 items[UNIT_ITEM_COUNT];
     /* 28 */ u8 ranks[8];
 
+	// for binds, replace ballista index? each bind is a bit, five bits for a universal bind timer?
+	// for skill stuff, replace conbonus?
+
     /* 30 */ u8 statusIndex : 4;
     /* 30 */ u8 statusDuration : 4;
 

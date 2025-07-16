@@ -22,6 +22,14 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 	
 	int accuracy = baseRate * baseAtk / baseDef;
 	
+	for(int j = 0; j < GetUnitItemCount(&defender->unit); j++) {
+		u16 curItem = defender->unit.items[j];
+		if(GetItemAttributes(curItem) & IA_SOUL_SHIELD) {
+			accuracy = accuracy / 2;
+		}
+
+	}
+	
 	if (accuracy < 5){
 		accuracy = 5;
 	}

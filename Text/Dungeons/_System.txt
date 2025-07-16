@@ -3,6 +3,11 @@ Proceed to next floor?[N]
 There's no turning back.[N]
 [No][X]
 
+##CompleteDungeonSys
+Finish the current stratum[N]
+and proceed with the story?[N]
+[No][X]
+
 ##FOEWarning
 You feel your life is at risk.[N]
 It's not too late to turn back.[N]
