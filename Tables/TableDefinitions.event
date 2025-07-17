@@ -69,7 +69,8 @@
 #endif
 #define SoulShieldBit 0x00400000
 #define PassiveBoosts 0x00800000
-#define DurabilityRecharge 0x00200000
+#define ScaleMagicBit 0x01000000
+//#define DurabilityRecharge 0x00200000
 // Weapon Effect
 #define NoEffect 0x0
 #define PoisonEffect 0x1

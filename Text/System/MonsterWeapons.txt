@@ -6,6 +6,11 @@ A monster's claw, able to rend flesh.[X]
 Sharp Bite[X]
 ##Desc_SharpBite ^
 A monster's bite, fangs bared to shred.[X]
+##Name_FrigidBite
+Frigid Bite[X]
+##Desc_FrigidBite ^
+A monster's bite, fangs cold as ice.[N]
+Add 25% of Mag to Atk, before mults.[X]
 ##Name_Tackle
 Tackle[X]
 ##Desc_Tackle ^

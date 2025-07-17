@@ -29,8 +29,20 @@ extern u16 GenericHealEvent;
 // UNIT_HAS_SKILL(aUnit,aSkillset,aSkill) (((aUnit)->pClassData->skillID == (aSkillset)) && ((aUnit)->skills.(aSKILL)))
 // skill_[maxSP][number][level]
 //
+inline int GetItemOtherByte(int item) {
+    return GetItemData(ITEM_INDEX(item))->otherByte;
+}
+
+void ApplyItemFlatPassives(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	int eqpWpn = GetUnitEquippedWeapon(&attacker->unit);
+	//magic scaling
+	if (GetItemAttributes(eqpWpn) & IA_SCALE_MAGIC) {
+		attacker->battleAttack = attacker->battleAttack + GetItemOtherByte(eqpWpn) * attacker->unit.mag / 100;
+	}
+}
 
 void ApplyItemPassives(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	
 
 	//soul shield
 	if (IsBattleReal()){
@@ -58,6 +70,7 @@ void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender
 	ApplySeekerPrismatic(attacker);
 	ApplyPriestWarImbue(attacker);
 	ApplyDuelistUnburdened(attacker);
+	ApplyItemFlatPassives(attacker, defender);
 	if (IsBattleReal()){
 		ApplyPriestWarPierce(attacker,defender);
 	}

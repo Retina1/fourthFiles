@@ -28,7 +28,7 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Chest(AriadneShard,21,19)
+Chest(RestoreScroll,21,19)
 Chest(GaleScroll,7,0)
 END_MAIN
 
@@ -73,7 +73,7 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [20,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 Encounter1Enemies:
-UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [15,11] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [15,11] 0x0 0x0 0x0 DropItem [SharpBite,AriadneShard] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [16,9] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [19,11] 0x0 0x0 0x0 0x0 [VileClaw] NoAI

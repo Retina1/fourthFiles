@@ -118,7 +118,7 @@ IfNoSelectedGoto(0x1)
 MoveToChapter(Chapter8)
 GOTO 0x2
 LABEL 0x1
-FADI 16; InitializeNathan(28,22); FADU 16
+FADI 16; InitializeNathan(15,13); FADU 16
 LABEL 0x2
 EndEvent
 

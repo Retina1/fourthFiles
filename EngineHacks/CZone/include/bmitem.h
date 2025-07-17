@@ -45,7 +45,7 @@ struct ItemData
     /* 1E */ u8  useEffectId;
     /* 1F */ u8  weaponEffectId;
     /* 20 */ u8  weaponExp;
-    /* 21 */ u8  unk21;
+    /* 21 */ u8  otherByte;
     /* 22 */ u8  ierByte;
     /* 23 */ u8  ailmentRate;
 };
@@ -78,6 +78,8 @@ enum {
     IA_LOCK_6         = (1 << 20),
     IA_LOCK_7         = (1 << 21),
     IA_SOUL_SHIELD    = (1 << 22),
+//    IA_PASSIVE_BOOSTS    = (1 << 23), idk maybe use it
+    IA_SCALE_MAGIC    = (1 << 24),
 
     // Helpers
     IA_REQUIRES_WEXP = (IA_WEAPON | IA_STAFF),

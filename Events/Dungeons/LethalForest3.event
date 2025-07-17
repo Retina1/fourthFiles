@@ -28,7 +28,7 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Chest(RestoreScroll,24,5)
+Chest(BoltScroll,24,5)
 Chest(Soma,0,1)
 Chest(Sabre,16,17)
 END_MAIN
@@ -42,6 +42,7 @@ AreaEvent(0x0,Warp10_2,10,2)
 AreaEvent(0x0,Warp5_7,5,7)
 AreaEvent(0x0,Warp12_15,12,15)
 AreaEvent(0x0,Warp12_12,12,12)
+//3 encounters and an FOE?
 //AreaEvent(0xd,EncounterFOE,18,0,24,5)
 AFEV WaitEventTrapsFlag UnitCleanup 0x6
 CauseGameOverIfLordDies

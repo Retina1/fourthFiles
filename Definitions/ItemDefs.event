@@ -134,6 +134,13 @@
 #define AirScales 0x86
 #define VenomScales 0x87
 #define SoulShield 0x88
+#define WebTalon 0x89
+#define FrigidBite 0x8A
+#define RootGrasp 0x8B
+#define Belladonna 0x8C
+#define ToxicClaw 0x8D
+#define Furysong 0x8E
+#define SealGleam 0x8F
 #define Vulnerary 0xC8
 #define Elixir 0xC9
 #define Medica 0xCA

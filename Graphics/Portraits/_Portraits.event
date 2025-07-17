@@ -64,6 +64,12 @@ MonkDMP:
 #incbin "dmps/slaterMonk.dmp"
 setMugEntry(MonkMug,MonkDMP,3,6,3,4)
 
+ALIGN 4
+//dies
+RatatoskrDMP:
+#incbin "dmps/diesRatatoskr.dmp"
+setMugEntry(RatatoskrMug,RatatoskrDMP,4,6,4,4)
+
 
 ALIGN 4
 //trante

@@ -252,6 +252,34 @@ MovingMapSprite(Biclops, $81F49B8, BiclopsMMS)
 StandingMapSprite(Airfly,MapSprite16x16,AirflySMS)
 MovingMapSprite(Airfly, AP1, AirflyMMS)
 
+StandingMapSprite(Gorgon,MapSprite16x16,GorgonSMS)
+MovingMapSprite(Gorgon, AP1, GorgonMMS)
+
+StandingMapSprite(Treant,MapSprite16x16,TreantSMS)
+MovingMapSprite(Treant, AP1, TreantMMS)
+
+StandingMapSprite(Faerie,MapSprite16x32,FaerieSMS)
+MovingMapSprite(Faerie, AP1, FaerieMMS)
+
+StandingMapSprite(Harpy,MapSprite16x16,HarpySMS)
+MovingMapSprite(Harpy, AP1, HarpyMMS)
+
+StandingMapSprite(Ophanim,MapSprite16x32,OphanimSMS)
+MovingMapSprite(Ophanim, AP1, OphanimMMS)
+
+StandingMapSprite(Wyvern,MapSprite32x32,WyvernSMS)
+MovingMapSprite(Wyvern, AP1, WyvernMMS)
+StandingMapSprite(Wyrm,MapSprite32x32,WyrmSMS)
+MovingMapSprite(Wyrm, AP1, WyrmMMS)
+StandingMapSprite(Drake,MapSprite16x32,DrakeSMS)
+MovingMapSprite(Drake, AP1, DrakeMMS)
+StandingMapSprite(Fiend,MapSprite16x32,FiendSMS)
+MovingMapSprite(Fiend, AP1, FiendMMS)
+StandingMapSprite(Serpent,MapSprite16x32,SerpentSMS)
+MovingMapSprite(Serpent, AP1, SerpentMMS)
+StandingMapSprite(Ascendant,MapSprite16x32,AscendantSMS)
+MovingMapSprite(Ascendant, AP1, AscendantMMS)
+
 
 #define SigilTrapMapSprite 0x3c
 #define LightRuneMapSprite 0x3d
@@ -264,11 +292,88 @@ LightRuneSMS:
 #incbin "Dmp/Save Points {serif}-stand.dmp"
 
 ALIGN 4
+WyvernSMS:
+#incbin "Dmp/wyvernStand.dmp"
+ALIGN 4
+WyvernMMS:
+#incbin "Dmp/wyvernMove.dmp"
+
+ALIGN 4
+DrakeSMS:
+#incbin "Dmp/Dragon (U) Ice {L95}-stand.dmp"
+ALIGN 4
+DrakeMMS:
+#incbin "Dmp/Dragon (U) Ice {L95}-walk.dmp"
+
+ALIGN 4
+FiendSMS:
+#incbin "Dmp/Dragon (U) Earth {L95}-stand.dmp"
+ALIGN 4
+FiendMMS:
+#incbin "Dmp/Dragon (U) Earth {L95}-walk.dmp"
+
+ALIGN 4
+WyrmSMS:
+#incbin "Dmp/Dragon (U) Myrrh Generic [Kemui52]-stand.dmp"
+ALIGN 4
+WyrmMMS:
+#incbin "Dmp/Dragon (U) Myrrh Generic [Kemui52]-walk.dmp"
+
+ALIGN 4
+SerpentSMS:
+#incbin "Dmp/Dragon (U) Magic {L95}-stand.dmp"
+ALIGN 4
+SerpentMMS:
+#incbin "Dmp/Dragon (U) Magic {L95}-walk.dmp"
+
+ALIGN 4
+AscendantSMS:
+#incbin "Dmp/Dragon (U) Divine {L95}-stand.dmp"
+ALIGN 4
+AscendantMMS:
+#incbin "Dmp/Dragon (U) Divine {L95}-walk.dmp"
+
+ALIGN 4
 AirflySMS:
 #incbin "Dmp/Mosquito (U) {Dutch Introvert}-stand.dmp"
 ALIGN 4
 AirflyMMS:
 #incbin "Dmp/Mosquito (U) {Dutch Introvert}-walk.dmp"
+
+ALIGN 4
+OphanimSMS:
+#incbin "Dmp/Ophanim (U) {Sphealnuke}-stand.dmp"
+ALIGN 4
+OphanimMMS:
+#incbin "Dmp/Ophanim (U) {Sphealnuke}-walk.dmp"
+
+ALIGN 4
+GorgonSMS:
+#incbin "Dmp/Gorgon (U) Resize {Huichelaar}-stand.dmp"
+ALIGN 4
+GorgonMMS:
+#incbin "Dmp/Gorgon (U) {IS}-walk.dmp"
+
+ALIGN 4
+TreantSMS:
+#incbin "Dmp/Evergrim (U) {Almirage, Jj09}-stand.dmp"
+ALIGN 4
+TreantMMS:
+#incbin "Dmp/Evergrim (U) {Almirage, Jj09}-walk.dmp"
+
+ALIGN 4
+FaerieSMS:
+#incbin "Dmp/Fairy (U) Ogre Battle {Eldritch}-stand.dmp"
+ALIGN 4
+FaerieMMS:
+#incbin "Dmp/Fairy (U) Ogre Battle {Eldritch}-walk.dmp"
+
+ALIGN 4
+HarpySMS:
+#incbin "Dmp/Harpy (U) {Sphealnuke}-stand.dmp"
+ALIGN 4
+HarpyMMS:
+#incbin "Dmp/Harpy (U) {Sphealnuke}-walk.dmp"
 
 ALIGN 4
 DarkHunterSMS:

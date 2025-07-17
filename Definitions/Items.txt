@@ -134,6 +134,13 @@ EvilEye
 AirScales
 VenomScales
 SoulShield
+WebTalon
+FrigidBite
+RootGrasp
+Belladonna
+ToxicClaw
+Furysong
+SealGleam
 Vulnerary 0xC8
 Elixir
 Medica

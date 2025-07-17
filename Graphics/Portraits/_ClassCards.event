@@ -44,6 +44,17 @@ setCardEntry(ArtificeCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(AutomatonCard,WightCardPortrait,WightCardPortraitPalette)
 
 setCardEntry(AirflyCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(ArchflyCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(VenomflyCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(WoodratCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(ArchratCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(MaulMoleCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(HarpyCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(SquirrelCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(GorgonCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(TreantCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(FaerieCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(OphanimCard,WightCardPortrait,WightCardPortraitPalette)
 
 ALIGN 4
 NobleCardPortrait:

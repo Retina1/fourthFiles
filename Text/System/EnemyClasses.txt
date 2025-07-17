@@ -113,7 +113,97 @@ Airfly[X]
 ##Desc_Airfly
 A forest-dwelling insect whose[N]
 scales vex rookie adventurers.[X]
+##Class_Archfly
+Archfly[X]
+##Desc_Archfly
+A persistent and vile insect whose[N]
+scales perplex seasoned adventurers.[X]
+##Class_Venomfly
+Venomfly[X]
+##Desc_Venomfly
+A benighted and blighted insect whose[N]
+scales slaughter all adventurers.[X]
 
+##Class_Gorgon
+Gorgon[X]
+##Desc_Gorgon
+A snake-beast whose glare can turn[N]
+living flesh into unflinching stone.[X]
+##Class_Gassergon
+Gassergon[X]
+##Desc_Gassergon
+An abominable reptilian whose foul[N]
+gasses bring naught but calamity.[X]
+
+##Class_Woodrat
+Woodrat[X]
+##Desc_Woodrat
+A forest-dwelling rodent with[N]
+a baneful and painful bite.[X]
+##Class_Archrat
+Archrat[X]
+##Desc_Archrat
+An oft-loathed rodent with[N]
+a truly horrific bite.[X]
+##Class_MaulMole
+Maul Mole[X]
+##Desc_MaulMole
+A burrowing rodent with deadly[N]
+claws of true cause for concern.[X]
+
+##Class_Faerie
+Faerie[X]
+##Desc_Faerie
+A miniature mischief maker with[N]
+a penchant for magic and curses.[X]
+
+##Class_Harpy
+Harpy[X]
+##Desc_Harpy
+A soaring temptress with deadly[N]
+claws and a deadlier charm.[X]
+
+##Class_Wyvern
+Wyvern[X]
+##Desc_Wyvern
+A soaring dragon of immense speed[N]
+and a deadly electrical breath.[X]
+
+##Class_Drake
+Drake[X]
+##Desc_Drake
+A majestic dragon of grand endurance[N]
+and a bitterly deadly frigid breath.[X]
+
+##Class_Wyrm
+Wyrm[X]
+##Desc_Wyrm
+A mighty dragon of overwhelming power[N]
+and an all-incinerating flame breath.[X]
+
+##Class_Serpent
+Serpent[X]
+##Desc_Serpent
+A mystic dragon of vexing magistry[N]
+and a reality-warping fog breath.[X]
+
+##Class_Fiend
+Fiend[X]
+##Desc_Fiend
+A forsaken dragon of loathesome might[N]
+and a truly damnable dark breath.[X]
+
+##Class_Ascendant
+Ascendant[X]
+##Desc_Ascendant
+A divine dragon of flawless glory[N]
+and a consecrating breath of light.[X]
+
+##Class_Ophanim
+Ophanim[X]
+##Desc_Ophanim
+A being beyond comprehension of one[N]
+purpose: guarding the Worldcore.[X]
 
 ##fuckeggs
 i hate eggs[X]
@@ -126,3 +216,8 @@ Iron Crab[X]
 ##Desc_IronCrab
 A nearly immortal crab in a metal shell.[N]
 Slaughters those who threaten its pack.[X]
+##Class_Treant
+Treant[X]
+##Desc_Treant
+A hulking tree abomination found deep[N]
+in the woods, with mighty endurance.[X]

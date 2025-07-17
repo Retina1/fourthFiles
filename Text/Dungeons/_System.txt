@@ -19,3 +19,5 @@ An immensely dangerous presence lies[N]
 ahead. It's not too late to turn back.[N]
 ...Proceed on ahead anyway?[N]
 [No][X]
+
+//ratatoskr dialogue
