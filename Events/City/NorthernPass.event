@@ -1,0 +1,49 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+NorthernPassUnitsC3:
+//marketplpace npc, generics
+UNIT AsketaGeneric Caller 0x0 Level(6,NPC,1) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+LoadNorthernPassSigils:
+ENUF LocationFlagNorthernPass
+AddSigil(2,5)
+AddSigil(0,19)
+AddSigil(1,19)
+AddGreenSigil(10,11)
+ENDA
+
+NorthernPassMoveToSquare:
+SwapToMap(HirschringSquare,1,2)
+CALL LoadHirschringSigils
+LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadVendorSecond
+FADU 10
+EndEvent
+
+NorthernPassMoveToMuseum:
+SwapToMap(Museum,6,16)
+//CALL LoadHirschringSigils
+//LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
+EndEvent
+
+NorthernPassMoveToBlackMarket:
+CHECK_EVENTID BlackMarketUnlockedFlag
+BEQ 0x1 0xc 0x0
+SwapToMap(BlackMarket,1,2)
+//CALL LoadHirschringSigils
+//LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
+GOTO 0x2
+LABEL 0x1
+ENUF LocationFlagNorthernPass
+LABEL 0x2
+EndEvent
+
+//figure o

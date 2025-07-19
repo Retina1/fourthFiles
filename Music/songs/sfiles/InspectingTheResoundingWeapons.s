@@ -1,28 +1,28 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	InspectingTheResoundingWeapons_grp, voicegroup000
+	.equ	InspectingTheResoundingWeapons_pri, 0
+	.equ	InspectingTheResoundingWeapons_rev, 0
+	.equ	InspectingTheResoundingWeapons_mvl, 127
+	.equ	InspectingTheResoundingWeapons_key, 0
+	.equ	InspectingTheResoundingWeapons_tbs, 1
+	.equ	InspectingTheResoundingWeapons_exg, 0
+	.equ	InspectingTheResoundingWeapons_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	InspectingTheResoundingWeapons
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+InspectingTheResoundingWeapons_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_010C1196:
- .byte   TEMPO , 152*song09_tbs/2
+ .byte   TEMPO , 152*InspectingTheResoundingWeapons_tbs/2
  .byte   VOICE , 100
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #01 @001   ----------------------------------------
@@ -1209,12 +1209,12 @@ Label_010C1648:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+InspectingTheResoundingWeapons_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_F24C02:
  .byte   VOICE , 49
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N92 ,Fs3 ,v112
  .byte   TIE ,Bn3
@@ -1422,12 +1422,12 @@ Label_F24CDE:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+InspectingTheResoundingWeapons_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_F24D1A:
  .byte   VOICE , 62
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #03 @001   ----------------------------------------
@@ -1607,12 +1607,12 @@ Label_F24DE0:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+InspectingTheResoundingWeapons_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_F2387A:
  .byte   VOICE , 38
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N07 ,Bn0 ,v120
  .byte   W12
@@ -2140,12 +2140,12 @@ Label_F23B23:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+InspectingTheResoundingWeapons_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_F24E0A:
  .byte   VOICE , 55
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N03 ,Bn3 ,v127
  .byte   W96
@@ -2275,12 +2275,12 @@ Label_F24E0A:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+InspectingTheResoundingWeapons_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_010C0662:
  .byte   VOICE , 65
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v-30
  .byte   N92 ,Bn2 ,v080
  .byte   N92 ,Fs3
@@ -3127,12 +3127,12 @@ Label_010C0984:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song09_007:
+InspectingTheResoundingWeapons_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_F24E8A:
  .byte   VOICE , 36
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v+10
  .byte   W24
  .byte   N11 ,Bn1 ,v092
@@ -3289,12 +3289,12 @@ Label_F24EFD:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song09_008:
+InspectingTheResoundingWeapons_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_F246EE:
  .byte   VOICE , 28
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v+10
  .byte   N05 ,Cs1 ,v092
  .byte   W06
@@ -3536,12 +3536,12 @@ Label_F247A3:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song09_009:
+InspectingTheResoundingWeapons_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , InspectingTheResoundingWeapons_key+0
 Label_F24016:
  .byte   VOICE , 124
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*InspectingTheResoundingWeapons_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N06 ,Cn1 ,v120
  .byte   N05 ,Fs1 ,v052
@@ -3946,22 +3946,22 @@ Label_F2417C:
 @******************************************************@
 	.align	2
 
-song09:
+InspectingTheResoundingWeapons:
 	.byte	9	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	InspectingTheResoundingWeapons_pri	@ Priority
+	.byte	InspectingTheResoundingWeapons_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	InspectingTheResoundingWeapons_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
-	.word	song09_007
-	.word	song09_008
-	.word	song09_009
+	.word	InspectingTheResoundingWeapons_001
+	.word	InspectingTheResoundingWeapons_002
+	.word	InspectingTheResoundingWeapons_003
+	.word	InspectingTheResoundingWeapons_004
+	.word	InspectingTheResoundingWeapons_005
+	.word	InspectingTheResoundingWeapons_006
+	.word	InspectingTheResoundingWeapons_007
+	.word	InspectingTheResoundingWeapons_008
+	.word	InspectingTheResoundingWeapons_009
 
 	.end

@@ -1,30 +1,30 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	HeavyArmoredCorps_grp, voicegroup000
+	.equ	HeavyArmoredCorps_pri, 0
+	.equ	HeavyArmoredCorps_rev, 0
+	.equ	HeavyArmoredCorps_mvl, 127
+	.equ	HeavyArmoredCorps_key, 0
+	.equ	HeavyArmoredCorps_tbs, 1
+	.equ	HeavyArmoredCorps_exg, 0
+	.equ	HeavyArmoredCorps_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	HeavyArmoredCorps
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+HeavyArmoredCorps_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
- .byte   TEMPO , 200*song09_tbs/2
+ .byte   KEYSH , HeavyArmoredCorps_key+0
+ .byte   TEMPO , 200*HeavyArmoredCorps_tbs/2
  .byte   VOICE , 40
- .byte   VOL , 33*song09_mvl/mxv
+ .byte   VOL , 33*HeavyArmoredCorps_mvl/mxv
  .byte   PAN , c_v-41
  .byte   W11
- .byte   TEMPO , 100*song09_tbs/2
+ .byte   TEMPO , 100*HeavyArmoredCorps_tbs/2
  .byte   W84
  .byte   W01
 @  #01 @001   ----------------------------------------
@@ -249,11 +249,11 @@ Label_010F8644:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+HeavyArmoredCorps_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   VOICE , 40
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*HeavyArmoredCorps_mvl/mxv
  .byte   PAN , c_v-11
  .byte   W96
 @  #02 @001   ----------------------------------------
@@ -472,11 +472,11 @@ Label_010F8932:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+HeavyArmoredCorps_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   VOICE , 41
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*HeavyArmoredCorps_mvl/mxv
  .byte   PAN , c_v+26
  .byte   W96
 @  #03 @001   ----------------------------------------
@@ -843,12 +843,12 @@ Label_010F9524:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+HeavyArmoredCorps_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   VOICE , 40
  .byte   W01
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*HeavyArmoredCorps_mvl/mxv
  .byte   PAN , c_v-34
  .byte   W92
  .byte   W03
@@ -1014,12 +1014,12 @@ Label_F51364:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+HeavyArmoredCorps_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   W01
  .byte   VOICE , 1
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*HeavyArmoredCorps_mvl/mxv
  .byte   PAN , c_v-31
  .byte   W92
  .byte   W03
@@ -1324,12 +1324,12 @@ Label_F52104:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+HeavyArmoredCorps_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   W01
  .byte   VOICE , 1
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*HeavyArmoredCorps_mvl/mxv
  .byte   PAN , c_v-25
  .byte   W23
  .byte   N03 ,Cn2 ,v115
@@ -1966,12 +1966,12 @@ Label_010F9A6F:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song09_007:
+HeavyArmoredCorps_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   W01
  .byte   VOICE , 1
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*HeavyArmoredCorps_mvl/mxv
  .byte   W01
  .byte   PAN , c_v+56
  .byte   W22
@@ -2238,12 +2238,12 @@ Label_010F87E8:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song09_008:
+HeavyArmoredCorps_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   W02
  .byte   VOICE , 60
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*HeavyArmoredCorps_mvl/mxv
  .byte   PAN , c_v-10
  .byte   W92
  .byte   W02
@@ -2515,12 +2515,12 @@ Label_010F9602:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song09_009:
+HeavyArmoredCorps_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   W02
  .byte   VOICE , 73
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*HeavyArmoredCorps_mvl/mxv
  .byte   PAN , c_v+11
  .byte   W92
  .byte   W02
@@ -2787,12 +2787,12 @@ Label_010F9C9E:
 
 @**************** Track 10 (Midi-Chn.9) ****************@
 
-song09_010:
+HeavyArmoredCorps_010:
 @  #10 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   W02
  .byte   VOICE , 124
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*HeavyArmoredCorps_mvl/mxv
  .byte   W22
  .byte   N96 ,Cn1 ,v123
  .byte   TIE ,Fn2
@@ -3213,91 +3213,91 @@ Label_010F9EAE:
 
 @**************** Track 11 (Midi-Chn.10) ****************@
 
-song09_011:
+HeavyArmoredCorps_011:
 @  #11 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   W03
  .byte   VOICE , 119
- .byte   VOL , 0*song09_mvl/mxv
+ .byte   VOL , 0*HeavyArmoredCorps_mvl/mxv
  .byte   W09
  .byte   N96 ,Gn2 ,v071
- .byte   VOL , 6*song09_mvl/mxv
+ .byte   VOL , 6*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 8*song09_mvl/mxv
+ .byte   VOL , 8*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 10*song09_mvl/mxv
+ .byte   VOL , 10*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 13*song09_mvl/mxv
+ .byte   VOL , 13*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 14*song09_mvl/mxv
+ .byte   VOL , 14*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 15*song09_mvl/mxv
+ .byte   VOL , 15*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 17*song09_mvl/mxv
+ .byte   VOL , 17*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 18*song09_mvl/mxv
+ .byte   VOL , 18*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song09_mvl/mxv
+ .byte   VOL , 27*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 30*song09_mvl/mxv
+ .byte   VOL , 30*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*HeavyArmoredCorps_mvl/mxv
  .byte   W02
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song09_mvl/mxv
+ .byte   VOL , 27*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*HeavyArmoredCorps_mvl/mxv
  .byte   W02
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*HeavyArmoredCorps_mvl/mxv
  .byte   W02
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 22*song09_mvl/mxv
+ .byte   VOL , 22*HeavyArmoredCorps_mvl/mxv
  .byte   W02
- .byte   VOL , 21*song09_mvl/mxv
+ .byte   VOL , 21*HeavyArmoredCorps_mvl/mxv
  .byte   W04
- .byte   VOL , 20*song09_mvl/mxv
+ .byte   VOL , 20*HeavyArmoredCorps_mvl/mxv
  .byte   W05
- .byte   VOL , 19*song09_mvl/mxv
+ .byte   VOL , 19*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 18*song09_mvl/mxv
+ .byte   VOL , 18*HeavyArmoredCorps_mvl/mxv
  .byte   W04
- .byte   VOL , 17*song09_mvl/mxv
+ .byte   VOL , 17*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 16*song09_mvl/mxv
+ .byte   VOL , 16*HeavyArmoredCorps_mvl/mxv
  .byte   W05
- .byte   VOL , 15*song09_mvl/mxv
+ .byte   VOL , 15*HeavyArmoredCorps_mvl/mxv
  .byte   W02
- .byte   VOL , 14*song09_mvl/mxv
+ .byte   VOL , 14*HeavyArmoredCorps_mvl/mxv
  .byte   W06
- .byte   VOL , 13*song09_mvl/mxv
+ .byte   VOL , 13*HeavyArmoredCorps_mvl/mxv
  .byte   W06
- .byte   VOL , 12*song09_mvl/mxv
+ .byte   VOL , 12*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 11*song09_mvl/mxv
+ .byte   VOL , 11*HeavyArmoredCorps_mvl/mxv
  .byte   W06
- .byte   VOL , 10*song09_mvl/mxv
+ .byte   VOL , 10*HeavyArmoredCorps_mvl/mxv
  .byte   W06
- .byte   VOL , 9*song09_mvl/mxv
+ .byte   VOL , 9*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 8*song09_mvl/mxv
+ .byte   VOL , 8*HeavyArmoredCorps_mvl/mxv
  .byte   W02
 @  #11 @001   ----------------------------------------
  .byte   W01
- .byte   VOL , 7*song09_mvl/mxv
+ .byte   VOL , 7*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 6*song09_mvl/mxv
+ .byte   VOL , 6*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 4*song09_mvl/mxv
+ .byte   VOL , 4*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 0*song09_mvl/mxv
+ .byte   VOL , 0*HeavyArmoredCorps_mvl/mxv
  .byte   W84
  .byte   W02
 @  #11 @002   ----------------------------------------
@@ -3312,136 +3312,136 @@ Label_010FA01A:
  .byte   W24
  .byte   TIE ,Fn2 ,v115
  .byte   W10
- .byte   VOL , 3*song09_mvl/mxv
+ .byte   VOL , 3*HeavyArmoredCorps_mvl/mxv
  .byte   W05
- .byte   VOL , 4*song09_mvl/mxv
+ .byte   VOL , 4*HeavyArmoredCorps_mvl/mxv
  .byte   W05
- .byte   VOL , 5*song09_mvl/mxv
+ .byte   VOL , 5*HeavyArmoredCorps_mvl/mxv
  .byte   W06
- .byte   VOL , 6*song09_mvl/mxv
+ .byte   VOL , 6*HeavyArmoredCorps_mvl/mxv
  .byte   W10
- .byte   VOL , 7*song09_mvl/mxv
+ .byte   VOL , 7*HeavyArmoredCorps_mvl/mxv
  .byte   W11
- .byte   VOL , 8*song09_mvl/mxv
+ .byte   VOL , 8*HeavyArmoredCorps_mvl/mxv
  .byte   W10
- .byte   VOL , 9*song09_mvl/mxv
+ .byte   VOL , 9*HeavyArmoredCorps_mvl/mxv
  .byte   W10
- .byte   VOL , 10*song09_mvl/mxv
+ .byte   VOL , 10*HeavyArmoredCorps_mvl/mxv
  .byte   W05
  .byte   PEND 
 @  #11 @006   ----------------------------------------
 Label_010FA038:
  .byte   W11
- .byte   VOL , 11*song09_mvl/mxv
+ .byte   VOL , 11*HeavyArmoredCorps_mvl/mxv
  .byte   W11
- .byte   VOL , 12*song09_mvl/mxv
+ .byte   VOL , 12*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 13*song09_mvl/mxv
+ .byte   VOL , 13*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 14*song09_mvl/mxv
+ .byte   VOL , 14*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 15*song09_mvl/mxv
+ .byte   VOL , 15*HeavyArmoredCorps_mvl/mxv
  .byte   W12
- .byte   VOL , 16*song09_mvl/mxv
+ .byte   VOL , 16*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 17*song09_mvl/mxv
+ .byte   VOL , 17*HeavyArmoredCorps_mvl/mxv
  .byte   W15
- .byte   VOL , 18*song09_mvl/mxv
+ .byte   VOL , 18*HeavyArmoredCorps_mvl/mxv
  .byte   W11
  .byte   PEND 
 @  #11 @007   ----------------------------------------
 Label_010FA052:
  .byte   W01
- .byte   VOL , 19*song09_mvl/mxv
+ .byte   VOL , 19*HeavyArmoredCorps_mvl/mxv
  .byte   W15
- .byte   VOL , 20*song09_mvl/mxv
+ .byte   VOL , 20*HeavyArmoredCorps_mvl/mxv
  .byte   W12
- .byte   VOL , 21*song09_mvl/mxv
+ .byte   VOL , 21*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 22*song09_mvl/mxv
+ .byte   VOL , 22*HeavyArmoredCorps_mvl/mxv
  .byte   W12
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*HeavyArmoredCorps_mvl/mxv
  .byte   W12
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*HeavyArmoredCorps_mvl/mxv
  .byte   W12
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*HeavyArmoredCorps_mvl/mxv
  .byte   W15
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*HeavyArmoredCorps_mvl/mxv
  .byte   W08
  .byte   PEND 
 @  #11 @008   ----------------------------------------
 Label_010FA06C:
- .byte   VOL , 27*song09_mvl/mxv
+ .byte   VOL , 27*HeavyArmoredCorps_mvl/mxv
  .byte   W05
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*HeavyArmoredCorps_mvl/mxv
  .byte   W04
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*HeavyArmoredCorps_mvl/mxv
  .byte   W05
- .byte   VOL , 30*song09_mvl/mxv
+ .byte   VOL , 30*HeavyArmoredCorps_mvl/mxv
  .byte   W06
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*HeavyArmoredCorps_mvl/mxv
  .byte   W06
- .byte   VOL , 30*song09_mvl/mxv
+ .byte   VOL , 30*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*HeavyArmoredCorps_mvl/mxv
  .byte   W02
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*HeavyArmoredCorps_mvl/mxv
  .byte   W02
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 22*song09_mvl/mxv
+ .byte   VOL , 22*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 21*song09_mvl/mxv
+ .byte   VOL , 21*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 20*song09_mvl/mxv
+ .byte   VOL , 20*HeavyArmoredCorps_mvl/mxv
  .byte   W01
- .byte   VOL , 19*song09_mvl/mxv
+ .byte   VOL , 19*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 18*song09_mvl/mxv
+ .byte   VOL , 18*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 17*song09_mvl/mxv
+ .byte   VOL , 17*HeavyArmoredCorps_mvl/mxv
  .byte   W02
- .byte   VOL , 16*song09_mvl/mxv
+ .byte   VOL , 16*HeavyArmoredCorps_mvl/mxv
  .byte   W06
- .byte   VOL , 15*song09_mvl/mxv
+ .byte   VOL , 15*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 14*song09_mvl/mxv
+ .byte   VOL , 14*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 13*song09_mvl/mxv
+ .byte   VOL , 13*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 12*song09_mvl/mxv
+ .byte   VOL , 12*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 11*song09_mvl/mxv
+ .byte   VOL , 11*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 10*song09_mvl/mxv
+ .byte   VOL , 10*HeavyArmoredCorps_mvl/mxv
  .byte   W03
- .byte   VOL , 9*song09_mvl/mxv
+ .byte   VOL , 9*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 8*song09_mvl/mxv
+ .byte   VOL , 8*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 7*song09_mvl/mxv
+ .byte   VOL , 7*HeavyArmoredCorps_mvl/mxv
  .byte   W02
  .byte   PEND 
 @  #11 @009   ----------------------------------------
 Label_010FA0C1:
  .byte   W06
- .byte   VOL , 6*song09_mvl/mxv
+ .byte   VOL , 6*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 5*song09_mvl/mxv
+ .byte   VOL , 5*HeavyArmoredCorps_mvl/mxv
  .byte   W04
- .byte   VOL , 4*song09_mvl/mxv
+ .byte   VOL , 4*HeavyArmoredCorps_mvl/mxv
  .byte   W04
- .byte   VOL , 3*song09_mvl/mxv
+ .byte   VOL , 3*HeavyArmoredCorps_mvl/mxv
  .byte   W01
  .byte   EOT
  .byte   Fn2
- .byte   VOL , 0*song09_mvl/mxv
+ .byte   VOL , 0*HeavyArmoredCorps_mvl/mxv
  .byte   W72
  .byte   PEND 
 @  #11 @010   ----------------------------------------
@@ -3549,17 +3549,17 @@ Label_010FA0C1:
   .word Label_010FA06C
 @  #11 @057   ----------------------------------------
  .byte   W06
- .byte   VOL , 6*song09_mvl/mxv
+ .byte   VOL , 6*HeavyArmoredCorps_mvl/mxv
  .byte   W09
- .byte   VOL , 5*song09_mvl/mxv
+ .byte   VOL , 5*HeavyArmoredCorps_mvl/mxv
  .byte   W04
- .byte   VOL , 4*song09_mvl/mxv
+ .byte   VOL , 4*HeavyArmoredCorps_mvl/mxv
  .byte   W04
- .byte   VOL , 3*song09_mvl/mxv
+ .byte   VOL , 3*HeavyArmoredCorps_mvl/mxv
  .byte   W01
  .byte   EOT
  .byte   Fn2
- .byte   VOL , 0*song09_mvl/mxv
+ .byte   VOL , 0*HeavyArmoredCorps_mvl/mxv
  .byte   W68
  .byte   W03
  .byte   GOTO
@@ -3571,12 +3571,12 @@ Label_010FA0C1:
 
 @**************** Track 12 (Midi-Chn.11) ****************@
 
-song09_012:
+HeavyArmoredCorps_012:
 @  #12 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , HeavyArmoredCorps_key+0
  .byte   W03
  .byte   VOICE , 0
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*HeavyArmoredCorps_mvl/mxv
  .byte   W21
  .byte   N07 ,Cn1 ,v118
  .byte   N07 ,Cn2
@@ -3775,25 +3775,25 @@ Label_010F84A8:
 @******************************************************@
 	.align	2
 
-song09:
+HeavyArmoredCorps:
 	.byte	12	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	HeavyArmoredCorps_pri	@ Priority
+	.byte	HeavyArmoredCorps_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	HeavyArmoredCorps_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
-	.word	song09_007
-	.word	song09_008
-	.word	song09_009
-	.word	song09_010
-	.word	song09_011
-	.word	song09_012
+	.word	HeavyArmoredCorps_001
+	.word	HeavyArmoredCorps_002
+	.word	HeavyArmoredCorps_003
+	.word	HeavyArmoredCorps_004
+	.word	HeavyArmoredCorps_005
+	.word	HeavyArmoredCorps_006
+	.word	HeavyArmoredCorps_007
+	.word	HeavyArmoredCorps_008
+	.word	HeavyArmoredCorps_009
+	.word	HeavyArmoredCorps_010
+	.word	HeavyArmoredCorps_011
+	.word	HeavyArmoredCorps_012
 
 	.end

@@ -1,28 +1,28 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	SandyBarrens_grp, voicegroup000
+	.equ	SandyBarrens_pri, 0
+	.equ	SandyBarrens_rev, 0
+	.equ	SandyBarrens_mvl, 127
+	.equ	SandyBarrens_key, 0
+	.equ	SandyBarrens_tbs, 1
+	.equ	SandyBarrens_exg, 0
+	.equ	SandyBarrens_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	SandyBarrens
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+SandyBarrens_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_F178C2:
- .byte   TEMPO , 146*song09_tbs/2
+ .byte   TEMPO , 146*SandyBarrens_tbs/2
  .byte   VOICE , 48
- .byte   VOL , 50*song09_mvl/mxv
+ .byte   VOL , 50*SandyBarrens_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #01 @001   ----------------------------------------
@@ -296,12 +296,12 @@ Label_F17999:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+SandyBarrens_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_F179EE:
  .byte   VOICE , 24
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*SandyBarrens_mvl/mxv
  .byte   PAN , c_v+25
  .byte   W24
  .byte   N11 ,Cn3 ,v096
@@ -555,12 +555,12 @@ Label_F17A8C:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+SandyBarrens_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_010A5816:
  .byte   VOICE , 73
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*SandyBarrens_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #03 @001   ----------------------------------------
@@ -918,12 +918,12 @@ Label_010A5881:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+SandyBarrens_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_010A5676:
  .byte   VOICE , 73
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*SandyBarrens_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #04 @001   ----------------------------------------
@@ -1193,12 +1193,12 @@ Label_010A56C4:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+SandyBarrens_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_F172DA:
  .byte   VOICE , 52
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*SandyBarrens_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #05 @001   ----------------------------------------
@@ -1482,12 +1482,12 @@ Label_F173B5:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+SandyBarrens_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_010A5326:
  .byte   VOICE , 36
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*SandyBarrens_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N68 ,Cn2 ,v127
  .byte   W84
@@ -1889,12 +1889,12 @@ Label_010A54F3:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song09_007:
+SandyBarrens_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_010A6086:
  .byte   VOICE , 4
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*SandyBarrens_mvl/mxv
  .byte   PAN , c_v+0
  .byte   TIE ,Cn2 ,v100
  .byte   W96
@@ -2256,12 +2256,12 @@ Label_010A61E2:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song09_008:
+SandyBarrens_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_010A4CE2:
  .byte   VOICE , 24
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*SandyBarrens_mvl/mxv
  .byte   PAN , c_v-25
  .byte   W12
  .byte   N23 ,Gn2 ,v120
@@ -2746,12 +2746,12 @@ Label_010A4EEC:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song09_009:
+SandyBarrens_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , SandyBarrens_key+0
 Label_010A704A:
  .byte   VOICE , 124
- .byte   VOL , 53*song09_mvl/mxv
+ .byte   VOL , 53*SandyBarrens_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W24
  .byte   N11 ,Ds3 ,v072
@@ -3285,22 +3285,22 @@ Label_010A739E:
 @******************************************************@
 	.align	2
 
-song09:
+SandyBarrens:
 	.byte	9	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	SandyBarrens_pri	@ Priority
+	.byte	SandyBarrens_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	SandyBarrens_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
-	.word	song09_007
-	.word	song09_008
-	.word	song09_009
+	.word	SandyBarrens_001
+	.word	SandyBarrens_002
+	.word	SandyBarrens_003
+	.word	SandyBarrens_004
+	.word	SandyBarrens_005
+	.word	SandyBarrens_006
+	.word	SandyBarrens_007
+	.word	SandyBarrens_008
+	.word	SandyBarrens_009
 
 	.end

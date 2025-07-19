@@ -8,6 +8,8 @@ Name Engraved Into the 100th Volume![X]
 Initial Strike (PacoScarso)[X]
 ##SongTitle_DyedInBlood
 Dyed in Blood (PacoScarso)[X]
+##SongTitle_SandyBarrens
+Sandy Barrens (PacoScarso)[X]
 
 ##SourceTitle_EtrianOdyssey2
 Etrian Odyssey II[X]
@@ -21,6 +23,10 @@ The Wind Doesn't Draw Heroes[X]
 Ever-Scarlet Forest[X]
 ##SongTitle_FrozenGrounds
 Frozen Grounds (PacoScarso)[X]
+##SongTitle_InspectingTheResoundingWeapons
+Resounding Weapons (PacoScarso)[X]
+##SongTitle_Shiver
+Shiver (PacoScarso)[X]
 ##SongTitle_CherryTreesAndWings
 Cherry Trees and Wings[X]
 
@@ -30,16 +36,25 @@ Etrian Odyssey III[X]
 Is That Blood Thine...? (PacoScarso)[X]
 ##SongTitle_EndOfRagingWaves ^
 The End of Raging Waves (PacoScarso)[X]
+##SongTitle_CyclopeanHaunt
+Cyclopean Haunt (PacoScarso)[X]
 
 ##SourceTitle_EtrianOdyssey4
 Etrian Odyssey IV[X]
 ##SongTitle_FaithIsMyPillar
 Faith is My Pillar (PacoScarso)[X]
+##SongTitle_EchoingLibrary
+Echoing Library[X]
 
 ##SourceTitle_EtrianOdyssey5
 Etrian Odyssey V[X]
 ##SongTitle_UntamedGarden
 Untamed Garden[X]
+
+##SourceTitle_BerwickSaga
+Berwick Saga[X]
+##SongTitle_HeavyArmoredCorps
+Heavy Armored Corps (Rubenio)[X]
 
 ##SourceTitle_Touhou
 Touhou Series[X]

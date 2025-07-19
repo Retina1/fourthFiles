@@ -92,17 +92,17 @@ A legendary whip that's said to fell angels.[X]
 ##Name_Scorpio
 Scorpio[X]
 ##Desc_Scorpio ^
-A whip coated in toxin. Attacks can poison.[N]
+An underhanded whip coated in toxin.[N]
 Base Poison Affliction Rate: 60%.[X]
 ##Name_HazeWhip
 Haze Whip[X]
 ##Desc_HazeWhip ^
-A whip coated in anesthetic. Attacks can sleep.[N]
+A cruel whip coated in anesthetic.[N]
 Base Sleep Affliction Rate: 50%.[X]
 ##Name_Stonesting
 Stonesting[X]
 ##Desc_Stonesting ^
-A whip with a ruinous tip. Attacks can petrify.[N]
+A baneful whip with a ruinous tip.[N]
 Base Petrification Affliction Rate: 30%.[X]
 
 //DRIVE BLADES
@@ -267,7 +267,7 @@ An axe that's almost too large to miss with.[X]
 ##Name_Mindcrush
 Mindcrush[X]
 ##Desc_Mindcrush ^
-An axe with a furious curse. Attacks can enrage.[N]
+A curious axe with a furious curse.[N]
 Base Berserk Affliction Rate: 40%.[X]
 ##Name_Juggernaut
 Juggernaut[X]
@@ -348,7 +348,7 @@ A large bow that can fight at extended range.[X]
 ##Name_ToxinBow
 Toxin Bow[X]
 ##Desc_ToxinBow ^
-A bow with venomous arrows. Attacks can poison.[N]
+A dangerous bow with venomous arrows.[N]
 Base Poison Affliction Rate: 60%.[X]
 ##Name_Trickshot
 Trickshot[X]
@@ -407,17 +407,17 @@ A covert gun with great accuracy and range.[X]
 ##Name_Pepperbox
 Pepperbox[X]
 ##Desc_Pepperbox ^
-A gun with irritant-laced bullets. Attacks can blind.[N]
+A gun with irritant-laced bullets.[N]
 Base Blind Affliction Rate: 60%.[X]
 ##Name_Stunshot
 Stunshot[X]
 ##Desc_Stunshot ^
-A gun with paralytic bullets. Attacks can paralyze.[N]
+A gun with paralytic-laced bullets.[N]
 Base Paralysis Affliction Rate: 50%.[X]
 ##Name_Furybox
 Furybox[X]
 ##Desc_Furybox ^
-A hallucinogenic-armed gun. Attacks can enrage.[N]
+A gun with hallucinogenic-laced bullets.[N]
 Base Berserk Affliction Rate: 40%.[X]
 ##Name_Meisterkugel ^
 Meisterkugel[X]
@@ -426,7 +426,7 @@ A refined gun that can fire two rounds at once.[X]
 ##Name_Stoneshot
 Stoneshot[X]
 ##Desc_Stoneshot ^
-A gun with baneful bullets. Attacks can petrify.[N]
+An atrocious  gun with baneful bullets.[N]
 Base Petrification Affliction Rate: 30%.[X]
 
 

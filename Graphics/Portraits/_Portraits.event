@@ -70,6 +70,11 @@ RatatoskrDMP:
 #incbin "dmps/diesRatatoskr.dmp"
 setMugEntry(RatatoskrMug,RatatoskrDMP,4,6,4,4)
 
+ALIGN 4
+//kura
+AlexandraDMP:
+#incbin "dmps/kuraAlexandra.dmp"
+setMugEntry(AlexandraMug,AlexandraDMP,3,6,3,4)
 
 ALIGN 4
 //trante
@@ -619,6 +624,10 @@ ALIGN 4
 BobbyDMP:
 #incbin "dmps/goldBobby.dmp"
 setMugEntry(BobbyMug,BobbyDMP,3,5,3,3)
+ALIGN 4
+ClaireDMP:
+#incbin "dmps/goldClaire.dmp"
+setMugEntry(ClaireMug,ClaireDMP,3,6,3,4)
 
 ALIGN 4
 //lorca

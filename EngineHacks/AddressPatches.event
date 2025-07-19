@@ -4,6 +4,32 @@ ORG 0x72860
 SHORT 0xE002
 POP
 
+//thanks dragz
+#define PortraitMenuYCoord 0x0D
+
+PUSH
+ORG 0x022BAA
+BYTE PortraitMenuYCoord
+
+ORG 0x022C00
+BYTE PortraitMenuYCoord
+
+ORG 0x023266
+BYTE PortraitMenuYCoord
+
+ORG 0x02331C
+BYTE PortraitMenuYCoord
+
+ORG 0x02357A
+BYTE PortraitMenuYCoord
+
+ORG 0x023612
+BYTE PortraitMenuYCoord
+
+ORG 0x023AFE
+BYTE PortraitMenuYCoord
+POP
+
 //null vanilla skills
 PUSH
 ORG 0x2b34a

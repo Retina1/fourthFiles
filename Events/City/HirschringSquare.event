@@ -10,6 +10,10 @@ EventPointerTable(HirschringSquareEventsID,ThisChapter)
 #define LocationFlagGuildhall 0xf1
 #define LocationFlagBlacksmith 0xf2
 #define LocationFlagTavern 0xf3
+#define LocationFlagNorthernPass 0xf4
+#define LocationFlagMuseum 0xf5
+#define LocationFlagBlackMarket 0xf6
+#define BlackMarketUnlockedFlag 0xf7
 /*
 #define StandardUnlockedFlag 0xf9
 #define MagiUnlockedFlag 0xfa
@@ -72,6 +76,7 @@ AFEV 0x0 MoveResetter Chapter2DoneFlag
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToGuildhall,4,3)
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToBlacksmith,14,5)
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToTavern,15,11)
+AreaEvent(LocationFlagHirschringSquare,SquareMoveToNorthernPass,0,0,1,0)
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToEnd,6,9)
 
 //in guildhall
@@ -86,6 +91,20 @@ AreaEvent(LocationFlagBlacksmith,BlacksmithTestShopBegin,2,6)
 //in tavern
 AreaEvent(LocationFlagTavern,TavernMoveToSquare,1,9,3,9)
 AreaEvent(LocationFlagTavern,TavernQuestBegin,5,3)
+
+//northern pass
+AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToSquare,0,19,1,19)
+AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToMuseum,2,5)
+AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToBlackMarket,16,17)
+//museum entry
+//marketplace
+//black market entry
+
+//in museum
+
+//in black market
+
+
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -134,6 +153,9 @@ MagusUnlockerUnit:
 UNIT Lucien 0x0 0x0 Level(4,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT
 
+DummyUnits:
+UNIT
+
 
 #define LoadUnitsByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x418C 0x0 0xc; LOAD1 0x0 ch18C; GOTO 0x4000; LABEL 0x418C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x418B 0x0 0xc; LOAD1 0x0 ch18B; GOTO 0x4000; LABEL 0x418B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x418A 0x0 0xc; LOAD1 0x0 ch18A; GOTO 0x4000; LABEL 0x418A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x4160 0x0 0xc; LOAD1 0x0 ch16; GOTO 0x4000; LABEL 0x4160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x4150 0x0 0xc; LOAD1 0x0 ch15; GOTO 0x4000; LABEL 0x4150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x4130 0x0 0xc; LOAD1 0x0 ch13; GOTO 0x4000; LABEL 0x4130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x413A 0x0 0xc; LOAD1 0x0 chS3; GOTO 0x4000; LABEL 0x413A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x4100 0x0 0xc; LOAD1 0x0 ch10; GOTO 0x4000; LABEL 0x4100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x4090 0x0 0xc; LOAD1 0x0 ch9; GOTO 0x4000; LABEL 0x4090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x4080 0x0 0xc; LOAD1 0x0 ch8; GOTO 0x4000; LABEL 0x4080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x4050 0x0 0xc; LOAD1 0x0 ch5; GOTO 0x4000; LABEL 0x4050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x403a 0x0 0xc; LOAD1 0x0 chS1; GOTO 0x4000; LABEL 0x403a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x4030 0x0 0xc; LOAD1 0x0 ch3; GOTO 0x4000; LABEL 0x4030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x4020 0x0 0xc; LOAD1 0x0 ch2; GOTO 0x4000; LABEL 0x4020; LABEL 0x4000; RefreshSMS"
 #define GiveMoneyByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x318C 0x0 0xc; GiveMoney(ch18C); GOTO 0x3000; LABEL 0x318C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x318B 0x0 0xc; GiveMoney(ch18B); GOTO 0x3000; LABEL 0x318B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x318A 0x0 0xc; GiveMoney(ch18A); GOTO 0x3000; LABEL 0x318A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x3160 0x0 0xc; GiveMoney(ch16); GOTO 0x3000; LABEL 0x3160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x3150 0x0 0xc; GiveMoney(ch15); GOTO 0x3000; LABEL 0x3150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x3130 0x0 0xc; GiveMoney(ch13); GOTO 0x3000; LABEL 0x3130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x313A 0x0 0xc; GiveMoney(chS3); GOTO 0x3000; LABEL 0x313A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x3100 0x0 0xc; GiveMoney(ch10); GOTO 0x3000; LABEL 0x3100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x3090 0x0 0xc; GiveMoney(ch9); GOTO 0x3000; LABEL 0x3090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x3080 0x0 0xc; GiveMoney(ch8); GOTO 0x3000; LABEL 0x3080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x3050 0x0 0xc; GiveMoney(ch5); GOTO 0x3000; LABEL 0x3050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x303a 0x0 0xc; GiveMoney(chS1); GOTO 0x3000; LABEL 0x303a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3030 0x0 0xc; GiveMoney(ch3); GOTO 0x3000; LABEL 0x3030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x3020 0x0 0xc; GiveMoney(ch2); GOTO 0x3000; LABEL 0x3020; LABEL 0x3000"
@@ -149,8 +171,8 @@ UNIT
 #define AddRedSigil(x,y) "AddTrap(RedSigilTrapID,x,y)"
 #define AddGreenSigil(x,y) "AddTrap(GreenSigilTrapID,x,y)"
 
-#define ResetMapFlags "ENUT NoRescuingFlag; ENUT 0x66; ENUT LocationFlagHirschringSquare; ENUT LocationFlagGuildhall; ENUT LocationFlagBlacksmith; ENUT LocationFlagTavern"
-#define EndingMapFlags "ENUF NoRescuingFlag; ENUF 0x66; ENUF LocationFlagHirschringSquare; ENUF LocationFlagGuildhall; ENUF LocationFlagBlacksmith; ENUF LocationFlagTavern; ENUF Recruited1Flag; ENUF Recruited2Flag; ENUF Recruited3Flag; ENUF Recruited4Flag; ENUF Recruited5Flag"
+#define ResetMapFlags "ENUT NoRescuingFlag; ENUT 0x66; ENUT LocationFlagHirschringSquare; ENUT LocationFlagGuildhall; ENUT LocationFlagBlacksmith; ENUT LocationFlagTavern; ENUT LocationFlagNorthernPass; ENUT LocationFlagMuseum; ENUT LocationFlagBlackMarket"
+#define EndingMapFlags "ENUF NoRescuingFlag; ENUF 0x66; ENUF LocationFlagHirschringSquare; ENUF LocationFlagGuildhall; ENUF LocationFlagBlacksmith; ENUF LocationFlagTavern; ENUF LocationFlagNorthernPass; ENUF LocationFlagMuseum; ENUF LocationFlagBlackMarket; ENUF Recruited1Flag; ENUF Recruited2Flag; ENUF Recruited3Flag; ENUF Recruited4Flag; ENUF Recruited5Flag"
 #define ClearMap "FADI 10; SET_ACTIVE 0; CLEA 0; CLEN 0; CLEE 0"
 #define MoveToMap(mapid) "LOMA mapid"
 #define InitializeNathan(x,y) "MOVE 0xFF Nathan [x,y]; ENUN; CAM1 Nathan"
@@ -174,6 +196,11 @@ AddSigil(4,3)
 AddSigil(14,5)
 AddSigil(15,11)
 AddRedSigil(6,9)
+CHECK_EVENTID Chapter3DoneFlag
+BEQ 0x1 0xc 0x0
+AddSigil(0,0)
+AddSigil(1,0)
+LABEL 0x1
 ENDA
 
 IntroTexts:
@@ -232,12 +259,26 @@ LoadMagusUnlocker
 FADU 10
 EndEvent
 
+SquareMoveToNorthernPass:
+CHECK_EVENTID Chapter3DoneFlag
+BEQ 0x1 0xc 0x0
+SwapToMap(NorthernPass,1,17)
+CALL LoadNorthernPassSigils
+LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
+GOTO 0x2
+LABEL 0x1
+ENUF LocationFlagHirschringSquare
+LABEL 0x2
+EndEvent
+
 //guildhall concept
 //second .event to store recruitable units
 //macro that handles playing each town visit's events based on progression flag
 #include "Guildhall.event"
 #include "Blacksmith.event"
 #include "Tavern.event"
+#include "NorthernPass.event"
 //todo for chapter 3
 //give blacksmith variable shops by visit
 //intro quests (just 1 or 2 for now) in tavern

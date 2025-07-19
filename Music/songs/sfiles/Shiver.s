@@ -1,28 +1,28 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	Shiver_grp, voicegroup000
+	.equ	Shiver_pri, 0
+	.equ	Shiver_rev, 0
+	.equ	Shiver_mvl, 127
+	.equ	Shiver_key, 0
+	.equ	Shiver_tbs, 1
+	.equ	Shiver_exg, 0
+	.equ	Shiver_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	Shiver
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+Shiver_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Shiver_key+0
 Label_F24016:
- .byte   TEMPO , 180*song09_tbs/2
+ .byte   TEMPO , 180*Shiver_tbs/2
  .byte   VOICE , 30
- .byte   VOL , 57*song09_mvl/mxv
+ .byte   VOL , 57*Shiver_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N05 ,An1 ,v112
  .byte   W24
@@ -544,12 +544,12 @@ Label_F24242:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+Shiver_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Shiver_key+0
 Label_F2387A:
  .byte   VOICE , 30
- .byte   VOL , 57*song09_mvl/mxv
+ .byte   VOL , 57*Shiver_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W06
  .byte   N05 ,Ds1 ,v124
@@ -930,12 +930,12 @@ Label_F239ED:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+Shiver_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Shiver_key+0
 Label_010C0662:
  .byte   VOICE , 81
- .byte   VOL , 59*song09_mvl/mxv
+ .byte   VOL , 59*Shiver_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N06 ,An2 ,v112
  .byte   W12
@@ -1519,12 +1519,12 @@ Label_010C08F8:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+Shiver_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Shiver_key+0
 Label_010C1196:
  .byte   VOICE , 62
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*Shiver_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #04 @001   ----------------------------------------
@@ -2436,10 +2436,10 @@ Label_010C1613:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+Shiver_005:
 @  #05 @000   ----------------------------------------
- .byte   VOL , 59*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 59*Shiver_mvl/mxv
+ .byte   KEYSH , Shiver_key+0
 Label_010C1A08:
  .byte   VOICE , 104
  .byte   PAN , c_v-22
@@ -3039,12 +3039,12 @@ Label_010C1D21:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+Shiver_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Shiver_key+0
 Label_010C1D56:
  .byte   VOICE , 62
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*Shiver_mvl/mxv
  .byte   PAN , c_v+30
  .byte   W96
 @  #06 @001   ----------------------------------------
@@ -4098,12 +4098,12 @@ Label_010C2206:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song09_007:
+Shiver_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Shiver_key+0
 Label_F23A2E:
  .byte   VOICE , 28
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*Shiver_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #07 @001   ----------------------------------------
@@ -4449,13 +4449,13 @@ Label_F23AE9:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song09_008:
+Shiver_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Shiver_key+0
 Label_010C22D6:
  .byte   VOICE , 31
  .byte   PAN , c_v+0
- .byte   VOL , 59*song09_mvl/mxv
+ .byte   VOL , 59*Shiver_mvl/mxv
  .byte   W96
 @  #08 @001   ----------------------------------------
  .byte   W96
@@ -4817,12 +4817,12 @@ Label_010C23C0:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song09_009:
+Shiver_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Shiver_key+0
 Label_010C244A:
  .byte   VOICE , 124
- .byte   VOL , 59*song09_mvl/mxv
+ .byte   VOL , 59*Shiver_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N05 ,Cn1 ,v116
  .byte   N02 ,Gs1 ,v108
@@ -6122,22 +6122,22 @@ Label_010C2C98:
 @******************************************************@
 	.align	2
 
-song09:
+Shiver:
 	.byte	9	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	Shiver_pri	@ Priority
+	.byte	Shiver_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	Shiver_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
-	.word	song09_007
-	.word	song09_008
-	.word	song09_009
+	.word	Shiver_001
+	.word	Shiver_002
+	.word	Shiver_003
+	.word	Shiver_004
+	.word	Shiver_005
+	.word	Shiver_006
+	.word	Shiver_007
+	.word	Shiver_008
+	.word	Shiver_009
 
 	.end

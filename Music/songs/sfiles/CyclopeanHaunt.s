@@ -1,28 +1,28 @@
 	.include "MPlayDef.s"
 
-	.equ	song17_grp, voicegroup000
-	.equ	song17_pri, 0
-	.equ	song17_rev, 0
-	.equ	song17_mvl, 127
-	.equ	song17_key, 0
-	.equ	song17_tbs, 1
-	.equ	song17_exg, 0
-	.equ	song17_cmp, 1
+	.equ	CyclopeanHaunt_grp, voicegroup000
+	.equ	CyclopeanHaunt_pri, 0
+	.equ	CyclopeanHaunt_rev, 0
+	.equ	CyclopeanHaunt_mvl, 127
+	.equ	CyclopeanHaunt_key, 0
+	.equ	CyclopeanHaunt_tbs, 1
+	.equ	CyclopeanHaunt_exg, 0
+	.equ	CyclopeanHaunt_cmp, 1
 
 	.section .rodata
-	.global	song17
+	.global	CyclopeanHaunt
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song17_001:
+CyclopeanHaunt_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song17_key+0
+ .byte   KEYSH , CyclopeanHaunt_key+0
 Label_010BEF02:
- .byte   TEMPO , 116*song17_tbs/2
+ .byte   TEMPO , 116*CyclopeanHaunt_tbs/2
  .byte   VOICE , 1
- .byte   VOL , 27*song17_mvl/mxv
+ .byte   VOL , 27*CyclopeanHaunt_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N32 ,Fs4 ,v120
  .byte   W12
@@ -316,13 +316,13 @@ Label_010BEF47:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song17_002:
+CyclopeanHaunt_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song17_key+0
+ .byte   KEYSH , CyclopeanHaunt_key+0
 Label_010BF0EE:
  .byte   VOICE , 48
  .byte   PAN , c_v-1
- .byte   VOL , 38*song17_mvl/mxv
+ .byte   VOL , 38*CyclopeanHaunt_mvl/mxv
  .byte   TIE ,En2 ,v076
  .byte   TIE ,Bn2 ,v072
  .byte   W96
@@ -783,12 +783,12 @@ Label_010BF12C:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song17_003:
+CyclopeanHaunt_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song17_key+0
+ .byte   KEYSH , CyclopeanHaunt_key+0
 Label_F38B86:
  .byte   VOICE , 28
- .byte   VOL , 127*song17_mvl/mxv
+ .byte   VOL , 127*CyclopeanHaunt_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #03 @001   ----------------------------------------
@@ -1021,12 +1021,12 @@ Label_F38B94:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song17_004:
+CyclopeanHaunt_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song17_key+0
+ .byte   KEYSH , CyclopeanHaunt_key+0
 Label_010BF2EE:
  .byte   VOICE , 30
- .byte   VOL , 31*song17_mvl/mxv
+ .byte   VOL , 31*CyclopeanHaunt_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #04 @001   ----------------------------------------
@@ -1599,12 +1599,12 @@ Label_010BF582:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song17_005:
+CyclopeanHaunt_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song17_key+0
+ .byte   KEYSH , CyclopeanHaunt_key+0
 Label_010BF61E:
  .byte   VOICE , 30
- .byte   VOL , 20*song17_mvl/mxv
+ .byte   VOL , 20*CyclopeanHaunt_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #05 @001   ----------------------------------------
@@ -2168,12 +2168,12 @@ Label_010BF8C5:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song17_006:
+CyclopeanHaunt_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song17_key+0
+ .byte   KEYSH , CyclopeanHaunt_key+0
 Label_F3876A:
  .byte   VOICE , 104
- .byte   VOL , 37*song17_mvl/mxv
+ .byte   VOL , 37*CyclopeanHaunt_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #06 @001   ----------------------------------------
@@ -2480,12 +2480,12 @@ Label_F3886F:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song17_007:
+CyclopeanHaunt_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song17_key+0
+ .byte   KEYSH , CyclopeanHaunt_key+0
 Label_010BF91A:
  .byte   VOICE , 36
- .byte   VOL , 43*song17_mvl/mxv
+ .byte   VOL , 43*CyclopeanHaunt_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N44 ,Bn3 ,v076
  .byte   W17
@@ -2914,12 +2914,12 @@ Label_010BFAEE:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song17_008:
+CyclopeanHaunt_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song17_key+0
+ .byte   KEYSH , CyclopeanHaunt_key+0
 Label_010BFBAA:
  .byte   VOICE , 124
- .byte   VOL , 29*song17_mvl/mxv
+ .byte   VOL , 29*CyclopeanHaunt_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N36 ,Cn1 ,v127
  .byte   N36 ,Fn1
@@ -3352,21 +3352,21 @@ Label_010BFC7E:
 @******************************************************@
 	.align	2
 
-song17:
+CyclopeanHaunt:
 	.byte	8	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song17_pri	@ Priority
-	.byte	song17_rev	@ Reverb.
+	.byte	CyclopeanHaunt_pri	@ Priority
+	.byte	CyclopeanHaunt_rev	@ Reverb.
     
-	.word	song17_grp
+	.word	CyclopeanHaunt_grp
     
-	.word	song17_001
-	.word	song17_002
-	.word	song17_003
-	.word	song17_004
-	.word	song17_005
-	.word	song17_006
-	.word	song17_007
-	.word	song17_008
+	.word	CyclopeanHaunt_001
+	.word	CyclopeanHaunt_002
+	.word	CyclopeanHaunt_003
+	.word	CyclopeanHaunt_004
+	.word	CyclopeanHaunt_005
+	.word	CyclopeanHaunt_006
+	.word	CyclopeanHaunt_007
+	.word	CyclopeanHaunt_008
 
 	.end

@@ -78,7 +78,16 @@
 #define EclipseEffect 0x3
 #define DevilEffect 0x4
 #define StoneEffect 0x5
+#define PetrifyEffect StoneEffect
+#define SleepEffect 0x6
+#define BerserkEffect 0x7
+#define BlindEffect 0x8
+#define ParalyzeEffect 0x9
+#define HeadBindEffect 0xa
+#define ArmBindEffect 0xb
 #define CannotDoubleEffect 0xC
+#define LegBindEffect 0xd
+#define CurseEffect 0xe
 
 //Character/Class Ability
 #define MountedAid 0x00000001

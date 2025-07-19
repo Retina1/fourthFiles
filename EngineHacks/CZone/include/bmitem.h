@@ -112,8 +112,13 @@ enum {
     WPN_EFFECT_PETRIFY = 5,
     WPN_EFFECT_SLEEP = 6,
     WPN_EFFECT_BERSERK = 7,
-    WPN_EFFECT_BLIND = 8,
-    WPN_EFFECT_PARALYZE = 9,
+    WPN_EFFECT_BLIND = 8, //new ailment
+    WPN_EFFECT_PARALYZE = 9, //new ailment
+    WPN_EFFECT_HEADBIND = 10, //edited silence
+    WPN_EFFECT_ARMBIND = 11, //new ailment
+    WPN_EFFECT_NODOUBLE = 12,
+    WPN_EFFECT_LEGBIND = 13, //new ailment
+    WPN_EFFECT_CURSE = 14, //new ailment
 };
 
 enum {

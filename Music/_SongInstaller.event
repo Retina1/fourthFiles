@@ -175,6 +175,36 @@ SongTable(Song_IsThatBloodThine,IsThatBloodThine,1)
 SongTable(Song_EndOfRagingWaves,EndOfRagingWaves,1)
 #include "songs/EndOfRagingWaves.event"
 }
+#define Song_InspectingTheResoundingWeapons 0x26
+{
+SongTable(Song_InspectingTheResoundingWeapons,InspectingTheResoundingWeapons,1)
+#include "songs/InspectingTheResoundingWeapons.event"
+}
+#define Song_SandyBarrens 0x27
+{
+SongTable(Song_SandyBarrens,SandyBarrens,1)
+#include "songs/SandyBarrens.event"
+}
+#define Song_Shiver 0x28
+{
+SongTable(Song_Shiver,Shiver,1)
+#include "songs/Shiver.event"
+}
+#define Song_HeavyArmoredCorps 0x29
+{
+SongTable(Song_HeavyArmoredCorps,HeavyArmoredCorps,1)
+#include "songs/HeavyArmoredCorps.event"
+}
+#define Song_CyclopeanHaunt 0x2a
+{
+SongTable(Song_CyclopeanHaunt,CyclopeanHaunt,1)
+#include "songs/CyclopeanHaunt.event"
+}
+#define Song_EchoingLibrary 0x2b
+{
+SongTable(Song_EchoingLibrary,EchoingLibrary,1)
+#include "songs/EchoingLibrary.event"
+}
 
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36
