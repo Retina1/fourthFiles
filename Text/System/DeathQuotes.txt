@@ -10,25 +10,29 @@ I'm power itself[...][N]
 I'm the heart[...][N]
 of the end[...][AN][CloseEyes]
 I[...] I am[...] inimitable[...][A][X]
+
 ##EgilDeath
 [MidLeft][Egil]
 Lady Rana[...][N]
 Ser Harla[...][AN][CloseEyes]
 Forgive me[...][N]
 My atonement[...][A][X]
+
 ##HarlaDeath
 [MidLeft][Harla][CloseEyes]
 Rana[...] I wasn't[...][N]
 I'm not[...] ready[...][A][X]
+
 ##RanaDeath
 [MidLeft][Rana]
-I[...] get it[...][N]
+I[...] finally get it[...][N]
 At last[...][AN][CloseEyes]
 Live your life[...][N]
 Not for the end[...][AN]
 But for it all[...][AN]
 [...]Piorin[...] I see[...][N]
 you[...] once[...][A][X]
+
 ##WeberDeath
 [MidLeft][Weber]
 And so[...] Asketa is[N]
@@ -37,6 +41,7 @@ It'll all burn[...][N]
 All on your head[...][AN]
 Ask yourselves[...] if it[N]
 was all worth it[...][A][X]
+
 ##BenthusDeath
 [MidLeft][Benthus]
 I will[...] not die[...][N]
@@ -198,7 +203,93 @@ for this life[...][A][X]
 Shit[...] I'll never get[...][N]
 my inheritance[...] now[...][A][CloseEyes][X]
 
+//myrmidons
+##NatsukiRetreat
+[MidRight][Natsubun]
+([...]I'm getting out of here.[N]
+This displeases me.)[A][X]
+##MikaylaDeath
+[MidRight][Mikayla]
+I was[...] doing so[...][N]
+well[...] Drat[...][A][X]
+##CalliopeDeath
+[MidRight][Calliope]
+It's over[...] No more[...][N]
+No more[...] fear[...][A][CloseEyes][X]
+##GhariDeath
+[MidRight][Ghari]
+Sing of my life[...][N]
+Sing of my triumphs[...][A][CloseEyes][X]
+##AzaghalDeath
+[MidRight][Azaghal]
+If I must die[...][N]
+Better by the blade[...][A][CloseEyes][X]
 
+//riders
+##AizenDeath
+[MidRight][Aizen]
+Whew[...] Guess I'm not[...][N]
+going any[...] further[...][A][CloseEyes][X]
+##JohnnieDeath
+[MidRight][Johnnie]
+Friends[...] I'm finally[...][N]
+comin'[...] down[...][A][CloseEyes][X]
+##KoletteDeath
+[MidRight][Kolette]
+All I wanted was[...] freedom[...][N]
+Was I[...] wrong[...]?[A][CloseEyes][X]
+##PallasDeath
+[MidRight][Pallas]
+Pfah[...] What a miserable[...][N]
+way to go[...][A][CloseEyes][X]
+##EmblemDeath
+[MidRight][Emblem]
+I[...] can't stop here[...][N]
+Must keep[...] running[...][A][CloseEyes][X]
+
+//raiders
+##EsketitDeath
+[MidRight][Esketit]
+I thought I[...] found my[...][N]
+reason[...][A][CloseEyes][X]
+##GloriaDeath
+[MidRight][Gloria]
+I'll be one[...] with nature[...][N]
+soon enough[...][A][CloseEyes][X]
+##PipsyDeath
+[MidRight][Pipsy]
+I'm not[...] scared of[...][N]
+any of you[...][A][CloseEyes][X]
+##SonDeath
+[MidRight][Son]
+Cassius[...] My boy[...][N]
+Don't[...] be afraid[...][A][CloseEyes][X]
+##HartDeath
+[MidRight][Hart]
+Damn[...] Ma[...] Sis[...][N]
+I'm sorry[...][A][CloseEyes][X]
+
+//gunners
+##MartinDeath
+[MidRight][Martin]
+A worthy end[...] for a[N]
+man like me[...][A][CloseEyes][X]
+##DemicoDeath
+[MidRight][Demico]
+Roslin[...] Don't weep[...][N]
+for someone like me[...][A][CloseEyes][X]
+##KarlDeath
+[MidRight][Karl]
+I'm goin'[...] to the city[...][N]
+made of gold[...][A][CloseEyes][X]
+##WaspDeath
+[MidRight][Wasp][Smile]
+Let's see you[...] make it[N]
+without[...] me[...][A][CloseEyes][X]
+##VictoriaDeath
+[MidRight][Victoria]
+So very close[...][N]
+So ver far[...][A][CloseEyes][X]
 ##LaiteuseDeath
 [MidRight][Laiteuse]
 Whoopsie[...] Guess I[...][N]

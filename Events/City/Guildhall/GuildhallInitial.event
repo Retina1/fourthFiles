@@ -101,19 +101,19 @@ EndEvent
 
 //knt
 Drogo_RecruitEvent:
-GuildRecruit(Drogo,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+GuildRecruit(Drogo,Guild_Drogo_Intro,Guild_Drogo_Accept,Guild_Drogo_Deny,Guild_Drogo_Return,0x20)
 EndEvent
 Gretchen_RecruitEvent:
-GuildRecruit(Gretchen,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+GuildRecruit(Gretchen,Guild_Gretchen_Intro,Guild_Gretchen_Accept,Guild_Gretchen_Deny,Guild_Gretchen_Return,0x21)
 EndEvent
 Allbringer_RecruitEvent:
-GuildRecruit(Allbringer,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+GuildRecruit(Allbringer,Guild_Allbringer_Intro,Guild_Allbringer_Accept,Guild_Allbringer_Deny,Guild_Allbringer_Return,0x22)
 EndEvent
 Hopf_RecruitEvent:
-GuildRecruit(Hopf,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+GuildRecruit(Hopf,Guild_Hopf_Intro,Guild_Hopf_Accept,Guild_Hopf_Deny,Guild_Hopf_Return,0x23)
 EndEvent
 SlynSpire_RecruitEvent:
-GuildRecruit(SlynSpire,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x24)
+GuildRecruit(SlynSpire,Guild_SlynSpire_Intro,Guild_SlynSpire_Accept,Guild_SlynSpire_Deny,Guild_SlynSpire_Return,0x24)
 EndEvent
 
 //axe

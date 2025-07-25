@@ -63,6 +63,13 @@ Pallas[X]
 A scarred ex-soldier from Belvarus.[N]
 She fights just to feel again.[X]
 
+//tezuka
+##Name_Emblem
+F. Emblem[X]
+##Desc_Emblem
+The Fire Emblem, and a runner of[N]
+inhuman talent. She's scatterbrained.[X]
+
 //rasta
 ##Name_Esketit
 Esketit[X]

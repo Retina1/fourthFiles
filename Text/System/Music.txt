@@ -1,7 +1,7 @@
 ##SourceTitle_EtrianOdyssey
 Etrian Odyssey[X]
 ##SongTitle_SpinningTheTale
-Spinning The Tale[X]
+Spinning the Tale[X]
 ##SongTitle_EO1Guild ^
 Name Engraved Into the 100th Volume![X]
 ##SongTitle_InitialStrike
@@ -120,6 +120,13 @@ Into the Woods[X]
 No One is Alone[X]
 ##SongTitle_NoMore
 No More[X]
+
+##SourceTitle_MaybeHappyEnding
+Maybe Happy Ending[X]
+##SongTitle_WhyLove
+Why Love[X]
+##SongTitle_FinaleMHE
+Finale[X]
 
 ##SourceTitle_TheLorax
 The Lorax[X]

@@ -1,5 +1,6 @@
 #include "gbafe.h"
 
+
 void CallChoiceMenuASMC(struct Proc* proc)
 {
     ClearBg0Bg1();
@@ -23,6 +24,30 @@ u8 FlagUsabilityMenuOption(struct MenuItemDef* def, int number) {
 	}
 	
 	return MENU_DISABLED;
+}
+
+u8 BigFlagUsabilityMenuOption(struct MenuItemDef* def, int number) {
+	if(def->overrideId == 0) {
+		return MENU_ENABLED;
+	}
+	
+	if(CheckFlag(def->overrideId|0x100)) {
+		return MENU_ENABLED;
+	}
+	
+	return MENU_DISABLED;
+}
+
+u8 InvertedBigFlagUsabilityMenuOption(struct MenuItemDef* def, int number) {
+	if(def->overrideId == 0) {
+		return MENU_DISABLED;
+	}
+	
+	if(CheckFlag(def->overrideId|0x100)) {
+		return MENU_DISABLED;
+	}
+	
+	return MENU_ENABLED;
 }
 
 u8 ChoiceMenu_OnSelect(struct MenuProc* menu, struct MenuItemProc* menu_item) {

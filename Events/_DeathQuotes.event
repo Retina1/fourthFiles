@@ -71,12 +71,33 @@ AlwaysDeathQuote(Roslin,0x0,RoslinDeath)
 AlwaysDeathQuote(Witerico,0x0,WitericoDeath)
 
 //myrm
+AlwaysDeathQuote(Natsuki,0x0,NatsukiRetreat)
+AlwaysDeathQuote(Mikayla,0x0,MikaylaDeath)
+AlwaysDeathQuote(Calliope,0x0,CalliopeDeath)
+AlwaysDeathQuote(Ghari,0x0,GhariDeath)
+AlwaysDeathQuote(Azaghal,0x0,AzaghalDeath)
 
 //rid
+AlwaysDeathQuote(Aizen,0x0,AizenDeath)
+AlwaysDeathQuote(Johnnie,0x0,JohnnieDeath)
+AlwaysDeathQuote(Kolette,0x0,KoletteDeath)
+AlwaysDeathQuote(Pallas,0x0,PallasDeath)
+AlwaysDeathQuote(Emblem,0x0,EmblemDeath)
 
 //raid
+AlwaysDeathQuote(Esketit,0x0,EsketitDeath)
+AlwaysDeathQuote(Gloria,0x0,GloriaDeath)
+AlwaysDeathQuote(Pipsy,0x0,PipsyDeath)
+AlwaysDeathQuote(Son,0x0,SonDeath)
+AlwaysDeathQuote(Hart,0x0,HartDeath)
 
 //gun
+AlwaysDeathQuote(Martin,0x0,MartinDeath)
+AlwaysDeathQuote(Demico,0x0,DemicoDeath)
+AlwaysDeathQuote(Karl,0x0,KarlDeath)
+AlwaysDeathQuote(Wasp,0x0,WaspDeath)
+AlwaysDeathQuote(Victoria,0x0,VictoriaDeath)
+AlwaysDeathQuote(Laiteuse,0x0,LaiteuseDeath)
 
 //poet
 

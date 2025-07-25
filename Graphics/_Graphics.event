@@ -7,6 +7,7 @@
 #include "UnitPalettes/_Installer.event"
 #include "SystemMenus/MenuInstaller.event"
 #include "MinimugBoxNumbers/Installer.event"
+#include "TitleBG/titlebackgroundinstaller.event"
 
 //TODO
 //https://feuniverse.us/t/custom-ui-graphics-tutorial/25292

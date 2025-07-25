@@ -37,6 +37,9 @@ UNIT
 Recruit_Pallas:
 UNIT Pallas 0x0 0x1 Level(11,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Ahlspiess] NoAI
 UNIT
+Recruit_Emblem:
+UNIT Emblem 0x0 0x1 Level(1,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
+UNIT
 
 Recruit_Esketit:
 UNIT Esketit 0x0 0x1 Level(6,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace] NoAI
@@ -103,6 +106,9 @@ EndEvent
 Pallas_RecruitEvent:
 GuildRecruit(Pallas,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
 EndEvent
+Emblem_RecruitEvent:
+GuildRecruit(Emblem,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x24)
+EndEvent
 
 //raider
 Esketit_RecruitEvent:
@@ -159,6 +165,7 @@ GuildLoad(Aizen,Recruit_Aizen,0x1)
 GuildLoad(Johnnie,Recruit_Johnnie,0x2)
 GuildLoad(Kolette,Recruit_Kolette,0x3)
 GuildLoad(Pallas,Recruit_Pallas,0x4)
+GuildLoad(Emblem,Recruit_Emblem,0x5)
 FADU 10
 ENDA
 

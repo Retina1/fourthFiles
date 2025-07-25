@@ -101,77 +101,27 @@ ChapterBattlePrepShopTable: //indexed by chapter id
 //0x00 - 0x0F
 WORD 0
 WORD 0 //no prep shop
+//chapter 3
 POIN PrepShop1
 WORD 0
-
 WORD 0
 WORD 0
 WORD 0
 WORD 0
 
+//chapter 9
+WORD 0
 WORD 0
 WORD 0
 WORD 0
 WORD 0
 
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-
-//0x10 - 0x1F
-WORD 0
+//14 - the fall - no prep shop
 WORD 0
 WORD 0
 WORD 0
 
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-
-//0x20 - 0x2F
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-
-//0x30 - 0x3F
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
+//17a
 WORD 0
 WORD 0
 WORD 0
@@ -179,11 +129,53 @@ WORD 0
 WORD 0
 WORD 0
 
-//0x40 - 0x4E
+//17b
 WORD 0
 WORD 0
 WORD 0
+WORD 0
+WORD 0
+WORD 0
+
+//17c
+WORD 0
+WORD 0
+WORD 0
+
+//lethal
+WORD PrepShop1
+WORD 0; WORD 0
+
+//shimmering
+WORD 0
+WORD 0; WORD 0
+
+//clouded
+WORD 0
+WORD 0; WORD 0; WORD 0
+
+//ruined
+WORD 0
+WORD 0; WORD 0; WORD 0
+
+//tableland
+WORD 0
+WORD 0; WORD 0; WORD 0; WORD 0
+
+//armory
+WORD 0
+WORD 0; WORD 0; WORD 0; WORD 0
+
+//palace
+WORD 0
+WORD 0; WORD 0; WORD 0
+
+//drowning
+WORD 0
+WORD 0; WORD 0; WORD 0; WORD 0; WORD 0; WORD 0; WORD 0
+
 POIN PrepShopCity
+//hereafter doesn't matter because city has no prep screens
 WORD 0
 WORD 0
 WORD 0
@@ -210,7 +202,20 @@ BYTE 0x0 0x0
 
 ALIGN 4
 TestShop:
-SHLI Shortsword Scramasax Boarblade Claymore Executor Zweihander DvergrSword Caladbolg Brightsword Magebane Bluntblade Roughslash Muzzler Headhunter SuperiorBlade VineWhip ThornWhip ChainWhip RougeWhip Ninetails RazorWhip Heavensfall Scorpio HazeWhip Stonesting Type0 Parabola Dominance BlackSun RagingWave GreatMountain Shortspear Pike Partizan Sarissa Ahlspiess Omiyari Fengyan Ron HandSpear Shieldlance SoarSpear Longinus Impaler Epee Sabre Rapier Estoc JollyRoger TheFable Shortmace Broadaxe Yue Greataxe Khopesh Labrys Parashu Ukonvasara DevilAxe SerratedAxe HandAxe TheFeller ImposingAxe Mindcrush Juggernaut BrassKnuckles Caestus Gauntlets Claws SpikedFist Katar Kirikindad Shortbow Recurve Composite Gakgung Warbow Sureshot FalconBow ArcDrawer CompactBow Longbow ToxinBow Trickshot Greatbow OmegaArch Handgonne Arquebus Sakaloz Caliver Musket Repeater BoltRifle Agneyastra Twinshot Snipistol Pepperbox Stunshot Furybox Meisterkugel Stoneshot Wand Staff DownStaff GemStaff Godendag SageWand Kerykeion ShieldRod LuckStaff Asclepius FlameScroll BoltScroll FreezeScroll GaleScroll ShineScroll CleaveScroll SparkScroll DrainScroll PyreScroll ThorScroll CocytusScroll TempestScroll HealScroll RestoreScroll RepairScroll RescueScroll WarpScroll Vulnerary Elixir Medica Soma AriadneShard HeroCrest KnightProof OrionsBolt Hippokos GuidingRing RubyBlade SightingLens OutlandShield SpiritWrap ElysianWhip PerfectRose BanefulDoll DarkBrooch DeusHerb HolyCloak DriveGear ParadoxCore GuildSeal
+SHLI Shortsword Scramasax Boarblade Claymore Executor Zweihander DvergrSword Caladbolg Brightsword Magebane Bluntblade Roughslash Muzzler Headhunter SuperiorBlade
+SHLI VineWhip ThornWhip ChainWhip RougeWhip Ninetails RazorWhip Heavensfall Scorpio HazeWhip Stonesting
+SHLI Type0 Parabola Dominance BlackSun RagingWave GreatMountain
+SHLI Shortspear Pike Partizan Sarissa Ahlspiess Omiyari Fengyan Ron HandSpear Shieldlance SoarSpear Longinus Impaler
+SHLI Epee Sabre Rapier Estoc JollyRoger TheFable
+SHLI Shortmace Broadaxe Yue Greataxe Khopesh Labrys Parashu Ukonvasara DevilAxe SerratedAxe HandAxe TheFeller ImposingAxe Mindcrush Juggernaut
+SHLI BrassKnuckles Caestus Gauntlets Claws SpikedFist Katar Kirikindad
+SHLI Shortbow Recurve Composite Gakgung Warbow Sureshot FalconBow ArcDrawer CompactBow Longbow ToxinBow Trickshot Greatbow OmegaArch
+SHLI Handgonne Arquebus Sakaloz Caliver Musket Repeater BoltRifle Agneyastra Twinshot Snipistol Pepperbox Stunshot Furybox Meisterkugel Stoneshot
+SHLI Wand Staff DownStaff GemStaff Godendag SageWand Kerykeion ShieldRod LuckStaff Asclepius
+SHLI FlameScroll BoltScroll FreezeScroll GaleScroll ShineScroll CleaveScroll SparkScroll DrainScroll PyreScroll ThorScroll CocytusScroll TempestScroll
+SHLI HealScroll RestoreScroll RepairScroll RescueScroll WarpScroll
+SHLI Vulnerary Elixir Medica Soma AriadneShard
+SHLI HeroCrest KnightProof OrionsBolt Hippokos GuidingRing RubyBlade SightingLens OutlandShield SpiritWrap ElysianWhip PerfectRose BanefulDoll DarkBrooch DeusHerb HolyCloak DriveGear ParadoxCore GuildSeal
 BYTE 0x0 0x0
 
 ALIGN 4

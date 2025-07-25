@@ -1,0 +1,24 @@
+ALIGN 4
+Quests3xMenu:
+MenuDefinition(6, 7, 18, 0, 1, Quests3xMenuOptions)
+
+ALIGN 4
+Quests3xMenuOptions:
+QuestMenuOption(Quest1_3x, Quest1_3x_Desc, Quest1_3x_Flag)
+QuestMenuOption(Quest2_3x, Quest2_3x_Desc, Quest2_3x_Flag)
+MenuOption(NoQuestLabel, NoQuestDesc, 0)
+MenuTerminator
+
+ALIGN 4
+AltQuests3xMenu:
+MenuDefinition(6, 7, 18, 0, 1, AltQuests3xMenuOptions)
+ALIGN 4
+AltQuests3xMenuOptions:
+QuestMenuOption(Quest1_3x, Quest1_3x_Desc, 0)
+QuestMenuOption(Quest2_3x, Quest2_3x_Desc, Quest2_3x_Flag)
+MenuOption(NoQuestLabel, NoQuestDesc, 0)
+MenuTerminator
+
+//take quests, global flag enabled for quest lets you engage it
+//complete quests give rewards once you enter tavern
+//some quests aren't instantly doable

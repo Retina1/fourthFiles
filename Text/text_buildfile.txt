@@ -31,6 +31,7 @@ between stats and growths.[X]
 #include "System/Music.txt"
 #include "System/CampaignCustomizers.txt"
 #include "System/DeathQuotes.txt"
+#include "System/Guide.txt"
 
 #include "Chapters/ChapterNames.txt"
 #include "Chapters/FloorTitles.txt"
@@ -71,6 +72,8 @@ between stats and growths.[X]
 #include "Guild/Upper/Duelists.txt"
 #include "Guild/ImpArt/Drivers.txt"
 #include "Guild/ImpArt/Artifices.txt"
+
+#include "Quests/1_Visit3x.txt"
 
 ## StaffExpLabel
 EXP[X]

@@ -193,10 +193,11 @@ EndEvent
 EncounterRatatoskr:
 SystemText(SuperbossWarning)
 IfNoSelectedGoto(0x1)
+SystemText(Ratatoskr_Encounter1)
 ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
 LOAD3 0x0 EncounterRatatoskrUnits; ENUN
 LOAD1 0x0 EncounterRatatoskrEnemies; ENUN
-SetUnitStatline(Ratatoskr,25,7,25,21,28,18,3,2)
+SetUnitStatline(Ratatoskr,25,7,16,21,28,18,3,2)
 CreateArenaBorders(5,4,16,14)
 FADU 16
 MUSC Song_EndOfRagingWaves

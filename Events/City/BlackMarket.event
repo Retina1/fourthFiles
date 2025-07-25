@@ -1,0 +1,27 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+BlackMarketUnitsC3:
+//marketplpace npc, generics
+UNIT AsketaGeneric Caller 0x0 Level(6,NPC,1) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+LoadBlackMarketSigils:
+ENUF LocationFlagBlackMarket
+AddSigil(0,1)
+AddSigil(0,2)
+//AddGreenSigil(10,11)
+ENDA
+
+
+BlackMarketMoveToNorthernPass:
+SwapToMap(NorthernPass,15,17)
+CALL LoadNorthernPassSigils
+MUSC Song_VastLands
+LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
+EndEvent

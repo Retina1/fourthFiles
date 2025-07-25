@@ -58,8 +58,44 @@ BNE 0x1 0xc 0x0
 RunTextByVisit(City02_BobbyIntro,City03_Bobby,0,0,0,0,0,0,0,0,0,0,0,0)
 ENUT 0x1f
 LABEL 0x1
+RunEventByVisit(DummyEvent,Chapter3Quests,0,0,0,0,0,0,0,0,0,0,0,0)
 ENUF LocationFlagTavern
 EndEvent
+
+Chapter3Quests:
+LABEL 0x1
+CHECK_EVENTID Quest1_3x_DoneFlag
+BEQ 0x2 0xc 0x0
+CallMenu(AltQuests3xMenu)
+GOTO 0x3
+LABEL 0x2
+CallMenu(Quests3xMenu)
+LABEL 0x3
+SVAL 0x1 0
+BNE 0x10 0xc 0x1
+Text(Quest1_3x_Bobby)
+ENUT Quest1_3x_Flag
+GOTO 0x1
+LABEL 0x10
+SVAL 0x1 1
+BNE 0x11 0xc 0x1
+Text(Quest2_3x_Bobby)
+ENUT Quest2_3x_Flag
+GOTO 0x1
+LABEL 0x11
+ENDA
+
+#define QuestEndCheck(questStart,questEnd,dialogue,reward) "CHECK_EVENTID questStart; BEQ questStart 0xc 0x0; CHECK_EVENTID questEnd; BEQ questStart 0xc 0x0; Text(dialogue); GiveItem(reward,Nathan); ENUF questStart; LABEL questStart"
+#define QuestEndCheckGold(questStart,questEnd,dialogue,reward) "CHECK_EVENTID questStart; BEQ questStart 0xc 0x0; CHECK_EVENTID questEnd; BEQ questStart 0xc 0x0; Text(dialogue); GiveMoney(reward); ENUF questStart; LABEL questStart"
+
+QuestEndChecker:
+QuestEndCheckGold(Quest1_3x_Flag,Quest1_3x_DoneFlag,Quest1_3x_Done,500)
+QuestEndCheck(Quest2_3x_Flag,Quest2_3x_DoneFlag,Quest2_3x_Done,Pike)
+
+ENDA
+
+DummyEvent:
+ENDA
 
 TownBertramTalk:
 RunTextByVisit(City02_Bertram,City03_Bertram,0,0,0,0,0,0,0,0,0,0,0,0)

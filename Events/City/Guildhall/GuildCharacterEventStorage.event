@@ -43,6 +43,7 @@ GuildRecruitEvent(Aizen_RecruitEvent,Aizen)
 GuildRecruitEvent(Johnnie_RecruitEvent,Johnnie)
 GuildRecruitEvent(Kolette_RecruitEvent,Kolette)
 GuildRecruitEvent(Pallas_RecruitEvent,Pallas)
+GuildRecruitEvent(Emblem_RecruitEvent,Emblem)
 //raiders
 GuildRecruitEvent(Esketit_RecruitEvent,Esketit)
 GuildRecruitEvent(Gloria_RecruitEvent,Gloria)

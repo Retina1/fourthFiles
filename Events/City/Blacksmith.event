@@ -13,9 +13,18 @@ UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
+#define LoadShopByVisit(ch2,ch3,chS1,ch5,ch8,ch9,ch10,chS3,ch13,ch15,ch16,ch18A,ch18B,ch18C) "CHECK_EVENTID Chapter18CDoneFlag; BEQ 0x418C 0x0 0xc; MakeShop(ch18C); GOTO 0x4000; LABEL 0x418C; CHECK_EVENTID Chapter18BDoneFlag; BEQ 0x418B 0x0 0xc; MakeArmory(ch18B); GOTO 0x4000; LABEL 0x418B; CHECK_EVENTID Chapter18ADoneFlag; BEQ 0x418A 0x0 0xc; MakeArmory(ch18A); GOTO 0x4000; LABEL 0x418A; CHECK_EVENTID Chapter16DoneFlag; BEQ 0x4160 0x0 0xc; MakeArmory(ch16); GOTO 0x4000; LABEL 0x4160; CHECK_EVENTID Chapter15DoneFlag; BEQ 0x4150 0x0 0xc; MakeArmory(ch15); GOTO 0x4000; LABEL 0x4150; CHECK_EVENTID Chapter13DoneFlag; BEQ 0x4130 0x0 0xc; MakeArmory(ch13); GOTO 0x4000; LABEL 0x4130; CHECK_EVENTID Stratum3DoneFlag; BEQ 0x413A 0x0 0xc; MakeShop(chS3); GOTO 0x4000; LABEL 0x413A; CHECK_EVENTID Chapter10DoneFlag; BEQ 0x4100 0x0 0xc; MakeArmory(ch10); GOTO 0x4000; LABEL 0x4100; CHECK_EVENTID Chapter9DoneFlag; BEQ 0x4090 0x0 0xc; MakeArmory(ch9); GOTO 0x4000; LABEL 0x4090; CHECK_EVENTID Chapter8DoneFlag; BEQ 0x4080 0x0 0xc; MakeShop(ch8); GOTO 0x4000; LABEL 0x4080; CHECK_EVENTID Chapter5DoneFlag; BEQ 0x4050 0x0 0xc; MakeArmory(ch5); GOTO 0x4000; LABEL 0x4050; CHECK_EVENTID Stratum1DoneFlag; BEQ 0x403a 0x0 0xc; MakeArmory(chS1); GOTO 0x4000; LABEL 0x403a; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x4030 0x0 0xc; MakeShop(ch3); GOTO 0x4000; LABEL 0x4030; CHECK_EVENTID Chapter2DoneFlag; BEQ 0x4020 0x0 0xc; MakeArmory(ch2); GOTO 0x4000; LABEL 0x4020; LABEL 0x4000"
+
+//johanna runs it for c3x, c8x, s3x, 18Cx
+
 ALIGN 4
 Ch2Shop:
 SHLI AriadneShard Shortsword VineWhip Shortspear Epee Shortmace BrassKnuckles Shortbow Handgonne Wand Vulnerary Medica
+BYTE 0x0 0x0
+
+ALIGN 4
+Ch3Shop:
+SHLI AriadneShard FlameScroll Shortsword VineWhip Shortspear Epee Shortmace BrassKnuckles Shortbow Handgonne Wand Vulnerary Medica
 BYTE 0x0 0x0
 
 ALIGN 4
@@ -38,8 +47,6 @@ LoadVendorSecond
 FADU 10
 EndEvent
 
-//figure o
-
 BlacksmithShopBegin:
 //rewrite shop text to be benjamin-y
 CHECK_EVENTID 0x1e
@@ -47,7 +54,7 @@ BNE 0x1 0xc 0x0
 RunTextByVisit(City02_BenjaminIntro,City03_Benjamin,0,0,0,0,0,0,0,0,0,0,0,0)
 ENUT 0x1e
 LABEL 0x1
-MakeArmory(Ch2Shop)
+LoadShopByVisit(Ch2Shop,Ch3Shop,0,0,0,0,0,0,0,0,0,0,0,0)
 ENUF LocationFlagBlacksmith
 EndEvent
 

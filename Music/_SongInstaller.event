@@ -205,6 +205,16 @@ SongTable(Song_CyclopeanHaunt,CyclopeanHaunt,1)
 SongTable(Song_EchoingLibrary,EchoingLibrary,1)
 #include "songs/EchoingLibrary.event"
 }
+#define Song_WhyLove 0x2c
+{
+SongTable(Song_WhyLove,WhyLove,1)
+#include "songs/WhyLove.event"
+}
+#define Song_FinaleMHE 0x2d
+{
+SongTable(Song_FinaleMHE,FinaleMHE,1)
+#include "songs/FinaleMHE.event"
+}
 
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36

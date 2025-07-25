@@ -1,5 +1,6 @@
 #define MenuDefinition(x, y, w, h, style, commands) "BYTE x y w h; WORD style; POIN commands; WORD 0 0 0 0 0x0804F521 0x0804F459"
 #define MenuOption(name, desc, flag) "WORD 0; SHORT name desc; BYTE 0 flag 0 0; POIN FlagUsabilityMenuOption 0 ChoiceMenu_OnSelect 0 0 0"
+#define QuestMenuOption(name, desc, flag) "WORD 0; SHORT name desc; BYTE 0 (flag - 0x100) 0 0; POIN InvertedBigFlagUsabilityMenuOption 0 ChoiceMenu_OnSelect 0 0 0"
 #define MenuTerminator "WORD 0 0 0 0 0 0 0 0 0"
 #define CallMenu(menu) "RefreshLordSplitTiles; SVAL s1 menu|IsPointer; ASMC CallChoiceMenuASMC|1"
 
@@ -9,6 +10,13 @@
 // MenuOption() creates a menu option under a specific label. the parameters are option name, option description, and flag. if the flag is NOT set, the menu option will be grayed out and disabled.
 // CallMenu() calls that choice menu in events
 
+//add files for
+//quest access
+//museum access
+//marketplace per chapter
+//black market
+#include "MarketMenus.event"
+#include "QuestMenus.event"
 
 ALIGN 4
 GrowthModeMenu:
@@ -33,15 +41,6 @@ MenuOption(PicnicModeLabel, PicnicModeRText, 0x8)
 MenuOption(ClearModifiersLabel, ClearModifiersLabelRText, 0)
 MenuOption(FinishLabel, FinishRText, 0)
 MenuTerminator
-
-#define StandardUnlockedFlag 0xf9
-#define MagiUnlockedFlag 0xfa
-#define MagusUnlockedFlag MagiUnlockedFlag
-#define SpecialUnlockedFlag 0xfb
-#define SkyUnlockedFlag 0xfc
-#define LifeflowUnlockedFlag 0xfd
-#define SenatusUnlockedFlag 0xfe
-#define OtherUnlockedFlag 0xff
 
 ALIGN 4
 RecruitOuterMenu:

@@ -14,3 +14,4 @@
 #include "MainChapters\Chapter1.event"
 #include "MainChapters\Chapter2.event"
 #include "MainChapters\Chapter3.event"
+#include "MainChapters\Chapter4.event"

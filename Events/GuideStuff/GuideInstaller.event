@@ -1,0 +1,139 @@
+//Guide data is a series of lists; contained within these lists are the flags to use for unlock and read for each entry
+//This sets all of those flags to the same flag, effectively freeing up all of the guide flags for other uses
+#define UnlockGuideFlag 0xCB
+
+//make unit existence/class impact guide shit
+PUSH
+ORG $CE440
+jumpToHack(GuideCheck1)
+ORG $CEB10
+jumpToHack(GuideCheck2)
+ORG $CEBD4
+jumpToHack(GuideCheck3)
+POP
+ALIGN 4
+GuideCheck1:
+#incbin "check1.dmp"
+ALIGN 4
+GuideCheck2:
+#incbin "check2.dmp"
+ALIGN 4
+GuideCheck3:
+#incbin "check3.dmp"
+
+// entry table: 0xB19E0C
+// pointers: CDF5C, CE380, CE40C, CE480, CE57C, CE618, CE6C4, CE998, CEB5C, CEC20, CF090, CF468, CF488
+// BYTE Category Chapter SHORT TitleText BodyText Flag ReadFlag BYTE 0 0
+
+// chapter table: 0xB12AE0
+// pointers: CE1FC
+// SHORT ChapterText BYTE 0 0
+
+// category table: 0xB12B04
+// pointers: CE23C, CE1BC
+// SHORT CategoryText
+
+// By Pikmin, Huichelaar 
+#define PageCount 1 // This must be less than or equal to the number of entries you have in GuideCategoryTable
+
+//Disable guide sort for glitchiness reasons
+PUSH
+  // Guide Menu
+    // Disable guide Sort2 for glitchiness reasons
+    // Credit to Pikmin1211
+    ORG 0xCEF7C
+    SHORT 0xE001
+	// This section by Huichelaar 
+    // Don't draw "Sort" sprite
+    ORG 0xCDFB8
+    SHORT 0x46C0 0x46C0
+    // Draw "Back" where "Sort" used to be
+    ORG 0xCDFC4
+    SHORT 0x2203
+POP
+
+#define GuideTerminator "ALIGN 4; WORD 0 0 0 0 0 0 0 0 0 0"
+
+#define GuideEntry(Category, Chapter, TitleText, BodyText, Flag) "BYTE Category Chapter; SHORT TitleText BodyText Flag Flag 0x0"
+#define GuideEntry(Category, Chapter, TitleText, BodyText, Flag, Unit, Class) "BYTE Category Chapter; SHORT TitleText BodyText Flag Flag; BYTE Unit Class"
+#define GuideEntry(Category, Chapter, TitleText, BodyText, Flag, Unit) "BYTE Category Chapter; SHORT TitleText BodyText Flag Flag; BYTE Unit 0x0"
+
+#define GuideChapterEntry(ChapterText) "SHORT ChapterText 0x0"
+
+#define GuideCategoryEntry(CategoryText) "SHORT CategoryText"
+
+
+ALIGN 4
+GuideEntryTable:
+//mechanical stuff
+GuideEntry(1, 0, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
+GuideEntry(1, 0, GuideAilments, GuideAilmentDesc, Chapter2DoneFlag)
+//quests
+GuideEntry(2, 1, GuideQuestsGeneral, GuideQuestsGeneralDesc, Chapter2DoneFlag)
+GuideEntry(2, 1, Quest1_3x, Quest1_3x_Guide, Quest1_3x_Flag)
+GuideEntry(2, 1, Quest2_3x, Quest2_3x_Guide, Quest2_3x_Flag)
+//units
+GuideEntry(3, 2, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
+//lore
+GuideEntry(4, 3, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
+//credits
+GuideEntry(5, 4, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
+GuideEntry(0xC,0,0,0,0) //terminator?
+GuideTerminator
+
+ALIGN 4
+GuideChapterTable:
+GuideChapterEntry(GuideSectionMechanics)
+GuideChapterEntry(GuideSectionQuests)
+GuideChapterEntry(GuideSectionUnits)
+GuideChapterEntry(GuideSectionLore)
+GuideChapterEntry(GuideSectionCredits)
+BYTE 0x0 0x0 0xC9 0x5 //terminator?
+GuideTerminator
+
+ALIGN 4
+GuideCategoryTable:
+GuideCategoryEntry(0x0)
+GuideCategoryEntry(GuideSectionMechanics)
+GuideCategoryEntry(GuideSectionQuests)
+GuideCategoryEntry(GuideSectionUnits)
+GuideCategoryEntry(GuideSectionLore)
+GuideCategoryEntry(GuideSectionCredits)
+GuideEntry(PageCount,0,0,0,0) //terminator?
+GuideTerminator
+
+
+PUSH
+ORG 0xCE380
+POIN GuideEntryTable
+ORG 0xCDF5C
+POIN GuideEntryTable
+ORG 0xCE40C
+POIN GuideEntryTable
+ORG 0xCE480
+POIN GuideEntryTable
+ORG 0xCE57C
+POIN GuideEntryTable
+ORG 0xCE618
+POIN GuideEntryTable
+ORG 0xCE6C4
+POIN GuideEntryTable
+ORG 0xCE998
+POIN GuideEntryTable
+ORG 0xCEB5C
+POIN GuideEntryTable
+ORG 0xCEC20
+POIN GuideEntryTable
+ORG 0xCF090
+POIN GuideEntryTable
+ORG 0xCF468
+POIN GuideEntryTable
+ORG 0xCF488
+POIN GuideEntryTable
+ORG 0xCE1FC
+POIN GuideChapterTable
+ORG 0xCE23C
+POIN GuideCategoryTable
+ORG 0xCE1BC
+POIN GuideCategoryTable
+POP

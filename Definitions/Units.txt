@@ -46,6 +46,7 @@ Aizen
 Johnnie
 Kolette
 Pallas
+Emblem
 Esketit
 Gloria
 Pipsy

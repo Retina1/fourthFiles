@@ -6,15 +6,16 @@
 EventPointerTable(HirschringSquareEventsID,ThisChapter)
 
 //flag on means we're there
-#define LocationFlagHirschringSquare 0xf0
-#define LocationFlagGuildhall 0xf1
-#define LocationFlagBlacksmith 0xf2
-#define LocationFlagTavern 0xf3
-#define LocationFlagNorthernPass 0xf4
-#define LocationFlagMuseum 0xf5
-#define LocationFlagBlackMarket 0xf6
-#define BlackMarketUnlockedFlag 0xf7
 /*
+#define LocationFlagHirschringSquare 0xe0
+#define LocationFlagGuildhall 0xe1
+#define LocationFlagBlacksmith 0xe2
+#define LocationFlagTavern 0xe3
+#define LocationFlagNorthernPass 0xe4
+#define LocationFlagMuseum 0xe5
+#define LocationFlagBlackMarket 0xe6
+#define BlackMarketUnlockedFlag 0xe7
+
 #define StandardUnlockedFlag 0xf9
 #define MagiUnlockedFlag 0xfa
 #define SpecialUnlockedFlag 0xfb
@@ -22,12 +23,13 @@ EventPointerTable(HirschringSquareEventsID,ThisChapter)
 #define LifeflowUnlockedFlag 0xfd
 #define SenatusUnlockedFlag 0xfe
 #define OtherUnlockedFlag 0xff
-*/
+
 #define Recruited1Flag 0x128
 #define Recruited2Flag 0x129
 #define Recruited3Flag 0x12a
 #define Recruited4Flag 0x12b
 #define Recruited5Flag 0x12c
+*/
 
 ALIGN 4
 
@@ -96,14 +98,13 @@ AreaEvent(LocationFlagTavern,TavernQuestBegin,5,3)
 AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToSquare,0,19,1,19)
 AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToMuseum,2,5)
 AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToBlackMarket,16,17)
-//museum entry
 //marketplace
-//black market entry
 
 //in museum
+AreaEvent(LocationFlagMuseum,MuseumMoveToNorthernPass,4,17,7,17)
 
 //in black market
-
+AreaEvent(LocationFlagBlackMarket,BlackMarketMoveToNorthernPass,0,1,0,2)
 
 CauseGameOverIfLordDies
 END_MAIN
@@ -221,7 +222,7 @@ CallPreps
 CALL LoadPostPrepsUnits
 FADU 10
 RunTextByVisit(City02_PostPreps,City03_PostPreps,0,0,0,0,0,0,0,0,0,0,0,0)
-GiveMoneyByVisit(2000,2000,1000,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
+GiveMoneyByVisit(2000,2500,1500,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x1 0xc 0x0
 SystemText(TownTutorial)
@@ -257,6 +258,7 @@ MUSC Song_DrawHeroes
 LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
 LoadMagusUnlocker
 FADU 10
+CALL QuestEndChecker
 EndEvent
 
 SquareMoveToNorthernPass:
@@ -279,6 +281,8 @@ EndEvent
 #include "Blacksmith.event"
 #include "Tavern.event"
 #include "NorthernPass.event"
+#include "Museum.event"
+#include "BlackMarket.event"
 //todo for chapter 3
 //give blacksmith variable shops by visit
 //intro quests (just 1 or 2 for now) in tavern

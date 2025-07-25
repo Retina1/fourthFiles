@@ -7,9 +7,6 @@
 #include "PortraitDefs.event"
 #include "ItemIconDefs.event"
 
-#define SupportAnimFlag 0xae
-#define PicnicModeFlag 0xaf
-
 //flags for each chapter's base
 #define WaitEventTrapsFlag 0x8a
 #define Chapter2DoneFlag 0x8b
@@ -26,13 +23,47 @@
 #define Chapter18ADoneFlag 0x96
 #define Chapter18BDoneFlag 0x97
 #define Chapter18CDoneFlag 0x98
-#define NoRescuingFlag 0x120
+
+#define SupportAnimFlag 0xae
+#define PicnicModeFlag 0xaf
+
+#define LocationFlagHirschringSquare 0xe0
+#define LocationFlagGuildhall 0xe1
+#define LocationFlagBlacksmith 0xe2
+#define LocationFlagTavern 0xe3
+#define LocationFlagNorthernPass 0xe4
+#define LocationFlagMuseum 0xe5
+#define LocationFlagBlackMarket 0xe6
+#define BlackMarketUnlockedFlag 0xe7
+
 /*
 #define FIXED_GROWTHS_FLAG_ID 0xEF
 #define ZERO_GROWTHS_FLAG_ID 0xEE
 #define MAX_GROWTHS_FLAG_ID 0xED
 #define MIN_GROWTHS_FLAG_ID 0xEC
 */
+
+#define StandardUnlockedFlag 0xf9
+#define MagiUnlockedFlag 0xfa
+#define MagusUnlockedFlag MagiUnlockedFlag
+#define SpecialUnlockedFlag 0xfb
+#define SkyUnlockedFlag 0xfc
+#define LifeflowUnlockedFlag 0xfd
+#define SenatusUnlockedFlag 0xfe
+#define OtherUnlockedFlag 0xff
+
+#define NoRescuingFlag 0x120
+#define Recruited1Flag 0x128
+#define Recruited2Flag 0x129
+#define Recruited3Flag 0x12a
+#define Recruited4Flag 0x12b
+#define Recruited5Flag 0x12c
+
+//quest flag block starts at 101
+#define Quest1_3x_Flag 0x101
+#define Quest1_3x_DoneFlag 0x102
+#define Quest2_3x_Flag 0x103
+#define Quest2_3x_DoneFlag 0x104
 
 //movement types
 #define HeroMovement 0x880B808

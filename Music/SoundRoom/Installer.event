@@ -55,6 +55,7 @@ SoundRoomEntry(Song_Biggering, SongTitle_Biggering, SourceTitle_TheLorax,19)
 //city 
 SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4)
 SoundRoomEntry(Song_DrawHeroes, SongTitle_DrawHeroes, SourceTitle_EtrianOdyssey2,10)
+SoundRoomEntry(Song_WhyLove, SongTitle_WhyLove, SourceTitle_MaybeHappyEnding,38)
 //dungeon
 SoundRoomEntry(Song_EverScarletForest, SongTitle_EverScarletForest, SourceTitle_EtrianOdyssey2,16)
 SoundRoomEntry(Song_SandyBarrens, SongTitle_SandyBarrens, SourceTitle_EtrianOdyssey,34)
@@ -79,6 +80,7 @@ SoundRoomEntry(Song_OohWilfre, SongTitle_OohWilfre, SourceTitle_DrawnToLife2,14)
 SoundRoomEntry(Song_Salem, SongTitle_Salem, SourceTitle_DrawnToLife2,13)
 SoundRoomEntry(Song_CherryTreesAndWings, SongTitle_CherryTreesAndWings, SourceTitle_EtrianOdyssey2,17)
 SoundRoomEntry(Song_PandemonicPlanet, SongTitle_PandemonicPlanet, SourceTitle_Touhou,22)
+SoundRoomEntry(Song_FinaleMHE, SongTitle_FinaleMHE, SourceTitle_MaybeHappyEnding,39)
 //death and game over
 SoundRoomEntry(Song_NameEntry, SongTitle_NameEntry, SourceTitle_Persona,20)
 SoundRoomEntry(Song_NoMore, SongTitle_NoMore, SourceTitle_IntoTheWoods,21)

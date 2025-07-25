@@ -1,0 +1,38 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+MuseumUnitsC3:
+//marketplpace npc, generics
+UNIT Claire 0x0 0x0 Level(17,NPC,0) [5,8] 0x0 0x0 0x0 0x0 [LuckStaff] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+LoadMuseumSigils:
+ENUF LocationFlagMuseum
+AddSigil(4,17)
+AddSigil(5,17)
+AddSigil(6,17)
+AddSigil(7,17)
+//AddGreenSigil(10,11)
+ENDA
+
+MuseumMoveToNorthernPass:
+SwapToMap(NorthernPass,2,6)
+CALL LoadNorthernPassSigils
+MUSC Song_VastLands
+LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
+EndEvent
+
+Quest1_3x_Event:
+CHECK_EVENTID Quest1_3x_DoneFlag
+BNE 0x1 0xc 0x0
+CHECK_EVENTID Quest1_3x_Flag
+BEQ 0x1 0xc 0x0
+Text(Quest1_3x_Claire)
+ENUT Quest1_3x_DoneFlag
+LABEL 0x1
+ENDA
