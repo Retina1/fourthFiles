@@ -27,6 +27,7 @@ GuildRecruitEvent(Cassandra_RecruitEvent,Cassandra)
 GuildRecruitEvent(Waves_RecruitEvent,Waves)
 GuildRecruitEvent(Cyanne_RecruitEvent,Cyanne)
 GuildRecruitEvent(Victor_RecruitEvent,Victor)
+GuildRecruitEvent(Lonsdale_RecruitEvent,Lonsdale)
 //curates
 GuildRecruitEvent(Trish_RecruitEvent,Trish)
 GuildRecruitEvent(Amos_RecruitEvent,Amos)

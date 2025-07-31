@@ -33,6 +33,7 @@ Cassandra
 Waves
 Cyanne
 Victor
+Lonsdale
 Trish
 Amos
 Roslin
@@ -74,6 +75,8 @@ Saewynn
 Ellie
 Selene
 Nina
+Levi
+Taft
 Szess
 Zoe
 Paul
@@ -113,6 +116,7 @@ Leize
 Wendy
 Jim
 Dalai
+Etto
 Compass
 Katrin
 Sharon

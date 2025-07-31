@@ -57,6 +57,61 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 			}
             break;
+			
+        case WPN_EFFECT_SLEEP:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_SLEEP;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
+
+        case WPN_EFFECT_BERSERK:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_BERSERK;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
+
+        case WPN_EFFECT_BLIND:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_BLIND;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
+
+        case WPN_EFFECT_PARALYZE:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_PARALYZE;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
+
+        case WPN_EFFECT_CURSE:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_CURSE;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
 
         case WPN_EFFECT_HPHALVE:
             gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_HPHALVE;
@@ -78,23 +133,32 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
 	       
 		BattleWeaponStatuses(attacker, defender);
 
-        if ((GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_DEVIL) && (Roll1RN(31 - attacker->unit.lck) == FALSE)) {
-            gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_DEVIL;
+		//replace devil with curse
+        if ((attacker->unit.statusIndex) == UNIT_STATUS_CURSE) {
+			int tempDamage = gBattleStats.damage;
+			if (tempDamage > attacker->unit.curHP){
+				tempDamage = attacker->unit.curHP;
+			}
 
-            attacker->unit.curHP -= gBattleStats.damage;
+			if (tempDamage > 0) {
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_DEVIL;
+			}
+            attacker->unit.curHP -= tempDamage;
 
-            if (attacker->unit.curHP < 0)
-                attacker->unit.curHP = 0;
+            if (attacker->unit.curHP < 1) {
+                attacker->unit.curHP = 1;
+			}
         }
-		else {
-            if (gBattleStats.damage > defender->unit.curHP)
-                gBattleStats.damage = defender->unit.curHP;
+		
+        if (gBattleStats.damage > defender->unit.curHP){
+            gBattleStats.damage = defender->unit.curHP;
+		}
 
-            defender->unit.curHP -= gBattleStats.damage;
+        defender->unit.curHP -= gBattleStats.damage;
 
-            if (defender->unit.curHP < 0)
-                defender->unit.curHP = 0;
-        }
+        if (defender->unit.curHP < 0){
+            defender->unit.curHP = 0;
+		}
 
         if (GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_HPDRAIN) {
             if (attacker->unit.maxHP < (attacker->unit.curHP + gBattleStats.damage))

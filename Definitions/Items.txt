@@ -157,6 +157,8 @@ MuteGas
 PanicGas
 StoningGas
 AriadneShard
+InedibleLeaf
+FictionScroll
 HeroCrest 0xe6
 KnightProof
 OrionsBolt
@@ -175,3 +177,7 @@ HolyCloak
 DriveGear
 ParadoxCore
 GuildSeal
+BlankCog
+CrimsonTape
+SilkenWire
+PurestOil

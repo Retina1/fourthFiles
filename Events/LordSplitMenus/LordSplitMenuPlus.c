@@ -26,6 +26,18 @@ u8 FlagUsabilityMenuOption(struct MenuItemDef* def, int number) {
 	return MENU_DISABLED;
 }
 
+u8 InvertedFlagUsabilityMenuOption(struct MenuItemDef* def, int number) {
+	if(def->overrideId == 0) {
+		return MENU_ENABLED;
+	}
+	
+	if(CheckFlag(def->overrideId)) {
+		return MENU_DISABLED;
+	}
+	
+	return MENU_ENABLED;
+}
+
 u8 BigFlagUsabilityMenuOption(struct MenuItemDef* def, int number) {
 	if(def->overrideId == 0) {
 		return MENU_ENABLED;

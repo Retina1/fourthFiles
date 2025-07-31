@@ -448,9 +448,9 @@ setCardEntry(ArcanistCard,ArcanistCardPortrait,ArcanistCardPortraitPalette)
 
 ALIGN 4
 DriverCardPortrait:
-#incbin "classCards\Knight (M) SALVAGED Sword {SALVAGED}.dmp"
+#incbin "classCards\appDriver.dmp"
 DriverCardPortraitPalette:
-#incbin "classCards\Knight (M) SALVAGED Sword {SALVAGED}Palette.dmp"
+#incbin "classCards\appDriverPalette.dmp"
 setCardEntry(DriverCard,DriverCardPortrait,DriverCardPortraitPalette)
 
 ALIGN 4

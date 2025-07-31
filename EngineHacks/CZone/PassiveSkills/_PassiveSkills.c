@@ -63,6 +63,14 @@ void ApplyItemPassives(struct BattleUnit* attacker, struct BattleUnit* defender)
 	}
 }
 
+void ApplySleepDamageBoost(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (defender->unit.statusIndex == UNIT_STATUS_SLEEP){
+			attacker->battleAttack = attacker->battleAttack * 3/2;
+			defender->battleDefense = defender->battleDefense * 3/2;
+	}
+}
+
+
 void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	//move presences first since they're flat bonuses
 	ApplyRiderBattlefieldPresence(attacker);
@@ -103,6 +111,7 @@ void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender
 	ApplyDriverPassiveSkills(attacker, defender);
 	//ApplyArtificePassiveSkills(attacker, defender);
 	ApplyItemPassives(attacker, defender);
+	ApplySleepDamageBoost(attacker, defender);
 }
 
 int ApplyDevilAxeZero(u8 stat, struct Unit* unit) {

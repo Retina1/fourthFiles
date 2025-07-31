@@ -1,3 +1,25 @@
+//MaleNoHelmet_Gunner
+{
+#include "CharAnims/MaleNoHelmet_Gunner/Gun Installer.event"
+#include "CharAnims/MaleNoHelmet_Gunner/Unarmed Installer.event"
+}
+ALIGN 4
+MaleNoHelmet_GunnerAnims:
+RangedAnim(MaleNoHelmet_Gunner_Gun)
+UnarmedAnim(MaleNoHelmet_Gunner_Unarmed)
+EndAnim
+
+//FemaleNoHelmet_Gunner
+{
+#include "CharAnims/Female_Gunner/Gun Installer.event"
+#include "CharAnims/Female_Gunner/Unarmed Installer.event"
+}
+ALIGN 4
+Female_GunnerAnims:
+RangedAnim(Female_Gunner_Gun)
+UnarmedAnim(Female_Gunner_Unarmed)
+EndAnim
+
 //CoastKid_Swordfighter
 {
 #include "CharAnims/CoastKid_Swordfighter/Sword Installer.event"

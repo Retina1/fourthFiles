@@ -31,11 +31,12 @@
 //Gunner
 {
 #include "ClassAnims/Gunner/Gun Installer.event"
+#include "ClassAnims/Gunner/Unarmed Installer.event"
 }
 ALIGN 4
 GunnerAnims:
 RangedAnim(Gunner_Gun)
-UnarmedAnim(Gunner_Gun) //todo replace
+UnarmedAnim(Gunner_Unarmed) //todo replace
 EndAnim
 
 //Swordfighter

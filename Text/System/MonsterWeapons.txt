@@ -33,14 +33,49 @@ Venom Scls.[X]
 ##Desc_VenomScales ^
 Deadly monster scales coated in toxins.[N]
 Base Poison Affliction Rate: 70%.[X]
+##Name_WebTalon
+Web Talon[X]
+##Desc_WebTalon ^
+A talon primed to snare its target.[N]
+Base Arm Bind Affliction Rate: 60%.[X]
+##Name_RootGrasp
+Root Grasp[X]
+##Desc_RootGrasp ^
+Wicked roots that strike from below.[N]
+Base Leg Bind Affliction Rate: 60%.[X]
+##Name_Belladonna
+Belladonna[X]
+##Desc_Belladonna ^
+A spell that forces a deep slumber.[N]
+Base Sleep Affliction Rate: 50%.[X]
+##Name_ToxicClaw
+Toxic Claw[X]
+##Desc_ToxicClaw ^
+A sharp claw dripping with venom.[N]
+Base Poison Affliction Rate: 60%.[X]
+##Name_Furysong
+Furysong[X]
+##Desc_Furysong ^
+A hymn that shatters one's mind.[N]
+Base Berserk Affliction Rate: 50%.[X]
+##Name_SealGleam
+Seal Gleam[X]
+##Desc_SealGleam ^
+A cursed stare that silences magi.[N]
+Base Head Bind Affliction Rate: 60%.[X]
+
+
+
+
+
 ##Name_AtrocityScales
 Atrocity Sc.[X]
 ##Desc_AtrocityScales ^
 Truly abominable monster scales.[N]
 Base Poison Affliction Rate: 250%.[X]
 
-##Name_ScissorWrath ^
-Scissor Wrath[X]
+##Name_ScissorWrath
+Scsr. Wrath[X]
 ##Desc_ScissorWrath ^
 The unsurvivable wrath of an Iron Crab.[X]
 

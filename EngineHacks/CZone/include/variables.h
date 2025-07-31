@@ -16,6 +16,7 @@ extern struct PlaySt_OptionBits gPlayStOptionBits[];
 
 extern u8 gEkrKakudaiSomeBufLeft[];
 extern u16 gBmMapBuffer[];
+extern u16 gBg0MapBuffer[];
 
 // extern ??? gConvoyItemCount
 // extern ??? gUnknown_02002038

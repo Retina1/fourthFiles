@@ -89,6 +89,7 @@ u8* GetUnitsInRange(Unit* unit, int allyOption, int range) {
     return gUnitRangeBuffer;
 }
 
+/*
 int GetUnitTotalSP(struct Unit* unit){
 	int level = unit->level;
 	if  (UNIT_CATTRIBUTES(unit) & CA_PROMOTED){
@@ -112,3 +113,4 @@ int GetUnitSpentSP(struct Unit* unit){
 	total += unit->skills.hpUp1 + unit->skills.hpUp2 + unit->skills.strUp1 + unit->skills.strUp2 + unit->skills.magUp1 + unit->skills.magUp2 + unit->skills.sklUp1 + unit->skills.sklUp2 + unit->skills.spdUp1 + unit->skills.spdUp2 + unit->skills.lucUp1 + unit->skills.lucUp2 + unit->skills.defUp1 + unit->skills.defUp2 + unit->skills.resUp1 + unit->skills.resUp2;
 	return total;
 }
+*/

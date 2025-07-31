@@ -1,0 +1,7 @@
+ALIGN 4
+
+#define SetGtoSlot(slot) "BYTE 0x40 0x0D slot 0x00; POIN GSettingFunction+1"
+#define SetGtoMoney "CHECK_MONEY; SetGtoSlot(0xc)"
+//also eventually add mass check for things like axe handle and unknown page
+GSettingFunction:
+#incbin "ASMC_MemorySlotToString.dmp"

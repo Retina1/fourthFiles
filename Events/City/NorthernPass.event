@@ -3,13 +3,43 @@
 
 NorthernPassUnitsC3:
 //marketplpace npc, generics
-UNIT AsketaGeneric Caller 0x0 Level(6,NPC,1) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Monk Priest 0x0 Level(1,NPC,0) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
 
 ALIGN 4
+
+MarketLoopBegin:
+EVBIT_MODIFY 3
+Text(MarketIntro)
+RunEventByVisit(DummyEvent,Chapter3Market,0,0,0,0,0,0,0,0,0,0,0,0)
+Text(MarketEnd)
+ENUF LocationFlagNorthernPass
+EndEvent
+
+//label 0x10 - broke ass
+//label 0x20 - deny buy
+#define MarketHandler(item,cost,choice) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(PurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItem(item,Nathan); GOTO 0x20; LABEL choice"
+#define MarketHandler(item,cost,choice,flag) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(PurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItem(item,Nathan); ENUT flag; GOTO 0x20; LABEL choice"
+#define MarketHandler(item,uses,cost,choice,flag) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(PurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItemWithDurability(item,uses,Nathan); ENUT flag; GOTO 0x20; LABEL choice"
+#define BrokeHander "LABEL 0x10; SetGtoMoney; Text(NotEnoughMoney); GOTO 0x20; LABEL 0x30"
+
+Chapter3Market:
+LABEL 0x20
+SetGtoMoney
+CallMenu(Market3xMenu)
+MarketHandler(CompactBow,900,0,0x24)
+MarketHandler(Medica,2,250,1,0x25)
+MarketHandler(InedibleLeaf,50,2)
+MarketHandler(FictionScroll,70,3)
+GOTO 0x30
+BrokeHander
+ENDA
+
+
+
 LoadNorthernPassSigils:
 ENUF LocationFlagNorthernPass
 AddSigil(2,5)

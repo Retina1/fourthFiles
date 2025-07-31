@@ -131,6 +131,16 @@
 #define TackleIcon 0x83
 #define GreatTalonIcon 0x84
 #define EvilEyeIcon 0x85
+#define AirScalesIcon 0x86
+#define VenomScalesIcon 0x87
+#define SoulShieldIcon 0x88
+#define WebTalonIcon 0x89
+#define FrigidBiteIcon 0x8A
+#define RootGraspIcon 0x8B
+#define BelladonnaIcon 0x8C
+#define ToxicClawIcon 0x8D
+#define FurysongIcon 0x8E
+#define SealGleamIcon 0x8F
 #define VulneraryIcon 0xC8
 #define ElixirIcon 0xC9
 #define MedicaIcon 0xCA
@@ -147,6 +157,8 @@
 #define PanicGasIcon 0xD5
 #define StoningGasIcon 0xD6
 #define AriadneShardIcon 0xD7
+#define InedibleLeafIcon 0xD8
+#define FictionScrollIcon 0xD9
 #define HeroCrestIcon 0xE6
 #define KnightProofIcon 0xE7
 #define OrionsBoltIcon 0xE8
@@ -165,3 +177,7 @@
 #define DriveGearIcon 0xF5
 #define ParadoxCoreIcon 0xF6
 #define GuildSealIcon 0xF7
+#define BlankCogIcon 0xF8
+#define CrimsonTapeIcon 0xF9
+#define SilkenWireIcon 0xFA
+#define PurestOilIcon 0xFB

@@ -42,6 +42,63 @@ Grants user 1.5x Def/Res for 3 turns.[X]
 Boosts the user's[N]
 stats for a bit.[X]
 
+##Use_StatusItem
+Inflicts a[N]
+status ailment.[X]
+##Name_ArmBinder
+Arm Binder[X]
+##Desc_ArmBinder ^
+A quality spool of entangling threads.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Arm Bind Affliction Rate: 60%.[X]
+##Name_LegBinder
+Leg Binder[X]
+##Desc_LegBinder ^
+A quality spool of ensnaring threads.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Leg Bind Affliction Rate: 70%.[X]
+##Name_HeadBinder
+Head Binder[X]
+##Desc_HeadBinder ^
+A quality spool of ensilencing threads.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Head Bind Affliction Rate: 60%.[X]
+##Name_Gas
+Blind Gas[X]
+##Desc_BlindGas ^
+A throwing jar of highly irritating gas.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Blind Affliction Rate: 70%.[X]
+##Name_StunGas
+Stun Gas[X]
+##Desc_StunGas ^
+A throwing jar of highly paralytic gas.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Paralysis Affliction Rate: 60%.[X]
+##Name_PoisonGas
+Poison Gas[X]
+##Desc_PoisonGas ^
+A throwing jar of highly toxic gas.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Poison Affliction Rate: 70%.[X]
+##Name_CurseGas
+Curse Gas[X]
+##Desc_CurseGas ^
+A throwing jar of profoundly terrible gas.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Curse Affliction Rate: 70%.[X]
+##Name_PanicGas
+Panic Gas[X]
+##Desc_PanicGas ^
+A throwing jar of highly disorienting gas.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Berserk Affliction Rate: 60%.[X]
+##Name_StoningGas
+Stoning Gas[X]
+##Desc_StoningGas ^
+A forbidden jar of truly baneful gas.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Petrification Affliction Rate: 50%.[X]
 
 
 ##Name_AriadneShard
@@ -148,3 +205,31 @@ Guild Seal[X]
 ##Desc_GuildSeal ^
 A medal from the Guildmaster that proves[N]
 your incredible deeds. Promotes all classes.[X]
+
+##Name_BlankCog
+Blank Cog[X]
+##Desc_BlankCog ^
+A machine part with a pure white sheen.[N]
+It'll probably fetch a good price, if[N]
+you're willing to part with it.[X]
+##Name_CrimsonTape
+Crmsn. Tape[X]
+##Desc_CrimsonTape ^
+A spool of tape with a blood-red coat.[N]
+It'll probably fetch a good price, if[N]
+you're willing to part with it.[X]
+##Name_SilkenWire
+Silken Wire[X]
+##Desc_SilkenWire ^
+A coil of wire thin and fine as hair.[N]
+It'll probably fetch a good price, if[N]
+you're willing to part with it.[X]
+##Name_PurestOil
+Purest Oil[X]
+##Desc_PurestOil ^
+A bottle of oil that shines like gold.[N]
+It'll probably fetch a good price, if[N]
+you're willing to part with it.[X]
+##Use_RoboPart
+The choice is made.[N]
+The task is set.[X]

@@ -265,12 +265,18 @@ ORG 0x3758E
 BYTE 20
 POP
 
-//berserk animations
+//berserk animations - now, curse only allows map anims
 PUSH
+/*
 ORG 0x57bf2
 BYTE 0x0 0x0
 ORG 0x57c3c
 BYTE 0x0 0x0
+*/
+ORG 0x57BF0
+SHORT 0x2807
+ORG 0x57C3A
+SHORT 0x2807
 POP
 
 //ai cares less about self preservation

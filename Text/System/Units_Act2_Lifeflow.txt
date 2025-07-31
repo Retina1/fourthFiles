@@ -28,6 +28,13 @@ Dalai[X]
 An Asketan noble exiled after a failed[N]
 escape from that life. He's desperate.[X]
 
+//matt
+##Name_Etto
+Etto[X]
+##Desc_Etto
+A housekeeper with a talent for botany[N]
+and birdkeeping. She's empty-headed.[X]
+
 //compass by roxas (encircler)
 ##Name_Compass
 Compass[X]

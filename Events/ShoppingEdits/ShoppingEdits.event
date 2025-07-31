@@ -103,75 +103,75 @@ WORD 0
 WORD 0 //no prep shop
 //chapter 3
 POIN PrepShop1
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
 
 //chapter 9
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
 
 //14 - the fall - no prep shop
 WORD 0
-WORD 0
-WORD 0
+POIN 0
+POIN 0
 
 //17a
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
 
 //17b
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
-WORD 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
+POIN 0
 
 //17c
-WORD 0
-WORD 0
-WORD 0
+POIN 0
+POIN 0
+POIN 0
 
 //lethal
-WORD PrepShop1
+POIN PrepShop1
 WORD 0; WORD 0
 
 //shimmering
-WORD 0
+POIN 0
 WORD 0; WORD 0
 
 //clouded
-WORD 0
+POIN 0
 WORD 0; WORD 0; WORD 0
 
 //ruined
-WORD 0
+POIN 0
 WORD 0; WORD 0; WORD 0
 
 //tableland
-WORD 0
+POIN 0
 WORD 0; WORD 0; WORD 0; WORD 0
 
 //armory
-WORD 0
+POIN 0
 WORD 0; WORD 0; WORD 0; WORD 0
 
 //palace
-WORD 0
+POIN 0
 WORD 0; WORD 0; WORD 0
 
 //drowning
-WORD 0
+POIN 0
 WORD 0; WORD 0; WORD 0; WORD 0; WORD 0; WORD 0; WORD 0
 
 POIN PrepShopCity
@@ -202,20 +202,24 @@ BYTE 0x0 0x0
 
 ALIGN 4
 TestShop:
-SHLI Shortsword Scramasax Boarblade Claymore Executor Zweihander DvergrSword Caladbolg Brightsword Magebane Bluntblade Roughslash Muzzler Headhunter SuperiorBlade
-SHLI VineWhip ThornWhip ChainWhip RougeWhip Ninetails RazorWhip Heavensfall Scorpio HazeWhip Stonesting
-SHLI Type0 Parabola Dominance BlackSun RagingWave GreatMountain
-SHLI Shortspear Pike Partizan Sarissa Ahlspiess Omiyari Fengyan Ron HandSpear Shieldlance SoarSpear Longinus Impaler
-SHLI Epee Sabre Rapier Estoc JollyRoger TheFable
-SHLI Shortmace Broadaxe Yue Greataxe Khopesh Labrys Parashu Ukonvasara DevilAxe SerratedAxe HandAxe TheFeller ImposingAxe Mindcrush Juggernaut
-SHLI BrassKnuckles Caestus Gauntlets Claws SpikedFist Katar Kirikindad
-SHLI Shortbow Recurve Composite Gakgung Warbow Sureshot FalconBow ArcDrawer CompactBow Longbow ToxinBow Trickshot Greatbow OmegaArch
-SHLI Handgonne Arquebus Sakaloz Caliver Musket Repeater BoltRifle Agneyastra Twinshot Snipistol Pepperbox Stunshot Furybox Meisterkugel Stoneshot
-SHLI Wand Staff DownStaff GemStaff Godendag SageWand Kerykeion ShieldRod LuckStaff Asclepius
-SHLI FlameScroll BoltScroll FreezeScroll GaleScroll ShineScroll CleaveScroll SparkScroll DrainScroll PyreScroll ThorScroll CocytusScroll TempestScroll
-SHLI HealScroll RestoreScroll RepairScroll RescueScroll WarpScroll
-SHLI Vulnerary Elixir Medica Soma AriadneShard
-SHLI HeroCrest KnightProof OrionsBolt Hippokos GuidingRing RubyBlade SightingLens OutlandShield SpiritWrap ElysianWhip PerfectRose BanefulDoll DarkBrooch DeusHerb HolyCloak DriveGear ParadoxCore GuildSeal
+BYTE Shortsword 0 Scramasax 0 Boarblade 0 Claymore 0 Executor 0 Zweihander 0 DvergrSword 0 Caladbolg 0 Brightsword 0 Magebane 0 Bluntblade 0 Roughslash 0 Muzzler 0 Headhunter 0 SuperiorBlade 0
+BYTE VineWhip 0 ThornWhip 0 ChainWhip 0 RougeWhip 0 Ninetails 0 RazorWhip 0 Heavensfall 0 Scorpio 0 HazeWhip 0 Stonesting 0
+BYTE Type0 0 Parabola 0 Dominance 0 BlackSun 0 RagingWave 0 GreatMountain 0
+BYTE Shortspear 0 Pike 0 Partizan 0 Sarissa 0 Ahlspiess 0 Omiyari 0 Fengyan 0 Ron 0 HandSpear 0 Shieldlance 0 SoarSpear 0 Longinus 0 Impaler 0
+BYTE Epee 0 Sabre 0 Rapier 0 Estoc 0 JollyRoger 0 TheFable 0
+BYTE Shortmace 0 Broadaxe 0 Yue 0 Greataxe 0 Khopesh 0 Labrys 0 Parashu 0 Ukonvasara 0 DevilAxe 0 SerratedAxe 0 HandAxe 0 TheFeller 0 ImposingAxe 0 Mindcrush 0 Juggernaut 0
+BYTE BrassKnuckles 0 Caestus 0 Gauntlets 0 Claws 0 SpikedFist 0 Katar 0 Kirikindad 0
+BYTE Shortbow 0 Recurve 0 Composite 0 Gakgung 0 Warbow 0 Sureshot 0 FalconBow 0 ArcDrawer 0 CompactBow 0 Longbow 0 ToxinBow 0 Trickshot 0 Greatbow 0 OmegaArch 0
+BYTE Handgonne 0 Arquebus 0 Sakaloz 0 Caliver 0 Musket 0 Repeater 0 BoltRifle 0 Agneyastra 0 Twinshot 0 Snipistol 0 Pepperbox 0 Stunshot 0 Furybox 0 Meisterkugel 0 Stoneshot 0
+BYTE Wand 0 Staff 0 DownStaff 0 GemStaff 0 Godendag 0 SageWand 0 Kerykeion 0 ShieldRod 0 LuckStaff 0 Asclepius 0
+BYTE FlameScroll 0 BoltScroll 0 FreezeScroll 0 GaleScroll 0 ShineScroll 0 CleaveScroll 0 SparkScroll 0 DrainScroll 0 PyreScroll 0 ThorScroll 0 CocytusScroll 0 TempestScroll 0
+BYTE HealScroll 0 RestoreScroll 0 RepairScroll 0 RescueScroll 0 WarpScroll 0
+BYTE Vulnerary 0 Elixir 0 Medica 0 Soma 0 AriadneShard 0
+BYTE Bravant 0 Stonard 0 ArmBinder 0 LegBinder 0 HeadBinder 0 BlindGas 0 StunGas 0 PoisonGas 0 MuteGas 0 PanicGas 0 StoningGas 0
+BYTE InedibleLeaf 0 FictionScroll 0
+BYTE BlankCog 0 CrimsonTape 0 SilkenWire 0 PurestOil 0
+BYTE HeroCrest 0 KnightProof 0 OrionsBolt 0 Hippokos 0 GuidingRing 0 RubyBlade 0 SightingLens 0 OutlandShield 0 SpiritWrap 0 ElysianWhip 0 PerfectRose 0 BanefulDoll 0 DarkBrooch 0 DeusHerb 0 HolyCloak 0 DriveGear 0 ParadoxCore 0 GuildSeal 0
+BYTE VileClaw 0 SharpBite 0 Tackle 0 GreatTalon 0 EvilEye 0 AirScales 0 VenomScales 0 SoulShield 0 WebTalon 0 FrigidBite 0 RootGrasp 0 Belladonna 0 ToxicClaw 0 Furysong 0 SealGleam 0
 BYTE 0x0 0x0
 
 ALIGN 4

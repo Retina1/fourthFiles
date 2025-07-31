@@ -71,6 +71,9 @@ UNIT
 Recruit_Victor:
 UNIT Victor 0x0 0x1 Level(4,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Wand,Vulnerary] NoAI
 UNIT
+Recruit_Lonsdale:
+UNIT Lonsdale 0x0 0x1 Level(12,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Godendag] NoAI
+UNIT
 
 Recruit_Trish:
 UNIT Trish 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Wand] NoAI
@@ -87,92 +90,95 @@ UNIT
 
 //swd
 CoastKid_RecruitEvent:
-GuildRecruit(CoastKid,Guild_CoastKid_Intro,Guild_CoastKid_Accept,Guild_CoastKid_Deny,Guild_CoastKid_Return,0x20)
+GuildRecruit(CoastKid,Guild_CoastKid_Intro,0x20)
 EndEvent
 Puzon_RecruitEvent:
-GuildRecruit(Puzon,Guild_Puzon_Intro,Guild_Puzon_Accept,Guild_Puzon_Deny,Guild_Puzon_Return,0x21)
+GuildRecruit(Puzon,Guild_Puzon_Intro,0x21)
 EndEvent
 Cam_RecruitEvent:
-GuildRecruit(Cam,Guild_Cam_Intro,Guild_Cam_Accept,Guild_Cam_Deny,Guild_Cam_Return,0x22)
+GuildRecruit(Cam,Guild_Cam_Intro,0x22)
 EndEvent
 Marag_RecruitEvent:
-GuildRecruit(Marag,Guild_Marag_Intro,Guild_Marag_Accept,Guild_Marag_Deny,Guild_Marag_Return,0x23)
+GuildRecruit(Marag,Guild_Marag_Intro,0x23)
 EndEvent
 
 //knt
 Drogo_RecruitEvent:
-GuildRecruit(Drogo,Guild_Drogo_Intro,Guild_Drogo_Accept,Guild_Drogo_Deny,Guild_Drogo_Return,0x20)
+GuildRecruit(Drogo,Guild_Drogo_Intro,0x20)
 EndEvent
 Gretchen_RecruitEvent:
-GuildRecruit(Gretchen,Guild_Gretchen_Intro,Guild_Gretchen_Accept,Guild_Gretchen_Deny,Guild_Gretchen_Return,0x21)
+GuildRecruit(Gretchen,Guild_Gretchen_Intro,0x21)
 EndEvent
 Allbringer_RecruitEvent:
-GuildRecruit(Allbringer,Guild_Allbringer_Intro,Guild_Allbringer_Accept,Guild_Allbringer_Deny,Guild_Allbringer_Return,0x22)
+GuildRecruit(Allbringer,Guild_Allbringer_Intro,0x22)
 EndEvent
 Hopf_RecruitEvent:
-GuildRecruit(Hopf,Guild_Hopf_Intro,Guild_Hopf_Accept,Guild_Hopf_Deny,Guild_Hopf_Return,0x23)
+GuildRecruit(Hopf,Guild_Hopf_Intro,0x23)
 EndEvent
 SlynSpire_RecruitEvent:
-GuildRecruit(SlynSpire,Guild_SlynSpire_Intro,Guild_SlynSpire_Accept,Guild_SlynSpire_Deny,Guild_SlynSpire_Return,0x24)
+GuildRecruit(SlynSpire,Guild_SlynSpire_Intro,0x24)
 EndEvent
 
 //axe
 Tristao_RecruitEvent:
-GuildRecruit(Tristao,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+GuildRecruit(Tristao,Guild_Tristao_Intro,0x20)
 EndEvent
 Finn_RecruitEvent:
-GuildRecruit(Finn,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+GuildRecruit(Finn,Guild_Finn_Intro,0x21)
 EndEvent
 Eight_RecruitEvent:
-GuildRecruit(Eight,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+GuildRecruit(Eight,Guild_Eight_Intro,0x22)
 EndEvent
 Randellan_RecruitEvent:
-GuildRecruit(Randellan,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+GuildRecruit(Randellan,Guild_Randellan_Intro,0x23)
 EndEvent
 Juniper_RecruitEvent:
-GuildRecruit(Juniper,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x24)
+GuildRecruit(Juniper,Guild_Juniper_Intro,0x24)
 EndEvent
 
 //arch
 Hallie_RecruitEvent:
-GuildRecruit(Hallie,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+GuildRecruit(Hallie,Guild_Test_Dialogue,0x20)
 EndEvent
 Anjelica_RecruitEvent:
-GuildRecruit(Anjelica,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+GuildRecruit(Anjelica,Guild_Test_Dialogue,0x21)
 EndEvent
 Rodney_RecruitEvent:
-GuildRecruit(Rodney,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+GuildRecruit(Rodney,Guild_Test_Dialogue,0x22)
 EndEvent
 Gamon_RecruitEvent:
-GuildRecruit(Gamon,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+GuildRecruit(Gamon,Guild_Test_Dialogue,0x23)
 EndEvent
 
 //sch
 Cassandra_RecruitEvent:
-GuildRecruit(Cassandra,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+GuildRecruit(Cassandra,Guild_Test_Dialogue,0x20)
 EndEvent
 Waves_RecruitEvent:
-GuildRecruit(Waves,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+GuildRecruit(Waves,Guild_Test_Dialogue,0x21)
 EndEvent
 Cyanne_RecruitEvent:
-GuildRecruit(Cyanne,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+GuildRecruit(Cyanne,Guild_Test_Dialogue,0x22)
 EndEvent
 Victor_RecruitEvent:
-GuildRecruit(Victor,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+GuildRecruit(Victor,Guild_Test_Dialogue,0x23)
+EndEvent
+Lonsdale_RecruitEvent:
+GuildRecruit(Lonsdale,Guild_Test_Dialogue,0x24)
 EndEvent
 
 //cur
 Trish_RecruitEvent:
-GuildRecruit(Trish,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x20)
+GuildRecruit(Trish,Guild_Test_Dialogue,0x20)
 EndEvent
 Amos_RecruitEvent:
-GuildRecruit(Amos,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x21)
+GuildRecruit(Amos,Guild_Test_Dialogue,0x21)
 EndEvent
 Roslin_RecruitEvent:
-GuildRecruit(Roslin,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x22)
+GuildRecruit(Roslin,Guild_Test_Dialogue,0x22)
 EndEvent
 Witerico_RecruitEvent:
-GuildRecruit(Witerico,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,Guild_Test_Dialogue,0x23)
+GuildRecruit(Witerico,Guild_Test_Dialogue,0x23)
 EndEvent
 
 
@@ -226,6 +232,7 @@ GuildLoad(Cassandra,Recruit_Cassandra,0x1)
 GuildLoad(Waves,Recruit_Waves,0x2)
 GuildLoad(Cyanne,Recruit_Cyanne,0x3)
 GuildLoad(Victor,Recruit_Victor,0x4)
+GuildLoad(Lonsdale,Recruit_Lonsdale,0x5)
 FADU 10
 ENDA
 

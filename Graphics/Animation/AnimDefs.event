@@ -122,7 +122,11 @@
 #define Gargoyle_Unarmed 0x7A
 #define Gargantoyle_Lance 0x7B
 #define Gargantoyle_Unarmed 0x7C
-#define CoastKid_Swordfighter_Sword 0x7D
-#define CoastKid_Swordfighter_Unarmed 0x7E
-#define CoastKid_Landsknecht_Sword 0x7F
-#define CoastKid_Landsknecht_Unarmed 0x80
+#define MaleNoHelmet_Gunner_Gun 0x7D
+#define MaleNoHelmet_Gunner_Unarmed 0x7E
+#define Female_Gunner_Gun 0x7F
+#define Female_Gunner_Unarmed 0x80
+#define CoastKid_Swordfighter_Sword 0x81
+#define CoastKid_Swordfighter_Unarmed 0x82
+#define CoastKid_Landsknecht_Sword 0x83
+#define CoastKid_Landsknecht_Unarmed 0x84

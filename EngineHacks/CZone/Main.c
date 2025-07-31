@@ -4,6 +4,7 @@ extern bool CheckEventId_(u16 flag);
 extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 
 #include "SkillSystem/SkillHelpers.c"
+#include "SkillLearner/SkillLearner.c"
 
 #include "Misc/LoadUnitBases.c"
 #include "Misc/NewPromoGains.c"
@@ -12,13 +13,17 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "PostBattle/PostCombat.c"
 #include "BattleStats.c"
 #include "BattleProc.c"
+#include "BetweenTurns/BetweenTurnEffects.c"
 #include "Misc/ExpCalcs.c"
 #include "Misc/NewAutoLeveling.c"
 #include "Misc/HealAmounts.c"
+#include "Misc/CurseFix.c"
 #include "Durability/PerChapterItems.c"
 #include "StatPassives/StatPassives.c"
 #include "WaitEventTraps/WaitEventTraps.c"
 #include "WaitEventTraps/TilemapBorders.c"
+
+
 
 /*
 inline int GetUnitMaxHp(struct Unit* unit) {

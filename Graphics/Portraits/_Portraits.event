@@ -102,7 +102,7 @@ setMugEntry(HartMug,HartDMP,3,5,3,3)
 ALIGN 4
 SarinaDMP:
 #incbin "dmps/raidenSarina.dmp"
-setMugEntry(SarinaMug,SarinaDMP,4,5,4,3)
+setMugEntry(SarinaMug,SarinaDMP,4,4,4,2)
 
 ALIGN 4
 //jet
@@ -189,6 +189,10 @@ ALIGN 4
 RevatiDMP:
 #incbin "dmps/mattRevati.dmp"
 setMugEntry(RevatiMug,RevatiDMP,4,4,0,4)
+ALIGN 4
+EttoDMP:
+#incbin "dmps/mattEtto.dmp"
+setMugEntry(EttoMug,EttoDMP,4,5,4,3)
 
 ALIGN 4
 //catball
@@ -488,6 +492,10 @@ ALIGN 4
 FourfingerDMP:
 #incbin "dmps/rwFourfinger.dmp"
 setMugEntry(FourfingerMug,FourfingerDMP,3,6,3,4)
+ALIGN 4
+LonsdaleDMP:
+#incbin "dmps/rwLonsdale.dmp"
+setMugEntry(LonsdaleMug,LonsdaleDMP,3,6,3,4)
 
 ALIGN 4
 //scraiza

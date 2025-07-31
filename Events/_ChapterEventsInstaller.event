@@ -25,6 +25,7 @@
 #define CGText(textid) "CGTEXTSTART; TEXTSHOW textid; TEXTEND"
 #define GiveItem(item) "SMOV 0x3 item; GIVEITEMTO 0xFFFF;"
 #define GiveItem(item,character) "SMOV 0x3 item; GIVEITEMTO character;"
+#define GiveItem(item,uses,character) "SMOV 0x3 uses*0x100+item; GIVEITEMTO character;"
 #define CamOn "EVBIT_T 9"
 #define CamOff "EVBIT_F 9"
 #define StartGameOver "ASMC 0x800D391" // Game over ASMC 

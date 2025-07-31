@@ -53,6 +53,7 @@ EndEvent
 //figure o
 
 TavernQuestBegin:
+EVBIT_MODIFY 3
 CHECK_EVENTID 0x1f
 BNE 0x1 0xc 0x0
 RunTextByVisit(City02_BobbyIntro,City03_Bobby,0,0,0,0,0,0,0,0,0,0,0,0)

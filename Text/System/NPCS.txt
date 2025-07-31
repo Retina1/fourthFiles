@@ -4,6 +4,12 @@ Gerson[X]
 The Guildmaster's young apprentice.[N]
 He's the successor to the Guildleague.[X]
 
+##Name_Monk
+Monk[X]
+##Desc_Monk
+A wandering monk who's decided to give[N]
+swords a try. She's charming and peppy.[X]
+
 ##Name_Benjamin
 Benjamin[X]
 ##Desc_Benjamin

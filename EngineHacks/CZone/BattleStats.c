@@ -88,8 +88,19 @@ void ComputeBattleUnitEffectiveHitRate(struct BattleUnit* attacker, struct Battl
 	if (attacker->battleEffectiveHitRate < attacker->unit.skl)
         attacker->battleEffectiveHitRate = attacker->unit.skl;
 
-    if (attacker->battleEffectiveHitRate > 100)
+    if (attacker->battleEffectiveHitRate > 100) {
         attacker->battleEffectiveHitRate = 100;
+	}
+	
+	if (attacker->unit.statusIndex == UNIT_STATUS_BLIND) {
+		attacker->battleEffectiveHitRate = attacker->battleEffectiveHitRate / 3;
+	}
+	
+	int defenderStatus = defender->unit.statusIndex;
+	
+	//add leg bind check later
+	if ((defenderStatus == UNIT_STATUS_BLIND) || (defenderStatus == UNIT_STATUS_PARALYZE) || (defenderStatus == UNIT_STATUS_SLEEP) || (defenderStatus == UNIT_STATUS_PETRIFY))
+		attacker->battleEffectiveHitRate = 100;
 }
 
 void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct BattleUnit* defender) {
@@ -97,11 +108,18 @@ void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct Batt
 
     attacker->battleEffectiveCritRate = attacker->battleCritRate - defender->battleDodgeRate;
 
-    if (GetItemIndex(attacker->weapon) == 0)
+    if (GetItemIndex(attacker->weapon) == 0) {
         attacker->battleEffectiveCritRate = 0;
+	}
 
-    if (attacker->battleEffectiveCritRate < 0)
+    if (attacker->battleEffectiveCritRate < 0) {
         attacker->battleEffectiveCritRate = 0;
+	}
+	
+	int defenderStatus = defender->unit.statusIndex;
+	if (defenderStatus == UNIT_STATUS_PETRIFY) {
+		attacker->battleEffectiveCritRate = attacker->battleEffectiveCritRate * 3/2;
+	}
 
     for (i = 0; (i < UNIT_ITEM_COUNT) && (item = defender->unit.items[i]); ++i) {
         if (GetItemAttributes(item) & IA_NEGATE_CRIT) {
@@ -115,6 +133,11 @@ void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct Batt
 			attacker->battleEffectiveCritRate = 0;
 		}
 	}
+	
+	if (attacker->battleEffectiveCritRate > 100) {
+        attacker->battleEffectiveCritRate = 100;
+	}
+	
 }
 
 void ComputeBattleUnitSilencerRate(struct BattleUnit* attacker, struct BattleUnit* defender) {
@@ -133,6 +156,7 @@ void ComputeBattleUnitWeaponRankBonuses(struct BattleUnit* bu) {
 }
 
 void ComputeBattleUnitStatusBonuses(struct BattleUnit* bu) {
+	/*
     switch (bu->unit.statusIndex) {
 
     case UNIT_STATUS_ATTACK:
@@ -152,6 +176,7 @@ void ComputeBattleUnitStatusBonuses(struct BattleUnit* bu) {
         break;
 
     } // switch (bu->unit.statusIndex)
+	*/
 }
 
 void ComputeBattleUnitSpecialWeaponStats(struct BattleUnit* attacker, struct BattleUnit* defender) {
@@ -180,15 +205,6 @@ void ComputeBattleUnitSpecialWeaponStats(struct BattleUnit* attacker, struct Bat
 
         if (attacker->weaponAttributes & IA_NEGATE_DEFENSE)
             defender->battleDefense = 0;
-
-        if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13) {
-            attacker->battleEffectiveHitRate = 100;
-
-            attacker->battleEffectiveCritRate += 30;
-
-            if (attacker->battleEffectiveCritRate > 100)
-                attacker->battleEffectiveCritRate = 100;
-        }
     }
 }
 
@@ -232,7 +248,8 @@ void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defe
     ComputeBattleUnitCritRate(attacker);
     ComputeBattleUnitDodgeRate(attacker);
     ComputeBattleUnitWeaponRankBonuses(attacker);
-    ComputeBattleUnitStatusBonuses(attacker);
+	//repurpose statusbonuses func for buffs and debuffs	
+	//ComputeBattleUnitStatusBonuses(attacker);
 	ApplyPassiveSkills(attacker, defender);
 	ApplyPicnicMode(attacker);
 }

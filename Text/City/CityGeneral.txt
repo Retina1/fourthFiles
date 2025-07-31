@@ -32,8 +32,7 @@ the rough and tumble axe[N]
 cavalier Raider,[AN]
 and the unreliable yet[N]
 mighty Gunner.[AN]
-It's well worth it![N]
-[No][X]
+It's well worth it![A][X]
 
 ##StandardClassesBuyYesSys
 Standard Corps have been[N]

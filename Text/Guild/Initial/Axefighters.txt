@@ -1,0 +1,64 @@
+##Guild_Tristao_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tristao]
+Tristao here[A][X]
+##Guild_Tristao_Accept
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tristao]
+accept here[A][X]
+##Guild_Tristao_Deny
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tristao]
+deny here[A][X]
+##Guild_Tristao_Return
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tristao]
+return here[A][X]
+
+##Guild_Finn_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Finn]
+Finn here[A][X]
+##Guild_Finn_Accept
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Finn]
+accept here[A][X]
+##Guild_Finn_Deny
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Finn]
+deny here[A][X]
+##Guild_Finn_Return
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Finn]
+return here[A][X]
+
+##Guild_Eight_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eight]
+Eight here[A][X]
+##Guild_Eight_Accept
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eight]
+accept here[A][X]
+##Guild_Eight_Deny
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eight]
+deny here[A][X]
+##Guild_Eight_Return
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eight]
+return here[A][X]
+
+##Guild_Randellan_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Randellan]
+Randellan here[A][X]
+##Guild_Randellan_Accept
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Randellan]
+accept here[A][X]
+##Guild_Randellan_Deny
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Randellan]
+deny here[A][X]
+##Guild_Randellan_Return
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Randellan]
+return here[A][X]
+
+##Guild_Juniper_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Juniper]
+Juniper here[A][X]
+##Guild_Juniper_Accept
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Juniper]
+accept here[A][X]
+##Guild_Juniper_Deny
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Juniper]
+deny here[A][X]
+##Guild_Juniper_Return
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Juniper]
+return here[A][X]

@@ -31,6 +31,8 @@ EventPointerTable(HirschringSquareEventsID,ThisChapter)
 #define Recruited5Flag 0x12c
 */
 
+//flags 0x24 to 0x28 for market
+
 ALIGN 4
 
 ThisChapter:
@@ -98,6 +100,7 @@ AreaEvent(LocationFlagTavern,TavernQuestBegin,5,3)
 AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToSquare,0,19,1,19)
 AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToMuseum,2,5)
 AreaEvent(LocationFlagNorthernPass,NorthernPassMoveToBlackMarket,16,17)
+AreaEvent(LocationFlagNorthernPass,MarketLoopBegin,10,11)
 //marketplace
 
 //in museum

@@ -1,0 +1,78 @@
+##MarketIntro
+[MidLeft][Nathan][MidRight][Monk]
+Heya, there![N]
+Have a look around![A][X]
+
+##MarketEnd
+[MidLeft][Nathan][MidRight][Monk]
+Until next time![A][X]
+
+##LeaveMarketLabel ^
+Leave Market Menu[X]
+##LeaveMarketDesc
+Stop browsing[N]
+the marketplace.[X]
+
+##PurchaseConfirm
+[MidLeft][Nathan][MidRight][Monk]
+You have [G] gold. Want this?[N]
+[No][X]
+
+##NotEnoughMoney
+[MidLeft][Nathan][MidRight][Monk]
+You have [G] gold.[N]
+[...]That's not enough. Sorry![A][X]
+
+##VisitAllMarket1 ^
+Sun-Dried Lettuce (50 Gold)[X]
+##VisitAllMarket1Desc
+If you can sun-dry a tomato,[N]
+surely this'll work too?[N]
+The market won't run out of this.[X]
+##VisitAllMarket2 ^
+Tomorrow's Silver Nation (70 Gold)[X]
+##VisitAllMarket2Desc
+An overly long-winded work of fiction.[N]
+Its title evokes... feelings within.[N]
+The market won't run out of this.[X]
+
+
+//shortbow
+##Visit3xMarket1 ^
+Child's First Bow (900 Gold)[X]
+##Visit3xMarket1Desc
+It styles itself as perfect for[N]
+all ages, and just as lethal as[N]
+any other bow on the market.[X]
+//2 use medica
+##Visit3xMarket2 ^
+Secondhand Medica (250 Gold)[X]
+##Visit3xMarket2Desc
+From an already-dead adventurer,[N]
+for half market price. ...Don't[N]
+ask how many doses it has left.[X]
+
+
+//inedible leaf
+##Visit10xMarket1 ^
+Lifeflow Salad (550 Gold)[X]
+##Visit10xMarket1Desc
+A healthy salad prepared by and for[N]
+the Lifeflow League, primarily made[N]
+up of high-quality dried vegetables.[X]
+
+//fiction scroll
+##VisitS3xMarket1 ^
+Signed Novella (700 Gold)[X]
+##VisitS3xMarket1Desc
+Written and signed by an author local[N]
+to Hirschring. The back cover styles[N]
+the work as a fictional tale of woe.[X]
+
+//idk scroll
+##Visit16xMarket1 ^
+Worp Scroll (2500 Gold)[X]
+##Visit16xMarket1Desc
+One of the greatest magical scrolls[N]
+in all the land. Is this too good to[N]
+be true? ...Wait, does that say Worp?[X]

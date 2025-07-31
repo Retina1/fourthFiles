@@ -95,6 +95,8 @@ ItemIconEntry(RescueScrollIcon)
 #incbin "Dmp/RescueScroll.dmp"
 ItemIconEntry(WarpScrollIcon)
 #incbin "Dmp/WarpScroll.dmp"
+ItemIconEntry(FictionScrollIcon)
+#incbin "Dmp/FictionScroll.dmp"
 
 
 //SWORDS

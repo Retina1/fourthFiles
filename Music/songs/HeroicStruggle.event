@@ -1405,7 +1405,7 @@ HeroicStruggle_004:
  BYTE   VOICE   71
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   42*HeroicStruggle_mvl/mxv
+ BYTE   VOL   30*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v+3

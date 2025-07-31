@@ -3964,8 +3964,8 @@ Label_F16EF3:
 DyedInBlood_009:
 //  #09 //000   ----------------------------------------
  BYTE   KEYSH   DyedInBlood_key+0
- BYTE   VOICE   0
- BYTE   VOL   37*DyedInBlood_mvl/mxv
+ BYTE   VOICE   28
+ BYTE   VOL   57*DyedInBlood_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   N92  An0  v127
  BYTE   W96

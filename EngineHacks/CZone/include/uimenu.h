@@ -19,6 +19,12 @@ struct MenuItemDef;
 struct MenuProc;
 struct MenuItemProc;
 
+typedef struct MenuProc MenuProc;
+typedef struct MenuCommandProc MenuCommandProc;
+typedef struct MenuItemProc MenuItemProc;
+typedef struct MenuItemDef MenuItemDef;
+typedef struct MenuDef MenuDef;
+
 struct MenuRect { s8 x, y, w, h; };
 
 typedef u8(*MenuAvailabilityFunc)(const struct MenuItemDef*, int);

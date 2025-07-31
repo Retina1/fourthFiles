@@ -170,6 +170,10 @@ AuriMug
 AlexandraMug
 RatatoskrMug 171
 EmblemMug
+EttoMug
+LonsdaleMug
+LeviMug
+TaftMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

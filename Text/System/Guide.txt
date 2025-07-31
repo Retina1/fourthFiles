@@ -39,7 +39,7 @@ Note that weapon weight[N]
 functions as in FE8.[N]
 Hit: Weapon + Skl + Luc/2[N]
 Avo: AS + Luc/2 + Terrain[N]
-Crit: Weapon + Crit/2[N]
+Crit: Weapon + Skl/2[N]
 C.Avo: Luck[N]
 [N]
 Several formulas apply a[N]
@@ -49,6 +49,12 @@ relevant offensive stat[N]
 divided by 3, and hit is[N]
 floored at the attacker's[N]
 Skill stat.[N]
+[N]
+Stat multipliers (positive[N]
+and negative alike) all[N]
+stack multiplicatively.[N]
+Any additive elements are[N]
+factored in first.[N]
 [N]
 Growth display in this game[N]
 only displays letters. This[N]
@@ -109,7 +115,8 @@ attack anything in range, be[N]
 it a friend or a foe.[N]
 [N]
 Petrify: Petrified units can't[N]
-dodge or act, simple as that.[X]
+dodge or act, and they face[N]
+1.5x crit from attacks.[X]
 
 
 ##GuideSectionQuests
@@ -142,3 +149,5 @@ Lore[X]
 
 ##GuideSectionCredits
 Credits[X]
+
+//credit ditto as miss ditto chax

@@ -341,12 +341,14 @@ enum
 
     UNIT_STATUS_POISON = 1,
     UNIT_STATUS_SLEEP = 2,
+	//silence effects handled in binds
     UNIT_STATUS_SILENCED = 3,
     UNIT_STATUS_BERSERK = 4,
 
-    UNIT_STATUS_ATTACK = 5,
-    UNIT_STATUS_DEFENSE = 6,
-    UNIT_STATUS_CRIT = 7,
+	//formerly ninils stuff
+    UNIT_STATUS_BLIND = 5,
+    UNIT_STATUS_PARALYZE = 6,
+    UNIT_STATUS_CURSE = 7,
     UNIT_STATUS_AVOID = 8,
 
     UNIT_STATUS_SICK = 9,

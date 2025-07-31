@@ -28,6 +28,15 @@ CustomAnimeTable:
 //flag users
 
 //no flag
+//shared
+CustomAnimationSet(Gore,Gunner,MaleNoHelmet_GunnerAnims)
+CustomAnimationSet(Martin,Gunner,MaleNoHelmet_GunnerAnims)
+CustomAnimationSet(Demico,Gunner,MaleNoHelmet_GunnerAnims)
+CustomAnimationSet(Karl,Gunner,MaleNoHelmet_GunnerAnims)
+CustomAnimationSet(Wasp,Gunner,MaleNoHelmet_GunnerAnims)
+CustomAnimationSet(Victoria,Gunner,Female_GunnerAnims)
+CustomAnimationSet(Laiteuse,Gunner,Female_GunnerAnims)
+//more one offs
 CustomAnimationSet(CoastKid,Swordfighter,CoastKid_SwordfighterAnims)
 CustomAnimationSet(CoastKid,Landsknecht,CoastKid_LandsknechtAnims)
 

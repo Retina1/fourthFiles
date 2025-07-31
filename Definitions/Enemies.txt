@@ -1,4 +1,5 @@
-BossAstarte 0xd5
+Monk 0xd4
+BossAstarte
 BossGore
 FOEUnit
 Bertram

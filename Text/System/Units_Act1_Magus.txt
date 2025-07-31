@@ -113,6 +113,20 @@ Nina[X]
 An altruistic young priest wandering the[N]
 land. She's been likened to an angel.[X]
 
+//gold
+##Name_Levi
+Levi[X]
+##Desc_Levi
+A fire and brimstone preacher from Asketa.[N]
+He's gentle despite a fierce reputation.[X]
+
+//ru
+##Name_Taft
+Taft[X]
+##Desc_Taft
+A Belvarusi magi pressed into service.[N]
+He's loyal despite his grueling past.[X]
+
 //guard
 ##Name_Szess
 S'zess[X]

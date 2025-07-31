@@ -34,31 +34,38 @@ A legendary sword that can cut through all.[X]
 ##Name_Brightsword
 Brightsword[X]
 ##Desc_Brightsword ^
-A blessed sword effective against monsters.[X]
+A blessed sword that smites evil.[N]
+3x might against monsters.[X]
 ##Name_Magebane
 Magebane[X]
 ##Desc_Magebane ^
-A warding blade effective against magic users.[X]
+A warding blade that absorbs magic.[N]
+3x might against magic users.[X]
 ##Name_Bluntblade
 Bluntblade[X]
 ##Desc_Bluntblade ^
-A weighty blade effective against lances/rapiers.[X]
+A weighty blade that smashes points.[N]
+3x might against lances/rapiers.[X]
 ##Name_Roughslash
 Roughslash[X]
 ##Desc_Roughslash ^
-A rugged sword effective against axes/fists.[X]
+A rugged sword that deflects strikes.[N]
+3x might against axes/fists.[X]
 ##Name_Muzzler
 Muzzler[X]
 ##Desc_Muzzler ^
-A bizarre sword effective against bows/guns.[X]
+A bizarre sword that seeks range equality.[N]
+3x might against bows/guns.[X]
 ##Name_Headhunter
 Headhunter[X]
 ##Desc_Headhunter ^
-A regal blade effective vs. Noble/Driver classes.[X]
+A regal blade that craves the upper crust.[N]
+3x might against Noble/Driver classes.[X]
 ##Name_SuperiorBlade
 Superior Bld.[X]
 ##Desc_SuperiorBlade ^
-A mighty blade eff. vs. swords/whips/drive blades.[X]
+A mighty blade that cuts down competition.[N]
+3x might against swords/whips/drive blades.[X]
 
 //WHIPS
 ##Name_VineWhip
@@ -126,8 +133,8 @@ A towering drive blade that blots out the sun.[X]
 Raging Wave[X]
 ##Desc_RagingWave ^
 A mighty drive blade that strikes like the tide.[X]
-##Name_GreatMountain ^
-Great Mountain[X]
+##Name_GreatMountain
+Grt.[0xBC]Mountain[X]
 ##Desc_GreatMountain ^
 A prototype drive blade that can move mountains.[X]
 
@@ -171,7 +178,8 @@ A spear designed to be thrown at nearby foes.[X]
 ##Name_Shieldlance
 Shieldlance[X]
 ##Desc_Shieldlance ^
-A spear with an enduring sigil. +10 Def.[X]
+A stalwart spear with an enduring sigil.[N]
+Grants +10 Defense.[X]
 ##Name_SoarSpear
 Soar Spear[X]
 ##Desc_SoarSpear ^
@@ -189,27 +197,33 @@ A massive, brutal, and brittle throwing spear.[X]
 ##Name_Epee
 Epee[X]
 ##Desc_Epee ^
-A simple thrusting sword used for sport. +1 Luc.[X]
+A simple thrusting sword used for sport.[N]
+Grants +1 Luck.[X]
 ##Name_Sabre
 Sabre[X]
 ##Desc_Sabre ^
-A defensive thrusting sword. +3 Def/Res.[X]
+A thin and defensive thrusting sword.[N]
+Grants +3 Defense and Resistance.[X]
 ##Name_Rapier
 Rapier[X]
 ##Desc_Rapier ^
-A sword with an extraordinary point. +10 Skl.[X]
+A sword with an extraordinary point.[N]
+Grants +10 Skill.[X]
 ##Name_Estoc
 Estoc[X]
 ##Desc_Estoc ^
-A curved sword used by agile fighters. +5 Spd.[X]
+A curved sword used by agile fighters.[N]
+Grants +5 Speed.[X]
 ##Name_JollyRoger
 Jolly Roger[X]
 ##Desc_JollyRoger ^
-A rapier once used by a famed captain. +40 Luc.[X]
+A rapier once used by a famed captain.[N]
+Grants +40 Luck.[X]
 ##Name_TheFable
 The Fable[X]
 ##Desc_TheFable ^
-A legendary rapier forged by the fae. +5 All.[X]
+A legendary rapier forged by the fae.[N]
+Grants +5 to all stats, including Mov/Con.[X]
 
 //AXES
 ##Name_Shortmace
@@ -247,7 +261,8 @@ A legendary axe said to strike like lightning.[X]
 ##Name_DevilAxe
 Devil Axe[X]
 ##Desc_DevilAxe ^
-A baneful cursed axe. Zeroes out Def/Res/Luc.[X]
+A mighty yet baneful cursed axe.[N]
+Zeroes out Def/Res/Luc.[X]
 ##Name_SerratedAxe
 Serrated Axe[X]
 ##Desc_SerratedAxe ^
@@ -276,9 +291,10 @@ An abhorrent axe that crushes all. Briefly.[X]
 
 //FISTS
 ##Name_BrassKnuckles
-Brass Knuc.[X]
+Brass Knckl.[X]
 ##Desc_BrassKnuckles ^
-A pair of crude knuckle guards made of metal.[X]
+A pair of crude knuckle guards made of metal.[N]
+All fist weapons double strikes in combat.[X]
 ##Name_Caestus
 Caestus[X]
 ##Desc_Caestus ^
@@ -308,7 +324,8 @@ A pair of legendary gloves imbued with prayers.[X]
 ##Name_Shortbow
 Shortbow[X]
 ##Desc_Shortbow ^
-A cheap and simple ranged weapon.[X]
+A cheap and simple ranged weapon.[N]
+All bows have 3x might against fliers.[X]
 ##Name_Recurve
 Recurve[X]
 ##Desc_Recurve ^
@@ -353,7 +370,7 @@ Base Poison Affliction Rate: 60%.[X]
 ##Name_Trickshot
 Trickshot[X]
 ##Desc_Trickshot ^
-An enchanted bow whose arrows almost never falter.[X]
+An enchanted bow with flesh-seeking arrows.[X]
 ##Name_Greatbow
 Greatbow[X]
 ##Desc_Greatbow ^
@@ -399,7 +416,8 @@ A prototype gun said to spit a dragon's fire.[X]
 ##Name_Twinshot
 Twinshot[X]
 ##Desc_Twinshot ^
-A small gun that can fire two inaccurate rounds.[X]
+A small gun with two barrels.[N]
+Doubles strikes in combat.[X]
 ##Name_Snipistol
 Snipistol[X]
 ##Desc_Snipistol ^
@@ -419,14 +437,15 @@ Furybox[X]
 ##Desc_Furybox ^
 A gun with hallucinogenic-laced bullets.[N]
 Base Berserk Affliction Rate: 40%.[X]
-##Name_Meisterkugel ^
+##Name_Meisterkugel
 Meisterkugel[X]
 ##Desc_Meisterkugel ^
-A refined gun that can fire two rounds at once.[X]
+A refined gun with two barrels.[N]
+Doubles strikes in combat.[X]
 ##Name_Stoneshot
 Stoneshot[X]
 ##Desc_Stoneshot ^
-An atrocious  gun with baneful bullets.[N]
+An atrocious gun with baneful bullets.[N]
 Base Petrification Affliction Rate: 30%.[X]
 
 
@@ -438,39 +457,48 @@ A basic wand for use in casting spells.[X]
 ##Name_Staff
 Staff[X]
 ##Desc_Staff ^
-A simple staff made of quality wood. +2 Mag.[X]
+A simple staff made of quality wood.[N]
+Grants +2 Magic.[X]
 ##Name_DownStaff
 Down Staff[X]
 ##Desc_DownStaff ^
-A staff adorned with feathers. +5 Mag, +1 Skl.[X]
+A staff adorned with feathers.[N]
+Grants +5 Magic, +1 Skill.[X]
 ##Name_GemStaff
 Gem Staff[X]
 ##Desc_GemStaff ^
-A staff of beautiful crystals. +8 Mag, +5 Skl.[X]
+A staff of beautiful crystals.[N]
+Grants +8 Magic, +5 Skill.[X]
 ##Name_Godendag
 Godendag[X]
 ##Desc_Godendag ^
-A sturdy staff. +12 Mag, +3 Def/Res/Luc.[X]
+A sturdy staff for those who endure.[N]
+Grants +12 Magic, +3 Def/Res/Luc.[X]
 ##Name_SageWand
 Sage Wand[X]
 ##Desc_SageWand ^
-A nigh-mythical wand of scholars. +15 Mag/Skl.[X]
+A nigh-mythical wand of scholars.[N]
+Grants +15 Magic and Skill.[X]
 ##Name_Kerykeion
 Kerykeion[X]
 ##Desc_Kerykeion ^
-A legendary staff. +25 Mag, +10 Skl/Res/Luc.[X]
+A legendary staff used by archsages.[N]
+Grants +25 Magic, +10 Skl/Res/Luc.[X]
 ##Name_Shieldrod
 Shieldrod[X]
 ##Desc_Shieldrod ^
-A wand that protects its holder. +20 Def.[X]
+A wand that protects its holder.[N]
+Grants +20 Defense.[X]
 ##Name_LuckStaff
 Luck Staff[X]
 ##Desc_LuckStaff ^
-A staff crafted under a lucky star. +30 Luc.[X]
+A staff crafted under a lucky star.[N]
+Grants +30 Luck.[X]
 ##Name_Asclepius
 Asclepius[X]
 ##Desc_Asclepius ^
-A staff that empowers the body. +30 Str/Res.[X]
+A mighty staff that empowers the body.[N]
+Grants +30 Strength and Resistance.[X]
 
 //SCROLLS
 ##Name_FlameScroll
@@ -496,7 +524,8 @@ A scroll that calls upon heavenly light.[X]
 ##Name_CleaveScroll
 Cleave Scr.[X]
 ##Desc_CleaveScroll ^
-A scroll of forbidden power. Halves HP.[X]
+A mighty scroll of forbidden power.[N]
+Halves the target's current HP.[X]
 ##Name_SparkScroll
 Spark Scr.[X]
 ##Desc_SparkScroll ^
@@ -504,7 +533,8 @@ A scroll that unleashes far-range bolts.[X]
 ##Nmae_DrainScroll
 Drain Scr.[X]
 ##Desc_DrainScroll ^
-A scroll of corruption. Steals target HP.[X]
+A baneful scroll of corruption.[N]
+Absorbs the target's HP on hit.[X]
 ##Name_PyreScroll
 Pyre Scr.[X]
 ##Desc_PyreScroll ^
@@ -561,3 +591,15 @@ Warps an adjacent ally to an afar space.[X]
 ##Use_WarpScroll
 Warps near[N]
 allies afar.[X]
+
+##Name_FictionScroll
+Fiction Scr.[X]
+##Desc_FictionScroll ^
+A poorly written work of fiction.[N]
+Usable as a spell in a pinch.[X]
+##Name_InedibleLeaf
+Inedible Leaf[X]
+##Desc_InedibleLeaf ^
+A dry leaf of zero medicinal or[N]
+alchemical value. Can be eaten[N]
+to restore 1 HP in a pinch.[X]

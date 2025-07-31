@@ -42,6 +42,7 @@ between stats and growths.[X]
 #include "City/CityChapter02.txt"
 #include "City/CityChapter03.txt"
 #include "City/CityGeneral.txt"
+#include "City/Market.txt"
 
 #include "Dungeons/_System.txt"
 
@@ -190,6 +191,30 @@ idk we're reworking silence[X]
 Petrify: Petrified units can't[N]
 dodge or act, and face 1.5x[N]
 crit from all attacks.[X]
+
+
+# 0x051B
+Blind[X]
+
+# 0x051C ^
+Paralyze[X]
+
+# 0x051D
+Curse[X]
+
+# 0x0558
+Blind: Blinded units can't[N]
+dodge and have their displayed[N]
+hitrate divided by 3.[X]
+
+# 0x0559
+Paralyze: Paralyzed units can't[N]
+dodge, and on even-numbered[N]
+turns, can't act.[X]
+
+# 0x055A
+Curse: Cursed units take all[N]
+combat damage they deal.[.][X]
 
 # 0x0561
 Slash mastery level.[X]

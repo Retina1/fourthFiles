@@ -157,6 +157,8 @@
 #define PanicGas 0xD5
 #define StoningGas 0xD6
 #define AriadneShard 0xD7
+#define InedibleLeaf 0xD8
+#define FictionScroll 0xD9
 #define HeroCrest 0xE6
 #define KnightProof 0xE7
 #define OrionsBolt 0xE8
@@ -175,3 +177,7 @@
 #define DriveGear 0xF5
 #define ParadoxCore 0xF6
 #define GuildSeal 0xF7
+#define BlankCog 0xF8
+#define CrimsonTape 0xF9
+#define SilkenWire 0xFA
+#define PurestOil 0xFB

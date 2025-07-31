@@ -184,6 +184,13 @@ Victor[X]
 A Belvarusi scholar with interest in[N]
 Asketan mythos. He's openminded.[X]
 
+//rw
+##Name_Lonsdale
+Lonsdale[X]
+##Desc_Lonsdale
+An academic from Hirschring's museum.[N]
+Xe yearns to leave xyr mark on history.[X]
+
 //trish by benfrosh (curate)
 ##Name_Trish
 Trish[X]
