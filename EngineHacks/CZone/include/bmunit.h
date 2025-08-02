@@ -231,8 +231,10 @@ struct Unit
     /* 30 */ u8 statusIndex : 4;
     /* 30 */ u8 statusDuration : 4;
 
-    /* 31 */ u8 torchDuration : 4;
-    /* 31 */ u8 barrierDuration : 4;
+    /* 31 */ u8 isHeadBound : 1;
+    /* 31 */ u8 isLegBound : 1;
+    /* 31 */ u8 isArmBound : 1;
+    /* 31 */ u8 bindDuration : 5;
 
 	/* 32 */ struct SkillField skills;
 	//hopefully nothing breaks from removing unit leader
@@ -343,15 +345,16 @@ enum
     UNIT_STATUS_SLEEP = 2,
 	//silence effects handled in binds
     UNIT_STATUS_SILENCED = 3,
+    UNIT_STATUS_HEADBIND = 3,
     UNIT_STATUS_BERSERK = 4,
 
 	//formerly ninils stuff
     UNIT_STATUS_BLIND = 5,
     UNIT_STATUS_PARALYZE = 6,
     UNIT_STATUS_CURSE = 7,
-    UNIT_STATUS_AVOID = 8,
+    UNIT_STATUS_ARMBIND = 8,
 
-    UNIT_STATUS_SICK = 9,
+    UNIT_STATUS_LEGBIND = 9,
     UNIT_STATUS_RECOVER = 10,
 
     UNIT_STATUS_PETRIFY = 11,

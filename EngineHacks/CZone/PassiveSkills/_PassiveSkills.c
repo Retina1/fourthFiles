@@ -130,6 +130,25 @@ int Apply255Cap(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
+int ApplyArmBind(u8 stat, struct Unit* unit) {
+	if (unit->isArmBound == 1){
+		stat = stat/2;
+	}
+	return stat;
+}
+int ApplyHeadBind(u8 stat, struct Unit* unit) {
+	if (unit->isHeadBound == 1){
+		stat = stat/2;
+	}
+	return stat;
+}
+int ApplyLegBind(u8 stat, struct Unit* unit) {
+	if (unit->isLegBound == 1){
+		stat = 0;
+	}
+	return stat;
+}
+
 long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
 	//flat boosts first
 	stat = ApplySwordfighterWeaponParry(stat,unit);
@@ -224,6 +243,29 @@ long long ClassSkillStrBoost(u8 stat, struct Unit* unit) {
 	//add
 	stat = ApplyCuratePhysAptitude(stat,unit);
 	//mul
+	stat = ApplyArmBind(stat,unit);
+	
+	stat = Apply255Cap(stat,unit);
+	union {
+		long long asLongLong;
+		struct {
+			u32 stat;
+			struct Unit* unit;
+		};
+	} result;
+	
+	result.stat = stat;
+	result.unit = unit;
+	
+	return result.asLongLong;
+	
+}
+
+long long ClassSkillMagBoost(u8 stat, struct Unit* unit) {
+	//add
+
+	//mul
+	stat = ApplyHeadBind(stat,unit);
 	
 	stat = Apply255Cap(stat,unit);
 	union {
@@ -248,7 +290,8 @@ long long ClassSkillMovBoost(u8 stat, struct Unit* unit) {
 	stat = ApplyNobleProudNobility(stat,unit);
 	stat = ApplyDuelistFleetfoot(stat,unit);
 	//mul
-	
+	stat = ApplyLegBind(stat,unit);
+
 	//if no rescue flag is on, nathan gets 15 move and everyone else gets none
 	if (CheckEventId_(0x120)){
 		if (UNIT_CHAR_ID(unit) == 0x1){

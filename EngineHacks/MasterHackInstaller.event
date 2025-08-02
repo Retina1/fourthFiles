@@ -50,6 +50,10 @@ POP
 
 #include "CZone/Main.lyn.event"
 #include "CZone/Durability/Installer.event"
+#include "CZone/SkillLearner/Installer.event"
+
+//i hate prep screen
+//#include "PrepScreen/PrepScreen.event"
 
 
 

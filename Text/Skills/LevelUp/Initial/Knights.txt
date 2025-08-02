@@ -1,0 +1,67 @@
+##IronWallSkill
+Iron Wall[X]
+##IronWallDesc0 ^
+Level: 0 (Passive)[N]
+Your stalwart presence[N]
+bolsters allies.[N]
+Next: 1.2x Def to[N]
+adjacent allies.[N]
+Req: None[X]
+##IronWallDescMax ^
+Level: MAX (Passive)[N]
+Your stalwart presence[N]
+bolsters allies.[N]
+1.2x Def granted to[N]
+adjacent allies.[N]
+[X]
+
+##LeeringWallSkill
+Leering Wall[X]
+##LeeringWallDesc0 ^
+Level: 0 (Passive)[N]
+Your fearsome presence[N]
+disarms enemies.[N]
+Next: 0.9x Atk to[N]
+adjacent enemies.[N]
+Req: None[X]
+##LeeringWallDescMax ^
+Level: MAX (Passive)[N]
+Your fearsome presence[N]
+disarms enemies.[N]
+0.9x Atk granted to[N]
+adjacent enemies.[N]
+[X]
+
+##WarinessSkill
+Wariness[X]
+##WarinessDesc0 ^
+Level: 0 (Passive)[N]
+Fight cautiously to[N]
+preserve advantage.[N]
+Next: Can't be doubled[N]
+while at 50% HP or less.[N]
+Req: Provocation 3[X]
+##WarinessDescMax ^
+Level: MAX (Passive)[N]
+Fight cautiously to[N]
+preserve advantage.[N]
+Can't be doubled while[N]
+at 50% HP or less.[N]
+[X]
+
+##UnbreakableSkill
+Unbreakable[X]
+##UnbreakableDesc0 ^
+Level: 0 (Passive)[N]
+Stand proud against all[N]
+manner of blows.[N]
+Next: Halves chip damage[N]
+taken (to Str or Mag/6).[N]
+Req: PROMO[X]
+##UnbreakableDescMax ^
+Level: MAX (Passive)[N]
+Stand proud against all[N]
+manner of blows.[N]
+Halves all chip damage[N]
+taken (to Str or Mag/6).[N]
+[X]

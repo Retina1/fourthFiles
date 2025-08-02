@@ -6,6 +6,7 @@ static int SkillLevelerDraw(struct MenuProc* menu, struct MenuItemProc* command)
 
 
 //struct holds skill name and associated descs/level
+/*
 struct SkillLeveler_Struct 
 { 
 	u16 skillName; 
@@ -18,6 +19,7 @@ struct SkillLeveler_Struct
 	u16 padding;
 	const void* prereqs;
 }; 
+*/
 
 static const struct ProcCmd Proc_SkillLeveler[] =
 {
@@ -30,7 +32,30 @@ static const struct ProcCmd Proc_SkillLeveler[] =
 };
 
 
-extern struct SkillLeveler_Struct* SkillsetEntry[0xFF]; 
+struct PreReqs
+{
+	//8's more than enough probably
+	u16 reqEntry[8];
+};
+
+struct SkillLeveler_Struct
+{
+	u16 skillName;
+	u16 descs[6];
+	u16 padding;
+	struct PreReqs* reqs;
+};
+
+/*
+struct SkillLeveler_Struct 
+{ 
+	struct SkillEntry skillData[23];
+}; 
+*/
+
+extern struct SkillLeveler_Struct* SkillsetEntry[0xff]; 
+
+
 
 struct Struct_SkillLevelerProc
 {
@@ -41,6 +66,8 @@ struct Struct_SkillLevelerProc
 	//menu stuff
 	u8 menuIndex; //what skill we're on
 	u8 indexLevel; //what level it is
+	u8 isMaxLevel; //is it max level
+	u8 arePrereqsMet; //can we even level it
 };
 
 struct Struct_ConfirmationProc
@@ -64,10 +91,11 @@ static const MenuItemDef MenuCommands_SkillLeveler[] =
 
 static const struct MenuDef SkillLeveler_MenuDef =
 {
-    .rect = { 1, 3, 15 },
+    .rect = { 1, 4, 15 },
     .menuItems = MenuCommands_SkillLeveler, 
 
     .onBPress = (void*) (0x080152F4+1), // Goes back to main game loop
 };
 
 //draw desc at 16,5,14
+

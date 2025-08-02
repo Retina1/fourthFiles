@@ -10,7 +10,7 @@ endif
 include $(DEVKITARM)/base_tools
 
 # defining path of lyn
-LYN := $(abspath .)/utility/lyn.exe
+LYN := $(abspath .)/utility/lyn.exe -longcalls
 LYNREF :=$(abspath .)/reference/FE8U-20190316.o
 
 # setting up compilation flags
@@ -40,6 +40,6 @@ reference:
 
 # OBJ to EVENT rule
 %.lyn.event: %.o
-	$(LYN) $< $(LYNREF) > $@
+	$(LYN) $< $(LYNREF) > $@ -longcalls
 
 # .PRECIOUS: %.s

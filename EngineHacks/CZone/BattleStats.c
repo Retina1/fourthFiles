@@ -67,15 +67,30 @@ void ComputeBattleUnitHitRate(struct BattleUnit* bu) {
 void ComputeBattleUnitAvoidRate(struct BattleUnit* bu) {
     bu->battleAvoidRate = (bu->battleSpeed) + bu->terrainAvoid + (bu->unit.lck / 2);
 
-    if (bu->battleAvoidRate < 0)
+    if (bu->battleAvoidRate < 0) {
         bu->battleAvoidRate = 0;
+	}
+	
+	int unitStatus = bu->unit.statusIndex;
+	int legBind = bu->unit.isLegBound;
+	
+	//add leg bind check later
+	if ((legBind == 1) || (unitStatus == UNIT_STATUS_BLIND) || (unitStatus == UNIT_STATUS_PARALYZE) || (unitStatus == UNIT_STATUS_SLEEP) || (unitStatus == UNIT_STATUS_PETRIFY)) {
+		bu->battleAvoidRate = 0;
+	}
 }
 
 void ComputeBattleUnitCritRate(struct BattleUnit* bu) {
     bu->battleCritRate = GetItemCrit(bu->weapon) + (bu->unit.skl / 2);
 
-    if (UNIT_CATTRIBUTES(&bu->unit) & CA_CRITBONUS)
+    if (UNIT_CATTRIBUTES(&bu->unit) & CA_CRITBONUS) {
         bu->battleCritRate += 30;
+	}
+	
+	int armBind = bu->unit.isArmBound;
+	if (armBind == 1) {
+		bu->battleCritRate = 0;
+	}
 }
 
 void ComputeBattleUnitDodgeRate(struct BattleUnit* bu) {
@@ -97,9 +112,10 @@ void ComputeBattleUnitEffectiveHitRate(struct BattleUnit* attacker, struct Battl
 	}
 	
 	int defenderStatus = defender->unit.statusIndex;
+	int defenderLegBind = defender->unit.isLegBound;
 	
 	//add leg bind check later
-	if ((defenderStatus == UNIT_STATUS_BLIND) || (defenderStatus == UNIT_STATUS_PARALYZE) || (defenderStatus == UNIT_STATUS_SLEEP) || (defenderStatus == UNIT_STATUS_PETRIFY))
+	if ((defenderLegBind == 1) || (defenderStatus == UNIT_STATUS_BLIND) || (defenderStatus == UNIT_STATUS_PARALYZE) || (defenderStatus == UNIT_STATUS_SLEEP) || (defenderStatus == UNIT_STATUS_PETRIFY))
 		attacker->battleEffectiveHitRate = 100;
 }
 
@@ -120,7 +136,12 @@ void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct Batt
 	if (defenderStatus == UNIT_STATUS_PETRIFY) {
 		attacker->battleEffectiveCritRate = attacker->battleEffectiveCritRate * 3/2;
 	}
-
+	//armbind null crit
+	int attackerArmBind = attacker->unit.isArmBound;
+	if (attackerArmBind == 1) {
+		attacker->battleEffectiveCritRate = 0;
+	}
+	
     for (i = 0; (i < UNIT_ITEM_COUNT) && (item = defender->unit.items[i]); ++i) {
         if (GetItemAttributes(item) & IA_NEGATE_CRIT) {
             attacker->battleEffectiveCritRate = 0;

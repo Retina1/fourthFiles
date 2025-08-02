@@ -1,0 +1,50 @@
+#define SkillDescsTableEntry(startText) "SHORT startText startText+1 startText+2 startText+3; SHORT startText+4 startText+5 startText+6; SHORT startText+7 startText+8 startText+9 startText+10 startText+11; SHORT startText+12 startText+13 startText+14"
+
+ALIGN 4
+SkillDescriptionsTable:
+SkillDescsTableEntry(MSS_Filler) //empty
+SkillDescsTableEntry(MSS_Initiative) //swd
+SkillDescsTableEntry(MSS_IronWall) //knt
+SkillDescsTableEntry(MSS_EndlessBattle) //axe
+SkillDescsTableEntry(MSS_Sighting) //arc
+SkillDescsTableEntry(MSS_Studious) //sch
+SkillDescsTableEntry(MSS_SelfCare) //med
+SkillDescsTableEntry(MSS_SwordStance) //ron
+SkillDescsTableEntry(MSS_BattlefieldPresence) //rid
+SkillDescsTableEntry(MSS_MenacingPresence) //rai
+SkillDescsTableEntry(MSS_QuickDraw) //gun
+SkillDescsTableEntry(MSS_SoothingVoice) //poe
+SkillDescsTableEntry(MSS_RunicRhythm) //see
+SkillDescsTableEntry(MSS_WarFortune) //pri
+SkillDescsTableEntry(MSS_UnjustReward) //lur
+SkillDescsTableEntry(MSS_Opportunistic) //dht
+SkillDescsTableEntry(MSS_MoraleBoost) //lan
+SkillDescsTableEntry(MSS_Intimidation) //brw
+SkillDescsTableEntry(MSS_CoverFighter) //hun
+SkillDescsTableEntry(MSS_AlertWings) //sky
+SkillDescsTableEntry(MSS_RetaliatoryWings) //sca
+SkillDescsTableEntry(MSS_Forager) //apo
+SkillDescsTableEntry(MSS_FocusedDefense) //enc
+SkillDescsTableEntry(MSS_CallSpirit) //cal
+SkillDescsTableEntry(MSS_RallyingCry) //nob
+SkillDescsTableEntry(MSS_Unburdened) //due
+SkillDescsTableEntry(MSS_ImperialPride) //dri
+SkillDescsTableEntry(MSS_Reboot) //art
+SkillDescsTableEntry(MSS_Filler) //soul
+SkillDescsTableEntry(MSS_Filler) //generic
+
+#include "SkillDescGetter0.lyn.event"
+#include "SkillDescGetter1.lyn.event"
+#include "SkillDescGetter2.lyn.event"
+#include "SkillDescGetter3.lyn.event"
+#include "SkillDescGetter4.lyn.event"
+#include "SkillDescGetter5.lyn.event"
+#include "SkillDescGetter6.lyn.event"
+#include "SkillDescGetter7.lyn.event"
+#include "SkillDescGetter8.lyn.event"
+#include "SkillDescGetter9.lyn.event"
+#include "SkillDescGetter10.lyn.event"
+#include "SkillDescGetter11.lyn.event"
+#include "SkillDescGetter12.lyn.event"
+#include "SkillDescGetter13.lyn.event"
+#include "SkillDescGetter14.lyn.event"

@@ -1,0 +1,67 @@
+##EndlessBattleSkill
+Endless Battle[X]
+##EndlessBattleDesc0 ^
+Level: 0 (Passive)[N]
+Hone your might as[N]
+the battle rages on.[N]
+Next: +1 Atk per turn[N]
+that has passed.[N]
+Req: None[X]
+##EndlessBattleDescMax ^
+Level: MAX (Passive)[N]
+Hone your might as[N]
+the battle rages on.[N]
++1 Atk per turn that[N]
+has passed. Check Status[N]
+to see current turn.[X]
+
+##SteadyMoraleSkill
+Steady Morale[X]
+##SteadyMoraleDesc0 ^
+Level: 0 (Passive)[N]
+Keep your endurance up[N]
+over a long battle.[N]
+Next: Recover 10 HP after[N]
+combat when initiating.[N]
+Req: None[X]
+##SteadyMoraleDescMax ^
+Level: MAX (Passive)[N]
+Keep your endurance up[N]
+over a long battle.[N]
+Recover 10 HP after[N]
+combat when initiating.[N]
+[X]
+
+##OverpoweringSkill
+Overpowering[X]
+##OverpoweringDesc0 ^
+Level: 0 (Passive)[N]
+Use brute strength to[N]
+overwhelm the enemy.[N]
+Next: 1.2x Atk if Str is[N]
+greater than enemy Str.[N]
+Req: Shield Crush 1[X]
+##OverpoweringDescMax ^
+Level: MAX (Passive)[N]
+Use brute strength to[N]
+overwhelm the enemy.[N]
+Grants 1.2x Atk if Str is[N]
+greater than enemy Str.[N]
+[X]
+
+##FullChargeSkill
+Full Charge[X]
+##FullChargeDesc0 ^
+Level: 0 (Active)[N]
+Charge up might for[N]
+a single great blow.[N]
+Next: Charge for 2.5x[N]
+Atk next initiation.[N]
+Req: PROMO[X]
+##FullChargeDescMax ^
+Level: MAX (Active)[N]
+Charge up might for[N]
+a single great blow.[N]
+Use Charge for 2.5x[N]
+Atk next initiation.[N]
+[X]

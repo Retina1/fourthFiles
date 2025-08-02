@@ -65,6 +65,12 @@ MonkDMP:
 setMugEntry(MonkMug,MonkDMP,3,6,3,4)
 
 ALIGN 4
+//levin
+AtiliusDMP:
+#incbin "dmps/levinAtilius.dmp"
+setMugEntry(AtiliusMug,AtiliusDMP,2,6,3,4)
+
+ALIGN 4
 //dies
 RatatoskrDMP:
 #incbin "dmps/diesRatatoskr.dmp"
@@ -496,6 +502,10 @@ ALIGN 4
 LonsdaleDMP:
 #incbin "dmps/rwLonsdale.dmp"
 setMugEntry(LonsdaleMug,LonsdaleDMP,3,6,3,4)
+ALIGN 4
+YujinDMP:
+#incbin "dmps/rwYujin.dmp"
+setMugEntry(YujinMug,YujinDMP,3,6,3,4)
 
 ALIGN 4
 //scraiza

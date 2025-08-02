@@ -192,7 +192,6 @@ SetMapBGM(Song_InitialStrike)
 EndEvent
 
 Quest2_3x_Event:
-ASMC SkillLeveler_OnSelect|1
 SystemText(Quest2_3x_System)
 ENUT Quest2_3x_DoneFlag
 EndEvent

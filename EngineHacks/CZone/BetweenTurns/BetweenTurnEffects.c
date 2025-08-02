@@ -1,5 +1,5 @@
 void TickActiveFactionTurn(void) {
-    int i, displayMapChange = FALSE;
+    int i;
 
     InitTargets(0, 0);
 
@@ -12,12 +12,15 @@ void TickActiveFactionTurn(void) {
         if (unit->state & (US_UNAVAILABLE | US_RESCUED))
             continue;
 
-        if (unit->barrierDuration != 0)
-            unit->barrierDuration--;
+        //funcs to handle state ticks
 
-        if (unit->torchDuration != 0) {
-            unit->torchDuration--;
-            displayMapChange = TRUE;
+        if (unit->bindDuration != 0) {
+            unit->bindDuration--;
+			if (unit->bindDuration == 0) {
+				 unit->isHeadBound    = 0;
+				 unit->isArmBound    = 0;
+				 unit->isLegBound    = 0;
+			}
         }
 
         if (unit->statusDuration != 0) {
@@ -35,13 +38,5 @@ void TickActiveFactionTurn(void) {
 			}
         }
 
-    }
-
-    if (displayMapChange) {
-        RenderBmMapOnBg2();
-        RefreshEntityBmMaps();
-        RenderBmMap();
-        NewBMXFADE(TRUE);
-        RefreshUnitSprites();
     }
 }

@@ -185,6 +185,11 @@ Text(C1_Opening_4)
 FlashCursor(Nathan,60)
 MUSC Song_TheFirstCampaign
 Text(C1_Opening_5)
+//starting skills
+//nathan - level 1 fire
+LevelUpSkill(Nathan,7)
+//astarte - level 1 war heal
+LevelUpSkill(Astarte,7)
 EndEvent
 
 EndingScene:

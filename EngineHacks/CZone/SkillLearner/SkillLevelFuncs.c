@@ -1,3 +1,28 @@
+u8 GetSkillLevel(struct Unit* unit, u8 skill);
+void LevelUpSkill(struct Unit* unit, u8 skill);
+
+u8 CalculatePrereqs(struct Unit* unit, u8 skillSet, u8 skill) {
+	struct SkillLeveler_Struct* skillEntry = SkillsetEntry[skillSet];
+	skillEntry += skill;
+	struct PreReqs* reqs = skillEntry->reqs;
+	for (int i = 0; (reqs->reqEntry[i] != 0); i++) {
+		int entry = reqs->reqEntry[i];
+		if (entry == 0xFFFF) {
+			if (!(UNIT_CATTRIBUTES(unit) & CA_PROMOTED)) {
+				return 0;
+			}
+		}
+		else {
+			int otherSkill = ((entry & 0xff00) >> 8);
+			int level =  entry & 0xff; 
+			if (!(GetSkillLevel(unit,otherSkill) >= level)) {
+				return 0;
+			}
+		}
+	}
+	return 1;
+}
+
 //the hell torture
 void LevelUpSkill(struct Unit* unit, u8 skill) {
 	//1 ptrs

@@ -163,6 +163,23 @@ ENUN
 SilentKillUnit(Xavens)
 //comments on monsters
 TEXTSHOW C2_Opening_3; TEXTEND; STAL 10; MUSC Song_DiscoDescent; STAL 10; TEXTCONT; TEXTEND; REMA
+//starting skills
+//cleone - level 1 cuffs, shackle
+LevelUpSkill(Cleone,4)
+LevelUpSkill(Cleone,5)
+//benthus - level 1 rallying cry, boonful presence, attack rally, guard rally, haste rally
+//level 2 magic/skl/luc up
+LevelUpSkill(Benthus,0)
+LevelUpSkill(Benthus,1)
+LevelUpSkill(Benthus,7)
+LevelUpSkill(Benthus,8)
+LevelUpSkill(Benthus,9)
+LevelUpSkill(Benthus,17)
+LevelUpSkill(Benthus,17)
+LevelUpSkill(Benthus,18)
+LevelUpSkill(Benthus,18)
+LevelUpSkill(Benthus,20)
+LevelUpSkill(Benthus,20)
 EndEvent
 
 //turn event about door and chest unlocks

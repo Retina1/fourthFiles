@@ -76,6 +76,82 @@ between stats and growths.[X]
 
 #include "Quests/1_Visit3x.txt"
 
+#include "Skills/mssDescs.txt"
+#include "Skills/LevelUp/Common.txt"
+#include "Skills/LevelUp/Initial/Swordfighters.txt"
+#include "Skills/LevelUp/Initial/Knights.txt"
+#include "Skills/LevelUp/Initial/Axefighters.txt"
+#include "Skills/LevelUp/Initial/Archers.txt"
+#include "Skills/LevelUp/Initial/Scholars.txt"
+#include "Skills/LevelUp/Initial/Curates.txt"
+#include "Skills/LevelUp/Standard/Myrmidons.txt"
+#include "Skills/LevelUp/Standard/Riders.txt"
+#include "Skills/LevelUp/Standard/Raiders.txt"
+#include "Skills/LevelUp/Standard/Gunners.txt"
+#include "Skills/LevelUp/Magus/Poets.txt"
+#include "Skills/LevelUp/Magus/Seekers.txt"
+#include "Skills/LevelUp/Magus/Priests.txt"
+#include "Skills/LevelUp/Magus/Lurkers.txt"
+#include "Skills/LevelUp/Special/DarkHunters.txt"
+#include "Skills/LevelUp/Special/Lancers.txt"
+#include "Skills/LevelUp/Special/Brawlers.txt"
+#include "Skills/LevelUp/Special/Hunters.txt"
+#include "Skills/LevelUp/Sky/SkyKnights.txt"
+#include "Skills/LevelUp/Sky/ScaleKnights.txt"
+#include "Skills/LevelUp/Lifeflow/Apothecaries.txt"
+#include "Skills/LevelUp/Lifeflow/Encirclers.txt"
+#include "Skills/LevelUp/Lifeflow/Callers.txt"
+#include "Skills/LevelUp/Upper/Nobles.txt"
+#include "Skills/LevelUp/Upper/Duelists.txt"
+#include "Skills/LevelUp/ImpArt/Drivers.txt"
+#include "Skills/LevelUp/ImpArt/Artifices.txt"
+
+## PlaceholderLabel
+Placeholder[X]
+## PlaceholderDesc0
+Level: 0[N]
+PLACEHOLDER[N]
+MAY NOT FUNCTION[N]
+[N]
+[N]
+[X]
+## PlaceholderDesc1
+Level: 1[N]
+PLACEHOLDER[N]
+MAY NOT FUNCTION[N]
+[N]
+[N]
+[X]
+## PlaceholderDesc2
+Level: 2[N]
+PLACEHOLDER[N]
+MAY NOT FUNCTION[N]
+[N]
+[N]
+[X]
+## PlaceholderDesc3
+Level: 3[N]
+PLACEHOLDER[N]
+MAY NOT FUNCTION[N]
+[N]
+[N]
+[X]
+## PlaceholderDesc4
+Level: 4[N]
+PLACEHOLDER[N]
+MAY NOT FUNCTION[N]
+[N]
+[N]
+[X]
+## PlaceholderDesc5
+Level: 5[N]
+PLACEHOLDER[N]
+MAY NOT FUNCTION[N]
+[N]
+[N]
+[X]
+
+
 ## StaffExpLabel
 EXP[X]
 
@@ -573,3 +649,10 @@ Right here, then.[.][X]
 
 # 0x05A7
 Take this, then.[X]
+
+# 0x0681
+ Custom[X]
+ 
+# 0x06CA
+Check skill effects and spend SP[N]
+to strengthen your abilities.[X]

@@ -8,6 +8,9 @@ void ApplyRaiderMenacingPresence(struct BattleUnit* attacker){
 		Unit* other = gUnitLookup[index];
 		if (UNIT_HAS_SKILL(other,TBZ,skill_111)){
 			attacker->battleAvoidRate = attacker->battleAvoidRate - 5;
+			if (attacker->battleAvoidRate < 0) {
+				attacker->battleAvoidRate = 0;
+			}
 		}
 		i++;
 	}

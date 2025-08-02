@@ -1,0 +1,67 @@
+##SightingSkill
+Sighting[X]
+##SightingDesc0 ^
+Level: 0 (Passive)[N]
+Bolster the aim of[N]
+your companions.[N]
+Next: Adjacent allies[N]
+have 1.2x Hit.[N]
+Req: None[X]
+##SightingDescMax ^
+Level: MAX (Passive)[N]
+Bolster the aim of[N]
+your companions.[N]
+Adjacent allies[N]
+have 1.2x Hit.[N]
+[X]
+
+##PerchSkill
+Perch[X]
+##PerchDesc0 ^
+Level: 0 (Passive)[N]
+Make use of terrain[N]
+to outwit your foe.[N]
+Next: 1.5x Hit/Avo while[N]
+on terrain with bonuses.[N]
+Req: None[X]
+##PerchDescMax ^
+Level: MAX (Passive)[N]
+Make use of terrain[N]
+to outwit your foe.[N]
+Grants 1.5x Hit/Avo while[N]
+on terrain with bonuses.[N]
+[X]
+
+##TargetMarkSkill
+Target Mark[X]
+##TargetMarkDesc0 ^
+Level: 0 (Active)[N]
+Mark an enemy for death.[N]
+Next: Use Mark action to[N]
+designate an enemy as a[N]
+target for Volley skills.[N]
+Req: Sure Aim 2[X]
+##TargetMarkDescMax ^
+Level: MAX (Active)[N]
+Mark an enemy for death.[N]
+Use Mark action to[N]
+designate an enemy as a[N]
+target for Volley skills.[N]
+[X]
+
+##KillerAimSkill
+Killer Aim[X]
+##KillerAimDesc0 ^
+Level: 0 (Passive)[N]
+Next: Overkill hitrate is[N]
+converted into Atk mult.[N]
+(O.K.+100%) Ex. 175 Hit[N]
+vs. 25 Avo - 1.5x Atk.[N]
+Req: PROMO[X]
+##KillerAimDescMax ^
+Level: MAX (Passive)[N]
+Overkill hitrate is[N]
+converted into Atk mult.[N]
+(O.K.+100%) Ex. 175 Hit[N]
+vs. 25 Avo - 1.5x Atk.[N]
+[X]

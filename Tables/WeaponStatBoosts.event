@@ -34,7 +34,7 @@ GemStaffBoost:
 StatBonus(0,0,8,5,0,0,0,0,0,0)
 ALIGN 4
 GodendagBoost:
-StatBonus(0,0,12,0,0,3,3,0,0,0)
+StatBonus(0,0,12,0,0,3,3,3,0,0)
 ALIGN 4
 SageWandBoost:
 StatBonus(0,0,15,15,0,0,0,0,0,0)

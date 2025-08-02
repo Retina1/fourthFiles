@@ -1,23 +1,26 @@
-##TemplateDesc0 ^
+##TemplateSkill
+[X]
+## ^
 Level: 0 ()[N]
 [N]
 [N]
 Next:[N]
 [N]
 Req: [X]
-##TemplateDesc1 ^
-Level: 1 ()[N]
-[N]
-[N]
-[N]
-Next:[N]
-[X]
-##TemplateDescMax ^
+## ^
 Level: MAX ()[N]
 [N]
 [N]
 [N]
 [N]
+[X]
+
+## ^
+Level: 1 ()[N]
+[N]
+[N]
+[N]
+Next:[N]
 [X]
 
 ##HPUpSkill

@@ -247,14 +247,69 @@ ST_Talk:
 
 
 /*  === PAGE 4 ===  */
+#include "SkillDescsRText/SkillDescTable.event"
+
 RText_Page4:
 SP_Name:
-  RMenu(0,SP_Class,0,0,0x18,0x50,0x0,NameDescGetter)
+  RMenu(0,SP_Class,0,SP_Skill11,0x18,0x50,0x0,NameDescGetter)
 SP_Class:
-  RMenu(SP_Name,SP_Level,0,0,0x6,0x68,0x6E8,ClassDescGetter)
+  RMenu(SP_Name,SP_Level,0,SP_Skill11,0x6,0x68,0x6E8,ClassDescGetter)
 SP_Level:
   RMenu(SP_Class,SP_HP,0,SP_Exp,0x6,0x78,0x542)
 SP_Exp:
-  RMenu(SP_Class,SP_HP,SP_Level,0,0x26,0x78,0x543)
+  RMenu(SP_Class,SP_HP,SP_Level,SP_Skill11,0x26,0x78,0x543)
 SP_HP:
-  RMenu(SP_Level,0,0,0,0x6,0x88,0x544)
+  RMenu(SP_Level,0,0,SP_Skill11,0x6,0x88,0x544)
+  
+SP_Skill11:
+  RMenu(0,SP_Skill21,SP_Name,SP_Skill12,		156,	24,	0x0,SkillDescGetter0)
+SP_Skill12:
+  RMenu(0,SP_Skill22,SP_Skill11,SP_Skill13,	172,	24,	0x0,SkillDescGetter1)
+SP_Skill13:
+  RMenu(0,SP_Skill23,SP_Skill12,SP_Skill14,	188,	24,	0x0,SkillDescGetter2)
+SP_Skill14:
+  RMenu(0,SP_Skill23,SP_Skill13,0,	204,	24,	0x0,SkillDescGetter3)  
+  
+SP_Skill21:
+  RMenu(SP_Skill11,SP_Skill31,SP_Name,SP_Skill22,		156,	40,	0x0,SkillDescGetter4)
+SP_Skill22:
+  RMenu(SP_Skill12,SP_Skill32,SP_Skill21,SP_Skill23,	172,	40,	0x0,SkillDescGetter5)
+SP_Skill23:
+  RMenu(SP_Skill13,SP_Skill33,SP_Skill22,0,	188,	40,	0x0,SkillDescGetter6)
+  
+SP_Skill31:
+  RMenu(SP_Skill21,SP_Skill51,SP_Name,SP_Skill32,		156,	56,	0x0,SkillDescGetter7)
+SP_Skill32:
+  RMenu(SP_Skill22,SP_Skill52,SP_Skill31,SP_Skill33,	172,	56,	0x0,SkillDescGetter8)
+SP_Skill33:
+  RMenu(SP_Skill23,SP_Skill53,SP_Skill32,SP_Skill34,	188,	56,	0x0,SkillDescGetter9)
+SP_Skill34:
+  RMenu(SP_Skill23,SP_Skill53,SP_Skill33,SP_Skill35,	204,	56,	0x0,SkillDescGetter10)
+SP_Skill35:
+  RMenu(SP_Skill23,SP_Skill53,SP_Skill34,0,	220,	56,	0x0,SkillDescGetter11)
+
+SP_Skill51:
+  RMenu(SP_Skill31,SP_SkillHP,SP_Name,SP_Skill52,		156,	72,	0x0,SkillDescGetter12)
+SP_Skill52:
+  RMenu(SP_Skill32,SP_SkillStr,SP_Skill51,SP_Skill53,	172,	72,	0x0,SkillDescGetter13)
+SP_Skill53:
+  RMenu(SP_Skill33,SP_SkillMag,SP_Skill52,0,	188,	72,	0x0,SkillDescGetter14)
+ 
+SP_SkillHP:
+  RMenu(SP_Skill51,SP_SkillSpd,SP_Name,SP_SkillStr,156,90,MSS_HPUp) 
+SP_SkillStr:
+  RMenu(SP_Skill52,SP_SkillLuc,SP_SkillHP,SP_SkillMag,172,90,MSS_StrUp) 
+SP_SkillMag:
+  RMenu(SP_Skill53,SP_SkillDef,SP_SkillStr,SP_SkillSkl,188,90,MSS_MagUp) 
+SP_SkillSkl:
+  RMenu(SP_Skill53,SP_SkillRes,SP_SkillMag,0,204,90,MSS_SklUp)
+  
+SP_SkillSpd:
+  RMenu(SP_Skill51,0,SP_Name,SP_SkillLuc,156,106,MSS_SpdUp) 
+SP_SkillLuc:
+  RMenu(SP_Skill52,0,SP_SkillSpd,SP_SkillDef,172,106,MSS_LucUp) 
+SP_SkillDef:
+  RMenu(SP_Skill53,0,SP_SkillLuc,SP_SkillRes,188,106,MSS_DefUp) 
+SP_SkillRes:
+  RMenu(SP_Skill53,0,SP_SkillDef,0,204,106,MSS_ResUp)
+  

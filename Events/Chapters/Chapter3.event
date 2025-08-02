@@ -158,6 +158,9 @@ SilentKillUnit(Egil)
 //preps leadin
 Text(Chapter3_Opening_3)
 CallPreps
+//starting skills
+//helman - level 1 leering wall
+LevelUpSkill(Helman,0)
 EndEvent
 
 

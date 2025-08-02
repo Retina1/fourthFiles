@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pMagicModifiers: // Magic
-	POIN prAddUnitMagic prAddEquipMagic SkillPointMagBoost
+	POIN prAddUnitMagic prAddEquipMagic SkillPointMagBoost ClassSkillMagBoost
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif

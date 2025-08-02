@@ -30,6 +30,14 @@ Cato[X]
 A Belvarusi noble from a duchy that deals[N]
 in rumor. He's snappy, rude, and clever.[X]
 
+//rw
+##Name_Yujin
+Yu-jin[X]
+//she's from mevion, mention in dialogue, house of rhee
+##Desc_Yujin
+A stranded exchange student from afar.[N]
+She's woefully out of her depth.[X]
+
 //francesca by retina (duelist)
 ##Name_Francesca
 Francesca[X]

@@ -1,3 +1,14 @@
+//for testing purposes, make an unused UM command the leveler
+PUSH
+ORG 0x59CC10
+BYTE 0x2
+ORG 0x59cc14
+POIN 0x4F449
+//make wrapper to handle unit action stuff so turn doesn't instaend if checking after a trade
+ORG 0x59cc1c
+POIN SkillLeveler_OnSelect|1
+POP
+
 //i think this fixes staff music playing?
 PUSH
 ORG 0x72860

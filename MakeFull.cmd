@@ -1,5 +1,5 @@
 cd %~dp0EngineHacks\CZone
-make "Main.lyn.event"
+make "Main.lyn.event" -longcalls
 
 cd %~dp0
 copy "FE8_clean.gba" "Fourthhack.gba"

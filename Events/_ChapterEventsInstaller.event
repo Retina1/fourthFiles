@@ -51,6 +51,9 @@
 #define WarpNathan(x,y)	"SET_ACTIVE Nathan; SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX; CAM1 [x,y]; WM_WAITFORCAM; SVAL 0xB y*0x10000+x; WARP_IN; STAL 20; MOVE 0xFFFF Nathan [x,y]; ENUN; WM_WAITFORFX; STAL 12; NathanIsHere"
 #define SilentWarpNathan(x,y)	"SET_ACTIVE Nathan; FADI 16; CAM1 [x,y]; WM_WAITFORCAM; MOVE 0xFFFF Nathan [x,y]; ENUN; FADU 16"
 
+#define LevelUpSkill(unitID,skillID) "SVAL 0x1 unitID; SVAL 0x2 skillID; ASMC LevelUpSkillASMC|1"
+
+
 #include "_BattleQuotes.event"
 #include "_DeathQuotes.event"
 #include "_BossMusic.event"

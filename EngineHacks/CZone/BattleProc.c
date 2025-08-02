@@ -112,6 +112,39 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 			}
             break;
+			
+        case WPN_EFFECT_HEADBIND:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_HEADBIND;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
+			
+        case WPN_EFFECT_ARMBIND:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_ARMBIND;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
+			
+        case WPN_EFFECT_LEGBIND:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_LEGBIND;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
 
         case WPN_EFFECT_HPHALVE:
             gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_HPHALVE;
