@@ -9,6 +9,17 @@ RangedAnim(MaleNoHelmet_Gunner_Gun)
 UnarmedAnim(MaleNoHelmet_Gunner_Unarmed)
 EndAnim
 
+//Mask_Gunner
+{
+#include "CharAnims/Mask_Gunner/Gun Installer.event"
+#include "CharAnims/Mask_Gunner/Unarmed Installer.event"
+}
+ALIGN 4
+Mask_GunnerAnims:
+RangedAnim(Mask_Gunner_Gun)
+UnarmedAnim(Mask_Gunner_Unarmed)
+EndAnim
+
 //FemaleNoHelmet_Gunner
 {
 #include "CharAnims/Female_Gunner/Gun Installer.event"

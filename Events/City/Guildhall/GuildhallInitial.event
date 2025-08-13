@@ -87,6 +87,9 @@ UNIT
 Recruit_Witerico:
 UNIT Witerico 0x0 0x1 Level(1,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Elixir] NoAI
 UNIT
+Recruit_Tycho:
+UNIT Tycho 0x0 0x1 Level(5,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Staff] NoAI
+UNIT
 
 //swd
 CoastKid_RecruitEvent:
@@ -180,6 +183,9 @@ EndEvent
 Witerico_RecruitEvent:
 GuildRecruit(Witerico,Guild_Test_Dialogue,0x23)
 EndEvent
+Tycho_RecruitEvent:
+GuildRecruit(Tycho,Guild_Test_Dialogue,0x24)
+EndEvent
 
 
 
@@ -243,6 +249,7 @@ GuildLoad(Trish,Recruit_Trish,0x1)
 GuildLoad(Amos,Recruit_Amos,0x2)
 GuildLoad(Roslin,Recruit_Roslin,0x3)
 GuildLoad(Witerico,Recruit_Witerico,0x4)
+GuildLoad(Tycho,Recruit_Tycho,0x5)
 FADU 10
 ENDA
 

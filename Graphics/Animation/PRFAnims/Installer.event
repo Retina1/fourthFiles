@@ -31,7 +31,7 @@ CustomAnimeTable:
 //shared
 CustomAnimationSet(Gore,Gunner,MaleNoHelmet_GunnerAnims)
 CustomAnimationSet(Martin,Gunner,MaleNoHelmet_GunnerAnims)
-CustomAnimationSet(Demico,Gunner,MaleNoHelmet_GunnerAnims)
+CustomAnimationSet(Demico,Gunner,Mask_GunnerAnims)
 CustomAnimationSet(Karl,Gunner,MaleNoHelmet_GunnerAnims)
 CustomAnimationSet(Wasp,Gunner,MaleNoHelmet_GunnerAnims)
 CustomAnimationSet(Victoria,Gunner,Female_GunnerAnims)

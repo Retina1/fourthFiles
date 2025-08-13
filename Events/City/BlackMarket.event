@@ -3,7 +3,8 @@
 
 BlackMarketUnitsC3:
 //marketplpace npc, generics
-UNIT AsketaGeneric Caller 0x0 Level(6,NPC,1) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT UnknownGeneric Caller 0x0 Level(6,NPC,1) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT UnknownGeneric Ronin 0x0 Level(18,NPC,1) [10,2] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
@@ -14,8 +15,36 @@ LoadBlackMarketSigils:
 ENUF LocationFlagBlackMarket
 AddSigil(0,1)
 AddSigil(0,2)
-//AddGreenSigil(10,11)
+AddGreenSigil(9,3)
 ENDA
+
+//label 0x10 - broke
+//label 0x20 - deny buy
+#define BlackMarketHandler(item,cost,choice) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(BlackPurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItem(item,Nathan); GOTO 0x20; LABEL choice"
+#define BlackMarketHandler(item,cost,choice,flag) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(BlackPurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItem(item,Nathan); ENUT flag; GOTO 0x20; LABEL choice"
+#define BlackMarketHandler(item,uses,cost,choice,flag) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(BlackPurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItemWithDurability(item,uses,Nathan); ENUT flag; GOTO 0x20; LABEL choice"
+#define BlackMarketHandlerUses(item,uses,cost,choice) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(BlackPurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItemWithDurability(item,uses,Nathan); GOTO 0x20; LABEL choice"
+#define BlackBrokeHander "LABEL 0x10; SetGtoMoney; Text(BlackNotEnoughMoney); GOTO 0x20; LABEL 0x30"
+
+BlackMarketLoopBegin:
+EVBIT_MODIFY 3
+Text(BlackMarketIntro)
+LABEL 0x20
+SetGtoMoney
+CallMenu(BlackMarketMenu)
+BlackMarketHandler(HandAxe,555,0)
+BlackMarketHandler(SparkScroll,250,1)
+BlackMarketHandler(StoningGas,800,2)
+BlackMarketHandler(Fengyan,1950,3)
+BlackMarketHandlerUses(DvergrSword,1,250,4)
+BlackMarketHandler(OmegaArch,6300,5)
+BlackMarketHandler(Hippokos,2500,6,HippokosBoughtFlag)
+BlackMarketHandler(SoulShield,65000,7)
+GOTO 0x30
+BlackBrokeHander
+Text(BlackMarketEnd)
+ENUF LocationFlagBlackMarket
+EndEvent
 
 
 BlackMarketMoveToNorthernPass:

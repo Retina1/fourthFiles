@@ -33,6 +33,7 @@ GuildRecruitEvent(Trish_RecruitEvent,Trish)
 GuildRecruitEvent(Amos_RecruitEvent,Amos)
 GuildRecruitEvent(Roslin_RecruitEvent,Roslin)
 GuildRecruitEvent(Witerico_RecruitEvent,Witerico)
+GuildRecruitEvent(Tycho_RecruitEvent,Tycho)
 //myrms
 GuildRecruitEvent(Natsuki_RecruitEvent,Natsuki)
 GuildRecruitEvent(Mikayla_RecruitEvent,Mikayla)

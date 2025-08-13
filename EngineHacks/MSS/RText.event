@@ -305,11 +305,11 @@ SP_SkillSkl:
   RMenu(SP_Skill53,SP_SkillRes,SP_SkillMag,0,204,90,MSS_SklUp)
   
 SP_SkillSpd:
-  RMenu(SP_Skill51,0,SP_Name,SP_SkillLuc,156,106,MSS_SpdUp) 
+  RMenu(SP_SkillHP,0,SP_Name,SP_SkillLuc,156,106,MSS_SpdUp) 
 SP_SkillLuc:
-  RMenu(SP_Skill52,0,SP_SkillSpd,SP_SkillDef,172,106,MSS_LucUp) 
+  RMenu(SP_SkillStr,0,SP_SkillSpd,SP_SkillDef,172,106,MSS_LucUp) 
 SP_SkillDef:
-  RMenu(SP_Skill53,0,SP_SkillLuc,SP_SkillRes,188,106,MSS_DefUp) 
+  RMenu(SP_SkillMag,0,SP_SkillLuc,SP_SkillRes,188,106,MSS_DefUp) 
 SP_SkillRes:
-  RMenu(SP_Skill53,0,SP_SkillDef,0,204,106,MSS_ResUp)
+  RMenu(SP_SkillSkl,0,SP_SkillDef,0,204,106,MSS_ResUp)
   

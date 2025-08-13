@@ -218,3 +218,10 @@ Witerico II[X]
 ##Desc_Witerico
 The aged son of a famed warrior. He's[N]
 adventuring to earn his inheritance.[X]
+
+//halcyon
+##Name_Tycho
+Tycho[X]
+##Desc_Tycho
+A smooth-talking priest into healing[N]
+for the money. He's a bit unethical.[X]

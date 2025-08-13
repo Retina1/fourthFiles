@@ -45,6 +45,7 @@ between stats and growths.[X]
 #include "City/Market.txt"
 
 #include "Dungeons/_System.txt"
+#include "Dungeons/_Dungeon1.txt"
 
 #include "Guild/Initial/Swordfighters.txt"
 #include "Guild/Initial/Knights.txt"

@@ -85,3 +85,14 @@ Soul Shield[X]
 A powerful being's will to survive. Unit[N]
 takes halved damage from attacks and has[N]
 halved chance to be afflicted with ailments.[X]
+
+##Name_CrinkleGlove
+Crinkle Glv.[X]
+##Desc_CrinkleGlove ^
+An exceptionally bizarre glove.[N]
+Grants +1 Speed while using Slash[N]
+weapons, but zeroes their might.[X]
+
+##Use_PassiveItem
+Grants a[N]
+passive boon.[X]

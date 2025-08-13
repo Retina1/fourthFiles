@@ -1,238 +1,3 @@
-//knt
-##MSS_IronWall
-Iron Wall: Boosts Def[N]
-for adjacent allies.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//axe
-##MSS_EndlessBattle
-Endless Battle: Boosts Atk[N]
-for each turn passed.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//arc
-##MSS_Sighting
-Sighting: Boosts Hit[N]
-for adjacent allies.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//scho
-##MSS_Studious
-Studious: Boosts the user's[N]
-Hit and Experience gained.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//cur
-##MSS_SelfCare
-Self-Care: Healing items/spells[N]
-will always fully heal this unit.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
 //myrm
 ##MSS_SwordStance
 Sword Stance: Use Stance to[N]
@@ -423,7 +188,7 @@ fighting ranged enemies at range.[X]
 
 //poe
 ##MSS_SoothingVoice
-Initiative: Restores some HP[N]
+Soothing Voice: Restores some HP[N]
 to allies when buffing them.[X]
 ##
 :[N]
@@ -538,8 +303,8 @@ ailments working for allies.[X]
 :[N]
 .[X]
 ##
-:[N]
-.[X]
+War Heal: Restores HP[N]
+to a nearby ally.[X]
 ##
 :[N]
 .[X]
@@ -914,8 +679,8 @@ when ending turn on Turns 1-3.[X]
 :[N]
 .[X]
 ##
-:[N]
-.[X]
+Healing Herb: Restores[N]
+HP to a nearby ally.[X]
 ##
 :[N]
 .[X]
@@ -1249,6 +1014,8 @@ No skill data.[X]
 No skill data.[X]
 ##
 No skill data.[X]
+##
+No skill data.[X]
 
 //swd
 ##MSS_Initiative
@@ -1296,6 +1063,241 @@ bonus damage to debuffed enemies.[X]
 ##
 Tempest: Strikes an extra time[N]
 per sword in inventory.[X]
+
+//knt
+##MSS_IronWall
+Iron Wall: Boosts Def[N]
+for adjacent allies.[X]
+##
+Leering Wall: Lowers Atk[N]
+for adjacent enemies.[X]
+##
+Wariness: Can't be doubled[N]
+while at 50% HP or less.[X]
+##
+Unbreakable: Chip damage[N]
+this unit takes is halved.[X]
+##
+Long Thrust: A lance[N]
+strike with good range.[X]
+##
+Bounding Thrust: A strike that[N]
+pivots the user around an enemy.[X]
+##
+Vitality Thrust: A thrust that[N]
+restores the user's HP after use.[X]
+##
+Phys. Guard: Guard to reduce[N]
+physical damage in an area.[X]
+##
+Magic Guard: Guard to reduce[N]
+magical damage in an area.[X]
+##
+Provocation: Drop guard to[N]
+draw all enemy attacks.[X]
+##
+Lucky Guard: Guard to potentially[N]
+nullify attacks in an area.[X]
+##
+Brave Guard: Guard to take damage[N]
+in the stead of low HP allies.[X]
+##
+Full Guard: Guard to somewhat[N]
+reduce all damage in an area.[X]
+##
+Blitz Thrust: A flurry of strikes[N]
+that continues until out of targets.[X]
+##
+Avenger Thrust: A thrust whose power[N]
+rises with more allies below 50% HP.[X]
+
+//axe
+##MSS_EndlessBattle
+Endless Battle: Boosts Atk[N]
+for each turn passed.[X]
+##
+Steady Morale: Restore 10[N]
+HP after initiating combat.[X]
+##
+Overpowering: Boosts Str when[N]
+unit Str is higher than foe's.[X]
+##
+Full Charge: Charge to massively[N]
+boost Atk for next initiation.[X]
+##
+Arm Crush: An axe swing[N]
+that can bind arms.[X]
+##
+Shield Crush: An axe swing[N]
+that debuffs enemy Def.[X]
+##
+Smite: A mighty axe swing[N]
+that knocks back targets.[X]
+##
+Heavy Swing: A simple and[N]
+powerful axe strike.[X]
+##
+Killer Blow: A swing with[N]
+high Crit and low Hit.[X]
+##
+Boomerang Axe: A ranged and[N]
+imprecise axe throw.[X]
+##
+Vengeance Bash: An axe swing[N]
+that's stronger at lower HP.[X]
+##
+Berserker Vow: Cut own HP[N]
+for a massive Atk buff.[X]
+##
+Vital Hit: An axe swing that's[N]
+empowered at full HP.[X]
+##
+Smash Barrage: A flurry of many[N]
+low-accuracy axe smashes.[X]
+##
+Takedown: A lethal smash that[N]
+almost never hits on its own.[X]
+
+//arc
+##MSS_Sighting
+Sighting: Boosts Hit[N]
+for adjacent allies.[X]
+##
+Perch: Boosts Hit and Avo[N]
+while on beneficial terrain.[X]
+##
+Target Mark: Mark a target to[N]
+enable mighty Volley skills.[X]
+##
+Killer Aim: Overkill hit becomes[N]
+an additional damage multiplier.[X]
+##
+Sure Aim: Buff self to[N]
+boost Hit and Luck.[X]
+##
+Drop Shot: A mighty shot with[N]
+far and peculiar range.[X]
+##
+Inescapable: Boosts Hit against[N]
+Marked when not using Volleys.[X]
+##
+Curved Shot: A shot with[N]
+incredible accuracy.[X]
+##
+Power Shot: A mighty and long[N]
+ranged shot with shaky Hit.[X]
+##
+Flank Shot: A shot that's stronger[N]
+when allies are next to the enemy.[X]
+##
+Armor Piercer: A shot with reduced[N]
+Atk that completely ignores Def.[X]
+##
+Closer: A leg-binding shot[N]
+with incredible range.[X]
+##
+Point Blank Volley: Loose a duo[N]
+of highly accurate close shots.[X]
+##
+Squall Volley: Loose numerous[N]
+far-range low-accuracy shots.[X]
+##
+Astral Volley: Charge, then loose[N]
+10 shots with incredible range.[X]
+
+//scho
+##MSS_Studious
+Studious: Boosts the user's[N]
+Hit and Experience gained.[X]
+##
+Efficiency: Reduces the[N]
+durability cost of spells.[X]
+##
+Element Master: Boosts Atk when[N]
+using different spells in a row.[X]
+##
+Etheric Charge: Charge to greatly[N]
+boost Atk for next initiation.[X]
+##
+Calibur: An accurate spell[N]
+of deadly cutting winds.[X]
+##
+Surge: A close-ranged spell[N]
+that's strong and can't miss.[X]
+##
+Earthspike: A devastating spell[N]
+with unimpressive accuracy.[X]
+##
+Fireball: A simple[N]
+and effective spell.[X]
+##
+Thunderbolt: A shocking spell[N]
+with above-average range.[X]
+##
+Frostfall: A chilling spell[N]
+that can bind legs.[X]
+##
+Firestorm: A blazing spell[N]
+that damages a large area.[X]
+##
+Galewind: A swift spell[N]
+that strikes two times.[X]
+##
+Ether Shot: Imbue any weapon[N]
+with magic for a powerful hit.[X]
+##
+Megido: A mighty spell[N]
+that's tough to cast.[X]
+##
+Eschaton: An almighty spell that[N]
+consumes the user's next turn.[X]
+
+//cur
+##MSS_SelfCare
+Self-Care: Healing items/spells[N]
+will always fully heal this unit.[X]
+##
+Quick Feet: Boosts Mov[N]
+when at 50% HP or less.[X]
+##
+Panacea: Healed allies will recover[N]
+HP at turn's start for a while.[X]
+##
+Scavenger: This unit always[N]
+fulfills conditional drops.[X]
+##
+Calming Presence: Boosts[N]
+Luck and Res of nearby allies.[X]
+##
+Curare: Paralyze[N]
+a nearby enemy.[X]
+##
+Cardio: Boosts the user's[N]
+Max HP and Spd.[X]
+##
+Cure: Restores HP[N]
+to a nearby ally.[X]
+##
+Refresh: Removes ailments[N]
+and debuffs from an ally.[X]
+##
+Toxin: Poison[N]
+a nearby enemy.[X]
+##
+Wrath Staff: A rod strike[N]
+with high power and Crit.[X]
+##
+Immunize: Buff allies to[N]
+significantly boost Def.[X]
+##
+Healing Touch: Restores HP[N]
+to all allies at once.[X]
+##
+Phys. Aptitude: Massively[N]
+boosts the user's Str.[X]
+##
+Caduceus: An incredibly[N]
+strong rod strike.[X]
 
 //common
 ##MSS_HPUp

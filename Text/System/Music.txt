@@ -56,6 +56,11 @@ Berwick Saga[X]
 ##SongTitle_HeavyArmoredCorps
 Heavy Armored Corps (Rubenio)[X]
 
+##SourceTitle_PokemonGSC ^
+Pokemon Gold/Silver/Crystal[X]
+##SongTitle_DarkCave
+Dark Cave[X]
+
 ##SourceTitle_Touhou
 Touhou Series[X]
 ##SongTitle_PandemonicPlanet

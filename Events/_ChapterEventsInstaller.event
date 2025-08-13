@@ -47,7 +47,8 @@
 #define CreateArenaSingleCorner(x,y) "SVAL 0x1 x; SVAL 0x2 y; ASMC TilemapBordersSingleCornerASMC|1;AddTrap(LightRuneTrapID,x,y);RefreshLightRunes"
 //second clears traps
 #define ClearArenaBorders "ASMC ClearLightRunes|1; RefreshLightRunes; ASMC 0x8019A65; ASMC HealPlayersASMC|1"
-
+#define ResetTurncount "SVAL 1 1; ASMC SetTurncountASMC|1"
+#define BeginCombatEncounter "ResetTurncount; ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0"
 #define WarpNathan(x,y)	"SET_ACTIVE Nathan; SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX; CAM1 [x,y]; WM_WAITFORCAM; SVAL 0xB y*0x10000+x; WARP_IN; STAL 20; MOVE 0xFFFF Nathan [x,y]; ENUN; WM_WAITFORFX; STAL 12; NathanIsHere"
 #define SilentWarpNathan(x,y)	"SET_ACTIVE Nathan; FADI 16; CAM1 [x,y]; WM_WAITFORCAM; MOVE 0xFFFF Nathan [x,y]; ENUN; FADU 16"
 
@@ -125,6 +126,9 @@ EndEvent
 }
 {
 #include "Chapters/Chapter3.event"
+}
+{
+#include "Chapters/Chapter4.event"
 }
 //special city recruit possibilities
 //sfl swordmaster

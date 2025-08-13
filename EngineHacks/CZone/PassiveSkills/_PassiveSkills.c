@@ -148,6 +148,17 @@ int ApplyLegBind(u8 stat, struct Unit* unit) {
 	}
 	return stat;
 }
+int ApplyCrinkleGloveSpd(u8 stat, struct Unit* unit) {
+	for(int j = 0; j < GetUnitItemCount(unit); j++) {
+			u16 curItem = unit->items[j];
+			if(GetItemIndex(curItem) == 0xDA) {
+				if((GetItemType(GetUnitEquippedWeapon(unit))) == 0x0) {
+					stat = stat + 1;
+				}
+			}
+	}
+	return stat;
+}
 
 long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
 	//flat boosts first
@@ -174,11 +185,35 @@ long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
 	
 }
 
+long long ClassSkillResOnlyBoost(u8 stat, struct Unit* unit) {
+	//flat boosts first
+
+	//then multipliers
+	stat = ApplyCurateCalmingPresence(stat,unit);
+
+	//apply debiru axe last
+	stat = ApplyDevilAxeZero(stat,unit);
+	stat = Apply255Cap(stat,unit);
+	union {
+		long long asLongLong;
+		struct {
+			u32 stat;
+			struct Unit* unit;
+		};
+	} result;
+	
+	result.stat = stat;
+	result.unit = unit;
+	
+	return result.asLongLong;
+	
+}
+
 long long ClassSkillLucBoost(u8 stat, struct Unit* unit) {
 	//add
 	
 	//mul
-	
+	stat = ApplyCurateCalmingPresence(stat,unit);
 	//apply debiru axe last
 	stat = ApplyDevilAxeZero(stat,unit);
 	stat = Apply255Cap(stat,unit);
@@ -199,6 +234,7 @@ long long ClassSkillLucBoost(u8 stat, struct Unit* unit) {
 
 long long ClassSkillSpdBoost(u8 stat, struct Unit* unit) {
 	//add
+	stat = ApplyCrinkleGloveSpd(stat,unit);
 	stat = ApplyCurateCardio(stat,unit);
 	//mul
 	

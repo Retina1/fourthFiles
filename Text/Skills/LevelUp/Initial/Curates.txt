@@ -1,0 +1,25 @@
+
+
+##CalmingPresenceSkill
+Calming Presence[X]
+## ^
+Level: 0 (Passive)[N]
+Bring your allies peace.[N]
+Next: Passively gives[N]
+1.1x Luc and Res to[N]
+adjacent allies.[N]
+Req: None[X]
+## ^
+Level: 1 (Passive)[N]
+Bring your allies peace.[N]
+Passively gives 1.1x Luc,[N]
+Res to adjacent allies.[N]
+Next: 1.2x Luc/Res to[N]
+allies within two tiles.[X]
+## ^
+Level: MAX (Passive)[N]
+Bring your allies peace.[N]
+Passively gives 1.2x Luc[N]
+and Res to allies within[N]
+two tiles.[N]
+[X]

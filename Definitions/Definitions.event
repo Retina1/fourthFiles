@@ -23,6 +23,7 @@
 #define Chapter18ADoneFlag 0x96
 #define Chapter18BDoneFlag 0x97
 #define Chapter18CDoneFlag 0x98
+#define HippokosBoughtFlag 0x99
 
 #define SupportAnimFlag 0xae
 #define PicnicModeFlag 0xaf

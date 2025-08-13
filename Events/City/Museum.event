@@ -16,6 +16,7 @@ AddSigil(4,17)
 AddSigil(5,17)
 AddSigil(6,17)
 AddSigil(7,17)
+AddGreenSigil(5,10)
 //AddGreenSigil(10,11)
 ENDA
 
@@ -25,6 +26,18 @@ CALL LoadNorthernPassSigils
 MUSC Song_VastLands
 LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
 FADU 10
+EndEvent
+
+MuseumEventBegin:
+EVBIT_MODIFY 3
+CHECK_EVENTID 0x1d
+BNE 0x1 0xc 0x0
+RunTextByVisit(City03_Claire,City03_Claire,0,0,0,0,0,0,0,0,0,0,0,0)
+ENUT 0x1d
+LABEL 0x1
+//what does the museum even do
+RunEventByVisit(DummyEvent,DummyEvent,0,0,0,0,0,0,0,0,0,0,0,0)
+ENUF LocationFlagMuseum
 EndEvent
 
 Quest1_3x_Event:

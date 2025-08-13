@@ -136,6 +136,7 @@ UNIT
 ALIGN 4
 
 BeginningScene:
+CleanTextNoMap(0x3,Dungeon1_Opening)
 CallPreps
 CLEA 0
 //set all deployed units to be undeployed but with the not deployed last chapter thing unset
@@ -151,7 +152,7 @@ FADU 16
 EndEvent
 
 Encounter1:
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 Encounter1Units; ENUN
 LOAD1 0x0 Encounter1Enemies; ENUN
 CreateArenaBorders(13,8,21,15)
@@ -161,7 +162,7 @@ SetMapBGM(Song_InitialStrike)
 EndEvent
 
 Encounter2:
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 Encounter2Units; ENUN
 LOAD1 0x0 Encounter2Enemies; ENUN
 CreateArenaSingleCorner(14,8)
@@ -171,7 +172,7 @@ SetMapBGM(Song_InitialStrike)
 EndEvent
 
 Encounter3:
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 Encounter3Units; ENUN
 LOAD1 0x0 Encounter3Enemies; ENUN
 CreateArenaBorders(6,6,14,12)
@@ -181,7 +182,7 @@ SetMapBGM(Song_InitialStrike)
 EndEvent
 
 Encounter4:
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 Encounter4Units; ENUN
 LOAD1 0x0 Encounter4Enemies; ENUN
 CreateArenaSingleCorner(5,4)

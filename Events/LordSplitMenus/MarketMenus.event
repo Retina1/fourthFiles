@@ -10,3 +10,21 @@ MarketMenuOption(VisitAllMarket1, VisitAllMarket1Desc, 0x0)
 MarketMenuOption(VisitAllMarket2, VisitAllMarket2Desc, 0x0)
 MenuOption(LeaveMarketLabel, LeaveMarketDesc, 0)
 MenuTerminator
+
+
+ALIGN 4
+BlackMarketMenu:
+MenuDefinition(6, 0, 18, 0, 1, BlackMarketMenuOptions)
+
+ALIGN 4
+BlackMarketMenuOptions:
+MarketMenuOption(BlackMarketItem1, BlackMarketItem1Desc, 0x0)
+MarketMenuOption(BlackMarketItem2, BlackMarketItem2Desc, 0x0)
+MarketMenuOption(BlackMarketItem3, BlackMarketItem3Desc, 0x0)
+MarketMenuOption(BlackMarketItem4, BlackMarketItem4Desc, 0x0)
+MarketMenuOption(BlackMarketItem5, BlackMarketItem5Desc, 0x0)
+MarketMenuOption(BlackMarketItem6, BlackMarketItem6Desc, 0x0)
+MarketMenuOption(BlackMarketItem7, BlackMarketItem7Desc, HippokosBoughtFlag)
+MarketMenuOption(BlackMarketItem8, BlackMarketItem8Desc, 0x0)
+MenuOption(LeaveMarketLabel, LeaveMarketDesc, 0)
+MenuTerminator

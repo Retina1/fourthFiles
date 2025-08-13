@@ -175,6 +175,7 @@ LonsdaleMug
 LeviMug
 TaftMug
 YujinMug
+TychoMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

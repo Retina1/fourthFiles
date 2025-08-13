@@ -261,6 +261,11 @@ void RefreshActiveUnitASMC(struct EventEngineProc* proc) {
 	RenderBmMap();
 }
 
+void SetTurncountASMC(ProcPtr* proc) {
+	u8 turncount = gEventSlots[1];
+    gChapterData.chapterTurnNumber = turncount;
+}
+
 void NewExecVulneraryItemWrapper() {
     asm("   mov r0,r6; \
             bl NewExecVulneraryItem; \

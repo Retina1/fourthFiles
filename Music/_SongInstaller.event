@@ -215,6 +215,11 @@ SongTable(Song_WhyLove,WhyLove,1)
 SongTable(Song_FinaleMHE,FinaleMHE,1)
 #include "songs/FinaleMHE.event"
 }
+#define Song_DarkCave 0x2e
+{
+SongTable(Song_DarkCave,DarkCave,1)
+#include "songs/DarkCave.event"
+}
 
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36

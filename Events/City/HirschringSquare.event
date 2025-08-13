@@ -105,9 +105,11 @@ AreaEvent(LocationFlagNorthernPass,MarketLoopBegin,10,11)
 
 //in museum
 AreaEvent(LocationFlagMuseum,MuseumMoveToNorthernPass,4,17,7,17)
+AreaEvent(LocationFlagMuseum,MuseumEventBegin,5,10)
 
 //in black market
 AreaEvent(LocationFlagBlackMarket,BlackMarketMoveToNorthernPass,0,1,0,2)
+AreaEvent(LocationFlagBlackMarket,BlackMarketLoopBegin,9,3)
 
 CauseGameOverIfLordDies
 END_MAIN
@@ -343,7 +345,7 @@ CHECK_MONEY
 SVAL 0x1 1500
 BGE 0x1 0xc 0x1
 Text(BuyStandardClassesNoMoney)
-ENUF 0xe
+ENUF StandardUnlockedFlag
 GOTO 0x2
 LABEL 0x1
 EVBIT_MODIFY 4

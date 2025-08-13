@@ -1,27 +1,27 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	DarkCave_grp, voicegroup000
+	.equ	DarkCave_pri, 0
+	.equ	DarkCave_rev, 0
+	.equ	DarkCave_mvl, 127
+	.equ	DarkCave_key, 0
+	.equ	DarkCave_tbs, 1
+	.equ	DarkCave_exg, 0
+	.equ	DarkCave_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	DarkCave
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+DarkCave_001:
 @  #01 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*DarkCave_mvl/mxv
+ .byte   KEYSH , DarkCave_key+0
 Label_F48394:
- .byte   TEMPO , 74*song09_tbs/2
+ .byte   TEMPO , 74*DarkCave_tbs/2
  .byte   VOICE , 38
  .byte   N12 ,Cn1 ,v112
  .byte   W12
@@ -166,7 +166,7 @@ Label_F4842D:
  .byte   PATT
   .word Label_F4842D
 @  #01 @021   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*DarkCave_mvl/mxv
  .byte   N12 ,Cn2 ,v112
  .byte   W12
  .byte   N06 ,Gn2
@@ -270,10 +270,10 @@ Label_F4849D:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+DarkCave_002:
 @  #02 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*DarkCave_mvl/mxv
+ .byte   KEYSH , DarkCave_key+0
 Label_010EFCC8:
  .byte   VOICE , 24
  .byte   W96
@@ -534,10 +534,10 @@ Label_010EFD03:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+DarkCave_003:
 @  #03 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*DarkCave_mvl/mxv
+ .byte   KEYSH , DarkCave_key+0
 Label_010EEA40:
  .byte   VOICE , 104
  .byte   W96
@@ -657,19 +657,19 @@ Label_010EEA77:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+DarkCave_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , DarkCave_key+0
 Label_010EECA6:
  .byte   VOICE , 30
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*DarkCave_mvl/mxv
  .byte   W96
 @  #04 @001   ----------------------------------------
  .byte   W96
 @  #04 @002   ----------------------------------------
  .byte   W96
 @  #04 @003   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*DarkCave_mvl/mxv
  .byte   W96
 @  #04 @004   ----------------------------------------
  .byte   W96
@@ -691,159 +691,159 @@ Label_010EECA6:
  .byte   W06
  .byte   N12 ,Dn4
  .byte   W11
- .byte   VOL , 52*song09_mvl/mxv
+ .byte   VOL , 52*DarkCave_mvl/mxv
  .byte   W01
 @  #04 @007   ----------------------------------------
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   N48 ,Cs4
  .byte   W01
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 50*song09_mvl/mxv
+ .byte   VOL , 50*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 49*song09_mvl/mxv
+ .byte   VOL , 49*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 47*song09_mvl/mxv
+ .byte   VOL , 47*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 46*song09_mvl/mxv
+ .byte   VOL , 46*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 44*song09_mvl/mxv
+ .byte   VOL , 44*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song09_mvl/mxv
+ .byte   VOL , 43*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 40*song09_mvl/mxv
+ .byte   VOL , 40*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 38*song09_mvl/mxv
+ .byte   VOL , 38*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song09_mvl/mxv
+ .byte   VOL , 33*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 30*song09_mvl/mxv
+ .byte   VOL , 30*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song09_mvl/mxv
+ .byte   VOL , 27*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 22*song09_mvl/mxv
+ .byte   VOL , 22*DarkCave_mvl/mxv
  .byte   N48 ,Cn4
  .byte   W01
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song09_mvl/mxv
+ .byte   VOL , 27*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 30*song09_mvl/mxv
+ .byte   VOL , 30*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song09_mvl/mxv
+ .byte   VOL , 33*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 38*song09_mvl/mxv
+ .byte   VOL , 38*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 40*song09_mvl/mxv
+ .byte   VOL , 40*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song09_mvl/mxv
+ .byte   VOL , 43*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song09_mvl/mxv
+ .byte   VOL , 43*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 44*song09_mvl/mxv
+ .byte   VOL , 44*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 46*song09_mvl/mxv
+ .byte   VOL , 46*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 47*song09_mvl/mxv
+ .byte   VOL , 47*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 49*song09_mvl/mxv
+ .byte   VOL , 49*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 50*song09_mvl/mxv
+ .byte   VOL , 50*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   W02
 @  #04 @008   ----------------------------------------
- .byte   VOL , 52*song09_mvl/mxv
+ .byte   VOL , 52*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*DarkCave_mvl/mxv
  .byte   W92
  .byte   W02
 @  #04 @009   ----------------------------------------
@@ -911,7 +911,7 @@ Label_010EECA6:
 @  #04 @014   ----------------------------------------
  .byte   W96
 @  #04 @015   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*DarkCave_mvl/mxv
  .byte   W96
 @  #04 @016   ----------------------------------------
  .byte   W96
@@ -928,99 +928,99 @@ Label_010EECA6:
 @  #04 @019   ----------------------------------------
  .byte   N72 ,Ds3
  .byte   W01
- .byte   VOL , 52*song09_mvl/mxv
+ .byte   VOL , 52*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 50*song09_mvl/mxv
+ .byte   VOL , 50*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 49*song09_mvl/mxv
+ .byte   VOL , 49*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 47*song09_mvl/mxv
+ .byte   VOL , 47*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song09_mvl/mxv
+ .byte   VOL , 43*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 40*song09_mvl/mxv
+ .byte   VOL , 40*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 38*song09_mvl/mxv
+ .byte   VOL , 38*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song09_mvl/mxv
+ .byte   VOL , 33*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 30*song09_mvl/mxv
+ .byte   VOL , 30*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 22*song09_mvl/mxv
+ .byte   VOL , 22*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 21*song09_mvl/mxv
+ .byte   VOL , 21*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 20*song09_mvl/mxv
+ .byte   VOL , 20*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 19*song09_mvl/mxv
+ .byte   VOL , 19*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 17*song09_mvl/mxv
+ .byte   VOL , 17*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 17*song09_mvl/mxv
+ .byte   VOL , 17*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 15*song09_mvl/mxv
+ .byte   VOL , 15*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 14*song09_mvl/mxv
+ .byte   VOL , 14*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 13*song09_mvl/mxv
+ .byte   VOL , 13*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 12*song09_mvl/mxv
+ .byte   VOL , 12*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 11*song09_mvl/mxv
+ .byte   VOL , 11*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 10*song09_mvl/mxv
+ .byte   VOL , 10*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 8*song09_mvl/mxv
+ .byte   VOL , 8*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 8*song09_mvl/mxv
+ .byte   VOL , 8*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 6*song09_mvl/mxv
+ .byte   VOL , 6*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 5*song09_mvl/mxv
+ .byte   VOL , 5*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 4*song09_mvl/mxv
+ .byte   VOL , 4*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 3*song09_mvl/mxv
+ .byte   VOL , 3*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 2*song09_mvl/mxv
+ .byte   VOL , 2*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*DarkCave_mvl/mxv
  .byte   N06 ,Gs2
  .byte   W06
  .byte   Gn2
@@ -1028,42 +1028,42 @@ Label_010EECA6:
  .byte   N12 ,Gs2
  .byte   W12
 @  #04 @020   ----------------------------------------
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   N48 ,Ds3
  .byte   W02
- .byte   VOL , 49*song09_mvl/mxv
+ .byte   VOL , 49*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 46*song09_mvl/mxv
+ .byte   VOL , 46*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 44*song09_mvl/mxv
+ .byte   VOL , 44*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 33*song09_mvl/mxv
+ .byte   VOL , 33*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*DarkCave_mvl/mxv
  .byte   N12 ,Gn3
  .byte   W24
  .byte   N06 ,Fn3
@@ -1073,42 +1073,42 @@ Label_010EECA6:
  .byte   N12 ,Gs3
  .byte   W12
 @  #04 @021   ----------------------------------------
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   N48 ,Gn3
  .byte   W02
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 22*song09_mvl/mxv
+ .byte   VOL , 22*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 19*song09_mvl/mxv
+ .byte   VOL , 19*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 17*song09_mvl/mxv
+ .byte   VOL , 17*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 14*song09_mvl/mxv
+ .byte   VOL , 14*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 11*song09_mvl/mxv
+ .byte   VOL , 11*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 8*song09_mvl/mxv
+ .byte   VOL , 8*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 5*song09_mvl/mxv
+ .byte   VOL , 5*DarkCave_mvl/mxv
  .byte   W03
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*DarkCave_mvl/mxv
  .byte   N12 ,Fn3
  .byte   W24
  .byte   N06 ,Gs3
@@ -1152,159 +1152,159 @@ Label_010EECA6:
  .byte   N12 ,Dn3
  .byte   N12 ,Dn4
  .byte   W11
- .byte   VOL , 52*song09_mvl/mxv
+ .byte   VOL , 52*DarkCave_mvl/mxv
  .byte   W01
 @  #04 @029   ----------------------------------------
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   N48 ,Cs3
  .byte   N48 ,Cs4
  .byte   W01
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 50*song09_mvl/mxv
+ .byte   VOL , 50*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 49*song09_mvl/mxv
+ .byte   VOL , 49*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 47*song09_mvl/mxv
+ .byte   VOL , 47*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 46*song09_mvl/mxv
+ .byte   VOL , 46*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 44*song09_mvl/mxv
+ .byte   VOL , 44*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song09_mvl/mxv
+ .byte   VOL , 43*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 40*song09_mvl/mxv
+ .byte   VOL , 40*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 38*song09_mvl/mxv
+ .byte   VOL , 38*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song09_mvl/mxv
+ .byte   VOL , 33*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 30*song09_mvl/mxv
+ .byte   VOL , 30*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song09_mvl/mxv
+ .byte   VOL , 27*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 23*song09_mvl/mxv
+ .byte   VOL , 23*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 22*song09_mvl/mxv
+ .byte   VOL , 22*DarkCave_mvl/mxv
  .byte   N48 ,Cn3
  .byte   N48 ,Cn4
  .byte   W01
- .byte   VOL , 24*song09_mvl/mxv
+ .byte   VOL , 24*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song09_mvl/mxv
+ .byte   VOL , 25*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 26*song09_mvl/mxv
+ .byte   VOL , 26*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song09_mvl/mxv
+ .byte   VOL , 27*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 28*song09_mvl/mxv
+ .byte   VOL , 28*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 30*song09_mvl/mxv
+ .byte   VOL , 30*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song09_mvl/mxv
+ .byte   VOL , 33*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 38*song09_mvl/mxv
+ .byte   VOL , 38*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song09_mvl/mxv
+ .byte   VOL , 39*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 40*song09_mvl/mxv
+ .byte   VOL , 40*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 42*song09_mvl/mxv
+ .byte   VOL , 42*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song09_mvl/mxv
+ .byte   VOL , 43*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song09_mvl/mxv
+ .byte   VOL , 43*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 44*song09_mvl/mxv
+ .byte   VOL , 44*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 45*song09_mvl/mxv
+ .byte   VOL , 45*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 46*song09_mvl/mxv
+ .byte   VOL , 46*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 47*song09_mvl/mxv
+ .byte   VOL , 47*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 49*song09_mvl/mxv
+ .byte   VOL , 49*DarkCave_mvl/mxv
  .byte   W02
- .byte   VOL , 50*song09_mvl/mxv
+ .byte   VOL , 50*DarkCave_mvl/mxv
  .byte   W01
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*DarkCave_mvl/mxv
  .byte   W02
 @  #04 @030   ----------------------------------------
- .byte   VOL , 52*song09_mvl/mxv
+ .byte   VOL , 52*DarkCave_mvl/mxv
  .byte   W24
  .byte   N24 ,Cn3
  .byte   N24 ,Cn4
@@ -1354,10 +1354,10 @@ Label_010EECA6:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+DarkCave_005:
 @  #05 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*DarkCave_mvl/mxv
+ .byte   KEYSH , DarkCave_key+0
 Label_010EF344:
  .byte   VOICE , 124
  .byte   N06 ,Cn1 ,v112
@@ -1811,18 +1811,18 @@ Label_010EF4A4:
 @******************************************************@
 	.align	2
 
-song09:
+DarkCave:
 	.byte	5	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	DarkCave_pri	@ Priority
+	.byte	DarkCave_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	DarkCave_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
+	.word	DarkCave_001
+	.word	DarkCave_002
+	.word	DarkCave_003
+	.word	DarkCave_004
+	.word	DarkCave_005
 
 	.end

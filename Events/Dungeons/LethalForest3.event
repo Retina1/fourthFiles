@@ -90,7 +90,7 @@ EndEvent
 EncounterFOE:
 SystemText(FOEWarning)
 IfNoSelectedGoto(0x1)
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 EncounterFOEUnits; ENUN
 LOAD1 0x0 EncounterFOEEnemies; ENUN
 CreateArenaSingleCorner(15,8)

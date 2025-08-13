@@ -1,13 +1,16 @@
 ALIGN 4
 BowEff:
 BYTE SkyKnight Seraph ScaleKnight Scalemaster 
-BYTE Bigle Bigerle Gargoyle Gargantoyle 0
+BYTE Bigle Bigerle Gargoyle Gargantoyle Faerie Wyvern Airfly Archfly Venomfly 0
 
 ALIGN 4
 MonsterEff:
-BYTE Squirrel Shambler Crawler Wight Wightsworn BowWight Archrypt
-BYTE Bigle Bigerle Gargoyle Gargantoyle Wolf Triwolf Spider Entwiner
-BYTE Centaur Centinel Cyclops Biclops 0
+BYTE IronCrab Woodrat Archrat Airfly Archfly Venomfly MaulMole
+BYTE Crawler Shambler Wight Wightsworn BowWight Archrypt Wolf Triwolf Bigle Bigerle Spider Entwiner
+BYTE Cyclops Biclops Gorgon Gassergon Gargoyle Gargantoyle Centaur Centinel
+BYTE Wyvern Drake Wyrm Serpent Fiend Ascendant
+BYTE Faerie Treant Wolfskin Wolfking Ironskin Ironking Harpy Mermaid Succubus
+BYTE Guardrake Ophanim Worldcore Squirrel 0
 
 ALIGN 4
 MagiEff:
@@ -19,16 +22,19 @@ ALIGN 4
 PierceEff:
 BYTE Knight Hoplite Rider Strider Lancer Highlander SkyKnight Seraph
 BYTE Noble Sovereign Duelist Fencer
+BYTE Gargoyle Gargantoyle Wight Wightsworn
 BYTE 0
 
 ALIGN 4
 BashEff:
 BYTE Axefighter Gladiator Raider Trailblazer Brawler Pugilist ScaleKnight Scalemaster
+BYTE Centaur Centinel Cyclops Biclops Wight Wightsworn
 BYTE 0
 
 ALIGN 4
 RangedEff:
 BYTE Archer Sniper Gunner Dragoon Hunter Survivalist
+BYTE BowWight Archrypt
 BYTE 0
 
 ALIGN 4
@@ -40,4 +46,5 @@ ALIGN 4
 SlashEff:
 BYTE Swordfighter Landsknecht Myrmidon Ronin Priest WarMagus DarkHunter Dominator
 BYTE Driver Imperial DivineMagus
+BYTE Wight Wightsworn
 BYTE 0

@@ -32,6 +32,16 @@ void ComputeBattleUnitAttack(struct BattleUnit* attacker, struct BattleUnit* def
     attacker->battleAttack = GetItemMight(attacker->weapon);
     attack = attacker->battleAttack;
 
+	//it's crinkle glove time
+	for(int j = 0; j < GetUnitItemCount(&attacker->unit); j++) {
+			u16 curItem = attacker->unit.items[j];
+			if(GetItemIndex(curItem) == 0xDA) {
+				if (GetItemType(attacker->weapon) == 0x0) {
+					attack = 0;
+				}
+			}
+	}
+
     if (IsItemEffectiveAgainst(attacker->weapon, &defender->unit) == TRUE) {
         attack = attacker->battleAttack * 3;
     }

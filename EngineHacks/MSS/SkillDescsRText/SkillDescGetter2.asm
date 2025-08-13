@@ -23,7 +23,7 @@
 
 		ldr		r0, =SkillDescriptionsTable
 		add		r0, r1
-		mov     r1, #2 @CHANGE THIS
+		mov     r1, #4 @CHANGE THIS
 		add		r0, r1
 		ldrh	r0, [r0]
 		mov		r1, #0x4C

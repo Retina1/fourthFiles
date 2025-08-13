@@ -1,3 +1,23 @@
+##BlackMarketIntro
+[MidLeft][Nathan][MidRight][Ronin]
+Keep it quick.[N]
+Look, don't touch.[A][X]
+
+##BlackMarketEnd
+[MidLeft][Nathan][MidRight][Ronin]
+Bring more money next time.[A][X]
+
+##BlackPurchaseConfirm
+[MidLeft][Nathan][MidRight][Ronin]
+You've [G] gold. Deal?[N]
+[No][X]
+
+##BlackNotEnoughMoney
+[MidLeft][Nathan][MidRight][Ronin]
+You've [G] gold.[N]
+[...]Nope.[A][X]
+
+
 ##MarketIntro
 [MidLeft][Nathan][MidRight][Monk]
 Heya, there![N]
@@ -6,6 +26,23 @@ Have a look around![A][X]
 ##MarketEnd
 [MidLeft][Nathan][MidRight][Monk]
 Until next time![A][X]
+
+##BlackMarketUnlocked
+[MidLeft][Nathan][MidRight][Monk]
+Alright, I get it![AN]
+You bought the garbage in[N]
+the right [OpenQuote]secret[CloseQuote] order![AN]
+[...]Some secret it must be.[AN]
+No need to keep doing this[N]
+to yourself.[A] I know why[N]
+you're here.[AN]
+If you wait in front of the[N]
+door to the sewers,[A] the[N]
+guys'll be there for you.[AN]
+Even if you partake in the[N]
+joys of the black market,[AN]
+I do hope you continue to[N]
+shop within the daylight.[A][X]
 
 ##LeaveMarketLabel ^
 Leave Market Menu[X]
@@ -76,3 +113,62 @@ Worp Scroll (2500 Gold)[X]
 One of the greatest magical scrolls[N]
 in all the land. Is this too good to[N]
 be true? ...Wait, does that say Worp?[X]
+
+//black market
+
+//hand axe
+##BlackMarketItem1 ^
+Regular Hand Axe (555 Gold)[X]
+##BlackMarketItem1Desc
+Sold here by popular demand.[N]
+Everyone's gotta have a hand axe.[N]
+The market won't run out of this.[X]
+//spark scroll
+##BlackMarketItem2 ^
+Seditious Electricity (3600 Gold)[X]
+##BlackMarketItem2Desc
+Confiscated thunder scrolls deemed too[N]
+dangerous for society to understand.[N]
+The market won't run out of this.[X]
+//stoning gas
+##BlackMarketItem3 ^
+Really Scary Jar (800 Gold)[X]
+##BlackMarketItem3Desc
+An unmarked jar, save for a skull[N]
+drawn on its label. ...Spooky.[N]
+The market won't run out of this.[X]
+//fengyan
+##BlackMarketItem4 ^
+Foreign Spear (1950 Gold)[X]
+##BlackMarketItem4Desc
+A spear made in some distant land.[N]
+Probably the nicest thing here.[N]
+The market won't run out of this.[X]
+//1 use dvergr sword
+##BlackMarketItem5 ^
+Legendary Sword As Is (250 Gold)[X]
+##BlackMarketItem5Desc
+One in a line of legendary swords.[N]
+...It's seen better days, for sure.[N]
+The market won't run out of this.[X]
+//omega arch
+##BlackMarketItem6 ^
+The Contraption (6300 Gold)[X]
+##BlackMarketItem6Desc
+Despite its title, it's not actually[N]
+unique, and the market won't run out.[N]
+...No room here to explain WHAT it is.[X]
+//hippokos
+##BlackMarketItem7 ^
+Ceremonial Rod (2500 Gold)[X]
+##BlackMarketItem7Desc
+A fancy rod used in the bestowing[N]
+of medical licenses. You too, can[N]
+give away degrees like candy.[X]
+//hippokos
+##BlackMarketItem8 ^
+Hopes and Dreams (65000 Gold)[X]
+##BlackMarketItem8Desc
+Yes. They sell those now, too.[N]
+...Good god, that's expensive.[N]
+The market won't run out of this.[X]

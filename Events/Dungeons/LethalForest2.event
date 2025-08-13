@@ -70,7 +70,10 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 Encounter1Enemies:
-UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [9,8] 0x0 0x0 0x0 0x0 [FrigidBite] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [9,8] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Centaur 0x0 Level(3,Enemy,1) [8,10] 0x0 0x0 0x0 0x0 [HandAxe] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [13,4] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Woodrat 0x0 Level(4,Enemy,1) [5,4] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
 UNIT
 
 Encounter2Units:
@@ -143,17 +146,17 @@ ENUT WaitEventTrapsFlag
 EndEvent
 
 Encounter1:
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 Encounter1Units; ENUN
 LOAD1 0x0 Encounter1Enemies; ENUN
-CreateArenaBorders(4,1,13,11)
+CreateArenaBorders(4,1,14,11)
 FADU 16
 MUSC Song_InitialStrike
 SetMapBGM(Song_InitialStrike)
 EndEvent
 
 Encounter2:
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 Encounter2Units; ENUN
 LOAD1 0x0 Encounter2Enemies; ENUN
 CreateArenaSingleCorner(8,12)
@@ -163,7 +166,7 @@ SetMapBGM(Song_InitialStrike)
 EndEvent
 
 Encounter3:
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 Encounter3Units; ENUN
 LOAD1 0x0 Encounter3Enemies; ENUN
 CreateArenaSingleCorner(15,11)
@@ -176,7 +179,7 @@ EndEvent
 EncounterFOE:
 SystemText(FOEWarning)
 IfNoSelectedGoto(0x1)
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 EncounterFOEUnits; ENUN
 LOAD1 0x0 EncounterFOEEnemies; ENUN
 CreateArenaSingleCorner(15,8)
@@ -194,7 +197,7 @@ EncounterRatatoskr:
 SystemText(SuperbossWarning)
 IfNoSelectedGoto(0x1)
 SystemText(Ratatoskr_Encounter1)
-ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0
+BeginCombatEncounter
 LOAD3 0x0 EncounterRatatoskrUnits; ENUN
 LOAD1 0x0 EncounterRatatoskrEnemies; ENUN
 SetUnitStatline(Ratatoskr,25,7,16,21,28,18,3,2)

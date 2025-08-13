@@ -56,6 +56,7 @@ SoundRoomEntry(Song_Biggering, SongTitle_Biggering, SourceTitle_TheLorax,19)
 SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4)
 SoundRoomEntry(Song_DrawHeroes, SongTitle_DrawHeroes, SourceTitle_EtrianOdyssey2,10)
 SoundRoomEntry(Song_WhyLove, SongTitle_WhyLove, SourceTitle_MaybeHappyEnding,38)
+SoundRoomEntry(Song_DarkCave, SongTitle_DarkCave, SourceTitle_PokemonGSC,40)
 //dungeon
 SoundRoomEntry(Song_EverScarletForest, SongTitle_EverScarletForest, SourceTitle_EtrianOdyssey2,16)
 SoundRoomEntry(Song_SandyBarrens, SongTitle_SandyBarrens, SourceTitle_EtrianOdyssey,34)
