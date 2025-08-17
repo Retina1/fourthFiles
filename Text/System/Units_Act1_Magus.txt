@@ -85,6 +85,8 @@ Won't[X]
 A mage who has peered into the Void,[N]
 or so he says. He's a bit delusional.[X]
 
+
+
 //Saewynn by hiraya
 ##Name_Saewynn
 Saewynn[X]
@@ -117,8 +119,8 @@ land. She's been likened to an angel.[X]
 ##Name_Levi
 Levi[X]
 ##Desc_Levi
-A fire and brimstone preacher from Asketa.[N]
-He's gentle despite a fierce reputation.[X]
+A fire and brimstone Asketan preacher.[N]
+He's gentle despite fierce reputation.[X]
 
 //ru
 ##Name_Taft
@@ -126,6 +128,12 @@ Taft[X]
 ##Desc_Taft
 A Belvarusi magi pressed into service.[N]
 He's loyal despite his grueling past.[X]
+//slater
+##Name_Lantom
+Lantom[X]
+##Desc_Lantom
+A wise and virtuous priest with a rough[N]
+upbringing. He believes in redemption.[X]
 
 //guard
 ##Name_Szess

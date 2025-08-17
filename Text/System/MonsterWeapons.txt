@@ -67,6 +67,12 @@ Base Head Bind Affliction Rate: 60%.[X]
 
 
 
+##Name_RootCyclone
+Root Cyclone[X]
+##Desc_RootCyclone ^
+Abominable roots that fully ensnare.[N]
+Base Full Bind Affliction Rate: 80%.[X]
+
 
 ##Name_AtrocityScales
 Atrocity Sc.[X]

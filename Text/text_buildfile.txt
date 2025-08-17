@@ -38,6 +38,7 @@ between stats and growths.[X]
 #include "Chapters/Chapter1.txt"
 #include "Chapters/Chapter2.txt"
 #include "Chapters/Chapter3.txt"
+#include "Chapters/Chapter4.txt"
 
 #include "City/CityChapter02.txt"
 #include "City/CityChapter03.txt"

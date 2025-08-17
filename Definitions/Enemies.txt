@@ -1,4 +1,5 @@
-Monk 0xd4
+BeastKing 0xd3
+Monk
 BossAstarte
 BossGore
 FOEUnit

@@ -100,6 +100,7 @@ void HealPlayersASMC(ProcPtr* proc) {
 		struct Unit* curUnit = GetUnit(unitID);
 		curUnit->statusIndex = 0;
 		curUnit->statusDuration = 0;
+		curUnit->state = curUnit->state &~ (US_UNSELECTABLE | US_HAS_MOVED | US_HAS_MOVED_AI);
 		int amount = GetUnitMaxHp(curUnit)/3;
 		AddUnitHp(curUnit, amount);
 		unitID++;

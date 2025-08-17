@@ -25,6 +25,9 @@
 #define Chapter18CDoneFlag 0x98
 #define HippokosBoughtFlag 0x99
 
+//conditional drops
+#define BeastKingConditionalFlag 0x9a
+
 #define SupportAnimFlag 0xae
 #define PicnicModeFlag 0xaf
 

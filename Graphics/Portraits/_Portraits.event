@@ -33,6 +33,10 @@ ALIGN 4
 CleoneDMP:
 #incbin "dmps/applanthropistCleone.dmp"
 setMugEntry(CleoneMug,CleoneDMP,3,5,3,3)
+ALIGN 4
+FrancescaDMP:
+#incbin "dmps/hirayaFrancesca.dmp"
+setMugEntry(FrancescaMug,FrancescaDMP,2,5,3,3)
 
 ALIGN 4
 //slatergenerics
@@ -63,6 +67,10 @@ ALIGN 4
 MonkDMP:
 #incbin "dmps/slaterMonk.dmp"
 setMugEntry(MonkMug,MonkDMP,3,6,3,4)
+ALIGN 4
+LantomDMP:
+#incbin "dmps/slaterLantom.dmp"
+setMugEntry(LantomMug,LantomDMP,3,5,3,3)
 
 ALIGN 4
 //levin

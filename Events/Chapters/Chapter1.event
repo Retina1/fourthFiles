@@ -142,6 +142,7 @@ BeginningScene:
 ENUT Chapter2DoneFlag //for guide purposes
 EVBIT_MODIFY 4
 EVBIT_F 2
+SetBackground(0x35)
 CALL CampaignCustomizers
 FADI 16
 CLEAN
@@ -211,75 +212,6 @@ MoveToChapter(Chapter2)
 ENDA
 
 //todo - free class choosing, 1RN, picnic mode
-CampaignCustomizers:
-SetBackground(0x35)
-SystemText(CampaignCustomPrompt)
-IfNoSelectedGoto(0x3000)
-SystemText(RTextExplanation)
-LABEL 0x1000
-RefreshLordSplitTiles
-ENUF FIXED_GROWTHS_FLAG_ID; ENUF ZERO_GROWTHS_FLAG_ID; ENUF MIN_GROWTHS_FLAG_ID; ENUF MAX_GROWTHS_FLAG_ID
-CallMenu(GrowthModeMenu)
-//normal
-	SVAL 0x1 0x0
-	BNE 0x1 0xc 0x1
-		SystemText(NormalGrowthsConfirm)
-		IfNoSelectedGoto(0x1000)
-		GOTO 0x2000
-	LABEL 0x1
-//fixed
-	SVAL 0x1 0x1
-	BNE 0x2 0xc 0x1
-		SystemText(FixedGrowthsConfirm)
-		IfNoSelectedGoto(0x1000)
-		ENUT FIXED_GROWTHS_FLAG_ID
-		GOTO 0x2000
-	LABEL 0x2
-//zero
-	SVAL 0x1 0x2
-	BNE 0x3 0xc 0x1
-		SystemText(ZeroGrowthsConfirm)
-		IfNoSelectedGoto(0x1000)
-		ENUT ZERO_GROWTHS_FLAG_ID
-		GOTO 0x2000
-	LABEL 0x3
-//min
-	SVAL 0x1 0x3
-	BNE 0x4 0xc 0x1
-		SystemText(MinimumGrowthsConfirm)
-		IfNoSelectedGoto(0x1000)
-		ENUT MIN_GROWTHS_FLAG_ID
-		GOTO 0x2000
-	LABEL 0x4
-//max
-	SVAL 0x1 0x4
-	BNE 0x5 0xc 0x1
-		SystemText(MaxGrowthsConfirm)
-		IfNoSelectedGoto(0x1000)
-		ENUT MAX_GROWTHS_FLAG_ID
-		GOTO 0x2000
-	LABEL 0x5
-LABEL 0x2000
-ENUT 0x8
-LABEL 0x2001
-CallMenu(CustomizersMenu)
-	SVAL 0x1 0x0
-	BNE 0x10 0xc 0x1
-		SystemText(PicnicModeConfirm)
-		IfNoSelectedGoto(0x2001)
-		ENUT PicnicModeFlag
-		ENUF 0x8
-		GOTO 0x2001
-	LABEL 0x10
-	SVAL 0x1 0x1
-	BNE 0x11 0xc 0x1
-		SystemText(ClearModifiers)
-		ENUF PicnicModeFlag
-		GOTO 0x2000
-	LABEL 0x11
-LABEL 0x3000
-ENUF 0x8
-ENDA
 
 PremonitionScene:
 TILECHANGE 0x0

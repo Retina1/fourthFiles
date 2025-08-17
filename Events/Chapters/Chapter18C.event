@@ -1,0 +1,102 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events18CID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+CutsceneUnits:
+UNIT
+
+EnemyUnits:
+UNIT Rana Survivalist 0x0 Level(27,Enemy,1) [26,6] DropItem 0x0 0x0 0x0 [ArcDrawer] AttackInRangeAI
+UNIT Harla Highlander 0x0 Level(26,Enemy,1) [24,6] DropItem 0x0 0x0 0x0 [Ron] AttackInRangeAI
+UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [25,5] DropItem 0x0 0x0 0x0 [Agneyastra] AttackInRangeAI
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [25,7] DropItem 0x0 0x0 0x0 [Kerykeion] AttackInRangeAI
+UNIT EndbringerGeneric Dominator 0x0 Level(24,Enemy,1) [18,8] 0x0 0x0 0x0 0x0 [RazorWhip] NoAI
+UNIT EndbringerGeneric Fencer 0x0 Level(24,Enemy,1) [19,9] 0x0 0x0 0x0 0x0 [JollyRoger] NoAI
+UNIT EndbringerGeneric Pugilist 0x0 Level(24,Enemy,1) [20,10] 0x0 0x0 0x0 0x0 [Katar] NoAI
+//swift's group - shows up later?
+UNIT Swift Scalemaster 0x0 Level(25,Enemy,1) [11,2] 0x0 0x0 0x0 0x0 [Juggernaut] NoAI
+UNIT AsketaGeneric Seraph 0x0 Level(24,Enemy,1) [10,1] 0x0 0x0 0x0 0x0 [Shieldlance] NoAI
+UNIT AsketaGeneric Scalemaster 0x0 Level(24,Enemy,1) [10,3] 0x0 0x0 0x0 0x0 [DevilAxe] NoAI
+UNIT AsketaGeneric Seraph 0x0 Level(24,Enemy,1) [12,1] 0x0 0x0 0x0 0x0 [Longinus] NoAI
+UNIT AsketaGeneric Scalemaster 0x0 Level(24,Enemy,1) [12,3] 0x0 0x0 0x0 0x0 [Parashu] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+LOAD1 0x1 EnemyUnits; ENUN
+//SetUnitStatline(MonsterBoss,27,12,3,13,15,1,6,5)
+//SetUnitWEXP(MonsterBoss,0,0,0,0,0)
+//Text(Chapter3_Opening_1)
+CallPreps
+EndEvent
+
+EndingScene:
+ENUT Chapter18CDoneFlag
+MUSC 0x0
+//CleanTextNoMap(0x18,Chapter3_Ending_1)
+MoveToChapter(HirschringSquare)
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

@@ -23,7 +23,9 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "StatPassives/StatPassives.c"
 #include "WaitEventTraps/WaitEventTraps.c"
 #include "WaitEventTraps/TilemapBorders.c"
+#include "DifficultyChooser/DifficultyChooser.c"
 
+#include "Misc/ConditionalChecks.c"
 
 
 /*
@@ -284,7 +286,7 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
 		unit = GetUnitFromCharId(unitID);
 	}
     struct BattleUnit tmpBattleUnit;
-    short levelsLeft;
+    s16 levelsLeft;
 
     tmpBattleUnit.expGain = 0;
 
@@ -294,12 +296,18 @@ void AutoLevelASMC(ProcPtr proc) { //target unit in slot1, target level in slot2
         for (unit->level -= levelsLeft; levelsLeft > 0; --levelsLeft) {
             InitBattleUnit(&tmpBattleUnit, unit);
 
-            tmpBattleUnit.unit.exp += 100;
+            tmpBattleUnit.unit.exp = 100;
             CheckBattleUnitLevelUp(&tmpBattleUnit);
 
             UpdateUnitFromBattle(unit, &tmpBattleUnit);
 			unit->level++;
         }
+		if (unit->level == 30) {
+			unit->exp = 255;
+		}
+		else {
+			unit->exp = 0;
+		}
     }
 }
 

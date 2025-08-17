@@ -125,6 +125,7 @@ UNIT
 ALIGN 4
 
 BeginningScene:
+DifficultySwapper
 LOMA Guildhall
 LOAD1 0x1 OpeningParty; ENUN
 CAM1 [14,8]

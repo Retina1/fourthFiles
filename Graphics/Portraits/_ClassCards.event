@@ -55,6 +55,8 @@ setCardEntry(GorgonCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(TreantCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(FaerieCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(OphanimCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(WolfskinCard,WightCardPortrait,WightCardPortraitPalette)
+setCardEntry(WolfkingCard,WightCardPortrait,WightCardPortraitPalette)
 
 ALIGN 4
 NobleCardPortrait:

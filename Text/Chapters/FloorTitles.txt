@@ -25,7 +25,7 @@ Seared Prayers[X]
 Cliffsides of[N]
 Contrition[X]
 ##Floor_S3F3
-A Hail of[N]
+Hailstorm of[N]
 Empty Dreams[X]
 ##Floor_S3F4
 The Boundless[N]
@@ -38,8 +38,8 @@ the Flames[X]
 Dark at the End[N]
 of the Tunnel[X]
 ##Floor_S4F3
-Salvation That[N]
-Shall Never Arise[X]
+A Salvation[N]
+Forever Denied[X]
 ##Floor_S4F4
 Loyalties of a[N]
 Dying Lineage[X]
@@ -70,8 +70,8 @@ Perfection[X]
 An Iteration[N]
 Most Grim[X]
 ##Floor_S5BF4
-Ambition[N]
-Forever Sealed[X]
+An Ambition[N]
+Eternally Sealed[X]
 ##Floor_S5BF5
 The Weapon[N]
 That Fells Hope[X]
@@ -105,11 +105,11 @@ the Darkness[X]
 The Fiend Which[N]
 Brings Finality[X]
 ##Floor_S6F6
-Endurance of a[N]
-Long Dead Hope[X]
+The Celestial's[N]
+Untroubled Sleep[X]
 ##Floor_S6F7
-A Broken[N]
+A Broken Yet[N]
 Unyielding Soul[X]
 ##Floor_S6F8
-A New Vision[N]
-of Liberation[X]
+At the End of[N]
+Limitless Hope[X]

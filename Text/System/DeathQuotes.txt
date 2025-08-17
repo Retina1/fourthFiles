@@ -2,6 +2,10 @@
 How did you get to be here?[N]
 What was the moment?[A][X]
 
+##GameOverTextPromoted
+You can never look back.[N]
+Yesterday is done.[A][X]
+
 ##XavensDeath
 [MidLeft][Xavens]
 I can't fall[...][N]
@@ -31,7 +35,15 @@ Live your life[...][N]
 Not for the end[...][AN]
 But for it all[...][AN]
 [...]Piorin[...] I see[...][N]
-you[...] once[...][A][X]
+you[...] again[...][A][X]
+
+##SwiftDeath
+[MidLeft][Swift]
+Ember[...] Frost[...][AN]
+I just wanted you[...][N]
+to die in my arms[...][AN][CloseEyes]
+Is that so much[...][N]
+to ask for[...]?[A][X]
 
 ##WeberDeath
 [MidLeft][Weber]
@@ -80,6 +92,9 @@ Cover my retreat![A][X]
 Life was[...] good to me,[N]
 after all[...][AN][CloseEyes]
 Shame, then[...][A][X]
+##RatDeath
+[MidRight][Rat]
+[...][A][CloseEyes][X]
 
 //swordfighters
 ##CoastKidDeath
@@ -89,7 +104,7 @@ Meanie[...][A][CloseEyes][X]
 ##PuzonDeath
 [MidRight][Puzon]
 Unbelievable[...] I was helpless[N]
-to stop them[...][CloseEyes][X]
+to stop them[...][A][CloseEyes][X]
 ##CamDeath
 [MidRight][Cam]
 Sorry, everyone[...][N]
@@ -182,6 +197,10 @@ Where I belong[...][A][CloseEyes][X]
 [MidRight][Victor]
 I lived[...] I died[...][N]
 All[...] my way[...][A][CloseEyes][X]
+##LonsdaleDeath
+[MidRight][Lonsdale]
+I just hope[...] I'll be[...][N]
+unforgotten[...][A][CloseEyes][X]
 
 //medics
 ##TrishDeath
@@ -202,6 +221,10 @@ for this life[...][A][X]
 [MidRight][Witerico]
 Shit[...] I'll never get[...][N]
 my inheritance[...] now[...][A][CloseEyes][X]
+##TychoDeath
+[MidRight][Tycho]
+Don't kill me[...] I'll make[...][N]
+it worth[...] your while[...][A][CloseEyes][X]
 
 //myrmidons
 ##NatsukiRetreat
@@ -289,7 +312,7 @@ without[...] me[...][A][CloseEyes][X]
 ##VictoriaDeath
 [MidRight][Victoria]
 So very close[...][N]
-So ver far[...][A][CloseEyes][X]
+So very far[...][A][CloseEyes][X]
 ##LaiteuseDeath
 [MidRight][Laiteuse]
 Whoopsie[...] Guess I[...][N]

@@ -119,6 +119,7 @@ enum {
     WPN_EFFECT_NODOUBLE = 12,
     WPN_EFFECT_LEGBIND = 13, //new ailment
     WPN_EFFECT_CURSE = 14, //new ailment
+    WPN_EFFECT_FULLBIND = 15, //new ailment
 };
 
 enum {

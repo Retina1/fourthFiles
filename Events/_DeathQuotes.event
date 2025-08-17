@@ -1,10 +1,12 @@
 #define AlwaysDeathQuote(arg000,arg001,arg002) "BYTE arg000 0x0 0xff 0xff; SHORT arg001;SHORT arg002 ;WORD 0x0 "
 #define ChapterDeathQuote(arg000,arg001,arg002,arg003) "BYTE arg000 0x0 0xff arg001; SHORT arg002 ;SHORT arg003 ;WORD 0x0 "
-#define TaleUnitDeathQuote(arg000,arg001,arg003) "BYTE arg000 0x0 0xff arg001; SHORT 0x65 ;SHORT arg003 ;WORD 0x0 "
+#define EventDeathQuote(arg000,arg001,arg002,arg003) "BYTE arg000 0x0 0xff arg001; SHORT arg002 ;SHORT 0x0 ;POIN arg003"
 #define KillerDeathQuote(arg000,arg001,arg002,arg003,arg004) "BYTE arg000 arg001 0xff arg002; SHORT arg003;SHORT arg004 ;WORD 0x0 "
 #define EndDeathQuote "BYTE 0xff 0xff 0x0 0x0 0x0 0x0 ;SHORT 0x0 ;WORD 0x0 "
 #define DefeatBossFlag 0x2
 #define GameOverFlag 0x65
+
+//death quote events check for conditionals - maybe do it in C since it's easier to throughly check battle stuff in C
 
 ALIGN 4
 DeathQuoteTable:
@@ -16,8 +18,11 @@ ChapterDeathQuote(BossCleone,Chapter1,0x0,C1CleoneDefeat)
 ChapterDeathQuote(BossBenthus,Chapter1,0x0,C1BenthusDefeat)
 //c3
 ChapterDeathQuote(Lucien,Chapter3,GameOverFlag,C3LucienDeath)
+//c4
+EventDeathQuote(BeastKing,Chapter4,0x2,BeastKingDeathEvent)
 //major bosses
 AlwaysDeathQuote(BossBenthus2,0x0,BenthusDeath)
+AlwaysDeathQuote(Swift,0x0,SwiftDeath)
 AlwaysDeathQuote(Weber,0x0,WeberDeath)
 AlwaysDeathQuote(Xavens,0x0,XavensDeath)
 AlwaysDeathQuote(Egil,0x0,EgilDeath)
@@ -29,6 +34,7 @@ AlwaysDeathQuote(Nathan,GameOverFlag,NathanDeath)
 AlwaysDeathQuote(Astarte,GameOverFlag,AstarteDeath)
 AlwaysDeathQuote(Gore,GameOverFlag,GoreDeath)
 AlwaysDeathQuote(Cleone,GameOverFlag,CleoneDeath)
+AlwaysDeathQuote(Rat,GameOverFlag,RatDeath)
 AlwaysDeathQuote(Benthus,0x0,BenthusRetreat)
 AlwaysDeathQuote(Helman,0x0,HelmanDeath)
 
@@ -63,12 +69,14 @@ AlwaysDeathQuote(Cassandra,0x0,CassandraDeath)
 AlwaysDeathQuote(Waves,0x0,WavesDeath)
 AlwaysDeathQuote(Cyanne,0x0,CyanneDeath)
 AlwaysDeathQuote(Victor,0x0,VictorDeath)
+AlwaysDeathQuote(Lonsdale,0x0,LonsdaleDeath)
 
 //med
 AlwaysDeathQuote(Trish,0x0,TrishDeath)
 AlwaysDeathQuote(Amos,0x0,AmosDeath)
 AlwaysDeathQuote(Roslin,0x0,RoslinDeath)
 AlwaysDeathQuote(Witerico,0x0,WitericoDeath)
+AlwaysDeathQuote(Tycho,0x0,TychoDeath)
 
 //myrm
 AlwaysDeathQuote(Natsuki,0x0,NatsukiRetreat)
@@ -128,6 +136,7 @@ AlwaysDeathQuote(Laiteuse,0x0,LaiteuseDeath)
 //nobl
 
 //duel
+AlwaysDeathQuote(Francesca,0x0,FrancescaDeath)
 
 //drive
 

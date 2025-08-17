@@ -30,6 +30,10 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 
 	}
 	
+	if (UNIT_HAS_SKILL(&attacker->unit,HEX,promoSkill_141)){
+			accuracy = accuracy + 25;
+	}
+	
 	if (accuracy < 5){
 		accuracy = 5;
 	}
@@ -138,6 +142,16 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
         case WPN_EFFECT_LEGBIND:
 			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 				defender->statusOut = UNIT_STATUS_LEGBIND;
+				//status animation basically
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+				// "Ungray" defender if it was petrified (as it won't be anymore
+				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+            break;
+		case WPN_EFFECT_FULLBIND:
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				defender->statusOut = UNIT_STATUS_FULLBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
 				// "Ungray" defender if it was petrified (as it won't be anymore

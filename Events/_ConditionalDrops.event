@@ -1,0 +1,15 @@
+BeastKingDeathEvent:
+ASMC ScavengerASMC|1
+BNE 0x3 0xc 0x0 //if scavenger true, skip conditional check
+SVAL 0x1 BeastKing
+SVAL 0x2 0x1 //poison status
+ASMC StatusConditionalASMC|1
+BEQ 0x1 0xc 0x0
+LABEL 0x3
+Text(BeastKingPoisonedDeath)
+ENUT BeastKingConditionalFlag
+GOTO 0x2
+LABEL 0x1 //no poison
+Text(BeastKingDeath)
+LABEL 0x2
+ENDA

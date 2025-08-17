@@ -1,0 +1,21 @@
+##BeastKingDeath
+[MidRight][Nathan]
+Wait[...] Look! I think we've[N]
+done it, everyone.[AN][Smile]
+The Beast King has fallen![N]
+Guild Hedge wins the day![A][X]
+
+##BeastKingPoisonedDeath
+[MidRight][Nathan]
+Wait[...] Look! I think we've[N]
+done it, everyone.[AN][Smile]
+The Beast King has fallen![N]
+Guild Hedge wins the day![AN]
+[...]Its hide has taken on a[N]
+most wondrous luster.[AN]
+I wonder if this is one of[N]
+those unusual methods[...][AN]
+One that Benjamin mentioned.[N]
+I'll bring the hide to him.[AN]
+Perhaps we've an extra prize[N]
+for our deeds today.[A][X]

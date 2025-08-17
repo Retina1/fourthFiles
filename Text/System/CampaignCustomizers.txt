@@ -2,6 +2,14 @@
 Enable gameplay modifiers?[N]
 [No][X]
 
+##DifficultyModifierPrompt
+Change the current difficulty?[N]
+[No][X]
+
+##DEBUGAutolevelPrompt
+DEBUG: Autolevel units?[N]
+[No][X]
+
 ##RTextExplanation
 Press the R button to get[N]
 an explanation of any of[N]

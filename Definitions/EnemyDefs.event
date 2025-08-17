@@ -1,3 +1,4 @@
+#define BeastKing 0xD3
 #define Monk 0xD4
 #define BossAstarte 0xD5
 #define BossGore 0xD6

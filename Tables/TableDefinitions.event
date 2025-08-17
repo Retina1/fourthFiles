@@ -88,6 +88,7 @@
 #define CannotDoubleEffect 0xC
 #define LegBindEffect 0xd
 #define CurseEffect 0xe
+#define FullBindEffect 0xf
 
 //Character/Class Ability
 #define MountedAid 0x00000001

@@ -133,6 +133,7 @@ UNIT
 ALIGN 4
 
 BeginningScene:
+DifficultySwapper
 //intro to rat
 SetBackground(0x0); TEXTSTART; TEXTSHOW C2_Opening_1; TEXTEND; MUSC Song_Salem; TEXTCONT; TEXTEND; FADI 16
 //send off on task

@@ -176,6 +176,7 @@ LeviMug
 TaftMug
 YujinMug
 TychoMug
+LantomMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

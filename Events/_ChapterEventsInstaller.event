@@ -52,15 +52,110 @@
 #define WarpNathan(x,y)	"SET_ACTIVE Nathan; SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX; CAM1 [x,y]; WM_WAITFORCAM; SVAL 0xB y*0x10000+x; WARP_IN; STAL 20; MOVE 0xFFFF Nathan [x,y]; ENUN; WM_WAITFORFX; STAL 12; NathanIsHere"
 #define SilentWarpNathan(x,y)	"SET_ACTIVE Nathan; FADI 16; CAM1 [x,y]; WM_WAITFORCAM; MOVE 0xFFFF Nathan [x,y]; ENUN; FADU 16"
 
+#define DifficultySwapper "EVBIT_MODIFY 3; CALL DifficultySwapEvent; EVBIT_MODIFY 0"
+
 #define LevelUpSkill(unitID,skillID) "SVAL 0x1 unitID; SVAL 0x2 skillID; ASMC LevelUpSkillASMC|1"
 
 
 #include "_BattleQuotes.event"
 #include "_DeathQuotes.event"
+#include "_ConditionalDrops.event"
 #include "_BossMusic.event"
 #include "_ForceDeployer.event"
 #include "WorldMapEvents.event"
 #include "LordSplitMenus/LordSplitMenuPlus.event"
+
+
+DifficultySwapEvent:
+SetBackground(0x35)
+
+SystemText(DifficultyModifierPrompt)
+IfNoSelectedGoto(0x1)
+ASMC DifficultyChooser_OnSelect|1
+
+CALL CampaignCustomizers
+
+LABEL 0x1
+
+SystemText(DEBUGAutolevelPrompt)
+IfNoSelectedGoto(0x2)
+ASMC ValueChooser_OnSelect|1
+ASMC AutoLevelAllASMC|1
+LABEL 0x2
+FADI 16
+CLEAN
+//FADU 16
+ENDA
+
+
+CampaignCustomizers:
+SystemText(CampaignCustomPrompt)
+IfNoSelectedGoto(0x3000)
+SystemText(RTextExplanation)
+LABEL 0x1000
+RefreshLordSplitTiles
+ENUF FIXED_GROWTHS_FLAG_ID; ENUF ZERO_GROWTHS_FLAG_ID; ENUF MIN_GROWTHS_FLAG_ID; ENUF MAX_GROWTHS_FLAG_ID
+CallMenu(GrowthModeMenu)
+//normal
+	SVAL 0x1 0x0
+	BNE 0x1 0xc 0x1
+		SystemText(NormalGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		GOTO 0x2000
+	LABEL 0x1
+//fixed
+	SVAL 0x1 0x1
+	BNE 0x2 0xc 0x1
+		SystemText(FixedGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		ENUT FIXED_GROWTHS_FLAG_ID
+		GOTO 0x2000
+	LABEL 0x2
+//zero
+	SVAL 0x1 0x2
+	BNE 0x3 0xc 0x1
+		SystemText(ZeroGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		ENUT ZERO_GROWTHS_FLAG_ID
+		GOTO 0x2000
+	LABEL 0x3
+//min
+	SVAL 0x1 0x3
+	BNE 0x4 0xc 0x1
+		SystemText(MinimumGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		ENUT MIN_GROWTHS_FLAG_ID
+		GOTO 0x2000
+	LABEL 0x4
+//max
+	SVAL 0x1 0x4
+	BNE 0x5 0xc 0x1
+		SystemText(MaxGrowthsConfirm)
+		IfNoSelectedGoto(0x1000)
+		ENUT MAX_GROWTHS_FLAG_ID
+		GOTO 0x2000
+	LABEL 0x5
+LABEL 0x2000
+ENUT 0x8
+LABEL 0x2001
+CallMenu(CustomizersMenu)
+	SVAL 0x1 0x0
+	BNE 0x10 0xc 0x1
+		SystemText(PicnicModeConfirm)
+		IfNoSelectedGoto(0x2001)
+		ENUT PicnicModeFlag
+		ENUF 0x8
+		GOTO 0x2001
+	LABEL 0x10
+	SVAL 0x1 0x1
+	BNE 0x11 0xc 0x1
+		SystemText(ClearModifiers)
+		ENUF PicnicModeFlag
+		GOTO 0x2000
+	LABEL 0x11
+LABEL 0x3000
+ENUF 0x8
+ENDA
 
 //GAME OVER STUFF
 PUSH
@@ -94,8 +189,12 @@ SVAL 0x1 99
 SET_HP Nathan
 FADU 5
 STAL 45
-SoloText(GameOverText); STAL 30
-SFXKillUnit(Nathan); STAL 30
+CHECK_CLASS Nathan
+SVAL 0x1 Warlock
+BEQ 0x1 0xc 0x1
+SoloText(GameOverText); GOTO 0x2
+LABEL 0x1; SoloText(GameOverTextPromoted)
+LABEL 0x2; STAL 30; SFXKillUnit(Nathan); STAL 30
 ASMC $8085375
 ENDA
 
@@ -117,6 +216,12 @@ CAM1 0xFFFF
 PlayEmotionEffectCoords(ExclamationEffect)
 EndEvent
 
+DummyEvent:
+EndEvent
+
+DummyUnits:
+UNIT
+
 #include "GuideStuff/GuideInstaller.event"
 {
 #include "Chapters/Chapter1.event"
@@ -129,6 +234,10 @@ EndEvent
 }
 {
 #include "Chapters/Chapter4.event"
+}
+
+{
+#include "Chapters/Chapter18C.event"
 }
 //special city recruit possibilities
 //sfl swordmaster

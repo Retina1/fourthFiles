@@ -97,6 +97,7 @@ UNIT
 ALIGN 4
 
 BeginningScene:
+DifficultySwapper
 CallPreps
 CLEA 0
 //set all deployed units to be undeployed but with the not deployed last chapter thing unset

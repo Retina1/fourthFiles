@@ -280,6 +280,10 @@ MovingMapSprite(Serpent, AP1, SerpentMMS)
 StandingMapSprite(Ascendant,MapSprite16x32,AscendantSMS)
 MovingMapSprite(Ascendant, AP1, AscendantMMS)
 
+StandingMapSprite(Wolfskin,MapSprite16x16,WolfskinSMS)
+MovingMapSprite(Wolfskin, AP1, WolfskinMMS)
+StandingMapSprite(Wolfking,MapSprite16x32,WolfkingSMS)
+MovingMapSprite(Wolfking, AP1, WolfkingMMS)
 
 #define SigilTrapMapSprite 0x3c
 #define LightRuneMapSprite 0x3d
@@ -290,6 +294,19 @@ StandingMapSprite(LightRuneMapSprite,MapSprite16x16,LightRuneSMS)
 ALIGN 4
 LightRuneSMS:
 #incbin "Dmp/Save Points {serif}-stand.dmp"
+
+ALIGN 4
+WolfskinSMS:
+#incbin "Dmp/Laguz (M) Wolfskin {UltraxBlade}-stand.dmp"
+ALIGN 4
+WolfskinMMS:
+#incbin "Dmp/Laguz (M) Wolfskin {UltraxBlade}-walk.dmp"
+ALIGN 4
+WolfkingSMS:
+#incbin "Dmp/Berserker Wolf (U) {Momo}-stand.dmp"
+ALIGN 4
+WolfkingMMS:
+#incbin "Dmp/Berserker Wolf (U) {Momo}-walk.dmp"
 
 ALIGN 4
 WyvernSMS:

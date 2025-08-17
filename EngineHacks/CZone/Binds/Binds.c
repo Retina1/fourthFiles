@@ -26,6 +26,12 @@ void SetUnitStatus(struct Unit* unit, int status) {
         unit->isLegBound    = 1;
         unit->bindDuration = 5;
 	}
+	else if (status == UNIT_STATUS_FULLBIND) {
+		unit->isHeadBound    = 1;
+		unit->isArmBound    = 1;
+        unit->isLegBound    = 1;
+        unit->bindDuration = 5;
+	}
     else {
         unit->statusIndex    = status;
         unit->statusDuration = 5;

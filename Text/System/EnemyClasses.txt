@@ -4,6 +4,17 @@ Squirrel[X]
 A small rodent. Far craftier and[N]
 far more malicious than it seems.[X]
 
+##Class_Wolfskin
+Wolfskin[X]
+##Desc_Wolfskin
+Humanoid beings with mysterious[N]
+and mighty wolf forms.[X]
+##Class_Wolfking
+Wolfking[X]
+##Desc_Wolfking
+Truly powerful and terrible beings[N]
+who channel wolves' feral might.[X]
+
 ##Class_Ironskin
 Ironskin[X]
 ##Desc_Ironskin

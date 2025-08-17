@@ -85,6 +85,12 @@ Ratatoskr[X]
 A mythical squirrel wandering the[N]
 land. They're a nutty trickster.[X]
 
+##Name_BeastKing
+Beast King[X]
+##Desc_BeastKing
+A wolf-like being and apparent alpha[N]
+of the Lethal Forest's deadly pack.[X]
+
 ##Desc_Benthus2
 A founder of Guild Hedge, driven to[N]
 rise above through hubris and avarice.[X]

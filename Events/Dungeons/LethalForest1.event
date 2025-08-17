@@ -136,6 +136,7 @@ UNIT
 ALIGN 4
 
 BeginningScene:
+DifficultySwapper
 CleanTextNoMap(0x3,Dungeon1_Opening)
 CallPreps
 CLEA 0

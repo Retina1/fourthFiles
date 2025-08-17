@@ -210,7 +210,7 @@ War Magus,War Edge,Swords and staves can be used interchangebly for skills.,None
 Lurker,Unjust Reward,Recover HP when applying curses.,None,1,Passive,,,
 Hexer,Guiding Force,Adjacent allies have 1.1x Hit/Crit.,None,1,Passive,X,,
 ,Misfortune,All curses also now halve enemy Luck.,"Sapping 1, Frailty 1, Leaden 1",1,Passive (Debuff),,,
-,Impure Reach,Significantly increases the odds of all curses working.,PROMO,1,Passive,,,
+,Impure Reach,Adds 25 to status hitrate after all other multipliers.,PROMO,1,Passive,X,make sure all curses use this,
 ,Sapping,A curse that lowers Atk.,None,2,Active (Debuff),,,
 ,Frailty,A curse that lowers Def.,None,2,Active (Debuff),,,
 ,Leaden,A curse that lowers AS.,None,2,Active (Debuff),,,
