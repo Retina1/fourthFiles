@@ -1,0 +1,12 @@
+//nob
+
+//fen
+setPalette(Francesca_Duelist, Francesca_DuelistDMP)
+setPalette(Francesca_Fencer, Francesca_FencerDMP)
+CharPalette(Francesca,Francesca_Duelist,Duelist,Francesca_Fencer,Fencer)
+ALIGN 4
+Francesca_DuelistDMP:
+#incbin "paletteFiles/Senatus/Francesca_Duelist.dmp"
+ALIGN 4
+Francesca_FencerDMP:
+#incbin "paletteFiles/Senatus/Francesca_Fencer.dmp"

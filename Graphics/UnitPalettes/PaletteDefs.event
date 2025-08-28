@@ -13,3 +13,5 @@
 #define Drogo_Hoplite 0xD
 #define Tristao_Axefighter 0xE
 #define Tristao_Gladiator 0xF
+#define Francesca_Duelist 0x10
+#define Francesca_Fencer 0x11

@@ -99,7 +99,7 @@ A founder of Guild [Guild], driven[N]
 to bring the world to its deserved end.[X]
 ##Desc_Astarte2
 A founder of Guild [Guild], driven[N]
-to bring the world to heel under her rule.[X]
+to bring the world to heel at last.[X]
 ##Desc_Cleone2
 A founder of Guild [Guild], driven[N]
 to pave the road her companions walk.[X]

@@ -42,7 +42,7 @@ POIN ArtificeSkillLabels
 POIN SoulSkillLabels
 POIN GenericSkillLabels
 */
-POIN SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels SwordfighterSkillLabels
+POIN SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels
 POIN 0 
 
 
@@ -94,6 +94,25 @@ Req:
 ReqEntry(,)
 ReqTerm
 */
+
+ALIGN 4
+SkillLabels:
+OneLevelSkillLabel(PlaceholderLabel,NoReq)//0
+OneLevelSkillLabel(PlaceholderLabel,NoReq)
+OneLevelSkillLabel(PlaceholderLabel,NoReq)
+OneLevelSkillLabel(PlaceholderLabel,PromotedReq)
+TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
+TwoLevelSkillLabel(PlaceholderLabel,NoReq)
+TwoLevelSkillLabel(PlaceholderLabel,NoReq)
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)
+FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
+FiveLevelSkillLabel(PlaceholderLabel,NoReq)
+FiveLevelSkillLabel(PlaceholderLabel,NoReq)
+SkillLabelTerminator
 
 ALIGN 4
 SwordfighterSkillLabels:

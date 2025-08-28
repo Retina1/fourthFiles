@@ -150,10 +150,11 @@ EndEvent
 GuildhallLoadMyrmidons:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
+//natsuki quest?
 GuildLoad(Natsuki,Recruit_Natsuki,0x1)
 GuildLoad(Mikayla,Recruit_Mikayla,0x2)
 GuildLoad(Calliope,Recruit_Calliope,0x3)
-GuildLoad(Ghari,Recruit_Ghari,0x4)
+GuildLoad(Ghari,Recruit_Ghari,0x4,Chapter5DoneFlag)
 GuildLoad(Azaghal,Recruit_Azaghal,0x5)
 FADU 10
 ENDA
@@ -165,7 +166,7 @@ GuildLoad(Aizen,Recruit_Aizen,0x1)
 GuildLoad(Johnnie,Recruit_Johnnie,0x2)
 GuildLoad(Kolette,Recruit_Kolette,0x3)
 GuildLoad(Pallas,Recruit_Pallas,0x4)
-GuildLoad(Emblem,Recruit_Emblem,0x5)
+GuildLoad(Emblem,Recruit_Emblem,0x5,Chapter8DoneFlag)
 FADU 10
 ENDA
 
@@ -174,7 +175,7 @@ FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 GuildLoad(Esketit,Recruit_Esketit,0x1)
 GuildLoad(Gloria,Recruit_Gloria,0x2)
-GuildLoad(Pipsy,Recruit_Pipsy,0x3)
+GuildLoad(Pipsy,Recruit_Pipsy,0x3,Chapter8DoneFlag)
 GuildLoad(Son,Recruit_Son,0x4)
 GuildLoad(Hart,Recruit_Hart,0x5)
 FADU 10
@@ -184,9 +185,9 @@ GuildhallLoadGunners:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 GuildLoad(Martin,Recruit_Martin,0x1)
-GuildLoad(Demico,Recruit_Demico,0x2)
+GuildLoadQuest(Demico,Recruit_Demico,0x2,Quest2_S1x_Flag)
 GuildLoad(Karl,Recruit_Karl,0x3)
-GuildLoad(Wasp,Recruit_Wasp,0x4)
+GuildLoad(Wasp,Recruit_Wasp,0x4,Chapter8DoneFlag)
 GuildLoad(Victoria,Recruit_Victoria,0x5)
 GuildLoad(Laiteuse,Recruit_Laiteuse,0x6)
 FADU 10

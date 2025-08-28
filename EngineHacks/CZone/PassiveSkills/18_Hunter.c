@@ -1,12 +1,16 @@
-void ApplyHunterCoverFighter(struct BattleUnit* attacker, struct BattleUnit* defender){
+void ApplyHunterCoverFighterHit(struct BattleUnit* attacker){
 	if (UNIT_HAS_SKILL(&attacker->unit,SRV,skill_111)){
 		if (attacker->terrainDefense||attacker->terrainAvoid){
 			attacker->battleCritRate  = attacker->battleCritRate * 6/5;
 			attacker->battleAvoidRate  = attacker->battleAvoidRate * 6/5;
-			if (IsBattleReal()){
-				attacker->battleAttack  = attacker->battleAttack * 6/5;
-				defender->battleDefense  = defender->battleDefense * 6/5;
-			}
+		}
+	}
+}
+void ApplyHunterCoverFighterDamage(struct BattleUnit* attacker, struct BattleUnit* defender){
+	if (UNIT_HAS_SKILL(&attacker->unit,SRV,skill_111)){
+		if (attacker->terrainDefense||attacker->terrainAvoid){
+			attacker->battleAttack  = attacker->battleAttack * 6/5;
+			defender->battleDefense  = defender->battleDefense * 6/5;
 		}
 	}
 }
@@ -21,6 +25,11 @@ void ApplyHunterLoneWolf(struct BattleUnit* attacker){
 }
 
 void ApplyHunterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
-	ApplyHunterCoverFighter(attacker,defender);
+	ApplyHunterCoverFighterHit(attacker);
 	ApplyHunterLoneWolf(attacker);
+}
+void BothSidesHunterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (IsBattleReal()){
+		ApplyHunterCoverFighterDamage(attacker,defender);
+	}
 }

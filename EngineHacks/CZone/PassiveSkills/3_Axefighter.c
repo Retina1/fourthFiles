@@ -25,6 +25,8 @@ void ApplyAxefighterOverpowering(struct BattleUnit* attacker, struct BattleUnit*
 
 void ApplyAxefighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	ApplyAxefighterEndlessBattle(attacker);
+}
+void BothSidesAxefighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplyAxefighterOverpowering(attacker,defender);
 	}

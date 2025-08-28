@@ -89,6 +89,7 @@
 #define LegBindEffect 0xd
 #define CurseEffect 0xe
 #define FullBindEffect 0xf
+#define InstantDeathEffect 0x10
 
 //Character/Class Ability
 #define MountedAid 0x00000001

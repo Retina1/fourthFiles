@@ -31,7 +31,7 @@ LocationBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
-DefeatBoss(EndingScene)
+DefeatAll(EndingScene)
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -78,6 +78,10 @@ UNIT AsketaGeneric Seraph 0x0 Level(24,Enemy,1) [10,1] 0x0 0x0 0x0 0x0 [Shieldla
 UNIT AsketaGeneric Scalemaster 0x0 Level(24,Enemy,1) [10,3] 0x0 0x0 0x0 0x0 [DevilAxe] NoAI
 UNIT AsketaGeneric Seraph 0x0 Level(24,Enemy,1) [12,1] 0x0 0x0 0x0 0x0 [Longinus] NoAI
 UNIT AsketaGeneric Scalemaster 0x0 Level(24,Enemy,1) [12,3] 0x0 0x0 0x0 0x0 [Parashu] NoAI
+//he's just here for the bit
+UNIT BossGuildmaster Highlander 0x0 Level(26,Enemy,1) [9,10] 0x0 0x0 0x0 0x0 [Fengyan] NoAI
+UNIT BossGore Dragoon 0x0 Level(27,Enemy,1) [9,11] 0x0 0x0 0x0 0x0 [Meisterkugel] NoAI
+UNIT BossAstarte WarMagus 0x0 Level(27,Enemy,1) [9,12] 0x0 0x0 0x0 0x0 [DvergrSword] NoAI
 UNIT
 
 ALIGN 4

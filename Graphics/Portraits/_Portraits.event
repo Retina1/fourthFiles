@@ -17,6 +17,12 @@ POP
 #include "_ClassCards.event"
 
 ALIGN 4
+NelsonDMP:
+#incbin "dmps/mentholNelson.dmp"
+//do exceed math
+setMugEntry(NelsonMug,NelsonDMP,2,6,2,4)
+
+ALIGN 4
 //retina
 AstarteDMP:
 #incbin "dmps/retinaAstarte.dmp"
@@ -77,6 +83,12 @@ ALIGN 4
 AtiliusDMP:
 #incbin "dmps/levinAtilius.dmp"
 setMugEntry(AtiliusMug,AtiliusDMP,2,6,3,4)
+ShiliangDMP:
+#incbin "dmps/levinShiliang.dmp"
+setMugEntryExtend(ShiliangMug,ShiliangDMP,2,5,3,3, 6,(-2),0,0)
+ShiliangCatDMP:
+#incbin "dmps/levinShiliangCat.dmp"
+setMugEntryExtend(ShiliangCatMug,ShiliangCatDMP,2,5,3,3, 6,(-2),0,0)
 
 ALIGN 4
 //dies
@@ -319,6 +331,7 @@ AnastasDMP:
 #incbin "dmps/mentholAnastas.dmp"
 setMugEntry(AnastasMug,AnastasDMP,2,5,3,3)
 
+
 ALIGN 4
 //grns
 MerileeDMP:
@@ -387,14 +400,18 @@ AmbroseDMP:
 setMugEntry(AmbroseMug,AmbroseDMP,3,6,3,4)
 
 ALIGN 4
-//nickname
+//phaethon
 MikaylaDMP:
-#incbin "dmps/nicknameMikayla.dmp"
+#incbin "dmps/phaethonMikayla.dmp"
 setMugEntry(MikaylaMug,MikaylaDMP,3,6,3,4)
 ALIGN 4
 OpheliaDMP:
-#incbin "dmps/nicknameOphelia.dmp"
-setMugEntry(OpheliaMug,OpheliaDMP,3,6,4,4)
+#incbin "dmps/phaethonOphelia.dmp"
+setMugEntry(OpheliaMug,OpheliaDMP,3,6,3,4)
+ALIGN 4
+NoelleDMP:
+#incbin "dmps/phaethonNoelle.dmp"
+setMugEntry(NoelleMug,NoelleDMP,3,5,3,3)
 
 ALIGN 4
 //doot
@@ -557,6 +574,11 @@ ALIGN 4
 HaustenDMP:
 #incbin "dmps/tezukaHausten.dmp"
 setMugEntryExtend(HaustenMug,HaustenDMP,3,5,3,3, 2,(-2), 4,(-2))
+ALIGN 4
+//john tezuka
+EmblemDMP:
+#incbin "dmps/tezukaEmblem.dmp"
+setMugEntry(EmblemMug,EmblemDMP,3,6,3,4)
 
 
 
@@ -681,7 +703,7 @@ ALIGN 4
 //sigma
 LeizeDMP:
 #incbin "dmps/sigmaLeize.dmp"
-setMugEntry(LeizeMug,LeizeDMP,3,6,3,4)
+setMugEntry(LeizeMug,LeizeDMP,3,5,3,3)
 
 ALIGN 4
 //vyland

@@ -186,6 +186,7 @@ EndEvent
 
 
 EncounterFOE:
+EVBIT_MODIFY 3
 SystemText(FOEWarning)
 IfNoSelectedGoto(0x1)
 BeginCombatEncounter
@@ -203,6 +204,7 @@ LABEL 0x2
 EndEvent
 
 EncounterRatatoskr:
+EVBIT_MODIFY 3
 SystemText(SuperbossWarning)
 IfNoSelectedGoto(0x1)
 SystemText(Ratatoskr_Encounter1)
@@ -232,6 +234,7 @@ SetMapBGM(Song_EverScarletForest)
 EndEvent
 
 EndingScene:
+EVBIT_MODIFY 3
 SystemText(NextFloorOneWay)
 IfNoSelectedGoto(0x1)
 MNC3 Stratum1F3

@@ -89,6 +89,21 @@ From an already-dead adventurer,[N]
 for half market price. ...Don't[N]
 ask how many doses it has left.[X]
 
+//4 use heal scroll
+##VisitS1xMarket1 ^
+Theoretical First Aid (750 Gold)[X]
+##VisitS1xMarket1Desc
+An essay examining battlefield aid[N]
+from a conceptualized point of view.[N]
+...Whatever the hell that means.[X]
+//broadaxe
+##VisitS1xMarket2 ^
+The Lopper (410 Gold)[X]
+##VisitS1xMarket2Desc
+One of two in a set of prized axes.[N]
+Its brother, the Chopper, has long[N]
+since been missing in action.[X]
+
 
 //inedible leaf
 ##Visit10xMarket1 ^

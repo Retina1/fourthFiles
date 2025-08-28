@@ -13,6 +13,8 @@ int GetOffensiveStaffAccuracy(struct Unit* actor, struct Unit* target) {
 }
 */
 
+//damage display seems off - soul shield and frigid bite applying in wrong places?
+
 void ComputeBattleUnitDefense(struct BattleUnit* attacker, struct BattleUnit* defender) {
     if (GetItemAttributes(defender->weapon) & IA_MAGICDAMAGE)
         attacker->battleDefense = attacker->terrainResistance + attacker->unit.res;
@@ -259,14 +261,20 @@ void FloorDamage(struct BattleUnit* attacker, struct BattleUnit* defender) {
 void ApplyPicnicMode(struct BattleUnit* attacker) {
 	int allegiance = (attacker->unit.index & 0xC0);
 	if (allegiance == FACTION_BLUE && CheckEventId_(0xaf)){
-		 attacker->battleAttack = attacker->battleAttack * 3/2;
-		 //move defense boost to stat getter?
-		 attacker->battleDefense = attacker->battleDefense * 3/2;
 		 attacker->battleSpeed = attacker->battleSpeed * 3/2;
 		 attacker->battleHitRate = attacker->battleHitRate * 3/2;
 		 attacker->battleCritRate = attacker->battleCritRate * 3/2;
 		 attacker->battleAvoidRate = attacker->battleAvoidRate * 3/2;
 		 attacker->battleDodgeRate = attacker->battleDodgeRate * 3/2;
+	}
+}
+
+
+void ApplyPicnicModeDamage(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	int allegiance = (attacker->unit.index & 0xC0);
+	if (allegiance == FACTION_BLUE && CheckEventId_(0xaf)){
+		 attacker->battleAttack = attacker->battleAttack * 3/2;
+		 defender->battleDefense = defender->battleDefense * 3/2;
 	}
 }
 
@@ -286,6 +294,7 @@ void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defe
 }
 
 void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	ApplyBothSidesSkills(attacker, defender);
     ComputeBattleUnitEffectiveHitRate(attacker, defender);
     ComputeBattleUnitEffectiveCritRate(attacker, defender);
     ComputeBattleUnitSilencerRate(attacker, defender);
@@ -293,6 +302,7 @@ void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleU
 	//skill thing here, another loop later?
 	ApplyArtificeMachinePrecision(attacker,defender);
 	ApplyArcherKillerAim(attacker,defender);
+	ApplyPicnicModeDamage(attacker, defender);
 	FloorDamage(attacker, defender);
 }
 
@@ -344,4 +354,41 @@ void BattleGenerateUiStats(struct Unit* unit, s8 itemSlot) {
     if (GetItemWeaponEffect(gBattleActor.weapon) == WPN_EFFECT_HPHALVE)
         gBattleActor.battleAttack = 0xFF;
 
+}
+
+//armor
+s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** outDefender) {
+    if (gBattleTarget.battleSpeed > 250)
+        return FALSE;
+
+    if (ABS(gBattleActor.battleSpeed - gBattleTarget.battleSpeed) < BATTLE_FOLLOWUP_SPEED_THRESHOLD)
+        return FALSE;
+	
+    if (gBattleActor.battleSpeed > gBattleTarget.battleSpeed) {
+		if (UNIT_HAS_SKILL(&gBattleTarget.unit,HOP,skill_131)){
+			if ((gBattleTarget.unit.curHP) <= (GetUnitMaxHp(&gBattleTarget.unit)/2)){
+				return FALSE;
+			}
+		}
+		else {
+			*outAttacker = &gBattleActor;
+			*outDefender = &gBattleTarget;
+		}
+    }
+	else {
+		if (UNIT_HAS_SKILL(&gBattleActor.unit,HOP,skill_131)){
+			if ((gBattleActor.unit.curHP) <= (GetUnitMaxHp(&gBattleActor.unit)/2)){
+				return FALSE;
+			}
+		}
+		else {
+        *outAttacker = &gBattleTarget;
+        *outDefender = &gBattleActor;
+		}
+    }
+
+    if (GetItemWeaponEffect((*outAttacker)->weaponBefore) == WPN_EFFECT_HPHALVE)
+        return FALSE;
+
+    return TRUE;
 }

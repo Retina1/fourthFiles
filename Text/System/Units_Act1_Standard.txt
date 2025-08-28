@@ -11,8 +11,8 @@ She's equal parts prideful and curious.[X]
 ##Name_Mikayla
 Mikayla[X]
 ##Desc_Mikayla
-A Belvarusi myrmidon working to overcome[N]
-her blindness. She's eccentric but sweet.[X]
+An Asketan myrmidon wandering the land.[N]
+She's optimistic and driven to improve.[X]
 
 //idiotmonk
 ##Name_Calliope

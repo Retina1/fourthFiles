@@ -44,6 +44,10 @@ void ApplyRiderMountMasterDefender(struct BattleUnit* attacker, struct BattleUni
 void ApplyRiderPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplyRiderFirmCharge(attacker);
+	}
+}
+void BothSidesRiderPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (IsBattleReal()){
 		ApplyRiderMountMasterAttacker(attacker,defender);
 		ApplyRiderMountMasterDefender(attacker,defender);
 	}

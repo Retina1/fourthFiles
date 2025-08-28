@@ -220,6 +220,22 @@ SongTable(Song_FinaleMHE,FinaleMHE,1)
 SongTable(Song_DarkCave,DarkCave,1)
 #include "songs/DarkCave.event"
 }
+#define Song_VariationsOnACloud 0x2f
+{
+SongTable(Song_VariationsOnACloud,VariationsOnACloud,1)
+#include "songs/VariationsOnACloud.event"
+}
+#define Song_NopeYoureTooLateImAlreadyDead 0x30
+#define Song_NopeYoureTooLateIAlreadyDied Song_NopeYoureTooLateImAlreadyDead
+{
+SongTable(Song_NopeYoureTooLateImAlreadyDead,NopeYoureTooLateImAlreadyDead,1)
+#include "songs/NopeYoureTooLateImAlreadyDead.event"
+}
+#define Song_IsleUntoThyself 0x31
+{
+SongTable(Song_IsleUntoThyself,IsleUntoThyself,1)
+#include "songs/IsleUntoThyself.event"
+}
 
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36

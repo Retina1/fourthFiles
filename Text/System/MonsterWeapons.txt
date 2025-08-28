@@ -67,6 +67,12 @@ Base Head Bind Affliction Rate: 60%.[X]
 
 
 
+##Name_Divinity
+Divinity[X]
+##Desc_Divinity ^
+Draconic breath that purges the impure.[N]
+Base Instakill Affliction Rate: 200%.[X]
+
 ##Name_RootCyclone
 Root Cyclone[X]
 ##Desc_RootCyclone ^

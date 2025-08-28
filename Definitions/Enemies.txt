@@ -1,4 +1,5 @@
-BeastKing 0xd3
+Quarry 0xd2
+BeastKing
 Monk
 BossAstarte
 BossGore

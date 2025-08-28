@@ -28,6 +28,8 @@ void ApplyScaleKnightExecutor(struct BattleUnit* attacker, struct BattleUnit* de
 }
 
 void ApplyScaleKnightPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+}
+void BothSidesScaleKnightPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()) {
 		ApplyScaleKnightRetaliatoryWings(attacker, defender);
 		ApplyScaleKnightFlyingFortress(attacker, defender);

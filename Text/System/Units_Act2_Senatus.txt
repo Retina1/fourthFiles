@@ -13,8 +13,8 @@ manner belies his virtuous character.[X]
 ##Name_Ophelia
 Ophelia[X]
 ##Desc_Ophelia
-A Belvarusi lady seeking a life outside[N]
-of politics. She's lavish yet warm.[X]
+A Belvarusi lady seeking the restoration[N]
+of her homelands. She's lavish yet warm.[X]
 
 //rekekka
 ##Name_Cherryl

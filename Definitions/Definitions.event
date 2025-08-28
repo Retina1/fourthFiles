@@ -31,6 +31,14 @@
 #define SupportAnimFlag 0xae
 #define PicnicModeFlag 0xaf
 
+//the vermin
+#define RatatoskrWin1 0xb1
+#define RatatoskrWin2 0xb2
+#define RatatoskrWin3 0xb3
+#define RatatoskrWin4 0xb4
+#define RatatoskrWin5 0xb5
+#define RatatoskrWin6 0xb6
+
 #define LocationFlagHirschringSquare 0xe0
 #define LocationFlagGuildhall 0xe1
 #define LocationFlagBlacksmith 0xe2
@@ -68,6 +76,10 @@
 #define Quest1_3x_DoneFlag 0x102
 #define Quest2_3x_Flag 0x103
 #define Quest2_3x_DoneFlag 0x104
+#define Quest1_S1x_Flag 0x105
+#define Quest1_S1x_DoneFlag 0x106
+#define Quest2_S1x_Flag 0x107
+#define Quest2_S1x_DoneFlag 0x108
 
 //movement types
 #define HeroMovement 0x880B808

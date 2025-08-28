@@ -49,74 +49,94 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 }
 
 void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	int currentStatus = defender->unit.statusIndex;
 	switch (GetItemWeaponEffect(attacker->weapon)) {
-
-        case WPN_EFFECT_POISON:
-            // Poison defender
+		
+		case WPN_EFFECT_PETRIFY:
 			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
-				defender->statusOut = UNIT_STATUS_POISON;
+				defender->statusOut = UNIT_STATUS_PETRIFY;
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			}
+			break;
+			
+		case WPN_EFFECT_CURSE:
+			if (currentStatus != UNIT_STATUS_PETRIFY) {
+				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+					defender->statusOut = UNIT_STATUS_CURSE;
+					//status animation basically
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+					// "Ungray" defender if it was petrified (as it won't be anymore
+					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+				}
+			}
+            break;
+			
+        case WPN_EFFECT_POISON:
+            if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE)) {
+				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+					defender->statusOut = UNIT_STATUS_POISON;
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+					// "Ungray" defender if it was petrified (as it won't be anymore
+					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+				}
 			}
             break;
 			
         case WPN_EFFECT_SLEEP:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
-				defender->statusOut = UNIT_STATUS_SLEEP;
-				//status animation basically
-				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE || UNIT_STATUS_POISON)) {
+				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+					defender->statusOut = UNIT_STATUS_SLEEP;
+					//status animation basically
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+					// "Ungray" defender if it was petrified (as it won't be anymore
+					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+				}
 			}
             break;
 
         case WPN_EFFECT_BERSERK:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
-				defender->statusOut = UNIT_STATUS_BERSERK;
-				//status animation basically
-				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
-			}
-            break;
-
-        case WPN_EFFECT_BLIND:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
-				defender->statusOut = UNIT_STATUS_BLIND;
-				//status animation basically
-				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE || UNIT_STATUS_POISON || UNIT_STATUS_SLEEP)) {
+				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+					defender->statusOut = UNIT_STATUS_BERSERK;
+					//status animation basically
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+					// "Ungray" defender if it was petrified (as it won't be anymore
+					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+				}
 			}
             break;
 
         case WPN_EFFECT_PARALYZE:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
-				defender->statusOut = UNIT_STATUS_PARALYZE;
-				//status animation basically
-				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
-			}
-            break;
-
-        case WPN_EFFECT_CURSE:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
-				defender->statusOut = UNIT_STATUS_CURSE;
-				//status animation basically
-				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+			if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE || UNIT_STATUS_POISON || UNIT_STATUS_SLEEP || UNIT_STATUS_BERSERK)) {
+				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+					defender->statusOut = UNIT_STATUS_PARALYZE;
+					//status animation basically
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+					// "Ungray" defender if it was petrified (as it won't be anymore
+					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+				}
 			}
             break;
 			
+        case WPN_EFFECT_BLIND:
+			if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE || UNIT_STATUS_POISON || UNIT_STATUS_SLEEP || UNIT_STATUS_BERSERK || UNIT_STATUS_PARALYZE)) {
+				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+					defender->statusOut = UNIT_STATUS_BLIND;
+					//status animation basically
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
+					// "Ungray" defender if it was petrified (as it won't be anymore
+					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
+						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
+				}
+			}
+            break;
+        
+		//BINDS don't need checks
         case WPN_EFFECT_HEADBIND:
 			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 				defender->statusOut = UNIT_STATUS_HEADBIND;
@@ -165,20 +185,22 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
             break;
 			
 		
-        case WPN_EFFECT_PETRIFY:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
-				defender->statusOut = UNIT_STATUS_PETRIFY;
-				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_PETRIFY;
-			}
-			break;
+
     } // switch (GetItemWeaponEffect(attacker->weapon))
 }
 
 
 
 void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit* defender) {
-	       
-		BattleWeaponStatuses(attacker, defender);
+		//if foe asleep and attack didn't miss, wake
+		if (defender->unit.statusIndex == UNIT_STATUS_SLEEP){
+			if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS)){
+				defender->statusOut = 0;
+			}
+		}
+	    if (defender->statusOut <= 0){
+			BattleWeaponStatuses(attacker, defender);
+		}
 
 		//replace devil with curse
         if ((attacker->unit.statusIndex) == UNIT_STATUS_CURSE) {
@@ -226,6 +248,7 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
     }
 
     gBattleHitIterator->hpChange = gBattleStats.damage;
+	
 	int allegiance = (attacker->unit.index & 0xC0);
     if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS) && allegiance == FACTION_BLUE) {
         attacker->weapon = GetItemAfterUse(attacker->weapon);
@@ -233,4 +256,51 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
         if (!attacker->weapon)
             attacker->weaponBroke = TRUE;
     }
+	
+}
+
+void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit* defender) {
+    short attack, defense;
+
+    gBattleStats.damage = 0;
+
+    if (!BattleRoll2RN(gBattleStats.hitRate, TRUE)) {
+        gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_MISS;
+        return;
+    }
+
+    attack = gBattleStats.attack;
+    defense = gBattleStats.defense;
+
+    gBattleStats.damage = attack - defense;
+
+    if (BattleRoll1RN(gBattleStats.critRate, FALSE) == TRUE) {
+        gBattleHitIterator->attributes = gBattleHitIterator->attributes | BATTLE_HIT_ATTR_CRIT;
+		if (UNIT_HAS_SKILL(&attacker->unit,RNM,promoSkill_141)){
+			gBattleStats.damage = gBattleStats.damage * 4;
+		}
+		else {
+			gBattleStats.damage = gBattleStats.damage * 3;
+		}
+    }
+	
+	if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS)) {
+		if (GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_INSTANTDEATH) {
+			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_SILENCER;
+				gBattleStats.damage = BATTLE_MAX_DAMAGE;
+			}
+		}
+    }
+
+    if (gBattleStats.damage > BATTLE_MAX_DAMAGE)
+        gBattleStats.damage = BATTLE_MAX_DAMAGE;
+
+    if (gBattleStats.damage < 0)
+        gBattleStats.damage = 0;
+
+//    BattleCheckPetrify(attacker, defender);
+
+    if (gBattleStats.damage != 0)
+        attacker->nonZeroDamage = TRUE;
 }

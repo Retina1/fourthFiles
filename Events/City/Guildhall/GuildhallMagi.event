@@ -4,32 +4,198 @@
 Recruit_Leonzio:
 UNIT Leonzio 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Medica] NoAI
 UNIT
+Recruit_Gunther:
+UNIT Gunther 0x0 0x1 Level(5,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [FictionScroll,Stonard] NoAI
+UNIT
+Recruit_Jacqwil:
+UNIT Jacqwil 0x0 0x1 Level(6,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT
+Recruit_Polymnia:
+UNIT Polymnia 0x0 0x1 Level(3,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Elixir] NoAI
+UNIT
+Recruit_Lucien:
+UNIT Lucien 0x0 0x1 Level(4,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [FlameScroll,Vulnerary] NoAI
+UNIT
+Recruit_Juliette:
+UNIT Juliette 0x0 0x1 Level(5,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [HealScroll] NoAI
+UNIT
+
+Recruit_Phespher:
+UNIT Phespher 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Staff] NoAI
+UNIT
+Recruit_Nadja:
+UNIT Nadja 0x0 0x1 Level(3,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Wand] NoAI
+UNIT
+Recruit_Levia:
+UNIT Levia 0x0 0x1 Level(5,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Wand,Medica] NoAI
+UNIT
+Recruit_Vasily:
+UNIT Vasily 0x0 0x1 Level(6,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Wand,Bravant] NoAI
+UNIT
+Recruit_Jebet:
+UNIT Jebet 0x0 0x1 Level(4,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [RestoreScroll,Wand] NoAI
+UNIT
+Recruit_Wont:
+UNIT Wont 0x0 0x1 Level(14,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [BlindGas] NoAI
+UNIT
+
+Recruit_Saewynn:
+UNIT Saewynn 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortsword,Wand] NoAI
+UNIT
+Recruit_Ellie:
+UNIT Ellie 0x0 0x1 Level(7,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Shortsword,Elixir] NoAI
+UNIT
+Recruit_Selene:
+UNIT Selene 0x0 0x1 Level(8,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
+UNIT
+Recruit_Nina:
+UNIT Nina 0x0 0x1 Level(6,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [FlameScroll,Wand] NoAI
+UNIT
+Recruit_Levi:
+UNIT Levi 0x0 0x1 Level(5,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortsword,Medica] NoAI
+UNIT
+Recruit_Taft:
+UNIT Taft 0x0 0x1 Level(8,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Staff] NoAI
+UNIT
+Recruit_Lantom:
+UNIT Lantom 0x0 0x1 Level(10,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Boarblade,Wand] NoAI
+UNIT
+
+Recruit_Szess:
+UNIT Szess 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [0] NoAI
+UNIT
+Recruit_Zoe:
+UNIT Zoe 0x0 0x1 Level(5,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+Recruit_Paul:
+UNIT Paul 0x0 0x1 Level(3,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+Recruit_Hausten:
+UNIT Hausten 0x0 0x1 Level(6,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+//poet
+Leonzio_RecruitEvent:
+GuildRecruit(Leonzio,Guild_Test_Dialogue,0x20)
+EndEvent
+Gunther_RecruitEvent:
+GuildRecruit(Gunther,Guild_Test_Dialogue,0x21)
+EndEvent
+Jacqwil_RecruitEvent:
+GuildRecruit(Jacqwil,Guild_Test_Dialogue,0x22)
+EndEvent
+Polymnia_RecruitEvent:
+GuildRecruit(Polymnia,Guild_Test_Dialogue,0x23)
+EndEvent
+Lucien_RecruitEvent:
+GuildRecruit(Lucien,Guild_Test_Dialogue,0x24)
+EndEvent
+Juliette_RecruitEvent:
+GuildRecruit(Juliette,Guild_Test_Dialogue,0x25)
+EndEvent
+
+//seeker
+Phespher_RecruitEvent:
+GuildRecruit(Phespher,Guild_Test_Dialogue,0x20)
+EndEvent
+Nadja_RecruitEvent:
+GuildRecruit(Nadja,Guild_Test_Dialogue,0x21)
+EndEvent
+Levia_RecruitEvent:
+GuildRecruit(Levia,Guild_Test_Dialogue,0x22)
+EndEvent
+Vasily_RecruitEvent:
+GuildRecruit(Vasily,Guild_Test_Dialogue,0x23)
+EndEvent
+Jebet_RecruitEvent:
+GuildRecruit(Jebet,Guild_Test_Dialogue,0x24)
+EndEvent
+Wont_RecruitEvent:
+GuildRecruit(Wont,Guild_Test_Dialogue,0x25)
+EndEvent
+
+//priest
+Saewynn_RecruitEvent:
+GuildRecruit(Saewynn,Guild_Test_Dialogue,0x20)
+EndEvent
+Ellie_RecruitEvent:
+GuildRecruit(Ellie,Guild_Test_Dialogue,0x21)
+EndEvent
+Selene_RecruitEvent:
+GuildRecruit(Selene,Guild_Test_Dialogue,0x22)
+EndEvent
+Nina_RecruitEvent:
+GuildRecruit(Nina,Guild_Test_Dialogue,0x23)
+EndEvent
+Levi_RecruitEvent:
+GuildRecruit(Levi,Guild_Test_Dialogue,0x24)
+EndEvent
+Taft_RecruitEvent:
+GuildRecruit(Taft,Guild_Test_Dialogue,0x25)
+EndEvent
+Lantom_RecruitEvent:
+GuildRecruit(Lantom,Guild_Test_Dialogue,0x26)
+EndEvent
+
+
+//lurker
+Szess_RecruitEvent:
+GuildRecruit(Szess,Guild_Test_Dialogue,0x20)
+EndEvent
+Zoe_RecruitEvent:
+GuildRecruit(Zoe,Guild_Test_Dialogue,0x21)
+EndEvent
+Paul_RecruitEvent:
+GuildRecruit(Paul,Guild_Test_Dialogue,0x22)
+EndEvent
+Hausten_RecruitEvent:
+GuildRecruit(Hausten,Guild_Test_Dialogue,0x23)
+EndEvent
 
 GuildhallLoadPoets:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-//GuildLoad(Martin,Recruit_Martin,0x1)
+GuildLoad(Leonzio,Recruit_Leonzio,0x1)
+GuildLoad(Gunther,Recruit_Gunther,0x2)
+GuildLoad(Jacqwil,Recruit_Jacqwil,0x3)
+GuildLoad(Polymnia,Recruit_Polymnia,0x4)
+GuildLoad(Lucien,Recruit_Lucien,0x5)
+GuildLoad(Juliette,Recruit_Juliette,0x6,Chapter8DoneFlag)
 FADU 10
 ENDA
 
 GuildhallLoadSeekers:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-//GuildLoad(Martin,Recruit_Martin,0x1)
+GuildLoad(Phespher,Recruit_Phespher,0x1)
+GuildLoad(Nadja,Recruit_Nadja,0x2)
+GuildLoad(Levia,Recruit_Levia,0x3,Chapter8DoneFlag)
+GuildLoad(Vasily,Recruit_Vasily,0x4)
+GuildLoad(Jebet,Recruit_Jebet,0x5)
+GuildLoad(Wont,Recruit_Wont,0x6)
 FADU 10
 ENDA
 
 GuildhallLoadPriests:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-//GuildLoad(Martin,Recruit_Martin,0x1)
+GuildLoad(Saewynn,Recruit_Saewynn,0x1)
+GuildLoad(Ellie,Recruit_Ellie,0x2,Chapter10DoneFlag)
+GuildLoad(Selene,Recruit_Selene,0x3)
+GuildLoad(Nina,Recruit_Nina,0x4)
+GuildLoad(Levi,Recruit_Levi,0x5)
+GuildLoad(Taft,Recruit_Taft,0x6)
+GuildLoad(Lantom,Recruit_Lantom,0x7,Chapter8DoneFlag)
 FADU 10
 ENDA
 
 GuildhallLoadLurkers:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-//GuildLoad(Martin,Recruit_Martin,0x1)
+GuildLoad(Szess,Recruit_Szess,0x1)
+GuildLoad(Zoe,Recruit_Zoe,0x2)
+GuildLoad(Paul,Recruit_Paul,0x3)
+GuildLoad(Hausten,Recruit_Hausten,0x4,Chapter8DoneFlag)
 FADU 10
 ENDA
 

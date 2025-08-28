@@ -33,6 +33,12 @@ Dalman[X]
 ##Desc_Dalman
 A blunt and cynical bounty hunter from[N]
 Hirschring. He wants better for others.[X]
+//phaethon
+##Name_Noelle
+Noelle[X]
+##Desc_Noelle
+A laid-back huntress and wife to a[N]
+Belvarusi noblelady. She's charitable.[X]
 
 
 //misha
@@ -62,6 +68,12 @@ Kelaino[X]
 ##Desc_Kelaino
 A no-nonsense Asketan lancer from the[N]
 slums. She was raised by the Closer.[X]
+//menthol
+##Name_Nelson
+Nelson[X]
+##Desc_Nelson
+A Belvarusi vigilante from a fishing[N]
+village. They're stubborn and rash.[X]
 
 //Shīliăng by levin (get accented characters later, brawler)
 //eventually they're a [0xE3] and i [0xE5]

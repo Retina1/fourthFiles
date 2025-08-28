@@ -110,6 +110,39 @@ void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender
 	//ApplyDuelistPassiveSkills(attacker, defender);
 	ApplyDriverPassiveSkills(attacker, defender);
 	//ApplyArtificePassiveSkills(attacker, defender);
+}
+void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (IsBattleReal()){
+		ApplyPriestWarPierce(attacker,defender);
+	}
+	//class passives
+	BothSidesSwordfighterPassiveSkills(attacker, defender);
+	BothSidesKnightPassiveSkills(attacker, defender);
+	BothSidesAxefighterPassiveSkills(attacker, defender);
+//	BothSidesArcherPassiveSkills(attacker, defender);
+//	BothSidesScholarPassiveSkills(attacker, defender);
+	//BothSidesCuratePassiveSkills(attacker, defender); curate has no prebattle passives
+	//myrm might not have any?
+	BothSidesRiderPassiveSkills(attacker, defender);
+	BothSidesRaiderPassiveSkills(attacker, defender);
+	BothSidesGunnerPassiveSkills(attacker, defender);
+	//troub
+//	BothSidesSeekerPassiveSkills(attacker, defender);
+//	BothSidesPriestPassiveSkills(attacker, defender); all flat numbers
+//	BothSidesLurkerPassiveSkills(attacker, defender);
+	//dh
+	//lancer - blood fortune in effective crit calc
+//	BothSidesBrawlerPassiveSkills(attacker, defender);
+	BothSidesHunterPassiveSkills(attacker, defender);
+	BothSidesSkyKnightPassiveSkills(attacker, defender);
+	BothSidesScaleKnightPassiveSkills(attacker, defender);
+	//BothSidesApothecaryPassiveSkills(attacker, defender);
+	//BothSidesEncirclerPassiveSkills(attacker, defender);
+	//BothSidesCallerPassiveSkills(attacker, defender);
+	//BothSidesNoblePassiveSkills(attacker, defender);
+	//BothSidesDuelistPassiveSkills(attacker, defender);
+	BothSidesDriverPassiveSkills(attacker, defender);
+	//ApplyArtificePassiveSkills(attacker, defender);
 	ApplyItemPassives(attacker, defender);
 	ApplySleepDamageBoost(attacker, defender);
 }
@@ -166,6 +199,12 @@ long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
 	//then multipliers
 	stat = ApplyKnightIronWall(stat,unit);
 	stat = ApplySkyKnightSkySquadronDefense(stat,unit);
+	
+	//picnic
+	int allegiance = (unit->index & 0xC0);
+	if (allegiance == FACTION_BLUE && CheckEventId_(0xaf)){
+		 stat = stat * 3/2;
+	}
 
 	//apply debiru axe last
 	stat = ApplyDevilAxeZero(stat,unit);

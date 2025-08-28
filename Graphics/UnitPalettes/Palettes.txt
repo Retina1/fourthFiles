@@ -13,3 +13,5 @@ Drogo_Knight
 Drogo_Hoplite
 Tristao_Axefighter
 Tristao_Gladiator
+Francesca_Duelist
+Francesca_Fencer

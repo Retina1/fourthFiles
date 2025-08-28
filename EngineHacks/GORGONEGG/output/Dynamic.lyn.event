@@ -11,10 +11,10 @@ PUSH
 ORG CURRENTOFFSET+$0;gDynamicFunctions:
 POP
 POIN HPOrStatus_Dynamic
+POIN DefenseStandard_Dynamic
+POIN ResistanceStandard_Dynamic
 POIN AttackStandard_Dynamic
 POIN ExperienceStandard_Dynamic
-POIN ResistanceStandard_Dynamic
-POIN LevelStandard_Dynamic
 POIN AttackSpeedStandard_Dynamic
-POIN DefenseStandard_Dynamic
+POIN LevelStandard_Dynamic
 WORD $0

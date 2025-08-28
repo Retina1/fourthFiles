@@ -40,7 +40,7 @@ and birdkeeping. She's empty-headed.[X]
 Compass[X]
 ##Desc_Compass
 A young Asketan tinkerer searching for[N]
-his grandpa. Anxious yet resolute.[X]
+his grandpa. He's anxious yet resolute.[X]
 
 //hiraya again
 ##Name_Katrin

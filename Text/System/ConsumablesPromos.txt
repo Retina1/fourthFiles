@@ -63,7 +63,7 @@ Head Binder[X]
 A quality spool of ensilencing threads.[N]
 Inflicts status on a foe within 5 tiles.[N]
 Base Head Bind Affliction Rate: 60%.[X]
-##Name_Gas
+##Name_BlindGas
 Blind Gas[X]
 ##Desc_BlindGas ^
 A throwing jar of highly irritating gas.[N]

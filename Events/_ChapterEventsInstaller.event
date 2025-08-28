@@ -82,6 +82,19 @@ IfNoSelectedGoto(0x2)
 ASMC ValueChooser_OnSelect|1
 ASMC AutoLevelAllASMC|1
 LABEL 0x2
+
+SystemText(DEBUGClassChangePrompt)
+IfNoSelectedGoto(0x3)
+ASMC ValueChooser_OnSelect|1
+ASMC ChangeAllClassASMC|1
+LABEL 0x3
+
+SystemText(DEBUGCharacterChangePrompt)
+IfNoSelectedGoto(0x4)
+ASMC ValueChooser_OnSelect|1
+ASMC ChangeAllCharacterASMC|1
+LABEL 0x4
+
 FADI 16
 CLEAN
 //FADU 16

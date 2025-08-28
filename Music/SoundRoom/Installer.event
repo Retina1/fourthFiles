@@ -44,12 +44,15 @@ SoundRoomEntry(Song_InnocenceGlitched, SongTitle_InnocenceGlitched, SourceTitle_
 SoundRoomEntry(Song_DyedInBlood, SongTitle_DyedInBlood, SourceTitle_EtrianOdyssey,26)
 SoundRoomEntry(Song_HeroicStruggle, SongTitle_HeroicStruggle, SourceTitle_LiveALive,6)
 SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
+SoundRoomEntry(Song_IsleUntoThyself, SongTitle_IsleUntoThyself, SourceTitle_MiracleMusical,43)
 SoundRoomEntry(Song_HeavyArmoredCorps, SongTitle_HeavyArmoredCorps, SourceTitle_BerwickSaga,36)
 SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)
 SoundRoomEntry(Song_ArmorCladFaith, SongTitle_ArmorCladFaith, SourceTitle_GuiltyGearStrive,27)
 SoundRoomEntry(Song_ModernDayOuroboros, SongTitle_ModernDayOuroboros, SourceTitle_LisaThePointless,28)
 SoundRoomEntry(Song_NoOneIsAlone, SongTitle_NoOneIsAlone, SourceTitle_IntoTheWoods,15)
 //somewhere probably player phase
+SoundRoomEntry(Song_VariationsOnACloud, SongTitle_VariationsOnACloud, SourceTitle_MiracleMusical,41)
+SoundRoomEntry(Song_NopeYoureTooLateImAlreadyDead, SongTitle_NopeYoureTooLateImAlreadyDead, SourceTitle_Wifiskeleton,42)
 SoundRoomEntry(Song_LuckyBreak, SongTitle_LuckyBreak, SourceTitle_RhythmDoctor,11)
 SoundRoomEntry(Song_Biggering, SongTitle_Biggering, SourceTitle_TheLorax,19)
 //city 

@@ -27,13 +27,10 @@ artifice
 automaton
 */
 //as temp anti-crash measure, give all these wight
-setCardEntry(GunnerCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(DragoonCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(PoetCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(TroubadourCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(PriestCard,WightCardPortrait,WightCardPortraitPalette)
-setCardEntry(DarkHunterCard,WightCardPortrait,WightCardPortraitPalette)
-setCardEntry(DominatorCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(BotanistCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(CallerCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(NecromancerCard,WightCardPortrait,WightCardPortraitPalette)
@@ -57,6 +54,28 @@ setCardEntry(FaerieCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(OphanimCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(WolfskinCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(WolfkingCard,WightCardPortrait,WightCardPortraitPalette)
+
+
+ALIGN 4
+DarkHunterCardPortrait:
+#incbin "classCards\appDarkHunter.dmp"
+DarkHunterCardPortraitPalette:
+#incbin "classCards\appDarkHunterPalette.dmp"
+setCardEntry(DarkHunterCard,DarkHunterCardPortrait,DarkHunterCardPortraitPalette)
+
+ALIGN 4
+DominatorCardPortrait:
+#incbin "classCards\appDominator.dmp"
+DominatorCardPortraitPalette:
+#incbin "classCards\appDominatorPalette.dmp"
+setCardEntry(DominatorCard,DominatorCardPortrait,DominatorCardPortraitPalette)
+
+ALIGN 4
+GunnerCardPortrait:
+#incbin "classCards\appGunner.dmp"
+GunnerCardPortraitPalette:
+#incbin "classCards\appGunnerPalette.dmp"
+setCardEntry(GunnerCard,GunnerCardPortrait,GunnerCardPortraitPalette)
 
 ALIGN 4
 NobleCardPortrait:
@@ -368,7 +387,6 @@ LancerCardPortraitPalette:
 #incbin "classCards\Militia (M) Deserter Lance {Rasdel}Palette.dmp"
 setCardEntry(LancerCard,LancerCardPortrait,LancerCardPortraitPalette)
 
-//get better card
 ALIGN 4
 HighlanderCardPortrait:
 #incbin "classCards\highlanderCard.dmp"
@@ -377,7 +395,6 @@ HighlanderCardPortraitPalette:
 #incbin "classCards\highlanderCardPalette.dmp"
 setCardEntry(HighlanderCard,HighlanderCardPortrait,HighlanderCardPortraitPalette)
 
-//remove axe
 ALIGN 4
 BrawlerCardPortrait:
 #incbin "classCards\appBrawler.dmp"

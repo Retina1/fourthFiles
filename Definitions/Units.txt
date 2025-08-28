@@ -34,6 +34,7 @@ Waves
 Cyanne
 Victor
 Lonsdale
+Hugo
 Trish
 Amos
 Roslin
@@ -88,10 +89,12 @@ Saoirse
 Wund
 Peabody
 Dalman
+Noelle
 Heri
 Radagast
 Fourfinger
 Kelaino
+Nelson
 Shiliang
 Feefasnan
 Brie

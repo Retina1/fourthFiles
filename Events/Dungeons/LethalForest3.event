@@ -167,6 +167,7 @@ EndEvent
 
 
 EncounterFOE:
+EVBIT_MODIFY 3
 SystemText(FOEWarning)
 IfNoSelectedGoto(0x1)
 BeginCombatEncounter
@@ -194,6 +195,7 @@ SetMapBGM(Song_EverScarletForest)
 EndEvent
 
 EndingScene:
+EVBIT_MODIFY 3
 SystemText(CompleteDungeonSys)
 IfNoSelectedGoto(0x1)
 ENUT Stratum1DoneFlag

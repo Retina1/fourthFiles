@@ -39,9 +39,13 @@ void ApplyGunnerPointBlank(struct BattleUnit* attacker){
 
 void ApplyGunnerPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
-		ApplyGunnerQuickDraw(attacker,defender);
 		ApplyGunnerSteadySighting(attacker);
 		ApplyGunnerFirefight(attacker);
 		ApplyGunnerPointBlank(attacker);
+	}
+}
+void BothSidesGunnerPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (IsBattleReal()){
+		ApplyGunnerQuickDraw(attacker,defender);
 	}
 }

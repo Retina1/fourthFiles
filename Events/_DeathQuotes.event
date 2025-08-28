@@ -21,6 +21,10 @@ ChapterDeathQuote(Lucien,Chapter3,GameOverFlag,C3LucienDeath)
 //c4
 EventDeathQuote(BeastKing,Chapter4,0x2,BeastKingDeathEvent)
 //major bosses
+AlwaysDeathQuote(BossGuildmaster,0x0,GuildmasterDeath)
+AlwaysDeathQuote(BossGore,0x0,BossGoreDeath)
+AlwaysDeathQuote(BossAstarte,0x0,BossAstarteDeath)
+
 AlwaysDeathQuote(BossBenthus2,0x0,BenthusDeath)
 AlwaysDeathQuote(Swift,0x0,SwiftDeath)
 AlwaysDeathQuote(Weber,0x0,WeberDeath)
@@ -28,6 +32,16 @@ AlwaysDeathQuote(Xavens,0x0,XavensDeath)
 AlwaysDeathQuote(Egil,0x0,EgilDeath)
 AlwaysDeathQuote(Harla,0x0,HarlaDeath)
 AlwaysDeathQuote(Rana,0x0,RanaDeath)
+
+//the vermin
+ChapterDeathQuote(Ratatoskr,Stratum1F2,RatatoskrWin1,Ratatoskr_Defeat1)
+ChapterDeathQuote(Ratatoskr,Stratum2F2,RatatoskrWin2,Ratatoskr_Defeat1)
+ChapterDeathQuote(Ratatoskr,Stratum3F2,RatatoskrWin3,Ratatoskr_Defeat1)
+ChapterDeathQuote(Ratatoskr,Stratum4F2,RatatoskrWin4,Ratatoskr_Defeat1)
+ChapterDeathQuote(Ratatoskr,Stratum5AF2,RatatoskrWin5,Ratatoskr_Defeat1)
+ChapterDeathQuote(Ratatoskr,Stratum5BF2,RatatoskrWin5,Ratatoskr_Defeat1)
+ChapterDeathQuote(Ratatoskr,Stratum5CF2,RatatoskrWin5,Ratatoskr_Defeat1)
+ChapterDeathQuote(Ratatoskr,Stratum6F8,RatatoskrWin6,Ratatoskr_Defeat1)
 
 //generic - story units
 AlwaysDeathQuote(Nathan,GameOverFlag,NathanDeath)
@@ -37,6 +51,12 @@ AlwaysDeathQuote(Cleone,GameOverFlag,CleoneDeath)
 AlwaysDeathQuote(Rat,GameOverFlag,RatDeath)
 AlwaysDeathQuote(Benthus,0x0,BenthusRetreat)
 AlwaysDeathQuote(Helman,0x0,HelmanDeath)
+AlwaysDeathQuote(Kryst,0x0,KrystDeath)
+AlwaysDeathQuote(Galvin,0x0,GalvinDeath)
+AlwaysDeathQuote(Ioria,0x0,IoriaDeath)
+AlwaysDeathQuote(Fourth,0x0,FourthDeath)
+AlwaysDeathQuote(Guildmaster,0x0,GuildmasterRetreat)
+AlwaysDeathQuote(Answerer,0x0,AnswererDeath)
 
 //swd
 AlwaysDeathQuote(CoastKid,0x0,CoastKidDeath)

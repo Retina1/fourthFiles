@@ -1,5 +1,14 @@
 #define GuildRecruitEvent(eventPointer,targetUnit) "CharacterEvent(LocationFlagGuildhall,eventPointer,Nathan,targetUnit)"
 
+/*
+[3,8]
+[7,10]
+[10,6]
+[11,12]
+[1,12]
+[13,10]
+[5,7]
+*/
 //swordfighters
 GuildRecruitEvent(CoastKid_RecruitEvent,CoastKid)
 GuildRecruitEvent(Puzon_RecruitEvent,Puzon)
@@ -28,6 +37,7 @@ GuildRecruitEvent(Waves_RecruitEvent,Waves)
 GuildRecruitEvent(Cyanne_RecruitEvent,Cyanne)
 GuildRecruitEvent(Victor_RecruitEvent,Victor)
 GuildRecruitEvent(Lonsdale_RecruitEvent,Lonsdale)
+GuildRecruitEvent(Hugo_RecruitEvent,Hugo)
 //curates
 GuildRecruitEvent(Trish_RecruitEvent,Trish)
 GuildRecruitEvent(Amos_RecruitEvent,Amos)
@@ -59,3 +69,30 @@ GuildRecruitEvent(Karl_RecruitEvent,Karl)
 GuildRecruitEvent(Wasp_RecruitEvent,Wasp)
 GuildRecruitEvent(Victoria_RecruitEvent,Victoria)
 GuildRecruitEvent(Laiteuse_RecruitEvent,Laiteuse)
+//poets
+GuildRecruitEvent(Leonzio_RecruitEvent,Leonzio)
+GuildRecruitEvent(Gunther_RecruitEvent,Gunther)
+GuildRecruitEvent(Jacqwil_RecruitEvent,Jacqwil)
+GuildRecruitEvent(Polymnia_RecruitEvent,Polymnia)
+GuildRecruitEvent(Lucien_RecruitEvent,Lucien)
+GuildRecruitEvent(Juliette_RecruitEvent,Juliette)
+//seekers
+GuildRecruitEvent(Phespher_RecruitEvent,Phespher)
+GuildRecruitEvent(Nadja_RecruitEvent,Nadja)
+GuildRecruitEvent(Levia_RecruitEvent,Levia)
+GuildRecruitEvent(Vasily_RecruitEvent,Vasily)
+GuildRecruitEvent(Jebet_RecruitEvent,Jebet)
+GuildRecruitEvent(Wont_RecruitEvent,Wont)
+//priests
+GuildRecruitEvent(Saewynn_RecruitEvent,Saewynn)
+GuildRecruitEvent(Ellie_RecruitEvent,Ellie)
+GuildRecruitEvent(Selene_RecruitEvent,Selene)
+GuildRecruitEvent(Nina_RecruitEvent,Nina)
+GuildRecruitEvent(Levi_RecruitEvent,Levi)
+GuildRecruitEvent(Taft_RecruitEvent,Taft)
+GuildRecruitEvent(Lantom_RecruitEvent,Lantom)
+//lurkers
+GuildRecruitEvent(Szess_RecruitEvent,Szess)
+GuildRecruitEvent(Zoe_RecruitEvent,Zoe)
+GuildRecruitEvent(Paul_RecruitEvent,Paul)
+GuildRecruitEvent(Hausten_RecruitEvent,Hausten)

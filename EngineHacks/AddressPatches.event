@@ -1,3 +1,23 @@
+//always ranged animate
+PUSH
+ORG 0x00582A8
+BYTE HandAxe
+ORG 0x0058290
+BYTE HandAxe
+ORG 0x00582d4
+BYTE CompactBow
+ORG 0x00582c0
+BYTE CompactBow
+ORG 0x0058324
+BYTE HandAxe
+ORG 0x0058310
+BYTE HandAxe
+ORG 0x00582fc
+BYTE HandAxe
+ORG 0x00582e8
+BYTE HandAxe
+POP
+
 //for testing purposes, make an unused UM command the leveler
 PUSH
 ORG 0x59CC10

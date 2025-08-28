@@ -74,6 +74,9 @@ UNIT
 Recruit_Lonsdale:
 UNIT Lonsdale 0x0 0x1 Level(12,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Godendag] NoAI
 UNIT
+Recruit_Hugo:
+UNIT Hugo 0x0 0x1 Level(3,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Wand] NoAI
+UNIT
 
 Recruit_Trish:
 UNIT Trish 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Wand] NoAI
@@ -169,6 +172,9 @@ EndEvent
 Lonsdale_RecruitEvent:
 GuildRecruit(Lonsdale,Guild_Test_Dialogue,0x24)
 EndEvent
+Hugo_RecruitEvent:
+GuildRecruit(Hugo,Guild_Test_Dialogue,0x25)
+EndEvent
 
 //cur
 Trish_RecruitEvent:
@@ -195,7 +201,7 @@ GuildLoadFlagReset
 GuildLoad(CoastKid,Recruit_CoastKid,0x1)
 GuildLoad(Puzon,Recruit_Puzon,0x2)
 GuildLoad(Cam,Recruit_Cam,0x3)
-GuildLoad(Marag,Recruit_Marag,0x4)
+GuildLoad(Marag,Recruit_Marag,0x4,Chapter5DoneFlag)
 FADU 10
 ENDA
 
@@ -203,7 +209,7 @@ GuildhallLoadKnights:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 GuildLoad(Drogo,Recruit_Drogo,0x1)
-GuildLoad(Gretchen,Recruit_Gretchen,0x2)
+GuildLoad(Gretchen,Recruit_Gretchen,0x2,Chapter5DoneFlag)
 GuildLoad(Allbringer,Recruit_Allbringer,0x3)
 GuildLoad(Hopf,Recruit_Hopf,0x4)
 GuildLoad(SlynSpire,Recruit_SlynSpire,0x5)
@@ -213,7 +219,7 @@ ENDA
 GuildhallLoadAxefighters:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-GuildLoad(Tristao,Recruit_Tristao,0x1)
+GuildLoad(Tristao,Recruit_Tristao,0x1,Chapter5DoneFlag)
 GuildLoad(Finn,Recruit_Finn,0x2)
 GuildLoad(Eight,Recruit_Eight,0x3)
 GuildLoad(Randellan,Recruit_Randellan,0x4)
@@ -238,7 +244,8 @@ GuildLoad(Cassandra,Recruit_Cassandra,0x1)
 GuildLoad(Waves,Recruit_Waves,0x2)
 GuildLoad(Cyanne,Recruit_Cyanne,0x3)
 GuildLoad(Victor,Recruit_Victor,0x4)
-GuildLoad(Lonsdale,Recruit_Lonsdale,0x5)
+GuildLoad(Lonsdale,Recruit_Lonsdale,0x5,Chapter5DoneFlag)
+GuildLoad(Hugo,Recruit_Hugo,0x6)
 FADU 10
 ENDA
 
@@ -246,8 +253,8 @@ GuildhallLoadCurates:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 GuildLoad(Trish,Recruit_Trish,0x1)
-GuildLoad(Amos,Recruit_Amos,0x2)
-GuildLoad(Roslin,Recruit_Roslin,0x3)
+GuildLoad(Amos,Recruit_Amos,0x2,Chapter5DoneFlag)
+GuildLoadQuest(Roslin,Recruit_Roslin,0x3,Quest2_S1x_Flag)
 GuildLoad(Witerico,Recruit_Witerico,0x4)
 GuildLoad(Tycho,Recruit_Tycho,0x5)
 FADU 10

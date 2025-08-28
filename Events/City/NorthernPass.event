@@ -4,6 +4,19 @@
 NorthernPassUnitsC3:
 //marketplpace npc, generics
 UNIT Monk Priest 0x0 Level(1,NPC,0) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric Swordfighter 0x0 Level(7,NPC,1) [8,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric Caller 0x0 Level(6,NPC,1) [17,13] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric DarkHunter 0x0 Level(14,NPC,1) [8,17] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric Survivalist 0x0 Level(12,NPC,1) [14,2] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric Raider 0x0 Level(15,NPC,1) [0,13] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
+NorthernPassUnitsS1:
+//marketplpace npc, generics
+UNIT Monk Priest 0x0 Level(1,NPC,0) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric Axefighter 0x0 Level(7,NPC,1) [5,13] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric Driver 0x0 Level(6,NPC,1) [11,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Astarte 0x0 0x0 Level(1,Ally,0) [8,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
@@ -14,7 +27,7 @@ ALIGN 4
 MarketLoopBegin:
 EVBIT_MODIFY 3
 Text(MarketIntro)
-RunEventByVisit(DummyEvent,Chapter3Market,0,0,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,Chapter3Market,ChapterS1Market,0,0,0,0,0,0,0,0,0,0,0)
 Text(MarketEnd)
 ENUF LocationFlagNorthernPass
 EndEvent
@@ -30,7 +43,8 @@ EndEvent
 #define MarketHandler(item,uses,cost,choice,flag) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(PurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItemWithDurability(item,uses,Nathan); ENUT flag; COUNTER_SET 1 0; GOTO 0x20; LABEL choice"
 #define BrokeHander "LABEL 0x10; SetGtoMoney; Text(NotEnoughMoney); GOTO 0x20; LABEL 0x30"
 
-Chapter3Market:
+
+ChapterS1Market:
 LABEL 0x20
 COUNTER_CHECK 1
 SVAL 1 5
@@ -38,14 +52,15 @@ BNE 0x600 0xc 0x1
 CALL UnlockBlackMarketEvent
 LABEL 0x600
 SetGtoMoney
-CallMenu(Market3xMenu)
-MarketHandler(CompactBow,900,0,0x24)
-MarketHandler(Medica,2,250,1,0x25)
+CallMenu(MarketS1xMenu)
+MarketHandler(HealScroll,4,900,0,0x24)
+MarketHandler(Broadaxe,410,1,0x25)
 LeafHandler(2)
 FictionHandler(3)
 GOTO 0x30
 BrokeHander
 ENDA
+
 
 UnlockBlackMarketEvent:
 Text(BlackMarketUnlocked)
@@ -87,7 +102,8 @@ BEQ 0x1 0xc 0x0
 SwapToMap(BlackMarket,1,2)
 CALL LoadBlackMarketSigils
 MUSC Song_DarkCave
-LoadUnitsByVisit(DummyUnits,BlackMarketUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+LOAD1 0x0 BlackMarketUnits
+//LoadUnitsByVisit(DummyUnits,BlackMarketUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
 FADU 10
 GOTO 0x2
 LABEL 0x1
@@ -95,4 +111,21 @@ ENUF LocationFlagNorthernPass
 LABEL 0x2
 EndEvent
 
-//figure out marketplace
+
+//banked markets
+Chapter3Market:
+LABEL 0x20
+COUNTER_CHECK 1
+SVAL 1 5
+BNE 0x600 0xc 0x1
+CALL UnlockBlackMarketEvent
+LABEL 0x600
+SetGtoMoney
+CallMenu(Market3xMenu)
+MarketHandler(CompactBow,900,0,0x24)
+MarketHandler(Medica,2,250,1,0x25)
+LeafHandler(2)
+FictionHandler(3)
+GOTO 0x30
+BrokeHander
+ENDA

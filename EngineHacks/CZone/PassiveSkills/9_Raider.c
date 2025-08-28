@@ -47,6 +47,10 @@ void ApplyRaiderTrampleDefender(struct BattleUnit* attacker, struct BattleUnit* 
 void ApplyRaiderPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplyRaiderOutrider(attacker);
+	}
+}
+void BothSidesRaiderPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (IsBattleReal()){
 		ApplyRaiderTrampleAttacker(attacker,defender);
 		ApplyRaiderTrampleDefender(attacker,defender);
 	}

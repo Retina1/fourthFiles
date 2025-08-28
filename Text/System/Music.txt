@@ -133,6 +133,18 @@ Why Love[X]
 ##SongTitle_FinaleMHE
 Finale[X]
 
+##SourceTitle_MiracleMusical
+Miracle Musical[X]
+##SongTitle_VariationsOnACloud
+Variations on a Cloud[X]
+##SongTitle_IsleUntoThyself
+Isle Unto Thyself[X]
+
+##SourceTitle_Wifiskeleton
+wifiskeleton[X]
+##SongTitle_NopeYoureTooLateImAlreadyDead ^
+nope you're too late i already died[X]
+
 ##SourceTitle_TheLorax
 The Lorax[X]
 ##SongTitle_Biggering

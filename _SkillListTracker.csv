@@ -17,7 +17,7 @@ Landsknecht,Vanguard,"Give self 1.2x Atk/AS, .8x Def taken for a bit.",None,1,Ac
 ,,,,,,,,
 Knight,Iron Wall,Adjacent allies have 1.2x Def.,None,1,Passive,X,X,
 Hoplite,Leering Wall,Adjacent enemies have 0.9x Atk.,None,1,Passive,X,X,
-,Wariness,Can't be doubled while at 50% HP or less.,Provocation 3,1,Passive,-,X,
+,Wariness,Can't be doubled while at 50% HP or less.,Provocation 3,1,Passive,X,X,
 ,Unbreakable,Halves chip damage taken.,PROMO,1,Passive,X,X,
 ,Long Thrust,A far-ranged lance strike.,None,2,Attack,,,
 ,Bounding Thrust,A thrust that brings user to the enemy's back.,Long Thrust 1,2,Attack,,,
@@ -178,7 +178,7 @@ Troubadour,Liberating Voice,Buffed allies have a chance to null ailments.,None,1
 Seeker,Runic Rhythm,"1.2x Crit on odd turns, 1.2x Avo on even turns.",None,1,Passive,X,,
 Runemaster,Prismatic,Adjacent allies have +25 base Crit.,None,1,Passive,X,,
 ,Runic Resonance,1.3x Crit against targets with Rune debuffs.,Revolution Rune 1,1,Passive,,,
-,Runic Pierce,Unit's critical hits deal 4x damage.,PROMO,1,Passive,-?,,just find where crits are done
+,Runic Pierce,Unit's critical hits deal 4x damage.,PROMO,1,Passive,X,,just find where crits are done
 ,Magus Rune,"Allies get Res buff, enemies get Res debuff.",None,2,Active (Buff),,,
 ,Revolution Rune,"Allies get Crit buff, enemies get Crit debuff.",Magus Rune 1,2,Active (Buff),,,
 ,Agility Rune,"Allies get Spd buff, enemies get Spd debuff.",Revolution Rune 1,2,Active (Buff),,,
@@ -281,7 +281,7 @@ Survivalist,Lone Wolf,1.5x Avo when no allies are within 2 spaces.,None,1,Passiv
 ,Blind Arrow,An arrow that blinds.,None,3,Attack (Ailment),,,
 ,Sleep Arrow,An arrow that forces sleep.,Blind Arrow 1,3,Attack (Ailment),,,
 ,Toxin Arrow,An arrow that poisons.,Sleep Arrow 1,3,Attack (Ailment),,,
-,Foot Pierce,An arrow that immobolizes.,Sleep Arrow 2,3,Attack (Ailment),,,
+,Numbing Arrow,An arrow that paralyzes.,Sleep Arrow 2,3,Attack (Ailment),,,
 ,Scapegoat,Grants another ally significantly increased aggro.,"PROMO, Trickery 2, Toxin Arrow 3",3,Active (Buff),,,
 ,Illusion Step,Increase avoid and chase all bow/gun attacks.,"Flame Arrow 2, Foot Pierce 3",5,Active (State),,,
 ,Hazy Arrow,A mighty arrow usable after dodging.,"Trickery 2, Blind Arrow 3, Sleep Arrow 3",5,Active (State),,,

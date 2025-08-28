@@ -53,3 +53,8 @@ F.O.E.[X]
 ##Desc_FOE
 A mighty Flammeus Obstaculum Exemplum,[N]
 far too dangerous for most explorers.[X]
+##Name_Quarry
+Quarry[X]
+##Desc_Quarry
+The target of some manner of request.[N]
+Fulfill what's been asked of you![X]

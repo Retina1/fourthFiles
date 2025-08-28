@@ -8,6 +8,8 @@ void ApplyDriverImperialPride(struct BattleUnit* attacker, struct BattleUnit* de
 }
 
 void ApplyDriverPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+}
+void BothSidesDriverPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplyDriverImperialPride(attacker,defender);
 	}

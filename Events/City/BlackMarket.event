@@ -1,9 +1,13 @@
 ﻿//Made by Camtech075 of SerenesForest
 //Modified by Nintenlord
 
-BlackMarketUnitsC3:
+BlackMarketUnits:
 //marketplpace npc, generics
 UNIT UnknownGeneric Caller 0x0 Level(6,NPC,1) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT UnknownGeneric Seeker 0x0 Level(8,NPC,1) [2,6] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT UnknownGeneric Gunner 0x0 Level(7,NPC,1) [3,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT UnknownGeneric Duelist 0x0 Level(13,NPC,1) [14,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT UnknownGeneric Botanist 0x0 Level(15,NPC,1) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT UnknownGeneric Ronin 0x0 Level(18,NPC,1) [10,2] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
 
@@ -51,6 +55,6 @@ BlackMarketMoveToNorthernPass:
 SwapToMap(NorthernPass,15,17)
 CALL LoadNorthernPassSigils
 MUSC Song_VastLands
-LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,NorthernPassUnitsS1,0,0,0,0,0,0,0,0,0,0,0)
 FADU 10
 EndEvent

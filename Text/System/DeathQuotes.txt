@@ -3,7 +3,7 @@ How did you get to be here?[N]
 What was the moment?[A][X]
 
 ##GameOverTextPromoted
-You can never look back.[N]
+There's no going back.[N]
 Yesterday is done.[A][X]
 
 ##XavensDeath
@@ -63,6 +63,38 @@ the Armory[...][AN]
 Not before[...] you[...][N]
 bow to[...] me[...][A][X]
 
+##GuildmasterDeath
+[MidLeft][Guildmaster]
+Nathan[...] [Guild][...][AN]
+You truly tread the road[...][N]
+to this world's ruin[...][AN]
+And yet[...] I find myself[...][N]
+nothing but proud[...][AN]
+If it is truly[...] what you[N]
+wish for[...][AN][Smile]
+Hold your heads high[...][N]
+Follow the road[...][AN][CloseEyes]
+Follow it[...] to the end[...][N]
+Uncertain[...] Unafraid[...][A][X]
+
+##BossAstarteDeath
+[MidLeft][Astarte]
+So everything[...] meant nothing[...][N]
+All my[...] sacrifice[...][AN]
+To hell[...] with you all[...][N]
+To hell[...] with dreams[...][AN][CloseEyes]
+To hell with[...] all this[N]
+damnable land[...][A][X]
+##BossGoreDeath
+[MidLeft][Gore]
+I thought I was[...] so close[...][N]
+I could change[...] it all[...][AN]
+But once again[...] Your ideals[...][N]
+They're what triumphed[...][AN][CloseEyes]
+If it had to happen[...][N]
+By[...] your[...] hands[...][AN]
+I can[...] accept that[...][A][X]
+
 ##NathanDeath
 [MidRight][Nathan]
 I wanted[...] to make[...][N]
@@ -95,6 +127,32 @@ Shame, then[...][A][X]
 ##RatDeath
 [MidRight][Rat]
 [...][A][CloseEyes][X]
+##KrystDeath
+[MidRight][Kryst]
+I didn't[...] sign up[...][N]
+for any of this[...][A][CloseEyes][X]
+##GalvinDeath
+[MidRight][Galvin]
+Everything's[...] dark[...][N]
+Useless[...] I'm[...] useless[...][A][CloseEyes][X]
+##IoriaDeath
+[MidRight][Ioria][Smile]
+I've had[...] a good life[...][N]
+I'm not[...] afraid[...][A][CloseEyes][X]
+##FourthDeath
+[MidRight][Fourth]
+A new sun[...] will rise[...][AN][Smile]
+I believe[...] in Asketa[...][A][CloseEyes][X]
+##GuildmasterRetreat
+[MidRight][Guildmaster]
+The League needs me.[N]
+I must[...] retreat.[AN][Smile]
+Don't be afraid[...][N]
+You've got this, Nathan.[A][X]
+##AnswererDeath
+[MidRight][Answerer]
+I now[...] see the[...][N]
+endless sky[...][A][CloseEyes][X]
 
 //swordfighters
 ##CoastKidDeath
@@ -233,8 +291,8 @@ it worth[...] your while[...][A][CloseEyes][X]
 This displeases me.)[A][X]
 ##MikaylaDeath
 [MidRight][Mikayla]
-I was[...] doing so[...][N]
-well[...] Drat[...][A][X]
+I[...] I can't[...] If only I[...][N]
+were[...] stronger[...][A][CloseEyes][X]
 ##CalliopeDeath
 [MidRight][Calliope]
 It's over[...] No more[...][N]

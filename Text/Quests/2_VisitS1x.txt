@@ -1,0 +1,35 @@
+##Quest1_S1x
+Making Headway[X]
+##Quest1_S1x_Desc
+A local biologist wants to know what[N]
+exactly makes the forest's Triwolves[N]
+tick. Danger lies ahead.[X]
+
+##Quest1_S1x_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+That one's real simple.[A]
+kill marked triwolf[A][X]
+
+##Quest1_S1x_Done
+[MidLeft][Nathan][MidRight][Bobby][MidLeft]
+filler[A][X]
+
+##Quest2_S1x
+The Fibers of Friendship[X]
+##Quest2_S1x_Desc
+A clerk at the Guildleague wishes for[N]
+some material to help make an article[N]
+of clothing for a friend.[X]
+
+##Quest2_S1x_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+That one's real simple.[A]
+tilehunt for material for recruit[A][X]
+
+##Quest2_S1x_Done
+[FarLeft][Nathan][Left][Bobby][Right][Roslin][FarRight][Demico][Left]
+filler[A][X]
+
+##Quest2_S1x_RewardText
+Roslin (Curate) and Demico (Gunner)[N]
+are now available for recruitment![A][X]

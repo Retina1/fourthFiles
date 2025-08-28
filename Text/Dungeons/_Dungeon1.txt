@@ -1,3 +1,30 @@
+//ratatoskr dialogue
+##Ratatoskr_Encounter1
+You decide to investigate a rustling[N]
+sound within the dense brush.[AN]
+A small shadow darts by your feet,[N]
+and instantly your blood runs cold.[AN]
+Collecting yourself, you come face[N]
+to face with a tiny squirrel.[AN]
+You're not fooled for a moment,[AN]
+for you know this is the true face[N]
+of Ratatoskr, a baneful trickster![AN]
+A swarm of airflies joins the vile[N]
+mammal, who chitters threateningly.[AN]
+The time has come to fight for your[N]
+life against a beast most foul![A][X]
+
+##Ratatoskr_Battle1
+[MidLeft][Ratatoskr]
+Hiyaaaaaaaah![A][X]
+##Ratatoskr_Defeat1
+[MidLeft][Ratatoskr]
+Zuh! I'm sent flying![A][X]
+
+##Dungeon1_Ending
+[FarLeft][Gore][Left][Nathan][MidRight][Astarte][Left]
+end wahoo[A][X]
+
 ##Dungeon1_Opening
 [FarLeft][Gore][Left][Nathan][MidRight][Astarte][Left]
 We're finally here.[AN][MidRight]

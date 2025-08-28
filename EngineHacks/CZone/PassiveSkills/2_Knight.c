@@ -33,6 +33,8 @@ void ApplyKnightLeeringWall(struct BattleUnit* attacker, struct BattleUnit* defe
 }
 
 void ApplyKnightPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+}
+void BothSidesKnightPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplyKnightLeeringWall(attacker,defender);
 	}

@@ -190,6 +190,12 @@ Lonsdale[X]
 ##Desc_Lonsdale
 An academic from Hirschring's museum.[N]
 Xe yearns to leave xyr mark on history.[X]
+//grexius
+##Name_Hugo
+Hugo[X]
+##Desc_Hugo
+A Belvarusi scholar chasing a ghost of[N]
+his past. He's lonesome and somber.[X]
 
 //trish by benfrosh (curate)
 ##Name_Trish

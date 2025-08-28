@@ -209,6 +209,7 @@ SetMapBGM(Song_EverScarletForest)
 EndEvent
 
 EndingScene:
+EVBIT_MODIFY 3
 SystemText(NextFloorOneWay)
 IfNoSelectedGoto(0x1)
 MNC3 Stratum1F2

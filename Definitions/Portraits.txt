@@ -177,6 +177,10 @@ TaftMug
 YujinMug
 TychoMug
 LantomMug
+NelsonMug
+HugoMug
+NoelleMug
+ShiliangCatMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

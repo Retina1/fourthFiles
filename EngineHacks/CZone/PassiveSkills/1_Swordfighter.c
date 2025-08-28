@@ -53,6 +53,8 @@ int ApplySwordfighterWeaponParry(u8 stat, struct Unit* unit) {
 }
 
 void ApplySwordfighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+}
+void BothSidesSwordfighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplySwordfighterInitiative(attacker,defender);
 		ApplySwordfighterTenacity(attacker,defender);
