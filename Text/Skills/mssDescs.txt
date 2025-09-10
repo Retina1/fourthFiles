@@ -1,379 +1,3 @@
-//myrm
-##MSS_SwordStance
-Sword Stance: Use Stance to[N]
-take a skill-enabling stance.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//rid
-##MSS_BattlefieldPresence
-Battlefield Presence: Boosts[N]
-Hit of all allied units.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//rai
-##MSS_MenacingPresence
-Menacing Presence: Lowers[N]
-Avo of all enemy units.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//gun
-##MSS_QuickDraw
-Quick Draw: Boosts Atk and AS when[N]
-fighting ranged enemies at range.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//poe
-##MSS_SoothingVoice
-Soothing Voice: Restores some HP[N]
-to allies when buffing them.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//see
-##MSS_RunicRhythm
-Runic Rhythm: Boosts Crit on[N]
-odd turns and Avo on even turns.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//pri
-##MSS_WarFortune
-War Fortune: Boosts odds of[N]
-ailments working for allies.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-War Heal: Restores HP[N]
-to a nearby ally.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//lur
-##MSS_UnjustReward
-Unjust Reward: User recovers[N]
-HP when using curse skills.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
 //dht
 ##MSS_Opportunistic
 Opportunistic: Double ailing[N]
@@ -1298,6 +922,382 @@ boosts the user's Str.[X]
 ##
 Caduceus: An incredibly[N]
 strong rod strike.[X]
+
+//myrm
+##MSS_SwordStance
+Sword Stance: Use Stance to[N]
+take a skill-enabling stance.[X]
+##
+Indomitable: Unit cannot be[N]
+killed in one hit from full HP.[X]
+##
+Extend: Initiating an attack that[N]
+kills an enemy extends Stance length.[X]
+##
+Stepping Slash: Basic attacks[N]
+also activate Stance.[X]
+##
+Upper Stance: Stance boosts[N]
+user's Atk while active.[X]
+##
+Clear Stance: Stance boosts[N]
+user's Def while active.[X]
+##
+Drawing Stance: Stance boosts[N]
+user's AS while active.[X]
+##
+Breath: Consume Stance to[N]
+restore user's HP.[X]
+##
+Swallowslash: During Stance,[N]
+use a two-hit combo.[X]
+##
+Hazeslash: During Stance,[N]
+use a sleep-inducing cut.[X]
+##
+Petalslash: During Stance,[N]
+slash to damage an area.[X]
+##
+Airslash: During Stance,[N]
+use a ranged strike.[X]
+##
+Graceful Blur: Consume Stance[N]
+to warp self a distance away.[X]
+##
+Beheading: During Stance,[N]
+cut to try and instakill.[X]
+##
+Peerless Combo: Consume Stance to[N]
+combo all four slash skills.[X]
+
+//rid
+##MSS_BattlefieldPresence
+Battlefield Presence: Boosts[N]
+Hit of all allied units.[X]
+##
+Swap: Use Swap to switch[N]
+places with adjacent ally.[X]
+##
+Firm Charge: Boosts user's[N]
+Def based on tiles moved.[X]
+##
+Mount Master: Boosts Atk/AS and[N]
+reduces damage taken vs. mounts.[X]
+##
+Rallying Flag: Buff allies to[N]
+boost Atk and Crit.[X]
+##
+Survival Flag: Buff allies to[N]
+boost Def and Avo.[X]
+##
+Expertise Flag: Buff allies to[N]
+boost their EXP gains.[X]
+##
+Charging Thrust: Thrust with more[N]
+might based on tiles moved.[X]
+##
+Charging Throw: Throw with more[N]
+range based on tiles moved.[X]
+##
+Horse Slayer: A thrust that[N]
+shreds mounted enemeis.[X]
+##
+Heartpiercer: An impalation[N]
+with very high Crit.[X]
+##
+Archballista: Stand still to toss[N]
+a lance an incredible distance.[X]
+##
+Full Force: A thrust that strikes[N]
+twive if using full movement.[X]
+##
+Charge Command: A command that boosts[N]
+ally Mov based on own unused Mov.[X]
+##
+Gae Bolg: A thrust that ignores[N]
+all enemy defensive effects.[X]
+
+//rai
+##MSS_MenacingPresence
+Menacing Presence: Lowers[N]
+Avo of all enemy units.[X]
+##
+Pivot: Use Pivot to move to[N]
+the other side of adjacent ally.[X]
+##
+Outrider: Boosts user's[N]
+Crit based on tiles moved.[X]
+##
+Trample: Boosts Atk/AS and reduces[N]
+damage taken vs. infantry.[X]
+##
+War Cry: Debuff enemies to[N]
+reduce Atk and Crit.[X]
+##
+Hellish Cry: Debuff enemies to[N]
+reduce Def and Avo.[X]
+##
+Dominant Cry: Debuff enemies to[N]
+reduce AS and Luc.[X]
+##
+Charging Smash: Smash with more[N]
+might based on tiles moved.[X]
+##
+Charging Toss: Throw with more[N]
+range based on tiles moved.[X]
+##
+Hit and Run: A strike that enables[N]
+use of remaining Mov afterwards.[X]
+##
+Gallop: Charge to boost[N]
+user's Mov next turn.[X]
+##
+Collected Fury: Stand still to[N]
+smash with incredible might.[X]
+##
+Great Cleave: A strike that damages[N]
+an area based on tiles moved.[X]
+##
+Raid Command: A command that boosts[N]
+ally Atk based on own unused Mov.[X]
+##
+Regiment Rave: A strike that breaks the[N]
+user's weapon to grant another turn.[X]
+
+//gun
+##MSS_QuickDraw
+Quick Draw: Boosts Atk and AS at[N]
+2+ range if enemy can counter.[X]
+##
+Steady Sighting: Boosts Hit[N]
+if user has moved no tiles.[X]
+##
+Firefight: Boosts user's[N]
+Avo per tile moved.[X]
+##
+Point Blank: Massively boosts AS[N]
+if user initiates at 1 range.[X]
+##
+Vital Snipe: An accurate shot[N]
+that binds arms.[X]
+##
+Warning Shot: Debuff enemy to[N]
+reduce their Atk/Luc.[X]
+##
+Flare Shot: A lobbed flare that[N]
+blinds the target.[X]
+##
+Hip Shot: A shot with decent[N]
+range and decent hit.[X]
+##
+Mana Bullet: An imbued shot[N]
+that targets Res.[X]
+##
+Power Snipe: A far ranged and[N]
+quite reliable shot.[X]
+##
+Rapid Fire: A barrage of short[N]
+range and low accuracy shots.[X]
+##
+Riot Gun: A mighty short range[N]
+shot that stuns the enemy.[X]
+##
+Scattershot: A powerful and inaccurate[N]
+barrage that damages an area.[X]
+##
+Unload: A barrage that keeps going[N]
+until the user's gun breaks.[X]
+##
+Ricochet: An infinite range barrage of[N]
+10 shots whose Hit scales with distance.[X]
+
+//poe
+##MSS_SoothingVoice
+Soothing Voice: Restores some HP[N]
+to allies when buffing them.[X]
+##
+Liberating Voice: Allies with Song[N]
+buffs might nullify ailments.[X]
+##
+Divine Voice: Allies with Song[N]
+buffs get boosted EXP.[X]
+##
+Echoing Voice: Consecutive use of[N]
+Songs applies all recent Songs.[X]
+##
+Erasure: Removes buffs and[N]
+debuffs from any target.[X]
+##
+Enduring Tune: Charge to give[N]
+Song buffs longer duration.[X]
+##
+Resounding Tune: Charge to give[N]
+Song buffs a larger area of effect.[X]
+##
+Bravery Song: Buff an[N]
+ally to boost Atk.[X]
+##
+Shelter Song: Buff an[N]
+ally to boost Def.[X]
+##
+Mercury Song: Buff an[N]
+ally to boost AS.[X]
+##
+Insight Song: Buff an[N]
+ally to boost Hit.[X]
+##
+Fleeting Song: Buff an[N]
+ally to boost Mov.[X]
+##
+Battlebond: Chase attacks[N]
+from Song-buffed allies.[X]
+##
+Crescendo: A massive attack fueled[N]
+by cancelling ally Song buffs.[X]
+##
+Awakening Voice: A song that[N]
+grants an ally another turn.[X]
+
+//see
+##MSS_RunicRhythm
+Runic Rhythm: Boosts Crit on[N]
+odd turns and Avo on even turns.[X]
+##
+Prismatic: Boosts base Crit[N]
+of adjacent allies.[X]
+##
+Runic Resonance: Boosts Crit[N]
+against Rune-debuffed enemies.[X]
+##
+Runic Pierce: Unit deals 4x[N]
+damage upon a critical hit.[X]
+##
+Magus Rune: Buff ally Res and[N]
+debuff enemy Res in an area.[X]
+##
+Revolution Rune: Buff ally Crit and[N]
+debuff enemy Crit in an area.[X]
+##
+Agility Rune: Buff ally AS and[N]
+debuff enemy AS in an area.[X]
+##
+Divine Lightning: A spell of[N]
+shining light with high Crit.[X]
+##
+Shining Force: A spell that[N]
+debuffs Hit and blinds foes.[X]
+##
+Chalkydri: A spell that heals[N]
+nearby allies after striking.[X]
+##
+Dusk Omen: A spell that debuffs[N]
+user's Def to strike twice.[X]
+##
+Solar Cleave: A spell that[N]
+halves enemy HP.[X]
+##
+Daybreak: Purge ally Runes to[N]
+strike with mighty magic.[X]
+##
+Moonrise: Purge enemy Runes to[N]
+massively buff combat stats.[X]
+##
+Twilight Burst: Purge all Runes to[N]
+strike with guaranteed Crit.[X]
+
+//pri
+##MSS_WarFortune
+War Fortune: Boosts odds of[N]
+ailments working for allies.[X]
+##
+War Edge: Unit can use swords and[N]
+staves interchangeably for skills.[X]
+##
+War Imbue: Adds a portion of[N]
+Mag to unit's Atk.[X]
+##
+War Pierce: Unit's attacks target[N]
+the lower of enemy's Def or Res.[X]
+##
+War Bind: A cut that fully binds[N]
+enemies with debuffs.[X]
+##
+War Sap: A cut that significantly[N]
+debuffs enemies with ailments.[X]
+##
+War Drain: A cut that steals HP from[N]
+enemies with ailments or debuffs.[X]
+##
+War Heal: Restores HP[N]
+to a nearby ally.[X]
+##
+War Wall: Null an area's[N]
+incoming ailments/debuffs.[X]
+##
+War Grasp: Warps a distant[N]
+ally to an adjacent tile.[X]
+##
+War Disease: Inflict a random[N]
+ailment or bind.[X]
+##
+War Prayer: Grant survival at 1 HP[N]
+for allies in an area.[X]
+##
+War Mirror: Copy all ailments and[N]
+debuffs from one enemy to others.[X]
+##
+War Slash: A cut that deals massively[N]
+boosted damage to foes with ailments.[X]
+##
+War Phase: Warps an adjacent[N]
+ally to a distant tile.[X]
+
+//lur
+##MSS_UnjustReward
+Unjust Reward: User recovers[N]
+HP when using curse skills.[X]
+##
+Guiding Force: Boosts Hit and[N]
+Crit for adjacent allies.[X]
+##
+Misfortune: Curse skills also[N]
+debuff enemy Luc.[X]
+##
+Impure Reach: Adds a flat bonus[N]
+to status affliction rate.[X]
+##
+Sapping: Debuff enemies[N]
+to reduce Atk.[X]
+##
+Frailty: Debuff enemies[N]
+to reduce Def.[X]
+##
+Leaden: Debuff enemies[N]
+to reduce AS.[X]
+##
+Torpor: A curse that[N]
+inflicts sleep.[X]
+##
+Madness: A curse that[N]
+inflicts berserk.[X]
+##
+Binding: A curse that[N]
+binds body parts.[X]
+##
+Hex: A curse that leaves a[N]
+lingering and exploitable curse.[X]
+##
+Stoning: A curse that[N]
+inflicts petrification.[X]
+##
+Muting Word: Command enemies with[N]
+Curse to take extra damage.[X]
+##
+Suicide Word: Command enemies with[N]
+Curse to attack self.[X]
+##
+Deity's Word: Command enemies with[N]
+Curse to bow down and give items.[X]
 
 //common
 ##MSS_HPUp

@@ -141,6 +141,7 @@
 #define ToxicClawIcon 0x8D
 #define FurysongIcon 0x8E
 #define SealGleamIcon 0x8F
+#define HopebringerIcon 0xA3
 #define VulneraryIcon 0xC8
 #define ElixirIcon 0xC9
 #define MedicaIcon 0xCA

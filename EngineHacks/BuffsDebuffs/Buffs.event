@@ -7,3 +7,40 @@
 //various combat loops for other effects
 
 //all buffs but def buffs hit combat stats, def res buffs hit actual stats
+
+
+//8 bytes per unit
+//buff buff buff debuff debuff debuff
+//2 bits per timer
+//duration is turns left
+//maximal defnd. duration is 3 turns
+//11 10 01 00
+
+//c function to apply buffs/debuffs
+//for each buff/debuff byte, grab its entry and apply mults
+//another buff/debuff function for def/res
+
+//add expertise/panacea/scapegoat to specific loops
+
+//buff/debuff application
+//move buffs down a slot, don't apply buffs if same buff line exists
+
+//buff tickdown
+//at start of turn, tick down all nonzero durations
+//at zero, zero out respective buff
+//clean up positions
+
+//the real challenge will just be interfacing with buff ram
+
+/*
+heal at start of turn if buff exists
+
+exp function
+exp function
+
+enemy aggro function (oh no)
+enemy aggro function (oh no)
+enemy aggro function (oh no)
+enemy aggro function (oh no)
+enemy aggro function (oh no)
+*/

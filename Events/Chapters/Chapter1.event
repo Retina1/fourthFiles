@@ -138,10 +138,61 @@ UNIT
 
 ALIGN 4
 
+//todo - fix
+EmulatorCheck:
+EVBIT_MODIFY 3
+ASMC GetEmulatorASMC|1
+SVAL 0x1 0x0
+BNE 0x10 0xc 0x1
+	//undetected
+	SetBackground(0x35)
+	SystemText(UnknownEmulatorNotice)
+	GOTO 0x1
+	LABEL 0x10
+SVAL 0x1 0x1
+BNE 0x11 0xc 0x1
+	//mgba
+	SetBackground(0x35)
+	SystemText(mGBANotice)
+	GOTO 0x1
+	LABEL 0x11
+SVAL 0x1 0x2
+BNE 0x12 0xc 0x1
+	//mgba
+	SetBackground(0x35)
+	SystemText(NoGBAWarning)
+	GOTO 0x1
+	LABEL 0x12
+SVAL 0x1 0x3
+BNE 0x13 0xc 0x1
+	//mgba
+	SetBackground(0x35)
+	SystemText(VBAWarning)
+	GOTO 0x1
+	LABEL 0x13
+SVAL 0x1 0x4
+BNE 0x14 0xc 0x1
+	//mgba
+	SetBackground(0x35)
+	SystemText(MyBoyWarning)
+	GOTO 0x1
+	LABEL 0x14
+SVAL 0x1 0x5
+BNE 0x15 0xc 0x1
+	//pizzaboy - fails to detect currently? not a huge deal since it's good
+	SetBackground(0x35)
+	SystemText(PizzaBoyNotice)
+	GOTO 0x1
+	LABEL 0x15
+LABEL 0x1
+EVBIT_MODIFY 4
+ENDA
+
 BeginningScene:
 ENUT Chapter2DoneFlag //for guide purposes
 EVBIT_MODIFY 4
 EVBIT_F 2
+CALL EmulatorCheck
 SetBackground(0x35)
 CALL CampaignCustomizers
 FADI 16
@@ -237,8 +288,9 @@ LOAD1 0x1 OpeningCutscene5; ENUN; STAL 30
 FlashCursor(Rat,30); SoloText(C1_Premonition_Rat); STAL 30
 TurnEnemy(Cleone); STAL 30
 TurnEnemy(Rat); STAL 30
-FlashCursor(Astarte,30);FlashCursor(Gore,30)
-FlashCursor(Cleone,30);FlashCursor(Rat,30)
+FlashCursor(Nathan,30)
+//FlashCursor(Astarte,30);FlashCursor(Gore,30)
+//FlashCursor(Cleone,30);FlashCursor(Rat,30)
 SoloText(C1_Premonition_Ending); FADI 10; CLEE 0
 FADU 10
 FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30

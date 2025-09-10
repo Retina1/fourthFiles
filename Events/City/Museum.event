@@ -24,7 +24,7 @@ MuseumMoveToNorthernPass:
 SwapToMap(NorthernPass,2,6)
 CALL LoadNorthernPassSigils
 MUSC Song_VastLands
-LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadPassUnits
 FADU 10
 EndEvent
 

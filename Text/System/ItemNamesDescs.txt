@@ -223,7 +223,7 @@ Grants +40 Luck.[X]
 The Fable[X]
 ##Desc_TheFable ^
 A legendary rapier forged by the fae.[N]
-Grants +5 to all stats, including Mov/Con.[X]
+Grants +5 to all stats besides HP.[X]
 
 //AXES
 ##Name_Shortmace

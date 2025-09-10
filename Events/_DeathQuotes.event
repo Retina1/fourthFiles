@@ -18,6 +18,7 @@ ChapterDeathQuote(BossCleone,Chapter1,0x0,C1CleoneDefeat)
 ChapterDeathQuote(BossBenthus,Chapter1,0x0,C1BenthusDefeat)
 //c3
 ChapterDeathQuote(Lucien,Chapter3,GameOverFlag,C3LucienDeath)
+ChapterDeathQuote(Helman,Chapter3,GameOverFlag,C3HelmanDeath)
 //c4
 EventDeathQuote(BeastKing,Chapter4,0x2,BeastKingDeathEvent)
 //major bosses

@@ -12,14 +12,24 @@ PUSH
 //MONSTERS
 ItemIconEntry(VileClawIcon)
 #incbin "Dmp/{Beansy} Sharp Claw.dmp"
+ItemIconEntry(ToxicClawIcon)
+#incbin "Dmp/{Beansy} Poison Claw [F2E].dmp"
 ItemIconEntry(SharpBiteIcon)
 #incbin "Dmp/{Zarg} Monster 13.dmp"
+ItemIconEntry(FrigidBiteIcon)
+#incbin "Dmp/FrigidBite.dmp"
 ItemIconEntry(TackleIcon)
 #incbin "Dmp/{Seal} (SacredWar) Monster 6.dmp"
 ItemIconEntry(GreatTalonIcon)
 #incbin "Dmp/{2WB} (Vanilla + Blitz) Sharp Talon.dmp"
+ItemIconEntry(WebTalonIcon)
+#incbin "Dmp/WebTalon.dmp"
+ItemIconEntry(RootGraspIcon)
+#incbin "Dmp/zelixRootGrasp.dmp"
 ItemIconEntry(EvilEyeIcon)
 #incbin "Dmp/{Seal} (SacredWar) Monster 1.dmp"
+ItemIconEntry(HopebringerIcon)
+#incbin "Dmp/Hopebringer.dmp"
 
 //CONSUMABLES
 ItemIconEntry(VulneraryIcon)

@@ -1980,6 +1980,7 @@ Label_FA9330:
  BYTE   EOT
  BYTE   Fn3  v069
  BYTE   Cn4
+ BYTE   An3
  BYTE   W24
  BYTE   W01
 //  #03 //067   ----------------------------------------

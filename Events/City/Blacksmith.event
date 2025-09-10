@@ -42,7 +42,7 @@ CALL LoadHirschringSigils
 //causes visual bug? not needed anyway
 //SetMapBGM(Song_VastLands)
 MUSC Song_VastLands
-LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadSquareUnits
 LoadVendorSecond
 FADU 10
 EndEvent

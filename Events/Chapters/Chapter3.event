@@ -43,6 +43,8 @@ END_MAIN
 MiscBasedEvents:
 DefeatAll(EndingScene)
 CauseGameOverIfLordDies
+AreaEvent(0x8,Chapter3_HelmanAuto,12,5,20,11)
+AreaEvent(0x8,Chapter3_HelmanAuto,15,0,20,11)
 END_MAIN
 
 Dunno:
@@ -192,6 +194,20 @@ Chapter3_BenthusHelman:
 MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_BenthusHelmanRecruit)
 TurnAlly(Helman)
+EndEvent
+
+Chapter3_HelmanAuto:
+CHECK_ALLEGIANCE 0xFFFF
+BNE 0x1 0xC 0x0
+//is player
+MUSC Song_FaithIsMyPillar //recruitment theme
+Text(Chapter3_HelmanAutoRecruit)
+TurnAlly(Helman)
+GOTO 0x2
+LABEL 0x1
+//not player
+ENUF 0x8
+LABEL 0x2
 EndEvent
 
 Chapter3_NathanLucien:

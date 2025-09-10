@@ -77,6 +77,8 @@ CALL CampaignCustomizers
 
 LABEL 0x1
 
+SystemText(DEBUGPrompt)
+IfNoSelectedGoto(0x10)
 SystemText(DEBUGAutolevelPrompt)
 IfNoSelectedGoto(0x2)
 ASMC ValueChooser_OnSelect|1
@@ -95,6 +97,7 @@ ASMC ValueChooser_OnSelect|1
 ASMC ChangeAllCharacterASMC|1
 LABEL 0x4
 
+LABEL 0x10
 FADI 16
 CLEAN
 //FADU 16

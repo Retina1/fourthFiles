@@ -114,6 +114,11 @@ The Binding of Isaac: Antibirth[X]
 ##SongTitle_InnocenceGlitched
 Innocence Glitched[X]
 
+##SourceTitle_Deltarune
+Deltarune[X]
+##SongTitle_WiseWords
+Wise Words[X]
+
 ##SourceTitle_LisaThePointless
 Lisa the Pointless[X]
 ##SongTitle_ModernDayOuroboros ^
@@ -149,6 +154,26 @@ nope you're too late i already died[X]
 The Lorax[X]
 ##SongTitle_Biggering
 Biggering[X]
+
+##SourceTitle_Joji
+Joji[X]
+##SongTitle_SlowDancingInTheDark
+Slow Dancing in the Dark[X]
+
+##SourceTitle_TickTickBoom
+tick, tick... BOOM![X]
+##SongTitle_ThirtyNinety
+30/90[X]
+
+##SourceTitle_YeahYeahYeahs
+Yeah Yeah Yeahs[X]
+##SongTitle_Maps
+Maps[X]
+
+##SourceTitle_FE12 ^
+FE: New Mystery of the Emblem[X]
+##SongTitle_MurderousPuppets
+Murderous Puppets[X]
 
 
 ##SourceTitle_Original

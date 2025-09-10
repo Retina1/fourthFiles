@@ -7,3 +7,8 @@ Chapter3CityOpen:
 MUSC Song_OohWilfre
 CleanTextNoMap(0x0, City03_PrePreps)
 ENDA
+
+Stratum1CityOpen:
+MUSC Song_OohWilfre
+CleanTextNoMap(0x0, CityS1_PrePreps)
+ENDA

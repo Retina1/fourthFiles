@@ -1,9 +1,90 @@
+##VBAWarning
+Your emulator appears to be[N]
+VBA (or some derivative).[AN]
+I strongly suggest swapping[N]
+over to mGBA or a derivative,[AN]
+as that's what this game was[N]
+developed and tested on.[AN]
+Continue at your own peril.[AN]
+I can't promise that there[N]
+won't be emulator-based bugs.[AN]
+Thank you for playing![A][X]
+
+##NoGBAWarning
+Your emulator appears to be[N]
+No$GBA (or some derivative).[AN]
+I strongly suggest swapping[N]
+over to mGBA or a derivative,[AN]
+as that's what this game was[N]
+developed and tested on.[AN]
+Continue at your own peril.[AN]
+I can't promise that there[N]
+won't be emulator-based bugs.[AN]
+Thank you for playing![A][X]
+
+##mGBANotice
+Your emulator appears to be[N]
+mGBA (or some derivative).[AN]
+This game was developed and[N]
+tested entirely on mGBA,[AN]
+so there shouldn't be any[N]
+emulator-specific bugs.[AN]
+If you find any issues, do[N]
+please report them.[AN]
+Thank you for playing![A][X]
+
+##MyBoyWarning
+Your emulator appears to be[N]
+MyBoy (or some derivative).[AN]
+I strongly suggest swapping[N]
+over to mGBA or a derivative,[AN]
+as that's what this game was[N]
+developed and tested on.[AN]
+Continue at your own peril.[AN]
+I can't promise that there[N]
+won't be emulator-based bugs.[AN]
+Thank you for playing![A][X]
+
+##PizzaBoyNotice
+Your emulator appears to be[N]
+PizzaBoy (or some derivative).[AN]
+This game was developed and[N]
+tested entirely on mGBA,[AN]
+but PizzaBoy's generally been[N]
+reliable from my understanding,[AN]
+so I trust it to perform well.[AN]
+If you find any issues, do[N]
+please report them.[AN]
+Thank you for playing![A][X]
+
+##UnknownEmulatorNotice
+Your emulator appears to be[N]
+something I can't detect.[AN]
+...Either that, or real hardware.[AN]
+This game was developed and[N]
+tested entirely on mGBA,[AN]
+but since I can't detect that[N]
+you're on a known bad emulator,[AN]
+you'll probably be safe from[N]
+most emulator-specific bugs.[AN]
+Your mileage may vary, and more[N]
+so if you're on a mobile device.[AN]
+If you find any issues, do[N]
+please report them,[AN]
+as well as what emulator[N]
+you happen to be using.[AN]
+Thank you for playing![A][X]
+
 ##CampaignCustomPrompt
 Enable gameplay modifiers?[N]
 [No][X]
 
 ##DifficultyModifierPrompt
 Change the current difficulty?[N]
+[No][X]
+
+##DEBUGPrompt
+Use debug features?[N]
 [No][X]
 
 ##DEBUGAutolevelPrompt

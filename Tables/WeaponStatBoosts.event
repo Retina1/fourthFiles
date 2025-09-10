@@ -22,6 +22,9 @@ StatBonus(0,0,0,0,0,0,0,40,0,0)
 ALIGN 4
 FableBoost:
 StatBonus(0,5,5,5,5,5,5,5,5,5)
+ALIGN 4
+HopebringerBoost:
+StatBonus(20,20,20,20,20,20,20,20,0,0)
 
 ALIGN 4
 StaffBoost:

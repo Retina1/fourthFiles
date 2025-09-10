@@ -1,0 +1,86 @@
+##CityS1_Cleone
+[MidLeft][Nathan][MidRight][Cleone][MidLeft][Smile]
+.[A][X]
+
+##CityS1_Benthus
+[MidLeft][Nathan][MidRight][Benthus]
+[A][X]
+
+##CityS1_Helman
+[MidLeft][Nathan][MidRight][Helman]
+[A][X]
+
+##CityS1_Guildmaster
+[MidLeft][Nathan][MidRight][Guildmaster]
+.[A][X]
+
+##CityS1_Benjamin
+[MidLeft][Nathan][Right][Johanna][FarRight][Benjamin][Right][Smile]
+.[A][X]
+
+##CityS1_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+.[A][X]
+
+##CityS1_Claire
+[MidLeft][Nathan][MidRight][Claire]
+.[A][X]
+
+##CityS1_Bertram
+[MidLeft][Nathan][MidRight][Bertram].[A][X]
+
+##CityS1_PrePreps
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+.[A][X]
+
+##CityS1_PostPreps
+[MidLeft][Nathan]
+.[A][X]
+
+##CityS1_EndText
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+.[A][X]
+
+##CityS1_Astarte
+[MidLeft][Nathan][MidRight][Astarte]
+Hm[...] Forest pushed me a bit[N]
+more than I thought it would.[AN]
+Not that I couldn't handle it,[N]
+but I[...][A] Well, I'll be real.[N]
+I underestimated it.[AN]
+Never making that mistake again.[AN]
+And you know I'm pulling out all[N]
+the stops for this Beast King.[AN][MidLeft]
+Glad you're taking this seriously.[N]
+Not that I doubted you would.[AN][MidRight]
+I've learned this life's very[N]
+life-or-death already.[AN]
+Gotta just give it all my all.[N]
+Let momentum keep me going.[AN]
+[...]On the subject of momentum,[N]
+don't keep me waiting much longer.[AN]
+I'm really itching for this.[A][X]
+
+##CityS1_Gore
+[MidLeft][Nathan][MidRight][Gore][MidLeft]
+Whew[...] Ready for the[N]
+Beast King, Gore?[AN][MidRight]
+Got through the forest fine.[N]
+Sure a bigger wolf'll be fine.[AN]
+Especially with this prep time.[AN][MidLeft]
+Do you mean to say that without[N]
+this preparation,[A] you'd be less[N]
+confident in our odds?[AN][MidRight]
+Any man'd struggle after dealing[N]
+with the whole forest.[AN]
+[...]Don't rush this, Nathan.[AN]
+I know you wanna be a hero,[N]
+but don't be reckless.[AN]
+Just do the job as you're told.[N]
+No need for above and beyond.[AN][MidLeft]
+But I like above and beyond.[AN][CloseEyes]
+[...]Fine. Bare minimum it is.[AN][MidRight]
+Well, no need to make it[N]
+sound like you're lazy.[AN]
+Just[...] No need to make[N]
+life harder than needed.[A][X]

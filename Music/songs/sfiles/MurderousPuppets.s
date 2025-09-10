@@ -1,28 +1,28 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	MurderousPuppets_grp, voicegroup000
+	.equ	MurderousPuppets_pri, 0
+	.equ	MurderousPuppets_rev, 0
+	.equ	MurderousPuppets_mvl, 127
+	.equ	MurderousPuppets_key, 0
+	.equ	MurderousPuppets_tbs, 1
+	.equ	MurderousPuppets_exg, 0
+	.equ	MurderousPuppets_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	MurderousPuppets
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+MurderousPuppets_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_01058DD2:
- .byte   TEMPO , 128*song09_tbs/2
+ .byte   TEMPO , 128*MurderousPuppets_tbs/2
  .byte   VOICE , 100
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v-64
  .byte   BEND , c_v+0
  .byte   N07 ,As1 ,v100
@@ -1965,12 +1965,12 @@ Label_01058DD2:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+MurderousPuppets_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_01059722:
  .byte   VOICE , 100
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+63
  .byte   BEND , c_v+0
  .byte   W16
@@ -3970,12 +3970,12 @@ Label_01059722:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+MurderousPuppets_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_EDD412:
  .byte   VOICE , 40
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v-8
  .byte   BEND , c_v+0
  .byte   W96
@@ -4704,12 +4704,12 @@ Label_EDD412:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+MurderousPuppets_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_EDC08A:
  .byte   VOICE , 81
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+13
  .byte   BEND , c_v+0
  .byte   W96
@@ -5604,12 +5604,12 @@ Label_EDC357:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+MurderousPuppets_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_EDCEFE:
  .byte   VOICE , 42
- .byte   VOL , 51*song09_mvl/mxv
+ .byte   VOL , 51*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+23
  .byte   BEND , c_v+0
  .byte   W96
@@ -6342,13 +6342,13 @@ Label_EDCEFE:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+MurderousPuppets_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_EDC826:
  .byte   W24
  .byte   VOICE , 13
- .byte   VOL , 37*song09_mvl/mxv
+ .byte   VOL , 37*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v-26
  .byte   BEND , c_v+0
  .byte   W72
@@ -6920,7 +6920,7 @@ Label_EDC826:
 @  #06 @033   ----------------------------------------
  .byte   W48
  .byte   VOICE , 4
- .byte   VOL , 40*song09_mvl/mxv
+ .byte   VOL , 40*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+37
  .byte   BEND , c_v+0
  .byte   W48
@@ -7195,13 +7195,13 @@ Label_EDC826:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song09_007:
+MurderousPuppets_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_0105A0B2:
  .byte   W24
  .byte   VOICE , 10
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+0
  .byte   BEND , c_v+0
  .byte   W72
@@ -7536,7 +7536,7 @@ Label_0105A0B2:
 @  #07 @033   ----------------------------------------
  .byte   W48
  .byte   VOICE , 4
- .byte   VOL , 29*song09_mvl/mxv
+ .byte   VOL , 29*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v-36
  .byte   BEND , c_v+0
  .byte   W48
@@ -7801,12 +7801,12 @@ Label_0105A0B2:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song09_008:
+MurderousPuppets_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_0105A302:
  .byte   VOICE , 81
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+0
  .byte   BEND , c_v+0
  .byte   N92 ,As1 ,v064
@@ -8218,12 +8218,12 @@ Label_0105A4D1:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song09_009:
+MurderousPuppets_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_0105A516:
  .byte   VOICE , 127
- .byte   VOL , 54*song09_mvl/mxv
+ .byte   VOL , 54*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+0
  .byte   BEND , c_v+0
  .byte   N15 ,Ds1 ,v116
@@ -8713,12 +8713,12 @@ Label_0105A720:
 
 @**************** Track 10 (Midi-Chn.9) ****************@
 
-song09_010:
+MurderousPuppets_010:
 @  #10 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_0105A792:
  .byte   VOICE , 62
- .byte   VOL , 36*song09_mvl/mxv
+ .byte   VOL , 36*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+0
  .byte   BEND , c_v+0
  .byte   W96
@@ -8904,12 +8904,12 @@ Label_0105A80E:
 
 @**************** Track 11 (Midi-Chn.10) ****************@
 
-song09_011:
+MurderousPuppets_011:
 @  #11 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_0105A862:
  .byte   VOICE , 62
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v-32
  .byte   BEND , c_v+0
  .byte   W96
@@ -9108,12 +9108,12 @@ Label_0105A8B9:
 
 @**************** Track 12 (Midi-Chn.11) ****************@
 
-song09_012:
+MurderousPuppets_012:
 @  #12 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_0105A936:
  .byte   VOICE , 62
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+32
  .byte   BEND , c_v+0
  .byte   W96
@@ -9323,12 +9323,12 @@ Label_0105A998:
 
 @**************** Track 13 (Midi-Chn.12) ****************@
 
-song09_013:
+MurderousPuppets_013:
 @  #13 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_0105AA12:
  .byte   VOICE , 38
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+0
  .byte   BEND , c_v+0
  .byte   W96
@@ -9563,12 +9563,12 @@ Label_0105AAC9:
 
 @**************** Track 14 (Midi-Chn.13) ****************@
 
-song09_014:
+MurderousPuppets_014:
 @  #14 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , MurderousPuppets_key+0
 Label_0105AB36:
  .byte   VOICE , 4
- .byte   VOL , 34*song09_mvl/mxv
+ .byte   VOL , 34*MurderousPuppets_mvl/mxv
  .byte   PAN , c_v+0
  .byte   BEND , c_v+0
  .byte   W96
@@ -9887,27 +9887,27 @@ Label_0105AB6A:
 @******************************************************@
 	.align	2
 
-song09:
+MurderousPuppets:
 	.byte	14	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	MurderousPuppets_pri	@ Priority
+	.byte	MurderousPuppets_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	MurderousPuppets_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
-	.word	song09_007
-	.word	song09_008
-	.word	song09_009
-	.word	song09_010
-	.word	song09_011
-	.word	song09_012
-	.word	song09_013
-	.word	song09_014
+	.word	MurderousPuppets_001
+	.word	MurderousPuppets_002
+	.word	MurderousPuppets_003
+	.word	MurderousPuppets_004
+	.word	MurderousPuppets_005
+	.word	MurderousPuppets_006
+	.word	MurderousPuppets_007
+	.word	MurderousPuppets_008
+	.word	MurderousPuppets_009
+	.word	MurderousPuppets_010
+	.word	MurderousPuppets_011
+	.word	MurderousPuppets_012
+	.word	MurderousPuppets_013
+	.word	MurderousPuppets_014
 
 	.end

@@ -44,6 +44,7 @@ SoundRoomEntry(Song_InnocenceGlitched, SongTitle_InnocenceGlitched, SourceTitle_
 SoundRoomEntry(Song_DyedInBlood, SongTitle_DyedInBlood, SourceTitle_EtrianOdyssey,26)
 SoundRoomEntry(Song_HeroicStruggle, SongTitle_HeroicStruggle, SourceTitle_LiveALive,6)
 SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
+SoundRoomEntry(Song_ThirtyNinety, SongTitle_ThirtyNinety, SourceTitle_TickTickBoom,46)
 SoundRoomEntry(Song_IsleUntoThyself, SongTitle_IsleUntoThyself, SourceTitle_MiracleMusical,43)
 SoundRoomEntry(Song_HeavyArmoredCorps, SongTitle_HeavyArmoredCorps, SourceTitle_BerwickSaga,36)
 SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)
@@ -51,6 +52,8 @@ SoundRoomEntry(Song_ArmorCladFaith, SongTitle_ArmorCladFaith, SourceTitle_Guilty
 SoundRoomEntry(Song_ModernDayOuroboros, SongTitle_ModernDayOuroboros, SourceTitle_LisaThePointless,28)
 SoundRoomEntry(Song_NoOneIsAlone, SongTitle_NoOneIsAlone, SourceTitle_IntoTheWoods,15)
 //somewhere probably player phase
+SoundRoomEntry(Song_SlowDancingInTheDark, SongTitle_SlowDancingInTheDark, SourceTitle_Joji,45)
+SoundRoomEntry(Song_Maps, SongTitle_Maps, SourceTitle_YeahYeahYeahs,48)
 SoundRoomEntry(Song_VariationsOnACloud, SongTitle_VariationsOnACloud, SourceTitle_MiracleMusical,41)
 SoundRoomEntry(Song_NopeYoureTooLateImAlreadyDead, SongTitle_NopeYoureTooLateImAlreadyDead, SourceTitle_Wifiskeleton,42)
 SoundRoomEntry(Song_LuckyBreak, SongTitle_LuckyBreak, SourceTitle_RhythmDoctor,11)
@@ -68,6 +71,7 @@ SoundRoomEntry(Song_EchoingLibrary, SongTitle_EchoingLibrary, SourceTitle_Etrian
 SoundRoomEntry(Song_ExcavationWorkersQuarters, SongTitle_ExcavationWorkersQuarters, SourceTitle_SMT4,18)
 SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOdyssey5,9)
 SoundRoomEntry(Song_CyclopeanHaunt, SongTitle_CyclopeanHaunt, SourceTitle_EtrianOdyssey3,35)
+SoundRoomEntry(Song_MurderousPuppets, SongTitle_MurderousPuppets, SourceTitle_FE12,47)
 //combat
 SoundRoomEntry(Song_InitialStrike, SongTitle_InitialStrike, SourceTitle_EtrianOdyssey,25)
 SoundRoomEntry(Song_InspectingTheResoundingWeapons, SongTitle_InspectingTheResoundingWeapons, SourceTitle_EtrianOdyssey2,32)
@@ -84,6 +88,7 @@ SoundRoomEntry(Song_OohWilfre, SongTitle_OohWilfre, SourceTitle_DrawnToLife2,14)
 SoundRoomEntry(Song_Salem, SongTitle_Salem, SourceTitle_DrawnToLife2,13)
 SoundRoomEntry(Song_CherryTreesAndWings, SongTitle_CherryTreesAndWings, SourceTitle_EtrianOdyssey2,17)
 SoundRoomEntry(Song_PandemonicPlanet, SongTitle_PandemonicPlanet, SourceTitle_Touhou,22)
+SoundRoomEntry(Song_WiseWords, SongTitle_WiseWords, SourceTitle_Deltarune,44)
 SoundRoomEntry(Song_FinaleMHE, SongTitle_FinaleMHE, SourceTitle_MaybeHappyEnding,39)
 //death and game over
 SoundRoomEntry(Song_NameEntry, SongTitle_NameEntry, SourceTitle_Persona,20)

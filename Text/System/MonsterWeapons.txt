@@ -86,6 +86,13 @@ Atrocity Sc.[X]
 Truly abominable monster scales.[N]
 Base Poison Affliction Rate: 250%.[X]
 
+##Name_Hopebringer
+Hopebringer[X]
+##Desc_Hopebringer ^
+A legendary spear of hope and light.[N]
+Grants +20 to all non-Mov/Con stats.[N]
+Base Full Bind Affliction Rate: 60%.[X]
+
 ##Name_ScissorWrath
 Scsr. Wrath[X]
 ##Desc_ScissorWrath ^

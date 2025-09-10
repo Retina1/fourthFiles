@@ -6,6 +6,58 @@
 
 //black knife for drowning hollows or worldcore battle theme
 
+
+//0x9 - Distant Roads
+#define Song_WiseWords 0x1
+{
+SongTable(Song_WiseWords,WiseWords,1)
+#include "songs/WiseWords.event"
+}
+//0x9 - Distant Roads
+#define Song_SlowDancingInTheDark 0x2
+{
+SongTable(Song_SlowDancingInTheDark,SlowDancingInTheDark,1)
+#include "songs/SlowDancingInTheDark.event"
+}
+//0x9 - Distant Roads
+#define Song_ThirtyNinety 0x3
+{
+SongTable(Song_ThirtyNinety,ThirtyNinety,1)
+#include "songs/ThirtyNinety.event"
+}
+//0x9 - Distant Roads
+#define Song_Maps 0x4
+{
+SongTable(Song_Maps,Maps,1)
+#include "songs/Maps.event"
+}
+//0x9 - Distant Roads
+#define Song_MurderousPuppets 0x5
+{
+SongTable(Song_MurderousPuppets,MurderousPuppets,1)
+#include "songs/MurderousPuppets.event"
+}
+//slots to use
+/*
+//0x9 - Distant Roads
+#define Song_TheFirstCampaign 0x6
+{
+SongTable(Song_TheFirstCampaign,TheFirstCampaign,1)
+#include "songs/TheFirstCampaign.event"
+}
+//0x9 - Distant Roads
+#define Song_TheFirstCampaign 0x7
+{
+SongTable(Song_TheFirstCampaign,TheFirstCampaign,1)
+#include "songs/TheFirstCampaign.event"
+}
+//0x9 - Distant Roads
+#define Song_TheFirstCampaign 0x8
+{
+SongTable(Song_TheFirstCampaign,TheFirstCampaign,1)
+#include "songs/TheFirstCampaign.event"
+}
+*/
 //0x9 - Distant Roads
 #define Song_TheFirstCampaign 0x9
 {

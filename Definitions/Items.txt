@@ -141,6 +141,17 @@ Belladonna
 ToxicClaw
 Furysong
 SealGleam
+ScissorWrath 0x99
+EnemyWatching
+AtrocityScales
+Voltage
+Frigid
+Searing
+Nova
+Antimatter
+Divinity
+RootCyclone
+Hopebringer
 Vulnerary 0xC8
 Elixir
 Medica

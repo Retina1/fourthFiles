@@ -42,6 +42,7 @@ between stats and growths.[X]
 
 #include "City/CityChapter02.txt"
 #include "City/CityChapter03.txt"
+#include "City/CityStratum1.txt"
 #include "City/CityGeneral.txt"
 #include "City/Market.txt"
 

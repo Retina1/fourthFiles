@@ -1,27 +1,27 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	WiseWords_grp, voicegroup000
+	.equ	WiseWords_pri, 0
+	.equ	WiseWords_rev, 0
+	.equ	WiseWords_mvl, 127
+	.equ	WiseWords_key, 0
+	.equ	WiseWords_tbs, 1
+	.equ	WiseWords_exg, 0
+	.equ	WiseWords_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	WiseWords
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+WiseWords_001:
 @  #01 @000   ----------------------------------------
- .byte   VOL , 61*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 61*WiseWords_mvl/mxv
+ .byte   KEYSH , WiseWords_key+0
 Label_F7AAF4:
- .byte   TEMPO , 90*song09_tbs/2
+ .byte   TEMPO , 90*WiseWords_tbs/2
  .byte   VOICE , 24
  .byte   N48 ,Gn2 ,v052
  .byte   W48
@@ -109,10 +109,10 @@ Label_F7AAF4:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+WiseWords_002:
 @  #02 @000   ----------------------------------------
- .byte   VOL , 61*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 61*WiseWords_mvl/mxv
+ .byte   KEYSH , WiseWords_key+0
 Label_F7AB6C:
  .byte   VOICE , 105
  .byte   N96 ,Dn1 ,v012
@@ -169,15 +169,15 @@ Label_F7AB6C:
 @******************************************************@
 	.align	2
 
-song09:
+WiseWords:
 	.byte	2	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	WiseWords_pri	@ Priority
+	.byte	WiseWords_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	WiseWords_grp
     
-	.word	song09_001
-	.word	song09_002
+	.word	WiseWords_001
+	.word	WiseWords_002
 
 	.end

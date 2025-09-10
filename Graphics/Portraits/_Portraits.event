@@ -20,7 +20,12 @@ ALIGN 4
 NelsonDMP:
 #incbin "dmps/mentholNelson.dmp"
 //do exceed math
-setMugEntry(NelsonMug,NelsonDMP,2,6,2,4)
+setMugEntryExtend(NelsonMug,NelsonDMP,2,6,2,4, 6,(-2), 0,0)
+ALIGN 4
+TychoDMP:
+#incbin "dmps/halcyonTycho.dmp"
+//do exceed math
+setMugEntryExtend(TychoMug,TychoDMP,2,5,2,3, 0,2, 0,0)
 
 ALIGN 4
 //retina
@@ -95,6 +100,12 @@ ALIGN 4
 RatatoskrDMP:
 #incbin "dmps/diesRatatoskr.dmp"
 setMugEntry(RatatoskrMug,RatatoskrDMP,4,6,4,4)
+
+ALIGN 4
+//grexius
+HugoDMP:
+#incbin "dmps/grexiusHugo.dmp"
+setMugEntry(HugoMug,HugoDMP,6,4,6,2)
 
 ALIGN 4
 //kura

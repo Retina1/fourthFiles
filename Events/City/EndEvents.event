@@ -7,3 +7,8 @@ Chapter3CityEnd:
 MUSC Song_OohWilfre
 CleanTextNoMap(0x0, City03_EndText)
 ENDA
+
+Stratum1CityEnd:
+MUSC Song_OohWilfre
+CleanTextNoMap(0x0, CityS1_EndText)
+ENDA

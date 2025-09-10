@@ -4,6 +4,17 @@ You worthless[...] There'll[N]
 be no[...] peace[...] now[...][AN][CloseEyes]
 Belvarus[...] shall[...][A][X]
 
+##C3HelmanDeath
+[MidRight][Helman]
+Damn[...] it[...][AN]
+Didn't wanna[...] prove[N]
+that bastard[...] right[...][AN][CloseEyes][Clear][Close][Lucien]
+You worthless[...][AN]
+Guildleague! My finest[N]
+man is dead![AN]
+Your fault! The deal's[N]
+off, you[...] trash![A][X]
+
 ##Chapter3_Ending_1
 [FarLeft][Benthus][Left][Nathan][MidRight][Lucien]
 Aha! I'm[...] alive![AN]
@@ -114,6 +125,18 @@ bought's all in order.[AN][FarLeft][Clear][Right][Clear][FarRight][Clear][Left][
 an adventurer.[A] That's what the[N]
 Guildmaster said.[A] [...]I'll make[N]
 him proud. I'll make Hedge proud.[A][X]
+
+##Chapter3_HelmanAutoRecruit
+[MidLeft][Helman]
+Whew[...] They're makin' good[N]
+progress already.[AN]
+Coordinated, sane leadership[...][AN]
+Think I might give them a bit[N]
+of a hand.[A] Sorry, Lucien.[AN]
+Look after yourself.[AN][Smile]
+Sure that scroll'll keep you[N]
+safe if nothing else.[AN]
+But I think I'm movin' up.[A][X]
 
 ##Chapter3_NathanHelmanRecruit
 [MidLeft][Nathan][MidRight][Helman]

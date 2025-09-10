@@ -2,6 +2,10 @@
 
 #include "TableDefinitions.event"
 
+#include "BuffsDebuffs\BuffTable.event"
+
+#include "BuffsDebuffs\DebuffTable.event"
+
 #include "ChapterData\ChapterData.event"
 
 #include "CharacterClass\CharacterTable.event"
