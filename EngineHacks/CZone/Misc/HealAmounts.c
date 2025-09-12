@@ -33,6 +33,8 @@ void ChapterChangeUnitCleanup(void) {
             unit->isLegBound = 0;
             unit->isArmBound = 0;
             unit->bindDuration = 0;
+			
+			UnitClearBuffsDebuffs(unit);
 
             if (unit->state & US_NOT_DEPLOYED)
                 unit->state = unit->state | US_BIT21;
@@ -76,6 +78,8 @@ void ResetAllPlayerUnitState(void)
         unit->isLegBound = 0;
         unit->isArmBound = 0;
         unit->bindDuration = 0;
+		
+		UnitClearBuffsDebuffs(unit);
 		
         unit->state &=
             US_DEAD | US_NOT_DEPLOYED | US_GROWTH_BOOST |
@@ -153,6 +157,11 @@ void ExecStandardHeal(ProcPtr proc) {
         GetUnit(gActionData.subjectIndex)->items[gActionData.itemSlotIndex]
     );
 	}
+	
+	//panacaea buff is id 8
+	if (UNIT_HAS_SKILL(GetUnit(gActionData.subjectIndex),MED,skill_131)){
+		UnitApplyBuff(GetUnit(gActionData.targetIndex),8);
+	}
 
     AddUnitHp(GetUnit(gActionData.targetIndex), amount);
 
@@ -195,6 +204,13 @@ void ExecFortify(ProcPtr proc) {
 			AddUnitHp(GetUnit(GetTarget(i)->uid), amount);
 		}
     }
+	
+	if (UNIT_HAS_SKILL(GetUnit(gActionData.subjectIndex),MED,skill_131)){
+		for (i = 0; i < targetCount; i++) {
+			UnitApplyBuff(GetUnit(gActionData.targetIndex),8);
+		}
+    }
+	
 
     BattleApplyItemEffect(proc);
     BeginBattleAnimations();

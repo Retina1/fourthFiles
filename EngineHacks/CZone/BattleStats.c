@@ -290,11 +290,17 @@ void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defe
 	//repurpose statusbonuses func for buffs and debuffs	
 	//ComputeBattleUnitStatusBonuses(attacker);
 	ApplyPassiveSkills(attacker, defender);
+	
+	BattleApplyUnitBuffsDebuffs(attacker, defender);
+	
 	ApplyPicnicMode(attacker);
 }
 
 void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	ApplyBothSidesSkills(attacker, defender);
+	
+	BattleApplyUnitBuffsDebuffsBothSides(attacker, defender);
+	
     ComputeBattleUnitEffectiveHitRate(attacker, defender);
     ComputeBattleUnitEffectiveCritRate(attacker, defender);
     ComputeBattleUnitSilencerRate(attacker, defender);

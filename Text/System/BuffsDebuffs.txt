@@ -1,0 +1,32 @@
+##VanguardBuffLabel
+Vanguard[X]
+##VanguardBuffDesc
+1.2x Atk/AS,[N]
+.8x Def.[X]
+
+##NaturalLeaderBuffLabel
+Natural Ldr.[X]
+##NaturalLeaderBuffDesc
+1.2x Atk/AS.[X]
+
+##BerserkerVowBuffLabel
+Berserk. Vow[X]
+##BerserkerVowBuffDesc1
+1.4x Atk.[X]
+##BerserkerVowBuffDesc2
+1.8x Atk.[X]
+##BerserkerVowBuffDesc3
+2.4x Atk.[X]
+
+##SureAimBuffLabel
+Sure Aim[X]
+##SureAimBuffDesc1
+1.2x Hit/Luc.[X]
+##SureAimBuffDesc2
+1.5x Hit/Luc.[X]
+
+##PanacaeaBuffLabel
+Panacea[X]
+##PanacaeaBuffDesc
+Restore 20% HP[N]
+at turn's start.[X]

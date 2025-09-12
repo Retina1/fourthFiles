@@ -32,6 +32,7 @@ between stats and growths.[X]
 #include "System/CampaignCustomizers.txt"
 #include "System/DeathQuotes.txt"
 #include "System/Guide.txt"
+#include "System/BuffsDebuffs.txt"
 
 #include "Chapters/ChapterNames.txt"
 #include "Chapters/FloorTitles.txt"

@@ -34,6 +34,7 @@ ldr r0,=MemorySlotC
 str r2,[r0]
 
 FixSRAMHeader: @now we have to restore the header or save data will be wiped on reset
+@ this is not fucking working
 mov r0,#0x41
 strb r0,[r1]
 mov r0,#0x47
@@ -50,30 +51,26 @@ cmp r2,#1 @1 if we're using mGBA, 0 otherwise
 beq PizzaboyTest
 
 
-@ no$gba: bad dma transfer behavior
-@ this also holds true for VBA so that gets a second check after this
-@edited from a thing leonarth wrote for minish cap rando
-@first we do a dma transfer from valid memory to valid memory
-ldr	r4,=#0x40000C8
-ldr	r0,=#0x8000000
-ldr	r1,=#0x2000000
-mov	r2,#8
-str	r0,[r4]
-str	r1,[r4,#4]
-strh	r2,[r4,#8]
-ldrh	r5,=#0x8000
-strh	r5,[r4,#10]
-@then we do a dma transfer from invalid memory to valid memory
-ldr	r0,=#0x0000000
-str	r0,[r4]
-strh	r5,[r4,#10]
-@and now we check if the result was 0, if so we are dealing with a bad emulator
-ldr	r0,=#0x2000000
-ldr	r1,[r0]
-cmp	r1,#0
-bne	CheckVBA
+@ no$gba: this
+nocash:
+        @ THUMB 14: Push / pop do not align base
+        mov     r0, sp
+        mov     r1, sp
+        add     r1, #1
+        mov     sp, r1
+        push    {r2, r3}
+        pop     {r2, r3}
+        mov     r2, sp
+        mov     sp, r0
+        sub     r2, #1
+        cmp     r2, r0
+        bne     nocashfail
 
-@we're using no$ (or VBA!)
+        b       CheckVBA
+
+nocashfail:
+
+@we're using no$
 mov r2,#2 
 ldr r0,=MemorySlotC
 str r2,[r0]
@@ -81,6 +78,7 @@ str r2,[r0]
 CheckVBA:
 
 @if this doesnt work check the test rom around 8001A90
+@is this what breaks on 3ds?
 ldr r1,=#0x4000008
 ldr r0,=#0xFFFFFFFF
 strh r0,[r1]
@@ -102,6 +100,7 @@ MyBoyTest:
 @ Ignore OAM byte stores
 mov     r0, #1
 ldr     r1, =#0x07000000
+ldr     r3, [r1, #0x10]
 strb    r0, [r1, #0x10]
 ldr     r0, [r1, #0x10]
 cmp     r0, #1
@@ -114,6 +113,8 @@ ldr r0,=MemorySlotC
 str r2,[r0]
 
 PizzaboyTest:
+@ first fix up oam
+str     r3, [r1, #0x10]
 @ THUMB 1 Arithmetic shift right special
 mov     r0, #1
 asr     r0, #32

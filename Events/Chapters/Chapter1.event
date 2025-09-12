@@ -192,7 +192,7 @@ BeginningScene:
 ENUT Chapter2DoneFlag //for guide purposes
 EVBIT_MODIFY 4
 EVBIT_F 2
-CALL EmulatorCheck
+//CALL EmulatorCheck
 SetBackground(0x35)
 CALL CampaignCustomizers
 FADI 16

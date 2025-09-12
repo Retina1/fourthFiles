@@ -163,6 +163,75 @@ int Apply255Cap(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
+int ApplyLucBuff(u8 stat, struct Unit* unit) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	if (entry->buff1) {
+		stat = stat * BuffEffectsTable[entry->buff1].lucMul / BuffEffectsTable[entry->buff1].lucDiv;
+	}
+	if (entry->buff2) {
+		stat = stat * BuffEffectsTable[entry->buff2].lucMul / BuffEffectsTable[entry->buff2].lucDiv;
+	}
+	if (entry->buff3) {
+		stat = stat * BuffEffectsTable[entry->buff3].lucMul / BuffEffectsTable[entry->buff3].lucDiv;
+	}
+	if (entry->debuff1) {
+		stat = stat * DebuffEffectsTable[entry->debuff1].lucMul / DebuffEffectsTable[entry->debuff1].lucDiv;
+	}
+	if (entry->debuff2) {
+		stat = stat * DebuffEffectsTable[entry->debuff2].lucMul / DebuffEffectsTable[entry->debuff2].lucDiv;
+	}
+	if (entry->debuff3) {
+		stat = stat * DebuffEffectsTable[entry->debuff3].lucMul / DebuffEffectsTable[entry->debuff3].lucDiv;
+	}
+	return stat;
+}
+
+int ApplyDefBuff(u8 stat, struct Unit* unit) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	if (entry->buff1) {
+		stat = stat * BuffEffectsTable[entry->buff1].defMul / BuffEffectsTable[entry->buff1].defDiv;
+	}
+	if (entry->buff2) {
+		stat = stat * BuffEffectsTable[entry->buff2].defMul / BuffEffectsTable[entry->buff2].defDiv;
+	}
+	if (entry->buff3) {
+		stat = stat * BuffEffectsTable[entry->buff3].defMul / BuffEffectsTable[entry->buff3].defDiv;
+	}
+	if (entry->debuff1) {
+		stat = stat * DebuffEffectsTable[entry->debuff1].defMul / DebuffEffectsTable[entry->debuff1].defDiv;
+	}
+	if (entry->debuff2) {
+		stat = stat * DebuffEffectsTable[entry->debuff2].defMul / DebuffEffectsTable[entry->debuff2].defDiv;
+	}
+	if (entry->debuff3) {
+		stat = stat * DebuffEffectsTable[entry->debuff3].defMul / DebuffEffectsTable[entry->debuff3].defDiv;
+	}
+	return stat;
+}
+
+int ApplyMovBuff(u8 stat, struct Unit* unit) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	if (entry->buff1) {
+		stat = stat + BuffEffectsTable[entry->buff1].movMod;
+	}
+	if (entry->buff2) {
+		stat = stat + BuffEffectsTable[entry->buff2].movMod;
+	}
+	if (entry->buff3) {
+		stat = stat + BuffEffectsTable[entry->buff3].movMod;
+	}
+	if (entry->debuff1) {
+		stat = stat - DebuffEffectsTable[entry->debuff1].movMod;
+	}
+	if (entry->debuff2) {
+		stat = stat - DebuffEffectsTable[entry->debuff2].movMod;
+	}
+	if (entry->debuff3) {
+		stat = stat - DebuffEffectsTable[entry->debuff3].movMod;
+	}
+	return stat;
+}
+
 int ApplyArmBind(u8 stat, struct Unit* unit) {
 	if (unit->isArmBound == 1){
 		stat = stat/2;
@@ -193,12 +262,38 @@ int ApplyCrinkleGloveSpd(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
+
+long long ClassSkillLucBoost(u8 stat, struct Unit* unit) {
+	//add
+	
+	//mul
+	stat = ApplyCurateCalmingPresence(stat,unit);
+	//apply debiru axe last
+	stat = ApplyLucBuff(stat,unit);
+	stat = ApplyDevilAxeZero(stat,unit);
+	stat = Apply255Cap(stat,unit);
+	union {
+		long long asLongLong;
+		struct {
+			u32 stat;
+			struct Unit* unit;
+		};
+	} result;
+	
+	result.stat = stat;
+	result.unit = unit;
+	
+	return result.asLongLong;
+	
+}
+
 long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
 	//flat boosts first
 	stat = ApplySwordfighterWeaponParry(stat,unit);
 	//then multipliers
 	stat = ApplyKnightIronWall(stat,unit);
 	stat = ApplySkyKnightSkySquadronDefense(stat,unit);
+	stat = ApplyDefBuff(stat,unit);
 	
 	//picnic
 	int allegiance = (unit->index & 0xC0);
@@ -230,29 +325,6 @@ long long ClassSkillResOnlyBoost(u8 stat, struct Unit* unit) {
 	//then multipliers
 	stat = ApplyCurateCalmingPresence(stat,unit);
 
-	//apply debiru axe last
-	stat = ApplyDevilAxeZero(stat,unit);
-	stat = Apply255Cap(stat,unit);
-	union {
-		long long asLongLong;
-		struct {
-			u32 stat;
-			struct Unit* unit;
-		};
-	} result;
-	
-	result.stat = stat;
-	result.unit = unit;
-	
-	return result.asLongLong;
-	
-}
-
-long long ClassSkillLucBoost(u8 stat, struct Unit* unit) {
-	//add
-	
-	//mul
-	stat = ApplyCurateCalmingPresence(stat,unit);
 	//apply debiru axe last
 	stat = ApplyDevilAxeZero(stat,unit);
 	stat = Apply255Cap(stat,unit);
@@ -364,6 +436,7 @@ long long ClassSkillMovBoost(u8 stat, struct Unit* unit) {
 	stat = ApplySkyKnightSaviorRush(stat,unit);
 	stat = ApplyNobleProudNobility(stat,unit);
 	stat = ApplyDuelistFleetfoot(stat,unit);
+	stat = ApplyMovBuff(stat,unit);
 	//mul
 	stat = ApplyLegBind(stat,unit);
 

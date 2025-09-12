@@ -1,3 +1,14 @@
+void ApplyPanacaeaBuffEffect(struct Unit* unit) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	
+	if ((entry->buff1 == 0x8)||(entry->buff2 == 0x8)||(entry->buff3 == 0x8)) {
+		int amount = GetUnitMaxHp(unit)/5;
+		AddUnitHp(unit, amount);
+		//AddTarget(unit->xPos, unit->yPos, unit->index, amount);
+	}
+	
+};
+
 void TickActiveFactionTurn(void) {
     int i;
 
@@ -13,6 +24,8 @@ void TickActiveFactionTurn(void) {
             continue;
 
         //funcs to handle state ticks
+		
+		
 
         if (unit->bindDuration != 0) {
             unit->bindDuration--;
@@ -22,6 +35,9 @@ void TickActiveFactionTurn(void) {
 				 unit->isLegBound    = 0;
 			}
         }
+		
+		ApplyPanacaeaBuffEffect(unit);
+		TickUnitBuffTimer(unit);
 
         if (unit->statusDuration != 0) {
             if (unit->statusIndex != UNIT_STATUS_RECOVER)

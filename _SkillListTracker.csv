@@ -81,8 +81,8 @@ Warlock,Efficiency,Spells cost (Level*2)% fewer uses.,None,1,Passive,,,
 ,,,,,,,,
 Curate,Self-Care,Healing items/spells will always fully heal this unit.,None,1,Passive,X,,
 Medic,Quick Feet,+1 movement when at or below 50% HP.,None,1,Passive,X,,
-,Panacea,Healed allies will recover HP at start of turn for several turns.,Cure 2,1,Passive (Buff),,,Turn Start
-,Scavenger,"If this unit kills, autofulfills any conditional drops.",PROMO,1,Passive,,,
+,Panacea,Healed allies will recover HP at start of turn for several turns.,Cure 2,1,Passive (Buff),X,,Turn Start
+,Scavenger,"If this unit kills, autofulfills any conditional drops.",PROMO,1,Passive,X,,
 ,Calming Presence,Nearby allies get bonus Luck/Res.,None,2,Passive,X,,
 ,Curare,Paralyze a nearby enemy.,None,2,Active (Ailment),,,
 ,Cardio,Passively increases HP/Spd.,Quick Feet 1,2,Passive,X,,
