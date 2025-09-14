@@ -1,8 +1,106 @@
+##NoBuffLabel
+---[X]
+##NoBuffDesc
+No active buff.[X]
+##NoDebuffLabel
+---[X]
+##NoDebuffDesc
+No active debuff.[X]
+
+##RTextBindsDesc
+This unit's current binds.[N]
+All binds share a timer.[X]
+##RTextHeadDesc
+Head binds halve Magic[N]
+and disable command skills.[X]
+##RTextArmsDesc
+Arm binds halve Strength[N]
+and disable critical hits.[X]
+##RTextLegsDesc
+Leg binds zero out Movement[N]
+and disable evasion.[X]
+
+##BraveryLabel
+Bravery Song[X]
+##BraveryDesc1
+1.3x Atk.[X]
+##BraveryDesc2
+1.5x Atk.[X]
+##BraveryDesc3
+1.8x Atk.[X]
+
+##ShelterLabel
+Shelter Song[X]
+##ShelterDesc1
+1.3x Def.[X]
+##ShelterDesc2
+1.5x Def.[X]
+##ShelterDesc3
+1.8x Def.[X]
+
+##MercuryLabel
+Mercury Song[X]
+##MercuryDesc1
+1.3x AS.[X]
+##MercuryDesc2
+1.5x AS.[X]
+##MercuryDesc3
+1.8x AS.[X]
+
+##InsightLabel
+Insight Song[X]
+##InsightDesc1
+1.5x Hit.[X]
+##InsightDesc2
+1.8x Hit.[X]
+##InsightDesc3
+2.5x Hit.[X]
+
+##FleetingLabel
+Fleeting Song[X]
+##FleetingDesc1
++1 Mov.[X]
+##FleetingDesc2
++2 Mov.[X]
+##FleetingDesc3
++3 Mov.[X]
+
+##RallyingFlagLabel
+Rallying Flag[X]
+##RallyingFlagDesc1
+1.1x Atk/Crit.[X]
+##RallyingFlagDesc2
+1.3x Atk/Crit.[X]
+
+##SurvivalFlagLabel
+Survival Flag[X]
+##SurvivalFlagDesc1
+1.1x Avo/Def.[X]
+##SurvivalFlagDesc2
+1.3x Avo/Def.[X]
+
+##ExpertiseFlagLabel
+Expertise Flag[X]
+##ExpertiseFlagDesc1
+1.1x EXP.[X]
+##ExpertiseFlagDesc2
+1.3x EXP.[X]
+
+
+##ImmunizeBuffLabel
+Immunize[X]
+##ImmunizeBuffDesc1
+1.33x Def.[X]
+##ImmunizeBuffDesc2
+2.0x Def.[X]
+##ImmunizeBuffDesc3
+2.66x Def.[X]
+
 ##VanguardBuffLabel
 Vanguard[X]
 ##VanguardBuffDesc
 1.2x Atk/AS,[N]
-.8x Def.[X]
+0.8x Def.[X]
 
 ##NaturalLeaderBuffLabel
 Natural Ldr.[X]

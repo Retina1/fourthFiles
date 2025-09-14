@@ -661,3 +661,16 @@ Take this, then.[X]
 # 0x06CA
 Check skill effects and spend SP[N]
 to strengthen your abilities.[X]
+
+# 0x400
+Binds[X]
+# 0x401
+Head[X]
+# 0x402
+Arms[X]
+# 0x403
+Legs[X]
+# 0x404
+OK[X]
+# 0x405
+BND[X]

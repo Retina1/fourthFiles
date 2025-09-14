@@ -205,7 +205,13 @@ ST_Talk:
 
 
 /*  === PAGE 3 ===  */
-
+ALIGN 4
+#include "BuffDescsRText/Buff1DescGetter.lyn.event"
+#include "BuffDescsRText/Buff2DescGetter.lyn.event"
+#include "BuffDescsRText/Buff3DescGetter.lyn.event"
+#include "BuffDescsRText/Debuff1DescGetter.lyn.event"
+#include "BuffDescsRText/Debuff2DescGetter.lyn.event"
+#include "BuffDescsRText/Debuff3DescGetter.lyn.event"
 
   ALIGN 4
   RText_Page3:
@@ -223,27 +229,50 @@ ST_Talk:
 
   ST_WRank3:
   //RMenu(ST_WRank1,ST_Supports,ST_Name3,ST_WRank4,0x68,0x28,2,WeaponDescLooper,WeaponDescGetter)
-  RMenu(ST_WRank1,0,ST_Name3,ST_WRank4,0x68,0x28,2,CheckIfMoreRanks,NewRankGetter)
+  RMenu(ST_WRank1,ST_Buff1,ST_Name3,ST_WRank4,0x68,0x28,2,CheckIfMoreRanks,NewRankGetter)
 
   ST_WRank4:
   //RMenu(ST_WRank2,ST_Supports,ST_WRank3,0,0xA8,0x28,3,WeaponDescLooper,WeaponDescGetter)
-  RMenu(ST_WRank2,0,ST_WRank3,0,0xA8,0x28,3,CheckIfMoreRanks,NewRankGetter)
+  //RMenu(ST_WRank2,0,ST_WRank3,0,0xA8,0x28,3,CheckIfMoreRanks,NewRankGetter)
+  RMenu(ST_WRank2,ST_Binds,ST_WRank3,0,0xA8,0x28,3,CheckIfMoreRanks,NewRankGetter)
 
   ST_Name3:
-  RMenu(0,ST_Class3,0,ST_WRank1,0x18,0x50,0,NameDescGetter)
+  RMenu(0,ST_Class3,0,ST_Buff1,0x18,0x50,0,NameDescGetter)
   //RMenu(0,ST_Class3,0,ST_WRank1,0x18,0x50,0,HelpBoxCurrentCharInfo)
 
+ST_Buff1:
+  RMenu(ST_WRank3,ST_Buff2,ST_Name3,ST_Binds,0x68,0x38,	0x0,Buff1DescGetter)
+ST_Buff2:
+  RMenu(ST_Buff1,ST_Buff3,ST_Name3,ST_Head,0x68,0x48,	0x0,Buff2DescGetter)
+ST_Buff3:
+  RMenu(ST_Buff2,ST_Debuff1,ST_Name3,ST_Arms,0x68,0x58,	0x0,Buff3DescGetter)
+ST_Debuff1:
+  RMenu(ST_Buff3,ST_Debuff2,ST_Name3,ST_Legs,0x68,0x68,	0x0,Debuff1DescGetter)
+ST_Debuff2:
+  RMenu(ST_Debuff1,ST_Debuff3,ST_Name3,ST_Legs,0x68,0x78,	0x0,Debuff2DescGetter)
+ST_Debuff3:
+  RMenu(ST_Debuff2,0,ST_Name3,ST_Legs,0x68,0x88,	0x0,Debuff3DescGetter)
+
+ST_Binds:
+  RMenu(ST_WRank3,ST_Head,ST_Buff1,0,0xb8,0x38,RTextBindsDesc)
+ST_Head:
+  RMenu(ST_Binds,ST_Arms,ST_Buff2,0,0xb8,0x48,RTextHeadDesc)
+ST_Arms:
+  RMenu(ST_Head,ST_Legs,ST_Buff3,0,0xb8,0x58,RTextArmsDesc)
+ST_Legs:
+  RMenu(ST_Arms,0,ST_Debuff1,0,0xb8,0x68,RTextLegsDesc)
+
   ST_Class3:
-  RMenu(ST_Name3,ST_Level3,0,ST_WRank1,0x6,0x68,0x6E8,ClassDescGetter)
+  RMenu(ST_Name3,ST_Level3,0,ST_Buff1,0x6,0x68,0x6E8,ClassDescGetter)
 
   ST_Level3:
   RMenu(ST_Class3,ST_HP3,0,ST_Exp3,0x6,0x78,0x542)
 
   ST_Exp3:
-  RMenu(ST_Class3,ST_HP3,ST_Level3,ST_WRank1,0x26,0x78,0x543)
+  RMenu(ST_Class3,ST_HP3,ST_Level3,ST_Buff1,0x26,0x78,0x543)
 
   ST_HP3:
-  RMenu(ST_Level3,0,0,ST_WRank1,0x6,0x88,0x544)
+  RMenu(ST_Level3,0,0,ST_Buff1,0x6,0x88,0x544)
 
 
 /*  === PAGE 4 ===  */

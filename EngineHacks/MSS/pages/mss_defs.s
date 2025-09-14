@@ -1,6 +1,6 @@
 .equ MagConGetter, 0x8019284 @defined in the modularstatgetter
 .equ MovGetter, 0x8019224 @defined in the modularstatgetter
-.equ DebuffTable, 0x203f100
+.equ DebuffTable, 0x2026E30
 .equ BufferText, 0x800A240
 .equ DrawText, 0x800443C
 .equ DrawBar, 0x80870BC

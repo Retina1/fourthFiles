@@ -231,10 +231,10 @@ struct Unit
     /* 30 */ u8 statusIndex : 4;
     /* 30 */ u8 statusDuration : 4;
 
-    /* 31 */ u8 isHeadBound : 1;
+    /* 31 */ u8 bindDuration : 5;
+	/* 31 */ u8 isHeadBound : 1;
     /* 31 */ u8 isLegBound : 1;
     /* 31 */ u8 isArmBound : 1;
-    /* 31 */ u8 bindDuration : 5;
 
 	/* 32 */ struct SkillField skills;
 	//hopefully nothing breaks from removing unit leader

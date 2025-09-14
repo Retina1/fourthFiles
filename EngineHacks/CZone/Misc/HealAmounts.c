@@ -9,6 +9,9 @@ void ChapterChangeUnitCleanup(void) {
             if (UNIT_IS_PHANTOM(unit))
                 ClearUnit(unit);
     }
+	
+	//Clear buffs and debuffs
+	ClearAllBuffsDebuffs();
 
     // Clear all non player units (green & red units)
     for (i = 0x41; i < 0xC0; ++i) {
@@ -33,8 +36,6 @@ void ChapterChangeUnitCleanup(void) {
             unit->isLegBound = 0;
             unit->isArmBound = 0;
             unit->bindDuration = 0;
-			
-			UnitClearBuffsDebuffs(unit);
 
             if (unit->state & US_NOT_DEPLOYED)
                 unit->state = unit->state | US_BIT21;

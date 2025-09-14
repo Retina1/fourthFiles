@@ -2,6 +2,23 @@
 // Suspend Expansion
 // hack by CrazyColorz5
 
+DebuffTableAccess:
+  {
+  #define MaxPlayerUnits 62
+  #define MaxEnemyUnits 50
+  #define MaxGreenUnits 20
+  
+  #define PUDebuffTable DebuffTable
+  #define EUDebuffTable "PUDebuffTable + (MaxPlayerUnits*8)"
+  #define GUDebuffTable "EUDebuffTable + (MaxEnemyUnits*8)"
+  #define OUDebuffTable "GUDebuffTable + (MaxGreenUnits*8)"
+  ALIGN 4
+  WORD PUDebuffTable
+  WORD GUDebuffTable
+  WORD EUDebuffTable
+  WORD OUDebuffTable
+  }
+
   {
 
   PUSH

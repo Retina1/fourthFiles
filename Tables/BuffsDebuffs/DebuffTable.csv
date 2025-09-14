@@ -1,5 +1,5 @@
 INLINE DebuffEffectsTable,Name Text,R Text,Duration,Atk Mul,Atk Div,Hit Mul,Hit Div,Avo Mul,Avo Div,Crit Mul,Crit Div,AS Mul,AS Div,Def Mul,Def Div,Luc Mul,Luc Div,Mov Sub
-EmptyDebuff,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+EmptyDebuff,NoDebuffLabel,NoDebuffDesc,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
 GuardBreakDebuff,0,0,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
 PowerBreakDebuff,0,0,2,4,5,1,1,1,1,1,1,1,1,1,1,1,1,0
 AgilityBreakDebuff,0,0,2,1,1,1,1,1,1,1,1,4,5,1,1,1,1,0

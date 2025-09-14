@@ -47,6 +47,14 @@ int GetUnitExpMultiplier(struct Unit* actor, struct Unit* target) {
 	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
 		mult = mult * 6;
 	}
+	
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
+	if ((entry->buff1 == 16)||(entry->buff2 == 16)||(entry->buff3 == 16)) {
+		mult = mult * 11;
+	}
+	if ((entry->buff1 == 17)||(entry->buff2 == 17)||(entry->buff3 == 17)) {
+		mult = mult * 13;
+	}
 		
 
     return mult;
@@ -57,6 +65,13 @@ int GetUnitExpDivisor(struct Unit* actor, struct Unit* target) {
 	int div = 1;
 	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
 		div = div * 5;
+	}
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
+	if ((entry->buff1 == 16)||(entry->buff2 == 16)||(entry->buff3 == 16)) {
+		div = div * 10;
+	}
+	if ((entry->buff1 == 17)||(entry->buff2 == 17)||(entry->buff3 == 17)) {
+		div = div * 10;
 	}
 		
     return div;

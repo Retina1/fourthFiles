@@ -55,7 +55,7 @@
 			cmp		r0, #0x10
 			beq		GoUp
 			
-				@If not going up, go left
+				@If not going up, go left (try down ig)
 				cmp		r0, #0x40
 				bne		GoLeft
 		
@@ -66,7 +66,8 @@
 		
 		GoLeft:
 		mov		r0, r4
-		blh		StatScreen_HelpBoxGoingLeft, r1
+@		blh		StatScreen_HelpBoxGoingLeft, r1
+		blh		StatScreen_HelpBoxGoingDown, r1
 		b		End
 		
 		GoRight:

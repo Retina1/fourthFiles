@@ -188,15 +188,15 @@ void UnitApplyBuff(struct Unit* unit,u8 buffID) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	
 	if (entry->buff3 == buffID) {
-		entry->buff3dur == BuffEffectsTable[buffID].buffDuration;
+		entry->buff3dur = BuffEffectsTable[buffID].buffDuration;
 		return;
 	}
 	else if (entry->buff2 == buffID) {
-		entry->buff2dur == BuffEffectsTable[buffID].buffDuration;
+		entry->buff2dur = BuffEffectsTable[buffID].buffDuration;
 		return;
 	}
 	else if (entry->buff1 == buffID) {
-		entry->buff1dur == BuffEffectsTable[buffID].buffDuration;
+		entry->buff1dur = BuffEffectsTable[buffID].buffDuration;
 		return;
 	}
 	entry->buff3 = entry->buff2;
@@ -218,15 +218,15 @@ void UnitApplyDebuff(struct Unit* unit,u8 buffID) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	
 	if (entry->debuff3 == buffID) {
-		entry->debuff3dur == DebuffEffectsTable[buffID].buffDuration;
+		entry->debuff3dur = DebuffEffectsTable[buffID].buffDuration;
 		return;
 	}
 	else if (entry->debuff2 == buffID) {
-		entry->debuff2dur == DebuffEffectsTable[buffID].buffDuration;
+		entry->debuff2dur = DebuffEffectsTable[buffID].buffDuration;
 		return;
 	}
 	else if (entry->debuff1 == buffID) {
-		entry->debuff1dur == DebuffEffectsTable[buffID].buffDuration;
+		entry->debuff1dur = DebuffEffectsTable[buffID].buffDuration;
 		return;
 	}
 	entry->debuff3 = entry->debuff2;
@@ -278,3 +278,32 @@ void UnitClearBuffsDebuffs(struct Unit* unit) {
 	entry->debuff1dur = 0;
 	
 };
+
+//make kill clear buffs/debuffs
+void UnitKill(struct Unit* unit) {
+	UnitClearBuffsDebuffs(unit);
+    if (UNIT_FACTION(unit) == FACTION_BLUE) {
+        unit->state |= US_DEAD | US_HIDDEN;
+    } else
+        unit->pCharacterData = NULL;
+}
+//clear all buffs/debuffs
+
+void ClearAllBuffsDebuffs() {
+	int i;
+	for (i = 0; i < 62+50+20; i++) {
+	struct DebuffEntry* entry = &gBuffDebuffTable[i];
+	entry->buff3 = 0;
+	entry->buff3dur = 0;
+	entry->buff2 = 0;
+	entry->buff2dur = 0;
+	entry->buff1 = 0;
+	entry->buff1dur = 0;
+	entry->debuff3 = 0;
+	entry->debuff3dur = 0;
+	entry->debuff2 = 0;
+	entry->debuff2dur = 0;
+	entry->debuff1 = 0;
+	entry->debuff1dur = 0;	
+	}
+}
