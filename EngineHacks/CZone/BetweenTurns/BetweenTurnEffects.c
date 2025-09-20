@@ -36,6 +36,7 @@ void TickActiveFactionTurn(void) {
 			}
         }
 		
+		ApplyNobleBoonfulPresence(unit);
 		ApplyPanacaeaBuffEffect(unit);
 		TickUnitBuffTimer(unit);
 
@@ -54,5 +55,17 @@ void TickActiveFactionTurn(void) {
 			}
         }
 
+    }
+	//have to do another loop for buff application whoopsie
+	for (i = gPlaySt.faction + 1; i < gPlaySt.faction + 0x40; ++i) {
+        struct Unit* unit = GetUnit(i);
+
+        if (!UNIT_IS_VALID(unit))
+            continue;
+
+        if (unit->state & (US_UNAVAILABLE | US_RESCUED))
+            continue;
+		
+		ApplySwordfighterNaturalLeader(unit);
     }
 }

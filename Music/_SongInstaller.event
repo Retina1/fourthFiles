@@ -38,19 +38,20 @@ SongTable(Song_MurderousPuppets,MurderousPuppets,1)
 #include "songs/MurderousPuppets.event"
 }
 //slots to use
+
+//0x9 - Distant Roads
+#define Song_Castle 0x6
+{
+SongTable(Song_Castle,Castle,0)
+#include "songs/Castle.event"
+}
+//0x9 - Distant Roads
+#define Song_CursedCathedral 0x7
+{
+SongTable(Song_CursedCathedral,CursedCathedral,1)
+#include "songs/CursedCathedral.event"
+}
 /*
-//0x9 - Distant Roads
-#define Song_TheFirstCampaign 0x6
-{
-SongTable(Song_TheFirstCampaign,TheFirstCampaign,1)
-#include "songs/TheFirstCampaign.event"
-}
-//0x9 - Distant Roads
-#define Song_TheFirstCampaign 0x7
-{
-SongTable(Song_TheFirstCampaign,TheFirstCampaign,1)
-#include "songs/TheFirstCampaign.event"
-}
 //0x9 - Distant Roads
 #define Song_TheFirstCampaign 0x8
 {

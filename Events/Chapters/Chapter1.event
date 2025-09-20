@@ -138,6 +138,14 @@ UNIT
 
 ALIGN 4
 
+
+RatGoodbyeSpeechTest:
+SetBackground(0x35)
+MUSC Song_WiseWords
+SystemText(RatFarewellLetterPart1)
+SystemText(RatFarewellLetterPart2)
+ENDA
+
 //todo - fix
 EmulatorCheck:
 EVBIT_MODIFY 3
@@ -193,6 +201,7 @@ ENUT Chapter2DoneFlag //for guide purposes
 EVBIT_MODIFY 4
 EVBIT_F 2
 //CALL EmulatorCheck
+//CALL RatGoodbyeSpeechTest
 SetBackground(0x35)
 CALL CampaignCustomizers
 FADI 16

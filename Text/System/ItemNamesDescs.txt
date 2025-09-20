@@ -264,7 +264,7 @@ Devil Axe[X]
 A mighty yet baneful cursed axe.[N]
 Zeroes out Def/Res/Luc.[X]
 ##Name_SerratedAxe
-Serrated Axe[X]
+Serrated Ax.[X]
 ##Desc_SerratedAxe ^
 An abominable axe with a gruesome edge.[X]
 ##Name_HandAxe

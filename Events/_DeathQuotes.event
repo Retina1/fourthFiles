@@ -21,6 +21,12 @@ ChapterDeathQuote(Lucien,Chapter3,GameOverFlag,C3LucienDeath)
 ChapterDeathQuote(Helman,Chapter3,GameOverFlag,C3HelmanDeath)
 //c4
 EventDeathQuote(BeastKing,Chapter4,0x2,BeastKingDeathEvent)
+//c5
+ChapterDeathQuote(Xavens,Chapter5,0x0,C5XavensDefeat)
+ChapterDeathQuote(Egil,Chapter5,0x0,C5EgilDefeat)
+ChapterDeathQuote(Harla,Chapter5,0x0,C5HarlaDefeat)
+ChapterDeathQuote(BossSaewynn,Chapter5,0x0,C5SaewynnDefeat)
+
 //major bosses
 AlwaysDeathQuote(BossGuildmaster,0x0,GuildmasterDeath)
 AlwaysDeathQuote(BossGore,0x0,BossGoreDeath)

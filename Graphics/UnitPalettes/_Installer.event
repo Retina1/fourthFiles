@@ -33,6 +33,8 @@ FILL 0xFF * 0x07 // Allocate 0xFF entries for the CharClassTable.
 
 #include "PaletteDefs.event"
 
+//also put bosses here
+
 setPalette(Nathan_Scholar, Nathan_ScholarDMP)
 setPalette(Nathan_Warlock, Nathan_WarlockDMP)
 CharPalette(Nathan,Nathan_Scholar,Scholar,Nathan_Warlock,Warlock)
@@ -53,6 +55,7 @@ Gore_GunnerDMP:
 setPalette(Astarte_Priest, Astarte_PriestDMP)
 setPalette(Astarte_WarMagus, Astarte_WarMagusDMP)
 CharPalette(Astarte,Astarte_Priest,Priest,Astarte_WarMagus,WarMagus)
+CharPalette(BossAstarte,Astarte_Priest,Priest,Astarte_WarMagus,WarMagus)
 ALIGN 4
 Astarte_PriestDMP:
 #incbin "paletteFiles/MainStory/Astarte_Priest.dmp"

@@ -24,7 +24,7 @@ HeroicStruggle_001:
  BYTE   VOICE   100
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   47*HeroicStruggle_mvl/mxv
+ BYTE   VOL   30*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v+3
@@ -694,7 +694,7 @@ HeroicStruggle_002:
  BYTE   VOICE   8
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   34*HeroicStruggle_mvl/mxv
+ BYTE   VOL   20*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v+26
@@ -951,7 +951,7 @@ HeroicStruggle_003:
  BYTE   VOICE   57
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   40*HeroicStruggle_mvl/mxv
+ BYTE   VOL   25*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v-1
@@ -1405,7 +1405,7 @@ HeroicStruggle_004:
  BYTE   VOICE   71
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   30*HeroicStruggle_mvl/mxv
+ BYTE   VOL   15*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v+3
@@ -1614,7 +1614,7 @@ HeroicStruggle_005:
  BYTE   VOICE   13
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   42*HeroicStruggle_mvl/mxv
+ BYTE   VOL   27*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v-20
@@ -1856,7 +1856,7 @@ HeroicStruggle_006:
  BYTE   VOICE   49
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   36*HeroicStruggle_mvl/mxv
+ BYTE   VOL   20*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v+12
@@ -2218,7 +2218,7 @@ HeroicStruggle_007:
  BYTE   VOICE   124
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   54*HeroicStruggle_mvl/mxv
+ BYTE   VOL   35*HeroicStruggle_mvl/mxv
  BYTE   PAN   c_v-1
  BYTE   MODT 0
  BYTE   LFOS 44
@@ -2950,7 +2950,7 @@ HeroicStruggle_008:
  BYTE   VOICE   40
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   36*HeroicStruggle_mvl/mxv
+ BYTE   VOL   20*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v-23
@@ -3312,7 +3312,7 @@ HeroicStruggle_009:
  BYTE   VOICE   61
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   43*HeroicStruggle_mvl/mxv
+ BYTE   VOL   28*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v+6
@@ -3522,7 +3522,7 @@ HeroicStruggle_010:
  BYTE   VOICE   10
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   25*HeroicStruggle_mvl/mxv
+ BYTE   VOL   15*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v+0
@@ -3793,7 +3793,7 @@ HeroicStruggle_011:
  BYTE   VOICE   36
  BYTE   MODT 0
  BYTE   LFOS 44
- BYTE   VOL   51*HeroicStruggle_mvl/mxv
+ BYTE   VOL   32*HeroicStruggle_mvl/mxv
  BYTE   PAN   c_v+8
  BYTE   MODT 0
  BYTE   LFOS 44
@@ -4246,7 +4246,7 @@ HeroicStruggle_012:
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   PAN   c_v-13
- BYTE   VOL   35*HeroicStruggle_mvl/mxv
+ BYTE   VOL   19*HeroicStruggle_mvl/mxv
  BYTE   MODT 0
  BYTE   LFOS 44
  BYTE   N06  Cn1  v072

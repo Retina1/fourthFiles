@@ -164,7 +164,7 @@ HeadBinder
 BlindGas
 StunGas
 PoisonGas
-MuteGas
+CurseGas
 PanicGas
 StoningGas
 AriadneShard

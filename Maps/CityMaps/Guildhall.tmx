@@ -13,7 +13,7 @@
    <property name="MapID" value="GuildhallMapID"/>
    <property name="ObjectType" value="Village1OBJ"/>
    <property name="PaletteID" value="Village1PAL"/>
-   <property name="TileConfig" value="VillageCONFIG"/>
+   <property name="TileConfig" value="GuildhallCONFIG"/>
   </properties>
   <data>
    <tile gid="942"/>

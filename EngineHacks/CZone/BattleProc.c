@@ -14,8 +14,8 @@ void BattleApplyStatus(struct BattleUnit* battleUnit, u8 status) {
 // war fortune - 1.05x odds per magus with 111
 // impure reach - big odds bump for hexers with 141 (additive passive like ailment boost? after resistances?)
 s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender, u8 baseRate) {
-	int attackerLuc = attacker->unit.lck;
-	int defenderLuc = defender->unit.lck;
+	int attackerLuc = GetUnitLuck(&attacker->unit);
+	int defenderLuc = GetUnitLuck(&defender->unit);
 	
 	int baseAtk = attackerLuc + 10;
 	int baseDef = defenderLuc + 10;
@@ -28,6 +28,17 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 			accuracy = accuracy / 2;
 		}
 
+	}
+	
+	u8* unitBuffer = GetUnitsOfAllegiance(&attacker->unit, 1);
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		if (UNIT_HAS_SKILL(other,WMG,skill_111)){
+			accuracy = accuracy * 21/20;
+		}
+		i++;
 	}
 	
 	if (UNIT_HAS_SKILL(&attacker->unit,HEX,promoSkill_141)){
@@ -73,7 +84,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
             break;
 			
         case WPN_EFFECT_POISON:
-            if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE)) {
+			if (currentStatus != UNIT_STATUS_PETRIFY && currentStatus != UNIT_STATUS_CURSE){
 				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 					defender->statusOut = UNIT_STATUS_POISON;
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -85,7 +96,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
             break;
 			
         case WPN_EFFECT_SLEEP:
-			if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE || UNIT_STATUS_POISON)) {
+			if (currentStatus != UNIT_STATUS_PETRIFY  && currentStatus != UNIT_STATUS_CURSE  && currentStatus != UNIT_STATUS_POISON) {
 				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 					defender->statusOut = UNIT_STATUS_SLEEP;
 					//status animation basically
@@ -98,7 +109,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
             break;
 
         case WPN_EFFECT_BERSERK:
-			if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE || UNIT_STATUS_POISON || UNIT_STATUS_SLEEP)) {
+			if (currentStatus != UNIT_STATUS_PETRIFY  && currentStatus != UNIT_STATUS_CURSE  && currentStatus != UNIT_STATUS_POISON  && currentStatus != UNIT_STATUS_SLEEP){
 				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 					defender->statusOut = UNIT_STATUS_BERSERK;
 					//status animation basically
@@ -111,7 +122,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
             break;
 
         case WPN_EFFECT_PARALYZE:
-			if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE || UNIT_STATUS_POISON || UNIT_STATUS_SLEEP || UNIT_STATUS_BERSERK)) {
+			if (currentStatus != UNIT_STATUS_PETRIFY  && currentStatus != UNIT_STATUS_CURSE  && currentStatus != UNIT_STATUS_POISON  && currentStatus != UNIT_STATUS_SLEEP  && currentStatus != UNIT_STATUS_BERSERK) {
 				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 					defender->statusOut = UNIT_STATUS_PARALYZE;
 					//status animation basically
@@ -124,7 +135,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
             break;
 			
         case WPN_EFFECT_BLIND:
-			if (currentStatus != (UNIT_STATUS_PETRIFY || UNIT_STATUS_CURSE || UNIT_STATUS_POISON || UNIT_STATUS_SLEEP || UNIT_STATUS_BERSERK || UNIT_STATUS_PARALYZE)) {
+			if (currentStatus != UNIT_STATUS_PETRIFY  && currentStatus != UNIT_STATUS_CURSE  && currentStatus != UNIT_STATUS_POISON  && currentStatus != UNIT_STATUS_SLEEP  && currentStatus != UNIT_STATUS_BERSERK  && currentStatus != UNIT_STATUS_PARALYZE) {
 				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
 					defender->statusOut = UNIT_STATUS_BLIND;
 					//status animation basically
@@ -222,7 +233,16 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
         if (gBattleStats.damage > defender->unit.curHP){
             gBattleStats.damage = defender->unit.curHP;
 		}
-
+		
+		//ronin indomitable
+		if (UNIT_HAS_SKILL(&defender->unit,RNI,skill_121)){
+			if (defender->unit.curHP == GetUnitMaxHp(&defender->unit)) {
+				if (gBattleStats.damage == defender->unit.curHP) {
+					gBattleStats.damage = defender->unit.curHP - 1;
+				}
+			}
+		}
+		
         defender->unit.curHP -= gBattleStats.damage;
 
         if (defender->unit.curHP < 0){

@@ -15,8 +15,9 @@
 .[A][X]
 
 ##CityS1_Benjamin
-[MidLeft][Nathan][Right][Johanna][FarRight][Benjamin][Right][Smile]
-.[A][X]
+[MidLeft][Nathan][Right][Benjamin][FarRight][Johanna][Right]
+bring up that items above the[N]
+ariadne shard are not here to stay[A][X]
 
 ##CityS1_Bobby
 [MidLeft][Nathan][MidRight][Bobby]
@@ -27,11 +28,9 @@
 .[A][X]
 
 ##CityS1_Bertram
-[MidLeft][Nathan][MidRight][Bertram].[A][X]
-
-##CityS1_PrePreps
-[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+[MidLeft][Nathan][MidRight][Bertram]
 .[A][X]
+
 
 ##CityS1_PostPreps
 [MidLeft][Nathan]
@@ -40,6 +39,48 @@
 ##CityS1_EndText
 [MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
 .[A][X]
+
+##CityS1_PrePreps
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Well done, Nathan.[N]
+And all Hedge, of course.[AN]
+As you've probably picked up on,[N]
+you're not done in the forest.[AN]
+Your next task will be to slay[N]
+the leader of the wolf pack.[AN]
+We've taken to calling it the[N]
+Beast King,[A] and it is[...][N]
+Well, I'll be honest.[AN]
+Your guild won't be the first[N]
+to fight it.[A] And may not be[N]
+the first to fall to it.[AN][MidRight]
+[...][AN][MidLeft]
+I won't sugarcoat it.[AN]
+The Beast King's far stronger[N]
+than anything you've fought.[AN]
+It's the king for a reason.[AN]
+That said, other guilds have[N]
+triumphed, and you can too.[AN][MidRight]
+Wait[...] If other guilds have[N]
+beaten it, how is it[...]?[AN][MidLeft]
+Still alive? Simple. It's not[N]
+the only Beast King.[AN]
+When one falls, another will[N]
+take its place in due time.[AN]
+Just how nature is, really.[AN]
+The strong will rise above to[N]
+create a new order.[AN]
+Anyway, I'd prepare the best[N]
+you possibly can.[AN]
+At the same time, don't overthink[N]
+things too much.[AN][Smile]
+You've come far already.[N]
+Keep making me proud, kid.[AN][Clear][Smile][MidRight]
+I'll[...] try.[AN][CloseEyes]
+[...]I can do this.[N]
+We all can.[AN]
+Just prepare as I[N]
+always have.[A][X]
 
 ##CityS1_Astarte
 [MidLeft][Nathan][MidRight][Astarte]

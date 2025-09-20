@@ -2,6 +2,8 @@
 Defeat all[X]
 ##DefeatBossLabel
 Defeat boss[X]
+##DefeatBossesLabel
+Defeat bosses[X]
 ##SeizeLabel
 Seize[X]
 ##SurviveLabel
@@ -29,8 +31,8 @@ competence![X]
 Defeat all[N]
 monsters![X]
 ##Ch3RoutDesc
-Rout and keep[N]
-Lucien alive![X]
+Keep Lucien &[N]
+Helman alive![X]
 ##Ch4DefeatDesc
 Defeat the[N]
 Beast King![X]
@@ -42,6 +44,15 @@ unknown foe![X]
 Take your[N]
 revenge.[X]
 
+##Ch13BossesDesc
+Bring upon[N]
+Belvarus's end.[X]
+##Ch14EscapeDesc
+Live to fight[N]
+another day.[X]
+##Ch15SurviveDesc
+Hold fast to[N]
+your courage.[X]
 ##Ch16KillDesc
 Bring upon[N]
 Asketa's end.[X]
@@ -49,6 +60,14 @@ Asketa's end.[X]
 ##Ch20KillDesc
 There's no[N]
 going back.[X]
+
+##EndgameAKillDesc
+Kill Rana and[N]
+end Endbringer.[X]
+
+##EndgameBKillDesc
+Kill the[N]
+Guildmaster.[X]
 
 ##Ch18CRoutDesc
 Finish off[N]

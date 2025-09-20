@@ -128,3 +128,13 @@ Panacea[X]
 ##PanacaeaBuffDesc
 Restore 20% HP[N]
 at turn's start.[X]
+
+
+##StonardBuffLabel
+Stonard[X]
+##StonardBuffDesc
+1.5x Def.[X]
+##BravantBuffLabel
+Bravant[X]
+##BravantBuffDesc
+1.5x Atk.[X]

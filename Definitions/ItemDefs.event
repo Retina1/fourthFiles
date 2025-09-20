@@ -164,7 +164,7 @@
 #define BlindGas 0xD1
 #define StunGas 0xD2
 #define PoisonGas 0xD3
-#define MuteGas 0xD4
+#define CurseGas 0xD4
 #define PanicGas 0xD5
 #define StoningGas 0xD6
 #define AriadneShard 0xD7

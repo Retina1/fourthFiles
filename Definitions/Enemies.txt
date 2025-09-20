@@ -1,4 +1,5 @@
-Quarry 0xd2
+BossSaewynn 0xd1
+Quarry
 BeastKing
 Monk
 BossAstarte

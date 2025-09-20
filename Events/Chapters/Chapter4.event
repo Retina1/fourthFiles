@@ -58,6 +58,11 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 CutsceneUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [5,17] 0x0 0x0 0x1 REDA5R15 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [3,17] 0x0 0x0 0x1 REDA3R15 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [7,17] 0x0 0x0 0x1 REDA7R15 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [4,17] 0x0 0x0 0x1 REDA4R15 [0x0] NoAI
+UNIT Benthus 0x0 0x1 Level(1,Ally,0) [6,17] 0x0 0x0 0x1 REDA6R15 [0x0] NoAI
 UNIT
 
 EnemyUnits:
@@ -78,6 +83,10 @@ UNIT
 //wolfskin uses fates wolf
 //wolfking uses berserker wolf
 
+CutsceneWolf:
+UNIT FOEUnit Triwolf 0x0 Level(5,Enemy,1) [5,9] 0x0 0x0 0x1 REDA4R12 [FrigidBite] AttackInRangeAI
+UNIT
+
 RatJoin:
 UNIT Rat 0x0 0x0 Level(3,Ally,0) [4,14] 0x0 0x0 0x0 0x0 [Staff,PoisonGas] NoAI
 UNIT
@@ -87,12 +96,35 @@ ALIGN 4
 
 BeginningScene:
 DifficultySwapper
+//guildleague map scene
+MUSC 0x0
+Text(FillerDialogue) //guildleague scene, rat shows interest and sneaks off in map cutscene
 LOAD1 0x1 EnemyUnits; ENUN
-//SetUnitStatline(MonsterBoss,27,12,3,13,15,1,6,5)
-//SetUnitWEXP(MonsterBoss,0,0,0,0,0)
-Text(Chapter3_Opening_1)
+LOAD1 0x1 CutsceneUnits; ENUN
+MUSC 0x0
+Text(FillerDialogue) // observation, state objective
 CallPreps
+FADU 16
+CAM1 [5,13]
+LOAD1 0x1 CutsceneWolf; ENUN
+MUSC Song_PandemonicPlanet
+FlashCursor(FOEUnit,30)
+Text(FillerDialogue) //nathan comments on wolf, gets paper thrown at him
+MUSC 0x0
+STAL 15
+SystemText(RatCh4Letter)
+STAL 15
+WARPIN [4,14]
 LOAD1 0x1 RatJoin
+ENDWARP
+STAL 30
+//make this bit fancier
+FlashCursor(FOEUnit,60)
+STAL 15
+SFXKillUnit(FOEUnit)
+STAL 45
+MUSC Song_FaithIsMyPillar
+Text(FillerDialogue) //nathan comments on wolf, gets paper thrown at him
 //starting skills
 //rat - level 1 torpor/madness/hex
 LevelUpSkill(Rat,7)

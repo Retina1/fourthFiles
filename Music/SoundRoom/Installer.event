@@ -65,6 +65,7 @@ SoundRoomEntry(Song_WhyLove, SongTitle_WhyLove, SourceTitle_MaybeHappyEnding,38)
 SoundRoomEntry(Song_DarkCave, SongTitle_DarkCave, SourceTitle_PokemonGSC,40)
 //dungeon
 SoundRoomEntry(Song_EverScarletForest, SongTitle_EverScarletForest, SourceTitle_EtrianOdyssey2,16)
+SoundRoomEntry(Song_CursedCathedral, SongTitle_CursedCathedral, SourceTitle_RednGreeen,50)
 SoundRoomEntry(Song_SandyBarrens, SongTitle_SandyBarrens, SourceTitle_EtrianOdyssey,34)
 SoundRoomEntry(Song_FrozenGrounds, SongTitle_FrozenGrounds, SourceTitle_EtrianOdyssey2,24)
 SoundRoomEntry(Song_EchoingLibrary, SongTitle_EchoingLibrary, SourceTitle_EtrianOdyssey4,37)
@@ -78,10 +79,10 @@ SoundRoomEntry(Song_InspectingTheResoundingWeapons, SongTitle_InspectingTheResou
 SoundRoomEntry(Song_Shiver, SongTitle_Shiver, SourceTitle_EtrianOdyssey2,33)
 SoundRoomEntry(Song_IsThatBloodThine, SongTitle_IsThatBloodThine, SourceTitle_EtrianOdyssey3,30)
 SoundRoomEntry(Song_EndOfRagingWaves, SongTitle_EndOfRagingWaves, SourceTitle_EtrianOdyssey3,31)
-SoundRoomEntry(Song_Fracas, SongTitle_Fracas, SourceTitle_Original,29)
-
 //boss
+SoundRoomEntry(Song_Fracas, SongTitle_Fracas, SourceTitle_Original,29)
 SoundRoomEntry(Song_Rhapsody, SongTitle_Rhapsody, SourceTitle_OrderOfEcclesia,5)
+SoundRoomEntry(Song_Castle, SongTitle_Castle, SourceTitle_RRThiel,49)
 //character and event
 SoundRoomEntry(Song_FaithIsMyPillar, SongTitle_FaithIsMyPillar, SourceTitle_EtrianOdyssey4,23)
 SoundRoomEntry(Song_OohWilfre, SongTitle_OohWilfre, SourceTitle_DrawnToLife2,14)

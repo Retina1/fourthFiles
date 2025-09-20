@@ -187,15 +187,18 @@ void UnitApplyBuff(struct Unit* unit,u8 buffID) {
 */
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	
-	if (entry->buff3 == buffID) {
+	if (BuffEffectsTable[entry->buff3].buffName == BuffEffectsTable[buffID].buffName) {
+		entry->buff3 = buffID;
 		entry->buff3dur = BuffEffectsTable[buffID].buffDuration;
 		return;
 	}
-	else if (entry->buff2 == buffID) {
+	else if (BuffEffectsTable[entry->buff2].buffName == BuffEffectsTable[buffID].buffName) {
+		entry->buff2 = buffID;
 		entry->buff2dur = BuffEffectsTable[buffID].buffDuration;
 		return;
 	}
-	else if (entry->buff1 == buffID) {
+	else if (BuffEffectsTable[entry->buff1].buffName == BuffEffectsTable[buffID].buffName) {
+		entry->buff1 = buffID;
 		entry->buff1dur = BuffEffectsTable[buffID].buffDuration;
 		return;
 	}
@@ -217,15 +220,18 @@ void UnitApplyDebuff(struct Unit* unit,u8 buffID) {
 */
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	
-	if (entry->debuff3 == buffID) {
+	if (DebuffEffectsTable[entry->debuff3].buffName == DebuffEffectsTable[buffID].buffName) {
+		entry->debuff3 = buffID;
 		entry->debuff3dur = DebuffEffectsTable[buffID].buffDuration;
 		return;
 	}
-	else if (entry->debuff2 == buffID) {
+	else if (DebuffEffectsTable[entry->debuff2].buffName == DebuffEffectsTable[buffID].buffName) {
+		entry->debuff2 = buffID;
 		entry->debuff2dur = DebuffEffectsTable[buffID].buffDuration;
 		return;
 	}
-	else if (entry->debuff1 == buffID) {
+	else if (DebuffEffectsTable[entry->debuff1].buffName == DebuffEffectsTable[buffID].buffName) {
+		entry->debuff1 = buffID;
 		entry->debuff1dur = DebuffEffectsTable[buffID].buffDuration;
 		return;
 	}
@@ -306,4 +312,22 @@ void ClearAllBuffsDebuffs() {
 	entry->debuff1 = 0;
 	entry->debuff1dur = 0;	
 	}
+}
+
+
+void ExecBuffItem(ProcPtr proc) {
+	
+		
+	struct Unit* unitPointer = GetUnit(gActionData.subjectIndex);
+	int itemSlot = gActionData.itemSlotIndex;
+	int buffID = GetItemData( ITEM_INDEX( unitPointer->items[itemSlot] ) )->otherByte;
+	
+	BattleInitItemEffect(unitPointer,itemSlot);
+	BattleApplyItemEffect(proc);
+
+	UnitApplyBuff(GetUnit(gActionData.subjectIndex), buffID);
+
+    gBattleTarget.statusOut = -1;
+
+    return;
 }

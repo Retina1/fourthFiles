@@ -215,7 +215,7 @@ BYTE Wand 0 Staff 0 DownStaff 0 GemStaff 0 Godendag 0 SageWand 0 Kerykeion 0 Shi
 BYTE FlameScroll 0 BoltScroll 0 FreezeScroll 0 GaleScroll 0 ShineScroll 0 CleaveScroll 0 SparkScroll 0 DrainScroll 0 PyreScroll 0 ThorScroll 0 CocytusScroll 0 TempestScroll 0
 BYTE HealScroll 0 RestoreScroll 0 RepairScroll 0 RescueScroll 0 WarpScroll 0
 BYTE Vulnerary 0 Elixir 0 Medica 0 Soma 0 AriadneShard 0
-BYTE Bravant 0 Stonard 0 ArmBinder 0 LegBinder 0 HeadBinder 0 BlindGas 0 StunGas 0 PoisonGas 0 MuteGas 0 PanicGas 0 StoningGas 0
+BYTE Bravant 0 Stonard 0 ArmBinder 0 LegBinder 0 HeadBinder 0 BlindGas 0 StunGas 0 PoisonGas 0 CurseGas 0 PanicGas 0 StoningGas 0
 BYTE InedibleLeaf 0 FictionScroll 0
 BYTE BlankCog 0 CrimsonTape 0 SilkenWire 0 PurestOil 0
 BYTE HeroCrest 0 KnightProof 0 OrionsBolt 0 Hippokos 0 GuidingRing 0 RubyBlade 0 SightingLens 0 OutlandShield 0 SpiritWrap 0 ElysianWhip 0 PerfectRose 0 BanefulDoll 0 DarkBrooch 0 DeusHerb 0 HolyCloak 0 DriveGear 0 ParadoxCore 0 GuildSeal 0

@@ -1,18 +1,3 @@
-//todo - get base hitrate of used status somehow
-/*
-int GetOffensiveStaffAccuracy(struct Unit* actor, struct Unit* target) {
-    int attackerLuc = GetUnitLuck(actor);
-	int defenderLuc = GetUnitLuck(target);
-	
-	int baseAtk = attackerLuc + 10;
-	int baseDef = defenderLuc + 10;
-	
-	int result = baseRate * baseAtk / baseDef;
-
-    return result;
-}
-*/
-
 //damage display seems off - soul shield and frigid bite applying in wrong places?
 
 void ComputeBattleUnitDefense(struct BattleUnit* attacker, struct BattleUnit* defender) {

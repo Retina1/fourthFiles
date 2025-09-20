@@ -228,6 +228,7 @@ ENDA
 
 BeginningScene:
 DifficultySwapper
+ENUF WaitEventTrapsFlag
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x2 0xc 0x0
 LOAD1 0x0 Chapter2SquareUnitsPreps
@@ -265,7 +266,7 @@ ENDA
 SquareMoveToGuildhall:
 SwapToMap(Guildhall,4,14)
 CALL LoadGuildhallSigils
-LoadUnitsByVisit(BehindCounterGerson,BehindCounterGerson,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(BehindCounterGerson,BehindCounterGerson,BehindCounterGerson,0,0,0,0,0,0,0,0,0,0,0)
 FADU 10
 EndEvent
 
@@ -274,7 +275,7 @@ SwapToMap(Blacksmith,7,8)
 CALL LoadBlacksmithSigils
 //SetMapBGM(Song_DrawHeroes)
 MUSC Song_DrawHeroes
-LoadUnitsByVisit(BlacksmithUnitsC2,BlacksmithUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(BlacksmithUnitsC2,BlacksmithUnitsC3,BlacksmithUnitsS1,0,0,0,0,0,0,0,0,0,0,0)
 FADU 10
 EndEvent
 
@@ -283,7 +284,7 @@ SwapToMap(Tavern,2,8)
 CALL LoadTavernSigils
 //SetMapBGM(Song_DrawHeroes)
 MUSC Song_DrawHeroes
-LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,TavernUnitsS1,0,0,0,0,0,0,0,0,0,0,0)
 LoadMagusUnlocker
 FADU 10
 CALL QuestEndChecker

@@ -7,7 +7,14 @@ BossBGMTable:
 BossBGMEntry(BossCleone,Song_Fracas)
 BossBGMEntry(BossBenthus,Song_Fracas)
 BossBGMEntry(MonsterBoss,Song_Fracas)
+BossBGMEntry(BossSaewynn,Song_Fracas)
 BossBGMEntry(BossBenthus2,Song_Rhapsody)
+//give them boss music someday
+BossBGMEntry(Xavens,Song_Castle)
+BossBGMEntry(Egil,Song_Castle)
+BossBGMEntry(Harla,Song_Castle)
+//personal boss music?
+BossBGMEntry(Rana,Song_Castle)
 BossBGMTerminator
 
 PUSH

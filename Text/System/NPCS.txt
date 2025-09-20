@@ -43,16 +43,25 @@ Harla[X]
 ##Desc_Harla
 Second in command of Endbringer.[N]
 Their will is one with Rana's will.[X]
+##Desc_HarlaEarly
+An apparent leader of the unknown force.[N]
+They're hard to get a true read on.[X]
 ##Name_Egil
 Egil[X]
 ##Desc_Egil
 A lieutenant of Endbringer. He's a[N]
 solemn and mournful Old War veteran.[X]
+##Desc_EgilEarly
+An apparent leader of the unknown force.[N]
+He's solemn, grave, and grizzled.[X]
 ##Name_Xavens
 Xavens[X]
 ##Desc_Xavens
 A lieutenant of Endbringer. He's the[N]
 raving spokesman of the organization.[X]
+##Desc_XavensEarly
+An apparent leader of the unknown force.[N]
+He's loud, talkative, and prideful.[X]
 
 ##Name_Weber
 Weber[X]
@@ -109,6 +118,9 @@ to change the world no matter what.[X]
 ##Desc_Rat2
 A representative of Guild [Guild],[N]
 driven to make all pawns in a game.[X]
+##Desc_GuildmasterFinal
+The Guildmaster, his spear empowered[N]
+by the hopes of the world's remnants.[X]
 
 //shows up early in bar, guild recruit later
 ##Name_Bertram

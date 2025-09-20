@@ -1191,8 +1191,8 @@ Label_CF9C36:
 EO1Guild_007:
 //  #07 //000   ----------------------------------------
  BYTE   KEYSH   EO1Guild_key+0
- BYTE   VOICE   105
- BYTE   VOL   66*EO1Guild_mvl/mxv
+ BYTE   VOICE   81
+ BYTE   VOL   56*EO1Guild_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   N11  Gn2  v092
  BYTE   W12

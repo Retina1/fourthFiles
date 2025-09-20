@@ -1,13 +1,6 @@
 #ifndef _StaffAITemplate
 	#define _StaffAITemplate
 	// comment out if using the nightmare csvs
-	#ifndef AI_ItemArray
-//		#define AI_ItemArray 0xD86F4
-	#endif
-	#ifndef AI_StaffArray
-//		#define AI_StaffArray 0xD868C
-	#endif
-	
 
 	//macros for manually updating ai tables
 	#define SetItemAI(index, Item_ID, pointer) "PUSH; ORG (AI_ItemArray + (index * 8)); WORD Item_ID; POIN pointer; POP;"

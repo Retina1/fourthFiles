@@ -40,13 +40,13 @@ UNIT Wont 0x0 0x1 Level(14,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [BlindGas] NoAI
 UNIT
 
 Recruit_Saewynn:
-UNIT Saewynn 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortsword,Wand] NoAI
+UNIT Saewynn 0x0 0x1 Level(8,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortsword,Wand] NoAI
 UNIT
 Recruit_Ellie:
 UNIT Ellie 0x0 0x1 Level(7,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Shortsword,Elixir] NoAI
 UNIT
 Recruit_Selene:
-UNIT Selene 0x0 0x1 Level(8,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
+UNIT Selene 0x0 0x1 Level(3,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
 UNIT
 Recruit_Nina:
 UNIT Nina 0x0 0x1 Level(6,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [FlameScroll,Wand] NoAI
@@ -179,7 +179,7 @@ ENDA
 GuildhallLoadPriests:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-GuildLoad(Saewynn,Recruit_Saewynn,0x1)
+GuildLoad(Saewynn,Recruit_Saewynn,0x1,Chapter5DoneFlag)
 GuildLoad(Ellie,Recruit_Ellie,0x2,Chapter10DoneFlag)
 GuildLoad(Selene,Recruit_Selene,0x3)
 GuildLoad(Nina,Recruit_Nina,0x4)

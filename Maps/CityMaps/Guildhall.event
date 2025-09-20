@@ -26,6 +26,6 @@ ALIGN 4
 MapData:
   #incbin "Guildhall_data.dmp"
 
-SetChapterData(Guildhall, Village1OBJ, 0, Village1PAL, VillageCONFIG, GuildhallMapID, MapData, 0, 0, 0)
+SetChapterData(Guildhall, Village1OBJ, 0, Village1PAL, GuildhallCONFIG, GuildhallMapID, MapData, 0, 0, 0)
 
 }

@@ -1,0 +1,110 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events5ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+UNIT UnknownGeneric Caller 0x0 Level(6,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+UNIT UnknownGeneric Caller 0x0 Level(6,Enemy,1) [10,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+
+//unknown entries for endbringer bosses, replace with a small fry after turn 1
+//or just have the small fry spawned instantly
+UNIT BossSaewynn Priest 0x0 Level(8,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [Magebane] DelayedAI
+UNIT Harla Highlander 0x0 Level(26,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [9,1] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
+UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [10,1] 0x0 0x0 0x0 0x0 [BoltRifle] NeverMoveAI
+UNIT
+
+KrystJoin:
+UNIT Kryst Poet 0x0 Level(6,NPC,0) [18,13] 0x0 0x0 0x0 0x0 [Wand,BrassKnuckles,Vulnerary] NeverMoveAI
+UNIT
+
+
+ALIGN 4
+
+//in scene, GM is present then leaves to help people/take care of business
+BeginningScene:
+DifficultySwapper
+MUSC 0x0
+Text(FillerDialogue)
+MUSC Song_PandemonicPlanet
+LOAD1 0x1 EnemyUnits; ENUN
+LOAD1 0x1 KrystJoin; ENUN
+//starting skills
+//kryst - level 1 soothing voice/bravery/shelter/mercury/insight
+LevelUpSkill(Kryst,0)
+LevelUpSkill(Kryst,7)
+LevelUpSkill(Kryst,8)
+LevelUpSkill(Kryst,9)
+LevelUpSkill(Kryst,10)
+MUSC 0x0
+Text(FillerDialogue)
+CallPreps
+TurnAlly(Kryst)
+MUSC Song_FaithIsMyPillar
+Text(FillerDialogue) //nathan comments on wolf, gets paper thrown at him
+EndEvent
+
+EndingScene:
+ENUT Chapter5DoneFlag
+MUSC 0x0
+CleanTextNoMap(0x18,FillerDialogue)
+MoveToChapter(HirschringSquare)
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

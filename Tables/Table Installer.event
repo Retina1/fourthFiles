@@ -12,6 +12,20 @@
 
 #include "CharacterClass\ClassTable.event"
 
+#include "ItemEffectRevamp\Effect_Anim_Association_Editor.event"
+
+#include "ItemEffectRevamp\IER_StatboosterText.event"
+
+#include "ItemEffectRevamp\ItemBox_Effect.event"
+
+#include "ItemEffectRevamp\Item_AI_Table.event"
+
+#include "ItemEffectRevamp\Item_Effect_Revamp.event"
+
+#include "ItemEffectRevamp\Promotion_Item_Table.event"
+
+#include "ItemEffectRevamp\Staff_AI_Table.event"
+
 #include "Items\ItemTable.event"
 
 #include "Items\SpellAssociationList.event"

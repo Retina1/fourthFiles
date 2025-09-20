@@ -93,6 +93,9 @@ Saewynn[X]
 ##Desc_Saewynn
 A Belvarusi priest and former Endbringer.[N]
 She's unsure of where to go in life.[X]
+##Desc_BossSaewynn
+A Belvarusi priest fighting alongside the[N]
+unknown forces. She's loyal to this cause.[X]
 
 //owaiin
 ##Name_Ellie

@@ -10,6 +10,11 @@ UNIT Astarte 0x0 0x0 Level(1,Ally,0) [12,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Benjamin Gladiator 0x0 Level(19,NPC,0) [3,6] 0x0 0x0 0x0 0x0 [HandAxe,RepairScroll] NeverMoveAI
 UNIT Johanna Curate 0x0 Level(1,NPC,0) [7,1] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
+BlacksmithUnitsS1:
+UNIT Puzon 0x0 0x0 Level(2,NPC,0) [11,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Benjamin Gladiator 0x0 Level(19,NPC,0) [7,1] 0x0 0x0 0x0 0x0 [HandAxe,RepairScroll] NeverMoveAI
+UNIT Johanna Curate 0x0 Level(1,NPC,0) [1,1] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
@@ -24,7 +29,12 @@ BYTE 0x0 0x0
 
 ALIGN 4
 Ch3Shop:
-SHLI AriadneShard FlameScroll Shortsword VineWhip Shortspear Epee Shortmace BrassKnuckles Shortbow Handgonne Wand Vulnerary Medica
+SHLI FlameScroll AriadneShard Shortsword VineWhip Shortspear Epee Shortmace BrassKnuckles Shortbow Handgonne Wand Vulnerary Medica
+BYTE 0x0 0x0
+
+ALIGN 4
+S1Shop:
+SHLI Scramasax Pike BlindGas AriadneShard Shortsword VineWhip Shortspear Epee Shortmace BrassKnuckles Shortbow Handgonne Wand Vulnerary Medica
 BYTE 0x0 0x0
 
 ALIGN 4
@@ -47,14 +57,15 @@ LoadVendorSecond
 FADU 10
 EndEvent
 
+//make stratum 1
 BlacksmithShopBegin:
-//rewrite shop text to be benjamin-y
 CHECK_EVENTID 0x1e
 BNE 0x1 0xc 0x0
-RunTextByVisit(City02_BenjaminIntro,City03_Benjamin,0,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_BenjaminIntro,City03_Benjamin,CityS1_Benjamin,0,0,0,0,0,0,0,0,0,0,0)
 ENUT 0x1e
 LABEL 0x1
-LoadShopByVisit(Ch2Shop,Ch3Shop,0,0,0,0,0,0,0,0,0,0,0,0)
+//johanna runs it for c3x, c8x, s3x, 18Cx
+LoadShopByVisit(Ch2Shop,Ch3Shop,S1Shop,0,0,0,0,0,0,0,0,0,0,0)
 ENUF LocationFlagBlacksmith
 EndEvent
 
@@ -62,10 +73,3 @@ BlacksmithTestShopBegin:
 MakeShop(TestShop)
 ENUF LocationFlagBlacksmith
 EndEvent
-
-//redundant now
-/*
-TownBenjaminJohannaTalk:
-RunTextByVisit(0,0,0,0,0,0,0,0,0,0,0,0,0,0)
-EndEvent
-*/

@@ -32,5 +32,21 @@ int ApplyNobleProudNobility(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
+void ApplyNobleBoonfulPresence(struct Unit* unit) {
+	if (UNIT_HAS_SKILL(unit,SOV,skill_121)){
+		u8* unitBuffer = GetUnitsInRange(unit, 1, 2);
+		if (unitBuffer == FALSE)
+			return;
+		int i = 0;
+		while (unitBuffer[i]){
+			int index = unitBuffer[i];
+			Unit* other = gUnitLookup[index];
+			int amount = GetUnitMaxHp(other)/5;
+			AddUnitHp(other, amount);
+			i++;
+		}
+	}
+}
+
 void ApplyNoblePassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 }

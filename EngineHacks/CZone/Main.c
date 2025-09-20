@@ -20,6 +20,7 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "Misc/NewAutoLeveling.c"
 #include "Misc/HealAmounts.c"
 #include "Misc/CurseFix.c"
+#include "Misc/StatusInfliction.c"
 #include "Durability/PerChapterItems.c"
 #include "StatPassives/StatPassives.c"
 #include "WaitEventTraps/WaitEventTraps.c"
@@ -163,4 +164,24 @@ void NewExecVulneraryItemWrapper() {
             ldr r0,=#0x802FF77; \
             bx r0; \
     ");
+}
+
+//possible segfault magnet?
+void NewStatusWrapper() {
+    asm("     mov r0,r6; \
+            bl NewExecStatusStaff; \
+            ldr r0,=#0x802FF77; \
+            bx r0; \
+    ");
+
+}
+
+
+void ExecBuffItemWrapper() {
+    asm("     mov r0,r6; \
+            bl ExecBuffItem; \
+            ldr r0,=#0x802FF77; \
+            bx r0; \
+    ");
+
 }

@@ -18,6 +18,7 @@ change the item effect id from 0x26 to 0x1e
 (the effect id of the 1 use chest key)
 */
 
+/*
 #include "Tables/Item_AI_Table.event"
 #include "Tables/Staff_AI_Table.event"
 #include "Tables/Effect_Anim_Association_Editor.event"
@@ -25,7 +26,7 @@ change the item effect id from 0x26 to 0x1e
 #include "Tables/Item_Effect_Revamp.event"
 #include "Tables/ItemBox_Effect.event"
 #include "Tables/Promotion_Item_Table.event"
-
+*/
 ALIGN 4
 #ifndef ItemEffectRevamp
 	#define ItemEffectRevamp

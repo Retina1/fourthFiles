@@ -1,0 +1,50 @@
+##C5XavensBattle
+[MidLeft][Xavens]
+You're getting a bit[N]
+close there, friend.[AN]
+Do you want a taste of[N]
+my power that badly?[AN]
+Fine. [...]Hehehe. Don't[N]
+say I didn't warn you.[A][X]
+##C5XavensDefeat
+[MidLeft][Xavens]
+Yowch! You[...] got me![AN][Smile]
+Much as I'd like to revel,[N]
+I should get this healed.[AN]
+But I'm glad you'll make[N]
+for a real fun enemy.[A][X]
+
+##C5EgilBattle
+[MidLeft][Egil]
+Come now to an end,[N]
+and be content.[AN]
+That is what you have[N]
+brought upon yourself.[A][X]
+##C5EgilDefeat
+[MidLeft][Egil]
+Ugh[...] They caught me[N]
+unaware.[A] Forgive me,[N]
+Sir Xavens. [...]I must leave.[N]
+Godspeed, Ser Harla.[A][X]
+
+##C5HarlaBattle
+[MidLeft][Harla]
+[...]Fall.[A][X]
+##C5HarlaDefeat
+[MidLeft][Harla]
+They're formidable[...][N]
+Rana must hear of this.[AN]
+Don't think Endbringer's[N]
+done with you, Hedge.[A][X]
+
+##C5SaewynnBattle
+[MidLeft][Saewynn]
+Come, lost and pitiable[N]
+souls.[A] Let us lead you[N]
+to your deserved rest.[AN]
+First you, and then all[N]
+this lamentable world.[A][X]
+##C5SaewynnDefeat
+[MidLeft][Saewynn]
+I[...] I don't[...] want[...][N]
+I have to[...] escape[...][A][X]

@@ -1,3 +1,19 @@
+void ApplySwordfighterNaturalLeader(struct Unit* unit) {
+	if (UNIT_HAS_SKILL(unit,LND,promoSkill_141)){
+		u8* unitBuffer = GetUnitsInRange(unit, 1, 1);
+		if (unitBuffer == FALSE)
+			return;
+		int i = 0;
+		while (unitBuffer[i]){
+			int index = unitBuffer[i];
+			Unit* other = gUnitLookup[index];
+			//buff 2 - natural leader
+			UnitApplyBuff(other,2);
+			i++;
+		}
+	}
+}
+
 void ApplySwordfighterInitiative(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (UNIT_HAS_SKILL(&attacker->unit,LND,skill_111)){
 		u8 unitIndex = attacker->unit.index;

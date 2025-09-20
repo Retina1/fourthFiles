@@ -1,0 +1,39 @@
+#ifdef _FE8_
+
+#include "EAstdlib.event"
+#include "Extensions/Hack Installation.txt"
+#endif
+
+PUSH
+//ORG $8AE60		//FE8J	{J}
+ORG $88BD4		//FE8U	{U}
+jumpToHack(ChangeUnitDesc)
+POP
+
+ALIGN 4
+ChangeUnitDesc:
+#incbin "ChangeUnitDesc.dmp"
+POIN ChangeUnitDesc_Table
+
+#define UnitDescTable(descid,unitid,classid,mapid,flagid) "SHORT descid; BYTE unitid classid mapid 0xFF; SHORT flagid; "
+
+ALIGN 4
+ChangeUnitDesc_Table:
+//earlygame endbringer
+UnitDescTable(Desc_XavensEarly,Xavens,0x0,Chapter5,0x0)
+UnitDescTable(Desc_EgilEarly,Egil,0x0,Chapter5,0x0)
+UnitDescTable(Desc_HarlaEarly,Harla,0x0,Chapter5,0x0)
+UnitDescTable(Desc_GuildmasterFinal,BossGuildmaster,0x0,EndgameB,0x0)
+UnitDescTable(Desc_GuildmasterFinal,BossGuildmaster,0x0,Chapter18C,0x0)
+SHORT 0x0; BYTE 0x0 0x0 0x0 0x0; SHORT 0x0  // term
+//@struct ChangeUnitDesc_Table
+//@{
+//@	short	new_desc_id				require
+//@	byte	unit_id;				require
+//@	byte	class_id;				00=ANY or FF=any
+//@	byte	map_id;		章			FF=ANY
+//@	byte	editon		編			FF=ANY
+//@	ushort	flag_id;	Flag		00=ANY
+//@}//sizeof(16bytes)
+
+

@@ -170,6 +170,16 @@ Yeah Yeah Yeahs[X]
 ##SongTitle_Maps
 Maps[X]
 
+##SourceTitle_RRThiel
+RRThiel[X]
+##SongTitle_Castle
+Castle (Zappy McCraw)[X]
+
+##SourceTitle_RednGreeen
+RednGreeen[X]
+##SongTitle_CursedCathedral
+Cursed Cathedral (Zappy McCraw)[X]
+
 ##SourceTitle_FE12 ^
 FE: New Mystery of the Emblem[X]
 ##SongTitle_MurderousPuppets

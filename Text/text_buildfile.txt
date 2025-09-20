@@ -40,6 +40,11 @@ between stats and growths.[X]
 #include "Chapters/Chapter2.txt"
 #include "Chapters/Chapter3.txt"
 #include "Chapters/Chapter4.txt"
+#include "Chapters/Chapter5.txt"
+
+//put them all in one place so rat's easy to find all at once
+//they're complex ok
+#include "Chapters/RatLetters.txt"
 
 #include "City/CityChapter02.txt"
 #include "City/CityChapter03.txt"
@@ -674,3 +679,9 @@ Legs[X]
 OK[X]
 # 0x405
 BND[X]
+
+# 0x086E
+Select which unit to target.[X]
+
+# 0x087B
+Select a unit to target.[X]
