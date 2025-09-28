@@ -97,6 +97,17 @@ ASMC ValueChooser_OnSelect|1
 ASMC ChangeAllCharacterASMC|1
 LABEL 0x4
 
+SystemText(DEBUGClassUnlockPrompt)
+IfNoSelectedGoto(0x5)
+ENUT StandardUnlockedFlag
+ENUT MagiUnlockedFlag
+ENUT SpecialUnlockedFlag
+ENUT SkyUnlockedFlag
+ENUT LifeflowUnlockedFlag
+ENUT SenatusUnlockedFlag
+ENUT OtherUnlockedFlag
+LABEL 0x5
+
 LABEL 0x10
 FADI 16
 CLEAN
@@ -224,6 +235,13 @@ GenericHealEvent:
 CAM1 0xFFFF
 PlayEmotionEffect(HeartEffect)
 SOUN 0x10F
+STAL 0x16
+EndEvent
+
+GenericBuffEvent:
+CAM1 0xFFFF
+PlayEmotionEffect(UpArrowEffect)
+SOUN 0xEF
 STAL 0x16
 EndEvent
 

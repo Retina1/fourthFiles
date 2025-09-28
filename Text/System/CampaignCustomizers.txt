@@ -99,6 +99,10 @@ DEBUG: Change all units' class?[N]
 DEBUG: Change all units' character?[N]
 [No][X]
 
+##DEBUGClassUnlockPrompt
+DEBUG: Unlock all class sets?[N]
+[No][X]
+
 ##RTextExplanation
 Press the R button to get[N]
 an explanation of any of[N]

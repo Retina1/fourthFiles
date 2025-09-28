@@ -12,7 +12,8 @@
 
 ##CityS1_Guildmaster
 [MidLeft][Nathan][MidRight][Guildmaster]
-.[A][X]
+ok yeah guildmaster's a rare[N]
+appearance in the city[A][X]
 
 ##CityS1_Benjamin
 [MidLeft][Nathan][Right][Benjamin][FarRight][Johanna][Right]
@@ -23,22 +24,59 @@ ariadne shard are not here to stay[A][X]
 [MidLeft][Nathan][MidRight][Bobby]
 .[A][X]
 
-##CityS1_Claire
-[MidLeft][Nathan][MidRight][Claire]
-.[A][X]
-
-##CityS1_Bertram
-[MidLeft][Nathan][MidRight][Bertram]
-.[A][X]
-
-
-##CityS1_PostPreps
-[MidLeft][Nathan]
-.[A][X]
-
 ##CityS1_EndText
 [MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
 .[A][X]
+
+##CityS1_PostPreps
+[MidLeft][Nathan]
+Nothing to fear.[AN]
+Just prepare as I've[N]
+prepared before.[AN]
+No need to complicate[N]
+things or go anywhere new.[AN]
+Just do what I think'll[N]
+help us against the King.[A][X]
+
+
+##CityS1_Claire
+[MidLeft][Nathan][MidRight][Claire]
+Heard you made it through[N]
+the forest.[A] Nicely done.[AN]
+If you want, there's a bit[N]
+of a tradition we've got.[AN]
+See the exhibit right[...] there?[N]
+About the forest's wolf pack?[AN][MidLeft]
+That I do. [...]That's quite the[N]
+realistic wolf you've got.[AN][MidRight]
+Yeah. Guildmaster got a clean one[N]
+sometime back for display purposes.[AN]
+Even had it stuffed for me.[AN]
+That's beyond the point, though.[N]
+See that ledger underneath?[AN]
+I've had the leader of every guild[N]
+that has braved the forest sign it.[AN]
+I think it's a nice way to celebrate[N]
+and remember your triumphs.[AN][MidLeft][Smile]
+I'd be honored, then.[AN][MidRight]
+You've earned that honor.[AN]
+And I hope there's many more[N]
+to come for your guild.[A][X]
+
+##CityS1_Bertram
+[MidLeft][Nathan][MidRight][Bertram]
+Scram.[AN][MidLeft]
+[...][AN][MidRight]
+[...]Hmph. You think I respect[N]
+a little worm like you?[AN]
+I'm real sure you wouldn't[N]
+be missed for long.[AN]
+So just back off, let me[N]
+have my Bobby corner,[AN]
+and you can keep all your[N]
+fingers attached.[AN][MidLeft]
+[...][AN][Clear][MidRight]
+[...]Heh. Too easy.[A][X]
 
 ##CityS1_PrePreps
 [MidLeft][Guildmaster][MidRight][Nathan][MidLeft]

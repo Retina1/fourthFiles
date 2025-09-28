@@ -20,6 +20,8 @@ POP
 #include "VariousASM/ASM.event"
 #include "DurabilityItems/Installer.event"
 #include "AriadneShards/SaveStuff.event"
+#include "UnitActionRework/UnitActionRework.event"
+#include "UnitMenu/UnitMenu.event"
 
 #include "SetCondition/Installer.event"
 #include "NegativeStatBoosts/NegativeStatBoosts.event"

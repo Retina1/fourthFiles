@@ -170,6 +170,8 @@ StoningGas
 AriadneShard
 InedibleLeaf
 FictionScroll
+CrinkleGlove
+KingBrooch
 HeroCrest 0xe6
 KnightProof
 OrionsBolt

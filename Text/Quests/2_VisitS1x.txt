@@ -7,7 +7,7 @@ tick. Danger lies ahead.[X]
 
 ##Quest1_S1x_Bobby
 [MidLeft][Nathan][MidRight][Bobby]
-That one's real simple.[A]
+That one's real simple.[AN]
 kill marked triwolf[A][X]
 
 ##Quest1_S1x_Done
@@ -23,7 +23,7 @@ of clothing for a friend.[X]
 
 ##Quest2_S1x_Bobby
 [MidLeft][Nathan][MidRight][Bobby]
-That one's real simple.[A]
+That one's real simple.[AN]
 tilehunt for material for recruit[A][X]
 
 ##Quest2_S1x_Done

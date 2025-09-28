@@ -9,6 +9,16 @@ void ApplyPanacaeaBuffEffect(struct Unit* unit) {
 	
 };
 
+
+void TickUnitStateTimer(struct Unit* unit) {
+	//ronin stance
+	if (UNIT_HAS_SKILL(unit,RNI,skill_111)) {
+		if (unit->classSkillState != 0) {
+			unit->classSkillState = unit->classSkillState - 1;
+		}
+	}
+}
+
 void TickActiveFactionTurn(void) {
     int i;
 
@@ -39,6 +49,7 @@ void TickActiveFactionTurn(void) {
 		ApplyNobleBoonfulPresence(unit);
 		ApplyPanacaeaBuffEffect(unit);
 		TickUnitBuffTimer(unit);
+		TickUnitStateTimer(unit);
 
         if (unit->statusDuration != 0) {
             if (unit->statusIndex != UNIT_STATUS_RECOVER)

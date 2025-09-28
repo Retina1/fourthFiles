@@ -73,3 +73,10 @@ Revati[X]
 A blind duelist favored by a deity of[N]
 snakes. She's serious and dutiful.[X]
 
+//enemyphase
+##Name_Halloran
+Halloran[X]
+##Desc_Halloran
+An ex-Belvarusi politician and current[N]
+revolutionaire for hire. He's just.[X]
+

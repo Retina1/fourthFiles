@@ -144,16 +144,16 @@ EndEvent
 
 //arch
 Hallie_RecruitEvent:
-GuildRecruit(Hallie,Guild_Test_Dialogue,0x20)
+GuildRecruit(Hallie,Guild_Hallie_Dialogue,0x20)
 EndEvent
 Anjelica_RecruitEvent:
-GuildRecruit(Anjelica,Guild_Test_Dialogue,0x21)
+GuildRecruit(Anjelica,Guild_Anjelica_Dialogue,0x21)
 EndEvent
 Rodney_RecruitEvent:
-GuildRecruit(Rodney,Guild_Test_Dialogue,0x22)
+GuildRecruit(Rodney,Guild_Rodney_Dialogue,0x22)
 EndEvent
 Gamon_RecruitEvent:
-GuildRecruit(Gamon,Guild_Test_Dialogue,0x23)
+GuildRecruit(Gamon,Guild_Gamon_Dialogue,0x23)
 EndEvent
 
 //sch

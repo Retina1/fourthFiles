@@ -1,6 +1,6 @@
 //FE8 Show battle stats when animations are off
 //By Tequila
-#include "eastdlib.event" 
+#include "EAstdlib.event" 
 #ifndef BATTLE_STATS 
 	#define BATTLE_STATS 
 #endif 

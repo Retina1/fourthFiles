@@ -1,0 +1,41 @@
+
+//#define NoTransparency
+/*Uncomment the above to disable transparency in the game's menus.
+If you'd only like some things to be transparent, leave this undefined and
+instead remove their specific surrounding ifdef statements.*/
+
+
+PUSH
+ORG 0x5B6470
+// For each color style
+POIN MenuTiles
+POIN MenuTiles
+POIN MenuTiles
+POIN MenuTiles
+
+ORG 0x5B6BB4//Palettes
+#incbin "BluePal.dmp"
+#incbin "RedPal.dmp"
+#incbin "GreenPal.dmp"
+#incbin "GrayPal.dmp"
+#incbin "BluePal.dmp"
+#incbin "RedPal.dmp"
+#incbin "GreenPal.dmp"
+#incbin "GrayPal.dmp"
+
+ORG 0xA1738C//MMB Palettes
+#incbin "BluePal.dmp"
+#incbin "RedPal.dmp"
+#incbin "GreenPal.dmp"
+POP
+
+PUSH
+//Copy stuff from MenuInstaller.event here. If something is
+//pointed to rather than directly #incbinned, add its respective definition below too.
+POP
+
+ALIGN 4
+MenuTiles:
+#incext Png2Dmp --lz77 "MenuTiles.png"
+
+//Copy more stuff from MenuInstaller.event here.

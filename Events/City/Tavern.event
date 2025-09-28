@@ -69,7 +69,7 @@ TavernQuestBegin:
 EVBIT_MODIFY 3
 CHECK_EVENTID 0x1f
 BNE 0x1 0xc 0x0
-RunTextByVisit(City02_BobbyIntro,City03_Bobby,0,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_BobbyIntro,City03_Bobby,CityS1_Bobby,0,0,0,0,0,0,0,0,0,0,0)
 ENUT 0x1f
 LABEL 0x1
 RunEventByVisit(DummyEvent,Chapter3Quests,ChapterS1Quests,0,0,0,0,0,0,0,0,0,0,0)
@@ -127,10 +127,3 @@ QuestEndCheck(Quest1_S1x_Flag,Quest1_S1x_DoneFlag,Quest1_S1x_Done,Claymore)
 QuestEndCheckSystext(Quest2_S1x_Flag,Quest2_S1x_DoneFlag,Quest2_S1x_Done,Quest2_S1x_RewardText)
 
 ENDA
-
-DummyEvent:
-ENDA
-
-TownBertramTalk:
-RunTextByVisit(City02_Bertram,City03_Bertram,0,0,0,0,0,0,0,0,0,0,0,0)
-EndEvent

@@ -65,7 +65,7 @@
 
     RText_Page4_ladder:
       // page 4 helptext hook
-      #incbin "SupportRText/rtext_page4.dmp"
+      #incbin "SupportRtext/rtext_page4.dmp"
       POIN RText_Page4
 	
 //pg 4 in SRR

@@ -7,3 +7,4 @@
 #define MineshaftCONFIG 0x7
 #define CavesCONFIG 0x8
 #define FrontierCONFIG 0x9
+#define DesertCONFIG 0xA

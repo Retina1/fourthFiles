@@ -259,6 +259,10 @@ All[...] my way[...][A][CloseEyes][X]
 [MidRight][Lonsdale]
 I just hope[...] I'll be[...][N]
 unforgotten[...][A][CloseEyes][X]
+##HugoDeath
+[MidRight][Hugo]
+My vengeance[...] My creation[...][N]
+Let the cycle[...] end[...][A][CloseEyes][X]
 
 //medics
 ##TrishDeath

@@ -89,6 +89,11 @@ of Purpose[X]
 Revelations[N]
 Amidst Ruin[X]
 
+//f1 - shimmering style warpmaze
+//f2-3 - paired hell torture maze
+//f4 - 
+//f7 - puzzle using the market entry code, resets dungeon if you fail
+//f8 - superboss ratatoskr
 ##Floor_S6F1
 Demons' Dreams[N]
 of the End[X]

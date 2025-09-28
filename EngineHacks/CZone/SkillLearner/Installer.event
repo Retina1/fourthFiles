@@ -1,4 +1,4 @@
-#include "eastdlib.event" 
+#include "EAstdlib.event" 
 
 // skill stuff
 // adapted from vesly's convo viewer, commed by me
@@ -114,24 +114,6 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
 
-ALIGN 4
-SwordfighterSkillLabels:
-OneLevelSkillLabel(InitiativeSkill,NoReq)//0
-OneLevelSkillLabel(VanguardSkill,NoReq)
-OneLevelSkillLabel(TenacitySkill,TenacityReq)
-OneLevelSkillLabel(NaturalLeaderSkill,PromotedReq)
-TwoLevelSkillLabel(GuardBreakSkill,NoReq)//4
-TwoLevelSkillLabel(PowerBreakSkill,PowerBreakReq)
-TwoLevelSkillLabel(AgilityBreakSkill,AgilityBreakReq)
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
-ThreeLevelSkillLabel(PlaceholderLabel,SwordGlintReq)
-ThreeLevelSkillLabel(WeaponParrySkill,WeaponParryReq)
-ThreeLevelSkillLabel(PlaceholderLabel,FalconSlashReq)
-ThreeLevelSkillLabel(PlaceholderLabel,SwiftStrikesReq)
-FiveLevelSkillLabel(PlaceholderLabel,SpellchaserReq)//12
-FiveLevelSkillLabel(PlaceholderLabel,FullBreakReq)
-FiveLevelSkillLabel(PlaceholderLabel,TempestReq)
-SkillLabelTerminator
 
 ALIGN 4
 KnightSkillLabels:
@@ -331,6 +313,26 @@ ReqEntry(9,3)
 ReqEntry(10,3)
 ReqEntry(11,3)
 ReqTerm
+
+
+ALIGN 4
+SwordfighterSkillLabels:
+OneLevelSkillLabel(InitiativeSkill,NoReq)//0
+OneLevelSkillLabel(VanguardSkill,NoReq)
+OneLevelSkillLabel(TenacitySkill,TenacityReq)
+OneLevelSkillLabel(NaturalLeaderSkill,PromotedReq)
+TwoLevelSkillLabel(GuardBreakSkill,NoReq)//4
+TwoLevelSkillLabel(PowerBreakSkill,PowerBreakReq)
+TwoLevelSkillLabel(AgilityBreakSkill,AgilityBreakReq)
+ThreeLevelSkillLabel(WrathStrikeSkill,NoReq)//7
+ThreeLevelSkillLabel(SwordGlintSkill,SwordGlintReq)
+ThreeLevelSkillLabel(WeaponParrySkill,WeaponParryReq)
+ThreeLevelSkillLabel(FalconSlashSkill,FalconSlashReq)
+ThreeLevelSkillLabel(SwiftStrikesSkill,SwiftStrikesReq)
+FiveLevelSkillLabel(SpellchaserSkill,SpellchaserReq)//12
+FiveLevelSkillLabel(FullBreakSkill,FullBreakReq)
+FiveLevelSkillLabel(TempestSkill,TempestReq)
+SkillLabelTerminator
 
 ALIGN 4
 TenacityReq:

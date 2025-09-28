@@ -1,0 +1,222 @@
+
+//#define NoTransparency
+/*Uncomment the above to disable transparency in the game's menus.
+If you'd only like some things to be transparent, leave this undefined and
+instead remove their specific surrounding ifdef statements.*/
+
+
+PUSH
+ORG 0x5B6470
+// For each color style
+POIN MenuTiles
+POIN MenuTiles
+POIN MenuTiles
+POIN MenuTiles
+
+ORG 0x5B6BB4//Palettes
+#incbin "BluePal.dmp"
+#incbin "RedPal.dmp"
+#incbin "GreenPal.dmp"
+#incbin "GrayPal.dmp"
+
+/*This second set is apparently for "darkened palettes",
+but I don't know where they're different in vanilla and
+every hack I see just uses the same ones. If you know what's
+different about these, let me know.*/
+
+#incbin "BluePal.dmp"
+#incbin "RedPal.dmp"
+#incbin "GreenPal.dmp"
+#incbin "GrayPal.dmp"
+
+ORG 0xA1738C//MMB Palettes
+#incbin "BluePal.dmp"
+#incbin "RedPal.dmp"
+#incbin "GreenPal.dmp"
+POP
+
+PUSH
+ORG 0xA1742C
+#incbin "Terrain.dmp" //7x6
+#ifdef NoTransparency
+	ORG 0x8D01A
+	BYTE $00 $20
+#endif
+
+ORG 0xA1C8B4
+#incbin "UnitMenu.dmp" //30x20
+#ifdef NoTransparency
+	ORG 0x91AB8
+	BYTE $00 $20
+#endif
+
+ORG 0xA17744
+#incbin "OneLineObjective.dmp" //11x4
+
+ORG 0xA176BC
+#incbin "TwoLineObjective.dmp" //11x6
+
+ORG 0xB1C84
+POIN OptionsMenuTSA //30x18, compressed.
+
+ORG 0x8E07C
+POIN StatusScreenTSA //30x14, compressed.
+//Box for player count is PaletteID 1, enemy count is PaletteID 2, everything else is 0
+#ifdef NoTransparency
+	ORG 0x8E3AC
+	BYTE $00 $20
+#endif
+
+ORG 0x5A09A8
+#incbin "ShortForecast.dmp" //10x16. Player side is PaletteID 0, enemy side is PaletteID 1.
+
+ORG 0x5A0AEC
+#incbin "TallForecast.dmp" //10x20. Palettes same as above.
+
+ORG 0xCEEFC
+POIN GuideTSA //30x18, compressed.
+#ifdef NoTransparency
+	ORG 0xCEF14
+	BYTE $00 $20 //disable transparency
+#endif
+
+ORG 0x95EB8
+POIN PrepMenuTSA //28x12, compressed. Gray area is PaletteID 3, everything else is PaletteID 0
+
+ORG 0x95EAC
+POIN PrepMenuHeaderTSA //14x4, compressed.
+
+ORG 0x9A8E0
+POIN PrepMenuUnitListTSA //32x20, compressed.
+ORG 0x9A8A0
+SHORT 0x46C0 0x46C0 // clear out extra tiles
+
+ORG 0x98D78
+POIN PrepMenuItemsTSA //32x20, compressed.
+ORG 0x995C0
+POIN PrepMenuItemsTSA
+ORG 0x99C40
+POIN PrepMenuItemsTSA
+
+ORG 0x99C4C
+POIN PrepMenuItemsSecondUnitTSA //15x12, compressed.
+
+ORG 0x9C804
+POIN PrepMenuUseTSA //32x20, compressed.
+ORG 0x9C65C
+SHORT 0x46C0 0x46C0 // clear out extra tiles
+
+ORG 0xB4E04
+POIN ShopPortraitWindowTSA //8x8, compressed.
+
+ORG 0x9DC38
+POIN SupplyMenuTSA //32x20, compressed.
+ORG 0x9F0C8
+POIN SupplyMenuTSA
+
+ORG 0x9DC44
+POIN SupplyMenuPortraitTSA //6x8, compressed.
+
+
+ORG 0xA14D8
+POIN SupportArmyListTSA //28x15, compressed. Note that the top row is used for very little as seen in the
+//image, so you'll likely want to go a tile shorter.
+
+ORG 0xA2420
+POIN SupportConversationListTSA //30x20, compressed.
+ORG 0xA2AA0
+POIN SupportConversationListTSA
+
+ORG 0xAC19C
+POIN DifficultySelectTSA //13x12, compressed
+
+
+ORG 0x5A0D4C
+#incbin "Steal.dmp" //12x13
+
+ORG 0xA2C5A8
+#incbin "SoundRoomSongList.dmp" //18x14
+
+#ifdef NoTransparency
+	ORG 0xAF744
+	BYTE $00 $20
+#endif
+
+ORG 0xA2C4C8
+#incbin "SoundRoomPlayer.dmp" //10x11
+
+ORG 0xA173EC
+#incbin "TradeWindowTopLeft.dmp" //6x3
+
+ORG 0xD7F92
+#incbin "TradeWindowTopRight.dmp" //4x3, unheadered, unreversed. PaletteID 1.
+
+ORG 0xDA2F4
+#incbin "AutoBox.dmp" //4x12, unheadered, unreversed. PaletteID 1.
+
+POP
+
+ALIGN 4
+GuideTSA:
+#incbin "Guide_compressed.dmp"
+
+ALIGN 4
+PrepMenuTSA:
+#incbin "PrepMenu_compressed.dmp"
+
+ALIGN 4
+PrepMenuHeaderTSA:
+#incbin "PrepMenuHeader_compressed.dmp"
+
+ALIGN 4
+PrepMenuUnitListTSA:
+#incbin "PrepMenuUnitList_compressed.dmp"
+
+ALIGN 4
+PrepMenuItemsTSA:
+#incbin "PrepMenuItems_compressed.dmp"
+
+ALIGN 4
+PrepMenuItemsSecondUnitTSA:
+#incbin "PrepMenuItemsSecondUnit_compressed.dmp"
+
+ALIGN 4
+PrepMenuUseTSA:
+#incbin "PrepMenuUse_compressed.dmp"
+
+ALIGN 4
+OptionsMenuTSA:
+#incbin "OptionsMenu_compressed.dmp"
+
+ALIGN 4
+StatusScreenTSA:
+#incbin "StatusScreen_compressed.dmp"
+
+ALIGN 4
+ShopPortraitWindowTSA:
+#incbin "ShopPortraitWindow_compressed.dmp"
+
+ALIGN 4
+SupplyMenuTSA:
+#incbin "supplycompressed.dmp"
+
+ALIGN 4
+SupplyMenuPortraitTSA:
+#incbin "supplymenuportraitcompressed.dmp"
+
+ALIGN 4
+SupportArmyListTSA:
+#incbin "SupportArmyList_compressed.dmp"
+
+ALIGN 4
+SupportConversationListTSA:
+#incbin "SupportConversationList_compressed.dmp"
+
+ALIGN 4
+DifficultySelectTSA:
+#incbin "difficultycompressed.dmp"
+
+
+ALIGN 4
+MenuTiles:
+#incext Png2Dmp --lz77 "MenuTiles.png"

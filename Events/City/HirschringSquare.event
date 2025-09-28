@@ -377,6 +377,13 @@ TownFourthTalk:
 RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 
+DummyEvent:
+ENDA
+
+TownBertramTalk:
+RunTextByVisit(City02_Bertram,City03_Bertram,CityS1_Bertram,0,0,0,0,0,0,0,0,0,0,0)
+EndEvent
+
 BuyStandardClasses:
 EVBIT_MODIFY 3
 Text(IntroBuyStandardClasses)

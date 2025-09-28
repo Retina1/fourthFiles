@@ -170,3 +170,16 @@ Frontier1Tiles:
 TileConfigPointerTable(FrontierCONFIG, Frontier1Tiles)
 ObjTypePalettePointerTable(Frontier1OBJ, FrontierObjects)
 ObjTypePalettePointerTable(Frontier1PAL, Frontier1Palette)
+
+ALIGN 4
+DesertObjects:
+#incbin "Desert1.dmp"
+ALIGN 4
+Desert1Palette:
+#incbin "Desert1_pal.dmp"
+ALIGN 4
+Desert1Tiles:
+#incext compress "Desert.mapchip_config"
+TileConfigPointerTable(DesertCONFIG, Desert1Tiles)
+ObjTypePalettePointerTable(Desert1OBJ, DesertObjects)
+ObjTypePalettePointerTable(Desert1PAL, Desert1Palette)

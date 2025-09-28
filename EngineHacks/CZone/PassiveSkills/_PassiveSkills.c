@@ -1,4 +1,5 @@
 extern u16 GenericHealEvent;
+extern u16 GenericBuffEvent;
 
 #include "1_Swordfighter.c"
 #include "2_Knight.c"
@@ -6,7 +7,7 @@ extern u16 GenericHealEvent;
 #include "4_Archer.c"
 #include "5_Scholar.c"
 #include "6_Curate.c"
-//myrm might not have any?
+#include "7_Myrmidon.c"
 #include "8_Rider.c"
 #include "9_Raider.c"
 #include "10_Gunner.c"
@@ -38,6 +39,17 @@ void ApplyItemFlatPassives(struct BattleUnit* attacker, struct BattleUnit* defen
 	//magic scaling
 	if (GetItemAttributes(eqpWpn) & IA_SCALE_MAGIC) {
 		attacker->battleAttack = attacker->battleAttack + GetItemOtherByte(eqpWpn) * attacker->unit.mag / 100;
+	}
+	
+	//it's king brooch time
+	for(int j = 0; j < GetUnitItemCount(&attacker->unit); j++) {
+			u16 curItem = attacker->unit.items[j];
+			if(GetItemIndex(curItem) == 0xDB) {
+				attacker->battleHitRate = attacker->battleHitRate * 11/10;
+				if (!((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))) {
+					attacker->battleAttack = attacker->battleAttack + attacker->unit.mag / 5;
+				}
+			}
 	}
 }
 
@@ -89,7 +101,7 @@ void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender
 	ApplyArcherPassiveSkills(attacker, defender);
 	ApplyScholarPassiveSkills(attacker, defender);
 	//ApplyCuratePassiveSkills(attacker, defender); curate has no prebattle passives
-	//myrm might not have any?
+	ApplyMyrmidonPassiveSkills(attacker, defender);
 	ApplyRiderPassiveSkills(attacker, defender);
 	ApplyRaiderPassiveSkills(attacker, defender);
 	ApplyGunnerPassiveSkills(attacker, defender);
@@ -122,7 +134,7 @@ void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defend
 //	BothSidesArcherPassiveSkills(attacker, defender);
 //	BothSidesScholarPassiveSkills(attacker, defender);
 	//BothSidesCuratePassiveSkills(attacker, defender); curate has no prebattle passives
-	//myrm might not have any?
+	BothSidesMyrmidonPassiveSkills(attacker, defender);
 	BothSidesRiderPassiveSkills(attacker, defender);
 	BothSidesRaiderPassiveSkills(attacker, defender);
 	BothSidesGunnerPassiveSkills(attacker, defender);
@@ -292,6 +304,7 @@ long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
 	stat = ApplySwordfighterWeaponParry(stat,unit);
 	//then multipliers
 	stat = ApplyKnightIronWall(stat,unit);
+	stat = ApplyMyrmidonClearStance(stat,unit);
 	stat = ApplySkyKnightSkySquadronDefense(stat,unit);
 	stat = ApplyDefBuff(stat,unit);
 	

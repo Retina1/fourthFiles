@@ -1,96 +1,3 @@
-//dht
-##MSS_Opportunistic
-Opportunistic: Double ailing[N]
-enemies before counterattacks.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//lnc
-##MSS_MoraleBoost
-Morale Boost: Allies regain[N]
-HP upon user killing enemies.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
 
 //brw
 ##MSS_Intimidation
@@ -1298,6 +1205,102 @@ Curse to attack self.[X]
 ##
 Deity's Word: Command enemies with[N]
 Curse to bow down and give items.[X]
+
+//dht
+##MSS_Opportunistic
+Opportunistic: Double ailing[N]
+enemies before counterattacks.[X]
+##
+Anatomy: Boosts Atk against[N]
+ailing or bound foes.[X]
+##
+Potent Strikes: Boosts duration[N]
+of unit's inflicted statuses.[X]
+##
+Merciless: Massively boosts Crit[N]
+against ailing or bound foes.[X]
+##
+Cuffs Whip: A whip strike[N]
+that binds the arms.[X]
+##
+Shackle Whip: A whip strike[N]
+that binds the legs.[X]
+##
+Mute Whip: A whip strike[N]
+that binds the head.[X]
+##
+Toxin Whip: A whip strike[N]
+that inflicts poison.[X]
+##
+Slumber Whip: A whip strike[N]
+that inflicts sleep.[X]
+##
+Mirate Whip: A whip strike[N]
+that inflicts berserk.[X]
+##
+Precision: Buff self and allies[N]
+to significantly boost Hit/Crit.[X]
+##
+Climax Whip: Instakill a foe with[N]
+odds that improve at lower foe HP.[X]
+##
+Cripple Whip: A whip strike that[N]
+debuffs Atk, AS, Def, and Mov.[X]
+##
+Whipstorm: A flurry of strikes that[N]
+binds/inflicts multiple times.[X]
+##
+Liberation: A strike that purges[N]
+ailments and ends suffering.[X]
+
+
+//lnc
+##MSS_MoraleBoost
+Morale Boost: Allies regain[N]
+HP upon user killing enemies.[X]
+##
+Blood Fortune: User can't be[N]
+crit while not at full HP.[X]
+##
+Blood Fury: Buffs user's Atk[N]
+after losing HP in combat.[X]
+##
+Bloodrush: Buffs user's Mov[N]
+after losing HP in combat.[X]
+##
+Clear Mind: Consume user's HP[N]
+to purge debuffs and ailments.[X]
+##
+Spirit Shield: Consume user's HP to[N]
+buff allied Def and Luc in an area.[X]
+##
+Bloody Offense: Consume HP in an area[N]
+to buff allied Atk for self and area.[X]
+##
+Far Thrust: A simple thrust[N]
+with good power and range.[X]
+##
+Spear Assist: Consume HP to thrust[N]
+scaling off of nearby ally Mag.[X]
+##
+Head Pierce: Consume HP for a[N]
+thrust that headbinds/instakills.[X]
+##
+Stigmata: Bind self and consume HP[N]
+to massively debuff nearby foes.[X]
+##
+Legion Thrust: A mighty thrust that[N]
+consumes HP in an large area.[X]
+##
+Cross Charge: Consume HP for a combo[N]
+strike with a stored Spear Delay.[X]
+##
+Spear Delay: Consume HP to begin[N]
+charging a powerful Cross Charge.[X]
+##
+Spear Reversal: A thrust empowered[N]
+at low HP and that heals the user.[X]
+
 
 //common
 ##MSS_HPUp

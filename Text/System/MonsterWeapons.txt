@@ -112,6 +112,13 @@ An exceptionally bizarre glove.[N]
 Grants +1 Speed while using Slash[N]
 weapons, but zeroes their might.[X]
 
+##Name_KingBrooch
+King Brooch[X]
+##Desc_KingBrooch ^
+A brooch made of lustrous wolf fur.[N]
+Grants 1.1x Hit. Add 20% of Mag to[N]
+Atk with phys. weapons, before mults.[X]
+
 ##Use_PassiveItem
 Grants a[N]
 passive boon.[X]

@@ -181,6 +181,7 @@ NelsonMug
 HugoMug
 NoelleMug
 ShiliangCatMug
+HalloranMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

@@ -23,6 +23,8 @@ between stats and growths.[X]
 #include "System/Units_Act2_Senatus.txt"
 #include "System/Units_Act3.txt"
 
+#include "System/UnitMenu.txt"
+
 #include "System/NPCS.txt"
 #include "System/ItemNamesDescs.txt"
 #include "System/MonsterWeapons.txt"

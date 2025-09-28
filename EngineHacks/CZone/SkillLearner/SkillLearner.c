@@ -3,6 +3,15 @@
 
 #include "SkillLevelFuncs.c"
 
+int SkillLearner_Usability(struct MenuProc* menu) { 
+	if (gActiveUnit->state & US_CANTOING) { 
+		return 3; // false 
+	} 
+	if (gBmSt.taken_action != 0) { 
+		return 3; // false 
+	} 
+	return 1; // usable 
+} 
 
 void LevelUpSkillASMC(ProcPtr* proc) {
 	u8 unitID = gEventSlots[1];

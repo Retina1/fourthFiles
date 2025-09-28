@@ -12,6 +12,10 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "Binds/Binds.c"
 #include "BuffsDebuffs/BuffsDebuffs.c"
 #include "PassiveSkills/_PassiveSkills.c"
+
+#include "HeroesMovement/HeroesMovement.c"
+#include "UnitMenuSkills/UMSkills.c"
+
 #include "PostBattle/PostCombat.c"
 #include "BattleStats.c"
 #include "BattleProc.c"

@@ -1,0 +1,55 @@
+## UM_Vanguard
+ Vanguard[X]
+## UM_VanguardDesc
+Cut defense to boost[N]
+offense for a bit.[X]
+## UM_SwordStance
+ Stance[X]
+## UM_SwordStanceDesc
+Take a sword stance to[N]
+enable mighty skills.[X]
+
+
+
+
+## UM_Swap
+ Swap[X]
+## UM_SwapDesc
+Unit swaps spaces with[N]
+an adjacent ally.[X]
+## SwapTargetBottomText
+Select an ally to swap.[X]
+
+## UM_Pivot
+ Pivot[X]
+## UM_PivotDesc
+Unit crosses an ally's tile,[N]
+moving to the other side.[X]
+## PivotTargetBottomText
+Select an ally to cross.[X]
+
+## UM_Smite
+ Smite[X]
+## UM_SmiteDesc
+Unit pushes a unit up to two[N]
+tiles in a cardinal direction.[X]
+## SmiteTargetBottomText
+Select a unit to shove.[X]
+
+## UM_Reposition
+ Reposition[X]
+## UM_RepositionDesc
+Unit pulls an ally to[N]
+their opposite side.[X]
+## RepositionTargetBottomText
+Select an ally to reposition.[X]
+
+## UM_DrawBack
+ Draw Back[X]
+## UM_DrawBackDesc
+Unit pulls an ally along one[N]
+space, moving both units.[X]
+## DrawBackTargetBottomText
+Select an ally to pull.[X]
+
+

@@ -103,11 +103,11 @@ WORD 0
 WORD 0 //no prep shop
 //chapter 3
 POIN PrepShop1
-POIN 0
-POIN 0
-POIN 0
-POIN 0
-POIN 0
+POIN PrepShop1
+POIN PrepShop1
+POIN PrepShop1
+POIN PrepShop1
+POIN PrepShop1
 
 //chapter 9
 POIN 0
@@ -147,7 +147,7 @@ POIN PrepShop1
 WORD 0; WORD 0
 
 //shimmering
-POIN 0
+POIN PrepShopCity
 WORD 0; WORD 0
 
 //clouded
@@ -193,6 +193,11 @@ ALIGN 4
 ALIGN 4
 PrepShop1:
 SHLI AriadneShard Shortsword VineWhip Shortspear Epee Shortmace BrassKnuckles Shortbow Handgonne Wand Vulnerary Medica
+BYTE 0x0 0x0
+
+ALIGN 4
+PrepShop2:
+SHLI AriadneShard Shortsword Scramasax Boarblade VineWhip ThornWhip Shortspear Pike Partizan Epee Sabre Shortmace Broadaxe Yue BrassKnuckles Caestus Shortbow Recurve Composite Handgonne Arquebus Sakaloz Wand Staff Vulnerary Medica
 BYTE 0x0 0x0
 
 ALIGN 4
