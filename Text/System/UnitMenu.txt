@@ -9,6 +9,12 @@ offense for a bit.[X]
 Take a sword stance to[N]
 enable mighty skills.[X]
 
+## UM_GracefulBlur
+ Blur[X]
+## UM_GracefulBlurDesc
+Cancel sword stance to[N]
+warp self to another tile.[X]
+
 
 
 

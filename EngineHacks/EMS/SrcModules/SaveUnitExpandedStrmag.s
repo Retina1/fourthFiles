@@ -33,7 +33,7 @@
 	@   +00 | <GameSaveUnit>
 	@   +2C | u8 chp
 	@   +2D | u8 rescueUnit
-	@   +2E | u8 ballista
+	@   +2E | u8 ballista (actually statebit now)
 	@   +2F | u8 status/duration
 	@   +30 | u8 torch/purewater
 	@   +31 | (end)
@@ -451,7 +451,7 @@ PackPlayerSuspendSaveUnit:
 	@ returns:
 	@ - r0 = target buffer address
 
-	push {r4, lr}
+	push {r4-r5, lr}
 
 	mov r4, r1
 
@@ -465,8 +465,9 @@ PackPlayerSuspendSaveUnit:
 
 	ldrb r1, [r4, #0x1B] @ r1 = u->rescue
 	strb r1, [r2, #0x01] @ su->rescue = u->rescue
-
-	ldrb r1, [r4, #0x1C] @ r1 = u->blst
+	
+	mov  r5, #0x3B
+	ldrb r1, [r4, r5] @ r1 = u->blst
 	strb r1, [r2, #0x02] @ su->blst = u->blst
 
 	mov  r1, #0x30
@@ -481,7 +482,7 @@ PackPlayerSuspendSaveUnit:
 	ldrb r1, [r4, r1]    @ r1 = u->supportbits
 	strb r1, [r2, #0x05] @ su->supportbits = u->supportbits
 
-	pop {r4}
+	pop {r4-r5}
 
 	pop {r1}
 	bx  r1
@@ -496,7 +497,7 @@ UnpackPlayerSuspendSaveUnit:
 	@ returns:
 	@ - r0 = target unit
 
-	push {r4, lr}
+	push {r4-r5, lr}
 
 	mov r4, r1
 
@@ -511,8 +512,9 @@ UnpackPlayerSuspendSaveUnit:
 	ldrb r1, [r2, #0x01] @ r1 = su->rescue
 	strb r1, [r0, #0x1B] @ u->rescue = su->rescue
 
+	mov  r5, #0x3B
 	ldrb r1, [r2, #0x02] @ r1 = su->blst
-	strb r1, [r0, #0x1C] @ u->blst = su->blst
+	strb r1, [r0, r5] @ u->blst = su->blst
 
 	mov  r3, #0x30
 	ldrb r1, [r2, #0x03] @ r1 = su->sd
@@ -526,7 +528,7 @@ UnpackPlayerSuspendSaveUnit:
 	ldrb r1, [r2, #0x05] @ r1 = su->supportbits
 	strb r1, [r0, r3]    @ u->supportbits = su->supportbits
 
-	pop {r4}
+	pop {r4-r5}
 
 	pop {r1}
 	bx  r1
@@ -541,7 +543,7 @@ PackOtherSuspendSaveUnit:
 	@ returns:
 	@ - r0 = target buffer address
 
-	push {r4, lr}
+	push {r4-r5, lr}
 
 	mov r4, r1
 
@@ -556,7 +558,8 @@ PackOtherSuspendSaveUnit:
 	ldrb r1, [r4, #0x1B] @ r1 = u->rescue
 	strb r1, [r2, #0x01] @ su->rescue = u->rescue
 
-	ldrb r1, [r4, #0x1C] @ r1 = u->blst
+	mov  r5, #0x3B
+	ldrb r1, [r4, r5] @ r1 = u->blst
 	strb r1, [r2, #0x02] @ su->blst = u->blst
 
 	mov  r1, #0x30
@@ -588,7 +591,7 @@ PackOtherSuspendSaveUnit:
 	ldrh r1, [r3, #0x00] @ r1 = u->aiConf
 	strh r1, [r2, #0x0A] @ su->aiConf = u->aiConf
 
-	pop {r4}
+	pop {r4-r5}
 
 	pop {r1}
 	bx  r1
@@ -603,7 +606,7 @@ UnpackOtherSuspendSaveUnit:
 	@ returns:
 	@ - r0 = target unit
 
-	push {r4, lr}
+	push {r4-r5, lr}
 
 	mov r4, r1
 
@@ -618,8 +621,9 @@ UnpackOtherSuspendSaveUnit:
 	ldrb r1, [r2, #0x01] @ r1 = su->rescue
 	strb r1, [r0, #0x1B] @ u->rescue = su->rescue
 
+	mov  r5, #0x3B
 	ldrb r1, [r2, #0x02] @ r1 = su->blst
-	strb r1, [r0, #0x1C] @ u->blst = su->blst
+	strb r1, [r0, r5] @ u->blst = su->blst
 
 	mov  r3, #0x30
 	ldrb r1, [r2, #0x03] @ r1 = su->sd
@@ -650,7 +654,7 @@ UnpackOtherSuspendSaveUnit:
 	ldrh r1, [r2, #0x0A] @ r1 = su->aiConf
 	strh r1, [r3, #0x00] @ u->aiConf = su->aiConf
 
-	pop {r4}
+	pop {r4-r5}
 
 	pop {r1}
 	bx  r1

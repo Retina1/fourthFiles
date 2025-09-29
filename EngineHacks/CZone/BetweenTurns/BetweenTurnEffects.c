@@ -15,6 +15,8 @@ void TickUnitStateTimer(struct Unit* unit) {
 	if (UNIT_HAS_SKILL(unit,RNI,skill_111)) {
 		if (unit->classSkillState != 0) {
 			unit->classSkillState = unit->classSkillState - 1;
+			//add emotion bubble when it runs out?
+			//maybe try to add a state tracker to mss
 		}
 	}
 }
