@@ -3,6 +3,11 @@
 extern bool CheckEventId_(u16 flag); 
 extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 
+extern u16 GenericHealEvent;
+extern u16 GenericBuffEvent;
+extern u16 GenericMusicNoteEvent;
+extern u16 GenericMoneyEvent;
+
 #include "SkillSystem/SkillHelpers.c"
 #include "SkillLearner/SkillLearner.c"
 
@@ -11,6 +16,7 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 #include "Misc/Caps.c"
 #include "Binds/Binds.c"
 #include "BuffsDebuffs/BuffsDebuffs.c"
+#include "BuffsDebuffs/RallyingCry.c"
 #include "PassiveSkills/_PassiveSkills.c"
 
 #include "HeroesMovement/HeroesMovement.c"

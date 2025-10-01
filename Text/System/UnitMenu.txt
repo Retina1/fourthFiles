@@ -3,12 +3,21 @@
 ## UM_VanguardDesc
 Cut defense to boost[N]
 offense for a bit.[X]
+
+## UM_Charge
+ Charge[X]
+## UM_FullChargeDesc
+Charge up to initiate a[N]
+mighty physical strike.[X]
+## UM_EthericChargeDesc
+Charge up to initiate a[N]
+mighty magical strike.[X]
+
 ## UM_SwordStance
  Stance[X]
 ## UM_SwordStanceDesc
 Take a sword stance to[N]
 enable mighty skills.[X]
-
 ## UM_GracefulBlur
  Blur[X]
 ## UM_GracefulBlurDesc
@@ -58,4 +67,9 @@ space, moving both units.[X]
 ## DrawBackTargetBottomText
 Select an ally to pull.[X]
 
+## UM_RallyingCry
+ Rally[X]
+## UM_RallyingCryDesc
+Buff nearby allies for a[N]
+turn with known rallies.[X]
 

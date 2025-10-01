@@ -20,7 +20,7 @@ ChapterDeathQuote(BossBenthus,Chapter1,0x0,C1BenthusDefeat)
 ChapterDeathQuote(Lucien,Chapter3,GameOverFlag,C3LucienDeath)
 ChapterDeathQuote(Helman,Chapter3,GameOverFlag,C3HelmanDeath)
 //c4
-ChapterDeathQuote(Quarry,Chapter4,Quest1_S1x_DoneFlag,0x0)//text eventually?
+ChapterDeathQuote(Quarry,Chapter4,Quest1_S1x_DoneFlag,Quest1_S1x_Kill)//text eventually?
 EventDeathQuote(BeastKing,Chapter4,0x2,BeastKingDeathEvent)
 //c5
 ChapterDeathQuote(Xavens,Chapter5,0x0,C5XavensDefeat)

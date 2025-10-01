@@ -11,6 +11,14 @@ void ApplyAxefighterSteadyMorale(struct Unit* attacker, struct Unit* defender) {
 	}
 }
 
+void ApplyAxefighterFullChargeDeplete(struct Unit* attacker, struct Unit* defender) {
+	if (UNIT_HAS_SKILL(attacker,GLD,promoSkill_141)){
+		if  (!((GetItemAttributes(gBattleActor.weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(gBattleActor.weapon) & IA_MAGIC))) {
+			attacker->classSkillState = 0;
+		}
+	}
+}
+
 // bug - doesn't quite properly apply in forecast
 void ApplyAxefighterOverpowering(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (BATTLE_UNIT_HAS_SKILL(attacker->unit,GLD,skill_131)){
@@ -21,6 +29,18 @@ void ApplyAxefighterOverpowering(struct BattleUnit* attacker, struct BattleUnit*
 	}
 }
 
+void ApplyAxefighterFullCharge(struct BattleUnit* attacker, struct BattleUnit* defender){
+	if (UNIT_HAS_SKILL(&attacker->unit,GLD,promoSkill_141)){
+		if (attacker->unit.index == gBattleActor.unit.index){
+			if (attacker->unit.classSkillState != 0){
+				if  (!((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))) {
+					attacker->battleAttack = attacker->battleAttack * 5/2;
+					defender->battleDefense = defender->battleDefense * 5/2;
+				}
+			}
+		}
+	}
+}
 
 
 void ApplyAxefighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
@@ -29,9 +49,11 @@ void ApplyAxefighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit
 void BothSidesAxefighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplyAxefighterOverpowering(attacker,defender);
+		ApplyAxefighterFullCharge(attacker,defender);
 	}
 }
 
 void ApplyAxefighterPostcombatSkills(struct Unit* attacker, struct Unit* defender) {
 	ApplyAxefighterSteadyMorale(attacker,defender);
+	ApplyAxefighterFullChargeDeplete(attacker,defender);
 }

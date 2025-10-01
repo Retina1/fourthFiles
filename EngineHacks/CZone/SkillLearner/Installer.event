@@ -100,7 +100,7 @@ SkillLabels:
 OneLevelSkillLabel(PlaceholderLabel,NoReq)//0
 OneLevelSkillLabel(PlaceholderLabel,NoReq)
 OneLevelSkillLabel(PlaceholderLabel,NoReq)
-OneLevelSkillLabel(PlaceholderLabel,PromotedReq)
+OneLevelSkillLabel(PlaceholderLabel,NoReq)
 TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
 TwoLevelSkillLabel(PlaceholderLabel,NoReq)
 TwoLevelSkillLabel(PlaceholderLabel,NoReq)

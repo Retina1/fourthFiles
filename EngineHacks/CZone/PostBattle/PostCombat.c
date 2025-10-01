@@ -6,8 +6,11 @@ void RunPostCombatSkills(void)
 		struct Unit* defender = GetUnit(gBattleTarget.unit.index);
 		
 		ApplyAxefighterPostcombatSkills(attacker, defender);
+		ApplyScholarPostcombatSkills(attacker, defender);
 		ApplyMyrmidonPostcombatSkills(attacker, defender);
 		ApplyLancerPostcombatSkills(attacker, defender);
+		ApplyRichLiving(attacker,defender);
+		ApplyRallyingThrust(attacker,defender);
 	}
 }
 

@@ -12,8 +12,8 @@ void ApplyLancerMoraleBoost(struct Unit* attacker, struct Unit* defender) {
 				AddUnitHp(other, hpAdd);
 				i++;
 			}
-		}
 		CallEvent(&GenericHealEvent, 0x1);
+		}
 	}
 }
 

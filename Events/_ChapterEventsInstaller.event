@@ -245,6 +245,20 @@ SOUN 0xEF
 STAL 0x16
 EndEvent
 
+GenericMusicNoteEvent:
+CAM1 0xFFFF
+PlayEmotionEffect(MusicNoteEffect)
+SOUN 0xEF
+STAL 0x16
+EndEvent
+
+GenericMoneyEvent:
+CAM1 0xFFFF
+PlayEmotionEffect(MoneyEffect)
+SOUN 0xB9
+STAL 0x16
+EndEvent
+
 GenericTrappedEvent:
 CAM1 0xFFFF
 PlayEmotionEffectCoords(ExclamationEffect)

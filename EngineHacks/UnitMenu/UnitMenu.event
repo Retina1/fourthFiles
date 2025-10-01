@@ -22,6 +22,8 @@ UnitMenuTable:
   UM_Drop
   //todo - make these have smoother animations?
   MenuCommand(UM_Vanguard, UM_VanguardDesc, OrangeText, Vanguard_Usability, Vanguard_Effect)
+  MenuCommand(UM_Charge, UM_FullChargeDesc, OrangeText, FullCharge_Usability, FullCharge_Effect)
+  MenuCommand(UM_Charge, UM_EthericChargeDesc, OrangeText, EthericCharge_Usability, EthericCharge_Effect)
   MenuCommand(UM_SwordStance, UM_SwordStanceDesc, OrangeText, SwordStance_Usability, SwordStance_Effect)
   MenuCommand(UM_GracefulBlur, UM_GracefulBlurDesc, OrangeText, GracefulBlur_Usability, GracefulBlur_Effect)
   MenuCommand(UM_Swap, UM_SwapDesc, OrangeText, Swap_Usability, Swap_Effect)
@@ -29,6 +31,7 @@ UnitMenuTable:
   MenuCommand(UM_Smite, UM_SmiteDesc, OrangeText, Smite_Usability, Smite_Effect)
   MenuCommand(UM_Reposition, UM_RepositionDesc, OrangeText, Reposition_Usability, Reposition_Effect)
   MenuCommand(UM_DrawBack, UM_DrawBackDesc, OrangeText, DrawBack_Usability, DrawBack_Effect)
+  MenuCommand(UM_RallyingCry, UM_RallyingCryDesc, OrangeText, RallyingCry_Usability, RallyingCry_Effect)
 
   UM_Item
   UM_Trade
@@ -70,6 +73,10 @@ UM_Play
     MenuCommand(0x681, 0x6ca, GreenText, 0x23d15, 0x23d65) // UM_Support
 
 */
+
+ALIGN 4
+RallyingCryBuffLabel_Link: 
+WORD RallyingCryBuffLabel
 
 
 PUSH

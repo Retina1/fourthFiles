@@ -20,6 +20,12 @@ and disable critical hits.[X]
 Leg binds zero out Movement[N]
 and disable evasion.[X]
 
+##RallyingCryBuffLabel
+Rallying Cry[X]
+##RallyingCryBuffDesc
+Bonuses based on source[N]
+Noble's skill levels.[X]
+
 ##BraveryLabel
 Bravery Song[X]
 ##BraveryDesc1

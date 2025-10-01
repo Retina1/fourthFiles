@@ -331,49 +331,49 @@ summon a lost Soul.[X]
 //nob
 ##MSS_RallyingCry
 Rallying Cry: Use Rally to[N]
-bolster nearby allies.[X]
+bolster allies within 2 tiles.[X]
 ##
-:[N]
-.[X]
+Boonful Presence: Allies within[N]
+2 tiles heal at turn's start.[X]
 ##
-:[N]
-.[X]
+Rich Living: Kill on initation[N]
+for gold based on enemy Level.[X]
 ##
-:[N]
-.[X]
+Rallying Thrust: Attacking applies[N]
+Rallying Cry's effect after combat.[X]
 ##
-:[N]
-.[X]
+Health Rally: Rally[N]
+restores ally HP.[X]
 ##
-:[N]
-.[X]
+Fortune Rally: Rally[N]
+buffs ally Luck.[X]
 ##
-:[N]
-.[X]
+Proud Nobility: Boosts Mov[N]
+if no allies are missing HP.[X]
 ##
-:[N]
-.[X]
+Attack Rally: Rally[N]
+buffs ally Atk.[X]
 ##
-:[N]
-.[X]
+Guard Rally: Rally[N]
+buffs ally Def.[X]
 ##
-:[N]
-.[X]
+Haste Rally: Rally[N]
+buffs ally AS.[X]
 ##
-:[N]
-.[X]
+Imbue Rally: Rally gives allies[N]
+bonus Atk based on their Mag.[X]
 ##
-:[N]
-.[X]
+Thrift Rally: Rally reduces[N]
+allies' art durability cost.[X]
 ##
-:[N]
-.[X]
+Strike Decree: Command allies[N]
+to attack in your stead. (5/Map)[X]
 ##
-:[N]
-.[X]
+Stun Decree: Command enemies[N]
+to stand still for a turn. (2/Map)[X]
 ##
-:[N]
-.[X]
+Overlord Decree: Command enemies[N]
+to become green units. (1/Map)[X]
 
 //due
 ##MSS_Unburdened

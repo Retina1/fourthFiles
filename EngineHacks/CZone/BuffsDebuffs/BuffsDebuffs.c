@@ -31,6 +31,9 @@ struct DebuffEntry* GetUnitBuffsDebuffs(struct Unit* unit) {
 	return entry;
 };
 
+void ApplyRallyingCryBuffs(struct BattleUnit* attacker, struct BattleUnit* defender);
+void ApplyRallyingCryBuffsBothSides(struct BattleUnit* attacker, struct BattleUnit* defender);
+
 void BattleApplyUnitBuffsDebuffs(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	/* get unit buffs/debuffs
 	apply multipliers to combat stats per nonzero buff/debuff
@@ -73,6 +76,8 @@ void BattleApplyUnitBuffsDebuffs(struct BattleUnit* attacker, struct BattleUnit*
 		attacker->battleAvoidRate = attacker->battleAvoidRate * DebuffEffectsTable[entry->debuff3].avoMul / DebuffEffectsTable[entry->debuff3].avoDiv;
 		attacker->battleCritRate = attacker->battleCritRate * DebuffEffectsTable[entry->debuff3].critMul / DebuffEffectsTable[entry->debuff3].critDiv;
 	}
+	
+	ApplyRallyingCryBuffs(attacker,defender);
 
 };
 
@@ -107,6 +112,9 @@ void BattleApplyUnitBuffsDebuffsBothSides(struct BattleUnit* attacker, struct Ba
 		attacker->battleAttack = attacker->battleAttack * DebuffEffectsTable[entry->debuff3].atkMul / DebuffEffectsTable[entry->debuff3].atkDiv;
 		defender->battleDefense = defender->battleDefense * DebuffEffectsTable[entry->debuff3].atkMul / DebuffEffectsTable[entry->debuff3].atkDiv;
 	}
+
+	ApplyRallyingCryBuffsBothSides(attacker,defender);
+
 
 };
 

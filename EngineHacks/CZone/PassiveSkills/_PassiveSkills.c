@@ -1,5 +1,4 @@
-extern u16 GenericHealEvent;
-extern u16 GenericBuffEvent;
+
 
 #include "1_Swordfighter.c"
 #include "2_Knight.c"
@@ -90,6 +89,7 @@ void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender
 	ApplySeekerPrismatic(attacker);
 	ApplyPriestWarImbue(attacker);
 	ApplyDuelistUnburdened(attacker);
+	ApplyRallyingCryFlatBuffs(attacker, defender);
 	ApplyItemFlatPassives(attacker, defender);
 	if (IsBattleReal()){
 		ApplyPriestWarPierce(attacker,defender);
@@ -132,7 +132,7 @@ void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defend
 	BothSidesKnightPassiveSkills(attacker, defender);
 	BothSidesAxefighterPassiveSkills(attacker, defender);
 //	BothSidesArcherPassiveSkills(attacker, defender);
-//	BothSidesScholarPassiveSkills(attacker, defender);
+	BothSidesScholarPassiveSkills(attacker, defender);
 	//BothSidesCuratePassiveSkills(attacker, defender); curate has no prebattle passives
 	BothSidesMyrmidonPassiveSkills(attacker, defender);
 	BothSidesRiderPassiveSkills(attacker, defender);
@@ -195,6 +195,7 @@ int ApplyLucBuff(u8 stat, struct Unit* unit) {
 	if (entry->debuff3) {
 		stat = stat * DebuffEffectsTable[entry->debuff3].lucMul / DebuffEffectsTable[entry->debuff3].lucDiv;
 	}
+	stat = ApplyRallyingCryLuck(stat, unit);
 	return stat;
 }
 
@@ -218,6 +219,7 @@ int ApplyDefBuff(u8 stat, struct Unit* unit) {
 	if (entry->debuff3) {
 		stat = stat * DebuffEffectsTable[entry->debuff3].defMul / DebuffEffectsTable[entry->debuff3].defDiv;
 	}
+	stat = ApplyRallyingCryDef(stat, unit);
 	return stat;
 }
 
