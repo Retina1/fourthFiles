@@ -17,6 +17,7 @@ UNIT Monk Priest 0x0 Level(1,NPC,0) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMove
 UNIT AsketaGeneric Axefighter 0x0 Level(7,NPC,1) [5,13] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT AsketaGeneric Driver 0x0 Level(6,NPC,1) [11,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT Astarte 0x0 0x0 Level(1,Ally,0) [8,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x0 Level(1,Ally,0) [9,18] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
@@ -91,7 +92,7 @@ NorthernPassMoveToMuseum:
 SwapToMap(Museum,6,16)
 CALL LoadMuseumSigils
 MUSC Song_WhyLove
-LoadUnitsByVisit(DummyUnits,MuseumUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(DummyUnits,MuseumUnitsC3,MuseumUnitsS1,0,0,0,0,0,0,0,0,0,0,0)
 FADU 10
 CALL Quest1_3x_Event
 EndEvent

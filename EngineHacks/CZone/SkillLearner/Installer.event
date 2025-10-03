@@ -42,7 +42,7 @@ POIN ArtificeSkillLabels
 POIN SoulSkillLabels
 POIN GenericSkillLabels
 */
-POIN SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels
+POIN SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels NobleSkillLabels SkillLabels SkillLabels SkillLabels SkillLabels
 POIN 0 
 
 
@@ -113,6 +113,73 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
+
+ALIGN 4
+NobleSkillLabels:
+OneLevelSkillLabel(RallyingCrySkill,NoReq)//0
+OneLevelSkillLabel(BoonfulPresenceSkill,NoReq)
+OneLevelSkillLabel(RichLivingSkill,RichLivingReq)
+OneLevelSkillLabel(RallyingThrustSkill,RallyingThrustReq)
+TwoLevelSkillLabel(HealthRallySkill,RallyCommandReq)//4
+TwoLevelSkillLabel(FortuneRallySkill,FortuneRallyReq)
+TwoLevelSkillLabel(ProudNobilitySkill,ProudNobilityReq)
+ThreeLevelSkillLabel(AttackRallySkill,RallyCommandReq)//7
+ThreeLevelSkillLabel(GuardRallySkill,RallyCommandReq)
+ThreeLevelSkillLabel(HasteRallySkill,RallyCommandReq)
+ThreeLevelSkillLabel(ImbueRallySkill,ImbueRallyReq)
+ThreeLevelSkillLabel(ThriftRallySkill,ThriftRallyReq)
+FiveLevelSkillLabel(StrikeDecreeSkill,StrikeDecreeReq)//12
+FiveLevelSkillLabel(StunDecreeSkill,StunDecreeReq)
+FiveLevelSkillLabel(OverlordDecreeSkill,OverlordDecreeReq)
+SkillLabelTerminator
+
+ALIGN 4
+RallyCommandReq:
+ReqEntry(0,1)
+ReqTerm
+ALIGN 4
+RichLivingReq:
+ReqEntry(5,2)
+ReqTerm
+ALIGN 4
+RallyingThrustReq:
+ReqPromo
+ReqEntry(0,1)
+ReqTerm
+ALIGN 4
+FortuneRallyReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+ProudNobilityReq:
+ReqEntry(4,2)
+ReqTerm
+ALIGN 4
+ImbueRallyReq:
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+ThriftRallyReq:
+ReqPromo
+ReqEntry(5,2)
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+StrikeDecreeReq:
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+StunDecreeReq:
+ReqEntry(5,2)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+OverlordDecreeReq:
+ReqPromo
+ReqEntry(2,1)
+ReqEntry(6,2)
+ReqEntry(13,5)
+ReqTerm
 
 
 ALIGN 4

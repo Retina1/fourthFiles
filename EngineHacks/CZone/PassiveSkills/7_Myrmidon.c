@@ -36,7 +36,7 @@ int ApplyMyrmidonClearStance(u8 stat, struct Unit* unit) {
 }
 
 void ApplyMyrmidonExtend(struct Unit* attacker, struct Unit* defender) {
-	if (UNIT_HAS_SKILL(attacker,RNI,skill_111)){
+	if (UNIT_HAS_SKILL(attacker,RNI,skill_131)){
 		if (GetUnitCurrentHp(defender) <= 0) {
 			if  (attacker->classSkillState > 0) {
 				attacker->classSkillState = attacker->classSkillState + 1;

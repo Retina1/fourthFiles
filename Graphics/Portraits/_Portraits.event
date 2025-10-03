@@ -48,6 +48,10 @@ ALIGN 4
 FrancescaDMP:
 #incbin "dmps/hirayaFrancesca.dmp"
 setMugEntry(FrancescaMug,FrancescaDMP,2,5,3,3)
+ALIGN 4
+BenthusDMP:
+#incbin "dmps/retinaBenthus.dmp"
+setMugEntry(BenthusMug,BenthusDMP,3,5,3,3)
 
 ALIGN 4
 //slatergenerics

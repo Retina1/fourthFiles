@@ -4,6 +4,7 @@ Astarte_Priest
 Astarte_WarMagus
 Gore_Gunner
 Gore_Dragoon
+Benthus_Noble
 Guildmaster_Highlander
 CoastKid_Swordfighter
 CoastKid_Landsknecht

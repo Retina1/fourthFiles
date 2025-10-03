@@ -1,0 +1,437 @@
+##StrikeDecreeSkill
+Strike Decree[X]
+## ^
+Level: 0 (Active)[N]
+[N]
+[N]
+Next:[N]
+[N]
+Req:[X]
+## ^
+Level: 1 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 2 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 3 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 4 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: MAX (Active)[N]
+[N]
+[N]
+[N]
+[N]
+[X]
+
+
+##StunDecreeSkill
+Stun Decree[X]
+## ^
+Level: 0 (Active)[N]
+[N]
+[N]
+Next:[N]
+[N]
+Req:[X]
+## ^
+Level: 1 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 2 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 3 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 4 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: MAX (Active)[N]
+[N]
+[N]
+[N]
+[N]
+[X]
+
+
+##OverlordDecreeSkill
+Overlord Decree[X]
+## ^
+Level: 0 (Active)[N]
+[N]
+[N]
+Next:[N]
+[N]
+Req:[X]
+## ^
+Level: 1 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 2 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 3 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: 4 (Active)[N]
+[N]
+[N]
+[N]
+Next:[N]
+[X]
+## ^
+Level: MAX (Active)[N]
+[N]
+[N]
+[N]
+[N]
+[X]
+
+##RallyingCrySkill
+Rallying Cry[X]
+## ^
+Level: 0 (Active)[N]
+Inspire nearby allies.[N]
+Next: Use Rally command to[N]
+buff allies within 2 tiles[N]
+via known Rallies for a turn.[N]
+Req: None[X]
+## ^
+Level: MAX (Active)[N]
+Inspire nearby allies.[N]
+Use Rally command to buff[N]
+allies within 2 tiles via[N]
+known Rallies for a turn.[N]
+Always uses one buff slot.[X]
+
+##BoonfulPresenceSkill
+Boonful Presence[X]
+## ^
+Level: 0 (Passive)[N]
+Your presence heals the[N]
+wounds of your allies.[N]
+Next: At start of turn,[N]
+allies in 2 tiles heal 20% HP.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Your presence heals the[N]
+wounds of your allies.[N]
+At start of turn, allies[N]
+in 2 tiles heal 20% HP.[N]
+[X]
+
+##RichLivingSkill
+Rich Living[X]
+## ^
+Level: 0 (Passive)[N]
+Spoils unto the victor.[N]
+Next: When killing on[N]
+initiation, gain 10 times[N]
+the enemy's level in gold.[N]
+Req: Fortune Rally 2[X]
+## ^
+Level: MAX (Passive)[N]
+Spoils unto the victor.[N]
+When killing on initiation,[N]
+gain 10 times the enemy's[N]
+level in gold.[N]
+[X]
+
+##RallyingThrustSkill
+Rallying Thrust[X]
+## ^
+Level: 0 (Passive)[N]
+Lead via example.[N]
+Next: After attacking,[N]
+automatically use the[N]
+Rally command.[N]
+Req: PROMO[X]
+## ^
+Level: MAX (Passive)[N]
+Lead via example.[N]
+After attacking,[N]
+automatically use the[N]
+Rally command.[N]
+[X]
+
+##HealthRallySkill
+Health Rally[X]
+## ^
+Level: 0 (Rally)[N]
+Stir your allies'[N]
+health and wellbeing.[N]
+Next: Rally restores[N]
+5% ally HP when used.[N]
+Req: Rallying Cry 1[X]
+## ^
+Level: 1 (Rally)[N]
+Stir your allies'[N]
+health and wellbeing.[N]
+Rally restores 5% ally[N]
+HP when used.[N]
+Next: 10% HP.[X]
+## ^
+Level: MAX (Rally)[N]
+Stir your allies'[N]
+health and wellbeing.[N]
+Rally restores 10% ally[N]
+HP when used.[N]
+[X]
+
+##FortuneRallySkill
+Fortune Rally[X]
+## ^
+Level: 0 (Rally)[N]
+Stir your allies'[N]
+luck and fortune.[N]
+Next: Rally gives[N]
+1.1x Luc while active.[N]
+Req: Guard Rally 1[X]
+## ^
+Level: 1 (Rally)[N]
+Stir your allies'[N]
+luck and fortune.[N]
+Rally gives 1.1x Luc[N]
+while active.[N]
+Next: 1.3x Luc.[X]
+## ^
+Level: MAX (Rally)[N]
+Stir your allies'[N]
+luck and fortune.[N]
+Rally gives 1.3x Luc[N]
+while active.[N]
+[X]
+
+##ProudNobilitySkill
+Proud Nobility[X]
+## ^
+Level: 0 (Passive)[N]
+Stride with pride when[N]
+your people are well.[N]
+Next: +2 Movement while[N]
+no allies are missing HP.[N]
+Req: Health Rally 2[X]
+## ^
+Level: 1 (Passive)[N]
+Stride with pride when[N]
+your people are well.[N]
++2 Movement while no[N]
+allies are missing HP.[N]
+Next: +4 Movement.[X]
+## ^
+Level: MAX (Passive)[N]
+Stride with pride when[N]
+your people are well.[N]
++4 Movement while no[N]
+allies are missing HP.[N]
+[X]
+
+##AttackRallySkill
+Attack Rally[X]
+## ^
+Level: 0 (Rally)[N]
+Stir your allies'[N]
+wrath and fervor.[N]
+Next: Rally gives[N]
+1.1x Atk while active.[N]
+Req: Rallying Cry 1[X]
+## ^
+Level: 1 (Rally)[N]
+Stir your allies'[N]
+wrath and fervor.[N]
+Rally gives 1.1x Atk[N]
+while active.[N]
+Next: 1.2x Atk.[X]
+## ^
+Level: 2 (Rally)[N]
+Stir your allies'[N]
+wrath and fervor.[N]
+Rally gives 1.2x Atk[N]
+while active.[N]
+Next: 1.3x Atk.[X]
+## ^
+Level: MAX (Rally)[N]
+Stir your allies'[N]
+wrath and fervor.[N]
+Rally gives 1.3x Atk[N]
+while active.[N]
+[X]
+
+
+##GuardRallySkill
+Guard Rally[X]
+## ^
+Level: 0 (Rally)[N]
+Stir your allies'[N]
+survival instinct.[N]
+Next: Rally gives[N]
+1.1x Def while active.[N]
+Req: Rallying Cry 1[X]
+## ^
+Level: 1 (Rally)[N]
+Stir your allies'[N]
+survival instinct.[N]
+Rally gives 1.1x Def[N]
+while active.[N]
+Next: 1.2x Def.[X]
+## ^
+Level: 2 (Rally)[N]
+Stir your allies'[N]
+survival instinct.[N]
+Rally gives 1.2x Def[N]
+while active.[N]
+Next: 1.3x Def.[X]
+## ^
+Level: MAX (Rally)[N]
+Stir your allies'[N]
+survival instinct.[N]
+Rally gives 1.3x Def[N]
+while active.[N]
+[X]
+
+
+##HasteRallySkill
+Haste Rally[X]
+## ^
+Level: 0 (Rally)[N]
+Stir your allies'[N]
+agility and haste.[N]
+Next: Rally gives[N]
+1.1x AS while active.[N]
+Req: Rallying Cry 1[X]
+## ^
+Level: 1 (Rally)[N]
+Stir your allies'[N]
+agility and haste.[N]
+Rally gives 1.1x AS[N]
+while active.[N]
+Next: 1.2x AS.[X]
+## ^
+Level: 2 (Rally)[N]
+Stir your allies'[N]
+agility and haste.[N]
+Rally gives 1.2x AS[N]
+while active.[N]
+Next: 1.3x AS.[X]
+## ^
+Level: MAX (Rally)[N]
+Stir your allies'[N]
+agility and haste.[N]
+Rally gives 1.3x AS[N]
+while active.[N]
+[X]
+
+
+##ImbueRallySkill
+Imbue Rally[X]
+## ^
+Level: 0 (Rally)[N]
+Stir your allies'[N]
+arcane potential.[N]
+Next: Rally adds 0.3x[N]
+Mag to unit's Atk.[N]
+Req: Attack Rally 3[X]
+## ^
+Level: 1 (Rally)[N]
+Stir your allies'[N]
+arcane potential.[N]
+Rally adds 0.3x Mag[N]
+to unit's Atk.[N]
+Next: 0.5x Mag.[X]
+## ^
+Level: 2 (Rally)[N]
+Stir your allies'[N]
+arcane potential.[N]
+Rally adds 0.5x Mag[N]
+to unit's Atk.[N]
+Next: 0.8x Mag.[X]
+## ^
+Level: MAX (Rally)[N]
+Stir your allies'[N]
+arcane potential.[N]
+Rally adds 0.8x Mag[N]
+to unit's Atk.[N]
+[X]
+
+
+##ThriftRallySkill
+Thrift Rally[X]
+## ^
+Level: 0 (Rally)[N]
+Stir budgeting ability.[N]
+Next: Rallied units use[N]
+-1 durability (min. 1).[N]
+Req: PROMO, F. Rally 2,[N]
+Proud Nobility 2[X]
+## ^
+Level: 1 (Rally)[N]
+Stir your allies'[N]
+ability to budget.[N]
+Rallied units use[N]
+-1 durability (min. 1).[N]
+Next: -2 durability.[X]
+## ^
+Level: 2 (Rally)[N]
+Stir your allies'[N]
+ability to budget.[N]
+Rallied units use[N]
+-2 durability (min. 1).[N]
+Next: -3 durability.[X]
+## ^
+Level: MAX (Rally)[N]
+Stir your allies'[N]
+ability to budget.[N]
+Rallied units use[N]
+-3 durability (min. 1).[N]
+[X]
+
+

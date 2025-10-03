@@ -6014,11 +6014,11 @@ __TEXTPROCESSEDF:
 setText($EDF, __TEXTPROCESSEDF)
 
 __TEXTPROCESSEE0:
-#incext ParseFile ".TextEntries\text_buildfileCityS1_Benthus.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCityS1_Helman.fetxt"
 setText($EE0, __TEXTPROCESSEE0)
 
 __TEXTPROCESSEE1:
-#incext ParseFile ".TextEntries\text_buildfileCityS1_Helman.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCityS1_EndText.fetxt"
 setText($EE1, __TEXTPROCESSEE1)
 
 __TEXTPROCESSEE2:
@@ -6030,11 +6030,11 @@ __TEXTPROCESSEE3:
 setText($EE3, __TEXTPROCESSEE3)
 
 __TEXTPROCESSEE4:
-#incext ParseFile ".TextEntries\text_buildfileCityS1_Bobby.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCityS1_Benthus.fetxt"
 setText($EE4, __TEXTPROCESSEE4)
 
 __TEXTPROCESSEE5:
-#incext ParseFile ".TextEntries\text_buildfileCityS1_EndText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCityS1_Bobby.fetxt"
 setText($EE5, __TEXTPROCESSEE5)
 
 __TEXTPROCESSEE6:
@@ -9134,52 +9134,332 @@ __TEXTPROCESS11EB:
 setText($11EB, __TEXTPROCESS11EB)
 
 __TEXTPROCESS11EC:
-#incext ParseFile ".TextEntries\text_buildfilePlaceholderLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileStrikeDecreeSkill.fetxt"
 setText($11EC, __TEXTPROCESS11EC)
 
 __TEXTPROCESS11ED:
-#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc0.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11ED.fetxt"
 setText($11ED, __TEXTPROCESS11ED)
 
 __TEXTPROCESS11EE:
-#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc1.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11EE.fetxt"
 setText($11EE, __TEXTPROCESS11EE)
 
 __TEXTPROCESS11EF:
-#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc2.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11EF.fetxt"
 setText($11EF, __TEXTPROCESS11EF)
 
 __TEXTPROCESS11F0:
-#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc3.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11F0.fetxt"
 setText($11F0, __TEXTPROCESS11F0)
 
 __TEXTPROCESS11F1:
-#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc4.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11F1.fetxt"
 setText($11F1, __TEXTPROCESS11F1)
 
 __TEXTPROCESS11F2:
-#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc5.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11F2.fetxt"
 setText($11F2, __TEXTPROCESS11F2)
 
 __TEXTPROCESS11F3:
-#incext ParseFile ".TextEntries\text_buildfileStaffExpLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileStunDecreeSkill.fetxt"
 setText($11F3, __TEXTPROCESS11F3)
 
 __TEXTPROCESS11F4:
-#incext ParseFile ".TextEntries\text_buildfileStaffWexpLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11F4.fetxt"
 setText($11F4, __TEXTPROCESS11F4)
 
 __TEXTPROCESS11F5:
-#incext ParseFile ".TextEntries\text_buildfileRankCurrentLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11F5.fetxt"
 setText($11F5, __TEXTPROCESS11F5)
 
 __TEXTPROCESS11F6:
-#incext ParseFile ".TextEntries\text_buildfileRankNextLabel.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11F6.fetxt"
 setText($11F6, __TEXTPROCESS11F6)
 
 __TEXTPROCESS11F7:
-#incext ParseFile ".TextEntries\text_buildfileHealArrowText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfile11F7.fetxt"
 setText($11F7, __TEXTPROCESS11F7)
+
+__TEXTPROCESS11F8:
+#incext ParseFile ".TextEntries\text_buildfile11F8.fetxt"
+setText($11F8, __TEXTPROCESS11F8)
+
+__TEXTPROCESS11F9:
+#incext ParseFile ".TextEntries\text_buildfile11F9.fetxt"
+setText($11F9, __TEXTPROCESS11F9)
+
+__TEXTPROCESS11FA:
+#incext ParseFile ".TextEntries\text_buildfileOverlordDecreeSkill.fetxt"
+setText($11FA, __TEXTPROCESS11FA)
+
+__TEXTPROCESS11FB:
+#incext ParseFile ".TextEntries\text_buildfile11FB.fetxt"
+setText($11FB, __TEXTPROCESS11FB)
+
+__TEXTPROCESS11FC:
+#incext ParseFile ".TextEntries\text_buildfile11FC.fetxt"
+setText($11FC, __TEXTPROCESS11FC)
+
+__TEXTPROCESS11FD:
+#incext ParseFile ".TextEntries\text_buildfile11FD.fetxt"
+setText($11FD, __TEXTPROCESS11FD)
+
+__TEXTPROCESS11FE:
+#incext ParseFile ".TextEntries\text_buildfile11FE.fetxt"
+setText($11FE, __TEXTPROCESS11FE)
+
+__TEXTPROCESS11FF:
+#incext ParseFile ".TextEntries\text_buildfile11FF.fetxt"
+setText($11FF, __TEXTPROCESS11FF)
+
+__TEXTPROCESS1200:
+#incext ParseFile ".TextEntries\text_buildfile1200.fetxt"
+setText($1200, __TEXTPROCESS1200)
+
+__TEXTPROCESS1201:
+#incext ParseFile ".TextEntries\text_buildfileRallyingCrySkill.fetxt"
+setText($1201, __TEXTPROCESS1201)
+
+__TEXTPROCESS1202:
+#incext ParseFile ".TextEntries\text_buildfile1202.fetxt"
+setText($1202, __TEXTPROCESS1202)
+
+__TEXTPROCESS1203:
+#incext ParseFile ".TextEntries\text_buildfile1203.fetxt"
+setText($1203, __TEXTPROCESS1203)
+
+__TEXTPROCESS1204:
+#incext ParseFile ".TextEntries\text_buildfileBoonfulPresenceSkill.fetxt"
+setText($1204, __TEXTPROCESS1204)
+
+__TEXTPROCESS1205:
+#incext ParseFile ".TextEntries\text_buildfile1205.fetxt"
+setText($1205, __TEXTPROCESS1205)
+
+__TEXTPROCESS1206:
+#incext ParseFile ".TextEntries\text_buildfile1206.fetxt"
+setText($1206, __TEXTPROCESS1206)
+
+__TEXTPROCESS1207:
+#incext ParseFile ".TextEntries\text_buildfileRichLivingSkill.fetxt"
+setText($1207, __TEXTPROCESS1207)
+
+__TEXTPROCESS1208:
+#incext ParseFile ".TextEntries\text_buildfile1208.fetxt"
+setText($1208, __TEXTPROCESS1208)
+
+__TEXTPROCESS1209:
+#incext ParseFile ".TextEntries\text_buildfile1209.fetxt"
+setText($1209, __TEXTPROCESS1209)
+
+__TEXTPROCESS120A:
+#incext ParseFile ".TextEntries\text_buildfileRallyingThrustSkill.fetxt"
+setText($120A, __TEXTPROCESS120A)
+
+__TEXTPROCESS120B:
+#incext ParseFile ".TextEntries\text_buildfile120B.fetxt"
+setText($120B, __TEXTPROCESS120B)
+
+__TEXTPROCESS120C:
+#incext ParseFile ".TextEntries\text_buildfile120C.fetxt"
+setText($120C, __TEXTPROCESS120C)
+
+__TEXTPROCESS120D:
+#incext ParseFile ".TextEntries\text_buildfileHealthRallySkill.fetxt"
+setText($120D, __TEXTPROCESS120D)
+
+__TEXTPROCESS120E:
+#incext ParseFile ".TextEntries\text_buildfile120E.fetxt"
+setText($120E, __TEXTPROCESS120E)
+
+__TEXTPROCESS120F:
+#incext ParseFile ".TextEntries\text_buildfile120F.fetxt"
+setText($120F, __TEXTPROCESS120F)
+
+__TEXTPROCESS1210:
+#incext ParseFile ".TextEntries\text_buildfile1210.fetxt"
+setText($1210, __TEXTPROCESS1210)
+
+__TEXTPROCESS1211:
+#incext ParseFile ".TextEntries\text_buildfileFortuneRallySkill.fetxt"
+setText($1211, __TEXTPROCESS1211)
+
+__TEXTPROCESS1212:
+#incext ParseFile ".TextEntries\text_buildfile1212.fetxt"
+setText($1212, __TEXTPROCESS1212)
+
+__TEXTPROCESS1213:
+#incext ParseFile ".TextEntries\text_buildfile1213.fetxt"
+setText($1213, __TEXTPROCESS1213)
+
+__TEXTPROCESS1214:
+#incext ParseFile ".TextEntries\text_buildfile1214.fetxt"
+setText($1214, __TEXTPROCESS1214)
+
+__TEXTPROCESS1215:
+#incext ParseFile ".TextEntries\text_buildfileProudNobilitySkill.fetxt"
+setText($1215, __TEXTPROCESS1215)
+
+__TEXTPROCESS1216:
+#incext ParseFile ".TextEntries\text_buildfile1216.fetxt"
+setText($1216, __TEXTPROCESS1216)
+
+__TEXTPROCESS1217:
+#incext ParseFile ".TextEntries\text_buildfile1217.fetxt"
+setText($1217, __TEXTPROCESS1217)
+
+__TEXTPROCESS1218:
+#incext ParseFile ".TextEntries\text_buildfile1218.fetxt"
+setText($1218, __TEXTPROCESS1218)
+
+__TEXTPROCESS1219:
+#incext ParseFile ".TextEntries\text_buildfileAttackRallySkill.fetxt"
+setText($1219, __TEXTPROCESS1219)
+
+__TEXTPROCESS121A:
+#incext ParseFile ".TextEntries\text_buildfile121A.fetxt"
+setText($121A, __TEXTPROCESS121A)
+
+__TEXTPROCESS121B:
+#incext ParseFile ".TextEntries\text_buildfile121B.fetxt"
+setText($121B, __TEXTPROCESS121B)
+
+__TEXTPROCESS121C:
+#incext ParseFile ".TextEntries\text_buildfile121C.fetxt"
+setText($121C, __TEXTPROCESS121C)
+
+__TEXTPROCESS121D:
+#incext ParseFile ".TextEntries\text_buildfile121D.fetxt"
+setText($121D, __TEXTPROCESS121D)
+
+__TEXTPROCESS121E:
+#incext ParseFile ".TextEntries\text_buildfileGuardRallySkill.fetxt"
+setText($121E, __TEXTPROCESS121E)
+
+__TEXTPROCESS121F:
+#incext ParseFile ".TextEntries\text_buildfile121F.fetxt"
+setText($121F, __TEXTPROCESS121F)
+
+__TEXTPROCESS1220:
+#incext ParseFile ".TextEntries\text_buildfile1220.fetxt"
+setText($1220, __TEXTPROCESS1220)
+
+__TEXTPROCESS1221:
+#incext ParseFile ".TextEntries\text_buildfile1221.fetxt"
+setText($1221, __TEXTPROCESS1221)
+
+__TEXTPROCESS1222:
+#incext ParseFile ".TextEntries\text_buildfile1222.fetxt"
+setText($1222, __TEXTPROCESS1222)
+
+__TEXTPROCESS1223:
+#incext ParseFile ".TextEntries\text_buildfileHasteRallySkill.fetxt"
+setText($1223, __TEXTPROCESS1223)
+
+__TEXTPROCESS1224:
+#incext ParseFile ".TextEntries\text_buildfile1224.fetxt"
+setText($1224, __TEXTPROCESS1224)
+
+__TEXTPROCESS1225:
+#incext ParseFile ".TextEntries\text_buildfile1225.fetxt"
+setText($1225, __TEXTPROCESS1225)
+
+__TEXTPROCESS1226:
+#incext ParseFile ".TextEntries\text_buildfile1226.fetxt"
+setText($1226, __TEXTPROCESS1226)
+
+__TEXTPROCESS1227:
+#incext ParseFile ".TextEntries\text_buildfile1227.fetxt"
+setText($1227, __TEXTPROCESS1227)
+
+__TEXTPROCESS1228:
+#incext ParseFile ".TextEntries\text_buildfileImbueRallySkill.fetxt"
+setText($1228, __TEXTPROCESS1228)
+
+__TEXTPROCESS1229:
+#incext ParseFile ".TextEntries\text_buildfile1229.fetxt"
+setText($1229, __TEXTPROCESS1229)
+
+__TEXTPROCESS122A:
+#incext ParseFile ".TextEntries\text_buildfile122A.fetxt"
+setText($122A, __TEXTPROCESS122A)
+
+__TEXTPROCESS122B:
+#incext ParseFile ".TextEntries\text_buildfile122B.fetxt"
+setText($122B, __TEXTPROCESS122B)
+
+__TEXTPROCESS122C:
+#incext ParseFile ".TextEntries\text_buildfile122C.fetxt"
+setText($122C, __TEXTPROCESS122C)
+
+__TEXTPROCESS122D:
+#incext ParseFile ".TextEntries\text_buildfileThriftRallySkill.fetxt"
+setText($122D, __TEXTPROCESS122D)
+
+__TEXTPROCESS122E:
+#incext ParseFile ".TextEntries\text_buildfile122E.fetxt"
+setText($122E, __TEXTPROCESS122E)
+
+__TEXTPROCESS122F:
+#incext ParseFile ".TextEntries\text_buildfile122F.fetxt"
+setText($122F, __TEXTPROCESS122F)
+
+__TEXTPROCESS1230:
+#incext ParseFile ".TextEntries\text_buildfile1230.fetxt"
+setText($1230, __TEXTPROCESS1230)
+
+__TEXTPROCESS1231:
+#incext ParseFile ".TextEntries\text_buildfile1231.fetxt"
+setText($1231, __TEXTPROCESS1231)
+
+__TEXTPROCESS1232:
+#incext ParseFile ".TextEntries\text_buildfilePlaceholderLabel.fetxt"
+setText($1232, __TEXTPROCESS1232)
+
+__TEXTPROCESS1233:
+#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc0.fetxt"
+setText($1233, __TEXTPROCESS1233)
+
+__TEXTPROCESS1234:
+#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc1.fetxt"
+setText($1234, __TEXTPROCESS1234)
+
+__TEXTPROCESS1235:
+#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc2.fetxt"
+setText($1235, __TEXTPROCESS1235)
+
+__TEXTPROCESS1236:
+#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc3.fetxt"
+setText($1236, __TEXTPROCESS1236)
+
+__TEXTPROCESS1237:
+#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc4.fetxt"
+setText($1237, __TEXTPROCESS1237)
+
+__TEXTPROCESS1238:
+#incext ParseFile ".TextEntries\text_buildfilePlaceholderDesc5.fetxt"
+setText($1238, __TEXTPROCESS1238)
+
+__TEXTPROCESS1239:
+#incext ParseFile ".TextEntries\text_buildfileStaffExpLabel.fetxt"
+setText($1239, __TEXTPROCESS1239)
+
+__TEXTPROCESS123A:
+#incext ParseFile ".TextEntries\text_buildfileStaffWexpLabel.fetxt"
+setText($123A, __TEXTPROCESS123A)
+
+__TEXTPROCESS123B:
+#incext ParseFile ".TextEntries\text_buildfileRankCurrentLabel.fetxt"
+setText($123B, __TEXTPROCESS123B)
+
+__TEXTPROCESS123C:
+#incext ParseFile ".TextEntries\text_buildfileRankNextLabel.fetxt"
+setText($123C, __TEXTPROCESS123C)
+
+__TEXTPROCESS123D:
+#incext ParseFile ".TextEntries\text_buildfileHealArrowText.fetxt"
+setText($123D, __TEXTPROCESS123D)
 
 __TEXTPROCESS094:
 #incext ParseFile ".TextEntries\text_buildfile094.fetxt"

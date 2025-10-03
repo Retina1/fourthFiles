@@ -54,6 +54,7 @@ BYTE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 BYTE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 PortraitUpshift(AstarteMug)
+PortraitUpshift(BenthusMug)
 PortraitUpshift(CoastKidMug)
 PortraitUpshift(CompassMug)
 PortraitUpshift(FeefasnanMug)

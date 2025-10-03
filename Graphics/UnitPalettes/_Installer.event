@@ -63,6 +63,14 @@ ALIGN 4
 Astarte_WarMagusDMP:
 #incbin "paletteFiles/MainStory/Astarte_WarMagus.dmp"
 
+setPalette(Benthus_Noble, Benthus_NobleDMP)
+CharPalette(Benthus,Benthus_Noble,Noble,0x0,0x0)
+CharPalette(BossBenthus,Benthus_Noble,Noble,0x0,0x0)
+CharPalette(BossBenthus2,Benthus_Noble,Noble,0x0,0x0)
+ALIGN 4
+Benthus_NobleDMP:
+#incbin "paletteFiles/MainStory/Benthus_Noble.dmp"
+
 setPalette(Guildmaster_Highlander, Guildmaster_HighlanderDMP)
 CharPalette(Guildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)
 CharPalette(BossGuildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)

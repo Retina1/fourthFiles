@@ -36,6 +36,7 @@ void ChapterChangeUnitCleanup(void) {
             unit->isLegBound = 0;
             unit->isArmBound = 0;
             unit->bindDuration = 0;
+            unit->classSkillState = 0;
 
             if (unit->state & US_NOT_DEPLOYED)
                 unit->state = unit->state | US_BIT21;
@@ -79,6 +80,7 @@ void ResetAllPlayerUnitState(void)
         unit->isLegBound = 0;
         unit->isArmBound = 0;
         unit->bindDuration = 0;
+        unit->classSkillState = 0;
 		
 		UnitClearBuffsDebuffs(unit);
 		
