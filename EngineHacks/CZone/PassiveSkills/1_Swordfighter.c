@@ -16,22 +16,24 @@ void ApplySwordfighterNaturalLeader(struct Unit* unit) {
 
 void ApplySwordfighterInitiative(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (UNIT_HAS_SKILL(&attacker->unit,LND,skill_111)){
-		u8 unitIndex = attacker->unit.index;
-		int check = 0;
-		for(int i = 0; i<0x100; i++){
-			Unit* other = gUnitLookup[i];
-			if (!IsUnitOnField(other) || unitIndex == i){
-				continue;
-			}
-            check =  AreAllegiancesEqual(unitIndex, other->index);
-			if (check) {
-				if (other->state & US_UNSELECTABLE){
-					return;
+		if (attacker->unit.index == gBattleActor.unit.index){
+			u8 unitIndex = attacker->unit.index;
+			int check = 0;
+			for(int i = 0; i<0x100; i++){
+				Unit* other = gUnitLookup[i];
+				if (!IsUnitOnField(other) || unitIndex == i){
+					continue;
 				}
-            }
-        }
-		attacker->battleAttack = attacker->battleAttack * 3/2;
-		defender->battleDefense = defender->battleDefense * 3/2;
+				check =  AreAllegiancesEqual(unitIndex, other->index);
+				if (check) {
+					if (other->state & US_UNSELECTABLE){
+						return;
+					}
+				}
+			}
+			attacker->battleAttack = attacker->battleAttack * 3/2;
+			defender->battleDefense = defender->battleDefense * 3/2;
+		}
 	}
 }
 

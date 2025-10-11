@@ -2,7 +2,7 @@
 	#include "MPlayDef.event"
 
 	#define	NotFarEnough_grp  voicegroup000
-	#define	NotFarEnough_pri  10
+	#define	NotFarEnough_pri  0
 	#define	NotFarEnough_rev  128
 	#define	NotFarEnough_mvl  127
 	#define	NotFarEnough_key  0

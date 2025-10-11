@@ -36,6 +36,7 @@ void ChapterChangeUnitCleanup(void) {
             unit->isLegBound = 0;
             unit->isArmBound = 0;
             unit->bindDuration = 0;
+			//not working?
             unit->classSkillState = 0;
 
             if (unit->state & US_NOT_DEPLOYED)
@@ -80,6 +81,7 @@ void ResetAllPlayerUnitState(void)
         unit->isLegBound = 0;
         unit->isArmBound = 0;
         unit->bindDuration = 0;
+		//not working?
         unit->classSkillState = 0;
 		
 		UnitClearBuffsDebuffs(unit);
@@ -107,6 +109,12 @@ void HealPlayersASMC(ProcPtr* proc) {
 		struct Unit* curUnit = GetUnit(unitID);
 		curUnit->statusIndex = 0;
 		curUnit->statusDuration = 0;
+	    curUnit->isHeadBound = 0;
+        curUnit->isLegBound = 0;
+        curUnit->isArmBound = 0;
+        curUnit->bindDuration = 0;
+        curUnit->classSkillState = 0;
+		curUnit->rescue = 0;
 		curUnit->state = curUnit->state &~ (US_UNSELECTABLE | US_HAS_MOVED | US_HAS_MOVED_AI);
 		int amount = GetUnitMaxHp(curUnit)/3;
 		AddUnitHp(curUnit, amount);

@@ -51,14 +51,14 @@ SongTable(Song_Castle,Castle,0)
 SongTable(Song_CursedCathedral,CursedCathedral,1)
 #include "songs/CursedCathedral.event"
 }
-/*
+
 //0x9 - Distant Roads
-#define Song_TheFirstCampaign 0x8
+#define Song_UpperSteamCave 0x8
 {
-SongTable(Song_TheFirstCampaign,TheFirstCampaign,1)
-#include "songs/TheFirstCampaign.event"
+SongTable(Song_UpperSteamCave,UpperSteamCave,0)
+#include "songs/UpperSteamCave.event"
 }
-*/
+
 //0x9 - Distant Roads
 #define Song_TheFirstCampaign 0x9
 {

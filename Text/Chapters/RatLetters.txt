@@ -1,12 +1,12 @@
 ##RatCh4Letter
 Trust me.[N]
 [N]
-- Rat[A][X]
+[A]- Rat[A][X]
 
 ##Rat8xLetter
 kill yourself[N]
 [N]
-- Rat[A][X]
+[A]- Rat[A][X]
 
 ##RatFarewellLetterPart1
 If you have found this, then gods[N]

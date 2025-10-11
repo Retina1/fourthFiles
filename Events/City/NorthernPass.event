@@ -54,8 +54,8 @@ CALL UnlockBlackMarketEvent
 LABEL 0x600
 SetGtoMoney
 CallMenu(MarketS1xMenu)
-MarketHandler(HealScroll,4,900,0,0x24)
-MarketHandler(Broadaxe,410,1,0x25)
+MarketHandler(HealScroll,4,900,0,0x1a)
+MarketHandler(Broadaxe,410,1,0x1b)
 LeafHandler(2)
 FictionHandler(3)
 GOTO 0x30
@@ -123,8 +123,8 @@ CALL UnlockBlackMarketEvent
 LABEL 0x600
 SetGtoMoney
 CallMenu(Market3xMenu)
-MarketHandler(CompactBow,900,0,0x24)
-MarketHandler(Medica,2,250,1,0x25)
+MarketHandler(CompactBow,900,0,0x1a)
+MarketHandler(Medica,2,250,1,0x1b)
 LeafHandler(2)
 FictionHandler(3)
 GOTO 0x30

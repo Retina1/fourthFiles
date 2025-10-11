@@ -31,7 +31,7 @@ EventPointerTable(HirschringSquareEventsID,ThisChapter)
 #define Recruited5Flag 0x12c
 */
 
-//flags 0x24 to 0x28 for market
+//flags 0x1a to 0x1e for market
 
 ALIGN 4
 

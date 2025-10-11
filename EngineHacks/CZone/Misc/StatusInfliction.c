@@ -23,13 +23,15 @@ int GetOffensiveStaffAccuracy(struct Unit* actor, struct Unit* target) {
 	
 	u8* unitBuffer = GetUnitsOfAllegiance(actor, 1);
 	int i = 0;
-	while (unitBuffer[i]){
-		int index = unitBuffer[i];
-		Unit* other = gUnitLookup[index];
-		if (UNIT_HAS_SKILL(other,WMG,skill_111)){
-			accuracy = accuracy * 21/20;
+	if (unitBuffer != FALSE) {
+		while (unitBuffer[i]){
+			int index = unitBuffer[i];
+			Unit* other = gUnitLookup[index];
+			if (UNIT_HAS_SKILL(other,WMG,skill_111)){
+				accuracy = accuracy * 21/20;
+			}
+			i++;
 		}
-		i++;
 	}
 	
 	if (UNIT_HAS_SKILL(actor,HEX,promoSkill_141)){

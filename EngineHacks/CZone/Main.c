@@ -31,6 +31,7 @@ extern u16 GenericMoneyEvent;
 #include "Misc/HealAmounts.c"
 #include "Misc/CurseFix.c"
 #include "Misc/StatusInfliction.c"
+#include "Misc/BattleUnwind.c"
 #include "Durability/PerChapterItems.c"
 #include "StatPassives/StatPassives.c"
 #include "WaitEventTraps/WaitEventTraps.c"
@@ -41,6 +42,28 @@ extern u16 GenericMoneyEvent;
 
 #include "MiscASMCS.c"
 #include "ImportantFixes.c"
+
+//leg weps
+u16 IsWeaponLegency(u16 item)
+{
+    switch (GetItemIndex(item)) {
+    case 0x08: // caladbolg
+    case 0x16: // heavensfall
+    case 0x1f: // great mountain
+    case 0x27: // ron
+    case 0x32: // the fable
+    case 0x3a: // ukonvasara
+    case 0x48: // kirikindad
+    case 0x50: // arc drawer
+    case 0x5e: // agneyastra
+    case 0x6c: // kerykeion
+    case 0xa3: // hopebringer
+        return true;
+
+    default:
+        return false;
+    }
+}
 
 //new poison damage
 void MakePoisonDamageTargetList(int faction) {

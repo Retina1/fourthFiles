@@ -5,6 +5,7 @@ Astarte_WarMagus
 Gore_Gunner
 Gore_Dragoon
 Benthus_Noble
+Benthus_Sovereign
 Guildmaster_Highlander
 CoastKid_Swordfighter
 CoastKid_Landsknecht

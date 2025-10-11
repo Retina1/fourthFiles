@@ -2,7 +2,7 @@
 	#include "MPlayDef.event"
 
 	#define	OohWilfre_grp  voicegroup000
-	#define	OohWilfre_pri  10
+	#define	OohWilfre_pri  0
 	#define	OohWilfre_rev  148
 	#define	OohWilfre_mvl  127
 	#define	OohWilfre_key  0

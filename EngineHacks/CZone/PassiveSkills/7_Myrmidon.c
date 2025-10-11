@@ -11,7 +11,6 @@ void ApplyMyrmidonUpperStance(struct BattleUnit* attacker, struct BattleUnit* de
 	}
 }
 
-// bug - atk boost doesn't quite properly apply in forecast
 void ApplyMyrmidonDrawingStance(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (attacker->unit.classSkillState > 0) {
 		if (UNIT_HAS_SKILL(&attacker->unit,RNI,skill_232)){

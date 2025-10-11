@@ -1,15 +1,39 @@
+##CityS1_EndText
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+.[A][X]
+
 ##CityS1_Cleone
 [MidLeft][Nathan][MidRight][Cleone][MidLeft][Smile]
 .[A][X]
 
 ##CityS1_Helman
 [MidLeft][Nathan][MidRight][Helman]
-[A][X]
-
-
-##CityS1_EndText
-[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
-.[A][X]
+Yup, this is already better.[AN][MidLeft]
+This is better than what?[AN][MidRight]
+Ah, Nathan. You just caught me[N]
+in a good mood, I guess.[AN]
+Adventurin's better than the[N]
+military life, in my book.[AN]
+Life in Belvarus was so damn[N]
+boring and cyclical.[AN]
+And we weren't fooling anyone.[N]
+Asketa outmatches us.[AN][MidLeft]
+[...]Sorry, I guess.[AN][MidRight]
+The whole Belvarus army's a[N]
+farce, really.[A] But you?[N]
+You're something real.[AN]
+At first, I thought maybe[N]
+I'd just never be satisfied.[AN]
+I'd left the army and found[N]
+myself on contract work.[AN]
+That's how I ended up with[N]
+Lucien.[A] You saw how that[N]
+all went.[AN]
+But with you, I'm free and[N]
+happy.[A][Smile] Thanks.[AN][MidLeft]
+I'm glad you're more fulfilled.[AN][MidRight]
+Keep doin' what you're doin',[N]
+and I'll keep doin' what I'm.[A][X]
 
 ##CityS1_Guildmaster
 [MidLeft][Nathan][MidRight][Guildmaster]
@@ -57,6 +81,7 @@ Materials are expensive![AN][MidLeft]
 Can't blame him.[AN]
 And his stuff's done Hedge[N]
 well so far, so I'll pay.[AN][Right]
+Thank you, truly.[N]
 On that note, then.[A][X]
 
 ##CityS1_Benthus

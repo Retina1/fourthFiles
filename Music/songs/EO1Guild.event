@@ -4,7 +4,7 @@
 	#define	EO1Guild_grp  voicegroup000
 	#define	EO1Guild_pri  0
 	#define	EO1Guild_rev  0
-	#define	EO1Guild_mvl  127
+	#define	EO1Guild_mvl  100
 	#define	EO1Guild_key  0
 	#define	EO1Guild_tbs  1
 	#define	EO1Guild_exg  0

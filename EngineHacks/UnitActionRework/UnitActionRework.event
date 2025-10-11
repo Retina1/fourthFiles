@@ -73,8 +73,7 @@ pActionRoutineTable:
 	ActionRoutine(SmiteAction)               // 0x26 ACTION_PUSH
 	ActionRoutine(RepositionAction)               // 0x27 ACTION_SWARP
 	ActionRoutine(DrawBackAction) // 0x28 
-	NoActionRoutine               // 0x28 FREE
-	NoActionRoutine               // 0x29 FREE
+	ActionRoutine(TargetMarkAction) // 0x29
 	NoActionRoutine               // 0x2A FREE
 	NoActionRoutine               // 0x2B FREE
 	NoActionRoutine               // 0x2C FREE
@@ -100,6 +99,9 @@ ALIGN 4
 DrawBackActID_Link: 
 WORD 0x28
 ALIGN 4
+TargetMarkActID_Link: 
+WORD 0x29
+ALIGN 4
 SwapTargetBottomText_Link: 
 WORD SwapTargetBottomText
 ALIGN 4
@@ -114,8 +116,21 @@ WORD RepositionTargetBottomText
 ALIGN 4
 DrawBackTargetBottomText_Link: 
 WORD DrawBackTargetBottomText
+ALIGN 4
+TargetMarkTargetBottomText_Link: 
+WORD TargetMarkTargetBottomText
 
 
+ALIGN 4
+gTargetMarkTargetSelection: 
+POIN TargetMarkTargetInit // Init
+POIN 0x0804E885 // End
+POIN 0x00000000 // Init Target
+POIN 0x080247D1 // Switch In
+POIN 0x00000000 // Switch Out
+POIN TargetMarkTargetAPress // A Press
+POIN 0x08022749 // B Press
+POIN 0x00000000 // R Press
 ALIGN 4
 gSwapTargetSelection: 
 POIN SwapTargetInit // Init

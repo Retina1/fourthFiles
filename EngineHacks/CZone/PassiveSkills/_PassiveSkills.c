@@ -10,17 +10,17 @@
 #include "8_Rider.c"
 #include "9_Raider.c"
 #include "10_Gunner.c"
-//no troub
+#include "11_Poet.c"
 #include "12_Seeker.c"
 #include "13_Priest.c"
 #include "14_Lurker.c"
-//#include "15_DarkHunter.c"
+#include "15_DarkHunter.c"
 #include "16_Lancer.c"
 #include "17_Brawler.c"
 #include "18_Hunter.c"
 #include "19_SkyKnight.c"
 #include "20_ScaleKnight.c"
-//#include "21_Apothecary.c"
+#include "21_Apothecary.c"
 #include "24_Noble.c"
 #include "25_Duelist.c"
 #include "26_Driver.c"
@@ -109,13 +109,13 @@ void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender
 	ApplySeekerPassiveSkills(attacker, defender);
 //	ApplyPriestPassiveSkills(attacker, defender); all flat numbers
 	ApplyLurkerPassiveSkills(attacker, defender);
-	//dh
+	ApplyDarkHunterPassiveSkills(attacker, defender);
 	//lancer - blood fortune in effective crit calc
 	ApplyBrawlerPassiveSkills(attacker, defender);
 	ApplyHunterPassiveSkills(attacker, defender);
 	ApplySkyKnightPassiveSkills(attacker, defender);
 	ApplyScaleKnightPassiveSkills(attacker, defender);
-	//ApplyApothecaryPassiveSkills(attacker, defender);
+	ApplyApothecaryPassiveSkills(attacker, defender);
 	//ApplyEncirclerPassiveSkills(attacker, defender);
 	//ApplyCallerPassiveSkills(attacker, defender);
 	//ApplyNoblePassiveSkills(attacker, defender);
@@ -142,13 +142,13 @@ void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defend
 //	BothSidesSeekerPassiveSkills(attacker, defender);
 //	BothSidesPriestPassiveSkills(attacker, defender); all flat numbers
 //	BothSidesLurkerPassiveSkills(attacker, defender);
-	//dh
+	BothSidesDarkHunterPassiveSkills(attacker, defender);
 	//lancer - blood fortune in effective crit calc
 //	BothSidesBrawlerPassiveSkills(attacker, defender);
 	BothSidesHunterPassiveSkills(attacker, defender);
 	BothSidesSkyKnightPassiveSkills(attacker, defender);
 	BothSidesScaleKnightPassiveSkills(attacker, defender);
-	//BothSidesApothecaryPassiveSkills(attacker, defender);
+	BothSidesApothecaryPassiveSkills(attacker, defender);
 	//BothSidesEncirclerPassiveSkills(attacker, defender);
 	//BothSidesCallerPassiveSkills(attacker, defender);
 	//BothSidesNoblePassiveSkills(attacker, defender);

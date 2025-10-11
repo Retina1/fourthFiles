@@ -64,12 +64,16 @@ Astarte_WarMagusDMP:
 #incbin "paletteFiles/MainStory/Astarte_WarMagus.dmp"
 
 setPalette(Benthus_Noble, Benthus_NobleDMP)
-CharPalette(Benthus,Benthus_Noble,Noble,0x0,0x0)
-CharPalette(BossBenthus,Benthus_Noble,Noble,0x0,0x0)
-CharPalette(BossBenthus2,Benthus_Noble,Noble,0x0,0x0)
+setPalette(Benthus_Sovereign, Benthus_SovereignDMP)
+CharPalette(Benthus,Benthus_Noble,Noble,Benthus_Sovereign,Sovereign)
+CharPalette(BossBenthus,Benthus_Noble,Noble,Benthus_Sovereign,Sovereign)
+CharPalette(BossBenthus2,Benthus_Noble,Noble,Benthus_Sovereign,Sovereign)
 ALIGN 4
 Benthus_NobleDMP:
 #incbin "paletteFiles/MainStory/Benthus_Noble.dmp"
+ALIGN 4
+Benthus_SovereignDMP:
+#incbin "paletteFiles/MainStory/Benthus_Sovereign.dmp"
 
 setPalette(Guildmaster_Highlander, Guildmaster_HighlanderDMP)
 CharPalette(Guildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)

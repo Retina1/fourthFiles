@@ -32,14 +32,17 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 	
 	u8* unitBuffer = GetUnitsOfAllegiance(&attacker->unit, 1);
 	int i = 0;
-	while (unitBuffer[i]){
-		int index = unitBuffer[i];
-		Unit* other = gUnitLookup[index];
-		if (UNIT_HAS_SKILL(other,WMG,skill_111)){
-			accuracy = accuracy * 21/20;
+	if (unitBuffer != FALSE) {
+		while (unitBuffer[i]){
+			int index = unitBuffer[i];
+			Unit* other = gUnitLookup[index];
+			if (UNIT_HAS_SKILL(other,WMG,skill_111)){
+				accuracy = accuracy * 21/20;
+			}
+			i++;
 		}
-		i++;
 	}
+	
 	
 	if (UNIT_HAS_SKILL(&attacker->unit,HEX,promoSkill_141)){
 			accuracy = accuracy + 25;

@@ -92,6 +92,11 @@ Live a Live[X]
 ##SongTitle_HeroicStruggle
 Heroic Struggle (Trikki Nikki)[X]
 
+##SourceTitle_PMDExplorers ^
+Pokemon Mystery Dungeon: Explorers[X]
+##SongTitle_UpperSteamCave
+Upper Steam Cave (Trikki Nikki)[X]
+
 ##SourceTitle_DrawnToLife2 ^
 Drawn to Life: The Next Chapter[X]
 ##SongTitle_Salem

@@ -2,7 +2,7 @@
 	#include "MPlayDef.event"
 
 	#define	FrozenGrounds_grp  voicegroup000
-	#define	FrozenGrounds_pri  10
+	#define	FrozenGrounds_pri  0
 	#define	FrozenGrounds_rev  128
 	#define	FrozenGrounds_mvl  127
 	#define	FrozenGrounds_key  0

@@ -2,7 +2,7 @@
 	#include "MPlayDef.event"
 
 	#define	PandemonicPlanet_grp  voicegroup000
-	#define	PandemonicPlanet_pri  10
+	#define	PandemonicPlanet_pri  0
 	#define	PandemonicPlanet_rev  148
 	#define	PandemonicPlanet_mvl  127
 	#define	PandemonicPlanet_key  0

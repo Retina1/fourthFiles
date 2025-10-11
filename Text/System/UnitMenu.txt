@@ -13,6 +13,14 @@ mighty physical strike.[X]
 Charge up to initiate a[N]
 mighty magical strike.[X]
 
+## UM_TargetMark
+ Target[X]
+## UM_TargetMarkDesc
+Mark an enemy to enable[N]
+mighty Volley skills.[X]
+## TargetMarkTargetBottomText
+Select a target to mark.[X]
+
 ## UM_SwordStance
  Stance[X]
 ## UM_SwordStanceDesc

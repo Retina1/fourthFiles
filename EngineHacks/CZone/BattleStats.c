@@ -227,6 +227,11 @@ void ComputeBattleUnitSpecialWeaponStats(struct BattleUnit* attacker, struct Bat
 }
 
 void FloorDamage(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	
+	if (GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_HPHALVE) {
+		return;
+	}
+	
 	short rawOffense;
 	if((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))
 		rawOffense = attacker->unit.mag;

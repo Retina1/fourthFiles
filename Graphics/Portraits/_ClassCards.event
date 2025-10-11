@@ -27,6 +27,8 @@ artifice
 automaton
 */
 //as temp anti-crash measure, give all these wight
+//not needed anymore, now this is just our list of classes without cards
+/*
 setCardEntry(DragoonCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(PoetCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(TroubadourCard,WightCardPortrait,WightCardPortraitPalette)
@@ -54,6 +56,7 @@ setCardEntry(FaerieCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(OphanimCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(WolfskinCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(WolfkingCard,WightCardPortrait,WightCardPortraitPalette)
+*/
 
 
 ALIGN 4

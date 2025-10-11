@@ -231,6 +231,7 @@ UNSET_CONDITION 0xffff
 SET_ACTIVE 0
 EndEvent
 
+ALIGN 4
 GenericHealEvent:
 CAM1 0xFFFF
 PlayEmotionEffect(HeartEffect)
@@ -238,6 +239,7 @@ SOUN 0x10F
 STAL 0x16
 EndEvent
 
+ALIGN 4
 GenericBuffEvent:
 CAM1 0xFFFF
 PlayEmotionEffect(UpArrowEffect)
@@ -245,6 +247,7 @@ SOUN 0xEF
 STAL 0x16
 EndEvent
 
+ALIGN 4
 GenericMusicNoteEvent:
 CAM1 0xFFFF
 PlayEmotionEffect(MusicNoteEffect)
@@ -252,6 +255,7 @@ SOUN 0xEF
 STAL 0x16
 EndEvent
 
+ALIGN 4
 GenericMoneyEvent:
 CAM1 0xFFFF
 PlayEmotionEffect(MoneyEffect)
@@ -259,6 +263,7 @@ SOUN 0xB9
 STAL 0x16
 EndEvent
 
+ALIGN 4
 GenericTrappedEvent:
 CAM1 0xFFFF
 PlayEmotionEffectCoords(ExclamationEffect)
