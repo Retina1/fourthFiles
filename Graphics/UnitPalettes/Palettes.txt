@@ -11,8 +11,14 @@ CoastKid_Swordfighter
 CoastKid_Landsknecht
 Puzon_Swordfighter
 Puzon_Landsknecht
+Cam_Swordfighter
+Cam_Landsknecht
+Marag_Swordfighter
+Marag_Landsknecht
 Drogo_Knight
 Drogo_Hoplite
+Allbringer_Knight
+Allbringer_Hoplite
 Tristao_Axefighter
 Tristao_Gladiator
 Francesca_Duelist

@@ -1,552 +1,4 @@
 
-//brw
-##MSS_Intimidation
-Intimidation: Lowers Hit[N]
-and Avo of adjacent enemies.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//hun
-##MSS_CoverFighter
-Cover Fighter: Boosts Atk/Crit/Avo[N]
-while on beneficial terrain.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//sky
-##MSS_AlertWings
-Alert Wings: Boosts[N]
-Avo while defending.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//scl
-##MSS_RetaliatoryWings
-Retaliatory Wings: Boosts[N]
-Atk while defending.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//apo
-##MSS_Forager
-Forager: Collect healing items[N]
-when ending turn on Turns 1-3.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-Healing Herb: Restores[N]
-HP to a nearby ally.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//enc
-##MSS_FocusedDefense
-Focused Defense: Boosts Def[N]
-while channeling a Circle.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//cal
-##MSS_CallSpirit
-Call Spirit: Use Call to[N]
-summon a lost Soul.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//nob
-##MSS_RallyingCry
-Rallying Cry: Use Rally to[N]
-bolster allies within 2 tiles.[X]
-##
-Boonful Presence: Allies within[N]
-2 tiles heal at turn's start.[X]
-##
-Rich Living: Kill on initation[N]
-for gold based on enemy Level.[X]
-##
-Rallying Thrust: Attacking applies[N]
-Rallying Cry's effect after combat.[X]
-##
-Health Rally: Rally[N]
-restores ally HP.[X]
-##
-Fortune Rally: Rally[N]
-buffs ally Luck.[X]
-##
-Proud Nobility: Boosts Mov[N]
-if no allies are missing HP.[X]
-##
-Attack Rally: Rally[N]
-buffs ally Atk.[X]
-##
-Guard Rally: Rally[N]
-buffs ally Def.[X]
-##
-Haste Rally: Rally[N]
-buffs ally AS.[X]
-##
-Imbue Rally: Rally gives allies[N]
-bonus Atk based on their Mag.[X]
-##
-Thrift Rally: Rally reduces[N]
-allies' art durability cost.[X]
-##
-Strike Decree: Command allies[N]
-to attack in your stead. (5/Map)[X]
-##
-Stun Decree: Command enemies[N]
-to stand still for a turn. (2/Map)[X]
-##
-Overlord Decree: Command enemies[N]
-to become green units. (1/Map)[X]
-
-//due
-##MSS_Unburdened
-Unburdened: Boosts Avo per[N]
-empty inventory slot.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//dri
-##MSS_ImperialPride
-Imperial Pride: Boosts Atk[N]
-vs. non-Asketan factions.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//art
-##MSS_Reboot
-Reboot: Use Reboot to[N]
-remove user's binds.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-##
-:[N]
-.[X]
-
-//other
-##MSS_Filler
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
-##
-No skill data.[X]
 
 //swd
 ##MSS_Initiative
@@ -1301,6 +753,557 @@ charging a powerful Cross Charge.[X]
 Spear Reversal: A thrust empowered[N]
 at low HP and that heals the user.[X]
 
+
+//brw
+##MSS_Intimidation
+Intimidation: Lowers Hit[N]
+and Avo of adjacent enemies.[X]
+##
+Smite: Use Smite to push an[N]
+adjacent unit two tiles away.[X]
+##
+Wrath: Boosts Crit proportionally[N]
+to this unit's missing HP.[X]
+##
+Adrenaline Rush: Attack again after[N]
+successfully inflicting a disable.[X]
+##
+Breather: Restore own HP[N]
+and heal any debuffs.[X]
+##
+Drain Punch: A punch that heals[N]
+user based on enemy's Atk.[X]
+##
+Vortex Jab: A mighty punch that[N]
+utilizes a ranged shockwave.[X]
+##
+Arm Breaker: A punch[N]
+that binds arms.[X]
+##
+Leg Render: A punch[N]
+that binds legs.[X]
+##
+Skull Cracker: A punch[N]
+that binds heads.[X]
+##
+Corkscrew: A tackling[N]
+punch that paralyzes.[X]
+##
+Cross Counter: Take a stance[N]
+to bind when countering.[X]
+##
+Close Combat: A mighty attack[N]
+that debuffs the user's Atk/Def.[X]
+##
+Full Combo: String together three[N]
+bind punches at reduced power.[X]
+##
+Knockout Finisher: A finishing[N]
+blow that devastates bound foes.[X]
+
+//hun
+##MSS_CoverFighter
+Cover Fighter: Boosts Atk/Crit/Avo[N]
+while on beneficial terrain.[X]
+##
+Lone Wolf: Boosts Avo when no[N]
+allies are within two spaces.[X]
+##
+Hunter's Spoils: Boosts Exp. gain[N]
+when fighting debuffed enemies.[X]
+##
+Camouflage: Use Stealth to boost[N]
+Atk/Avo/aggro until next strike.[X]
+##
+Trickery: Debuff enemies[N]
+to massively reduce Hit.[X]
+##
+Flame Arrow: An arrow strike[N]
+that targets enemy Res.[X]
+##
+Sapping Arrow: An arrow that[N]
+debuffs enemy Atk/AS.[X]
+##
+Blind Arrow: An arrow that[N]
+blinds an enemy.[X]
+##
+Sleep Arrow: An arrow that[N]
+forces an enemy asleep.[X]
+##
+Toxin Arrow: An arrow that[N]
+poisons an enemy.[X]
+##
+Numbing Arrow: An arrow that[N]
+paralyzes an enemy.[X]
+##
+Scapegoat: Grant an ally a[N]
+massive boost to aggro.[X]
+##
+Illusion Step: Take a bow/gun[N]
+chasing stance to boost Avo.[X]
+##
+Hazy Arrow: A mighty arrow that[N]
+requires a prior dodge to use.[X]
+##
+Predator's Arrow: Break Stealth[N]
+for a brutal and crippling arrow.[X]
+
+//sky
+##MSS_AlertWings
+Alert Wings: Boosts[N]
+Avo while defending.[X]
+##
+Sky Squadron: Boosts all[N]
+stats per deployed flier.[X]
+##
+Reposition: Use Reposition to[N]
+move an ally to opposite side.[X]
+##
+Savior Rush: Boosts Mov per[N]
+ally at half HP or lower.[X]
+##
+Resilent Wings: Buff to[N]
+increase user's Def.[X]
+##
+Swift Wings: Buff to[N]
+increase user's AS/Avo.[X]
+##
+Winged Gallop: Buff to[N]
+increase user's Mov.[X]
+##
+Tempest Lance: A lance strike[N]
+whose might scales with Spd.[X]
+##
+Frozen Lance: A lance[N]
+strike that targets Res.[X]
+##
+Holy Lance: A strike that[N]
+heals allies afterwards.[X]
+##
+Lunging Lance: Strike, then[N]
+swap with the struck target.[X]
+##
+Mercy's Wings: Transfer HP to[N]
+a critical ally to buff self.[X]
+##
+Javelin of Light: A ranged[N]
+strike with incredible Hit.[X]
+##
+Soaring Strike: Strike, then[N]
+become intangible for the turn.[X]
+##
+Hope's Lance: A strike that grants[N]
+allies survival at 1 HP.[X]
+
+//scl
+##MSS_RetaliatoryWings
+Retaliatory Wings: Boosts[N]
+Atk while defending.[X]
+##
+Flying Fortress: Boosts[N]
+Atk/AS/Crit vs fliers.[X]
+##
+Draw Back: Use Draw Back to[N]
+drag an ally along a space.[X]
+##
+Executor: User's Atk scales[N]
+with enemy missing HP%.[X]
+##
+Resonant Roar: Debuff enemies[N]
+to reduce Def and Luc.[X]
+##
+Cleansing Rage: Purge user's[N]
+buffs and debuffs.[X]
+##
+Draconic Fury: Cut own HP[N]
+to boost Atk and Mov.[X]
+##
+Hammer Down: A punishing[N]
+and simple axe swing.[X]
+##
+Malignant Strike: An axe[N]
+swing that poisons.[X]
+##
+Flame Smash: A swing[N]
+that targets Res.[X]
+##
+Smiting Smash: Strike, then[N]
+push target away a space.[X]
+##
+Calamitous Smash: A swing[N]
+that enrages its target.[X]
+##
+Clawbinder: Channel dragon[N]
+to attack and bind arms.[X]
+##
+Firebreathing: Channel dragon[N]
+to breathe fire for AoE damage.[X]
+##
+Devour: Channel dragon to[N]
+instakill and restore HP.[X]
+
+//apo
+##MSS_Forager
+Forager: Collect healing items[N]
+when ending turn on Turns 1-3.[X]
+##
+Harsh Herbs: Boosts Atk[N]
+against debuffed foes.[X]
+##
+Potent Herbs: Boosts duration of[N]
+unit's inflicted statuses.[X]
+##
+Maximize Potential: Doubles boosts[N]
+from passive stat-up skills.[X]
+##
+Sluggish Herb: Debuff enemy[N]
+to reduce AS and Mov.[X]
+##
+Fragile Herb: Debuff enemy[N]
+to reduce Atk and Def.[X]
+##
+Knockout Herb: Inflict[N]
+sleep on an enemy.[X]
+##
+Healing Herb: Restores[N]
+HP to a nearby ally.[X]
+##
+Refreshing Herb: Cures[N]
+an ally's status/debuffs.[X]
+##
+Herb Boost: Healed allies[N]
+get a buff to AS and Atk.[X]
+##
+Smoke Bomb: A flaming herb[N]
+strike that can blind.[X]
+##
+Fury Herb: Berserk a unit to[N]
+massively buff their Atk.[X]
+##
+Corrosive Herb: A poisonous[N]
+herb that debuffs all stats.[X]
+##
+Trapped Herb: An explosive[N]
+herb that traps an area.[X]
+##
+Miracle Herb: Inflict random[N]
+ailments and debuffs in an area.[X]
+
+//enc
+##MSS_FocusedDefense
+Focused Defense: Boosts Def[N]
+while channeling a Circle.[X]
+##
+Life's Flow: Allies in Circle[N]
+range restore HP at turn start.[X]
+##
+Blessed Guard: Allies in Circle[N]
+range have boosted Atk.[X]
+##
+Unrooted: User's Mov is set[N]
+to 1 while channeling Circles.[X]
+##
+Charming Circle: Channel to[N]
+debuff enemy Atk/Hit/Crit/AS.[X]
+##
+Atrophic Circle: Channel to[N]
+debuff enemy Def/Luc/Mov.[X]
+##
+Draining Circle: Channel to[N]
+drain enemy HP into user.[X]
+##
+Muting Circle: Channel to[N]
+bind enemy heads.[X]
+##
+Toxic Circle: Channel to[N]
+poison enemies.[X]
+##
+Slumbering Circle: Channel to[N]
+force enemies into sleep.[X]
+##
+Chaos Circle: Channel to[N]
+enrage enemies.[X]
+##
+Stoning Circle: Channel to[N]
+petrify enemies.[X]
+##
+Heal Burst: Dismiss Circle to[N]
+heal all allies in area.[X]
+##
+Mighty Burst: Dismiss Circle to[N]
+prepare a mighty strike.[X]
+##
+Cataclysm Burst: Dismiss Circle to[N]
+apply its effect to whole map.[X]
+
+//cal
+##MSS_CallSpirit
+Call Spirit: Use Call to[N]
+summon a lost Soul.[X]
+##
+Soul Swap: Use Swap to[N]
+swap positions with a soul.[X]
+##
+Soul Pull: Destroy a soul to[N]
+recall an ally to its position.[X]
+##
+Greater Spirit: Call now[N]
+sumoons mighty Souldiers.[X]
+##
+Soul Barrier: Destroy a soul[N]
+to buff ally Def/Luc.[X]
+##
+Soul Charge: Destroy a soul[N]
+to buff ally Atk/Hit/Crit.[X]
+##
+Soul Boon: Destroy a soul[N]
+to recover ally HP.[X]
+##
+Spirit Bomb: Destroy a soul[N]
+for a powerful magic strike.[X]
+##
+Loathing Bomb: Destroy a soul[N]
+to inflict poison in an area.[X]
+##
+Gravekeeper: Command souls to[N]
+counterattack with immense might.[X]
+##
+Poltergeist: Destroy a soul[N]
+to control an enemy's action.[X]
+##
+Ghastly Haunt: An instakill that[N]
+summons a soul if successful.[X]
+##
+Hellish Dance: Command souls to[N]
+strike targets in their range.[X]
+##
+Immortal Legion: Command souls[N]
+to survive lethal damage.[X]
+##
+Unfair Trade: Destroy 3 souls[N]
+to cut HP of every enemy.[X]
+
+//nob
+##MSS_RallyingCry
+Rallying Cry: Use Rally to[N]
+bolster allies within 2 tiles.[X]
+##
+Boonful Presence: Allies within[N]
+2 tiles heal at turn's start.[X]
+##
+Rich Living: Kill on initation[N]
+for gold based on enemy Level.[X]
+##
+Rallying Thrust: Attacking applies[N]
+Rallying Cry's effect after combat.[X]
+##
+Health Rally: Rally[N]
+restores ally HP.[X]
+##
+Fortune Rally: Rally[N]
+buffs ally Luck.[X]
+##
+Proud Nobility: Boosts Mov[N]
+if no allies are missing HP.[X]
+##
+Attack Rally: Rally[N]
+buffs ally Atk.[X]
+##
+Guard Rally: Rally[N]
+buffs ally Def.[X]
+##
+Haste Rally: Rally[N]
+buffs ally AS.[X]
+##
+Imbue Rally: Rally gives allies[N]
+bonus Atk based on their Mag.[X]
+##
+Thrift Rally: Rally reduces[N]
+allies' art durability cost.[X]
+##
+Strike Decree: Command allies[N]
+to attack in your stead. (5/Map)[X]
+##
+Stun Decree: Command enemies[N]
+to stand still for a turn. (2/Map)[X]
+##
+Overlord Decree: Command enemies[N]
+to become green units. (1/Map)[X]
+
+
+
+//due
+##MSS_Unburdened
+Unburdened: Boosts Avo per[N]
+empty inventory slot.[X]
+##
+Rebound: Buffs Avo for a bit[N]
+after taking damage.[X]
+##
+Fancy Footwork: Use two plus user's[N]
+excess Mov after any action.[X]
+##
+Fleetfoot: Boosts Mov per[N]
+empty inventory slot.[X]
+##
+Blinding Stab: A rapier[N]
+thrust that blinds foes.[X]
+##
+Riposte Stab: A thrust[N]
+that cannot be countered.[X]
+##
+Retreat Stab: Thrust, then[N]
+move a tile away from foe.[X]
+##
+Predict: Boosts Avo and[N]
+aggro for a turn.[X]
+##
+Haze Curtain: Debuff enemies[N]
+in a wide area to reduce Hit.[X]
+##
+Counter Stance: Significantly[N]
+boosts Atk for an enemy phase.[X]
+##
+Sapping Stance: For a turn,[N]
+debuff enemies after dodging.[X]
+##
+Step Stab: Thrust, then move[N]
+remaining Mov plus three spaces.[X]
+##
+Blurred Stab: A mighty thrust[N]
+usable only after dodging.[X]
+##
+Thunderclap: A ruinous thrust that scales[N]
+off of and nulls user's Avo for a turn.[X]
+##
+Gale Duelist: User gets two turns,[N]
+with halved Mov during the second.[X]
+
+//dri
+##MSS_ImperialPride
+Imperial Pride: Boosts Atk[N]
+vs. non-Asketan factions.[X]
+##
+Heat Shield: Boosts Def[N]
+while Overheated.[X]
+##
+Marching Orders: Matches user's[N]
+Mov with the team's highest Mov.[X]
+##
+Ruthless Efficiency: Halves[N]
+cooldown upon a kill.[X]
+##
+Heat Sink: Hastens[N]
+user's blade cooldown.[X]
+##
+Bloody Edge: Follow Great Edge[N]
+to sap enemy HP.[X]
+##
+Frigid Edge: Follow Great Edge[N]
+to hasten blade's cooldown.[X]
+##
+Assault Drive: A mighty strike[N]
+that Overheats the user's blade.[X]
+##
+Great Edge: A slash that[N]
+begins a blade combo.[X]
+##
+Intercooler: Passively speeds[N]
+up blade cooldown.[X]
+##
+Burst Drive: A ranged drive that[N]
+Overheats more than average.[X]
+##
+Ignition: Shed Def to cool blade[N]
+off instantly, once a map.[X]
+##
+Charge Edge: Follow Great Edge[N]
+to amplify next drive's might.[X]
+##
+Massive Edge: Follow Great Edge[N]
+to damage an area after combat.[X]
+##
+Megido Drive: A ludicrous drive[N]
+that massively Overheats.[X]
+
+//art
+##MSS_Reboot
+Reboot: Use Reboot to[N]
+remove user's binds.[X]
+##
+Magnet Pulse: Use Pulse to[N]
+paralyze all in range.[X]
+##
+Craft Turret: Use Craft to[N]
+place an automatic turret.[X]
+##
+Machine Precision: Unit's[N]
+attacks will never miss.[X]
+##
+Rocket Punch: Bind arms to[N]
+strike twice in a row.[X]
+##
+Rocket Jump: Bind legs to[N]
+jump a distance away.[X]
+##
+Rocket Headbutt: Bind head[N]
+to attack and paralyze.[X]
+##
+Breaking Pulse: Pulses[N]
+also debuff Def.[X]
+##
+Grating Pulse: Pulses[N]
+also bind heads.[X]
+##
+Sonic Pulse: Pulses also[N]
+deal flat Str-based damage.[X]
+##
+Burning Pulse: Pulses also deal[N]
+a percentage of current HP.[X]
+##
+Unlimited Pulse: Pulses[N]
+have a greater range.[X]
+##
+Shot Command: Command turrets[N]
+and bow/gun users to strike.[X]
+##
+Resupply Command: Command[N]
+turrets to repair damage.[X]
+##
+Destruct Command: Command[N]
+turrets to self-destruct.[X]
+
+//other
+##MSS_Filler
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
+##
+No skill data.[X]
 
 //common
 ##MSS_HPUp

@@ -91,9 +91,6 @@ void ApplyPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender
 	ApplyDuelistUnburdened(attacker);
 	ApplyRallyingCryFlatBuffs(attacker, defender);
 	ApplyItemFlatPassives(attacker, defender);
-	if (IsBattleReal()){
-		ApplyPriestWarPierce(attacker,defender);
-	}
 	//class passives
 	ApplySwordfighterPassiveSkills(attacker, defender);
 	ApplyKnightPassiveSkills(attacker, defender);

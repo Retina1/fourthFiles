@@ -84,6 +84,7 @@ SoundRoomEntry(Song_EndOfRagingWaves, SongTitle_EndOfRagingWaves, SourceTitle_Et
 SoundRoomEntry(Song_Fracas, SongTitle_Fracas, SourceTitle_Original,29)
 SoundRoomEntry(Song_Rhapsody, SongTitle_Rhapsody, SourceTitle_OrderOfEcclesia,5)
 SoundRoomEntry(Song_Castle, SongTitle_Castle, SourceTitle_RRThiel,49)
+SoundRoomEntry(Song_DesperateAssault, SongTitle_DesperateAssault, SourceTitle_FE2,52)
 //character and event
 SoundRoomEntry(Song_FaithIsMyPillar, SongTitle_FaithIsMyPillar, SourceTitle_EtrianOdyssey4,23)
 SoundRoomEntry(Song_OohWilfre, SongTitle_OohWilfre, SourceTitle_DrawnToLife2,14)

@@ -182,6 +182,7 @@ HugoMug
 NoelleMug
 ShiliangCatMug
 HalloranMug
+PeregrineMug
 SwordfighterCard
 LandsknechtCard
 KnightCard
@@ -281,3 +282,5 @@ AirflyCard
 ArchflyCard
 VenomflyCard
 MaulMoleCard
+NovistadorCard
+IronCrabCard

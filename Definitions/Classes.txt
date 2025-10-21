@@ -57,7 +57,8 @@ Souldier
 DivineMagus
 AnswererClass
 Turret
-IronCrab 0x52
+Novistador 0x51
+IronCrab
 Woodrat
 Archrat
 Airfly

@@ -1,3 +1,7 @@
+//add a shitton of battle quotes
+//all four of them with nathan, gore, astarte, cleone, benthus(?), rat(?), kryst(?)
+//maybe some random recruitables too
+
 ##C5XavensBattle
 [MidLeft][Xavens]
 You're getting a bit[N]

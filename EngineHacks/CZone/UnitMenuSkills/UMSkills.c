@@ -1,5 +1,6 @@
 #include "GracefulBlur.c"
 #include "TargetMark.c"
+#include "MagnetPulse.c"
 
 int Vanguard_Usability(struct MenuProc* menu) { 
 	if (gActiveUnit->state & US_CANTOING) { 

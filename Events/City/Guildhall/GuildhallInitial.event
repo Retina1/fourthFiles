@@ -158,39 +158,39 @@ EndEvent
 
 //sch
 Cassandra_RecruitEvent:
-GuildRecruit(Cassandra,Guild_Test_Dialogue,0x20)
+GuildRecruit(Cassandra,Guild_Cassandra_Intro,0x20)
 EndEvent
 Waves_RecruitEvent:
-GuildRecruit(Waves,Guild_Test_Dialogue,0x21)
+GuildRecruit(Waves,Guild_Waves_Intro,0x21)
 EndEvent
 Cyanne_RecruitEvent:
-GuildRecruit(Cyanne,Guild_Test_Dialogue,0x22)
+GuildRecruit(Cyanne,Guild_Cyanne_Intro,0x22)
 EndEvent
 Victor_RecruitEvent:
-GuildRecruit(Victor,Guild_Test_Dialogue,0x23)
+GuildRecruit(Victor,Guild_Victor_Intro,0x23)
 EndEvent
 Lonsdale_RecruitEvent:
-GuildRecruit(Lonsdale,Guild_Test_Dialogue,0x24)
+GuildRecruit(Lonsdale,Guild_Lonsdale_Intro,0x24)
 EndEvent
 Hugo_RecruitEvent:
-GuildRecruit(Hugo,Guild_Test_Dialogue,0x25)
+GuildRecruit(Hugo,Guild_Lonsdale_Intro,0x25)
 EndEvent
 
 //cur
 Trish_RecruitEvent:
-GuildRecruit(Trish,Guild_Test_Dialogue,0x20)
+GuildRecruit(Trish,Guild_Trish_Intro,0x20)
 EndEvent
 Amos_RecruitEvent:
-GuildRecruit(Amos,Guild_Test_Dialogue,0x21)
+GuildRecruit(Amos,Guild_Amos_Intro,0x21)
 EndEvent
 Roslin_RecruitEvent:
-GuildRecruit(Roslin,Guild_Test_Dialogue,0x22)
+GuildRecruit(Roslin,Guild_Roslin_Intro,0x22)
 EndEvent
 Witerico_RecruitEvent:
-GuildRecruit(Witerico,Guild_Test_Dialogue,0x23)
+GuildRecruit(Witerico,Guild_Witerico_Intro,0x23)
 EndEvent
 Tycho_RecruitEvent:
-GuildRecruit(Tycho,Guild_Test_Dialogue,0x24)
+GuildRecruit(Tycho,Guild_Tycho_Intro,0x24)
 EndEvent
 
 

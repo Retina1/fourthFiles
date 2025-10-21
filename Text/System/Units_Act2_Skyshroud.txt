@@ -68,3 +68,10 @@ Anastas[X]
 ##Desc_Anastas
 A Belvarusi merc from a border village.[N]
 He's underhanded yet inspirational.[X]
+
+//lobotomy
+##Name_Peregrine
+Peregrine[X]
+##Desc_Peregrine
+An Asketan scout injured by a skirmish.[N]
+He's laid back and optimistic anyway.[X]

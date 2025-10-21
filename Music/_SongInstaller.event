@@ -289,6 +289,11 @@ SongTable(Song_NopeYoureTooLateImAlreadyDead,NopeYoureTooLateImAlreadyDead,1)
 SongTable(Song_IsleUntoThyself,IsleUntoThyself,1)
 #include "songs/IsleUntoThyself.event"
 }
+#define Song_DesperateAssault 0x32
+{
+SongTable(Song_DesperateAssault,DesperateAssault,1)
+#include "songs/DesperateAssault.event"
+}
 
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36

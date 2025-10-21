@@ -1,0 +1,65 @@
+##Guild_Trish_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Trish]
+Trish here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Trish]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Trish]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Trish]
+return here[A][X]
+
+##Guild_Amos_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Amos]
+Amos here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Amos]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Amos]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Amos]
+return here[A][X]
+
+##Guild_Roslin_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Roslin]
+Roslin here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Roslin]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Roslin]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Roslin]
+return here[A][X]
+
+##Guild_Witerico_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Witerico]
+Witerico here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Witerico]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Witerico]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Witerico]
+return here[A][X]
+
+##Guild_Tycho_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tycho]
+Tycho here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tycho]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tycho]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tycho]
+return here[A][X]
+

@@ -36,9 +36,32 @@ int ApplyCuratePhysAptitude(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
+
+//need a version without unit buffer for robots
+int ApplyCurateCalmingPresence(u8 stat, struct Unit* unit) {
+	int check = 0;
+	u8 unitIndex = unit->index; //Loading as unsigned to prevent faulty comparisons
+	for (int i = 0; i < 0x100; ++i) {
+        Unit* other = gUnitLookup[i];
+        if (!IsUnitOnField(other) || unitIndex == i) {
+            continue;
+        }
+        check = AreUnitsAllied(unitIndex, other->index);
+        if (check) {
+			if ((UNIT_HAS_SKILL(other,MED,skill_212)) && ((absolute(other->xPos - unit->xPos) + absolute(other->yPos - unit->yPos)) <= 2)) {
+				stat = stat * 6/5;
+			}
+			else if ((UNIT_HAS_SKILL(other,MED,skill_211)) && ((absolute(other->xPos - unit->xPos) + absolute(other->yPos - unit->yPos)) <= 1)) {
+				stat = stat * 11/10;
+			}	
+        }
+    }
+	return stat;
+}
+
+/*
 int ApplyCurateCalmingPresence(u8 stat, struct Unit* unit) {
 	
-	u8* unitBuffer = GetUnitsInRange(unit, 1, 1);
 	u8* unitBuffer2 = GetUnitsInRange(unit, 1, 2);
 	if (!(unitBuffer2 == FALSE)) {
 		int i = 0;
@@ -51,6 +74,7 @@ int ApplyCurateCalmingPresence(u8 stat, struct Unit* unit) {
 			i++;
 		}
 	}
+	u8* unitBuffer = GetUnitsInRange(unit, 1, 1);
 	if (!(unitBuffer == FALSE)){
 		int i = 0;
 		while (unitBuffer[i]){
@@ -65,8 +89,7 @@ int ApplyCurateCalmingPresence(u8 stat, struct Unit* unit) {
 
 	return stat;
 }
-
-
+*/
 
 void ApplyCuratePassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 }

@@ -81,3 +81,9 @@ Select an ally to pull.[X]
 Buff nearby allies for a[N]
 turn with known rallies.[X]
 
+## UM_MagnetPulse
+ Pulse[X]
+## UM_MagnetPulseDesc
+Utilize a versatile and dangerous[N]
+eletric pulse on all in range.[X]
+

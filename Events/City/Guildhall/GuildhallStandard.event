@@ -151,7 +151,7 @@ GuildhallLoadMyrmidons:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 //natsuki quest?
-GuildLoad(Natsuki,Recruit_Natsuki,0x1)
+//GuildLoad(Natsuki,Recruit_Natsuki,0x1)
 GuildLoad(Mikayla,Recruit_Mikayla,0x2)
 GuildLoad(Calliope,Recruit_Calliope,0x3)
 GuildLoad(Ghari,Recruit_Ghari,0x4,Chapter5DoneFlag)

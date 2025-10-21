@@ -1,9 +1,9 @@
 INLINE DebuffEffectsTable,Name Text,R Text,Duration,Atk Mul,Atk Div,Hit Mul,Hit Div,Avo Mul,Avo Div,Crit Mul,Crit Div,AS Mul,AS Div,Def Mul,Def Div,Luc Mul,Luc Div,Mov Sub
 EmptyDebuff,NoDebuffLabel,NoDebuffDesc,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-GuardBreakDebuff,0,0,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
-PowerBreakDebuff,0,0,2,4,5,1,1,1,1,1,1,1,1,1,1,1,1,0
-AgilityBreakDebuff,0,0,2,1,1,1,1,1,1,1,1,4,5,1,1,1,1,0
-ShieldCrushDebuff,0,0,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
+GuardBreakDebuff,GuardBreakLabel,GuardBreakDesc,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
+PowerBreakDebuff,PowerBreakLabel,PowerBreakDesc,2,4,5,1,1,1,1,1,1,1,1,1,1,1,1,0
+AgilityBreakDebuff,AgilityBreakLabel,AgilityBreakDesc,2,1,1,1,1,1,1,1,1,4,5,1,1,1,1,0
+ShieldCrushDebuff,ShieldCrushLabel,GuardBreakDesc,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
 WarCry1Debuff,0,0,2,4,5,1,1,1,1,4,5,1,1,1,1,1,1,0
 WarCry2Debuff,0,0,2,3,5,1,1,1,1,3,5,1,1,1,1,1,1,0
 HellishCry1Debuff,0,0,2,1,1,1,1,4,5,1,1,1,1,4,5,1,1,0
@@ -29,7 +29,7 @@ CrippleWhip5Debuff,0,0,3,3,5,1,1,1,1,1,1,3,5,3,5,1,1,3
 Stigmata1Debuff,0,0,2,4,5,4,5,4,5,4,5,4,5,1,1,1,1,0
 Stigmata2Debuff,0,0,2,7,10,7,10,7,10,7,10,7,10,1,1,1,1,0
 Stigmata3Debuff,0,0,2,1,2,1,2,1,2,1,2,1,2,1,1,1,1,0
-CloseCombatDebuff,0,0,3,1,1,1,1,1,1,1,1,1,1,1,2,1,1,0
+CloseCombatDebuff,0,0,3,1,2,1,1,1,1,1,1,1,1,1,2,1,1,0
 Trickery1Debuff,0,0,3,1,1,7,10,1,1,1,1,1,1,1,1,1,1,0
 Trickery2Debuff,0,0,3,1,1,1,2,1,1,1,1,1,1,1,1,1,1,0
 SappingArrowDebuff,0,0,2,4,5,1,1,1,1,1,1,4,5,1,1,1,1,0
@@ -48,8 +48,14 @@ AtrophicCircle2Debuff,0,0,3,1,1,1,1,1,1,1,1,1,1,7,10,7,10,3
 HazeCurtain1Debuff,0,0,2,1,1,9,10,1,1,1,1,1,1,1,1,1,1,0
 HazeCurtain2Debuff,0,0,2,1,1,4,5,1,1,1,1,1,1,1,1,1,1,0
 HazeCurtain3Debuff,0,0,3,1,1,3,5,1,1,1,1,1,1,1,1,1,1,0
-BreakingPulse1Debuff,0,0,2,1,1,1,1,1,1,1,1,1,1,9,10,1,1,0
-BreakingPulse2Debuff,0,0,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
-BreakingPulse3Debuff,0,0,3,1,1,1,1,1,1,1,1,1,1,7,10,1,1,0
+SappingStance1Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+SappingStance2Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+SappingStance3Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+Ignition1Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+Ignition2Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+Ignition3Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+BreakingPulse1Debuff,BreakingPulseLabel,BrerakingPulseDesc1,1,1,1,1,1,1,1,1,1,1,1,9,10,1,1,0
+BreakingPulse2Debuff,BreakingPulseLabel,BrerakingPulseDesc2,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
+BreakingPulse3Debuff,BreakingPulseLabel,BrerakingPulseDesc3,3,1,1,1,1,1,1,1,1,1,1,7,10,1,1,0
 OPEN,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
 OPEN,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0

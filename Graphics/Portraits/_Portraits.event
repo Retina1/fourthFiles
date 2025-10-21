@@ -106,6 +106,12 @@ RatatoskrDMP:
 setMugEntry(RatatoskrMug,RatatoskrDMP,4,6,4,4)
 
 ALIGN 4
+//lobotomy
+PeregrineDMP:
+#incbin "dmps/lobotomyPeregrine.dmp"
+setMugEntry(PeregrineMug,PeregrineDMP,2,5,3,3)
+
+ALIGN 4
 //grexius
 HugoDMP:
 #incbin "dmps/grexiusHugo.dmp"

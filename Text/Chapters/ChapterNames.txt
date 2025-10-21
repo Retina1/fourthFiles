@@ -17,6 +17,57 @@
 ##FinalFloor
 Final Floor[X]
 
+##CityVisit02
+Note: When loading a save file[N]
+in The City: Hirschring,[AN]
+a message will be displayed[N]
+with the current chapter.[AN]
+This will help you to tell apart[N]
+save files in the city,[AN]
+and remind you of progress if[N]
+you take a break from the game.[AN]
+On that note, this save file has[N]
+completed Chapter 2: New Friends.[A][X]
+
+##CityVisit03
+This save file has completed[N]
+Chapter 3: Caravan Duty.[A][X]
+##CityVisitS1
+This save file has completed[N]
+First Stratum: Lethal Forest.[A][X]
+##CityVisit05
+This save file has completed[N]
+Chapter 5: Heroes' Welcome.[A][X]
+##CityVisit08
+This save file has completed[N]
+Chapter 8: Welcome Home.[A][X]
+##CityVisit09
+This save file has completed[N]
+Chapter 9: Spinning the Tale Anew.[A][X]
+##CityVisit10
+This save file has completed[N]
+Chapter 10: Inquisitors.[A][X]
+##CityVisitS3
+This save file has completed[N]
+Third Stratum: Clouded Wastes.[A][X]
+##CityVisit13
+This save file has completed[N]
+Chapter 13: The Gambit.[A][X]
+##CityVisit15
+This save file has completed[N]
+Chapter 15: City on Fire.[A][X]
+##CityVisit16
+This save file has completed[N]
+Chapter 16: Ends Justify Means.[A][X]
+##CityVisit18A
+This save file has completed[N]
+Chapter 18A: Chaos's Grip.[A][X]
+##CityVisit18B
+This save file has completed[N]
+Chapter 18B: Crushing Order.[A][X]
+##CityVisit18C
+This save file has completed[N]
+Chapter 18C: A Fading Dream.[A][X]
 
 ##Label_City
 The City[X]
@@ -71,7 +122,7 @@ Lethal Forest[X]
 ##Name_Ch4
 Unsituated Beast[X]
 ##Name_Ch5
-Heroes's Welcome[X]
+Heroes' Welcome[X]
 ##Name_Ch6
 Endbringer[X]
 ##Name_Ch7

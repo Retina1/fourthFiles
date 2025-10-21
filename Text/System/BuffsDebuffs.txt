@@ -144,3 +144,28 @@ Stonard[X]
 Bravant[X]
 ##BravantBuffDesc
 1.5x Atk.[X]
+
+
+##PowerBreakLabel
+Power Break[X]
+##PowerBreakDesc
+0.8x Atk.[X]
+##GuardBreakLabel
+Guard Break[X]
+##ShieldCrushLabel
+Shield Crush[X]
+##GuardBreakDesc
+0.8x Def.[X]
+##AgilityBreakLabel
+Agility Break[X]
+##AgilityBreakDesc
+0.8x AS.[X]
+
+##BreakingPulseLabel
+Breaking Ps.[X]
+##BrerakingPulseDesc1
+0.9x Def.[X]
+##BrerakingPulseDesc2
+0.8x Def.[X]
+##BrerakingPulseDesc3
+0.7x Def.[X]

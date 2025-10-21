@@ -7,6 +7,7 @@ extern u16 GenericHealEvent;
 extern u16 GenericBuffEvent;
 extern u16 GenericMusicNoteEvent;
 extern u16 GenericMoneyEvent;
+extern u16 GenericAutomatonEvent;
 
 #include "SkillSystem/SkillHelpers.c"
 #include "SkillLearner/SkillLearner.c"

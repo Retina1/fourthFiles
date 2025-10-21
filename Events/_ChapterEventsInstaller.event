@@ -264,6 +264,14 @@ STAL 0x16
 EndEvent
 
 ALIGN 4
+GenericAutomatonEvent:
+CAM1 0xFFFF
+PlayEmotionEffect(BrightIdeaEffect)
+SOUN 0x101
+STAL 0x16
+EndEvent
+
+ALIGN 4
 GenericTrappedEvent:
 CAM1 0xFFFF
 PlayEmotionEffectCoords(ExclamationEffect)

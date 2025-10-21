@@ -1,36 +1,36 @@
 	.include "MPlayDef.s"
 
-	.equ	song0D_grp, voicegroup000
-	.equ	song0D_pri, 0
-	.equ	song0D_rev, 0
-	.equ	song0D_mvl, 127
-	.equ	song0D_key, 0
-	.equ	song0D_tbs, 1
-	.equ	song0D_exg, 0
-	.equ	song0D_cmp, 1
+	.equ	DesperateAssault_grp, voicegroup000
+	.equ	DesperateAssault_pri, 0
+	.equ	DesperateAssault_rev, 0
+	.equ	DesperateAssault_mvl, 127
+	.equ	DesperateAssault_key, 0
+	.equ	DesperateAssault_tbs, 1
+	.equ	DesperateAssault_exg, 0
+	.equ	DesperateAssault_cmp, 1
 
 	.section .rodata
-	.global	song0D
+	.global	DesperateAssault
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song0D_001:
+DesperateAssault_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song0D_key+0
- .byte   TEMPO , 170*song0D_tbs/2
+ .byte   KEYSH , DesperateAssault_key+0
+ .byte   TEMPO , 170*DesperateAssault_tbs/2
  .byte   VOICE , 49
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   N17 ,Bn3 ,v100
  .byte   N17 ,En4
@@ -359,26 +359,26 @@ Label_FA6DC5:
   .word Label_FA6C91
 @  #01 @038   ----------------------------------------
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   FINE
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song0D_002:
+DesperateAssault_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song0D_key+0
+ .byte   KEYSH , DesperateAssault_key+0
  .byte   VOICE , 49
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   W96
 @  #02 @001   ----------------------------------------
@@ -612,26 +612,26 @@ Label_FA76BE:
 @  #02 @038   ----------------------------------------
  .byte   VOICE , 49
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   FINE
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song0D_003:
+DesperateAssault_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song0D_key+0
+ .byte   KEYSH , DesperateAssault_key+0
  .byte   VOICE , 68
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   W96
 @  #03 @001   ----------------------------------------
@@ -817,30 +817,30 @@ Label_FA73B0:
 @  #03 @038   ----------------------------------------
  .byte   VOICE , 68
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   FINE
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song0D_004:
+DesperateAssault_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song0D_key+0
+ .byte   KEYSH , DesperateAssault_key+0
  .byte   VOICE , 28
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   N23 ,En1 ,v100
  .byte   N23 ,En2
@@ -1250,30 +1250,30 @@ Label_01165867:
   .word Label_01165763
 @  #04 @038   ----------------------------------------
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 48*song0D_mvl/mxv
+ .byte   VOL , 48*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   FINE
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song0D_005:
+DesperateAssault_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song0D_key+0
+ .byte   KEYSH , DesperateAssault_key+0
  .byte   VOICE , 30
  .byte   PAN , c_v+0
- .byte   VOL , 47*song0D_mvl/mxv
+ .byte   VOL , 47*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 47*song0D_mvl/mxv
+ .byte   VOL , 47*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 47*song0D_mvl/mxv
+ .byte   VOL , 47*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 47*song0D_mvl/mxv
+ .byte   VOL , 47*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 47*song0D_mvl/mxv
+ .byte   VOL , 47*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   W96
 @  #05 @001   ----------------------------------------
@@ -1472,26 +1472,26 @@ Label_FA77A3:
   .word Label_FA7764
 @  #05 @038   ----------------------------------------
  .byte   PAN , c_v+0
- .byte   VOL , 47*song0D_mvl/mxv
+ .byte   VOL , 47*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 47*song0D_mvl/mxv
+ .byte   VOL , 47*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 47*song0D_mvl/mxv
+ .byte   VOL , 47*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   FINE
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song0D_006:
+DesperateAssault_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song0D_key+0
+ .byte   KEYSH , DesperateAssault_key+0
  .byte   VOICE , 124
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   N92 ,An2 ,v100
  .byte   W96
@@ -1599,30 +1599,30 @@ Label_FA7AD9:
 @  #06 @038   ----------------------------------------
  .byte   VOICE , 124
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   FINE
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song0D_007:
+DesperateAssault_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song0D_key+0
+ .byte   KEYSH , DesperateAssault_key+0
  .byte   VOICE , 124
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   N17 ,Dn1 ,v100
  .byte   W96
@@ -1786,26 +1786,26 @@ Label_0116594E:
 @  #07 @038   ----------------------------------------
  .byte   VOICE , 124
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 55*song0D_mvl/mxv
+ .byte   VOL , 55*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   FINE
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song0D_008:
+DesperateAssault_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song0D_key+0
+ .byte   KEYSH , DesperateAssault_key+0
  .byte   VOICE , 124
  .byte   PAN , c_v+0
- .byte   VOL , 50*song0D_mvl/mxv
+ .byte   VOL , 50*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 50*song0D_mvl/mxv
+ .byte   VOL , 50*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 50*song0D_mvl/mxv
+ .byte   VOL , 50*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   W48
  .byte   N17 ,Dn1 ,v100
@@ -2006,32 +2006,32 @@ Label_01165A6A:
 @  #08 @038   ----------------------------------------
  .byte   VOICE , 124
  .byte   PAN , c_v+0
- .byte   VOL , 50*song0D_mvl/mxv
+ .byte   VOL , 50*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 50*song0D_mvl/mxv
+ .byte   VOL , 50*DesperateAssault_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 50*song0D_mvl/mxv
+ .byte   VOL , 50*DesperateAssault_mvl/mxv
  .byte   BEND , c_v+0
  .byte   FINE
 
 @******************************************************@
 	.align	2
 
-song0D:
+DesperateAssault:
 	.byte	8	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song0D_pri	@ Priority
-	.byte	song0D_rev	@ Reverb.
+	.byte	DesperateAssault_pri	@ Priority
+	.byte	DesperateAssault_rev	@ Reverb.
     
-	.word	song0D_grp
+	.word	DesperateAssault_grp
     
-	.word	song0D_001
-	.word	song0D_002
-	.word	song0D_003
-	.word	song0D_004
-	.word	song0D_005
-	.word	song0D_006
-	.word	song0D_007
-	.word	song0D_008
+	.word	DesperateAssault_001
+	.word	DesperateAssault_002
+	.word	DesperateAssault_003
+	.word	DesperateAssault_004
+	.word	DesperateAssault_005
+	.word	DesperateAssault_006
+	.word	DesperateAssault_007
+	.word	DesperateAssault_008
 
 	.end

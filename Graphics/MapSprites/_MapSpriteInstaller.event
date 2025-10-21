@@ -285,6 +285,9 @@ MovingMapSprite(Wolfskin, AP1, WolfskinMMS)
 StandingMapSprite(Wolfking,MapSprite16x32,WolfkingSMS)
 MovingMapSprite(Wolfking, AP1, WolfkingMMS)
 
+StandingMapSprite(Novistador,MapSprite16x16,NovistadorSMS)
+MovingMapSprite(Novistador, AP1, NovistadorMMS)
+
 #define SigilTrapMapSprite 0x3c
 #define LightRuneMapSprite 0x3d
 
@@ -294,6 +297,13 @@ StandingMapSprite(LightRuneMapSprite,MapSprite16x16,LightRuneSMS)
 ALIGN 4
 LightRuneSMS:
 #incbin "Dmp/Save Points {serif}-stand.dmp"
+
+ALIGN 4
+NovistadorSMS:
+#incbin "Dmp/Invisible.dmp"
+ALIGN 4
+NovistadorMMS:
+#incbin "Dmp/Assassin (M) Novistador Lance (invisible){ArcherBias}-walk.dmp"
 
 ALIGN 4
 WolfskinSMS:

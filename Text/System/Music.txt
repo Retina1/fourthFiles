@@ -190,6 +190,11 @@ FE: New Mystery of the Emblem[X]
 ##SongTitle_MurderousPuppets
 Murderous Puppets[X]
 
+##SourceTitle_FE2
+Fire Emblem Gaiden[X]
+##SongTitle_DesperateAssault ^
+Alm - Desperate Assault (MarkyJoe)[X]
+
 
 ##SourceTitle_Original
 Original Song[X]

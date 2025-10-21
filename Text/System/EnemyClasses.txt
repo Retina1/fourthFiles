@@ -232,3 +232,8 @@ Treant[X]
 ##Desc_Treant
 A hulking tree abomination found deep[N]
 in the woods, with mighty endurance.[X]
+##Class_Novistador
+Novistador[X]
+##Desc_Novistador
+An invisible warrior of fell[N]
+power, made to slay humanity.[X]

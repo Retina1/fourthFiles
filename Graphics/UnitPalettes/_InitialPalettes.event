@@ -17,6 +17,24 @@ Puzon_SwordfighterDMP:
 ALIGN 4
 Puzon_LandsknechtDMP:
 #incbin "paletteFiles/Initial/Puzon_Landsknecht.dmp"
+setPalette(Cam_Swordfighter, Cam_SwordfighterDMP)
+setPalette(Cam_Landsknecht, Cam_LandsknechtDMP)
+CharPalette(Cam,Cam_Swordfighter,Swordfighter,Cam_Landsknecht,Landsknecht)
+ALIGN 4
+Cam_SwordfighterDMP:
+#incbin "paletteFiles/Initial/Cam_Swordfighter.dmp"
+ALIGN 4
+Cam_LandsknechtDMP:
+#incbin "paletteFiles/Initial/Cam_Landsknecht.dmp"
+setPalette(Marag_Swordfighter, Marag_SwordfighterDMP)
+setPalette(Marag_Landsknecht, Marag_LandsknechtDMP)
+CharPalette(Marag,Marag_Swordfighter,Swordfighter,Marag_Landsknecht,Landsknecht)
+ALIGN 4
+Marag_SwordfighterDMP:
+#incbin "paletteFiles/Initial/Marag_Swordfighter.dmp"
+ALIGN 4
+Marag_LandsknechtDMP:
+#incbin "paletteFiles/Initial/Marag_Landsknecht.dmp"
 
 //kn
 setPalette(Drogo_Knight, Drogo_KnightDMP)
@@ -28,6 +46,15 @@ Drogo_KnightDMP:
 ALIGN 4
 Drogo_HopliteDMP:
 #incbin "paletteFiles/Initial/Drogo_Hoplite.dmp"
+setPalette(Allbringer_Knight, Allbringer_KnightDMP)
+setPalette(Allbringer_Hoplite, Allbringer_HopliteDMP)
+CharPalette(Allbringer,Allbringer_Knight,Knight,Allbringer_Hoplite,Hoplite)
+ALIGN 4
+Allbringer_KnightDMP:
+#incbin "paletteFiles/Initial/Allbringer_Knight.dmp"
+ALIGN 4
+Allbringer_HopliteDMP:
+#incbin "paletteFiles/Initial/Allbringer_Hoplite.dmp"
 
 //axe
 setPalette(Tristao_Axefighter, Tristao_AxefighterDMP)

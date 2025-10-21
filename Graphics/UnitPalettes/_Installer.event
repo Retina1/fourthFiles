@@ -46,7 +46,8 @@ Nathan_WarlockDMP:
 #incbin "paletteFiles/MainStory/Nathan_Warlock.dmp"
 
 setPalette(Gore_Gunner, Gore_GunnerDMP)
-//setPalette(Gore_Gunner, Gore_Gunner)
+//change to dragoon eventually
+setPalette(Gore_Dragoon, Gore_GunnerDMP)
 CharPalette(Gore,Gore_Gunner,Gunner,Gore_Gunner,Dragoon)
 ALIGN 4
 Gore_GunnerDMP:

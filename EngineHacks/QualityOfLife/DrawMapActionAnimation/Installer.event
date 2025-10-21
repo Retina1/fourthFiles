@@ -37,11 +37,11 @@ POP
 
 ALIGN 4
 WeaponTypeAnimations:
-BYTE 0 ThinSlashAnimID // Sword 
-BYTE 1 Hit1AnimID // Lance 
-BYTE 2 Shards2AnimID // Axe 
-BYTE 3 Break1AnimID // Bow  
-BYTE 5 Splash2AnimID // Anima 
+BYTE 0 ThinSlashAnimID // Sword/cut
+BYTE 1 Hit1AnimID // Lance/rapier
+BYTE 2 Shards2AnimID // Axe/fist
+BYTE 3 Break1AnimID // Bow/gun
+BYTE 5 Splash2AnimID // Rods 
 BYTE 6 FlashAnimID // Light 
 BYTE 7 Impact1AnimID // Dark 
 BYTE $B Shards1AnimID // Monster 
