@@ -183,6 +183,12 @@ NoelleMug
 ShiliangCatMug
 HalloranMug
 PeregrineMug
+HitchcockMug
+LyudMug
+BrugarisMug
+TenneyMug
+MeansDeathMug
+SonbringerMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

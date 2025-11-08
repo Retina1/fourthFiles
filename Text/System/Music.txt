@@ -86,6 +86,8 @@ Excavation Worker's Quarters[X]
 Castlevania: Order of Ecclesia[X]
 ##SongTitle_Rhapsody ^
 Rhapsody of the Forsaken (Trikki Nikki)[X]
+##SongTitle_AnEmptyTome
+An Empty Tome (Trikki Nikki)[X]
 
 ##SourceTitle_LiveALive
 Live a Live[X]
@@ -96,6 +98,11 @@ Heroic Struggle (Trikki Nikki)[X]
 Pokemon Mystery Dungeon: Explorers[X]
 ##SongTitle_UpperSteamCave
 Upper Steam Cave (Trikki Nikki)[X]
+
+##SourceTitle_YGOForbiddenMemories ^
+Yu-Gi-Oh! Forbidden Memories[X]
+##SongTitle_FreeDuel
+Free Duel[X]
 
 ##SourceTitle_DrawnToLife2 ^
 Drawn to Life: The Next Chapter[X]
@@ -194,6 +201,13 @@ Murderous Puppets[X]
 Fire Emblem Gaiden[X]
 ##SongTitle_DesperateAssault ^
 Alm - Desperate Assault (MarkyJoe)[X]
+
+##SourceTitle_Danganronpa3
+Danganronpa 3[X]
+##SongTitle_UntilTheTwoPeopleFallInLove ^
+Until the Two People Fall in Love[X]
+##SongTitle_UntilTheTwoPeopleFallInLoveAlt ^
+Until the Two People Fall in Love (Alt.)[X]
 
 
 ##SourceTitle_Original

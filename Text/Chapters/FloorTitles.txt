@@ -42,7 +42,7 @@ A Salvation[N]
 Forever Denied[X]
 ##Floor_S4F4
 Loyalties of a[N]
-Dying Lineage[X]
+Decayed Lineage[X]
 
 ##Floor_S5AF1
 A Paradise[N]
@@ -57,8 +57,8 @@ Will and Steel[X]
 Epiphanies[N]
 Amidst the End[X]
 ##Floor_S5AF5
-The Final[N]
-Pinnacle of Life[X]
+The Dawning of[N]
+Undying Hope[X]
 
 ##Floor_S5BF1
 A Monument[N]

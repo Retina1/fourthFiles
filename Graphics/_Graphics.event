@@ -1,4 +1,5 @@
 #include "MapSprites/_MapSpriteInstaller.event"
+
 #include "Portraits/_Portraits.event"
 #include "Portraits/_PortraitHeight.event"
 #include "RemoveFog/RemoveEffects.event"
@@ -39,13 +40,6 @@ PUSH
 		BYTE 0x00 0x20 //disable transparency
 POP
 
-//remove glowy circle?
-PUSH
-ORG $88590
-SHORT 0x0000 0x0000
-POP
-
-
 PUSH
 ORG $88638
 POIN NewStatScreen
@@ -56,6 +50,7 @@ POIN NewStatScreenTSA
 ORG $88590
 SHORT 0x0000 0x0000
 POP
+
 ALIGN 4
 NewStatScreen:
 #incbin "BuilderDumped/StatusBG.png.dmp"
@@ -65,24 +60,28 @@ NewStatScreenPal:
 ALIGN 4
 NewStatScreenTSA:
 #incbin "BuilderDumped/StatusBG.png.tsa.dmp"
+
 PUSH
 ORG $213CC
 POIN NewGameOver
 ORG $213e0
 POIN NewGameOverPal
 POP
+
 ALIGN 4
 NewGameOver:
 #incbin "BuilderDumped/GameOver.png.dmp"
 ALIGN 4
 NewGameOverPal:
 #incbin "BuilderDumped/GameOver.png.pal.dmp"
+
 PUSH
 ORG $C5830
 POIN NewTitle
 ORG $C5790
 POIN NewTitlePal
 POP
+
 ALIGN 4
 NewTitle:
 #incbin "BuilderDumped/Fourthhack.png.dmp" 

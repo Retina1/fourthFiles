@@ -135,3 +135,10 @@ Ayda[X]
 ##Desc_Ayda
 A wandering immortal swordswoman.[N]
 She's looking for reason to live.[X]
+
+//the jobber bosses
+##Name_Hitchcock
+Hitchcock[X]
+##Desc_Hitchcock
+A Belvarusi guardsman near the border.[N]
+He's well-respected and resourceful.[X]

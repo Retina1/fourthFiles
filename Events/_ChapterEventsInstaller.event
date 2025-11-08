@@ -190,9 +190,11 @@ ORG $837B8
 BYTE 0x0
 ORG $837CA
 SHORT 0x0
+
 ORG 0x592104
 CALL NewGameOverEvent
 ENDA
+
 POP
 
 //bugs currently
@@ -298,6 +300,12 @@ UNIT
 }
 {
 #include "Chapters/Chapter5.event"
+}
+{
+#include "Chapters/Chapter6.event"
+}
+{
+#include "Chapters/Chapter7.event"
 }
 
 {

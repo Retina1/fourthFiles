@@ -41,10 +41,12 @@ GoreDMP:
 #incbin "dmps/retinaGore.dmp"
 setMugEntry(GoreMug,GoreDMP,3,5,3,3)
 ALIGN 4
+//thx app
 CleoneDMP:
 #incbin "dmps/applanthropistCleone.dmp"
 setMugEntry(CleoneMug,CleoneDMP,3,5,3,3)
 ALIGN 4
+//thx hiraya
 FrancescaDMP:
 #incbin "dmps/hirayaFrancesca.dmp"
 setMugEntry(FrancescaMug,FrancescaDMP,2,5,3,3)
@@ -86,6 +88,10 @@ ALIGN 4
 LantomDMP:
 #incbin "dmps/slaterLantom.dmp"
 setMugEntry(LantomMug,LantomDMP,3,5,3,3)
+ALIGN 4
+SonbringerDMP:
+#incbin "dmps/slaterSonbringer.dmp"
+setMugEntry(SonbringerMug,SonbringerDMP,3,6,3,4)
 
 ALIGN 4
 //levin
@@ -104,6 +110,18 @@ ALIGN 4
 RatatoskrDMP:
 #incbin "dmps/diesRatatoskr.dmp"
 setMugEntry(RatatoskrMug,RatatoskrDMP,4,6,4,4)
+
+ALIGN 4
+//solarimp
+TenneyDMP:
+#incbin "dmps/solarimpTenney.dmp"
+setMugEntry(TenneyMug,TenneyDMP,3,6,3,4)
+
+ALIGN 4
+//siffus
+LyudDMP:
+#incbin "dmps/siffusLyud.dmp"
+setMugEntry(LyudMug,LyudDMP,4,5,3,3)
 
 ALIGN 4
 //lobotomy
@@ -167,7 +185,11 @@ ALIGN 4
 //athath
 OrionDMP:
 #incbin "dmps/athathOrion.dmp"
-setMugEntry(OrionMug,OrionDMP,4,6,4,3)
+setMugEntry(OrionMug,OrionDMP,4,5,4,3)
+ALIGN 4
+BrugarisDMP:
+#incbin "dmps/athathBrugaris.dmp"
+setMugEntry(BrugarisMug,BrugarisDMP,2,4,3,2)
 
 ALIGN 4
 //hiraya
@@ -280,6 +302,10 @@ ALIGN 4
 RodneyDMP:
 #incbin "dmps/abzinthianRodney.dmp"
 setMugEntry(RodneyMug,RodneyDMP,2,5,2,3)
+ALIGN 4
+MeansDeathDMP:
+#incbin "dmps/abzinthianMeansDeath.dmp"
+setMugEntry(MeansDeathMug,MeansDeathDMP,4,6,2,4)
 
 ALIGN 4
 //hannah

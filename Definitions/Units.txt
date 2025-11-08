@@ -35,6 +35,7 @@ Cyanne
 Victor
 Lonsdale
 Hugo
+Lyud
 Trish
 Amos
 Roslin
@@ -127,10 +128,13 @@ Compass
 Katrin
 Sharon
 Ember
+Brugaris
+Tenney
 DreadJenny
 Quinn
 Margitte
 Damien
+MeansDeath
 Marleni
 Ophelia
 Cherryl

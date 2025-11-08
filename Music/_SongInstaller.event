@@ -294,12 +294,32 @@ SongTable(Song_IsleUntoThyself,IsleUntoThyself,1)
 SongTable(Song_DesperateAssault,DesperateAssault,1)
 #include "songs/DesperateAssault.event"
 }
-
+#define Song_UntilTheTwoPeopleFallInLove 0x33
+{
+SongTable(Song_UntilTheTwoPeopleFallInLove,UntilTheTwoPeopleFallInLove,1)
+#include "songs/UntilTheTwoPeopleFallInLove.event"
+}
+#define Song_UntilTheTwoPeopleFallInLoveAlt 0x34
+{
+SongTable(Song_UntilTheTwoPeopleFallInLoveAlt,UntilTheTwoPeopleFallInLoveAlt,1)
+#include "songs/UntilTheTwoPeopleFallInLoveAlt.event"
+}
+#define Song_AnEmptyTome 0x35
+{
+SongTable(Song_AnEmptyTome,AnEmptyTome,1)
+#include "songs/AnEmptyTome.event"
+}
 //0x36 - wind doesn't draw heroes
 #define Song_DrawHeroes 0x36
 {
 SongTable(Song_DrawHeroes,DrawHeroes,1)
 #include "songs/DrawHeroes.event"
+}
+//0x37 - free duel
+#define Song_FreeDuel 0x37
+{
+SongTable(Song_FreeDuel,FreeDuel,1)
+#include "songs/FreeDuel.event"
 }
 
 

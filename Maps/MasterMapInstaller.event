@@ -18,3 +18,5 @@
 #include "MainChapters\Chapter3.event"
 #include "MainChapters\Chapter4.event"
 #include "MainChapters\Chapter5.event"
+#include "MainChapters\Chapter6.event"
+#include "MainChapters\Chapter7.event"

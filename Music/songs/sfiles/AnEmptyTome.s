@@ -1,29 +1,29 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	AnEmptyTome_grp, voicegroup000
+	.equ	AnEmptyTome_pri, 0
+	.equ	AnEmptyTome_rev, 0
+	.equ	AnEmptyTome_mvl, 127
+	.equ	AnEmptyTome_key, 0
+	.equ	AnEmptyTome_tbs, 1
+	.equ	AnEmptyTome_exg, 0
+	.equ	AnEmptyTome_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	AnEmptyTome
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+AnEmptyTome_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
- .byte   TEMPO , 150*song09_tbs/2
+ .byte   KEYSH , AnEmptyTome_key+0
+ .byte   TEMPO , 150*AnEmptyTome_tbs/2
  .byte   VOICE , 124
  .byte   MODT 0
  .byte   LFOS 44
- .byte   VOL , 47*song09_mvl/mxv
+ .byte   VOL , 47*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v+10
  .byte   N05 ,En1 ,v127
@@ -901,13 +901,13 @@ Label_0117C26D:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+AnEmptyTome_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 36
  .byte   MODT 0
  .byte   LFOS 44
- .byte   VOL , 60*song09_mvl/mxv
+ .byte   VOL , 60*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v+0
  .byte   W24
@@ -1587,13 +1587,13 @@ Label_FB3597:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+AnEmptyTome_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 2
  .byte   MODT 0
  .byte   LFOS 44
- .byte   VOL , 32*song09_mvl/mxv
+ .byte   VOL , 32*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v-30
  .byte   W24
@@ -2047,14 +2047,14 @@ Label_FB2F90:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+AnEmptyTome_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 2
  .byte   MODT 0
  .byte   LFOS 44
  .byte   PAN , c_v+26
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   W24
  .byte   N80 ,An2 ,v056
@@ -2415,13 +2415,13 @@ Label_FB2061:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+AnEmptyTome_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 100
  .byte   MODT 0
  .byte   LFOS 44
- .byte   VOL , 18*song09_mvl/mxv
+ .byte   VOL , 18*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v+0
  .byte   W96
@@ -2662,13 +2662,13 @@ Label_FB221F:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+AnEmptyTome_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 81
  .byte   MODT 0
  .byte   LFOS 44
- .byte   VOL , 48*song09_mvl/mxv
+ .byte   VOL , 48*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v+0
  .byte   W24
@@ -3059,13 +3059,13 @@ Label_FB2842:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song09_007:
+AnEmptyTome_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 81
  .byte   MODT 0
  .byte   LFOS 44
- .byte   VOL , 35*song09_mvl/mxv
+ .byte   VOL , 35*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v+0
  .byte   BEND , c_v-4
@@ -3442,13 +3442,13 @@ Label_FB29BA:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song09_008:
+AnEmptyTome_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 48
  .byte   MODT 0
  .byte   LFOS 44
- .byte   VOL , 12*song09_mvl/mxv
+ .byte   VOL , 12*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v-20
  .byte   W96
@@ -3713,7 +3713,7 @@ Label_0117C503:
  .byte   W12
 @  #08 @043   ----------------------------------------
  .byte   W24
- .byte   VOL , 62*song09_mvl/mxv
+ .byte   VOL , 62*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v-10
  .byte   W72
@@ -3986,7 +3986,7 @@ Label_0117C5FD:
  .byte   W12
 @  #08 @061   ----------------------------------------
  .byte   W24
- .byte   VOL , 12*song09_mvl/mxv
+ .byte   VOL , 12*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v-20
  .byte   W72
@@ -4006,14 +4006,14 @@ Label_0117C5FD:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song09_009:
+AnEmptyTome_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 46
  .byte   MODT 0
  .byte   LFOS 44
  .byte   PAN , c_v+3
- .byte   VOL , 43*song09_mvl/mxv
+ .byte   VOL , 43*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   W24
  .byte   N01 ,Fs4 ,v076
@@ -4830,9 +4830,9 @@ Label_0117CAB0:
 
 @**************** Track 10 (Midi-Chn.9) ****************@
 
-song09_010:
+AnEmptyTome_010:
 @  #10 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 49
  .byte   MODT 0
  .byte   LFOS 44
@@ -4851,7 +4851,7 @@ song09_010:
  .byte   W24
 Label_FB228B:
  .byte   PAN , c_v+0
- .byte   VOL , 56*song09_mvl/mxv
+ .byte   VOL , 56*AnEmptyTome_mvl/mxv
  .byte   W72
 @  #10 @007   ----------------------------------------
  .byte   W96
@@ -4927,7 +4927,7 @@ Label_FB228B:
  .byte   W96
 @  #10 @043   ----------------------------------------
  .byte   W24
- .byte   VOL , 4*song09_mvl/mxv
+ .byte   VOL , 4*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v+10
  .byte   W72
@@ -5039,13 +5039,13 @@ Label_FB228B:
 
 @**************** Track 11 (Midi-Chn.10) ****************@
 
-song09_011:
+AnEmptyTome_011:
 @  #11 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , AnEmptyTome_key+0
  .byte   VOICE , 124
  .byte   MODT 0
  .byte   LFOS 44
- .byte   VOL , 44*song09_mvl/mxv
+ .byte   VOL , 44*AnEmptyTome_mvl/mxv
  .byte   MOD 0
  .byte   PAN , c_v+10
  .byte   BEND , c_v+63
@@ -5321,24 +5321,24 @@ Label_0117CBE7:
 @******************************************************@
 	.align	2
 
-song09:
+AnEmptyTome:
 	.byte	11	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	AnEmptyTome_pri	@ Priority
+	.byte	AnEmptyTome_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	AnEmptyTome_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
-	.word	song09_007
-	.word	song09_008
-	.word	song09_009
-	.word	song09_010
-	.word	song09_011
+	.word	AnEmptyTome_001
+	.word	AnEmptyTome_002
+	.word	AnEmptyTome_003
+	.word	AnEmptyTome_004
+	.word	AnEmptyTome_005
+	.word	AnEmptyTome_006
+	.word	AnEmptyTome_007
+	.word	AnEmptyTome_008
+	.word	AnEmptyTome_009
+	.word	AnEmptyTome_010
+	.word	AnEmptyTome_011
 
 	.end

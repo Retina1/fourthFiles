@@ -196,6 +196,12 @@ Hugo[X]
 ##Desc_Hugo
 A Belvarusi scholar chasing a ghost of[N]
 his past. He's lonesome and somber.[X]
+//siffus
+##Name_Lyud
+Lyud[X]
+##Desc_Lyud
+A once dark and tortured soul who has[N]
+mellowed out since. He's relaxed.[X]
 
 //trish by benfrosh (curate)
 ##Name_Trish

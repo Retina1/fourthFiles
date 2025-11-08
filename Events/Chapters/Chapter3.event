@@ -100,6 +100,62 @@ UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [17,9] 0x0 0x0 0x0 0x0 [Shortspea
 UNIT MonsterGeneric BowWight 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
 UNIT
 
+EnemyUnitsExpert:
+//one or two more stationaryish guys in right/lower right
+UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [Agneyastra] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [2,7] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [1,8] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [17,6] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [20,6] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [20,7] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [1,2] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [6,3] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [7,2] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [4,2] DropItem 0x0 0x0 0x0 [Epee,HealScroll] DelayedAI
+UNIT MonsterGeneric Gargoyle 0x0 Level(3,Enemy,1) [12,10] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [20,11] 0x0 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,1) [4,1] DropItem 0x0 0x0 0x0 [GreatTalon,AriadneShard] AttackInRangeAI
+UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,1) [1,5] 0x0 0x0 0x0 0x0 [GreatTalon] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [17,0] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Centaur 0x0 Level(3,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
+UNIT MonsterBoss Wolf 0x0 Level(4,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [SharpBite] ChaseOnceApproachedAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [16,8] 0x0 0x0 0x0 0x0 [Shortmace] AttackWallAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [17,9] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
+UNIT
+
+EnemyUnitsHeroic:
+//one or two more stationaryish guys in right/lower right
+UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [Agneyastra] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [2,7] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [1,8] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [17,6] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [20,6] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [20,7] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [1,2] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [6,3] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [7,2] 0x0 0x0 0x0 0x0 [VileClaw] DelayedAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [4,2] DropItem 0x0 0x0 0x0 [Epee,HealScroll] DelayedAI
+UNIT MonsterGeneric Gargoyle 0x0 Level(3,Enemy,1) [12,10] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT MonsterGeneric Gargoyle 0x0 Level(3,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [2,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [6,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [20,11] 0x0 0x0 0x0 0x0 [EvilEye] AttackInRangeAI
+UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,1) [0,11] 0x0 0x0 0x0 0x0 [Tackle] AttackInRangeAI
+UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,1) [4,1] DropItem 0x0 0x0 0x0 [GreatTalon,AriadneShard] AttackInRangeAI
+UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,1) [1,5] 0x0 0x0 0x0 0x0 [GreatTalon] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [17,0] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Centaur 0x0 Level(3,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
+UNIT MonsterBoss Wolf 0x0 Level(4,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [FrigidBite] ChaseOnceApproachedAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [16,8] 0x0 0x0 0x0 0x0 [Shortmace] AttackWallAI
+UNIT MonsterGeneric Wight 0x0 Level(3,Enemy,1) [17,9] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
+UNIT
+
 AllyUnits:
 UNIT Helman 0x0 0x0 Level(4,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Partizan,Medica] [0x3,0x3,0x4,0x0]
 UNIT BelvarusGeneric Lancer 0x0 Level(3,NPC,1) [13,2] 0x0 0x0 0x0 0x0 [Partizan] [0x3,0x3,0x4,0x0]
@@ -141,9 +197,9 @@ STAL 10
 MUSC 0
 CLEA 0; CLEN 0
 LOMA Chapter3
-LOAD1 0x1 EnemyUnits; ENUN
+LoadUnitsByDifficulty(EnemyUnits,EnemyUnitsExpert,EnemyUnitsHeroic)
 LOAD1 0x1 AllyUnits; ENUN
-SetUnitStatline(MonsterBoss,27,12,3,13,15,1,6,5)
+SetUnitStatline(MonsterBoss,27,12,4,13,15,1,6,5)
 SetUnitWEXP(MonsterBoss,0,0,0,0,0)
 ENUN
 CAM1 MonsterBoss

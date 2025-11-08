@@ -39,6 +39,9 @@ Beast King![X]
 ##Ch5RoutDesc
 Defeat the[N]
 unknown foe![X]
+##Ch6BossDesc
+Defeat Hitchcock[N]
+and press onwards![X]
 
 ##Ch8KillDesc
 Take your[N]

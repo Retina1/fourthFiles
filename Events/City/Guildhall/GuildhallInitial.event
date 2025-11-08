@@ -77,6 +77,9 @@ UNIT
 Recruit_Hugo:
 UNIT Hugo 0x0 0x1 Level(3,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Wand] NoAI
 UNIT
+Recruit_Lyud:
+UNIT Lyud 0x0 0x1 Level(2,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Wand] NoAI
+UNIT
 
 Recruit_Trish:
 UNIT Trish 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Wand] NoAI
@@ -175,6 +178,9 @@ EndEvent
 Hugo_RecruitEvent:
 GuildRecruit(Hugo,Guild_Lonsdale_Intro,0x25)
 EndEvent
+Lyud_RecruitEvent:
+GuildRecruit(Lyud,Guild_Lyud_Intro,0x26)
+EndEvent
 
 //cur
 Trish_RecruitEvent:
@@ -246,6 +252,7 @@ GuildLoad(Cyanne,Recruit_Cyanne,0x3)
 GuildLoad(Victor,Recruit_Victor,0x4)
 GuildLoad(Lonsdale,Recruit_Lonsdale,0x5,Chapter5DoneFlag)
 GuildLoad(Hugo,Recruit_Hugo,0x6)
+GuildLoad(Lyud,Recruit_Lyud,0x7)
 FADU 10
 ENDA
 

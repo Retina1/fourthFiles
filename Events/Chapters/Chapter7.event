@@ -1,0 +1,84 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events7ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+UNIT EndbringerGeneric Caller 0x0 Level(8,Enemy,1) [7,5] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+
+UNIT
+
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+MUSC 0x0
+Text(FillerDialogue)
+LOAD1 0x1 EnemyUnits; ENUN
+CallPreps
+EndEvent
+
+EndingScene:
+MUSC 0x0
+CleanTextNoMap(0x18,FillerDialogue)
+MoveToChapter(Stratum2F1)
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

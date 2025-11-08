@@ -1,0 +1,979 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	UntilTheTwoPeopleFallInLoveAlt_grp  voicegroup000
+	#define	UntilTheTwoPeopleFallInLoveAlt_pri  0
+	#define	UntilTheTwoPeopleFallInLoveAlt_rev  0
+	#define	UntilTheTwoPeopleFallInLoveAlt_mvl  127
+	#define	UntilTheTwoPeopleFallInLoveAlt_key  0
+	#define	UntilTheTwoPeopleFallInLoveAlt_tbs  1
+	#define	UntilTheTwoPeopleFallInLoveAlt_exg  0
+	#define	UntilTheTwoPeopleFallInLoveAlt_cmp  1
+
+	// .rodata
+	//	UntilTheTwoPeopleFallInLoveAlt
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+UntilTheTwoPeopleFallInLoveAlt_001:
+//  #01 //000   ----------------------------------------
+ BYTE   KEYSH   UntilTheTwoPeopleFallInLoveAlt_key+0
+Label_01189702:
+ BYTE   TEMPO   102*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   VOICE   1
+ BYTE   VOL   62*UntilTheTwoPeopleFallInLoveAlt_mvl/mxv
+ BYTE   PAN   c_v+0
+ BYTE   N11  As3  v052
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+//  #01 //001   ----------------------------------------
+Label_0118971C:
+ BYTE   N11  As3  v052
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   PEND 
+//  #01 //002   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118971C
+//  #01 //003   ----------------------------------------
+ BYTE   N11  As3  v052
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   As4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   TEMPO   42*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+//  #01 //004   ----------------------------------------
+Label_0118974A:
+ BYTE   TEMPO   102*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   N11  As3  v052
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   PEND 
+//  #01 //005   ----------------------------------------
+Label_0118975F:
+ BYTE   N11  As3  v052
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   PEND 
+//  #01 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118971C
+//  #01 //007   ----------------------------------------
+Label_01189777:
+ BYTE   N11  As3  v052
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   As4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   TEMPO   42*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   PEND 
+//  #01 //008   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118974A
+//  #01 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118975F
+//  #01 //010   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118971C
+//  #01 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01189777
+//  #01 //012   ----------------------------------------
+ BYTE   TEMPO   102*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   N11  As3  v052
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+//  #01 //013   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118971C
+//  #01 //014   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118971C
+//  #01 //015   ----------------------------------------
+ BYTE   N11  As3  v052
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   As4
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   TEMPO   42*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   TEMPO   20*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   As4
+ BYTE   W11
+ BYTE   TEMPO   42*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   W01
+//  #01 //016   ----------------------------------------
+ BYTE   TEMPO   90*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   N32  Fs2
+ BYTE   N32  Bn2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11  Fs2
+ BYTE   N11  Bn2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+//  #01 //017   ----------------------------------------
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   W12
+ BYTE   Ds2
+ BYTE   N11  Gs2
+ BYTE   W12
+ BYTE   Ds2
+ BYTE   N11  Gs2
+ BYTE   W12
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   W12
+//  #01 //018   ----------------------------------------
+ BYTE   N32  Fs2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11  Fs2
+ BYTE   N11  As2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Gs3
+ BYTE   W12
+//  #01 //019   ----------------------------------------
+ BYTE   Cs3
+ BYTE   N11  Fn3
+ BYTE   N11  Gs3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   N11  Fn3
+ BYTE   W12
+ BYTE   As2
+ BYTE   N11  Fn3
+ BYTE   W12
+ BYTE   Gs2
+ BYTE   N11  Cs3
+ BYTE   W12
+ BYTE   Gs2
+ BYTE   N11  Cs3
+ BYTE   W12
+ BYTE   As2
+ BYTE   N11  Ds3
+ BYTE   W12
+//  #01 //020   ----------------------------------------
+ BYTE   N32  Fs2
+ BYTE   N32  Bn2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11  Bn2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Bn2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+//  #01 //021   ----------------------------------------
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   W12
+ BYTE   Gs2
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+//  #01 //022   ----------------------------------------
+ BYTE   N32
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11  Fs2
+ BYTE   W12
+ BYTE   Bn2
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Bn3
+ BYTE   W12
+//  #01 //023   ----------------------------------------
+ BYTE   N44  Ds4
+ BYTE   W48
+ BYTE   N11  Fs3
+ BYTE   W12
+ BYTE   Fn3  v056
+ BYTE   W12
+ BYTE   Ds3  v064
+ BYTE   W12
+ BYTE   Cs3  v072
+ BYTE   W12
+//  #01 //024   ----------------------------------------
+ BYTE   N32  Fs2  v080
+ BYTE   N32  Bn2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11  Fs2
+ BYTE   N11  Bn2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+//  #01 //025   ----------------------------------------
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   W12
+ BYTE   Ds2
+ BYTE   N11  Gs2
+ BYTE   W12
+ BYTE   Ds2
+ BYTE   N11  Gs2
+ BYTE   W12
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   W12
+//  #01 //026   ----------------------------------------
+ BYTE   N32  Fs2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11  Fs2
+ BYTE   N11  As2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Gs3
+ BYTE   W12
+//  #01 //027   ----------------------------------------
+ BYTE   Cs3
+ BYTE   N11  Fn3
+ BYTE   N11  Gs3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   N11  Fn3
+ BYTE   W12
+ BYTE   As2
+ BYTE   N11  Fn3
+ BYTE   W12
+ BYTE   Gs2
+ BYTE   N11  Cs3
+ BYTE   W12
+ BYTE   Gs2
+ BYTE   N11  Cs3
+ BYTE   W12
+ BYTE   As2
+ BYTE   N11  Ds3
+ BYTE   W12
+//  #01 //028   ----------------------------------------
+ BYTE   N32  Fs2
+ BYTE   N32  Bn2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11  Bn2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Bn2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+//  #01 //029   ----------------------------------------
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   N11  Cs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   W12
+ BYTE   Gs2
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+//  #01 //030   ----------------------------------------
+ BYTE   N32
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11  Fs2  v072
+ BYTE   W12
+ BYTE   Bn2  v068
+ BYTE   W12
+ BYTE   Ds3  v064
+ BYTE   W12
+ BYTE   Fs3  v060
+ BYTE   W12
+ BYTE   Bn3  v056
+ BYTE   W12
+//  #01 //031   ----------------------------------------
+ BYTE   N44  Ds4  v052
+ BYTE   W48
+ BYTE   N11  Fs3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+//  #01 //032   ----------------------------------------
+ BYTE   TEMPO   78*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   N32  Fs2
+ BYTE   N32  Bn2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+//  #01 //033   ----------------------------------------
+ BYTE   Fn2
+ BYTE   N11  As2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Gs2
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+//  #01 //034   ----------------------------------------
+ BYTE   N32  Fs2
+ BYTE   N32  Bn2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   Gs3
+ BYTE   W12
+//  #01 //035   ----------------------------------------
+ BYTE   Cs3
+ BYTE   N11  Fn3
+ BYTE   N11  Gs3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+//  #01 //036   ----------------------------------------
+ BYTE   N32  Fs2
+ BYTE   N32  Bn2
+ BYTE   N32  Ds3
+ BYTE   W36
+ BYTE   N11
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   As3
+ BYTE   W12
+ BYTE   Gs3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+//  #01 //037   ----------------------------------------
+ BYTE   N11
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   N11
+ BYTE   W12
+ BYTE   Cs3
+ BYTE   W12
+ BYTE   As2
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+//  #01 //038   ----------------------------------------
+ BYTE   N44  Fs2
+ BYTE   N44  Bn2
+ BYTE   N44  Ds3
+ BYTE   W48
+ BYTE   N07  En2
+ BYTE   W08
+ BYTE   Gs2
+ BYTE   W08
+ BYTE   Bn2
+ BYTE   W08
+ BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   N11  Ds3
+ BYTE   W12
+ BYTE   Fs3
+ BYTE   W12
+//  #01 //039   ----------------------------------------
+ BYTE   N44  Bn3
+ BYTE   W48
+ BYTE   Ds4
+ BYTE   W48
+//  #01 //040   ----------------------------------------
+ BYTE   Gn1  v036
+ BYTE   N44  As1
+ BYTE   N44  Ds2
+ BYTE   W12
+ BYTE   TEMPO   64*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   W36
+ BYTE   N11  As1
+ BYTE   W12
+ BYTE   Ds2
+ BYTE   W12
+ BYTE   TEMPO   60*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   Gn2
+ BYTE   W12
+ BYTE   TEMPO   20*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   As2
+ BYTE   W11
+ BYTE   TEMPO   60*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   W01
+//  #01 //041   ----------------------------------------
+ BYTE   N92  Ds2
+ BYTE   W03
+ BYTE   Gn2
+ BYTE   W03
+ BYTE   N88  As2
+ BYTE   W03
+ BYTE   N84  Ds3
+ BYTE   W84
+ BYTE   W03
+//  #01 //042   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_01189702
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+UntilTheTwoPeopleFallInLoveAlt_002:
+//  #02 //000   ----------------------------------------
+ BYTE   VOL   80*UntilTheTwoPeopleFallInLoveAlt_mvl/mxv
+ BYTE   KEYSH   UntilTheTwoPeopleFallInLoveAlt_key+0
+Label_FBF41C:
+ BYTE   VOICE   1
+ BYTE   N92  Gs2  v052
+ BYTE   W03
+ BYTE   Ds3
+ BYTE   W92
+ BYTE   W01
+//  #02 //001   ----------------------------------------
+ BYTE   As2
+ BYTE   W03
+ BYTE   Fn3
+ BYTE   W92
+ BYTE   W01
+//  #02 //002   ----------------------------------------
+ BYTE   Cn3
+ BYTE   W03
+ BYTE   Gn3
+ BYTE   W92
+ BYTE   W01
+//  #02 //003   ----------------------------------------
+ BYTE   W96
+//  #02 //004   ----------------------------------------
+ BYTE   Gs2
+ BYTE   W03
+ BYTE   Cn3
+ BYTE   W03
+ BYTE   N88  Ds3
+ BYTE   W90
+//  #02 //005   ----------------------------------------
+ BYTE   N92  As2
+ BYTE   W03
+ BYTE   Dn3
+ BYTE   W03
+ BYTE   N88  Fn3
+ BYTE   W90
+//  #02 //006   ----------------------------------------
+ BYTE   N92  Ds3
+ BYTE   W03
+ BYTE   Fn3
+ BYTE   W03
+ BYTE   N88  As3
+ BYTE   W90
+//  #02 //007   ----------------------------------------
+ BYTE   W96
+//  #02 //008   ----------------------------------------
+ BYTE   N92  Gs1
+ BYTE   W03
+ BYTE   Cn2
+ BYTE   W03
+ BYTE   N88  Ds2
+ BYTE   W90
+//  #02 //009   ----------------------------------------
+ BYTE   N92  As1
+ BYTE   W03
+ BYTE   Dn2
+ BYTE   W03
+ BYTE   N88  Fn2
+ BYTE   W90
+//  #02 //010   ----------------------------------------
+ BYTE   N92  Ds2
+ BYTE   W03
+ BYTE   Fn2
+ BYTE   W03
+ BYTE   N88  As2
+ BYTE   W90
+//  #02 //011   ----------------------------------------
+ BYTE   W96
+//  #02 //012   ----------------------------------------
+ BYTE   N32  Gs1
+ BYTE   W36
+ BYTE   N11  Ds2
+ BYTE   W12
+ BYTE   N22  Cn3
+ BYTE   W24
+ BYTE   Ds2
+ BYTE   W24
+//  #02 //013   ----------------------------------------
+ BYTE   N32  Gn1
+ BYTE   W36
+ BYTE   N11  Ds2
+ BYTE   W12
+ BYTE   N22  As2
+ BYTE   W24
+ BYTE   Ds2
+ BYTE   W24
+//  #02 //014   ----------------------------------------
+ BYTE   N32  Fn1
+ BYTE   W36
+ BYTE   N11  Cn2
+ BYTE   W12
+ BYTE   N22  Gs2
+ BYTE   W24
+ BYTE   Cn2
+ BYTE   W24
+//  #02 //015   ----------------------------------------
+ BYTE   N11  Ds1
+ BYTE   W12
+ BYTE   As1
+ BYTE   W12
+ BYTE   N68  Gn2
+ BYTE   W72
+//  #02 //016   ----------------------------------------
+ BYTE   N11  Gs0
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   N44  Gs1
+ BYTE   W48
+ BYTE   N11
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+//  #02 //017   ----------------------------------------
+Label_FBF496:
+ BYTE   N11  As0  v052
+ BYTE   W12
+ BYTE   Fn1
+ BYTE   W12
+ BYTE   N44  As1
+ BYTE   W48
+ BYTE   N22
+ BYTE   W24
+ BYTE   PEND 
+//  #02 //018   ----------------------------------------
+ BYTE   N11  Bn0
+ BYTE   W12
+ BYTE   Fs1
+ BYTE   W12
+ BYTE   N44  Bn1
+ BYTE   W48
+ BYTE   N22
+ BYTE   W24
+//  #02 //019   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_FBF496
+//  #02 //020   ----------------------------------------
+ BYTE   N11  Gs0  v052
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   N44  Gs1
+ BYTE   W48
+ BYTE   N11
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+//  #02 //021   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_FBF496
+//  #02 //022   ----------------------------------------
+ BYTE   N11  En1  v052
+ BYTE   W12
+ BYTE   Bn1
+ BYTE   W12
+ BYTE   En2
+ BYTE   W72
+//  #02 //023   ----------------------------------------
+ BYTE   W96
+//  #02 //024   ----------------------------------------
+ BYTE   Gs0  v080
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   Gs1
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   Bn1
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   Gs1
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+//  #02 //025   ----------------------------------------
+Label_FBF4DD:
+ BYTE   N11  As0  v080
+ BYTE   W12
+ BYTE   Fn1
+ BYTE   W12
+ BYTE   As1
+ BYTE   W12
+ BYTE   Fn1
+ BYTE   W12
+ BYTE   Cs2
+ BYTE   W12
+ BYTE   Fn1
+ BYTE   W12
+ BYTE   As1
+ BYTE   W12
+ BYTE   Fn1
+ BYTE   W12
+ BYTE   PEND 
+//  #02 //026   ----------------------------------------
+ BYTE   Bn0
+ BYTE   W12
+ BYTE   Fs1
+ BYTE   W12
+ BYTE   Bn1
+ BYTE   W12
+ BYTE   Fs1
+ BYTE   W12
+ BYTE   Ds2
+ BYTE   W12
+ BYTE   Fs1
+ BYTE   W12
+ BYTE   Bn1
+ BYTE   W12
+ BYTE   Fs1
+ BYTE   W12
+//  #02 //027   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_FBF4DD
+//  #02 //028   ----------------------------------------
+ BYTE   N11  Gs0  v080
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   Gs1
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   Bn1
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   Gs1
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+//  #02 //029   ----------------------------------------
+ BYTE   As0
+ BYTE   W12
+ BYTE   Fn1
+ BYTE   W12
+ BYTE   As1
+ BYTE   W12
+ BYTE   Fn1
+ BYTE   W12
+ BYTE   N44  Cs2
+ BYTE   W48
+//  #02 //030   ----------------------------------------
+ BYTE   N11  En1
+ BYTE   W12
+ BYTE   Bn1
+ BYTE   W12
+ BYTE   En2  v076
+ BYTE   W72
+//  #02 //031   ----------------------------------------
+ BYTE   W96
+//  #02 //032   ----------------------------------------
+Label_FBF52B:
+ BYTE   N92  Gs0  v052
+ BYTE   W03
+ BYTE   Ds1
+ BYTE   W03
+ BYTE   N88  Gs1
+ BYTE   W90
+ BYTE   PEND 
+//  #02 //033   ----------------------------------------
+Label_FBF535:
+ BYTE   N92  As0  v052
+ BYTE   W03
+ BYTE   Fn1
+ BYTE   W03
+ BYTE   N88  As1
+ BYTE   W90
+ BYTE   PEND 
+//  #02 //034   ----------------------------------------
+ BYTE   N92  Bn0
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   W03
+ BYTE   N88  Bn1
+ BYTE   W90
+//  #02 //035   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_FBF535
+//  #02 //036   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_FBF52B
+//  #02 //037   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_FBF535
+//  #02 //038   ----------------------------------------
+ BYTE   W12
+ BYTE   N11  Bn0  v052
+ BYTE   W12
+ BYTE   N07  En1
+ BYTE   W08
+ BYTE   Fs1
+ BYTE   W08
+ BYTE   Bn1
+ BYTE   W56
+//  #02 //039   ----------------------------------------
+ BYTE   W96
+//  #02 //040   ----------------------------------------
+ BYTE   W12
+ BYTE   N11  As0  v036
+ BYTE   W12
+ BYTE   Ds1
+ BYTE   W12
+ BYTE   Gn1
+ BYTE   W60
+//  #02 //041   ----------------------------------------
+ BYTE   W96
+//  #02 //042   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_FBF41C
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+UntilTheTwoPeopleFallInLoveAlt:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	UntilTheTwoPeopleFallInLoveAlt_pri	// Priority
+	BYTE	UntilTheTwoPeopleFallInLoveAlt_rev	// Reverb.
+    
+	POIN2	UntilTheTwoPeopleFallInLoveAlt_grp
+    
+	POIN2	UntilTheTwoPeopleFallInLoveAlt_001
+	POIN2	UntilTheTwoPeopleFallInLoveAlt_002
+
+	

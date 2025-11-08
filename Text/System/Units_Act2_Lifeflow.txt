@@ -63,6 +63,20 @@ Ember[X]
 A ex-retainer to an Asketan lineage.[N]
 He's a curious and brash individual.[X]
 
+//athath
+##Name_Brugaris
+Brugaris[X]
+##Desc_Brugaris
+A magus who's honed his mind and body.[N]
+He's excited to draw his first circle.[X]
+
+//solar imp
+##Name_Tenney
+Tenney[X]
+##Desc_Tenney
+A cynical Belvarusi noble who's taken[N]
+up a magi's life. He yearns for change.[X]
+
 //rw
 ##Name_DreadJenny ^
 Dread Jenny[X]
@@ -90,3 +104,10 @@ Damien[X]
 ##Desc_Damien
 A caller ashamed of his powers and his[N]
 past. He fights for a better future.[X]
+
+//abzinthian
+##Name_MeansDeath ^
+Means Death[X]
+##Desc_MeansDeath
+A cursed caller and wanderer. Their[N]
+true name brings death when spoken.[X]

@@ -3,7 +3,7 @@ How did you get to be here?[N]
 What was the moment?[A][X]
 
 ##GameOverTextPromoted
-There's no going back.[N]
+You can never go back.[N]
 Yesterday is done.[A][X]
 
 ##XavensDeath
@@ -191,7 +191,7 @@ My life[...] really sucked[...][N]
 Where's my[...] mulligan[...]?[A][CloseEyes][X]
 ##SlynSpireDeath
 [MidRight][SlynSpire]
-Spire[...] Please don't leave[...][A][CloseEyes][N]
+Spire[...] Please don't leave[...][AN][CloseEyes]
 Don't leave me behind[...][A][X]
 
 //fighters
@@ -263,6 +263,10 @@ unforgotten[...][A][CloseEyes][X]
 [MidRight][Hugo]
 My vengeance[...] My creation[...][N]
 Let the cycle[...] end[...][A][CloseEyes][X]
+##LyudDeath
+[MidRight][Lyud]
+The darkness[...] has come[...][N]
+But I won't be[...] taken[...][A][CloseEyes][X]
 
 //medics
 ##TrishDeath

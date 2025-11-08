@@ -99,6 +99,7 @@ AlwaysDeathQuote(Cyanne,0x0,CyanneDeath)
 AlwaysDeathQuote(Victor,0x0,VictorDeath)
 AlwaysDeathQuote(Lonsdale,0x0,LonsdaleDeath)
 AlwaysDeathQuote(Hugo,0x0,HugoDeath)
+AlwaysDeathQuote(Lyud,0x0,LyudDeath)
 
 //med
 AlwaysDeathQuote(Trish,0x0,TrishDeath)

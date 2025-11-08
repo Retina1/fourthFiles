@@ -85,5 +85,5 @@ turn with known rallies.[X]
  Pulse[X]
 ## UM_MagnetPulseDesc
 Utilize a versatile and dangerous[N]
-eletric pulse on all in range.[X]
+electric pulse on all in range.[X]
 

@@ -1,3 +1,4 @@
+#define Hitchcock 0xD0
 #define BossSaewynn 0xD1
 #define Quarry 0xD2
 #define BeastKing 0xD3

@@ -1,0 +1,95 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events6ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+UNIT EndbringerGeneric Caller 0x0 Level(7,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+
+UNIT BelvarusGeneric SkyKnight 0x0 Level(7,Enemy,1) [22,6] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT BelvarusGeneric SkyKnight 0x0 Level(7,Enemy,1) [22,8] 0x0 0x0 0x0 0x0 [Partizan] AttackInRangeAI
+UNIT BelvarusGeneric ScaleKnight 0x0 Level(7,Enemy,1) [21,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+UNIT BelvarusGeneric ScaleKnight 0x0 Level(7,Enemy,1) [23,7] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+
+UNIT BelvarusGeneric Rider 0x0 Level(7,Enemy,1) [16,2] 0x0 0x0 0x0 0x0 [HandSpear] AttackInRangeAI
+UNIT BelvarusGeneric Rider 0x0 Level(7,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [HandSpear] AttackInRangeAI
+UNIT BelvarusGeneric Raider 0x0 Level(7,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [Yue] AttackInRangeAI
+UNIT BelvarusGeneric Raider 0x0 Level(7,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Broadaxe] AttackInRangeAI
+UNIT BelvarusGeneric Knight 0x0 Level(7,Enemy,1) [18,2] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
+UNIT Hitchcock Knight 0x0 Level(8,Enemy,1) [22,1] 0x0 0x0 0x0 0x0 [Sarissa] AttackInRangeAI
+UNIT
+
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+MUSC 0x0
+Text(FillerDialogue)
+LOAD1 0x1 EnemyUnits; ENUN
+CallPreps
+EndEvent
+
+EndingScene:
+MUSC 0x0
+CleanTextNoMap(0x18,FillerDialogue)
+MoveToChapter(Chapter7)
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

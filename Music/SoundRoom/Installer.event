@@ -4,8 +4,10 @@
 #define SoundRoomSongTable newMusicTable
 
 ALIGN 4
+//idk the problem is somewhere in here
 #include "DrawSoundRoomText.lyn.event"
 
+//or here idk
 gSoundRoomUIProc:
 WORD 0x8A21338
 
@@ -14,6 +16,14 @@ PUSH
 // dont draw the completion number
 ORG 0xAF4F4 // DrawUiNumber()
 SHORT 0x46C0 0x46C0 // nop nop
+
+//widen sound room
+PUSH
+ORG 0x0B0110
+BYTE 0x20
+ORG 0x0B0134
+BYTE 0x05
+POP
 
 ORG 0xB0094
 jumpToHack(DrawSoundRoomSongSourceHook)
@@ -44,6 +54,8 @@ SoundRoomEntry(Song_DiscoDescent, SongTitle_DiscoDescent, SourceTitle_Necrodance
 SoundRoomEntry(Song_InnocenceGlitched, SongTitle_InnocenceGlitched, SourceTitle_Antibirth,12)
 SoundRoomEntry(Song_DyedInBlood, SongTitle_DyedInBlood, SourceTitle_EtrianOdyssey,26)
 SoundRoomEntry(Song_HeroicStruggle, SongTitle_HeroicStruggle, SourceTitle_LiveALive,6)
+SoundRoomEntry(Song_AnEmptyTome, SongTitle_AnEmptyTome, SourceTitle_OrderOfEcclesia,55)
+SoundRoomEntry(Song_FreeDuel, SongTitle_FreeDuel, SourceTitle_YGOForbiddenMemories,56)
 SoundRoomEntry(Song_Escape, SongTitle_Escape, SourceTitle_Original,2)
 SoundRoomEntry(Song_ThirtyNinety, SongTitle_ThirtyNinety, SourceTitle_TickTickBoom,46)
 SoundRoomEntry(Song_IsleUntoThyself, SongTitle_IsleUntoThyself, SourceTitle_MiracleMusical,43)
@@ -52,9 +64,9 @@ SoundRoomEntry(Song_Revolution, SongTitle_Revolution, SourceTitle_Original,3)
 SoundRoomEntry(Song_ArmorCladFaith, SongTitle_ArmorCladFaith, SourceTitle_GuiltyGearStrive,27)
 SoundRoomEntry(Song_ModernDayOuroboros, SongTitle_ModernDayOuroboros, SourceTitle_LisaThePointless,28)
 SoundRoomEntry(Song_NoOneIsAlone, SongTitle_NoOneIsAlone, SourceTitle_IntoTheWoods,15)
+SoundRoomEntry(Song_Maps, SongTitle_Maps, SourceTitle_YeahYeahYeahs,48)
 //somewhere probably player phase
 SoundRoomEntry(Song_SlowDancingInTheDark, SongTitle_SlowDancingInTheDark, SourceTitle_Joji,45)
-SoundRoomEntry(Song_Maps, SongTitle_Maps, SourceTitle_YeahYeahYeahs,48)
 SoundRoomEntry(Song_VariationsOnACloud, SongTitle_VariationsOnACloud, SourceTitle_MiracleMusical,41)
 SoundRoomEntry(Song_NopeYoureTooLateImAlreadyDead, SongTitle_NopeYoureTooLateImAlreadyDead, SourceTitle_Wifiskeleton,42)
 SoundRoomEntry(Song_LuckyBreak, SongTitle_LuckyBreak, SourceTitle_RhythmDoctor,11)
@@ -92,6 +104,8 @@ SoundRoomEntry(Song_Salem, SongTitle_Salem, SourceTitle_DrawnToLife2,13)
 SoundRoomEntry(Song_CherryTreesAndWings, SongTitle_CherryTreesAndWings, SourceTitle_EtrianOdyssey2,17)
 SoundRoomEntry(Song_PandemonicPlanet, SongTitle_PandemonicPlanet, SourceTitle_Touhou,22)
 SoundRoomEntry(Song_WiseWords, SongTitle_WiseWords, SourceTitle_Deltarune,44)
+SoundRoomEntry(Song_UntilTheTwoPeopleFallInLove, SongTitle_UntilTheTwoPeopleFallInLove, SourceTitle_Danganronpa3,53)
+SoundRoomEntry(Song_UntilTheTwoPeopleFallInLoveAlt, SongTitle_UntilTheTwoPeopleFallInLoveAlt, SourceTitle_Danganronpa3,54)
 SoundRoomEntry(Song_FinaleMHE, SongTitle_FinaleMHE, SourceTitle_MaybeHappyEnding,39)
 //death and game over
 SoundRoomEntry(Song_NameEntry, SongTitle_NameEntry, SourceTitle_Persona,20)

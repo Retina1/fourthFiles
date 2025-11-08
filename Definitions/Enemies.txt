@@ -1,4 +1,5 @@
-BossSaewynn 0xd1
+Hitchcock 0xd0
+BossSaewynn
 Quarry
 BeastKing
 Monk

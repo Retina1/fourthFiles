@@ -1,3 +1,16 @@
+##Guild_Lyud_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lyud]
+lyud[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lyud]
+lyud[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lyud]
+lyud[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lyud]
+lyud[A][X]
+
 ##Guild_Cassandra_Intro
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Cassandra]
 You, young man.[AN]
