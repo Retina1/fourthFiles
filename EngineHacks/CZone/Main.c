@@ -22,6 +22,7 @@ extern u16 GenericAutomatonEvent;
 
 #include "HeroesMovement/HeroesMovement.c"
 #include "UnitMenuSkills/UMSkills.c"
+#include "Summons/Summons.c"
 
 #include "PostBattle/PostCombat.c"
 #include "BattleStats.c"

@@ -102,6 +102,7 @@ Brie
 Arsof
 Mylo
 Leovetus
+Bulag
 Philmore
 Yajirushi
 Yasaki
@@ -130,11 +131,14 @@ Sharon
 Ember
 Brugaris
 Tenney
+Vitruvius
 DreadJenny
 Quinn
 Margitte
 Damien
 MeansDeath
+TheUnexpected
+Mimi
 Marleni
 Ophelia
 Cherryl

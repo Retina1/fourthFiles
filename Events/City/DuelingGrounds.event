@@ -1,0 +1,29 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+DuelingGroundsUnitsC5:
+//marketplpace npc, generics
+UNIT Ayda 0x0 0x0 Level(21,NPC,0) [9,13] 0x0 0x0 0x0 0x0 [Shortsword] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+LoadDuelingGroundsSigils:
+ENUF LocationFlagDuelingGrounds
+AddSigil(7,18)
+AddSigil(8,18)
+AddSigil(9,18)
+AddSigil(10,18)
+AddSigil(11,18)
+AddGreenSigil(9,15)
+ENDA
+
+DuelingGroundsMoveToShadyRow:
+SwapToMap(ShadyRow,13,2)
+CALL LoadShadyRowSigils
+MUSC Song_VastLands
+LoadRowUnits
+FADU 10
+EndEvent

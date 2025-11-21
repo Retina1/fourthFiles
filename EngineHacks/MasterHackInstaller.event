@@ -60,6 +60,9 @@ POP
 
 #include "ChangeUnitDesc/Installer.event"
 
+//TODO - remove/edit eventually
+//#include "_Debugger/Installer.event"
+
 //i hate prep screen
 //#include "PrepScreen/PrepScreen.event"
 

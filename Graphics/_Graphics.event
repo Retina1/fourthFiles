@@ -88,3 +88,8 @@ NewTitle:
 ALIGN 4
 NewTitlePal:
 #incbin "BuilderDumped/Fourthhack.png.pal.dmp"
+
+PUSH
+ORG $8A16DEC
+#incbin "BuilderDumped/StatusNames.dmp"
+POP

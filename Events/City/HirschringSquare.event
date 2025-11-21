@@ -15,7 +15,19 @@ EventPointerTable(HirschringSquareEventsID,ThisChapter)
 #define LocationFlagMuseum 0xe5
 #define LocationFlagBlackMarket 0xe6
 #define BlackMarketUnlockedFlag 0xe7
-
+#define LocationFlagShadyRow 0xe8
+#define LocationFlagDuelingGrounds 0xe9
+#define LocationFlagShadesong 0xea
+#define LocationFlagImperialPost 0xeb
+#define LocationFlagMinisterPark 0xf0
+#define LocationFlagRiverHirsch 0xf1
+#define LocationFlagEmeraldGrove 0xf2
+#define LocationFlagUnderground 0xf3
+#define LocationFlagGamerspace 0xf4
+#define LocationFlagImperialCourtyard 0xf5
+#define ArenaTier1Completed 0xf6
+#define ArenaTier2Completed 0xf7
+#define ArenaTier3Completed 0xf8
 #define StandardUnlockedFlag 0xf9
 #define MagiUnlockedFlag 0xfa
 #define SpecialUnlockedFlag 0xfb
@@ -23,6 +35,7 @@ EventPointerTable(HirschringSquareEventsID,ThisChapter)
 #define LifeflowUnlockedFlag 0xfd
 #define SenatusUnlockedFlag 0xfe
 #define OtherUnlockedFlag 0xff
+
 
 #define Recruited1Flag 0x128
 #define Recruited2Flag 0x129
@@ -89,6 +102,7 @@ AreaEvent(LocationFlagHirschringSquare,SquareMoveToGuildhall,4,3)
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToBlacksmith,14,5)
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToTavern,15,11)
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToNorthernPass,0,0,1,0)
+AreaEvent(LocationFlagHirschringSquare,SquareMoveToShadyRow,7,13,8,13)
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToEnd,6,9)
 
 //in guildhall
@@ -118,6 +132,21 @@ AreaEvent(LocationFlagMuseum,MuseumEventBegin,5,10)
 //in black market
 AreaEvent(LocationFlagBlackMarket,BlackMarketMoveToNorthernPass,0,1,0,2)
 AreaEvent(LocationFlagBlackMarket,BlackMarketLoopBegin,9,3)
+
+//in shady row
+AreaEvent(LocationFlagShadyRow,ShadyRowMoveToSquare,4,0,6,0)
+AreaEvent(LocationFlagShadyRow,ShadyRowMoveToDuelingGrounds,13,1)
+AreaEvent(LocationFlagShadyRow,ShadyRowMoveToShadesong,20,10)
+AreaEvent(LocationFlagShadyRow,ShadyRowMoveToImperialPost,25,0,25,2)
+
+//in dueling grounds
+AreaEvent(LocationFlagDuelingGrounds,DuelingGroundsMoveToShadyRow,7,18,11,18)
+
+//in shadesong
+AreaEvent(LocationFlagShadesong,ShadesongMoveToShadyRow,0,3,0,4)
+
+//in imperial post
+AreaEvent(LocationFlagImperialPost,ImperialPostMoveToShadyRow,0,4,0,5)
 
 CauseGameOverIfLordDies
 END_MAIN
@@ -163,6 +192,9 @@ UNIT
 Stratum1SquareUnits:
 UNIT Benthus 0x0 0x0 Level(1,Ally,0) [7,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
+Chapter5SquareUnits:
+UNIT Benthus 0x0 0x0 Level(1,Ally,0) [13,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
 
 TownVendorSecondUnit:
 UNIT Second 0x0 0x0 Level(22,NPC,0) [1,4] 0x0 0x0 0x0 0x0 [Shieldlance,Longinus] NoAI
@@ -207,8 +239,9 @@ UNIT
 #define MovementSetter "SetUnitStatus(Nathan,MovBonus,15); SetUnitStatusAll(0x2*0x100+0xff , MovBonus, (-15), AnyDeployed, PlayerArmy,AnyClass,AnyRange,AnyItem)"
 #define MovementUnsetter "SetUnitStatusAll(0x1*0x100+0xff , MovBonus, 0, AnyDeployed, PlayerArmy,AnyClass,AnyRange,AnyItem)"
 
-#define LoadSquareUnits "LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,Stratum1SquareUnits,0,0,0,0,0,0,0,0,0,0,0)"
-#define LoadPassUnits "LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,NorthernPassUnitsS1,0,0,0,0,0,0,0,0,0,0,0)"
+#define LoadSquareUnits "LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,0,0,0,0,0,0,0,0,0,0)"
+#define LoadPassUnits "LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,NorthernPassUnitsS1,NorthernPassUnitsC5,0,0,0,0,0,0,0,0,0,0)"
+#define LoadRowUnits "LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ShadyRowUnitsC5,0,0,0,0,0,0,0,0,0,0)"
 
 ALIGN 4
 
@@ -223,10 +256,15 @@ BEQ 0x1 0xc 0x0
 AddSigil(0,0)
 AddSigil(1,0)
 LABEL 0x1
+CHECK_EVENTID Chapter5DoneFlag
+BEQ 0x2 0xc 0x0
+AddSigil(7,13)
+AddSigil(8,13)
+LABEL 0x2
 ENDA
 
 IntroTexts:
-RunEventByVisit(Chapter2CityOpen,Chapter3CityOpen,Stratum1CityOpen,0,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(Chapter2CityOpen,Chapter3CityOpen,Stratum1CityOpen,Chapter5CityOpen,0,0,0,0,0,0,0,0,0,0)
 ENDA
 
 DisplayCurrentCityVisit:
@@ -254,7 +292,7 @@ CALL IntroTexts
 CallPreps
 CALL LoadPostPrepsUnits
 FADU 10
-RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,FillerDialogue,0,0,0,0,0,0,0,0,0,0)
 GiveMoneyByVisit(2000,2500,1500,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x1 0xc 0x0
@@ -267,12 +305,12 @@ EndingScene:
 EndingMapFlags
 //MovementUnsetter 
 //add route split logic
-RunEventByVisit(Chapter2CityEnd,Chapter3CityEnd,Stratum1CityEnd,0,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(Chapter2CityEnd,Chapter3CityEnd,Stratum1CityEnd,Chapter5CityEnd,0,0,0,0,0,0,0,0,0,0)
 MoveToNextChapter(Chapter3,Stratum1F1,Chapter4,Chapter6,Chapter9,Chapter10,Stratum3F1,Chapter11,Chapter14,Chapter16)
 ENDA
 
 LoadPostPrepsUnits:
-LoadUnitsByVisit(Chapter2SquareUnitsBlues,Chapter3SquareUnits,Stratum1SquareUnits,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(Chapter2SquareUnitsBlues,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,0,0,0,0,0,0,0,0,0,0)
 LoadVendorSecond
 ENDA
 
@@ -316,6 +354,19 @@ ENUF LocationFlagHirschringSquare
 LABEL 0x2
 EndEvent
 
+SquareMoveToShadyRow:
+CHECK_EVENTID Chapter5DoneFlag
+BEQ 0x1 0xc 0x0
+SwapToMap(ShadyRow,5,1)
+CALL LoadShadyRowSigils
+LoadRowUnits
+FADU 10
+GOTO 0x2
+LABEL 0x1
+ENUF LocationFlagHirschringSquare
+LABEL 0x2
+EndEvent
+
 //guildhall concept
 //second .event to store recruitable units
 //macro that handles playing each town visit's events based on progression flag
@@ -325,6 +376,10 @@ EndEvent
 #include "NorthernPass.event"
 #include "Museum.event"
 #include "BlackMarket.event"
+#include "ShadyRow.event"
+#include "DuelingGrounds.event"
+#include "Shadesong.event"
+#include "ImperialPost.event"
 //todo for chapter 3
 //give blacksmith variable shops by visit
 //intro quests (just 1 or 2 for now) in tavern

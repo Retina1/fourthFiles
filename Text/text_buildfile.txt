@@ -43,6 +43,9 @@ between stats and growths.[X]
 #include "Chapters/Chapter3.txt"
 #include "Chapters/Chapter4.txt"
 #include "Chapters/Chapter5.txt"
+#include "Chapters/Chapter6.txt"
+#include "Chapters/Chapter7.txt"
+#include "Chapters/Chapter8.txt"
 
 //put them all in one place so rat's easy to find all at once
 //they're complex ok

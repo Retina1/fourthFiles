@@ -304,15 +304,42 @@ and recieved immense power.[X]
 ##Name_Turret
 Turret[X]
 ##Desc_Turret
-Remotely-controlled stationary turrets,[N]
+A remotely-controlled stationary turret,[N]
 summoned by an Artifice or Automaton.[X]
 ##Name_Soul
 Soul[X]
 ##Desc_Soul
-Lost souls called to battle[N]
+A lost soul called to battle[N]
 by a Caller or Necromancer.[X]
 ##Name_Souldier
 Souldier[X]
 ##Desc_Souldier
-Mighty souls called to battle[N]
+A mighty soul called to battle[N]
 by a Caller or Necromancer.[X]
+
+##Name_SoulA
+Asteria[X]
+##Desc_SoulA
+The lost soul of a former[N]
+seafaring meteorologist.[X]
+##Name_SoulB
+Bellamy[X]
+##Desc_SoulB
+The lost soul of a former[N]
+nobleman turned alchemist.[X]
+##Name_SoulC
+Cheese[X]
+##Desc_SoulC
+The lost soul of a former[N]
+squirrel-raised hexer.[X]
+
+##Name_TurretA
+Alpha[X]
+##Desc_TurretA
+The primary constructed[N]
+turret. It fires in spurts.[X]
+##Name_TurretB
+Bravo[X]
+##Desc_TurretB
+The secondary constructed[N]
+turret. It's gonna hurt.[X]

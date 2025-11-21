@@ -54,14 +54,6 @@ All on your head[...][AN]
 Ask yourselves[...] if it[N]
 was all worth it[...][A][X]
 
-##BenthusDeath
-[MidLeft][Benthus]
-I will[...] not die[...][N]
-like a dog[...][AN][CloseEyes]
-Not before I find[...][N]
-the Armory[...][AN]
-Not before[...] you[...][N]
-bow to[...] me[...][A][X]
 
 ##GuildmasterDeath
 [MidLeft][Guildmaster]
@@ -86,7 +78,7 @@ To hell[...] with dreams[...][AN][CloseEyes]
 To hell with[...] all this[N]
 damnable land[...][A][X]
 ##BossGoreDeath
-[MidLeft][Gore]
+[MidLeft][GoreEyepatch]
 I thought I was[...] so close[...][N]
 I could change[...] it all[...][AN]
 But once again[...] Your ideals[...][N]

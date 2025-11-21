@@ -10,6 +10,66 @@ int GetUnitKillExpBonus(struct Unit* actor, struct Unit* target);
 extern bool CanBattleUnitGainLevels(BattleUnit* bu);
 int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target);
 
+int CalculateAveragePartyLevel(void) {
+	int unitCount = 0;
+	int totalLevel = 0;
+	int avgLevel = 0;
+	int i;
+	for (i = FACTION_BLUE + 1; i < FACTION_GREEN; i++) {
+			struct Unit* unit = GetUnit(i);
+			if (!UNIT_IS_VALID(unit)) {
+				continue;
+			}
+			if (!IsUnitOnField(unit)) {
+				continue;
+			}
+			unitCount = unitCount + 1;
+			totalLevel = totalLevel + GetUnitExpLevel(unit);
+		}
+	if (unitCount > 0) {
+		avgLevel = totalLevel / unitCount;
+	}
+	return avgLevel;
+}
+
+int GetUnitSoloExpMultiplier(struct Unit* actor) {
+//exp mods from classes
+	int mult = 1;
+		
+	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
+		mult = mult * 6;
+	}
+	
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
+	if ((entry->buff1 == 16)||(entry->buff2 == 16)||(entry->buff3 == 16)) {
+		mult = mult * 11;
+	}
+	if ((entry->buff1 == 17)||(entry->buff2 == 17)||(entry->buff3 == 17)) {
+		mult = mult * 13;
+	}
+		
+
+    return mult;
+}
+
+int GetUnitSoloExpDivisor(struct Unit* actor) {
+//exp mods from classes
+	int div = 1;
+	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
+		div = div * 5;
+	}
+
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
+	if ((entry->buff1 == 16)||(entry->buff2 == 16)||(entry->buff3 == 16)) {
+		div = div * 10;
+	}
+	if ((entry->buff1 == 17)||(entry->buff2 == 17)||(entry->buff3 == 17)) {
+		div = div * 10;
+	}
+		
+    return div;
+}
+
 void BattleApplyMiscActionExpGains(void) {
     if ((gBattleActor.unit.index & 0xC0) != FACTION_BLUE)
         return;
@@ -21,7 +81,132 @@ void BattleApplyMiscActionExpGains(void) {
         return;
 	}
 	
+	int avgLevel = CalculateAveragePartyLevel();
+	
+	int levelDiff = avgLevel - GetUnitExpLevel(&gBattleActor.unit);
+	if (levelDiff < -3){
+		levelDiff = -3;
+	}
+	
+	//fallback case
 	int result = 10;
+	
+	//normal
+	if (!(gChapterData.config.controller)){
+			 switch (levelDiff) {
+				case -3:
+					result = 1;
+					break;
+				case -2:
+					result = 3;
+					break;
+				case -1:
+					result = 5;
+					break;
+				case 0:
+					result = 8;
+					break;
+				case 1:
+					result = 12;
+					break;
+				case 2:
+					result = 17;
+					break;
+				case 3:
+					result = 23;
+					break;
+				case 4:
+					result = 30;
+					break;
+				case 5:
+					result = 37;
+					break;
+				default:
+					result = 45;
+					break;
+			 }
+	}
+	//hard
+	else if (!(gChapterData.chapterStateBits & PLAY_FLAG_HARD)){
+			 switch (levelDiff) {
+				case -3:
+					result = 1;
+					break;
+				case -2:
+					result = 2;
+					break;
+				case -1:
+					result = 3;
+					break;
+				case 0:
+					result = 5;
+					break;
+				case 1:
+					result = 8;
+					break;
+				case 2:
+					result = 12;
+					break;
+				case 3:
+					result = 16;
+					break;
+				case 4:
+					result = 21;
+					break;
+				case 5:
+					result = 28;
+					break;
+				default:
+					result = 35;
+					break;
+			 }
+	}
+	//lunatic
+	else {
+			 switch (levelDiff) {
+				case -3:
+					result = 1;
+					break;
+				case -2:
+					result = 2;
+					break;
+				case -1:
+					result = 3;
+					break;
+				case 0:
+					result = 4;
+					break;
+				case 1:
+					result = 6;
+					break;
+				case 2:
+					result = 8;
+					break;
+				case 3:
+					result = 11;
+					break;
+				case 4:
+					result = 15;
+					break;
+				case 5:
+					result = 20;
+					break;
+				default:
+					result = 25;
+					break;
+			 }
+	}
+	
+	int mul = GetUnitSoloExpMultiplier(&gBattleActor.unit);
+	int div = GetUnitSoloExpDivisor(&gBattleActor.unit);
+	result = result * mul;
+	result = result / div;
+	
+	if (result > 100)
+        result = 100;
+
+    if (result < 1)
+        result = 1;
 
     gBattleActor.expGain = result;
     gBattleActor.unit.exp += result;
@@ -341,18 +526,130 @@ int GetBattleUnitStaffExp(struct BattleUnit* bu) {
 
     if (gBattleHitArray->attributes & BATTLE_HIT_ATTR_MISS)
 		result = 1;
+	
+	int avgLevel = CalculateAveragePartyLevel();
+	
+	int levelDiff = avgLevel - GetUnitExpLevel(&bu->unit);
+	if (levelDiff < -3){
+		levelDiff = -3;
+	}
+		
+	//normal
+	if (!(gChapterData.config.controller)){
+			 switch (levelDiff) {
+				case -3:
+					result = 1;
+					break;
+				case -2:
+					result = 3;
+					break;
+				case -1:
+					result = 5;
+					break;
+				case 0:
+					result = 8;
+					break;
+				case 1:
+					result = 12;
+					break;
+				case 2:
+					result = 17;
+					break;
+				case 3:
+					result = 23;
+					break;
+				case 4:
+					result = 30;
+					break;
+				case 5:
+					result = 37;
+					break;
+				default:
+					result = 45;
+					break;
+			 }
+	}
+	//hard
+	else if (!(gChapterData.chapterStateBits & PLAY_FLAG_HARD)){
+			 switch (levelDiff) {
+				case -3:
+					result = 1;
+					break;
+				case -2:
+					result = 2;
+					break;
+				case -1:
+					result = 3;
+					break;
+				case 0:
+					result = 5;
+					break;
+				case 1:
+					result = 8;
+					break;
+				case 2:
+					result = 12;
+					break;
+				case 3:
+					result = 16;
+					break;
+				case 4:
+					result = 21;
+					break;
+				case 5:
+					result = 28;
+					break;
+				default:
+					result = 35;
+					break;
+			 }
+	}
+	//lunatic
+	else {
+			 switch (levelDiff) {
+				case -3:
+					result = 1;
+					break;
+				case -2:
+					result = 2;
+					break;
+				case -1:
+					result = 3;
+					break;
+				case 0:
+					result = 4;
+					break;
+				case 1:
+					result = 6;
+					break;
+				case 2:
+					result = 8;
+					break;
+				case 3:
+					result = 11;
+					break;
+				case 4:
+					result = 15;
+					break;
+				case 5:
+					result = 20;
+					break;
+				default:
+					result = 25;
+					break;
+			 }
+	}
+	
+	int mul = GetUnitSoloExpMultiplier(&bu->unit);
+	int div = GetUnitSoloExpDivisor(&bu->unit);
+	result = result * mul;
+	result = result / div;
 
     if (result > 100)
         result = 100;
 
     if (result < 1)
         result = 1;
-
-    result = GetItemCrit(bu->weapon);
-
-    if (UNIT_CATTRIBUTES(&bu->unit) & CA_PROMOTED)
-        result = result / 2;
-
 
     return result;
 }

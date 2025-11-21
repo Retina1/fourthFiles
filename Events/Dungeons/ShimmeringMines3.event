@@ -69,6 +69,7 @@ AreaEvent(0x0,Warp23_16,23,16)
 AreaEvent(0x0,Warp7_17,7,17)
 AreaEvent(0x0,Warp22_17,22,17)
 AreaEvent(0x0,Warp3_19,3,19)
+AreaEvent(0x0,Warp16_19,16,19)
 AreaEvent(0x0,Warp4_20,4,20)
 AreaEvent(0x0,Warp10_21,10,21)
 AreaEvent(0x0,Warp0_22,0,22)
@@ -144,6 +145,8 @@ EndEvent
 Warp4_20:
 WarpNathan(4,5)
 EndEvent
+Warp16_19:
+WarpNathan(16,6)
 Warp3_19:
 WarpNathan(24,19)
 EndEvent

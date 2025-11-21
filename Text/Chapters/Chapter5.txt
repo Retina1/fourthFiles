@@ -2,6 +2,80 @@
 //all four of them with nathan, gore, astarte, cleone, benthus(?), rat(?), kryst(?)
 //maybe some random recruitables too
 
+##Chapter5_Opening_1
+[FarLeft][Cleone][Left][Nathan][Right][Guildmaster][FarRight][Rat][Right]
+Big day's here.[N]
+Think you're ready?[AN][Left]
+It's a quick speech.[AN]
+You're asking if I'm ready[N]
+as if it's the Beast King.[AN][Right]
+I've known many men who'd fear[N]
+a speech more than combat.[AN]
+But I'm glad you're of a more[N]
+even keel than them.[AN]
+Anyways, Hedge'll have tables[N]
+reserved near the front.[AN]
+It'll be clear when it's time[N]
+for you to come up.[AN]
+[...]Look at the time. I've got[N]
+preparations to make.[AN]
+See ya there, kid.[AN][Clear][FarRight][ToggleSmile]
+[...][AN][Clear][Left][ToggleSmile]
+[...]Can't say I've got[N]
+NO nerves about this.[AN][FarLeft]
+You're a good speaker.[N]
+You'll be fine.[AN][Left]
+Thanks.[A][X]
+##Chapter5_Opening_2
+[MidLeft][Nathan]
+during ceremony[A][X]
+##Chapter5_Opening_3
+[MidLeft][Guildmaster]
+during ceremony, maybe[N]
+kryst is up there[A][X]
+##Chapter5_Opening_4
+[MidLeft][Nathan]
+walk up to say words[A][X]
+##Chapter5_Opening_5
+[MidLeft][Guildmaster]
+nathan walked back, closing[N]
+words when suddenly[A][X]
+##Chapter5_Opening_6
+[MidLeft][Xavens]
+terrorism jumpscare[A][X]
+##Chapter5_Opening_7
+[MidLeft][Guildmaster]
+gm goes to secure area,[N]
+nathan stays to strike[A][X]
+
+##Chapter5_KrystJoin
+[MidLeft][Nathan][MidRight][Kryst]
+kryst join[A][X]
+
+##Chapter5_XavensLeaves
+[MidLeft][Xavens]
+bye[A][X]
+##Chapter5_EgilLeaves
+[MidRight][Egil]
+bye[A][X]
+##Chapter5_HarlaLeaves
+[MidRight][Harla]
+bye[A][X]
+
+##Chapter5_Ending_1
+[MidLeft][Nathan]
+enemies defeated[A][X]
+##Chapter5_Ending_2
+[MidLeft][Rana]
+endbringer wrapup[A][X]
+##Chapter5_Ending_3
+[MidLeft][Nathan]
+guildmaster talk, no bg[A][X]
+##Chapter5_Ending_4
+[MidLeft][Cleone]
+reveal that cleone knows stuff[N]
+she like walks in dramatically[A][X]
+
 ##C5XavensBattle
 [MidLeft][Xavens]
 You're getting a bit[N]

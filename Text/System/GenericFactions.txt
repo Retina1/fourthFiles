@@ -3,6 +3,9 @@ Guildleague[X]
 ##Desc_Guild
 A member of the Asketan Guildleague,[N]
 fighting under some guild's banner.[X]
+##Desc_GuildCh8
+A member of the Asketan Guildleague,[N]
+fighting under Benthus's banner.[X]
 ##Name_Asketa
 Asketa[X]
 ##Desc_Asketa

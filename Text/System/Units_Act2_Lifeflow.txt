@@ -77,6 +77,13 @@ Tenney[X]
 A cynical Belvarusi noble who's taken[N]
 up a magi's life. He yearns for change.[X]
 
+//restyrch
+##Name_Vitruvius
+Vitruvius[X]
+##Desc_Vitruvius
+A living legend said to have founded the[N]
+Guildleague. His powers inspire awe.[X]
+
 //rw
 ##Name_DreadJenny ^
 Dread Jenny[X]
@@ -111,3 +118,17 @@ Means Death[X]
 ##Desc_MeansDeath
 A cursed caller and wanderer. Their[N]
 true name brings death when spoken.[X]
+
+//ultrax
+##Name_TheUnexpected ^
+Unexpected[X]
+##Desc_TheUnexpected
+A wandering being created by a circle[N]
+of mighty callers. It's drawn to souls.[X]
+
+//moris
+##Name_Mimi
+Mimi[X]
+##Desc_Mimi
+A young caller described as a social[N]
+disaster. She's odd but passionate.[X]

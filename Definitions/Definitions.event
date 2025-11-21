@@ -7,12 +7,15 @@
 #include "PortraitDefs.event"
 #include "ItemIconDefs.event"
 
+
+#define GoreNoEyeFlag 0x89
 //flags for each chapter's base
 #define WaitEventTrapsFlag 0x8a
 #define Chapter2DoneFlag 0x8b
 #define Chapter3DoneFlag 0x8c
 #define Stratum1DoneFlag 0x8d
 #define Chapter5DoneFlag 0x8e
+//chapter 8 done flag gives gore eyepatch - flag for gore no eye above
 #define Chapter8DoneFlag 0x8f
 #define Chapter9DoneFlag 0x90
 #define Chapter10DoneFlag 0x91
@@ -24,6 +27,7 @@
 #define Chapter18BDoneFlag 0x97
 #define Chapter18CDoneFlag 0x98
 #define HippokosBoughtFlag 0x99
+
 
 //conditional drops
 #define BeastKingConditionalFlag 0x9a
@@ -47,13 +51,25 @@
 #define LocationFlagMuseum 0xe5
 #define LocationFlagBlackMarket 0xe6
 #define BlackMarketUnlockedFlag 0xe7
-
+#define LocationFlagShadyRow 0xe8
+#define LocationFlagDuelingGrounds 0xe9
+#define LocationFlagShadesong 0xea
+#define LocationFlagImperialPost 0xeb
 /*
-#define FIXED_GROWTHS_FLAG_ID 0xEF
-#define ZERO_GROWTHS_FLAG_ID 0xEE
-#define MAX_GROWTHS_FLAG_ID 0xED
 #define MIN_GROWTHS_FLAG_ID 0xEC
+#define MAX_GROWTHS_FLAG_ID 0xED
+#define ZERO_GROWTHS_FLAG_ID 0xEE
+#define FIXED_GROWTHS_FLAG_ID 0xEF
 */
+#define LocationFlagMinisterPark 0xf0
+#define LocationFlagRiverHirsch 0xf1
+#define LocationFlagEmeraldGrove 0xf2
+#define LocationFlagUnderground 0xf3
+#define LocationFlagGamerspace 0xf4
+#define LocationFlagImperialCourtyard 0xf5
+#define ArenaTier1Completed 0xf6
+#define ArenaTier2Completed 0xf7
+#define ArenaTier3Completed 0xf8
 
 #define StandardUnlockedFlag 0xf9
 #define MagiUnlockedFlag 0xfa
@@ -64,12 +80,7 @@
 #define SenatusUnlockedFlag 0xfe
 #define OtherUnlockedFlag 0xff
 
-#define NoRescuingFlag 0x120
-#define Recruited1Flag 0x128
-#define Recruited2Flag 0x129
-#define Recruited3Flag 0x12a
-#define Recruited4Flag 0x12b
-#define Recruited5Flag 0x12c
+
 
 //quest flag block starts at 101
 #define Quest1_3x_Flag 0x101
@@ -80,6 +91,15 @@
 #define Quest1_S1x_DoneFlag 0x106
 #define Quest2_S1x_Flag 0x107
 #define Quest2_S1x_DoneFlag 0x108
+
+
+#define NoRescuingFlag 0x120
+
+#define Recruited1Flag 0x128
+#define Recruited2Flag 0x129
+#define Recruited3Flag 0x12a
+#define Recruited4Flag 0x12b
+#define Recruited5Flag 0x12c
 
 //movement types
 #define HeroMovement 0x880B808

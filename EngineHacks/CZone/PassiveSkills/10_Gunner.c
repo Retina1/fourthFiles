@@ -10,19 +10,23 @@ void ApplyGunnerQuickDraw(struct BattleUnit* attacker, struct BattleUnit* defend
 
 void ApplyGunnerSteadySighting(struct BattleUnit* attacker){
 	if (UNIT_HAS_SKILL(&attacker->unit,DRG,skill_121)){
-		int tilesMoved = gActionData.moveCount;
-		if (tilesMoved == 0) {
-			attacker->battleHitRate  = attacker->battleHitRate * 3/2;
+		if (attacker->unit.index == gBattleActor.unit.index){
+			int tilesMoved = gActionData.moveCount;
+			if (tilesMoved == 0) {
+				attacker->battleHitRate  = attacker->battleHitRate * 3/2;
+			}
 		}
 	}
 }
 
 void ApplyGunnerFirefight(struct BattleUnit* attacker){
 	if (UNIT_HAS_SKILL(&attacker->unit,DRG,skill_131)){
-		int tilesMoved = gActionData.moveCount;
-		if (tilesMoved != 0) {
-			int mult = tilesMoved + 10;
-			attacker->battleAvoidRate  = attacker->battleAvoidRate * mult / 10;
+		if (attacker->unit.index == gBattleActor.unit.index){
+			int tilesMoved = gActionData.moveCount;
+			if (tilesMoved != 0) {
+				int mult = tilesMoved + 10;
+				attacker->battleAvoidRate  = attacker->battleAvoidRate * mult / 10;
+			}
 		}
 	}
 }

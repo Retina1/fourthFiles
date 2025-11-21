@@ -307,6 +307,11 @@ UNIT
 {
 #include "Chapters/Chapter7.event"
 }
+{
+#include "Chapters/Chapter8.event"
+}
+
+//start revolution playing in ch16 at the difficulty adjustment screen
 
 {
 #include "Chapters/Chapter18C.event"

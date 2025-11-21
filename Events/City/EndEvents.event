@@ -12,3 +12,8 @@ Stratum1CityEnd:
 MUSC 0x0
 SetBackground(0x0); TEXTSTART; TEXTSHOW CityS1_EndText; TEXTEND; MUSC Song_WiseWords; TEXTCONT; TEXTEND; FADI 16
 ENDA
+
+Chapter5CityEnd:
+MUSC Song_OohWilfre
+CleanTextNoMap(0x0, FillerDialogue)
+ENDA

@@ -351,10 +351,10 @@ Arcanist,Life's Flow,Allies in Circle's range recover HP passively.,None,1,Passi
 ,Mighty Burst,Cancel circle for a powerful attack next turn.,"Atrophic Circle 2, Toxic Circle 3",5,Active (State),,,Turn Start
 ,Cataclysm Burst,Cancel circle to inflict on entire map next turn.,"PROMO, Mighty Burst 5, Draining Circle 2",5,Active (State),,,Turn Start
 ,,,,,,,,
-Caller,Call Spirit,Use Summon to call a Soul. Soul cap is 3.,None,1,Active (Support),,,
+Caller,Call Spirit,Use Summon to call a Soul. Soul cap is 3.,None,1,Active (Support),X,,
 Necromancer,Soul Swap,User can swap positions with any Soul/Souldier.,Call Spirit 1,1,Active (Cond.),,,
 ,Soul Pull,Destroy a soul to recall an ally to its position.,Soul Swap 1,1,Active (Cond.),,,
-,Greater Spirit,Summon now calls Souldiers. Souldier cap is 3.,"PROMO, Call Spirit 1",1,Active (Support),,,
+,Greater Spirit,Summon now calls Souldiers. Souldier cap is 3.,"PROMO, Call Spirit 1",1,Active (Support),X,,
 ,Soul Barrier,Destroy a soul to buff ally Def/Res/Luck.,Call Spirit 1,2,Active (Buff),,,
 ,Soul Charge,Destroy a soul to buff ally Atk/Hit/Crit.,Soul Shield 1,2,Active (Buff),,,
 ,Soul Boon,Destroy a soul to recover allied HP.,Soul Charge 1,2,Active (Support),,,
@@ -417,7 +417,7 @@ Imperial,Heat Shield,1.3x Def/Res while Overheated.,Assault Drive 1,1,Passive (S
 ,,,,,,,,
 Artifice,Reboot,Clears all binds from the user.,None,1,Active (Support),,,
 Automaton,Magnet Pulse,Attempt to stun all enemies and allies in range.,None,1,Active (Ailment),X,bugs w/ range and targets,
-,Craft Turret,Places a turret that attacks in a range. Turret cap is 2.,None,1,Active (Support),,,
+,Craft Turret,Places a turret that attacks in a range. Turret cap is 2.,None,1,Active (Support),X,,
 ,Machine Precision,Unit's attacks will never miss (ailments still can).,PROMO,1,Passive,X,,
 ,Rocket Punch,Bind arms for a double attack.,Reboot 1,2,Attack,,,
 ,Rocket Jump,Bind legs to jump a distance away.,Reboot 1,2,Active (Support),,,

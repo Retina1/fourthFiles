@@ -27,13 +27,14 @@ ChapterDeathQuote(Xavens,Chapter5,0x0,C5XavensDefeat)
 ChapterDeathQuote(Egil,Chapter5,0x0,C5EgilDefeat)
 ChapterDeathQuote(Harla,Chapter5,0x0,C5HarlaDefeat)
 ChapterDeathQuote(BossSaewynn,Chapter5,0x0,C5SaewynnDefeat)
+//c8
+ChapterDeathQuote(BossBenthus2,Chapter8,0x2,BenthusDeath)
 
 //major bosses
 AlwaysDeathQuote(BossGuildmaster,0x0,GuildmasterDeath)
 AlwaysDeathQuote(BossGore,0x0,BossGoreDeath)
 AlwaysDeathQuote(BossAstarte,0x0,BossAstarteDeath)
 
-AlwaysDeathQuote(BossBenthus2,0x0,BenthusDeath)
 AlwaysDeathQuote(Swift,0x0,SwiftDeath)
 AlwaysDeathQuote(Weber,0x0,WeberDeath)
 AlwaysDeathQuote(Xavens,0x0,XavensDeath)

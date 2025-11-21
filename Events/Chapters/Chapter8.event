@@ -1,0 +1,96 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events8ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,20] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,20] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,20] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,21] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,21] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,21] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+UNIT GuildGeneric Scholar 0x0 Level(10,Enemy,1) [2,1] DropItem 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT GuildGeneric Scholar 0x0 Level(10,Enemy,1) [16,1] DropItem 0x0 0x0 0x0 [SparkScroll,Soma] AttackInRangeAI
+UNIT GuildGeneric Lancer 0x0 Level(10,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [Shieldlance] AttackInRangeAI
+UNIT GuildGeneric Lancer 0x0 Level(10,Enemy,1) [12,6] 0x0 0x0 0x0 0x0 [Partizan] AttackInRangeAI
+UNIT GuildGeneric Strider 0x0 Level(10,Enemy,1) [9,6] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
+UNIT GuildGeneric Axefighter 0x0 Level(10,Enemy,1) [8,14] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT GuildGeneric Axefighter 0x0 Level(10,Enemy,1) [10,14] 0x0 0x0 0x0 0x0 [SerratedAxe] AttackInRangeAI
+UNIT GuildGeneric Noble 0x0 Level(10,Enemy,1) [8,3] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT GuildGeneric Noble 0x0 Level(10,Enemy,1) [10,3] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT GuildGeneric Duelist 0x0 Level(10,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT BossBenthus2 Sovereign 0x0 Level(12,Enemy,1) [9,2] DropItem 0x0 0x0 0x0 [Rapier,PerfectRose,GuidingRing] AttackInRangeAI
+
+UNIT
+
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+MUSC 0x0
+Text(FillerDialogue)
+LOAD1 0x1 EnemyUnits; ENUN
+CallPreps
+EndEvent
+
+EndingScene:
+ENUT Chapter8DoneFlag
+MUSC 0x0
+CleanTextNoMap(0x18,FillerDialogue)
+MoveToChapter(HirschringSquare)
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

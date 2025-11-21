@@ -1,0 +1,26 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+ImperialPostUnitsC5:
+//marketplpace npc, generics
+UNIT NPCFourth 0x0 0x0 Level(17,NPC,0) [5,5] 0x0 0x0 0x0 0x0 [Dominance] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+LoadImperialPostSigils:
+ENUF LocationFlagImperialPost
+AddSigil(0,4)
+AddSigil(0,5)
+AddGreenSigil(3,5)
+//AddGreenSigil(10,11)
+ENDA
+
+ImperialPostMoveToShadyRow:
+SwapToMap(ShadyRow,24,1)
+CALL LoadShadyRowSigils
+LoadRowUnits
+FADU 10
+EndEvent

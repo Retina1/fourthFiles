@@ -192,10 +192,20 @@ RednGreeen[X]
 ##SongTitle_CursedCathedral
 Cursed Cathedral (Zappy McCraw)[X]
 
+##SourceTitle_Plok
+Plok[X]
+##SongTitle_Akrillic
+Akrillic[X]
+
 ##SourceTitle_FE12 ^
 FE: New Mystery of the Emblem[X]
 ##SongTitle_MurderousPuppets
 Murderous Puppets[X]
+
+##SourceTitle_FE16
+Fire Emblem: Three Houses[X]
+##SongTitle_AsFierceAsFire
+As Fierce as Fire[X]
 
 ##SourceTitle_FE2
 Fire Emblem Gaiden[X]

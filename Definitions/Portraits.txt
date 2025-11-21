@@ -189,6 +189,12 @@ BrugarisMug
 TenneyMug
 MeansDeathMug
 SonbringerMug
+BulagMug
+VitruviusMug
+TheUnexpectedMug
+GoreEyepatchMug
+GorePluckedMug
+MimiMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

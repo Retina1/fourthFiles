@@ -41,10 +41,23 @@ GoreDMP:
 #incbin "dmps/retinaGore.dmp"
 setMugEntry(GoreMug,GoreDMP,3,5,3,3)
 ALIGN 4
+GoreEyepatchDMP:
+#incbin "dmps/retinaGoreEyepatch.dmp"
+setMugEntry(GoreEyepatchMug,GoreEyepatchDMP,3,5,3,3)
+ALIGN 4
+GorePluckedDMP:
+#incbin "dmps/retinaGorePlucked.dmp"
+setMugEntry(GorePluckedMug,GorePluckedDMP,3,5,3,3)
+ALIGN 4
 //thx app
 CleoneDMP:
 #incbin "dmps/applanthropistCleone.dmp"
 setMugEntry(CleoneMug,CleoneDMP,3,5,3,3)
+ALIGN 4
+//thx alg
+RatDMP:
+#incbin "dmps/alguienRat.dmp"
+setMugEntry(RatMug,RatDMP,3,5,3,3)
 ALIGN 4
 //thx hiraya
 FrancescaDMP:
@@ -63,7 +76,7 @@ setMugEntry(GenericLandsknechtMug,GenericLandsknechtDMP,3,5,3,3)
 ALIGN 4
 GenericNecromancerDMP:
 #incbin "dmps/slaterGenericNecromancer.dmp"
-setMugEntryExtend(GenericNecromancerMug,GenericNecromancerDMP,3,5,3,3, 0,4, 10,4)
+setMugEntryExtend(GenericNecromancerMug,GenericNecromancerDMP,3,4,3,2, 0,4, 10,4)
 ALIGN 4
 GenericPugilistDMP:
 #incbin "dmps/slaterGenericPugilist.dmp"
@@ -110,6 +123,12 @@ ALIGN 4
 RatatoskrDMP:
 #incbin "dmps/diesRatatoskr.dmp"
 setMugEntry(RatatoskrMug,RatatoskrDMP,4,6,4,4)
+
+ALIGN 4
+//ultrax
+TheUnexpectedDMP:
+#incbin "dmps/ultraxTheUnexpected.dmp"
+setMugEntry(TheUnexpectedMug,TheUnexpectedDMP,2,5,3,3)
 
 ALIGN 4
 //solarimp

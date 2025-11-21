@@ -1,3 +1,27 @@
+//send items on death
+void SetPidDefeatedFlag(u8 pid, int flag) {
+    const struct ROMChapterData* chapterData;
+
+	struct Unit* unit = GetUnitFromCharId(pid);
+	
+	if (UNIT_FACTION(unit) == FACTION_BLUE) {
+		for (int i = 0; i < 5; i++) {
+			if (unit->items[0] != 0) {
+				AddItemToConvoy(unit->items[0]);
+				//remove items shifts each time
+				UnitRemoveItem(unit, 0);
+			}
+		}
+	}
+
+    if ((GetBattleMapKind() == BATTLEMAP_KIND_STORY) || (chapterData = GetROMChapterStruct(gPlaySt.chapterIndex), pid != chapterData->protectCharacterIndex) || flag != 0x65) {
+        SetFlag(flag);
+        return;
+    }
+
+    return;
+}
+
 //seems like this works?
 void MuFogBump_EndLoop(struct MuFogBumpProc * proc)
 {

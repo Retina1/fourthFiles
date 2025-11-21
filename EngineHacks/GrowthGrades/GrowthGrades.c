@@ -130,6 +130,13 @@ int GetGradeFromGrowth(int value, int stat, bool isSign) {
 				i++;
 			}
 	}
+	//default case if all else fails - S+
+	if(isSign) {
+		return 0x15;
+	}
+	else {
+		return 0x18;
+	}
 }
 
 void DrawGrowthGrade(int value, int x, int y, int stat) {

@@ -65,6 +65,21 @@ A cursed stare that silences magi.[N]
 Base Head Bind Affliction Rate: 60%.[X]
 
 
+##Name_Voltage
+Voltage[X]
+##Desc_Voltage ^
+Crackling breath of electric doom.[N]
+Base Paralysis Affliction Rate: 80%.[X]
+##Name_Frigid
+Frigid[X]
+##Desc_Frigid ^
+Bittercold breath that freezes all.[N]
+Base Sleep Affliction Rate: 80%.[X]
+##Name_Searing
+Searing[X]
+##Desc_Searing ^
+Infernal breath that blazes eternal.[X]
+
 
 
 ##Name_Divinity

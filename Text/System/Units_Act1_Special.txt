@@ -118,6 +118,13 @@ Leovetus[X]
 A solitary brawler who has devoted his[N]
 life to mastering the Godhand technique.[X]
 
+//restyrch
+##Name_Bulag
+Bulag[X]
+##Desc_Bulag
+A blind brawler seeking the Tableland[N]
+to restore life to his childhood friend.[X]
+
 //greatdoot
 ##Name_Philmore
 Philmore[X]

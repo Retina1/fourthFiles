@@ -34,7 +34,7 @@ UnitMenuTable:
   MenuCommand(UM_DrawBack, UM_DrawBackDesc, OrangeText, DrawBack_Usability, DrawBack_Effect)
   MenuCommand(UM_RallyingCry, UM_RallyingCryDesc, OrangeText, RallyingCry_Usability, RallyingCry_Effect)
   MenuCommand(UM_MagnetPulse, UM_MagnetPulseDesc, OrangeText, MagnetPulse_Usability, MagnetPulse_Effect)
-
+  UM_Summon
   UM_Item
   UM_Trade
   UM_Supply //MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)

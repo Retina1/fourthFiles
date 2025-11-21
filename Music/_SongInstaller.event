@@ -321,6 +321,19 @@ SongTable(Song_DrawHeroes,DrawHeroes,1)
 SongTable(Song_FreeDuel,FreeDuel,1)
 #include "songs/FreeDuel.event"
 }
+//0x37 - akrillic
+#define Song_Akrillic 0x38
+{
+SongTable(Song_Akrillic,Akrillic,0)
+#include "songs/Akrillic.event"
+}
+
+//0x37 - akrillic
+#define Song_AsFierceAsFire 0x39
+{
+SongTable(Song_AsFierceAsFire,AsFierceAsFire,0)
+#include "songs/AsFierceAsFire.event"
+}
 
 
 

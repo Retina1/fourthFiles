@@ -1,27 +1,27 @@
 	.include "MPlayDef.s"
 
-	.equ	song0A_grp, voicegroup000
-	.equ	song0A_pri, 0
-	.equ	song0A_rev, 0
-	.equ	song0A_mvl, 127
-	.equ	song0A_key, 0
-	.equ	song0A_tbs, 1
-	.equ	song0A_exg, 0
-	.equ	song0A_cmp, 1
+	.equ	AsFierceAsFire_grp, voicegroup000
+	.equ	AsFierceAsFire_pri, 0
+	.equ	AsFierceAsFire_rev, 0
+	.equ	AsFierceAsFire_mvl, 127
+	.equ	AsFierceAsFire_key, 0
+	.equ	AsFierceAsFire_tbs, 1
+	.equ	AsFierceAsFire_exg, 0
+	.equ	AsFierceAsFire_cmp, 1
 
 	.section .rodata
-	.global	song0A
+	.global	AsFierceAsFire
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song0A_001:
+AsFierceAsFire_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
- .byte   TEMPO , 164*song0A_tbs/2
+ .byte   KEYSH , AsFierceAsFire_key+0
+ .byte   TEMPO , 164*AsFierceAsFire_tbs/2
  .byte   VOICE , 18
- .byte   VOL , 62*song0A_mvl/mxv
+ .byte   VOL , 62*AsFierceAsFire_mvl/mxv
  .byte   W12
 Label_01150899:
  .byte   W96
@@ -842,11 +842,11 @@ Label_01150B36:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song0A_002:
+AsFierceAsFire_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
+ .byte   KEYSH , AsFierceAsFire_key+0
  .byte   VOICE , 30
- .byte   VOL , 42*song0A_mvl/mxv
+ .byte   VOL , 42*AsFierceAsFire_mvl/mxv
  .byte   W12
 Label_01150FFF:
  .byte   W24
@@ -1841,11 +1841,11 @@ Label_011513A5:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song0A_003:
+AsFierceAsFire_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
+ .byte   KEYSH , AsFierceAsFire_key+0
  .byte   VOICE , 51
- .byte   VOL , 23*song0A_mvl/mxv
+ .byte   VOL , 23*AsFierceAsFire_mvl/mxv
  .byte   W12
 Label_0115158B:
  .byte   W96
@@ -2525,11 +2525,11 @@ Label_0115177D:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song0A_004:
+AsFierceAsFire_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
+ .byte   KEYSH , AsFierceAsFire_key+0
  .byte   VOICE , 49
- .byte   VOL , 20*song0A_mvl/mxv
+ .byte   VOL , 20*AsFierceAsFire_mvl/mxv
  .byte   W12
 Label_011518F7:
  .byte   W96
@@ -3298,11 +3298,11 @@ Label_01151B89:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song0A_005:
+AsFierceAsFire_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
+ .byte   KEYSH , AsFierceAsFire_key+0
  .byte   VOICE , 49
- .byte   VOL , 30*song0A_mvl/mxv
+ .byte   VOL , 30*AsFierceAsFire_mvl/mxv
  .byte   W12
 Label_01151D47:
  .byte   N05 ,Ds2 ,v064
@@ -4229,11 +4229,11 @@ Label_01152255:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song0A_006:
+AsFierceAsFire_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
+ .byte   KEYSH , AsFierceAsFire_key+0
  .byte   VOICE , 4
- .byte   VOL , 32*song0A_mvl/mxv
+ .byte   VOL , 32*AsFierceAsFire_mvl/mxv
  .byte   W12
 Label_0115227F:
  .byte   W96
@@ -4931,11 +4931,11 @@ Label_01152482:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song0A_007:
+AsFierceAsFire_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
+ .byte   KEYSH , AsFierceAsFire_key+0
  .byte   VOICE , 38
- .byte   VOL , 32*song0A_mvl/mxv
+ .byte   VOL , 32*AsFierceAsFire_mvl/mxv
  .byte   W12
 Label_0115263B:
  .byte   W96
@@ -5538,11 +5538,11 @@ Label_0115279C:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song0A_008:
+AsFierceAsFire_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
+ .byte   KEYSH , AsFierceAsFire_key+0
  .byte   VOICE , 47
- .byte   VOL , 32*song0A_mvl/mxv
+ .byte   VOL , 32*AsFierceAsFire_mvl/mxv
  .byte   N05 ,Ds1 ,v080
  .byte   W06
  .byte   Ds1
@@ -6227,11 +6227,11 @@ Label_01152B36:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song0A_009:
+AsFierceAsFire_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song0A_key+0
+ .byte   KEYSH , AsFierceAsFire_key+0
  .byte   VOICE , 124
- .byte   VOL , 37*song0A_mvl/mxv
+ .byte   VOL , 37*AsFierceAsFire_mvl/mxv
  .byte   N05 ,Fn1 ,v033
  .byte   W06
  .byte   Fn1
@@ -7253,22 +7253,22 @@ Label_01153142:
 @******************************************************@
 	.align	2
 
-song0A:
+AsFierceAsFire:
 	.byte	9	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song0A_pri	@ Priority
-	.byte	song0A_rev	@ Reverb.
+	.byte	AsFierceAsFire_pri	@ Priority
+	.byte	AsFierceAsFire_rev	@ Reverb.
     
-	.word	song0A_grp
+	.word	AsFierceAsFire_grp
     
-	.word	song0A_001
-	.word	song0A_002
-	.word	song0A_003
-	.word	song0A_004
-	.word	song0A_005
-	.word	song0A_006
-	.word	song0A_007
-	.word	song0A_008
-	.word	song0A_009
+	.word	AsFierceAsFire_001
+	.word	AsFierceAsFire_002
+	.word	AsFierceAsFire_003
+	.word	AsFierceAsFire_004
+	.word	AsFierceAsFire_005
+	.word	AsFierceAsFire_006
+	.word	AsFierceAsFire_007
+	.word	AsFierceAsFire_008
+	.word	AsFierceAsFire_009
 
 	.end

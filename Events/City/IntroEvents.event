@@ -12,3 +12,8 @@ Stratum1CityOpen:
 MUSC Song_OohWilfre
 CleanTextNoMap(0x0, CityS1_PrePreps)
 ENDA
+
+Chapter5CityOpen:
+MUSC Song_OohWilfre
+CleanTextNoMap(0x0, FillerDialogue)
+ENDA
