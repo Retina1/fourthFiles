@@ -42,7 +42,9 @@ unknown foe![X]
 ##Ch6BossDesc
 Defeat Hitchcock[N]
 and press onwards![X]
-
+##Ch7RoutDesc
+Defeat the[N]
+Endbringers![X]
 ##Ch8KillDesc
 Take your[N]
 revenge.[X]

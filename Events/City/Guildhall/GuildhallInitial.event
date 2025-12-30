@@ -29,6 +29,9 @@ UNIT
 Recruit_SlynSpire:
 UNIT SlynSpire 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
 UNIT
+Recruit_Alfonso:
+UNIT Alfonso 0x0 0x1 Level(6,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Shortspear,FlameScroll] NoAI
+UNIT
 
 Recruit_Tristao:
 UNIT Tristao 0x0 0x1 Level(5,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace] NoAI
@@ -127,6 +130,9 @@ EndEvent
 SlynSpire_RecruitEvent:
 GuildRecruit(SlynSpire,Guild_SlynSpire_Intro,0x24)
 EndEvent
+Alfonso_RecruitEvent:
+GuildRecruit(SlynSpire,Guild_Alfonso_Intro,0x25)
+EndEvent
 
 //axe
 Tristao_RecruitEvent:
@@ -219,6 +225,7 @@ GuildLoad(Gretchen,Recruit_Gretchen,0x2,Chapter5DoneFlag)
 GuildLoad(Allbringer,Recruit_Allbringer,0x3)
 GuildLoad(Hopf,Recruit_Hopf,0x4)
 GuildLoad(SlynSpire,Recruit_SlynSpire,0x5)
+GuildLoad(Alfonso,Recruit_Alfonso,0x6,Chapter8DoneFlag)
 FADU 10
 ENDA
 

@@ -334,22 +334,48 @@ SongTable(Song_Akrillic,Akrillic,0)
 SongTable(Song_AsFierceAsFire,AsFierceAsFire,0)
 #include "songs/AsFierceAsFire.event"
 }
+//0x37 - akrillic
+#define Song_BGM7 0x3a
+{
+SongTable(Song_BGM7,BGM7,0)
+#include "songs/BGM7.event"
+}
 
-
-
+//0x37 -
+#define Song_DevilsRoulette 0x3b
+{
+SongTable(Song_DevilsRoulette,DevilsRoulette,0)
+#include "songs/DevilsRoulette.event"
+}
+//0x37 -
+#define Song_Ambient 0x3c
+{
+SongTable(Song_Ambient,Ambient,0)
+#include "songs/Ambient.event"
+}
+//0x37 -
+#define Song_EditMode 0x3d
+{
+SongTable(Song_EditMode,EditMode,0)
+#include "songs/EditMode.event"
+}
 //0x3e - game over
 #define Song_NoMore 0x3e
 {
 SongTable(Song_NoMore,NoMore,0)
 #include "songs/NoMore.event"
 }
-
-
 //0x3f - unit death
 #define Song_NameEntry 0x3f
 {
 SongTable(Song_NameEntry,NameEntry,0)
 #include "songs/NameEntry.event"
+}
+//0x3f - unit death
+#define Song_Musette 0x40
+{
+SongTable(Song_Musette,Musette,0)
+#include "songs/Musette.event"
 }
 
 //0x43 - title screen

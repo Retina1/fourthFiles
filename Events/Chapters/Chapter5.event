@@ -64,7 +64,7 @@ UNIT UnknownGeneric Caller 0x0 Level(6,Enemy,1) [10,4] 0x0 0x0 0x0 0x0 [DrainScr
 UNIT UnknownGeneric Hunter 0x0 Level(6,Enemy,1) [1,3] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
 UNIT UnknownGeneric Hunter 0x0 Level(6,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
 UNIT UnknownGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
-UNIT UnknownGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
+UNIT UnknownGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] DropItem 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 UNIT UnknownGeneric Scholar 0x0 Level(6,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT UnknownGeneric Scholar 0x0 Level(6,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT UnknownGeneric Brawler 0x0 Level(6,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [BrassKnuckles] NoAI
@@ -76,10 +76,10 @@ UNIT UnknownGeneric Lancer 0x0 Level(6,Enemy,1) [19,17] 0x0 0x0 0x0 0x0 [Pike] D
 
 UNIT UnknownGeneric Lancer 0x0 Level(6,Enemy,1) [8,16] 0x0 0x0 0x0 0x0 [Partizan] NoAI
 UNIT UnknownGeneric DarkHunter 0x0 Level(6,Enemy,1) [9,15] 0x0 0x0 0x0 0x0 [Scorpio] NoAI
-UNIT UnknownGeneric DarkHunter 0x0 Level(6,Enemy,1) [10,15] 0x0 0x0 0x0 0x0 [Scorpio] NoAI
+UNIT UnknownGeneric DarkHunter 0x0 Level(6,Enemy,1) [10,15] DropItem 0x0 0x0 0x0 [Scorpio] NoAI
 UNIT UnknownGeneric Lancer 0x0 Level(6,Enemy,1) [11,16] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
 
-UNIT UnknownGeneric Encircler 0x0 Level(6,Enemy,1) [1,1] 0x0 0x0 0x0 0x0 [CleaveScroll] NeverMoveAI
+UNIT UnknownGeneric Encircler 0x0 Level(6,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll] NeverMoveAI
 UNIT UnknownGeneric Priest 0x0 Level(6,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [Bluntblade] DelayedAI
 
 //unknown entries for endbringer bosses, replace with a small fry after turn 1
@@ -131,6 +131,25 @@ UNIT Harla Highlander 0x0 Level(26,Enemy,1) [19,1] 0x0 0x0 0x1 REDA11R2 [Ron] Ne
 UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [19,1] 0x0 0x0 0x1 REDA12R1 [BoltRifle] NeverMoveAI
 UNIT
 
+EndingEndbringer:
+UNIT Harla Highlander 0x0 Level(26,Enemy,1) [10,18] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
+UNIT Rana Survivalist 0x0 Level(27,Enemy,1) [9,17] 0x0 0x0 0x0 0x0 [ArcDrawer] NeverMoveAI
+UNIT
+
+EndingParty:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [4,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [4,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Benthus 0x0 0x1 Level(2,Ally,0) [6,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Helman 0x0 0x1 Level(2,Ally,0) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(3,Ally,0) [2,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Kryst 0x0 0x1 Level(2,Ally,0) [0,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT BossGuildmaster 0x0 0x1 Level(26,NPC,0) [1,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gerson 0x0 0x1 Level(1,NPC,0) [7,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+//apart from the others
+UNIT Cleone 0x0 0x1 Level(2,Ally,0) [3,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
 
 ALIGN 4
 
@@ -153,17 +172,22 @@ LOAD1 0x1 OpeningParty2; ENUN
 CAM1 [9,0]
 FADU 10
 STAL 20
+MUSC Song_Musette //SONG HERE - EVENT AMBIANCE
 Text(Chapter5_Opening_2)
+MOVE 30 Astarte [8,6]; MOVE 30 Nathan [7,6]; ENUN
 //guildmaster cursor
 FlashCursor(BossGuildmaster,30)
 Text(Chapter5_Opening_3)
+MUSC 0x0
 //walk up
 STAL 20
-MOVE 5 Nathan [10,2]; ENUN; STAL 20
+MOVE 5 Nathan [10,2]; MOVE 10 Astarte [7,6]; ENUN; STAL 20
+MUSC Song_WiseWords //SONG CHANGE HERE
 Text(Chapter5_Opening_4)
 //walk back
 STAL 20
 MOVE 5 Nathan [6,6]; ENUN; STAL 20
+MUSC 0x0
 Text(Chapter5_Opening_5)
 //terrorism
 WARPIN [10,1]
@@ -179,7 +203,7 @@ Text(Chapter5_Opening_6)
 //guildmaster out
 MOVE 10 Gerson [5,0]; MOVE 10 BossGuildmaster [6,1]; ENUN
 Text(Chapter5_Opening_7)
-MOVE 10 Gerson [0,0]; MOVE 10 BossGuildmaster [0,0]; ENUN
+MOVE 10 Gerson [0,0]; MOVE 10 BossGuildmaster [0,1]; ENUN
 FADI 10
 CLEA 0; CLEN 0; CLEE 0
 LOAD1 0x1 EnemyUnits; ENUN
@@ -192,13 +216,20 @@ LevelUpSkill(Kryst,8)
 LevelUpSkill(Kryst,9)
 LevelUpSkill(Kryst,10)
 CallPreps
-TurnAlly(Kryst)
+CAM1 Nathan
+FADU 16
+STAL 30
+CAM1 Kryst
+FlashCursor(Kryst,30)
 MUSC Song_FaithIsMyPillar
-Text(Chapter5_KrystJoin) //nathan comments on wolf, gets paper thrown at him
+Text(Chapter5_KrystJoin)
+TurnAlly(Kryst)
 EndEvent
 
 EndbringerLeaves:
-CAM1 [15,0]
+CHECK_ALIVE Xavens
+BEQ 0x1 0xc 0x0
+CAM1 Xavens
 FlashCursor(Xavens,30)
 Text(Chapter5_XavensLeaves)
 STAL 10
@@ -206,29 +237,71 @@ CAM1 Xavens
 WARPOUT [9,1]
 SilentKillUnit(Xavens)
 ENDWARP
+LABEL 0x1
+CHECK_ALIVE Egil
+BEQ 0x2 0xc 0x0
 CAM1 Egil
+FlashCursor(Egil,30)
 Text(Chapter5_EgilLeaves)
 WARPOUT [10,1]
 SilentKillUnit(Egil)
 ENDWARP
+LABEL 0x2
+CHECK_ALIVE Harla
+BEQ 0x3 0xc 0x0
 CAM1 Harla
+FlashCursor(Harla,30)
 Text(Chapter5_HarlaLeaves)
 WARPOUT [18,1]
 SilentKillUnit(Harla)
 ENDWARP
+LABEL 0x3
+CHECK_ALIVE BossSaewynn
+BEQ 0x4 0xc 0x0
+CAM1 BossSaewynn
+FlashCursor(BossSaewynn,30)
+Text(Chapter5_SaewynnStays)
+LABEL 0x4
 EndEvent
 
 EndingScene:
 ENUT Chapter5DoneFlag
 MUSC 0x0
-CleanTextNoMap(0x18,Chapter5_Ending_1)
+CleanTextNoMap(0x0,Chapter5_Ending_1)
 //endbringer map event
+LOMA Stratum1F1
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingEndbringer; ENUN
+CAM1 [11,19]
+FADU 10
+STAL 20
 MUSC Song_CherryTreesAndWings
 Text(Chapter5_Ending_2)
+STAL 20
+FADI 10
+MUSC 0x0
+LOMA Guildhall
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingParty; ENUN
+CAM1 [14,6]
+FADU 10
+STAL 20
 //in guildhall map
 Text(Chapter5_Ending_3)
-//cleone walks in
+STAL 20
+//cleone walks
+MOVE 5 Cleone [2,7]; ENUN
+MUSC Song_DevilsRoulette
 Text(Chapter5_Ending_4)
+STAL 10
+MOVE 8 Benthus [3,15]; ENUN
+STAL 25
+MOVE 2 Cleone [2,9]; ENUN
+STAL 20
+MOVE 10 Cleone [4,15]; ENUN
+STAL 60
+MOVE 10 Nathan [4,14]; ENUN
+STAL 60
 MoveToChapter(HirschringSquare)
 ENDA
 

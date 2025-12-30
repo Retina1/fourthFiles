@@ -71,6 +71,8 @@ PortraitUpshift(LonsdaleMug)
 PortraitUpshift(YujinMug)
 PortraitUpshift(SonbringerMug)
 PortraitUpshift(TenneyMug)
+PortraitUpshift(FrancescaMug)
+PortraitUpshift(PeregrineMug)
 //PortraitUpshift(RatatoskrMug)
 //shift plus exceed doesn't work nice
 //PortraitUpshift(WendyMug)

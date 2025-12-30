@@ -79,6 +79,7 @@ AlwaysDeathQuote(Gretchen,0x0,GretchenDeath)
 AlwaysDeathQuote(Allbringer,0x0,AllbringerDeath)
 AlwaysDeathQuote(Hopf,0x0,HopfDeath)
 AlwaysDeathQuote(SlynSpire,0x0,SlynSpireDeath)
+AlwaysDeathQuote(Alfonso,0x0,AlfonsoDeath)
 
 //axe
 AlwaysDeathQuote(Tristao,0x0,TristaoDeath)
@@ -122,6 +123,7 @@ AlwaysDeathQuote(Johnnie,0x0,JohnnieDeath)
 AlwaysDeathQuote(Kolette,0x0,KoletteDeath)
 AlwaysDeathQuote(Pallas,0x0,PallasDeath)
 AlwaysDeathQuote(Emblem,0x0,EmblemDeath)
+AlwaysDeathQuote(Meilie,0x0,MeilieDeath)
 
 //raid
 AlwaysDeathQuote(Esketit,0x0,EsketitDeath)

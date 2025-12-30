@@ -226,7 +226,7 @@ UNIT
 #define EndingMapFlags "ENUF NoRescuingFlag; ENUF 0x66; ENUF LocationFlagHirschringSquare; ENUF LocationFlagGuildhall; ENUF LocationFlagBlacksmith; ENUF LocationFlagTavern; ENUF LocationFlagNorthernPass; ENUF LocationFlagMuseum; ENUF LocationFlagBlackMarket; ENUF Recruited1Flag; ENUF Recruited2Flag; ENUF Recruited3Flag; ENUF Recruited4Flag; ENUF Recruited5Flag"
 #define ClearMap "FADI 10; SET_ACTIVE 0; CLEA 0; CLEN 0; CLEE 0"
 #define MoveToMap(mapid) "LOMA mapid"
-#define InitializeNathan(x,y) "MOVE 0xFF Nathan [x,y]; ENUN; CAM1 Nathan"
+#define InitializeNathan(x,y) "MOVE 0xFFFF Nathan [x,y]; ENUN; CAM1 Nathan"
 #define ResetNathan "SVAL 4 0x03; SetUnitStatus(Nathan,0xc,0x0)"
 #define SwapToMap(mapid,x,y) "ResetMapFlags; ClearMap; MoveToMap(mapid); InitializeNathan(x,y)"
 #define ThreeRecruitInterlude "ENUT Recruited3Flag; ENUT Recruited2Flag; ENUT Recruited1Flag"
@@ -284,11 +284,11 @@ CHECK_EVENTID Chapter3DoneFlag
 BNE 0x2 0xc 0x0
 LOAD1 0x0 Chapter2SquareUnitsPreps
 LABEL 0x2
-CALL LoadHirschringSigils
 ResetMapFlags
 InitializeRecruitFlags
 ENUF LocationFlagHirschringSquare
 CALL IntroTexts
+CALL LoadHirschringSigils
 CallPreps
 CALL LoadPostPrepsUnits
 FADU 10

@@ -90,6 +90,12 @@ Slyn & Spire[X]
 ##Desc_SlynSpire
 A young child and his friend(?), Spire.[N]
 Slyn feels remorse for Spire's deeds.[X]
+//windmage
+##Name_Alfonso
+Alfonso[X]
+##Desc_Alfonso
+A minor nobleman and well-studied[N]
+academic. He's a bistory buff.[X]
 
 
 //tristao by alex (axefighter)

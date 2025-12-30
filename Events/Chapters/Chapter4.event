@@ -71,8 +71,8 @@ EnemyUnits:
 UNIT MonsterGeneric Spider 0x0 Level(5,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [WebTalon] AttackInRangeAI
 
 UNIT MonsterGeneric Centaur 0x0 Level(5,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
-UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [RootGrasp] NeverMoveAI
-UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [8,8] 0x0 0x0 0x0 0x0 [RootGrasp] NeverMoveAI
+UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [4,6] DropItem 0x0 0x0 0x0 [RootGrasp,Vulnerary] NeverMoveAI
+UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [8,8] DropItem 0x0 0x0 0x0 [RootGrasp,AriadneShard] NeverMoveAI
 
 //make not wolves
 UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [2,11] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
@@ -228,11 +228,12 @@ LABEL 0x2
 EndEvent
 
 EndingScene:
-MUSC 0x0
+MUSC Song_EditMode
 CleanTextNoMap(0x18,Chapter4_Ending1)
 //map event
 REMA
 CLEAN
+MUSC 0x0
 CLEA 0; CLEE 0
 LOAD1 0x1 CutsceneEndbringer; ENUN
 CAM1 Harla

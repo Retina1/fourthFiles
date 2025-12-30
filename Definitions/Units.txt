@@ -20,6 +20,7 @@ Gretchen
 Allbringer
 Hopf
 SlynSpire
+Alfonso
 Tristao
 Finn
 Eight
@@ -51,6 +52,7 @@ Johnnie
 Kolette
 Pallas
 Emblem
+Meilie
 Esketit
 Gloria
 Pipsy
@@ -68,12 +70,14 @@ Jacqwil
 Polymnia
 Lucien
 Juliette
+Yosepha
 Phespher
 Nadja
 Levia
 Vasily
 Jebet
 Wont
+Wren
 Saewynn
 Ellie
 Selene
@@ -86,11 +90,12 @@ Zoe
 Paul
 Hausten
 Luis
-Saoirse
+Notre
 Wund
 Peabody
 Dalman
 Noelle
+Yasmine
 Heri
 Radagast
 Fourfinger

@@ -185,6 +185,10 @@ Where's my[...] mulligan[...]?[A][CloseEyes][X]
 [MidRight][SlynSpire]
 Spire[...] Please don't leave[...][AN][CloseEyes]
 Don't leave me behind[...][A][X]
+##AlfonsoDeath
+[MidRight][Alfonso]
+Guess it's a warrior's end[...][N]
+for me[...] after all[...][A][CloseEyes][X]
 
 //fighters
 ##TristaoDeath
@@ -327,6 +331,10 @@ way to go[...][A][CloseEyes][X]
 [MidRight][Emblem]
 I[...] can't stop here[...][N]
 Must keep[...] running[...][A][CloseEyes][X]
+##MeilieDeath
+[MidRight][Meilie]
+I[...] did well[...][N]
+Didn't[...] I[...]?[A][CloseEyes][X]
 
 //raiders
 ##EsketitDeath

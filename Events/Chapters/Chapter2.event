@@ -194,10 +194,11 @@ Text(C2_DoorHint)
 EndEvent
 
 EndingScene:
-MUSC 0x0
+MUSC Song_EditMode
 CleanTextNoMap(0x3,C2_Ending_1)
 REMA
 CLEAN
+MUSC 0x0
 CLEA 0; CLEE 0
 LOAD1 0x1 CutsceneXavens; ENUN
 CAM1 Xavens

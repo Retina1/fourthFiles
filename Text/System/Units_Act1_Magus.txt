@@ -42,6 +42,13 @@ Juliette[X]
 A noblewoman and proclaimed [OpenQuote]ar-teest[CloseQuote][N]
 of [OpenQuote]dark.[CloseQuote] She's a fair bit ignorant.[X]
 
+//velthomer
+##Name_Yosepha
+Yosepha[X]
+##Desc_Yosepha
+A young Belvarusi author who truly[N]
+believes in mankind. She hates work.[X]
+
 //Phespher by doob
 ##Name_Phespher
 Phespher[X]
@@ -84,6 +91,14 @@ Won't[X]
 ##Desc_Wont
 A mage who has peered into the Void,[N]
 or so he says. He's a bit delusional.[X]
+
+
+//lobotomy
+##Name_Wren
+Wren[X]
+##Desc_Wren
+An energetic young magi from Hirschring.[N]
+He wishes to repay his adoptive parents.[X]
 
 
 

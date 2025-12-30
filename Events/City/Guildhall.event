@@ -57,7 +57,7 @@ ENUF LocationFlagGuildhall
 EndEvent
 
 GuildhallMoveToSquare:
-SwapToMap(HirschringSquare,4,3)
+SwapToMap(HirschringSquare,4,4)
 CALL LoadHirschringSigils
 LoadSquareUnits
 LoadVendorSecond

@@ -22,9 +22,18 @@ UnspecifiedBattleConvo(Gore,Chapter1,0x12,C1GoreBattle)
 
 //idk chapter 4 maybe
 //c5 is the first map with a real boss since whoops
+SpecifiedBattleConvo(Nathan,Xavens,Chapter5,0x14,C5XavensNathanBattle)
 UnspecifiedBattleConvo(Xavens,Chapter5,0x10,C5XavensBattle)
+SpecifiedBattleConvo(Gore,Egil,Chapter5,0x15,C5EgilGoreBattle)
 UnspecifiedBattleConvo(Egil,Chapter5,0x11,C5EgilBattle)
 UnspecifiedBattleConvo(Harla,Chapter5,0x12,C5HarlaBattle)
+SpecifiedBattleConvo(Nathan,BossSaewynn,Chapter5,0x16,C5SaewynnNathanBattle)
+SpecifiedBattleConvo(Gore,BossSaewynn,Chapter5,0x17,C5SaewynnGoreBattle)
+SpecifiedBattleConvo(Astarte,BossSaewynn,Chapter5,0x18,C5SaewynnAstarteBattle)
+SpecifiedBattleConvo(Cleone,BossSaewynn,Chapter5,0x19,C5SaewynnCleoneBattle)
+SpecifiedBattleConvo(Benthus,BossSaewynn,Chapter5,0x1a,C5SaewynnBenthusBattle)
+SpecifiedBattleConvo(Kryst,BossSaewynn,Chapter5,0x1b,C5SaewynnKrystBattle)
+SpecifiedBattleConvo(Jacqwil,BossSaewynn,Chapter5,0x1c,C5SaewynnJacqwilBattle)
 UnspecifiedBattleConvo(BossSaewynn,Chapter5,0x13,C5SaewynnBattle)
 
 //c8

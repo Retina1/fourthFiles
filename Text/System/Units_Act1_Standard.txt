@@ -70,6 +70,13 @@ F. Emblem[X]
 The Fire Emblem, and a runner of[N]
 inhuman talent. She's scatterbrained.[X]
 
+//trybel
+##Name_Meilie
+Meilie[X]
+##Desc_Meilie
+A friendly and brash wanderer. She[N]
+has an intense competitive spirit.[X]
+
 //rasta
 ##Name_Esketit
 Esketit[X]

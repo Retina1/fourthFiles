@@ -69,7 +69,7 @@ FelicityMug
 HeriMug
 KoletteMug
 AnjelicaMug
-SaoirseMug
+NotreMug
 PallasMug
 RadagastMug
 PatriceMug
@@ -195,6 +195,13 @@ TheUnexpectedMug
 GoreEyepatchMug
 GorePluckedMug
 MimiMug
+WrenMug
+YasmineMug
+YasmineSharkMug
+BossSaewynnMug
+YosephaMug
+MeilieMug
+AlfonsoMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

@@ -40,6 +40,9 @@ UNIT
 Recruit_Emblem:
 UNIT Emblem 0x0 0x1 Level(1,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
 UNIT
+Recruit_Meilie:
+UNIT Meilie 0x0 0x1 Level(4,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Shortspear,Vulnerary] NoAI
+UNIT
 
 Recruit_Esketit:
 UNIT Esketit 0x0 0x1 Level(6,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace] NoAI
@@ -109,6 +112,9 @@ EndEvent
 Emblem_RecruitEvent:
 GuildRecruit(Emblem,Guild_Test_Dialogue,0x24)
 EndEvent
+Meilie_RecruitEvent:
+GuildRecruit(Meilie,Guild_Test_Dialogue,0x25)
+EndEvent
 
 //raider
 Esketit_RecruitEvent:
@@ -167,6 +173,7 @@ GuildLoad(Johnnie,Recruit_Johnnie,0x2)
 GuildLoad(Kolette,Recruit_Kolette,0x3)
 GuildLoad(Pallas,Recruit_Pallas,0x4)
 GuildLoad(Emblem,Recruit_Emblem,0x5,Chapter8DoneFlag)
+GuildLoad(Meilie,Recruit_Meilie,0x6)
 FADU 10
 ENDA
 

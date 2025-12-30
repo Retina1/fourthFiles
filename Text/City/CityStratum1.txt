@@ -9,14 +9,22 @@ do the same.[AN]
 You've a big trial coming,[N]
 and you'll need the rest.[AN][Clear][MidRight]
 Alright. [...]You've got this.[N]
-Just[...] breathe.[AN][Close][MoveMidLeft][MidRight][Ayda][Event]
+Just[...] breathe.[A][X]
+##CityS1_EndText2
+[MidRight][Ayda]
 [...]For if you don't,[N]
-all shall be naught.[AN][MidLeft][MoveMidLeft]
-Huh?[AN][MidRight][Clear][MidLeft][Close][Clear][Nathan]
+all shall be naught.[A][X]
+##CityS1_EndText3
+[MidLeft][Nathan]
+Huh?[A][X]
+##CityS1_EndText4
+[MidLeft][Nathan]
 [...]I could've sworn[N]
 I heard somebody.[AN][CloseEyes]
 Probably just nerves.[AN]
-I'll[...] be fine.[AN][Clear][MidRight][Ayda][CloseEyes]
+I'll[...] be fine.[A][X]
+##CityS1_EndText5
+[MidRight][Ayda][CloseEyes]
 [...]Become the one to[N]
 break us all free.[A][X]
 

@@ -64,6 +64,16 @@ ALIGN 4
 Astarte_WarMagusDMP:
 #incbin "paletteFiles/MainStory/Astarte_WarMagus.dmp"
 
+setPalette(Rat_Lurker, Rat_LurkerDMP)
+setPalette(Rat_Hexer, Rat_HexerDMP)
+CharPalette(Rat,Rat_Lurker,Lurker,Rat_Hexer,Hexer)
+ALIGN 4
+Rat_LurkerDMP:
+#incbin "paletteFiles/MainStory/Rat_Lurker.dmp"
+ALIGN 4
+Rat_HexerDMP:
+#incbin "paletteFiles/MainStory/Rat_Hexer.dmp"
+
 setPalette(Benthus_Noble, Benthus_NobleDMP)
 setPalette(Benthus_Sovereign, Benthus_SovereignDMP)
 CharPalette(Benthus,Benthus_Noble,Noble,Benthus_Sovereign,Sovereign)

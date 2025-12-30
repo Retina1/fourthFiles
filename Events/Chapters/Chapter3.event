@@ -274,7 +274,7 @@ EndEvent
 
 EndingScene:
 ENUT Chapter3DoneFlag
-MUSC 0x0
+MUSC Song_EditMode
 CleanTextNoMap(0x18,Chapter3_Ending_1)
 MUSC Song_Salem
 CleanTextNoMap(0x0,Chapter3_Ending_2)

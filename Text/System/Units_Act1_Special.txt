@@ -6,12 +6,12 @@ Luis[X]
 A godless preacher serving his father's[N]
 memory. He's standoffish yet protective.[X]
 
-//corgaylia
-##Name_Saoirse
-Saoirse[X]
-##Desc_Saoirse
-A cheerful Asketan who unleashes their[N]
-sadism in battle. She's a bit awkward.[X]
+//fuck it we have an extra DH we're notreing
+##Name_Notre
+Notre[X]
+##Desc_Notre
+A former mercenary turned inquisitor of[N]
+Asketa. He's both jovial and treacherous.[X]
 
 //alguien
 ##Name_Wund
@@ -39,6 +39,13 @@ Noelle[X]
 ##Desc_Noelle
 A laid-back huntress and wife to a[N]
 Belvarusi noblelady. She's charitable.[X]
+
+//amalga
+##Name_Yasmine
+Yasmine[X]
+##Desc_Yasmine
+A serene huntress skilled in protecting[N]
+her allies. She's a beacon of hope.[X]
 
 
 //misha

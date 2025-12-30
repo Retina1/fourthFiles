@@ -267,6 +267,7 @@ FlashCursor(Cleone,30)
 TurnAlly(Cleone)
 FlashCursor(Benthus,30)
 TurnAlly(Benthus); STAL 30
+MUSC Song_EditMode
 CleanTextNoMap(0x0,C1_Ending_1)
 MoveToChapter(Chapter2)
 ENDA

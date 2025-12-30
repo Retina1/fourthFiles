@@ -62,7 +62,7 @@ ALIGN 4
 //thx hiraya
 FrancescaDMP:
 #incbin "dmps/hirayaFrancesca.dmp"
-setMugEntry(FrancescaMug,FrancescaDMP,2,5,3,3)
+setMugEntry(FrancescaMug,FrancescaDMP,3,5,3,3)
 ALIGN 4
 BenthusDMP:
 #incbin "dmps/retinaBenthus.dmp"
@@ -125,6 +125,12 @@ RatatoskrDMP:
 setMugEntry(RatatoskrMug,RatatoskrDMP,4,6,4,4)
 
 ALIGN 4
+//windmage
+AlfonsoDMP:
+#incbin "dmps/windmageAlfonso.dmp"
+setMugEntry(AlfonsoMug,AlfonsoDMP,3,5,3,2)
+
+ALIGN 4
 //ultrax
 TheUnexpectedDMP:
 #incbin "dmps/ultraxTheUnexpected.dmp"
@@ -140,13 +146,17 @@ ALIGN 4
 //siffus
 LyudDMP:
 #incbin "dmps/siffusLyud.dmp"
-setMugEntry(LyudMug,LyudDMP,4,5,3,3)
+setMugEntry(LyudMug,LyudDMP,3,5,3,3)
 
 ALIGN 4
 //lobotomy
 PeregrineDMP:
 #incbin "dmps/lobotomyPeregrine.dmp"
-setMugEntry(PeregrineMug,PeregrineDMP,2,5,3,3)
+setMugEntry(PeregrineMug,PeregrineDMP,4,6,4,4)
+ALIGN 4
+WrenDMP:
+#incbin "dmps/lobotomyWren.dmp"
+setMugEntry(WrenMug,WrenDMP,4,6,4,4)
 
 ALIGN 4
 //grexius
@@ -214,7 +224,7 @@ ALIGN 4
 //hiraya
 RiverDMP:
 #incbin "dmps/hirayaRiver.dmp"
-setMugEntry(RiverMug,RiverDMP,2,5,3,3)
+setMugEntry(RiverMug,RiverDMP,3,5,3,3)
 
 ALIGN 4
 //lotus
@@ -239,6 +249,14 @@ ALIGN 4
 MaragDMP:
 #incbin "dmps/amalgaphoneMarag.dmp"
 setMugEntry(MaragMug,MaragDMP,2,6,3,4)
+ALIGN 4
+YasmineDMP:
+#incbin "dmps/amalgaphoneYasmine.dmp"
+setMugEntryExtend(YasmineMug,YasmineDMP,2,4,2,2, 0,4,10,4)
+ALIGN 4
+YasmineSharkDMP:
+#incbin "dmps/amalgaphoneYasmineShark.dmp"
+setMugEntryExtend(YasmineSharkMug,YasmineSharkDMP,0,4,2,2, 0,4,10,4)
 
 ALIGN 4
 //thorn
@@ -413,6 +431,10 @@ ALIGN 4
 JuniperDMP:
 #incbin "dmps/trybelJuniper.dmp"
 setMugEntry(JuniperMug,JuniperDMP,2,5,3,3)
+ALIGN 4
+MeilieDMP:
+#incbin "dmps/trybelMeilie.dmp"
+setMugEntry(MeilieMug,MeilieDMP,4,6,4,4)
 
 ALIGN 4
 //sarkan

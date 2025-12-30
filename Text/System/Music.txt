@@ -131,6 +131,12 @@ Deltarune[X]
 ##SongTitle_WiseWords
 Wise Words[X]
 
+
+##SourceTitle_RondoOfSwords
+Rondo of Swords[X]
+##SongTitle_BGM7
+BGM 7[X]
+
 ##SourceTitle_LisaThePointless
 Lisa the Pointless[X]
 ##SongTitle_ModernDayOuroboros ^
@@ -182,6 +188,15 @@ Yeah Yeah Yeahs[X]
 ##SongTitle_Maps
 Maps[X]
 
+##SourceTitle_PicrossDS
+Picross DS[X]
+##SongTitle_Ambient
+Ambient[X]
+##SongTitle_EditMode
+Edit Mode[X]
+##SongTitle_Musette
+Musette[X]
+
 ##SourceTitle_RRThiel
 RRThiel[X]
 ##SongTitle_Castle
@@ -228,3 +243,5 @@ Escape (Runa)[X]
 Revolution (Runa)[X]
 ##SongTitle_Fracas
 Fracas! (Chair)[X]
+##SongTitle_DevilsRoulette ^
+The Devil's Roulette (MarkyJoe)[X]

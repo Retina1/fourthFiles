@@ -13,7 +13,52 @@ MUSC Song_OohWilfre
 CleanTextNoMap(0x0, CityS1_PrePreps)
 ENDA
 
+ALIGN 4
+C5CityOpenUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [7,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+ALIGN 4
+C5CityVoidUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [7,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+ALIGN 4
 Chapter5CityOpen:
+//eventing in guildhall or somewhere
+MUSC Song_DevilsRoulette
+LOAD1 0x1 C5CityOpenUnits; ENUN
+CAM1 [0,13]
+FADU 10
+STAL 120
+FADI 5
+LOMA Chapter1
+TILECHANGE 0x0
+CLEA 0
+LOAD1 0x1 C5CityVoidUnits; ENUN
+//in void
+FADU 5
+STAL 60
+FlashCursor(Nathan,30); SoloText(City05_VoidNathan1); STAL 30
+FlashCursor(Cleone,30); SoloText(City05_VoidCleone1); STAL 30
+FlashCursor(Nathan,30); SoloText(City05_VoidNathan2); STAL 30
+FlashCursor(Cleone,30); SoloText(City05_VoidCleone2); STAL 30
+FADI 5
+LOMA HirschringSquare
+CLEA 0
+LOAD1 0x1 C5CityOpenUnits; ENUN
+CAM1 [0,13]
+FADU 5
+//in city
+STAL 60
+Text(City05_OpeningCleone)
+STAL 20
+//cleone walks
+STAL 20
+MOVE 10 Cleone [4,3]; ENUN
+STAL 20
+FADI 10
 MUSC Song_OohWilfre
-CleanTextNoMap(0x0, FillerDialogue)
+CleanTextNoMap(0x0, City05_PrePreps)
 ENDA

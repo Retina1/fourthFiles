@@ -19,6 +19,9 @@ UNIT
 Recruit_Juliette:
 UNIT Juliette 0x0 0x1 Level(5,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [HealScroll] NoAI
 UNIT
+Recruit_Yosepha:
+UNIT Yosepha 0x0 0x1 Level(1,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [FictionScroll,Medica] NoAI
+UNIT
 
 Recruit_Phespher:
 UNIT Phespher 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Staff] NoAI
@@ -37,6 +40,9 @@ UNIT Jebet 0x0 0x1 Level(4,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [RestoreScroll,Wand] No
 UNIT
 Recruit_Wont:
 UNIT Wont 0x0 0x1 Level(14,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [BlindGas] NoAI
+UNIT
+Recruit_Wren:
+UNIT Wren 0x0 0x1 Level(1,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Staff,Vulnerary] NoAI
 UNIT
 
 Recruit_Saewynn:
@@ -93,6 +99,9 @@ EndEvent
 Juliette_RecruitEvent:
 GuildRecruit(Juliette,Guild_Test_Dialogue,0x25)
 EndEvent
+Yosepha_RecruitEvent:
+GuildRecruit(Yosepha,Guild_Test_Dialogue,0x26)
+EndEvent
 
 //seeker
 Phespher_RecruitEvent:
@@ -112,6 +121,9 @@ GuildRecruit(Jebet,Guild_Test_Dialogue,0x24)
 EndEvent
 Wont_RecruitEvent:
 GuildRecruit(Wont,Guild_Test_Dialogue,0x25)
+EndEvent
+Wren_RecruitEvent:
+GuildRecruit(Wren,Guild_Test_Dialogue,0x26)
 EndEvent
 
 //priest
@@ -161,6 +173,7 @@ GuildLoad(Jacqwil,Recruit_Jacqwil,0x3)
 GuildLoad(Polymnia,Recruit_Polymnia,0x4)
 GuildLoad(Lucien,Recruit_Lucien,0x5)
 GuildLoad(Juliette,Recruit_Juliette,0x6,Chapter8DoneFlag)
+GuildLoad(Yosepha,Recruit_Yosepha,0x7)
 FADU 10
 ENDA
 
@@ -173,6 +186,7 @@ GuildLoad(Levia,Recruit_Levia,0x3,Chapter8DoneFlag)
 GuildLoad(Vasily,Recruit_Vasily,0x4)
 GuildLoad(Jebet,Recruit_Jebet,0x5)
 GuildLoad(Wont,Recruit_Wont,0x6)
+GuildLoad(Wren,Recruit_Wren,0x7)
 FADU 10
 ENDA
 
