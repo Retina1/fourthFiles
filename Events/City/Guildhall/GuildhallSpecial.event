@@ -2,8 +2,65 @@
 //Modified by Nintenlord
 
 Recruit_Luis:
-UNIT Luis 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT Luis 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [ThornWhip] NoAI
 UNIT
 
+//DH
+Luis_RecruitEvent:
+GuildRecruit(Luis,Guild_Test_Dialogue,0x20)
+EndEvent
+
+GuildhallLoadDarkHunters:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Luis,Recruit_Luis,0x1)
+FADU 10
+ENDA
+
+GuildhallLoadLancers:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Luis,Recruit_Luis,0x1)
+FADU 10
+ENDA
+
+GuildhallLoadBrawlers:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Luis,Recruit_Luis,0x1)
+FADU 10
+ENDA
+
+GuildhallLoadHunters:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Luis,Recruit_Luis,0x1)
+FADU 10
+ENDA
+
+
 GuildhallSpecialMenuEvent:
+CallMenu(RecruitSpecialMenu)
+SVAL 0x1 0
+BNE 0x2000 0xc 0x1
+CALL GuildhallLoadDarkHunters
+GOTO 0x2008
+LABEL 0x2000
+SVAL 0x1 1
+BNE 0x2001 0xc 0x1
+CALL GuildhallLoadLancers
+GOTO 0x2008
+LABEL 0x2001
+SVAL 0x1 2
+BNE 0x2002 0xc 0x1
+CALL GuildhallLoadBrawlers
+GOTO 0x2008
+LABEL 0x2002
+SVAL 0x1 3
+BNE 0x2003 0xc 0x1
+CALL GuildhallLoadHunters
+GOTO 0x2008
+LABEL 0x2003
+SystemText(ErrorHandlerText)
+LABEL 0x2008
 ENDA

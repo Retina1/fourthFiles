@@ -1,0 +1,120 @@
+##OralExamQuestion2_1
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question number two.[AN]
+Where did you find and[N]
+fight the Beast King?[A][X]
+##OralExamAnswer2_1A
+Lethal Forest[X]
+##OralExamAnswer2_1ADesc
+If we went there, how[N]
+are we still alive?[X]
+##OralExamAnswer2_1B
+Clouded Wastes[X]
+##OralExamAnswer2_1BDesc
+What a waste of time.[X]
+##OralExamAnswer2_1C
+Shimmering Mines[X]
+##OralExamAnswer2_1CDesc
+Kings live in caves, right?[X]
+##OralExamAnswer2_1D
+Drowning Hollows[X]
+##OralExamAnswer2_1DDesc
+That sounds scary.[X]
+
+##OralExamQuestion2_2
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question number two.[AN]
+What is the Guildmaster's[N]
+preferred weapon type?[A][X]
+##OralExamAnswer2_2A
+Swords[X]
+##OralExamAnswer2_2ADesc
+They're a cut above.[X]
+##OralExamAnswer2_2B
+Spears[X]
+##OralExamAnswer2_2BDesc
+They're to the point.[X]
+##OralExamAnswer2_2C
+Axes[X]
+##OralExamAnswer2_2CDesc
+They leave an impact.[X]
+##OralExamAnswer2_2D
+Bows[X]
+##OralExamAnswer2_2DDesc
+I can't think of a fourth joke.[X]
+
+##OralExamQuestion2_3
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question number two.[AN]
+Which imperial general sells[N]
+permits for the Standard Corps?[A][X]
+##OralExamAnswer2_3A
+First[X]
+##OralExamAnswer2_3ADesc
+They're number one.[X]
+##OralExamAnswer2_3B
+Second[X]
+##OralExamAnswer2_3BDesc
+Like a banana.[X]
+##OralExamAnswer2_3C
+Third[X]
+##OralExamAnswer2_3CDesc
+I'm pretty sure I read that[N]
+Third died. Sad, really.[X]
+##OralExamAnswer2_3D
+Fourth[X]
+##OralExamAnswer2_3DDesc
+Hack.[X]
+
+##OralExamQuestion2_4
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question number two.[AN]
+Where does Rat prefer to[N]
+spend their free time?[A][X]
+##OralExamAnswer2_4A
+Guildleague[X]
+##OralExamAnswer2_4ADesc
+Who'd want to live here?[X]
+##OralExamAnswer2_4B
+Bobby's[X]
+##OralExamAnswer2_4BDesc
+The food's fine.[X]
+##OralExamAnswer2_4C
+Clairiosities[X]
+##OralExamAnswer2_4CDesc
+Wait, is that what the[N]
+museum's called?[X]
+##OralExamAnswer2_4D
+Shadesong[X]
+##OralExamAnswer2_4DDesc
+Real creative.[X]
+
+##OralExamQuestion2_5
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question number two.[AN]
+What weapon does Gore want[N]
+most from Benjamin's?[A][X]
+##OralExamAnswer2_5A
+Pepperbox[X]
+##OralExamAnswer2_5ADesc
+Mmm. Sounds tasty.[X]
+##OralExamAnswer2_5B
+Twinshot[X]
+##OralExamAnswer2_5BDesc
+It's called twinshot because[N]
+there are two shots.[X]
+##OralExamAnswer2_5C
+Meisterkugel[X]
+##OralExamAnswer2_5CDesc
+Some kind of dead language.[X]
+##OralExamAnswer2_5D
+Snipistol[X]
+##OralExamAnswer2_5DDesc
+That sounds illegal.[X]
+
+

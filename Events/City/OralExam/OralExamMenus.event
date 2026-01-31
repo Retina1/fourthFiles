@@ -1,0 +1,158 @@
+#define OralExamMenuDef(commands) "MenuDefinition(6, 5, 18, 0, 1, commands)"
+#define OralExamMenuOptions(firstTextID) "MenuOption(firstTextID+0, firstTextID+1, 0);MenuOption(firstTextID+2, firstTextID+3, 0);MenuOption(firstTextID+4, firstTextID+5, 0);MenuOption(firstTextID+6, firstTextID+7, 0);MenuTerminator"
+#define OralExamMenuOptionsSpecial(firstTextID) "MenuOption(firstTextID+0, firstTextID+1, 0);MenuOption(firstTextID+2, firstTextID+3, 0);MenuOption(firstTextID+4, firstTextID+5, 0);MenuOption(firstTextID+6, firstTextID+7, 0);MenuOption(firstTextID+8, firstTextID+9, 0);MenuTerminator"
+
+ALIGN 4
+OralExamMenu1_1:
+OralExamMenuDef(OralExamCommands1_1)
+ALIGN 4
+OralExamCommands1_1:
+OralExamMenuOptions(OralExamAnswer1_1A)
+ALIGN 4
+OralExamMenu1_2:
+OralExamMenuDef(OralExamCommands1_2)
+ALIGN 4
+OralExamCommands1_2:
+OralExamMenuOptions(OralExamAnswer1_2A)
+ALIGN 4
+OralExamMenu1_3:
+OralExamMenuDef(OralExamCommands1_3)
+ALIGN 4
+OralExamCommands1_3:
+OralExamMenuOptions(OralExamAnswer1_3A)
+ALIGN 4
+OralExamMenu1_4:
+OralExamMenuDef(OralExamCommands1_4)
+ALIGN 4
+OralExamCommands1_4:
+OralExamMenuOptions(OralExamAnswer1_4A)
+ALIGN 4
+OralExamMenu1_5:
+OralExamMenuDef(OralExamCommands1_5)
+ALIGN 4
+OralExamCommands1_5:
+OralExamMenuOptions(OralExamAnswer1_5A)
+
+ALIGN 4
+OralExamMenu2_1:
+OralExamMenuDef(OralExamCommands2_1)
+ALIGN 4
+OralExamCommands2_1:
+OralExamMenuOptions(OralExamAnswer2_1A)
+ALIGN 4
+OralExamMenu2_2:
+OralExamMenuDef(OralExamCommands2_2)
+ALIGN 4
+OralExamCommands2_2:
+OralExamMenuOptions(OralExamAnswer2_2A)
+ALIGN 4
+OralExamMenu2_3:
+OralExamMenuDef(OralExamCommands2_3)
+ALIGN 4
+OralExamCommands2_3:
+OralExamMenuOptions(OralExamAnswer2_3A)
+ALIGN 4
+OralExamMenu2_4:
+OralExamMenuDef(OralExamCommands2_4)
+ALIGN 4
+OralExamCommands2_4:
+OralExamMenuOptions(OralExamAnswer2_4A)
+ALIGN 4
+OralExamMenu2_5:
+OralExamMenuDef(OralExamCommands2_5)
+ALIGN 4
+OralExamCommands2_5:
+OralExamMenuOptions(OralExamAnswer2_5A)
+
+ALIGN 4
+OralExamMenu3_1:
+OralExamMenuDef(OralExamCommands3_1)
+ALIGN 4
+OralExamCommands3_1:
+OralExamMenuOptions(OralExamAnswer3_1A)
+ALIGN 4
+OralExamMenu3_2:
+OralExamMenuDef(OralExamCommands3_2)
+ALIGN 4
+OralExamCommands3_2:
+OralExamMenuOptions(OralExamAnswer3_2A)
+ALIGN 4
+OralExamMenu3_3:
+OralExamMenuDef(OralExamCommands3_3)
+ALIGN 4
+OralExamCommands3_3:
+OralExamMenuOptions(OralExamAnswer3_3A)
+ALIGN 4
+OralExamMenu3_4:
+OralExamMenuDef(OralExamCommands3_4)
+ALIGN 4
+OralExamCommands3_4:
+OralExamMenuOptions(OralExamAnswer3_4A)
+ALIGN 4
+OralExamMenu3_5:
+OralExamMenuDef(OralExamCommands3_5)
+ALIGN 4
+OralExamCommands3_5:
+OralExamMenuOptions(OralExamAnswer3_5A)
+
+ALIGN 4
+OralExamMenu4_1:
+OralExamMenuDef(OralExamCommands4_1)
+ALIGN 4
+OralExamCommands4_1:
+OralExamMenuOptions(OralExamAnswer4_1A)
+ALIGN 4
+OralExamMenu4_2:
+OralExamMenuDef(OralExamCommands4_2)
+ALIGN 4
+OralExamCommands4_2:
+OralExamMenuOptions(OralExamAnswer4_2A)
+ALIGN 4
+OralExamMenu4_3:
+OralExamMenuDef(OralExamCommands4_3)
+ALIGN 4
+OralExamCommands4_3:
+OralExamMenuOptions(OralExamAnswer4_3A)
+ALIGN 4
+OralExamMenu4_4:
+OralExamMenuDef(OralExamCommands4_4)
+ALIGN 4
+OralExamCommands4_4:
+OralExamMenuOptions(OralExamAnswer4_4A)
+ALIGN 4
+OralExamMenu4_5:
+OralExamMenuDef(OralExamCommands4_5)
+ALIGN 4
+OralExamCommands4_5:
+OralExamMenuOptions(OralExamAnswer4_5A)
+
+ALIGN 4
+OralExamMenu5_1:
+OralExamMenuDef(OralExamCommands5_1)
+ALIGN 4
+OralExamCommands5_1:
+OralExamMenuOptions(OralExamAnswer5_1A)
+ALIGN 4
+OralExamMenu5_2:
+OralExamMenuDef(OralExamCommands5_2)
+ALIGN 4
+OralExamCommands5_2:
+OralExamMenuOptions(OralExamAnswer5_2A)
+ALIGN 4
+OralExamMenu5_3:
+OralExamMenuDef(OralExamCommands5_3)
+ALIGN 4
+OralExamCommands5_3:
+OralExamMenuOptions(OralExamAnswer5_3A)
+ALIGN 4
+OralExamMenu5_4:
+OralExamMenuDef(OralExamCommands5_4)
+ALIGN 4
+OralExamCommands5_4:
+OralExamMenuOptions(OralExamAnswer5_4A)
+ALIGN 4
+OralExamMenu5_5:
+OralExamMenuDef(OralExamCommands5_5)
+ALIGN 4
+OralExamCommands5_5:
+OralExamMenuOptionsSpecial(OralExamAnswer5_5A)

@@ -11,8 +11,10 @@
 
 		StaffHelpTextCheck:
 		push	{r14}
-		blh		GetItemAttributes, r1
-		mov		r1, #4
+		push    {r0-r4}
+		blh		GetItemWeaponType, r1
+		@ item type 6 is our staves
+		mov		r1, #6
 		tst		r1, r0
 		beq		ReturnFalse
 
@@ -23,6 +25,7 @@
 		mov		r0, #0
 		
 		End:
+		pop     {r0-r4}
 		pop		{r1}
 		bx		r1
 		

@@ -262,6 +262,38 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
         }
 }
 
+void UpdateActorFromBattle(void) {
+    UpdateUnitFromBattle(GetUnit(gBattleActor.unit.index), &gBattleActor);
+}
+
+static const struct ProcCmd sProcScr_BattleAnimSimpleLock[] = {
+    PROC_SLEEP(1),
+    PROC_CALL(UpdateActorFromBattle),
+    PROC_END
+};
+
+//both of these are durability stuff
+void BattleApplyItemEffect(struct Proc* proc) {
+    (++gBattleHitIterator)->info = BATTLE_HIT_INFO_END;
+
+    BattleApplyItemExpGains();
+
+    if (gBattleActor.canCounter) {
+        if (GetItemType(gBattleActor.weapon) & 0x6)
+            gBattleActor.weaponBroke = TRUE;
+
+		int allegiance = (gBattleActor.unit.index & 0xC0);
+		if (allegiance == FACTION_BLUE) {
+			gBattleActor.weapon = GetItemAfterUse(gBattleActor.weapon);
+		}
+        gBattleActor.unit.items[gBattleActor.weaponSlotIndex] = gBattleActor.weapon;
+
+        if (gBattleActor.weapon)
+            gBattleActor.weaponBroke = FALSE;
+    }
+
+    Proc_StartBlocking(sProcScr_BattleAnimSimpleLock, proc);
+}
 
 void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* defender) {
     attacker->wexpMultiplier++;

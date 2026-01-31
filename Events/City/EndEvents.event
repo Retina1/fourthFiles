@@ -53,6 +53,6 @@ Text(CityS1_EndText5)
 ENDA
 
 Chapter5CityEnd:
-MUSC Song_OohWilfre
-CleanTextNoMap(0x0, FillerDialogue)
+MUSC Song_DevilsRoulette
+CleanTextNoMap(0x0, City05_EndText)
 ENDA

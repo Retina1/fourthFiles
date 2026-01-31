@@ -60,6 +60,8 @@ POP
 
 #include "ChangeUnitDesc/Installer.event"
 
+#include "RNGRandomizer/RNGRandomizerInstaller.event"
+
 //TODO - remove/edit eventually
 //#include "_Debugger/Installer.event"
 

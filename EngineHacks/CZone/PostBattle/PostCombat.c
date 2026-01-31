@@ -12,7 +12,32 @@ void RunPostCombatSkills(void)
 		ApplyRichLiving(attacker,defender);
 		ApplyRallyingThrust(attacker,defender);
 	}
+	ApplyDuelistGaleDuelist(gActiveUnit);
 }
+
+//edit for galeforce
+void MoveActiveUnit(int x, int y) {
+    gActiveUnit->xPos = x;
+    gActiveUnit->yPos = y;
+
+	if (!(UNIT_HAS_SKILL(gActiveUnit,FNC,promoSkill_531))){
+		gActiveUnit->state |= US_UNSELECTABLE;
+	}
+	//i am in turbo hell
+	else {
+		gActiveUnit->state = gActiveUnit->state &~ US_CANTOING;
+		if ((gActiveUnit->classSkillState & 0x10) == 0) {
+			gActiveUnit->state |= US_UNSELECTABLE;
+		}
+	}
+    PidStatsAddSquaresMoved(gActiveUnit->pCharacterData->number, gActionData.moveCount);
+
+    if (GetUnitCurrentHp(gActiveUnit) != 0)
+        gActiveUnit->state = gActiveUnit->state &~ US_HIDDEN;
+
+    UnitFinalizeMovement(gActiveUnit);
+}
+
 
 
 bool HandlePostActionTraps(ProcPtr proc) {
@@ -55,6 +80,12 @@ bool TryMakeCantoUnit(ProcPtr proc)
         return false;
     }
 	
+	if (UNIT_HAS_SKILL(gActiveUnit,FNC,promoSkill_531)){
+		if ((gActiveUnit->classSkillState & 0x10) != 0) {
+			return false;
+		}
+	}
+	
 	if ((UNIT_HAS_SKILL(gActiveUnit,FNC,skill_131)))
     {
 		// fuck it just make it a flat bonus 2 tiles
@@ -70,16 +101,15 @@ bool TryMakeCantoUnit(ProcPtr proc)
     {
         return false;
     }
+	
 
-/*
+
     switch (gActionData.unitActionType)
     {
         case UNIT_ACTION_WAIT:
-        case UNIT_ACTION_COMBAT:
-        case UNIT_ACTION_STAFF:
         		 return false;
     }
-	*/
+	
 
 //	disable in city
     if (CheckEventId_(0x120)) {

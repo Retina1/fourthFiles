@@ -1,3 +1,9 @@
+//load2 stuff
+PUSH
+ORG 0x9ED674
+BYTE Nathan Gore Astarte Cleone Benthus Rat Guildmaster 0x0
+POP
+
 //always ranged animate
 PUSH
 ORG 0x00582A8

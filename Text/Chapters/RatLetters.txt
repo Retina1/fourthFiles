@@ -3,6 +3,23 @@ Trust me.[N]
 [N]
 [A]- Rat[A][X]
 
+##RatCh5xLetter
+Thanks for covering me.[N]
+Come here if you ever need[N]
+to find me in the future.[AN]
+I'm quite fond of this venue.[N]
+It's a nice ambiance, I find.[N]
+Better than the League.[AN]
+...You think I could get the[N]
+Guildmaster to hire musicians?[N]
+As a permanent thing, I mean.[AN]
+Ask him for me sometime.[AN]
+...Right. Cleone. Don't worry.[N]
+I believe in her.[AN]
+Especially if you do too.[AN]
+[N]
+- Rat[A][X]
+
 ##Rat8xLetter
 kill yourself[N]
 [N]

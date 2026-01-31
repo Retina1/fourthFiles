@@ -24,6 +24,9 @@ UNIT
 Recruit_Azaghal:
 UNIT Azaghal 0x0 0x1 Level(7,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortsword,Vulnerary,Medica] NoAI
 UNIT
+Recruit_Tachyon:
+UNIT Tachyon 0x0 0x1 Level(3,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
 
 Recruit_Aizen:
 UNIT Aizen 0x0 0x1 Level(6,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortspear,Bravant] NoAI
@@ -95,6 +98,9 @@ EndEvent
 Azaghal_RecruitEvent:
 GuildRecruit(Azaghal,Guild_Test_Dialogue,0x24)
 EndEvent
+Tachyon_RecruitEvent:
+GuildRecruit(Tachyon,Guild_Test_Dialogue,0x25)
+EndEvent
 
 //riders
 Aizen_RecruitEvent:
@@ -162,6 +168,7 @@ GuildLoad(Mikayla,Recruit_Mikayla,0x2)
 GuildLoad(Calliope,Recruit_Calliope,0x3)
 GuildLoad(Ghari,Recruit_Ghari,0x4,Chapter5DoneFlag)
 GuildLoad(Azaghal,Recruit_Azaghal,0x5)
+GuildLoad(Tachyon,Recruit_Tachyon,0x6)
 FADU 10
 ENDA
 

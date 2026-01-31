@@ -1,0 +1,127 @@
+#define OralExamQuestion(questionText,questionMenu,correctAnswer,targetLabel) "Text(questionText); REMA; SystemText(OralExamMakeYourChoice);RefreshLordSplitTiles; CallMenu(questionMenu); SVAL 0x1 correctAnswer; BNE 0xBAD 0xc 0x1; SystemText(OralExamDecisionMade); GOTO targetLabel"
+ALIGN 4
+OralExamEvent:
+Text(OralExamPreIntro)
+SystemText(OralExamBeginPrompt)
+IfNoSelectedGoto(0x1000)
+Text(OralExamBegin)
+//quiz music
+MUSC 0x0
+ENUT 0x28
+
+//question 1
+RANDOMNUMBER 4
+	SVAL 0x1 0
+	BNE 0x101 0x1 0xc
+	OralExamQuestion(OralExamQuestion1_1,OralExamMenu1_1,1,0x106)
+	LABEL 0x101
+	SVAL 0x1 1
+	BNE 0x102 0x1 0xc
+	OralExamQuestion(OralExamQuestion1_2,OralExamMenu1_2,0,0x106)
+	LABEL 0x102
+	SVAL 0x1 2
+	BNE 0x103 0x1 0xc 
+	OralExamQuestion(OralExamQuestion1_3,OralExamMenu1_3,2,0x106)
+	LABEL 0x103
+	SVAL 0x1 3
+	BNE 0x104 0x1 0xc
+	OralExamQuestion(OralExamQuestion1_4,OralExamMenu1_4,3,0x106)
+	LABEL 0x104
+	OralExamQuestion(OralExamQuestion1_5,OralExamMenu1_5,2,0x106)
+LABEL 0x106
+//question 2
+RANDOMNUMBER 4
+	SVAL 0x1 0
+	BNE 0x201 0x1 0xc
+	OralExamQuestion(OralExamQuestion2_1,OralExamMenu2_1,0,0x206)
+	LABEL 0x201
+	SVAL 0x1 1
+	BNE 0x202 0x1 0xc
+	OralExamQuestion(OralExamQuestion2_2,OralExamMenu2_2,1,0x206)
+	LABEL 0x202
+	SVAL 0x1 2
+	BNE 0x203 0x1 0xc 
+	OralExamQuestion(OralExamQuestion2_3,OralExamMenu2_3,1,0x206)
+	LABEL 0x203
+	SVAL 0x1 3
+	BNE 0x204 0x1 0xc
+	OralExamQuestion(OralExamQuestion2_4,OralExamMenu2_4,3,0x206)
+	LABEL 0x204
+	OralExamQuestion(OralExamQuestion2_5,OralExamMenu2_5,2,0x206)
+LABEL 0x206
+//question 3
+RANDOMNUMBER 4
+	SVAL 0x1 0
+	BNE 0x301 0x1 0xc
+	OralExamQuestion(OralExamQuestion3_1,OralExamMenu3_1,0,0x306)
+	LABEL 0x301
+	SVAL 0x1 1
+	BNE 0x302 0x1 0xc
+	OralExamQuestion(OralExamQuestion3_2,OralExamMenu3_2,1,0x306)
+	LABEL 0x302
+	SVAL 0x1 2
+	BNE 0x303 0x1 0xc 
+	OralExamQuestion(OralExamQuestion3_3,OralExamMenu3_3,3,0x306)
+	LABEL 0x303
+	SVAL 0x1 3
+	BNE 0x304 0x1 0xc
+	OralExamQuestion(OralExamQuestion3_4,OralExamMenu3_4,0,0x306)
+	LABEL 0x304
+	OralExamQuestion(OralExamQuestion3_5,OralExamMenu3_5,3,0x306)
+LABEL 0x306
+//question 4
+RANDOMNUMBER 4
+	SVAL 0x1 0
+	BNE 0x401 0x1 0xc
+	OralExamQuestion(OralExamQuestion4_1,OralExamMenu4_1,0,0x406)
+	LABEL 0x401
+	SVAL 0x1 1
+	BNE 0x402 0x1 0xc
+	OralExamQuestion(OralExamQuestion4_2,OralExamMenu4_2,1,0x406)
+	LABEL 0x402
+	SVAL 0x1 2
+	BNE 0x403 0x1 0xc 
+	OralExamQuestion(OralExamQuestion4_3,OralExamMenu4_3,1,0x406)
+	LABEL 0x403
+	SVAL 0x1 3
+	BNE 0x404 0x1 0xc
+	OralExamQuestion(OralExamQuestion4_4,OralExamMenu4_4,3,0x406)
+	LABEL 0x404
+	OralExamQuestion(OralExamQuestion4_5,OralExamMenu4_5,1,0x406)
+LABEL 0x406
+//question 5
+RANDOMNUMBER 4
+	SVAL 0x1 0
+	BNE 0x501 0x1 0xc
+	OralExamQuestion(OralExamQuestion5_1,OralExamMenu5_1,3,0x506)
+	LABEL 0x501
+	SVAL 0x1 1
+	BNE 0x502 0x1 0xc
+	OralExamQuestion(OralExamQuestion5_2,OralExamMenu5_2,2,0x506)
+	LABEL 0x502
+	SVAL 0x1 2
+	BNE 0x503 0x1 0xc 
+	OralExamQuestion(OralExamQuestion5_3,OralExamMenu5_3,0,0x506)
+	LABEL 0x503
+	SVAL 0x1 3
+	BNE 0x504 0x1 0xc
+	OralExamQuestion(OralExamQuestion5_4,OralExamMenu5_4,1,0x506)
+	LABEL 0x504
+	OralExamQuestion(OralExamQuestion5_5,OralExamMenu5_5,0,0x506)
+LABEL 0x506
+//win
+MUSC Song_FaithIsMyPillar
+Text(OralExamPassed)
+SystemText(UnlockSpecialClassesSys)
+ENUT SpecialUnlockedFlag
+GOTO 0xBAA
+LABEL 0xBAD
+SystemText(OralExamDecisionMade)
+Text(OralExamIncorrect)
+LABEL 0xBAA
+MUSC Song_VastLands
+LABEL 0x1000
+ENDA
+
+//UnlockSpecialClassesSys
+

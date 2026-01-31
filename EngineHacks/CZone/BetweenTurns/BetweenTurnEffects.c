@@ -37,7 +37,7 @@ void TickActiveFactionTurn(void) {
 
         //funcs to handle state ticks
 		
-		
+		unit->state = (unit->state) &~ US_BIT_ALREADY_REFRESHED;
 
         if (unit->bindDuration != 0) {
             unit->bindDuration--;

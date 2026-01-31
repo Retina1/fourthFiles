@@ -1,0 +1,122 @@
+##OralExamQuestion4_1
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question four. You're nearly there.[AN]
+Which monster didn't show up[N]
+in the Lethal Forest?[A][X]
+##OralExamAnswer4_1A
+Gargoyle[X]
+##OralExamAnswer4_1ADesc
+Hrrrggghhhh.[X]
+##OralExamAnswer4_1B
+Woodrat[X]
+##OralExamAnswer4_1BDesc
+Rat.[X]
+##OralExamAnswer4_1C
+Crawler[X]
+##OralExamAnswer4_1CDesc
+Is that what we're[N]
+calling zombies?[X]
+##OralExamAnswer4_1D
+Centaur[X]
+##OralExamAnswer4_1DDesc
+I'm getting a[N]
+little horse.[X]
+
+##OralExamQuestion4_2
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question four. You're nearly there.[AN]
+How many skill points would a[N]
+fourteenth level scholar have?[A][X]
+##OralExamAnswer4_2A
+15[X]
+##OralExamAnswer4_2ADesc
+I wasn't ready for this.[X]
+##OralExamAnswer4_2B
+16[X]
+##OralExamAnswer4_2BDesc
+Forgive me.[X]
+##OralExamAnswer4_2C
+17[X]
+##OralExamAnswer4_2CDesc
+May the divines spare me.[X]
+##OralExamAnswer4_2D
+18[X]
+##OralExamAnswer4_2DDesc
+It's never the biggest one.[X]
+
+##OralExamQuestion4_3
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question four. You're nearly there.[AN]
+I am a Lancer. If I were to promote,[N]
+what would I become?[A][X]
+##OralExamAnswer4_3A
+Landsknecht[X]
+##OralExamAnswer4_3ADesc
+This can't be a real word.[X]
+##OralExamAnswer4_3B
+Highlander[X]
+##OralExamAnswer4_3BDesc
+Asketa's pretty low.[X]
+##OralExamAnswer4_3C
+Gladiator[X]
+##OralExamAnswer4_3CDesc
+I could see him doing[N]
+good in the arena.[X]
+##OralExamAnswer4_3D
+Survivalist[X]
+##OralExamAnswer4_3DDesc
+He's pretty good at[N]
+this surviving thing.[X]
+
+##OralExamQuestion4_4
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question four. You're nearly there.[AN]
+What type of animal is the mythical[N]
+trickster beast, Ratatoskr?[A][X]
+##OralExamAnswer4_4A
+Cat[X]
+##OralExamAnswer4_4ADesc
+Meow.[X]
+##OralExamAnswer4_4B
+Rabbit[X]
+##OralExamAnswer4_4BDesc
+Mmm. Bunny.[X]
+##OralExamAnswer4_4C
+Beaver[X]
+##OralExamAnswer4_4CDesc
+Dam it.[X]
+##OralExamAnswer4_4D
+Squirrel[X]
+##OralExamAnswer4_4DDesc
+I think you're nuts.[X]
+
+##OralExamQuestion4_5
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question four. You're nearly there.[AN]
+What feeling do you have when you're[N]
+about to encounter an FOE?[A][X]
+##OralExamAnswer4_5A
+Danger is afoot[X]
+##OralExamAnswer4_5ADesc
+How do you know[N]
+how I think?[X]
+##OralExamAnswer4_5B
+Life is at risk[X]
+##OralExamAnswer4_5BDesc
+Why do you know[N]
+how I think?[X]
+##OralExamAnswer4_5C
+Wind is howling[X]
+##OralExamAnswer4_5CDesc
+You're scaring me.[X]
+##OralExamAnswer4_5D
+Shiver down your spine[X]
+##OralExamAnswer4_5DDesc
+Mmm. Spines.[X]
+
+

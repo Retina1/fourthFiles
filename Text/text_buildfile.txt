@@ -58,6 +58,11 @@ between stats and growths.[X]
 
 #include "City/CityGeneral.txt"
 #include "City/Market.txt"
+#include "City/OralExamQ1.txt"
+#include "City/OralExamQ2.txt"
+#include "City/OralExamQ3.txt"
+#include "City/OralExamQ4.txt"
+#include "City/OralExamQ5.txt"
 
 #include "Dungeons/_System.txt"
 #include "Dungeons/_Dungeon1.txt"
@@ -389,20 +394,20 @@ other units. Pick carefully![X]
 
 # 0x057C ^
 Manage your units' items.[N]
-An armory with some basic[N]
-equipment is also available.[X]
+You can also access a shop[N]
+to buy some basic equipment.[X]
 
 
 # 0x057F ^
-Access the Skill menu for[N]
-a unit. You can also do this[N]
-during the map, if you wish.[X]
+Access the Custom menu for[N]
+a unit to invest their SP.[N]
+You can also do this during[N]
+battle, if you wish.[X]
 
 # 0x0580 ^
 View the map and reposition[N]
 your allies. You can also[N]
-check enemy formations,[N]
-as well as shop stock.[X]
+check enemy formations.[X]
 
 # 0x0581 ^
 Save any changes to your[N]
@@ -410,6 +415,9 @@ unit formation, items,[N]
 and skill expenditures.[N]
 Choose Restart Chapter[N]
 to continue your game.[X]
+
+# 0x0577
+Custom[.][X]
 
 # 0x06C4
 Steal an enemy's items.[X]
@@ -419,8 +427,7 @@ A secret shop.[N]
 For members only.[X]
 
 # 0x05BB
-Check the map and any[N]
-shops' inventories.[X]
+Check the map.[X]
 
 # 0x882
 An Ariadne Shard save will[N]

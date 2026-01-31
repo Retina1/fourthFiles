@@ -60,7 +60,7 @@ void RefreshItemsASMC(ProcPtr* proc) {
 
 u16 GetItemAfterUse(int item) {
     if (GetItemAttributes(item) & IA_UNBREAKABLE)
-        return item; // unbreakable items don't loose uses!
+        return item; // unbreakable items don't lose uses!
 
     item -= (1 << 8); // lose one use
 	

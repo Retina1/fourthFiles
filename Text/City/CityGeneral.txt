@@ -134,6 +134,11 @@ The Magus Guild has been[N]
 unlocked for recruitment![AN]
 Head over to the Guildhall[N]
 to check them out.[A][X]
+##UnlockSpecialClassesSys
+The Special Ops have been[N]
+unlocked for recruitment![AN]
+Head over to the Guildhall[N]
+to check them out.[A][X]
 
 ##TownTutorial
 Welcome to Hirschring! Here, you can[N]

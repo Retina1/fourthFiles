@@ -1,4 +1,17 @@
 ALIGN 4
+Market5xMenu:
+MenuDefinition(6, 5, 18, 0, 1, Market5xMenuOptions)
+
+ALIGN 4
+Market5xMenuOptions:
+MarketMenuOption(Visit5xMarket1, Visit5xMarket1Desc, 0x1a)
+MarketMenuOption(Visit5xMarket2, Visit5xMarket2Desc, 0x1b)
+MarketMenuOption(VisitAllMarket1, VisitAllMarket1Desc, 0x0)
+MarketMenuOption(VisitAllMarket2, VisitAllMarket2Desc, 0x0)
+MenuOption(LeaveMarketLabel, LeaveMarketDesc, 0)
+MenuTerminator
+
+ALIGN 4
 MarketS1xMenu:
 MenuDefinition(6, 5, 18, 0, 1, MarketS1xMenuOptions)
 

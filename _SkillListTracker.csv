@@ -397,7 +397,7 @@ Fencer,Rebound,"On taking damage, sharply boosts Avo.",None,1,Passive (Buff),,,
 ,Step Stab,"Stab, then after combat, +3 spaces Canto.","PROMO, Fancy Footwork 1",3,Attack,,,PostBattle
 ,Blurred Stab,"Extremely powerful, only usable after a dodge last EP.","Riposte Stab 2, Predict 2",5,Attack (Cond.),,,
 ,Thunderclap,"Almighty, power scales with Avo, disables Avo for a turn.","Haze Curtain 3, Rebound 1, Counter Stance 3",5,Attack (State),,,
-,Gale Duelist,"Get a second turn per phase, halving Move during it.","PROMO, Step Stab 3, Fleetfoot 1, Retreat Stab 2",5,Passive (State),,,PostBattle
+,Gale Duelist,"Get a second turn per phase, halving Move during it.","PROMO, Step Stab 3, Fleetfoot 1, Retreat Stab 2",5,Passive (State),X,mostly,PostBattle
 ,,,,,,,,
 Driver,Imperial Pride,1.2x Atk vs. non-Asketan factions.,None,1,Passive,X,,
 Imperial,Heat Shield,1.3x Def/Res while Overheated.,Assault Drive 1,1,Passive (State),,,

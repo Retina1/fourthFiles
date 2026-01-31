@@ -2335,8 +2335,8 @@ Label_FCE5D3:
 BGM7_007:
 //  #07 //000   ----------------------------------------
  BYTE   KEYSH   BGM7_key+0
- BYTE   VOICE   48
- BYTE   VOL   43*BGM7_mvl/mxv
+ BYTE   VOICE   81
+ BYTE   VOL   38*BGM7_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   N96  Gn0  v127
  BYTE   W96

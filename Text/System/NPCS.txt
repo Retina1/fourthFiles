@@ -142,3 +142,13 @@ Hitchcock[X]
 ##Desc_Hitchcock
 A Belvarusi guardsman near the border.[N]
 He's well-respected and resourceful.[X]
+##Name_Astoria
+Astoria[X]
+##Desc_Astoria
+A Belvarusi noble with familial ties to[N]
+the mines. She's also an Endbringer.[X]
+##Name_George
+George[X]
+##Desc_George
+A scavenger fascinated with Asketa.[N]
+He's the first Belvarusi driver.[X]

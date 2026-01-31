@@ -1,3 +1,15 @@
+//reds and greens don't do this - figure out how to actually make this like, work for usables
+void UnitUpdateUsedItem(struct Unit* unit, int itemSlot) {
+	if (UNIT_FACTION(unit) == FACTION_BLUE) {
+		if (unit->items[itemSlot]) {
+			unit->items[itemSlot] = GetItemAfterUse(unit->items[itemSlot]);
+			UnitRemoveInvalidItems(unit);
+		}
+	}
+}
+
+
+
 //send items on death
 void SetPidDefeatedFlag(u8 pid, int flag) {
     const struct ROMChapterData* chapterData;

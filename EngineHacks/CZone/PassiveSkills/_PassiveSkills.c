@@ -450,6 +450,7 @@ long long ClassSkillMovBoost(u8 stat, struct Unit* unit) {
 	stat = ApplyDuelistFleetfoot(stat,unit);
 	stat = ApplyMovBuff(stat,unit);
 	//mul
+	stat = ApplyDuelistGaleDuelistMovement(stat,unit);
 	stat = ApplyLegBind(stat,unit);
 
 	//if no rescue flag is on, nathan gets 15 move and everyone else gets none

@@ -157,7 +157,7 @@ ALIGN 4
 BeginningScene:
 DifficultySwapper
 LOMA Guildhall
-LOAD1 0x1 OpeningParty; ENUN
+LOAD2 0x1 OpeningParty; ENUN
 CAM1 [0,0]
 FADU 10
 STAL 20
@@ -168,7 +168,7 @@ STAL 10
 MUSC 0
 CLEA 0; CLEN 0
 LOMA Chapter5
-LOAD1 0x1 OpeningParty2; ENUN
+LOAD2 0x1 OpeningParty2; ENUN
 CAM1 [9,0]
 FADU 10
 STAL 20
@@ -282,7 +282,7 @@ FADI 10
 MUSC 0x0
 LOMA Guildhall
 CLEA 0; CLEN 0; CLEE 0
-LOAD1 0x1 EndingParty; ENUN
+LOAD2 0x1 EndingParty; ENUN
 CAM1 [14,6]
 FADU 10
 STAL 20

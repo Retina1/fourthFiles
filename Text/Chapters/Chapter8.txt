@@ -45,7 +45,7 @@ miss, boy.[AN][Clear][MidRight][Gore]
 ##BenthusDeath
 [MidLeft][Benthus]
 I will[...] not die[...][N]
-like a dog[...][AN][CloseEyes]
+like a dog[...][AN][EyesClose]
 Not before I find[...][N]
 the Armory[...][AN]
 Not before[...] you[...][N]

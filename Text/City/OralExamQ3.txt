@@ -1,0 +1,119 @@
+##OralExamQuestion3_1
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question three's on combat.[AN]
+What are you completely unable[N]
+to do while you're blind?[A][X]
+##OralExamAnswer3_1A
+Dodge attacks[X]
+##OralExamAnswer3_1ADesc
+Jumping around in the dark.[X]
+##OralExamAnswer3_1B
+Hit attacks[X]
+##OralExamAnswer3_1BDesc
+Just swing around aimlessly.[X]
+##OralExamAnswer3_1C
+Critically strike[X]
+##OralExamAnswer3_1CDesc
+I'll get lucky.[X]
+##OralExamAnswer3_1D
+Find meaning[X]
+##OralExamAnswer3_1DDesc
+...This one's gotta be a joke.[X]
+
+##OralExamQuestion3_2
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question three's on combat.[AN]
+Which magical class can also[N]
+use bows if the need arises?[A][X]
+##OralExamAnswer3_2A
+Scholar[X]
+##OralExamAnswer3_2ADesc
+Hey, that's me![X]
+##OralExamAnswer3_2B
+Apothecary[X]
+##OralExamAnswer3_2BDesc
+I could go for some herbs.[X]
+##OralExamAnswer3_2C
+Seeker[X]
+##OralExamAnswer3_2CDesc
+Their arrows seek blood.[X]
+##OralExamAnswer3_2D
+Lurker[X]
+##OralExamAnswer3_2DDesc
+I should ask Rat about[N]
+their archery skills.[X]
+
+##OralExamQuestion3_3
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question three's on combat.[AN]
+Which statistic lets you[N]
+resist ailments and binds?[A][X]
+##OralExamAnswer3_3A
+Defense[X]
+##OralExamAnswer3_3ADesc
+Gods, I need more of this.[X]
+##OralExamAnswer3_3B
+Resistance[X]
+##OralExamAnswer3_3BDesc
+This one isn't that good.[X]
+##OralExamAnswer3_3C
+Magic[X]
+##OralExamAnswer3_3CDesc
+I have a lot of this.[X]
+##OralExamAnswer3_3D
+Luck[X]
+##OralExamAnswer3_3DDesc
+I'll need some of this.[X]
+
+##OralExamQuestion3_4
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question three's on combat.[AN]
+Which ailment has the highest[N]
+priority of the four?[A][X]
+##OralExamAnswer3_4A
+Petrify[X]
+##OralExamAnswer3_4ADesc
+Please don't turn[N]
+me into a statue.[X]
+##OralExamAnswer3_4B
+Poison[X]
+##OralExamAnswer3_4BDesc
+I do not wish to[N]
+remember those bugs.[X]
+##OralExamAnswer3_4C
+Curse[X]
+##OralExamAnswer3_4CDesc
+Curses.[X]
+##OralExamAnswer3_4D
+Sleep[X]
+##OralExamAnswer3_4DDesc
+I need this.[X]
+
+##OralExamQuestion3_5
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Question three's on combat.[AN]
+Which of these is not a real[N]
+scroll recognized by the League?[A][X]
+##OralExamAnswer3_5A
+Gale Scroll[X]
+##OralExamAnswer3_5ADesc
+I do not comprehend.[X]
+##OralExamAnswer3_5B
+Bolt Scroll[X]
+##OralExamAnswer3_5BDesc
+It's dire.[X]
+##OralExamAnswer3_5C
+Restore Scroll[X]
+##OralExamAnswer3_5CDesc
+Restore sanity.[X]
+##OralExamAnswer3_5D
+Torch Scroll[X]
+##OralExamAnswer3_5DDesc
+I'm scared of the dark.[X]
+
+

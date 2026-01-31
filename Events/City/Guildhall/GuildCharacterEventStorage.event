@@ -51,6 +51,7 @@ GuildRecruitEvent(Mikayla_RecruitEvent,Mikayla)
 GuildRecruitEvent(Calliope_RecruitEvent,Calliope)
 GuildRecruitEvent(Ghari_RecruitEvent,Ghari)
 GuildRecruitEvent(Azaghal_RecruitEvent,Azaghal)
+GuildRecruitEvent(Tachyon_RecruitEvent,Tachyon)
 //riders
 GuildRecruitEvent(Aizen_RecruitEvent,Aizen)
 GuildRecruitEvent(Johnnie_RecruitEvent,Johnnie)

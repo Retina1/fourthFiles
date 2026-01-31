@@ -1,3 +1,5 @@
+#define George 0xCE
+#define Astoria 0xCF
 #define Hitchcock 0xD0
 #define BossSaewynn 0xD1
 #define Quarry 0xD2

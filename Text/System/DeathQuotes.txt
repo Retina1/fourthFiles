@@ -12,25 +12,25 @@ I can't fall[...][N]
 I'm mighty[...][AN]
 I'm power itself[...][N]
 I'm the heart[...][N]
-of the end[...][AN][CloseEyes]
+of the end[...][AN][EyesClose]
 I[...] I am[...] inimitable[...][A][X]
 
 ##EgilDeath
 [MidLeft][Egil]
 Lady Rana[...][N]
-Ser Harla[...][AN][CloseEyes]
+Ser Harla[...][AN][EyesClose]
 Forgive me[...][N]
 My atonement[...][A][X]
 
 ##HarlaDeath
-[MidLeft][Harla][CloseEyes]
+[MidLeft][Harla][EyesClose]
 Rana[...] I wasn't[...][N]
 I'm not[...] ready[...][A][X]
 
 ##RanaDeath
 [MidLeft][Rana]
 I[...] finally get it[...][N]
-At last[...][AN][CloseEyes]
+At last[...][AN][EyesClose]
 Live your life[...][N]
 Not for the end[...][AN]
 But for it all[...][AN]
@@ -41,14 +41,14 @@ you[...] again[...][A][X]
 [MidLeft][Swift]
 Ember[...] Frost[...][AN]
 I just wanted you[...][N]
-to die in my arms[...][AN][CloseEyes]
+to die in my arms[...][AN][EyesClose]
 Is that so much[...][N]
 to ask for[...]?[A][X]
 
 ##WeberDeath
 [MidLeft][Weber]
 And so[...] Asketa is[N]
-cast into the abyss[...][AN][CloseEyes]
+cast into the abyss[...][AN][EyesClose]
 It'll all burn[...][N]
 All on your head[...][AN]
 Ask yourselves[...] if it[N]
@@ -65,7 +65,7 @@ nothing but proud[...][AN]
 If it is truly[...] what you[N]
 wish for[...][AN][Smile]
 Hold your heads high[...][N]
-Follow the road[...][AN][CloseEyes]
+Follow the road[...][AN][EyesClose]
 Follow it[...] to the end[...][N]
 Uncertain[...] Unafraid[...][A][X]
 
@@ -74,7 +74,7 @@ Uncertain[...] Unafraid[...][A][X]
 So everything[...] meant nothing[...][N]
 All my[...] sacrifice[...][AN]
 To hell[...] with you all[...][N]
-To hell[...] with dreams[...][AN][CloseEyes]
+To hell[...] with dreams[...][AN][EyesClose]
 To hell with[...] all this[N]
 damnable land[...][A][X]
 ##BossGoreDeath
@@ -82,7 +82,7 @@ damnable land[...][A][X]
 I thought I was[...] so close[...][N]
 I could change[...] it all[...][AN]
 But once again[...] Your ideals[...][N]
-They're what triumphed[...][AN][CloseEyes]
+They're what triumphed[...][AN][EyesClose]
 If it had to happen[...][N]
 By[...] your[...] hands[...][AN]
 I can[...] accept that[...][A][X]
@@ -90,22 +90,22 @@ I can[...] accept that[...][A][X]
 ##NathanDeath
 [MidRight][Nathan]
 I wanted[...] to make[...][N]
-something of my life[...][AN][CloseEyes]
+something of my life[...][AN][EyesClose]
 Is that[...] so wrong[...]?[A][X]
 ##AstarteDeath
 [MidRight][Astarte]
-I can't[...] die[...][AN][CloseEyes]
+I can't[...] die[...][AN][EyesClose]
 I haven't[...] gotten[...][N]
 my dreams[...][A][X]
 ##GoreDeath
 [MidRight][Gore]
 Nathan[...] Astarte[...][AN]
 Make this mean[...][N]
-anything[...][A][CloseEyes][X]
+anything[...][A][EyesClose][X]
 ##CleoneDeath
 [MidRight][Cleone]
 This is[...] simply what[...][N]
-I deserve[...][A][CloseEyes][X]
+I deserve[...][A][EyesClose][X]
 ##BenthusRetreat
 [MidRight][Benthus]
 I will[...] not die[...][N]
@@ -114,27 +114,27 @@ Cover my retreat![A][X]
 ##HelmanDeath
 [MidRight][Helman]
 Life was[...] good to me,[N]
-after all[...][AN][CloseEyes]
+after all[...][AN][EyesClose]
 Shame, then[...][A][X]
 ##RatDeath
 [MidRight][Rat]
-[...][A][CloseEyes][X]
+[...][A][EyesClose][X]
 ##KrystDeath
 [MidRight][Kryst]
 I didn't[...] sign up[...][N]
-for any of this[...][A][CloseEyes][X]
+for any of this[...][A][EyesClose][X]
 ##GalvinDeath
 [MidRight][Galvin]
 Everything's[...] dark[...][N]
-Useless[...] I'm[...] useless[...][A][CloseEyes][X]
+Useless[...] I'm[...] useless[...][A][EyesClose][X]
 ##IoriaDeath
 [MidRight][Ioria][Smile]
 I've had[...] a good life[...][N]
-I'm not[...] afraid[...][A][CloseEyes][X]
+I'm not[...] afraid[...][A][EyesClose][X]
 ##FourthDeath
 [MidRight][Fourth]
 A new sun[...] will rise[...][AN][Smile]
-I believe[...] in Asketa[...][A][CloseEyes][X]
+I believe[...] in Asketa[...][A][EyesClose][X]
 ##GuildmasterRetreat
 [MidRight][Guildmaster]
 The League needs me.[N]
@@ -144,92 +144,92 @@ You've got this, Nathan.[A][X]
 ##AnswererDeath
 [MidRight][Answerer]
 I now[...] see the[...][N]
-endless sky[...][A][CloseEyes][X]
+endless sky[...][A][EyesClose][X]
 
 //swordfighters
 ##CoastKidDeath
 [MidRight][CoastKid]
 You can't just[...] kill a kid[...][N]
-Meanie[...][A][CloseEyes][X]
+Meanie[...][A][EyesClose][X]
 ##PuzonDeath
 [MidRight][Puzon]
 Unbelievable[...] I was helpless[N]
-to stop them[...][A][CloseEyes][X]
+to stop them[...][A][EyesClose][X]
 ##CamDeath
 [MidRight][Cam]
 Sorry, everyone[...][N]
-I won't[...] be home[...][A][CloseEyes][X]
+I won't[...] be home[...][A][EyesClose][X]
 ##MaragDeath
 [MidRight][Marag]
 Alas, damnable Marag[...][N]
-Culled in his prime[...][A][CloseEyes][X]
+Culled in his prime[...][A][EyesClose][X]
 
 //knights
 ##DrogoDeath
 [MidRight][Drogo]
 No[...] I'll never know[...][N]
-what she wrote me[...][A][CloseEyes][X]
+what she wrote me[...][A][EyesClose][X]
 ##GretchenDeath
 [MidRight][Gretchen]
 My past[...] None of it[...][N]
-matters one bit now[...][A][CloseEyes][X]
+matters one bit now[...][A][EyesClose][X]
 ##AllbringerDeath
 [MidRight][Allbringer]
 Find my boy[...] Tell 'im[...][N]
-his dad loves him[...][A][CloseEyes][X]
+his dad loves him[...][A][EyesClose][X]
 ##HopfDeath
 [MidRight][Hopf]
 My life[...] really sucked[...][N]
-Where's my[...] mulligan[...]?[A][CloseEyes][X]
+Where's my[...] mulligan[...]?[A][EyesClose][X]
 ##SlynSpireDeath
 [MidRight][SlynSpire]
-Spire[...] Please don't leave[...][AN][CloseEyes]
+Spire[...] Please don't leave[...][AN][EyesClose]
 Don't leave me behind[...][A][X]
 ##AlfonsoDeath
 [MidRight][Alfonso]
 Guess it's a warrior's end[...][N]
-for me[...] after all[...][A][CloseEyes][X]
+for me[...] after all[...][A][EyesClose][X]
 
 //fighters
 ##TristaoDeath
 [MidRight][Tristao]
-I'll be[...] alright[...][AN][CloseEyes]
+I'll be[...] alright[...][AN][EyesClose]
 But please[...] Look after[...][N]
 my[...] family[...][A][X]
 ##FinnDeath
 [MidRight][Finn]
 My vengeance[...][N]
-My[...] home[...][A][CloseEyes][X]
+My[...] home[...][A][EyesClose][X]
 ##EightDeath
 [MidRight][Eight]
 Fortune's wheel has[...][N]
-passed[...] me by[...][A][CloseEyes]][X]
+passed[...] me by[...][A][EyesClose]][X]
 ##RandellanDeath
 [MidRight][Randellan]
 It's a[...] gods[N]
-damned[...] shame[...][N][A][CloseEyes][X]
+damned[...] shame[...][N][A][EyesClose][X]
 ##JuniperDeath
 [MidRight][Juniper]
 Useless pieces of[...][N]
-I can't[...] like this[...][A][CloseEyes][X]
+I can't[...] like this[...][A][EyesClose][X]
 
 //archers
 ##HallieDeath
 [MidRight][Hallie]
 Waves[...] I'm so[...][N]
-sorry[...] my love[...][A][CloseEyes][X]
+sorry[...] my love[...][A][EyesClose][X]
 ##AnjelicaDeath
 [MidRight][Anjelica]
 Serafina[...] I only[...][N]
-wanted[...] you[...][A][CloseEyes][X]
+wanted[...] you[...][A][EyesClose][X]
 ##RodneyDeath
 [MidRight][Rodney]
 Live like a hero[...][N]
-Die like a hero[...][A][CloseEyes][X]
+Die like a hero[...][A][EyesClose][X]
 ##GamonDeath
 [MidRight][Gamon]
 Wasn't so bad[...][N]
-Not a bad ending[...][AN][CloseEyes]
+Not a bad ending[...][AN][EyesClose]
 If it's gotta[...][N]
 be this way[...][A][X]
 
@@ -238,55 +238,55 @@ be this way[...][A][X]
 [MidRight][Cassandra]
 Go ahead[...] Kill me[...][AN]
 Man is nothing[...][N]
-without my knowledge[...][A][CloseEyes][X]
+without my knowledge[...][A][EyesClose][X]
 ##WavesDeath
 [MidRight][Waves]
 Hallie[...] Where[...][N]
-Where are[...] you[...][A][CloseEyes][X]
+Where are[...] you[...][A][EyesClose][X]
 ##CyanneDeath
 [MidRight][Cyanne]
 I'll never[...] return home[...][N]
-Where I belong[...][A][CloseEyes][X]
+Where I belong[...][A][EyesClose][X]
 ##VictorDeath
 [MidRight][Victor]
 I lived[...] I died[...][N]
-All[...] my way[...][A][CloseEyes][X]
+All[...] my way[...][A][EyesClose][X]
 ##LonsdaleDeath
 [MidRight][Lonsdale]
 I just hope[...] I'll be[...][N]
-unforgotten[...][A][CloseEyes][X]
+unforgotten[...][A][EyesClose][X]
 ##HugoDeath
 [MidRight][Hugo]
 My vengeance[...] My creation[...][N]
-Let the cycle[...] end[...][A][CloseEyes][X]
+Let the cycle[...] end[...][A][EyesClose][X]
 ##LyudDeath
 [MidRight][Lyud]
 The darkness[...] has come[...][N]
-But I won't be[...] taken[...][A][CloseEyes][X]
+But I won't be[...] taken[...][A][EyesClose][X]
 
 //medics
 ##TrishDeath
 [MidRight][Trish]
 Don't worry[...] about me[...][N]
-This is[...] my own[...][A][CloseEyes][X]
+This is[...] my own[...][A][EyesClose][X]
 ##AmosDeath
 [MidRight][Amos]
 June[...] I am unfit[...][N]
-for your side[...][A][CloseEyes][X]
+for your side[...][A][EyesClose][X]
 ##RoslinDeath
 [MidRight][Roslin]
 I knew this might[...][N]
-I should've known[...][AN][CloseEyes]
+I should've known[...][AN][EyesClose]
 I wasn't cut out[...][N]
 for this life[...][A][X]
 ##WitericoDeath
 [MidRight][Witerico]
 Shit[...] I'll never get[...][N]
-my inheritance[...] now[...][A][CloseEyes][X]
+my inheritance[...] now[...][A][EyesClose][X]
 ##TychoDeath
 [MidRight][Tycho]
 Don't kill me[...] I'll make[...][N]
-it worth[...] your while[...][A][CloseEyes][X]
+it worth[...] your while[...][A][EyesClose][X]
 
 //myrmidons
 ##NatsukiRetreat
@@ -296,97 +296,101 @@ This displeases me.)[A][X]
 ##MikaylaDeath
 [MidRight][Mikayla]
 I[...] I can't[...] If only I[...][N]
-were[...] stronger[...][A][CloseEyes][X]
+were[...] stronger[...][A][EyesClose][X]
 ##CalliopeDeath
 [MidRight][Calliope]
 It's over[...] No more[...][N]
-No more[...] fear[...][A][CloseEyes][X]
+No more[...] fear[...][A][EyesClose][X]
 ##GhariDeath
 [MidRight][Ghari]
 Sing of my life[...][N]
-Sing of my triumphs[...][A][CloseEyes][X]
+Sing of my triumphs[...][A][EyesClose][X]
 ##AzaghalDeath
 [MidRight][Azaghal]
 If I must die[...][N]
-Better by the blade[...][A][CloseEyes][X]
+Better by the blade[...][A][EyesClose][X]
+##TachyonDeath
+[MidRight][Tachyon]
+Whoopsie[...][N]
+That's it for me[...][A][EyesClose][X]
 
 //riders
 ##AizenDeath
 [MidRight][Aizen]
 Whew[...] Guess I'm not[...][N]
-going any[...] further[...][A][CloseEyes][X]
+going any[...] further[...][A][EyesClose][X]
 ##JohnnieDeath
 [MidRight][Johnnie]
 Friends[...] I'm finally[...][N]
-comin'[...] down[...][A][CloseEyes][X]
+comin'[...] down[...][A][EyesClose][X]
 ##KoletteDeath
 [MidRight][Kolette]
 All I wanted was[...] freedom[...][N]
-Was I[...] wrong[...]?[A][CloseEyes][X]
+Was I[...] wrong[...]?[A][EyesClose][X]
 ##PallasDeath
 [MidRight][Pallas]
 Pfah[...] What a miserable[...][N]
-way to go[...][A][CloseEyes][X]
+way to go[...][A][EyesClose][X]
 ##EmblemDeath
 [MidRight][Emblem]
 I[...] can't stop here[...][N]
-Must keep[...] running[...][A][CloseEyes][X]
+Must keep[...] running[...][A][EyesClose][X]
 ##MeilieDeath
 [MidRight][Meilie]
 I[...] did well[...][N]
-Didn't[...] I[...]?[A][CloseEyes][X]
+Didn't[...] I[...]?[A][EyesClose][X]
 
 //raiders
 ##EsketitDeath
 [MidRight][Esketit]
 I thought I[...] found my[...][N]
-reason[...][A][CloseEyes][X]
+reason[...][A][EyesClose][X]
 ##GloriaDeath
 [MidRight][Gloria]
 I'll be one[...] with nature[...][N]
-soon enough[...][A][CloseEyes][X]
+soon enough[...][A][EyesClose][X]
 ##PipsyDeath
 [MidRight][Pipsy]
 I'm not[...] scared of[...][N]
-any of you[...][A][CloseEyes][X]
+any of you[...][A][EyesClose][X]
 ##SonDeath
 [MidRight][Son]
 Cassius[...] My boy[...][N]
-Don't[...] be afraid[...][A][CloseEyes][X]
+Don't[...] be afraid[...][A][EyesClose][X]
 ##HartDeath
 [MidRight][Hart]
 Damn[...] Ma[...] Sis[...][N]
-I'm sorry[...][A][CloseEyes][X]
+I'm sorry[...][A][EyesClose][X]
 
 //gunners
 ##MartinDeath
 [MidRight][Martin]
 A worthy end[...] for a[N]
-man like me[...][A][CloseEyes][X]
+man like me[...][A][EyesClose][X]
 ##DemicoDeath
 [MidRight][Demico]
 Roslin[...] Don't weep[...][N]
-for someone like me[...][A][CloseEyes][X]
+for someone like me[...][A][EyesClose][X]
 ##KarlDeath
 [MidRight][Karl]
 I'm goin'[...] to the city[...][N]
-made of gold[...][A][CloseEyes][X]
+made of gold[...][A][EyesClose][X]
 ##WaspDeath
 [MidRight][Wasp][Smile]
 Let's see you[...] make it[N]
-without[...] me[...][A][CloseEyes][X]
+without[...] me[...][A][EyesClose][X]
 ##VictoriaDeath
 [MidRight][Victoria]
 So very close[...][N]
-So very far[...][A][CloseEyes][X]
+So very far[...][A][EyesClose][X]
 ##LaiteuseDeath
 [MidRight][Laiteuse]
 Whoopsie[...] Guess I[...][N]
-goofed again[...][A][CloseEyes][X]
+goofed again[...][A][EyesClose][X]
 
 ##FrancescaDeath
 [MidRight][Francesca]
 Fuck being born[...] in this[N]
-piece of shit place[...][AN][CloseEyes]
+piece of shit place[...][AN][EyesClose]
 Fuck all the fucking[...][N]
 piece of shit people[...][A][X]

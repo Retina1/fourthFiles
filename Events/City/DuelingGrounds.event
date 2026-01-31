@@ -2,8 +2,62 @@
 //Modified by Nintenlord
 
 DuelingGroundsUnitsC5:
-//marketplpace npc, generics
-UNIT Ayda 0x0 0x0 Level(21,NPC,0) [9,13] 0x0 0x0 0x0 0x0 [Shortsword] NeverMoveAI
+UNIT Ayda 0x0 0x0 Level(22,NPC,0) [9,13] 0x0 0x0 0x0 0x0 [Shortsword] NeverMoveAI
+UNIT Astarte 0x0 0x0 Level(1,Ally,0) [5,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Natsuki 0x0 0x0 Level(9,NPC,0) [14,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+//ideas - casual mode? make it cost gold?
+//one clear of each tier per city visit? idk maybe just let nathan levelgrind
+//let any of nathan/gore/astarte/cleone do it?
+//find way to let any recruited unit do it? probably would use a proc menu to scroll through all unit names/levels to pick one
+
+DuelingGroundsTier1Wave1:
+UNIT 0xFD Swordfighter 0x0 Level(3,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier1Wave2:
+UNIT 0xFD Swordfighter 0x0 Level(4,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier1Wave3:
+UNIT 0xFD Swordfighter 0x0 Level(5,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier1Wave4:
+UNIT 0xFD Swordfighter 0x0 Level(6,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier1Wave5:
+UNIT 0xFD Swordfighter 0x0 Level(7,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+
+DuelingGroundsTier2Wave1:
+UNIT 0xFD Swordfighter 0x0 Level(11,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier2Wave2:
+UNIT 0xFD Swordfighter 0x0 Level(12,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier2Wave3:
+UNIT 0xFD Swordfighter 0x0 Level(13,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier2Wave4:
+UNIT 0xFD Swordfighter 0x0 Level(14,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier2Wave5:
+UNIT 0xFD Swordfighter 0x0 Level(15,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+
+DuelingGroundsTier3Wave1:
+UNIT 0xFD Swordfighter 0x0 Level(18,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier3Wave2:
+UNIT 0xFD Swordfighter 0x0 Level(19,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier3Wave3:
+UNIT 0xFD Swordfighter 0x0 Level(20,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier3Wave4:
+UNIT 0xFD Swordfighter 0x0 Level(21,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT
+DuelingGroundsTier3Wave5:
+UNIT Ayda Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET

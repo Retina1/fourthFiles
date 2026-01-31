@@ -104,6 +104,21 @@ One of two in a set of prized axes.[N]
 Its brother, the Chopper, has long[N]
 since been missing in action.[X]
 
+//poison jar
+##Visit5xMarket1 ^
+A Jar of Poison (150 Gold)[X]
+##Visit5xMarket1Desc
+It's a jar of poison.[N]
+...At least it's nice[N]
+and straightfoward.[X]
+//broadaxe
+##Visit5xMarket2 ^
+Worn-Out Rod (400 Gold)[X]
+##Visit5xMarket2Desc
+A resilient rod with a mighty[N]
+enchantment. It's seen a fair bit[N]
+of use, and is on its last legs.[X]
+
 
 //inedible leaf
 ##Visit10xMarket1 ^

@@ -9797,7 +9797,7 @@ This[ToggleMouthMove]...[.][ToggleMouthMove]ain't[.][ToggleMouthMove]--[ToggleMo
 I could've robbed these bandits blind[.][NL]
 on my own, thank you very much.[.][A][OpenMidLeft][HalfCloseEyes][OpenMidLeft]I was[.][ToggleMouthMove]...[.][ToggleMouthMove][.....][NL]
 worried[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]H-hold on! I'm sorry![.][NL]
-C'mon! Don't start bawling![.][A][OpenMidLeft][CloseEyes][OpenMidLeft]Aaah[ToggleMouthMove]...[.][ToggleMouthMove]sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
+C'mon! Don't start bawling![.][A][OpenMidLeft][EyesClose][OpenMidLeft]Aaah[ToggleMouthMove]...[.][ToggleMouthMove]sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 No more[.][ToggleMouthMove]...[.][ToggleMouthMove]dangerous stuff[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 by yourself[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Fine, fine. I promise.[A][NL]
 But you have to stop crying[.][NL]
@@ -9809,7 +9809,7 @@ I knew it was your mother's, and I[NL]
 knew those thugs had taken it.[A][NL]
 So I went and got it back![A][NL]
 See what happens when you give[NL]
-me a job? Guaranteed results![.][A][OpenLeft][CloseEyes][OpenLeft]Colm[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
+me a job? Guaranteed results![.][A][OpenLeft][EyesClose][OpenLeft]Colm[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 Aa[ToggleMouthMove]... [ToggleMouthMove]Waaah[.][ToggleMouthMove]...[.][ToggleMouthMove][.....][NL]
 Colm[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight]Hey! Wh-why are you[.][NL]
 crying this time?[.][A][NL]
@@ -10557,9 +10557,9 @@ the bone. I pray it is false[ToggleMouthMove]...[.][ToggleMouthMove][A][X]
 # 0x09CA
 [OpenFarLeft][LoadFace][0x04][0x01][OpenLeft][LoadFace][0x02][0x01][OpenRight][LoadFace][0x12][0x01][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Ahh[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft]Hold on! You must hold on![A][OpenFarLeft]Her wound is[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][HalfCloseEyes][OpenRight]The[.][ToggleMouthMove]...[.][ToggleMouthMove]emp[.][ToggleMouthMove]...[.][ToggleMouthMove]emperor[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft]Stop, you mustn't speak[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight]The emperor wants[.][ToggleMouthMove]...[.][ToggleMouthMove]de[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 destroy[.][ToggleMouthMove]...[.][ToggleMouthMove][.....][NL]
-Sacred Stones[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][CloseEyes][OpenFarLeft]What?![A][OpenLeft]Destroy the Sacred Stones?[A][OpenRight][HalfCloseEyes][OpenRight]Please[ToggleMouthMove]...[.][ToggleMouthMove]warn[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
+Sacred Stones[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][EyesClose][OpenFarLeft]What?![A][OpenLeft]Destroy the Sacred Stones?[A][OpenRight][HalfCloseEyes][OpenRight]Please[ToggleMouthMove]...[.][ToggleMouthMove]warn[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 Protect the[.][ToggleMouthMove]...[.][ToggleMouthMove]five stones[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
-[ToggleMouthMove]......[ToggleMouthMove][A][OpenRight][CloseEyes][OpenRight][ClearFace][OpenFarLeft][ToggleMouthMove]...[.][ToggleMouthMove]She's dead.[.][A][OpenLeft][ToggleMouthMove]......[ToggleMouthMove][A][NL]
+[ToggleMouthMove]......[ToggleMouthMove][A][OpenRight][EyesClose][OpenRight][ClearFace][OpenFarLeft][ToggleMouthMove]...[.][ToggleMouthMove]She's dead.[.][A][OpenLeft][ToggleMouthMove]......[ToggleMouthMove][A][NL]
 Seth, what do you make[NL]
 of her final words?[.][A][OpenFarLeft]She said something about the[NL]
 Sacred Stones.[A][NL]
@@ -11289,7 +11289,7 @@ Ah, well[ToggleMouthMove]... [ToggleMouthMove]My luck's gotta turn[NL]
 around sometime, right?[.][A][OpenMidRight][ClearFace][X]
 
 # 0x09FD
-[OpenMidRight][LoadFace][0x11][0x01][OpenMidRight][HalfCloseEyes][OpenMidRight][CloseEyes][OpenMidRight]May the sacred light surround[.][NL]
+[OpenMidRight][LoadFace][0x11][0x01][OpenMidRight][HalfCloseEyes][OpenMidRight][EyesClose][OpenMidRight]May the sacred light surround[.][NL]
 us and protect us all.[A][OpenMidRight][ClearFace][X]
 
 # 0x09FE
@@ -12618,7 +12618,7 @@ allowed to accompany you.[.][A][ToggleSmile][OpenLeft]You want to travel with us
 I appreciate your offer, but our[NL]
 journey is far too perilous.[A][NL]
 I do not wish to pull you into[NL]
-this madness.[.][A][OpenMidRight]No, no, no.[.][A][CloseSpeechSlow][OpenMidRight][CloseEyes][......][OpenMidRight][OpenEyes][OpenMidRight][ToggleSmile]There can be no doubt that we were[NL]
+this madness.[.][A][OpenMidRight]No, no, no.[.][A][CloseSpeechSlow][OpenMidRight][EyesClose][......][OpenMidRight][OpenEyes][OpenMidRight][ToggleSmile]There can be no doubt that we were[NL]
 sent here to aid you.[.][A][NL]
 It is all part of the grand design.[.][A][NL]
 I, L'Arachel, shall play my role and[NL]
@@ -13848,7 +13848,7 @@ But I loved you nonetheless[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 Please understand[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft][ClearFace][OpenFarLeft][ClearFace][FastPrint][OpenLeft][LoadFace][0x2A][0x01][OpenFarLeft][LoadFace][0x02][0x01][SendToBack][OpenLeft][ToggleMouthMove]......[ToggleMouthMove][A][NL]
 I know, Mother.[.][A][OpenFarLeft]Joshua[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight]Joshua[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 It really is you[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-Joshua[ToggleMouthMove]...[.][ToggleMouthMove]my son[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][CloseEyes][OpenRight][HalfCloseEyes][OpenLeft]I'm sorry, Mother. I should never have[NL]
+Joshua[ToggleMouthMove]...[.][ToggleMouthMove]my son[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][EyesClose][OpenRight][HalfCloseEyes][OpenLeft]I'm sorry, Mother. I should never have[NL]
 left you. I've no excuse[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 I wanted to see the world as a man, not[.][NL]
 as a prince. I wanted to be worthy.[.][A][NL]
@@ -13878,7 +13878,7 @@ I kept it safe and waited for this[NL]
 day to come[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft]Mother[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 I have it now.[A][NL]
 I understand its meaning[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight]Joshua[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
-My[ToggleMouthMove]...[.][ToggleMouthMove]dear, sweet child[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][CloseEyes][OpenRight][ClearFace][OpenLeft]Mother[ToggleMouthMove]...[.][ToggleMouthMove][A][X]
+My[ToggleMouthMove]...[.][ToggleMouthMove]dear, sweet child[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][EyesClose][OpenRight][ClearFace][OpenLeft]Mother[ToggleMouthMove]...[.][ToggleMouthMove][A][X]
 
 # 0x0A92
 [OpenLeft][LoadFace][0x0F][0x01][OpenFarLeft][LoadFace][0x02][0x01][OpenRight][LoadFace][0x2A][0x01][OpenFarRight][LoadFace][0x22][0x01][SendToBack][OpenRight]It's been more than ten years.[A][0x02][NL]
@@ -13958,7 +13958,7 @@ I've kept it safe, waited for the[.][NL]
 day I could give it to Joshua[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 But[.][ToggleMouthMove]...[.][ToggleMouthMove]now[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 I[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft]Queen Ismaire![A][OpenRight]Joshua[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
-My[ToggleMouthMove]...[.][ToggleMouthMove]dear, sweet child[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][CloseEyes][OpenRight][ClearFace][OpenLeft]Queen[.][ToggleMouthMove]...[.][ToggleMouthMove]Ismaire[.][ToggleMouthMove]...[.][ToggleMouthMove][A][X]
+My[ToggleMouthMove]...[.][ToggleMouthMove]dear, sweet child[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight][EyesClose][OpenRight][ClearFace][OpenLeft]Queen[.][ToggleMouthMove]...[.][ToggleMouthMove]Ismaire[.][ToggleMouthMove]...[.][ToggleMouthMove][A][X]
 
 # 0x0A95
 [OpenMidRight][LoadFace][0x02][0x01][OpenMidLeft][LoadFace][0x6A][0x01][OpenMidLeft]Fire![.][A][NL]
@@ -14424,7 +14424,7 @@ There must be a mistake[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLef
 are mistaken, Your Majesty.[.][A][NL]
 But[.][ToggleMouthMove]...[.][ToggleMouthMove]but[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Selena.[.][NL]
 You have your orders.[.][A][NL]
-You will execute Duessel.[.][A][OpenMidRight][CloseEyes][......][OpenMidRight][OpenEyes][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][A][NL]
+You will execute Duessel.[.][A][OpenMidRight][EyesClose][......][OpenMidRight][OpenEyes][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][A][NL]
 [ToggleMouthMove]...[.][ToggleMouthMove]Your Majesty.[.][A][NL]
 Will you allow me[.][NL]
 to ask you a question?[A][OpenMidLeft][ToggleMouthMove]......[ToggleMouthMove][A][OpenMidRight]When Your Majesty saw fit to[NL]
@@ -15124,7 +15124,7 @@ my divine aid.[A][OpenMidLeft]Who are you? What[.][NL]
 are you doing here?[.][A][OpenMidRight]Ah! Can it be? Do you not know the[NL]
 tales of my deeds?[A][NL]
 Have you not heard of the beauteous[.][NL]
-young woman traveling to defeat evil?[.][A][OpenMidLeft]No, I haven't.[A][OpenMidRight][MoveFarRight][OpenFarRight][CloseEyes][OpenFarRight]Oh[ToggleMouthMove]...[.][ToggleMouthMove][OpenFarRight][OpenEyes][OpenMidLeft]What is it?[.][A][OpenFarRight][MoveMidRight][OpenMidRight]It's nothing[ToggleMouthMove]...[.][ToggleMouthMove][NL]
+young woman traveling to defeat evil?[.][A][OpenMidLeft]No, I haven't.[A][OpenMidRight][MoveFarRight][OpenFarRight][EyesClose][OpenFarRight]Oh[ToggleMouthMove]...[.][ToggleMouthMove][OpenFarRight][OpenEyes][OpenMidLeft]What is it?[.][A][OpenFarRight][MoveMidRight][OpenMidRight]It's nothing[ToggleMouthMove]...[.][ToggleMouthMove][NL]
 Please pay me no mind.[A][NL]
 I just feel a bit like being[NL]
 alone and weeping for a while.[A][OpenMidLeft]What? No, you can't[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
@@ -15423,7 +15423,7 @@ His Majesty smiled so kindly. His voice[.][NL]
 was filled with dignity and affection[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenRight]Dame Selena, you love[.][NL]
 your emperor, don't you?[A][OpenMidLeft]What are you[ToggleMouthMove]--[ToggleMouthMove][A][OpenRight]I can see it.[.][A][NL]
 Dame Selena, I can see[NL]
-how much you treasure[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][CloseEyes][OpenMidLeft][OpenEyes][OpenMidLeft][ToggleMouthMove]......[ToggleMouthMove][A][NL]
+how much you treasure[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][EyesClose][OpenMidLeft][OpenEyes][OpenMidLeft][ToggleMouthMove]......[ToggleMouthMove][A][NL]
 His Majesty is most compassionate.[A][0x02][NL]
 You see, I'm a commoner. I was raised in[NL]
 a desolate, impoverished village.[.][A][NL]
@@ -15449,7 +15449,7 @@ Can its evil really change[NL]
 a person that completely?[.][A][OpenRight]Yes[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 All trace of this person would[NL]
 be consumed[.][ToggleMouthMove]...[.][ToggleMouthMove]destroyed.[A][OpenMidLeft]How can the process be reversed?[A][OpenRight][ToggleMouthMove]...[.][ToggleMouthMove]I'm sorry.[A][NL]
-That is[.][ToggleMouthMove]...[.][ToggleMouthMove]impossible.[.][A][OpenMidLeft][CloseEyes][.....][OpenMidLeft][OpenEyes][OpenMidLeft][ToggleMouthMove]...[.][ToggleMouthMove]I see.[A][OpenFarRight][LoadFace][0x6B][0x01][LoadOverworldFaces][OpenFarRight]Dame Selena.[NL]
+That is[.][ToggleMouthMove]...[.][ToggleMouthMove]impossible.[.][A][OpenMidLeft][EyesClose][.....][OpenMidLeft][OpenEyes][OpenMidLeft][ToggleMouthMove]...[.][ToggleMouthMove]I see.[A][OpenFarRight][LoadFace][0x6B][0x01][LoadOverworldFaces][OpenFarRight]Dame Selena.[NL]
 Enemy troops are heading this way![A][NL]
 We await your orders.[.][A][OpenMidLeft]Understood. Tell the men[NL]
 we meet them head on.[.][A][CloseSpeechSlow][OpenFarRight][ClearFace][OpenMidLeft]Myrrh. I release you.[.][A][NL]
@@ -17006,7 +17006,7 @@ here happily together.[A][NL]
 Forever[.][ToggleMouthMove]...[.][ToggleMouthMove][A][X]
 
 # 0x0B48
-[OpenMidLeft][LoadFace][0x44][0x01][ToggleSmile][OpenMidLeft]Monica[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][CloseEyes][X]
+[OpenMidLeft][LoadFace][0x44][0x01][ToggleSmile][OpenMidLeft]Monica[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][EyesClose][X]
 
 # 0x0B49
 [OpenMidLeft][LoadFace][0x14][0x01][OpenMidRight][LoadFace][0x04][0x01][OpenMidRight]Prince Ephraim, Princess Eirika.[NL]
@@ -18108,7 +18108,7 @@ I want you to come. I need you to[.][NL]
 stop me. You must promise.[A][X]
 
 # 0x0B89
-[OpenMidRight][LoadFace][0x14][0x01][OpenMidRight][CloseEyes][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Lyon[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
+[OpenMidRight][LoadFace][0x14][0x01][OpenMidRight][EyesClose][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Lyon[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 I[.][ToggleMouthMove]...[.][ToggleMouthMove][A][LoadOverworldFaces][OpenFarFarLeft][LoadFace][0x02][0x01][OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][HalfCloseEyes][OpenMidLeft]Brother![A][NL]
 Are you[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 You look ill.[.][A][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Is that you, Eirika?[A][NL]
@@ -19185,7 +19185,7 @@ offering in my resurrection![A][ToggleColorInvert][OpenMidLeft][ClearFace][X]
 # 0x0BC2
 [OpenMidLeft][LoadFace][0x4A][0x01][ToggleColorInvert][OpenMidLeft][ToggleSmile]Ha[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 Ha ha[.][ToggleMouthMove]...[.][ToggleMouthMove][A][0x02][NL]
-HAAA HAHAHAHA![A][ToggleSmile][ToggleColorInvert][OpenMidLeft][CloseEyes][OpenMidLeft][ClearFace][X]
+HAAA HAHAHAHA![A][ToggleSmile][ToggleColorInvert][OpenMidLeft][EyesClose][OpenMidLeft][ClearFace][X]
 
 # 0x0BC3
 [OpenMidLeft][LoadFace][0x46][0x01][OpenMidLeft]I am the Demon King[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
@@ -19195,7 +19195,7 @@ frailty. I am supreme[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]
 # 0x0BC4
 [OpenMidLeft][LoadFace][0x46][0x01][OpenMidLeft]Where[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 Where did[.][NL]
-I go wrong[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][CloseEyes][OpenMidLeft][ClearFace][X]
+I go wrong[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][EyesClose][OpenMidLeft][ClearFace][X]
 
 # 0x0BC5
 [OpenMidLeft][LoadFace][0x02][0x01][OpenMidRight][LoadFace][0x46][0x01][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][A][OpenMidLeft]Lyon![.][A][OpenMidLeft][MoveLeft][OpenFarLeft][LoadFace][0x14][0x01][SendToBack][OpenFarLeft]Be careful, Eirika![.][A][OpenLeft]It's all right.[.][NL]
@@ -20476,10 +20476,10 @@ Eirika... What do you say?[A][0x02][NL]
 From now on, let's be friends...[A][X]
 
 # 0x0C23
-[OpenMidRight][LoadFace][0x02][0x01][OpenMidRight]Brother[.][ToggleMouthMove]... [ToggleMouthMove]I'm sorry.[A][OpenMidRight][CloseEyes][X]
+[OpenMidRight][LoadFace][0x02][0x01][OpenMidRight]Brother[.][ToggleMouthMove]... [ToggleMouthMove]I'm sorry.[A][OpenMidRight][EyesClose][X]
 
 # 0x0C24
-[OpenMidRight][LoadFace][0x14][0x01][OpenMidRight]Forgive me, Eirika.[.][A][OpenMidRight][CloseEyes][X]
+[OpenMidRight][LoadFace][0x14][0x01][OpenMidRight]Forgive me, Eirika.[.][A][OpenMidRight][EyesClose][X]
 
 # 0x0C25
 [OpenMidRight][LoadFace][0x04][0x01][OpenMidRight]Urgh[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
@@ -20487,61 +20487,61 @@ My apologies.[.][NL]
 I must withdraw.[A][X]
 
 # 0x0C26
-[OpenMidRight][LoadFace][0x06][0x01][OpenMidRight]I'm sorry, General Seth[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+[OpenMidRight][LoadFace][0x06][0x01][OpenMidRight]I'm sorry, General Seth[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C27
 [OpenMidRight][LoadFace][0x05][0x01][OpenMidRight]I was prepared for[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-anything[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+anything[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C28
 [OpenMidRight][LoadFace][0x07][0x01][OpenMidRight]I am sorry. I believe this[NL]
-is as far as I go[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+is as far as I go[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C29
 [OpenMidRight][LoadFace][0x08][0x01][OpenMidRight]Please[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-Forgive me[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+Forgive me[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C2A
 [ToggleSmile][OpenMidRight][LoadFace][0x0E][0x01][OpenMidRight]I have no regrets.[NL]
-This was always my fate.[A][OpenMidRight][CloseEyes][X]
+This was always my fate.[A][OpenMidRight][EyesClose][X]
 
 # 0x0C2B
 [ToggleSmile][OpenMidRight][LoadFace][0x09][0x01][OpenMidRight]I[.][ToggleMouthMove]...[.][ToggleMouthMove]am a warrior[NL]
-to the very end![A][OpenMidRight][CloseEyes][X]
+to the very end![A][OpenMidRight][EyesClose][X]
 
 # 0x0C2C
 [OpenMidRight][LoadFace][0x0C][0x01][OpenMidRight]To think of it[ToggleMouthMove]... [ToggleMouthMove]Me[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-In this place[.][ToggleMouthMove]... [ToggleMouthMove]Neimi[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+In this place[.][ToggleMouthMove]... [ToggleMouthMove]Neimi[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C2D
 [OpenMidRight][LoadFace][0x0A][0x01][OpenMidRight]You were right, Colm[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-I am a klutz. Sorry[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+I am a klutz. Sorry[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C2E
-[OpenMidRight][LoadFace][0x1A][0x01][OpenMidRight]The rest[ToggleMouthMove]...[.][ToggleMouthMove]is up to you.[.][A][OpenMidRight][CloseEyes][X]
+[OpenMidRight][LoadFace][0x1A][0x01][OpenMidRight]The rest[ToggleMouthMove]...[.][ToggleMouthMove]is up to you.[.][A][OpenMidRight][EyesClose][X]
 
 # 0x0C2F
-[OpenMidRight][LoadFace][0x10][0x01][OpenMidRight]I[.][ToggleMouthMove]... [ToggleMouthMove]I don't want to die[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+[OpenMidRight][LoadFace][0x10][0x01][OpenMidRight]I[.][ToggleMouthMove]... [ToggleMouthMove]I don't want to die[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C30
 [OpenMidRight][LoadFace][0x11][0x01][OpenMidRight]My fate is irrelevant[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
-The world must have[.][ToggleMouthMove]...[.][ToggleMouthMove]light.[A][OpenMidRight][CloseEyes][X]
+The world must have[.][ToggleMouthMove]...[.][ToggleMouthMove]light.[A][OpenMidRight][EyesClose][X]
 
 # 0x0C31
 [ToggleSmile][OpenMidRight][LoadFace][0x2A][0x01][OpenMidRight]I[.][ToggleMouthMove]... [ToggleMouthMove]I guess my luck[.][NL]
-finally ran out[.][ToggleMouthMove]... [ToggleMouthMove]Heh.[A][OpenMidRight][CloseEyes][X]
+finally ran out[.][ToggleMouthMove]... [ToggleMouthMove]Heh.[A][OpenMidRight][EyesClose][X]
 
 # 0x0C32
 [OpenMidRight][LoadFace][0x18][0x01][OpenMidRight]Prince Ephraim! Lead[NL]
-us to glory[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+us to glory[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C33
 [ToggleSmile][OpenMidRight][LoadFace][0x16][0x01][OpenMidRight]Ah, Prince Ephraim[ToggleMouthMove]... [ToggleMouthMove]It[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-It was fun while it lasted.[.][A][OpenMidRight][CloseEyes][X]
+It was fun while it lasted.[.][A][OpenMidRight][EyesClose][X]
 
 # 0x0C34
 [OpenMidRight][LoadFace][0x2C][0x01][OpenMidRight]I've long been prepared for[.][NL]
-this day[ToggleMouthMove]... [ToggleMouthMove]Too long[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+this day[ToggleMouthMove]... [ToggleMouthMove]Too long[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C35
 [OpenMidRight][LoadFace][0x0F][0x01][OpenMidRight]I won't give up[.][ToggleMouthMove]... [ToggleMouthMove]Not here[ToggleMouthMove]...[.][ToggleMouthMove][NL]
@@ -20551,22 +20551,22 @@ to crawl[ToggleMouthMove]...[.][ToggleMouthMove][A][X]
 
 # 0x0C36
 [OpenMidRight][LoadFace][0x1B][0x01][OpenMidRight]If you live on the battlefield,[.][NL]
-you know this day will come[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+you know this day will come[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C37
 [ToggleSmile][OpenMidRight][LoadFace][0x1C][0x01][OpenMidRight]The dark rider I foresaw[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-He was coming for me[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+He was coming for me[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C38
-[OpenMidRight][LoadFace][0x1E][0x01][OpenMidRight]I lost[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+[OpenMidRight][LoadFace][0x1E][0x01][OpenMidRight]I lost[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C39
 [OpenMidRight][LoadFace][0x20][0x01][OpenMidRight]I'm sorry, Grandmother[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-My duty[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+My duty[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C3A
 [OpenMidRight][LoadFace][0x21][0x01][OpenMidRight]I'm sorry, Teacher[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-I never[.][ToggleMouthMove]--[ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+I never[.][ToggleMouthMove]--[ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C3B
 [OpenMidRight][LoadFace][0x22][0x01][OpenMidRight]This will never do![.][A][NL]
@@ -20575,21 +20575,21 @@ I must beg your leave[.][ToggleMouthMove]...[.][ToggleMouthMove][A][X]
 
 # 0x0C3C
 [ToggleSmile][OpenMidRight][LoadFace][0x23][0x01][OpenMidRight]Ha ha ha! I couldn't have[.][NL]
-asked for a better ending![A][OpenMidRight][CloseEyes][X]
+asked for a better ending![A][OpenMidRight][EyesClose][X]
 
 # 0x0C3D
 [OpenMidRight][LoadFace][0x13][0x01][OpenMidRight]Blast! My brother would never[.][NL]
-have gone out like this[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+have gone out like this[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C3E
-[OpenMidRight][LoadFace][0x19][0x01][OpenMidRight]I[.][ToggleMouthMove]... [ToggleMouthMove]I did well, didn't I?[.][A][OpenMidRight][CloseEyes][X]
+[OpenMidRight][LoadFace][0x19][0x01][OpenMidRight]I[.][ToggleMouthMove]... [ToggleMouthMove]I did well, didn't I?[.][A][OpenMidRight][EyesClose][X]
 
 # 0x0C3F
 [OpenMidRight][LoadFace][0x24][0x01][OpenMidRight]Great. This is just[.][NL]
-what I needed[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+what I needed[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C40
-[OpenMidRight][LoadFace][0x25][0x01][OpenMidRight]This[ToggleMouthMove]... [ToggleMouthMove]This is nothing![A][OpenMidRight][CloseEyes][X]
+[OpenMidRight][LoadFace][0x25][0x01][OpenMidRight]This[ToggleMouthMove]... [ToggleMouthMove]This is nothing![A][OpenMidRight][EyesClose][X]
 
 # 0x0C41
 [OpenMidRight][LoadFace][0x26][0x01][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
@@ -20598,11 +20598,11 @@ help you any longer.[A][X]
 
 # 0x0C42
 [OpenMidRight][LoadFace][0x29][0x01][OpenMidRight]In this darkness,[.][NL]
-I will find peace.[A][OpenMidRight][CloseEyes][X]
+I will find peace.[A][OpenMidRight][EyesClose][X]
 
 # 0x0C43
 [OpenMidRight][LoadFace][0x2B][0x01][OpenMidRight]So this is the end.[.][.....][NL]
-[ToggleMouthMove]...[.][ToggleMouthMove]Vanessa[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+[ToggleMouthMove]...[.][ToggleMouthMove]Vanessa[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][X]
 
 # 0x0C44
 [ToggleSmile]Wow... Would you look at[NL]
@@ -21689,7 +21689,7 @@ So, should I be your big sister?[A][ToggleSmile][OpenMidLeft][ToggleSmile]Well, 
 You look so much younger than[.][NL]
 I do. That would be odd[.][ToggleMouthMove]...[.][ToggleMouthMove][A][ToggleSmile][OpenMidRight]I am[ToggleMouthMove]...[.][ToggleMouthMove]very old.[.][A][NL]
 Perhaps [0x93]mother[0x94]?[.][NL]
-I[.][ToggleMouthMove]...[.][ToggleMouthMove]don't like [0x93]grandmother.[0x94][.][A][OpenMidLeft][CloseEyes][OpenMidLeft][ToggleMouthMove]...[.][ToggleMouthMove]Let's not dwell on this.[NL]
+I[.][ToggleMouthMove]...[.][ToggleMouthMove]don't like [0x93]grandmother.[0x94][.][A][OpenMidLeft][EyesClose][OpenMidLeft][ToggleMouthMove]...[.][ToggleMouthMove]Let's not dwell on this.[NL]
 [0x93]Sister[0x94] will be fine.[A][NL]
 [OpenMidLeft][OpenEyes][OpenMidLeft]Well. Did you have something[NL]
 you wanted to ask me?[.][A][ToggleSmile][OpenMidRight]I did[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
@@ -22820,12 +22820,12 @@ My mother was my only family.[.][A][NL]
 She was so sick[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 and so very weak[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]When the bandits came[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 I hid under the bed[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
-[OpenMidLeft][CloseEyes][OpenMidLeft]I hid there[.][ToggleMouthMove]...[.][ToggleMouthMove]trembling[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Amelia[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][OpenEyes][OpenMidLeft][MoveMidLeft][OpenMidLeft]I wanted to protect her![NL]
+[OpenMidLeft][EyesClose][OpenMidLeft]I hid there[.][ToggleMouthMove]...[.][ToggleMouthMove]trembling[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Amelia[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][OpenEyes][OpenMidLeft][MoveMidLeft][OpenMidLeft]I wanted to protect her![NL]
 I[.][ToggleMouthMove]...[.][ToggleMouthMove]wanted to be strong![A][NL]
 [OpenMidLeft][HalfCloseEyes][OpenMidLeft]Even if I couldn't win[ToggleMouthMove]...[.][ToggleMouthMove][NL]
 I wanted to fight![A][NL]
 To protect the only person[NL]
-dear to me[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][CloseEyes][OpenMidLeft]Oh[ToggleMouthMove]...[.][ToggleMouthMove][NL]
+dear to me[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][EyesClose][OpenMidLeft]Oh[ToggleMouthMove]...[.][ToggleMouthMove][NL]
 [ToggleMouthMove]......[ToggleMouthMove][A][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 I see now[.][ToggleMouthMove]... [ToggleMouthMove]Thank you for[.][NL]
 telling me your story.[A][NL]
@@ -22859,7 +22859,7 @@ So[ToggleMouthMove]...[.][ToggleMouthMove]let me be your[NL]
 shield to protect you[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]And I will be your sword and[NL]
 fight for you. From now on.[.][A][NL]
 You're not alone anymore,[.][NL]
-Amelia.[.][A][OpenMidLeft]Thank you, Franz.[.][A][CloseSpeechSlow][OpenMidLeft][MoveRight][.....][OpenRight][CloseEyes][.......][X]
+Amelia.[.][A][OpenMidLeft]Thank you, Franz.[.][A][CloseSpeechSlow][OpenMidLeft][MoveRight][.....][OpenRight][EyesClose][.......][X]
 
 # 0x0C92
 [OpenMidLeft][LoadFace][0x05][0x01][OpenMidRight][LoadFace][0x0E][0x01][OpenMidRight][ToggleSmile]Sir Gilliam.[A][ToggleSmile][OpenMidLeft]Well, if it isn't Garcia[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][ToggleSmile]Your armor suits you. Must have taken[.][NL]
@@ -23104,7 +23104,7 @@ One false step, and our strategy could[NL]
 be ruined[.][ToggleMouthMove]--[ToggleMouthMove]you might create an opening![A][NL]
 You put not only yourself but all of[NL]
 us in peril when you do that![.][A][OpenMidRight][HalfCloseEyes][OpenMidRight]Oh! I didn't mean to[ToggleMouthMove]--[ToggleMouthMove][NL]
-[OpenMidRight][CloseEyes][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Don't cry, Neimi. Save[NL]
+[OpenMidRight][EyesClose][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Don't cry, Neimi. Save[NL]
 your energy for fighting.[.][A][OpenMidRight][OpenEyes][OpenMidRight]Y-yes, sir! I'm[.][ToggleMouthMove]... [ToggleMouthMove]I'm sorry.[A][OpenMidLeft]Listen. This is my armor.[.][NL]
 I take good care of it myself.[A][NL]
 Don't worry about other people's[NL]
@@ -23716,7 +23716,7 @@ I'll let you do your research.[A][NL]
 I must go now. See you later, Lute.[.][A][ToggleSmile][OpenMidRight]Yes, Vanessa.[.][A][X]
 
 # 0x0CAD
-[OpenFarFarLeft][LoadFace][0x16][0x01][OpenFarFarLeft][CloseEyes][OpenMidRight][LoadFace][0x08][0x01][.....][OpenMidRight]What's that down there?! [.][.....][NL]
+[OpenFarFarLeft][LoadFace][0x16][0x01][OpenFarFarLeft][EyesClose][OpenMidRight][LoadFace][0x08][0x01][.....][OpenMidRight]What's that down there?! [.][.....][NL]
 Whoa, Titania! Whoa, girl! Let's stop here![.][A][CloseSpeechSlow][OpenMidRight][MoveFarFarRight][OpenFarFarLeft][MoveMidLeft][.......][OpenFarFarRight][MoveMidRight][OpenMidRight]Are you hurt?! Are you all right?![A][OpenMidLeft]Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Huh?[A][OpenMidLeft][ToggleSmile]Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz[ToggleMouthMove]...[.][ToggleMouthMove][A][ToggleSmile][OpenMidRight]You have GOT to be kidding me![NL]
 Sleeping while a war is waging? [A][NL]
 Bold warrior, it's time to wake up![.][.....][NL]
@@ -24231,7 +24231,7 @@ close to that goal.[.][A][NL]
 But anyways, how are your parents?[A][ToggleSmile][OpenMidLeft]Well[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][HalfCloseEyes][OpenMidLeft]I don't talk about them much[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Oh! Um[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][HalfCloseEyes][OpenMidRight]I'm sorry. I didn't mean to[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]No, no. It's fine.[A][NL]
 My father has been gone for as long as [.][NL]
 I can remember[ToggleMouthMove]... [ToggleMouthMove][A][OpenMidRight]I see.[A][OpenMidLeft]I was living with my mother, but[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-[OpenMidLeft][CloseEyes][OpenMidLeft]But she is[ToggleMouthMove]...[.][ToggleMouthMove]no longer with me.[A][OpenMidRight]I see[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+[OpenMidLeft][EyesClose][OpenMidLeft]But she is[ToggleMouthMove]...[.][ToggleMouthMove]no longer with me.[A][OpenMidRight]I see[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 Sounds like you've had a rough life[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][HalfCloseEyes][OpenMidLeft]Well[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]I'm sorry I brought up something painful.[.][A][OpenMidLeft]Um[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Um[ToggleMouthMove]...[.][ToggleMouthMove][.....][OpenMidRight][OpenEyes][OpenMidRight][0x8017][OpenMidRight]I've got it![NL]
 I'll be your big brother![.][A][OpenMidLeft][OpenEyes][OpenMidLeft][0x8017][OpenMidLeft]What in the world are you talking about?[A][OpenMidRight]Your brother! And you'll be my sister! Yeah![NL]
 This is the best idea I've had in a while![A][NL]
@@ -24484,7 +24484,7 @@ I mean, look at you.[A][NL]
 You're a bumbling crybaby, but even you've[NL]
 pulled yourself together temporarily.[.][A][OpenMidLeft][ToggleSmile]Uh...[.][A][ToggleSmile][OpenMidRight]When we were little, you followed me [.][NL]
 everywhere, tripping and crying[.][ToggleMouthMove]...[.][ToggleMouthMove][A][ToggleSmile][OpenMidLeft][HalfCloseEyes][OpenMidLeft]Oh! Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove] [.][NL]
-Why are you always so mean? Waaa![.][A][OpenMidLeft][CloseEyes][OpenMidRight]And now look at you! You're still following[.][NL]
+Why are you always so mean? Waaa![.][A][OpenMidLeft][EyesClose][OpenMidRight]And now look at you! You're still following[.][NL]
 me everywhere, tripping and crying,[.][A][NL]
 but now you're doing it on the battlefield.[.][.....][NL]
 Will you PLEASE stop your boo-hooing?[.][A][OpenMidLeft][HalfCloseEyes][OpenMidLeft]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
@@ -24536,7 +24536,7 @@ me, you defended me.[A][ToggleSmile][ToggleSmile][OpenMidRight]Seriously, Neimi.
 You've always been such a crybaby.[A][OpenMidLeft]Yes, but[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 Because you were there with me,[.][NL]
 I was never sad[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
-[OpenMidLeft][CloseEyes][OpenMidLeft]When Grandpa died, you were by my side[NL]
+[OpenMidLeft][EyesClose][OpenMidLeft]When Grandpa died, you were by my side[NL]
 the whole time, holding my hand[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][ToggleSmile]Neimi[.][ToggleMouthMove]...[.][ToggleMouthMove][A][ToggleSmile][OpenMidLeft][OpenEyes][OpenMidLeft]Thank you, Colm. For then[.][NL]
 and now[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 [OpenMidLeft][HalfCloseEyes][OpenMidLeft]I like you a lot[ToggleMouthMove]...[.][ToggleMouthMove][A][ToggleSmile][OpenMidRight]Oh[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
@@ -24544,7 +24544,7 @@ If anything is troubling you,[.][NL]
 come see me first, all right?[.][A][NL]
 I'll take care of anyone who[NL]
 makes you cry.[A][OpenMidLeft]I will[ToggleMouthMove]...[.][ToggleMouthMove][A][ToggleSmile][OpenMidRight]I think your haplessness is permanent.[NL]
-But don't worry, I'll take care of you.[.][A][OpenMidLeft][CloseEyes][OpenMidLeft]Oh! Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove] Colm[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+But don't worry, I'll take care of you.[.][A][OpenMidLeft][EyesClose][OpenMidLeft]Oh! Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove] Colm[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Oh, no. I made you cry again, didn't I.[.][A][OpenMidLeft]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove] Yes[ToggleMouthMove]...[.][ToggleMouthMove][NL]
 But for different reasons this time.[A][OpenMidRight]That's better.[A][OpenMidLeft]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Neimi[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 I'm the only one who can make you[.][NL]
@@ -24973,7 +24973,7 @@ What am I going to do?[A][OpenMidLeft][MoveMidLeft][OpenMidLeft]Lost!?[.....] Ho
 That mirror is a precious artifact,[.][NL]
 not to mention an important keepsake![.][A][.....][OpenMidRight]The leather strap[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 It's torn[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][HalfCloseEyes][OpenMidRight][0x02]Ohhhh[.][ToggleMouthMove]...[.][ToggleMouthMove] Sniff[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-Waaaaaaah![A][OpenMidRight][CloseEyes][OpenMidLeft][MoveMidLeft][OpenMidLeft]Oh, don't--[.][A][CloseSpeechSlow][OpenMidLeft][MoveLeft][....][OpenLeft]Please don't cry.[.][A][NL]
+Waaaaaaah![A][OpenMidRight][EyesClose][OpenMidLeft][MoveMidLeft][OpenMidLeft]Oh, don't--[.][A][CloseSpeechSlow][OpenMidLeft][MoveLeft][....][OpenLeft]Please don't cry.[.][A][NL]
 Don't worry. We'll[NL]
 look for it together.[.][A][OpenMidRight][HalfCloseEyes][OpenMidRight]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft]Any idea when you lost it?[A][OpenMidRight]I think I[.][ToggleMouthMove]...[.][ToggleMouthMove]sniff[.][ToggleMouthMove]...[.][ToggleMouthMove]had it with[.][NL]
 me when the battle started.[.][A][NL]
@@ -24982,7 +24982,7 @@ my belt[.][ToggleMouthMove]...[.][ToggleMouthMove] Sniff[ToggleMouthMove]...[.][
 somewhere, right?[.][A][NL]
 I'll go look over here. You[.][NL]
 check the ground back there.[A][OpenMidRight]All[.][ToggleMouthMove]...[.][ToggleMouthMove] All right[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft][ClearFace][OpenMidRight][ClearFace][OpenFarFarLeft][LoadFace][0x1A][0x01][OpenFarFarRight][LoadFace][0x0A][0x01][OpenFarFarRight][HalfCloseEyes][OpenFarFarLeft][ToggleMouthMove]......[ToggleMouthMove][A][......][OpenFarFarRight][ToggleMouthMove]......[ToggleMouthMove][A][.......][CloseSpeechSlow][OpenFarFarLeft][MoveLeft][OpenFarFarRight][MoveRight][OpenLeft]I couldn't find it here[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
-Any luck there?[.][A][OpenRight][CloseEyes][OpenRight][ToggleMouthMove]...[.][ToggleMouthMove]Sob[.][ToggleMouthMove]... [ToggleMouthMove]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+Any luck there?[.][A][OpenRight][EyesClose][OpenRight][ToggleMouthMove]...[.][ToggleMouthMove]Sob[.][ToggleMouthMove]... [ToggleMouthMove]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 I can't[.][ToggleMouthMove]...[.][ToggleMouthMove]find it[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft]Don't worry. It has to be[.][NL]
 around somewhere.[.][A][NL]
 Just keep looking. I'll[.][NL]
@@ -25187,7 +25187,7 @@ often see you lose your cool.[.][A][ToggleSmile][OpenMidLeft]Th-that's because[.
 My books don't tell me anything[.][NL]
 about how to deal with love![A][NL]
 So[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][ToggleSmile]Heh[.][ToggleMouthMove]...[.][ToggleMouthMove] Heh heh heh[ToggleMouthMove]...[.][ToggleMouthMove][......][NL]
-Ha ha ha ha!!![A][ToggleSmile][OpenMidLeft][CloseEyes][OpenMidLeft]I'm sorry. I'm a little out of[NL]
+Ha ha ha ha!!![A][ToggleSmile][OpenMidLeft][EyesClose][OpenMidLeft]I'm sorry. I'm a little out of[NL]
 my depth when it comes to love.[.][A][OpenMidRight]No, you're not.[.][NL]
 Love needs no textbooks.[A][NL]
 Just be yourself, and listen[NL]
@@ -25243,7 +25243,7 @@ well, touching me.[NL]
 Um[ToggleMouthMove]...[.][ToggleMouthMove] Would you please stop?[.][A][OpenLeft][ToggleSmile]Amazing! It's like velvet to the touch![.][NL]
 You have such smooth skin![A][ToggleSmile][OpenFarLeft][HalfCloseEyes][OpenFarLeft]Er[ToggleMouthMove]... [ToggleMouthMove]Excuse me[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 Ah[ToggleMouthMove]... [ToggleMouthMove]I really must protest[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
-[OpenFarLeft][CloseEyes][OpenFarLeft]P-please[ToggleMouthMove]... [ToggleMouthMove]S-stop[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft][MoveLeft][OpenLeft][ToggleSmile]Tell me[.][ToggleMouthMove]...[.][ToggleMouthMove] What's your secret?[A][ToggleSmile][OpenFarLeft][MoveFarLeft][OpenFarLeft][HalfCloseEyes][OpenFarLeft]I[.][ToggleMouthMove]...[.][ToggleMouthMove] I don't have any secrets![A][NL]
+[OpenFarLeft][EyesClose][OpenFarLeft]P-please[ToggleMouthMove]... [ToggleMouthMove]S-stop[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft][MoveLeft][OpenLeft][ToggleSmile]Tell me[.][ToggleMouthMove]...[.][ToggleMouthMove] What's your secret?[A][ToggleSmile][OpenFarLeft][MoveFarLeft][OpenFarLeft][HalfCloseEyes][OpenFarLeft]I[.][ToggleMouthMove]...[.][ToggleMouthMove] I don't have any secrets![A][NL]
 Oh[ToggleMouthMove]...[.][ToggleMouthMove] You meant my skin. Well, I just[NL]
 rub manon leaves on after I wash.[.][A][OpenLeft][MoveRight][OpenRight]Manon leaves? Those scratchy things?[A][NL]
 I always thought they would just leave[NL]
@@ -25829,7 +25829,7 @@ I[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][ToggleSmile][0x93]I
 Listen, does it make any difference[.][NL]
 if you serve them in Grado or Renais?[.][A][NL]
 You can come with me. It'll work[NL]
-out, you'll see. I'll make it work.[.][A][ToggleSmile][OpenMidRight]Joshua[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Natasha.[A][OpenMidRight][CloseEyes][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][A][NL]
+out, you'll see. I'll make it work.[.][A][ToggleSmile][OpenMidRight]Joshua[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Natasha.[A][OpenMidRight][EyesClose][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][A][NL]
 [.......][.......][OpenMidRight][OpenEyes][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][NL]
 I will[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][ToggleMouthMove]......[ToggleMouthMove][A][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][.....][NL]
 accept your wager.[A][OpenMidLeft][ToggleSmile]You will?[.][A][ToggleSmile][ToggleSmile][OpenMidRight]What I'm betting is my[NL]
@@ -25841,7 +25841,7 @@ of my heart that you win.[.][A][OpenMidLeft]Don't worry. In a pinch, I[NL]
 never lose.[.][A][NL]
 Well, I mean, I lose sometimes.[.][NL]
 But not this time![A][OpenMidRight]At least[ToggleMouthMove]...[.][ToggleMouthMove]you won our last bet.[.][A][OpenMidLeft]Hm? Oh! Oh, yeah[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-That you'd fall for me.[.][A][OpenMidRight][CloseEyes][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][ToggleMouthMove]...[.][ToggleMouthMove]That was easy.[A][NL]
+That you'd fall for me.[.][A][OpenMidRight][EyesClose][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft][ToggleMouthMove]...[.][ToggleMouthMove]That was easy.[A][NL]
 This bet, this is going to be a tough[.][NL]
 one. I'm gonna have to work at it.[A][NL]
 But knowing that I've won one bet[.][NL]
@@ -27622,11 +27622,11 @@ I think I'll sleep soundly tonight.[.][A][OpenMidRight]Good.[.][.....][NL]
 You know, Chief, I'm really happy.[A][OpenMidLeft]Yeah, me, too. I've got a life I enjoy [.][NL]
 and good companions.[A][NL]
 All that and a wonderful woman to love.[.][NL]
-Everyone should be so lucky.[A][OpenMidRight]Oh![.][.....] Chief![.][A][CloseSpeechSlow][OpenMidRight][MoveLeft][OpenMidLeft][MoveFarLeft][SendToBack][OpenLeft][CloseEyes][OpenFarLeft]Whoa![.][......][NL]
+Everyone should be so lucky.[A][OpenMidRight]Oh![.][.....] Chief![.][A][CloseSpeechSlow][OpenMidRight][MoveLeft][OpenMidLeft][MoveFarLeft][SendToBack][OpenLeft][EyesClose][OpenFarLeft]Whoa![.][......][NL]
 [ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 [OpenFarLeft][HalfCloseEyes][OpenFarLeft]Hey now[.][ToggleMouthMove]... [ToggleMouthMove]This is a battlefield.[NL]
 This isn't the place for that[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft]No one's looking[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenFarLeft]Um[ToggleMouthMove]...[.][ToggleMouthMove][NL]
-[OpenFarLeft][CloseEyes][OpenFarLeft]Oh, all right[.][ToggleMouthMove]...[.][ToggleMouthMove][A][.......][X]
+[OpenFarLeft][EyesClose][OpenFarLeft]Oh, all right[.][ToggleMouthMove]...[.][ToggleMouthMove][A][.......][X]
 
 # 0x0D1C
 [OpenMidLeft][LoadFace][0x1B][0x01][OpenMidRight][LoadFace][0x1E][0x01][OpenMidLeft][ToggleSmile]Hello, Marisa.[A][ToggleSmile][OpenMidRight]Chief.[A][OpenMidLeft][ToggleSmile]How're you doing? Your sword still sharp?[.][A][ToggleSmile][OpenMidRight]Same as always.[.][A][OpenMidLeft][ToggleSmile]You're not seriously injured[NL]
@@ -28862,7 +28862,7 @@ is your father, anyway?[.][A][OpenMidRight][HalfCloseEyes][OpenMidRight][ToggleM
 Did I ask something that[NL]
 I shouldn't have?[.][A][NL]
 I-I'm sorry, lassie.[NL]
-Please don't cry[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][OpenMidRight]I'm not crying[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
+Please don't cry[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][EyesClose][OpenMidRight]I'm not crying[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 I'm not crying[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Ah![.][NL]
 What do I do?[.][A][NL]
 Wait. Just think. I must have run[.][NL]
@@ -28997,9 +28997,9 @@ Once Princess L'Arachel settles down,[.][NL]
 she'll probably never leave Rausten again.[A][NL]
 It's got nothing to do with me.[.][A][OpenMidLeft]That's cold, Rennac[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 I'm disappointed. I'm sure she'll be so[.][NL]
-lovely. Princess L'Arachel, the bride[.][ToggleMouthMove]...[.][ToggleMouthMove][A][CloseSpeechSlow][OpenMidLeft][CloseEyes][OpenMidLeft]If I gently close my eyes, I can envision[.][NL]
+lovely. Princess L'Arachel, the bride[.][ToggleMouthMove]...[.][ToggleMouthMove][A][CloseSpeechSlow][OpenMidLeft][EyesClose][OpenMidLeft]If I gently close my eyes, I can envision[.][NL]
 what a glorious spectacle it will be.[.][A][OpenMidRight]If all you need is someone to listen,[.][NL]
-I'll play along. What kind of spectacle?[A][OpenMidRight][CloseEyes][OpenMidLeft]The loving couple exchanging their sacred[.][NL]
+I'll play along. What kind of spectacle?[A][OpenMidRight][EyesClose][OpenMidLeft]The loving couple exchanging their sacred[.][NL]
 vows. The joyous citizens of Rausten![.][A][OpenMidRight][ToggleSmile][0x93]Congratulations, Princess L'Arachel![0x94][NL]
 [0x93]Our condolences, Prince.[0x94][A][ToggleSmile][OpenMidLeft]The newlyweds will smile and wave as the[NL]
 royal coach passes through the crowds.[A][NL]
@@ -29186,7 +29186,7 @@ quite young, General Duessel![.][A][OpenMidLeft]Well, now you've got my attentio
 was it you wanted this old soldier for?[.][A][OpenMidRight]It's just that, even among the younger[NL]
 knights, there's no match for you.[A][NL]
 And, uh[.][ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidLeft]Ha ha! I'm not so old that you need to[NL]
-worry about propping up my ego, lass.[.][A][OpenMidRight]Ah[ToggleMouthMove]...[.][ToggleMouthMove]uh[ToggleMouthMove]...[.][ToggleMouthMove][.....][A][OpenMidRight][CloseEyes][OpenMidRight]I'm sorry.[A][OpenMidLeft]No, no. There's no need to apologize.[.][NL]
+worry about propping up my ego, lass.[.][A][OpenMidRight]Ah[ToggleMouthMove]...[.][ToggleMouthMove]uh[ToggleMouthMove]...[.][ToggleMouthMove][.....][A][OpenMidRight][EyesClose][OpenMidRight]I'm sorry.[A][OpenMidLeft]No, no. There's no need to apologize.[.][NL]
 [ToggleSmile]I quite enjoy talking to you, in fact.[A][NL]
 [ToggleSmile][OpenMidRight][OpenEyes][OpenMidLeft][ToggleSmile]I'm sure I'm not the only one in[NL]
 this army who feels that way, either.[.][A][NL]
@@ -29302,11 +29302,11 @@ Melina[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]And what happened
 stolen away by bandits.[.][A][NL]
 My father had already passed away,[NL]
 so I was totally[ToggleMouthMove]...[.][ToggleMouthMove]sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
-[OpenMidLeft][CloseEyes][OpenMidLeft]I'm sorry[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+[OpenMidLeft][EyesClose][OpenMidLeft]I'm sorry[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 [ToggleMouthMove]......[ToggleMouthMove][A][NL]
 [OpenMidLeft][HalfCloseEyes][OpenMidLeft]I was left[ToggleMouthMove]...[.][ToggleMouthMove][NL]
 all on my own[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
-[ToggleMouthMove]......[ToggleMouthMove][A][OpenMidLeft][CloseEyes][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][.....][NL]
+[ToggleMouthMove]......[ToggleMouthMove][A][OpenMidLeft][EyesClose][OpenMidRight][ToggleMouthMove]......[ToggleMouthMove][.....][NL]
 I was right[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 You can rest easy, Amelia.[NL]
 Your mother is alive and well.[A][OpenMidLeft][OpenEyes][OpenMidLeft]What!?[A][OpenMidRight]It happened a few years back.[.][A][NL]
@@ -29345,7 +29345,7 @@ Are you[.][ToggleMouthMove]... [ToggleMouthMove]Are you sure?[.][A][OpenMidRight
 face reflected in your own.[.][A][NL]
 There's no mistake.[.][.....][NL]
 Isn't it wonderful, Amelia?[.][A][ToggleSmile][OpenLeft][HalfCloseEyes][OpenLeft]My[ToggleMouthMove]...[.][ToggleMouthMove]mother[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
-[OpenLeft][CloseEyes][OpenLeft][MoveLeft][OpenLeft]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+[OpenLeft][EyesClose][OpenLeft][MoveLeft][OpenLeft]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 [ToggleSmile]Thank you[.][ToggleMouthMove]...[.][ToggleMouthMove][ToggleSmile] Thank you[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight]Mm[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft][MoveLeft][OpenLeft]Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove]aaa[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 [OpenLeft][MoveLeft][OpenLeft][MoveLeft][OpenLeft]Aaa[.][ToggleMouthMove]...[.][ToggleMouthMove]waaaaaaa!![A][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]Amelia[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenLeft][MoveLeft][OpenLeft]Waa[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
 [ToggleSmile]Thank[.][ToggleMouthMove]...[.][ToggleMouthMove][ToggleSmile]you[.][ToggleMouthMove]...[.][ToggleMouthMove][A][0x02][NL]
@@ -29353,7 +29353,7 @@ Waaa[ToggleMouthMove]...[.][ToggleMouthMove][....] [.][ToggleSmile]Thank[.][Togg
 [......]Sniff[.][ToggleMouthMove]......[ToggleMouthMove][A][OpenMidRight][HalfCloseEyes][OpenMidRight][ToggleSmile]I, uh, I'm so happy[.][NL]
 for you, Amelia[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
-Oh, no.[.][A][0x02][ToggleSmile][OpenMidRight][CloseEyes][OpenMidRight][ToggleSmile]Old age must have loosened[NL]
+Oh, no.[.][A][0x02][ToggleSmile][OpenMidRight][EyesClose][OpenMidRight][ToggleSmile]Old age must have loosened[NL]
 these dry, old tear ducts[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
 Sniff[.][ToggleMouthMove]...[.][ToggleMouthMove]sniff[.][ToggleMouthMove]...[.][ToggleMouthMove][A][ToggleSmile][X]
 

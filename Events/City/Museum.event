@@ -11,6 +11,15 @@ UNIT Claire 0x0 0x0 Level(17,NPC,0) [5,8] 0x0 0x0 0x0 0x0 [LuckStaff] NeverMoveA
 UNIT Helman 0x0 0x0 Level(1,Ally,0) [2,4] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT
 
+MuseumUnitsC5:
+UNIT Claire 0x0 0x0 Level(17,NPC,0) [5,8] 0x0 0x0 0x0 0x0 [LuckStaff] NeverMoveAI
+UNIT Kryst 0x0 0x0 Level(1,Ally,0) [9,10] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT AsketaGeneric Scholar 0x0 Level(3,NPC,1) [3,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric Scholar 0x0 Level(13,NPC,1) [11,6] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT AsketaGeneric Scholar 0x0 Level(10,NPC,1) [3,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+
+UNIT
+
 //MESSAGE Events end at offset CURRENTOFFSET
 
 
@@ -37,11 +46,11 @@ MuseumEventBegin:
 EVBIT_MODIFY 3
 CHECK_EVENTID 0x1d
 BNE 0x1 0xc 0x0
-RunTextByVisit(City03_Claire,City03_Claire,CityS1_Claire,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City03_Claire,City03_Claire,CityS1_Claire,City05_Claire,0,0,0,0,0,0,0,0,0,0)
 ENUT 0x1d
 LABEL 0x1
 //what does the museum even do
-RunEventByVisit(DummyEvent,DummyEvent,0,0,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,DummyEvent,DummyEvent,DummyEvent,0,0,0,0,0,0,0,0,0,0)
 ENUF LocationFlagMuseum
 EndEvent
 

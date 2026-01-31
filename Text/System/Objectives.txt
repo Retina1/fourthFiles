@@ -68,7 +68,7 @@ going back.[X]
 
 ##EndgameAKillDesc
 Kill Rana and[N]
-end Endbringer.[X]
+seize destiny.[X]
 
 ##EndgameBKillDesc
 Kill the[N]

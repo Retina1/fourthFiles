@@ -165,7 +165,7 @@ BeginningScene:
 DifficultySwapper
 //guildleague map scene
 LOMA Guildhall
-LOAD1 0x1 OpeningParty; ENUN
+LOAD2 0x1 OpeningParty; ENUN
 CAM1 [14,10]
 FADU 10
 STAL 20
@@ -187,7 +187,7 @@ CAM1 BeastKing
 FADU 10
 FlashCursor(BeastKing,60)
 CAM1 [0,17]
-LOAD1 0x1 CutsceneUnits
+LOAD2 0x1 CutsceneUnits
 ENUN
 FlashCursor(Nathan,30)
 SilentKillUnit(Harla)
@@ -245,7 +245,7 @@ FADI 10
 CLEA 0; CLEE 0
 MUSC Song_Salem
 LOMA Guildhall
-LOAD1 0x1 ClosingParty; ENUN
+LOAD2 0x1 ClosingParty; ENUN
 CAM1 [0,4]
 FADU 10
 STAL 30

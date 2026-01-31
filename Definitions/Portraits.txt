@@ -202,6 +202,10 @@ BossSaewynnMug
 YosephaMug
 MeilieMug
 AlfonsoMug
+MervynMug
+TachyonMug
+GeorgeMug
+AstoriaMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

@@ -116,6 +116,7 @@ AlwaysDeathQuote(Mikayla,0x0,MikaylaDeath)
 AlwaysDeathQuote(Calliope,0x0,CalliopeDeath)
 AlwaysDeathQuote(Ghari,0x0,GhariDeath)
 AlwaysDeathQuote(Azaghal,0x0,AzaghalDeath)
+AlwaysDeathQuote(Tachyon,0x0,TachyonDeath)
 
 //rid
 AlwaysDeathQuote(Aizen,0x0,AizenDeath)

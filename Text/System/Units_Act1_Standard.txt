@@ -35,6 +35,13 @@ Azaghal[X]
 An amnesiac swordsman washed ashore[N]
 in Asketa. His health is fading.[X]
 
+//ditto
+##Name_Tachyon
+Tachyon[X]
+##Desc_Tachyon
+An excitable Asketan swordswoman who[N]
+thinks she's the fastest in the land.[X]
+
 //striker
 ##Name_Aizen
 Aizen[X]

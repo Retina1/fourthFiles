@@ -1,0 +1,161 @@
+##OralExamPreIntro
+[MidLeft][Nathan][MidRight][Gerson]
+Ready for the oral exam?[AN]
+I'll give you five questions.[N]
+Answer all correctly to pass.[AN]
+They'll cover anything from the[N]
+people and places you know,[AN]
+to the flow of battle.[AN]
+If you fail, you'll have to try[N]
+again another day.[AN]
+If you pass, you'll be able to[N]
+recruit new adventuring classes.[AN]
+Are you prepared?[A][X]
+
+
+##OralExamInfo
+You haven't completed the[N]
+oral exam yet. Learn more?[N]
+[No][X]
+
+##OralExamMakeYourChoice
+Make your decision.[A][X]
+
+##OralExamDecisionMade
+The choice is made.[A][X]
+
+##OralExamBeginPrompt
+Begin the oral exam?[N]
+[No][X]
+
+##OralExamBegin
+[MidLeft][Nathan][MidRight][Gerson][MidLeft]
+Let's do this.[AN][MidRight]
+Good luck, Nathan.[A][X]
+
+##OralExamIncorrect
+[MidLeft][Nathan][MidRight][Gerson]
+That is incorrect.[N]
+Sorry, Nathan.[AN]
+Try again another day.[A][X]
+
+##OralExamPassed
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! You've aced it![N]
+Nicely done, Nathan.[AN]
+As promised, I'll authorize the[N]
+Special Ops for your guild.[AN]
+I hope they prove useful.[A][X]
+
+##OralExamQuestion1_1
+[MidLeft][Nathan][MidRight][Gerson]
+First question is a simple one.[AN]
+What is the name of Benjamin[N]
+the shopkeep's daughter?[A][X]
+##OralExamAnswer1_1A
+Astarte[X]
+##OralExamAnswer1_1ADesc
+Surely.[X]
+##OralExamAnswer1_1B
+Johanna[X]
+##OralExamAnswer1_1BDesc
+Is that one too refined?[X]
+##OralExamAnswer1_1C
+Juniper[X]
+##OralExamAnswer1_1CDesc
+She's a tree, right?[X]
+##OralExamAnswer1_1D
+Zoe[X]
+##OralExamAnswer1_1DDesc
+That sounds cute enough.[X]
+
+##OralExamQuestion1_2
+[MidLeft][Nathan][MidRight][Gerson]
+First question is a simple one.[AN]
+Who runs the museum in the[N]
+city's northern passage?[A][X]
+##OralExamAnswer1_2A
+Claire[X]
+##OralExamAnswer1_2ADesc
+It started with a C. I think.[X]
+##OralExamAnswer1_2B
+Johanna[X]
+##OralExamAnswer1_2BDesc
+That sounds like a curator name.[X]
+##OralExamAnswer1_2C
+Kryst[X]
+##OralExamAnswer1_2CDesc
+Surely it's a side hobby.[X]
+##OralExamAnswer1_2D
+Pallas[X]
+##OralExamAnswer1_2DDesc
+This better be it.[X]
+
+##OralExamQuestion1_3
+[MidLeft][Nathan][MidRight][Gerson]
+First question is a simple one.[AN]
+Who is the nobleman you aided[N]
+during your second mission?[A][X]
+##OralExamAnswer1_3A
+Benthus[X]
+##OralExamAnswer1_3ADesc
+He really needed our help.[X]
+##OralExamAnswer1_3B
+Francesca[X]
+##OralExamAnswer1_3BDesc
+That's an axe, idiot.[X]
+##OralExamAnswer1_3C
+Lucien[X]
+##OralExamAnswer1_3CDesc
+That sounds suspicious.[X]
+##OralExamAnswer1_3D
+Puzon[X]
+##OralExamAnswer1_3DDesc
+Heh. Looks like you've[N]
+breathed your last![X]
+
+##OralExamQuestion1_4
+[MidLeft][Nathan][MidRight][Gerson]
+First question is a simple one.[AN]
+What is the name of the bard[N]
+that the League hired?[A][X]
+##OralExamAnswer1_4A
+Gerson[X]
+##OralExamAnswer1_4ADesc
+Surely this one's correct.[X]
+##OralExamAnswer1_4B
+Cleone[X]
+##OralExamAnswer1_4BDesc
+I wonder how she sounds...[X]
+##OralExamAnswer1_4C
+Gunther[X]
+##OralExamAnswer1_4CDesc
+That's a bard-ly name.[X]
+##OralExamAnswer1_4D
+Kryst[X]
+##OralExamAnswer1_4DDesc
+Don't you forget it.[X]
+
+##OralExamQuestion1_5
+[MidLeft][Nathan][MidRight][Gerson]
+First question is a simple one.[AN]
+Who runs the local tavern where[N]
+you can take on requests?[A][X]
+##OralExamAnswer1_5A
+Benjamin[X]
+##OralExamAnswer1_5ADesc
+He needs a drink.[X]
+##OralExamAnswer1_5B
+Nathan[X]
+##OralExamAnswer1_5BDesc
+It's you![X]
+##OralExamAnswer1_5C
+Bobby[X]
+##OralExamAnswer1_5CDesc
+Of Bobby's.[X]
+##OralExamAnswer1_5D
+Gamon[X]
+##OralExamAnswer1_5DDesc
+Who?[X]
+
+

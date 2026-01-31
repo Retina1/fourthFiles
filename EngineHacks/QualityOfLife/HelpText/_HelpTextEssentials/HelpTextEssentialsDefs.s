@@ -26,6 +26,7 @@
 .equ SaveFileLabels, 0x08089DB0
 .equ SaveFileValues, 0x08089DE8
 
+.equ GetItemWeaponType, 0x08017548
 .equ GetItemAttributes, 0x0801756C
 
 .equ gHelpTextStuff, 0x0203E7AC

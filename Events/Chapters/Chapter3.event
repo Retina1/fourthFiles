@@ -186,7 +186,7 @@ ALIGN 4
 BeginningScene:
 DifficultySwapper
 LOMA Guildhall
-LOAD1 0x1 OpeningParty; ENUN
+LOAD2 0x1 OpeningParty; ENUN
 CAM1 [14,8]
 FADU 10
 STAL 20
@@ -212,7 +212,7 @@ FlashCursor(Helman,30)
 Text(Chapter3_Opening_2)
 CAM1 [5,11]
 //load after giving monsters time to exist
-LOAD1 0x1 CutsceneUnits
+LOAD2 0x1 CutsceneUnits
 ENUN
 SilentKillUnit(Egil)
 //preps leadin

@@ -75,3 +75,10 @@ Peregrine[X]
 ##Desc_Peregrine
 An Asketan scout injured by a skirmish.[N]
 He's laid back and optimistic anyway.[X]
+
+//windmage
+##Name_Mervyn
+Mervyn[X]
+##Desc_Mervyn
+A kind-hearted and simple sky jockey.[N]
+He wishes to make his mama proud.[X]

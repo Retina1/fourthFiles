@@ -82,7 +82,8 @@ CharacterEvent(0xf,TownHelmanTalk,Nathan,Helman)
 CharacterEvent(0x10,TownRatTalk,Nathan,Rat)
 CharacterEvent(0x11,TownKrystTalk,Nathan,Kryst)
 CharacterEvent(0x12,TownIoriaTalk,Nathan,Ioria)
-CharacterEvent(0x13,TownFourthTalk,Nathan,Fourth)
+//fourth handled via tile event
+//CharacterEvent(0x13,TownFourthTalk,Nathan,Fourth)
 
 CharacterEvent(StandardUnlockedFlag,BuyStandardClasses,Nathan,Second)
 //this should be fine
@@ -147,6 +148,7 @@ AreaEvent(LocationFlagShadesong,ShadesongMoveToShadyRow,0,3,0,4)
 
 //in imperial post
 AreaEvent(LocationFlagImperialPost,ImperialPostMoveToShadyRow,0,4,0,5)
+AreaEvent(LocationFlagImperialPost,TownFourthTalk,3,5)
 
 CauseGameOverIfLordDies
 END_MAIN
@@ -222,8 +224,8 @@ UNIT
 #define AddRedSigil(x,y) "AddTrap(RedSigilTrapID,x,y)"
 #define AddGreenSigil(x,y) "AddTrap(GreenSigilTrapID,x,y)"
 
-#define ResetMapFlags "ENUT NoRescuingFlag; ENUT 0x66; ENUT LocationFlagHirschringSquare; ENUT LocationFlagGuildhall; ENUT LocationFlagBlacksmith; ENUT LocationFlagTavern; ENUT LocationFlagNorthernPass; ENUT LocationFlagMuseum; ENUT LocationFlagBlackMarket"
-#define EndingMapFlags "ENUF NoRescuingFlag; ENUF 0x66; ENUF LocationFlagHirschringSquare; ENUF LocationFlagGuildhall; ENUF LocationFlagBlacksmith; ENUF LocationFlagTavern; ENUF LocationFlagNorthernPass; ENUF LocationFlagMuseum; ENUF LocationFlagBlackMarket; ENUF Recruited1Flag; ENUF Recruited2Flag; ENUF Recruited3Flag; ENUF Recruited4Flag; ENUF Recruited5Flag"
+#define ResetMapFlags "ENUT NoRescuingFlag; ENUT 0x66; ENUT LocationFlagHirschringSquare; ENUT LocationFlagGuildhall; ENUT LocationFlagBlacksmith; ENUT LocationFlagTavern; ENUT LocationFlagNorthernPass; ENUT LocationFlagMuseum; ENUT LocationFlagBlackMarket; ENUT LocationFlagShadyRow; ENUT LocationFlagDuelingGrounds; ENUT LocationFlagShadesong; ENUT LocationFlagImperialPost; ENUT LocationFlagMinisterPark; ENUT LocationFlagRiverHirsch; ENUT LocationFlagEmeraldGrove; ENUT LocationFlagUnderground; ENUT LocationFlagGamerspace; ENUT LocationFlagImperialCourtyard"
+#define EndingMapFlags "ENUF NoRescuingFlag; ENUF 0x66; ENUF LocationFlagHirschringSquare; ENUF LocationFlagGuildhall; ENUF LocationFlagBlacksmith; ENUF LocationFlagTavern; ENUF LocationFlagNorthernPass; ENUF LocationFlagMuseum; ENUF LocationFlagBlackMarket; ENUF LocationFlagShadyRow; ENUF LocationFlagDuelingGrounds; ENUF LocationFlagShadesong; ENUF LocationFlagImperialPost; ENUF LocationFlagMinisterPark; ENUF LocationFlagRiverHirsch; ENUF LocationFlagEmeraldGrove; ENUF LocationFlagUnderground; ENUF LocationFlagGamerspace; ENUF LocationFlagImperialCourtyard; ENUF Recruited1Flag; ENUF Recruited2Flag; ENUF Recruited3Flag; ENUF Recruited4Flag; ENUF Recruited5Flag"
 #define ClearMap "FADI 10; SET_ACTIVE 0; CLEA 0; CLEN 0; CLEE 0"
 #define MoveToMap(mapid) "LOMA mapid"
 #define InitializeNathan(x,y) "MOVE 0xFFFF Nathan [x,y]; ENUN; CAM1 Nathan"
@@ -292,7 +294,7 @@ CALL LoadHirschringSigils
 CallPreps
 CALL LoadPostPrepsUnits
 FADU 10
-RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,FillerDialogue,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,City05_PostPreps,0,0,0,0,0,0,0,0,0,0)
 GiveMoneyByVisit(2000,2500,1500,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x1 0xc 0x0
@@ -317,7 +319,7 @@ ENDA
 SquareMoveToGuildhall:
 SwapToMap(Guildhall,4,14)
 CALL LoadGuildhallSigils
-LoadUnitsByVisit(BehindCounterGerson,BehindCounterGerson,BehindCounterGerson,0,0,0,0,0,0,0,0,0,0,0)
+LOAD1 0x0 BehindCounterGerson
 FADU 10
 EndEvent
 
@@ -326,7 +328,7 @@ SwapToMap(Blacksmith,7,8)
 CALL LoadBlacksmithSigils
 //SetMapBGM(Song_DrawHeroes)
 MUSC Song_DrawHeroes
-LoadUnitsByVisit(BlacksmithUnitsC2,BlacksmithUnitsC3,BlacksmithUnitsS1,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(BlacksmithUnitsC2,BlacksmithUnitsC3,BlacksmithUnitsS1,BlacksmithUnitsC5,0,0,0,0,0,0,0,0,0,0)
 FADU 10
 EndEvent
 
@@ -335,7 +337,7 @@ SwapToMap(Tavern,2,8)
 CALL LoadTavernSigils
 //SetMapBGM(Song_DrawHeroes)
 MUSC Song_DrawHeroes
-LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,TavernUnitsS1,0,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,TavernUnitsS1,TavernUnitsC5,0,0,0,0,0,0,0,0,0,0)
 LoadMagusUnlocker
 FADU 10
 CALL QuestEndChecker
@@ -411,29 +413,29 @@ imperial courtyard - meet with the prince
 #include "EndEvents.event"
 
 TownGuildmasterTalk:
-RunTextByVisit(City02_Guildmaster,City03_Guildmaster,CityS1_Guildmaster,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Guildmaster,City03_Guildmaster,CityS1_Guildmaster,FillerDialogue,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 
 TownAstarteTalk:
-RunTextByVisit(City02_Astarte,City03_Astarte,CityS1_Astarte,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Astarte,City03_Astarte,CityS1_Astarte,City05_Astarte,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownGoreTalk:
-RunTextByVisit(City02_Gore,City03_Gore,CityS1_Gore,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Gore,City03_Gore,CityS1_Gore,City05_Gore,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownCleoneTalk:
-RunTextByVisit(City02_Cleone,City03_Cleone,CityS1_Cleone,CityS1_Cleone,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Cleone,City03_Cleone,CityS1_Cleone,City05_Cleone,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownBenthusTalk:
-RunTextByVisit(City02_Benthus,City03_Benthus,CityS1_Benthus,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Benthus,City03_Benthus,CityS1_Benthus,City05_Benthus,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownHelmanTalk:
-RunTextByVisit(FillerDialogue,City03_Helman,CityS1_Helman,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(FillerDialogue,City03_Helman,CityS1_Helman,City05_Helman,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownRatTalk:
-RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,DummyEvent,DummyEvent,City5RatEvent,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownKrystTalk:
-RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,City05_Kryst,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownGalvinTalk:
 RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0,0,0)
@@ -441,15 +443,28 @@ EndEvent
 TownIoriaTalk:
 RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0,0,0)
 EndEvent
+//call also via event point in imperial post
 TownFourthTalk:
-RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0,0,0)
+CHECK_EVENTID 0x13
+BNE 0xAAA 0xC 0x0
+RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,City05_Fourth,0,0,0,0,0,0,0,0,0,0)
+ENUT 0x13
+LABEL 0xAAA
+ENUF LocationFlagImperialPost
 EndEvent
+
+City5RatEvent:
+//todo - event
+Text(City05_Rat)
+SystemText(RatCh5xLetter)
+Text(City05_Rat2)
+ENDA
 
 DummyEvent:
 ENDA
 
 TownBertramTalk:
-RunTextByVisit(City02_Bertram,City03_Bertram,CityS1_Bertram,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Bertram,City03_Bertram,CityS1_Bertram,City05_Bertram,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 
 BuyStandardClasses:

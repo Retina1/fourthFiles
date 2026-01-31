@@ -98,5 +98,17 @@ MenuOption(Class_Priest, ClassDesc_Priest, 0)
 MenuOption(Class_Lurker, ClassDesc_Lurker, 0)
 MenuTerminator
 
+ALIGN 4
+RecruitSpecialMenu:
+MenuDefinition(8, 5, 14, 0, 1, RecruitSpecialMenuOptions)
+
+ALIGN 4
+RecruitSpecialMenuOptions:
+MenuOption(Class_DarkHunter, ClassDesc_DarkHunter, 0)
+MenuOption(Class_Lancer, ClassDesc_Lancer, 0)
+MenuOption(Class_Brawler, ClassDesc_Brawler, 0)
+MenuOption(Class_Hunter, ClassDesc_Hunter, 0)
+MenuTerminator
+
 
 #include "LordSplitMenuPlus.lyn.event"

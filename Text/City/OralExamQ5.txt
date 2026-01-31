@@ -1,0 +1,186 @@
+##OralExamQuestion5_1
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Final question! Good luck.[AN]
+How much gold would it cost[N]
+for a Handgonne and a Medica?[A][X]
+##OralExamAnswer5_1A
+500 Gold[X]
+##OralExamAnswer5_1ADesc
+I hate math.[X]
+##OralExamAnswer5_1B
+600 Gold[X]
+##OralExamAnswer5_1BDesc
+My brain's fried.[X]
+##OralExamAnswer5_1C
+700 Gold[X]
+##OralExamAnswer5_1CDesc
+Why would I know this?[X]
+##OralExamAnswer5_1D
+800 Gold[X]
+##OralExamAnswer5_1DDesc
+It's never the big one.[X]
+
+##OralExamQuestion5_2
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Final question! Good luck.[AN]
+Which of these guild recruits[N]
+is the odd one out, classwise?[A][X]
+##OralExamAnswer5_2A
+Laiteuse[X]
+##OralExamAnswer5_2ADesc
+...That's not a[N]
+person's name.[X]
+##OralExamAnswer5_2B
+Wasp[X]
+##OralExamAnswer5_2BDesc
+Wasps are scary.[N]
+...Bees are nice.[X]
+##OralExamAnswer5_2C
+Hausten[X]
+##OralExamAnswer5_2CDesc
+Is this my punishment?[X]
+##OralExamAnswer5_2D
+Martin[X]
+##OralExamAnswer5_2DDesc
+Who names their[N]
+kid Martin?[X]
+
+##OralExamQuestion5_3
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Final question! Good luck.[AN]
+What is the Guildmaster's[N]
+favorite way to pass time?[A][X]
+##OralExamAnswer5_3A
+Fishing[X]
+##OralExamAnswer5_3ADesc
+Fish would fear him.[X]
+##OralExamAnswer5_3B
+Training[X]
+##OralExamAnswer5_3BDesc
+What more could[N]
+he need now?[X]
+##OralExamAnswer5_3C
+Lounging[X]
+##OralExamAnswer5_3CDesc
+I've never seen[N]
+him sleep.[X]
+##OralExamAnswer5_3D
+Cooking[X]
+##OralExamAnswer5_3DDesc
+The man's gotta[N]
+eat like a horse.[X]
+
+##OralExamQuestion5_4
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Final question! Good luck.[AN]
+Which ailment can the[N]
+Lurker class not inflict?[A][X]
+##OralExamAnswer5_4A
+Petrify[X]
+##OralExamAnswer5_4ADesc
+Rat'd know this.[X]
+##OralExamAnswer5_4B
+Blind[X]
+##OralExamAnswer5_4BDesc
+Are you there, Rat?[X]
+##OralExamAnswer5_4C
+Curse[X]
+##OralExamAnswer5_4CDesc
+Please, Rat?[X]
+##OralExamAnswer5_4D
+Berserk[X]
+##OralExamAnswer5_4DDesc
+...Help me.[X]
+
+##OralExamQuestion5_5
+[MidLeft][Nathan][MidRight][Gerson]
+Correct! Moving on, then[...][AN]
+Final question! Good luck.[AN]
+I'll make it simple.[N]
+What is my name?[A][X]
+##OralExamAnswer5_5A
+Gerson[X]
+##OralExamAnswer5_5ADesc
+Don't choke.[X]
+##OralExamAnswer5_5B
+Nathan[X]
+##OralExamAnswer5_5BDesc
+I didn't need to pass anyway.[X]
+##OralExamAnswer5_5C
+Guildmaster[X]
+##OralExamAnswer5_5CDesc
+It'd be funny I think.[X]
+##OralExamAnswer5_5D
+Benthus[X]
+##OralExamAnswer5_5DDesc
+Benthus.[X]
+##OralExamAnswer5_5E
+Piorin[X]
+##OralExamAnswer5_5EDesc
+The true nameSomething is stirring, Shifting ground[N]
+It's just begun. Edges are blurring[N]
+All around, And yesterday is done.[N]
+Feel the flow, Hear what's happening:[N]
+We're what's happening. Don't you know?[N]
+We're the movers and we're the shapers.[N]
+We're the names in tomorrow's papers.[N]
+Up to us, man, to show 'em ?[N]
+It's our time, breathe it in:[N]
+Worlds to change and worlds to win.[N]
+Our turn coming through, Me and you, man,[N]
+Me and you![N]
+Feel how it quivers, On the brink[N]
+What? Everything![N]
+Gives you the shivers, Makes you think[N]
+There's so much stuff to sing![N]
+And you and me, We'll be singing it like the birds,[N]
+Me with music and you the words,[N]
+Tell 'em things they don't know![N]
+Up to us, pal, to show 'em[N]
+It's our time, breathe it in:[N]
+Worlds to change and worlds to win.[N]
+Our turn, we're what's new, Me and you, pal,[N]
+Me and you![N]
+Feel the flow, Hear what's happening:[N]
+We're what's happening! Long ago[N]
+All we had was that funny feeling,[N]
+Saying someday we'd send 'em reeling,[N]
+Now it looks like we can![N]
+Someday just began[N]
+It's our heads on the block.[N]
+Give us room and start the clock.[N]
+Our time coming through, Me and you, pal,[N]
+Me and you![N]
+Me and you![N]
+Something is stirring, Shifting ground[N]
+It's just begun. Edges are blurring[N]
+All around, And yesterday is done.[N]
+Feel the flow, Hear what's happening:[N]
+We're what's happening. Don't you know?[N]
+We're the movers and we're the shapers.[N]
+We're the names in tomorrow's papers.[N]
+Up to us now to show 'em[N]
+It's our time, breathe it in:[N]
+Worlds to change and worlds to win.
+Our turn coming through, Me and you, pal,[N]
+Me and you![N]
+Years from now, We'll remember and we'll come back,[N]
+Buy the rooftop and hang a plaque:
+This is where we began, Being what we can.[N]
+It's our heads on the block,[N]
+Give us room and start the clock.[N]
+Our dreams coming true, Me and you, pal,[N]
+Me and you![N]
+Me and you![N]
+Me and you![N]
+Me and you![N]
+Me and you![N]
+Me and you![N]
+Me and you![N]
+Me and you![X]
+
+
