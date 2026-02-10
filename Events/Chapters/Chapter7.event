@@ -65,6 +65,17 @@ UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 
 UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [12,0] 0x0 0x0 0x0 0x0 [Boarblade] NoAI
 UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [1,14] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
 UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [4,13] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+
+UNIT EndbringerGeneric Axefighter 0x0 Level(8,Enemy,1) [18,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [18,8] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT EndbringerGeneric Gunner 0x0 Level(8,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
+
+UNIT EndbringerGeneric Hunter 0x0 Level(8,Enemy,1) [15,2] 0x0 0x0 0x0 0x0 [ToxinBow] AttackInRangeAI
+UNIT EndbringerGeneric Lancer 0x0 Level(8,Enemy,1) [15,3] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT EndbringerGeneric Lancer 0x0 Level(8,Enemy,1) [16,2] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
+UNIT EndbringerGeneric Axefighter 0x0 Level(8,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+
 UNIT EndbringerGeneric Sniper 0x0 Level(8,Enemy,1) [16,6] 0x0 0x0 0x0 0x0 [Shortbow,CompactBow] AttackInRangeAI
 UNIT Astoria Seeker 0x0 Level(10,Enemy,1) [16,10] DropItem 0x0 0x0 0x0 [ShineScroll] AttackInRangeAI
 

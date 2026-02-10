@@ -1,3 +1,14 @@
+//rn modes
+s8 Roll2RN(int threshold) {
+    int average = (NextRN_100() + NextRN_100()) / 2;
+
+    return (threshold > average);
+}
+s8 Roll1RN(int threshold) {
+    return (threshold > NextRN_100());
+}
+
+
 //reds and greens don't do this - figure out how to actually make this like, work for usables
 void UnitUpdateUsedItem(struct Unit* unit, int itemSlot) {
 	if (UNIT_FACTION(unit) == FACTION_BLUE) {

@@ -26,6 +26,12 @@ UnitDescTable(Desc_HarlaEarly,Harla,0x0,Chapter5,0x0)
 UnitDescTable(Desc_GuildCh8,GuildGeneric,0x0,Chapter8,0x0)
 UnitDescTable(Desc_GuildmasterFinal,BossGuildmaster,0x0,EndgameB,0x0)
 UnitDescTable(Desc_GuildmasterFinal,BossGuildmaster,0x0,Chapter18C,0x0)
+
+UnitDescTable(Desc_Nathan2,Nathan,0x0,0xFF,Chapter16DoneFlag)
+UnitDescTable(Desc_Cleone2,Cleone,0x0,0xFF,Chapter16DoneFlag)
+UnitDescTable(Desc_Gore2,Gore,0x0,0xFF,Chapter16DoneFlag)
+UnitDescTable(Desc_Astarte2,Astarte,0x0,0xFF,Chapter16DoneFlag)
+UnitDescTable(Desc_Rat2,Rat,0x0,0xFF,Chapter16DoneFlag)
 SHORT 0x0; BYTE 0x0 0x0 0x0 0x0; SHORT 0x0  // term
 //@struct ChangeUnitDesc_Table
 //@{

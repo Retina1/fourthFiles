@@ -97,6 +97,7 @@ between stats and growths.[X]
 
 #include "Quests/1_Visit3x.txt"
 #include "Quests/2_VisitS1x.txt"
+#include "Quests/3_Visit5x.txt"
 
 #include "Skills/mssDescs.txt"
 #include "Skills/LevelUp/Common.txt"

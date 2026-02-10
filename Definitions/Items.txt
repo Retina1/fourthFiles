@@ -172,6 +172,7 @@ InedibleLeaf
 FictionScroll
 CrinkleGlove
 KingBrooch
+SleepGas
 HeroCrest 0xe6
 KnightProof
 OrionsBolt

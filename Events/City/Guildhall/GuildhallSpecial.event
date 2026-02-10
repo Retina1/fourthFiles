@@ -1,40 +1,222 @@
 ﻿//Made by Camtech075 of SerenesForest
 //Modified by Nintenlord
-
+/*
+[3,8]
+[7,10]
+[10,6]
+[11,12]
+[1,12]
+[13,10]
+[5,7]
+*/
 Recruit_Luis:
-UNIT Luis 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [ThornWhip] NoAI
+UNIT Luis 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [VineWhip,HealScroll] NoAI
+UNIT
+Recruit_Notre:
+UNIT Notre 0x0 0x1 Level(6,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Scorpio] NoAI
+UNIT
+Recruit_Wund:
+UNIT Wund 0x0 0x1 Level(9,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [ThornWhip] NoAI
+UNIT
+Recruit_Peabody:
+UNIT Peabody 0x0 0x1 Level(5,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [VineWhip,SleepGas] NoAI
+UNIT
+Recruit_Dalman:
+UNIT Dalman 0x0 0x1 Level(3,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [ThornWhip,Vulnerary] NoAI
+UNIT
+Recruit_Noelle:
+UNIT Noelle 0x0 0x1 Level(2,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [VineWhip,Elixir] NoAI
+UNIT
+Recruit_Yasmine:
+UNIT Yasmine 0x0 0x1 Level(7,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [ChainWhip] NoAI
+UNIT
+
+Recruit_Heri:
+UNIT Heri 0x0 0x1 Level(6,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Pike] NoAI
+UNIT
+Recruit_Radagast:
+UNIT Radagast 0x0 0x1 Level(14,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Sarissa] NoAI
+UNIT
+Recruit_Fourfinger:
+UNIT Fourfinger 0x0 0x1 Level(1,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Shortspear,Bravant] NoAI
+UNIT
+Recruit_Kelaino:
+UNIT Kelaino 0x0 0x1 Level(8,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+UNIT
+Recruit_Nelson:
+UNIT Nelson 0x0 0x1 Level(9,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Partizan,Vulnerary] NoAI
+UNIT
+
+Recruit_Shiliang:
+UNIT Shiliang 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Caestus] NoAI
+UNIT
+Recruit_Feefasnan:
+UNIT Feefasnan 0x0 0x1 Level(5,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [BrassKnuckles,Medica] NoAI
+UNIT
+Recruit_Brie:
+UNIT Brie 0x0 0x1 Level(8,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Gauntlets] NoAI
+UNIT
+Recruit_Arsof:
+UNIT Arsof 0x0 0x1 Level(11,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Caestus] NoAI
+UNIT
+Recruit_Mylo:
+UNIT Mylo 0x0 0x1 Level(3,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [BrassKnuckles,Vulnerary] NoAI
+UNIT
+Recruit_Leovetus:
+UNIT Leovetus 0x0 0x1 Level(7,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Caestus,Bravant] NoAI
+UNIT
+Recruit_Bulag:
+UNIT Bulag 0x0 0x1 Level(9,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Caestus,Medica] NoAI
+UNIT
+
+Recruit_Philmore:
+UNIT Philmore 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
+UNIT
+Recruit_Yajirushi:
+UNIT Yajirushi 0x0 0x1 Level(5,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Recurve,Bravant] NoAI
+UNIT
+Recruit_Yasaki:
+UNIT Yasaki 0x0 0x1 Level(5,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Composite,Stonard] NoAI
+UNIT
+Recruit_Ammi:
+UNIT Ammi 0x0 0x1 Level(4,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [GaleScroll,FlameScroll] NoAI
+UNIT
+Recruit_Sarina:
+UNIT Sarina 0x0 0x1 Level(8,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Gakgung] NoAI
+UNIT
+Recruit_Alexandra:
+UNIT Alexandra 0x0 0x1 Level(9,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [ToxinBow] NoAI
 UNIT
 
 //DH
 Luis_RecruitEvent:
 GuildRecruit(Luis,Guild_Test_Dialogue,0x20)
 EndEvent
+Notre_RecruitEvent:
+GuildRecruit(Notre,Guild_Test_Dialogue,0x21)
+EndEvent
+Wund_RecruitEvent:
+GuildRecruit(Wund,Guild_Test_Dialogue,0x22)
+EndEvent
+Peabody_RecruitEvent:
+GuildRecruit(Peabody,Guild_Test_Dialogue,0x23)
+EndEvent
+Dalman_RecruitEvent:
+GuildRecruit(Dalman,Guild_Test_Dialogue,0x24)
+EndEvent
+Noelle_RecruitEvent:
+GuildRecruit(Noelle,Guild_Test_Dialogue,0x25)
+EndEvent
+Yasmine_RecruitEvent:
+GuildRecruit(Yasmine,Guild_Test_Dialogue,0x26)
+EndEvent
+
+//LAN
+Heri_RecruitEvent:
+GuildRecruit(Heri,Guild_Test_Dialogue,0x20)
+EndEvent
+Radagast_RecruitEvent:
+GuildRecruit(Radagast,Guild_Test_Dialogue,0x21)
+EndEvent
+Fourfinger_RecruitEvent:
+GuildRecruit(Fourfinger,Guild_Test_Dialogue,0x22)
+EndEvent
+Kelaino_RecruitEvent:
+GuildRecruit(Kelaino,Guild_Test_Dialogue,0x23)
+EndEvent
+Nelson_RecruitEvent:
+GuildRecruit(Nelson,Guild_Test_Dialogue,0x24)
+EndEvent
+
+//BRWL
+Shiliang_RecruitEvent:
+GuildRecruit(Shiliang,Guild_Test_Dialogue,0x20)
+EndEvent
+Feefasnan_RecruitEvent:
+GuildRecruit(Feefasnan,Guild_Test_Dialogue,0x21)
+EndEvent
+Brie_RecruitEvent:
+GuildRecruit(Brie,Guild_Test_Dialogue,0x22)
+EndEvent
+Arsof_RecruitEvent:
+GuildRecruit(Arsof,Guild_Test_Dialogue,0x23)
+EndEvent
+Mylo_RecruitEvent:
+GuildRecruit(Mylo,Guild_Test_Dialogue,0x24)
+EndEvent
+Leovetus_RecruitEvent:
+GuildRecruit(Leovetus,Guild_Test_Dialogue,0x25)
+EndEvent
+Bulag_RecruitEvent:
+GuildRecruit(Bulag,Guild_Test_Dialogue,0x26)
+EndEvent
+
+//HUNT
+Philmore_RecruitEvent:
+GuildRecruit(Philmore,Guild_Test_Dialogue,0x20)
+EndEvent
+Yajirushi_RecruitEvent:
+GuildRecruit(Yajirushi,Guild_Test_Dialogue,0x21)
+EndEvent
+Yasaki_RecruitEvent:
+GuildRecruit(Yasaki,Guild_Test_Dialogue,0x22)
+EndEvent
+Ammi_RecruitEvent:
+GuildRecruit(Ammi,Guild_Test_Dialogue,0x23)
+EndEvent
+Sarina_RecruitEvent:
+GuildRecruit(Sarina,Guild_Test_Dialogue,0x24)
+EndEvent
+Alexandra_RecruitEvent:
+GuildRecruit(Alexandra,Guild_Test_Dialogue,0x25)
+EndEvent
 
 GuildhallLoadDarkHunters:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 GuildLoad(Luis,Recruit_Luis,0x1)
+GuildLoad(Notre,Recruit_Notre,0x2)
+GuildLoad(Wund,Recruit_Wund,0x3,Chapter9DoneFlag)
+GuildLoad(Peabody,Recruit_Peabody,0x4)
+GuildLoad(Dalman,Recruit_Dalman,0x5)
+GuildLoad(Noelle,Recruit_Noelle,0x6,SenatusUnlockedFlag)//ophelia unlocked
+GuildLoad(Yasmine,Recruit_Yasmine,0x7)
 FADU 10
 ENDA
 
 GuildhallLoadLancers:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-GuildLoad(Luis,Recruit_Luis,0x1)
+GuildLoad(Heri,Recruit_Heri,0x1)
+GuildLoad(Radagast,Recruit_Radagast,0x2,Chapter8DoneFlag)
+GuildLoad(Fourfinger,Recruit_Fourfinger,0x3)
+GuildLoad(Kelaino,Recruit_Kelaino,0x4)
+GuildLoad(Nelson,Recruit_Nelson,0x5,Chapter10DoneFlag) //quest?
 FADU 10
 ENDA
 
 GuildhallLoadBrawlers:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-GuildLoad(Luis,Recruit_Luis,0x1)
+GuildLoad(Shiliang,Recruit_Shiliang,0x1,Chapter8DoneFlag)
+GuildLoad(Feefasnan,Recruit_Feefasnan,0x2,Chapter10DoneFlag)
+GuildLoad(Brie,Recruit_Brie,0x3)
+GuildLoad(Arsof,Recruit_Arsof,0x4)
+GuildLoad(Mylo,Recruit_Mylo,0x5)
+GuildLoad(Leovetus,Recruit_Leovetus,0x6)
+GuildLoad(Bulag,Recruit_Bulag,0x7)
 FADU 10
 ENDA
 
 GuildhallLoadHunters:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-GuildLoad(Luis,Recruit_Luis,0x1)
+GuildLoad(Philmore,Recruit_Philmore,0x1)
+GuildLoad(Yajirushi,Recruit_Yajirushi,0x2,Chapter10DoneFlag)
+GuildLoad(Yasaki,Recruit_Yasaki,0x3,Chapter10DoneFlag)
+GuildLoad(Ammi,Recruit_Ammi,0x4)
+GuildLoad(Sarina,Recruit_Sarina,0x5)
+GuildLoad(Alexandra,Recruit_Alexandra,0x6)
 FADU 10
 ENDA
 

@@ -79,9 +79,26 @@ BNE 0x1 0xc 0x0
 RunTextByVisit(City02_BobbyIntro,City03_Bobby,CityS1_Bobby,City05_Bobby,0,0,0,0,0,0,0,0,0,0)
 ENUT 0x1f
 LABEL 0x1
-RunEventByVisit(DummyEvent,Chapter3Quests,ChapterS1Quests,0,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,Chapter3Quests,ChapterS1Quests,Chapter5Quests,0,0,0,0,0,0,0,0,0,0)
 ENUF LocationFlagTavern
 EndEvent
+
+Chapter5Quests:
+LABEL 0x1
+CallMenu(Quests5xMenu)
+SVAL 0x1 0
+BNE 0x10 0xc 0x1
+Text(Quest1_5x_Bobby)
+ENUT Quest1_5x_Flag
+GOTO 0x1
+LABEL 0x10
+SVAL 0x1 1
+BNE 0x11 0xc 0x1
+Text(Quest2_5x_Bobby)
+ENUT Quest2_5x_Flag
+GOTO 0x1
+LABEL 0x11
+ENDA
 
 ChapterS1Quests:
 LABEL 0x1

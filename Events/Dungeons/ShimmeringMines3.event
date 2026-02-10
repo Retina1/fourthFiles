@@ -116,6 +116,7 @@ EndEvent
 EndingScene:
 SystemText(CompleteDungeonSys)
 IfNoSelectedGoto(0x1)
+ENUF WaitEventTrapsFlag
 MoveToChapter(Chapter8)
 GOTO 0x2
 LABEL 0x1

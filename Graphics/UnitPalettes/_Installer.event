@@ -101,6 +101,7 @@ Guildmaster_HighlanderDMP:
 #include "_LifeflowPalettes.event"
 #include "_SenatusPalettes.event"
 #include "_ImpAutoPalettes.event"
+#include "_NPCPalettes.event"
 
 PUSH
 ORG $59BFC

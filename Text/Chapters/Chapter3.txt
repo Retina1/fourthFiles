@@ -291,7 +291,7 @@ Agh! Just[...] Do it![AN]
 priceless scroll![AN]
 It's coming out of YOUR[N]
 pay-slash-funeral costs![AN][MidRight]
-[...]Sure.[A][X]
+For sure.[A][X]
 
 ##Chapter3_Opening_1
 [FarLeft][Gore][Left][Nathan][Right][Guildmaster][FarRight][Rat][Right]
@@ -365,7 +365,7 @@ Vaporize these mongrels that[N]
 dare threaten me,[A] and by[N]
 extension,[A] the foundation of[N]
 peace in all Belvarus![AN]
-[...]And Asketa.[AN][MidLeft]
+And Asketa.[AN][MidLeft]
 [...]Sure.[A][X]
 
 ##Chapter3_HouseText

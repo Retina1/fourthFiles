@@ -25,3 +25,4 @@ Tristao_Axefighter
 Tristao_Gladiator
 Francesca_Duelist
 Francesca_Fencer
+Xavens_Warlock

@@ -91,6 +91,10 @@
 #define Quest1_S1x_DoneFlag 0x106
 #define Quest2_S1x_Flag 0x107
 #define Quest2_S1x_DoneFlag 0x108
+#define Quest1_5x_Flag 0x109
+#define Quest1_5x_DoneFlag 0x10a
+#define Quest2_5x_Flag 0x10b
+#define Quest2_5x_DoneFlag 0x10c
 
 
 #define NoRescuingFlag 0x120

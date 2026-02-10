@@ -1,0 +1,129 @@
+##Quest1_5x
+A Shimmering Prize[X]
+##Quest1_5x_Desc
+A geologist wishes to see some[N]
+crystal samples from within the[N]
+Shimmering Mines.[X]
+
+##Quest1_5x_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+That one's real simple.[AN]
+Word on the grapevine's that[N]
+you're headed to the mines.[AN]
+The Shimmering Mines, to be[N]
+more precise.[AN][MidLeft]
+Where'd you hear that?[N]
+I just learned it myself.[AN][MidRight]
+Don't question a man's sources.[AN]
+Anyway, there's a geologist who's[N]
+talked lots about the mines.[AN]
+Said he's always wanted to study[N]
+their splendiforous crystals.[AN]
+And he's also a real good tipper.[AN][MidLeft]
+Good for him.[AN][MidRight]
+He didn't directly put this up[N]
+as a request, but I like him.[AN]
+Figured I'd do him a favor.[AN][MidLeft]
+You mean you'd make us do[N]
+him a favor.[AN][MidRight]
+You'll be in the mines anyway.[AN]
+Look, just find a nice crystal[N]
+and bring it back, please.[AN]
+[...]Good luck.[A][X]
+
+##Quest2_5x_System
+[A][X]
+
+##Quest1_5x_Done
+[MidLeft][Nathan][MidRight][Bobby][MidLeft]
+.[A][X]
+
+##Quest2_5x
+A Sobering Experience[X]
+
+##Quest2_5x_Desc
+A notorious local drunkard won't stop[N]
+picking fights, and needs a lesson[N]
+he won't forget. Danger lies ahead.[X]
+
+##Quest2_5x_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+That one's real simple.[AN]
+There's a bar somewhere else[N]
+in the city with a real prick.[AN]
+Man drinks until he can't, and[N]
+then drinks some more.[AN]
+Makes him a real dastard to[N]
+anyone who slights him.[AN]
+And when you're that drunk,[N]
+anything's a slight.[AN]
+He's even come by and scared[N]
+off some of my regulars.[AN][MidLeft]
+And you'd like us to beat[N]
+him up, you're saying?[AN][MidRight]
+Basically. Don't kill him,[N]
+of course. That'd be wrong.[AN]
+But put the fear of death back[N]
+in him, if you catch my drift.[AN][MidLeft]
+[...]Couldn't you hire bouncers[N]
+to do this instead?[AN][MidRight]
+I'm a barkeeper, not a god.[AN]
+Do you think I have that kind[N]
+of coin just around?[AN][MidLeft]
+Fine, fine. Where would[N]
+we find him, anyway?[AN][MidRight]
+No clue. That bar's near the[N]
+city's outskirts.[AN]
+Maybe if you're caught in battle[N]
+outside the city,[A] he'll come and[N]
+pick a fight?[AN][MidLeft][CloseEyes]
+[...]Very helpful.[AN][MidRight]
+You can't miss him.[N]
+Trust me. [...]Good luck.[A][X]
+
+
+##Quest2_5x_Kill
+[MidRight][Nathan]
+Hold. I think that's[N]
+the drunkard.[AN]
+The one Bobby sent us[N]
+after some time back.[AN]
+I'd hope he's learned[N]
+his lesson by now,[AN]
+so let's let him go.[AN]
+We've more important[N]
+things to do, anyway.[X]
+
+##Quest2_5x_Done
+[MidLeft][Nathan][MidRight][Bobby]
+g.[A][X]
+
+
+##Quest2_8x
+Hopping Into Action[X]
+
+##Quest2_8x_Desc
+Rumors abound of a swordfighter[N]
+who takes an unusual form. Try to[N]
+verify them. Danger lies ahead.[X]
+
+##Quest2_8x_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+That one's real simple.[AN]
+
+[...]Good luck.[A][X]
+
+
+##Quest2_8x_Kill
+[MidLeft][Natsubun]
+(Hmph. Impressive.)[A][X]
+
+##Quest2_8x_Done
+[MidLeft][Nathan][MidRight][Bobby]
+g.[A][X]
+
+##Quest2_8x_RewardText
+Natsuki (Myrmidon) is now[N]
+available for recruitment![AN]
+Check her out next time you have[N]
+openings for new guild members.[A][X]

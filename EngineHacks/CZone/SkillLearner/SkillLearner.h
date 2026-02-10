@@ -65,9 +65,9 @@ struct Struct_SkillLevelerProc
 	u8 skillset;
 	//menu stuff
 	u8 menuIndex; //what skill we're on
-	u8 indexLevel; //what level it is
-	u8 isMaxLevel; //is it max level
-	u8 arePrereqsMet; //can we even level it
+	u8 indexLevel[23]; //what level it is
+	u8 isMaxLevel[23]; //is it max level
+	u8 arePrereqsMet[15]; //can we even level it - always true for statups
 };
 
 struct Struct_ConfirmationProc

@@ -117,7 +117,7 @@ A founder of Guild [Guild], driven[N]
 to change the world no matter what.[X]
 ##Desc_Rat2
 A representative of Guild [Guild],[N]
-driven to make all pawns in a game.[X]
+driven to make all pawns in their game.[X]
 ##Desc_GuildmasterFinal
 The Guildmaster, his spear empowered[N]
 by the hopes of the world's remnants.[X]

@@ -99,6 +99,12 @@ Stoning Gas[X]
 A forbidden jar of truly baneful gas.[N]
 Inflicts status on a foe within 5 tiles.[N]
 Base Petrification Affliction Rate: 50%.[X]
+##Name_SleepGas
+Sleep Gas[X]
+##Desc_SleepGas ^
+A throwing jar of highly soporific gas.[N]
+Inflicts status on a foe within 5 tiles.[N]
+Base Sleep Affliction Rate: 50%.[X]
 
 
 ##Name_AriadneShard
