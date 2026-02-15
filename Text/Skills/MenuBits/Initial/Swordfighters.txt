@@ -1,0 +1,51 @@
+##UM_GuardBreak
+ Guard Break[X]
+##UM_GuardBreakDesc
+Strike to debuff Def.[N]
+Cost: 2 Durability.[X]
+##UM_PowerBreak
+ Power Break[X]
+##UM_PowerBreakDesc
+Strike to debuff Atk.[N]
+Cost: 2 Durability.[X]
+##UM_AgilityBreak
+ Agility Break[X]
+##UM_AgilityBreakDesc
+Strike to debuff AS.[N]
+Cost: 2 Durability.[X]
+##UM_WrathStrike
+ Wrath Strike[X]
+##UM_WrathStrikeDesc
+A strong single strike.[N]
+Cost: 2 Durability.[X]
+##UM_SwordGlint
+ Sword Glint[X]
+##UM_SwordGlintDesc
+Strike with magic might.[N]
+Cost: 3 Durability.[X]
+##UM_FalconSlash
+ Falcon Slash[X]
+##UM_FalconSlashDesc
+Strike with splash damage.[N]
+Cost: 3 Durability.[X]
+##UM_SwiftStrikes
+ Swift Strikes[X]
+##UM_SwiftStrikesDesc
+A pair of rapid strikes.[N]
+Cost: 4 Durability.[X]
+##UM_Spellchaser
+ Spellchaser[X]
+##UM_SpellchaserDesc
+Ready up to chase magic.[N]
+Cost: 3 Durability.[X]
+##UM_FullBreak
+ Full Break[X]
+##UM_FullBreakDesc
+Stronger vs. debuffed foes.[N]
+Cost: 3 Durability.[X]
+##UM_Tempest
+ Tempest[X]
+##UM_TempestDesc
+Strike an extra time[N]
+per sword in inventory.[N]
+Cost: 6 Durability.[X]

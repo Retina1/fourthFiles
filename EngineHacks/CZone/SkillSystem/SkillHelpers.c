@@ -3,6 +3,9 @@
 static bool IsBattleReal() {
     return gBattleStats.config & (BATTLE_CONFIG_REAL | BATTLE_CONFIG_SIMULATE);
 }
+static bool IsBattleReallyReal() {
+    return gBattleStats.config & (BATTLE_CONFIG_REAL);
+}
 
 static int  absolute(int value)        {return value < 0 ? -value : value;}
 

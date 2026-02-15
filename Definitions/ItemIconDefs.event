@@ -160,6 +160,9 @@
 #define AriadneShardIcon 0xD7
 #define InedibleLeafIcon 0xD8
 #define FictionScrollIcon 0xD9
+#define CrinkleGloveIcon 0xDA
+#define KingBroochIcon 0xDB
+#define SleepGasIcon 0xDC
 #define HeroCrestIcon 0xE6
 #define KnightProofIcon 0xE7
 #define OrionsBoltIcon 0xE8

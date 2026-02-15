@@ -1,6 +1,14 @@
 inline int GetItemStatusOdds(int item) {
     return GetItemData(ITEM_INDEX(item))->ailmentRate;
 }
+int GetArtStatusOdds(struct BattleUnit* actor, struct BattleUnit* target){
+	if (CombatArtList[GetActiveArt(&actor->unit)].oddsFunction != NULL)
+		return CombatArtList[GetActiveArt(&actor->unit)].oddsFunction(actor, target);
+	else return 0;
+}
+u8 GetArtStatusEffect(struct BattleUnit* actor, struct BattleUnit* target){
+    return CombatArtList[GetActiveArt(&actor->unit)].itemEffect;
+}
 
 void BattleApplyStatus(struct BattleUnit* battleUnit, u8 status) {
 	battleUnit->statusOut = status;
@@ -64,10 +72,19 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 
 void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	int currentStatus = defender->unit.statusIndex;
-	switch (GetItemWeaponEffect(attacker->weapon)) {
+	int effect,odds;
+	if ((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) {
+		effect = GetArtStatusEffect(attacker,defender);
+		odds = GetArtStatusOdds(attacker,defender);
+	}
+	else {
+		effect = GetItemWeaponEffect(attacker->weapon);
+		odds = GetItemStatusOdds(attacker->weapon);
+	}
+	switch (effect) {
 		
 		case WPN_EFFECT_PETRIFY:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+			if (StatusOddsRollBattle(attacker, defender, odds)){
 				defender->statusOut = UNIT_STATUS_PETRIFY;
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
 			}
@@ -75,7 +92,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 			
 		case WPN_EFFECT_CURSE:
 			if (currentStatus != UNIT_STATUS_PETRIFY) {
-				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				if (StatusOddsRollBattle(attacker, defender, odds)){
 					defender->statusOut = UNIT_STATUS_CURSE;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -88,7 +105,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 			
         case WPN_EFFECT_POISON:
 			if (currentStatus != UNIT_STATUS_PETRIFY && currentStatus != UNIT_STATUS_CURSE){
-				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				if (StatusOddsRollBattle(attacker, defender, odds)){
 					defender->statusOut = UNIT_STATUS_POISON;
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
 					// "Ungray" defender if it was petrified (as it won't be anymore
@@ -100,7 +117,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 			
         case WPN_EFFECT_SLEEP:
 			if (currentStatus != UNIT_STATUS_PETRIFY  && currentStatus != UNIT_STATUS_CURSE  && currentStatus != UNIT_STATUS_POISON) {
-				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				if (StatusOddsRollBattle(attacker, defender, odds)){
 					defender->statusOut = UNIT_STATUS_SLEEP;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -113,7 +130,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 
         case WPN_EFFECT_BERSERK:
 			if (currentStatus != UNIT_STATUS_PETRIFY  && currentStatus != UNIT_STATUS_CURSE  && currentStatus != UNIT_STATUS_POISON  && currentStatus != UNIT_STATUS_SLEEP){
-				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				if (StatusOddsRollBattle(attacker, defender, odds)){
 					defender->statusOut = UNIT_STATUS_BERSERK;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -126,7 +143,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 
         case WPN_EFFECT_PARALYZE:
 			if (currentStatus != UNIT_STATUS_PETRIFY  && currentStatus != UNIT_STATUS_CURSE  && currentStatus != UNIT_STATUS_POISON  && currentStatus != UNIT_STATUS_SLEEP  && currentStatus != UNIT_STATUS_BERSERK) {
-				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				if (StatusOddsRollBattle(attacker, defender, odds)){
 					defender->statusOut = UNIT_STATUS_PARALYZE;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -139,7 +156,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 			
         case WPN_EFFECT_BLIND:
 			if (currentStatus != UNIT_STATUS_PETRIFY  && currentStatus != UNIT_STATUS_CURSE  && currentStatus != UNIT_STATUS_POISON  && currentStatus != UNIT_STATUS_SLEEP  && currentStatus != UNIT_STATUS_BERSERK  && currentStatus != UNIT_STATUS_PARALYZE) {
-				if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+				if (StatusOddsRollBattle(attacker, defender, odds)){
 					defender->statusOut = UNIT_STATUS_BLIND;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -152,7 +169,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
         
 		//BINDS don't need checks
         case WPN_EFFECT_HEADBIND:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+			if (StatusOddsRollBattle(attacker, defender, odds)){
 				defender->statusOut = UNIT_STATUS_HEADBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -163,7 +180,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
             break;
 			
         case WPN_EFFECT_ARMBIND:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+			if (StatusOddsRollBattle(attacker, defender, odds)){
 				defender->statusOut = UNIT_STATUS_ARMBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -174,7 +191,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
             break;
 			
         case WPN_EFFECT_LEGBIND:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+			if (StatusOddsRollBattle(attacker, defender, odds)){
 				defender->statusOut = UNIT_STATUS_LEGBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -184,7 +201,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 			}
             break;
 		case WPN_EFFECT_FULLBIND:
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+			if (StatusOddsRollBattle(attacker, defender, odds)){
 				defender->statusOut = UNIT_STATUS_FULLBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
@@ -252,7 +269,7 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
             defender->unit.curHP = 0;
 		}
 
-        if (GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_HPDRAIN) {
+        if ((GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_HPDRAIN) || (GetArtStatusEffect(attacker,defender) == WPN_EFFECT_HPDRAIN)) {
             if (attacker->unit.maxHP < (attacker->unit.curHP + gBattleStats.damage))
                 attacker->unit.curHP = attacker->unit.maxHP;
             else
@@ -295,17 +312,41 @@ void BattleApplyItemEffect(struct Proc* proc) {
     Proc_StartBlocking(sProcScr_BattleAnimSimpleLock, proc);
 }
 
+//durability
+u16 GetItemAfterArtUse(int item, int cost) {
+    if (GetItemAttributes(item) & IA_UNBREAKABLE)
+        return item; // unbreakable items don't loose uses!
+
+    item -= (cost << 8); // lose cost uses
+
+    if (item < (1 << 8))
+        return 0; // return no item if uses < 0
+
+    return item; // return used item
+}
+
 void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* defender) {
     attacker->wexpMultiplier++;
 
     if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS)) {
 		BattleWeaponStatusesEffects(attacker, defender);
+		if (IsBattleReallyReal()){
+			CombatArtBattleProcFuncWrapper(attacker, defender);
+		}
     }
 
     gBattleHitIterator->hpChange = gBattleStats.damage;
 	
 	int allegiance = (attacker->unit.index & 0xC0);
-    if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS) && allegiance == FACTION_BLUE) {
+	
+	//todo - make durability deplete once
+	if ((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) {
+		attacker->weapon = GetItemAfterArtUse(attacker->weapon, CombatArtDurabilityList[GetActiveArt(&attacker->unit)]);
+		if (!attacker->weapon)
+            attacker->weaponBroke = TRUE;
+	}
+	
+    else if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS) && allegiance == FACTION_BLUE) {
         attacker->weapon = GetItemAfterUse(attacker->weapon);
 
         if (!attacker->weapon)
@@ -358,4 +399,19 @@ void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit*
 
     if (gBattleStats.damage != 0)
         attacker->nonZeroDamage = TRUE;
+}
+
+
+int GetBattleUnitHitCount(struct BattleUnit* attacker) {
+    int result = 1;
+	
+	if ((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) {
+		if (CombatArtList[GetActiveArt(&attacker->unit)].strikeCountFunction != NULL) {
+			result = CombatArtList[GetActiveArt(&attacker->unit)].strikeCountFunction(attacker);
+		}
+	}	
+	else {
+		result <<= BattleCheckBraveEffect(attacker);
+	}
+    return result;
 }

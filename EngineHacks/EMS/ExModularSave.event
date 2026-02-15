@@ -188,6 +188,9 @@ gSuspendSaveChunks:
 	// Save Debuffs (TODO: maybe reduce size)
 	DeclSaveChunk($2636, DebuffTableSize, SUD_SaveDebuffs,  SUD_LoadDebuffs)
 
+	DeclSaveChunk($2636+DebuffTableSize, CAS_NumberOfActiveArtsAtOnce * 2, CAS_EMS_WriteActiveArts, CAS_EMS_ReadActiveArts)
+
+
 	// ends at $2A76
 	// free up to $2E78 ($B7 free bytes)
 

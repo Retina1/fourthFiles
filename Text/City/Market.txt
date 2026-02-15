@@ -64,7 +64,7 @@ You have [G] gold.[N]
 Sun-Dried Lettuce (50 Gold)[X]
 ##VisitAllMarket1Desc
 If you can sun-dry a tomato,[N]
-surely this'll work too?[N]
+surely this'll work too...?[N]
 The market won't run out of this.[X]
 ##VisitAllMarket2 ^
 Tomorrow's Silver Nation (70 Gold)[X]

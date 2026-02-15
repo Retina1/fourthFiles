@@ -11,6 +11,7 @@ UnitMenuTable:
   //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
   MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020) // UM_Seize
   UM_Attack //MenuCommand(0x67b, 0x6c0, NormalText, $249ac, AttackEffect, $22c31, $22c99) //to clear flags
+  MenuCommand(UM_CombatArtsMenuName,UM_CombatArtsMenuDesc,BlueText,UM_CombatArtsMenuUsability,UM_CombatArtsMenuEffect)
   UM_Attack_B //MenuCommand(0x67b, 0x6c0, NormalText, $24a28, AttackEffect, $22c31, $22c99)
   UM_Staff
   UM_Pick
@@ -80,8 +81,26 @@ ALIGN 4
 RallyingCryBuffLabel_Link: 
 WORD RallyingCryBuffLabel
 
-
+// thanks skillsys really awesome stuff you have here
 PUSH
+
+// Unit Menu placement/sizing:
+#define UnitMenuLeftXCoord 1
+#define UnitMenuRightXCoord 20
+// Lower values may cause issues with longer menu option names, so beware!
+#define UnitMenuWidth 9
+
+// Map Menu placement/sizing:
+#define MapMenuRightXCoord 20
+// Lower values may cause issues with longer menu option names, so beware!
+#define MapMenuWidth 8
+
+  // Map Menu stuff
+  ORG $59D216
+    BYTE MapMenuWidth // width
+  ORG $1CA86
+    BYTE MapMenuRightXCoord
+
   // Repoint Unit Menu
 
   ORG $59D1F8
@@ -90,48 +109,44 @@ PUSH
   // Make the unit menu wider (to fit longer words)
 
   ORG $59d1f2 
-    BYTE 0x9 // width
+    BYTE UnitMenuWidth // width
 
   ORG $1d4fa
-    BYTE $01 // left x coord (open 1)
+    BYTE UnitMenuLeftXCoord // left x coord (open 1)
 
   ORG $1d4fc
-    BYTE $14 // right x coord (open 1)
+    BYTE UnitMenuRightXCoord // right x coord (open 1)
 
   ORG $1D44E
-    BYTE $01 // left x coord (open 2)
+    BYTE UnitMenuLeftXCoord // left x coord (open 2)
 
   ORG $1D450
-    BYTE $14 // right x coord (open 2)
-
-  /*
-
-  Goddammit Teq (capture hooks here too)
+    BYTE UnitMenuRightXCoord // right x coord (open 2)
 
   ORG $22882
-    BYTE $01 // left x coord (go back 1)
-*/
-  ORG $22884
-    BYTE $14 // right x coord (go back 1)
+    BYTE UnitMenuLeftXCoord // left x coord (go back 1)
 
+  ORG $22884
+    BYTE UnitMenuRightXCoord // right x coord (go back 1)
 
   ORG $22818
-    BYTE $01 // left x coord (go back 2)
+    BYTE UnitMenuLeftXCoord // left x coord (go back 2)
 
   ORG $2281A
-    BYTE $14 // right x coord (go back 2)
+    BYTE UnitMenuRightXCoord // right x coord (go back 2)
 
   ORG $22772
-    BYTE $01 // left x coord (go back 3)
+    BYTE UnitMenuLeftXCoord // left x coord (go back 3)
 
   ORG $22774
-    BYTE $14 // right x coord (go back 3)
+    BYTE UnitMenuRightXCoord // right x coord (go back 3)
 
   ORG $23660
-    BYTE $01 // left x coord (go back 4)
+    BYTE UnitMenuLeftXCoord // left x coord (go back 4)
 
   ORG $23662
-    BYTE $14 // right x coord (go back 4)
+    BYTE UnitMenuRightXCoord // right x coord (go back 4)
+
 
 POP
 #endif // UNIT_MENU

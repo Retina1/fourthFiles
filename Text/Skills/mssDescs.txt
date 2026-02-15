@@ -211,7 +211,7 @@ that's strong and can't miss.[X]
 Earthspike: A devastating spell[N]
 with unimpressive accuracy.[X]
 ##
-Fireball: A simple[N]
+Firebolt: A simple[N]
 and effective spell.[X]
 ##
 Thunderbolt: A shocking spell[N]
@@ -359,7 +359,7 @@ Charging Throw: Throw with more[N]
 range based on tiles moved.[X]
 ##
 Horse Slayer: A thrust that[N]
-shreds mounted enemeis.[X]
+shreds mounted enemies.[X]
 ##
 Heartpiercer: An impalation[N]
 with very high Crit.[X]
@@ -368,13 +368,13 @@ Archballista: Stand still to toss[N]
 a lance an incredible distance.[X]
 ##
 Full Force: A thrust that strikes[N]
-twive if using full movement.[X]
+twice if using full movement.[X]
 ##
 Charge Command: A command that boosts[N]
 ally Mov based on own unused Mov.[X]
 ##
-Gae Bolg: A thrust that ignores[N]
-all enemy defensive effects.[X]
+Gae Bolg: A thrust that[N]
+ignores all enemy defenses.[X]
 
 //rai
 ##MSS_MenacingPresence
@@ -687,7 +687,7 @@ that inflicts poison.[X]
 Slumber Whip: A whip strike[N]
 that inflicts sleep.[X]
 ##
-Mirate Whip: A whip strike[N]
+Mirage Whip: A whip strike[N]
 that inflicts berserk.[X]
 ##
 Precision: Buff self and allies[N]
@@ -813,7 +813,7 @@ Hunter's Spoils: Boosts Exp. gain[N]
 when fighting debuffed enemies.[X]
 ##
 Camouflage: Use Stealth to boost[N]
-Atk/Avo/aggro until next strike.[X]
+Atk/Avo and reduce aggro.[X]
 ##
 Trickery: Debuff enemies[N]
 to massively reduce Hit.[X]

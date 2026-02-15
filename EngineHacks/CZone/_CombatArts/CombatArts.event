@@ -1,0 +1,62 @@
+#include "Config.event"
+
+#define MagicArt 1
+#define PhysArt 0
+#define NullArt 0
+#define Set1LastArt 66
+#define Set2LastArt 110
+#define Set3LastArt 154
+#define Set4LastArt 198
+#define Set5LastArt 220
+#define Set6LastArt 253
+#define Set7LastArt 275
+#define Set8LastArt 297
+
+ALIGN 4
+LastArtInTable:
+WORD Set8LastArt
+
+ALIGN 4; CAMenuDef:
+BYTE 0 3 10 0; WORD 0 CAS_RAM_START 0 0 0; POIN 0x22861 0x4F521 0x4F459
+
+#define CombatArt(id,name, desc, durabilityCost, usability, menu_usability, menu_draw, menu_effect, prebattle, bothsides, postbattle, battleproc, rangefunc, oddsfunc, hitcount, isMagic, spellAnim, itemEffect) \
+"PUSH; ORG CombatArtList+(id*0x34); \
+SHORT name desc; POIN usability menu_usability menu_draw menu_effect prebattle bothsides postbattle battleproc rangefunc oddsfunc hitcount; BYTE isMagic spellAnim itemEffect 0; \
+ORG CombatArtDurabilityList+id; BYTE durabilityCost; POP"
+ALIGN 4; CombatArtList: FILL 0x34*0x181
+ALIGN 4; CombatArtDurabilityList: FILL 0x181
+/*
+	CombatArt(1, \ // ID
+			  john, \ // Name
+			  jones, \ // Desc
+			  3, \ // Durability Cost
+			  usabilityPointer, \ // General Usability
+			  epicpointer, \ // Menu Usability (usually is a wrapper for General Usability to return a MENU_X enum value)
+			  omgpointerhi, \ // Menu Draw
+			  epicpointer2, \ // Menu Effect
+			  somewhatepicpointer, \ // Pre Battle Function
+			  somewhatepicpointer, \ // Both Sides Function
+			  againapointer, \ // Post Battle Function
+			  fifthhack, \ // Battle Proc Function
+			  aaaaaaaaaaaa,\ // Range Function
+			  aaaaaaaaaaaa) // odds Function
+*/
+
+//
+
+#include "Set1_Initial.event"
+#include "Set2_Standard.event"
+#include "Set3_Magi.event"
+#include "Set4_Special.event"
+#include "Set5_Skyshroud.event"
+#include "Set6_Lifeflow.event"
+#include "Set7_Senatus.event"
+#include "Set8_ImpArt.event"
+
+//dark hunt - make sheets for each class eventually
+
+//CombatArt(Set8LastArt+1, /* Early Terminator, make the ID for this be after your last entry to speed up searching through each art */ (-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),0, (-1), (-1))
+CombatArt((Set8LastArt + 1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),0, (-1), (-1)) // Terminator, last art ID is 0x17F unless the list is expanded
+//CombatArt(298,(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),0, (-1), (-1)) // Terminator, last art ID is 0x17F unless the list is expanded
+
+

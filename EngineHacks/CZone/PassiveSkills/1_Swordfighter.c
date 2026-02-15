@@ -59,10 +59,10 @@ int ApplySwordfighterWeaponParry(u8 stat, struct Unit* unit) {
 		}
 	}
 	if (UNIT_HAS_SKILL(unit,LND,skill_333)){
-		stat = stat + 5 * count;
+		stat = stat + 3 * count;
 	}
 	else if	(UNIT_HAS_SKILL(unit,LND,skill_332)){
-		stat = stat + 3 * count;
+		stat = stat + 2 * count;
 	}
 	else if (UNIT_HAS_SKILL(unit,LND,skill_331)){
 		stat = stat + 1 * count;

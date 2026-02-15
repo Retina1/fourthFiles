@@ -23,23 +23,31 @@ POP
 
 ALIGN 4
 #include "Tilesets\_TilesetInstaller.event"
+MESSAGE Tilesets end at currentOffset
 ALIGN 4
 #include "Maps\MasterMapInstaller.event"
+MESSAGE Maps end at currentOffset
 ALIGN 4
 #include "Graphics\_Graphics.event"
+MESSAGE Graphics end at currentOffset
 ALIGN 4
 #include "Text\Install Text Data.event"
+MESSAGE Text ends at currentOffset
 ALIGN 4
 #include "Music\_MusicInstaller.event"
+MESSAGE Music ends at currentOffset
+
 
 ALIGN 4
 #include "Tables\Table Installer.event"
+MESSAGE Tables end at currentOffset
 
 #undef ItemTable
 #define ItemTable NewItemTable
 
 ALIGN 4
 #include "EngineHacks\MasterHackInstaller.event"
+MESSAGE Hacks end at currentOffset
 
 ALIGN 4
 #include "Events\_ChapterEventsInstaller.event"

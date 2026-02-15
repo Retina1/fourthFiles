@@ -377,7 +377,18 @@ SongTable(Song_NameEntry,NameEntry,0)
 SongTable(Song_Musette,Musette,0)
 #include "songs/Musette.event"
 }
-
+//0x41
+#define Song_GloriaFilio 0x41
+{
+SongTable(Song_GloriaFilio,GloriaFilio,1)
+#include "songs/GloriaFilio.event"
+}
+//0x42
+#define Song_LifeGoesOn 0x42
+{
+SongTable(Song_LifeGoesOn,LifeGoesOn,0)
+#include "songs/LifeGoesOn.event"
+}
 //0x43 - title screen
 #define Song_SpinningTheTale 0x43
 {

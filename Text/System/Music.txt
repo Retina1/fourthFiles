@@ -125,11 +125,19 @@ Lucky Break[X]
 The Binding of Isaac: Antibirth[X]
 ##SongTitle_InnocenceGlitched
 Innocence Glitched[X]
+##SongTitle_GloriaFilio
+Gloria Filio[X]
 
 ##SourceTitle_Deltarune
 Deltarune[X]
 ##SongTitle_WiseWords
 Wise Words[X]
+
+
+##SourceTitle_Persona5
+Persona 5 (Royal)[X]
+##SongTitle_LifeGoesOn
+Life Goes On[X]
 
 
 ##SourceTitle_RondoOfSwords

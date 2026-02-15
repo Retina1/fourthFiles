@@ -37,12 +37,24 @@
 	#include "ItemRangeGetter.lyn.event"
 	//#incbin "ItemRangeGetter.dmp"
 	POIN RangeCalcGetter
-
+	POIN RangeCalcLoop
+	
+	
 	
 	//GetItemRangeM:
 	#include "ItemRangeGetterM.lyn.event"
 	//#incbin "ItemRangeGetterM.dmp"
 	//POIN GetItemRange|1
+	
+	ALIGN 4; RangeFunctions: // Make sure to set THUMB bit if running THUMB code!
+	POIN CombatArtRangeFuncWrapper
+	WORD 0 // Terminator
+
+	// Code - the "Hook" (calling the calc loop) is handled in ItemRangeFix
+	RangeCalcLoop:
+	#incbin "RangeCalcLoop.bin"
+	POIN RangeFunctions
+
 	
 	#ifndef BasicRange
 		#define BasicRange

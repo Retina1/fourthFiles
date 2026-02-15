@@ -1,0 +1,5 @@
+##UM_CombatArtsMenuName
+ Arts[X]
+##UM_CombatArtsMenuDesc
+Utilize skills to perform mighty[N]
+offensive and support actions.[X]

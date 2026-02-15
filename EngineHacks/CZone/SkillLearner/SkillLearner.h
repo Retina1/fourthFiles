@@ -60,14 +60,21 @@ extern struct SkillLeveler_Struct* SkillsetEntry[0xff];
 struct Struct_SkillLevelerProc
 {
 	PROC_HEADER;
+	//aligning pointer
+	u8 unk29;
+	u8 unk2A;
+	u8 unk2B;
 	struct Unit* activeUnit;
 	//for convenience put skillset byte in struct
-	u8 skillset;
+	/*0x2D*/u8 skillset;
 	//menu stuff
-	u8 menuIndex; //what skill we're on
-	u8 indexLevel[23]; //what level it is
-	u8 isMaxLevel[23]; //is it max level
-	u8 arePrereqsMet[15]; //can we even level it - always true for statups
+	/*0x2E*/u8 menuIndex; //what skill we're on
+	
+	u8 indexLevel[23];
+	u32 isMaxLevel;
+	u32 arePrereqsMet; 
+	
+	//end at 0x6B in theory
 };
 
 struct Struct_ConfirmationProc

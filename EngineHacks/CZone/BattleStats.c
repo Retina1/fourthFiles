@@ -5,6 +5,8 @@ void ComputeBattleUnitDefense(struct BattleUnit* attacker, struct BattleUnit* de
         attacker->battleDefense = attacker->terrainResistance + attacker->unit.res;
     else if (GetItemAttributes(defender->weapon) & IA_MAGIC)
         attacker->battleDefense = attacker->terrainResistance + attacker->unit.res;
+    else if (CombatArtList[GetActiveArt(&defender->unit)].isMagic)
+        attacker->battleDefense = attacker->terrainResistance + attacker->unit.res;
     else
         attacker->battleDefense = attacker->terrainDefense + attacker->unit.def;
 }
@@ -35,6 +37,8 @@ void ComputeBattleUnitAttack(struct BattleUnit* attacker, struct BattleUnit* def
 
     attacker->battleAttack = attack;
 	if ((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))
+		attacker->battleAttack += attacker->unit.mag;
+	else if (CombatArtList[GetActiveArt(&attacker->unit)].isMagic)
 		attacker->battleAttack += attacker->unit.mag;
 	else
 		attacker->battleAttack += attacker->unit.pow;
@@ -235,6 +239,8 @@ void FloorDamage(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	short rawOffense;
 	if((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))
 		rawOffense = attacker->unit.mag;
+	else if (CombatArtList[GetActiveArt(&attacker->unit)].isMagic)
+		rawOffense = attacker->unit.mag;
 	else
 		rawOffense = attacker->unit.pow;
 	
@@ -279,6 +285,7 @@ void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defe
     ComputeBattleUnitWeaponRankBonuses(attacker);
 	//repurpose statusbonuses func for buffs and debuffs	
 	//ComputeBattleUnitStatusBonuses(attacker);
+	CombatArtPrebattleFuncWrapper(attacker,defender);
 	ApplyPassiveSkills(attacker, defender);
 	
 	BattleApplyUnitBuffsDebuffs(attacker, defender);
@@ -287,6 +294,7 @@ void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defe
 }
 
 void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	CombatArtBothSidesFuncWrapper(attacker, defender);
 	ApplyBothSidesSkills(attacker, defender);
 	
 	BattleApplyUnitBuffsDebuffsBothSides(attacker, defender);
@@ -383,8 +391,15 @@ s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** o
 		}
     }
 
-    if (GetItemWeaponEffect((*outAttacker)->weaponBefore) == WPN_EFFECT_HPHALVE)
+    if (GetItemWeaponEffect((*outAttacker)->weaponBefore) == WPN_EFFECT_HPHALVE) {
         return FALSE;
+	}
+
+	if (*outAttacker == &gBattleActor) {
+		if ((GetActiveArt(&((*outAttacker)->unit)) != 0)) {
+			return FALSE;
+		}
+	}
 
     return TRUE;
 }

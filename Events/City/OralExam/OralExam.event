@@ -1,4 +1,5 @@
 #define OralExamQuestion(questionText,questionMenu,correctAnswer,targetLabel) "Text(questionText); REMA; SystemText(OralExamMakeYourChoice);RefreshLordSplitTiles; CallMenu(questionMenu); SVAL 0x1 correctAnswer; BNE 0xBAD 0xc 0x1; SystemText(OralExamDecisionMade); GOTO targetLabel"
+#define OralExamQuestionAlt(questionText,questionMenu,correctAnswer,targetLabel) "Text(questionText); REMA; SystemText(OralExamMakeYourChoice);RefreshLordSplitTiles; CallMenu(questionMenu); SVAL 0x1 0x4; BEQ 0xD1E 0xc 0x1; SVAL 0x1 correctAnswer; BNE 0xBAD 0xc 0x1; SystemText(OralExamDecisionMade); GOTO targetLabel"
 ALIGN 4
 OralExamEvent:
 Text(OralExamPreIntro)
@@ -6,7 +7,7 @@ SystemText(OralExamBeginPrompt)
 IfNoSelectedGoto(0x1000)
 Text(OralExamBegin)
 //quiz music
-MUSC 0x0
+MUSC Song_LifeGoesOn
 ENUT 0x28
 
 //question 1
@@ -107,7 +108,7 @@ RANDOMNUMBER 4
 	BNE 0x504 0x1 0xc
 	OralExamQuestion(OralExamQuestion5_4,OralExamMenu5_4,1,0x506)
 	LABEL 0x504
-	OralExamQuestion(OralExamQuestion5_5,OralExamMenu5_5,0,0x506)
+	OralExamQuestionAlt(OralExamQuestion5_5,OralExamMenu5_5,0,0x506)
 LABEL 0x506
 //win
 MUSC Song_FaithIsMyPillar
@@ -115,6 +116,9 @@ Text(OralExamPassed)
 SystemText(UnlockSpecialClassesSys)
 ENUT SpecialUnlockedFlag
 GOTO 0xBAA
+LABEL 0xD1E
+Text(OralExamVeryIncorrect)
+CALL PiorinGameOver
 LABEL 0xBAD
 SystemText(OralExamDecisionMade)
 Text(OralExamIncorrect)

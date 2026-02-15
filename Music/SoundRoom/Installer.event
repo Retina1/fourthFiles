@@ -69,6 +69,7 @@ SoundRoomEntry(Song_ArmorCladFaith, SongTitle_ArmorCladFaith, SourceTitle_Guilty
 SoundRoomEntry(Song_ModernDayOuroboros, SongTitle_ModernDayOuroboros, SourceTitle_LisaThePointless,28)
 SoundRoomEntry(Song_NoOneIsAlone, SongTitle_NoOneIsAlone, SourceTitle_IntoTheWoods,15)
 SoundRoomEntry(Song_Maps, SongTitle_Maps, SourceTitle_YeahYeahYeahs,48)
+SoundRoomEntry(Song_GloriaFilio, SongTitle_GloriaFilio, SourceTitle_Antibirth,64)
 //somewhere probably player phase
 SoundRoomEntry(Song_SlowDancingInTheDark, SongTitle_SlowDancingInTheDark, SourceTitle_Joji,45)
 SoundRoomEntry(Song_VariationsOnACloud, SongTitle_VariationsOnACloud, SourceTitle_MiracleMusical,41)
@@ -80,6 +81,7 @@ SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4
 SoundRoomEntry(Song_DrawHeroes, SongTitle_DrawHeroes, SourceTitle_EtrianOdyssey2,10)
 SoundRoomEntry(Song_WhyLove, SongTitle_WhyLove, SourceTitle_MaybeHappyEnding,38)
 SoundRoomEntry(Song_DarkCave, SongTitle_DarkCave, SourceTitle_PokemonGSC,40)
+SoundRoomEntry(Song_LifeGoesOn, SongTitle_LifeGoesOn, SourceTitle_Persona5,65)
 //dungeon
 SoundRoomEntry(Song_EverScarletForest, SongTitle_EverScarletForest, SourceTitle_EtrianOdyssey2,16)
 SoundRoomEntry(Song_CursedCathedral, SongTitle_CursedCathedral, SourceTitle_RednGreeen,50)

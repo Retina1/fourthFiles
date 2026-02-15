@@ -1,0 +1,34 @@
+//
+//	Configuration file for CombatArtSys.
+//
+//	All toggleable options or things you may want to define are found here as so you don't have to poke around internals.
+//
+
+// RAM usage is calculated based on these constants; please make sure you don't exceed freespace if changing these
+// Starting RAM address for the large block of used RAM
+#define CAS_RAM_START 0x02026E30+0x00000440
+//440 is debuff table size size of freespace is 0x2028
+//totals 0x2027270
+// Number of Arts shown in the menu at once without scrolling, maximum is 11
+#define CAS_NumberOfArtsInMenuAtOnce 7
+// Number of Arts that can be simultaneously usable by a unit
+#define CAS_NumberOfUsableArtsAtOnce 20
+// Range of unit indexes that are able to have active arts. This will kill me.
+#define CAS_NumberOfActiveArtsAtOnce 0xC0
+
+
+//menudraw change
+PUSH
+ORG 0x4F05C
+SHORT 0xE006
+POP
+
+ALIGN 4
+NumberOfArtsInMenuAtOnce:
+WORD CAS_NumberOfArtsInMenuAtOnce
+
+NumberOfUsableArtsAtOnce:
+WORD CAS_NumberOfUsableArtsAtOnce
+
+NumberOfActiveArtsAtOnce:
+WORD CAS_NumberOfActiveArtsAtOnce

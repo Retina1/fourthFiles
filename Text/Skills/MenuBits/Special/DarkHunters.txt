@@ -1,0 +1,15 @@
+##UM_CuffsWhip
+ Cuffs Whip[X]
+##UM_CuffsWhipDesc
+Whipstrike to bind arms.[N]
+Cost: 2 Durability.[X]
+##UM_ShackleWhip
+ Shackle Whip[X]
+##UM_ShackleWhipDesc
+Whipstrike to bind legs.[N]
+Cost: 2 Durability.[X]
+##UM_MuteWhip
+ Mute Whip[X]
+##UM_MuteWhipDesc
+Whipstrike to bind head.[N]
+Cost: 2 Durability.[X]

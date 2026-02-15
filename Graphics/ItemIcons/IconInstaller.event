@@ -49,6 +49,27 @@ ItemIconEntry(StonardIcon)
 ItemIconEntry(InedibleLeafIcon)
 #incbin "Dmp/{Beansy} Herbs [F2E].dmp"
 
+//GASES
+ItemIconEntry(BlindGasIcon)
+#incbin "Dmp/BlindGas.dmp"
+ItemIconEntry(StunGasIcon)
+#incbin "Dmp/StunGas.dmp"
+ItemIconEntry(PanicGasIcon)
+#incbin "Dmp/PanicGas.dmp"
+ItemIconEntry(SleepGasIcon)
+#incbin "Dmp/SleepGas.dmp"
+ItemIconEntry(PoisonGasIcon)
+#incbin "Dmp/PoisonGas.dmp"
+ItemIconEntry(CurseGasIcon)
+#incbin "Dmp/CurseGas.dmp"
+ItemIconEntry(StoningGasIcon)
+#incbin "Dmp/StoningGas.dmp"
+ItemIconEntry(HeadBinderIcon)
+#incbin "Dmp/HeadBinder.dmp"
+ItemIconEntry(ArmBinderIcon)
+#incbin "Dmp/ArmBinder.dmp"
+ItemIconEntry(LegBinderIcon)
+#incbin "Dmp/LegBinder.dmp"
 
 //PROMOS
 ItemIconEntry(HeroCrestIcon)

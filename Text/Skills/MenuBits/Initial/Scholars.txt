@@ -1,0 +1,10 @@
+##UM_Firebolt
+ Firebolt[X]
+##UM_FireboltDesc
+Conjure a blast of fire.[N]
+Cost: 2 Durability.[X]
+##UM_Thunderbolt
+ Thunderbolt[X]
+##UM_ThunderboltDesc
+Conjure a long-range bolt.[N]
+Cost: 3 Durability.[X]

@@ -1,5 +1,7 @@
 #include "gbafe.h"
 
+#include "BuffsDebuffs/BuffsDebuffs.h"
+
 extern bool CheckEventId_(u16 flag); 
 extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 
@@ -8,9 +10,15 @@ extern u16 GenericBuffEvent;
 extern u16 GenericMusicNoteEvent;
 extern u16 GenericMoneyEvent;
 extern u16 GenericAutomatonEvent;
+extern u16 GenericAOEEvent;
 
 #include "SkillSystem/SkillHelpers.c"
 #include "SkillLearner/SkillLearner.c"
+#include "SkillLearner/SkillLearnerPreps.c"
+
+#include "_CombatArts/CombatArts.c"
+#include "_CombatArts/CombatArtsMenus.c"
+#include "_CombatArts/CombatArtFunctionLib.c"
 
 #include "Misc/LoadUnitBases.c"
 #include "Misc/NewPromoGains.c"

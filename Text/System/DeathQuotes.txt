@@ -6,6 +6,10 @@ What was the moment?[A][X]
 You can never go back.[N]
 Yesterday is done.[A][X]
 
+##PiorinGameOverText
+Some truths were never[N]
+meant to be remembered.[A][X]
+
 ##XavensDeath
 [MidLeft][Xavens]
 I can't fall[...][N]

@@ -74,6 +74,9 @@ UNIT BossBenthus2 Sovereign 0x0 Level(12,Enemy,1) [9,2] DropItem 0x0 0x0 0x0 [Ra
 
 UNIT
 
+QuestUnits:
+UNIT Quarry Brawler 0x0 Level(10,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [SpikedFist] NoAI
+UNIT
 
 ALIGN 4
 
@@ -82,6 +85,10 @@ DifficultySwapper
 MUSC 0x0
 Text(FillerDialogue)
 LOAD1 0x1 EnemyUnits; ENUN
+CHECK_EVENTID Quest2_5x_Flag
+BEQ 0x1 0xc 0x0
+LOAD1 0x1 QuestUnits; ENUN
+LABEL 0x1
 CallPreps
 EndEvent
 

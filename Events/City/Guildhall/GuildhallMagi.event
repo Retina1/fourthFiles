@@ -173,6 +173,7 @@ GuildLoad(Jacqwil,Recruit_Jacqwil,0x3)
 GuildLoad(Polymnia,Recruit_Polymnia,0x4)
 GuildLoad(Lucien,Recruit_Lucien,0x5)
 GuildLoad(Juliette,Recruit_Juliette,0x6,Chapter8DoneFlag)
+//make recruitable later
 GuildLoad(Yosepha,Recruit_Yosepha,0x7)
 FADU 10
 ENDA

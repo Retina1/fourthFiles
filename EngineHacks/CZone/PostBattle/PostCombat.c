@@ -4,6 +4,8 @@ void RunPostCombatSkills(void)
 	if (gActionData.unitActionType == UNIT_ACTION_COMBAT) {
 		struct Unit* attacker = GetUnit(gBattleActor.unit.index);
 		struct Unit* defender = GetUnit(gBattleTarget.unit.index);
+
+		CombatArtPostbattleFuncWrapper(attacker, defender);
 		
 		ApplyAxefighterPostcombatSkills(attacker, defender);
 		ApplyScholarPostcombatSkills(attacker, defender);

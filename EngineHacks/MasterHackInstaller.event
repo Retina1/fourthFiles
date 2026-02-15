@@ -21,6 +21,9 @@ POP
 #include "DurabilityItems/Installer.event"
 #include "AriadneShards/SaveStuff.event"
 #include "UnitActionRework/UnitActionRework.event"
+
+#include "CZone/_CombatArts/CombatArts.event"
+
 #include "UnitMenu/UnitMenu.event"
 
 #include "SetCondition/Installer.event"
@@ -66,7 +69,7 @@ POP
 //#include "_Debugger/Installer.event"
 
 //i hate prep screen
-//#include "PrepScreen/PrepScreen.event"
+#include "PrepScreen/PrepScreen.event"
 
 
 

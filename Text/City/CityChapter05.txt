@@ -1,7 +1,7 @@
 ##City05_EndText
 [MidLeft][Guildmaster][MidRight][Nathan]
-You're truly sure we're right[N]
-to do this, Guildmaster?[AN][MidLeft]
+You're truly sure we're the right[N]
+ones for this, Guildmaster?[AN][MidLeft]
 You've done nothing but impress[N]
 me up to this point.[AN]
 And I know you've a cool head[N]

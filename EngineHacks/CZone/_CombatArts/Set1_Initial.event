@@ -1,0 +1,115 @@
+//SWORDFIGHTER
+CombatArt((NullArt + 1),UM_GuardBreak,UM_GuardBreakDesc, \
+		  2, \
+		  GuardBreakArtUsability,GuardBreakArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, GuardBreakBothSides, \
+		  0, GuardBreakBattleProc, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 2),UM_PowerBreak,UM_PowerBreakDesc, \
+		  2, \
+		  PowerBreakArtUsability,PowerBreakArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, PowerBreakBothSides, \
+		  0, PowerBreakBattleProc, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 3),UM_AgilityBreak,UM_AgilityBreakDesc, \
+		  2, \
+		  AgilityBreakArtUsability,AgilityBreakArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, AgilityBreakBothSides, \
+		  0, AgilityBreakBattleProc, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 4),UM_WrathStrike,UM_WrathStrikeDesc, \
+		  2, \
+		  WrathStrikeArtUsability,WrathStrikeArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, WrathStrikeBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 5),UM_SwordGlint,UM_SwordGlintDesc, \
+		  3, \
+		  SwordGlintArtUsability,SwordGlintArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  SwordGlintPrebattle, SwordGlintBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 6),UM_FalconSlash,UM_FalconSlashDesc, \
+		  3, \
+		  FalconSlashArtUsability,FalconSlashArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, FalconSlashBothSides, \
+		  FalconSlashPostbattle, 0, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 7),UM_SwiftStrikes,UM_SwiftStrikesDesc, \
+		  4, \
+		  SwiftStrikesArtUsability,SwiftStrikesArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, SwiftStrikesBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  0, SwiftStrikesHitCount, \
+		  PhysArt,0,0)
+		  /*
+CombatArt((NullArt + 8),UM_Spellchaser,UM_SpellchaserDesc, \
+		  3, \
+		  FireboltArtUsability,FireboltArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  FireboltPrebattle, 0, \
+		  0, 0, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+		  */
+CombatArt((NullArt + 9),UM_FullBreak,UM_FullBreakDesc, \
+		  3, \
+		  FullBreakArtUsability,FullBreakArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, FullBreakBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 10),UM_Tempest,UM_TempestDesc, \
+		  6, \
+		  TempestArtUsability,TempestArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, TempestBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  0, TempestHitCount, \
+		  PhysArt,0,0)
+		  
+//SCHOLAR
+CombatArt((NullArt + 11),UM_Firebolt,UM_FireboltDesc, \
+		  2, \
+		  FireboltArtUsability,FireboltArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  FireboltPrebattle, 0, \
+		  0, 0, \
+		  Staff1_2Range, \
+		  0, 0, \
+		  MagicArt,0,0)
+CombatArt((NullArt + 12), UM_Thunderbolt, UM_ThunderboltDesc, \
+		  3, \
+		  ThunderboltArtUsability, ThunderboltArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  ThunderboltPrebattle, 0, \
+		  0, 0, \
+		  ThunderboltRange, \
+		  0, 0, \
+		  MagicArt,0,0)
+		  
+		  

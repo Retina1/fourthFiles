@@ -1,6 +1,23 @@
 typedef struct DebuffEntry DebuffEntry;
 typedef struct BuffDebuff_Struct BuffDebuff_Struct;
 
+void UnitApplyBuff(struct Unit* unit,u8 buffID);
+void UnitApplyDebuff(struct Unit* unit,u8 buffID);
+struct DebuffEntry* GetUnitBuffsDebuffs(struct Unit* unit);
+
+enum {
+	BUFF_NONE = 0,
+	BUFF_VANUGARD,
+};
+
+enum {
+	DEBUFF_NONE = 0,
+	DEBUFF_GUARDBREAK,
+	DEBUFF_POWERBREAK,
+	DEBUFF_AGILITYBREAK,
+};
+
+
 struct DebuffEntry{
 	/* 00 */ u8 buff1;
 	/* 01 */ u8 buff2;

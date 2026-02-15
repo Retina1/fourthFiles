@@ -206,6 +206,14 @@ ENDA
 NewGameOverUnit:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
+PiorinGameOverUnit:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Hunter 0x1 Level(1,NPC,0) [5,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Scholar 0x1 Level(1,NPC,0) [6,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Swordfighter 0x1 Level(1,NPC,0) [7,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Gunner 0x1 Level(1,NPC,0) [8,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT GuildGeneric Lancer 0x1 Level(1,NPC,0) [9,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
 
 NewGameOverEvent:
 EVBIT_MODIFY 4
@@ -224,6 +232,22 @@ BEQ 0x1 0xc 0x1
 SoloText(GameOverText); GOTO 0x2
 LABEL 0x1; SoloText(GameOverTextPromoted)
 LABEL 0x2; STAL 30; SFXKillUnit(Nathan); STAL 30
+ASMC $8085375
+ENDA
+
+PiorinGameOver:
+MUSC 0x0
+EVBIT_MODIFY 4
+FADI 10
+CLEA 0; CLEN 0; CLEE 0
+LOMA Chapter1
+TILECHANGE 0x0
+LOAD1 0x1 PiorinGameOverUnit; ENUN
+SVAL 0x1 99
+SET_HP Nathan
+FADU 5
+STAL 45
+SoloText(PiorinGameOverText); STAL 30; SFXKillUnit(Nathan); STAL 30
 ASMC $8085375
 ENDA
 
@@ -270,6 +294,18 @@ GenericAutomatonEvent:
 CAM1 0xFFFF
 PlayEmotionEffect(BrightIdeaEffect)
 SOUN 0x101
+STAL 0x16
+EndEvent
+
+ALIGN 4
+GenericAOEEvent:
+CAM1 0xFFFF
+PlayEmotionEffect(AngryEffect)
+SOUN 0xCB
+STAL 0x16
+SOUN 0xCB
+STAL 0x16
+SOUN 0xD5
 STAL 0x16
 EndEvent
 

@@ -713,7 +713,7 @@ ALIGN 4
 //Ru
 JuneDMP:
 #incbin "dmps/ruJune.dmp"
-setMugEntry(JuneMug,JuneDMP,3,6,3,4)
+setMugEntry(JuneMug,JuneDMP,5,6,5,4)
 
 ALIGN 4
 //Rivian

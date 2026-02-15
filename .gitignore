@@ -34,6 +34,7 @@ $RECYCLE.BIN/
 
 # fe text
 *.fetxt
+*.fetxt.dmp
 
 # python cache
 __pycache__

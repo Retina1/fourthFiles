@@ -43,12 +43,14 @@ void SkillLeveler_OnSelect(void* parent) {
 	proc->activeUnit = GetUnit(gActionData.subjectIndex);
 	proc->skillset = proc->activeUnit->pClassData->skillID;
 	proc->menuIndex = 0;
+	proc->isMaxLevel = 0;
+	proc->arePrereqsMet = 0;
 	
 	for (int i = 0; i < 23; i++) {
 		proc->indexLevel[i] = GetSkillLevel(proc->activeUnit,i);
-		proc->isMaxLevel[i] = IsSkillAtMaxLevel(proc->activeUnit,i);
+		proc->isMaxLevel |= (IsSkillAtMaxLevel(proc->activeUnit,i) << i);
 		if (i < 15) {
-			proc->arePrereqsMet[i] = CalculatePrereqs(proc->activeUnit,proc->skillset,i);
+			proc->arePrereqsMet |= (CalculatePrereqs(proc->activeUnit,proc->skillset,i) << i);
 		}
 	}
 
@@ -115,12 +117,14 @@ static u8 SkillLevelerIdle (MenuProc* menu, MenuItemProc* command) {
 		if (nextIndex != currIndex) {
 			proc->activeUnit = GetUnit(nextIndex);
 			proc->skillset = proc->activeUnit->pClassData->skillID;
+			proc->isMaxLevel = 0;
+			proc->arePrereqsMet = 0;
 			for (int i = 0; i < 23; i++) {
 				proc->indexLevel[i] = GetSkillLevel(proc->activeUnit,i);
-				proc->isMaxLevel[i] = IsSkillAtMaxLevel(proc->activeUnit,i);
+				proc->isMaxLevel |= (IsSkillAtMaxLevel(proc->activeUnit,i) << i);
 				if (i < 15) {
-					proc->arePrereqsMet[i] = CalculatePrereqs(proc->activeUnit,proc->skillset,i);
-				}			
+					proc->arePrereqsMet |= (CalculatePrereqs(proc->activeUnit,proc->skillset,i) << i);
+				}		
 			}
 			SkillLevelerDraw(menu, command);
 			PlaySfx(0x66);
@@ -156,11 +160,13 @@ static u8 SkillLevelerIdle (MenuProc* menu, MenuItemProc* command) {
 		if (nextIndex != currIndex) {
 			proc->activeUnit = GetUnit(nextIndex);
 			proc->skillset = proc->activeUnit->pClassData->skillID;
+			proc->isMaxLevel = 0;
+			proc->arePrereqsMet = 0;
 			for (int i = 0; i < 23; i++) {
 				proc->indexLevel[i] = GetSkillLevel(proc->activeUnit,i);
-				proc->isMaxLevel[i] = IsSkillAtMaxLevel(proc->activeUnit,i);
+				proc->isMaxLevel |= (IsSkillAtMaxLevel(proc->activeUnit,i) << i);
 				if (i < 15) {
-					proc->arePrereqsMet[i] = CalculatePrereqs(proc->activeUnit,proc->skillset,i);
+					proc->arePrereqsMet |= (CalculatePrereqs(proc->activeUnit,proc->skillset,i) << i);
 				}			
 			}
 			SkillLevelerDraw(menu, command);
@@ -181,15 +187,15 @@ static u8 SkillLevelerEffect(MenuProc* menu, MenuItemProc* command) {
 	//only allow if spent not more than budget
 	if (spent < budget) {
 		//and if current skill isn't max level
-		if ((proc->isMaxLevel[proc->menuIndex]) == 0) {
+		if (!(proc->isMaxLevel & (1 << proc->menuIndex))) {
 			//we'll deal with prereqs later
-			if ((proc->menuIndex > 14) || ((proc->arePrereqsMet[proc->menuIndex]) == 1)) {
+			if ((proc->menuIndex > 14) || (proc->arePrereqsMet & (1 << proc->menuIndex) )) {
 				//level up skill!
 				LevelUpSkill(proc->activeUnit,proc->menuIndex);
 				proc->indexLevel[proc->menuIndex] = GetSkillLevel(proc->activeUnit,proc->menuIndex);
-				proc->isMaxLevel[proc->menuIndex] = IsSkillAtMaxLevel(proc->activeUnit,proc->menuIndex);
+				proc->isMaxLevel |= (IsSkillAtMaxLevel(proc->activeUnit,proc->menuIndex) << proc->menuIndex);
 				for (int i = 0; i < 15; i++) {	
-					proc->arePrereqsMet[i] = CalculatePrereqs(proc->activeUnit,proc->skillset,i);
+					proc->arePrereqsMet |= (CalculatePrereqs(proc->activeUnit,proc->skillset,i) << i);
 				}
 				SkillLevelerDraw(menu, command);
 				return MENU_ACT_SND6A;
@@ -275,10 +281,10 @@ static int SkillLevelerDraw(MenuProc* menu, MenuItemProc* command) {
 	
 	//menu button - getting its string'll be trickier
 	
-	if ((proc->isMaxLevel[proc->menuIndex]) == 1) {
+	if (proc->isMaxLevel & (1 << proc->menuIndex)) {
 	PutDrawText(&texts[0], TILEMAP_LOCATED(gBG0TilemapBuffer, 3, 5),TEXT_COLOR_SYSTEM_GOLD, 0, 96, GetStringFromIndex(nameText));
 	}
-	else if ( ((proc->menuIndex < 15) && (proc->arePrereqsMet[proc->menuIndex] == 0)) || (spent == budget)){
+	else if ( ((proc->menuIndex < 15) &&  !(proc->arePrereqsMet & (1 << proc->menuIndex))) || (spent == budget)){
 	PutDrawText(&texts[0], TILEMAP_LOCATED(gBG0TilemapBuffer, 3, 5),TEXT_COLOR_SYSTEM_GRAY, 0, 96, GetStringFromIndex(nameText));
 	}
 	else {
@@ -311,10 +317,10 @@ void DrawRighthandLearnerTexts(struct Text *a,MenuProc* menu)
 		if (i == proc->menuIndex) {
 			color = TEXT_COLOR_SYSTEM_BLUE;
 		}
-		else if (proc->isMaxLevel[i]) {
+		else if (proc->isMaxLevel & (1 << i)){
 			color = TEXT_COLOR_SYSTEM_GOLD;
 		}
-		else if ((i < 15) && (!(proc->arePrereqsMet[i]))) {
+		else if ((i < 15) && (!(proc->arePrereqsMet & (1 << i)))) {
 			color = TEXT_COLOR_SYSTEM_GRAY;
 		}
 		else {
