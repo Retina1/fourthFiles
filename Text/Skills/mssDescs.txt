@@ -206,7 +206,7 @@ Calibur: An accurate spell[N]
 of deadly cutting winds.[X]
 ##
 Surge: A close-ranged spell[N]
-that's strong and can't miss.[X]
+that's strong and unerring.[X]
 ##
 Earthspike: A devastating spell[N]
 with unimpressive accuracy.[X]

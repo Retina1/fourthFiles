@@ -14,7 +14,9 @@ void ApplyAxefighterSteadyMorale(struct Unit* attacker, struct Unit* defender) {
 void ApplyAxefighterFullChargeDeplete(struct Unit* attacker, struct Unit* defender) {
 	if (UNIT_HAS_SKILL(attacker,GLD,promoSkill_141)){
 		if  (!((GetItemAttributes(gBattleActor.weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(gBattleActor.weapon) & IA_MAGIC))) {
-			attacker->classSkillState = 0;
+			if (attacker->classSkillState & (1 << 0)) {
+				attacker->classSkillState =  (attacker->classSkillState) ^ (1 << 0);
+			}
 		}
 	}
 }
@@ -32,7 +34,7 @@ void ApplyAxefighterOverpowering(struct BattleUnit* attacker, struct BattleUnit*
 void ApplyAxefighterFullCharge(struct BattleUnit* attacker, struct BattleUnit* defender){
 	if (UNIT_HAS_SKILL(&attacker->unit,GLD,promoSkill_141)){
 		if (attacker->unit.index == gBattleActor.unit.index){
-			if (attacker->unit.classSkillState != 0){
+			if (attacker->unit.classSkillState & (1 << 0)){
 				if  (!((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))) {
 					attacker->battleAttack = attacker->battleAttack * 5/2;
 					defender->battleDefense = defender->battleDefense * 5/2;

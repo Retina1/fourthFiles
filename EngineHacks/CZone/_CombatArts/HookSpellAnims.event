@@ -1,0 +1,9 @@
+//0x57642 - the cmp promotion check
+//return at 0x576cc
+
+PUSH
+ORG 0x57642
+SHORT 0x0000 //nop
+jumpToHack(SpellAnimsWrapper)
+POP
+#include "SpellAnimsWrapper.lyn.event"

@@ -325,6 +325,39 @@ u16 GetItemAfterArtUse(int item, int cost) {
     return item; // return used item
 }
 
+//durability
+u16 ApplyRallyingCryThrift(struct BattleUnit* attacker, int cost) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(&attacker->unit);
+	struct Unit* source = NULL;
+	
+	if ((BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link)) {
+		if (BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) {
+			source = GetUnitFromRallyID(entry->buff1);
+		}
+		else if (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) {
+			source = GetUnitFromRallyID(entry->buff2);
+		}
+		else if (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link) {
+			source = GetUnitFromRallyID(entry->buff3);
+		}
+		
+		if (UNIT_HAS_SKILL(source,SOV,promoSkill_353)){
+			cost = cost - 3;
+		}
+		else if (UNIT_HAS_SKILL(source,SOV,promoSkill_352)){
+			cost = cost - 2;
+		}
+		else if (UNIT_HAS_SKILL(source,SOV,promoSkill_351)){
+			cost = cost - 1;
+		}
+		
+	}
+	if (cost < 1) {
+		cost = 1;
+	}
+	return cost;
+}
+
 void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* defender) {
     attacker->wexpMultiplier++;
 
@@ -341,9 +374,22 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
 	
 	//todo - make durability deplete once
 	if ((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) {
-		attacker->weapon = GetItemAfterArtUse(attacker->weapon, CombatArtDurabilityList[GetActiveArt(&attacker->unit)]);
-		if (!attacker->weapon)
-            attacker->weaponBroke = TRUE;
+		if (attacker->multihitArtTracker == 0) {
+			int artCost = CombatArtDurabilityList[GetActiveArt(&attacker->unit)];
+			if (UNIT_HAS_SKILL(&attacker->unit,WRK,skill_121)){
+				artCost = artCost - 1;
+				if (artCost == 0) {
+					artCost = 1;
+				}
+			}
+			//thrift rally
+			artCost = ApplyRallyingCryThrift(attacker,artCost);
+			
+			attacker->weapon = GetItemAfterArtUse(attacker->weapon, artCost);
+			attacker->multihitArtTracker = 1;
+			if (!attacker->weapon)
+				attacker->weaponBroke = TRUE;
+		}
 	}
 	
     else if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS) && allegiance == FACTION_BLUE) {

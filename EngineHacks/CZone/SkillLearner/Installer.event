@@ -14,8 +14,8 @@ POIN KnightSkillLabels
 POIN AxefighterSkillLabels
 
 POIN ArcherSkillLabels
-/*
 POIN ScholarSkillLabels
+/*
 POIN CurateSkillLabels
 
 POIN MyrmidonSkillLabels
@@ -42,7 +42,7 @@ POIN ArtificeSkillLabels
 POIN SoulSkillLabels
 POIN GenericSkillLabels
 */
-POIN SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels NobleSkillLabels SkillLabels SkillLabels SkillLabels SkillLabels
+POIN SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels NobleSkillLabels SkillLabels SkillLabels SkillLabels SkillLabels
 POIN 0 
 
 
@@ -113,6 +113,83 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
+
+ALIGN 4
+ScholarSkillLabels:
+OneLevelSkillLabel(StudiousSkill,NoReq)//0
+OneLevelSkillLabel(EfficiencySkill,EfficiencyReq)
+OneLevelSkillLabel(ElementMasterSkill,ElementMasterReq)
+OneLevelSkillLabel(EthericChargeSkill,PromotedReq)
+TwoLevelSkillLabel(CaliburSkill,CaliburReq)//4
+TwoLevelSkillLabel(SurgeSkill,SurgeReq)
+TwoLevelSkillLabel(EarthspikeSkill,EarthspikeReq)
+ThreeLevelSkillLabel(FireboltSkill,NoReq)//7
+ThreeLevelSkillLabel(ThunderboltSkill,ThunderboltReq)
+ThreeLevelSkillLabel(FrostfallSkill,FrostfallReq)
+ThreeLevelSkillLabel(FirestormSkill,FirestormReq)
+ThreeLevelSkillLabel(GalewindSkill,GalewindReq)
+FiveLevelSkillLabel(EtherShotSkill,EtherShotReq)//12
+FiveLevelSkillLabel(MegidoSkill,MegidoReq)
+FiveLevelSkillLabel(EschatonSkill,EschatonReq)
+SkillLabelTerminator
+
+ALIGN 4
+EfficiencyReq:
+ReqEntry(9,1)
+ReqTerm
+ALIGN 4
+ElementMasterReq:
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+CaliburReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+SurgeReq:
+ReqEntry(4,2)
+ReqTerm
+ALIGN 4
+EarthspikeReq:
+ReqEntry(5,2)
+ReqTerm
+ALIGN 4
+ThunderboltReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+FrostfallReq:
+ReqEntry(4,1)
+ReqTerm
+ALIGN 4
+FirestormReq:
+ReqEntry(7,3)
+ReqEntry(5,2)
+ReqTerm
+ALIGN 4
+GalewindReq:
+ReqPromo
+ReqEntry(4,2)
+ReqEntry(5,2)
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+EtherShotReq:
+ReqEntry(8,2)
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+MegidoReq:
+ReqEntry(8,3)
+ReqEntry(5,2)
+ReqTerm
+ALIGN 4
+EschatonReq:
+ReqPromo
+ReqEntry(13,5)
+ReqEntry(6,2)
+ReqTerm
+
 
 
 

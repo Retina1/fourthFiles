@@ -28,14 +28,14 @@ int FullCharge_Usability(struct MenuProc* menu) {
 		return 3; // false 
 	} 
 	if (UNIT_HAS_SKILL(gActiveUnit,GLD,promoSkill_141)) {
-		if (gActiveUnit->classSkillState == 0) {
+		if (!(gActiveUnit->classSkillState & (1 << 0))) {
 			return 1; // usable 
 		}
 	}
 	return 3; // not usable
 } 
 u8 FullCharge_Effect (struct MenuProc* menu, struct MenuItemProc* menuItem) {
-	gActiveUnit->classSkillState = 1;
+	gActiveUnit->classSkillState = gActiveUnit->classSkillState | (1 << 0);
 	CallEvent(&GenericBuffEvent, 0x1);
 	gActiveUnit->state |= US_HAS_MOVED|US_CANTOING; 
     gActionData.unitActionType = UNIT_ACTION_WAIT;
@@ -49,14 +49,14 @@ int EthericCharge_Usability(struct MenuProc* menu) {
 		return 3; // false 
 	} 
 	if (UNIT_HAS_SKILL(gActiveUnit,WRK,promoSkill_141)) {
-		if (gActiveUnit->classSkillState == 0) {
+		if (!(gActiveUnit->classSkillState & (1 << 0))) {
 			return 1; // usable 
 		}
 	}
 	return 3; // not usable
 } 
 u8 EthericCharge_Effect (struct MenuProc* menu, struct MenuItemProc* menuItem) {
-	gActiveUnit->classSkillState = 1;
+	gActiveUnit->classSkillState = gActiveUnit->classSkillState | (1 << 0);
 	CallEvent(&GenericBuffEvent, 0x1);
 	gActiveUnit->state |= US_HAS_MOVED|US_CANTOING; 
     gActionData.unitActionType = UNIT_ACTION_WAIT;

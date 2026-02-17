@@ -37,6 +37,8 @@ void TickActiveFactionTurn(void) {
 
         //funcs to handle state ticks
 		
+		SetActiveArt(unit, 0);
+		
 		unit->state = (unit->state) &~ US_BIT_ALREADY_REFRESHED;
 
         if (unit->bindDuration != 0) {
@@ -67,6 +69,13 @@ void TickActiveFactionTurn(void) {
 				}
 			}
         }
+		//eschaton recharge
+		if (UNIT_HAS_SKILL(unit,WRK,promoSkill_531)) {
+			if (unit->classSkillState & (1 << 1)) {
+				unit->state = (unit->state)|US_UNSELECTABLE;
+				unit->classSkillState = unit->classSkillState ^ (1 << 1);
+			}
+		}
 
     }
 	//have to do another loop for buff application whoopsie

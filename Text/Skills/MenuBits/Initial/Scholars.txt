@@ -8,3 +8,52 @@ Cost: 2 Durability.[X]
 ##UM_ThunderboltDesc
 Conjure a long-range bolt.[N]
 Cost: 3 Durability.[X]
+##UM_Frostfall
+ Frostfall[X]
+##UM_FrostfallDesc
+Conjure a leg-binding chill.[N]
+Cost: 3 Durability.[X]
+##UM_Firestorm
+ Firestorm[X]
+##UM_FirestormDesc
+Conjure sweeping flames.[N]
+Cost: 5 Durability.[X]
+##UM_Galewind
+ Galewind[X]
+##UM_GalewindDesc
+Conjure a twin cyclone.[N]
+Cost: 7 Durability.[X]
+
+##UM_Calibur
+ Calibur[X]
+##UM_CaliburDesc
+Conjure a shredding wind.[N]
+Cost: 2 Durability.[X]
+
+##UM_Surge
+ Surge[X]
+##UM_SurgeDesc
+Conjure unerring force.[N]
+Cost: 5 Durability.[X]
+
+##UM_Earthspike
+ Earthspike[X]
+##UM_EarthspikeDesc
+Conjure a risky quake.[N]
+Cost: 4 Durability.[X]
+
+##UM_EtherShot
+ Ether Shot[X]
+##UM_EtherShotDesc
+Imbue any old weapon.[N]
+Cost: 3 Durability.[X]
+##UM_Megido
+ Megido[X]
+##UM_MegidoDesc
+Conjure overwhelming power.[N]
+Cost: 12 Durability.[X]
+##UM_Eschaton
+ Eschaton[X]
+##UM_EschatonDesc
+Conjure an apocalypse.[N]
+Cost: 16 Durability.[X]

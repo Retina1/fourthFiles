@@ -291,6 +291,9 @@ void ComputeBattleUnitStats(struct BattleUnit* attacker, struct BattleUnit* defe
 	BattleApplyUnitBuffsDebuffs(attacker, defender);
 	
 	ApplyPicnicMode(attacker);
+	
+	//important for some multihits
+	attacker->multihitArtTracker = 0;
 }
 
 void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleUnit* defender) {

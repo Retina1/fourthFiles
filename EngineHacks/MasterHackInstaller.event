@@ -23,6 +23,7 @@ POP
 #include "UnitActionRework/UnitActionRework.event"
 
 #include "CZone/_CombatArts/CombatArts.event"
+#include "CZone/_CombatArts/HookSpellAnims.event"
 
 #include "UnitMenu/UnitMenu.event"
 

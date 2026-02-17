@@ -12,7 +12,7 @@ This unit's current binds.[N]
 All binds share a timer.[X]
 ##RTextHeadDesc
 Head binds halve Magic[N]
-and disable command skills.[X]
+and disable Arts.[X]
 ##RTextArmsDesc
 Arm binds halve Strength[N]
 and disable critical hits.[X]

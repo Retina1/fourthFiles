@@ -35,7 +35,7 @@ struct BattleUnit {
     /* 56 */ s8 terrainDefense;
     /* 57 */ s8 terrainAvoid;
     /* 58 */ s8 terrainResistance;
-    /* 59 */ /* pad */
+    /* 59 */ u8 multihitArtTracker;
 
     /* 5A */ short battleAttack;
     /* 5C */ short battleDefense;

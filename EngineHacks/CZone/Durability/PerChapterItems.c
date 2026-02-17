@@ -112,8 +112,17 @@ s8 CanUnitUseWeapon(struct Unit* unit, int item) {
 		return FALSE;
 	}
 	
-    if (!(GetItemAttributes(item) & IA_WEAPON))
+    if (!(GetItemAttributes(item) & IA_WEAPON)) {
         return FALSE;
+	}
+	
+	//ETHER SHOT
+	if (GetActiveArt(unit) == 53) {
+		if (GetItemType(item) != 0x5) {
+			return TRUE;
+		}
+		else return FALSE;
+	}
 
     if (GetItemAttributes(item) & IA_LOCK_ANY) {
         // Check for item locks
@@ -148,8 +157,9 @@ s8 CanUnitUseWeapon(struct Unit* unit, int item) {
             return FALSE;
     }
 
-    if ((unit->statusIndex == UNIT_STATUS_SILENCED) && (GetItemAttributes(item) & IA_MAGIC))
+    if ((unit->statusIndex == UNIT_STATUS_SILENCED) && (GetItemAttributes(item) & IA_MAGIC)) {
         return FALSE;
+	}
 
     {
         int wRank = GetItemRequiredExp(item);

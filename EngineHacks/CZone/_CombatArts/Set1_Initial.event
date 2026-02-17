@@ -93,7 +93,35 @@ CombatArt((NullArt + 10),UM_Tempest,UM_TempestDesc, \
 		  PhysArt,0,0)
 		  
 //SCHOLAR
-CombatArt((NullArt + 11),UM_Firebolt,UM_FireboltDesc, \
+//need - anims for calibur, surge, earthspike, megido, eschaton
+CombatArt((NullArt + 45), UM_Calibur, UM_CaliburDesc, \
+		  2, \
+		  CaliburArtUsability, CaliburArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  CaliburPrebattle, 0, \
+		  0, 0, \
+		  Staff1_2Range, \
+		  0, 0, \
+		  MagicArt,0x35,0)
+CombatArt((NullArt + 46), UM_Surge, UM_SurgeDesc, \
+		  5, \
+		  SurgeArtUsability, SurgeArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  SurgePrebattle, 0, \
+		  0, 0, \
+		  SurgeRange, \
+		  0, 0, \
+		  MagicArt,0x19,0)
+CombatArt((NullArt + 47), UM_Earthspike, UM_EarthspikeDesc, \
+		  4, \
+		  EarthspikeArtUsability, EarthspikeArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  EarthspikePrebattle, 0, \
+		  0, 0, \
+		  EarthspikeRange, \
+		  0, 0, \
+		  MagicArt,0x12,0)
+CombatArt((NullArt + 48),UM_Firebolt,UM_FireboltDesc, \
 		  2, \
 		  FireboltArtUsability,FireboltArtMenuUsability,0, \
 		  CombatArtGeneralAttackingEffect, \
@@ -101,8 +129,8 @@ CombatArt((NullArt + 11),UM_Firebolt,UM_FireboltDesc, \
 		  0, 0, \
 		  Staff1_2Range, \
 		  0, 0, \
-		  MagicArt,0,0)
-CombatArt((NullArt + 12), UM_Thunderbolt, UM_ThunderboltDesc, \
+		  MagicArt,0x16,0)
+CombatArt((NullArt + 49), UM_Thunderbolt, UM_ThunderboltDesc, \
 		  3, \
 		  ThunderboltArtUsability, ThunderboltArtMenuUsability, 0, \
 		  CombatArtGeneralAttackingEffect, \
@@ -110,6 +138,58 @@ CombatArt((NullArt + 12), UM_Thunderbolt, UM_ThunderboltDesc, \
 		  0, 0, \
 		  ThunderboltRange, \
 		  0, 0, \
+		  MagicArt,0x19,0)
+CombatArt((NullArt + 50), UM_Frostfall, UM_FrostfallDesc, \
+		  3, \
+		  FrostfallArtUsability, FrostfallArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  FrostfallPrebattle, 0, \
+		  0, 0, \
+		  Staff1_2Range, \
+		  FrostfallOdds, 0, \
+		  MagicArt,0x1B,LegBindEffect)
+CombatArt((NullArt + 51),UM_Firestorm,UM_FirestormDesc, \
+		  5, \
+		  FirestormArtUsability,FirestormArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  FirestormPrebattle, 0, \
+		  FirestormPostbattle, 0, \
+		  Staff1_2Range, \
+		  0, 0, \
+		  MagicArt,0x17,0)
+CombatArt((NullArt + 52),UM_Galewind,UM_GalewindDesc, \
+		  7, \
+		  GalewindArtUsability,GalewindArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  GalewindPrebattle, 0, \
+		  0, 0, \
+		  Staff1_2Range, \
+		  0, GalewindHitCount, \
+		  MagicArt,0x35,0)
+CombatArt((NullArt + 53),UM_EtherShot,UM_GalewindDesc, \
+		  3, \
+		  EtherShotArtUsability,EtherShotArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, EtherShotBothSides, \
+		  0, 0, \
+		  EtherShotRange, \
+		  0, 0, \
 		  MagicArt,0,0)
-		  
-		  
+CombatArt((NullArt + 54),UM_Megido,UM_MegidoDesc, \
+		  12, \
+		  MegidoArtUsability,MegidoArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  MegidoPrebattle, MegidoBothSides, \
+		  0, 0, \
+		  MegidoRange, \
+		  0, 0, \
+		  MagicArt,0x45,0)
+CombatArt((NullArt + 55),UM_Eschaton,UM_EschatonDesc, \
+		  16, \
+		  EschatonArtUsability,EschatonArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  EschatonPrebattle, EschatonBothSides, \
+		  EschatonPostbattle, 0, \
+		  EschatonRange, \
+		  0, 0, \
+		  MagicArt,0x46,0)

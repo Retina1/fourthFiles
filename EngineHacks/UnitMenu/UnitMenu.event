@@ -91,7 +91,7 @@ PUSH
 #define UnitMenuWidth 9
 
 // Map Menu placement/sizing:
-#define MapMenuRightXCoord 20
+#define MapMenuRightXCoord 21
 // Lower values may cause issues with longer menu option names, so beware!
 #define MapMenuWidth 8
 

@@ -5,7 +5,6 @@ void RunPostCombatSkills(void)
 		struct Unit* attacker = GetUnit(gBattleActor.unit.index);
 		struct Unit* defender = GetUnit(gBattleTarget.unit.index);
 
-		CombatArtPostbattleFuncWrapper(attacker, defender);
 		
 		ApplyAxefighterPostcombatSkills(attacker, defender);
 		ApplyScholarPostcombatSkills(attacker, defender);
@@ -13,6 +12,7 @@ void RunPostCombatSkills(void)
 		ApplyLancerPostcombatSkills(attacker, defender);
 		ApplyRichLiving(attacker,defender);
 		ApplyRallyingThrust(attacker,defender);
+		CombatArtPostbattleFuncWrapper(attacker, defender);
 	}
 	ApplyDuelistGaleDuelist(gActiveUnit);
 }

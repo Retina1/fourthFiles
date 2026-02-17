@@ -113,7 +113,7 @@ u8 CombatArtWeaponTypeAttackingUsability(int weaponType) {
     return FALSE;
 }
 
-u8 CombatArtRangeAttackingUsability(int minRange, int maxRange) {
+u8 CombatArtRangeAttackingUsability(int minRange, int maxRange, int weaponType) {
     
     // AttackCommandUsability but modified
     if (gActiveUnit->state & US_HAS_MOVED) {
@@ -135,7 +135,11 @@ u8 CombatArtRangeAttackingUsability(int minRange, int maxRange) {
             continue;
         }
 
-        if (!CanUnitUseWeaponNow(gActiveUnit, item)) {
+        if (!(GetItemType(item) == weaponType)) {
+            continue;
+        }
+        
+		if (!CanUnitUseWeaponNow(gActiveUnit, item)) {
             continue;
         }
         // Durability cost check for art

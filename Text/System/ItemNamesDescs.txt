@@ -83,7 +83,7 @@ A somewhat cumbersome whip made of metal.[X]
 ##Name_RougeWhip
 Rouge Whip[X]
 ##Desc_RougeWhip ^
-A widely used whip glazed in a deep crimson.[X]
+A widely used whip glazed in deep crimson.[X]
 ##Name_Ninetails
 Ninetails[X]
 ##Desc_Ninetails ^
@@ -91,7 +91,7 @@ A lovely whip with nine distinct tips.[X]
 ##Name_RazorWhip
 Razor Whip[X]
 ##Desc_RazorWhip ^
-A horrific whip made of deadly sharp wires.[X]
+A horrific whip made of sharpened wires.[X]
 ##Name_Heavensfall
 Heavensfall[X]
 ##Desc_Heavensfall ^
@@ -146,7 +146,7 @@ A cheap and durable piercing weapon.[X]
 ##Name_Pike
 Pike[X]
 ##Desc_Pike ^
-A weighty and cumbersome spear of great power.[X]
+A weighty, cumbersome and mighty spear.[X]
 ##Name_Partizan
 Partizan[X]
 ##Desc_Partizan ^
@@ -154,15 +154,15 @@ A standard-issue spear that's well balanced.[X]
 ##Name_Sarissa
 Sarissa[X]
 ##Desc_Sarissa ^
-A long and weighty spear that's surprisingly nimble.[X]
+A long and weighty, yet nimble, spear.[X]
 ##Name_Ahlspiess
 Ahlspiess[X]
 ##Desc_Ahlspiess ^
-A mighty spear with an exceptionally heavy head.[X]
+A spear with an exceptionally heavy head.[X]
 ##Name_Omiyari
 Omiyari[X]
 ##Desc_Omiyari ^
-A nimble and light spear with a straight point.[X]
+A nimble and light spear with a brutal point.[X]
 ##Name_Fengyan
 Fengyan[X]
 ##Desc_Fengyan ^
@@ -237,7 +237,7 @@ A large and weighty axe made for combat.[X]
 ##Name_Yue
 Yue[X]
 ##Desc_Yue ^
-A well-made axe with some light ornamentation.[X]
+A well-made axe with light ornamentation.[X]
 ##Name_Greataxe
 Greataxe[X]
 ##Desc_Greataxe ^
