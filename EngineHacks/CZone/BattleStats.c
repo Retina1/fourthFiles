@@ -38,7 +38,7 @@ void ComputeBattleUnitAttack(struct BattleUnit* attacker, struct BattleUnit* def
     attacker->battleAttack = attack;
 	if ((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))
 		attacker->battleAttack += attacker->unit.mag;
-	else if (CombatArtList[GetActiveArt(&attacker->unit)].isMagic)
+	else if (CombatArtList[GetActiveArt(&attacker->unit)].isMagic == 1)
 		attacker->battleAttack += attacker->unit.mag;
 	else
 		attacker->battleAttack += attacker->unit.pow;
@@ -239,7 +239,7 @@ void FloorDamage(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	short rawOffense;
 	if((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))
 		rawOffense = attacker->unit.mag;
-	else if (CombatArtList[GetActiveArt(&attacker->unit)].isMagic)
+	else if (CombatArtList[GetActiveArt(&attacker->unit)].isMagic == 1)
 		rawOffense = attacker->unit.mag;
 	else
 		rawOffense = attacker->unit.pow;

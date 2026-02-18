@@ -11378,7 +11378,7 @@ __TEXTPROCESS141C:
 setText($141C, __TEXTPROCESS141C)
 
 __TEXTPROCESS141D:
-#incbin ".TextEntries\text_buildfileStrikeDecreeSkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileQuickDrawSkill.fetxt.dmp"
 setText($141D, __TEXTPROCESS141D)
 
 __TEXTPROCESS141E:
@@ -11390,7 +11390,7 @@ __TEXTPROCESS141F:
 setText($141F, __TEXTPROCESS141F)
 
 __TEXTPROCESS1420:
-#incbin ".TextEntries\text_buildfile1420.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSteadySightingSkill.fetxt.dmp"
 setText($1420, __TEXTPROCESS1420)
 
 __TEXTPROCESS1421:
@@ -11402,11 +11402,11 @@ __TEXTPROCESS1422:
 setText($1422, __TEXTPROCESS1422)
 
 __TEXTPROCESS1423:
-#incbin ".TextEntries\text_buildfile1423.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileFirefightSkill.fetxt.dmp"
 setText($1423, __TEXTPROCESS1423)
 
 __TEXTPROCESS1424:
-#incbin ".TextEntries\text_buildfileStunDecreeSkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1424.fetxt.dmp"
 setText($1424, __TEXTPROCESS1424)
 
 __TEXTPROCESS1425:
@@ -11414,7 +11414,7 @@ __TEXTPROCESS1425:
 setText($1425, __TEXTPROCESS1425)
 
 __TEXTPROCESS1426:
-#incbin ".TextEntries\text_buildfile1426.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePointBlankSkill.fetxt.dmp"
 setText($1426, __TEXTPROCESS1426)
 
 __TEXTPROCESS1427:
@@ -11426,7 +11426,7 @@ __TEXTPROCESS1428:
 setText($1428, __TEXTPROCESS1428)
 
 __TEXTPROCESS1429:
-#incbin ".TextEntries\text_buildfile1429.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileVitalSnipeSkill.fetxt.dmp"
 setText($1429, __TEXTPROCESS1429)
 
 __TEXTPROCESS142A:
@@ -11434,7 +11434,7 @@ __TEXTPROCESS142A:
 setText($142A, __TEXTPROCESS142A)
 
 __TEXTPROCESS142B:
-#incbin ".TextEntries\text_buildfileOverlordDecreeSkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile142B.fetxt.dmp"
 setText($142B, __TEXTPROCESS142B)
 
 __TEXTPROCESS142C:
@@ -11442,7 +11442,7 @@ __TEXTPROCESS142C:
 setText($142C, __TEXTPROCESS142C)
 
 __TEXTPROCESS142D:
-#incbin ".TextEntries\text_buildfile142D.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileWarningShotSkill.fetxt.dmp"
 setText($142D, __TEXTPROCESS142D)
 
 __TEXTPROCESS142E:
@@ -11458,11 +11458,11 @@ __TEXTPROCESS1430:
 setText($1430, __TEXTPROCESS1430)
 
 __TEXTPROCESS1431:
-#incbin ".TextEntries\text_buildfile1431.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileFlareShotSkill.fetxt.dmp"
 setText($1431, __TEXTPROCESS1431)
 
 __TEXTPROCESS1432:
-#incbin ".TextEntries\text_buildfileRallyingCrySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1432.fetxt.dmp"
 setText($1432, __TEXTPROCESS1432)
 
 __TEXTPROCESS1433:
@@ -11474,7 +11474,7 @@ __TEXTPROCESS1434:
 setText($1434, __TEXTPROCESS1434)
 
 __TEXTPROCESS1435:
-#incbin ".TextEntries\text_buildfileBoonfulPresenceSkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileHipShotSkill.fetxt.dmp"
 setText($1435, __TEXTPROCESS1435)
 
 __TEXTPROCESS1436:
@@ -11486,7 +11486,7 @@ __TEXTPROCESS1437:
 setText($1437, __TEXTPROCESS1437)
 
 __TEXTPROCESS1438:
-#incbin ".TextEntries\text_buildfileRichLivingSkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1438.fetxt.dmp"
 setText($1438, __TEXTPROCESS1438)
 
 __TEXTPROCESS1439:
@@ -11494,11 +11494,11 @@ __TEXTPROCESS1439:
 setText($1439, __TEXTPROCESS1439)
 
 __TEXTPROCESS143A:
-#incbin ".TextEntries\text_buildfile143A.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileManaBulletSkill.fetxt.dmp"
 setText($143A, __TEXTPROCESS143A)
 
 __TEXTPROCESS143B:
-#incbin ".TextEntries\text_buildfileRallyingThrustSkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile143B.fetxt.dmp"
 setText($143B, __TEXTPROCESS143B)
 
 __TEXTPROCESS143C:
@@ -11510,11 +11510,11 @@ __TEXTPROCESS143D:
 setText($143D, __TEXTPROCESS143D)
 
 __TEXTPROCESS143E:
-#incbin ".TextEntries\text_buildfileHealthRallySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile143E.fetxt.dmp"
 setText($143E, __TEXTPROCESS143E)
 
 __TEXTPROCESS143F:
-#incbin ".TextEntries\text_buildfile143F.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePowerSnipeSkill.fetxt.dmp"
 setText($143F, __TEXTPROCESS143F)
 
 __TEXTPROCESS1440:
@@ -11526,7 +11526,7 @@ __TEXTPROCESS1441:
 setText($1441, __TEXTPROCESS1441)
 
 __TEXTPROCESS1442:
-#incbin ".TextEntries\text_buildfileFortuneRallySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1442.fetxt.dmp"
 setText($1442, __TEXTPROCESS1442)
 
 __TEXTPROCESS1443:
@@ -11534,7 +11534,7 @@ __TEXTPROCESS1443:
 setText($1443, __TEXTPROCESS1443)
 
 __TEXTPROCESS1444:
-#incbin ".TextEntries\text_buildfile1444.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRapidFireSkill.fetxt.dmp"
 setText($1444, __TEXTPROCESS1444)
 
 __TEXTPROCESS1445:
@@ -11542,7 +11542,7 @@ __TEXTPROCESS1445:
 setText($1445, __TEXTPROCESS1445)
 
 __TEXTPROCESS1446:
-#incbin ".TextEntries\text_buildfileProudNobilitySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1446.fetxt.dmp"
 setText($1446, __TEXTPROCESS1446)
 
 __TEXTPROCESS1447:
@@ -11554,11 +11554,11 @@ __TEXTPROCESS1448:
 setText($1448, __TEXTPROCESS1448)
 
 __TEXTPROCESS1449:
-#incbin ".TextEntries\text_buildfile1449.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRiotGunSkill.fetxt.dmp"
 setText($1449, __TEXTPROCESS1449)
 
 __TEXTPROCESS144A:
-#incbin ".TextEntries\text_buildfileAttackRallySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile144A.fetxt.dmp"
 setText($144A, __TEXTPROCESS144A)
 
 __TEXTPROCESS144B:
@@ -11574,11 +11574,11 @@ __TEXTPROCESS144D:
 setText($144D, __TEXTPROCESS144D)
 
 __TEXTPROCESS144E:
-#incbin ".TextEntries\text_buildfile144E.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileScattershotSkill.fetxt.dmp"
 setText($144E, __TEXTPROCESS144E)
 
 __TEXTPROCESS144F:
-#incbin ".TextEntries\text_buildfileGuardRallySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile144F.fetxt.dmp"
 setText($144F, __TEXTPROCESS144F)
 
 __TEXTPROCESS1450:
@@ -11598,11 +11598,11 @@ __TEXTPROCESS1453:
 setText($1453, __TEXTPROCESS1453)
 
 __TEXTPROCESS1454:
-#incbin ".TextEntries\text_buildfileHasteRallySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1454.fetxt.dmp"
 setText($1454, __TEXTPROCESS1454)
 
 __TEXTPROCESS1455:
-#incbin ".TextEntries\text_buildfile1455.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUnloadSkill.fetxt.dmp"
 setText($1455, __TEXTPROCESS1455)
 
 __TEXTPROCESS1456:
@@ -11618,7 +11618,7 @@ __TEXTPROCESS1458:
 setText($1458, __TEXTPROCESS1458)
 
 __TEXTPROCESS1459:
-#incbin ".TextEntries\text_buildfileImbueRallySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1459.fetxt.dmp"
 setText($1459, __TEXTPROCESS1459)
 
 __TEXTPROCESS145A:
@@ -11630,7 +11630,7 @@ __TEXTPROCESS145B:
 setText($145B, __TEXTPROCESS145B)
 
 __TEXTPROCESS145C:
-#incbin ".TextEntries\text_buildfile145C.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRicochetSkill.fetxt.dmp"
 setText($145C, __TEXTPROCESS145C)
 
 __TEXTPROCESS145D:
@@ -11638,7 +11638,7 @@ __TEXTPROCESS145D:
 setText($145D, __TEXTPROCESS145D)
 
 __TEXTPROCESS145E:
-#incbin ".TextEntries\text_buildfileThriftRallySkill.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile145E.fetxt.dmp"
 setText($145E, __TEXTPROCESS145E)
 
 __TEXTPROCESS145F:
@@ -11658,252 +11658,612 @@ __TEXTPROCESS1462:
 setText($1462, __TEXTPROCESS1462)
 
 __TEXTPROCESS1463:
-#incbin ".TextEntries\text_buildfileUM_CombatArtsMenuName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileStrikeDecreeSkill.fetxt.dmp"
 setText($1463, __TEXTPROCESS1463)
 
 __TEXTPROCESS1464:
-#incbin ".TextEntries\text_buildfileUM_CombatArtsMenuDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1464.fetxt.dmp"
 setText($1464, __TEXTPROCESS1464)
 
 __TEXTPROCESS1465:
-#incbin ".TextEntries\text_buildfileUM_GuardBreak.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1465.fetxt.dmp"
 setText($1465, __TEXTPROCESS1465)
 
 __TEXTPROCESS1466:
-#incbin ".TextEntries\text_buildfileUM_GuardBreakDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1466.fetxt.dmp"
 setText($1466, __TEXTPROCESS1466)
 
 __TEXTPROCESS1467:
-#incbin ".TextEntries\text_buildfileUM_PowerBreak.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1467.fetxt.dmp"
 setText($1467, __TEXTPROCESS1467)
 
 __TEXTPROCESS1468:
-#incbin ".TextEntries\text_buildfileUM_PowerBreakDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1468.fetxt.dmp"
 setText($1468, __TEXTPROCESS1468)
 
 __TEXTPROCESS1469:
-#incbin ".TextEntries\text_buildfileUM_AgilityBreak.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1469.fetxt.dmp"
 setText($1469, __TEXTPROCESS1469)
 
 __TEXTPROCESS146A:
-#incbin ".TextEntries\text_buildfileUM_AgilityBreakDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileStunDecreeSkill.fetxt.dmp"
 setText($146A, __TEXTPROCESS146A)
 
 __TEXTPROCESS146B:
-#incbin ".TextEntries\text_buildfileUM_WrathStrike.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile146B.fetxt.dmp"
 setText($146B, __TEXTPROCESS146B)
 
 __TEXTPROCESS146C:
-#incbin ".TextEntries\text_buildfileUM_WrathStrikeDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile146C.fetxt.dmp"
 setText($146C, __TEXTPROCESS146C)
 
 __TEXTPROCESS146D:
-#incbin ".TextEntries\text_buildfileUM_SwordGlint.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile146D.fetxt.dmp"
 setText($146D, __TEXTPROCESS146D)
 
 __TEXTPROCESS146E:
-#incbin ".TextEntries\text_buildfileUM_SwordGlintDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile146E.fetxt.dmp"
 setText($146E, __TEXTPROCESS146E)
 
 __TEXTPROCESS146F:
-#incbin ".TextEntries\text_buildfileUM_FalconSlash.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile146F.fetxt.dmp"
 setText($146F, __TEXTPROCESS146F)
 
 __TEXTPROCESS1470:
-#incbin ".TextEntries\text_buildfileUM_FalconSlashDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1470.fetxt.dmp"
 setText($1470, __TEXTPROCESS1470)
 
 __TEXTPROCESS1471:
-#incbin ".TextEntries\text_buildfileUM_SwiftStrikes.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileOverlordDecreeSkill.fetxt.dmp"
 setText($1471, __TEXTPROCESS1471)
 
 __TEXTPROCESS1472:
-#incbin ".TextEntries\text_buildfileUM_SwiftStrikesDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1472.fetxt.dmp"
 setText($1472, __TEXTPROCESS1472)
 
 __TEXTPROCESS1473:
-#incbin ".TextEntries\text_buildfileUM_Spellchaser.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1473.fetxt.dmp"
 setText($1473, __TEXTPROCESS1473)
 
 __TEXTPROCESS1474:
-#incbin ".TextEntries\text_buildfileUM_SpellchaserDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1474.fetxt.dmp"
 setText($1474, __TEXTPROCESS1474)
 
 __TEXTPROCESS1475:
-#incbin ".TextEntries\text_buildfileUM_FullBreak.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1475.fetxt.dmp"
 setText($1475, __TEXTPROCESS1475)
 
 __TEXTPROCESS1476:
-#incbin ".TextEntries\text_buildfileUM_FullBreakDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1476.fetxt.dmp"
 setText($1476, __TEXTPROCESS1476)
 
 __TEXTPROCESS1477:
-#incbin ".TextEntries\text_buildfileUM_Tempest.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1477.fetxt.dmp"
 setText($1477, __TEXTPROCESS1477)
 
 __TEXTPROCESS1478:
-#incbin ".TextEntries\text_buildfileUM_TempestDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRallyingCrySkill.fetxt.dmp"
 setText($1478, __TEXTPROCESS1478)
 
 __TEXTPROCESS1479:
-#incbin ".TextEntries\text_buildfileUM_Firebolt.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1479.fetxt.dmp"
 setText($1479, __TEXTPROCESS1479)
 
 __TEXTPROCESS147A:
-#incbin ".TextEntries\text_buildfileUM_FireboltDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile147A.fetxt.dmp"
 setText($147A, __TEXTPROCESS147A)
 
 __TEXTPROCESS147B:
-#incbin ".TextEntries\text_buildfileUM_Thunderbolt.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileBoonfulPresenceSkill.fetxt.dmp"
 setText($147B, __TEXTPROCESS147B)
 
 __TEXTPROCESS147C:
-#incbin ".TextEntries\text_buildfileUM_ThunderboltDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile147C.fetxt.dmp"
 setText($147C, __TEXTPROCESS147C)
 
 __TEXTPROCESS147D:
-#incbin ".TextEntries\text_buildfileUM_Frostfall.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile147D.fetxt.dmp"
 setText($147D, __TEXTPROCESS147D)
 
 __TEXTPROCESS147E:
-#incbin ".TextEntries\text_buildfileUM_FrostfallDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRichLivingSkill.fetxt.dmp"
 setText($147E, __TEXTPROCESS147E)
 
 __TEXTPROCESS147F:
-#incbin ".TextEntries\text_buildfileUM_Firestorm.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile147F.fetxt.dmp"
 setText($147F, __TEXTPROCESS147F)
 
 __TEXTPROCESS1480:
-#incbin ".TextEntries\text_buildfileUM_FirestormDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1480.fetxt.dmp"
 setText($1480, __TEXTPROCESS1480)
 
 __TEXTPROCESS1481:
-#incbin ".TextEntries\text_buildfileUM_Galewind.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRallyingThrustSkill.fetxt.dmp"
 setText($1481, __TEXTPROCESS1481)
 
 __TEXTPROCESS1482:
-#incbin ".TextEntries\text_buildfileUM_GalewindDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1482.fetxt.dmp"
 setText($1482, __TEXTPROCESS1482)
 
 __TEXTPROCESS1483:
-#incbin ".TextEntries\text_buildfileUM_Calibur.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1483.fetxt.dmp"
 setText($1483, __TEXTPROCESS1483)
 
 __TEXTPROCESS1484:
-#incbin ".TextEntries\text_buildfileUM_CaliburDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileHealthRallySkill.fetxt.dmp"
 setText($1484, __TEXTPROCESS1484)
 
 __TEXTPROCESS1485:
-#incbin ".TextEntries\text_buildfileUM_Surge.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1485.fetxt.dmp"
 setText($1485, __TEXTPROCESS1485)
 
 __TEXTPROCESS1486:
-#incbin ".TextEntries\text_buildfileUM_SurgeDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1486.fetxt.dmp"
 setText($1486, __TEXTPROCESS1486)
 
 __TEXTPROCESS1487:
-#incbin ".TextEntries\text_buildfileUM_Earthspike.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1487.fetxt.dmp"
 setText($1487, __TEXTPROCESS1487)
 
 __TEXTPROCESS1488:
-#incbin ".TextEntries\text_buildfileUM_EarthspikeDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileFortuneRallySkill.fetxt.dmp"
 setText($1488, __TEXTPROCESS1488)
 
 __TEXTPROCESS1489:
-#incbin ".TextEntries\text_buildfileUM_EtherShot.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1489.fetxt.dmp"
 setText($1489, __TEXTPROCESS1489)
 
 __TEXTPROCESS148A:
-#incbin ".TextEntries\text_buildfileUM_EtherShotDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile148A.fetxt.dmp"
 setText($148A, __TEXTPROCESS148A)
 
 __TEXTPROCESS148B:
-#incbin ".TextEntries\text_buildfileUM_Megido.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile148B.fetxt.dmp"
 setText($148B, __TEXTPROCESS148B)
 
 __TEXTPROCESS148C:
-#incbin ".TextEntries\text_buildfileUM_MegidoDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileProudNobilitySkill.fetxt.dmp"
 setText($148C, __TEXTPROCESS148C)
 
 __TEXTPROCESS148D:
-#incbin ".TextEntries\text_buildfileUM_Eschaton.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile148D.fetxt.dmp"
 setText($148D, __TEXTPROCESS148D)
 
 __TEXTPROCESS148E:
-#incbin ".TextEntries\text_buildfileUM_EschatonDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile148E.fetxt.dmp"
 setText($148E, __TEXTPROCESS148E)
 
 __TEXTPROCESS148F:
-#incbin ".TextEntries\text_buildfileUM_CuffsWhip.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile148F.fetxt.dmp"
 setText($148F, __TEXTPROCESS148F)
 
 __TEXTPROCESS1490:
-#incbin ".TextEntries\text_buildfileUM_CuffsWhipDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAttackRallySkill.fetxt.dmp"
 setText($1490, __TEXTPROCESS1490)
 
 __TEXTPROCESS1491:
-#incbin ".TextEntries\text_buildfileUM_ShackleWhip.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1491.fetxt.dmp"
 setText($1491, __TEXTPROCESS1491)
 
 __TEXTPROCESS1492:
-#incbin ".TextEntries\text_buildfileUM_ShackleWhipDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1492.fetxt.dmp"
 setText($1492, __TEXTPROCESS1492)
 
 __TEXTPROCESS1493:
-#incbin ".TextEntries\text_buildfileUM_MuteWhip.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1493.fetxt.dmp"
 setText($1493, __TEXTPROCESS1493)
 
 __TEXTPROCESS1494:
-#incbin ".TextEntries\text_buildfileUM_MuteWhipDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1494.fetxt.dmp"
 setText($1494, __TEXTPROCESS1494)
 
 __TEXTPROCESS1495:
-#incbin ".TextEntries\text_buildfilePlaceholderLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileGuardRallySkill.fetxt.dmp"
 setText($1495, __TEXTPROCESS1495)
 
 __TEXTPROCESS1496:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc0.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1496.fetxt.dmp"
 setText($1496, __TEXTPROCESS1496)
 
 __TEXTPROCESS1497:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc1.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1497.fetxt.dmp"
 setText($1497, __TEXTPROCESS1497)
 
 __TEXTPROCESS1498:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc2.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1498.fetxt.dmp"
 setText($1498, __TEXTPROCESS1498)
 
 __TEXTPROCESS1499:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc3.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile1499.fetxt.dmp"
 setText($1499, __TEXTPROCESS1499)
 
 __TEXTPROCESS149A:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc4.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileHasteRallySkill.fetxt.dmp"
 setText($149A, __TEXTPROCESS149A)
 
 __TEXTPROCESS149B:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc5.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile149B.fetxt.dmp"
 setText($149B, __TEXTPROCESS149B)
 
 __TEXTPROCESS149C:
-#incbin ".TextEntries\text_buildfileStaffExpLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile149C.fetxt.dmp"
 setText($149C, __TEXTPROCESS149C)
 
 __TEXTPROCESS149D:
-#incbin ".TextEntries\text_buildfileStaffWexpLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile149D.fetxt.dmp"
 setText($149D, __TEXTPROCESS149D)
 
 __TEXTPROCESS149E:
-#incbin ".TextEntries\text_buildfileRankCurrentLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile149E.fetxt.dmp"
 setText($149E, __TEXTPROCESS149E)
 
 __TEXTPROCESS149F:
-#incbin ".TextEntries\text_buildfileRankNextLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileImbueRallySkill.fetxt.dmp"
 setText($149F, __TEXTPROCESS149F)
 
 __TEXTPROCESS14A0:
-#incbin ".TextEntries\text_buildfileHealArrowText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfile14A0.fetxt.dmp"
 setText($14A0, __TEXTPROCESS14A0)
+
+__TEXTPROCESS14A1:
+#incbin ".TextEntries\text_buildfile14A1.fetxt.dmp"
+setText($14A1, __TEXTPROCESS14A1)
+
+__TEXTPROCESS14A2:
+#incbin ".TextEntries\text_buildfile14A2.fetxt.dmp"
+setText($14A2, __TEXTPROCESS14A2)
+
+__TEXTPROCESS14A3:
+#incbin ".TextEntries\text_buildfile14A3.fetxt.dmp"
+setText($14A3, __TEXTPROCESS14A3)
+
+__TEXTPROCESS14A4:
+#incbin ".TextEntries\text_buildfileThriftRallySkill.fetxt.dmp"
+setText($14A4, __TEXTPROCESS14A4)
+
+__TEXTPROCESS14A5:
+#incbin ".TextEntries\text_buildfile14A5.fetxt.dmp"
+setText($14A5, __TEXTPROCESS14A5)
+
+__TEXTPROCESS14A6:
+#incbin ".TextEntries\text_buildfile14A6.fetxt.dmp"
+setText($14A6, __TEXTPROCESS14A6)
+
+__TEXTPROCESS14A7:
+#incbin ".TextEntries\text_buildfile14A7.fetxt.dmp"
+setText($14A7, __TEXTPROCESS14A7)
+
+__TEXTPROCESS14A8:
+#incbin ".TextEntries\text_buildfile14A8.fetxt.dmp"
+setText($14A8, __TEXTPROCESS14A8)
+
+__TEXTPROCESS14A9:
+#incbin ".TextEntries\text_buildfileUM_CombatArtsMenuName.fetxt.dmp"
+setText($14A9, __TEXTPROCESS14A9)
+
+__TEXTPROCESS14AA:
+#incbin ".TextEntries\text_buildfileUM_CombatArtsMenuDesc.fetxt.dmp"
+setText($14AA, __TEXTPROCESS14AA)
+
+__TEXTPROCESS14AB:
+#incbin ".TextEntries\text_buildfileUM_GuardBreak.fetxt.dmp"
+setText($14AB, __TEXTPROCESS14AB)
+
+__TEXTPROCESS14AC:
+#incbin ".TextEntries\text_buildfileUM_GuardBreakDesc.fetxt.dmp"
+setText($14AC, __TEXTPROCESS14AC)
+
+__TEXTPROCESS14AD:
+#incbin ".TextEntries\text_buildfileUM_PowerBreak.fetxt.dmp"
+setText($14AD, __TEXTPROCESS14AD)
+
+__TEXTPROCESS14AE:
+#incbin ".TextEntries\text_buildfileUM_PowerBreakDesc.fetxt.dmp"
+setText($14AE, __TEXTPROCESS14AE)
+
+__TEXTPROCESS14AF:
+#incbin ".TextEntries\text_buildfileUM_AgilityBreak.fetxt.dmp"
+setText($14AF, __TEXTPROCESS14AF)
+
+__TEXTPROCESS14B0:
+#incbin ".TextEntries\text_buildfileUM_AgilityBreakDesc.fetxt.dmp"
+setText($14B0, __TEXTPROCESS14B0)
+
+__TEXTPROCESS14B1:
+#incbin ".TextEntries\text_buildfileUM_WrathStrike.fetxt.dmp"
+setText($14B1, __TEXTPROCESS14B1)
+
+__TEXTPROCESS14B2:
+#incbin ".TextEntries\text_buildfileUM_WrathStrikeDesc.fetxt.dmp"
+setText($14B2, __TEXTPROCESS14B2)
+
+__TEXTPROCESS14B3:
+#incbin ".TextEntries\text_buildfileUM_SwordGlint.fetxt.dmp"
+setText($14B3, __TEXTPROCESS14B3)
+
+__TEXTPROCESS14B4:
+#incbin ".TextEntries\text_buildfileUM_SwordGlintDesc.fetxt.dmp"
+setText($14B4, __TEXTPROCESS14B4)
+
+__TEXTPROCESS14B5:
+#incbin ".TextEntries\text_buildfileUM_FalconSlash.fetxt.dmp"
+setText($14B5, __TEXTPROCESS14B5)
+
+__TEXTPROCESS14B6:
+#incbin ".TextEntries\text_buildfileUM_FalconSlashDesc.fetxt.dmp"
+setText($14B6, __TEXTPROCESS14B6)
+
+__TEXTPROCESS14B7:
+#incbin ".TextEntries\text_buildfileUM_SwiftStrikes.fetxt.dmp"
+setText($14B7, __TEXTPROCESS14B7)
+
+__TEXTPROCESS14B8:
+#incbin ".TextEntries\text_buildfileUM_SwiftStrikesDesc.fetxt.dmp"
+setText($14B8, __TEXTPROCESS14B8)
+
+__TEXTPROCESS14B9:
+#incbin ".TextEntries\text_buildfileUM_Spellchaser.fetxt.dmp"
+setText($14B9, __TEXTPROCESS14B9)
+
+__TEXTPROCESS14BA:
+#incbin ".TextEntries\text_buildfileUM_SpellchaserDesc.fetxt.dmp"
+setText($14BA, __TEXTPROCESS14BA)
+
+__TEXTPROCESS14BB:
+#incbin ".TextEntries\text_buildfileUM_FullBreak.fetxt.dmp"
+setText($14BB, __TEXTPROCESS14BB)
+
+__TEXTPROCESS14BC:
+#incbin ".TextEntries\text_buildfileUM_FullBreakDesc.fetxt.dmp"
+setText($14BC, __TEXTPROCESS14BC)
+
+__TEXTPROCESS14BD:
+#incbin ".TextEntries\text_buildfileUM_Tempest.fetxt.dmp"
+setText($14BD, __TEXTPROCESS14BD)
+
+__TEXTPROCESS14BE:
+#incbin ".TextEntries\text_buildfileUM_TempestDesc.fetxt.dmp"
+setText($14BE, __TEXTPROCESS14BE)
+
+__TEXTPROCESS14BF:
+#incbin ".TextEntries\text_buildfileUM_Firebolt.fetxt.dmp"
+setText($14BF, __TEXTPROCESS14BF)
+
+__TEXTPROCESS14C0:
+#incbin ".TextEntries\text_buildfileUM_FireboltDesc.fetxt.dmp"
+setText($14C0, __TEXTPROCESS14C0)
+
+__TEXTPROCESS14C1:
+#incbin ".TextEntries\text_buildfileUM_Thunderbolt.fetxt.dmp"
+setText($14C1, __TEXTPROCESS14C1)
+
+__TEXTPROCESS14C2:
+#incbin ".TextEntries\text_buildfileUM_ThunderboltDesc.fetxt.dmp"
+setText($14C2, __TEXTPROCESS14C2)
+
+__TEXTPROCESS14C3:
+#incbin ".TextEntries\text_buildfileUM_Frostfall.fetxt.dmp"
+setText($14C3, __TEXTPROCESS14C3)
+
+__TEXTPROCESS14C4:
+#incbin ".TextEntries\text_buildfileUM_FrostfallDesc.fetxt.dmp"
+setText($14C4, __TEXTPROCESS14C4)
+
+__TEXTPROCESS14C5:
+#incbin ".TextEntries\text_buildfileUM_Firestorm.fetxt.dmp"
+setText($14C5, __TEXTPROCESS14C5)
+
+__TEXTPROCESS14C6:
+#incbin ".TextEntries\text_buildfileUM_FirestormDesc.fetxt.dmp"
+setText($14C6, __TEXTPROCESS14C6)
+
+__TEXTPROCESS14C7:
+#incbin ".TextEntries\text_buildfileUM_Galewind.fetxt.dmp"
+setText($14C7, __TEXTPROCESS14C7)
+
+__TEXTPROCESS14C8:
+#incbin ".TextEntries\text_buildfileUM_GalewindDesc.fetxt.dmp"
+setText($14C8, __TEXTPROCESS14C8)
+
+__TEXTPROCESS14C9:
+#incbin ".TextEntries\text_buildfileUM_Calibur.fetxt.dmp"
+setText($14C9, __TEXTPROCESS14C9)
+
+__TEXTPROCESS14CA:
+#incbin ".TextEntries\text_buildfileUM_CaliburDesc.fetxt.dmp"
+setText($14CA, __TEXTPROCESS14CA)
+
+__TEXTPROCESS14CB:
+#incbin ".TextEntries\text_buildfileUM_Surge.fetxt.dmp"
+setText($14CB, __TEXTPROCESS14CB)
+
+__TEXTPROCESS14CC:
+#incbin ".TextEntries\text_buildfileUM_SurgeDesc.fetxt.dmp"
+setText($14CC, __TEXTPROCESS14CC)
+
+__TEXTPROCESS14CD:
+#incbin ".TextEntries\text_buildfileUM_Earthspike.fetxt.dmp"
+setText($14CD, __TEXTPROCESS14CD)
+
+__TEXTPROCESS14CE:
+#incbin ".TextEntries\text_buildfileUM_EarthspikeDesc.fetxt.dmp"
+setText($14CE, __TEXTPROCESS14CE)
+
+__TEXTPROCESS14CF:
+#incbin ".TextEntries\text_buildfileUM_EtherShot.fetxt.dmp"
+setText($14CF, __TEXTPROCESS14CF)
+
+__TEXTPROCESS14D0:
+#incbin ".TextEntries\text_buildfileUM_EtherShotDesc.fetxt.dmp"
+setText($14D0, __TEXTPROCESS14D0)
+
+__TEXTPROCESS14D1:
+#incbin ".TextEntries\text_buildfileUM_Megido.fetxt.dmp"
+setText($14D1, __TEXTPROCESS14D1)
+
+__TEXTPROCESS14D2:
+#incbin ".TextEntries\text_buildfileUM_MegidoDesc.fetxt.dmp"
+setText($14D2, __TEXTPROCESS14D2)
+
+__TEXTPROCESS14D3:
+#incbin ".TextEntries\text_buildfileUM_Eschaton.fetxt.dmp"
+setText($14D3, __TEXTPROCESS14D3)
+
+__TEXTPROCESS14D4:
+#incbin ".TextEntries\text_buildfileUM_EschatonDesc.fetxt.dmp"
+setText($14D4, __TEXTPROCESS14D4)
+
+__TEXTPROCESS14D5:
+#incbin ".TextEntries\text_buildfileUM_VitalSnipe.fetxt.dmp"
+setText($14D5, __TEXTPROCESS14D5)
+
+__TEXTPROCESS14D6:
+#incbin ".TextEntries\text_buildfileUM_VitalSnipeDesc.fetxt.dmp"
+setText($14D6, __TEXTPROCESS14D6)
+
+__TEXTPROCESS14D7:
+#incbin ".TextEntries\text_buildfileUM_FlareShot.fetxt.dmp"
+setText($14D7, __TEXTPROCESS14D7)
+
+__TEXTPROCESS14D8:
+#incbin ".TextEntries\text_buildfileUM_FlareShotDesc.fetxt.dmp"
+setText($14D8, __TEXTPROCESS14D8)
+
+__TEXTPROCESS14D9:
+#incbin ".TextEntries\text_buildfileUM_HipShot.fetxt.dmp"
+setText($14D9, __TEXTPROCESS14D9)
+
+__TEXTPROCESS14DA:
+#incbin ".TextEntries\text_buildfileUM_HipShotDesc.fetxt.dmp"
+setText($14DA, __TEXTPROCESS14DA)
+
+__TEXTPROCESS14DB:
+#incbin ".TextEntries\text_buildfileUM_ManaBullet.fetxt.dmp"
+setText($14DB, __TEXTPROCESS14DB)
+
+__TEXTPROCESS14DC:
+#incbin ".TextEntries\text_buildfileUM_ManaBulletDesc.fetxt.dmp"
+setText($14DC, __TEXTPROCESS14DC)
+
+__TEXTPROCESS14DD:
+#incbin ".TextEntries\text_buildfileUM_PowerSnipe.fetxt.dmp"
+setText($14DD, __TEXTPROCESS14DD)
+
+__TEXTPROCESS14DE:
+#incbin ".TextEntries\text_buildfileUM_PowerSnipeDesc.fetxt.dmp"
+setText($14DE, __TEXTPROCESS14DE)
+
+__TEXTPROCESS14DF:
+#incbin ".TextEntries\text_buildfileUM_RapidFire.fetxt.dmp"
+setText($14DF, __TEXTPROCESS14DF)
+
+__TEXTPROCESS14E0:
+#incbin ".TextEntries\text_buildfileUM_RapidFireDesc.fetxt.dmp"
+setText($14E0, __TEXTPROCESS14E0)
+
+__TEXTPROCESS14E1:
+#incbin ".TextEntries\text_buildfileUM_RiotGun.fetxt.dmp"
+setText($14E1, __TEXTPROCESS14E1)
+
+__TEXTPROCESS14E2:
+#incbin ".TextEntries\text_buildfileUM_RiotGunDesc.fetxt.dmp"
+setText($14E2, __TEXTPROCESS14E2)
+
+__TEXTPROCESS14E3:
+#incbin ".TextEntries\text_buildfileUM_Scattershot.fetxt.dmp"
+setText($14E3, __TEXTPROCESS14E3)
+
+__TEXTPROCESS14E4:
+#incbin ".TextEntries\text_buildfileUM_ScattershotDesc.fetxt.dmp"
+setText($14E4, __TEXTPROCESS14E4)
+
+__TEXTPROCESS14E5:
+#incbin ".TextEntries\text_buildfileUM_Unload.fetxt.dmp"
+setText($14E5, __TEXTPROCESS14E5)
+
+__TEXTPROCESS14E6:
+#incbin ".TextEntries\text_buildfileUM_UnloadDesc.fetxt.dmp"
+setText($14E6, __TEXTPROCESS14E6)
+
+__TEXTPROCESS14E7:
+#incbin ".TextEntries\text_buildfileUM_Ricochet.fetxt.dmp"
+setText($14E7, __TEXTPROCESS14E7)
+
+__TEXTPROCESS14E8:
+#incbin ".TextEntries\text_buildfileUM_RicochetDesc.fetxt.dmp"
+setText($14E8, __TEXTPROCESS14E8)
+
+__TEXTPROCESS14E9:
+#incbin ".TextEntries\text_buildfileUM_CuffsWhip.fetxt.dmp"
+setText($14E9, __TEXTPROCESS14E9)
+
+__TEXTPROCESS14EA:
+#incbin ".TextEntries\text_buildfileUM_CuffsWhipDesc.fetxt.dmp"
+setText($14EA, __TEXTPROCESS14EA)
+
+__TEXTPROCESS14EB:
+#incbin ".TextEntries\text_buildfileUM_ShackleWhip.fetxt.dmp"
+setText($14EB, __TEXTPROCESS14EB)
+
+__TEXTPROCESS14EC:
+#incbin ".TextEntries\text_buildfileUM_ShackleWhipDesc.fetxt.dmp"
+setText($14EC, __TEXTPROCESS14EC)
+
+__TEXTPROCESS14ED:
+#incbin ".TextEntries\text_buildfileUM_MuteWhip.fetxt.dmp"
+setText($14ED, __TEXTPROCESS14ED)
+
+__TEXTPROCESS14EE:
+#incbin ".TextEntries\text_buildfileUM_MuteWhipDesc.fetxt.dmp"
+setText($14EE, __TEXTPROCESS14EE)
+
+__TEXTPROCESS14EF:
+#incbin ".TextEntries\text_buildfilePlaceholderLabel.fetxt.dmp"
+setText($14EF, __TEXTPROCESS14EF)
+
+__TEXTPROCESS14F0:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc0.fetxt.dmp"
+setText($14F0, __TEXTPROCESS14F0)
+
+__TEXTPROCESS14F1:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc1.fetxt.dmp"
+setText($14F1, __TEXTPROCESS14F1)
+
+__TEXTPROCESS14F2:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc2.fetxt.dmp"
+setText($14F2, __TEXTPROCESS14F2)
+
+__TEXTPROCESS14F3:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc3.fetxt.dmp"
+setText($14F3, __TEXTPROCESS14F3)
+
+__TEXTPROCESS14F4:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc4.fetxt.dmp"
+setText($14F4, __TEXTPROCESS14F4)
+
+__TEXTPROCESS14F5:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc5.fetxt.dmp"
+setText($14F5, __TEXTPROCESS14F5)
+
+__TEXTPROCESS14F6:
+#incbin ".TextEntries\text_buildfileStaffExpLabel.fetxt.dmp"
+setText($14F6, __TEXTPROCESS14F6)
+
+__TEXTPROCESS14F7:
+#incbin ".TextEntries\text_buildfileStaffWexpLabel.fetxt.dmp"
+setText($14F7, __TEXTPROCESS14F7)
+
+__TEXTPROCESS14F8:
+#incbin ".TextEntries\text_buildfileRankCurrentLabel.fetxt.dmp"
+setText($14F8, __TEXTPROCESS14F8)
+
+__TEXTPROCESS14F9:
+#incbin ".TextEntries\text_buildfileRankNextLabel.fetxt.dmp"
+setText($14F9, __TEXTPROCESS14F9)
+
+__TEXTPROCESS14FA:
+#incbin ".TextEntries\text_buildfileHealArrowText.fetxt.dmp"
+setText($14FA, __TEXTPROCESS14FA)
 
 __TEXTPROCESS094:
 #incbin ".TextEntries\text_buildfile094.fetxt.dmp"

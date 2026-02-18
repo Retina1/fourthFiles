@@ -21,7 +21,14 @@ POIN CurateSkillLabels
 POIN MyrmidonSkillLabels
 POIN RiderSkillLabels
 POIN RaiderSkillLabels
+*/
+POIN SkillLabels
+POIN SkillLabels
+POIN SkillLabels
+POIN SkillLabels
+
 POIN GunnerSkillLabels
+/*
 POIN PoetSkillLabels
 POIN SeekerSkillLabels
 POIN PriestSkillLabels
@@ -42,7 +49,8 @@ POIN ArtificeSkillLabels
 POIN SoulSkillLabels
 POIN GenericSkillLabels
 */
-POIN SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels NobleSkillLabels SkillLabels SkillLabels SkillLabels SkillLabels
+
+POIN SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels SkillLabels NobleSkillLabels SkillLabels SkillLabels SkillLabels SkillLabels
 POIN 0 
 
 
@@ -112,6 +120,139 @@ ThreeLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
+SkillLabelTerminator
+
+ALIGN 4
+GunnerSkillLabels:
+OneLevelSkillLabel(QuickDrawSkill,NoReq)//0
+OneLevelSkillLabel(SteadySightingSkill,SteadySightingReq)
+OneLevelSkillLabel(FirefightSkill,FirefightReq)
+OneLevelSkillLabel(PointBlankSkill,PromotedReq)
+TwoLevelSkillLabel(VitalSnipeSkill,NoReq)//4
+TwoLevelSkillLabel(WarningShotSkill,WarningShotReq)
+TwoLevelSkillLabel(FlareShotSkill,FlareShotReq)
+ThreeLevelSkillLabel(HipShotSkill,NoReq)//7
+ThreeLevelSkillLabel(ManaBulletSkill,ManaBulletReq)
+ThreeLevelSkillLabel(PowerSnipeSkill,PowerSnipeReq)
+ThreeLevelSkillLabel(RapidFireSkill,RapidFireReq)
+ThreeLevelSkillLabel(RiotGunSkill,RiotGunReq)
+FiveLevelSkillLabel(ScattershotSkill,ScattershotReq)//12
+FiveLevelSkillLabel(UnloadSkill,UnloadReq)
+FiveLevelSkillLabel(RicochetSkill,RicochetReq)
+SkillLabelTerminator
+
+ALIGN 4
+SteadySightingReq:
+ReqEntry(4,1)
+ReqTerm
+ALIGN 4
+FirefightReq:
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+WarningShotReq:
+ReqEntry(4,1)
+ReqTerm
+ALIGN 4
+FlareShotReq:
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+ManaBulletReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+PowerSnipeReq:
+ReqEntry(4,1)
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+RapidFireReq:
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+RiotGunReq:
+ReqPromo
+ReqEntry(4,2)
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+ScattershotReq:
+ReqEntry(8,2)
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+UnloadReq:
+ReqEntry(2,1)
+ReqEntry(5,2)
+ReqEntry(10,3)
+ReqTerm
+ALIGN 4
+RicochetReq:
+ReqPromo
+ReqEntry(9,3)
+ReqEntry(10,3)
+ReqEntry(12,5)
+ReqTerm
+
+
+
+
+ALIGN 4
+KnightSkillLabels:
+OneLevelSkillLabel(IronWallSkill,NoReq)//0
+OneLevelSkillLabel(LeeringWallSkill,NoReq)
+OneLevelSkillLabel(WarinessSkill,WarinessReq)
+OneLevelSkillLabel(UnbreakableSkill,PromotedReq)
+TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
+TwoLevelSkillLabel(PlaceholderLabel,BoundingThrustReq)
+TwoLevelSkillLabel(PlaceholderLabel,VitalityThrustReq)
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)
+ThreeLevelSkillLabel(PlaceholderLabel,ProvocationReq)
+ThreeLevelSkillLabel(PlaceholderLabel,LuckyGuardReq)
+ThreeLevelSkillLabel(PlaceholderLabel,BraveGuardReq)
+FiveLevelSkillLabel(PlaceholderLabel,FullGuardReq)//12
+FiveLevelSkillLabel(PlaceholderLabel,BlitzThrustReq)
+FiveLevelSkillLabel(PlaceholderLabel,AvengerThrustReq)
+SkillLabelTerminator
+
+ALIGN 4
+AxefighterSkillLabels:
+OneLevelSkillLabel(EndlessBattleSkill,NoReq)//0
+OneLevelSkillLabel(SteadyMoraleSkill,NoReq)
+OneLevelSkillLabel(OverpoweringSkill,OverpoweringReq)
+OneLevelSkillLabel(FullChargeSkill,PromotedReq)
+TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
+TwoLevelSkillLabel(PlaceholderLabel,ShieldCrushReq)
+TwoLevelSkillLabel(PlaceholderLabel,SmiteReq)
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
+ThreeLevelSkillLabel(PlaceholderLabel,KillerBlowReq)
+ThreeLevelSkillLabel(PlaceholderLabel,BoomerangAxeReq)
+ThreeLevelSkillLabel(PlaceholderLabel,VengeanceBashReq)
+ThreeLevelSkillLabel(PlaceholderLabel,BerserkerVowReq)
+FiveLevelSkillLabel(PlaceholderLabel,VitalHitReq)//12
+FiveLevelSkillLabel(PlaceholderLabel,SmashBarrageReq)
+FiveLevelSkillLabel(PlaceholderLabel,TakedownReq)
+SkillLabelTerminator
+
+ALIGN 4
+ArcherSkillLabels:
+OneLevelSkillLabel(SightingSkill,NoReq)//0
+OneLevelSkillLabel(PerchSkill,NoReq)
+OneLevelSkillLabel(TargetMarkSkill,TargetMarkReq)
+OneLevelSkillLabel(KillerAimSkill,PromotedReq)
+TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
+TwoLevelSkillLabel(PlaceholderLabel,DropShotReq)
+TwoLevelSkillLabel(PlaceholderLabel,InescapableReq)
+ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
+ThreeLevelSkillLabel(PlaceholderLabel,PowerShotReq)
+ThreeLevelSkillLabel(PlaceholderLabel,FlankShotReq)
+ThreeLevelSkillLabel(PlaceholderLabel,ArmorPiercerReq)
+ThreeLevelSkillLabel(PlaceholderLabel,CloserReq)
+FiveLevelSkillLabel(PlaceholderLabel,PointBlankVolleyReq)//12
+FiveLevelSkillLabel(PlaceholderLabel,SquallVolleyReq)
+FiveLevelSkillLabel(PlaceholderLabel,AstralVolleyReq)
 SkillLabelTerminator
 
 ALIGN 4
@@ -191,64 +332,6 @@ ReqEntry(6,2)
 ReqTerm
 
 
-
-
-ALIGN 4
-KnightSkillLabels:
-OneLevelSkillLabel(IronWallSkill,NoReq)//0
-OneLevelSkillLabel(LeeringWallSkill,NoReq)
-OneLevelSkillLabel(WarinessSkill,WarinessReq)
-OneLevelSkillLabel(UnbreakableSkill,PromotedReq)
-TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
-TwoLevelSkillLabel(PlaceholderLabel,BoundingThrustReq)
-TwoLevelSkillLabel(PlaceholderLabel,VitalityThrustReq)
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)
-ThreeLevelSkillLabel(PlaceholderLabel,ProvocationReq)
-ThreeLevelSkillLabel(PlaceholderLabel,LuckyGuardReq)
-ThreeLevelSkillLabel(PlaceholderLabel,BraveGuardReq)
-FiveLevelSkillLabel(PlaceholderLabel,FullGuardReq)//12
-FiveLevelSkillLabel(PlaceholderLabel,BlitzThrustReq)
-FiveLevelSkillLabel(PlaceholderLabel,AvengerThrustReq)
-SkillLabelTerminator
-
-ALIGN 4
-AxefighterSkillLabels:
-OneLevelSkillLabel(EndlessBattleSkill,NoReq)//0
-OneLevelSkillLabel(SteadyMoraleSkill,NoReq)
-OneLevelSkillLabel(OverpoweringSkill,OverpoweringReq)
-OneLevelSkillLabel(FullChargeSkill,PromotedReq)
-TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
-TwoLevelSkillLabel(PlaceholderLabel,ShieldCrushReq)
-TwoLevelSkillLabel(PlaceholderLabel,SmiteReq)
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
-ThreeLevelSkillLabel(PlaceholderLabel,KillerBlowReq)
-ThreeLevelSkillLabel(PlaceholderLabel,BoomerangAxeReq)
-ThreeLevelSkillLabel(PlaceholderLabel,VengeanceBashReq)
-ThreeLevelSkillLabel(PlaceholderLabel,BerserkerVowReq)
-FiveLevelSkillLabel(PlaceholderLabel,VitalHitReq)//12
-FiveLevelSkillLabel(PlaceholderLabel,SmashBarrageReq)
-FiveLevelSkillLabel(PlaceholderLabel,TakedownReq)
-SkillLabelTerminator
-
-ALIGN 4
-ArcherSkillLabels:
-OneLevelSkillLabel(SightingSkill,NoReq)//0
-OneLevelSkillLabel(PerchSkill,NoReq)
-OneLevelSkillLabel(TargetMarkSkill,TargetMarkReq)
-OneLevelSkillLabel(KillerAimSkill,PromotedReq)
-TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
-TwoLevelSkillLabel(PlaceholderLabel,DropShotReq)
-TwoLevelSkillLabel(PlaceholderLabel,InescapableReq)
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
-ThreeLevelSkillLabel(PlaceholderLabel,PowerShotReq)
-ThreeLevelSkillLabel(PlaceholderLabel,FlankShotReq)
-ThreeLevelSkillLabel(PlaceholderLabel,ArmorPiercerReq)
-ThreeLevelSkillLabel(PlaceholderLabel,CloserReq)
-FiveLevelSkillLabel(PlaceholderLabel,PointBlankVolleyReq)//12
-FiveLevelSkillLabel(PlaceholderLabel,SquallVolleyReq)
-FiveLevelSkillLabel(PlaceholderLabel,AstralVolleyReq)
-SkillLabelTerminator
 
 ALIGN 4
 TargetMarkReq:

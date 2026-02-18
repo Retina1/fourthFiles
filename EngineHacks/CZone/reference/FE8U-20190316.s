@@ -19,6 +19,11 @@ SET_FUNC __aeabi_uidivmod, Div @ WARNING: this one won't work for large numbers
 
 SET_FUNC sub_80230F0, 0x80230F1
 
+SET_DATA gAnimRoundData, 0x02028100 
+SET_DATA gEfxHpLutOff, 0x0203E152
+SET_DATA gEfxHpLut, 0x02028200
+SET_DATA gBattleHitArray, 0x2028000
+
 SET_DATA gHitCountRAMAddress, 0x030017c4
 SET_DATA gStatScreen, 0x02003BFC
 
@@ -3240,7 +3245,7 @@ SET_DATA gMapSpriteSwitchHoverTimer, 0x203A4D0
 SET_DATA gBattleStats, 0x203A4D4
 SET_DATA gBattleActor, 0x203A4EC
 SET_DATA gBattleTarget, 0x203A56C
-SET_DATA gBattleHitArray, 0x203A5EC
+
 SET_DATA gBattleHitIterator, 0x203A608
 SET_DATA gpTradeMenuProc, 0x203A610
 SET_DATA gTrapArray, 0x203A614
@@ -4852,7 +4857,6 @@ dat 0x0203A4D0, gMapSpriteSwitchHoverTimer
 dat 0x0203A4D4, gBattleStats
 dat 0x0203A4EC, gBattleActor
 dat 0x0203A56C, gBattleTarget
-dat 0x0203A5EC, gBattleHitArray
 dat 0x0203A608, gBattleHitIterator
 dat 0x0203A610, gpTradeMenuProc
 dat 0x0203A81C, gConvoyItemArray
@@ -4914,9 +4918,6 @@ dat 0x0203E118, gEkrSpellAnimIndex
 dat 0x0203E11C, gBanimFloorfx
 dat 0x0203E120, gEkrDistanceType
 dat 0x0203E122, gEkrBmLocation
-dat 0x0203E12A, gAnimRoundData
-dat 0x0203E152, gEfxHpLutOff
-dat 0x0203E156, gEfxHpLut
 dat 0x0203E182, gBanimIdx
 dat 0x0203E188, gpEkrBattleUnitLeft
 dat 0x0203E18C, gpEkrBattleUnitRight

@@ -461,3 +461,16 @@ int GetBattleUnitHitCount(struct BattleUnit* attacker) {
 	}
     return result;
 }
+
+//fix battlehit max uses
+void ClearBattleHits(void) {
+    int i;
+
+    for (i = 0; i < BATTLE_HIT_MAX; ++i) {
+        gBattleHitArray[i].attributes = 0;
+        gBattleHitArray[i].info = 0;
+        gBattleHitArray[i].hpChange = 0;
+    }
+
+    gBattleHitIterator = gBattleHitArray;
+}

@@ -1,0 +1,97 @@
+//MYRMIDON
+
+//RIDER
+
+//RAIDER
+
+//GUNNER
+CombatArt((Set1LastArt + 34),UM_VitalSnipe,UM_VitalSnipeDesc, \
+		  2, \
+		  VitalSnipeArtUsability,VitalSnipeArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  VitalSnipePrebattle, 0, \
+		  0, 0, \
+		  ShootLock, \
+		  VitalSnipeOdds, 0, \
+		  PhysArt,0,ArmBindEffect)
+CombatArt((Set1LastArt + 36),UM_FlareShot,UM_FlareShotDesc, \
+		  3, \
+		  FlareShotArtUsability,FlareShotArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, FlareShotBothSides, \
+		  0, 0, \
+		  FlareShotRange, \
+		  FlareShotOdds, 0, \
+		  PhysArt,0,BlindEffect)
+CombatArt((Set1LastArt + 37),UM_HipShot,UM_HipShotDesc, \
+		  3, \
+		  HipShotArtUsability,HipShotArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  HipShotPrebattle, HipShotBothSides, \
+		  0, 0, \
+		  HipShotRange, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((Set1LastArt + 38),UM_ManaBullet,UM_ManaBulletDesc, \
+		  2, \
+		  ManaBulletArtUsability,ManaBulletArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, ManaBulletBothSides, \
+		  0, 0, \
+		  ShootLock, \
+		  0, 0, \
+		  StrVsResArt,0,0)
+CombatArt((Set1LastArt + 39),UM_PowerSnipe,UM_PowerSnipeDesc, \
+		  5, \
+		  PowerSnipeArtUsability,PowerSnipeArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  PowerSnipePrebattle, PowerSnipeBothSides, \
+		  0, 0, \
+		  PowerSnipeRange, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((Set1LastArt + 40),UM_RapidFire,UM_RapidFireDesc, \
+		  5, \
+		  RapidFireArtUsability,RapidFireArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  RapidFirePrebattle, RapidFireBothSides, \
+		  0, 0, \
+		  RapidFireRange, \
+		  0, RapidFireHitCount, \
+		  PhysArt,0,0)
+CombatArt((Set1LastArt + 41),UM_RiotGun,UM_RiotGunDesc, \
+		  8, \
+		  RiotGunArtUsability,RiotGunArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  RiotGunPrebattle, RiotGunBothSides, \
+		  0, RiotGunBattleProc, \
+		  RapidFireRange, \
+		  RiotGunOdds, 0, \
+		  PhysArt,0,ParalyzeEffect)
+CombatArt((Set1LastArt + 42),UM_Scattershot,UM_ScattershotDesc, \
+		  4, \
+		  ScattershotArtUsability,ScattershotArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  ScattershotPrebattle, ScattershotBothSides, \
+		  ScattershotPostbattle, 0, \
+		  ShootLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((Set1LastArt + 43),UM_Unload,UM_UnloadDesc, \
+		  255, \
+		  UnloadArtUsability,UnloadArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  UnloadPrebattle, UnloadBothSides, \
+		  0, 0, \
+		  ShootLock, \
+		  0, UnloadHitCount, \
+		  PhysArt,0,0)
+CombatArt((Set1LastArt + 44),UM_Ricochet,UM_RicochetDesc, \
+		  10, \
+		  RicochetArtUsability,RicochetArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, RicochetBothSides, \
+		  0, 0, \
+		  RicochetRange, \
+		  0, RicochetHitCount, \
+		  PhysArt,0,0)

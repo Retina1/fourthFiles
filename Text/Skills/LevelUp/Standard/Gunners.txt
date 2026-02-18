@@ -1,0 +1,431 @@
+##QuickDrawSkill
+Quick Draw[X]
+## ^
+Level: 0 (Passive)[N]
+Dominate at a range.[N]
+Next: When fighting at[N]
+2+ Rng, 1.5x Atk/AS if[N]
+foe can attack/counter.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Dominate at a range.[N]
+When fighting at 2+ Rng,[N]
+1.5x Atk/AS if foe can[N]
+attack/counter.[N]
+Pick a fair fight![X]
+
+##SteadySightingSkill
+Steady Sighting[X]
+## ^
+Level: 0 (Passive)[N]
+Stand still to ready[N]
+your weapon's aim.[N]
+Next: When initiating, 1.5x[N]
+Hit if 0 Mov has been used.[N]
+Req: Vital Snipe 1[X]
+## ^
+Level: MAX (Passive)[N]
+Stand still to ready[N]
+your weapon's aim.[N]
+When initiating, 1.5x Hit[N]
+if 0 Mov has been used.[N]
+[X]
+
+##FirefightSkill
+Firefight[X]
+## ^
+Level: 0 (Passive)[N]
+Dodge in the chaos.[N]
+Next: When initiating,[N]
+1.Mx Avo. M = Mov used.[N]
+Ex. 1.5x Avo if 5 Mov.[N]
+Req: Warning Shot 1[X]
+## ^
+Level: MAX (Passive)[N]
+Dodge in the chaos.[N]
+When initiating, get[N]
+1.Mx Avo. M = Mov used.[N]
+Ex. 1.5x Avo if 5 Mov.[N]
+[X]
+
+##PointBlankSkill
+Point Blank[X]
+## ^
+Level: 0 (Passive)[N]
+Up close and personal,[N]
+before they can blink.[N]
+Next: When initiating at[N]
+1 Rng, 3.0x AS.[N]
+Req: PROMO[X]
+## ^
+Level: MAX (Passive)[N]
+Up close and personal,[N]
+before they can blink.[N]
+When initiating at[N]
+1 Rng, 3.0x AS.[N]
+[X]
+
+##VitalSnipeSkill
+Vital Snipe[X]
+## ^
+Level: 0 (Active)[N]
+A reliable shot at[N]
+the enemy's arms.[N]
+Next: 2 Dur, 1.2x Hit,[N]
+20% base Arm Bind chance.[N]
+Req: None[X]
+## ^
+Level: 1 (Active)[N]
+A reliable shot at[N]
+the enemy's arms.[N]
+2 Dur, 1.2x Hit, 20%[N]
+base Arm Bind chance.[N]
+Next: 1.4x Hit, 30% base.[X]
+## ^
+Level: MAX (Active)[N]
+A reliable shot at[N]
+the enemy's arms.[N]
+2 Dur, 1.4x Hit, 30%[N]
+base Arm Bind chance.[N]
+[X]
+
+##WarningShotSkill
+Warning Shot[X]
+## ^
+Level: 0 (Active)[N]
+[N]
+[N]
+Next:[N]
+[N]
+Req: Vital Snipe 1[X]
+## ^
+Level: 1 (Active)[N]
+[N]
+[N]
+[N]
+[N]
+Next:[X]
+## ^
+Level: MAX (Active)[N]
+[N]
+[N]
+[N]
+[N]
+[X]
+
+##FlareShotSkill
+Flare Shot[X]
+## ^
+Level: 0 (Active)[N]
+Lob a blinding flare[N]
+with your gun.[N]
+Next: 3 Dur, 2-4 Rng,[N]
+0.8 Atk, 40% base chance.[N]
+Req: Warning Shot 1[X]
+## ^
+Level: 1 (Active)[N]
+Lob a blinding flare[N]
+with your gun.[N]
+3 Dur, 2-4 Rng, 0.8x Atk,[N]
+40% base Blind chance.[N]
+Next: 1.0x Atk, 60% base.[X]
+## ^
+Level: MAX (Active)[N]
+Lob a blinding flare[N]
+with your gun.[N]
+3 Dur, 2-4 Rng, 1.0x Atk,[N]
+60% base Blind chance.[N]
+[X]
+
+##HipShotSkill
+Hip Shot[X]
+## ^
+Level: 0 (Active)[N]
+A quick and simple[N]
+shot with solid range.[N]
+Next: 3 Dur, 1-3 Rng,[N]
+1.1x Atk, 1.1x Hit.[N]
+Req: None[X]
+## ^
+Level: 1 (Active)[N]
+A quick and simple[N]
+shot with solid range.[N]
+3 Dur, 1-3 Rng,[N]
+1.1x Atk, 1.1x Hit.[N]
+Next: 1.2x Atk/Hit.[X]
+## ^
+Level: 2 (Active)[N]
+A quick and simple[N]
+shot with solid range.[N]
+3 Dur, 1-3 Rng,[N]
+1.2x Atk, 1.2x Hit.[N]
+[X]
+## ^
+Level: MAX (Active)[N]
+A quick and simple[N]
+shot with solid range.[N]
+3 Dur, 1-3 Rng,[N]
+1.3x Atk, 1.3x Hit.[N]
+[X]
+
+##ManaBulletSkill
+Mana Bullet[X]
+## ^
+Level: 0 (Active)[N]
+Shoot a bullet that's[N]
+imbued with magic.[N]
+Next: 2 Dur, 0.8x Atk,[N]
+target Res instead of Def.[N]
+Req: Hip Shot 1[X]
+## ^
+Level: 1 (Active)[N]
+Shoot a bullet that's[N]
+imbued with magic.[N]
+2 Dur, 0.8x Atk, target[N]
+Res instead of Def.[N]
+Next: 1.0x Atk[X]
+## ^
+Level: 2 (Active)[N]
+Shoot a bullet that's[N]
+imbued with magic.[N]
+2 Dur, 1.0x Atk, target[N]
+Res instead of Def.[N]
+Next: 1.2x Atk[X]
+## ^
+Level: MAX (Active)[N]
+Shoot a bullet that's[N]
+imbued with magic.[N]
+2 Dur, 1.2x Atk, target[N]
+Res instead of Def.[N]
+[X]
+
+##PowerSnipeSkill
+Power Snipe[X]
+## ^
+Level: 0 (Active)[N]
+A mighty and accurate[N]
+shot with great range.[N]
+Next: 5 Dur, 2-5 Rng,[N]
+1.3x Atk, 1.3x Hit.[N]
+Req: H.Shot 1, V.Snipe 1[X]
+## ^
+Level: 1 (Active)[N]
+A mighty and accurate[N]
+shot with great range.[N]
+5 Dur, 3-5 Rng,[N]
+1.3x Atk, 1.3x Hit.[N]
+Next: 1.5x Atk/Hit.[X]
+## ^
+Level: 2 (Active)[N]
+A mighty and accurate[N]
+shot with great range.[N]
+5 Dur, 3-5 Rng,[N]
+1.5x Atk, 1.5x Hit.[N]
+Next: 1.8x Atk/Hit.[X]
+## ^
+Level: MAX (Active)[N]
+A mighty and accurate[N]
+shot with great range.[N]
+5 Dur, 3-5 Rng,[N]
+1.8x Atk, 1.8x Hit.[N]
+[X]
+
+##RapidFireSkill
+Rapid Fire[X]
+## ^
+Level: 0 (Active)[N]
+A close-ranged barrage.[N]
+Next: 5 Dur, 1 Rng,[N]
+0.6x Atk, 0.5x Hit,[N]
+strikes 3-5 times.[N]
+Req: Hip Shot 3[X]
+## ^
+Level: 1 (Active)[N]
+A close-ranged barrage.[N]
+5 Dur, 1 Rng, 0.6x Atk,[N]
+0.5x Hit, strikes[N]
+3-5 times (equal odds).[N]
+Next: 0.8x Atk/3-6 times.[X]
+## ^
+Level: 2 (Active)[N]
+A close-ranged barrage.[N]
+5 Dur, 1 Rng, 0.8x Atk,[N]
+0.5x Hit, strikes[N]
+3-6 times (equal odds).[N]
+Next: 1.0x Atk/4-7 times.[X]
+## ^
+Level: MAX (Active)[N]
+A close-ranged barrage.[N]
+5 Dur, 1 Rng, 1.0x Atk,[N]
+0.5x Hit, strikes[N]
+4-7 times (equal odds).[N]
+[X]
+
+##RiotGunSkill
+Riot Gun[X]
+## ^
+Level: 0 (Active)[N]
+One shot. All it takes.[N]
+Next: 8 Dur, 1 Rng,[N]
+1.2x Atk, 1.2x Hit,[N]
+skips target's next turn.[N]
+Req: V.Snipe 2, P.Snipe 3[X]
+## ^
+Level: 1 (Active)[N]
+One shot. All it takes.[N]
+8 Dur, 1 Rng, 1.2x Atk,[N]
+1.2x Hit, skips target's[N]
+next turn upon hit.[N]
+Next: 1.5x Atk.[X]
+## ^
+Level: 2 (Active)[N]
+One shot. All it takes.[N]
+8 Dur, 1 Rng, 1.5x Atk,[N]
+1.2x Hit, skips target's[N]
+next turn upon hit.[N]
+Next: 2.0x Atk, paralyze.[X]
+## ^
+Level: MAX (Active)[N]
+One shot. All it takes.[N]
+8 Dur, 1 Rng, 2.0x Atk,[N]
+1.2x Hit, 250% base[N]
+Paralysis chance, skips[N]
+target's next turn upon hit.[X]
+
+##ScattershotSkill
+Scattershot[X]
+## ^
+Level: 0 (Active)[N]
+A scattered barrage.[N]
+Next: 4 Dur, 1.3x Atk,[N]
+0.6x Hit, 20% of Dmg also[N]
+dealt to foes in 3 tiles.[N]
+Req: M. Bullet 2, F. Shot 2[X]
+## ^
+Level: 1 (Active)[N]
+A scattered barrage.[N]
+4 Dur, 1.3x Atk, 0.6x Hit,[N]
+20% of Dmg also dealt to[N]
+foes in 3 tiles.[N]
+Next: 1.5x Atk, 30% Dmg.[X]
+## ^
+Level: 2 (Active)[N]
+A scattered barrage.[N]
+4 Dur, 1.5x Atk, 0.6x Hit,[N]
+30% of Dmg also dealt to[N]
+foes in 3 tiles.[N]
+Next: 0.8x Hit, 4 tiles.[X]
+## ^
+Level: 3 (Active)[N]
+A scattered barrage.[N]
+4 Dur, 1.5x Atk, 0.8x Hit,[N]
+30% of Dmg also dealt to[N]
+foes in 4 tiles.[N]
+Next: 1.8x Atk, 40% Dmg.[X]
+## ^
+Level: 4 (Active)[N]
+A scattered barrage.[N]
+4 Dur, 1.8x Atk, 0.8x Hit,[N]
+40% of Dmg also dealt to[N]
+foes in 4 tiles.[N]
+Next: 50% Dmg, 5 tiles.[X]
+## ^
+Level: MAX (Active)[N]
+A scattered barrage.[N]
+4 Dur, 1.8x Atk, 0.8x Hit,[N]
+50% of Dmg also dealt to[N]
+foes in 5 tiles.[N]
+[X]
+
+##UnloadSkill
+Unload[X]
+## ^
+Level: 0 (Active)[N]
+Don't stop shooting.[N]
+Next: 0.2x Atk, 0.4x Hit,[N]
+strike 1 time/weapon Dur,[N]
+breaks weapon upon use.[N]
+R: R.Fi. 3, W.Sh. 2, Fir.Fi. 1[X]
+## ^
+Level: 1 (Active)[N]
+Don't stop shooting.[N]
+0.2x Atk, 0.4x Hit,[N]
+strike 1 time/weapon Dur,[N]
+breaks weapon upon use.[N]
+Next: 0.25x Atk.[X]
+## ^
+Level: 2 (Active)[N]
+Don't stop shooting.[N]
+0.25x Atk, 0.4x Hit,[N]
+strike 1 time/weapon Dur,[N]
+breaks weapon upon use.[N]
+Next: 0.3x Atk, 0.5x Hit.[X]
+## ^
+Level: 3 (Active)[N]
+Don't stop shooting.[N]
+0.3x Atk, 0.5x Hit,[N]
+strike 1 time/weapon Dur,[N]
+breaks weapon upon use.[N]
+Next: 0.4x Atk.[X]
+## ^
+Level: 4 (Active)[N]
+Don't stop shooting.[N]
+0.4x Atk, 0.5x Hit,[N]
+strike 1 time/weapon Dur,[N]
+breaks weapon upon use.[N]
+Next: 0.5x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Don't stop shooting.[N]
+0.5x Atk, 0.5x Hit,[N]
+strike 1 time/weapon Dur,[N]
+breaks weapon upon use.[N]
+[X]
+
+##RicochetSkill
+Ricochet[X]
+## ^
+Level: 0 (Active)[N]
+Ultimate trickshot.[N]
+Next: 10 Dur, 1-80 Rng,[N]
+0.2x Atk, strikes 10 times,[N]
+Hit div. by dist. to target.[N]
+R: P, P.Sn.3, Ra.F.3, Sc.Sh.5[X]
+## ^
+Level: 1 (Active)[N]
+Ultimate trickshot.[N]
+10 Dur, 1-80 Rng, 0.2x[N]
+Atk, strikes 10 times, Hit[N]
+divided by dist. to target.[N]
+Next: 0.3x Atk.[X]
+## ^
+Level: 2 (Active)[N]
+Ultimate trickshot.[N]
+10 Dur, 1-80 Rng, 0.3x[N]
+Atk, strikes 10 times, Hit[N]
+divided by dist. to target.[N]
+Next: 0.5x Atk.[X]
+## ^
+Level: 3 (Active)[N]
+Ultimate trickshot.[N]
+10 Dur, 1-80 Rng, 0.5x[N]
+Atk, strikes 10 times, Hit[N]
+divided by dist. to target.[N]
+Next: 0.8x Atk.[X]
+
+## ^
+Level: 4 (Active)[N]
+Ultimate trickshot.[N]
+10 Dur, 1-80 Rng, 0.8x[N]
+ Atk, strikes 10 times, Hit[N]
+divided by dist. to target.[N]
+Next: 1.2x Atk.[X]
+
+## ^
+Level: MAX (Active)[N]
+Ultimate trickshot.[N]
+10 Dur, 1-80 Rng, 1.2x[N]
+Atk, strikes 10 times, Hit[N]
+divided by dist. to target.[N]
+[X]

@@ -14,7 +14,7 @@
 // Number of Arts that can be simultaneously usable by a unit
 #define CAS_NumberOfUsableArtsAtOnce 20
 // Range of unit indexes that are able to have active arts. This will kill me.
-#define CAS_NumberOfActiveArtsAtOnce 0xC0
+#define CAS_NumberOfActiveArtsAtOnce 0x40
 
 
 //menudraw change

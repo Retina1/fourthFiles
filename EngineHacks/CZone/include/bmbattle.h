@@ -8,7 +8,7 @@ enum {
     // Battle-related magic constants
 
     // Maximum amount of hits that can happen in a battle (-1, because of the terminating "hit")
-    BATTLE_HIT_MAX = 7,
+    BATTLE_HIT_MAX = 24,
 
     // Followup attack (double attack) attack speed difference threshold
     BATTLE_FOLLOWUP_SPEED_THRESHOLD = 4,

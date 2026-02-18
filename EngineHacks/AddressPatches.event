@@ -1,3 +1,103 @@
+//old SET_DATA gBattleHitArray, 0x203A5EC
+//dat 0x0203E12A, gAnimRoundData
+//dat 0x0203E156, gEfxHpLut
+
+//uh oesn't quite work but we'll figure it out eventually tm
+#define gBattleHitArrayNew 0x2028000
+#define gAnimRoundDataNew 0x2028100
+#define gEfxHpLutNew 0x2028200
+
+PUSH
+ORG 0x2aec4
+WORD gBattleHitArrayNew
+ORG 0x2c44c
+WORD gBattleHitArrayNew
+ORG 0x2c660
+WORD gBattleHitArrayNew
+ORG 0x2cb0c
+WORD gBattleHitArrayNew
+ORG 0x2ce98
+WORD gBattleHitArrayNew
+ORG 0x2cfa8
+WORD gBattleHitArrayNew
+ORG 0x2f658
+WORD gBattleHitArrayNew
+ORG 0x2f730
+WORD gBattleHitArrayNew
+ORG 0x2f7fc
+WORD gBattleHitArrayNew
+ORG 0x58244
+WORD gBattleHitArrayNew
+ORG 0x58930
+WORD gBattleHitArrayNew
+ORG 0x72564
+WORD gBattleHitArrayNew
+ORG 0x7b4cc
+WORD gBattleHitArrayNew
+ORG 0x7b574
+WORD gBattleHitArrayNew
+ORG 0x7b628
+WORD gBattleHitArrayNew
+ORG 0x7b680
+WORD gBattleHitArrayNew
+ORG 0x7b6d8
+WORD gBattleHitArrayNew
+ORG 0x7b738
+WORD gBattleHitArrayNew
+ORG 0x7b790
+WORD gBattleHitArrayNew
+ORG 0x7b7e8
+WORD gBattleHitArrayNew
+ORG 0x7b84c
+WORD gBattleHitArrayNew
+ORG 0x7b8b8
+WORD gBattleHitArrayNew
+ORG 0x7b9b0
+WORD gBattleHitArrayNew
+ORG 0x7c920
+WORD gBattleHitArrayNew
+ORG 0xa6d18
+WORD gBattleHitArrayNew
+
+ORG 0x58248
+WORD gAnimRoundDataNew
+ORG 0x58564
+WORD gAnimRoundDataNew
+ORG 0x58a28
+WORD gAnimRoundDataNew
+ORG 0x58a54
+WORD gAnimRoundDataNew
+ORG 0x58b50
+WORD gAnimRoundDataNew
+
+ORG 0x58258
+WORD gEfxHpLutNew
+ORG 0x58350
+WORD gEfxHpLutNew
+ORG 0x5856c
+WORD gEfxHpLutNew
+ORG 0x585ac
+WORD gEfxHpLutNew
+ORG 0x5862c
+WORD gEfxHpLutNew
+ORG 0x58698
+WORD gEfxHpLutNew
+ORG 0x58768
+WORD gEfxHpLutNew
+ORG 0x58844
+WORD gEfxHpLutNew
+ORG 0x58a6c
+WORD gEfxHpLutNew
+ORG 0x58a84
+WORD gEfxHpLutNew
+
+ORG 0x58212
+SHORT 0x2a4C
+ORG 0x5822a
+SHORT 0x2a4C
+
+POP
+
 //load2 stuff
 PUSH
 ORG 0x9ED674

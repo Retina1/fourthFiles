@@ -1,5 +1,6 @@
 #include "Config.event"
 
+#define StrVsResArt 2
 #define MagicArt 1
 #define PhysArt 0
 #define NullArt 0

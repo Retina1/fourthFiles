@@ -1,0 +1,50 @@
+##UM_VitalSnipe
+ Vital Snipe[X]
+##UM_VitalSnipeDesc
+Shoot to bind arms.[N]
+Cost: 2 Durability.[X]
+##UM_FlareShot
+ Flare Shot[X]
+##UM_FlareShotDesc
+Lob a blinding flare.[N]
+Cost: 3 Durability.[X]
+##UM_HipShot
+ Hip Shot[X]
+##UM_HipShotDesc
+Shoot a balanced shot.[N]
+Cost: 3 Durability.[X]
+##UM_ManaBullet
+ Mana Bullet[X]
+##UM_ManaBulletDesc
+Shoot an imbued bullet.[N]
+Cost: 2 Durability.[X]
+##UM_PowerSnipe
+ Power Snipe[X]
+##UM_PowerSnipeDesc
+Shoot a mighty bullet.[N]
+Cost: 5 Durability.[X]
+##UM_RapidFire
+ Rapid Fire[X]
+##UM_RapidFireDesc
+Shoot a melee barrage.[N]
+Cost: 5 Durability.[X]
+##UM_RiotGun
+ Riot Gun[X]
+##UM_RiotGunDesc
+Shoot a mighty stunshot.[N]
+Cost: 8 Durability.[X]
+##UM_Scattershot
+ Scattershot[X]
+##UM_ScattershotDesc
+Shoot a wide barrage.[N]
+Cost: 4 Durability.[X]
+##UM_Unload
+ Unload[X]
+##UM_UnloadDesc
+Shoot your entire gun.[N]
+Cost: ALL Durability.[X]
+##UM_Ricochet
+ Ricochet[X]
+##UM_RicochetDesc
+Shoot an infinite barrage.[N]
+Cost: 10 Durability.[X]
