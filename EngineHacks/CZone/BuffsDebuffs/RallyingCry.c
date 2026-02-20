@@ -73,7 +73,7 @@ u8 RallyingCry_Effect (struct MenuProc* menu, struct MenuItemProc* menuItem) {
 	while (unitBuffer[i]){
 		int index = unitBuffer[i];
 		Unit* other = gUnitLookup[index];
-		UnitApplyBuff(other,rallyCount + 82);
+		UnitApplyBuff(other,BUFF_NOBLEBUFFSLOT1 + rallyCount);
 		//health rally
 		if (UNIT_HAS_SKILL(gActiveUnit,SOV,skill_212)) {
 			int hpAdd = GetUnitMaxHp(other) / 10;
@@ -105,7 +105,7 @@ void ApplyRallyingThrust (struct Unit* attacker, struct Unit* defender) {
 		while (unitBuffer[i]){
 			int index = unitBuffer[i];
 			Unit* other = gUnitLookup[index];
-			UnitApplyBuff(other,rallyCount + 82);
+			UnitApplyBuff(other,BUFF_NOBLEBUFFSLOT1 + rallyCount);
 			//health rally
 			if (UNIT_HAS_SKILL(attacker,SOV,skill_212)) {
 				int hpAdd = GetUnitMaxHp(other) / 10;

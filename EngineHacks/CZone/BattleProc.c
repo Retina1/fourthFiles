@@ -6,8 +6,14 @@ int GetArtStatusOdds(struct BattleUnit* actor, struct BattleUnit* target){
 		return CombatArtList[GetActiveArt(&actor->unit)].oddsFunction(actor, target);
 	else return 0;
 }
+
+int GetWhipstormAilment(struct BattleUnit* actor);
+//rng status for whipstorm, sequential status for the brawler?
 u8 GetArtStatusEffect(struct BattleUnit* actor, struct BattleUnit* target){
-    return CombatArtList[GetActiveArt(&actor->unit)].itemEffect;
+	if (CombatArtList[GetActiveArt(&actor->unit)].itemEffect == 69) {
+		return GetWhipstormAilment(actor);
+	}
+	else return CombatArtList[GetActiveArt(&actor->unit)].itemEffect;
 }
 
 void BattleApplyStatus(struct BattleUnit* battleUnit, u8 status) {
@@ -96,9 +102,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 					defender->statusOut = UNIT_STATUS_CURSE;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-					// "Ungray" defender if it was petrified (as it won't be anymore
-					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 				}
 			}
             break;
@@ -108,9 +111,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 				if (StatusOddsRollBattle(attacker, defender, odds)){
 					defender->statusOut = UNIT_STATUS_POISON;
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-					// "Ungray" defender if it was petrified (as it won't be anymore
-					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 				}
 			}
             break;
@@ -121,9 +121,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 					defender->statusOut = UNIT_STATUS_SLEEP;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-					// "Ungray" defender if it was petrified (as it won't be anymore
-					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 				}
 			}
             break;
@@ -134,9 +131,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 					defender->statusOut = UNIT_STATUS_BERSERK;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-					// "Ungray" defender if it was petrified (as it won't be anymore
-					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 				}
 			}
             break;
@@ -147,9 +141,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 					defender->statusOut = UNIT_STATUS_PARALYZE;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-					// "Ungray" defender if it was petrified (as it won't be anymore
-					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 				}
 			}
             break;
@@ -160,9 +151,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 					defender->statusOut = UNIT_STATUS_BLIND;
 					//status animation basically
 					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-					// "Ungray" defender if it was petrified (as it won't be anymore
-					if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-						defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 				}
 			}
             break;
@@ -173,9 +161,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 				defender->statusOut = UNIT_STATUS_HEADBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 			}
             break;
 			
@@ -184,9 +169,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 				defender->statusOut = UNIT_STATUS_ARMBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 			}
             break;
 			
@@ -195,9 +177,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 				defender->statusOut = UNIT_STATUS_LEGBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 			}
             break;
 		case WPN_EFFECT_FULLBIND:
@@ -205,9 +184,6 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 				defender->statusOut = UNIT_STATUS_FULLBIND;
 				//status animation basically
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_POISON;
-				// "Ungray" defender if it was petrified (as it won't be anymore
-				if (defender->unit.statusIndex == UNIT_STATUS_PETRIFY || defender->unit.statusIndex == UNIT_STATUS_13)
-					defender->unit.state = defender->unit.state &~ US_UNSELECTABLE;
 			}
             break;
 
@@ -426,9 +402,21 @@ void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit*
 		}
     }
 	
+	
+	//need to do this here too for IK
+	int effect,odds;
+	if ((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) {
+		effect = GetArtStatusEffect(attacker,defender);
+		odds = GetArtStatusOdds(attacker,defender);
+	}
+	else {
+		effect = GetItemWeaponEffect(attacker->weapon);
+		odds = GetItemStatusOdds(attacker->weapon);
+	}
+	
 	if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS)) {
-		if (GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_INSTANTDEATH) {
-			if (StatusOddsRollBattle(attacker, defender, GetItemStatusOdds(attacker->weapon))){
+		if (effect == WPN_EFFECT_INSTANTDEATH) {
+			if (StatusOddsRollBattle(attacker, defender, odds)){
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_SILENCER;
 				gBattleStats.damage = BATTLE_MAX_DAMAGE;
 			}

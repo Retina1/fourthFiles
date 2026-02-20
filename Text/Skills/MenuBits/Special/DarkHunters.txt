@@ -13,3 +13,40 @@ Cost: 2 Durability.[X]
 ##UM_MuteWhipDesc
 Whipstrike to bind head.[N]
 Cost: 2 Durability.[X]
+##UM_ToxinWhip
+ Toxin Whip[X]
+##UM_ToxinWhipDesc
+Whipstrike to poison.[N]
+Cost: 3 Durability.[X]
+##UM_SlumberWhip
+ Slumber Whip[X]
+##UM_SlumberWhipDesc
+Whipstrike to force sleep.[N]
+Cost: 4 Durability.[X]
+##UM_MirageWhip
+ Mirage Whip[X]
+##UM_MirageWhipDesc
+Whipstrike to enrage.[N]
+Cost: 5 Durability.[X]
+##UM_ClimaxWhip
+ Climax Whip[X]
+##UM_ClimaxWhipDesc
+Whipstrike to instakill.[N]
+Cost: 3 Durability.[X]
+##UM_CrippleWhip
+ Cripple Whip[X]
+##UM_CrippleWhipDesc
+Whipstrike to debuff[N]
+multiple stats.[N]
+Cost: 4 Durability.[X]
+##UM_Whipstorm
+ Whipstorm[X]
+##UM_WhipstormDesc
+Strike multiple times[N]
+to inflict... something.[N]
+Cost: 6 Durability.[X]
+##UM_Ecstasy
+ Ecstasy[X]
+##UM_EcstasyDesc
+Grant release to the bound.[N]
+Cost: 4 Durability.[X]

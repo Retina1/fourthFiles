@@ -27,8 +27,14 @@ ChapterDeathQuote(Xavens,Chapter5,0x0,C5XavensDefeat)
 ChapterDeathQuote(Egil,Chapter5,0x0,C5EgilDefeat)
 ChapterDeathQuote(Harla,Chapter5,0x0,C5HarlaDefeat)
 ChapterDeathQuote(BossSaewynn,Chapter5,0x0,C5SaewynnDefeat)
+//c6
+ChapterDeathQuote(Hitchcock,Chapter6,0x2,C5SaewynnDefeat)
+//c7
+ChapterDeathQuote(Astoria,Chapter7,0x0,C5SaewynnDefeat)
 //c8
 ChapterDeathQuote(BossBenthus2,Chapter8,0x2,BenthusDeath)
+//c10
+ChapterDeathQuote(George,Chapter10,0x2,BenthusDeath)
 
 //major bosses
 AlwaysDeathQuote(BossGuildmaster,0x0,GuildmasterDeath)
@@ -44,7 +50,7 @@ AlwaysDeathQuote(Rana,0x0,RanaDeath)
 
 //the vermin
 ChapterDeathQuote(Ratatoskr,Stratum1F2,RatatoskrWin1,Ratatoskr_Defeat1)
-ChapterDeathQuote(Ratatoskr,Stratum2F2,RatatoskrWin2,Ratatoskr_Defeat1)
+ChapterDeathQuote(Ratatoskr,Stratum2F1,RatatoskrWin2,Ratatoskr_Defeat2)
 ChapterDeathQuote(Ratatoskr,Stratum3F2,RatatoskrWin3,Ratatoskr_Defeat1)
 ChapterDeathQuote(Ratatoskr,Stratum4F2,RatatoskrWin4,Ratatoskr_Defeat1)
 ChapterDeathQuote(Ratatoskr,Stratum5AF2,RatatoskrWin5,Ratatoskr_Defeat1)
@@ -66,6 +72,7 @@ AlwaysDeathQuote(Ioria,0x0,IoriaDeath)
 AlwaysDeathQuote(Fourth,0x0,FourthDeath)
 AlwaysDeathQuote(Guildmaster,0x0,GuildmasterRetreat)
 AlwaysDeathQuote(Answerer,0x0,AnswererDeath)
+AlwaysDeathQuote(Ayda,0x0,AydaDeath)
 
 //swd
 AlwaysDeathQuote(CoastKid,0x0,CoastKidDeath)
@@ -142,39 +149,143 @@ AlwaysDeathQuote(Victoria,0x0,VictoriaDeath)
 AlwaysDeathQuote(Laiteuse,0x0,LaiteuseDeath)
 
 //poet
+AlwaysDeathQuote(Leonzio,0x0,LeonzioDeath)
+AlwaysDeathQuote(Gunther,0x0,GuntherDeath)
+AlwaysDeathQuote(Jacqwil,0x0,JacqwilDeath)
+AlwaysDeathQuote(Polymnia,0x0,PolymniaDeath)
+AlwaysDeathQuote(Lucien,0x0,LucienDeath)
+AlwaysDeathQuote(Juliette,0x0,JulietteDeath)
+AlwaysDeathQuote(Yosepha,0x0,YosephaDeath)
 
 //seek
+AlwaysDeathQuote(Phespher,0x0,PhespherDeath)
+AlwaysDeathQuote(Nadja,0x0,NadjaDeath)
+AlwaysDeathQuote(Levia,0x0,LeviaDeath)
+AlwaysDeathQuote(Vasily,0x0,VasilyDeath)
+AlwaysDeathQuote(Jebet,0x0,JebetDeath)
+AlwaysDeathQuote(Wont,0x0,WontDeath)
+AlwaysDeathQuote(Wren,0x0,WrenDeath)
 
 //prst
+AlwaysDeathQuote(Saewynn,0x0,SaewynnDeath)
+AlwaysDeathQuote(Ellie,0x0,EllieDeath)
+AlwaysDeathQuote(Selene,0x0,SeleneDeath)
+AlwaysDeathQuote(Nina,0x0,NinaDeath)
+AlwaysDeathQuote(Levi,0x0,LeviDeath)
+AlwaysDeathQuote(Taft,0x0,TaftDeath)
+AlwaysDeathQuote(Lantom,0x0,LantomDeath)
 
 //lurk
+AlwaysDeathQuote(Szess,0x0,SzessDeath)
+AlwaysDeathQuote(Zoe,0x0,ZoeDeath)
+AlwaysDeathQuote(Paul,0x0,PaulDeath)
+AlwaysDeathQuote(Hausten,0x0,HaustenDeath)
 
 //dh
+AlwaysDeathQuote(Luis,0x0,LuisDeath)
+AlwaysDeathQuote(Notre,0x0,NotreDeath)
+AlwaysDeathQuote(Wund,0x0,WundDeath)
+AlwaysDeathQuote(Peabody,0x0,PeabodyDeath)
+AlwaysDeathQuote(Dalman,0x0,DalmanDeath)
+AlwaysDeathQuote(Noelle,0x0,NoelleDeath)
+AlwaysDeathQuote(Yasmine,0x0,YasmineDeath)
 
 //lance
+AlwaysDeathQuote(Heri,0x0,HeriDeath)
+AlwaysDeathQuote(Radagast,0x0,RadagastDeath)
+AlwaysDeathQuote(Fourfinger,0x0,FourfingerDeath)
+AlwaysDeathQuote(Kelaino,0x0,KelainoDeath)
+AlwaysDeathQuote(Nelson,0x0,NelsonDeath)
 
 //braw
+AlwaysDeathQuote(Shiliang,0x0,ShiliangDeath)
+AlwaysDeathQuote(Feefasnan,0x0,FeefasnanDeath)
+AlwaysDeathQuote(Brie,0x0,BrieDeath)
+AlwaysDeathQuote(Arsof,0x0,ArsofDeath)
+AlwaysDeathQuote(Mylo,0x0,MyloDeath)
+AlwaysDeathQuote(Leovetus,0x0,LeovetusDeath)
+AlwaysDeathQuote(Bulag,0x0,BulagDeath)
 
 //hunt
+AlwaysDeathQuote(Philmore,0x0,PhilmoreDeath)
+AlwaysDeathQuote(Yajirushi,0x0,YajirushiDeath)
+AlwaysDeathQuote(Yasaki,0x0,YasakiDeath)
+AlwaysDeathQuote(Ammi,0x0,AmmiDeath)
+AlwaysDeathQuote(Sarina,0x0,SarinaDeath)
+AlwaysDeathQuote(Alexandra,0x0,AlexandraDeath)
 
 //sky
+AlwaysDeathQuote(June,0x0,JuneDeath)
+AlwaysDeathQuote(Eneida,0x0,EneidaDeath)
+AlwaysDeathQuote(Patrice,0x0,PatriceDeath)
+AlwaysDeathQuote(Melody,0x0,MelodyDeath)
+AlwaysDeathQuote(Anastas,0x0,AnastasDeath)
+AlwaysDeathQuote(Peregrine,0x0,PeregrineDeath)
+AlwaysDeathQuote(Mervyn,0x0,MervynDeath)
 
 //scale
+AlwaysDeathQuote(Atilius,0x0,AtiliusDeath)
+AlwaysDeathQuote(Celeste,0x0,CelesteDeath)
+AlwaysDeathQuote(Merilee,0x0,MerileeDeath)
+AlwaysDeathQuote(Shasso,0x0,ShassoDeath)
+AlwaysDeathQuote(River,0x0,RiverDeath)
 
 //apoth
+AlwaysDeathQuote(Leize,0x0,LeizeDeath)
+AlwaysDeathQuote(Wendy,0x0,WendyDeath)
+AlwaysDeathQuote(Jim,0x0,JimDeath)
+AlwaysDeathQuote(Dalai,0x0,DalaiDeath)
+AlwaysDeathQuote(Etto,0x0,EttoDeath)
 
 //circ
+AlwaysDeathQuote(Compass,0x0,CompassDeath)
+AlwaysDeathQuote(Katrin,0x0,KatrinDeath)
+AlwaysDeathQuote(Sharon,0x0,SharonDeath)
+AlwaysDeathQuote(Ember,0x0,EmberDeath)
+AlwaysDeathQuote(Brugaris,0x0,BrugarisDeath)
+AlwaysDeathQuote(Tenney,0x0,TenneyDeath)
+AlwaysDeathQuote(Vitruvius,0x0,VitruviusDeath)
 
 //call
+AlwaysDeathQuote(DreadJenny,0x0,DreadJennyDeath)
+AlwaysDeathQuote(Quinn,0x0,QuinnDeath)
+AlwaysDeathQuote(Margitte,0x0,MargitteDeath)
+AlwaysDeathQuote(Damien,0x0,DamienDeath)
+AlwaysDeathQuote(MeansDeath,0x0,MeansDeathDeath)
+AlwaysDeathQuote(TheUnexpected,0x0,TheUnexpectedDeath)
+AlwaysDeathQuote(Mimi,0x0,MimiDeath)
 
 //nobl
+AlwaysDeathQuote(Marleni,0x0,MarleniDeath)
+AlwaysDeathQuote(Ophelia,0x0,OpheliaDeath)
+AlwaysDeathQuote(Cherryl,0x0,CherrylDeath)
+AlwaysDeathQuote(Cato,0x0,CatoDeath)
+AlwaysDeathQuote(Yujin,0x0,YujinDeath)
 
 //duel
 AlwaysDeathQuote(Francesca,0x0,FrancescaDeath)
+AlwaysDeathQuote(Felicity,0x0,FelicityDeath)
+AlwaysDeathQuote(Cardam,0x0,CardamDeath)
+AlwaysDeathQuote(Anna,0x0,AnnaDeath)
+AlwaysDeathQuote(Revati,0x0,RevatiDeath)
+AlwaysDeathQuote(Halloran,0x0,HalloranDeath)
 
 //drive
+AlwaysDeathQuote(Bertram,0x0,BertramDeath)
+AlwaysDeathQuote(Moomfie,0x0,MoomfieDeath)
+AlwaysDeathQuote(Frost,0x0,FrostDeath)
+AlwaysDeathQuote(Alva,0x0,AlvaDeath)
+AlwaysDeathQuote(Dai,0x0,DaiDeath)
+AlwaysDeathQuote(Auri,0x0,AuriDeath)
 
 //arti
+AlwaysDeathQuote(Subtractron,0x0,SubtractronDeath)
+AlwaysDeathQuote(Ambrose,0x0,AmbroseDeath)
+AlwaysDeathQuote(Beepo,0x0,BeepoDeath)
+AlwaysDeathQuote(Subtilior,0x0,SubtiliorDeath)
+AlwaysDeathQuote(Awil,0x0,AwilDeath)
+AlwaysDeathQuote(Orion,0x0,OrionDeath)
+
 EndDeathQuote
 
 PUSH

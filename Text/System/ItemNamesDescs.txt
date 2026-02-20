@@ -146,7 +146,7 @@ A cheap and durable piercing weapon.[X]
 ##Name_Pike
 Pike[X]
 ##Desc_Pike ^
-A weighty, cumbersome and mighty spear.[X]
+A weighty, cumbersome, and mighty spear.[X]
 ##Name_Partizan
 Partizan[X]
 ##Desc_Partizan ^
@@ -154,7 +154,7 @@ A standard-issue spear that's well balanced.[X]
 ##Name_Sarissa
 Sarissa[X]
 ##Desc_Sarissa ^
-A long and weighty, yet nimble, spear.[X]
+A long and weighty yet nimble spear.[X]
 ##Name_Ahlspiess
 Ahlspiess[X]
 ##Desc_Ahlspiess ^

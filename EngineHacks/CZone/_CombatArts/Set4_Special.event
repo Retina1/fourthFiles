@@ -26,3 +26,66 @@ CombatArt((Set3LastArt + 3), UM_MuteWhip, UM_MuteWhipDesc, \
 		  SlashLock, \
 		  MuteWhipOdds, 0,\
 		  PhysArt,0,HeadBindEffect)
+CombatArt((Set3LastArt + 4), UM_ToxinWhip, UM_ToxinWhipDesc, \
+		  3, \
+		  ToxinWhipArtUsability, ToxinWhipArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, ToxinWhipBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  ToxinWhipOdds, 0,\
+		  PhysArt,0,PoisonEffect)
+CombatArt((Set3LastArt + 5), UM_SlumberWhip, UM_SlumberWhipDesc, \
+		  4, \
+		  SlumberWhipArtUsability, SlumberWhipArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, SlumberWhipBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  SlumberWhipOdds, 0,\
+		  PhysArt,0,SleepEffect)
+CombatArt((Set3LastArt + 6), UM_MirageWhip, UM_MirageWhipDesc, \
+		  5, \
+		  MirageWhipArtUsability, MirageWhipArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, MirageWhipBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  MirageWhipOdds, 0,\
+		  PhysArt,0,BerserkEffect)
+CombatArt((Set3LastArt + 8), UM_ClimaxWhip, UM_ClimaxWhipDesc, \
+		  3, \
+		  ClimaxWhipArtUsability, ClimaxWhipArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, ClimaxWhipBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  ClimaxWhipOdds, 0,\
+		  PhysArt,0,InstantDeathEffect)
+CombatArt((Set3LastArt + 9), UM_CrippleWhip, UM_CrippleWhipDesc, \
+		  4, \
+		  CrippleWhipArtUsability, CrippleWhipArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, CrippleWhipBothSides, \
+		  0, CrippleWhipBattleProc, \
+		  SlashLock, \
+		  0, 0,\
+		  PhysArt,0,0)
+CombatArt((Set3LastArt + 10), UM_Whipstorm, UM_WhipstormDesc, \
+		  6, \
+		  WhipstormArtUsability, WhipstormArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, 0, \
+		  0, 0, \
+		  SlashLock, \
+		  WhipstormOdds, WhipstormHitCount,\
+		  PhysArt,0,69)
+CombatArt((Set3LastArt + 11), UM_Ecstasy, UM_EcstasyDesc, \
+		  4, \
+		  MirageWhipArtUsability, MirageWhipArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, EcstasyBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  0, 0,\
+		  PhysArt,0,0)

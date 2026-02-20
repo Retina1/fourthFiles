@@ -42,6 +42,7 @@ Dunno:
 END_MAIN
 
 Tutorial:
+POIN UnitSelectEvent
 END_MAIN
 
 TrapData:
@@ -145,6 +146,31 @@ MUSC Song_WiseWords
 SystemText(RatFarewellLetterPart1)
 SystemText(RatFarewellLetterPart2)
 ENDA
+
+//thank you sacred echoes
+
+#define UnitSelectTextEvent(eID,textID,systextID) "CHECK_EVENTID eID; BNE 0x1FF 0x0 0xC; ENUT eID; Text(textID); SystemText(systextID); GOTO 0x1FF"
+
+EnableUnitSelectEvents:
+	QUEUETUTORIAL 0x02 UnitSelectEvent
+EndEvent
+
+UnitSelectEvent:
+	CHECK_ACTIVE
+	SVAL 0x2 Nathan;     BEQ 0x102 0x2 0xC
+	SVAL 0x2 Astarte;      BEQ 0x103 0x2 0xC
+	SVAL 0x2 Gore;     BEQ 0x104 0x2 0xC
+	GOTO 0x1FF
+		LABEL 0x102
+			UnitSelectTextEvent(0x1a,Ch1SelectQuote_Nathan,NathanTutorial)
+		LABEL 0x103
+			UnitSelectTextEvent(0x1b,Ch1SelectQuote_Astarte,AstarteTutorial)
+		LABEL 0x104
+			UnitSelectTextEvent(0x1c,Ch1SelectQuote_Gore,GoreTutorial)
+	//Re-queue for next movement
+	LABEL 0x1FF
+		CALL EnableUnitSelectEvents
+EndEvent
 
 //todo - fix
 EmulatorCheck:
@@ -251,6 +277,9 @@ Text(C1_Opening_5)
 LevelUpSkill(Nathan,7)
 //astarte - level 1 war heal
 LevelUpSkill(Astarte,7)
+CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
+CALL EnableUnitSelectEvents
+LABEL 9999
 EndEvent
 
 EndingScene:

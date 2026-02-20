@@ -1,6 +1,8 @@
 #include "CombatArts.h"
 
 // Contains "helper" functions to be used in user code for combat arts
+void TryAddTrapsToTargetList();
+
 
 int Staff1_2Range(struct Unit* unit, int itemID, int rangeWord){
 	if (GetItemType(itemID) == 0x4) {
@@ -65,7 +67,7 @@ void MakeTargetListForWeaponRange(struct Unit* unit, int minRange, int maxRange)
 
     ForEachUnitInRange(AddUnitToTargetListIfNotAllied);
 
-//    TryAddTrapsToTargetList();
+    TryAddTrapsToTargetList();
 
     return;
 }

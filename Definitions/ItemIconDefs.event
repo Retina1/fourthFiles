@@ -141,6 +141,16 @@
 #define ToxicClawIcon 0x8D
 #define FurysongIcon 0x8E
 #define SealGleamIcon 0x8F
+#define ScissorWrathIcon 0x99
+#define EnemyWatchingIcon 0x9A
+#define AtrocityScalesIcon 0x9B
+#define VoltageIcon 0x9C
+#define FrigidIcon 0x9D
+#define SearingIcon 0x9E
+#define NovaIcon 0x9F
+#define AntimatterIcon 0xA0
+#define DivinityIcon 0xA1
+#define RootCycloneIcon 0xA2
 #define HopebringerIcon 0xA3
 #define VulneraryIcon 0xC8
 #define ElixirIcon 0xC9

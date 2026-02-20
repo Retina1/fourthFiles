@@ -117,6 +117,7 @@ int EschatonRange(struct Unit* unit, int itemID, int rangeWord){
 }
 void EschatonPostbattle(struct Unit* attacker, struct Unit* defender) {
 	attacker->classSkillState |= (1 << 1);
+	SetActiveArt(attacker, 0);
 }
 
 // megido
@@ -324,6 +325,7 @@ void FirestormPostbattle(struct Unit* actor, struct Unit* target){
 		other->curHP = other->curHP - tmpDamage;
 		i++;
 	}
+	SetActiveArt(actor, 0);
 }
 
 // frostfall

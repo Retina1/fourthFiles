@@ -163,7 +163,7 @@ FADU 10
 STAL 20
 MUSC Song_OohWilfre
 STAL 30
-CleanTextNoMap(0x0,Chapter4_Opening_1)
+CleanTextNoMap(0x0,Chapter5_Opening_1)
 STAL 10
 MUSC 0
 CLEA 0; CLEN 0

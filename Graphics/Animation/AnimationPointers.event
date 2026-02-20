@@ -19,6 +19,8 @@
 #define HandaxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation"
 #define RangedAnim(Animation) "BYTE 0x03 0x01 ; SHORT Animation"
 #define SupportAnim(Animation) "BYTE 0x04 0x01 ; SHORT Animation; BYTE 0x05 0x01 ; SHORT Animation; BYTE 0x06 0x01 ; SHORT Animation"
+#define NonRodAnim(Animation) "BYTE 0x05 0x01 ; SHORT Animation; BYTE 0x06 0x01 ; SHORT Animation"
+#define RodAnim(Animation) "BYTE 0x04 0x01 ; SHORT Animation"
 #define UnarmedAnim(Animation) "BYTE 0x09 0x01 ; SHORT Animation"
 #define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation; BYTE 0x09 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
@@ -240,6 +242,7 @@ EndAnim
 }
 ALIGN 4
 PoetAnims:
+BashAnim(Poet_Magic)
 SupportAnim(Poet_Magic)
 UnarmedAnim(Poet_Magic)
 EndAnim
@@ -250,6 +253,7 @@ EndAnim
 }
 ALIGN 4
 TroubadourAnims:
+BashAnim(Troubadour_Magic)
 SupportAnim(Troubadour_Magic)
 UnarmedAnim(Troubadour_Refresh)
 EndAnim
@@ -281,6 +285,8 @@ EndAnim
 ALIGN 4
 PriestAnims:
 SlashAnim(Priest_Sword)
+RodAnim(Priest_Sword)
+RodAnim(Priest_Sword)
 UnarmedAnim(Priest_Unarmed)
 EndAnim
 //WarMagus
@@ -291,7 +297,8 @@ EndAnim
 ALIGN 4
 WarMagusAnims:
 SlashAnim(WarMagus_Sword)
-SupportAnim(WarMagus_Magic)
+RodAnim(WarMagus_Sword)
+NonRodAnim(WarMagus_Magic)
 UnarmedAnim(WarMagus_Magic)
 EndAnim
 
@@ -301,6 +308,7 @@ EndAnim
 }
 ALIGN 4
 LurkerAnims:
+PierceAnim(Lurker_Magic)
 SupportAnim(Lurker_Magic)
 UnarmedAnim(Lurker_Magic)
 EndAnim
@@ -310,6 +318,7 @@ EndAnim
 }
 ALIGN 4
 HexerAnims:
+PierceAnim(Hexer_Magic)
 SupportAnim(Hexer_Magic)
 UnarmedAnim(Hexer_Magic)
 EndAnim
@@ -405,9 +414,11 @@ EndAnim
 //Apothecary
 {
 #include "ClassAnims/Apothecary/Staff Installer.event"
+#include "ClassAnims/Apothecary/Bow Installer.event"
 }
 ALIGN 4
 ApothecaryAnims:
+RangedAnim(Apothecary_Bow)
 SupportAnim(Apothecary_Staff)
 UnarmedAnim(Apothecary_Staff)
 EndAnim
@@ -417,6 +428,7 @@ EndAnim
 }
 ALIGN 4
 BotanistAnims:
+RangedAnim(Botanist_Staff)
 SupportAnim(Botanist_Staff)
 UnarmedAnim(Botanist_Staff)
 EndAnim
@@ -427,6 +439,7 @@ EndAnim
 }
 ALIGN 4
 EncirclerAnims:
+PierceAnim(Encircler_Magic)
 SupportAnim(Encircler_Magic)
 UnarmedAnim(Encircler_Magic)
 EndAnim
@@ -436,6 +449,7 @@ EndAnim
 }
 ALIGN 4
 ArcanistAnims:
+PierceAnim(Arcanist_Magic)
 SupportAnim(Arcanist_Magic)
 UnarmedAnim(Arcanist_Magic)
 EndAnim
@@ -446,6 +460,7 @@ EndAnim
 }
 ALIGN 4
 CallerAnims:
+SlashAnim(Caller_Magic)
 SupportAnim(Caller_Magic)
 UnarmedAnim(Caller_Magic)
 EndAnim
@@ -455,6 +470,7 @@ EndAnim
 }
 ALIGN 4
 NecromancerAnims:
+SlashAnim(Necromancer_Magic)
 SupportAnim(Necromancer_Magic)
 UnarmedAnim(Necromancer_Magic)
 EndAnim

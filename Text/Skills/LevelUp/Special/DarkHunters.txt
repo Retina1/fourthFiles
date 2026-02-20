@@ -1,0 +1,430 @@
+##OpportunisticSkill
+Opportunistic[X]
+## ^
+Level: 0 (Passive)[N]
+Seize advantage against[N]
+weakened enemies.[N]
+Next: When doubling, hit[N]
+twice before counters.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Seize advantage against[N]
+weakened enemies.[N]
+When doubling, hit[N]
+twice before counters.[N]
+[X]
+
+##LimberSkill
+Limber[X]
+## ^
+Level: 0 (Passive)[N]
+Train yourself to quickly[N]
+recover from malady.[N]
+Next: Unit's ailments and[N]
+binds last 1 fewer turn.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Train yourself to quickly[N]
+recover from malady.[N]
+Unit's ailments and[N]
+binds last 1 fewer turn.[N]
+[X]
+
+##AnatomySkill
+Anatomy[X]
+## ^
+Level: 0 (Passive)[N]
+Strike enemies where[N]
+it really hurts.[N]
+Next: 1.5x Atk against[N]
+ailing/bound enemies.[N]
+Req: Precision 3[X]
+## ^
+Level: MAX (Passive)[N]
+Strike enemies where[N]
+it really hurts.[N]
+1.5x Atk against[N]
+ailing/bound enemies.[N]
+[X]
+
+##MercilessSkill
+Merciless[X]
+## ^
+Level: 0 (Passive)[N]
+Perhaps it is mercy,[N]
+of a twisted sort.[N]
+Next: 7.0x Crit against[N]
+ailing/bound enemies.[N]
+Req: PROMO[X]
+## ^
+Level: MAX (Passive)[N]
+Perhaps it is mercy,[N]
+of a twisted sort.[N]
+7.0x Crit against[N]
+ailing/bound enemies.[N]
+[X]
+
+##CuffsWhipSkill
+Cuffs Whip[X]
+## ^
+Level: 0 (Active)[N]
+An arm-binding strike[N]
+with a whip.[N]
+Next: 2 Dur, 0.9x Atk,[N]
+30% base Arm Bind chance.[N]
+Req: None[X]
+## ^
+Level: 1 (Active)[N]
+An arm-binding strike[N]
+with a whip.[N]
+2 Dur, 0.9x Atk, 30%[N]
+base Arm Bind chance.[N]
+Next: 1.1x Atk, 50% base.[X]
+## ^
+Level: MAX (Active)[N]
+An arm-binding strike[N]
+with a whip.[N]
+2 Dur, 1.1x Atk, 50%[N]
+base Arm Bind chance.[N]
+[X]
+
+##ShackleWhipSkill
+Shackle Whip[X]
+## ^
+Level: 0 (Active)[N]
+A leg-binding strike[N]
+with a whip.[N]
+Next: 2 Dur, 0.9x Atk,[N]
+30% base Leg Bind chance.[N]
+Req: None[X]
+## ^
+Level: 1 (Active)[N]
+A leg-binding strike[N]
+with a whip.[N]
+2 Dur, 0.9x Atk, 30%[N]
+base Leg Bind chance.[N]
+Next: 1.1x Atk, 50% base.[X]
+## ^
+Level: MAX (Active)[N]
+A leg-binding strike[N]
+with a whip.[N]
+2 Dur, 1.1x Atk, 50%[N]
+base Leg Bind chance.[N]
+[X]
+
+##MuteWhipSkill
+Mute Whip[X]
+## ^
+Level: 0 (Active)[N]
+A head-binding strike[N]
+with a whip.[N]
+Next: 2 Dur, 0.9x Atk,[N]
+30% base Head Bind chance.[N]
+Req: None[X]
+## ^
+Level: 1 (Active)[N]
+A head-binding strike[N]
+with a whip.[N]
+2 Dur, 0.9x Atk, 30%[N]
+base Head Bind chance.[N]
+Next: 1.1x Atk, 50% base.[X]
+## ^
+Level: MAX (Active)[N]
+A head-binding strike[N]
+with a whip.[N]
+2 Dur, 1.1x Atk, 50%[N]
+base Head Bind chance.[N]
+[X]
+
+##ToxinWhipSkill
+Toxin Whip[X]
+## ^
+Level: 0 (Active)[N]
+A whipstrike infused[N]
+with deadly toxin.[N]
+Next: 3 Dur, 1.1x Atk,[N]
+40% base Poison chance.[N]
+Req: None[X]
+## ^
+Level: 1 (Active)[N]
+A whipstrike infused[N]
+with deadly toxin.[N]
+3 Dur, 1.1x Atk, 40%[N]
+base Poison chance.[N]
+Next: 1.3x Atk, 60% base.[X]
+## ^
+Level: 2 (Active)[N]
+A whipstrike infused[N]
+with deadly toxin.[N]
+3 Dur, 1.3x Atk, 60%[N]
+base Poison chance.[N]
+Next: 1.5x Atk, 80% base.[X]
+## ^
+Level: MAX (Active)[N]
+A whipstrike infused[N]
+with deadly toxin.[N]
+3 Dur, 1.5x Atk, 80%[N]
+base Poison chance.[N]
+[X]
+
+##SlumberWhipSkill
+Slumber Whip[X]
+## ^
+Level: 0 (Active)[N]
+A whipstrike infused[N]
+with soporifics.[N]
+Next: 4 Dur, 1.3x Atk,[N]
+30% base Sleep chance.[N]
+Req: Toxin Whip 2[X]
+## ^
+Level: 1 (Active)[N]
+A whipstrike infused[N]
+with soporifics.[N]
+4 Dur, 1.3x Atk, 30%[N]
+base Sleep chance.[N]
+Next: 1.5x Atk, 50% base.[X]
+## ^
+Level: 2 (Active)[N]
+A whipstrike infused[N]
+with soporifics.[N]
+4 Dur, 1.5x Atk, 50%[N]
+base Sleep chance.[N]
+Next: 1.8x Atk, 70% base.[X]
+## ^
+Level: MAX (Active)[N]
+A whipstrike infused[N]
+with soporifics.[N]
+4 Dur, 1.8x Atk, 70%[N]
+base Sleep chance.[N]
+[X]
+
+##MirageWhipSkill
+Mirage Whip[X]
+## ^
+Level: 0 (Active)[N]
+A whipstrike infused[N]
+with hallucinogenics.[N]
+Next: 5 Dur, 1.5x Atk,[N]
+20% base Berserk chance.[N]
+Req: Slumber Whip 2[X]
+## ^
+Level: 1 (Active)[N]
+A whipstrike infused[N]
+with hallucinogenics.[N]
+5 Dur, 1.5x Atk, 20%[N]
+base Berserk chance.[N]
+Next: 2.0x Atk, 40% base.[X]
+## ^
+Level: 2 (Active)[N]
+A whipstrike infused[N]
+with hallucinogenics.[N]
+5 Dur, 2.0x Atk, 40%[N]
+base Berserk chance.[N]
+Next: 2.5x Atk, 60% base.[X]
+## ^
+Level: MAX (Active)[N]
+A whipstrike infused[N]
+with hallucinogenics.[N]
+5 Dur, 2.5x Atk, 60%[N]
+base Berserk chance.[N]
+[X]
+
+##PrecisionSkill
+Precision[X]
+## ^
+Level: 0 (Active)[N]
+[N]
+[N]
+Next:[N]
+[N]
+Req: Cripple Whip 2[X]
+## ^
+Level: 1 (Active)[N]
+[N]
+[N]
+[N]
+[N]
+Next:[X]
+## ^
+Level: 2 (Active)[N]
+[N]
+[N]
+[N]
+[N]
+Next:[X]
+## ^
+Level: MAX (Active)[N]
+[N]
+[N]
+[N]
+[N]
+[X]
+
+##ClimaxWhipSkill
+Climax Whip[X]
+## ^
+Level: 0 (Active)[N]
+Bleed them dry.[N]
+Next: 3 Dur, 0.0x Atk,[N]
++3% base Instakill chance[N]
+per missing foe HP.[N]
+Req: PR, Anatomy 1, Mir.W.3[X]
+## ^
+Level: 1 (Active)[N]
+Bleed them dry.[N]
+3 Dur, 0.0x Atk, +1%[N]
+base Instakill chance[N]
+per missing foe HP.[N]
+Next: +3% per HP.[X]
+## ^
+Level: 2 (Active)[N]
+Bleed them dry.[N]
+3 Dur, 0.0x Atk, +3%[N]
+base Instakill chance[N]
+per missing foe HP.[N]
+Next: 10%/HP if HP<50%.[X]
+## ^
+Level: MAX (Active)[N]
+Bleed them dry.[N]
+3 Dur, 0.0x Atk, +3%[N]
+base Instakill chance[N]
+per missing foe HP, 10%[N]
+instead if foe HP < 50%.[X]
+
+
+##CrippleWhipSkill
+Cripple Whip[X]
+## ^
+Level: 0 (Active)[N]
+Leave them reeling.[N]
+4 Dur, 1.5x Atk,[N]
+Inf. 0.9x Atk/AS/Def,[N]
+-1 Mov (1 turn).[N]
+Req: Cuff/Shac/Mute 1[X]
+## ^
+Level: 1 (Active)[N]
+Leave them reeling.[N]
+4 Dur, 1.5x Atk,[N]
+Inf. 0.9x Atk/AS/Def,[N]
+-1 Mov (1 turn).[N]
+Next: 0.8x, -2 Mov.[X]
+## ^
+Level: 2 (Active)[N]
+Leave them reeling.[N]
+4 Dur, 1.5x Atk,[N]
+Inf. 0.8x Atk/AS/Def,[N]
+-2 Mov (1 turn).[N]
+Next: 2 turns.[X]
+## ^
+Level: 3 (Active)[N]
+Leave them reeling.[N]
+4 Dur, 1.5x Atk,[N]
+Inf. 0.8x Atk/AS/Def,[N]
+-2 Mov (2 turns).[N]
+Next: 0.7x, -3 Mov.[X]
+## ^
+Level: 4 (Active)[N]
+Leave them reeling.[N]
+4 Dur, 1.5x Atk,[N]
+Inf. 0.7x Atk/AS/Def,[N]
+-3 Mov (2 turns).[N]
+Next: 0.6x, 3 turns.[X]
+## ^
+Level: MAX (Active)[N]
+Leave them reeling.[N]
+4 Dur, 1.5x Atk,[N]
+Inf. 0.6x Atk/AS/Def,[N]
+-3 Mov (3 turns).[N]
+[X]
+
+##WhipstormSkill
+Whipstorm[X]
+## ^
+Level: 0 (Active)[N]
+Embrace chaos.[N]
+Next: 6 Dur, strike twice,[N]
+20% base Poison or Head[N]
+Bind chance per hit.[N]
+Req: Tox.W.3, Sl.W.3, Mi.W.3[X]
+## ^
+Level: 1 (Active)[N]
+Embrace chaos.[N]
+6 Dur, strike twice,[N]
+20% base Poison or Head[N]
+Bind chance per hit.[N]
+Next: Add Sleep/Arm Bind.[X]
+## ^
+Level: 2 (Active)[N]
+Embrace chaos.[N]
+6 Dur, strike twice,[N]
+20% base Poison/Sleep/Head[N]
+Bind/Arm Bind chance/hit.[N]
+Next: Three hits, 30% base.[X]
+## ^
+Level: 3 (Active)[N]
+Embrace chaos.[N]
+6 Dur, strike three times,[N]
+30% base Poison/Sleep/Head[N]
+Bind/Arm Bind chance/hit.[N]
+Next: Add Berserk/Leg Bind.[X]
+## ^
+Level: 4 (Active)[N]
+Embrace chaos.[N]
+6 Dur, strike three times,[N]
+30% base Psn/Berserk/Sleep/[N]
+Head/Arm/Leg Bind chance/hit.[N]
+Next: 40% base, swap Full Bind.[X]
+## ^
+Level: MAX (Active)[N]
+Embrace chaos.[N]
+6 Dur, strike three times,[N]
+40% base Poison/Berserk/[N]
+Sleep/Full Bind chance/hit.[N]
+Are you feeling lucky?[X]
+
+##EcstasySkill
+Ecstasy[X]
+## ^
+Level: 0 (Active)[N]
+Release.[N]
+Next: 4 Dur, 0.5x Atk,[N]
+apply a 1.2x Atk boost[N]
+per active bind on target.[N]
+Req: PR, Cr.Whip 3, Prec.3[X]
+## ^
+Level: 1 (Active)[N]
+Release.[N]
+4 Dur, 0.5x Atk, apply[N]
+a 1.2x Atk boost per[N]
+active bind on target.[N]
+Next: 1.5x per bind.[X]
+## ^
+Level: 2 (Active)[N]
+Release.[N]
+4 Dur, 0.5x Atk, apply[N]
+a 1.5x Atk boost per[N]
+active bind on target.[N]
+Next: 0.75x Atk, 1.8x/bind.[X]
+## ^
+Level: 3 (Active)[N]
+Release.[N]
+4 Dur, 0.75x Atk, apply[N]
+a 1.8x Atk boost per[N]
+active bind on target.[N]
+Next: 2.0x per bind.[X]
+## ^
+Level: 4 (Active)[N]
+Release.[N]
+4 Dur, 0.75x Atk, apply[N]
+a 2.0x Atk boost per[N]
+active bind on target.[N]
+Next: 1.0x Atk, 2.5x/bind.[X]
+## ^
+Level: MAX (Active)[N]
+Release.[N]
+4 Dur, 1.0x Atk, apply[N]
+a 2.5x Atk boost per[N]
+active bind on target.[N]
+[X]

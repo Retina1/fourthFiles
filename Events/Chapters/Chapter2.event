@@ -43,6 +43,7 @@ Dunno:
 END_MAIN
 
 Tutorial:
+POIN UnitSelectEvent
 END_MAIN
 
 TrapData:
@@ -132,6 +133,26 @@ UNIT
 
 ALIGN 4
 
+//thank you sacred echoes
+
+EnableUnitSelectEvents:
+	QUEUETUTORIAL 0x02 UnitSelectEvent
+EndEvent
+
+UnitSelectEvent:
+	CHECK_ACTIVE
+	SVAL 0x2 Cleone;     BEQ 0x102 0x2 0xC
+	SVAL 0x2 Benthus;      BEQ 0x103 0x2 0xC
+	GOTO 0x1FF
+		LABEL 0x102
+			UnitSelectTextEvent(0x1a,Ch2SelectQuote_Cleone,CleoneTutorial)
+		LABEL 0x103
+			UnitSelectTextEvent(0x1b,Ch2SelectQuote_Benthus,BenthusTutorial)
+	//Re-queue for next movement
+	LABEL 0x1FF
+		CALL EnableUnitSelectEvents
+EndEvent
+
 BeginningScene:
 DifficultySwapper
 //intro to rat
@@ -181,6 +202,9 @@ LevelUpSkill(Benthus,18)
 LevelUpSkill(Benthus,18)
 LevelUpSkill(Benthus,20)
 LevelUpSkill(Benthus,20)
+CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
+CALL EnableUnitSelectEvents
+LABEL 9999
 EndEvent
 
 //turn event about door and chest unlocks

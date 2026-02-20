@@ -174,7 +174,7 @@ void ExecStandardHeal(ProcPtr proc) {
 	
 	//panacaea buff is id 8
 	if (UNIT_HAS_SKILL(GetUnit(gActionData.subjectIndex),MED,skill_131)){
-		UnitApplyBuff(GetUnit(gActionData.targetIndex),8);
+		UnitApplyBuff(GetUnit(gActionData.targetIndex),BUFF_PANACAEA);
 	}
 
     AddUnitHp(GetUnit(gActionData.targetIndex), amount);

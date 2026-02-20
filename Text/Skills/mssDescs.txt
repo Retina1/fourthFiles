@@ -663,11 +663,11 @@ Curse to bow down and give items.[X]
 Opportunistic: Double ailing[N]
 enemies before counterattacks.[X]
 ##
+Limber: This unit's ailments and[N]
+binds last one fewer turn.[X]
+##
 Anatomy: Boosts Atk against[N]
 ailing or bound foes.[X]
-##
-Potent Strikes: Boosts duration[N]
-of unit's inflicted statuses.[X]
 ##
 Merciless: Massively boosts Crit[N]
 against ailing or bound foes.[X]
@@ -700,10 +700,10 @@ Cripple Whip: A whip strike that[N]
 debuffs Atk, AS, Def, and Mov.[X]
 ##
 Whipstorm: A flurry of strikes that[N]
-binds/inflicts multiple times.[X]
+inflicts a random bind/ailment.[X]
 ##
-Liberation: A strike that purges[N]
-ailments and ends suffering.[X]
+Ecstasy: A strike exponentially[N]
+stronger against bound targets.[X]
 
 
 //lnc

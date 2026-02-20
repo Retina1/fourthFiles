@@ -147,6 +147,7 @@ void ScattershotPostbattle(struct Unit* actor, struct Unit* target){
 		other->curHP = other->curHP - tmpDamage;
 		i++;
 	}
+	SetActiveArt(actor, 0);
 }
 
 //riot gun

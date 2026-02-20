@@ -315,7 +315,7 @@ void DrawRighthandLearnerTexts(struct Text *a,MenuProc* menu)
     for (int i = 0; i < 23; i++) {
 		currentLevel = proc->indexLevel[i];
 		if (i == proc->menuIndex) {
-			color = TEXT_COLOR_SYSTEM_BLUE;
+			color = TEXT_COLOR_SYSTEM_GREEN;
 		}
 		else if (proc->isMaxLevel & (1 << i)){
 			color = TEXT_COLOR_SYSTEM_GOLD;

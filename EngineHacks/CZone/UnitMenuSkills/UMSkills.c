@@ -14,7 +14,7 @@ int Vanguard_Usability(struct MenuProc* menu) {
 
 u8 Vanguard_Effect (struct MenuProc* menu, struct MenuItemProc* menuItem) {
 	//vanguard's buff 1
-	UnitApplyBuff(gActiveUnit, 1);
+	UnitApplyBuff(gActiveUnit, BUFF_VANGUARD);
 	CallEvent(&GenericBuffEvent, 0x1);
 	gActiveUnit->state |= US_HAS_MOVED|US_CANTOING; 
     gActionData.unitActionType = UNIT_ACTION_WAIT;

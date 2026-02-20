@@ -29,6 +29,10 @@ void TryAddUnitToRestoreTargetList(struct Unit* unit) {
 
 //if statusout is a bind, store it in binds
 void SetUnitStatus(struct Unit* unit, int status) {
+	int baseDuration = 5;
+	if (UNIT_HAS_SKILL(unit,DOM,skill_121)){
+		baseDuration = baseDuration - 1;
+	}
     if (status == 0) {
         unit->statusIndex    = 0;
         unit->statusDuration = 0;
@@ -39,25 +43,25 @@ void SetUnitStatus(struct Unit* unit, int status) {
 	}
 	else if (status == UNIT_STATUS_HEADBIND) {
         unit->isHeadBound    = 1;
-        unit->bindDuration = 5;
+        unit->bindDuration = baseDuration;
 	}
 	else if (status == UNIT_STATUS_ARMBIND) {
         unit->isArmBound    = 1;
-        unit->bindDuration = 5;
+        unit->bindDuration = baseDuration;
 	}
 	else if (status == UNIT_STATUS_LEGBIND) {
         unit->isLegBound    = 1;
-        unit->bindDuration = 5;
+        unit->bindDuration = baseDuration;
 	}
 	else if (status == UNIT_STATUS_FULLBIND) {
 		unit->isHeadBound    = 1;
 		unit->isArmBound    = 1;
         unit->isLegBound    = 1;
-        unit->bindDuration = 5;
+        unit->bindDuration = baseDuration;
 	}
     else {
         unit->statusIndex    = status;
-        unit->statusDuration = 5;
+        unit->statusDuration = baseDuration;
     }
 }
 

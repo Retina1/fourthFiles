@@ -34,7 +34,7 @@ mov  r2, #0x50		@WeaponType
 ldrb r2, [r3, r2]	@gBattleActor->WeaponType
 cmp  r2, #0x09		@Items
 beq  Exit
-cmp  r2, #0x04		@Staff
+cmp  r2, #0x06		@supportscrolls - maybe change this to be in C later
 beq  CanCounterCheck
 cmp  r2, #0xFF		@Dance
 beq  CanCounterCheck

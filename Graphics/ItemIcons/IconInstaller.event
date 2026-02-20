@@ -28,6 +28,12 @@ ItemIconEntry(RootGraspIcon)
 #incbin "Dmp/zelixRootGrasp.dmp"
 ItemIconEntry(EvilEyeIcon)
 #incbin "Dmp/{Seal} (SacredWar) Monster 1.dmp"
+ItemIconEntry(AirScalesIcon)
+#incbin "Dmp/airScale.dmp"
+ItemIconEntry(VenomScalesIcon)
+#incbin "Dmp/venomScale.dmp"
+ItemIconEntry(AtrocityScalesIcon)
+#incbin "Dmp/atrocityScale.dmp"
 ItemIconEntry(HopebringerIcon)
 #incbin "Dmp/Hopebringer.dmp"
 
@@ -172,6 +178,8 @@ ItemIconEntry(SuperiorBladeIcon)
 //WHIPS
 ItemIconEntry(VineWhipIcon)
 #incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 1.dmp"
+ItemIconEntry(ThornWhipIcon)
+#incbin "Dmp/thornWhip.dmp"
 ItemIconEntry(ChainWhipIcon)
 #incbin "Dmp/{milom} VampireKiller.dmp"
 ItemIconEntry(RougeWhipIcon)
@@ -182,6 +190,8 @@ ItemIconEntry(RazorWhipIcon)
 #incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 2.dmp"
 ItemIconEntry(HeavensfallIcon)
 #incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 3.dmp"
+ItemIconEntry(ScorpioIcon)
+#incbin "Dmp/scorpio.dmp"
 
 //DRIVE BLADES
 ItemIconEntry(Type0Icon)
@@ -334,6 +344,8 @@ ItemIconEntry(GodendagIcon)
 #incbin "Dmp/{Zelix} icon 108.dmp"
 ItemIconEntry(SageWandIcon)
 #incbin "Dmp/{Zarg} Staff 5.dmp"
+ItemIconEntry(KerykeionIcon)
+#incbin "Dmp/kerykeion.dmp"
 
 ItemIconEntry(ShieldRodIcon)
 #incbin "Dmp/{Seal} (SacredWar) Staff 21.dmp"

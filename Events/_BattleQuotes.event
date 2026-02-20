@@ -42,7 +42,7 @@ SpecifiedBattleConvo(Gore,BossBenthus2,Chapter8,0x11,C8GoreBenthusBattle)
 
 //the vermin
 UnspecifiedBattleConvo(Ratatoskr,Stratum1F2,0x28,Ratatoskr_Battle1)
-UnspecifiedBattleConvo(Ratatoskr,Stratum2F2,0x28,Ratatoskr_Battle1)
+UnspecifiedBattleConvo(Ratatoskr,Stratum2F1,0x28,Ratatoskr_Battle2)
 UnspecifiedBattleConvo(Ratatoskr,Stratum3F2,0x28,Ratatoskr_Battle1)
 UnspecifiedBattleConvo(Ratatoskr,Stratum4F2,0x28,Ratatoskr_Battle1)
 UnspecifiedBattleConvo(Ratatoskr,Stratum5AF2,0x28,Ratatoskr_Battle1)

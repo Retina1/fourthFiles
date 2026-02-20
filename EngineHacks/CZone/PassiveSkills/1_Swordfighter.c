@@ -8,7 +8,7 @@ void ApplySwordfighterNaturalLeader(struct Unit* unit) {
 			int index = unitBuffer[i];
 			Unit* other = gUnitLookup[index];
 			//buff 2 - natural leader
-			UnitApplyBuff(other,2);
+			UnitApplyBuff(other,BUFF_NATURALLEADER);
 			i++;
 		}
 	}

@@ -161,6 +161,19 @@ Agility Break[X]
 ##AgilityBreakDesc
 0.8x AS.[X]
 
+##CrippleWhipLabel
+Cripple Whip[X]
+##CrippleWhipDesc1
+0.9x Atk/AS/Def, -1 Mov.[X]
+##CrippleWhipDesc2
+0.8x Atk/AS/Def, -2 Mov.[X]
+##CrippleWhipDesc3
+0.8x Atk/AS/Def, -2 Mov.[X]
+##CrippleWhipDesc4
+0.7x Atk/AS/Def, -3 Mov.[X]
+##CrippleWhipDesc5
+0.6x Atk/AS/Def, -3 Mov.[X]
+
 ##BreakingPulseLabel
 Breaking Ps.[X]
 ##BrerakingPulseDesc1

@@ -31,7 +31,7 @@ LocationBasedEvents:
 Chest(Bravant,7,0)
 Chest(Bravant,20,0)
 Chest(Bravant,4,11)
-Chest(Bravant,19,16)
+Chest(OrionsBolt,19,16)
 Chest(Bravant,20,23)
 END_MAIN
 
@@ -110,7 +110,7 @@ CLEA 0
 ResetNathan
 FADU 16
 MUSC 0
-SetMapBGM(0)
+SetMapBGM(Song_CursedCathedral)
 EndEvent
 
 EndingScene:

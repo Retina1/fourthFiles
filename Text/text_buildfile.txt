@@ -66,6 +66,7 @@ between stats and growths.[X]
 
 #include "Dungeons/_System.txt"
 #include "Dungeons/_Dungeon1.txt"
+#include "Dungeons/_Dungeon2.txt"
 
 #include "Guild/Initial/Swordfighters.txt"
 #include "Guild/Initial/Knights.txt"

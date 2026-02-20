@@ -149,6 +149,10 @@ You've got this, Nathan.[A][X]
 [MidRight][Answerer]
 I now[...] see the[...][N]
 endless sky[...][A][EyesClose][X]
+##AydaDeath
+[MidRight][Ayda]
+This feeling[...] It's no[N]
+real escape[...][A][EyesClose][X]
 
 //swordfighters
 ##CoastKidDeath
@@ -392,9 +396,456 @@ So very far[...][A][EyesClose][X]
 Whoopsie[...] Guess I[...][N]
 goofed again[...][A][EyesClose][X]
 
+//poet
+##LeonzioDeath
+[MidRight][Leonzio]
+Wait[...] You've got this[...][N]
+all wrong[...][AN]
+What'll it take[...] for you[...][N]
+not to[...] kill me[...]?[A][EyesClose][X]
+##GuntherDeath
+[MidRight][Gunther]
+We all face death[...][N]
+every single day[...][A][EyesClose][X]
+##JacqwilDeath
+[MidRight][Jacqwil]
+Burn them all down[...][N]
+Do it[...] for me[...][A][EyesClose][X]
+##PolymniaDeath
+[MidRight][Polymnia]
+Father[...] Please[...][N]
+Be alright[...][A][EyesClose][X]
+##LucienDeath
+[MidRight][Lucien]
+Asketa[...] Belvarus[...] You're all[N]
+worthless scum[...][A][EyesClose][X]
+##JulietteDeath
+[MidRight][Juliette]
+Is this my blood[...]?[N]
+That can't[...] be[...][A][EyesClose][X]
+##YosephaDeath
+[MidRight][Yosepha][ToggleSmile]
+It'll be okay[...][N]
+You'll all[...] shine[...][A][EyesClose][X]
+
+//seek
+##PhespherDeath
+[MidRight][Phespher]
+Oof[...] Guess that's it[...][N]
+Hope[...] I'll be missed[...][A][EyesClose][X]
+##NadjaDeath
+[MidRight][Nadja]
+I just wanted[...][N]
+more time[...][A][EyesClose][X]
+##LeviaDeath
+[MidRight][Levia]
+This simply won't do[...][N]
+Someone[...] attend me[...][A][EyesClose][X]
+##VasilyDeath
+[MidRight][Vasily]
+Who are you[...] breathing[N]
+down my neck[...]?[A][EyesClose][X]
+##JebetDeath
+[MidRight][Jebet]
+What I wouldn't give[...][N]
+for peaceful times[...][A][EyesClose][X]
+##WontDeath
+[MidRight][Wont][ToggleSmile]
+Wrong move, idiot[...][N]
+Prepare to be[...] haunted[...][A][EyesClose][X]
+##WrenDeath
+[MidRight][Wren]
+No[...] I[...] I'm too[N]
+young to[...] die[...][A][EyesClose][X]
+
+//prst
+##SaewynnDeath
+[MidRight][Saewynn]
+I finally found[...][N]
+a reason to live[...][A][EyesClose][X]
+##EllieDeath
+[MidRight][Ellie]
+Life was kind[...] And now[...][N]
+I pray the next, too[...][A][EyesClose][X]
+##SeleneDeath
+[MidRight][Selene]
+Got too careless[...][N]
+I deserve this[...][A][EyesClose][X]
+##NinaDeath
+[MidRight][Nina]
+To have done so much[...][N]
+I'm proud[...] how I lived[...][A][EyesClose][X]
+##LeviDeath
+[MidRight][Levi]
+Gods, I pray mercies[...][N]
+unto your humble servant[...][A][EyesClose][X]
+##TaftDeath
+[MidRight][Taft]
+Don't mourn for me[...][N]
+I chose to fight[...][A][EyesClose][X]
+##LantomDeath
+[MidRight][Lantom][ToggleSmile]
+I've earned grace plenty[...][N]
+I'm content with this[...][A][EyesClose][X]
+
+//lurk
+##SzessDeath
+[MidRight][Szess]
+[...][A][EyesClose][X]
+##ZoeDeath
+[MidRight][Zoe]
+This is the price[...][N]
+But I've done well[...][A][EyesClose][X]
+##PaulDeath
+[MidRight][Paul]
+Why won't[...] it work[...]?[N]
+My healing[...] Where are[...][A][EyesClose][X]
+##HaustenDeath
+[MidRight][Hausten]
+Robbing the world[...][N]
+of my splendor[...]?[AN]
+What more is there[...][N]
+for you to live for[...][A][EyesClose][X]
+
+//dhunt
+##LuisDeath
+[MidRight][Luis]
+I suppose I'll now see[...][N]
+if there's[...] another[...][A][EyesClose][X]
+##NotreDeath
+[MidRight][Notre]
+And thus, I fall[...][N]
+My honor[...] in tatters[...][A][EyesClose][X]
+##WundDeath
+[MidRight][Wund]
+At least now[...] There'll be[N]
+no more misfortune[...][A][EyesClose][X]
+##PeabodyDeath
+[MidRight][Peabody]
+Damn[...] They saw through[N]
+me[...] Through it all[...][A][EyesClose][X]
+##DalmanDeath
+[MidRight][Dalman]
+You'd better make[N]
+somethin'[...] of my death[...][A][EyesClose][X]
+##NoelleDeath
+[MidRight][Noelle]
+Ophelia[...] I'll see you[N]
+again[...] I know it[...][A][EyesClose][X]
+##YasmineDeath
+[MidRight][YasmineShark][ToggleSmile]
+Don't worry about me[...][N]
+As long as you're safe[...][A][EyesClose][X]
+
+//lancer
+##HeriDeath
+[MidRight][Heri]
+What[...]? But I was[...][N]
+everyone's hero[...][A][EyesClose][X]
+##RadagastDeath
+[MidRight][Radagast]
+I miscalculated[...] Do what[N]
+you must[...] with my body[...][A][EyesClose][X]
+##FourfingerDeath
+[MidRight][Fourfinger]
+I[...] I have to[...][N]
+make it home[...][A][EyesClose][X]
+##KelainoDeath
+[MidRight][Kelaino]
+Closer[...] Tell the Closer[...][N]
+what happened today[...][A][EyesClose][X]
+##NelsonDeath
+[MidRight][Nelson]
+I'll never prove myself[...][N]
+Not like this[...][A][EyesClose][X]
+
+//brawl
+##ShiliangDeath
+[MidRight][Shiliang]
+Master[...] I found[N]
+my reason[...][A][EyesClose][X]
+##FeefasnanDeath
+[MidRight][Feefasnan][ToggleSmile]
+The creature[...] It's granted[N]
+me peace[...] at last[...][A][EyesClose][X]
+##BrieDeath
+[MidRight][Brie]
+Oof[...] Don't think I'm[...][N]
+walking this one off[...][A][EyesClose][X]
+##ArsofDeath
+[MidRight][Arsof][ToggleSmile]
+Never stop fighting[...][N]
+Never lose hope[...][A][EyesClose][X]
+##MyloDeath
+[MidRight][Mylo]
+No fair[...] I haven't seen[...][N]
+that move[...] before[...][A][EyesClose][X]
+##LeovetusDeath
+[MidRight][Leovetus]
+The weak fall[...][N]
+That's the way of it[...][A][EyesClose][X]
+##BulagDeath
+[MidRight][Bulag]
+My friend[...] I did it[N]
+all[...] for you[...][A][EyesClose][X]
+
+//hunt
+##PhilmoreDeath
+[MidRight][Philmore]
+I'm proud[...] of what[N]
+I've done[...][A][EyesClose][X]
+##YajirushiDeath
+[MidRight][Yajirushi]
+Yasi[...] Get out[...][N]
+while you can[...][A][EyesClose][X]
+##YasakiDeath
+[MidRight][Yasaki]
+Yaji[...] Don't you[...][N]
+dare run away[...][A][EyesClose][X]
+##AmmiDeath
+[MidRight][Ammi]
+I wanted[...] so much[N]
+more[...] Was I wrong[...]?[A][EyesClose][X]
+##SarinaDeath
+[MidRight][Sarina]
+Don't cry too hard[...][N]
+You'll make it without me[...][A][EyesClose][X]
+##AlexandraDeath
+[MidRight][Alexandra]
+I'll gladly[...] let this[N]
+land reclaim me[...][A][EyesClose][X]
+
+//sky
+##JuneDeath
+[MidRight][June]
+So, none of it mattered[...][N]
+Why even try[...]?[A][EyesClose][X]
+##EneidaDeath
+[MidRight][Eneida][ToggleSmile]
+My husband's a strong man[...][N]
+He'll get over me fine[...][A][EyesClose][X]
+##PatriceDeath
+[MidRight][Patrice]
+Didn't even get to[N]
+kill her[...] Damn it[...][A][EyesClose][X]
+##MelodyDeath
+[MidRight][Melody]
+Shucks[...] Really thought[N]
+I'd do better[...][A][EyesClose][X]
+##AnastasDeath
+[MidRight][Anastas]
+This day comes for all[...][N]
+I choose not to fear it[...][A][EyesClose][X]
+##PeregrineDeath
+[MidRight][Peregrine][ToggleSmile]
+Frankly, it's a miracle[...][N]
+I made it[...] this far[...][A][EyesClose][X]
+##MervynDeath
+[MidRight][Mervyn][ToggleSmile]
+Mama[...] Your boy's[N]
+goin' down[...] a hero[...][A][EyesClose][X]
+
+//scale
+##AtiliusDeath
+[MidRight][Atilius]
+Nope[...] Should've stuck to[N]
+what I knew well[...][A][EyesClose][X]
+##CelesteDeath
+[MidRight][Celeste]
+Ouch[...] I'll be[...][N]
+I have to be[...] fine[...][A][EyesClose][X]
+##MerileeDeath
+[MidRight][Merilee]
+It's my time[...][N]
+No escaping it[...][A][EyesClose][X]
+##ShassoDeath
+[MidRight][Shasso]
+Ha! That was[...] nothing[...][N]
+I feel a second[...] wind[...][A][EyesClose][X]
+##RiverDeath
+[MidRight][River]
+Why must[...] it come to[N]
+an end[...] like this[...]?[A][EyesClose][X]
+
+//apoth
+##LeizeDeath
+[MidRight][Leize]
+Sorry, everyone[...][N]
+I'm done here[...][A][EyesClose][X]
+##WendyDeath
+[MidRight][Wendy][ToggleSmile]
+Bury me, please[...][N]
+See what grows[...][A][EyesClose][X]
+##JimDeath
+[MidRight][Jim]
+Willow[...] I hope my[N]
+affection[...] finds you[...][A][EyesClose][X]
+##DalaiDeath
+[MidRight][Dalai]
+Lin[...] I thought I'd[N]
+make my way[...] to you[...][A][EyesClose][X]
+##EttoDeath
+[MidRight][Etto]
+Aw, man[...] I really[N]
+beefed it[...][A][EyesClose][X]
+
+//circ
+##CompassDeath
+[MidRight][Compass]
+Papa[...] I'm sorry[...][N]
+I'll find[...] you[...][A][EyesClose][X]
+##KatrinDeath
+[MidRight][Katrin]
+I faltered[...][N]
+I deserve this[...][A][EyesClose][X]
+##SharonDeath
+[MidRight][Sharon]
+Nothing's going my way[...][N]
+Woe is me[...][A][EyesClose][X]
+##EmberDeath
+[MidRight][Ember]
+Frost[...] We've really[N]
+come[...] so far[...][A][EyesClose][X]
+##BrugarisDeath
+[MidRight][Brugaris]
+Was my technique flawed[...]?[N]
+Maybe it wasn't[...] round[...][A][EyesClose][X]
+##TenneyDeath
+[MidRight][Tenney]
+Maybe I should've sat back[...][N]
+Nothing'll ever change[...][A][EyesClose][X]
+##VitruviusDeath
+[MidRight][Vitruvius]
+Wait[...] I lied[...][N]
+You got the wrong guy[...][A][EyesClose][X]
+
+//call
+##DreadJennyDeath
+[MidRight][DreadJenny]
+Owie[...] My minions[...][N]
+Smite them[...] Please[...][A][EyesClose][X]
+##QuinnDeath
+[MidRight][Quinn][ToggleSmile]
+These powers[...] I know I[N]
+did good[...] with them[...][A][EyesClose][X]
+##MargitteDeath
+[MidRight][Margitte][ToggleSmile]
+I see them[...] so clearly[...]
+So this is[...] the bound[...][A][EyesClose][X]
+##DamienDeath
+[MidRight][Damien]
+I've done what I can[...][N]
+Thus ends my atonement[...][A][EyesClose][X]
+##MeansDeathDeath
+[MidRight][MeansDeath]
+Let this curse[...][N]
+die with me[...][A][EyesClose][X]
+##TheUnexpectedDeath
+[MidRight][TheUnexpected]
+[...]I await you.[A][EyesClose][X]
+##MimiDeath
+[MidRight][Mimi]
+Yikes[...] Guess that's[N]
+it for Mi[...]mi[...][A][EyesClose][X]
+
+//nobl
+##MarleniDeath
+[MidRight][Marleni]
+Damn it[...] Promise you'll[N]
+be alright[...] without me[...][A][EyesClose][X]
+##OpheliaDeath
+[MidRight][Ophelia]
+Noelle[...] I'll miss[N]
+you[...] most of all[...][A][EyesClose][X]
+##CherrylDeath
+[MidRight][Cherryl]
+My friends[...] Please be[N]
+alright[...] without me[...][A][EyesClose][X]
+##CatoDeath
+[MidRight][Cato]
+Damn[...] It was getting[N]
+so interesting, too[...][A][EyesClose][X]
+##YujinDeath
+[MidRight][Yujin]
+I'll[...] never make it[...][N]
+Never make it home[...][A][EyesClose][X]
+
+//duelist
 ##FrancescaDeath
 [MidRight][Francesca]
 Fuck being born[...] in this[N]
 piece of shit place[...][AN][EyesClose]
 Fuck all the fucking[...][N]
 piece of shit people[...][A][X]
+##FelicityDeath
+[MidRight][Felicity]
+At least I died[...][N]
+living my own way[...][A][EyesClose][X]
+##CardamDeath
+[MidRight][Cardam]
+My fire's burning out[...][N]
+Is this[...] losing[...]?[A][EyesClose][X]
+##AnnaDeath
+[MidRight][Anna]
+Don't be sad, Jake[...][N]
+Just find a new Anna[...][A][EyesClose][X]
+##RevatiDeath
+[MidRight][Revati]
+I can no longer[...][N]
+carry out your will[...][A][EyesClose][X]
+##HalloranDeath
+[MidRight][Halloran]
+Better things can happen[...][N]
+I'm sure of it[...][A][EyesClose][X]
+
+//drive
+##BertramDeath
+[MidRight][Bertram]
+You've outlived me[...][N]
+Heh[...] Nicely done[...][A][EyesClose][X]
+##MoomfieDeath
+[MidRight][Moomfie]
+Whoops[...] Well, at[N]
+least it was fun[...][A][EyesClose][X]
+##FrostDeath
+[MidRight][Frost]
+Ember[...] Thank you[...][N]
+for being at my side[...][A][EyesClose][X]
+##AlvaDeath
+[MidRight][Alva]
+Such strength[...][N]
+I salute you[...][A][EyesClose][X]
+##DaiDeath
+[MidRight][Dai]
+What a strange life I've[N]
+lived[...] I liked it[...][A][EyesClose][X]
+##AuriDeath
+[MidRight][Auri]
+I'm[...] dying[...]?[N]
+No, that can't[...] be[...][A][EyesClose][X]
+
+//arti
+##SubtractronDeath
+[MidRight][Subtractron]
+ERROR: CRITICAL DAMAGE.[N]
+PRINT: YOU SUCK, Nathan.[A][EyesClose][X]
+##AmbroseDeath
+[MidRight][Ambrose]
+For a moment, I[N]
+truly felt alive.[A][EyesClose][X]
+##BeepoDeath
+[MidRight][Beepo]
+It's over? I wasn't[N]
+done shootin' yet![A][EyesClose][X]
+##SubtiliorDeath
+[MidRight][Subtilior]
+I suppose I'll never[N]
+know what I once was.[A][EyesClose][X]
+##AwilDeath
+[MidRight][Awil]
+Well, at least I[N]
+made it this far.[A][EyesClose][X]
+##OrionDeath
+[MidRight][Orion]
+I'm alive.[A][EyesClose][X]
+

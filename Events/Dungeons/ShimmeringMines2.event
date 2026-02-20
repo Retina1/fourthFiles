@@ -39,6 +39,9 @@ MiscBasedEvents:
 AFEV 0x0 MoveResetter 0x6
 AreaEvent(0x0,EndingScene,0,4,0,5)
 //AreaEvent(0xd,EncounterFOE,18,0,24,5)
+
+AreaEvent(0xd,Quest1_5x_Event,1,2,2,2)
+AreaEvent(0xf,EncounterWyvern,14,14,17,18)
 AreaEvent(0x0,Warp5_0,5,0)
 AreaEvent(0x0,Warp16_0,16,0)
 AreaEvent(0x0,Warp23_0,23,0)
@@ -93,11 +96,28 @@ Units:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [28,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
+EncounterWyvernUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,18] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+EncounterWyvernEnemies:
+UNIT Dragon Wyvern 0x0 Level(11,Enemy,1) [16,16] DropItem 0x0 0x0 0x0 [Voltage,HolyCloak] NoAI
+UNIT
+
 ALIGN 4
 
 BeginningScene:
 InitializeNathan(28,22)
 ENUT WaitEventTrapsFlag
+CHECK_EVENTID Quest1_5x_Flag
+BNE 0x1 0xc 0x0
+ENUT 0xd
+LABEL 0x1
+ENUT 0xf
 EndEvent
 
 UnitCleanup:
@@ -107,7 +127,33 @@ CLEA 0
 ResetNathan
 FADU 16
 MUSC 0
-SetMapBGM(0)
+SetMapBGM(Song_CursedCathedral)
+EndEvent
+
+Quest1_5x_Event:
+SystemText(Quest1_5x_System)
+ENUT Quest1_5x_DoneFlag
+ENUF 0xf
+EndEvent
+
+EncounterWyvern:
+EVBIT_MODIFY 3
+SystemText(SuperbossWarning)
+IfNoSelectedGoto(0x1)
+SystemText(Wyvern_Encounter)
+BeginCombatEncounter
+LOAD3 0x0 EncounterWyvernUnits; ENUN
+LOAD1 0x0 EncounterWyvernEnemies; ENUN
+SetUnitStatline(Dragon,55,16,12,18,16,10,15,16)
+CreateArenaSingleCorner(9,12)
+FADU 16
+MUSC Song_EndOfRagingWaves
+SetMapBGM(Song_EndOfRagingWaves)
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(12,16); FADU 16
+ENUF 0xf
+LABEL 0x2
 EndEvent
 
 EndingScene:

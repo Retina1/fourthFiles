@@ -67,6 +67,7 @@ ScaleKnight_Unarmed
 Scalemaster_Axe
 Scalemaster_Handaxe
 Scalemaster_Unarmed
+Apothecary_Bow
 Apothecary_Staff
 Botanist_Staff
 Encircler_Magic

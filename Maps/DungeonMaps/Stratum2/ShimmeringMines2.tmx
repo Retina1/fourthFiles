@@ -46,9 +46,9 @@
    <tile gid="213"/>
    <tile gid="88"/>
    <tile gid="214"/>
-   <tile gid="44"/>
+   <tile gid="45"/>
+   <tile gid="75"/>
    <tile gid="77"/>
-   <tile gid="302"/>
    <tile gid="75"/>
    <tile gid="45"/>
    <tile gid="473"/>
@@ -77,8 +77,8 @@
    <tile gid="219"/>
    <tile gid="147"/>
    <tile gid="45"/>
-   <tile gid="213"/>
-   <tile gid="181"/>
+   <tile gid="719"/>
+   <tile gid="650"/>
    <tile gid="214"/>
    <tile gid="75"/>
    <tile gid="266"/>
