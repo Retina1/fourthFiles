@@ -336,6 +336,7 @@ void ExecBuffItem(ProcPtr proc) {
 	UnitApplyBuff(GetUnit(gActionData.subjectIndex), buffID);
 
     gBattleTarget.statusOut = -1;
+	CallEvent(&GenericBuffEvent, 0x1);
 
     return;
 }

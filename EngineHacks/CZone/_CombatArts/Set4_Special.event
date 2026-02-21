@@ -82,7 +82,7 @@ CombatArt((Set3LastArt + 10), UM_Whipstorm, UM_WhipstormDesc, \
 		  PhysArt,0,69)
 CombatArt((Set3LastArt + 11), UM_Ecstasy, UM_EcstasyDesc, \
 		  4, \
-		  MirageWhipArtUsability, MirageWhipArtMenuUsability, 0, \
+		  EcstasyArtUsability, EcstasyArtMenuUsability, 0, \
 		  CombatArtGeneralAttackingEffect, \
 		  0, EcstasyBothSides, \
 		  0, 0, \

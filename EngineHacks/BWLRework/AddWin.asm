@@ -20,7 +20,7 @@ ldrb    r2,[r5,#0x0B]
 and     r2,r1
 cmp     r2,#0x00
 bne     Denied//if either npc or enemy bits are on, cancel
-ldr     r1,=#0x02026EB0//new location of BWL data
+ldr     r1,NewBWL//new location of BWL data
 mov     r2,#0x05
 mul     r2,r4
 add     r1,r2
@@ -52,3 +52,5 @@ pop     {r4-r7}
 pop     {r4,r5}
 pop     {r0}
 bx      r0
+.ltorg
+NewBWL:

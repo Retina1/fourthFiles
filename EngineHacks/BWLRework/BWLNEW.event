@@ -1,4 +1,4 @@
-	#define BWL_LOCATION 0x02026EB0
+	#define BWL_LOCATION 0x2028300 //i think this is safe
 
 	PUSH
 
@@ -67,18 +67,22 @@
 	ALIGN 4
 	AddBattle:
 	#incbin "AddBattle.dmp"
+	WORD BWL_LOCATION
 
 	ALIGN 4
 	AddWin:
 	#incbin "AddWin.dmp"
+	WORD BWL_LOCATION
 
 	ALIGN 4
 	AddLoss:
 	#incbin "AddLoss.dmp"
+	WORD BWL_LOCATION
 
 	ALIGN 4
 	GetEntry:
 	#incbin "GetEntry.dmp"
+	WORD BWL_LOCATION
 
 	ALIGN 4
 	StatScreenDraw:
