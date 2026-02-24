@@ -91,7 +91,99 @@ CombatArt((NullArt + 10),UM_Tempest,UM_TempestDesc, \
 		  SlashLock, \
 		  0, TempestHitCount, \
 		  PhysArt,0,0)
-		  
+//KNIGHT
+//AXEFIGHTER
+CombatArt((NullArt + 23), UM_ArmCrush, UM_ArmCrushDesc, \
+		  3, \
+		  ArmCrushArtUsability, ArmCrushArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, ArmCrushBothSides, \
+		  0, 0, \
+		  BashLock, \
+		  ArmCrushOdds, 0, \
+		  PhysArt,0,ArmBindEffect)
+CombatArt((NullArt + 24), UM_ShieldCrush, UM_ShieldCrushDesc, \
+		  3, \
+		  ShieldCrushArtUsability, ShieldCrushArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, ShieldCrushBothSides, \
+		  0, ShieldCrushBattleProc, \
+		  BashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 25), UM_SmitingSmash, UM_SmitingSmashDesc, \
+		  3, \
+		  SmitingSmashArtUsability, SmitingSmashArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, SmitingSmashBothSides, \
+		  SmitingSmashPostbattle, 0, \
+		  Bash1RangeLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 26), UM_HeavySwing, UM_HeavySwingDesc, \
+		  2, \
+		  HeavySwingArtUsability, HeavySwingArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  HeavySwingPrebattle, HeavySwingBothSides, \
+		  0, 0, \
+		  BashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 27), UM_KillerBlow, UM_KillerBlowDesc, \
+		  3, \
+		  KillerBlowArtUsability, KillerBlowArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  KillerBlowPrebattle, KillerBlowBothSides, \
+		  0, 0, \
+		  BashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 28), UM_BoomerangAxe, UM_BoomerangAxeDesc, \
+		  3, \
+		  BoomerangAxeArtUsability, BoomerangAxeArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  BoomerangAxePrebattle, BoomerangAxeBothSides, \
+		  0, 0, \
+		  BoomerangAxeRange, \
+		  0, 0, \
+		  PhysArt,0x1,0)
+CombatArt((NullArt + 29), UM_VengeanceBash, UM_VengeanceBashDesc, \
+		  5, \
+		  VengeanceBashArtUsability, VengeanceBashArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  VengeanceBashPrebattle, VengeanceBashBothSides, \
+		  0, 0, \
+		  BashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 31), UM_VitalHit, UM_VitalHitDesc, \
+		  4, \
+		  VitalHitArtUsability, VitalHitArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  VitalHitPrebattle, VitalHitBothSides, \
+		  0, 0, \
+		  BashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 32), UM_SmashBarrage, UM_SmashBarrageDesc, \
+		  4, \
+		  SmashBarrageArtUsability, SmashBarrageArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  SmashBarragePrebattle, SmashBarrageBothSides, \
+		  0, 0, \
+		  BashLock, \
+		  0, SmashBarrageHitCount, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 33), UM_Takedown, UM_TakedownDesc, \
+		  3, \
+		  TakedownArtUsability, TakedownArtMenuUsability, 0, \
+		  CombatArtGeneralAttackingEffect, \
+		  TakedownPrebattle, TakedownBothSides, \
+		  0, 0, \
+		  BashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+//ARHCER
 //SCHOLAR
 //need - anims for calibur, surge, earthspike, megido, eschaton
 CombatArt((NullArt + 45), UM_Calibur, UM_CaliburDesc, \

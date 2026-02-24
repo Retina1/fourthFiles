@@ -6,6 +6,8 @@ Gore_Gunner
 Gore_Dragoon
 Benthus_Noble
 Benthus_Sovereign
+Helman_Knight
+Helman_Hoplite
 Rat_Lurker
 Rat_Hexer
 Guildmaster_Highlander

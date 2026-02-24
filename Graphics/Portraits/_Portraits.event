@@ -68,9 +68,17 @@ BenthusDMP:
 #incbin "dmps/retinaBenthus.dmp"
 setMugEntry(BenthusMug,BenthusDMP,3,5,3,3)
 ALIGN 4
+HelmanDMP:
+#incbin "dmps/retinaHelman.dmp"
+setMugEntry(HelmanMug,HelmanDMP,3,4,3,2)
+ALIGN 4
 XavensDMP:
 #incbin "dmps/retinaXavens.dmp"
 setMugEntry(XavensMug,XavensDMP,3,5,3,3)
+ALIGN 4
+JohannaDMP:
+#incbin "dmps/retinaJohanna.dmp"
+setMugEntry(JohannaMug,JohannaDMP,4,7,4,5)
 
 ALIGN 4
 //slatergenerics

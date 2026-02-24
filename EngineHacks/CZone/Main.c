@@ -15,6 +15,7 @@ extern u16 GenericAOEEvent;
 #include "SkillSystem/SkillHelpers.c"
 #include "SkillLearner/SkillLearner.c"
 #include "SkillLearner/SkillLearnerPreps.c"
+#include "HeroesMovement/HeroesMovement.c"
 
 #include "_CombatArts/CombatArts.c"
 #include "_CombatArts/CombatArtsMenus.c"
@@ -28,7 +29,7 @@ extern u16 GenericAOEEvent;
 #include "BuffsDebuffs/RallyingCry.c"
 #include "PassiveSkills/_PassiveSkills.c"
 
-#include "HeroesMovement/HeroesMovement.c"
+
 #include "UnitMenuSkills/UMSkills.c"
 #include "Summons/Summons.c"
 

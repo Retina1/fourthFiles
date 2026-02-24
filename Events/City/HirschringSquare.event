@@ -113,7 +113,7 @@ AreaEvent(LocationFlagGuildhall,GuildhallRecruitmentPromptBegin,7,5)
 //in blacksmith
 AreaEvent(LocationFlagBlacksmith,BlacksmithMoveToSquare,6,9,8,9)
 AreaEvent(LocationFlagBlacksmith,BlacksmithShopBegin,7,3)
-AreaEvent(LocationFlagBlacksmith,BlacksmithTestShopBegin,2,6)
+//AreaEvent(LocationFlagBlacksmith,BlacksmithTestShopBegin,2,6)
 
 //in tavern
 AreaEvent(LocationFlagTavern,TavernMoveToSquare,1,9,3,9)

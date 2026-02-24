@@ -15,6 +15,23 @@ ORG FreeSpaceBLRange //defined in custom definitions
 
 POP
 
+ALIGN 4
+NatsukiUnitID:
+WORD Natsuki
+NatsukiMugID:
+WORD NatsukiMug
+NatsubunMugID:
+WORD NatsubunMug
+
+GoreUnitID:
+WORD Gore
+GoreMugID:
+WORD GoreMug
+GorePluckMugID:
+WORD GorePluckedMug
+GoreEyepatchMugID:
+WORD GoreEyepatchMug\
+
 #include "EssentialFixes.event"
 #include "AddressPatches.event"
 #include "VariousASM/ASM.event"

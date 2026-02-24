@@ -86,6 +86,16 @@ ALIGN 4
 Benthus_SovereignDMP:
 #incbin "paletteFiles/MainStory/Benthus_Sovereign.dmp"
 
+setPalette(Helman_Knight, Helman_KnightDMP)
+setPalette(Helman_Hoplite, Helman_HopliteDMP)
+CharPalette(Helman,Helman_Knight,Knight,Helman_Hoplite,Hoplite)
+ALIGN 4
+Helman_KnightDMP:
+#incbin "paletteFiles/MainStory/Helman_Knight.dmp"
+ALIGN 4
+Helman_HopliteDMP:
+#incbin "paletteFiles/MainStory/Helman_Hoplite.dmp"
+
 setPalette(Guildmaster_Highlander, Guildmaster_HighlanderDMP)
 CharPalette(Guildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)
 CharPalette(BossGuildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)

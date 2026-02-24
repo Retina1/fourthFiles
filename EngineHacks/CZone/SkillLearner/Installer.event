@@ -14,7 +14,7 @@ POIN AxefighterSkillLabels
 POIN ArcherSkillLabels
 POIN ScholarSkillLabels
 POIN SkillLabels
-POIN SkillLabels
+POIN MyrmidonSkillLabels
 POIN SkillLabels
 POIN SkillLabels
 POIN GunnerSkillLabels
@@ -130,25 +130,6 @@ FiveLevelSkillLabel(PlaceholderLabel,AvengerThrustReq)
 SkillLabelTerminator
 
 ALIGN 4
-AxefighterSkillLabels:
-OneLevelSkillLabel(EndlessBattleSkill,NoReq)//0
-OneLevelSkillLabel(SteadyMoraleSkill,NoReq)
-OneLevelSkillLabel(OverpoweringSkill,OverpoweringReq)
-OneLevelSkillLabel(FullChargeSkill,PromotedReq)
-TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
-TwoLevelSkillLabel(PlaceholderLabel,ShieldCrushReq)
-TwoLevelSkillLabel(PlaceholderLabel,SmiteReq)
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
-ThreeLevelSkillLabel(PlaceholderLabel,KillerBlowReq)
-ThreeLevelSkillLabel(PlaceholderLabel,BoomerangAxeReq)
-ThreeLevelSkillLabel(PlaceholderLabel,VengeanceBashReq)
-ThreeLevelSkillLabel(PlaceholderLabel,BerserkerVowReq)
-FiveLevelSkillLabel(PlaceholderLabel,VitalHitReq)//12
-FiveLevelSkillLabel(PlaceholderLabel,SmashBarrageReq)
-FiveLevelSkillLabel(PlaceholderLabel,TakedownReq)
-SkillLabelTerminator
-
-ALIGN 4
 ArcherSkillLabels:
 OneLevelSkillLabel(SightingSkill,NoReq)//0
 OneLevelSkillLabel(PerchSkill,NoReq)
@@ -166,6 +147,176 @@ FiveLevelSkillLabel(PlaceholderLabel,PointBlankVolleyReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,SquallVolleyReq)
 FiveLevelSkillLabel(PlaceholderLabel,AstralVolleyReq)
 SkillLabelTerminator
+
+
+ALIGN 4
+WarinessReq:
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+BoundingThrustReq:
+ReqEntry(4,1)
+ReqTerm
+ALIGN 4
+VitalityThrustReq:
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+ProvocationReq:
+ReqEntry(0,1)
+ReqTerm
+ALIGN 4
+LuckyGuardReq:
+ReqEntry(7,2)
+ReqEntry(8,2)
+ReqTerm
+ALIGN 4
+BraveGuardReq:
+ReqPromo
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+FullGuardReq:
+ReqEntry(7,1)
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+BlitzThrustReq:
+ReqEntry(5,2)
+ReqEntry(6,2)
+ReqEntry(9,2)
+ReqTerm
+ALIGN 4
+AvengerThrustReq:
+ReqPromo
+ReqEntry(9,3)
+ReqEntry(10,3)
+ReqEntry(11,3)
+ReqTerm
+
+
+
+ALIGN 4
+TargetMarkReq:
+ReqEntry(4,2)
+ReqTerm
+ALIGN 4
+DropShotReq:
+ReqEntry(7,2)
+ReqTerm
+ALIGN 4
+InescapableReq:
+ReqEntry(2,1)
+ReqTerm
+ALIGN 4
+PowerShotReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+FlankShotReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+ArmorPiercerReq:
+ReqEntry(4,1)
+ReqEntry(8,2)
+ReqTerm
+ALIGN 4
+CloserReq:
+ReqPromo
+ReqEntry(5,2)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+PointBlankVolleyReq:
+ReqEntry(2,1)
+ReqTerm
+ALIGN 4
+SquallVolleyReq:
+ReqEntry(2,1)
+ReqEntry(8,2)
+ReqTerm
+ALIGN 4
+AstralVolleyReq:
+ReqPromo
+ReqEntry(2,1)
+ReqEntry(5,2)
+ReqEntry(10,3)
+ReqTerm
+
+
+ALIGN 4
+MyrmidonSkillLabels:
+OneLevelSkillLabel(SwordStanceSkill,NoReq)//0
+OneLevelSkillLabel(IndomitableSkill,NoReq)
+OneLevelSkillLabel(ExtendSkill,ExtendReq)
+OneLevelSkillLabel(SteppingSlashSkill,SteppingSlashReq)
+TwoLevelSkillLabel(UpperStanceSkill,StanceReq)//4
+TwoLevelSkillLabel(ClearStanceSkill,StanceReq)
+TwoLevelSkillLabel(DrawingStanceSkill,StanceReq)
+ThreeLevelSkillLabel(BreathSkill,StanceReq)//7
+ThreeLevelSkillLabel(SwallowslashSkill,SwallowslashReq)
+ThreeLevelSkillLabel(HazeslashSkill,HazeslashReq)
+ThreeLevelSkillLabel(PetalslashSkill,PetalslashReq)
+ThreeLevelSkillLabel(AirslashSkill,AirslashReq)
+FiveLevelSkillLabel(GracefulBlurSkill,GracefulBlurReq)//12
+FiveLevelSkillLabel(BeheadingSkill,BeheadingReq)
+FiveLevelSkillLabel(PeerlessComboSkill,PeerlessComboReq)
+SkillLabelTerminator
+
+ALIGN 4
+ExtendReq:
+ReqEntry(5,2)
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+SteppingSlashReq:
+ReqPromo
+ReqEntry(0,1)
+ReqTerm
+ALIGN 4
+StanceReq:
+ReqEntry(0,1)
+ReqTerm
+ALIGN 4
+SwallowslashReq:
+ReqEntry(4,1)
+ReqTerm
+ALIGN 4
+HazeslashReq:
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+PetalslashReq:
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+AirslashReq:
+ReqPromo
+ReqEntry(4,1)
+ReqEntry(5,1)
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+GracefulBlurReq:
+ReqEntry(5,2)
+ReqEntry(7,2)
+ReqTerm
+ALIGN 4
+BeheadingReq:
+ReqEntry(4,2)
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+PeerlessComboReq:
+ReqPromo
+ReqEntry(8,3)
+ReqEntry(9,3)
+ReqEntry(10,3)
+ReqEntry(11,3)
+ReqTerm
+
 
 
 ALIGN 4
@@ -381,55 +532,24 @@ ReqEntry(13,5)
 ReqEntry(6,2)
 ReqTerm
 
-
-
 ALIGN 4
-TargetMarkReq:
-ReqEntry(4,2)
-ReqTerm
-ALIGN 4
-DropShotReq:
-ReqEntry(7,2)
-ReqTerm
-ALIGN 4
-InescapableReq:
-ReqEntry(2,1)
-ReqTerm
-ALIGN 4
-PowerShotReq:
-ReqEntry(7,1)
-ReqTerm
-ALIGN 4
-FlankShotReq:
-ReqEntry(8,1)
-ReqTerm
-ALIGN 4
-ArmorPiercerReq:
-ReqEntry(4,1)
-ReqEntry(8,2)
-ReqTerm
-ALIGN 4
-CloserReq:
-ReqPromo
-ReqEntry(5,2)
-ReqEntry(8,3)
-ReqTerm
-ALIGN 4
-PointBlankVolleyReq:
-ReqEntry(2,1)
-ReqTerm
-ALIGN 4
-SquallVolleyReq:
-ReqEntry(2,1)
-ReqEntry(8,2)
-ReqTerm
-ALIGN 4
-AstralVolleyReq:
-ReqPromo
-ReqEntry(2,1)
-ReqEntry(5,2)
-ReqEntry(10,3)
-ReqTerm
+AxefighterSkillLabels:
+OneLevelSkillLabel(EndlessBattleSkill,NoReq)//0
+OneLevelSkillLabel(SteadyMoraleSkill,NoReq)
+OneLevelSkillLabel(OverpoweringSkill,OverpoweringReq)
+OneLevelSkillLabel(FullChargeSkill,PromotedReq)
+TwoLevelSkillLabel(ArmCrushSkill,NoReq)//4
+TwoLevelSkillLabel(ShieldCrushSkill,ShieldCrushReq)
+TwoLevelSkillLabel(SmitingSmashSkill,SmitingSmashReq)
+ThreeLevelSkillLabel(HeavySwingSkill,NoReq)//7
+ThreeLevelSkillLabel(KillerBlowSkill,KillerBlowReq)
+ThreeLevelSkillLabel(BoomerangAxeSkill,BoomerangAxeReq)
+ThreeLevelSkillLabel(VengeanceBashSkill,VengeanceBashReq)
+ThreeLevelSkillLabel(BerserkerVowSkill,BerserkerVowReq)
+FiveLevelSkillLabel(VitalHitSkill,VitalHitReq)//12
+FiveLevelSkillLabel(SmashBarrageSkill,SmashBarrageReq)
+FiveLevelSkillLabel(TakedownSkill,TakedownReq)
+SkillLabelTerminator
 
 ALIGN 4
 OverpoweringReq:
@@ -440,7 +560,7 @@ ShieldCrushReq:
 ReqEntry(4,1)
 ReqTerm
 ALIGN 4
-SmiteReq:
+SmitingSmashReq:
 ReqEntry(7,3)
 ReqTerm
 ALIGN 4
@@ -478,53 +598,6 @@ ReqPromo
 ReqEntry(3,1)
 ReqEntry(13,3)
 ReqTerm
-
-ALIGN 4
-WarinessReq:
-ReqEntry(9,3)
-ReqTerm
-ALIGN 4
-BoundingThrustReq:
-ReqEntry(4,1)
-ReqTerm
-ALIGN 4
-VitalityThrustReq:
-ReqEntry(5,1)
-ReqTerm
-ALIGN 4
-ProvocationReq:
-ReqEntry(0,1)
-ReqTerm
-ALIGN 4
-LuckyGuardReq:
-ReqEntry(7,2)
-ReqEntry(8,2)
-ReqTerm
-ALIGN 4
-BraveGuardReq:
-ReqPromo
-ReqEntry(7,3)
-ReqEntry(8,3)
-ReqTerm
-ALIGN 4
-FullGuardReq:
-ReqEntry(7,1)
-ReqEntry(8,1)
-ReqTerm
-ALIGN 4
-BlitzThrustReq:
-ReqEntry(5,2)
-ReqEntry(6,2)
-ReqEntry(9,2)
-ReqTerm
-ALIGN 4
-AvengerThrustReq:
-ReqPromo
-ReqEntry(9,3)
-ReqEntry(10,3)
-ReqEntry(11,3)
-ReqTerm
-
 
 ALIGN 4
 SwordfighterSkillLabels:

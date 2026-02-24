@@ -34,6 +34,12 @@ int BashLock(struct Unit* unit, int itemID, int rangeWord){
 	}
 	else return 0;
 }
+int Bash1RangeLock(struct Unit* unit, int itemID, int rangeWord){
+	if (GetItemType(itemID) == 0x2) {
+		return 0x00010001;
+	}
+	else return 0;
+}
 int ShootLock(struct Unit* unit, int itemID, int rangeWord){
 	if (GetItemType(itemID) == 0x3) {
 		return rangeWord;

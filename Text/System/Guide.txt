@@ -166,6 +166,16 @@ Gather plant fibers from the[N]
 abandoned farming plot in[N]
 the Beast King's lair.[X]
 
+##Quest1_5x_Guide
+Gather some shining white[N]
+crystals piled somewhere in[N]
+the Shimmering Mines.[X]
+
+##Quest2_5x_Guide
+Knock some sense into the[N]
+drunkard. He'll probably show[N]
+up in a fight near Hirschring.[X]
+
 
 ##GuideSectionUnits
 People[X]

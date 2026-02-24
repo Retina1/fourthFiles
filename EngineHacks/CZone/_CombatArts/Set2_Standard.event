@@ -1,5 +1,59 @@
 //MYRMIDON
-
+CombatArt((Set1LastArt + 5),UM_Swallowslash,UM_SwallowslashDesc, \
+		  3, \
+		  SwallowslashArtUsability,SwallowslashArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, SwallowslashBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  0, SwallowslashHitCount, \
+		  PhysArt,0,0)
+CombatArt((Set1LastArt + 6),UM_Hazeslash,UM_HazeslashDesc, \
+		  3, \
+		  HazeslashArtUsability,HazeslashArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, HazeslashBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  HazeslashOdds, 0, \
+		  PhysArt,0,SleepEffect)
+CombatArt((Set1LastArt + 7),UM_Petalslash,UM_PetalslashDesc, \
+		  3, \
+		  PetalslashArtUsability,PetalslashArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, PetalslashBothSides, \
+		  PetalslashPostbattle, 0, \
+		  SlashLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((Set1LastArt + 8),UM_Airslash,UM_AirslashDesc, \
+		  3, \
+		  AirslashArtUsability,AirslashArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  AirslashPrebattle, AirslashBothSides, \
+		  0, 0, \
+		  AirslashRange, \
+		  0, 0, \
+		  PhysArt,0x35,0)
+CombatArt((Set1LastArt + 10),UM_Beheading,UM_BeheadingDesc, \
+		  5, \
+		  BeheadingArtUsability,BeheadingArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  BeheadingPrebattle, BeheadingBothSides, \
+		  0, 0, \
+		  SlashLock, \
+		  BeheadingOdds, 0, \
+		  PhysArt,0,InstantDeathEffect)
+CombatArt((Set1LastArt + 11),UM_PeerlessCombo,UM_PeerlessComboDesc, \
+		  5, \
+		  PeerlessComboArtUsability,PeerlessComboArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, PeerlessComboBothSides, \
+		  PeerlessComboPostbattle, 0, \
+		  PeerlessComboRange, \
+		  PeerlessComboOdds, PeerlessComboHitCount, \
+		  PhysArt,0x35,SleepEffect)
+		  
 //RIDER
 
 //RAIDER

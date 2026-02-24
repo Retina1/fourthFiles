@@ -74,6 +74,8 @@ GuideEntry(2, 1, Quest1_3x, Quest1_3x_Guide, Quest1_3x_Flag)
 GuideEntry(2, 1, Quest2_3x, Quest2_3x_Guide, Quest2_3x_Flag)
 GuideEntry(2, 1, Quest1_S1x, Quest1_S1x_Guide, Quest1_S1x_Flag)
 GuideEntry(2, 1, Quest2_S1x, Quest2_S1x_Guide, Quest2_S1x_Flag)
+GuideEntry(2, 1, Quest1_5x, Quest1_5x_Guide, Quest1_5x_Flag)
+GuideEntry(2, 1, Quest2_5x, Quest2_5x_Guide, Quest2_5x_Flag)
 //units
 GuideEntry(3, 2, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
 //lore

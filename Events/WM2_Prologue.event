@@ -2,5 +2,5 @@ WorldMapIntroPointerTable(1,Intro)
 
 Intro:
 EVBIT_MODIFY 0x1
-ENUT 0x89
+//ENUT 0x89
 ENDA

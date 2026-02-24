@@ -87,6 +87,7 @@ GuildRecruitEvent(Levia_RecruitEvent,Levia)
 GuildRecruitEvent(Vasily_RecruitEvent,Vasily)
 GuildRecruitEvent(Jebet_RecruitEvent,Jebet)
 GuildRecruitEvent(Wont_RecruitEvent,Wont)
+GuildRecruitEvent(Wren_RecruitEvent,Wren)
 //priests
 GuildRecruitEvent(Saewynn_RecruitEvent,Saewynn)
 GuildRecruitEvent(Ellie_RecruitEvent,Ellie)

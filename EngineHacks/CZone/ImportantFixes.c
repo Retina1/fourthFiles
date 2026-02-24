@@ -1,3 +1,36 @@
+//portait loading
+extern const int NatsukiUnitID;
+extern const int NatsukiMugID;
+extern const int NatsubunMugID;
+extern const int GoreUnitID;
+extern const int GoreMugID;
+extern const int GorePluckMugID;
+extern const int GoreEyepatchMugID;
+
+extern const struct FaceData NewPortraitTable[];
+
+const struct FaceData* GetPortraitData(int fid) {
+	//NATSUBUN
+	if (fid == NatsukiMugID){
+		if (GetUnitFromCharId(NatsukiUnitID) != NULL) {
+			if (GetUnitFromCharId(NatsukiUnitID)->classSkillState != 0) {
+				fid = NatsubunMugID;
+			}
+		}
+	}
+	if (fid == GoreMugID) {
+		if (CheckEventId_(0x8f)) {
+			fid = GoreEyepatchMugID;
+		}
+		else if (CheckEventId_(0x88)) {
+			fid = GorePluckMugID;
+		}
+	}
+	//GOREPLUCK later
+	
+    return NewPortraitTable + fid;
+}
+
 //rn modes
 s8 Roll2RN(int threshold) {
     int average = (NextRN_100() + NextRN_100()) / 2;

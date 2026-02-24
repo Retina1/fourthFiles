@@ -56,7 +56,21 @@ of that monstrous cry![A][X]
 
 ##Quest1_5x_Done
 [MidLeft][Nathan][MidRight][Bobby][MidLeft]
-.[A][X]
+Here's your crystals.[AN][MidRight]
+Wonderfully done.[N]
+They're quite something.[AN][MidLeft]
+Glad you're happy with them.[AN]
+Wasn't the best time for us,[N]
+but a job's a job.[AN][MidRight]
+Ah, right. Sorry about all[N]
+that. I heard the news.[AN]
+At least you're alright.[AN]
+And this is bound to impress[N]
+him. Wish me luck, Nathan.[AN][MidLeft]
+[...][AN][MidRight]
+I'll try not to send you on[N]
+too many more personal jobs.[AN]
+[...]No promises.[A][X]
 
 ##Quest2_5x
 A Sobering Experience[X]
@@ -116,11 +130,24 @@ things to do, anyway.[X]
 
 ##Quest2_5x_Done
 [MidLeft][Nathan][MidRight][Bobby]
-g.[A][X]
+Seems the drunkard's finally[N]
+stopped harassing people.[AN]
+Thanks for that.[AN][MidLeft]
+Sure thing.[AN][MidRight]
+I had some bounty piled up[N]
+for his capture,[A] but this[N]
+result's close enough.[AN]
+Guess in a way, you're my[N]
+hired security now.[AN][MidLeft]
+Unfortunately, most of us are[N]
+here as adventurers.[AN]
+Not as security guards.[AN][MidRight]
+Just as well. I can't[N]
+actually afford to hire.[A][X]
 
 
 ##Quest2_8x
-Hopping Into Action[X]
+The Swordmaster[X]
 
 ##Quest2_8x_Desc
 Rumors abound of a swordfighter[N]

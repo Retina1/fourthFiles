@@ -45,6 +45,12 @@ UNIT Bobby 0x0 0x0 Level(14,NPC,0) [5,1] 0x0 0x0 0x0 0x0 [Elixir] NeverMoveAI
 UNIT Bertram 0x0 0x0 Level(18,NPC,0) [12,8] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT Cleone 0x0 0x0 Level(1,Ally,0) [12,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
 //add dudes eventually
+UNIT Gretchen 0x0 0x0 Level(3,NPC,0) [1,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Ghari 0x0 0x0 Level(4,NPC,0) [3,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Ember 0x0 0x0 Level(14,NPC,0) [6,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Frost 0x0 0x0 Level(15,NPC,0) [7,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Francesca 0x0 0x0 Level(8,NPC,0) [4,5] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Brugaris 0x0 0x0 Level(16,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
@@ -149,5 +155,6 @@ QuestEndCheckGold(Quest1_3x_Flag,Quest1_3x_DoneFlag,Quest1_3x_Done,500)
 QuestEndCheck(Quest2_3x_Flag,Quest2_3x_DoneFlag,Quest2_3x_Done,Pike)
 QuestEndCheck(Quest1_S1x_Flag,Quest1_S1x_DoneFlag,Quest1_S1x_Done,Claymore)
 QuestEndCheckSystext(Quest2_S1x_Flag,Quest2_S1x_DoneFlag,Quest2_S1x_Done,Quest2_S1x_RewardText)
-
+QuestEndCheck(Quest1_5x_Flag,Quest1_5x_DoneFlag,Quest1_5x_Done,RescueScroll)
+QuestEndCheckGold(Quest2_5x_Flag,Quest2_5x_DoneFlag,Quest2_5x_Done,1500)
 ENDA

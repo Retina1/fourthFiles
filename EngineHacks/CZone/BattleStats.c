@@ -99,14 +99,21 @@ void ComputeBattleUnitDodgeRate(struct BattleUnit* bu) {
 }
 
 void ComputeBattleUnitEffectiveHitRate(struct BattleUnit* attacker, struct BattleUnit* defender) {
-    attacker->battleEffectiveHitRate = attacker->battleHitRate - defender->battleAvoidRate;
-	
-	if (attacker->battleEffectiveHitRate < attacker->unit.skl)
-        attacker->battleEffectiveHitRate = attacker->unit.skl;
-
-    if (attacker->battleEffectiveHitRate > 100) {
-        attacker->battleEffectiveHitRate = 100;
+    int hitRate = attacker->battleHitRate - defender->battleAvoidRate;
+    if (hitRate < 0) {
+		hitRate = 0;
 	}
+	
+	attacker->battleEffectiveHitRate = hitRate;
+	//takedown ignores hit floor
+	if (GetActiveArt(&attacker->unit) != 33) {
+		if (attacker->battleEffectiveHitRate < attacker->unit.skl)
+			attacker->battleEffectiveHitRate = attacker->unit.skl;
+	}
+
+	if (attacker->battleEffectiveHitRate > 100) {
+			attacker->battleEffectiveHitRate = 100;
+		}
 	
 	if (attacker->unit.statusIndex == UNIT_STATUS_BLIND) {
 		attacker->battleEffectiveHitRate = attacker->battleEffectiveHitRate / 3;

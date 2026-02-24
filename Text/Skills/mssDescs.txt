@@ -102,7 +102,7 @@ for each turn passed.[X]
 Steady Morale: Restore 10[N]
 HP after initiating combat.[X]
 ##
-Overpowering: Boosts Str when[N]
+Overpowering: Boosts Atk when[N]
 unit Str is higher than foe's.[X]
 ##
 Full Charge: Charge to massively[N]
@@ -114,8 +114,8 @@ that can bind arms.[X]
 Shield Crush: An axe swing[N]
 that debuffs enemy Def.[X]
 ##
-Smite: A mighty axe swing[N]
-that knocks back targets.[X]
+Smiting Smash: A mighty axe[N]
+swing that knocks back targets.[X]
 ##
 Heavy Swing: A simple and[N]
 powerful axe strike.[X]
@@ -326,8 +326,8 @@ to warp self a distance away.[X]
 Beheading: During Stance,[N]
 cut to try and instakill.[X]
 ##
-Peerless Combo: Consume Stance to[N]
-combo all four slash skills.[X]
+Peerless Combo: Consume Stance[N]
+for a five-hit ultra combo.[X]
 
 //rid
 ##MSS_BattlefieldPresence

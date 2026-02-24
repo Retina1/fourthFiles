@@ -1,0 +1,47 @@
+## UM_SwordStance
+ Stance[X]
+## UM_SwordStanceDesc
+Take a sword stance to[N]
+enable mighty skills.[X]
+## UM_GracefulBlur
+ Blur[X]
+## UM_GracefulBlurDesc
+Cancel sword stance to[N]
+warp self to another tile.[X]
+## UM_Breath
+ Breath[X]
+## UM_BreathDesc
+Cancel sword stance to[N]
+recover some HP.[X]
+
+##UM_Swallowslash
+ Swallowslash[X]
+##UM_SwallowslashDesc
+A two-hit combo.[N]
+Cost: 3 Durability.[X]
+##UM_Hazeslash
+ Hazeslash[X]
+##UM_HazeslashDesc
+An enslumbering slash.[N]
+Cost: 3 Durability.[X]
+##UM_Petalslash
+ Petalslash[X]
+##UM_PetalslashDesc
+A scattering slash.[N]
+Cost: 3 Durability.[X]
+##UM_Airslash
+ Airslash[X]
+##UM_AirslashDesc
+A ranged slash.[N]
+Cost: 3 Durability.[X]
+##UM_Beheading
+ Beheading[X]
+##UM_BeheadingDesc
+An executive cut.[N]
+Cost: 5 Durability.[X]
+##UM_PeerlessCombo
+ Peerless Cmb.[X]
+##UM_PeerlessComboDesc
+A transcendent combo.[N]
+Cancels Stance.[N]
+Cost: 5 Durability.[X]

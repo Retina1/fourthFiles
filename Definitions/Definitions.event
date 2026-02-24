@@ -8,7 +8,8 @@
 #include "ItemIconDefs.event"
 
 
-#define GoreNoEyeFlag 0x89
+#define GoreNoEyeFlag 0x88
+//89 sucks
 //flags for each chapter's base
 #define WaitEventTrapsFlag 0x8a
 #define Chapter2DoneFlag 0x8b

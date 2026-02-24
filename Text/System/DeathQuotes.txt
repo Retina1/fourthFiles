@@ -15,7 +15,7 @@ meant to be remembered.[A][X]
 I can't fall[...][N]
 I'm mighty[...][AN]
 I'm power itself[...][N]
-I'm the heart[...][N]
+I'm the heart[...][A][N]
 of the end[...][AN][EyesClose]
 I[...] I am[...] inimitable[...][A][X]
 

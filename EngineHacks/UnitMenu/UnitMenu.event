@@ -24,9 +24,11 @@ UnitMenuTable:
   //todo - make these have smoother animations?
   MenuCommand(UM_Vanguard, UM_VanguardDesc, OrangeText, Vanguard_Usability, Vanguard_Effect)
   MenuCommand(UM_Charge, UM_FullChargeDesc, OrangeText, FullCharge_Usability, FullCharge_Effect)
+  MenuCommand(UM_BerserkerVow, UM_BerserkerVowDesc, OrangeText, BerserkerVow_Usability, BerserkerVow_Effect)
   MenuCommand(UM_TargetMark, UM_TargetMarkDesc, OrangeText, TargetMark_Usability, TargetMark_Effect)
   MenuCommand(UM_Charge, UM_EthericChargeDesc, OrangeText, EthericCharge_Usability, EthericCharge_Effect)
   MenuCommand(UM_SwordStance, UM_SwordStanceDesc, OrangeText, SwordStance_Usability, SwordStance_Effect)
+  MenuCommand(UM_Breath, UM_BreathDesc, OrangeText, Breath_Usability, Breath_Effect)
   MenuCommand(UM_GracefulBlur, UM_GracefulBlurDesc, OrangeText, GracefulBlur_Usability, GracefulBlur_Effect)
   MenuCommand(UM_Swap, UM_SwapDesc, OrangeText, Swap_Usability, Swap_Effect)
   MenuCommand(UM_Pivot, UM_PivotDesc, OrangeText, Pivot_Usability, Pivot_Effect)

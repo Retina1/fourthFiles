@@ -45,8 +45,20 @@ void ApplyMyrmidonExtend(struct Unit* attacker, struct Unit* defender) {
 	}
 }
 
+void ApplyMyrmidonSteppingSlash(struct Unit* attacker, struct Unit* defender) {
+	if (UNIT_HAS_SKILL(attacker,RNI,promoSkill_141)){
+		if (GetActiveArt(attacker) == 0) {
+			if  (attacker->classSkillState == 0) {
+				attacker->classSkillState = 3;
+				CallEvent(&GenericBuffEvent, 0x1);
+			}
+		}
+	}
+}
+
 void ApplyMyrmidonPostcombatSkills(struct Unit* attacker, struct Unit* defender) {
 	ApplyMyrmidonExtend(attacker,defender);
+	ApplyMyrmidonSteppingSlash(attacker,defender);
 }
 
 void ApplyMyrmidonPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {

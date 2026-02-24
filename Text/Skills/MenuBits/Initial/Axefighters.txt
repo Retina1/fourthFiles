@@ -1,0 +1,65 @@
+##UM_ArmCrush
+ Arm Crush[X]
+##UM_ArmCrushDesc
+Strike to bind arms.[N]
+Cost: 3 Durability.[X]
+
+##UM_ShieldCrush
+ Shield Crush[X]
+##UM_ShieldCrushDesc
+Strike to debuff Def.[N]
+Cost: 3 Durability.[X]
+
+##UM_SmitingSmash
+ Smiting Smash[X]
+##UM_SmitingSmashDesc
+Knock the target back.[N]
+Cost: 3 Durability.[X]
+
+##UM_HeavySwing
+ Heavy Swing[X]
+##UM_HeavySwingDesc
+A powerful single swing.[N]
+Cost: 2 Durability.[X]
+
+##UM_KillerBlow
+ Killer Blow[X]
+##UM_KillerBlowDesc
+An extra lethal swing.[N]
+Cost: 3 Durability.[X]
+
+##UM_BoomerangAxe
+ Boomerang A.[X]
+##UM_BoomerangAxeDesc
+A ranged axe toss.[N]
+Cost: 3 Durability.[X]
+
+##UM_VengeanceBash
+ Veng. Bash[X]
+##UM_VengeanceBashDesc
+Grows stronger with wounds.[N]
+Cost: 5 Durability.[X]
+
+##UM_VitalHit
+ Vital Hit[X]
+##UM_VitalHitDesc
+Grows stronger with health.[N]
+Cost: 4 Durability.[X]
+
+##UM_SmashBarrage
+ Smash Barr.[X]
+##UM_SmashBarrageDesc
+A fleeting flurry.[N]
+Cost: 4 Durability.[X]
+
+##UM_Takedown
+ Takedown[X]
+##UM_TakedownDesc
+Surely it'll hit.[N]
+Cost: 3 Durability.[X]
+
+##UM_BerserkerVow
+ Vow[X]
+##UM_BerserkerVowDesc
+Cut own HP for a[N]
+massive Atk buff.[X]
