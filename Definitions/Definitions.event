@@ -8,6 +8,9 @@
 #include "ItemIconDefs.event"
 
 
+#define Arena1DoneFlag 0x85
+#define Arena2DoneFlag 0x86
+#define Arena3DoneFlag 0x87
 #define GoreNoEyeFlag 0x88
 //89 sucks
 //flags for each chapter's base

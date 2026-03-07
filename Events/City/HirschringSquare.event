@@ -44,7 +44,7 @@ EventPointerTable(HirschringSquareEventsID,ThisChapter)
 #define Recruited5Flag 0x12c
 */
 
-//flags 0x1a to 0x1e for market
+//flags 0x1a to 0x1c for market
 
 ALIGN 4
 
@@ -142,6 +142,9 @@ AreaEvent(LocationFlagShadyRow,ShadyRowMoveToImperialPost,25,0,25,2)
 
 //in dueling grounds
 AreaEvent(LocationFlagDuelingGrounds,DuelingGroundsMoveToShadyRow,7,18,11,18)
+AreaEvent(LocationFlagDuelingGrounds,DuelingGroundsBegin,9,15)
+AFEV LocationFlagDuelingGrounds DuelingGroundsAdvanceWrapper 0x6
+AFEV LocationFlagDuelingGrounds DuelingGroundsDeathChecker 0x0
 
 //in shadesong
 AreaEvent(LocationFlagShadesong,ShadesongMoveToShadyRow,0,3,0,4)

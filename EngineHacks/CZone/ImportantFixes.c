@@ -41,6 +41,28 @@ s8 Roll1RN(int threshold) {
     return (threshold > NextRN_100());
 }
 
+//supply
+u8 SupplyUsability(const struct MenuItemDef * def, int number)
+{
+    int pid = 1; //it's nathan!
+
+	if (gPlaySt.chapterIndex >= 0x43) {//id of city
+        return MENU_ENABLED;
+	}
+
+    if (gActiveUnit->pCharacterData->number == pid)
+    {
+        return MENU_ENABLED;
+    }
+
+    if (IsAdjacentForSupply(pid))
+    {
+        return MENU_ENABLED;
+    }
+
+    return MENU_NOTSHOWN;
+}
+
 
 //reds and greens don't do this - figure out how to actually make this like, work for usables
 void UnitUpdateUsedItem(struct Unit* unit, int itemSlot) {

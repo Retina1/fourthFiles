@@ -13,3 +13,4 @@
 #include "BigPromos/HigherNumberGains.event"
 #include "HelpText/Installer.event"
 #include "RW Cloud Fix\Cloud_Fix_EA.event"
+#include "EventWriter\EventWriter.event"

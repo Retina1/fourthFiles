@@ -21,6 +21,18 @@
 #include "GoldDisplay/Installer.event"
 
 ALIGN 4
+ArenaMenu:
+MenuDefinition(6, 4, 18, 0, 1, ArenaMenuOptions)
+
+ALIGN 4
+ArenaMenuOptions:
+MenuOption(ArenaTier1Label, ArenaTier1RText, 0)
+MenuOption(ArenaTier2Label, ArenaTier2RText, Arena1DoneFlag)
+MenuOption(ArenaTier3Label, ArenaTier3RText, Arena2DoneFlag)
+MenuOption(LeaveArenaLabel, LeaveArenaRText, 0)
+MenuTerminator
+
+ALIGN 4
 GrowthModeMenu:
 MenuDefinition(6, 5, 18, 0, 1, GrowthModeMenuOptions)
 

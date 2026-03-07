@@ -32,6 +32,8 @@ Cherry Trees and Wings[X]
 
 ##SourceTitle_EtrianOdyssey3
 Etrian Odyssey III[X]
+##SongTitle_TheFirstBattle
+The First Battle (PacoScarso)[X]
 ##SongTitle_IsThatBloodThine ^
 Is That Blood Thine...? (PacoScarso)[X]
 ##SongTitle_EndOfRagingWaves ^
@@ -60,6 +62,11 @@ Heavy Armored Corps (Rubenio)[X]
 Pokemon Gold/Silver/Crystal[X]
 ##SongTitle_DarkCave
 Dark Cave[X]
+
+##SourceTitle_Pictionary
+Pictionary (NES)[X]
+##SongTitle_PictionaryTitle
+Title Theme[X]
 
 ##SourceTitle_Touhou
 Touhou Series[X]
@@ -209,6 +216,11 @@ Musette[X]
 RRThiel[X]
 ##SongTitle_Castle
 Castle (Zappy McCraw)[X]
+
+##SourceTitle_Lagoon
+Lagoon[X]
+##SongTitle_Premonition
+Premonition (Scraiza)[X]
 
 ##SourceTitle_RednGreeen
 RednGreeen[X]

@@ -3,6 +3,70 @@
 This is a placeholder.[N]
 Don't be alarmed.[A][X]
 
+##ArenaTier1Label
+The First Campaign[X]
+##ArenaTier1RText
+A warm-up course for those[N]
+new to the dueling grounds.[N]
+Recommended Level: 5[X]
+
+##ArenaTier2Label
+Slay and Fall[X]
+##ArenaTier2RText
+A challenging course for those[N]
+confident in their abilities.[N]
+Recommended Level: 13[X]
+
+##ArenaTier3Label
+Perish Like the Dew[X]
+##ArenaTier3RText
+A brutal course that tries the[N]
+very souls of all mankind.[N]
+Recommended Level: 20[X]
+
+##LeaveArenaLabel
+Decline Challenge[X]
+##LeaveArenaRText
+Do not participate in[N]
+the arena at this time.[X]
+
+##DuelingGroundsLossText
+[MidRight][Ayda][EyesClose]
+[...]They were not strong enough.[N]
+May they at last know escape.[A][X]
+##DuelingGroundsWinTextGeneric
+[MidRight][Ayda]
+[...]Well done. May you be strong[N]
+enough to break the chains.[A][X]
+##DuelingGroundsWinTextTier1
+[MidRight][Ayda]
+[...]Well done. I have a gift for you.[N]
+May it help you break us all free.[AN]
+And once you're ready, take upon the[N]
+next trial fate has prepared for you.[AN]
+You can also take this trial again,[N]
+if you wish to appease the cycle.[AN]
+[...]Stay safe, until then.[A][X]
+##DuelingGroundsWinTextTier2
+[MidRight][Ayda]
+[...]Well done. I have a gift for you.[N]
+May it help you break us all free.[AN]
+Once you're ready, you can take upon[N]
+the final trial fate has in store.[AN]
+You can also take this trial again,[N]
+if you wish to appease the cycle.[AN]
+[...]Stay safe, until then.[A][X]
+##DuelingGroundsWinTextTier3
+[MidRight][Ayda]
+[...]Well done. I[...] I truly believe[N]
+you can set us all free.[AN]
+And if we are to escape, I must[N]
+at last act.[AN]
+My sword is yours, Nathan.[AN]
+Let it be that which pierces the[N]
+veil and ends the cycle.[A][X]
+
+
 ##IntroBuyStandardClasses
 [MidLeft][Nathan][MidRight][Second]
 Nathan of the Guildleague.[AN][MidLeft]

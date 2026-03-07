@@ -36,11 +36,16 @@ ShadyRowMoveToDuelingGrounds:
 SwapToMap(DuelingGrounds,9,17)
 CALL LoadDuelingGroundsSigils
 //eventual song
-MUSC 0x0
+MUSC Song_PictionaryTitle
 //4th is C5
-LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DuelingGroundsUnitsC5,0,0,0,0,0,0,0,0,0,0)
+//call makes my life easier
+CALL LoadDuelingGroundsUnits
 FADU 10
 EndEvent
+
+LoadDuelingGroundsUnits:
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DuelingGroundsUnitsC5,0,0,0,0,0,0,0,0,0,0)
+ENDA
 
 ShadyRowMoveToShadesong:
 SwapToMap(Shadesong,1,3)

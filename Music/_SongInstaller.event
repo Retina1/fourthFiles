@@ -395,3 +395,23 @@ SongTable(Song_LifeGoesOn,LifeGoesOn,0)
 SongTable(Song_SpinningTheTale,SpinningTheTale,0)
 #include "songs/SpinningTheTale.event"
 }
+
+#define Song_Premonition 0x44
+{
+SongTable(Song_Premonition,Premonition,1)
+#include "songs/Premonition.event"
+}
+
+
+#define Song_PictionaryTitle 0x45
+{
+SongTable(Song_PictionaryTitle,PictionaryTitle,1)
+#include "songs/PictionaryTitle.event"
+}
+
+
+#define Song_TheFirstBattle 0x46
+{
+SongTable(Song_TheFirstBattle,TheFirstBattle,1)
+#include "songs/TheFirstBattle.event"
+}

@@ -1,27 +1,27 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	PictionaryTitle_grp, voicegroup000
+	.equ	PictionaryTitle_pri, 0
+	.equ	PictionaryTitle_rev, 0
+	.equ	PictionaryTitle_mvl, 127
+	.equ	PictionaryTitle_key, 0
+	.equ	PictionaryTitle_tbs, 1
+	.equ	PictionaryTitle_exg, 0
+	.equ	PictionaryTitle_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	PictionaryTitle
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+PictionaryTitle_001:
 @  #01 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*PictionaryTitle_mvl/mxv
+ .byte   KEYSH , PictionaryTitle_key+0
 Label_F5FDC4:
- .byte   TEMPO , 130*song09_tbs/2
+ .byte   TEMPO , 130*PictionaryTitle_tbs/2
  .byte   VOICE , 28
  .byte   N03 ,En3 ,v052
  .byte   W06
@@ -389,10 +389,10 @@ Label_F5FE78:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+PictionaryTitle_002:
 @  #02 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*PictionaryTitle_mvl/mxv
+ .byte   KEYSH , PictionaryTitle_key+0
 Label_F5F8B0:
  .byte   VOICE , 81
  .byte   W96
@@ -994,10 +994,10 @@ Label_F5FB74:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+PictionaryTitle_003:
 @  #03 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*PictionaryTitle_mvl/mxv
+ .byte   KEYSH , PictionaryTitle_key+0
 Label_F5FF30:
  .byte   VOICE , 38
  .byte   W96
@@ -1295,10 +1295,10 @@ Label_F60065:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+PictionaryTitle_004:
 @  #04 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*PictionaryTitle_mvl/mxv
+ .byte   KEYSH , PictionaryTitle_key+0
 Label_F5EA3C:
  .byte   VOICE , 50
  .byte   W96
@@ -1703,10 +1703,10 @@ Label_F5EAE8:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+PictionaryTitle_005:
 @  #05 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*PictionaryTitle_mvl/mxv
+ .byte   KEYSH , PictionaryTitle_key+0
 Label_F5F1D8:
  .byte   VOICE , 104
  .byte   W96
@@ -2301,10 +2301,10 @@ Label_F5F1D8:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+PictionaryTitle_006:
 @  #06 @000   ----------------------------------------
- .byte   VOL , 54*song09_mvl/mxv
- .byte   KEYSH , song09_key+0
+ .byte   VOL , 54*PictionaryTitle_mvl/mxv
+ .byte   KEYSH , PictionaryTitle_key+0
 Label_011119CC:
  .byte   VOICE , 124
  .byte   W96
@@ -2996,19 +2996,19 @@ Label_01111D16:
 @******************************************************@
 	.align	2
 
-song09:
+PictionaryTitle:
 	.byte	6	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	PictionaryTitle_pri	@ Priority
+	.byte	PictionaryTitle_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	PictionaryTitle_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
+	.word	PictionaryTitle_001
+	.word	PictionaryTitle_002
+	.word	PictionaryTitle_003
+	.word	PictionaryTitle_004
+	.word	PictionaryTitle_005
+	.word	PictionaryTitle_006
 
 	.end

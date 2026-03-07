@@ -7,11 +7,6 @@ UNIT Astarte 0x0 0x0 Level(1,Ally,0) [5,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Natsuki 0x0 0x0 Level(9,NPC,0) [14,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
-//ideas - casual mode? make it cost gold?
-//one clear of each tier per city visit? idk maybe just let nathan levelgrind
-//let any of nathan/gore/astarte/cleone do it?
-//find way to let any recruited unit do it? probably would use a proc menu to scroll through all unit names/levels to pick one
-
 DuelingGroundsTier1Wave1:
 UNIT 0xFD Swordfighter 0x0 Level(3,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
 UNIT
@@ -59,12 +54,170 @@ UNIT
 DuelingGroundsTier3Wave5:
 UNIT Ayda Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x0 0x0 [DvergrSword] NoAI
 UNIT
+DuelingGroundsTier3Wave5Alt:
+UNIT 0xFD Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x0 0x0 [DvergrSword] NoAI
+UNIT
 
+AydaJoin:
+UNIT Ayda Ronin 0x0 Level(22,Ally,0) [18,18] 0x0 0x0 0x0 0x0 [DvergrSword] NoAI
+UNIT
 //MESSAGE Events end at offset CURRENTOFFSET
 
+DuelingGroundsBegin:
+//aaaaa
+CHECK_EVENTID 0x15
+BNE 0x1 0xc 0x0
+RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,City05_Ayda,0,0,0,0,0,0,0,0,0,0)
+ENUT 0x15
+LABEL 0x1
+CallMenu(ArenaMenu)
+SVAL 0x1 0
+BNE 0x100 0xc 0x1
+CALL DuelingGroundsCourse1
+ResetTurncount
+GOTO 0x104
+LABEL 0x100
+SVAL 0x1 1
+BNE 0x101 0xc 0x1
+CALL DuelingGroundsCourse2
+ResetTurncount
+GOTO 0x104
+LABEL 0x101
+SVAL 0x1 2
+BNE 0x102 0xc 0x1
+CALL DuelingGroundsCourse3
+ResetTurncount
+GOTO 0x104
+LABEL 0x102
+COUNTER_SET 1 0
+COUNTER_SET 2 0
+//branches
+/*
+any course disables the freemovement flag, maybe we pick a fighter
+maybe allow anyone (way to train units?)
+this'll take a menu of course
+maybe let active unit use supply?
+5 rounds, death is permanent
+if a non-game over unit dies, return control to nathan
+remove all non-fighter units and load fighter in arena
+one wave goes at a time, use a counter to track?
+*/
+LABEL 0x104
+ENUF LocationFlagDuelingGrounds
+EndEvent
+
+ResetDuelingGrounds:
+FADI 10
+CLEA 0
+CLEN 0
+CLEE 0
+SET_ACTIVE 0
+SET_CURSOR [9,15]
+CAM1 [9,15]
+ASMC DuelingGroundsBackToNathan|1
+ENUT NoRescuingFlag
+ENUT Chapter2DoneFlag
+CALL LoadDuelingGroundsUnits
+MUSC Song_PictionaryTitle
+SetMapBGM(Song_PictionaryTitle)
+FADU 10
+ENDA
+
+DuelingGroundsDeathChecker:
+ASMC CheckIfExistentUnitASMC|1 //1 if living units exist
+BNE 0x100 0xc 0x0
+//reset
+Text(DuelingGroundsLossText)
+CALL ResetDuelingGrounds
+LABEL 0x100
+ENUF LocationFlagDuelingGrounds
+EndEvent
+
+//it's hell torture
+//i think we need to make it think there's no unit in 0x81?
+DuelingGroundsAdvanceWrapper:
+COUNTER_CHECK 1
+SVAL 1 1
+BNE 0x100 0xc 0x1
+Write_Byte(12,AIXCoord)
+Write_Byte(5,AIYCoord)
+CALL DuelingGroundsAdvanceCourse1
+GOTO 0x103
+LABEL 0x100
+SVAL 1 2
+BNE 0x101 0xc 0x1
+Write_Byte(12,AIXCoord)
+Write_Byte(5,AIYCoord)
+CALL DuelingGroundsAdvanceCourse2
+GOTO 0x103
+LABEL 0x101
+SVAL 1 3
+BNE 0x102 0xc 0x1
+Write_Byte(12,AIXCoord)
+Write_Byte(5,AIYCoord)
+CALL DuelingGroundsAdvanceCourse3
+GOTO 0x103
+LABEL 0x102
+ENUF LocationFlagDuelingGrounds
+GOTO 0x104
+LABEL 0x103
+ENUF LocationFlagDuelingGrounds
+ENUF 0x6
+ResetTurncount
+LABEL 0x104
+EndEvent
+
+
+GroundsResetUnit:
+SET_CURSOR [6,5]
+CAM1 [6,5]
+ASMC DuelingGroundsResetDeployedUnitASMC|1
+ENDA
+
+DuelingGroundsCourse1:
+CALL UnitChooserEvent
+ENUF Chapter2DoneFlag //turn back on when done
+ENUF NoRescuingFlag //turn back on when done
+//load level 1 here
+LOAD1 0 DuelingGroundsTier1Wave1
+ENUN
+FADU 10
+COUNTER_SET 1 1 //counter 1 - course
+COUNTER_SET 2 1 //counter 2 - wave
+MUSC Song_TheFirstBattle
+SetMapBGM(Song_TheFirstBattle)
+ENDA
+
+DuelingGroundsCourse2:
+CALL UnitChooserEvent
+ENUF Chapter2DoneFlag //turn back on when done
+ENUF NoRescuingFlag //turn back on when done
+LOAD1 0 DuelingGroundsTier2Wave1
+ENUN
+FADU 10
+COUNTER_SET 1 2 //counter 1 - course
+COUNTER_SET 2 1 //counter 2 - wave
+MUSC 0
+SetMapBGM(Song_TheFirstBattle)
+ENDA
+
+DuelingGroundsCourse3:
+CALL UnitChooserEvent
+ENUF Chapter2DoneFlag //turn back on when done
+ENUF NoRescuingFlag //turn back on when done
+LOAD1 0 DuelingGroundsTier3Wave1
+ENUN
+FADU 10
+COUNTER_SET 1 3 //counter 1 - course
+COUNTER_SET 2 1 //counter 2 - wave
+MUSC 0
+SetMapBGM(Song_TheFirstBattle)
+ENDA
 
 ALIGN 4
 LoadDuelingGroundsSigils:
+COUNTER_SET 1 0
+COUNTER_SET 2 0
 ENUF LocationFlagDuelingGrounds
 AddSigil(7,18)
 AddSigil(8,18)
@@ -81,3 +234,202 @@ MUSC Song_VastLands
 LoadRowUnits
 FADU 10
 EndEvent
+
+UnitChooserEvent:
+ASMC UnitChooser_OnSelect|1
+FADI 10
+CLEA 0
+CLEN 0
+CLEE 0
+SVAL 0x1 0x8
+SET_CONDITION Nathan
+SVAL 0x1 6
+SVAL 0x2 5
+ASMC PlaceSlotCUnitAtCoordsASMC|1
+SET_CURSOR [6,5]
+CAM1 [6,5]
+ENDA
+
+
+//todo - handle death of all player units - the hard part
+//also convoy functions - that's easy
+DuelingGroundsAdvanceCourse1:
+SET_ACTIVE 0
+COUNTER_CHECK 2
+SVAL 2 1
+BNE 0x100 0xc 2
+//load level 2 here
+FADI 10
+LOAD1 0 DuelingGroundsTier1Wave2
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x100
+SVAL 2 2
+BNE 0x101 0xc 2
+//load level 3  here
+FADI 10
+LOAD1 0 DuelingGroundsTier1Wave3
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x101
+SVAL 2 3
+BNE 0x102 0xc 2
+//load level 4 here
+FADI 10
+LOAD1 0 DuelingGroundsTier1Wave4
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x102
+SVAL 2 4
+BNE 0x103 0xc 2
+//load level 5 here
+FADI 10
+LOAD1 0 DuelingGroundsTier1Wave5
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x103
+//done with course - first time victory reward
+CHECK_EVENTID Arena1DoneFlag
+BNE 0x200 0xc 0x0
+ENUT Arena1DoneFlag
+//give reward here
+Text(DuelingGroundsWinTextTier1)
+GiveItem(SuperiorBlade,Nathan)
+GOTO 0x201
+LABEL 0x200
+Text(DuelingGroundsWinTextGeneric)
+LABEL 0x201
+CALL ResetDuelingGrounds
+GOTO 0x106
+LABEL 0x105
+CALL GroundsResetUnit
+FADU 10
+LABEL 0x106
+ENDA
+
+DuelingGroundsAdvanceCourse2:
+SET_ACTIVE 0
+COUNTER_CHECK 2
+SVAL 2 1
+BNE 0x100 0xc 2
+//load level 2 here
+FADI 10
+LOAD1 0 DuelingGroundsTier2Wave2
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x100
+SVAL 2 2
+BNE 0x101 0xc 2
+//load level 3  here
+FADI 10
+LOAD1 0 DuelingGroundsTier2Wave3
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x101
+SVAL 2 3
+BNE 0x102 0xc 2
+//load level 4 here
+FADI 10
+LOAD1 0 DuelingGroundsTier2Wave4
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x102
+SVAL 2 4
+BNE 0x103 0xc 2
+//load level 5 here
+FADI 10
+LOAD1 0 DuelingGroundsTier2Wave5
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x103
+//done with course - first time victory reward
+CHECK_EVENTID Arena2DoneFlag
+BNE 0x200 0xc 0x0
+ENUT Arena2DoneFlag
+//give reward here
+Text(DuelingGroundsWinTextTier2)
+GiveItem(RubyBlade,Nathan)
+GOTO 0x201
+LABEL 0x200
+Text(DuelingGroundsWinTextGeneric)
+LABEL 0x201
+CALL ResetDuelingGrounds
+GOTO 0x106
+LABEL 0x105
+CALL GroundsResetUnit
+FADU 10
+LABEL 0x106
+ENDA
+
+DuelingGroundsAdvanceCourse3:
+SET_ACTIVE 0
+COUNTER_CHECK 2
+SVAL 2 1
+BNE 0x100 0xc 2
+//load level 2 here
+FADI 10
+LOAD1 0 DuelingGroundsTier3Wave2
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x100
+SVAL 2 2
+BNE 0x101 0xc 2
+//load level 3  here
+FADI 10
+LOAD1 0 DuelingGroundsTier3Wave3
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x101
+SVAL 2 3
+BNE 0x102 0xc 2
+//load level 4 here
+FADI 10
+LOAD1 0 DuelingGroundsTier3Wave4
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x102
+SVAL 2 4
+BNE 0x103 0xc 2
+//load level 5 here
+FADI 10
+CHECK_EVENTID Arena3DoneFlag
+BNE 0x66 0xc 0x0
+	LOAD1 0 DuelingGroundsTier3Wave5
+	GOTO 0x67
+LABEL 0x66
+LOAD1 0 DuelingGroundsTier3Wave5Alt
+LABEL 0x67
+ENUN
+COUNTER_ADD 2 1
+GOTO 0x105
+LABEL 0x103
+//done with course - first time victory reward
+CHECK_EVENTID Arena3DoneFlag
+BNE 0x200 0xc 0x0
+ENUT Arena3DoneFlag
+//give reward here
+MUSC Song_FaithIsMyPillar
+Text(DuelingGroundsWinTextTier3)
+LOAD1 0 AydaJoin
+GOTO 0x201
+LABEL 0x200
+Text(DuelingGroundsWinTextGeneric)
+LABEL 0x201
+CALL ResetDuelingGrounds
+GOTO 0x106
+LABEL 0x105
+CALL GroundsResetUnit
+FADU 10
+LABEL 0x106
+ENDA

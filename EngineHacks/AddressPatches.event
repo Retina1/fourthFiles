@@ -2,6 +2,12 @@
 //dat 0x0203E12A, gAnimRoundData
 //dat 0x0203E156, gEfxHpLut
 
+//don't gameover if no untis exist
+PUSH
+ORG 0x019024
+BYTE 0x01 0x20
+POP
+
 //uh oesn't quite work but we'll figure it out eventually tm
 #define gBattleHitArrayNew 0x2028000
 #define gAnimRoundDataNew 0x2028100

@@ -28,6 +28,8 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Village(0x10,Chapter6_House1,6,1)
+Village(0x11,Chapter6_House2,22,12)
 END_MAIN
 
 MiscBasedEvents:
@@ -111,6 +113,11 @@ MUSC 0x0
 CleanTextNoMap(0x18,FillerDialogue)
 MoveToChapter(Chapter7)
 ENDA
+
+Chapter6_House1:
+VillageEventItem(FillerDialogue, 0x0, Caliver)
+Chapter6_House2:
+VillageEventItem(FillerDialogue, 0x0, DownStaff)
 
 
 //MESSAGE Events end at offset CURRENTOFFSET

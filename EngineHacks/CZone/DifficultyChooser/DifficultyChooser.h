@@ -42,5 +42,5 @@ static const MenuDef DifficultyChooser_MenuDefinition =
     .rect = {9, 8, 12},
     .menuItems = MenuCommands_DifficultyChooser,
 
-    .onBPress = (void*) (0x080152F4+1), // Goes back to main game loop
+//    .onBPress = (void*) (0x080152F4+1), // Goes back to main game loop
 };

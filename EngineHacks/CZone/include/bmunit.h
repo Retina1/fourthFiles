@@ -528,6 +528,7 @@ void RefreshAllies(void);
 int GetUnitCurrentHp(struct Unit* unit);
 int GetUnitMaxHp(struct Unit* unit);
 int GetUnitPower(struct Unit* unit);
+int GetUnitMag(struct Unit* unit);
 int GetUnitSkill(struct Unit* unit);
 int GetUnitSpeed(struct Unit* unit);
 int GetUnitDefense(struct Unit* unit);

@@ -61,3 +61,8 @@ Quarry[X]
 ##Desc_Quarry
 The target of some manner of request.[N]
 Fulfill what's been asked of you![X]
+##Name_ArenaEnemy
+Pitfighter[X]
+##Desc_ArenaEnemy
+A duelist fighting for sport.[N]
+Hoist your sword with pride![X]

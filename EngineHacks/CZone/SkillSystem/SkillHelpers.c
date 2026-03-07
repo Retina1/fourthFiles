@@ -19,6 +19,16 @@ static bool IsUnitOnField(Unit* unit) {
     return TRUE;
 }
 
+static bool IsUnitAlive(Unit* unit) {
+    if (!unit || !unit->pCharacterData)
+        return FALSE;
+
+    if (unit->state & (US_DEAD | 0x00010000))
+        return FALSE;
+
+    return TRUE;
+}
+
 u8* GetUnitsOfAllegiance(Unit* unit, int allyOption) {
     const s8(*pAllegianceChecker)(int, int) = ((allyOption & 1) ? AreAllegiancesAllied : AreAllegiancesEqual);
 
