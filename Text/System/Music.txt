@@ -34,6 +34,8 @@ Cherry Trees and Wings[X]
 Etrian Odyssey III[X]
 ##SongTitle_TheFirstBattle
 The First Battle (PacoScarso)[X]
+##SongTitle_SlayAndFall
+Slay and Fall (PacoScarso)[X]
 ##SongTitle_IsThatBloodThine ^
 Is That Blood Thine...? (PacoScarso)[X]
 ##SongTitle_EndOfRagingWaves ^
@@ -57,6 +59,11 @@ Untamed Garden[X]
 Berwick Saga[X]
 ##SongTitle_HeavyArmoredCorps
 Heavy Armored Corps (Rubenio)[X]
+
+##SourceTitle_MilesDavis
+Miles Davis[X]
+##SongTitle_BlueInGreen
+Blue in Green[X]
 
 ##SourceTitle_PokemonGSC ^
 Pokemon Gold/Silver/Crystal[X]

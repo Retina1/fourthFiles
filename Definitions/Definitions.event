@@ -8,6 +8,7 @@
 #include "ItemIconDefs.event"
 
 
+//don't use 84
 #define Arena1DoneFlag 0x85
 #define Arena2DoneFlag 0x86
 #define Arena3DoneFlag 0x87

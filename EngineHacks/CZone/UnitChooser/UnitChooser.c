@@ -131,6 +131,16 @@ void PlaceSlotCUnitAtCoordsASMC(struct EventEngineProc* proc) {
     unit->xPos = gEventSlots[0x1];
     unit->yPos = gEventSlots[0x2];
     unit->state &= ~(0x42 | US_NOT_DEPLOYED | 0x1);
+	SetUnitStatus(unit, UNIT_STATUS_NONE);
+	unit->isHeadBound = 0;
+	unit->isLegBound = 0;
+	unit->isArmBound = 0;
+	unit->bindDuration = 0;
+	unit->classSkillState = 0;
+	unit->rescue = 0;
+	unit->supportBits = 0;
+	SetUnitHp(unit, GetUnitMaxHp(unit));
+	SetActiveArt(unit, 0);
     RefreshEntityBmMaps(); //maybe not needed?
 	RefreshUnitSprites();
 	RenderBmMap();
@@ -166,6 +176,15 @@ void DuelingGroundsResetDeployedUnitASMC(struct EventEngineProc* proc) {
 	}
     unit->xPos = 6;
     unit->yPos = 5;
+	SetUnitStatus(unit, UNIT_STATUS_NONE);
+	unit->isHeadBound = 0;
+	unit->isLegBound = 0;
+	unit->isArmBound = 0;
+	unit->bindDuration = 0;
+	unit->classSkillState = 0;
+	unit->rescue = 0;
+	unit->supportBits = 0;
+	SetActiveArt(unit, 0);
     unit->state &= ~(0x42 | 0x1);
     RefreshEntityBmMaps(); //maybe not needed?
 	RefreshUnitSprites();
@@ -186,6 +205,16 @@ void DuelingGroundsBackToNathan(struct EventEngineProc* proc) {
 	}
 	unit->xPos = 255;
     unit->state = (unit->state) | (0x1|US_NOT_DEPLOYED);
+	SetUnitStatus(unit, UNIT_STATUS_NONE);
+	unit->isHeadBound = 0;
+	unit->isLegBound = 0;
+	unit->isArmBound = 0;
+	unit->bindDuration = 0;
+	unit->classSkillState = 0;
+	unit->rescue = 0;
+	unit->supportBits = 0;
+	SetUnitHp(unit, GetUnitMaxHp(unit));
+	SetActiveArt(unit, 0);
     struct Unit* nathan = GetUnitFromCharId(1);
     nathan->xPos = 9;
     nathan->yPos = 15;

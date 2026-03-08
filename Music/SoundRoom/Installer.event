@@ -81,8 +81,10 @@ SoundRoomEntry(Song_Biggering, SongTitle_Biggering, SourceTitle_TheLorax,19)
 SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4)
 SoundRoomEntry(Song_DrawHeroes, SongTitle_DrawHeroes, SourceTitle_EtrianOdyssey2,10)
 SoundRoomEntry(Song_WhyLove, SongTitle_WhyLove, SourceTitle_MaybeHappyEnding,38)
+SoundRoomEntry(Song_BlueInGreen, SongTitle_BlueInGreen, SourceTitle_MilesDavis,70)
 SoundRoomEntry(Song_PictionaryTitle, SongTitle_PictionaryTitle, SourceTitle_Pictionary,67)//haha
 SoundRoomEntry(Song_TheFirstBattle, SongTitle_TheFirstBattle, SourceTitle_EtrianOdyssey3,68)
+SoundRoomEntry(Song_SlayAndFall, SongTitle_SlayAndFall, SourceTitle_EtrianOdyssey3,69)
 SoundRoomEntry(Song_DarkCave, SongTitle_DarkCave, SourceTitle_PokemonGSC,40)
 SoundRoomEntry(Song_LifeGoesOn, SongTitle_LifeGoesOn, SourceTitle_Persona5,65)
 //dungeon

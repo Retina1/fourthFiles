@@ -120,6 +120,8 @@ ENUT Chapter2DoneFlag
 CALL LoadDuelingGroundsUnits
 MUSC Song_PictionaryTitle
 SetMapBGM(Song_PictionaryTitle)
+COUNTER_SET 1 0
+COUNTER_SET 2 0
 FADU 10
 ENDA
 
@@ -197,8 +199,8 @@ ENUN
 FADU 10
 COUNTER_SET 1 2 //counter 1 - course
 COUNTER_SET 2 1 //counter 2 - wave
-MUSC 0
-SetMapBGM(Song_TheFirstBattle)
+MUSC Song_SlayAndFall
+SetMapBGM(Song_SlayAndFall)
 ENDA
 
 DuelingGroundsCourse3:
@@ -293,6 +295,7 @@ COUNTER_ADD 2 1
 GOTO 0x105
 LABEL 0x103
 //done with course - first time victory reward
+MUSC Song_EditMode
 CHECK_EVENTID Arena1DoneFlag
 BNE 0x200 0xc 0x0
 ENUT Arena1DoneFlag
@@ -351,6 +354,7 @@ COUNTER_ADD 2 1
 GOTO 0x105
 LABEL 0x103
 //done with course - first time victory reward
+MUSC Song_EditMode
 CHECK_EVENTID Arena2DoneFlag
 BNE 0x200 0xc 0x0
 ENUT Arena2DoneFlag
@@ -424,6 +428,7 @@ Text(DuelingGroundsWinTextTier3)
 LOAD1 0 AydaJoin
 GOTO 0x201
 LABEL 0x200
+MUSC Song_EditMode
 Text(DuelingGroundsWinTextGeneric)
 LABEL 0x201
 CALL ResetDuelingGrounds

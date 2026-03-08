@@ -415,3 +415,19 @@ SongTable(Song_PictionaryTitle,PictionaryTitle,1)
 SongTable(Song_TheFirstBattle,TheFirstBattle,1)
 #include "songs/TheFirstBattle.event"
 }
+
+
+#define Song_SlayAndFall 0x58
+{
+SongTable(Song_SlayAndFall,SlayAndFall,1)
+#include "songs/SlayAndFall.event"
+}
+#define Song_BlueInGreen 0x59
+{
+SongTable(Song_BlueInGreen,BlueInGreen,1)
+#include "songs/BlueInGreen.event"
+}
+/* free numbers
+5d 5e 5f 62 63 64 92 93 94 a8 a9 ad ae b2 bb c0 c1 c2 c3 c4 c5 c6 d9 da db
+e0 e1 e4 e8 e9 ec ee f3 104 105 106 107
+*/
