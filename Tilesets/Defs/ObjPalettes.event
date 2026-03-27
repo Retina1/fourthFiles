@@ -16,3 +16,5 @@
 #define Frontier1PAL 0x10
 #define Desert1OBJ 0x11
 #define Desert1PAL 0x12
+#define Castle1OBJ 0x13
+#define Castle1PAL 0x14

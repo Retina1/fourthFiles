@@ -42,6 +42,8 @@ Is That Blood Thine...? (PacoScarso)[X]
 The End of Raging Waves (PacoScarso)[X]
 ##SongTitle_CyclopeanHaunt
 Cyclopean Haunt (PacoScarso)[X]
+##SongTitle_ScatterAbout
+Scatter About (PacoScarso)[X]
 
 ##SourceTitle_EtrianOdyssey4
 Etrian Odyssey IV[X]
@@ -95,6 +97,8 @@ Armor-Clad Faith[X]
 Shin Megami Tensei IV[X]
 ##SongTitle_ExcavationWorkersQuarters
 Excavation Worker's Quarters[X]
+##SongTitle_BattleB6
+Battle - B6[X]
 
 ##SourceTitle_OrderOfEcclesia ^
 Castlevania: Order of Ecclesia[X]
@@ -112,6 +116,13 @@ Heroic Struggle (Trikki Nikki)[X]
 Pokemon Mystery Dungeon: Explorers[X]
 ##SongTitle_UpperSteamCave
 Upper Steam Cave (Trikki Nikki)[X]
+
+##SourceTitle_PokemonConquest
+Pokemon Conquest[X]
+##SongTitle_FlyingBattle
+Flying Battle (ArcherBias)[X]
+##SongTitle_DarkBattle
+Dark Battle (ArcherBias)[X]
 
 ##SourceTitle_YGOForbiddenMemories ^
 Yu-Gi-Oh! Forbidden Memories[X]
@@ -134,6 +145,8 @@ Disco Descent (Zappy McCraw)[X]
 Rhythm Doctor[X]
 ##SongTitle_LuckyBreak
 Lucky Break[X]
+##SongTitle_OneSlipTooLate
+One Slip Too Late[X]
 
 ##SourceTitle_Antibirth ^
 The Binding of Isaac: Antibirth[X]
@@ -141,6 +154,11 @@ The Binding of Isaac: Antibirth[X]
 Innocence Glitched[X]
 ##SongTitle_GloriaFilio
 Gloria Filio[X]
+
+##SourceTitle_Arcana
+Arcana[X]
+##SongTitle_TilDeathRimsala
+'Til Death, Rimsala! (Scraiza)[X]
 
 ##SourceTitle_Deltarune
 Deltarune[X]
@@ -170,6 +188,11 @@ Into the Woods[X]
 No One is Alone[X]
 ##SongTitle_NoMore
 No More[X]
+
+##SourceTitle_MerrilyWeRollAlong
+Merrily We Roll Along[X]
+##SongTitle_Incidental3B
+Incidental 3B[X]
 
 ##SourceTitle_MaybeHappyEnding
 Maybe Happy Ending[X]
@@ -228,11 +251,33 @@ Castle (Zappy McCraw)[X]
 Lagoon[X]
 ##SongTitle_Premonition
 Premonition (Scraiza)[X]
+##SongTitle_LivingOnTheEdge
+Living on the Edge[X]
 
 ##SourceTitle_RednGreeen
 RednGreeen[X]
 ##SongTitle_CursedCathedral
 Cursed Cathedral (Zappy McCraw)[X]
+
+##SourceTitle_HarryStyles
+Harry Styles[X]
+##SongTitle_SignOfTheTimes
+Sign of the Times[X]
+
+##SourceTitle_ChappellRoan
+Chappell Roan[X]
+##SongTitle_TheSubway
+The Subway[X]
+
+##SourceTitle_Xenogears
+Xenogears[X]
+##SongTitle_BareFangsAtGod
+One Who Bears Fangs at God[X]
+
+##SourceTitle_BowsersInsideStory ^
+Mario & Luigi: Bowser's Inside Story[X]
+##SongTitle_FinalCastle
+Final Castle[X]
 
 ##SourceTitle_Plok
 Plok[X]
@@ -248,6 +293,11 @@ Murderous Puppets[X]
 Fire Emblem: Three Houses[X]
 ##SongTitle_AsFierceAsFire
 As Fierce as Fire[X]
+
+##SourceTitle_FE7
+Fire Emblem: Blazing Sword[X]
+##SongTitle_EverythingIntoTheDark ^
+Everything Into the Dark (ArcherBias)[X]
 
 ##SourceTitle_FE2
 Fire Emblem Gaiden[X]

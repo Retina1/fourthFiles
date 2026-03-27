@@ -40,7 +40,7 @@ This save file has completed[N]
 Chapter 5: Heroes' Welcome.[A][X]
 ##CityVisit08
 This save file has completed[N]
-Chapter 8: Welcome Home.[A][X]
+Chapter 8: Welcome Back.[A][X]
 ##CityVisit09
 This save file has completed[N]
 Chapter 9: Spinning the Tale Anew.[A][X]
@@ -132,7 +132,7 @@ Unto the Brink[X]
 ##Name_St2
 Shimmering Mines[X]
 ##Name_Ch8
-Welcome Home[X]
+Welcome Back[X]
 
 ##Name_Act2
 Act 2: Someday Just Began[X]

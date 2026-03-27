@@ -831,3 +831,7 @@ setMugEntry(CassandraMug,CassandraDMP,3,5,3,3)
 NadjaDMP:
 #incbin "dmps/zappyNadja.dmp"
 setMugEntry(NadjaMug,NadjaDMP,3,5,3,3)
+ALIGN 4
+CampbellDMP:
+#incbin "dmps/zappyCampbell.dmp"
+setMugEntryExtend(CampbellMug,CampbellDMP,3,4,3,2, 10, 4, 0,0)

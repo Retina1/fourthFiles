@@ -1,5 +1,5 @@
 void ApplyArtificeMachinePrecision(struct BattleUnit* attacker, struct BattleUnit* defender){
-	if (UNIT_HAS_SKILL(&attacker->unit,ATM,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&attacker->unit,ATM,skill_141)){
 		attacker->battleEffectiveHitRate = 100;
 	}
 }

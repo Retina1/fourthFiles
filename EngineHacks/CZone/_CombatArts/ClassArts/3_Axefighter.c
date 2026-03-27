@@ -1,6 +1,6 @@
 //takdwon
 u8 TakedownArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,GLD,promoSkill_531)){
+	if (UNIT_HAS_SKILL(unit,GLD,skill_531)){
 		return CombatArtWeaponTypeAttackingUsability(2);
 	}
 	else return 0;
@@ -13,16 +13,16 @@ void TakedownPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 }
 void TakedownBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	int atkMul = 2;
-	if (UNIT_HAS_SKILL(&actor->unit,GLD,promoSkill_535)){
+	if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_535)){
 		atkMul = 10;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,GLD,promoSkill_534)){
+	else if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_534)){
 		atkMul = 5;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,GLD,promoSkill_533)){
+	else if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_533)){
 		atkMul = 4;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,GLD,promoSkill_532)){
+	else if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_532)){
 		atkMul = 3;
 	}
 	actor->battleAttack = actor->battleAttack*atkMul;

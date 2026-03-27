@@ -273,6 +273,7 @@ Text(Chapter3_NathanLucienTalk)
 EndEvent
 
 EndingScene:
+SET_ACTIVE 0
 ENUT Chapter3DoneFlag
 MUSC Song_EditMode
 CleanTextNoMap(0x18,Chapter3_Ending_1)

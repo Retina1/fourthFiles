@@ -123,7 +123,16 @@ s8 CanUnitUseWeapon(struct Unit* unit, int item) {
 		}
 		else return FALSE;
 	}
-
+	
+	//general scroll disable for arts
+	/* shouldn't be needed
+	if (GetActiveArt(unit) != 0) {
+		if (GetItemType(item) == 0x5) {
+			return FALSE;
+		}
+	}
+	*/
+	
     if (GetItemAttributes(item) & IA_LOCK_ANY) {
         // Check for item locks
 

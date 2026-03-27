@@ -67,7 +67,7 @@ int EtherShotRange(struct Unit* unit, int itemID, int rangeWord){
 
 // eschaton
 u8 EschatonArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,WRK,promoSkill_531)){
+	if (UNIT_HAS_SKILL(unit,WRK,skill_531)){
 		return CombatArtRangeAttackingUsability(1,5, 0x4);
 	}
 	else return 0;
@@ -77,16 +77,16 @@ u8 EschatonArtMenuUsability(const struct MenuItemDef* def, int number){
 }
 void EschatonPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 	int mightBonus = 25;
-	if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_535)){
+	if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_535)){
 		mightBonus = 54;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_534)){
+	else if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_534)){
 		mightBonus = 43;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_533)){
+	else if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_533)){
 		mightBonus = 36;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_532)){
+	else if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_532)){
 		mightBonus = 30;
 	}
 	actor->battleAttack += mightBonus;
@@ -94,16 +94,16 @@ void EschatonPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 void EschatonBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	int atkMul = 15;
 	int atkDiv = 10;
-	if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_535)){
+	if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_535)){
 		atkMul = 35;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_534)){
+	else if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_534)){
 		atkMul = 27;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_533)){
+	else if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_533)){
 		atkMul = 22;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_532)){
+	else if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_532)){
 		atkMul = 18;
 	}
 	actor->battleAttack = actor->battleAttack*atkMul/atkDiv;
@@ -254,7 +254,7 @@ void CaliburPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 
 // galewind
 u8 GalewindArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,WRK,promoSkill_351)){
+	if (UNIT_HAS_SKILL(unit,WRK,skill_351)){
 		return CombatArtRangeAttackingUsability(1,2, 0x4);
 	}
 	else return 0;
@@ -265,11 +265,11 @@ u8 GalewindArtMenuUsability(const struct MenuItemDef* def, int number){
 void GalewindPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 	int mightBonus = 3;
 	int critBonus = 0;
-	if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_353)){
+	if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_353)){
 		mightBonus = 8;
 		critBonus = 10;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,WRK,promoSkill_352)){
+	else if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_352)){
 		mightBonus = 5;
 		critBonus = 5;
 	}

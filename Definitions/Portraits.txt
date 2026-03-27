@@ -206,6 +206,7 @@ MervynMug
 TachyonMug
 GeorgeMug
 AstoriaMug
+CampbellMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

@@ -6,7 +6,7 @@ void ApplyDuelistUnburdened(struct BattleUnit* attacker){
 }
 
 int ApplyDuelistFleetfoot(u8 stat, struct Unit* unit) {
-	if (UNIT_HAS_SKILL(unit,FNC,promoSkill_141)){
+	if (UNIT_HAS_SKILL(unit,FNC,skill_141)){
 		int emptySlots = 5 - GetUnitItemCount(unit);
 		stat = stat + emptySlots;
 	}
@@ -14,7 +14,7 @@ int ApplyDuelistFleetfoot(u8 stat, struct Unit* unit) {
 }
 
 int ApplyDuelistGaleDuelistMovement(u8 stat, struct Unit* unit) {
-	if (UNIT_HAS_SKILL(unit,FNC,promoSkill_531)){
+	if (UNIT_HAS_SKILL(unit,FNC,skill_531)){
 		if ((unit->classSkillState & 0x10) == 0x10) {
 			stat = stat / 2;
 		}
@@ -27,25 +27,25 @@ void ApplyDuelistPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* d
 
 void ApplyDuelistGaleDuelist(struct Unit* unit) {
 
-	if ((UNIT_HAS_SKILL(unit,FNC,promoSkill_531))){
+	if ((UNIT_HAS_SKILL(unit,FNC,skill_531))){
 		//only check if not currently cantoing
 		//if (!(unit->state & US_CANTOING)){
 			//0x10 is gonna be galeforece
 			if ((unit->classSkillState & 0x10) == 0) {
 				int rngSuccess = 0;
-				if ((UNIT_HAS_SKILL(unit,FNC,promoSkill_535))) {
+				if ((UNIT_HAS_SKILL(unit,FNC,skill_535))) {
 					rngSuccess = 1;
 				}			
-				else if ((UNIT_HAS_SKILL(unit,FNC,promoSkill_534))) {
+				else if ((UNIT_HAS_SKILL(unit,FNC,skill_534))) {
 					rngSuccess = Roll1RN(50);
 				}			
-				else if ((UNIT_HAS_SKILL(unit,FNC,promoSkill_533))) {
+				else if ((UNIT_HAS_SKILL(unit,FNC,skill_533))) {
 					rngSuccess = Roll1RN(20);
 				}			
-				else if ((UNIT_HAS_SKILL(unit,FNC,promoSkill_532))) {
+				else if ((UNIT_HAS_SKILL(unit,FNC,skill_532))) {
 					rngSuccess = Roll1RN(10);
 				}			
-				else if ((UNIT_HAS_SKILL(unit,FNC,promoSkill_531))) {
+				else if ((UNIT_HAS_SKILL(unit,FNC,skill_531))) {
 					rngSuccess = Roll1RN(5);
 				}		
 				

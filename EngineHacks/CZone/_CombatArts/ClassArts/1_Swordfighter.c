@@ -1,6 +1,6 @@
 // tempest
 u8 TempestArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,LND,promoSkill_531)){
+	if (UNIT_HAS_SKILL(unit,LND,skill_531)){
 		return CombatArtWeaponTypeAttackingUsability(0);
 	}
 	else return 0;
@@ -9,19 +9,19 @@ u8 TempestArtMenuUsability(const struct MenuItemDef* def, int number){
     return TempestArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
 }
 void TempestBothSides(struct BattleUnit* actor, struct BattleUnit* target){
-	if (UNIT_HAS_SKILL(&actor->unit,LND,promoSkill_535)){
+	if (UNIT_HAS_SKILL(&actor->unit,LND,skill_535)){
 		actor->battleAttack = actor->battleAttack*3/2;
 		target->battleDefense = target->battleDefense*3/2;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,LND,promoSkill_534)){
+	else if (UNIT_HAS_SKILL(&actor->unit,LND,skill_534)){
 		actor->battleAttack = actor->battleAttack*6/5;
 		target->battleDefense = target->battleDefense*6/5;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,LND,promoSkill_533)){
+	else if (UNIT_HAS_SKILL(&actor->unit,LND,skill_533)){
 		actor->battleAttack = actor->battleAttack;
 		target->battleDefense = target->battleDefense;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,LND,promoSkill_532)){
+	else if (UNIT_HAS_SKILL(&actor->unit,LND,skill_532)){
 		actor->battleAttack = actor->battleAttack*7/10;
 		target->battleDefense = target->battleDefense*7/10;
 	}
@@ -82,7 +82,7 @@ void FullBreakBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 }
 // swiftstrikes
 u8 SwiftStrikesArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,LND,promoSkill_351)){
+	if (UNIT_HAS_SKILL(unit,LND,skill_351)){
 		return CombatArtWeaponTypeAttackingUsability(0);
 	}
 	else return 0;
@@ -91,11 +91,11 @@ u8 SwiftStrikesArtMenuUsability(const struct MenuItemDef* def, int number){
     return SwiftStrikesArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
 }
 void SwiftStrikesBothSides(struct BattleUnit* actor, struct BattleUnit* target){
-	if (UNIT_HAS_SKILL(&actor->unit,LND,promoSkill_353)){
+	if (UNIT_HAS_SKILL(&actor->unit,LND,skill_353)){
 		actor->battleAttack = actor->battleAttack*13/10;
 		target->battleDefense = target->battleDefense*13/10;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,LND,promoSkill_352)){
+	else if (UNIT_HAS_SKILL(&actor->unit,LND,skill_352)){
 		actor->battleAttack = actor->battleAttack;
 		target->battleDefense = target->battleDefense;
 	}

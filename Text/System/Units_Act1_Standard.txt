@@ -119,6 +119,14 @@ Hart[X]
 An unfiltered Asketan rider who fights[N]
 for his mother and sister's sake.[X]
 
+
+//zappy
+##Name_Campbell
+Campbell[X]
+##Desc_Campbell
+A business-minded axe rider with[N]
+a background in field research.[X]
+
 //mancalledm
 ##Name_Martin
 Martin[X]

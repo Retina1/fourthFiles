@@ -254,7 +254,7 @@ void FloorDamage(struct BattleUnit* attacker, struct BattleUnit* defender) {
     if ((attacker->battleAttack - defender->battleDefense) < (rawOffense / 3)) {
 		attacker->battleAttack = rawOffense / 3 + defender->battleDefense;
 	//apply unbreakable
-		if (UNIT_HAS_SKILL(&defender->unit,HOP,promoSkill_141)){
+		if (UNIT_HAS_SKILL(&defender->unit,HOP,skill_141)){
 			attacker->battleAttack = attacker->battleAttack / 2;
 			defender->battleDefense = defender->battleDefense / 2;
 		}

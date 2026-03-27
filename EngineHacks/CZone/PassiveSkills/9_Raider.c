@@ -27,7 +27,7 @@ void ApplyRaiderOutrider(struct BattleUnit* attacker){
 
 //bug - changing defender attack here doen't quite work
 void ApplyRaiderTrampleAttacker(struct BattleUnit* attacker, struct BattleUnit* defender){
-	if (UNIT_HAS_SKILL(&attacker->unit,TBZ,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&attacker->unit,TBZ,skill_141)){
 		if (!(UNIT_CATTRIBUTES(&defender->unit) & (CA_MOUNTEDAID|CA_MOUNTED|CA_WYVERN|CA_PEGASUS))){
 			attacker->battleAttack  = attacker->battleAttack * 6/5;
 			attacker->battleSpeed  = attacker->battleSpeed * 6/5;
@@ -36,7 +36,7 @@ void ApplyRaiderTrampleAttacker(struct BattleUnit* attacker, struct BattleUnit* 
 	}
 }
 void ApplyRaiderTrampleDefender(struct BattleUnit* attacker, struct BattleUnit* defender){
-	if (UNIT_HAS_SKILL(&defender->unit,TBZ,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&defender->unit,TBZ,skill_141)){
 		if (!(UNIT_CATTRIBUTES(&attacker->unit) & (CA_MOUNTEDAID|CA_MOUNTED|CA_WYVERN|CA_PEGASUS))){
 			defender->battleDefense  = defender->battleDefense * 9/10;
 			attacker->battleAttack  = attacker->battleAttack * 9/10;

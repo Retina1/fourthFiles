@@ -283,8 +283,8 @@
    <tile gid="235"/>
    <tile gid="236"/>
    <tile gid="584"/>
-   <tile gid="584"/>
-   <tile gid="324"/>
+   <tile gid="226"/>
+   <tile gid="420"/>
    <tile gid="503"/>
    <tile gid="438"/>
    <tile gid="420"/>
@@ -308,8 +308,8 @@
    <tile gid="420"/>
    <tile gid="473"/>
    <tile gid="502"/>
-   <tile gid="417"/>
-   <tile gid="387"/>
+   <tile gid="420"/>
+   <tile gid="584"/>
    <tile gid="226"/>
    <tile gid="548"/>
    <tile gid="149"/>

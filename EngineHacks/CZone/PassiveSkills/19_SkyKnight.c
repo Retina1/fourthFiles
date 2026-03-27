@@ -61,7 +61,7 @@ int ApplySkyKnightSkySquadronDefense(u8 stat, struct Unit* unit) {
 }
 
 int ApplySkyKnightSaviorRush(u8 stat, struct Unit* unit) {
-	if (UNIT_HAS_SKILL(unit,SPH,promoSkill_141)){
+	if (UNIT_HAS_SKILL(unit,SPH,skill_141)){
 		u8* unitBuffer = GetUnitsOfAllegiance(unit, 1);
 		if (unitBuffer == FALSE)
 			return stat;

@@ -56,7 +56,7 @@ void GenerateSummonUnitDef(void)
 
     // 1. get summoner type (soul, souldier, turret)
     summonerType = -1;
-    if (UNIT_HAS_SKILL(gActiveUnit,NCM,promoSkill_141)) {
+    if (UNIT_HAS_SKILL(gActiveUnit,NCM,skill_141)) {
 		summonerType = 1;
 		summonClass = 0x38;
 	}

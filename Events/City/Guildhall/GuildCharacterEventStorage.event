@@ -65,6 +65,7 @@ GuildRecruitEvent(Gloria_RecruitEvent,Gloria)
 GuildRecruitEvent(Pipsy_RecruitEvent,Pipsy)
 GuildRecruitEvent(Son_RecruitEvent,Son)
 GuildRecruitEvent(Hart_RecruitEvent,Hart)
+GuildRecruitEvent(Campbell_RecruitEvent,Campbell)
 //gunners
 GuildRecruitEvent(Martin_RecruitEvent,Martin)
 GuildRecruitEvent(Demico_RecruitEvent,Demico)

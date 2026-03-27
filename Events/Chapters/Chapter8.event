@@ -93,6 +93,7 @@ CallPreps
 EndEvent
 
 EndingScene:
+SET_ACTIVE 0
 ENUT Chapter8DoneFlag
 MUSC 0x0
 CleanTextNoMap(0x18,FillerDialogue)

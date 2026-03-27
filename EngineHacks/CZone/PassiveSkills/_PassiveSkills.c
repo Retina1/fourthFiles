@@ -128,7 +128,7 @@ void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defend
 	BothSidesSwordfighterPassiveSkills(attacker, defender);
 	BothSidesKnightPassiveSkills(attacker, defender);
 	BothSidesAxefighterPassiveSkills(attacker, defender);
-//	BothSidesArcherPassiveSkills(attacker, defender);
+	BothSidesArcherPassiveSkills(attacker, defender);
 	BothSidesScholarPassiveSkills(attacker, defender);
 	//BothSidesCuratePassiveSkills(attacker, defender); curate has no prebattle passives
 	BothSidesMyrmidonPassiveSkills(attacker, defender);

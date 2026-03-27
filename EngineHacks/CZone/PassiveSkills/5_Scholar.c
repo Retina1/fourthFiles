@@ -6,7 +6,7 @@ void ApplyScholarStudiousHit(struct BattleUnit* attacker){
 
 
 void ApplyScholarEthericCharge(struct BattleUnit* attacker, struct BattleUnit* defender){
-	if (UNIT_HAS_SKILL(&attacker->unit,WRK,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&attacker->unit,WRK,skill_141)){
 		if (attacker->unit.index == gBattleActor.unit.index){
 			if (attacker->unit.classSkillState & (1 << 0)){
 				if  ((CombatArtList[GetActiveArt(&attacker->unit)].isMagic)||(GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC)) {
@@ -20,7 +20,7 @@ void ApplyScholarEthericCharge(struct BattleUnit* attacker, struct BattleUnit* d
 
 //todo - work in necessary state bits for element master
 void ApplyScholarEthericChargeDeplete(struct Unit* attacker, struct Unit* defender) {
-	if (UNIT_HAS_SKILL(attacker,WRK,promoSkill_141)){
+	if (UNIT_HAS_SKILL(attacker,WRK,skill_141)){
 		if  (GetActiveArt(attacker)||(GetItemAttributes(gBattleActor.weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(gBattleActor.weapon) & IA_MAGIC)) {
 			if (attacker->classSkillState & (1 << 0)) {
 				attacker->classSkillState =  (attacker->classSkillState) ^ (1 << 0);

@@ -32,7 +32,7 @@ void ApplyGunnerFirefight(struct BattleUnit* attacker){
 }
 
 void ApplyGunnerPointBlank(struct BattleUnit* attacker){
-	if (UNIT_HAS_SKILL(&attacker->unit,DRG,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&attacker->unit,DRG,skill_141)){
 		if (attacker->unit.index == gBattleActor.unit.index){
 			if (gBattleStats.range == 1){
 				attacker->battleSpeed = attacker->battleSpeed * 3;

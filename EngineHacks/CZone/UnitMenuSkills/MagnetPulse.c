@@ -4,13 +4,13 @@ int MagnetPulse_Usability(struct MenuProc* menu) {
 	}
 	if (UNIT_HAS_SKILL(gActiveUnit,ATM,skill_121)) {
 		int range = 3;
-		if (UNIT_HAS_SKILL(gActiveUnit,ATM,promoSkill_353)) {
+		if (UNIT_HAS_SKILL(gActiveUnit,ATM,skill_353)) {
 			range = 10;
 		}
-		else if (UNIT_HAS_SKILL(gActiveUnit,ATM,promoSkill_352)) {
+		else if (UNIT_HAS_SKILL(gActiveUnit,ATM,skill_352)) {
 			range = 7;
 		}
-		else if (UNIT_HAS_SKILL(gActiveUnit,ATM,promoSkill_351)) {
+		else if (UNIT_HAS_SKILL(gActiveUnit,ATM,skill_351)) {
 			range = 5;
 		}
 		
@@ -73,13 +73,13 @@ int GetWarMagusCount(struct Unit* actor) {
 u8 MagnetPulse_Effect (struct MenuProc* menu, struct MenuItemProc* menuItem) {
 	
 	int range = 3;
-	if (UNIT_HAS_SKILL(gActiveUnit,ATM,promoSkill_353)) {
+	if (UNIT_HAS_SKILL(gActiveUnit,ATM,skill_353)) {
 		range = 10;
 	}
-	else if (UNIT_HAS_SKILL(gActiveUnit,ATM,promoSkill_352)) {
+	else if (UNIT_HAS_SKILL(gActiveUnit,ATM,skill_352)) {
 		range = 7;
 	}
-	else if (UNIT_HAS_SKILL(gActiveUnit,ATM,promoSkill_351)) {
+	else if (UNIT_HAS_SKILL(gActiveUnit,ATM,skill_351)) {
 		range = 5;
 	}
 	

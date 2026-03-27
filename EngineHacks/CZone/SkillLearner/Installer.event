@@ -135,17 +135,17 @@ OneLevelSkillLabel(SightingSkill,NoReq)//0
 OneLevelSkillLabel(PerchSkill,NoReq)
 OneLevelSkillLabel(TargetMarkSkill,TargetMarkReq)
 OneLevelSkillLabel(KillerAimSkill,PromotedReq)
-TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
-TwoLevelSkillLabel(PlaceholderLabel,DropShotReq)
-TwoLevelSkillLabel(PlaceholderLabel,InescapableReq)
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
-ThreeLevelSkillLabel(PlaceholderLabel,PowerShotReq)
-ThreeLevelSkillLabel(PlaceholderLabel,FlankShotReq)
-ThreeLevelSkillLabel(PlaceholderLabel,ArmorPiercerReq)
-ThreeLevelSkillLabel(PlaceholderLabel,CloserReq)
-FiveLevelSkillLabel(PlaceholderLabel,PointBlankVolleyReq)//12
-FiveLevelSkillLabel(PlaceholderLabel,SquallVolleyReq)
-FiveLevelSkillLabel(PlaceholderLabel,AstralVolleyReq)
+TwoLevelSkillLabel(SureAimSkill,NoReq)//4
+TwoLevelSkillLabel(DropShotSkill,DropShotReq)
+TwoLevelSkillLabel(InescapableSkill,InescapableReq)
+ThreeLevelSkillLabel(CurvedShotSkill,NoReq)//7
+ThreeLevelSkillLabel(PowerShotSkill,PowerShotReq)
+ThreeLevelSkillLabel(FlankShotSkill,FlankShotReq)
+ThreeLevelSkillLabel(ArmorPiercerSkill,ArmorPiercerReq)
+ThreeLevelSkillLabel(CloserSkill,CloserReq)
+FiveLevelSkillLabel(PointBlankVolleySkill,PointBlankVolleyReq)//12
+FiveLevelSkillLabel(SquallVolleySkill,SquallVolleyReq)
+FiveLevelSkillLabel(AstralVolleySkill,AstralVolleyReq)
 SkillLabelTerminator
 
 

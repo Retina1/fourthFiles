@@ -8,3 +8,4 @@ MineshaftCONFIG
 CavesCONFIG
 FrontierCONFIG
 DesertCONFIG
+CastleCONFIG

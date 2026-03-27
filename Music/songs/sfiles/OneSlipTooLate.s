@@ -1,36 +1,36 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	OneSlipTooLate_grp, voicegroup000
+	.equ	OneSlipTooLate_pri, 0
+	.equ	OneSlipTooLate_rev, 0
+	.equ	OneSlipTooLate_mvl, 127
+	.equ	OneSlipTooLate_key, 0
+	.equ	OneSlipTooLate_tbs, 1
+	.equ	OneSlipTooLate_exg, 0
+	.equ	OneSlipTooLate_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	OneSlipTooLate
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+OneSlipTooLate_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_011B4E32:
- .byte   TEMPO , 174*song09_tbs/2
+ .byte   TEMPO , 174*OneSlipTooLate_tbs/2
  .byte   VOICE , 4
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N23 ,Dn2 ,v080
  .byte   N23 ,Fs2
@@ -859,7 +859,7 @@ Label_011B515A:
  .byte   Fs4
  .byte   W01
 @  #01 @064   ----------------------------------------
- .byte   TEMPO , 150*song09_tbs/2
+ .byte   TEMPO , 150*OneSlipTooLate_tbs/2
  .byte   W96
 @  #01 @065   ----------------------------------------
  .byte   W96
@@ -876,7 +876,7 @@ Label_011B515A:
 @  #01 @071   ----------------------------------------
  .byte   W96
 @  #01 @072   ----------------------------------------
- .byte   TEMPO , 174*song09_tbs/2
+ .byte   TEMPO , 174*OneSlipTooLate_tbs/2
  .byte   W96
 @  #01 @073   ----------------------------------------
  .byte   W96
@@ -1100,20 +1100,20 @@ Label_011B5366:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+OneSlipTooLate_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD7586:
  .byte   VOICE , 28
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #02 @001   ----------------------------------------
@@ -1527,20 +1527,20 @@ Label_FD7586:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+OneSlipTooLate_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD7702:
  .byte   VOICE , 29
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #03 @001   ----------------------------------------
@@ -1975,20 +1975,20 @@ Label_FD776C:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+OneSlipTooLate_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_011B53EE:
  .byte   VOICE , 100
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #04 @001   ----------------------------------------
@@ -3309,18 +3309,18 @@ Label_011B5440:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+OneSlipTooLate_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD7072:
  .byte   VOICE , 91
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #05 @001   ----------------------------------------
@@ -3589,18 +3589,18 @@ Label_FD7072:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+OneSlipTooLate_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD7146:
  .byte   VOICE , 92
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #06 @001   ----------------------------------------
@@ -3943,18 +3943,18 @@ Label_FD71BD:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song09_007:
+OneSlipTooLate_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD729E:
  .byte   VOICE , 93
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #07 @001   ----------------------------------------
@@ -4227,18 +4227,18 @@ Label_FD729E:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song09_008:
+OneSlipTooLate_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD61FE:
  .byte   VOICE , 24
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #08 @001   ----------------------------------------
@@ -4470,12 +4470,12 @@ Label_FD61FE:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song09_009:
+OneSlipTooLate_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_011B5BBA:
  .byte   VOICE , 24
- .byte   VOL , 46*song09_mvl/mxv
+ .byte   VOL , 46*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   En3 ,v064
  .byte   PAN , c_v+0
@@ -5506,12 +5506,12 @@ Label_011B60F1:
 
 @**************** Track 10 (Midi-Chn.9) ****************@
 
-song09_010:
+OneSlipTooLate_010:
 @  #10 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD628E:
  .byte   VOICE , 18
- .byte   VOL , 31*song09_mvl/mxv
+ .byte   VOL , 31*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   En3 ,v064
  .byte   PAN , c_v+0
@@ -5942,18 +5942,18 @@ Label_FD62FB:
 
 @**************** Track 11 (Midi-Chn.10) ****************@
 
-song09_011:
+OneSlipTooLate_011:
 @  #11 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD645A:
  .byte   VOICE , 101
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #11 @001   ----------------------------------------
@@ -6255,18 +6255,18 @@ Label_FD645A:
 
 @**************** Track 12 (Midi-Chn.11) ****************@
 
-song09_012:
+OneSlipTooLate_012:
 @  #12 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_FD699A:
  .byte   VOICE , 29
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #12 @001   ----------------------------------------
@@ -6578,14 +6578,14 @@ Label_FD6A25:
 
 @**************** Track 13 (Midi-Chn.12) ****************@
 
-song09_013:
+OneSlipTooLate_013:
 @  #13 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , OneSlipTooLate_key+0
 Label_011B615E:
  .byte   VOICE , 124
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*OneSlipTooLate_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #13 @001   ----------------------------------------
@@ -7565,26 +7565,26 @@ Label_011B651D:
 @******************************************************@
 	.align	2
 
-song09:
+OneSlipTooLate:
 	.byte	13	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	OneSlipTooLate_pri	@ Priority
+	.byte	OneSlipTooLate_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	OneSlipTooLate_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
-	.word	song09_007
-	.word	song09_008
-	.word	song09_009
-	.word	song09_010
-	.word	song09_011
-	.word	song09_012
-	.word	song09_013
+	.word	OneSlipTooLate_001
+	.word	OneSlipTooLate_002
+	.word	OneSlipTooLate_003
+	.word	OneSlipTooLate_004
+	.word	OneSlipTooLate_005
+	.word	OneSlipTooLate_006
+	.word	OneSlipTooLate_007
+	.word	OneSlipTooLate_008
+	.word	OneSlipTooLate_009
+	.word	OneSlipTooLate_010
+	.word	OneSlipTooLate_011
+	.word	OneSlipTooLate_012
+	.word	OneSlipTooLate_013
 
 	.end

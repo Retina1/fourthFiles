@@ -59,25 +59,39 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 EnemyUnits:
-UNIT EndbringerGeneric Scholar 0x0 Level(8,Enemy,1) [7,5] 0x0 0x0 0x0 0x0 [FreezeScroll] AttackInRangeAI
+UNIT EndbringerGeneric Scholar 0x0 Level(8,Enemy,1) [7,5] 0x0 0x0 0x0 0x0 [FlameScroll] AttackInRangeAI
+UNIT EndbringerGeneric Axefighter 0x0 Level(8,Enemy,1) [6,4] 0x0 0x0 0x0 0x0 [SerratedAxe] AttackInRangeAI
+UNIT EndbringerGeneric Axefighter 0x0 Level(8,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT EndbringerGeneric Apothecary 0x0 Level(8,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [SleepGas] NeverMoveAI
+UNIT EndbringerGeneric Apothecary 0x0 Level(8,Enemy,1) [15,6] 0x0 0x0 0x0 0x0 [SleepGas] NeverMoveAI
+UNIT EndbringerGeneric Scholar 0x0 Level(8,Enemy,1) [11,3] 0x0 0x0 0x0 0x0 [FreezeScroll] AttackInRangeAI
 UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
 UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
-UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [12,0] 0x0 0x0 0x0 0x0 [Boarblade] NoAI
-UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [1,14] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
-UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [4,13] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [12,0] 0x0 0x0 0x0 0x0 [Boarblade] DelayedAI
+UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [1,14] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
+UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [4,13] 0x0 0x0 0x0 0x0 [HandSpear] DelayedAI
+UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [13,13] 0x0 0x0 0x0 0x0 [Shieldlance] DelayedAI
+UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [HandSpear] ChaseOnceApproachedAI
+UNIT EndbringerGeneric SkyKnight 0x0 Level(8,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [Pike] ChaseOnceApproachedAI
+UNIT EndbringerGeneric Hunter 0x0 Level(8,Enemy,1) [18,13] 0x0 0x0 0x0 0x0 [Recurve] ChaseOnceApproachedAI
+UNIT EndbringerGeneric Hunter 0x0 Level(8,Enemy,1) [19,12] 0x0 0x0 0x0 0x0 [Longbow] ChaseOnceApproachedAI
+UNIT EndbringerGeneric Rider 0x0 Level(8,Enemy,1) [20,15] 0x0 0x0 0x0 0x0 [Partizan] ChaseOnceApproachedAI
+UNIT EndbringerGeneric DarkHunter 0x0 Level(8,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [ThornWhip] NoAI
+UNIT EndbringerGeneric DarkHunter 0x0 Level(8,Enemy,1) [11,7] 0x0 0x0 0x0 0x0 [ThornWhip] NoAI
 
 UNIT EndbringerGeneric Axefighter 0x0 Level(8,Enemy,1) [18,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
 UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [18,8] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
-UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT EndbringerGeneric Swordfighter 0x0 Level(8,Enemy,1) [16,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
 UNIT EndbringerGeneric Gunner 0x0 Level(8,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
 
 UNIT EndbringerGeneric Hunter 0x0 Level(8,Enemy,1) [15,2] 0x0 0x0 0x0 0x0 [ToxinBow] AttackInRangeAI
-UNIT EndbringerGeneric Lancer 0x0 Level(8,Enemy,1) [15,3] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT EndbringerGeneric Lancer 0x0 Level(8,Enemy,1) [15,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
 UNIT EndbringerGeneric Lancer 0x0 Level(8,Enemy,1) [16,2] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
 UNIT EndbringerGeneric Axefighter 0x0 Level(8,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
 
 UNIT EndbringerGeneric Sniper 0x0 Level(8,Enemy,1) [16,6] 0x0 0x0 0x0 0x0 [Shortbow,CompactBow] AttackInRangeAI
 UNIT Astoria Seeker 0x0 Level(10,Enemy,1) [16,10] DropItem 0x0 0x0 0x0 [ShineScroll] AttackInRangeAI
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [7,15] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
 
 UNIT
 
@@ -93,6 +107,7 @@ CallPreps
 EndEvent
 
 EndingScene:
+SET_ACTIVE 0
 MUSC 0x0
 CleanTextNoMap(0x18,FillerDialogue)
 SilentKillUnit(Benthus)

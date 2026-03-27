@@ -1,27 +1,27 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	ScatterAbout_grp, voicegroup000
+	.equ	ScatterAbout_pri, 0
+	.equ	ScatterAbout_rev, 0
+	.equ	ScatterAbout_mvl, 127
+	.equ	ScatterAbout_key, 0
+	.equ	ScatterAbout_tbs, 1
+	.equ	ScatterAbout_exg, 0
+	.equ	ScatterAbout_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	ScatterAbout
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+ScatterAbout_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
- .byte   TEMPO , 162*song09_tbs/2
+ .byte   KEYSH , ScatterAbout_key+0
+ .byte   TEMPO , 162*ScatterAbout_tbs/2
  .byte   VOICE , 28
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*ScatterAbout_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N36 ,Fn2 ,v104
  .byte   W48
@@ -612,12 +612,12 @@ Label_011A9F4A:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+ScatterAbout_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , ScatterAbout_key+0
  .byte   VOICE , 81
  .byte   PAN , c_v-25
- .byte   VOL , 47*song09_mvl/mxv
+ .byte   VOL , 47*ScatterAbout_mvl/mxv
  .byte   N23 ,Bn1 ,v096
  .byte   N23 ,Fn2
  .byte   N23 ,Cn3
@@ -1261,12 +1261,12 @@ Label_011A8A27:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song09_003:
+ScatterAbout_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , ScatterAbout_key+0
  .byte   VOICE , 30
  .byte   PAN , c_v+27
- .byte   VOL , 47*song09_mvl/mxv
+ .byte   VOL , 47*ScatterAbout_mvl/mxv
  .byte   N23 ,Bn2 ,v096
  .byte   N23 ,Fn3
  .byte   W32
@@ -1804,11 +1804,11 @@ Label_011A8D4A:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song09_004:
+ScatterAbout_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , ScatterAbout_key+0
  .byte   VOICE , 45
- .byte   VOL , 56*song09_mvl/mxv
+ .byte   VOL , 56*ScatterAbout_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W72
  .byte   N03 ,Bn2 ,v036
@@ -2088,11 +2088,11 @@ Label_011A9A68:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song09_005:
+ScatterAbout_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , ScatterAbout_key+0
  .byte   VOICE , 45
- .byte   VOL , 41*song09_mvl/mxv
+ .byte   VOL , 41*ScatterAbout_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N23 ,Fs2 ,v080
  .byte   N24 ,Bn2
@@ -2798,11 +2798,11 @@ Label_011A9008:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song09_006:
+ScatterAbout_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , ScatterAbout_key+0
  .byte   VOICE , 28
- .byte   VOL , 56*song09_mvl/mxv
+ .byte   VOL , 56*ScatterAbout_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #06 @001   ----------------------------------------
@@ -3051,11 +3051,11 @@ Label_011A9E14:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song09_007:
+ScatterAbout_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , ScatterAbout_key+0
  .byte   VOICE , 36
- .byte   VOL , 44*song09_mvl/mxv
+ .byte   VOL , 44*ScatterAbout_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #07 @001   ----------------------------------------
@@ -3353,13 +3353,13 @@ Label_011A964B:
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song09_008:
+ScatterAbout_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , ScatterAbout_key+0
  .byte   VOICE , 124
- .byte   VOL , 56*song09_mvl/mxv
+ .byte   VOL , 56*ScatterAbout_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 56*song09_mvl/mxv
+ .byte   VOL , 56*ScatterAbout_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N23 ,Cn1 ,v127
  .byte   N92 ,An2 ,v120
@@ -4414,21 +4414,21 @@ Label_011AA823:
 @******************************************************@
 	.align	2
 
-song09:
+ScatterAbout:
 	.byte	8	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	ScatterAbout_pri	@ Priority
+	.byte	ScatterAbout_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	ScatterAbout_grp
     
-	.word	song09_001
-	.word	song09_002
-	.word	song09_003
-	.word	song09_004
-	.word	song09_005
-	.word	song09_006
-	.word	song09_007
-	.word	song09_008
+	.word	ScatterAbout_001
+	.word	ScatterAbout_002
+	.word	ScatterAbout_003
+	.word	ScatterAbout_004
+	.word	ScatterAbout_005
+	.word	ScatterAbout_006
+	.word	ScatterAbout_007
+	.word	ScatterAbout_008
 
 	.end

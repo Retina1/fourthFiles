@@ -228,6 +228,7 @@ LABEL 0x2
 EndEvent
 
 EndingScene:
+SET_ACTIVE 0
 MUSC Song_EditMode
 CleanTextNoMap(0x18,Chapter4_Ending1)
 //map event

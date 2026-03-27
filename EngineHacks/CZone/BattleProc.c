@@ -58,7 +58,7 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 	}
 	
 	
-	if (UNIT_HAS_SKILL(&attacker->unit,HEX,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&attacker->unit,HEX,skill_141)){
 			accuracy = accuracy + 25;
 	}
 	
@@ -317,13 +317,13 @@ u16 ApplyRallyingCryThrift(struct BattleUnit* attacker, int cost) {
 			source = GetUnitFromRallyID(entry->buff3);
 		}
 		
-		if (UNIT_HAS_SKILL(source,SOV,promoSkill_353)){
+		if (UNIT_HAS_SKILL(source,SOV,skill_353)){
 			cost = cost - 3;
 		}
-		else if (UNIT_HAS_SKILL(source,SOV,promoSkill_352)){
+		else if (UNIT_HAS_SKILL(source,SOV,skill_352)){
 			cost = cost - 2;
 		}
-		else if (UNIT_HAS_SKILL(source,SOV,promoSkill_351)){
+		else if (UNIT_HAS_SKILL(source,SOV,skill_351)){
 			cost = cost - 1;
 		}
 		
@@ -394,7 +394,7 @@ void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit*
 
     if (BattleRoll1RN(gBattleStats.critRate, FALSE) == TRUE) {
         gBattleHitIterator->attributes = gBattleHitIterator->attributes | BATTLE_HIT_ATTR_CRIT;
-		if (UNIT_HAS_SKILL(&attacker->unit,RNM,promoSkill_141)){
+		if (UNIT_HAS_SKILL(&attacker->unit,RNM,skill_141)){
 			gBattleStats.damage = gBattleStats.damage * 4;
 		}
 		else {

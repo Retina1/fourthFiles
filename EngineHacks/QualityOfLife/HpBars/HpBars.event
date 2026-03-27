@@ -7,14 +7,11 @@
 MESSAGE kid named scraiza776
 //this is here because optionystuff
 
-  {
+
   
   #include "GameOptions/Installer.event"
 
   PUSH
-    ORG $276b4
-      jumpToHack(HPBarsOnMapHack)
-	  
 	//Need to add SupportCheck as well as existing TalkCheck
 
     ORG $15690 // Change width of loaded image
@@ -48,13 +45,10 @@ MESSAGE kid named scraiza776
     POIN HPFrames+88
 
   ALIGN 4
-  HPBarsOnMapHack:
-    #include "asm/WarningAndHpBars.lyn.event"
-
-  ALIGN 4
   HPBarGraphic:
     #incbin "bin/WarningHpSheet.dmp" 
 	
+/*
   ALIGN 4
   WS_FrameData: //should be the OAM data
 	WORD 0x000f0001 //8x8 sprite
@@ -65,8 +59,8 @@ MESSAGE kid named scraiza776
   Talk_FrameData:
 	WORD 0x400f0001 //16x8 sprite
 	WORD 0x087001ee //tile #0x70
+*/
 
-  }
 
 #else // _FE8_
   ERROR HpBars hack is for FE8

@@ -6,7 +6,7 @@ void ApplyPriestWarImbue(struct BattleUnit* attacker){
 }
 
 void ApplyPriestWarPierce(struct BattleUnit* attacker, struct BattleUnit* defender){
-	if (UNIT_HAS_SKILL(&attacker->unit,WMG,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&attacker->unit,WMG,skill_141)){
 		if (defender->battleDefense > defender->unit.def){
 			defender->battleDefense  = defender->unit.def;
 		}

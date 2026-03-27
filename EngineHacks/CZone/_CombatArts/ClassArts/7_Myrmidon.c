@@ -1,12 +1,12 @@
 //peerlesscombo
 u8 PeerlessComboArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,RNI,promoSkill_531)){
+	if (UNIT_HAS_SKILL(unit,RNI,skill_531)){
 		if (gActiveUnit->classSkillState != 0) {
 			int maxRange = 2;
-			if (UNIT_HAS_SKILL(unit,RNI,promoSkill_535)){
+			if (UNIT_HAS_SKILL(unit,RNI,skill_535)){
 				maxRange = 5;
 			}
-			else if (UNIT_HAS_SKILL(unit,RNI,promoSkill_534)){
+			else if (UNIT_HAS_SKILL(unit,RNI,skill_534)){
 				maxRange = 3;
 			}
 			return CombatArtRangeAttackingUsability(1,maxRange,0);
@@ -19,19 +19,19 @@ u8 PeerlessComboArtMenuUsability(const struct MenuItemDef* def, int number){
     return PeerlessComboArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
 }
 void PeerlessComboBothSides(struct BattleUnit* actor, struct BattleUnit* target){
-	if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_535)){
+	if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_535)){
 		actor->battleAttack = actor->battleAttack*5/2;
 		target->battleDefense = target->battleDefense*5/2;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_534)){
+	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_534)){
 		actor->battleAttack = actor->battleAttack*16/10;
 		target->battleDefense = target->battleDefense*16/10;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_533)){
+	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_533)){
 		actor->battleAttack = actor->battleAttack*14/10;
 		target->battleDefense = target->battleDefense*14/10;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_532)){
+	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_532)){
 		actor->battleAttack = actor->battleAttack*12/10;
 		target->battleDefense = target->battleDefense*12/10;
 	}
@@ -42,10 +42,10 @@ void PeerlessComboBothSides(struct BattleUnit* actor, struct BattleUnit* target)
 }
 int PeerlessComboOdds(struct BattleUnit* actor, struct BattleUnit* target){
 	int odds = 20;
-	if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_535)){
+	if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_535)){
 		odds = 50;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_532)){
+	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_532)){
 		odds = 30;
 	}
 	return odds;
@@ -54,11 +54,11 @@ void PeerlessComboPostbattle(struct Unit* actor, struct Unit* target){
 	CallEvent(&GenericAOEEvent, 0x1);
 	int damage = gBattleActor.battleAttack - gBattleTarget.battleDefense;
 	int range = 2;
-	if (UNIT_HAS_SKILL(actor,RNI,promoSkill_535)){
+	if (UNIT_HAS_SKILL(actor,RNI,skill_535)){
 		damage = damage/2;
 		range = 5;
 	}
-	else if (UNIT_HAS_SKILL(actor,RNI,promoSkill_533)){
+	else if (UNIT_HAS_SKILL(actor,RNI,skill_533)){
 		damage = damage * 3 / 10;
 		range = 3;
 	}
@@ -88,10 +88,10 @@ int PeerlessComboHitCount(struct BattleUnit* actor){
 }
 int PeerlessComboRange(struct Unit* unit, int itemID, int rangeWord){
 	if (GetItemType(itemID) == 0x0) {
-		if (UNIT_HAS_SKILL(unit,RNI,promoSkill_535)){
+		if (UNIT_HAS_SKILL(unit,RNI,skill_535)){
 			return 0x00010005;
 		}
-		else if (UNIT_HAS_SKILL(unit,RNI,promoSkill_534)){
+		else if (UNIT_HAS_SKILL(unit,RNI,skill_534)){
 			return 0x00010003;
 		}
 		else return 0x00010002;
@@ -156,10 +156,10 @@ int BeheadingOdds(struct BattleUnit* actor, struct BattleUnit* target){
 
 //airslash
 u8 AirslashArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,RNI,promoSkill_351)){
+	if (UNIT_HAS_SKILL(unit,RNI,skill_351)){
 		if (gActiveUnit->classSkillState != 0) {
 			int maxRange = 2;
-			if (UNIT_HAS_SKILL(unit,RNI,promoSkill_353)){
+			if (UNIT_HAS_SKILL(unit,RNI,skill_353)){
 				maxRange = 3;
 			}
 			return CombatArtRangeAttackingUsability(1,maxRange,0);
@@ -173,20 +173,20 @@ u8 AirslashArtMenuUsability(const struct MenuItemDef* def, int number){
 }
 void AirslashPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 	int hitMul = 12;
-	if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_353)){
+	if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_353)){
 		hitMul = 18;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_352)){
+	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_352)){
 		hitMul = 15;
 	}
 	actor->battleHitRate = actor->battleHitRate * hitMul / 10;
 }
 void AirslashBothSides(struct BattleUnit* actor, struct BattleUnit* target){
-	if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_353)){
+	if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_353)){
 		actor->battleAttack = actor->battleAttack*18/10;
 		target->battleDefense = target->battleDefense*18/10;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,promoSkill_352)){
+	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_352)){
 		actor->battleAttack = actor->battleAttack*15/10;
 		target->battleDefense = target->battleDefense*15/10;
 	}
@@ -197,7 +197,7 @@ void AirslashBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 }
 int AirslashRange(struct Unit* unit, int itemID, int rangeWord){
 	if (GetItemType(itemID) == 0x0) {
-		if (UNIT_HAS_SKILL(unit,RNI,promoSkill_353)){
+		if (UNIT_HAS_SKILL(unit,RNI,skill_353)){
 			return 0x00010003;
 		}
 		else return 0x00010002;

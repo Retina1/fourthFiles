@@ -9,7 +9,10 @@ BossBGMEntry(BossBenthus,Song_Fracas)
 BossBGMEntry(MonsterBoss,Song_Fracas)
 BossBGMEntry(Quarry,Song_Fracas)
 BossBGMEntry(BossSaewynn,Song_Fracas)
+BossBGMEntry(Hitchcock,Song_Fracas)
+BossBGMEntry(Astoria,Song_Fracas)
 BossBGMEntry(BossBenthus2,Song_Rhapsody)
+BossBGMEntry(George,Song_Fracas)
 //endbringers
 BossBGMEntry(Xavens,Song_DesperateAssault)
 BossBGMEntry(Egil,Song_DesperateAssault)
@@ -20,7 +23,8 @@ BossBGMEntry(Second,Song_Castle)
 BossBGMEntry(Swift,Song_Castle)
 BossBGMEntry(NPCFourth,Song_Castle)
 //personal boss music?
-BossBGMEntry(Rana,Song_DesperateAssault)
+BossBGMEntry(Rana,Song_EverythingIntoTheDark)
+BossBGMEntry(BossGuildmaster,Song_BattleB6)
 BossBGMTerminator
 
 PUSH

@@ -36,7 +36,6 @@ setCardEntry(PriestCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(BotanistCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(CallerCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(NecromancerCard,WightCardPortrait,WightCardPortraitPalette)
-setCardEntry(SovereignCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(DuelistCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(FencerCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(ArtificeCard,WightCardPortrait,WightCardPortraitPalette)
@@ -57,6 +56,37 @@ setCardEntry(OphanimCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(WolfskinCard,WightCardPortrait,WightCardPortraitPalette)
 setCardEntry(WolfkingCard,WightCardPortrait,WightCardPortraitPalette)
 */
+
+
+ALIGN 4
+CallerCardPortrait:
+#incbin "classCards\Occultist (M) Magic {Valak}.png.dmp"
+CallerCardPortraitPalette:
+#incbin "classCards\Occultist (M) Magic {Valak}.pngPalette.dmp"
+setCardEntry(CallerCard,CallerCardPortrait,CallerCardPortraitPalette)
+
+ALIGN 4
+NecromancerCardPortrait:
+#incbin "classCards\Cantor (M) Gaiden, SoV {HyperGammaSpaces}.dmp"
+NecromancerCardPortraitPalette:
+#incbin "classCards\Cantor (M) Gaiden, SoV {HyperGammaSpaces}Palette.dmp"
+setCardEntry(NecromancerCard,NecromancerCardPortrait,NecromancerCardPortraitPalette)
+
+
+ALIGN 4
+LurkerCardPortrait:
+#incbin "classCards\Dark Mage (M) {Jj09}.dmp"
+LurkerCardPortraitPalette:
+#incbin "classCards\Dark Mage (M) {Jj09}Palette.dmp"
+setCardEntry(LurkerCard,LurkerCardPortrait,LurkerCardPortraitPalette)
+
+//edit ghost out?
+ALIGN 4
+HexerCardPortrait:
+#incbin "classCards\Summoner (M) {Uncredited}.dmp"
+HexerCardPortraitPalette:
+#incbin "classCards\Summoner (M) {Uncredited}Palette.dmp"
+setCardEntry(HexerCard,HexerCardPortrait,HexerCardPortraitPalette)
 
 
 ALIGN 4
@@ -86,6 +116,12 @@ NobleCardPortrait:
 NobleCardPortraitPalette:
 #incbin "classCards\nobleCardPalette.dmp"
 setCardEntry(NobleCard,NobleCardPortrait,NobleCardPortraitPalette)
+ALIGN 4
+SovereignCardPortrait:
+#incbin "classCards\Ephraim Great Lord (M) Cape Sword {ZoramineFae}.dmp"
+SovereignCardPortraitPalette:
+#incbin "classCards\Ephraim Great Lord (M) Cape Sword {ZoramineFae}Palette.dmp"
+setCardEntry(SovereignCard,SovereignCardPortrait,SovereignCardPortraitPalette)
 
 ALIGN 4
 ApothecaryCardPortrait:
@@ -369,21 +405,6 @@ WarMagusCardPortraitPalette:
 setCardEntry(WarMagusCard,WarMagusCardPortrait,WarMagusCardPortraitPalette)
 
 ALIGN 4
-LurkerCardPortrait:
-#incbin "classCards\Occultist (M) Magic {Valak}.png.dmp"
-LurkerCardPortraitPalette:
-#incbin "classCards\Occultist (M) Magic {Valak}.pngPalette.dmp"
-setCardEntry(LurkerCard,LurkerCardPortrait,LurkerCardPortraitPalette)
-
-//edit ghost out?
-ALIGN 4
-HexerCardPortrait:
-#incbin "classCards\Summoner (M) {Uncredited}.dmp"
-HexerCardPortraitPalette:
-#incbin "classCards\Summoner (M) {Uncredited}Palette.dmp"
-setCardEntry(HexerCard,HexerCardPortrait,HexerCardPortraitPalette)
-
-ALIGN 4
 LancerCardPortrait:
 #incbin "classCards\Militia (M) Deserter Lance {Rasdel}.dmp"
 LancerCardPortraitPalette:
@@ -421,9 +442,9 @@ setCardEntry(HunterCard,HunterCardPortrait,HunterCardPortraitPalette)
 
 ALIGN 4
 SurvivalistCardPortrait:
-#incbin "classCards\Surv (M) Bow {Aruka, Yggdra, N426}.dmp"
+#incbin "classCards\Adventurer (M) {Cygnus}.dmp"
 SurvivalistCardPortraitPalette:
-#incbin "classCards\Surv (M) Bow {Aruka, Yggdra, N426}Palette.dmp"
+#incbin "classCards\Adventurer (M) {Cygnus}Palette.dmp"
 setCardEntry(SurvivalistCard,SurvivalistCardPortrait,SurvivalistCardPortraitPalette)
 
 ALIGN 4

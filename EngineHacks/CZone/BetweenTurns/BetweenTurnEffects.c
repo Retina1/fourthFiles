@@ -70,7 +70,7 @@ void TickActiveFactionTurn(void) {
 			}
         }
 		//eschaton recharge
-		if (UNIT_HAS_SKILL(unit,WRK,promoSkill_531)) {
+		if (UNIT_HAS_SKILL(unit,WRK,skill_531)) {
 			if (unit->classSkillState & (1 << 1)) {
 				unit->state = (unit->state)|US_UNSELECTABLE;
 				unit->classSkillState = unit->classSkillState ^ (1 << 1);

@@ -185,8 +185,8 @@ of highly accurate close shots.[X]
 Squall Volley: Loose numerous[N]
 far-range low-accuracy shots.[X]
 ##
-Astral Volley: Charge, then loose[N]
-10 shots with incredible range.[X]
+Astral Volley: Loose 10 shots[N]
+with incredible range.[X]
 
 //scho
 ##MSS_Studious

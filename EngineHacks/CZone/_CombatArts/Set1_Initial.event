@@ -184,6 +184,88 @@ CombatArt((NullArt + 33), UM_Takedown, UM_TakedownDesc, \
 		  0, 0, \
 		  PhysArt,0,0)
 //ARHCER
+//sure hit eventually
+CombatArt((NullArt + 35),UM_DropShot,UM_DropShotDesc, \
+		  3, \
+		  DropShotArtUsability,DropShotArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, DropShotBothSides, \
+		  0, 0, \
+		  DropShotRange, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 37),UM_CurvedShot,UM_CurvedShotDesc, \
+		  3, \
+		  CurvedShotArtUsability,CurvedShotArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  CurvedShotPrebattle, CurvedShotBothSides, \
+		  0, 0, \
+		  CurvedShotRange, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 38),UM_PowerShot,UM_PowerShotDesc, \
+		  4, \
+		  PowerShotArtUsability,PowerShotArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  PowerShotPrebattle, PowerShotBothSides, \
+		  0, 0, \
+		  PowerShotRange, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 39),UM_FlankShot,UM_FlankShotDesc, \
+		  4, \
+		  FlankShotArtUsability,FlankShotArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  FlankShotPrebattle, FlankShotBothSides, \
+		  0, 0, \
+		  ShootLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 40),UM_ArmorPiercer,UM_ArmorPiercerDesc, \
+		  5, \
+		  ArmorPiercerArtUsability,ArmorPiercerArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, ArmorPiercerBothSides, \
+		  0, 0, \
+		  ShootLock, \
+		  0, 0, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 41),UM_Closer,UM_CloserDesc, \
+		  5, \
+		  CloserArtUsability,CloserArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  0, CloserBothSides, \
+		  0, 0, \
+		  CloserRange, \
+		  CloserOdds, 0, \
+		  PhysArt,0,LegBindEffect)
+CombatArt((NullArt + 42),UM_PointBlankVolley,UM_PointBlankVolleyDesc, \
+		  4, \
+		  PointBlankVolleyArtUsability,PointBlankVolleyArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  PointBlankVolleyPrebattle, PointBlankVolleyBothSides, \
+		  0, 0, \
+		  PointBlankVolleyRange, \
+		  0, PointBlankVolleyHitCount, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 43),UM_SquallVolley,UM_SquallVolleyDesc, \
+		  6, \
+		  SquallVolleyArtUsability,SquallVolleyArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  SquallVolleyPrebattle, SquallVolleyBothSides, \
+		  0, 0, \
+		  SquallVolleyRange, \
+		  0, SquallVolleyHitCount, \
+		  PhysArt,0,0)
+CombatArt((NullArt + 44),UM_AstralVolley,UM_AstralVolleyDesc, \
+		  10, \
+		  AstralVolleyArtUsability,AstralVolleyArtMenuUsability,0, \
+		  CombatArtGeneralAttackingEffect, \
+		  AstralVolleyPrebattle, AstralVolleyBothSides, \
+		  0, 0, \
+		  AstralVolleyRange, \
+		  0, AstralVolleyHitCount, \
+		  PhysArt,0,0)
 //SCHOLAR
 //need - anims for calibur, surge, earthspike, megido, eschaton
 CombatArt((NullArt + 45), UM_Calibur, UM_CaliburDesc, \

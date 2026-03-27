@@ -286,6 +286,7 @@
 [Tachyon] = [LoadFace][0xce][0x1]
 [George] = [LoadFace][0xcf][0x1]
 [Astoria] = [LoadFace][0xd0][0x1]
+[Campbell] = [LoadFace][0xd1][0x1]
 
 [Landsknecht] = [LoadFace][0x9d][0x1]
 [Necromancer] = [LoadFace][0x9e][0x1]

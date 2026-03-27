@@ -64,6 +64,20 @@ FILL (0xFF * 4)
 
 
 ALIGN 4
+CastleObjects:
+#incbin "Castle1.dmp"
+ALIGN 4
+Castle1Palette:
+#incbin "Castle1_pal.dmp"
+ALIGN 4
+Castle1Tiles:
+#incext compress "Castle.mapchip_config"
+TileConfigPointerTable(CastleCONFIG, Castle1Tiles)
+ObjTypePalettePointerTable(Castle1OBJ, CastleObjects)
+ObjTypePalettePointerTable(Castle1PAL, Castle1Palette)
+
+
+ALIGN 4
 VillageObjects:
 #incbin "Village1.dmp"
 ALIGN 4

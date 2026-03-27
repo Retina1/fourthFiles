@@ -11,46 +11,6 @@
 
 .equ crit_warning_cutoff, 1	@anything less than or equal this won't trigger the !
 
-.if FE6 == 1
-	.equ WarningCache, 			0x0203ACC0	@free space in ram. Change this if necessary.
-	.equ OptionByte2, 			0x0202AA66
-	.equ CameraStuff, 			0x0202AA08
-	.equ WRAMDisplay, 			0x08003870
-	.equ CurrentCharPtr, 		0x030044B0
-	.equ Can_Equip_Item, 		0x08016538
-	@ .equ Get_Unit_Max_Hp, TODO
-	.equ Get_Item_Crit, 		0x08017224
-	.equ Check_Effectiveness, 	0x08016A10
-	.equ Talk_Check, 			0x0806AF4C
-	.equ return_addr, 			0x0802241A+1
-	.equ x_coord, 				0x0E
-	.equ y_coord, 				0x0F
-	.equ maximum_hp, 			0x10
-	.equ current_hp, 			0x11
-	.equ inventory_slot1, 		0x1C
-	.equ status_byte, 			0x2E
-.endif
-
-.if FE7 == 1
-	.equ WarningCache, 			0x0203ACC0	@free space in ram. Change this if necessary.
-	.equ OptionByte2, 			0x0202BC39
-	.equ CameraStuff, 			0x0202BBB8
-	.equ WRAMDisplay, 			0x08004388
-	.equ CurrentCharPtr,		0x03004690
-	.equ Can_Equip_Item, 		0x080161A4
-	@ .equ Get_Unit_Max_Hp, TODO
-	.equ Get_Item_Crit, 		0x08017328
-	.equ Check_Effectiveness, 	0x08016820
-	.equ Talk_Check, 			0x080789FC
-	.equ return_addr, 			0x08025C16+1
-	.equ x_coord, 				0x10
-	.equ y_coord, 				0x11
-	.equ maximum_hp, 			0x12
-	.equ current_hp, 			0x13
-	.equ inventory_slot1, 		0x1E
-	.equ status_byte, 			0x30
-.endif
-
 .if FE8 == 1
 	.equ WarningCache, 			0x0203AE00	@free space in ram. Change this if necessary.
 	.equ OptionByte2, 			0x0202BD31

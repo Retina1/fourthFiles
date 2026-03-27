@@ -1,28 +1,28 @@
 	.include "MPlayDef.s"
 
-	.equ	song09_grp, voicegroup000
-	.equ	song09_pri, 0
-	.equ	song09_rev, 0
-	.equ	song09_mvl, 127
-	.equ	song09_key, 0
-	.equ	song09_tbs, 1
-	.equ	song09_exg, 0
-	.equ	song09_cmp, 1
+	.equ	Incidental3B_grp, voicegroup000
+	.equ	Incidental3B_pri, 0
+	.equ	Incidental3B_rev, 0
+	.equ	Incidental3B_mvl, 127
+	.equ	Incidental3B_key, 0
+	.equ	Incidental3B_tbs, 1
+	.equ	Incidental3B_exg, 0
+	.equ	Incidental3B_cmp, 1
 
 	.section .rodata
-	.global	song09
+	.global	Incidental3B
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song09_001:
+Incidental3B_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Incidental3B_key+0
 Label_011B4F8A:
- .byte   TEMPO , 88*song09_tbs/2
+ .byte   TEMPO , 88*Incidental3B_tbs/2
  .byte   VOICE , 85
- .byte   VOL , 50*song09_mvl/mxv
+ .byte   VOL , 50*Incidental3B_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N11 ,Cs3 ,v080
  .byte   W12
@@ -143,7 +143,7 @@ Label_011B5004:
 @  #01 @011   ----------------------------------------
  .byte   W96
 @  #01 @012   ----------------------------------------
- .byte   TEMPO , 88*song09_tbs/2
+ .byte   TEMPO , 88*Incidental3B_tbs/2
  .byte   N11 ,Cs3
  .byte   W12
  .byte   Ds3
@@ -407,12 +407,12 @@ Label_011B5100:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song09_002:
+Incidental3B_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song09_key+0
+ .byte   KEYSH , Incidental3B_key+0
 Label_011B53BE:
  .byte   VOICE , 1
- .byte   VOL , 50*song09_mvl/mxv
+ .byte   VOL , 50*Incidental3B_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N96 ,Gs1 ,v080
  .byte   N96 ,Cs3
@@ -648,15 +648,15 @@ Label_011B54A4:
 @******************************************************@
 	.align	2
 
-song09:
+Incidental3B:
 	.byte	2	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song09_pri	@ Priority
-	.byte	song09_rev	@ Reverb.
+	.byte	Incidental3B_pri	@ Priority
+	.byte	Incidental3B_rev	@ Reverb.
     
-	.word	song09_grp
+	.word	Incidental3B_grp
     
-	.word	song09_001
-	.word	song09_002
+	.word	Incidental3B_001
+	.word	Incidental3B_002
 
 	.end

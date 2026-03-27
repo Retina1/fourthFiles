@@ -286,6 +286,7 @@ EndingScene:
 //benthus and cleone join, provisional guild
 //promise of naming your guild eventually
 //music here later
+SET_ACTIVE 0
 MUSC 0x0
 FADI 10
 CLEA 0; CLEN 0; CLEE 0

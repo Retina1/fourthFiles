@@ -22,7 +22,7 @@ void MoveActiveUnit(int x, int y) {
     gActiveUnit->xPos = x;
     gActiveUnit->yPos = y;
 
-	if (!(UNIT_HAS_SKILL(gActiveUnit,FNC,promoSkill_531))){
+	if (!(UNIT_HAS_SKILL(gActiveUnit,FNC,skill_531))){
 		gActiveUnit->state |= US_UNSELECTABLE;
 	}
 	//i am in turbo hell
@@ -82,7 +82,7 @@ bool TryMakeCantoUnit(ProcPtr proc)
         return false;
     }
 	
-	if (UNIT_HAS_SKILL(gActiveUnit,FNC,promoSkill_531)){
+	if (UNIT_HAS_SKILL(gActiveUnit,FNC,skill_531)){
 		if ((gActiveUnit->classSkillState & 0x10) != 0) {
 			return false;
 		}

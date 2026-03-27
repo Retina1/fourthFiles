@@ -1,6 +1,6 @@
 //ricochet
 u8 RicochetArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,DRG,promoSkill_531)){
+	if (UNIT_HAS_SKILL(unit,DRG,skill_531)){
 		return CombatArtRangeAttackingUsability(1,80,3);
 	}
 	else return 0;
@@ -12,16 +12,16 @@ void RicochetBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	int atkMul = 2;
 	int atkDiv = 10;
 	int hitDiv = absolute(actor->unit.xPos - target->unit.xPos) + absolute(actor->unit.yPos - target->unit.yPos);
-	if (UNIT_HAS_SKILL(&actor->unit,DRG,promoSkill_535)){
+	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_535)){
 		atkMul = 12;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DRG,promoSkill_534)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_534)){
 		atkMul = 8;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DRG,promoSkill_533)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_533)){
 		atkMul = 5;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DRG,promoSkill_532)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_532)){
 		atkMul = 3;
 	}
 	actor->battleAttack = actor->battleAttack*atkMul/atkDiv;
@@ -152,7 +152,7 @@ void ScattershotPostbattle(struct Unit* actor, struct Unit* target){
 
 //riot gun
 u8 RiotGunArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,DRG,promoSkill_351)){
+	if (UNIT_HAS_SKILL(unit,DRG,skill_351)){
 		return CombatArtRangeAttackingUsability(1,1,3);
 	}
 	else return 0;
@@ -167,10 +167,10 @@ void RiotGunPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 void RiotGunBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	int atkMul = 12;
 	int atkDiv = 10;
-	if (UNIT_HAS_SKILL(&actor->unit,DRG,promoSkill_353)){
+	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_353)){
 		atkMul = 20;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DRG,promoSkill_352)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_352)){
 		atkMul = 15;
 	}
 	actor->battleAttack = actor->battleAttack*atkMul/atkDiv;
@@ -181,7 +181,7 @@ void RiotGunBattleProc(struct BattleUnit* actor, struct BattleUnit* target){
 }
 int RiotGunOdds(struct BattleUnit* actor, struct BattleUnit* target){
 	int odds = 0;
-	if (UNIT_HAS_SKILL(&actor->unit,DRG,promoSkill_533)){
+	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_533)){
 		odds = 250;
 	}
 	return odds;

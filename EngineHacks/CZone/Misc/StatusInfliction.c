@@ -34,7 +34,7 @@ int GetOffensiveStaffAccuracy(struct Unit* actor, struct Unit* target) {
 		}
 	}
 	
-	if (UNIT_HAS_SKILL(actor,HEX,promoSkill_141)){
+	if (UNIT_HAS_SKILL(actor,HEX,skill_141)){
 			accuracy = accuracy + 25;
 	}
 	

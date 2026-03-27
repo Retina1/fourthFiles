@@ -369,6 +369,10 @@ Don't[...] be afraid[...][A][EyesClose][X]
 [MidRight][Hart]
 Damn[...] Ma[...] Sis[...][N]
 I'm sorry[...][A][EyesClose][X]
+##CampbellDeath
+[MidRight][Campbell]
+Damn it[...] Not like this[...][N]
+He tried[...] to warn me[...][A][EyesClose][X]
 
 //gunners
 ##MartinDeath

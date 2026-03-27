@@ -94,7 +94,7 @@ u8 RallyingCry_Effect (struct MenuProc* menu, struct MenuItemProc* menuItem) {
 
 
 void ApplyRallyingThrust (struct Unit* attacker, struct Unit* defender) {
-	if (UNIT_HAS_SKILL(attacker,SOV,promoSkill_141)){
+	if (UNIT_HAS_SKILL(attacker,SOV,skill_141)){
 		u8* unitBuffer = GetUnitsInRange(attacker, 1, 2);
 		int rallyCount = GetUnitRallyIndex(attacker);
 		

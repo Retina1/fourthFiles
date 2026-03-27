@@ -27,7 +27,7 @@ int FullCharge_Usability(struct MenuProc* menu) {
 	if (gActiveUnit->state & US_CANTOING) { 
 		return 3; // false 
 	} 
-	if (UNIT_HAS_SKILL(gActiveUnit,GLD,promoSkill_141)) {
+	if (UNIT_HAS_SKILL(gActiveUnit,GLD,skill_141)) {
 		if (!(gActiveUnit->classSkillState & (1 << 0))) {
 			return 1; // usable 
 		}
@@ -46,7 +46,7 @@ int BerserkerVow_Usability(struct MenuProc* menu) {
 	if (gActiveUnit->state & US_CANTOING) { 
 		return 3; // false 
 	} 
-	if (UNIT_HAS_SKILL(gActiveUnit,GLD,promoSkill_351)) {
+	if (UNIT_HAS_SKILL(gActiveUnit,GLD,skill_351)) {
 		if (GetUnitCurrentHp(gActiveUnit) > 1) {
 			return 1; // usable 
 		}
@@ -54,11 +54,11 @@ int BerserkerVow_Usability(struct MenuProc* menu) {
 	return 3; // not usable
 } 
 u8 BerserkerVow_Effect (struct MenuProc* menu, struct MenuItemProc* menuItem) {
-	if (UNIT_HAS_SKILL(gActiveUnit,GLD,promoSkill_351)) {
+	if (UNIT_HAS_SKILL(gActiveUnit,GLD,skill_351)) {
 		gActiveUnit->curHP = gActiveUnit->curHP * 1 / 10;
 		UnitApplyBuff(gActiveUnit,BUFF_BERSERKERVOW3);
 	}
-	else if (UNIT_HAS_SKILL(gActiveUnit,GLD,promoSkill_352)) {
+	else if (UNIT_HAS_SKILL(gActiveUnit,GLD,skill_352)) {
 		gActiveUnit->curHP = gActiveUnit->curHP * 1 / 4;
 		UnitApplyBuff(gActiveUnit,BUFF_BERSERKERVOW2);
 	}
@@ -81,7 +81,7 @@ int EthericCharge_Usability(struct MenuProc* menu) {
 	if (gActiveUnit->state & US_CANTOING) { 
 		return 3; // false 
 	} 
-	if (UNIT_HAS_SKILL(gActiveUnit,WRK,promoSkill_141)) {
+	if (UNIT_HAS_SKILL(gActiveUnit,WRK,skill_141)) {
 		if (!(gActiveUnit->classSkillState & (1 << 0))) {
 			return 1; // usable 
 		}

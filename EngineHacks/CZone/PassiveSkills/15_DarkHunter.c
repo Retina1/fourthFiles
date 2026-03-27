@@ -1,5 +1,5 @@
 void ApplyDarkHunterMerciless(struct BattleUnit* attacker, struct BattleUnit* defender) {
-	if (UNIT_HAS_SKILL(&attacker->unit,DOM,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&attacker->unit,DOM,skill_141)){
 		if ((defender->unit.bindDuration > 0) || (defender->unit.statusDuration > 0)) {
 			attacker->battleCritRate = attacker->battleCritRate * 7;
 		}

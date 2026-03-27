@@ -49,8 +49,8 @@ ENDTRAP
 ALIGN 4
 
 Units:
-UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
@@ -60,41 +60,68 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
+PlayerCutscene:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,14] 0x0 0x0 0x1 REDA2R10 [0x0] NoAI
+UNIT
+PlayerCutscene2:
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [1,14] 0x0 0x0 0x1 REDA1R10 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [1,14] 0x0 0x0 0x1 REDA1R11 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [2,14] 0x0 0x0 0x1 REDA2R11 [0x0] NoAI
+UNIT Benthus 0x0 0x1 Level(1,Ally,0) [3,14] 0x0 0x0 0x1 REDA3R11 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(1,Ally,0) [2,14] 0x0 0x0 0x1 REDA2R12 [0x0] NoAI
+UNIT
+
 EnemyUnits:
+UNIT Anastas SkyKnight 0x0 Level(8,Enemy,1) [21,1] 0x0 0x0 0x0 0x0 [Sarissa] AttackInRangeAI
+
 UNIT EndbringerGeneric Caller 0x0 Level(7,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [DrainScroll] NoAI
-UNIT EndbringerGeneric Lancer 0x0 Level(7,Enemy,1) [5,9] 0x0 0x0 0x0 0x0 [Partizan] NoAI
 UNIT EndbringerGeneric Hunter 0x0 Level(7,Enemy,1) [0,2] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 UNIT EndbringerGeneric Hunter 0x0 Level(7,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
-UNIT EndbringerGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
-UNIT EndbringerGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT EndbringerGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
+UNIT EndbringerGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
 UNIT EndbringerGeneric Encircler 0x0 Level(7,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
 UNIT EndbringerGeneric Gunner 0x0 Level(7,Enemy,1) [6,1] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 
+UNIT BelvarusGeneric Lancer 0x0 Level(7,Enemy,1) [5,9] 0x0 0x0 0x0 0x0 [Partizan] NoAI
 UNIT BelvarusGeneric Landsknecht 0x0 Level(7,Enemy,1) [22,12] 0x0 0x0 0x0 0x0 [Shortsword] ChaseOnceApproachedAI
 UNIT BelvarusGeneric Archer 0x0 Level(7,Enemy,1) [15,12] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 UNIT BelvarusGeneric Archer 0x0 Level(7,Enemy,1) [21,9] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
-UNIT BelvarusGeneric Scholar 0x0 Level(7,Enemy,1) [19,13] 0x0 0x0 0x0 0x0 [FlameScroll] AttackInRangeAI
-UNIT BelvarusGeneric Swordfighter 0x0 Level(7,Enemy,1) [18,12] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT BelvarusGeneric Scholar 0x0 Level(7,Enemy,1) [20,14] 0x0 0x0 0x0 0x0 [FlameScroll] AttackInRangeAI
+UNIT BelvarusGeneric Swordfighter 0x0 Level(7,Enemy,1) [19,13] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
 UNIT BelvarusGeneric Knight 0x0 Level(7,Enemy,1) [14,1] 0x0 0x0 0x0 0x0 [Pike] DelayedAI
 UNIT BelvarusGeneric SkyKnight 0x0 Level(7,Enemy,1) [11,1] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
 UNIT BelvarusGeneric SkyKnight 0x0 Level(7,Enemy,1) [22,6] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
 UNIT BelvarusGeneric SkyKnight 0x0 Level(7,Enemy,1) [22,8] 0x0 0x0 0x0 0x0 [Partizan] AttackInRangeAI
 UNIT BelvarusGeneric ScaleKnight 0x0 Level(7,Enemy,1) [21,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
-UNIT BelvarusGeneric ScaleKnight 0x0 Level(7,Enemy,1) [23,7] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT BelvarusGeneric ScaleKnight 0x0 Level(7,Enemy,1) [11,14] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
 UNIT BelvarusGeneric Apothecary 0x0 Level(7,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [Recurve,HeadBinder] NeverMoveAI
 UNIT BelvarusGeneric Apothecary 0x0 Level(7,Enemy,1) [8,8] 0x0 0x0 0x0 0x0 [Recurve,BlindGas] NeverMoveAI
 UNIT BelvarusGeneric Swordfighter 0x0 Level(7,Enemy,1) [13,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
 UNIT BelvarusGeneric Swordfighter 0x0 Level(7,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
-UNIT BelvarusGeneric Axefighter 0x0 Level(7,Enemy,1) [17,6] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+UNIT BelvarusGeneric Axefighter 0x0 Level(7,Enemy,1) [17,6] 0x0 0x0 0x0 0x0 [Shortmace] ChaseOnceApproachedAI
 UNIT BelvarusGeneric Apothecary 0x0 Level(7,Enemy,1) [18,6] 0x0 0x0 0x0 0x0 [Shortbow,ArmBinder] AttackInRangeAI
-UNIT BelvarusGeneric Axefighter 0x0 Level(7,Enemy,1) [19,6] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT BelvarusGeneric Axefighter 0x0 Level(7,Enemy,1) [19,6] 0x0 0x0 0x0 0x0 [HandAxe] ChaseOnceApproachedAI
 UNIT BelvarusGeneric Apothecary 0x0 Level(7,Enemy,1) [23,4] 0x0 0x0 0x0 0x0 [LegBinder] AttackInRangeAI
-UNIT BelvarusGeneric Rider 0x0 Level(7,Enemy,1) [16,2] 0x0 0x0 0x0 0x0 [HandSpear] AttackInRangeAI
-UNIT BelvarusGeneric Rider 0x0 Level(7,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [HandSpear] AttackInRangeAI
+UNIT BelvarusGeneric Rider 0x0 Level(7,Enemy,1) [16,0] 0x0 0x0 0x0 0x0 [HandSpear] AttackInRangeAI
+UNIT BelvarusGeneric Rider 0x0 Level(7,Enemy,1) [20,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
 UNIT BelvarusGeneric Raider 0x0 Level(7,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [Yue] AttackInRangeAI
-UNIT BelvarusGeneric Raider 0x0 Level(7,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Broadaxe] AttackInRangeAI
-UNIT BelvarusGeneric Knight 0x0 Level(7,Enemy,1) [18,2] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
+UNIT BelvarusGeneric Raider 0x0 Level(7,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+UNIT BelvarusGeneric Knight 0x0 Level(7,Enemy,1) [18,2] 0x0 0x0 0x0 0x0 [Pike] NeverMoveAI
 UNIT Hitchcock Knight 0x0 Level(8,Enemy,1) [22,1] 0x0 0x0 0x0 0x0 [Sarissa] AttackInRangeAI
+UNIT
+
+EndingImperials:
+UNIT Weber Imperial 0x0 Level(23,NPC,0) [10,2] 0x0 0x0 0x0 0x0 [RagingWave] AttackInRangeAI
+UNIT First Landsknecht 0x0 Level(24,NPC,0) [10,4] 0x0 0x0 0x0 0x0 [SuperiorBlade] AttackInRangeAI
+UNIT Second Strider 0x0 Level(22,NPC,0) [9,6] 0x0 0x0 0x0 0x0 [Shieldlance,Longinus] AttackInRangeAI
+UNIT NPCFourth Driver 0x0 Level(17,NPC,0) [11,6] 0x0 0x0 0x0 0x0 [Dominance] AttackInRangeAI
+UNIT EliteGeneric Hoplite 0x0 Level(20,NPC,0) [9,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
+UNIT EliteGeneric Driver 0x0 Level(20,NPC,0) [10,8] 0x0 0x0 0x0 0x0 [Dominance] AttackInRangeAI
+UNIT EliteGeneric Hoplite 0x0 Level(20,NPC,0) [11,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
+UNIT EliteGeneric Sniper 0x0 Level(20,NPC,0) [4,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT EliteGeneric Warlock 0x0 Level(20,NPC,0) [5,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT EliteGeneric Sniper 0x0 Level(20,NPC,0) [16,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT EliteGeneric Warlock 0x0 Level(20,NPC,0) [15,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
 UNIT
 
 
@@ -103,21 +130,54 @@ ALIGN 4
 BeginningScene:
 DifficultySwapper
 MUSC 0x0
-Text(FillerDialogue)
+CleanTextNoMap(0x3,C6Opening1)
+REMA
+CLEAN
+CAM1 [24,0]
 LOAD1 0x1 EnemyUnits; ENUN
+FADU 10
+Text(C6Opening2)
+MOVE 30 Anastas [14,0]; ENUN; SilentKillUnit(Anastas)
+CAM1 [0,14]
+LOAD2 0x1 PlayerCutscene; ENUN
+MOVE 5 BelvarusGeneric [4,9]; ENUN
+Text(C6Opening3)
+STAL 10
+MUSC Song_PandemonicPlanet
+MOVE 5 BelvarusGeneric [5,9]; ENUN
+STAL 20
+LOAD2 0x1 PlayerCutscene2; ENUN
+Text(C6Opening4)
 CallPreps
 EndEvent
 
 EndingScene:
-MUSC 0x0
-CleanTextNoMap(0x18,FillerDialogue)
+SET_ACTIVE 0
+MUSC Song_DevilsRoulette
+CleanTextNoMap(0x18,C6Ending1)
+MUSC 0
+//todo - swap to throne room map (either ch14 or 16, will need to be made in advance for cutscenes alongside palette)
+LOMA Chapter14
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingImperials; ENUN
+CAM1 [10,0]
+FADU 10
+STAL 30
+FlashCursor(Weber,60)
+FlashCursor(First,60)
+MUSC Song_FlyingBattle
+Text(C6Ending2)
+MOVE 8 First [10,12]; ENUN; STAL 3
+MOVE 10 Second [9,12]
+MOVE 6 NPCFourth [11,12]; ENUN
+Text(C6Ending3)
 MoveToChapter(Chapter7)
 ENDA
 
 Chapter6_House1:
-VillageEventItem(FillerDialogue, 0x0, Caliver)
+VillageEventItem(C6HouseText1, 0x0, Caliver)
 Chapter6_House2:
-VillageEventItem(FillerDialogue, 0x0, DownStaff)
+VillageEventItem(C6HouseText2, 0x0, DownStaff)
 
 
 //MESSAGE Events end at offset CURRENTOFFSET

@@ -36,6 +36,7 @@
 
 //conditional drops
 #define BeastKingConditionalFlag 0x9a
+#define BenthusConditionalFlag 0x9b
 
 #define SupportAnimFlag 0xae
 #define PicnicModeFlag 0xaf

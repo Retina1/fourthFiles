@@ -1,27 +1,27 @@
 	.include "MPlayDef.s"
 
-	.equ	song04_grp, voicegroup000
-	.equ	song04_pri, 0
-	.equ	song04_rev, 0
-	.equ	song04_mvl, 127
-	.equ	song04_key, 0
-	.equ	song04_tbs, 1
-	.equ	song04_exg, 0
-	.equ	song04_cmp, 1
+	.equ	BareFangsAtGod_grp, voicegroup000
+	.equ	BareFangsAtGod_pri, 0
+	.equ	BareFangsAtGod_rev, 0
+	.equ	BareFangsAtGod_mvl, 127
+	.equ	BareFangsAtGod_key, 0
+	.equ	BareFangsAtGod_tbs, 1
+	.equ	BareFangsAtGod_exg, 0
+	.equ	BareFangsAtGod_cmp, 1
 
 	.section .rodata
-	.global	song04
+	.global	BareFangsAtGod
 	.align	2
 
 
 @**************** Track 1 (Midi-Chn.0) ****************@
 
-song04_001:
+BareFangsAtGod_001:
 @  #01 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
- .byte   TEMPO , 124*song04_tbs/2
+ .byte   KEYSH , BareFangsAtGod_key+0
+ .byte   TEMPO , 124*BareFangsAtGod_tbs/2
  .byte   VOICE , 10
- .byte   VOL , 17*song04_mvl/mxv
+ .byte   VOL , 17*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+63
  .byte   N24 ,As3 ,v127
  .byte   W12
@@ -518,11 +518,11 @@ Label_0156B1E9:
 
 @**************** Track 2 (Midi-Chn.1) ****************@
 
-song04_002:
+BareFangsAtGod_002:
 @  #02 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 10
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v-64
  .byte   W18
  .byte   N24 ,As3 ,v127
@@ -1024,11 +1024,11 @@ Label_0156B4C0:
 
 @**************** Track 3 (Midi-Chn.2) ****************@
 
-song04_003:
+BareFangsAtGod_003:
 @  #03 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 28
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v-32
  .byte   W96
 @  #03 @001   ----------------------------------------
@@ -1453,11 +1453,11 @@ Label_0156B728:
 
 @**************** Track 4 (Midi-Chn.3) ****************@
 
-song04_004:
+BareFangsAtGod_004:
 @  #04 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 52
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v-64
  .byte   W96
 @  #04 @001   ----------------------------------------
@@ -1941,11 +1941,11 @@ Label_0156BF12:
 
 @**************** Track 5 (Midi-Chn.4) ****************@
 
-song04_005:
+BareFangsAtGod_005:
 @  #05 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 52
- .byte   VOL , 15*song04_mvl/mxv
+ .byte   VOL , 15*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+63
  .byte   W96
 @  #05 @001   ----------------------------------------
@@ -2436,11 +2436,11 @@ Label_0156BC70:
 
 @**************** Track 6 (Midi-Chn.5) ****************@
 
-song04_006:
+BareFangsAtGod_006:
 @  #06 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 40
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #06 @001   ----------------------------------------
@@ -2920,11 +2920,11 @@ Label_0156C867:
 
 @**************** Track 7 (Midi-Chn.6) ****************@
 
-song04_007:
+BareFangsAtGod_007:
 @  #07 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 52
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #07 @001   ----------------------------------------
@@ -2974,419 +2974,419 @@ song04_007:
 Label_0156CE76:
  .byte   W72
 @  #07 @016   ----------------------------------------
- .byte   VOL , 0*song04_mvl/mxv
+ .byte   VOL , 0*BareFangsAtGod_mvl/mxv
  .byte   TIE ,As1 ,v127
  .byte   W01
- .byte   VOL , 1*song04_mvl/mxv
+ .byte   VOL , 1*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 1*song04_mvl/mxv
+ .byte   VOL , 1*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 2*song04_mvl/mxv
+ .byte   VOL , 2*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 3*song04_mvl/mxv
+ .byte   VOL , 3*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 3*song04_mvl/mxv
+ .byte   VOL , 3*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 4*song04_mvl/mxv
+ .byte   VOL , 4*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 5*song04_mvl/mxv
+ .byte   VOL , 5*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 5*song04_mvl/mxv
+ .byte   VOL , 5*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 6*song04_mvl/mxv
+ .byte   VOL , 6*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 8*song04_mvl/mxv
+ .byte   VOL , 8*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 9*song04_mvl/mxv
+ .byte   VOL , 9*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 10*song04_mvl/mxv
+ .byte   VOL , 10*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 10*song04_mvl/mxv
+ .byte   VOL , 10*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 11*song04_mvl/mxv
+ .byte   VOL , 11*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 13*song04_mvl/mxv
+ .byte   VOL , 13*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 14*song04_mvl/mxv
+ .byte   VOL , 14*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 14*song04_mvl/mxv
+ .byte   VOL , 14*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 15*song04_mvl/mxv
+ .byte   VOL , 15*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 16*song04_mvl/mxv
+ .byte   VOL , 16*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 16*song04_mvl/mxv
+ .byte   VOL , 16*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 17*song04_mvl/mxv
+ .byte   VOL , 17*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 18*song04_mvl/mxv
+ .byte   VOL , 18*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 19*song04_mvl/mxv
+ .byte   VOL , 19*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 19*song04_mvl/mxv
+ .byte   VOL , 19*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 20*song04_mvl/mxv
+ .byte   VOL , 20*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 21*song04_mvl/mxv
+ .byte   VOL , 21*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 23*song04_mvl/mxv
+ .byte   VOL , 23*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song04_mvl/mxv
+ .byte   VOL , 24*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song04_mvl/mxv
+ .byte   VOL , 24*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 26*song04_mvl/mxv
+ .byte   VOL , 26*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song04_mvl/mxv
+ .byte   VOL , 27*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song04_mvl/mxv
+ .byte   VOL , 27*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 28*song04_mvl/mxv
+ .byte   VOL , 28*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song04_mvl/mxv
+ .byte   VOL , 29*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 30*song04_mvl/mxv
+ .byte   VOL , 30*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 32*song04_mvl/mxv
+ .byte   VOL , 32*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song04_mvl/mxv
+ .byte   VOL , 33*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song04_mvl/mxv
+ .byte   VOL , 33*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 34*song04_mvl/mxv
+ .byte   VOL , 34*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song04_mvl/mxv
+ .byte   VOL , 35*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song04_mvl/mxv
+ .byte   VOL , 35*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 36*song04_mvl/mxv
+ .byte   VOL , 36*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 38*song04_mvl/mxv
+ .byte   VOL , 38*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song04_mvl/mxv
+ .byte   VOL , 39*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song04_mvl/mxv
+ .byte   VOL , 39*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 40*song04_mvl/mxv
+ .byte   VOL , 40*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 41*song04_mvl/mxv
+ .byte   VOL , 41*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 42*song04_mvl/mxv
+ .byte   VOL , 42*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 42*song04_mvl/mxv
+ .byte   VOL , 42*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song04_mvl/mxv
+ .byte   VOL , 43*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 45*song04_mvl/mxv
+ .byte   VOL , 45*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 46*song04_mvl/mxv
+ .byte   VOL , 46*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 46*song04_mvl/mxv
+ .byte   VOL , 46*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 47*song04_mvl/mxv
+ .byte   VOL , 47*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song04_mvl/mxv
+ .byte   VOL , 48*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song04_mvl/mxv
+ .byte   VOL , 48*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 49*song04_mvl/mxv
+ .byte   VOL , 49*BareFangsAtGod_mvl/mxv
  .byte   W01
  .byte   PEND 
 Label_0156CF53:
- .byte   VOL , 50*song04_mvl/mxv
+ .byte   VOL , 50*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 49*song04_mvl/mxv
+ .byte   VOL , 49*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 49*song04_mvl/mxv
+ .byte   VOL , 49*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 48*song04_mvl/mxv
+ .byte   VOL , 48*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 48*song04_mvl/mxv
+ .byte   VOL , 48*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 48*song04_mvl/mxv
+ .byte   VOL , 48*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 47*song04_mvl/mxv
+ .byte   VOL , 47*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 47*song04_mvl/mxv
+ .byte   VOL , 47*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 46*song04_mvl/mxv
+ .byte   VOL , 46*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 46*song04_mvl/mxv
+ .byte   VOL , 46*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 46*song04_mvl/mxv
+ .byte   VOL , 46*BareFangsAtGod_mvl/mxv
  .byte   W02
 @  #07 @017   ----------------------------------------
- .byte   VOL , 45*song04_mvl/mxv
+ .byte   VOL , 45*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 45*song04_mvl/mxv
+ .byte   VOL , 45*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 43*song04_mvl/mxv
+ .byte   VOL , 43*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 43*song04_mvl/mxv
+ .byte   VOL , 43*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 42*song04_mvl/mxv
+ .byte   VOL , 42*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 42*song04_mvl/mxv
+ .byte   VOL , 42*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 42*song04_mvl/mxv
+ .byte   VOL , 42*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 41*song04_mvl/mxv
+ .byte   VOL , 41*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 41*song04_mvl/mxv
+ .byte   VOL , 41*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 40*song04_mvl/mxv
+ .byte   VOL , 40*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 40*song04_mvl/mxv
+ .byte   VOL , 40*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 40*song04_mvl/mxv
+ .byte   VOL , 40*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 39*song04_mvl/mxv
+ .byte   VOL , 39*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 39*song04_mvl/mxv
+ .byte   VOL , 39*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 38*song04_mvl/mxv
+ .byte   VOL , 38*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 38*song04_mvl/mxv
+ .byte   VOL , 38*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 38*song04_mvl/mxv
+ .byte   VOL , 38*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 36*song04_mvl/mxv
+ .byte   VOL , 36*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 36*song04_mvl/mxv
+ .byte   VOL , 36*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 35*song04_mvl/mxv
+ .byte   VOL , 35*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 35*song04_mvl/mxv
+ .byte   VOL , 35*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 35*song04_mvl/mxv
+ .byte   VOL , 35*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 34*song04_mvl/mxv
+ .byte   VOL , 34*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 34*song04_mvl/mxv
+ .byte   VOL , 34*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 33*song04_mvl/mxv
+ .byte   VOL , 33*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 33*song04_mvl/mxv
+ .byte   VOL , 33*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 33*song04_mvl/mxv
+ .byte   VOL , 33*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 32*song04_mvl/mxv
+ .byte   VOL , 32*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 32*song04_mvl/mxv
+ .byte   VOL , 32*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 30*song04_mvl/mxv
+ .byte   VOL , 30*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 30*song04_mvl/mxv
+ .byte   VOL , 30*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 29*song04_mvl/mxv
+ .byte   VOL , 29*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 29*song04_mvl/mxv
+ .byte   VOL , 29*BareFangsAtGod_mvl/mxv
  .byte   W02
 @  #07 @018   ----------------------------------------
- .byte   VOL , 29*song04_mvl/mxv
+ .byte   VOL , 29*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 28*song04_mvl/mxv
+ .byte   VOL , 28*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 28*song04_mvl/mxv
+ .byte   VOL , 28*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 27*song04_mvl/mxv
+ .byte   VOL , 27*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 27*song04_mvl/mxv
+ .byte   VOL , 27*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 27*song04_mvl/mxv
+ .byte   VOL , 27*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 26*song04_mvl/mxv
+ .byte   VOL , 26*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 26*song04_mvl/mxv
+ .byte   VOL , 26*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W03
  .byte   PEND 
 Label_0156D011:
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 24*song04_mvl/mxv
+ .byte   VOL , 24*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 24*song04_mvl/mxv
+ .byte   VOL , 24*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 24*song04_mvl/mxv
+ .byte   VOL , 24*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 23*song04_mvl/mxv
+ .byte   VOL , 23*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 23*song04_mvl/mxv
+ .byte   VOL , 23*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 21*song04_mvl/mxv
+ .byte   VOL , 21*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 21*song04_mvl/mxv
+ .byte   VOL , 21*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 20*song04_mvl/mxv
+ .byte   VOL , 20*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 20*song04_mvl/mxv
+ .byte   VOL , 20*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 20*song04_mvl/mxv
+ .byte   VOL , 20*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 19*song04_mvl/mxv
+ .byte   VOL , 19*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 19*song04_mvl/mxv
+ .byte   VOL , 19*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 18*song04_mvl/mxv
+ .byte   VOL , 18*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 18*song04_mvl/mxv
+ .byte   VOL , 18*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 18*song04_mvl/mxv
+ .byte   VOL , 18*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 17*song04_mvl/mxv
+ .byte   VOL , 17*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 17*song04_mvl/mxv
+ .byte   VOL , 17*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 16*song04_mvl/mxv
+ .byte   VOL , 16*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 16*song04_mvl/mxv
+ .byte   VOL , 16*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 16*song04_mvl/mxv
+ .byte   VOL , 16*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 15*song04_mvl/mxv
+ .byte   VOL , 15*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 15*song04_mvl/mxv
+ .byte   VOL , 15*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 14*song04_mvl/mxv
+ .byte   VOL , 14*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 14*song04_mvl/mxv
+ .byte   VOL , 14*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 14*song04_mvl/mxv
+ .byte   VOL , 14*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 13*song04_mvl/mxv
+ .byte   VOL , 13*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 13*song04_mvl/mxv
+ .byte   VOL , 13*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   W02
 @  #07 @019   ----------------------------------------
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 11*song04_mvl/mxv
+ .byte   VOL , 11*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 11*song04_mvl/mxv
+ .byte   VOL , 11*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 11*song04_mvl/mxv
+ .byte   VOL , 11*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 10*song04_mvl/mxv
+ .byte   VOL , 10*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 10*song04_mvl/mxv
+ .byte   VOL , 10*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 9*song04_mvl/mxv
+ .byte   VOL , 9*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 9*song04_mvl/mxv
+ .byte   VOL , 9*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 9*song04_mvl/mxv
+ .byte   VOL , 9*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 8*song04_mvl/mxv
+ .byte   VOL , 8*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 8*song04_mvl/mxv
+ .byte   VOL , 8*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 6*song04_mvl/mxv
+ .byte   VOL , 6*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 6*song04_mvl/mxv
+ .byte   VOL , 6*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 5*song04_mvl/mxv
+ .byte   VOL , 5*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 5*song04_mvl/mxv
+ .byte   VOL , 5*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 5*song04_mvl/mxv
+ .byte   VOL , 5*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 4*song04_mvl/mxv
+ .byte   VOL , 4*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 4*song04_mvl/mxv
+ .byte   VOL , 4*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 3*song04_mvl/mxv
+ .byte   VOL , 3*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 3*song04_mvl/mxv
+ .byte   VOL , 3*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 3*song04_mvl/mxv
+ .byte   VOL , 3*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 2*song04_mvl/mxv
+ .byte   VOL , 2*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 2*song04_mvl/mxv
+ .byte   VOL , 2*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 1*song04_mvl/mxv
+ .byte   VOL , 1*BareFangsAtGod_mvl/mxv
  .byte   W03
- .byte   VOL , 1*song04_mvl/mxv
+ .byte   VOL , 1*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 1*song04_mvl/mxv
+ .byte   VOL , 1*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 0*song04_mvl/mxv
+ .byte   VOL , 0*BareFangsAtGod_mvl/mxv
  .byte   W02
- .byte   VOL , 0*song04_mvl/mxv
+ .byte   VOL , 0*BareFangsAtGod_mvl/mxv
  .byte   W03
  .byte   PEND 
  .byte   EOT
  .byte   As1
- .byte   VOL , 0*song04_mvl/mxv
+ .byte   VOL , 0*BareFangsAtGod_mvl/mxv
  .byte   W72
 @  #07 @020   ----------------------------------------
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W72
  .byte   W96
 @  #07 @021   ----------------------------------------
@@ -3571,9 +3571,9 @@ Label_0156D1AC:
 @  #07 @074   ----------------------------------------
  .byte   EOT
  .byte   As1
- .byte   VOL , 0*song04_mvl/mxv
+ .byte   VOL , 0*BareFangsAtGod_mvl/mxv
  .byte   W72
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W72
 @  #07 @075   ----------------------------------------
  .byte   W96
@@ -3726,160 +3726,160 @@ Label_0156D1AC:
  .byte   W48
  .byte   W72
 @  #07 @126   ----------------------------------------
- .byte   VOL , 0*song04_mvl/mxv
+ .byte   VOL , 0*BareFangsAtGod_mvl/mxv
  .byte   N72 ,As1 ,v127
  .byte   W01
- .byte   VOL , 1*song04_mvl/mxv
+ .byte   VOL , 1*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 1*song04_mvl/mxv
+ .byte   VOL , 1*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 2*song04_mvl/mxv
+ .byte   VOL , 2*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 3*song04_mvl/mxv
+ .byte   VOL , 3*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 3*song04_mvl/mxv
+ .byte   VOL , 3*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 4*song04_mvl/mxv
+ .byte   VOL , 4*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 5*song04_mvl/mxv
+ .byte   VOL , 5*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 5*song04_mvl/mxv
+ .byte   VOL , 5*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 6*song04_mvl/mxv
+ .byte   VOL , 6*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 8*song04_mvl/mxv
+ .byte   VOL , 8*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 9*song04_mvl/mxv
+ .byte   VOL , 9*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 10*song04_mvl/mxv
+ .byte   VOL , 10*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 10*song04_mvl/mxv
+ .byte   VOL , 10*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 11*song04_mvl/mxv
+ .byte   VOL , 11*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 13*song04_mvl/mxv
+ .byte   VOL , 13*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 14*song04_mvl/mxv
+ .byte   VOL , 14*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 14*song04_mvl/mxv
+ .byte   VOL , 14*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 15*song04_mvl/mxv
+ .byte   VOL , 15*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 16*song04_mvl/mxv
+ .byte   VOL , 16*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 16*song04_mvl/mxv
+ .byte   VOL , 16*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 17*song04_mvl/mxv
+ .byte   VOL , 17*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 18*song04_mvl/mxv
+ .byte   VOL , 18*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 19*song04_mvl/mxv
+ .byte   VOL , 19*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 19*song04_mvl/mxv
+ .byte   VOL , 19*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 20*song04_mvl/mxv
+ .byte   VOL , 20*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 21*song04_mvl/mxv
+ .byte   VOL , 21*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 23*song04_mvl/mxv
+ .byte   VOL , 23*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song04_mvl/mxv
+ .byte   VOL , 24*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song04_mvl/mxv
+ .byte   VOL , 24*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 26*song04_mvl/mxv
+ .byte   VOL , 26*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song04_mvl/mxv
+ .byte   VOL , 27*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song04_mvl/mxv
+ .byte   VOL , 27*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 28*song04_mvl/mxv
+ .byte   VOL , 28*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song04_mvl/mxv
+ .byte   VOL , 29*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 30*song04_mvl/mxv
+ .byte   VOL , 30*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 32*song04_mvl/mxv
+ .byte   VOL , 32*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song04_mvl/mxv
+ .byte   VOL , 33*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song04_mvl/mxv
+ .byte   VOL , 33*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 34*song04_mvl/mxv
+ .byte   VOL , 34*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song04_mvl/mxv
+ .byte   VOL , 35*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song04_mvl/mxv
+ .byte   VOL , 35*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 36*song04_mvl/mxv
+ .byte   VOL , 36*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 38*song04_mvl/mxv
+ .byte   VOL , 38*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song04_mvl/mxv
+ .byte   VOL , 39*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song04_mvl/mxv
+ .byte   VOL , 39*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 40*song04_mvl/mxv
+ .byte   VOL , 40*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 41*song04_mvl/mxv
+ .byte   VOL , 41*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 42*song04_mvl/mxv
+ .byte   VOL , 42*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 42*song04_mvl/mxv
+ .byte   VOL , 42*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song04_mvl/mxv
+ .byte   VOL , 43*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 45*song04_mvl/mxv
+ .byte   VOL , 45*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 46*song04_mvl/mxv
+ .byte   VOL , 46*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 46*song04_mvl/mxv
+ .byte   VOL , 46*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 47*song04_mvl/mxv
+ .byte   VOL , 47*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song04_mvl/mxv
+ .byte   VOL , 48*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song04_mvl/mxv
+ .byte   VOL , 48*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 49*song04_mvl/mxv
+ .byte   VOL , 49*BareFangsAtGod_mvl/mxv
  .byte   W01
  .byte   FINE
 
 @**************** Track 8 (Midi-Chn.7) ****************@
 
-song04_008:
+BareFangsAtGod_008:
 @  #08 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 124
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W48
  .byte   N24 ,Bn4 ,v127
@@ -4308,11 +4308,11 @@ Label_0156C5A4:
 
 @**************** Track 9 (Midi-Chn.8) ****************@
 
-song04_009:
+BareFangsAtGod_009:
 @  #09 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 40
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #09 @001   ----------------------------------------
@@ -4917,11 +4917,11 @@ Label_0156C22D:
 
 @**************** Track 10 (Midi-Chn.9) ****************@
 
-song04_010:
+BareFangsAtGod_010:
 @  #10 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 47
- .byte   VOL , 50*song04_mvl/mxv
+ .byte   VOL , 50*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #10 @001   ----------------------------------------
@@ -5345,11 +5345,11 @@ Label_0156CA77:
 
 @**************** Track 11 (Midi-Chn.10) ****************@
 
-song04_011:
+BareFangsAtGod_011:
 @  #11 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 119
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #11 @001   ----------------------------------------
@@ -5399,102 +5399,102 @@ song04_011:
 Label_0156B862:
  .byte   W96
 @  #11 @016   ----------------------------------------
- .byte   VOL , 0*song04_mvl/mxv
+ .byte   VOL , 0*BareFangsAtGod_mvl/mxv
  .byte   N48 ,As2 ,v127
  .byte   W01
- .byte   VOL , 1*song04_mvl/mxv
+ .byte   VOL , 1*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 2*song04_mvl/mxv
+ .byte   VOL , 2*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 3*song04_mvl/mxv
+ .byte   VOL , 3*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 4*song04_mvl/mxv
+ .byte   VOL , 4*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 5*song04_mvl/mxv
+ .byte   VOL , 5*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 7*song04_mvl/mxv
+ .byte   VOL , 7*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 9*song04_mvl/mxv
+ .byte   VOL , 9*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 10*song04_mvl/mxv
+ .byte   VOL , 10*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 11*song04_mvl/mxv
+ .byte   VOL , 11*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 12*song04_mvl/mxv
+ .byte   VOL , 12*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 13*song04_mvl/mxv
+ .byte   VOL , 13*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 14*song04_mvl/mxv
+ .byte   VOL , 14*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 15*song04_mvl/mxv
+ .byte   VOL , 15*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 16*song04_mvl/mxv
+ .byte   VOL , 16*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 17*song04_mvl/mxv
+ .byte   VOL , 17*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 18*song04_mvl/mxv
+ .byte   VOL , 18*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 19*song04_mvl/mxv
+ .byte   VOL , 19*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 20*song04_mvl/mxv
+ .byte   VOL , 20*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 21*song04_mvl/mxv
+ .byte   VOL , 21*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 22*song04_mvl/mxv
+ .byte   VOL , 22*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 23*song04_mvl/mxv
+ .byte   VOL , 23*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 24*song04_mvl/mxv
+ .byte   VOL , 24*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 25*song04_mvl/mxv
+ .byte   VOL , 25*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 26*song04_mvl/mxv
+ .byte   VOL , 26*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 27*song04_mvl/mxv
+ .byte   VOL , 27*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 28*song04_mvl/mxv
+ .byte   VOL , 28*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 29*song04_mvl/mxv
+ .byte   VOL , 29*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 31*song04_mvl/mxv
+ .byte   VOL , 31*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 33*song04_mvl/mxv
+ .byte   VOL , 33*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 34*song04_mvl/mxv
+ .byte   VOL , 34*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 35*song04_mvl/mxv
+ .byte   VOL , 35*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 36*song04_mvl/mxv
+ .byte   VOL , 36*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 38*song04_mvl/mxv
+ .byte   VOL , 38*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 39*song04_mvl/mxv
+ .byte   VOL , 39*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 40*song04_mvl/mxv
+ .byte   VOL , 40*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 41*song04_mvl/mxv
+ .byte   VOL , 41*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 42*song04_mvl/mxv
+ .byte   VOL , 42*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 43*song04_mvl/mxv
+ .byte   VOL , 43*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 44*song04_mvl/mxv
+ .byte   VOL , 44*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 45*song04_mvl/mxv
+ .byte   VOL , 45*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 46*song04_mvl/mxv
+ .byte   VOL , 46*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 47*song04_mvl/mxv
+ .byte   VOL , 47*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 48*song04_mvl/mxv
+ .byte   VOL , 48*BareFangsAtGod_mvl/mxv
  .byte   W01
- .byte   VOL , 50*song04_mvl/mxv
+ .byte   VOL , 50*BareFangsAtGod_mvl/mxv
  .byte   W01
  .byte   PEND 
  .byte   W96
@@ -5818,11 +5818,11 @@ Label_0156B94F:
 
 @**************** Track 12 (Midi-Chn.11) ****************@
 
-song04_012:
+BareFangsAtGod_012:
 @  #12 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 14
- .byte   VOL , 37*song04_mvl/mxv
+ .byte   VOL , 37*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #12 @001   ----------------------------------------
@@ -6201,11 +6201,11 @@ Label_01708255:
 
 @**************** Track 13 (Midi-Chn.12) ****************@
 
-song04_013:
+BareFangsAtGod_013:
 @  #13 @000   ----------------------------------------
- .byte   KEYSH , song04_key+0
+ .byte   KEYSH , BareFangsAtGod_key+0
  .byte   VOICE , 68
- .byte   VOL , 50*song04_mvl/mxv
+ .byte   VOL , 50*BareFangsAtGod_mvl/mxv
  .byte   PAN , c_v+0
  .byte   W96
 @  #13 @001   ----------------------------------------
@@ -6620,26 +6620,26 @@ Label_0156CD97:
 @******************************************************@
 	.align	2
 
-song04:
+BareFangsAtGod:
 	.byte	13	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song04_pri	@ Priority
-	.byte	song04_rev	@ Reverb.
+	.byte	BareFangsAtGod_pri	@ Priority
+	.byte	BareFangsAtGod_rev	@ Reverb.
     
-	.word	song04_grp
+	.word	BareFangsAtGod_grp
     
-	.word	song04_001
-	.word	song04_002
-	.word	song04_003
-	.word	song04_004
-	.word	song04_005
-	.word	song04_006
-	.word	song04_007
-	.word	song04_008
-	.word	song04_009
-	.word	song04_010
-	.word	song04_011
-	.word	song04_012
-	.word	song04_013
+	.word	BareFangsAtGod_001
+	.word	BareFangsAtGod_002
+	.word	BareFangsAtGod_003
+	.word	BareFangsAtGod_004
+	.word	BareFangsAtGod_005
+	.word	BareFangsAtGod_006
+	.word	BareFangsAtGod_007
+	.word	BareFangsAtGod_008
+	.word	BareFangsAtGod_009
+	.word	BareFangsAtGod_010
+	.word	BareFangsAtGod_011
+	.word	BareFangsAtGod_012
+	.word	BareFangsAtGod_013
 
 	.end

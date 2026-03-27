@@ -71,11 +71,6 @@ SoundRoomEntry(Song_ModernDayOuroboros, SongTitle_ModernDayOuroboros, SourceTitl
 SoundRoomEntry(Song_NoOneIsAlone, SongTitle_NoOneIsAlone, SourceTitle_IntoTheWoods,15)
 SoundRoomEntry(Song_Maps, SongTitle_Maps, SourceTitle_YeahYeahYeahs,48)
 SoundRoomEntry(Song_GloriaFilio, SongTitle_GloriaFilio, SourceTitle_Antibirth,64)
-//somewhere probably player phase
-SoundRoomEntry(Song_SlowDancingInTheDark, SongTitle_SlowDancingInTheDark, SourceTitle_Joji,45)
-SoundRoomEntry(Song_VariationsOnACloud, SongTitle_VariationsOnACloud, SourceTitle_MiracleMusical,41)
-SoundRoomEntry(Song_NopeYoureTooLateImAlreadyDead, SongTitle_NopeYoureTooLateImAlreadyDead, SourceTitle_Wifiskeleton,42)
-SoundRoomEntry(Song_LuckyBreak, SongTitle_LuckyBreak, SourceTitle_RhythmDoctor,11)
 SoundRoomEntry(Song_Biggering, SongTitle_Biggering, SourceTitle_TheLorax,19)
 //city 
 SoundRoomEntry(Song_VastLands, SongTitle_VastLands, SourceTitle_EtrianOdyssey2,4)
@@ -85,6 +80,7 @@ SoundRoomEntry(Song_BlueInGreen, SongTitle_BlueInGreen, SourceTitle_MilesDavis,7
 SoundRoomEntry(Song_PictionaryTitle, SongTitle_PictionaryTitle, SourceTitle_Pictionary,67)//haha
 SoundRoomEntry(Song_TheFirstBattle, SongTitle_TheFirstBattle, SourceTitle_EtrianOdyssey3,68)
 SoundRoomEntry(Song_SlayAndFall, SongTitle_SlayAndFall, SourceTitle_EtrianOdyssey3,69)
+SoundRoomEntry(Song_TilDeathRimsala, SongTitle_TilDeathRimsala, SourceTitle_Arcana,73)
 SoundRoomEntry(Song_DarkCave, SongTitle_DarkCave, SourceTitle_PokemonGSC,40)
 SoundRoomEntry(Song_LifeGoesOn, SongTitle_LifeGoesOn, SourceTitle_Persona5,65)
 //dungeon
@@ -95,6 +91,7 @@ SoundRoomEntry(Song_FrozenGrounds, SongTitle_FrozenGrounds, SourceTitle_EtrianOd
 SoundRoomEntry(Song_EchoingLibrary, SongTitle_EchoingLibrary, SourceTitle_EtrianOdyssey4,37)
 SoundRoomEntry(Song_ExcavationWorkersQuarters, SongTitle_ExcavationWorkersQuarters, SourceTitle_SMT4,18)
 SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOdyssey5,9)
+SoundRoomEntry(Song_FinalCastle, SongTitle_FinalCastle, SourceTitle_BowsersInsideStory,77)
 SoundRoomEntry(Song_CyclopeanHaunt, SongTitle_CyclopeanHaunt, SourceTitle_EtrianOdyssey3,35)
 SoundRoomEntry(Song_MurderousPuppets, SongTitle_MurderousPuppets, SourceTitle_FE12,47)
 //combat
@@ -103,11 +100,14 @@ SoundRoomEntry(Song_InspectingTheResoundingWeapons, SongTitle_InspectingTheResou
 SoundRoomEntry(Song_Shiver, SongTitle_Shiver, SourceTitle_EtrianOdyssey2,33)
 SoundRoomEntry(Song_IsThatBloodThine, SongTitle_IsThatBloodThine, SourceTitle_EtrianOdyssey3,30)
 SoundRoomEntry(Song_EndOfRagingWaves, SongTitle_EndOfRagingWaves, SourceTitle_EtrianOdyssey3,31)
+SoundRoomEntry(Song_ScatterAbout, SongTitle_ScatterAbout, SourceTitle_EtrianOdyssey3,81)
 //boss
 SoundRoomEntry(Song_Fracas, SongTitle_Fracas, SourceTitle_Original,29)
 SoundRoomEntry(Song_Rhapsody, SongTitle_Rhapsody, SourceTitle_OrderOfEcclesia,5)
 SoundRoomEntry(Song_Castle, SongTitle_Castle, SourceTitle_RRThiel,49)
 SoundRoomEntry(Song_DesperateAssault, SongTitle_DesperateAssault, SourceTitle_FE2,52)
+SoundRoomEntry(Song_EverythingIntoTheDark, SongTitle_EverythingIntoTheDark, SourceTitle_FE7,72)
+SoundRoomEntry(Song_BattleB6, SongTitle_BattleB6, SourceTitle_SMT4,71)
 //character and event
 SoundRoomEntry(Song_FaithIsMyPillar, SongTitle_FaithIsMyPillar, SourceTitle_EtrianOdyssey4,23)
 SoundRoomEntry(Song_OohWilfre, SongTitle_OohWilfre, SourceTitle_DrawnToLife2,14)
@@ -118,12 +118,25 @@ SoundRoomEntry(Song_PandemonicPlanet, SongTitle_PandemonicPlanet, SourceTitle_To
 SoundRoomEntry(Song_WiseWords, SongTitle_WiseWords, SourceTitle_Deltarune,44)
 SoundRoomEntry(Song_Musette, SongTitle_Musette, SourceTitle_PicrossDS,63)
 SoundRoomEntry(Song_DevilsRoulette, SongTitle_DevilsRoulette, SourceTitle_Original,60)
+SoundRoomEntry(Song_FlyingBattle, SongTitle_FlyingBattle, SourceTitle_PokemonConquest,74)
 SoundRoomEntry(Song_UntilTheTwoPeopleFallInLove, SongTitle_UntilTheTwoPeopleFallInLove, SourceTitle_Danganronpa3,53)
 SoundRoomEntry(Song_UntilTheTwoPeopleFallInLoveAlt, SongTitle_UntilTheTwoPeopleFallInLoveAlt, SourceTitle_Danganronpa3,54)
 SoundRoomEntry(Song_FinaleMHE, SongTitle_FinaleMHE, SourceTitle_MaybeHappyEnding,39)
 //death and game over
 SoundRoomEntry(Song_NameEntry, SongTitle_NameEntry, SourceTitle_Persona,20)
 SoundRoomEntry(Song_NoMore, SongTitle_NoMore, SourceTitle_IntoTheWoods,21)
+//tbd
+SoundRoomEntry(Song_BareFangsAtGod, SongTitle_BareFangsAtGod, SourceTitle_Xenogears,75)
+SoundRoomEntry(Song_DarkBattle, SongTitle_DarkBattle, SourceTitle_PokemonConquest,76)
+SoundRoomEntry(Song_Incidental3B, SongTitle_Incidental3B, SourceTitle_MerrilyWeRollAlong,78)
+SoundRoomEntry(Song_LivingOnTheEdge, SongTitle_LivingOnTheEdge, SourceTitle_Lagoon,79)
+SoundRoomEntry(Song_OneSlipTooLate, SongTitle_OneSlipTooLate, SourceTitle_RhythmDoctor,80)
+SoundRoomEntry(Song_SignOfTheTimes, SongTitle_SignOfTheTimes, SourceTitle_HarryStyles,82)
+SoundRoomEntry(Song_TheSubway, SongTitle_TheSubway, SourceTitle_ChappellRoan,83)
+SoundRoomEntry(Song_SlowDancingInTheDark, SongTitle_SlowDancingInTheDark, SourceTitle_Joji,45)
+SoundRoomEntry(Song_VariationsOnACloud, SongTitle_VariationsOnACloud, SourceTitle_MiracleMusical,41)
+SoundRoomEntry(Song_NopeYoureTooLateImAlreadyDead, SongTitle_NopeYoureTooLateImAlreadyDead, SourceTitle_Wifiskeleton,42)
+SoundRoomEntry(Song_LuckyBreak, SongTitle_LuckyBreak, SourceTitle_RhythmDoctor,11)
 WORD 0xFFFFFFFF 0 0 0
 
 PUSH

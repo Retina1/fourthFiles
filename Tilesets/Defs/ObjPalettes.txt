@@ -16,3 +16,5 @@ Frontier1OBJ
 Frontier1PAL
 Desert1OBJ
 Desert1PAL
+Castle1OBJ
+Castle1PAL

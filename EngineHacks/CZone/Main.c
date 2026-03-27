@@ -25,6 +25,7 @@ extern u16 GenericAOEEvent;
 #include "Misc/NewPromoGains.c"
 #include "Misc/Caps.c"
 #include "Binds/Binds.c"
+#include "Binds/StatusIcons.c"
 #include "BuffsDebuffs/BuffsDebuffs.c"
 #include "BuffsDebuffs/RallyingCry.c"
 #include "PassiveSkills/_PassiveSkills.c"

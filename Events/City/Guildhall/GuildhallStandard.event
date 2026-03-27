@@ -62,6 +62,9 @@ UNIT
 Recruit_Hart:
 UNIT Hart 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortmace,Stonard] NoAI
 UNIT
+Recruit_Campbell:
+UNIT Campbell 0x0 0x1 Level(4,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Yue] NoAI
+UNIT
 
 Recruit_Martin:
 UNIT Martin 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Handgonne] NoAI
@@ -138,6 +141,9 @@ EndEvent
 Hart_RecruitEvent:
 GuildRecruit(Hart,Guild_Test_Dialogue,0x24)
 EndEvent
+Campbell_RecruitEvent:
+GuildRecruit(Campbell,Guild_Test_Dialogue,0x25)
+EndEvent
 
 //gunner
 Martin_RecruitEvent:
@@ -192,6 +198,7 @@ GuildLoad(Gloria,Recruit_Gloria,0x2)
 GuildLoad(Pipsy,Recruit_Pipsy,0x3,Chapter8DoneFlag)
 GuildLoad(Son,Recruit_Son,0x4)
 GuildLoad(Hart,Recruit_Hart,0x5)
+GuildLoad(Campbell,Recruit_Campbell,0x6)
 FADU 10
 ENDA
 

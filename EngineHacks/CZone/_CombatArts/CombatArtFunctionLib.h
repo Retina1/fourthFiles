@@ -5,6 +5,7 @@
 
 u8 CombatArtGeneralAttackingUsability();
 u8 CombatArtRangeAttackingUsability(int minRange, int maxRange, int weaponType);
+u8 VolleyAttackingUsability(int minRange, int maxRange);
 u8 CombatArtWeaponTypeAttackingUsability(int weaponType);
 u8 CombatArtGeneralAttackingEffect(struct MenuProc* menu, struct MenuItemProc* menuItem);
 

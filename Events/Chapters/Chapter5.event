@@ -265,6 +265,7 @@ LABEL 0x4
 EndEvent
 
 EndingScene:
+SET_ACTIVE 0
 ENUT Chapter5DoneFlag
 MUSC 0x0
 CleanTextNoMap(0x0,Chapter5_Ending_1)

@@ -58,6 +58,123 @@ int StaffLock(struct Unit* unit, int itemID, int rangeWord){
 	return 0;
 }
 
+int IsTargetMarked(struct Unit* target);
+void TryAddTrapsToTargetList();
+
+void ForEachMarkedUnitInRange(void(*func)(struct Unit* unit)) {
+    int ix;
+    int iy;
+
+    for (iy = gBmMapSize.y - 1; iy >= 0; iy--) {
+        for (ix = gBmMapSize.x - 1; ix >= 0; ix--) {
+
+            if (gMapRangeSigned[iy][ix] == 0) {
+                continue;
+            }
+
+            if (gBmMapUnit[iy][ix] == 0) {
+                continue;
+            }
+			
+			if (IsTargetMarked(GetUnit(gBmMapUnit[iy][ix]))) {
+				func(GetUnit(gBmMapUnit[iy][ix]));
+			}
+        }
+    }
+
+    return;
+}
+
+extern int ItemRangeGetter(struct Unit* unit, int item);
+//
+void MakeTargetListForWeapon(struct Unit* unit, int item) {
+
+    int x = unit->xPos;
+    int y = unit->yPos;
+
+    gSubjectUnit = unit;
+
+    InitTargets(x, y);
+
+    BmMapFill(gBmMapRange, 0);
+
+	//aaaaaaaaaaa
+	int rangeWord = ItemRangeGetter(unit,item);
+//	int rangeWord = 0x00010002;
+	if (rangeWord != 0) {
+		MapAddInBoundedRange(x, y, ((rangeWord >> 16) & 0xFFFF), (rangeWord & 0xFFFF));
+		
+		if ((GetActiveArt(unit) == 42)||(GetActiveArt(unit) == 43)||(GetActiveArt(unit) == 44)) {
+			ForEachMarkedUnitInRange(AddUnitToTargetListIfNotAllied);
+		}
+		else {
+			ForEachUnitInRange(AddUnitToTargetListIfNotAllied);
+		}
+
+		TryAddTrapsToTargetList();
+	}
+
+    return;
+}
+void MakeTargetListForVolleyRange(struct Unit* unit, int minRange, int maxRange) {
+
+    int x = unit->xPos;
+    int y = unit->yPos;
+
+    gSubjectUnit = unit;
+
+    InitTargets(x, y);
+
+    BmMapFill(gBmMapRange, 0);
+
+    MapAddInBoundedRange(x, y, minRange, maxRange);
+
+    ForEachMarkedUnitInRange(AddUnitToTargetListIfNotAllied);
+
+    return;
+}
+u8 VolleyAttackingUsability(int minRange, int maxRange) {
+    
+    // AttackCommandUsability but modified
+    if (gActiveUnit->state & US_HAS_MOVED) {
+        return FALSE;
+    }
+
+    if (gActiveUnit->state & US_IN_BALLISTA) {
+        return FALSE;
+    }
+
+    for (int i = 0; i < UNIT_ITEM_COUNT; i++) {
+        int item = gActiveUnit->items[i];
+
+        if (item == 0) {
+            break;
+        }
+
+        if (!(GetItemAttributes(item) & IA_WEAPON)) {
+            continue;
+        }
+
+        if (!(GetItemType(item) == 0x3)) {
+            continue;
+        }
+        
+		if (!CanUnitUseWeaponNow(gActiveUnit, item)) {
+            continue;
+        }
+
+        MakeTargetListForVolleyRange(gActiveUnit, minRange, maxRange);
+        if (GetSelectTargetCount() == 0) {
+            continue;
+        }
+
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+
 void MakeTargetListForWeaponRange(struct Unit* unit, int minRange, int maxRange) {
 
     int x = unit->xPos;

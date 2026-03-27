@@ -1,0 +1,53 @@
+##UM_DropShot
+ Drop Shot[X]
+##UM_DropShotDesc
+Shoot with precise range.[N]
+Cost: 3 Durability.[X]
+
+##UM_CurvedShot
+ Curved Shot[X]
+##UM_CurvedShotDesc
+Shoot an accurate arrow.[N]
+Cost: 3 Durability.[X]
+
+##UM_PowerShot
+ Power Shot[X]
+##UM_PowerShotDesc
+Shoot a mighty arrow.[N]
+Cost: 4 Durability.[X]
+
+##UM_FlankShot
+ Flank Shot[X]
+##UM_FlankShotDesc
+Shoot a flanked target.[N]
+Cost: 4 Durability.[X]
+
+##UM_ArmorPiercer
+ Armor Prcr.[X]
+##UM_ArmorPiercerDesc
+Shoot to pierce defenses.[N]
+Cost: 5 Durability.[X]
+
+##UM_Closer
+ Closer[X]
+##UM_CloserDesc
+Shoot to bind legs.[N]
+Cost: 5 Durability.[X]
+
+##UM_PointBlankVolley
+ P. Blank Vol.[X]
+##UM_PointBlankVolleyDesc
+Loose two mighty shots.[N]
+Cost: 4 Durability.[X]
+
+##UM_SquallVolley
+ Squall Vol.[X]
+##UM_SquallVolleyDesc
+Loose a great barrage.[N]
+Cost: 6 Durability.[X]
+
+##UM_AstralVolley
+ Astral Vol.[X]
+##UM_AstralVolleyDesc
+Loose the heavens' fury.[N]
+Cost: 10 Durability.[X]

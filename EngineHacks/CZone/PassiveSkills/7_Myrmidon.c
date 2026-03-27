@@ -46,7 +46,7 @@ void ApplyMyrmidonExtend(struct Unit* attacker, struct Unit* defender) {
 }
 
 void ApplyMyrmidonSteppingSlash(struct Unit* attacker, struct Unit* defender) {
-	if (UNIT_HAS_SKILL(attacker,RNI,promoSkill_141)){
+	if (UNIT_HAS_SKILL(attacker,RNI,skill_141)){
 		if (GetActiveArt(attacker) == 0) {
 			if  (attacker->classSkillState == 0) {
 				attacker->classSkillState = 3;

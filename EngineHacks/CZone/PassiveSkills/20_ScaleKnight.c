@@ -19,7 +19,7 @@ void ApplyScaleKnightFlyingFortress(struct BattleUnit* attacker, struct BattleUn
 }
 
 void ApplyScaleKnightExecutor(struct BattleUnit* attacker, struct BattleUnit* defender){
-	if (UNIT_HAS_SKILL(&attacker->unit,SCM,promoSkill_141)){
+	if (UNIT_HAS_SKILL(&attacker->unit,SCM,skill_141)){
 		int maxHP = GetUnitMaxHp(&defender->unit);
 		int numerator = 2*maxHP - defender->unit.curHP;
 		attacker->battleAttack  = attacker->battleAttack * numerator/maxHP;

@@ -127,7 +127,7 @@ void CrippleWhipBattleProc(struct BattleUnit* actor, struct BattleUnit* target){
 
 //climax
 u8 ClimaxWhipArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,DOM,promoSkill_351)){
+	if (UNIT_HAS_SKILL(unit,DOM,skill_351)){
 		return CombatArtWeaponTypeAttackingUsability(0);
 	}
 	else return 0;
@@ -144,7 +144,7 @@ void ClimaxWhipBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 int ClimaxWhipOdds(struct BattleUnit* actor, struct BattleUnit* target){
 	int odds;
 	int missingHP = GetUnitMaxHp(&target->unit) - GetUnitCurrentHp(&target->unit);
-	if (UNIT_HAS_SKILL(&actor->unit,DOM,promoSkill_353)){
+	if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_353)){
 		if ((2*GetUnitCurrentHp(&target->unit)) < GetUnitMaxHp(&target->unit)) {
 			odds = 10 * missingHP;
 		}
@@ -152,7 +152,7 @@ int ClimaxWhipOdds(struct BattleUnit* actor, struct BattleUnit* target){
 			odds = 3 * missingHP;
 		}
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DOM,promoSkill_352)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_352)){
 		odds = 3 * missingHP;
 	}
 	else {
@@ -166,7 +166,7 @@ int ClimaxWhipOdds(struct BattleUnit* actor, struct BattleUnit* target){
 
 //ecstasy
 u8 EcstasyArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,DOM,promoSkill_531)){
+	if (UNIT_HAS_SKILL(unit,DOM,skill_531)){
 		return CombatArtWeaponTypeAttackingUsability(0);
 	}
 	else return 0;
@@ -180,25 +180,25 @@ void EcstasyBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	int atkDiv = 10;
 	int bindMul = 12;
 	int bindDiv = 10;
-	if (UNIT_HAS_SKILL(&actor->unit,DOM,promoSkill_535)){
+	if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_535)){
 		atkMul = 1;
 		atkDiv = 1;
 		bindMul = 5;
 		bindDiv = 2;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DOM,promoSkill_534)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_534)){
 		atkMul = 15;
 		atkDiv = 20;
 		bindMul = 2;
 		bindDiv = 1;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DOM,promoSkill_533)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_533)){
 		atkMul = 15;
 		atkDiv = 20;
 		bindMul = 9;
 		bindDiv = 5;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DOM,promoSkill_532)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_532)){
 		bindMul = 3;
 		bindDiv = 2;
 	}

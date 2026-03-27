@@ -14,25 +14,7 @@
 	#include "Item_TTRange.lyn.event"
 	POIN FillRange|1
 	POIN 0	//replace with 0 if not using capture or skill system
-	/*
-	Item_TURange: 
-	//build range that checks in units on selectable tiles meet condition
-	#incbin "ItemRangeSetup.dmp"
-	POIN Item_TURangeBuilder //0x2506C
-	
-	Item_TTRange: 
-	//build range that checks if selectable tiles meet condition
-	#incbin "ItemRangeSetup.dmp"
-	POIN Item_TTRangeBuilder
-	
-	Item_TURangeBuilder:
-	#incbin "ItemRangeBuilder.dmp"
-	POIN GetItemRange|1 CheckUnitsInRange|1 FillRange|1 Is_Capture_Set|1
-	
-	Item_TTRangeBuilder:
-	#incbin "ItemRangeBuilder.dmp"
-	POIN GetItemRange|1 CheckTilesInRange|1 FillRange|1 Is_Capture_Set|1
-	*/
+
 	GetItemRange:
 	#include "ItemRangeGetter.lyn.event"
 	//#incbin "ItemRangeGetter.dmp"
