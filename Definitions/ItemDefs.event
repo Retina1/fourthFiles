@@ -173,6 +173,7 @@
 #define CrinkleGlove 0xDA
 #define KingBrooch 0xDB
 #define SleepGas 0xDC
+#define SimpleRing 0xDD
 #define HeroCrest 0xE6
 #define KnightProof 0xE7
 #define OrionsBolt 0xE8

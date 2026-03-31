@@ -173,6 +173,7 @@ FictionScroll
 CrinkleGlove
 KingBrooch
 SleepGas
+SimpleRing
 HeroCrest 0xe6
 KnightProof
 OrionsBolt

@@ -1,3 +1,6 @@
+# 0x0002 textWeaponRankIncreasedTo
+ Weapon rank increased to [X]
+
 #0x0903 SS_TalkText
 Talk[X]
 
@@ -730,3 +733,6 @@ Select which unit to target.[X]
 
 # 0x087B
 Select a unit to target.[X]
+
+# 0x04F1
+Type[.][X]

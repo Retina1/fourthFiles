@@ -34,7 +34,7 @@ MenuTerminator
 
 ALIGN 4
 GrowthModeMenu:
-MenuDefinition(6, 5, 18, 0, 1, GrowthModeMenuOptions)
+MenuDefinition(6, 4, 18, 0, 1, GrowthModeMenuOptions)
 
 ALIGN 4
 GrowthModeMenuOptions:
@@ -47,11 +47,13 @@ MenuTerminator
 
 ALIGN 4
 CustomizersMenu:
-MenuDefinition(6, 5, 18, 0, 1, CustomizersMenuOptions)
+MenuDefinition(6, 4, 18, 0, 1, CustomizersMenuOptions)
 
 ALIGN 4
 CustomizersMenuOptions:
 MenuOption(PicnicModeLabel, PicnicModeRText, 0x8)
+MenuOption(RepairModeLabel, RepairModeRText, 0x9)
+MenuOption(ColorblindLabel, ColorblindRText, 0xa)
 MenuOption(ClearModifiersLabel, ClearModifiersLabelRText, 0)
 MenuOption(FinishLabel, FinishRText, 0)
 MenuTerminator

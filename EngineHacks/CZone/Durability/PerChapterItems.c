@@ -4,6 +4,41 @@ extern u8 PerChapterItemsList[];
 int GetBattleUnitHitCount(struct BattleUnit* attacker);
 s8 BattleGenerateHit(struct BattleUnit* attacker, struct BattleUnit* defender);
 
+int GetItemCost(int item) {
+	if (CheckEventId_(0x83) && ((GetItemType(item) < 0x7)))
+		return GetItemData(ITEM_INDEX(item))->costPerUse * (GetItemData(GetItemIndex(item))->maxUses);
+    else if (GetItemAttributes(item) & IA_UNBREAKABLE)
+        return GetItemData(ITEM_INDEX(item))->costPerUse;
+    else
+        return GetItemData(ITEM_INDEX(item))->costPerUse * GetItemUses(item);
+}
+
+void RepairModeRefreshASMC(ProcPtr* proc) {
+	int unitID = 1;
+	int maxCount = 62;
+	
+	if (CheckEventId_(0x83)) {
+		while(unitID < maxCount) {
+			struct Unit* curUnit = GetUnit(unitID);
+			for(int j = 0; j < GetUnitItemCount(curUnit); j++) {
+				u16 curItem = curUnit->items[j];
+				if (GetItemType(curItem) < 0x7) {
+					curUnit->items[j] = MakeNewItem(GetItemIndex(curItem));
+				}
+			}
+			unitID++;
+		}
+		
+	u16 * convoy = GetConvoyItemArray();
+		for(int i = 0; (i < 200) || ((i < ConvoySize_Link) && (*convoy)); i++) {
+			if (GetItemType(*convoy) < 0x7) {
+				*convoy = MakeNewItem(GetItemIndex(*convoy));
+			}
+			convoy++;		
+		}
+	}
+}
+
 void RefreshItemsASMC(ProcPtr* proc) {
 	u8 target = gEventSlots[1];
 	
@@ -37,7 +72,7 @@ void RefreshItemsASMC(ProcPtr* proc) {
 	
 	u16 * convoy = GetConvoyItemArray();
 	if (target != 0) {
-		for (int i = 0; (i < 150) || ((i < ConvoySize_Link) && (*convoy)); i++) {
+		for (int i = 0; (i < 200) || ((i < ConvoySize_Link) && (*convoy)); i++) {
 			if (target == GetItemIndex(*convoy)) {
 				*convoy = MakeNewItem(GetItemIndex(*convoy));
 			}
@@ -45,7 +80,7 @@ void RefreshItemsASMC(ProcPtr* proc) {
 		}
 	}
 	else {
-			for(int i = 0; (i < 150) || ((i < ConvoySize_Link) && (*convoy)); i++) {
+			for(int i = 0; (i < 200) || ((i < ConvoySize_Link) && (*convoy)); i++) {
 				int j = 0;
 				while(PerChapterItemsList[j] != 0) {
 					if(PerChapterItemsList[j] == GetItemIndex(*convoy)) {
@@ -67,14 +102,21 @@ u16 GetItemAfterUse(int item) {
 	int i = 0;
 	while(PerChapterItemsList[i] != 0) {
 			if(GetItemIndex(item) == PerChapterItemsList[i]) {
-					if (item < (1 << 8))
-					{
+					if (item < (1 << 8)) {
 						item = GetItemIndex(item);
 					}
 				return item;
 			}
 			i++;
 	}
+
+	if (CheckEventId_(0x83)){
+		if (item < (1 << 8)) {
+			item = GetItemIndex(item);
+		}
+		return item;
+	}
+
     if (item < (1 << 8))
         return 0; // return no item if uses < 0
 
@@ -227,6 +269,10 @@ void DrawItemStatScreenLine(struct Text* text, int item, int nameColor, u16* map
 		}
 		i++;
 	}
+	if ((GetItemType(item) < 0x7) && CheckEventId_(0x83)) {
+		color = (nameColor != TEXT_COLOR_SYSTEM_GRAY) ? TEXT_COLOR_SYSTEM_GOLD : TEXT_COLOR_SYSTEM_GRAY;
+	}
+	
 	
 	int allegiance = (gStatScreen.unit->index & 0xC0);
 	
@@ -257,7 +303,11 @@ void DrawItemMenuLineLong(struct Text* text, int item, s8 isUsable, u16* mapOut)
 			color = TEXT_COLOR_SYSTEM_GOLD;
 		}
 		i++;
-		}
+	}
+
+	if ((GetItemType(item) < 0x7) && CheckEventId_(0x83)) {
+		color = TEXT_COLOR_SYSTEM_GOLD;
+	}
 
     PutNumberOrBlank(mapOut + 10, isUsable ? color : TEXT_COLOR_SYSTEM_GRAY, GetItemUses(item));
     PutNumberOrBlank(mapOut + 13, isUsable ? color : TEXT_COLOR_SYSTEM_GRAY, GetItemMaxUses(item));

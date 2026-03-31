@@ -52,6 +52,11 @@ WORD GoreEyepatchMug\
 #include "EMS/ExModularSave.event"
 #include "BuffsDebuffs/SuspendExpansion.event"
 
+#include "PopupRework/PopupRework.event"
+#include "PopupRework/Popups.event"
+
+#include "DisplayWRankOnLevelUp/DisplayWRankOnLevelUp.event"
+
 
 #include "ItemRangeFix/ItemRangeFix.event"
 #include "SplitPromoItems/SplitPromoItems.event"

@@ -173,6 +173,7 @@
 #define CrinkleGloveIcon 0xDA
 #define KingBroochIcon 0xDB
 #define SleepGasIcon 0xDC
+#define SimpleRingIcon 0xDD
 #define HeroCrestIcon 0xE6
 #define KnightProofIcon 0xE7
 #define OrionsBoltIcon 0xE8

@@ -88,9 +88,10 @@ UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [12,6] 0x0 0x0 0x0 0x0 [AirScale
 UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [1,2] 0x0 0x0 0x0 0x0 [VenomScales] DelayedAI
 UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [AirScales] DelayedAI
 
+//beast king moves before other wolves
+UNIT BeastKing Wolfking 0x0 Level(6,Enemy,1) [7,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
 UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
 UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [12,4] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
-
 UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [4,8] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
 UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
 //the king's gang - reduce wolf count on normal
@@ -100,7 +101,6 @@ UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [9,3] 0x0 0x0 0x0 0x0 [FrigidBite]
 //UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [8,2] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
 UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [6,4] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
 UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [8,4] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
-UNIT BeastKing Wolfking 0x0 Level(6,Enemy,1) [7,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
 UNIT Harla Highlander 0x0 Level(26,Enemy,1) [8,0] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
 UNIT
 //wolfskin uses fates wolf

@@ -311,7 +311,7 @@ void HipShotPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_313)){
 		hitMul = 13;
 	}
-	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_312)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_312)){
 		hitMul = 12;
 	}
 	actor->battleHitRate = actor->battleHitRate * hitMul / 10;

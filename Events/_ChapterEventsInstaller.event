@@ -31,7 +31,7 @@
 #define StartGameOver "ASMC 0x800D391" // Game over ASMC 
 #define RefreshSMS "ASMC 0x8026689" //see how this looks when loading stuff
 #define RefreshLordSplitTiles "ASMC 0x8003D21" //see how this looks when loading stuff
-#define Reinforcements(pointer) "CamOn ; LOAD1 0x0 pointer; ENUN; RefreshSMS; CamOff"
+#define Reinforcements(pointer) "CamOn ; LOAD1 0x0 pointer; ENUN; RefreshSMS; ASMC RefreshHPCacheASMC|1; CamOff"
 #define HardReinforcements(pointer) "CHECK_HARD ; BNE 6789 rC r0 ; Reinforcements(pointer); LABEL 6789"
 #define DifficultyReinforcements(easy,normal,hard) "CHECK_TUTORIAL ; BNE 4034 rC r0 ; CHECK_HARD ; BNE 4035 rC r0 ; Reinforcements(normal) ; GOTO 4036 ; LABEL 4034 ; Reinforcements(easy) ; GOTO 4036 ; LABEL 4035 ; Reinforcements(hard) ; LABEL 4036 ; ENUN;"
 #define RemoveUnit(unit) "CHECK_EXISTS unit; BEQ unit 0xc 0x0; REMU unit; LABEL unit"
@@ -48,11 +48,11 @@
 //second clears traps
 #define ClearArenaBorders "ASMC ClearLightRunes|1; RefreshLightRunes; ASMC 0x8019A65; ASMC HealPlayersASMC|1"
 #define ResetTurncount "SVAL 1 1; ASMC SetTurncountASMC|1"
-#define BeginCombatEncounter "ResetTurncount; ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0"
+#define BeginCombatEncounter "ResetTurncount; ASMC RepairModeRefreshASMC|1; ENUF 0x6; ENUF WaitEventTrapsFlag; FADI 16; CLEA 0"
 #define WarpNathan(x,y)	"SET_ACTIVE Nathan; SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX; CAM1 [x,y]; WM_WAITFORCAM; SVAL 0xB y*0x10000+x; WARP_IN; STAL 20; MOVE 0xFFFF Nathan [x,y]; ENUN; WM_WAITFORFX; STAL 12; NathanIsHere"
 #define SilentWarpNathan(x,y)	"SET_ACTIVE Nathan; FADI 16; CAM1 [x,y]; WM_WAITFORCAM; MOVE 0xFFFF Nathan [x,y]; ENUN; FADU 16"
 
-#define DifficultySwapper "EVBIT_MODIFY 3; CALL DifficultySwapEvent; EVBIT_MODIFY 0"
+#define DifficultySwapper "EVBIT_MODIFY 3; CALL DifficultySwapEvent; ASMC RepairModeRefreshASMC|1; EVBIT_MODIFY 0"
 
 #define LevelUpSkill(unitID,skillID) "SVAL 0x1 unitID; SVAL 0x2 skillID; ASMC LevelUpSkillASMC|1"
 
@@ -164,6 +164,8 @@ CallMenu(GrowthModeMenu)
 	LABEL 0x5
 LABEL 0x2000
 ENUT 0x8
+ENUT 0x9
+ENUT 0xa
 LABEL 0x2001
 CallMenu(CustomizersMenu)
 	SVAL 0x1 0x0
@@ -174,12 +176,33 @@ CallMenu(CustomizersMenu)
 		ENUF 0x8
 		GOTO 0x2001
 	LABEL 0x10
+
 	SVAL 0x1 0x1
 	BNE 0x11 0xc 0x1
+		SystemText(RepairModeConfirm)
+		IfNoSelectedGoto(0x2001)
+		ENUT RepairModeFlag
+		ENUF 0x9
+		GOTO 0x2001
+	LABEL 0x11
+
+	SVAL 0x1 0x2
+	BNE 0x12 0xc 0x1
+		SystemText(ColorblindConfirm)
+		IfNoSelectedGoto(0x2001)
+		ENUT ColorblindFlag
+		ENUF 0xa
+		GOTO 0x2001
+	LABEL 0x12
+
+	SVAL 0x1 0x3
+	BNE 0x13 0xc 0x1
 		SystemText(ClearModifiers)
 		ENUF PicnicModeFlag
+		ENUF RepairModeFlag
+		ENUF ColorblindFlag
 		GOTO 0x2000
-	LABEL 0x11
+	LABEL 0x13
 LABEL 0x3000
 ENUF 0x8
 ENDA

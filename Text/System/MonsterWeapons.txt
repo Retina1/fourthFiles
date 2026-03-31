@@ -134,6 +134,12 @@ A brooch made of lustrous wolf fur.[N]
 Grants 1.1x Hit. Add 20% of Mag to[N]
 Atk with phys. weapons, before mults.[X]
 
+##Name_SimpleRing
+Simple Ring[X]
+##Desc_SimpleRing ^
+A basic ring that tempers the self.[N]
+The wearer cannot critically strike.[X]
+
 ##Use_PassiveItem
 Grants a[N]
 passive boon.[X]

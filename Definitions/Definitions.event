@@ -7,7 +7,9 @@
 #include "PortraitDefs.event"
 #include "ItemIconDefs.event"
 
-
+#define ColorblindFlag 0x7e
+//idk about triattacks or dk
+#define RepairModeFlag 0x83
 //don't use 84
 #define Arena1DoneFlag 0x85
 #define Arena2DoneFlag 0x86

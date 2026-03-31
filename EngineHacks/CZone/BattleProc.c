@@ -288,12 +288,31 @@ void BattleApplyItemEffect(struct Proc* proc) {
     Proc_StartBlocking(sProcScr_BattleAnimSimpleLock, proc);
 }
 
+extern u8 PerChapterItemsList[];
 //durability
 u16 GetItemAfterArtUse(int item, int cost) {
     if (GetItemAttributes(item) & IA_UNBREAKABLE)
         return item; // unbreakable items don't loose uses!
 
     item -= (cost << 8); // lose cost uses
+
+	int i = 0;
+	while(PerChapterItemsList[i] != 0) {
+			if(GetItemIndex(item) == PerChapterItemsList[i]) {
+					if (item < (1 << 8)) {
+						item = GetItemIndex(item);
+					}
+				return item;
+			}
+			i++;
+	}
+
+	if (CheckEventId_(0x83)){
+		if (item < (1 << 8)) {
+			item = GetItemIndex(item);
+		}
+		return item;
+	}
 
     if (item < (1 << 8))
         return 0; // return no item if uses < 0

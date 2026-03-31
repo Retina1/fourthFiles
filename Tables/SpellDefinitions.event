@@ -19,7 +19,7 @@
 #define NosferatuAnim 0x1e
 #define LightningAnim 0x1f
 #define PurgeAnim 0x20
-#define SagittaeAnim 0x21
+//#define SagittaeAnim 0x21
 #define DivineAnim 0x22
 //#define DivinestoneAnim 0x23
 #define EclipseAnim 0x24
@@ -36,7 +36,7 @@
 #define HammerneAnim 0x2f
 #define BerserkStaffAnim 0x30
 #define BarrierAnim 0x31
-#define TornadoAnim 0x32
+//#define TornadoAnim 0x32
 #define ShineAnim 0x33
 #define LunaTomeAnim 0x34
 #define ExcaliburAnim 0x35

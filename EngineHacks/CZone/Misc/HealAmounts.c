@@ -138,6 +138,8 @@ void LimitCurrentHPToMax(void) {
 int GetUnitItemHealAmount(struct Unit* unit, int item) {
     int result = 0;
 
+	//todo - check for combart, use that to get heal amount
+
     result += GetItemMight(item);
 
     if (GetItemAttributes(item) & IA_STAFF) {
@@ -261,3 +263,65 @@ void NewExecVulneraryItem(ProcPtr proc) {
 
     return;
 }
+
+void NewDrawUnitHpText(struct Text* text, struct Unit* unit) {
+    ClearText(text);
+
+    Text_InsertDrawString(text, 0, 3, GetStringFromIndex(0x4E9)); // TODO: msgid "HP"
+    Text_InsertDrawString(text, 0x24, 3, "->"); // TODO: msgid "/[.]"
+
+	struct Unit* healingUnit = GetUnit(gActionData.subjectIndex);
+	int healingItem = healingUnit->items[gActionData.itemSlotIndex];
+	int totalHP = GetUnitCurrentHp(unit) + GetUnitItemHealAmount(healingUnit,healingItem);
+	int colorID = 2;
+	if (totalHP >= GetUnitMaxHp(unit)) {
+		totalHP = GetUnitMaxHp(unit);
+		colorID = 4;
+	}
+
+    Text_InsertDrawNumberOrBlank(text, 0x1C, 2, GetUnitCurrentHp(unit));
+    Text_InsertDrawNumberOrBlank(text, 0x38, colorID, totalHP);
+
+    return;
+}
+
+struct UnitInfoWindowProc {
+    /* 00 */ PROC_HEADER;
+
+    /* 2C */ struct Unit* unit;
+
+    /* 30 */ struct Text name;
+    /* 38 */ struct Text lines[5];
+
+    /* 60 */ u8 x;
+    /* 61 */ u8 y;
+    /* 62 */ u8 xUnitSprite;
+    /* 63 */ u8 xNameText;
+};
+
+struct UnitInfoWindowProc* UnitInfoWindow_DrawBase(struct UnitInfoWindowProc* proc, struct Unit* unit, int x, int y, int width, int lines);
+int GetUnitInfoWindowX(struct Unit* unit, int width);
+
+void NewRefreshUnitHpInfoWindow(struct Unit* unit) {
+
+    int y = 0;
+    int x = GetUnitInfoWindowX(unit, 10);
+
+    struct UnitInfoWindowProc* proc = UnitInfoWindow_DrawBase(0, unit, x, 0, 10, 1);
+
+    NewDrawUnitHpText(proc->lines + 0, unit);
+    PutText(proc->lines + 0, gBG0TilemapBuffer + TILEMAP_INDEX(x + 1, y + 3));
+
+    return;
+}
+
+
+u8 HealMapSelect_SwitchIn(ProcPtr proc, struct SelectTarget* target) {
+
+    ChangeActiveUnitFacing(target->x, target->y);
+
+    NewRefreshUnitHpInfoWindow(GetUnit(target->uid));
+
+    return 0; // BUG?
+}
+

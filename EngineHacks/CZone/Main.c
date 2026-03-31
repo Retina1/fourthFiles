@@ -21,14 +21,19 @@ extern u16 GenericAOEEvent;
 #include "_CombatArts/CombatArtsMenus.c"
 #include "_CombatArts/CombatArtFunctionLib.c"
 
+
+#include "Binds/Binds.c"
+#include "Binds/StatusIcons.c"
+
 #include "Misc/LoadUnitBases.c"
 #include "Misc/NewPromoGains.c"
 #include "Misc/Caps.c"
-#include "Binds/Binds.c"
-#include "Binds/StatusIcons.c"
+
 #include "BuffsDebuffs/BuffsDebuffs.c"
 #include "BuffsDebuffs/RallyingCry.c"
 #include "PassiveSkills/_PassiveSkills.c"
+
+
 
 
 #include "UnitMenuSkills/UMSkills.c"
@@ -44,6 +49,7 @@ extern u16 GenericAOEEvent;
 #include "Misc/CurseFix.c"
 #include "Misc/StatusInfliction.c"
 #include "Misc/BattleUnwind.c"
+#include "Durability/MaxDurability.c"
 #include "Durability/PerChapterItems.c"
 #include "StatPassives/StatPassives.c"
 #include "WaitEventTraps/WaitEventTraps.c"

@@ -32,10 +32,15 @@ void UnitLoadStatsFromChracter(struct Unit* unit, const struct CharacterData* ch
             unit->ranks[i] = unit->pCharacterData->baseRanks[i];
     }
 	int allegiance = (unit->index & 0xC0);
-    if (allegiance == FACTION_BLUE && (unit->level != UNIT_LEVEL_MAX))
+    if (allegiance == FACTION_BLUE && (unit->level != UNIT_LEVEL_MAX)) {
         unit->exp = 0;
-    else
+	}
+    else {
         unit->exp = UNIT_EXP_DISABLED;
+	}
+	//need to rerun cache on unit load
+	infoIconCache->hpValid = FALSE;
+	infoIconCache->hpCache[unit->index] = GetUnitMaxHp(unit);
 }
 
 
@@ -108,6 +113,10 @@ void LoadUnit_800F704(const struct UnitDefinition * def, u16 b, s8 quiet, s8 d)
                 UnitApplyBonusLevels(unit, -GetROMChapterStruct(gPlaySt.chapterIndex)->normalModeLevelMalus);
         }
     }
+
+	//need to rerun cache on unit load
+	infoIconCache->hpValid = FALSE;
+	infoIconCache->hpCache[unit->index] = GetUnitMaxHp(unit);
 
     sub_800F8A8(unit, def, b, quiet);
 }

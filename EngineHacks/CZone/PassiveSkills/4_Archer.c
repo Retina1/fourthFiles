@@ -48,13 +48,15 @@ void ApplyArcherPerch(struct BattleUnit* attacker){
 }
 
 void ApplyArcherInescapable(struct BattleUnit* attacker, struct BattleUnit* defender){
-	if ((GetActiveArt(&attacker->unit) != 42)&&(GetActiveArt(&attacker->unit) != 43)&&(GetActiveArt(&attacker->unit) != 44)) { //42-44 are the volley arts
-		if (IsTargetMarked(&defender->unit)) {
-			if (UNIT_HAS_SKILL(&attacker->unit,SNP,skill_232)){
-				attacker->battleHitRate  = attacker->battleHitRate * 2;
-			}
-			else if (UNIT_HAS_SKILL(&attacker->unit,SNP,skill_231)){
-				attacker->battleHitRate  = attacker->battleHitRate * 3/2;
+	if (UNIT_HAS_SKILL(&attacker->unit,SNP,skill_231)){
+		if ((GetActiveArt(&attacker->unit) != 42)&&(GetActiveArt(&attacker->unit) != 43)&&(GetActiveArt(&attacker->unit) != 44)) { //42-44 are the volley arts
+			if (IsTargetMarked(&defender->unit)) {
+				if (UNIT_HAS_SKILL(&attacker->unit,SNP,skill_232)){
+					attacker->battleHitRate  = attacker->battleHitRate * 2;
+				}
+				else {
+					attacker->battleHitRate  = attacker->battleHitRate * 3/2;
+				}
 			}
 		}
 	}

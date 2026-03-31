@@ -22,6 +22,7 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0x0,BenthusSpeaksUp,2)
+TurnEventPlayer(0x0,BossAISwap,4)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -56,7 +57,7 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,0] 0x0 0x0 0x1 REDA7R2 [0x0] NoAI
 UNIT Astarte 0x0 0x1 Level(2,Ally,0) [8,0] 0x0 0x0 0x1 REDA8R2 [0x0] NoAI
 UNIT Gore 0x0 0x1 Level(2,Ally,0) [6,0] 0x0 0x0 0x1 REDA6R1 [0x0] NoAI
 UNIT Cleone 0x0 0x1 Level(1,Ally,0) [9,0] 0x0 0x0 0x1 REDA9R1 [VineWhip,Medica] NoAI
-UNIT Benthus 0x0 0x1 Level(12,Ally,0) [8,0] 0x0 0x0 0x1 REDA8R1 [Epee,Sabre,Vulnerary] NoAI
+UNIT Benthus 0x0 0x1 Level(12,Ally,0) [8,0] 0x0 0x0 0x1 REDA8R1 [Epee,Sabre,SimpleRing,Vulnerary] NoAI
 UNIT
 
 CutsceneParty:
@@ -83,12 +84,12 @@ UNIT MonsterGeneric Crawler 0x0 Level(2,Enemy,1) [8,9] 0x0 0x0 0x0 0x0 [VileClaw
 UNIT MonsterGeneric Bigle 0x0 Level(2,Enemy,0) [0,8] 0x0 0x0 0x0 0x0 [Tackle] AttackInRangeAI
 UNIT MonsterGeneric Wight 0x0 Level(2,Enemy,1) [9,7] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
 UNIT MonsterGeneric Wight 0x0 Level(2,Enemy,1) [1,4] 0x0 0x0 0x0 0x0 [Pike] NoAI
-UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [Shortbow] ChaseOnceApproachedAI
-UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [10,11] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(2,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [10,12] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
 UNIT MonsterGeneric Wolf 0x0 Level(2,Enemy,1) [2,13] 0x0 0x0 0x0 0x0 [SharpBite] DelayedAI
-UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,0) [5,12] 0x0 0x0 0x0 0x0 [GreatTalon] AttackInRangeAI
+UNIT MonsterGeneric Spider 0x0 Level(2,Enemy,0) [4,12] 0x0 0x0 0x0 0x0 [GreatTalon] AttackInRangeAI
 UNIT MonsterGeneric BowWight 0x0 Level(3,Enemy,1) [0,0] 0x0 0x0 0x0 0x0 [Shortbow] NeverMoveAI
-UNIT MonsterBoss Wightsworn 0x0 Level(3,Enemy,1) [14,13] 0x0 0x0 0x0 0x0 [HandSpear] DelayedAI
+UNIT MonsterBoss Wightsworn 0x0 Level(3,Enemy,1) [14,13] 0x0 0x0 0x0 0x0 [HandSpear] AttackInRangeAI
 UNIT
 
 EnemyUnitsExpert:
@@ -132,6 +133,12 @@ UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [7,12] 0x0 0x0 0x0 0x0 [Kerykeion] NoA
 UNIT
 
 ALIGN 4
+
+BossAISwap:
+SVAL 0x1 0x00040000
+CHAI MonsterBoss
+EndEvent
+
 
 //thank you sacred echoes
 

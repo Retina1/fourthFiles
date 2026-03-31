@@ -262,6 +262,8 @@ void FlankShotBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	if (UNIT_HAS_SKILL(&actor->unit,SNP,skill_333)){
 		bonusMul = 2;
 		bonusDiv = 1;
+		atkMul = 3;
+		atkDiv = 2;
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,SNP,skill_332)){
 		atkMul = 3;
@@ -269,7 +271,7 @@ void FlankShotBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	}
 	actor->battleAttack = actor->battleAttack*atkMul/atkDiv;
 	target->battleDefense = target->battleDefense*atkMul/atkDiv;
-	u8* unitBuffer = GetUnitsInRange(&target->unit, 1, 1);
+	u8* unitBuffer = GetUnitsInRange(&target->unit, 2, 1);
 	if (unitBuffer != FALSE) {
 	int i = 0;
 		while (unitBuffer[i]){

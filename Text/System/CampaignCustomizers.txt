@@ -147,7 +147,7 @@ Activate Minimum Growths?[N]
 ##MaxGrowthsLabel
 Enable Maximum Growths.[X]
 ##MaxGrowthsRText
-Stats will grow as good[N]
+Stats will grow as well[N]
 as they possibly can.[X]
 ##MaxGrowthsConfirm
 Activate Maximum Growths?[N]
@@ -161,6 +161,27 @@ applied to most combat stats.[N]
 (Atk/Def/Spd/Hit/Crit/Avo/C.Avo)[X]
 ##PicnicModeConfirm
 Activate Picnic Mode?[N]
+[No][X]
+
+##RepairModeLabel
+Enable Autorepair Mode.[X]
+##RepairModeRText
+Weapons will have 40% of their[N]
+max uses, but automatically be[N]
+repaired after every map.[X]
+##RepairModeConfirm
+Activate Autorepair Mode?[N]
+[No][X]
+
+##ColorblindLabel
+Enable Colorblind Palette.[X]
+##ColorblindRText
+Enemies will use a yellow palette,[N]
+as to be more visible to those[N]
+with red/green colorblindness.[X]
+##ColorblindConfirm
+Activate the Colorblind Palette?[N]
+This will make enemies [ToggleRed]yellow[ToggleRed].[N]
 [No][X]
 
 ##ClearModifiersLabel

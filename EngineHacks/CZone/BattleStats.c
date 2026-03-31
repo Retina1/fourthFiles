@@ -162,6 +162,13 @@ void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct Batt
 			attacker->battleEffectiveCritRate = 0;
 		}
 	}
+	//simple ring
+	for(int j = 0; j < GetUnitItemCount(&attacker->unit); j++) {
+		u16 curItem = attacker->unit.items[j];
+		if(GetItemIndex(curItem) == 0xDD) {
+			attacker->battleEffectiveCritRate = 0;
+		}
+	}
 	
 	if (attacker->battleEffectiveCritRate > 100) {
         attacker->battleEffectiveCritRate = 100;

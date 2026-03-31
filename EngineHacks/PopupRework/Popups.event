@@ -1,7 +1,6 @@
 #ifndef POPUPS
 #define POPUPS
 
-PopRSetPopupCodeHandlers(0x0D, PopRSkillIconComponent)
 PopRSetPopupCodeHandlers(0x0E, PopRWeaponLevelComponent)
 
 ALIGN 4
@@ -12,13 +11,6 @@ gBattlePopupTable:
 	// Display new weapon level on WLevel-up
 	PopRBattlePopup(InitWeaponLevelUpPopup|1, WeaponRankUpPopup, 96)
 
-	// Skill system
-	PopRBattlePopup(InitLevelUpSkillPopup|1, SkillLearnedPopup, 96)
-	
-	// Learning spells for Gaiden Magic.
-	#ifdef GAIDEN_MAGIC
-		PopRBattlePopup(InitGaidenSpellLearnPopup|1, NewGaidenSpellPopup, 96)
-	#endif // GAIDEN_MAGIC
 	
 	PopRBattlePopupEnd
 
@@ -33,9 +25,6 @@ gPromotionPopupTable:
 	PopRBattlePopup(PopR_InitAnimaRankNew, gPopup_PopR_NewWType, 96)
 	PopRBattlePopup(PopR_InitLightRankNew, gPopup_PopR_NewWType, 96)
 	PopRBattlePopup(PopR_InitElderRankNew, gPopup_PopR_NewWType, 96)
-
-	// Skill system
-	PopRBattlePopup(InitPromotionSkillPopup|1, SkillLearnedPopup, 96)
 
 	PopRBattlePopupEnd
 

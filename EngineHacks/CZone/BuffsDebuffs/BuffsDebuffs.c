@@ -296,10 +296,12 @@ void UnitClearBuffsDebuffs(struct Unit* unit) {
 //make kill clear buffs/debuffs
 void UnitKill(struct Unit* unit) {
 	UnitClearBuffsDebuffs(unit);
+	infoIconCache->hpCache[unit->index] = 0;
     if (UNIT_FACTION(unit) == FACTION_BLUE) {
         unit->state |= US_DEAD | US_HIDDEN;
-    } else
+    } else {
         unit->pCharacterData = NULL;
+	}
 }
 //clear all buffs/debuffs
 

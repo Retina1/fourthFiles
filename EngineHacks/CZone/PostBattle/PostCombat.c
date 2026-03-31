@@ -13,8 +13,12 @@ void RunPostCombatSkills(void)
 		ApplyRichLiving(attacker,defender);
 		ApplyRallyingThrust(attacker,defender);
 		CombatArtPostbattleFuncWrapper(attacker, defender);
+		infoIconCache->hpCache[attacker->index] = GetUnitMaxHp(attacker);
+		infoIconCache->hpCache[defender->index] = GetUnitMaxHp(defender);
 	}
 	ApplyDuelistGaleDuelist(gActiveUnit);
+	infoIconCache->hpCache[gActiveUnit->index] = GetUnitMaxHp(gActiveUnit);
+	
 }
 
 //edit for galeforce

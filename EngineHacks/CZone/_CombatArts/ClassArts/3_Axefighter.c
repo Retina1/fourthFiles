@@ -141,9 +141,9 @@ void VengeanceBashBothSides(struct BattleUnit* actor, struct BattleUnit* target)
 u8 BoomerangAxeArtUsability(struct Unit* unit, u16 artID){
 	if (UNIT_HAS_SKILL(unit,GLD,skill_331)){
 		if (UNIT_HAS_SKILL(unit,GLD,skill_333)){
-			return CombatArtRangeAttackingUsability(1,2,2);
+			return CombatArtRangeAttackingUsability(1,3,2);
 		}
-		else return CombatArtRangeAttackingUsability(1,3,2);
+		else return CombatArtRangeAttackingUsability(1,2,2);
 	}
 	else return 0;
 }

@@ -4,6 +4,7 @@
 #include "Portraits/_PortraitHeight.event"
 #include "RemoveFog/RemoveEffects.event"
 #include "ItemIcons/IconInstaller.event"
+#include "Supply/SupplyIcons.event"
 #include "Animation/AnimationPointers.event"
 #include "UnitPalettes/_Installer.event"
 #include "SystemMenus/MenuInstaller.event"
@@ -93,3 +94,13 @@ PUSH
 ORG $8A16DEC
 #incbin "BuilderDumped/StatusNames.dmp"
 POP
+
+PUSH
+ORG $AC188
+POIN LevelSelect
+//ORG 0xAC190
+//POIN DifficultySelectPal
+POP
+ALIGN 4
+LevelSelect:
+#incbin "BuilderDumped/Difficulty.png.dmp" 

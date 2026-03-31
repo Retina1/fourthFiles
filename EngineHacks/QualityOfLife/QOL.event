@@ -4,13 +4,16 @@
 //#include "ImprovedSoundMixer/SoundMixer.event"
 
 #include "MovementArrowHack/MovementArrowHack.event"
-#include "ShowHealAmount/ShowHealAmount.txt"
 #include "AnimsOff/AnimsOff.txt"
 #include "DrawMapActionAnimation/Installer.event"
 #include "SupplyView/SupplyView.event"
 #include "UpdatedLButtonCycling/Installer.event"
 #include "UnitMenuUpdateWarningCache/UnitMenuUpdateWarningCache.event"
-#include "BigPromos/HigherNumberGains.event"
 #include "HelpText/Installer.event"
+#include "Colorblind/Colorblind.event"
+
+//quality of life includes quality of my life
+#include "BigPromos/HigherNumberGains.event"
 #include "RW Cloud Fix\Cloud_Fix_EA.event"
 #include "EventWriter\EventWriter.event"
+#include "CHAI_Fix\CHAI_Fix.event"

@@ -17,11 +17,7 @@ int GetItemMaxUses(int item) {
     if (GetItemAttributes(GetItemIndex(item)) & IA_UNBREAKABLE)
         return 0xFF;
     else {
-		
-		if ((GetItemType(item) == 0x9) || !(CheckEventId_(0xad))){
-			return GetItemData(GetItemIndex(item))->maxUses;
-			}
-		else {
+		if ((GetItemType(item) < 0x7) && (CheckEventId_(0x83))){ 
 			int i = 0;
 			while(PerChapterItemsList[i] != 0) {
 				if(GetItemIndex(item) == PerChapterItemsList[i]) {
@@ -34,6 +30,9 @@ int GetItemMaxUses(int item) {
 				uses = 1;
 			}
 			return uses;
+		}
+		else {
+			return GetItemData(GetItemIndex(item))->maxUses;
 		}
 	}
 }
