@@ -26,7 +26,7 @@ ALIGN 4
 MapData:
   #incbin "Chapter6_data.dmp"
 
-SetChapterData(Chapter6, Village1OBJ, 0, Village1PAL, VillageCONFIG, Map6ID, MapData, 0, 0, MapChange6ID)
+SetChapterData(Chapter6, Village1OBJ, 0, Village2PAL, VillageCONFIG, Map6ID, MapData, 0, 0, MapChange6ID)
 
 ALIGN 4
 Map_Change_0:

@@ -66,3 +66,9 @@ Pitfighter[X]
 ##Desc_ArenaEnemy
 A duelist fighting for sport.[N]
 Hoist your sword with pride![X]
+
+##Name_BenthusArmy
+Benthus's[X]
+##Desc_BenthusArmy
+A sellsword or something of the sort[N]
+fighting under Benthus's command.[X]

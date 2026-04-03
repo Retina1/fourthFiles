@@ -4,7 +4,7 @@
 
 ShadyRowUnitsC5:
 //marketplpace npc, generics
-UNIT AsketaGeneric Axefighter 0x0 Level(7,NPC,1) [8,9] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Axefighter 0x0 Level(7,NPC,1) [8,9] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET

@@ -1,5 +1,6 @@
 Village1OBJ
 Village1PAL
+Village2PAL
 Fields1OBJ
 Fields1PAL
 City1OBJ

@@ -23,7 +23,7 @@ ChangeUnitDesc_Table:
 UnitDescTable(Desc_XavensEarly,Xavens,0x0,Chapter5,0x0)
 UnitDescTable(Desc_EgilEarly,Egil,0x0,Chapter5,0x0)
 UnitDescTable(Desc_HarlaEarly,Harla,0x0,Chapter5,0x0)
-UnitDescTable(Desc_GuildCh8,GuildGeneric,0x0,Chapter8,0x0)
+//UnitDescTable(Desc_GuildCh8,GuildGeneric,0x0,Chapter8,0x0)
 UnitDescTable(Desc_GuildmasterFinal,BossGuildmaster,0x0,EndgameB,0x0)
 UnitDescTable(Desc_GuildmasterFinal,BossGuildmaster,0x0,Chapter18C,0x0)
 
@@ -44,3 +44,4 @@ SHORT 0x0; BYTE 0x0 0x0 0x0 0x0; SHORT 0x0  // term
 //@}//sizeof(16bytes)
 
 
+#include "NameChange.event" //also change names yippee

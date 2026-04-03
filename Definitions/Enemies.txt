@@ -1,4 +1,4 @@
-George 0xce
+George 0xd5
 Astoria
 Hitchcock
 BossSaewynn
@@ -8,7 +8,6 @@ Monk
 BossAstarte
 BossGore
 FOEUnit
-Bertram
 Ayda
 Gerson
 Claire
@@ -31,15 +30,9 @@ Xavens
 Egil
 Harla
 Rana
-WorldcoreUnit
-UnknownGeneric
-EliteGeneric
-HallowedGeneric
-EndbringerGeneric
 MonsterGeneric
-BelvarusGeneric
-AsketaGeneric
-GuildGeneric
+MilitaryGeneric
+FreelanceGeneric
 Turret1
 Turret2
 Soul1

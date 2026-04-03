@@ -32,6 +32,9 @@ UNIT
 Recruit_Alfonso:
 UNIT Alfonso 0x0 0x1 Level(6,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Shortspear,FlameScroll] NoAI
 UNIT
+Recruit_Simon:
+UNIT Simon 0x0 0x1 Level(1,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Shortspear,Medica] NoAI
+UNIT
 
 Recruit_Tristao:
 UNIT Tristao 0x0 0x1 Level(5,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace] NoAI
@@ -99,6 +102,9 @@ UNIT
 Recruit_Tycho:
 UNIT Tycho 0x0 0x1 Level(5,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Staff] NoAI
 UNIT
+Recruit_Lily:
+UNIT Lily 0x0 0x1 Level(4,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Staff,Vulnerary] NoAI
+UNIT
 
 //swd
 CoastKid_RecruitEvent:
@@ -131,7 +137,10 @@ SlynSpire_RecruitEvent:
 GuildRecruit(SlynSpire,Guild_SlynSpire_Intro,0x24)
 EndEvent
 Alfonso_RecruitEvent:
-GuildRecruit(SlynSpire,Guild_Alfonso_Intro,0x25)
+GuildRecruit(Alfonso,Guild_Alfonso_Intro,0x25)
+EndEvent
+Simon_RecruitEvent:
+GuildRecruit(Simon,Guild_Simon_Intro,0x26)
 EndEvent
 
 //axe
@@ -204,6 +213,9 @@ EndEvent
 Tycho_RecruitEvent:
 GuildRecruit(Tycho,Guild_Tycho_Intro,0x24)
 EndEvent
+Lily_RecruitEvent:
+GuildRecruit(Lily,Guild_Lily_Intro,0x24)
+EndEvent
 
 
 
@@ -226,6 +238,7 @@ GuildLoad(Allbringer,Recruit_Allbringer,0x3)
 GuildLoad(Hopf,Recruit_Hopf,0x4)
 GuildLoad(SlynSpire,Recruit_SlynSpire,0x5)
 GuildLoad(Alfonso,Recruit_Alfonso,0x6,Chapter8DoneFlag)
+GuildLoad(Simon,Recruit_Simon,0x7)
 FADU 10
 ENDA
 
@@ -271,6 +284,7 @@ GuildLoad(Amos,Recruit_Amos,0x2,Chapter5DoneFlag)
 GuildLoadQuest(Roslin,Recruit_Roslin,0x3,Quest2_S1x_Flag)
 GuildLoad(Witerico,Recruit_Witerico,0x4)
 GuildLoad(Tycho,Recruit_Tycho,0x5)
+GuildLoad(Lily,Recruit_Lily,0x6)
 FADU 10
 ENDA
 

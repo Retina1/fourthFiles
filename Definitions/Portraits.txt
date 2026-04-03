@@ -207,6 +207,8 @@ TachyonMug
 GeorgeMug
 AstoriaMug
 CampbellMug
+SimonMug
+LilyMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

@@ -60,16 +60,16 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,21] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 EnemyUnits:
-UNIT GuildGeneric Scholar 0x0 Level(10,Enemy,1) [2,1] DropItem 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
-UNIT GuildGeneric Scholar 0x0 Level(10,Enemy,1) [16,1] DropItem 0x0 0x0 0x0 [SparkScroll,Soma] AttackInRangeAI
-UNIT GuildGeneric Lancer 0x0 Level(10,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [Shieldlance] AttackInRangeAI
-UNIT GuildGeneric Lancer 0x0 Level(10,Enemy,1) [12,6] 0x0 0x0 0x0 0x0 [Partizan] AttackInRangeAI
-UNIT GuildGeneric Strider 0x0 Level(10,Enemy,1) [9,6] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
-UNIT GuildGeneric Axefighter 0x0 Level(10,Enemy,1) [8,14] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
-UNIT GuildGeneric Axefighter 0x0 Level(10,Enemy,1) [10,14] 0x0 0x0 0x0 0x0 [SerratedAxe] AttackInRangeAI
-UNIT GuildGeneric Noble 0x0 Level(10,Enemy,1) [8,3] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
-UNIT GuildGeneric Noble 0x0 Level(10,Enemy,1) [10,3] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
-UNIT GuildGeneric Duelist 0x0 Level(10,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT FreelanceGeneric Scholar 0x0 Level(10,Enemy,1) [2,1] DropItem 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT FreelanceGeneric Scholar 0x0 Level(10,Enemy,1) [16,1] DropItem 0x0 0x0 0x0 [SparkScroll,Soma] AttackInRangeAI
+UNIT FreelanceGeneric Lancer 0x0 Level(10,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [Shieldlance] AttackInRangeAI
+UNIT FreelanceGeneric Lancer 0x0 Level(10,Enemy,1) [12,6] 0x0 0x0 0x0 0x0 [Partizan] AttackInRangeAI
+UNIT FreelanceGeneric Strider 0x0 Level(10,Enemy,1) [9,6] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(10,Enemy,1) [8,14] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(10,Enemy,1) [10,14] 0x0 0x0 0x0 0x0 [SerratedAxe] AttackInRangeAI
+UNIT FreelanceGeneric Noble 0x0 Level(10,Enemy,1) [8,3] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT FreelanceGeneric Noble 0x0 Level(10,Enemy,1) [10,3] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT FreelanceGeneric Duelist 0x0 Level(10,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
 UNIT BossBenthus2 Sovereign 0x0 Level(12,Enemy,1) [9,2] DropItem 0x0 0x0 0x0 [Rapier,PerfectRose,GuidingRing] AttackInRangeAI
 
 UNIT

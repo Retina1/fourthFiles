@@ -1,3 +1,16 @@
+##Guild_Lily_Intro
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lily]
+unit here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lily]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lily]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lily]
+return here[A][X]
+
 ##Guild_Trish_Intro
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Trish]
 Hello! I'm Trish,[N]

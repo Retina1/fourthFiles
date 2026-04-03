@@ -84,6 +84,9 @@ ALIGN 4
 Village1Palette:
 #incbin "Village1_pal.dmp"
 ALIGN 4
+Village2Palette:
+#incbin "Village2_pal.dmp"
+ALIGN 4
 Village1Tiles:
 #incext compress "Village.mapchip_config"
 ALIGN 4
@@ -93,6 +96,7 @@ TileConfigPointerTable(VillageCONFIG, Village1Tiles)
 TileConfigPointerTable(GuildhallCONFIG, GuildhallTiles)
 ObjTypePalettePointerTable(Village1OBJ, VillageObjects)
 ObjTypePalettePointerTable(Village1PAL, Village1Palette)
+ObjTypePalettePointerTable(Village2PAL, Village2Palette)
 
 ALIGN 4
 FieldsObjects:

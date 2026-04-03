@@ -307,7 +307,7 @@ u16 GetItemAfterArtUse(int item, int cost) {
 			i++;
 	}
 
-	if (CheckEventId_(0x83)){
+	if (CheckEventId_(0x83) && (GetItemType(item) < 0x7)){
 		if (item < (1 << 8)) {
 			item = GetItemIndex(item);
 		}

@@ -56,6 +56,43 @@ ALIGN 4
 Allbringer_HopliteDMP:
 #incbin "paletteFiles/Initial/Allbringer_Hoplite.dmp"
 
+setPalette(Hopf_Knight, Hopf_KnightDMP)
+setPalette(Hopf_Hoplite, Hopf_HopliteDMP)
+CharPalette(Hopf,Hopf_Knight,Knight,Hopf_Hoplite,Hoplite)
+ALIGN 4
+Hopf_KnightDMP:
+#incbin "paletteFiles/Initial/Hopf_Knight.dmp"
+ALIGN 4
+Hopf_HopliteDMP:
+#incbin "paletteFiles/Initial/Hopf_Hoplite.dmp"
+setPalette(SlynSpire_Knight, SlynSpire_KnightDMP)
+setPalette(SlynSpire_Hoplite, SlynSpire_HopliteDMP)
+CharPalette(SlynSpire,SlynSpire_Knight,Knight,SlynSpire_Hoplite,Hoplite)
+ALIGN 4
+SlynSpire_KnightDMP:
+#incbin "paletteFiles/Initial/SlynSpire_Knight.dmp"
+ALIGN 4
+SlynSpire_HopliteDMP:
+#incbin "paletteFiles/Initial/SlynSpire_Hoplite.dmp"
+setPalette(Alfonso_Knight, Alfonso_KnightDMP)
+setPalette(Alfonso_Hoplite, Alfonso_HopliteDMP)
+CharPalette(Alfonso,Alfonso_Knight,Knight,Alfonso_Hoplite,Hoplite)
+ALIGN 4
+Alfonso_KnightDMP:
+#incbin "paletteFiles/Initial/Alfonso_Knight.dmp"
+ALIGN 4
+Alfonso_HopliteDMP:
+#incbin "paletteFiles/Initial/Alfonso_Hoplite.dmp"
+setPalette(Simon_Knight, Simon_KnightDMP)
+setPalette(Simon_Hoplite, Simon_HopliteDMP)
+CharPalette(Simon,Simon_Knight,Knight,Simon_Hoplite,Hoplite)
+ALIGN 4
+Simon_KnightDMP:
+#incbin "paletteFiles/Initial/Simon_Knight.dmp"
+ALIGN 4
+Simon_HopliteDMP:
+#incbin "paletteFiles/Initial/Simon_Hoplite.dmp"
+
 //axe
 setPalette(Tristao_Axefighter, Tristao_AxefighterDMP)
 setPalette(Tristao_Gladiator, Tristao_GladiatorDMP)
@@ -66,3 +103,190 @@ Tristao_AxefighterDMP:
 ALIGN 4
 Tristao_GladiatorDMP:
 #incbin "paletteFiles/Initial/Tristao_Gladiator.dmp"
+
+setPalette(Finn_Axefighter, Finn_AxefighterDMP)
+setPalette(Finn_Gladiator, Finn_GladiatorDMP)
+CharPalette(Finn,Finn_Axefighter,Axefighter,Finn_Gladiator,Gladiator)
+ALIGN 4
+Finn_AxefighterDMP:
+#incbin "paletteFiles/Initial/Finn_Axefighter.dmp"
+ALIGN 4
+Finn_GladiatorDMP:
+#incbin "paletteFiles/Initial/Finn_Gladiator.dmp"
+setPalette(Eight_Axefighter, Eight_AxefighterDMP)
+setPalette(Eight_Gladiator, Eight_GladiatorDMP)
+CharPalette(Eight,Eight_Axefighter,Axefighter,Eight_Gladiator,Gladiator)
+ALIGN 4
+Eight_AxefighterDMP:
+#incbin "paletteFiles/Initial/Eight_Axefighter.dmp"
+ALIGN 4
+Eight_GladiatorDMP:
+#incbin "paletteFiles/Initial/Eight_Gladiator.dmp"
+setPalette(Randellan_Axefighter, Randellan_AxefighterDMP)
+setPalette(Randellan_Gladiator, Randellan_GladiatorDMP)
+CharPalette(Randellan,Randellan_Axefighter,Axefighter,Randellan_Gladiator,Gladiator)
+ALIGN 4
+Randellan_AxefighterDMP:
+#incbin "paletteFiles/Initial/Randellan_Axefighter.dmp"
+ALIGN 4
+Randellan_GladiatorDMP:
+#incbin "paletteFiles/Initial/Randellan_Gladiator.dmp"
+setPalette(Juniper_Axefighter, Juniper_AxefighterDMP)
+setPalette(Juniper_Gladiator, Juniper_GladiatorDMP)
+CharPalette(Juniper,Juniper_Axefighter,Axefighter,Juniper_Gladiator,Gladiator)
+ALIGN 4
+Juniper_AxefighterDMP:
+#incbin "paletteFiles/Initial/Juniper_Axefighter.dmp"
+ALIGN 4
+Juniper_GladiatorDMP:
+#incbin "paletteFiles/Initial/Juniper_Gladiator.dmp"
+
+//bow
+setPalette(Hallie_Archer, Hallie_ArcherDMP)
+setPalette(Hallie_Sniper, Hallie_SniperDMP)
+CharPalette(Hallie,Hallie_Archer,Archer,Hallie_Sniper,Sniper)
+ALIGN 4
+Hallie_ArcherDMP:
+#incbin "paletteFiles/Initial/Hallie_Archer.dmp"
+ALIGN 4
+Hallie_SniperDMP:
+#incbin "paletteFiles/Initial/Hallie_Sniper.dmp"
+setPalette(Anjelica_Archer, Anjelica_ArcherDMP)
+setPalette(Anjelica_Sniper, Anjelica_SniperDMP)
+CharPalette(Anjelica,Anjelica_Archer,Archer,Anjelica_Sniper,Sniper)
+ALIGN 4
+Anjelica_ArcherDMP:
+#incbin "paletteFiles/Initial/Anjelica_Archer.dmp"
+ALIGN 4
+Anjelica_SniperDMP:
+#incbin "paletteFiles/Initial/Anjelica_Sniper.dmp"
+setPalette(Rodney_Archer, Rodney_ArcherDMP)
+setPalette(Rodney_Sniper, Rodney_SniperDMP)
+CharPalette(Rodney,Rodney_Archer,Archer,Rodney_Sniper,Sniper)
+ALIGN 4
+Rodney_ArcherDMP:
+#incbin "paletteFiles/Initial/Rodney_Archer.dmp"
+ALIGN 4
+Rodney_SniperDMP:
+#incbin "paletteFiles/Initial/Rodney_Sniper.dmp"
+setPalette(Gamon_Archer, Gamon_ArcherDMP)
+setPalette(Gamon_Sniper, Gamon_SniperDMP)
+CharPalette(Gamon,Gamon_Archer,Archer,Gamon_Sniper,Sniper)
+ALIGN 4
+Gamon_ArcherDMP:
+#incbin "paletteFiles/Initial/Gamon_Archer.dmp"
+ALIGN 4
+Gamon_SniperDMP:
+#incbin "paletteFiles/Initial/Gamon_Sniper.dmp"
+
+//schola
+setPalette(Cassandra_Scholar, Cassandra_ScholarDMP)
+setPalette(Cassandra_Warlock, Cassandra_WarlockDMP)
+CharPalette(Cassandra,Cassandra_Scholar,Scholar,Cassandra_Warlock,Warlock)
+ALIGN 4
+Cassandra_ScholarDMP:
+#incbin "paletteFiles/Initial/Cassandra_Scholar.dmp"
+ALIGN 4
+Cassandra_WarlockDMP:
+#incbin "paletteFiles/Initial/Cassandra_Warlock.dmp"
+setPalette(Waves_Scholar, Waves_ScholarDMP)
+setPalette(Waves_Warlock, Waves_WarlockDMP)
+CharPalette(Waves,Waves_Scholar,Scholar,Waves_Warlock,Warlock)
+ALIGN 4
+Waves_ScholarDMP:
+#incbin "paletteFiles/Initial/Waves_Scholar.dmp"
+ALIGN 4
+Waves_WarlockDMP:
+#incbin "paletteFiles/Initial/Waves_Warlock.dmp"
+setPalette(Cyanne_Scholar, Cyanne_ScholarDMP)
+setPalette(Cyanne_Warlock, Cyanne_WarlockDMP)
+CharPalette(Cyanne,Cyanne_Scholar,Scholar,Cyanne_Warlock,Warlock)
+ALIGN 4
+Cyanne_ScholarDMP:
+#incbin "paletteFiles/Initial/Cyanne_Scholar.dmp"
+ALIGN 4
+Cyanne_WarlockDMP:
+#incbin "paletteFiles/Initial/Cyanne_Warlock.dmp"
+setPalette(Lonsdale_Scholar, Lonsdale_ScholarDMP)
+setPalette(Lonsdale_Warlock, Lonsdale_WarlockDMP)
+CharPalette(Lonsdale,Lonsdale_Scholar,Scholar,Lonsdale_Warlock,Warlock)
+ALIGN 4
+Lonsdale_ScholarDMP:
+#incbin "paletteFiles/Initial/Lonsdale_Scholar.dmp"
+ALIGN 4
+Lonsdale_WarlockDMP:
+#incbin "paletteFiles/Initial/Lonsdale_Warlock.dmp"
+setPalette(Hugo_Scholar, Hugo_ScholarDMP)
+setPalette(Hugo_Warlock, Hugo_WarlockDMP)
+CharPalette(Hugo,Hugo_Scholar,Scholar,Hugo_Warlock,Warlock)
+ALIGN 4
+Hugo_ScholarDMP:
+#incbin "paletteFiles/Initial/Hugo_Scholar.dmp"
+ALIGN 4
+Hugo_WarlockDMP:
+#incbin "paletteFiles/Initial/Hugo_Warlock.dmp"
+setPalette(Lyud_Scholar, Lyud_ScholarDMP)
+setPalette(Lyud_Warlock, Lyud_WarlockDMP)
+CharPalette(Lyud,Lyud_Scholar,Scholar,Lyud_Warlock,Warlock)
+ALIGN 4
+Lyud_ScholarDMP:
+#incbin "paletteFiles/Initial/Lyud_Scholar.dmp"
+ALIGN 4
+Lyud_WarlockDMP:
+#incbin "paletteFiles/Initial/Lyud_Warlock.dmp"
+
+//medi
+setPalette(Trish_Curate, Trish_CurateDMP)
+setPalette(Trish_Medic, Trish_MedicDMP)
+CharPalette(Trish,Trish_Curate,Curate,Trish_Medic,Medic)
+ALIGN 4
+Trish_CurateDMP:
+#incbin "paletteFiles/Initial/Trish_Curate.dmp"
+ALIGN 4
+Trish_MedicDMP:
+#incbin "paletteFiles/Initial/Trish_Medic.dmp"
+setPalette(Amos_Curate, Amos_CurateDMP)
+setPalette(Amos_Medic, Amos_MedicDMP)
+CharPalette(Amos,Amos_Curate,Curate,Amos_Medic,Medic)
+ALIGN 4
+Amos_CurateDMP:
+#incbin "paletteFiles/Initial/Amos_Curate.dmp"
+ALIGN 4
+Amos_MedicDMP:
+#incbin "paletteFiles/Initial/Amos_Medic.dmp"
+setPalette(Roslin_Curate, Roslin_CurateDMP)
+setPalette(Roslin_Medic, Roslin_MedicDMP)
+CharPalette(Roslin,Roslin_Curate,Curate,Roslin_Medic,Medic)
+ALIGN 4
+Roslin_CurateDMP:
+#incbin "paletteFiles/Initial/Roslin_Curate.dmp"
+ALIGN 4
+Roslin_MedicDMP:
+#incbin "paletteFiles/Initial/Roslin_Medic.dmp"
+setPalette(Witerico_Curate, Witerico_CurateDMP)
+setPalette(Witerico_Medic, Witerico_MedicDMP)
+CharPalette(Witerico,Witerico_Curate,Curate,Witerico_Medic,Medic)
+ALIGN 4
+Witerico_CurateDMP:
+#incbin "paletteFiles/Initial/Witerico_Curate.dmp"
+ALIGN 4
+Witerico_MedicDMP:
+#incbin "paletteFiles/Initial/Witerico_Medic.dmp"
+setPalette(Tycho_Curate, Tycho_CurateDMP)
+setPalette(Tycho_Medic, Tycho_MedicDMP)
+CharPalette(Tycho,Tycho_Curate,Curate,Tycho_Medic,Medic)
+ALIGN 4
+Tycho_CurateDMP:
+#incbin "paletteFiles/Initial/Tycho_Curate.dmp"
+ALIGN 4
+Tycho_MedicDMP:
+#incbin "paletteFiles/Initial/Tycho_Medic.dmp"
+setPalette(Lily_Curate, Lily_CurateDMP)
+setPalette(Lily_Medic, Lily_MedicDMP)
+CharPalette(Lily,Lily_Curate,Curate,Lily_Medic,Medic)
+ALIGN 4
+Lily_CurateDMP:
+#incbin "paletteFiles/Initial/Lily_Curate.dmp"
+ALIGN 4
+Lily_MedicDMP:
+#incbin "paletteFiles/Initial/Lily_Medic.dmp"

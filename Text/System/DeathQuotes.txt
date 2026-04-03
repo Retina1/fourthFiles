@@ -197,6 +197,10 @@ Don't leave me behind[...][A][X]
 [MidRight][Alfonso]
 Guess it's a warrior's end[...][N]
 for me[...] after all[...][A][EyesClose][X]
+##SimonDeath
+[MidRight][Simon]
+Dad[...] Are you proud[...][N]
+of how I've lived[...]?[A][EyesClose][X]
 
 //fighters
 ##TristaoDeath
@@ -295,6 +299,10 @@ my inheritance[...] now[...][A][EyesClose][X]
 [MidRight][Tycho]
 Don't kill me[...] I'll make[...][N]
 it worth[...] your while[...][A][EyesClose][X]
+##LilyDeath
+[MidRight][Lily]
+This[...] This can't be[...][N]
+This simply[...] isn't right[...][A][EyesClose][X]
 
 //myrmidons
 ##NatsukiRetreat

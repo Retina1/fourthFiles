@@ -96,6 +96,12 @@ Alfonso[X]
 ##Desc_Alfonso
 A minor nobleman and well-studied[N]
 academic. He's a bistory buff.[X]
+//samson
+##Name_Simon
+Simon[X]
+##Desc_Simon
+A humble Asketan taking up his father's[N]
+armor to provide for his family.[X]
 
 
 //tristao by alex (axefighter)
@@ -243,3 +249,9 @@ Tycho[X]
 ##Desc_Tycho
 A smooth-talking priest into healing[N]
 for the money. He's a bit unethical.[X]
+//luna
+##Name_Lily
+Lily[X]
+##Desc_Lily
+A young noblewoman drawn to a life of[N]
+wandering. She's outgrown her snobbiness.[X]

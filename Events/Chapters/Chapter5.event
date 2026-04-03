@@ -59,28 +59,28 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 EnemyUnits:
-UNIT UnknownGeneric Caller 0x0 Level(6,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
-UNIT UnknownGeneric Caller 0x0 Level(6,Enemy,1) [10,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
-UNIT UnknownGeneric Hunter 0x0 Level(6,Enemy,1) [1,3] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
-UNIT UnknownGeneric Hunter 0x0 Level(6,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
-UNIT UnknownGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
-UNIT UnknownGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] DropItem 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
-UNIT UnknownGeneric Scholar 0x0 Level(6,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
-UNIT UnknownGeneric Scholar 0x0 Level(6,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
-UNIT UnknownGeneric Brawler 0x0 Level(6,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [BrassKnuckles] NoAI
-UNIT UnknownGeneric Brawler 0x0 Level(6,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [BrassKnuckles] NoAI
-UNIT UnknownGeneric DarkHunter 0x0 Level(6,Enemy,1) [0,12] 0x0 0x0 0x0 0x0 [VineWhip] DelayedAI
-UNIT UnknownGeneric DarkHunter 0x0 Level(6,Enemy,1) [0,13] 0x0 0x0 0x0 0x0 [ThornWhip] DelayedAI
-UNIT UnknownGeneric Lancer 0x0 Level(6,Enemy,1) [0,17] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
-UNIT UnknownGeneric Lancer 0x0 Level(6,Enemy,1) [19,17] 0x0 0x0 0x0 0x0 [Pike] DelayedAI
+UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [10,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [1,3] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
+UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] DropItem 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
+UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
+UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [BrassKnuckles] NoAI
+UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [BrassKnuckles] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [0,12] 0x0 0x0 0x0 0x0 [VineWhip] DelayedAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [0,13] 0x0 0x0 0x0 0x0 [ThornWhip] DelayedAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [0,17] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [19,17] 0x0 0x0 0x0 0x0 [Pike] DelayedAI
 
-UNIT UnknownGeneric Lancer 0x0 Level(6,Enemy,1) [8,16] 0x0 0x0 0x0 0x0 [Partizan] NoAI
-UNIT UnknownGeneric DarkHunter 0x0 Level(6,Enemy,1) [9,15] 0x0 0x0 0x0 0x0 [Scorpio] NoAI
-UNIT UnknownGeneric DarkHunter 0x0 Level(6,Enemy,1) [10,15] DropItem 0x0 0x0 0x0 [Scorpio] NoAI
-UNIT UnknownGeneric Lancer 0x0 Level(6,Enemy,1) [11,16] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [8,16] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [9,15] 0x0 0x0 0x0 0x0 [Scorpio] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [10,15] DropItem 0x0 0x0 0x0 [Scorpio] NoAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [11,16] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
 
-UNIT UnknownGeneric Encircler 0x0 Level(6,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll] NeverMoveAI
-UNIT UnknownGeneric Priest 0x0 Level(6,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [Bluntblade] DelayedAI
+UNIT FreelanceGeneric Encircler 0x0 Level(6,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll] NeverMoveAI
+UNIT FreelanceGeneric Priest 0x0 Level(6,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [Bluntblade] DelayedAI
 
 //unknown entries for endbringer bosses, replace with a small fry after turn 1
 //or just have the small fry spawned instantly

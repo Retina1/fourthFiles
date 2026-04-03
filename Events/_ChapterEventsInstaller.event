@@ -52,7 +52,7 @@
 #define WarpNathan(x,y)	"SET_ACTIVE Nathan; SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX; CAM1 [x,y]; WM_WAITFORCAM; SVAL 0xB y*0x10000+x; WARP_IN; STAL 20; MOVE 0xFFFF Nathan [x,y]; ENUN; WM_WAITFORFX; STAL 12; NathanIsHere"
 #define SilentWarpNathan(x,y)	"SET_ACTIVE Nathan; FADI 16; CAM1 [x,y]; WM_WAITFORCAM; MOVE 0xFFFF Nathan [x,y]; ENUN; FADU 16"
 
-#define DifficultySwapper "EVBIT_MODIFY 3; CALL DifficultySwapEvent; ASMC RepairModeRefreshASMC|1; EVBIT_MODIFY 0"
+#define DifficultySwapper "EVBIT_MODIFY 4; CALL DifficultySwapEvent; ASMC RepairModeRefreshASMC|1; EVBIT_MODIFY 0"
 
 #define LevelUpSkill(unitID,skillID) "SVAL 0x1 unitID; SVAL 0x2 skillID; ASMC LevelUpSkillASMC|1"
 
@@ -231,11 +231,11 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 PiorinGameOverUnit:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT GuildGeneric Hunter 0x1 Level(1,NPC,0) [5,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT GuildGeneric Scholar 0x1 Level(1,NPC,0) [6,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT GuildGeneric Swordfighter 0x1 Level(1,NPC,0) [7,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT GuildGeneric Gunner 0x1 Level(1,NPC,0) [8,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT GuildGeneric Lancer 0x1 Level(1,NPC,0) [9,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT FreelanceGeneric Hunter 0x1 Level(1,NPC,0) [5,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT FreelanceGeneric Scholar 0x1 Level(1,NPC,0) [6,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT FreelanceGeneric Swordfighter 0x1 Level(1,NPC,0) [7,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT FreelanceGeneric Gunner 0x1 Level(1,NPC,0) [8,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT FreelanceGeneric Lancer 0x1 Level(1,NPC,0) [9,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 NewGameOverEvent:

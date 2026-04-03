@@ -29,6 +29,27 @@ CustomAnimeTable:
 
 //no flag
 //shared
+CustomAnimationSet(Eight,Axefighter,Female_AxefighterAnims)
+CustomAnimationSet(Eight,Gladiator,Female_GladiatorAnims)
+CustomAnimationSet(Juniper,Axefighter,Female_AxefighterAnims)
+CustomAnimationSet(Juniper,Gladiator,Female_GladiatorAnims)
+CustomAnimationSet(Hallie,Archer,Female_ArcherAnims)
+CustomAnimationSet(Hallie,Sniper,Female_SniperAnims)
+CustomAnimationSet(Anjelica,Archer,Female_ArcherAnims)
+CustomAnimationSet(Anjelica,Sniper,Female_SniperAnims)
+CustomAnimationSet(Cassandra,Scholar,Female_ScholarAnims)
+CustomAnimationSet(Cassandra,Warlock,Female_WarlockAnims)
+CustomAnimationSet(Waves,Scholar,Female_ScholarAnims)
+CustomAnimationSet(Waves,Warlock,Female_WarlockAnims)
+CustomAnimationSet(Cyanne,Scholar,Female_ScholarAnims)
+CustomAnimationSet(Cyanne,Warlock,Female_WarlockAnims)
+CustomAnimationSet(Trish,Curate,Female_CurateAnims)
+CustomAnimationSet(Trish,Medic,Female_MedicAnims)
+CustomAnimationSet(Roslin,Curate,Female_CurateAnims)
+CustomAnimationSet(Roslin,Medic,Female_MedicAnims)
+CustomAnimationSet(Lily,Curate,Female_CurateAnims)
+CustomAnimationSet(Lily,Medic,Female_MedicAnims)
+
 CustomAnimationSet(Gore,Gunner,MaleNoHelmet_GunnerAnims)
 CustomAnimationSet(Martin,Gunner,MaleNoHelmet_GunnerAnims)
 CustomAnimationSet(Demico,Gunner,Mask_GunnerAnims)

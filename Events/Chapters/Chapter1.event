@@ -97,35 +97,35 @@ NPCGuildmaster2:
 //imperial testing - fucking gorgon egg hardcoding
 UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,0) [0,0] 0x0 0x0 0x1 REDA4R0 [Fengyan,OutlandShield] NeverMoveAI
 UNIT Gerson Lancer 0x0 Level(1,NPC,0) [0,0] 0x0 0x0 0x1 REDA3R0 [Shortspear,RepairScroll] NeverMoveAI
-UNIT AsketaGeneric Driver 0x0 Level(15,NPC,1) [0,0] 0x0 0x0 0x1 REDA2R0 [Dominance] NeverMoveAI
+UNIT MilitaryGeneric Driver 0x0 Level(15,NPC,1) [0,0] 0x0 0x0 0x1 REDA2R0 [Dominance] NeverMoveAI
 UNIT
 
 EnemyUnits:
 UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [VineWhip] AttackInRangeAI
 //lmao he can't be level 12 i don't need fucked up boss abusers
 UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] DropItem 0x0 0x1 REDA12R7 [Epee,AriadneShard] AttackInRangeAI
-UNIT GuildGeneric Swordfighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Shortsword] NoAI
-UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [Shortmace] NoAI
-UNIT GuildGeneric Archer 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Shortbow] AttackInRangeAI
-UNIT GuildGeneric Brawler 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA8R0 [BrassKnuckles] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Shortsword] NoAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [Shortmace] NoAI
+UNIT FreelanceGeneric Archer 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Shortbow] AttackInRangeAI
+UNIT FreelanceGeneric Brawler 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA8R0 [BrassKnuckles] AttackInRangeAI
 UNIT
 
 EnemyUnitsExpert:
 UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [ThornWhip] AttackInRangeAI
 UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] DropItem 0x0 0x1 REDA12R7 [Epee,AriadneShard] AttackInRangeAI
-UNIT GuildGeneric Swordfighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Scramasax] NoAI
-UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [Shortmace] NoAI
-UNIT GuildGeneric Gunner 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Handgonne] AttackInRangeAI
-UNIT GuildGeneric Brawler 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA8R0 [BrassKnuckles] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Scramasax] NoAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [Shortmace] NoAI
+UNIT FreelanceGeneric Gunner 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Brawler 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA8R0 [BrassKnuckles] AttackInRangeAI
 UNIT
 
 EnemyUnitsHeroic:
 UNIT BossCleone DarkHunter 0x0 Level(1,Enemy,0) [7,0] 0x0 0x0 0x1 REDA8R7 [ThornWhip] AttackInRangeAI
 UNIT BossBenthus Noble 0x0 Level(3,Enemy,0) [8,0] DropItem 0x0 0x1 REDA12R7 [Sabre,AriadneShard] AttackInRangeAI
-UNIT GuildGeneric Myrmidon 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Scramasax] NoAI
-UNIT GuildGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [HandAxe] NoAI
-UNIT GuildGeneric Gunner 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Handgonne] AttackInRangeAI
-UNIT GuildGeneric Duelist 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA8R0 [Sabre] AttackInRangeAI
+UNIT FreelanceGeneric Myrmidon 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA6R2 [Scramasax] NoAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA4R5 [HandAxe] NoAI
+UNIT FreelanceGeneric Gunner 0x0 Level(1,Enemy,1) [8,0] 0x0 0x0 0x1 REDA14R5 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Duelist 0x0 Level(1,Enemy,1) [7,0] 0x0 0x0 0x1 REDA8R0 [Sabre] AttackInRangeAI
 UNIT
 
 EndingUnits:

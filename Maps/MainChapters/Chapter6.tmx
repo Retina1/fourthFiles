@@ -12,7 +12,7 @@
    <property name="MapChangesID" value="MapChange6ID"/>
    <property name="MapID" value="Map6ID"/>
    <property name="ObjectType" value="Village1OBJ"/>
-   <property name="PaletteID" value="Village1PAL"/>
+   <property name="PaletteID" value="Village2PAL"/>
    <property name="TileConfig" value="VillageCONFIG"/>
   </properties>
   <data>

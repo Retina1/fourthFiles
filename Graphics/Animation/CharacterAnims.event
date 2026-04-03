@@ -1,3 +1,91 @@
+//F!Scholar
+{
+#include "CharAnims/Female_Scholar/Magic Installer.event"
+}
+ALIGN 4
+Female_ScholarAnims:
+SupportAnim(Female_Scholar_Magic)
+UnarmedAnim(Female_Scholar_Magic)
+EndAnim
+//F!Warlock
+{
+#include "CharAnims/Female_Warlock/Magic Installer.event"
+}
+ALIGN 4
+Female_WarlockAnims:
+SupportAnim(Female_Warlock_Magic)
+UnarmedAnim(Female_Warlock_Magic)
+EndAnim
+
+
+//Axefighter
+{
+#include "CharAnims/Female_Axefighter/Axe Installer.event"
+#include "CharAnims/Female_Axefighter/Handaxe Installer.event"
+#include "CharAnims/Female_Axefighter/Unarmed Installer.event"
+}
+ALIGN 4
+Female_AxefighterAnims:
+BashAnim(Female_Axefighter_Axe)
+HandaxeAnim(Female_Axefighter_Handaxe)
+UnarmedAnim(Female_Axefighter_Unarmed)
+EndAnim
+//Gladiator
+{
+#include "CharAnims/Female_Gladiator/Axe Installer.event"
+#include "CharAnims/Female_Gladiator/Handaxe Installer.event"
+#include "CharAnims/Female_Gladiator/Unarmed Installer.event"
+}
+ALIGN 4
+Female_GladiatorAnims:
+BashAnim(Female_Gladiator_Axe)
+HandaxeAnim(Female_Gladiator_Handaxe)
+UnarmedAnim(Female_Gladiator_Unarmed)
+EndAnim
+
+//Archer
+{
+#include "CharAnims/Female_Archer/Bow Installer.event"
+#include "CharAnims/Female_Archer/Unarmed Installer.event"
+}
+ALIGN 4
+Female_ArcherAnims:
+RangedAnim(Female_Archer_Bow)
+UnarmedAnim(Female_Archer_Unarmed)
+EndAnim
+//Sniper
+{
+#include "CharAnims/Female_Sniper/Bow Installer.event"
+#include "CharAnims/Female_Sniper/Unarmed Installer.event"
+}
+ALIGN 4
+Female_SniperAnims:
+RangedAnim(Female_Sniper_Bow)
+UnarmedAnim(Female_Sniper_Unarmed)
+EndAnim
+
+//Curate
+{
+#include "CharAnims/Female_Curate/Magic Installer.event"
+#include "CharAnims/Female_Curate/Unarmed Installer.event"
+}
+ALIGN 4
+Female_CurateAnims:
+SupportAnim(Female_Curate_Magic)
+UnarmedAnim(Female_Curate_Unarmed)
+EndAnim
+//Medic
+{
+#include "CharAnims/Female_Medic/Magic Installer.event"
+#include "CharAnims/Female_Medic/Unarmed Installer.event"
+}
+ALIGN 4
+Female_MedicAnims:
+SupportAnim(Female_Medic_Magic)
+UnarmedAnim(Female_Medic_Unarmed)
+EndAnim
+
+
 //MaleNoHelmet_Gunner
 {
 #include "CharAnims/MaleNoHelmet_Gunner/Gun Installer.event"

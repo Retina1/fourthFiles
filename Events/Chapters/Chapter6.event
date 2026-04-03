@@ -74,39 +74,39 @@ UNIT
 EnemyUnits:
 UNIT Anastas SkyKnight 0x0 Level(8,Enemy,1) [21,1] 0x0 0x0 0x0 0x0 [Sarissa] AttackInRangeAI
 
-UNIT EndbringerGeneric Caller 0x0 Level(7,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [DrainScroll] NoAI
-UNIT EndbringerGeneric Hunter 0x0 Level(7,Enemy,1) [0,2] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
-UNIT EndbringerGeneric Hunter 0x0 Level(7,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
-UNIT EndbringerGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
-UNIT EndbringerGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
-UNIT EndbringerGeneric Encircler 0x0 Level(7,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
-UNIT EndbringerGeneric Gunner 0x0 Level(7,Enemy,1) [6,1] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Caller 0x0 Level(7,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [DrainScroll] NoAI
+UNIT FreelanceGeneric Hunter 0x0 Level(7,Enemy,1) [0,2] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT FreelanceGeneric Hunter 0x0 Level(7,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
+UNIT FreelanceGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
+UNIT FreelanceGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
+UNIT FreelanceGeneric Encircler 0x0 Level(7,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
+UNIT FreelanceGeneric Gunner 0x0 Level(7,Enemy,1) [6,1] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 
-UNIT BelvarusGeneric Lancer 0x0 Level(7,Enemy,1) [5,9] 0x0 0x0 0x0 0x0 [Partizan] NoAI
-UNIT BelvarusGeneric Landsknecht 0x0 Level(7,Enemy,1) [22,12] 0x0 0x0 0x0 0x0 [Shortsword] ChaseOnceApproachedAI
-UNIT BelvarusGeneric Archer 0x0 Level(7,Enemy,1) [15,12] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
-UNIT BelvarusGeneric Archer 0x0 Level(7,Enemy,1) [21,9] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
-UNIT BelvarusGeneric Scholar 0x0 Level(7,Enemy,1) [20,14] 0x0 0x0 0x0 0x0 [FlameScroll] AttackInRangeAI
-UNIT BelvarusGeneric Swordfighter 0x0 Level(7,Enemy,1) [19,13] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
-UNIT BelvarusGeneric Knight 0x0 Level(7,Enemy,1) [14,1] 0x0 0x0 0x0 0x0 [Pike] DelayedAI
-UNIT BelvarusGeneric SkyKnight 0x0 Level(7,Enemy,1) [11,1] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
-UNIT BelvarusGeneric SkyKnight 0x0 Level(7,Enemy,1) [22,6] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
-UNIT BelvarusGeneric SkyKnight 0x0 Level(7,Enemy,1) [22,8] 0x0 0x0 0x0 0x0 [Partizan] AttackInRangeAI
-UNIT BelvarusGeneric ScaleKnight 0x0 Level(7,Enemy,1) [21,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
-UNIT BelvarusGeneric ScaleKnight 0x0 Level(7,Enemy,1) [11,14] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
-UNIT BelvarusGeneric Apothecary 0x0 Level(7,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [Recurve,HeadBinder] NeverMoveAI
-UNIT BelvarusGeneric Apothecary 0x0 Level(7,Enemy,1) [8,8] 0x0 0x0 0x0 0x0 [Recurve,BlindGas] NeverMoveAI
-UNIT BelvarusGeneric Swordfighter 0x0 Level(7,Enemy,1) [13,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
-UNIT BelvarusGeneric Swordfighter 0x0 Level(7,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
-UNIT BelvarusGeneric Axefighter 0x0 Level(7,Enemy,1) [17,6] 0x0 0x0 0x0 0x0 [Shortmace] ChaseOnceApproachedAI
-UNIT BelvarusGeneric Apothecary 0x0 Level(7,Enemy,1) [18,6] 0x0 0x0 0x0 0x0 [Shortbow,ArmBinder] AttackInRangeAI
-UNIT BelvarusGeneric Axefighter 0x0 Level(7,Enemy,1) [19,6] 0x0 0x0 0x0 0x0 [HandAxe] ChaseOnceApproachedAI
-UNIT BelvarusGeneric Apothecary 0x0 Level(7,Enemy,1) [23,4] 0x0 0x0 0x0 0x0 [LegBinder] AttackInRangeAI
-UNIT BelvarusGeneric Rider 0x0 Level(7,Enemy,1) [16,0] 0x0 0x0 0x0 0x0 [HandSpear] AttackInRangeAI
-UNIT BelvarusGeneric Rider 0x0 Level(7,Enemy,1) [20,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
-UNIT BelvarusGeneric Raider 0x0 Level(7,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [Yue] AttackInRangeAI
-UNIT BelvarusGeneric Raider 0x0 Level(7,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
-UNIT BelvarusGeneric Knight 0x0 Level(7,Enemy,1) [18,2] 0x0 0x0 0x0 0x0 [Pike] NeverMoveAI
+UNIT MilitaryGeneric Lancer 0x0 Level(7,Enemy,1) [5,9] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Landsknecht 0x0 Level(7,Enemy,1) [22,12] 0x0 0x0 0x0 0x0 [Shortsword] ChaseOnceApproachedAI
+UNIT MilitaryGeneric Archer 0x0 Level(7,Enemy,1) [15,12] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT MilitaryGeneric Archer 0x0 Level(7,Enemy,1) [21,9] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT MilitaryGeneric Scholar 0x0 Level(7,Enemy,1) [20,14] 0x0 0x0 0x0 0x0 [FlameScroll] AttackInRangeAI
+UNIT MilitaryGeneric Swordfighter 0x0 Level(7,Enemy,1) [19,13] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT MilitaryGeneric Knight 0x0 Level(7,Enemy,1) [14,1] 0x0 0x0 0x0 0x0 [Pike] DelayedAI
+UNIT MilitaryGeneric SkyKnight 0x0 Level(7,Enemy,1) [11,1] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
+UNIT MilitaryGeneric SkyKnight 0x0 Level(7,Enemy,1) [22,6] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT MilitaryGeneric SkyKnight 0x0 Level(7,Enemy,1) [22,8] 0x0 0x0 0x0 0x0 [Partizan] AttackInRangeAI
+UNIT MilitaryGeneric ScaleKnight 0x0 Level(7,Enemy,1) [21,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+UNIT MilitaryGeneric ScaleKnight 0x0 Level(7,Enemy,1) [11,14] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT MilitaryGeneric Apothecary 0x0 Level(7,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [Recurve,HeadBinder] NeverMoveAI
+UNIT MilitaryGeneric Apothecary 0x0 Level(7,Enemy,1) [8,8] 0x0 0x0 0x0 0x0 [Recurve,BlindGas] NeverMoveAI
+UNIT MilitaryGeneric Swordfighter 0x0 Level(7,Enemy,1) [13,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT MilitaryGeneric Swordfighter 0x0 Level(7,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT MilitaryGeneric Axefighter 0x0 Level(7,Enemy,1) [17,6] 0x0 0x0 0x0 0x0 [Shortmace] ChaseOnceApproachedAI
+UNIT MilitaryGeneric Apothecary 0x0 Level(7,Enemy,1) [18,6] 0x0 0x0 0x0 0x0 [Shortbow,ArmBinder] AttackInRangeAI
+UNIT MilitaryGeneric Axefighter 0x0 Level(7,Enemy,1) [19,6] 0x0 0x0 0x0 0x0 [HandAxe] ChaseOnceApproachedAI
+UNIT MilitaryGeneric Apothecary 0x0 Level(7,Enemy,1) [23,4] 0x0 0x0 0x0 0x0 [LegBinder] AttackInRangeAI
+UNIT MilitaryGeneric Rider 0x0 Level(7,Enemy,1) [16,0] 0x0 0x0 0x0 0x0 [HandSpear] AttackInRangeAI
+UNIT MilitaryGeneric Rider 0x0 Level(7,Enemy,1) [20,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT MilitaryGeneric Raider 0x0 Level(7,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [Yue] AttackInRangeAI
+UNIT MilitaryGeneric Raider 0x0 Level(7,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+UNIT MilitaryGeneric Knight 0x0 Level(7,Enemy,1) [18,2] 0x0 0x0 0x0 0x0 [Pike] NeverMoveAI
 UNIT Hitchcock Knight 0x0 Level(8,Enemy,1) [22,1] 0x0 0x0 0x0 0x0 [Sarissa] AttackInRangeAI
 UNIT
 
@@ -115,13 +115,13 @@ UNIT Weber Imperial 0x0 Level(23,NPC,0) [10,2] 0x0 0x0 0x0 0x0 [RagingWave] Atta
 UNIT First Landsknecht 0x0 Level(24,NPC,0) [10,4] 0x0 0x0 0x0 0x0 [SuperiorBlade] AttackInRangeAI
 UNIT Second Strider 0x0 Level(22,NPC,0) [9,6] 0x0 0x0 0x0 0x0 [Shieldlance,Longinus] AttackInRangeAI
 UNIT NPCFourth Driver 0x0 Level(17,NPC,0) [11,6] 0x0 0x0 0x0 0x0 [Dominance] AttackInRangeAI
-UNIT EliteGeneric Hoplite 0x0 Level(20,NPC,0) [9,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
-UNIT EliteGeneric Driver 0x0 Level(20,NPC,0) [10,8] 0x0 0x0 0x0 0x0 [Dominance] AttackInRangeAI
-UNIT EliteGeneric Hoplite 0x0 Level(20,NPC,0) [11,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
-UNIT EliteGeneric Sniper 0x0 Level(20,NPC,0) [4,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
-UNIT EliteGeneric Warlock 0x0 Level(20,NPC,0) [5,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
-UNIT EliteGeneric Sniper 0x0 Level(20,NPC,0) [16,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
-UNIT EliteGeneric Warlock 0x0 Level(20,NPC,0) [15,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT MilitaryGeneric Hoplite 0x0 Level(20,NPC,0) [9,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
+UNIT MilitaryGeneric Driver 0x0 Level(20,NPC,0) [10,8] 0x0 0x0 0x0 0x0 [Dominance] AttackInRangeAI
+UNIT MilitaryGeneric Hoplite 0x0 Level(20,NPC,0) [11,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
+UNIT MilitaryGeneric Sniper 0x0 Level(20,NPC,0) [4,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT MilitaryGeneric Warlock 0x0 Level(20,NPC,0) [5,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT MilitaryGeneric Sniper 0x0 Level(20,NPC,0) [16,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT MilitaryGeneric Warlock 0x0 Level(20,NPC,0) [15,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
 UNIT
 
 
@@ -140,11 +140,11 @@ Text(C6Opening2)
 MOVE 30 Anastas [14,0]; ENUN; SilentKillUnit(Anastas)
 CAM1 [0,14]
 LOAD2 0x1 PlayerCutscene; ENUN
-MOVE 5 BelvarusGeneric [4,9]; ENUN
+MOVE 5 MilitaryGeneric [4,9]; ENUN
 Text(C6Opening3)
 STAL 10
 MUSC Song_PandemonicPlanet
-MOVE 5 BelvarusGeneric [5,9]; ENUN
+MOVE 5 MilitaryGeneric [5,9]; ENUN
 STAL 20
 LOAD2 0x1 PlayerCutscene2; ENUN
 Text(C6Opening4)

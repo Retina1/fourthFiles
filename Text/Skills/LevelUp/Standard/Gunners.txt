@@ -121,7 +121,7 @@ Level: 0 (Active)[N]
 Lob a blinding flare[N]
 with your gun.[N]
 Next: 3 Dur, 2-4 Rng,[N]
-0.8x Atk, 40% base chance.[N]
+0.8x Atk, 40% base odds.[N]
 Req: Warning Shot 1[X]
 ## ^
 Level: 1 (Active)[N]

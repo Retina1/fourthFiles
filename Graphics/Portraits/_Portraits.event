@@ -27,6 +27,19 @@ TychoDMP:
 //do exceed math
 setMugEntryExtend(TychoMug,TychoDMP,2,5,2,3, 0,2, 0,0)
 
+
+ALIGN 4
+//luna
+LilyDMP:
+#incbin "dmps/lunaLily.dmp"
+setMugEntry(LilyMug,LilyDMP,4,6,4,4)
+
+ALIGN 4
+//samson
+SimonDMP:
+#incbin "dmps/samsonSimon.dmp"
+setMugEntry(SimonMug,SimonDMP,3,5,3,3)
+
 ALIGN 4
 //retina
 AstarteDMP:

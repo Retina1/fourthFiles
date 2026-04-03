@@ -3,13 +3,13 @@ Priest,Astarte,8,7,0,Saewynn,Ellie (10),Selene,Nina,Levi,Taft,Lantom (8)
 Scholar,Nathan,8,7,DONE,Cassandra,Waves,Cyanne,Victor,Lonsdale (5),Hugo,Lyud
 Dark Hunter,Cleone,8,7,0,Luis,Saoirse,Wund,Peabody,Dalman,Noelle,Yasmine
 Poet,Kryst,8,7,0,Leonzio,Gunther,Jacqwil,Polymnia,Lucien,Juliette (8),Yosepha
+Knight,Helman,8,7,DONE,Drogo,Gretchen (5),Allbringer,Hopf,Slyn & Spire,Alfonso (8),Simon
 Brawler,-,7,7,0,Shiliang,Feefasnan,Brie,Arsof,Mylo,Leovetus,Bulag
 Encircler,-,7,7,0,Compass,Katrin,Sharon,Ember,Brugaris,Tenney,Vitruvius
 Caller,-,7,7,0,Dread Jenny,Quinn,Margitte,Damien,Means Death,The Unexpected,Mimi
 Seeker,-,7,7,0,Phespher,Nadja,Levia (8),Vasily,Jebet,Won't,Wren
 Gunner,Gore,7,6,0,Martin,Demico (!),Karl,Wasp (8),Victoria,Laiteuse,
 Driver,Fourth,7,6,0,Bertram,Moomfie,Frost,Alva,Dai,Auri,
-Knight,Helman,7,6,DONE,Drogo,Gretchen (5),Allbringer,Hopf,Slyn & Spire,Alfonso (8),
 Artifice,-,6,6,0,Subtractron,AMBR-053,BEEP-o,Subtilior,Awil,OR-10-N,
 Hunter,-,6,6,0,Philmore,Yajirushi,Yasaki,Ammi,Sarina,Alexandra,
 Duelist,-,6,6,0,Francesca,Felicity,Cardam,Anna,Revati,Halloran,
@@ -17,11 +17,11 @@ Sky Knight,-,6,6,0,June,Eneida,Patrice,Melody,Anastas,Peregrine,
 Myrmidon,-,6,6,0,Natsuki (!),Mikayla,Calliope,Ghari (5),Azaghal,Tachyon,
 Rider,-,6,6,0,Aizen,Johnnie,Kolette,Pallas,Emblem (8),Meilie,
 Raider,-,6,6,0,Esketit,Gloria,Pipsy (8),Son,Hart,Campbell,
+Curate,-,6,6,DONE,Trish,Amos (5),Roslin (!),Witerico,Tycho,Lily,
 Apothecary,Ioria,6,5,0,Leize,Wendy,Jim,Dalai,Etto,,
 Noble,Benthus,6,5,0,Marleni,Ophelia,Cheryll,Cato,Yu-jin,,
 Axefighter,-,5,5,DONE,Tristao (5),Finn,Eight,Randellan,Juniper,,
 Scale Knight,-,5,5,0,Atilius,Celeste,Merilee,Shasso,River,,
-Curate,-,5,5,DONE,Trish,Amos (5),Roslin (!),Witerico,Tycho,,
 Lancer,-,5,5,0,Heri,Radagast,Fourfinger,Kelaino,Nelson,,
 Archer,Galvin,5,4,DONE,Hallie,Anjelica,Rodney,Gamon,,,
 Lurker,Rat,5,4,0,S'zess,Zoe,Paul,Hausten (8),,,

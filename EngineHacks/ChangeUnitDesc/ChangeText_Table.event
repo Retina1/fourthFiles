@@ -1,0 +1,35 @@
+#define csvmacro000(arg000,arg001, arg002, arg006, arg003,arg004,arg005) "SHORT arg000; SHORT arg001; BYTE arg002 arg006; BYTE arg003 arg004; SHORT arg005 0x00; "
+// old name text id, new name text id, char id, class id, mapid, route, flag
+#define UnknownChapter(chapterid) "csvmacro000(Name_Guild,Name_Unknown,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Guild,Desc_Unknown,0x00, 0x00, chapterid,0xFF,0x00)"
+#define EndbringerChapter(chapterid) "csvmacro000(Name_Guild,Name_Endbringer,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Guild,Desc_Endbringer,0x00, 0x00, chapterid,0xFF,0x00)"
+#define BenthusArmyChapter(chapterid) "csvmacro000(Name_Guild,Name_BenthusArmy,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Guild,Desc_BenthusArmy,0x00, 0x00, chapterid,0xFF,0x00)"
+#define BelvarusChapter(chapterid) "csvmacro000(Name_Asketa,Name_Belvarus,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Asketa,Desc_Belvarus,0x00, 0x00, chapterid,0xFF,0x00)"
+#define EliteChapter(chapterid) "csvmacro000(Name_Asketa,Name_Elite,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Asketa,Desc_Elite,0x00, 0x00, chapterid,0xFF,0x00)"
+#define HallowedChapter(chapterid) "csvmacro000(Name_Monster,Name_Hallowed,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Monster,Desc_Hallowed,0x00, 0x00, chapterid,0xFF,0x00)"
+#define WorldcoreChapter(chapterid) "csvmacro000(Name_Monster,Name_Worldcore,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Monster,Desc_Worldcore,0x00, 0x00, chapterid,0xFF,0x00)"
+
+
+
+ChangeStatusBGEachChapter_Table:
+//compress down - guild/unknown/endbringer share a slot
+//monsters/hallowed/worldcore share a slot
+//asketa/belvarus/elite share a slot
+UnknownChapter(Chapter5)
+EndbringerChapter(Chapter6)
+BelvarusChapter(Chapter6)
+EndbringerChapter(Chapter7)
+BenthusArmyChapter(Chapter8)
+
+EndbringerChapter(Chapter18C)
+
+UnknownChapter(BlackMarket)
+csvmacro000(0x00,0x00,0x00,0x00,0x00,0x00,0x00)  // term
+
+/*
+Name_Worldcore	Desc_Worldcore
+Name_Unknown	Desc_Unknown
+Name_Elite	Desc_Elite
+Name_Hallowed	Desc_Hallowed
+Name_Endbringer	Desc_Endbringer
+Name_Belvarus	Desc_Belvarus
+*/
