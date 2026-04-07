@@ -46,6 +46,9 @@ UNIT
 Recruit_Nelson:
 UNIT Nelson 0x0 0x1 Level(9,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Partizan,Vulnerary] NoAI
 UNIT
+Recruit_Naomi:
+UNIT Naomi 0x0 0x1 Level(4,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Partizan,Medica] NoAI
+UNIT
 
 Recruit_Shiliang:
 UNIT Shiliang 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Caestus] NoAI
@@ -127,6 +130,9 @@ EndEvent
 Nelson_RecruitEvent:
 GuildRecruit(Nelson,Guild_Test_Dialogue,0x24)
 EndEvent
+Naomi_RecruitEvent:
+GuildRecruit(Naomi,Guild_Test_Dialogue,0x26)
+EndEvent
 
 //BRWL
 Shiliang_RecruitEvent:
@@ -192,6 +198,7 @@ GuildLoad(Radagast,Recruit_Radagast,0x2,Chapter8DoneFlag)
 GuildLoad(Fourfinger,Recruit_Fourfinger,0x3)
 GuildLoad(Kelaino,Recruit_Kelaino,0x4)
 GuildLoad(Nelson,Recruit_Nelson,0x5,Chapter10DoneFlag) //quest?
+GuildLoad(Naomi,Recruit_Naomi,0x6)
 FADU 10
 ENDA
 

@@ -141,6 +141,7 @@ EndingScene:
 SET_ACTIVE 0
 MUSC 0x0
 CleanTextNoMap(0x18,FillerDialogue)
+DumpUnitItems(Benthus)
 SilentKillUnit(Benthus)
 MoveToChapter(Stratum2F1)
 ENDA

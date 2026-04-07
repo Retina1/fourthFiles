@@ -55,6 +55,7 @@
 #define DifficultySwapper "EVBIT_MODIFY 4; CALL DifficultySwapEvent; ASMC RepairModeRefreshASMC|1; EVBIT_MODIFY 0"
 
 #define LevelUpSkill(unitID,skillID) "SVAL 0x1 unitID; SVAL 0x2 skillID; ASMC LevelUpSkillASMC|1"
+#define DumpUnitItems(unit) "SVAL 0x1 unit; ASMC DumpUnitItemsASMC|1"
 
 
 #include "_BattleQuotes.event"

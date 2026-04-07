@@ -1,4 +1,4 @@
-##Guild_UNIT_Intro
+##Guild_UNIT_Dialogue
 [FarLeft][Guildmaster][Left][Nathan][MidRight][UNIT]
 unit here[A][X]
 ##

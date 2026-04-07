@@ -178,6 +178,15 @@ Gamon_ArcherDMP:
 ALIGN 4
 Gamon_SniperDMP:
 #incbin "paletteFiles/Initial/Gamon_Sniper.dmp"
+setPalette(Jane_Archer, Jane_ArcherDMP)
+setPalette(Jane_Sniper, Jane_SniperDMP)
+CharPalette(Jane,Jane_Archer,Archer,Jane_Sniper,Sniper)
+ALIGN 4
+Jane_ArcherDMP:
+#incbin "paletteFiles/Initial/Jane_Archer.dmp"
+ALIGN 4
+Jane_SniperDMP:
+#incbin "paletteFiles/Initial/Jane_Sniper.dmp"
 
 //schola
 setPalette(Cassandra_Scholar, Cassandra_ScholarDMP)

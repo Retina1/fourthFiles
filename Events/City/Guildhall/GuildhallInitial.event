@@ -13,6 +13,9 @@ UNIT
 Recruit_Marag:
 UNIT Marag 0x0 0x1 Level(3,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
 UNIT
+Recruit_Velissa:
+UNIT Velissa 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Zweihander] NoAI
+UNIT
 
 Recruit_Drogo:
 UNIT Drogo 0x0 0x1 Level(1,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
@@ -63,6 +66,9 @@ UNIT Rodney 0x0 0x1 Level(1,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Shortbow] NoAI
 UNIT
 Recruit_Gamon:
 UNIT Gamon 0x0 0x1 Level(6,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Recurve] NoAI
+UNIT
+Recruit_Jane:
+UNIT Jane 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortbow,Medica] NoAI
 UNIT
 
 Recruit_Cassandra:
@@ -119,6 +125,9 @@ EndEvent
 Marag_RecruitEvent:
 GuildRecruit(Marag,Guild_Marag_Intro,0x23)
 EndEvent
+Velissa_RecruitEvent:
+GuildRecruit(Velissa,Guild_Velissa_Dialogue,0x24)
+EndEvent
 
 //knt
 Drogo_RecruitEvent:
@@ -173,6 +182,9 @@ EndEvent
 Gamon_RecruitEvent:
 GuildRecruit(Gamon,Guild_Gamon_Dialogue,0x23)
 EndEvent
+Jane_RecruitEvent:
+GuildRecruit(Jane,Guild_Jane_Dialogue,0x24)
+EndEvent
 
 //sch
 Cassandra_RecruitEvent:
@@ -226,6 +238,7 @@ GuildLoad(CoastKid,Recruit_CoastKid,0x1)
 GuildLoad(Puzon,Recruit_Puzon,0x2)
 GuildLoad(Cam,Recruit_Cam,0x3)
 GuildLoad(Marag,Recruit_Marag,0x4,Chapter5DoneFlag)
+GuildLoad(Velissa,Recruit_Velissa,0x5)
 FADU 10
 ENDA
 
@@ -259,7 +272,8 @@ GuildLoadFlagReset
 GuildLoad(Hallie,Recruit_Hallie,0x1)
 GuildLoad(Anjelica,Recruit_Anjelica,0x2)
 GuildLoad(Rodney,Recruit_Rodney,0x3)
-GuildLoad(Gamon,Recruit_Gamon,0x3)
+GuildLoad(Gamon,Recruit_Gamon,0x4)
+GuildLoad(Jane,Recruit_Jane,0x5)
 FADU 10
 ENDA
 

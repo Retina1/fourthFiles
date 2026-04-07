@@ -231,26 +231,41 @@ Chapter3_NathanHelman:
 MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_NathanHelmanRecruit)
 TurnAlly(Helman)
+CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
+SystemText(DamageFloorTutorial)
+LABEL 9999
 EndEvent
 Chapter3_GoreHelman:
 MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_GoreHelmanRecruit)
 TurnAlly(Helman)
+CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
+SystemText(DamageFloorTutorial)
+LABEL 9999
 EndEvent
 Chapter3_AstarteHelman:
 MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_AstarteHelmanRecruit)
 TurnAlly(Helman)
+CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
+SystemText(DamageFloorTutorial)
+LABEL 9999
 EndEvent
 Chapter3_CleoneHelman:
 MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_CleoneHelmanRecruit)
 TurnAlly(Helman)
+CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
+SystemText(DamageFloorTutorial)
+LABEL 9999
 EndEvent
 Chapter3_BenthusHelman:
 MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_BenthusHelmanRecruit)
 TurnAlly(Helman)
+CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
+SystemText(DamageFloorTutorial)
+LABEL 9999
 EndEvent
 
 Chapter3_HelmanAuto:
@@ -260,6 +275,9 @@ BNE 0x1 0xC 0x0
 MUSC Song_FaithIsMyPillar //recruitment theme
 Text(Chapter3_HelmanAutoRecruit)
 TurnAlly(Helman)
+CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
+SystemText(DamageFloorTutorial)
+LABEL 9999
 GOTO 0x2
 LABEL 0x1
 //not player

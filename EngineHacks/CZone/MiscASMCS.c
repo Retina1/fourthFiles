@@ -1,5 +1,17 @@
 extern struct Unit * GetUnitStructFromEventParameter(s16 pid);
 
+
+void DumpUnitItemsASMC(struct EventEngineProc* proc) {
+	struct Unit* unit = GetUnitFromCharId(gEventSlots[1]);
+	for (int i = 0; i < 5; i++) {
+		if (unit->items[0] != 0) {
+			AddItemToConvoy(unit->items[0]);
+			//remove items shifts each time
+			UnitRemoveItem(unit, 0);
+		}
+	}
+}
+
 void RefreshActiveUnitASMC(struct EventEngineProc* proc) {
     struct Unit* unit = GetUnitStructFromEventParameter(gActionData.subjectIndex);
     unit->state &= ~0x42;

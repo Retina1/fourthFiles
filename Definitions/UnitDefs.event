@@ -15,7 +15,7 @@
 #define Puzon 0xF
 #define Cam 0x10
 #define Marag 0x11
-#define SWD5 0x12
+#define Velissa 0x12
 #define SWD6 0x13
 #define SWD7 0x14
 #define Drogo 0x15
@@ -36,7 +36,7 @@
 #define Anjelica 0x24
 #define Rodney 0x25
 #define Gamon 0x26
-#define ARCH5 0x27
+#define Jane 0x27
 #define ARCH6 0x28
 #define ARCH7 0x29
 #define Cassandra 0x2A
@@ -121,7 +121,7 @@
 #define Fourfinger 0x79
 #define Kelaino 0x7A
 #define Nelson 0x7B
-#define LNCR6 0x7C
+#define Naomi 0x7C
 #define LNCR7 0x7D
 #define Shiliang 0x7E
 #define Feefasnan 0x7F

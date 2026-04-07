@@ -31,6 +31,19 @@ Who'll remember you?[A][X]
 How did you get to[N]
 be here, Nathan?[A][X]
 
+##TutorialsTutorial
+Welcome, and thank you for playing![N]
+Since you're on Normal mode, you'll[N]
+get some tutorials over the course of[N]
+the game's first few chapters.[AN]
+For now, I'd just like to recommend[N]
+checking out the ingame Guide, for[N]
+an overview of the game's systems.[AN]
+You'll be given more pertinent info[N]
+as the need arises, so don't feel the[N]
+need to memorize everything just yet.[AN]
+Good luck, and welcome to Asketa![A][X]
+
 ##Ch1SelectQuote_Nathan
 [MidLeft][Nathan]
 My firebolts should be able to[N]

@@ -9,6 +9,17 @@ extern const int GoreEyepatchMugID;
 
 extern const struct FaceData NewPortraitTable[];
 
+//make dungeon cost 1 movement
+const s8* GetUnitMovementCost(struct Unit* unit) {
+
+    if (CheckEventId_(0x8a) || CheckEventId_(0x120)) {
+        return Unk_TerrainTable_0880BC18; //repurpose ballista as free movement table
+	}
+	else {
+		return unit->pClassData->pMovCostTable[0];	
+    }
+}
+
 const struct FaceData* GetPortraitData(int fid) {
 	//NATSUBUN
 	if (fid == NatsukiMugID){

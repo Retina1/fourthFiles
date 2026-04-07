@@ -171,6 +171,10 @@ I won't[...] be home[...][A][EyesClose][X]
 [MidRight][Marag]
 Alas, damnable Marag[...][N]
 Culled in his prime[...][A][EyesClose][X]
+##VelissaDeath
+[MidRight][Velissa]
+My weapon[...] Why won't[...][N]
+it do anything[...]?[A][EyesClose][X]
 
 //knights
 ##DrogoDeath
@@ -244,6 +248,10 @@ Wasn't so bad[...][N]
 Not a bad ending[...][AN][EyesClose]
 If it's gotta[...][N]
 be this way[...][A][X]
+##JaneDeath
+[MidRight][Jane]
+Aw[...] Is this the best[...][N]
+I really[...] could've[...]?[A][EyesClose][X]
 
 //scholars
 ##CassandraDeath
@@ -570,6 +578,10 @@ what happened today[...][A][EyesClose][X]
 [MidRight][Nelson]
 I'll never prove myself[...][N]
 Not like this[...][A][EyesClose][X]
+##NaomiDeath
+[MidRight][Naomi]
+I[...] wanted to believe[...][N]
+I deserve[...] happiness[...][A][EyesClose][X]
 
 //brawl
 ##ShiliangDeath

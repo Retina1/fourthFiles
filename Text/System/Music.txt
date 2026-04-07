@@ -92,6 +92,8 @@ Name Entry[X]
 Guilty Gear Strive[X]
 ##SongTitle_ArmorCladFaith
 Armor-Clad Faith[X]
+##SongTitle_Drift
+Drift[X]
 
 ##SourceTitle_SMT4
 Shin Megami Tensei IV[X]

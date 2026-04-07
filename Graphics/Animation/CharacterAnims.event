@@ -64,6 +64,27 @@ RangedAnim(Female_Sniper_Bow)
 UnarmedAnim(Female_Sniper_Unarmed)
 EndAnim
 
+//Archer
+{
+#include "CharAnims/Jane_Archer/Bow Installer.event"
+#include "CharAnims/Jane_Archer/Unarmed Installer.event"
+}
+ALIGN 4
+Jane_ArcherAnims:
+RangedAnim(Jane_Archer_Bow)
+UnarmedAnim(Jane_Archer_Unarmed)
+EndAnim
+//Sniper
+{
+#include "CharAnims/Jane_Sniper/Bow Installer.event"
+#include "CharAnims/Jane_Sniper/Unarmed Installer.event"
+}
+ALIGN 4
+Jane_SniperAnims:
+RangedAnim(Jane_Sniper_Bow)
+UnarmedAnim(Jane_Sniper_Unarmed)
+EndAnim
+
 //Curate
 {
 #include "CharAnims/Female_Curate/Magic Installer.event"

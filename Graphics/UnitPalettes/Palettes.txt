@@ -19,8 +19,12 @@ Cam_Swordfighter
 Cam_Landsknecht
 Marag_Swordfighter
 Marag_Landsknecht
+Velissa_Swordfighter
+Velissa_Landsknecht
 Drogo_Knight
 Drogo_Hoplite
+Gretchen_Knight
+Gretchen_Hoplite
 Allbringer_Knight
 Allbringer_Hoplite
 Hopf_Knight
@@ -49,6 +53,8 @@ Rodney_Archer
 Rodney_Sniper
 Gamon_Archer
 Gamon_Sniper
+Jane_Archer
+Jane_Sniper
 Cassandra_Scholar
 Cassandra_Warlock
 Waves_Scholar
@@ -111,12 +117,10 @@ _Caller
 _Necromancer
 _Noble
 _Sovereign
-_Duelist
-_Fencer
+Francesca_Duelist
+Francesca_Fencer
 _Driver
 _Imperial
 _Artifice
 _Automaton
-Francesca_Duelist
-Francesca_Fencer
 Xavens_Warlock

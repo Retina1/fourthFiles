@@ -209,6 +209,9 @@ AstoriaMug
 CampbellMug
 SimonMug
 LilyMug
+JaneMug
+NaomiMug
+VelissaMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

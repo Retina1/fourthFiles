@@ -75,6 +75,7 @@ PortraitUpshift(FrancescaMug)
 PortraitUpshift(PeregrineMug)
 PortraitUpshift(JohannaMug)
 PortraitUpshift(LilyMug)
+PortraitUpshift(JaneMug)
 //PortraitUpshift(RatatoskrMug)
 //shift plus exceed doesn't work nice
 //PortraitUpshift(WendyMug)

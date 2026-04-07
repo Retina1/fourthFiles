@@ -280,6 +280,7 @@ LevelUpSkill(Nathan,7)
 LevelUpSkill(Astarte,7)
 CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
 CALL EnableUnitSelectEvents
+SystemText(TutorialsTutorial)
 LABEL 9999
 ASMC 0x080790A4|1
 ASMC 0x080B5D5C|1

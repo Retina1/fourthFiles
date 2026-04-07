@@ -29,6 +29,12 @@ setMugEntryExtend(TychoMug,TychoDMP,2,5,2,3, 0,2, 0,0)
 
 
 ALIGN 4
+//thea
+NaomiDMP:
+#incbin "dmps/theaNaomi.dmp"
+setMugEntry(NaomiMug,NaomiDMP,2,6,3,4)
+
+ALIGN 4
 //luna
 LilyDMP:
 #incbin "dmps/lunaLily.dmp"
@@ -375,7 +381,7 @@ setMugEntry(RodneyMug,RodneyDMP,2,5,2,3)
 ALIGN 4
 MeansDeathDMP:
 #incbin "dmps/abzinthianMeansDeath.dmp"
-setMugEntry(MeansDeathMug,MeansDeathDMP,4,6,2,4)
+setMugEntry(MeansDeathMug,MeansDeathDMP,4,4,4,2)
 
 ALIGN 4
 //hannah
@@ -595,6 +601,10 @@ ALIGN 4
 CherrylDMP:
 #incbin "dmps/rekekkaCherryl.dmp"
 setMugEntry(CherrylMug,CherrylDMP,2,6,3,4)
+ALIGN 4
+JaneDMP:
+#incbin "dmps/rekekkaJane.dmp"
+setMugEntry(JaneMug,JaneDMP,3,6,4,4)
 
 ALIGN 4
 //lynn

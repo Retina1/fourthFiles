@@ -81,6 +81,12 @@ Nelson[X]
 ##Desc_Nelson
 A Belvarusi vigilante from a fishing[N]
 village. They're stubborn and rash.[X]
+//thea
+##Name_Naomi
+Naomi[X]
+##Desc_Naomi
+A young woman searching for a better[N]
+life. Her self-worth is lacking.[X]
 
 //Shīliăng by levin (get accented characters later, brawler)
 //eventually they're a [0xE3] and i [0xE5]

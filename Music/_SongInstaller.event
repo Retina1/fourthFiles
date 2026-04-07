@@ -493,7 +493,12 @@ SongTable(Song_SignOfTheTimes,SignOfTheTimes,1)
 SongTable(Song_TheSubway,TheSubway,1)
 #include "songs/TheSubway.event"
 }
+#define Song_Drift 0xb2
+{
+SongTable(Song_Drift,Drift,1)
+#include "songs/Drift.event"
+}
 /* free numbers
-b2 bb c0 c1 c2 c3 c4 c5 c6 d9 da db
+bb c0 c1 c2 c3 c4 c5 c6 d9 da db
 e0 e1 e4 e8 e9 ec ee f3 104 105 106 107
 */

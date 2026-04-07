@@ -1,3 +1,16 @@
+##Guild_Jane_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Jane]
+unit here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Jane]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Jane]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Jane]
+return here[A][X]
+
 ##Guild_Rodney_Dialogue
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Rodney]
 Hey, there! You lookin' for someone[N]

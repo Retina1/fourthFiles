@@ -301,6 +301,7 @@ RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,City05_PostPre
 GiveMoneyByVisit(2000,2500,1500,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x1 0xc 0x0
+CHECK_TUTORIAL ; BEQ 0x1 0xC 0x0
 SystemText(TownTutorial)
 LABEL 0x1
 EndEvent

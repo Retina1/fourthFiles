@@ -15,6 +15,20 @@ for rejecting a guildmate.[A][X]
 This dialogue is a placeholder[N]
 for talking a second time.[A][X]
 
+
+##Guild_Velissa_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Velissa]
+unit here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Velissa]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Velissa]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Velissa]
+return here[A][X]
+
 ##Guild_Marag_Intro
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Marag]
 'ey, kid. You wanna[N]

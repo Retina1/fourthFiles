@@ -143,6 +143,10 @@ Female_Archer_Bow
 Female_Archer_Unarmed
 Female_Sniper_Bow
 Female_Sniper_Unarmed
+Jane_Archer_Bow
+Jane_Archer_Unarmed
+Jane_Sniper_Bow
+Jane_Sniper_Unarmed
 Female_Scholar_Magic
 Female_Warlock_Magic
 Female_Curate_Magic

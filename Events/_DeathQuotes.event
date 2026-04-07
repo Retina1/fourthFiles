@@ -80,7 +80,7 @@ AlwaysDeathQuote(CoastKid,0x0,CoastKidDeath)
 AlwaysDeathQuote(Puzon,0x0,PuzonDeath)
 AlwaysDeathQuote(Cam,0x0,CamDeath)
 AlwaysDeathQuote(Marag,0x0,MaragDeath)
-
+AlwaysDeathQuote(Velissa,0x0,VelissaDeath)
 
 
 //knt
@@ -104,7 +104,7 @@ AlwaysDeathQuote(Hallie,0x0,HallieDeath)
 AlwaysDeathQuote(Anjelica,0x0,AnjelicaDeath)
 AlwaysDeathQuote(Rodney,0x0,RodneyDeath)
 AlwaysDeathQuote(Gamon,0x0,GamonDeath)
-
+AlwaysDeathQuote(Jane,0x0,JaneDeath)
 
 
 //sch
@@ -201,7 +201,7 @@ AlwaysDeathQuote(Radagast,0x0,RadagastDeath)
 AlwaysDeathQuote(Fourfinger,0x0,FourfingerDeath)
 AlwaysDeathQuote(Kelaino,0x0,KelainoDeath)
 AlwaysDeathQuote(Nelson,0x0,NelsonDeath)
-
+AlwaysDeathQuote(Naomi,0x0,NaomiDeath)
 
 //braw
 AlwaysDeathQuote(Shiliang,0x0,ShiliangDeath)

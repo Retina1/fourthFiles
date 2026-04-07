@@ -16,6 +16,10 @@ Kill Benthus[X]
 Kill Weber[X]
 ##KillGoreLabel
 Kill Gore[X]
+##KillXavensLabel
+Kill Xavens[X]
+##KillGersonLabel
+Kill Gerson[X]
 ##KillAstarteLabel
 Kill Astarte[X]
 ##EndgameObjLabel
@@ -48,6 +52,9 @@ Endbringers![X]
 ##Ch8KillDesc
 Take your[N]
 revenge.[X]
+##Ch10KillDesc
+Defeat George,[N]
+the false driver![X]
 
 ##Ch13BossesDesc
 Bring upon[N]
@@ -62,17 +69,27 @@ your courage.[X]
 Bring upon[N]
 Asketa's end.[X]
 
+##Ch19AKillDesc
+Survive trials[N]
+and kill Xavens.[X]
+##Ch19BKillDesc
+Gain access to[N]
+the Armory.[X]
+
 ##Ch20KillDesc
 There's no[N]
 going back.[X]
 
+##Ch21ARoutDesc
+Kill Harla's forces[N]
+before it's too late.[X]
 ##EndgameAKillDesc
 Kill Rana and[N]
 seize destiny.[X]
 
 ##EndgameBKillDesc
-Kill the[N]
-Guildmaster.[X]
+Kill Guildmaster.[N]
+Change the world.[X]
 
 ##Ch18CRoutDesc
 Finish off[N]

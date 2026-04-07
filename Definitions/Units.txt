@@ -15,7 +15,7 @@ CoastKid
 Puzon
 Cam
 Marag
-SWD5
+Velissa
 SWD6
 SWD7
 Drogo
@@ -36,7 +36,7 @@ Hallie
 Anjelica
 Rodney
 Gamon
-ARCH5
+Jane
 ARCH6
 ARCH7
 Cassandra
@@ -121,7 +121,7 @@ Radagast
 Fourfinger
 Kelaino
 Nelson
-LNCR6
+Naomi
 LNCR7
 Shiliang
 Feefasnan

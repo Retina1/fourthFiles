@@ -1,3 +1,22 @@
+##DamageFloorTutorial
+You might've noticed by now, but Hit[N]
+and damage in this game are floored[N]
+at values above the standard zero.[AN]
+Specifically, displayed Hit cannot be[N]
+lower than the unit's Skill, unless[N]
+the unit in question is blinded.[AN]
+Displayed damage cannot be lower than[N]
+the unit's offensive stat (Str or Mag)[N]
+divided by three.[AN]
+As an example, a unit that has 9 Str[N]
+cannot deal less than 3 damage with[N]
+a physical weapon.[AN]
+Also, both floors are applied after[N]
+all other modifiers to their stat,[N]
+so keep that in mind.[AN]
+Use this information to guide your[N]
+strategies going forward![A][X]
+
 ##C3LucienDeath
 [MidRight][Lucien]
 You worthless[...] There'll[N]

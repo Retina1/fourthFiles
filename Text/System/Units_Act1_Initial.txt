@@ -56,6 +56,13 @@ Marag[X]
 A Belvarusi [OpenQuote]veteran[CloseQuote] who was wounded[N]
 and dodged fighting. He's quite cynical.[X]
 
+//jackfrost
+##Name_Velissa
+Velissa[X]
+##Desc_Velissa
+An Asketan lady in search of treasure[N]
+and weapons. She's a bit insecure.[X]
+
 //drogo by lorca (knight)
 ##Name_Drogo
 Drogo[X]
@@ -166,6 +173,13 @@ Gamon[X]
 ##Desc_Gamon
 A Belvarusi deserter and ex-mercenary.[N]
 He's left retirement seeking purpose.[X]
+
+//rekekka
+##Name_Jane
+Jane[X]
+##Desc_Jane
+A wandering young archer with,[N]
+frankly, nothing on her mind.[X]
 
 
 //cassandra by zappy (scholar)
