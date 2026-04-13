@@ -73,8 +73,6 @@ UNIT MonsterGeneric Spider 0x0 Level(5,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [WebTalon]
 UNIT MonsterGeneric Centaur 0x0 Level(5,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
 UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [4,6] DropItem 0x0 0x0 0x0 [RootGrasp,Vulnerary] NeverMoveAI
 UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [8,8] DropItem 0x0 0x0 0x0 [RootGrasp,AriadneShard] NeverMoveAI
-
-//make not wolves
 UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [2,11] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
 UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [3,10] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
 UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [7,12] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
@@ -103,8 +101,75 @@ UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [6,4] 0x0 0x0 0x0 0x0 [SharpBite] 
 UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [8,4] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
 UNIT Harla Highlander 0x0 Level(26,Enemy,1) [8,0] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
 UNIT
-//wolfskin uses fates wolf
-//wolfking uses berserker wolf
+
+EnemyUnitsExpert:
+UNIT MonsterGeneric Spider 0x0 Level(5,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [WebTalon] AttackInRangeAI
+
+UNIT MonsterGeneric Centaur 0x0 Level(5,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
+UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [4,6] DropItem 0x0 0x0 0x0 [RootGrasp,Vulnerary] NeverMoveAI
+UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [8,8] DropItem 0x0 0x0 0x0 [RootGrasp,AriadneShard] NeverMoveAI
+UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [2,11] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
+UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [3,10] 0x0 0x0 0x0 0x0 [ToxicClaw] AttackInRangeAI
+UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [7,12] 0x0 0x0 0x0 0x0 [ToxicClaw] AttackInRangeAI
+UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [8,13] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
+UNIT MonsterGeneric Spider 0x0 Level(4,Enemy,1) [11,11] 0x0 0x0 0x0 0x0 [WebTalon] AttackInRangeAI
+UNIT MonsterGeneric Woodrat 0x0 Level(4,Enemy,1) [12,10] 0x0 0x0 0x0 0x0 [SharpBite] ChaseOnceApproachedAI
+UNIT MonsterGeneric Woodrat 0x0 Level(4,Enemy,1) [12,9] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Centaur 0x0 Level(4,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [12,6] 0x0 0x0 0x0 0x0 [AirScales] DelayedAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [1,2] 0x0 0x0 0x0 0x0 [VenomScales] DelayedAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [AirScales] DelayedAI
+
+//beast king moves before other wolves
+UNIT BeastKing Wolfking 0x0 Level(6,Enemy,1) [7,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [FrigidBite] ChaseOnceApproachedAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [12,4] 0x0 0x0 0x0 0x0 [FrigidBite] ChaseOnceApproachedAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [4,8] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+//the king's gang - reduce wolf count on normal
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [5,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [9,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [6,2] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [8,2] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [6,4] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [8,4] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT Harla Highlander 0x0 Level(26,Enemy,1) [8,0] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
+UNIT
+
+EnemyUnitsHeroic:
+UNIT MonsterGeneric Spider 0x0 Level(5,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [WebTalon] AttackInRangeAI
+
+UNIT MonsterGeneric Centaur 0x0 Level(5,Enemy,1) [6,7] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
+UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [4,6] DropItem 0x0 0x0 0x0 [RootGrasp,Vulnerary] AttackInRangeAI
+UNIT MonsterGeneric Treant 0x0 Level(5,Enemy,1) [8,8] DropItem 0x0 0x0 0x0 [RootGrasp,AriadneShard] AttackInRangeAI
+UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [2,11] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
+UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [3,10] 0x0 0x0 0x0 0x0 [ToxicClaw] AttackInRangeAI
+UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [7,12] 0x0 0x0 0x0 0x0 [ToxicClaw] AttackInRangeAI
+UNIT MonsterGeneric Crawler 0x0 Level(5,Enemy,1) [8,13] 0x0 0x0 0x0 0x0 [VileClaw] AttackInRangeAI
+UNIT MonsterGeneric Spider 0x0 Level(4,Enemy,1) [11,11] 0x0 0x0 0x0 0x0 [WebTalon] AttackInRangeAI
+UNIT MonsterGeneric Woodrat 0x0 Level(4,Enemy,1) [12,10] 0x0 0x0 0x0 0x0 [SharpBite] ChaseOnceApproachedAI
+UNIT MonsterGeneric Woodrat 0x0 Level(4,Enemy,1) [12,9] 0x0 0x0 0x0 0x0 [SharpBite] AttackInRangeAI
+UNIT MonsterGeneric Centaur 0x0 Level(4,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [12,6] 0x0 0x0 0x0 0x0 [AirScales] DelayedAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [1,2] 0x0 0x0 0x0 0x0 [VenomScales] DelayedAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [AirScales] DelayedAI
+
+//beast king moves before other wolves
+UNIT BeastKing Wolfking 0x0 Level(6,Enemy,1) [7,2] 0x0 0x0 0x0 0x0 [FrigidBite,SoulShield] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [FrigidBite] ChaseOnceApproachedAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [12,4] 0x0 0x0 0x0 0x0 [FrigidBite] ChaseOnceApproachedAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [4,8] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+//the king's gang - reduce wolf count on normal
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [5,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [9,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [6,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [8,3] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [6,4] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT MonsterGeneric Wolf 0x0 Level(5,Enemy,1) [8,4] 0x0 0x0 0x0 0x0 [FrigidBite] AttackInRangeAI
+UNIT Harla Highlander 0x0 Level(26,Enemy,1) [8,0] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
+UNIT
+
 
 QuestUnits:
 UNIT Quarry Triwolf 0x0 Level(5,Enemy,1) [13,2] 0x0 0x0 0x0 0x0 [FrigidBite] NoAI
@@ -176,7 +241,7 @@ STAL 10
 MUSC 0
 CLEA 0; CLEN 0
 LOMA Chapter4
-LOAD1 0x1 EnemyUnits; ENUN
+LoadUnitsByDifficulty(EnemyUnits,EnemyUnitsExpert,EnemyUnitsHeroic)
 CHECK_EVENTID Quest1_S1x_Flag
 BEQ 0x1 0xc 0x0
 LOAD1 0x1 QuestUnits; ENUN
@@ -228,7 +293,7 @@ LABEL 0x2
 EndEvent
 
 EndingScene:
-SET_ACTIVE 0
+EndingSceneToggles
 MUSC Song_EditMode
 CleanTextNoMap(0x18,Chapter4_Ending1)
 //map event

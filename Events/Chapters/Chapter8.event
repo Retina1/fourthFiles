@@ -28,10 +28,14 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Chest(RepairScroll,18,12)
+Door(0,4)
+Door(18,4)
+Door(18,10)
 END_MAIN
 
 MiscBasedEvents:
-DefeatAll(EndingScene)
+DefeatBoss(EndingScene)
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -93,7 +97,7 @@ CallPreps
 EndEvent
 
 EndingScene:
-SET_ACTIVE 0
+EndingSceneToggles
 ENUT Chapter8DoneFlag
 MUSC 0x0
 CleanTextNoMap(0x18,FillerDialogue)

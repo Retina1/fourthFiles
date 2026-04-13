@@ -178,7 +178,7 @@ void ClearUnit(struct Unit* unit) {
     unit->index = id;
 }
 
-
+//fix - make icons not display in cutscenes
 void PutUnitSpriteIconsOam(void)
 {
     int i;

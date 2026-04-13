@@ -16,8 +16,8 @@
 #define Cam 0x10
 #define Marag 0x11
 #define Velissa 0x12
-#define SWD6 0x13
-#define SWD7 0x14
+#define Ferris 0x13
+#define Anhinga 0x14
 #define Drogo 0x15
 #define Gretchen 0x16
 #define Allbringer 0x17
@@ -30,7 +30,7 @@
 #define Eight 0x1E
 #define Randellan 0x1F
 #define Juniper 0x20
-#define AXE6 0x21
+#define AuntAysu 0x21
 #define AXE7 0x22
 #define Hallie 0x23
 #define Anjelica 0x24
@@ -106,8 +106,8 @@
 #define Zoe 0x6A
 #define Paul 0x6B
 #define Hausten 0x6C
-#define HEX5 0x6D
-#define HEX6 0x6E
+#define Ludovic 0x6D
+#define Ghevena 0x6E
 #define HEX7 0x6F
 #define Luis 0x70
 #define Notre 0x71
@@ -122,7 +122,7 @@
 #define Kelaino 0x7A
 #define Nelson 0x7B
 #define Naomi 0x7C
-#define LNCR7 0x7D
+#define Phaedra 0x7D
 #define Shiliang 0x7E
 #define Feefasnan 0x7F
 #define Brie 0x80
@@ -177,7 +177,7 @@
 #define Cherryl 0xB1
 #define Cato 0xB2
 #define Yujin 0xB3
-#define NOBL6 0xB4
+#define Ascella 0xB4
 #define NOBL7 0xB5
 #define Francesca 0xB6
 #define Felicity 0xB7
@@ -199,4 +199,4 @@
 #define Subtilior 0xC7
 #define Awil 0xC8
 #define Orion 0xC9
-#define ART7 0xCA
+#define Almighty 0xCA

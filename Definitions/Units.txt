@@ -16,8 +16,8 @@ Puzon
 Cam
 Marag
 Velissa
-SWD6
-SWD7
+Ferris
+Anhinga
 Drogo
 Gretchen
 Allbringer
@@ -30,7 +30,7 @@ Finn
 Eight
 Randellan
 Juniper
-AXE6
+AuntAysu
 AXE7
 Hallie
 Anjelica
@@ -106,8 +106,8 @@ Szess
 Zoe
 Paul
 Hausten
-HEX5
-HEX6
+Ludovic
+Ghevena
 HEX7
 Luis
 Notre
@@ -122,7 +122,7 @@ Fourfinger
 Kelaino
 Nelson
 Naomi
-LNCR7
+Phaedra
 Shiliang
 Feefasnan
 Brie
@@ -177,7 +177,7 @@ Ophelia
 Cherryl
 Cato
 Yujin
-NOBL6
+Ascella
 NOBL7
 Francesca
 Felicity
@@ -199,4 +199,4 @@ Beepo
 Subtilior
 Awil
 Orion
-ART7
+Almighty

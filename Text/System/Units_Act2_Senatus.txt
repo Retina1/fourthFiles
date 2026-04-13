@@ -37,6 +37,12 @@ Yu-jin[X]
 ##Desc_Yujin
 A stranded exchange student from afar.[N]
 She's woefully out of her depth.[X]
+//citrus
+##Name_Ascella
+Ascella[X]
+##Desc_Ascella
+A rash noble from a lesser Belvarusi[N]
+house. She's seeking familial clout.[X]
 
 //francesca by retina (duelist)
 ##Name_Francesca

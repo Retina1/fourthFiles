@@ -16,6 +16,12 @@ UNIT
 Recruit_Velissa:
 UNIT Velissa 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Zweihander] NoAI
 UNIT
+Recruit_Ferris:
+UNIT Ferris 0x0 0x1 Level(3,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Shortsword,Vulnerary] NoAI
+UNIT
+Recruit_Anhinga:
+UNIT Anhinga 0x0 0x1 Level(6,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
+UNIT
 
 Recruit_Drogo:
 UNIT Drogo 0x0 0x1 Level(1,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
@@ -53,6 +59,9 @@ UNIT Randellan 0x0 0x1 Level(3,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Broadaxe] NoAI
 UNIT
 Recruit_Juniper:
 UNIT Juniper 0x0 0x1 Level(3,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Yue] NoAI
+UNIT
+Recruit_AuntAysu:
+UNIT AuntAysu 0x0 0x1 Level(14,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [HandAxe] NoAI
 UNIT
 
 Recruit_Hallie:
@@ -128,6 +137,12 @@ EndEvent
 Velissa_RecruitEvent:
 GuildRecruit(Velissa,Guild_Velissa_Dialogue,0x24)
 EndEvent
+Ferris_RecruitEvent:
+GuildRecruit(Ferris,Guild_Ferris_Dialogue,0x25)
+EndEvent
+Anhinga_RecruitEvent:
+GuildRecruit(Anhinga,Guild_Anhinga_Dialogue,0x26)
+EndEvent
 
 //knt
 Drogo_RecruitEvent:
@@ -168,6 +183,9 @@ EndEvent
 Juniper_RecruitEvent:
 GuildRecruit(Juniper,Guild_Juniper_Intro,0x24)
 EndEvent
+AuntAysu_RecruitEvent:
+GuildRecruit(AuntAysu,Guild_AuntAysu_Dialogue,0x25)
+EndEvent
 
 //arch
 Hallie_RecruitEvent:
@@ -203,7 +221,7 @@ Lonsdale_RecruitEvent:
 GuildRecruit(Lonsdale,Guild_Lonsdale_Intro,0x24)
 EndEvent
 Hugo_RecruitEvent:
-GuildRecruit(Hugo,Guild_Lonsdale_Intro,0x25)
+GuildRecruit(Hugo,Guild_Hugo_Intro,0x25)
 EndEvent
 Lyud_RecruitEvent:
 GuildRecruit(Lyud,Guild_Lyud_Intro,0x26)
@@ -239,6 +257,8 @@ GuildLoad(Puzon,Recruit_Puzon,0x2)
 GuildLoad(Cam,Recruit_Cam,0x3)
 GuildLoad(Marag,Recruit_Marag,0x4,Chapter5DoneFlag)
 GuildLoad(Velissa,Recruit_Velissa,0x5)
+GuildLoad(Ferris,Recruit_Ferris,0x6)
+GuildLoad(Anhinga,Recruit_Anhinga,0x7,Chapter8DoneFlag)
 FADU 10
 ENDA
 
@@ -263,6 +283,7 @@ GuildLoad(Finn,Recruit_Finn,0x2)
 GuildLoad(Eight,Recruit_Eight,0x3)
 GuildLoad(Randellan,Recruit_Randellan,0x4)
 GuildLoad(Juniper,Recruit_Juniper,0x5)
+GuildLoad(AuntAysu,Recruit_AuntAysu,0x6,Chapter8DoneFlag)
 FADU 10
 ENDA
 

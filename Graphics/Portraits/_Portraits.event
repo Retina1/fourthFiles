@@ -29,10 +29,21 @@ setMugEntryExtend(TychoMug,TychoDMP,2,5,2,3, 0,2, 0,0)
 
 
 ALIGN 4
+//generic
+AnhingaDMP:
+#incbin "dmps/genericAnhinga.dmp"
+setMugEntry(AnhingaMug,AnhingaDMP,4,6,4,4)
+
+ALIGN 4
 //thea
 NaomiDMP:
 #incbin "dmps/theaNaomi.dmp"
 setMugEntry(NaomiMug,NaomiDMP,2,6,3,4)
+ALIGN 4
+//citrus
+AscellaDMP:
+#incbin "dmps/citrusAscella.dmp"
+setMugEntry(AscellaMug,AscellaDMP,2,5,2,3)
 
 ALIGN 4
 //luna
@@ -98,6 +109,10 @@ ALIGN 4
 JohannaDMP:
 #incbin "dmps/retinaJohanna.dmp"
 setMugEntry(JohannaMug,JohannaDMP,4,7,4,5)
+ALIGN 4
+NotreDMP:
+#incbin "dmps/retinaNotre.dmp"
+setMugEntry(NotreMug,NotreDMP,3,5,3,3)
 
 ALIGN 4
 //slatergenerics
@@ -238,6 +253,10 @@ ALIGN 4
 DalmanDMP:
 #incbin "dmps/jetDalman.dmp"
 setMugEntry(DalmanMug,DalmanDMP,2,5,3,3)
+ALIGN 4
+FerrisDMP:
+#incbin "dmps/jetFerris.dmp"
+setMugEntry(FerrisMug,FerrisDMP,2,5,3,3)
 
 ALIGN 4
 //green
@@ -525,6 +544,10 @@ ALIGN 4
 AmbroseDMP:
 #incbin "dmps/cygnusAmbrose.dmp"
 setMugEntry(AmbroseMug,AmbroseDMP,3,6,3,4)
+ALIGN 4
+DaiDMP:
+#incbin "dmps/cygnusDai.dmp"
+setMugEntry(DaiMug,DaiDMP,2,5,2,3)
 
 ALIGN 4
 //phaethon

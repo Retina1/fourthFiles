@@ -1,369 +1,291 @@
 //SWORDFIGHTER
-CombatArt((NullArt + 1),UM_GuardBreak,UM_GuardBreakDesc, \
-		  2, \
-		  GuardBreakArtUsability,GuardBreakArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, GuardBreakBothSides, \
-		  0, GuardBreakBattleProc, \
-		  SlashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 2),UM_PowerBreak,UM_PowerBreakDesc, \
-		  2, \
-		  PowerBreakArtUsability,PowerBreakArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, PowerBreakBothSides, \
-		  0, PowerBreakBattleProc, \
-		  SlashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 3),UM_AgilityBreak,UM_AgilityBreakDesc, \
-		  2, \
-		  AgilityBreakArtUsability,AgilityBreakArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, AgilityBreakBothSides, \
-		  0, AgilityBreakBattleProc, \
-		  SlashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 4),UM_WrathStrike,UM_WrathStrikeDesc, \
-		  2, \
-		  WrathStrikeArtUsability,WrathStrikeArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, WrathStrikeBothSides, \
-		  0, 0, \
-		  SlashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 5),UM_SwordGlint,UM_SwordGlintDesc, \
-		  3, \
-		  SwordGlintArtUsability,SwordGlintArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  SwordGlintPrebattle, SwordGlintBothSides, \
-		  0, 0, \
-		  SlashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 6),UM_FalconSlash,UM_FalconSlashDesc, \
-		  3, \
-		  FalconSlashArtUsability,FalconSlashArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, FalconSlashBothSides, \
-		  FalconSlashPostbattle, 0, \
-		  SlashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 7),UM_SwiftStrikes,UM_SwiftStrikesDesc, \
-		  4, \
-		  SwiftStrikesArtUsability,SwiftStrikesArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, SwiftStrikesBothSides, \
-		  0, 0, \
-		  SlashLock, \
-		  0, SwiftStrikesHitCount, \
-		  PhysArt,0,0)
-		  /*
-CombatArt((NullArt + 8),UM_Spellchaser,UM_SpellchaserDesc, \
-		  3, \
-		  FireboltArtUsability,FireboltArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  FireboltPrebattle, 0, \
-		  0, 0, \
-		  SlashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-		  */
-CombatArt((NullArt + 9),UM_FullBreak,UM_FullBreakDesc, \
-		  3, \
-		  FullBreakArtUsability,FullBreakArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, FullBreakBothSides, \
-		  0, 0, \
-		  SlashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 10),UM_Tempest,UM_TempestDesc, \
-		  6, \
-		  TempestArtUsability,TempestArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, TempestBothSides, \
-		  0, 0, \
-		  SlashLock, \
-		  0, TempestHitCount, \
-		  PhysArt,0,0)
+CA_Entry((NullArt + 1), 2)
+	CA_Name(UM_GuardBreak,UM_GuardBreakDesc)
+	CA_Usability(GuardBreakArtUsability,GuardBreakArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(GuardBreakBothSides)
+	CA_BattleProc(GuardBreakBattleProc)
+	CA_Range(SlashLock)
+	
+CA_Entry((NullArt + 2), 2)
+	CA_Name(UM_PowerBreak,UM_PowerBreakDesc)
+	CA_Usability(PowerBreakArtUsability,PowerBreakArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(PowerBreakBothSides)
+	CA_BattleProc(PowerBreakBattleProc)
+	CA_Range(SlashLock)
+	
+CA_Entry((NullArt + 3), 2)
+	CA_Name(UM_AgilityBreak,UM_AgilityBreakDesc)
+	CA_Usability(AgilityBreakArtUsability,AgilityBreakArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(AgilityBreakBothSides)
+	CA_BattleProc(AgilityBreakBattleProc)
+	CA_Range(SlashLock)
+		
+CA_Entry((NullArt + 4), 2)
+	CA_Name(UM_WrathStrike,UM_WrathStrikeDesc)
+	CA_Usability(WrathStrikeArtUsability,WrathStrikeArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(WrathStrikeBothSides)
+	CA_Range(SlashLock)
+	
+CA_Entry((NullArt + 5), 3)
+	CA_Name(UM_SwordGlint,UM_SwordGlintDesc)
+	CA_Usability(SwordGlintArtUsability,SwordGlintArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(SwordGlintPrebattle); CA_BothSides(SwordGlintBothSides)
+	CA_Range(SlashLock)
+	
+CA_Entry((NullArt + 6), 3)
+	CA_Name(UM_FalconSlash,UM_FalconSlashDesc)
+	CA_Usability(FalconSlashArtUsability,FalconSlashArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Postbattle(FalconSlashPostbattle); CA_BothSides(FalconSlashBothSides)
+	CA_Range(SlashLock)
+	
+CA_Entry((NullArt + 7), 4)
+	CA_Name(UM_SwiftStrikes,UM_SwiftStrikesDesc)
+	CA_Usability(SwiftStrikesArtUsability,SwiftStrikesArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_HitCount(SwiftStrikesHitCount); CA_BothSides(SwiftStrikesBothSides)
+	CA_Range(SlashLock)
+
+//NULL+8 is spellchaser eventually tm
+
+CA_Entry((NullArt + 9), 3)
+	CA_Name(UM_FullBreak,UM_FullBreakDesc)
+	CA_Usability(FullBreakArtUsability,FullBreakArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(FullBreakBothSides)
+	CA_Range(SlashLock)
+	
+CA_Entry((NullArt + 10), 6)
+	CA_Name(UM_Tempest,UM_TempestDesc)
+	CA_Usability(TempestArtUsability,TempestArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(TempestBothSides); CA_HitCount(TempestHitCount)
+	CA_Range(SlashLock)
+	
 //KNIGHT
 //AXEFIGHTER
-CombatArt((NullArt + 23), UM_ArmCrush, UM_ArmCrushDesc, \
-		  3, \
-		  ArmCrushArtUsability, ArmCrushArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, ArmCrushBothSides, \
-		  0, 0, \
-		  BashLock, \
-		  ArmCrushOdds, 0, \
-		  PhysArt,0,ArmBindEffect)
-CombatArt((NullArt + 24), UM_ShieldCrush, UM_ShieldCrushDesc, \
-		  3, \
-		  ShieldCrushArtUsability, ShieldCrushArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, ShieldCrushBothSides, \
-		  0, ShieldCrushBattleProc, \
-		  BashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 25), UM_SmitingSmash, UM_SmitingSmashDesc, \
-		  3, \
-		  SmitingSmashArtUsability, SmitingSmashArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, SmitingSmashBothSides, \
-		  SmitingSmashPostbattle, 0, \
-		  Bash1RangeLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 26), UM_HeavySwing, UM_HeavySwingDesc, \
-		  2, \
-		  HeavySwingArtUsability, HeavySwingArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  HeavySwingPrebattle, HeavySwingBothSides, \
-		  0, 0, \
-		  BashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 27), UM_KillerBlow, UM_KillerBlowDesc, \
-		  3, \
-		  KillerBlowArtUsability, KillerBlowArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  KillerBlowPrebattle, KillerBlowBothSides, \
-		  0, 0, \
-		  BashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 28), UM_BoomerangAxe, UM_BoomerangAxeDesc, \
-		  3, \
-		  BoomerangAxeArtUsability, BoomerangAxeArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  BoomerangAxePrebattle, BoomerangAxeBothSides, \
-		  0, 0, \
-		  BoomerangAxeRange, \
-		  0, 0, \
-		  PhysArt,0x1,0)
-CombatArt((NullArt + 29), UM_VengeanceBash, UM_VengeanceBashDesc, \
-		  5, \
-		  VengeanceBashArtUsability, VengeanceBashArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  VengeanceBashPrebattle, VengeanceBashBothSides, \
-		  0, 0, \
-		  BashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 31), UM_VitalHit, UM_VitalHitDesc, \
-		  4, \
-		  VitalHitArtUsability, VitalHitArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  VitalHitPrebattle, VitalHitBothSides, \
-		  0, 0, \
-		  BashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 32), UM_SmashBarrage, UM_SmashBarrageDesc, \
-		  4, \
-		  SmashBarrageArtUsability, SmashBarrageArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  SmashBarragePrebattle, SmashBarrageBothSides, \
-		  0, 0, \
-		  BashLock, \
-		  0, SmashBarrageHitCount, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 33), UM_Takedown, UM_TakedownDesc, \
-		  3, \
-		  TakedownArtUsability, TakedownArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  TakedownPrebattle, TakedownBothSides, \
-		  0, 0, \
-		  BashLock, \
-		  0, 0, \
-		  PhysArt,0,0)
+CA_Entry((NullArt + 23), 3)
+	CA_Name(UM_ArmCrush,UM_ArmCrushDesc)
+	CA_Usability(ArmCrushArtUsability,ArmCrushArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(ArmCrushBothSides); CA_Ailment(ArmCrushOdds,ArmBindEffect)
+	CA_Range(BashLock)
+	
+CA_Entry((NullArt + 24), 3)
+	CA_Name(UM_ShieldCrush,UM_ShieldCrushDesc)
+	CA_Usability(ShieldCrushArtUsability,ShieldCrushArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(ShieldCrushBothSides); CA_BattleProc(ShieldCrushBattleProc)
+	CA_Range(BashLock)
+	
+CA_Entry((NullArt + 25), 3)
+	CA_Name(UM_SmitingSmash,UM_SmitingSmashDesc)
+	CA_Usability(SmitingSmashArtUsability,SmitingSmashArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(SmitingSmashBothSides); CA_Postbattle(SmitingSmashPostbattle)
+	CA_Range(Bash1RangeLock)
+	
+CA_Entry((NullArt + 26), 2)
+	CA_Name(UM_HeavySwing,UM_HeavySwingDesc)
+	CA_Usability(HeavySwingArtUsability,HeavySwingArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(HeavySwingBothSides); CA_Prebattle(HeavySwingPrebattle)
+	CA_Range(BashLock)
+
+CA_Entry((NullArt + 27), 3)
+	CA_Name(UM_KillerBlow,UM_KillerBlowDesc)
+	CA_Usability(KillerBlowArtUsability,KillerBlowArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(KillerBlowBothSides); CA_Prebattle(KillerBlowPrebattle)
+	CA_Range(BashLock)
+
+CA_Entry((NullArt + 28), 3)
+	CA_Name(UM_BoomerangAxe,UM_BoomerangAxeDesc)
+	CA_Usability(BoomerangAxeArtUsability,BoomerangAxeArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(BoomerangAxeBothSides); CA_Prebattle(BoomerangAxePrebattle)
+	CA_Range(BoomerangAxeRange); CA_SpellAnim(0x1)
+
+CA_Entry((NullArt + 29), 5)
+	CA_Name(UM_VengeanceBash,UM_VengeanceBashDesc)
+	CA_Usability(VengeanceBashArtUsability,VengeanceBashArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(VengeanceBashBothSides); CA_Prebattle(VengeanceBashPrebattle)
+	CA_Range(BashLock)
+
+CA_Entry((NullArt + 31), 4)
+	CA_Name(UM_VitalHit,UM_VitalHitDesc)
+	CA_Usability(VitalHitArtUsability,VitalHitArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(VitalHitBothSides); CA_Prebattle(VitalHitPrebattle)
+	CA_Range(BashLock)
+
+CA_Entry((NullArt + 32), 4)
+	CA_Name(UM_SmashBarrage,UM_SmashBarrageDesc)
+	CA_Usability(SmashBarrageArtUsability,SmashBarrageArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(SmashBarrageBothSides); CA_Prebattle(SmashBarragePrebattle)
+	CA_HitCount(SmashBarrageHitCount)
+	CA_Range(BashLock)
+
+CA_Entry((NullArt + 33), 4)
+	CA_Name(UM_Takedown,UM_TakedownDesc)
+	CA_Usability(TakedownArtUsability,TakedownArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(TakedownBothSides); CA_Prebattle(TakedownPrebattle)
+	CA_Range(BashLock)
+
 //ARHCER
 //sure hit eventually
-CombatArt((NullArt + 35),UM_DropShot,UM_DropShotDesc, \
-		  3, \
-		  DropShotArtUsability,DropShotArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, DropShotBothSides, \
-		  0, 0, \
-		  DropShotRange, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 37),UM_CurvedShot,UM_CurvedShotDesc, \
-		  3, \
-		  CurvedShotArtUsability,CurvedShotArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  CurvedShotPrebattle, CurvedShotBothSides, \
-		  0, 0, \
-		  CurvedShotRange, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 38),UM_PowerShot,UM_PowerShotDesc, \
-		  4, \
-		  PowerShotArtUsability,PowerShotArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  PowerShotPrebattle, PowerShotBothSides, \
-		  0, 0, \
-		  PowerShotRange, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 39),UM_FlankShot,UM_FlankShotDesc, \
-		  4, \
-		  FlankShotArtUsability,FlankShotArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  FlankShotPrebattle, FlankShotBothSides, \
-		  0, 0, \
-		  ShootLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 40),UM_ArmorPiercer,UM_ArmorPiercerDesc, \
-		  5, \
-		  ArmorPiercerArtUsability,ArmorPiercerArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, ArmorPiercerBothSides, \
-		  0, 0, \
-		  ShootLock, \
-		  0, 0, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 41),UM_Closer,UM_CloserDesc, \
-		  5, \
-		  CloserArtUsability,CloserArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, CloserBothSides, \
-		  0, 0, \
-		  CloserRange, \
-		  CloserOdds, 0, \
-		  PhysArt,0,LegBindEffect)
-CombatArt((NullArt + 42),UM_PointBlankVolley,UM_PointBlankVolleyDesc, \
-		  4, \
-		  PointBlankVolleyArtUsability,PointBlankVolleyArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  PointBlankVolleyPrebattle, PointBlankVolleyBothSides, \
-		  0, 0, \
-		  PointBlankVolleyRange, \
-		  0, PointBlankVolleyHitCount, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 43),UM_SquallVolley,UM_SquallVolleyDesc, \
-		  6, \
-		  SquallVolleyArtUsability,SquallVolleyArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  SquallVolleyPrebattle, SquallVolleyBothSides, \
-		  0, 0, \
-		  SquallVolleyRange, \
-		  0, SquallVolleyHitCount, \
-		  PhysArt,0,0)
-CombatArt((NullArt + 44),UM_AstralVolley,UM_AstralVolleyDesc, \
-		  10, \
-		  AstralVolleyArtUsability,AstralVolleyArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  AstralVolleyPrebattle, AstralVolleyBothSides, \
-		  0, 0, \
-		  AstralVolleyRange, \
-		  0, AstralVolleyHitCount, \
-		  PhysArt,0,0)
+CA_Entry((NullArt + 35), 3)
+	CA_Name(UM_DropShot,UM_DropShotDesc)
+	CA_Usability(DropShotArtUsability,DropShotArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(DropShotBothSides)
+	CA_Range(DropShotRange)
+
+CA_Entry((NullArt + 37), 3)
+	CA_Name(UM_CurvedShot,UM_CurvedShotDesc)
+	CA_Usability(CurvedShotArtUsability,CurvedShotArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(CurvedShotBothSides); CA_Prebattle(CurvedShotPrebattle)
+	CA_Range(CurvedShotRange)
+
+CA_Entry((NullArt + 38), 4)
+	CA_Name(UM_PowerShot,UM_PowerShotDesc)
+	CA_Usability(PowerShotArtUsability,PowerShotArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(PowerShotBothSides); CA_Prebattle(PowerShotPrebattle)
+	CA_Range(PowerShotRange)
+
+CA_Entry((NullArt + 39), 4)
+	CA_Name(UM_FlankShot,UM_FlankShotDesc)
+	CA_Usability(FlankShotArtUsability,FlankShotArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(FlankShotBothSides); CA_Prebattle(FlankShotPrebattle)
+	CA_Range(ShootLock)
+
+CA_Entry((NullArt + 40), 5)
+	CA_Name(UM_ArmorPiercer,UM_ArmorPiercerDesc)
+	CA_Usability(ArmorPiercerArtUsability,ArmorPiercerArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(ArmorPiercerBothSides)
+	CA_Range(ShootLock)
+
+CA_Entry((NullArt + 41), 5)
+	CA_Name(UM_Closer,UM_CloserDesc)
+	CA_Usability(CloserArtUsability,CloserArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(CloserBothSides); CA_Ailment(CloserOdds,LegBindEffect)
+	CA_Range(CloserRange)
+
+CA_Entry((NullArt + 42), 4)
+	CA_Name(UM_PointBlankVolley,UM_PointBlankVolleyDesc)
+	CA_Usability(PointBlankVolleyArtUsability,PointBlankVolleyArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(PointBlankVolleyPrebattle); CA_BothSides(PointBlankVolleyBothSides)
+	CA_HitCount(PointBlankVolleyHitCount)
+	CA_Range(PointBlankVolleyRange)
+	
+CA_Entry((NullArt + 43), 6)
+	CA_Name(UM_SquallVolley,UM_SquallVolleyDesc)
+	CA_Usability(SquallVolleyArtUsability,SquallVolleyArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(SquallVolleyPrebattle); CA_BothSides(SquallVolleyBothSides)
+	CA_HitCount(SquallVolleyHitCount)
+	CA_Range(SquallVolleyRange)
+	
+CA_Entry((NullArt + 44), 10)
+	CA_Name(UM_AstralVolley,UM_AstralVolleyDesc)
+	CA_Usability(AstralVolleyArtUsability,AstralVolleyArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(AstralVolleyPrebattle); CA_BothSides(AstralVolleyBothSides)
+	CA_HitCount(AstralVolleyHitCount)
+	CA_Range(AstralVolleyRange)
+
+
 //SCHOLAR
 //need - anims for calibur, surge, earthspike, megido, eschaton
-CombatArt((NullArt + 45), UM_Calibur, UM_CaliburDesc, \
-		  2, \
-		  CaliburArtUsability, CaliburArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  CaliburPrebattle, 0, \
-		  0, 0, \
-		  Staff1_2Range, \
-		  0, 0, \
-		  MagicArt,0x35,0)
-CombatArt((NullArt + 46), UM_Surge, UM_SurgeDesc, \
-		  5, \
-		  SurgeArtUsability, SurgeArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  SurgePrebattle, 0, \
-		  0, 0, \
-		  SurgeRange, \
-		  0, 0, \
-		  MagicArt,0x19,0)
-CombatArt((NullArt + 47), UM_Earthspike, UM_EarthspikeDesc, \
-		  4, \
-		  EarthspikeArtUsability, EarthspikeArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  EarthspikePrebattle, 0, \
-		  0, 0, \
-		  EarthspikeRange, \
-		  0, 0, \
-		  MagicArt,0x12,0)
-CombatArt((NullArt + 48),UM_Firebolt,UM_FireboltDesc, \
-		  2, \
-		  FireboltArtUsability,FireboltArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  FireboltPrebattle, 0, \
-		  0, 0, \
-		  Staff1_2Range, \
-		  0, 0, \
-		  MagicArt,0x16,0)
-CombatArt((NullArt + 49), UM_Thunderbolt, UM_ThunderboltDesc, \
-		  3, \
-		  ThunderboltArtUsability, ThunderboltArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  ThunderboltPrebattle, 0, \
-		  0, 0, \
-		  ThunderboltRange, \
-		  0, 0, \
-		  MagicArt,0x19,0)
-CombatArt((NullArt + 50), UM_Frostfall, UM_FrostfallDesc, \
-		  3, \
-		  FrostfallArtUsability, FrostfallArtMenuUsability, 0, \
-		  CombatArtGeneralAttackingEffect, \
-		  FrostfallPrebattle, 0, \
-		  0, 0, \
-		  Staff1_2Range, \
-		  FrostfallOdds, 0, \
-		  MagicArt,0x1B,LegBindEffect)
-CombatArt((NullArt + 51),UM_Firestorm,UM_FirestormDesc, \
-		  5, \
-		  FirestormArtUsability,FirestormArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  FirestormPrebattle, 0, \
-		  FirestormPostbattle, 0, \
-		  Staff1_2Range, \
-		  0, 0, \
-		  MagicArt,0x17,0)
-CombatArt((NullArt + 52),UM_Galewind,UM_GalewindDesc, \
-		  7, \
-		  GalewindArtUsability,GalewindArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  GalewindPrebattle, 0, \
-		  0, 0, \
-		  Staff1_2Range, \
-		  0, GalewindHitCount, \
-		  MagicArt,0x35,0)
-CombatArt((NullArt + 53),UM_EtherShot,UM_GalewindDesc, \
-		  3, \
-		  EtherShotArtUsability,EtherShotArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  0, EtherShotBothSides, \
-		  0, 0, \
-		  EtherShotRange, \
-		  0, 0, \
-		  MagicArt,0,0)
-CombatArt((NullArt + 54),UM_Megido,UM_MegidoDesc, \
-		  12, \
-		  MegidoArtUsability,MegidoArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  MegidoPrebattle, MegidoBothSides, \
-		  0, 0, \
-		  MegidoRange, \
-		  0, 0, \
-		  MagicArt,0x45,0)
-CombatArt((NullArt + 55),UM_Eschaton,UM_EschatonDesc, \
-		  16, \
-		  EschatonArtUsability,EschatonArtMenuUsability,0, \
-		  CombatArtGeneralAttackingEffect, \
-		  EschatonPrebattle, EschatonBothSides, \
-		  EschatonPostbattle, 0, \
-		  EschatonRange, \
-		  0, 0, \
-		  MagicArt,0x46,0)
+CA_Entry((NullArt + 45), 2)
+	CA_Name(UM_Calibur,UM_CaliburDesc)
+	CA_Usability(CaliburArtUsability,CaliburArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(CaliburPrebattle)
+	CA_Range(Staff1_2Range); CA_IsMagic(MagicArt); CA_SpellAnim(0x35)
+
+CA_Entry((NullArt + 46), 5)
+	CA_Name(UM_Surge,UM_SurgeDesc)
+	CA_Usability(SurgeArtUsability,SurgeArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(SurgePrebattle)
+	CA_Range(SurgeRange); CA_IsMagic(MagicArt); CA_SpellAnim(0x19)
+
+CA_Entry((NullArt + 47), 4)
+	CA_Name(UM_Earthspike,UM_EarthspikeDesc)
+	CA_Usability(EarthspikeArtUsability,EarthspikeArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(EarthspikePrebattle)
+	CA_Range(EarthspikeRange); CA_IsMagic(MagicArt); CA_SpellAnim(0x12)
+
+CA_Entry((NullArt + 48), 2)
+	CA_Name(UM_Firebolt,UM_FireboltDesc)
+	CA_Usability(FireboltArtUsability,FireboltArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(FireboltPrebattle)
+	CA_Range(Staff1_2Range); CA_IsMagic(MagicArt); CA_SpellAnim(0x16)
+
+CA_Entry((NullArt + 49), 3)
+	CA_Name(UM_Thunderbolt,UM_ThunderboltDesc)
+	CA_Usability(ThunderboltArtUsability,ThunderboltArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(ThunderboltPrebattle)
+	CA_Range(ThunderboltRange); CA_IsMagic(MagicArt); CA_SpellAnim(0x19)
+
+CA_Entry((NullArt + 50), 3)
+	CA_Name(UM_Frostfall,UM_FrostfallDesc)
+	CA_Usability(FrostfallArtUsability,FrostfallArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(FrostfallPrebattle); CA_Ailment(FrostfallOdds,LegBindEffect)
+	CA_Range(Staff1_2Range); CA_IsMagic(MagicArt); CA_SpellAnim(0x1b)
+
+CA_Entry((NullArt + 51), 5)
+	CA_Name(UM_Firestorm,UM_FirestormDesc)
+	CA_Usability(FirestormArtUsability,FirestormArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(FirestormPrebattle); CA_Postbattle(FirestormPostbattle)
+	CA_Range(Staff1_2Range); CA_IsMagic(MagicArt); CA_SpellAnim(0x17)
+
+CA_Entry((NullArt + 52), 7)
+	CA_Name(UM_Galewind,UM_GalewindDesc)
+	CA_Usability(GalewindArtUsability,GalewindArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(GalewindPrebattle); CA_HitCount(GalewindHitCount)
+	CA_Range(Staff1_2Range); CA_IsMagic(MagicArt); CA_SpellAnim(0x35)
+
+CA_Entry((NullArt + 53), 3)
+	CA_Name(UM_EtherShot,UM_EtherShotDesc)
+	CA_Usability(EtherShotArtUsability,EtherShotArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(EtherShotBothSides)
+	CA_Range(EtherShotRange); CA_IsMagic(MagicArt)
+
+CA_Entry((NullArt + 54), 12)
+	CA_Name(UM_Megido,UM_MegidoDesc)
+	CA_Usability(MegidoArtUsability,MegidoArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(MegidoPrebattle); CA_BothSides(MegidoBothSides)
+	CA_Range(MegidoRange); CA_IsMagic(MagicArt); CA_SpellAnim(0x45)
+
+CA_Entry((NullArt + 55), 16)
+	CA_Name(UM_Eschaton,UM_EschatonDesc)
+	CA_Usability(EschatonArtUsability,EschatonArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(EschatonPrebattle); CA_BothSides(EschatonBothSides); CA_Postbattle(EschatonPostbattle)
+	CA_Range(EschatonRange); CA_IsMagic(MagicArt); CA_SpellAnim(0x46)
+	
+//medic

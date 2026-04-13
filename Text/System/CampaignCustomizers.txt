@@ -1,3 +1,15 @@
+##BadAmulatorWarning
+Your emulator appears to be[N]
+one that may prove unreliable.[AN]
+I strongly suggest swapping[N]
+over to mGBA or a derivative,[AN]
+as that's what this game was[N]
+developed and tested on.[AN]
+Continue at your own peril.[AN]
+I can't promise that there[N]
+won't be emulator-based bugs.[AN]
+Thank you for playing![A][X]
+
 ##VBAWarning
 Your emulator appears to be[N]
 VBA (or some derivative).[AN]

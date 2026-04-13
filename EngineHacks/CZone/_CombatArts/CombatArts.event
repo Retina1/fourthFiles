@@ -24,27 +24,39 @@ BYTE 0 3 10 0; WORD 0 CAS_RAM_START 0 0 0; POIN 0x22861 0x4F521 0x4F459
 "PUSH; ORG CombatArtList+(id*0x34); \
 SHORT name desc; POIN usability menu_usability menu_draw menu_effect prebattle bothsides postbattle battleproc rangefunc oddsfunc hitcount; BYTE isMagic spellAnim itemEffect 0; \
 ORG CombatArtDurabilityList+id; BYTE durabilityCost; POP"
+
+#define CA_Entry(id, cost) "ORG CombatArtList+(id*0x34); PUSH; ORG CombatArtDurabilityList+id; BYTE cost; POP"
+#define CA_Name(name,desc) "PUSH; ORG CURRENTOFFSET + 0; SHORT name desc; POP"
+#define CA_Usability(use,menu_use) "PUSH; ORG CURRENTOFFSET + 4; POIN use menu_use 0; POP"
+#define CA_Effect(effect) "PUSH; ORG CURRENTOFFSET + 16; POIN effect; POP"
+#define CA_GeneralAttackEffect "PUSH; ORG CURRENTOFFSET + 16; POIN CombatArtGeneralAttackingEffect; POP"
+#define CA_Prebattle(pointer) "PUSH; ORG CURRENTOFFSET + 20; POIN pointer; POP"
+#define CA_BothSides(pointer) "PUSH; ORG CURRENTOFFSET + 24; POIN pointer; POP"
+#define CA_Postbattle(pointer) "PUSH; ORG CURRENTOFFSET + 28; POIN pointer; POP"
+#define CA_BattleProc(pointer) "PUSH; ORG CURRENTOFFSET + 32; POIN pointer; POP"
+#define CA_Range(pointer) "PUSH; ORG CURRENTOFFSET + 36; POIN pointer; POP"
+#define CA_Odds(pointer) "PUSH; ORG CURRENTOFFSET + 40; POIN pointer; POP"
+#define CA_HitCount(pointer) "PUSH; ORG CURRENTOFFSET + 44; POIN pointer; POP"
+#define CA_IsMagic(value) "PUSH; ORG CURRENTOFFSET + 48; BYTE value; POP"
+#define CA_SpellAnim(value) "PUSH; ORG CURRENTOFFSET + 49; BYTE value; POP"
+#define CA_ItemEffect(value) "PUSH; ORG CURRENTOFFSET + 50; BYTE value; POP"
+
+#define CA_Ailment(pointer,value) "CA_Odds(pointer); CA_ItemEffect(value)"
+
+
+
 ALIGN 4; CombatArtList: FILL 0x34*0x181
 ALIGN 4; CombatArtDurabilityList: FILL 0x181
 /*
-	CombatArt(1, \ // ID
-			  john, \ // Name
-			  jones, \ // Desc
-			  3, \ // Durability Cost
-			  usabilityPointer, \ // General Usability
-			  epicpointer, \ // Menu Usability (usually is a wrapper for General Usability to return a MENU_X enum value)
-			  omgpointerhi, \ // Menu Draw
-			  epicpointer2, \ // Menu Effect
-			  somewhatepicpointer, \ // Pre Battle Function
-			  somewhatepicpointer, \ // Both Sides Function
-			  againapointer, \ // Post Battle Function
-			  fifthhack, \ // Battle Proc Function
-			  aaaaaaaaaaaa,\ // Range Function
-			  aaaaaaaaaaaa) // odds Function
+CA_Entry((NullArt + 1), cost)
+	CA_Name(name,desc); CA_Usability(use,menu_use); CA_Effect(effect)
+	CA_Prebattle(pointer); CA_BothSides(pointer); CA_Postbattle(pointer)
+	CA_BattleProc(pointer); CA_HitCount(pointer); CA_Odds(pointer)
+	CA_Range(pointer); CA_IsMagic(value); CA_SpellAnim(value); CA_ItemEffect(value)
 */
 
 //
-
+PUSH
 #include "Set1_Initial.event"
 #include "Set2_Standard.event"
 #include "Set3_Magi.event"
@@ -53,11 +65,13 @@ ALIGN 4; CombatArtDurabilityList: FILL 0x181
 #include "Set6_Lifeflow.event"
 #include "Set7_Senatus.event"
 #include "Set8_ImpArt.event"
-
 //dark hunt - make sheets for each class eventually
 
 //CombatArt(Set8LastArt+1, /* Early Terminator, make the ID for this be after your last entry to speed up searching through each art */ (-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),0, (-1), (-1))
-CombatArt((Set8LastArt + 1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),0, (-1), (-1)) // Terminator, last art ID is 0x17F unless the list is expanded
-//CombatArt(298,(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),(-1),0, (-1), (-1)) // Terminator, last art ID is 0x17F unless the list is expanded
+CA_Entry((Set8LastArt + 1), (-1))
+	CA_Name((-1),(-1)); CA_Usability((-1),(-1)); CA_Effect((-1))
+	CA_Prebattle((-1)); CA_BothSides((-1)); CA_Postbattle((-1))
+	CA_BattleProc((-1)); CA_HitCount((-1)); CA_Odds((-1))
+	CA_Range((-1)); CA_IsMagic(0); CA_SpellAnim((-1)); CA_ItemEffect((-1))
 
-
+POP

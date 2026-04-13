@@ -138,11 +138,12 @@ ENDWARP
 EndEvent
 
 EndingScene:
-SET_ACTIVE 0
+EndingSceneToggles
 MUSC 0x0
 CleanTextNoMap(0x18,FillerDialogue)
 DumpUnitItems(Benthus)
 SilentKillUnit(Benthus)
+ENUT GoreNoEyeFlag
 MoveToChapter(Stratum2F1)
 ENDA
 

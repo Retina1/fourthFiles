@@ -212,6 +212,14 @@ LilyMug
 JaneMug
 NaomiMug
 VelissaMug
+LudovicMug
+FerrisMug
+GhevenaMug
+AlmightyMug
+AnhingaMug
+AuntAysuMug
+PhaedraMug
+AscellaMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

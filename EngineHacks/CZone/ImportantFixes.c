@@ -9,6 +9,73 @@ extern const int GoreEyepatchMugID;
 
 extern const struct FaceData NewPortraitTable[];
 
+void FillWarpRangeMap(struct Unit *unit_act, struct Unit *unit_tar) {
+    int x, y;
+
+    BmMapFill(gBmMapMovement, -1);
+    BmMapFill(gBmMapRange, 0);
+    SetWorkingBmMap(gBmMapMovement);
+
+    x = unit_tar->xPos;
+    y = unit_tar->yPos;
+	//normal warp - 5 range
+	//make different for priests
+    MapAddInBoundedRange(x, y, 1, 5);
+
+    if (0 == gPlaySt.chapterVisionRange) {
+        for (y = gBmMapSize.y - 1; y >= 0; y--) {
+            for (x = gBmMapSize.x - 1; x >= 0; x--) {
+                if (gBmMapMovement[y][x] > 0x78)
+                    continue;
+                
+                if (CanUnitCrossTerrain(unit_tar, gBmMapTerrain[y][x]) &&
+                    0 == gBmMapUnit[y][x])
+                    continue;
+                    
+                gMapMovementSigned[y][x] = -1;
+            }
+        }
+    } else {
+        for (y = gBmMapSize.y - 1; y >= 0; y--) {
+            for (x = gBmMapSize.x - 1; x >= 0; x--) {
+                if (gBmMapMovement[y][x] > 0x78)
+                    continue;
+                
+                if (CanUnitCrossTerrain(unit_tar, gBmMapTerrain[y][x]) &&
+                    0 == gBmMapUnit[y][x] &&
+                    0 != gBmMapFog[y][x])
+                    continue;
+
+                gMapMovementSigned[y][x] = -1;
+            }
+        }
+    }
+    gMapMovementSigned[unit_act->yPos][unit_act->xPos] = -1;
+}
+
+//rescue visuals
+struct MuProc* Make6CMOVEUNITForUnitBeingRescued(struct Unit* unit)
+{
+    u8 class = UNIT_CLASS_ID(unit);
+	
+	switch (class) {
+		//lance mounts
+		case 0xf:
+		case 0x10:
+		case 0x25:
+		case 0x26:
+			return StartMuExt(unit, 0x1f,0xC);
+		//axe mounts
+		case 0x11:
+		case 0x12:
+		case 0x27:
+		case 0x28:
+			return StartMuExt(unit, 0x5,0xC);
+		default:
+			return StartMu(unit);
+    }
+}
+
 //make dungeon cost 1 movement
 const s8* GetUnitMovementCost(struct Unit* unit) {
 

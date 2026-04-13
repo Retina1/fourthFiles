@@ -46,8 +46,8 @@ Moonrise5Buff,0,0,1,25,10,25,10,25,10,25,10,25,10,25,10,25,10,2
 Precision1Buff,0,0,2,1,1,13,10,1,1,13,10,1,1,1,1,1,1,0
 Precision2Buff,0,0,2,1,1,15,10,1,1,15,10,1,1,1,1,1,1,0
 Precision3Buff,0,0,2,1,1,20,10,1,1,20,10,1,1,1,1,1,1,0
-BloodFuryBuff,0,0,2,13,10,1,1,1,1,1,1,1,1,1,1,1,1,0
-BloodrushBuff,0,0,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+BloodFuryBuff,BloodFuryLabel,BloodFuryDesc,2,13,10,1,1,1,1,1,1,1,1,1,1,1,1,0
+BloodrushBuff,BloodrushLabel,BloodrushDesc,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 SpiritShield1Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,12,10,12,10,0
 SpiritShield2Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,15,10,15,10,0
 BloodyOffense1Buff,0,0,2,13,10,1,1,1,1,1,1,1,1,1,1,1,1,0
@@ -78,7 +78,7 @@ SoulShield1Buff,0,0,3,1,1,1,1,1,1,1,1,1,1,13,10,13,10,0
 SoulShield2Buff,0,0,3,1,1,1,1,1,1,1,1,1,1,16,10,16,10,0
 SoulCharge1Buff,0,0,3,13,10,13,10,1,1,13,10,1,1,1,1,1,1,0
 SoulCharge2Buff,0,0,3,16,10,16,10,1,1,16,10,1,1,1,1,1,1,0
-ReboundBuff,0,0,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,0
+ReboundBuff,ReboundLabel,ReboundDesc,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,0
 BravantBuff,BravantBuffLabel,BravantBuffDesc,3,3,2,1,1,1,1,1,1,1,1,1,1,1,1,0
 StonardBuff,StonardBuffLabel,StonardBuffDesc,3,1,1,1,1,1,1,1,1,1,1,3,2,1,1,0
 NobleBuffSlot1,RallyingCryBuffLabel,RallyingCryBuffDesc,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0

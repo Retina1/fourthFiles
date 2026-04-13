@@ -49,6 +49,9 @@ UNIT
 Recruit_Naomi:
 UNIT Naomi 0x0 0x1 Level(4,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Partizan,Medica] NoAI
 UNIT
+Recruit_Phaedra:
+UNIT Phaedra 0x0 0x1 Level(5,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Pike] NoAI
+UNIT
 
 Recruit_Shiliang:
 UNIT Shiliang 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Caestus] NoAI
@@ -131,7 +134,10 @@ Nelson_RecruitEvent:
 GuildRecruit(Nelson,Guild_Test_Dialogue,0x24)
 EndEvent
 Naomi_RecruitEvent:
-GuildRecruit(Naomi,Guild_Test_Dialogue,0x26)
+GuildRecruit(Naomi,Guild_Test_Dialogue,0x25)
+EndEvent
+Phaedra_RecruitEvent:
+GuildRecruit(Phaedra,Guild_Test_Dialogue,0x26)
 EndEvent
 
 //BRWL
@@ -199,6 +205,7 @@ GuildLoad(Fourfinger,Recruit_Fourfinger,0x3)
 GuildLoad(Kelaino,Recruit_Kelaino,0x4)
 GuildLoad(Nelson,Recruit_Nelson,0x5,Chapter10DoneFlag) //quest?
 GuildLoad(Naomi,Recruit_Naomi,0x6)
+GuildLoad(Phaedra,Recruit_Phaedra,0x7)
 FADU 10
 ENDA
 

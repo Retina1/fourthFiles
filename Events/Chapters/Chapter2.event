@@ -225,7 +225,7 @@ Text(C2_DoorHint)
 EndEvent
 
 EndingScene:
-SET_ACTIVE 0
+EndingSceneToggles
 MUSC Song_EditMode
 CleanTextNoMap(0x3,C2_Ending_1)
 REMA

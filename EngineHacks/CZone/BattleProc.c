@@ -353,6 +353,20 @@ u16 ApplyRallyingCryThrift(struct BattleUnit* attacker, int cost) {
 	return cost;
 }
 
+//BLOODFURY, BLOODRUSH, REBOUND
+void OnTakingDamageBuffs(struct BattleUnit* attacker, struct BattleUnit* defender)  {
+	if (UNIT_HAS_SKILL(&defender->unit,HLD,skill_131)){
+		UnitApplyBuff(&defender->unit, BUFF_BLOODFURY);
+	}
+	if (UNIT_HAS_SKILL(&defender->unit,HLD,skill_141)){
+		UnitApplyBuff(&defender->unit, BUFF_BLOODRUSH);
+	}
+	if (UNIT_HAS_SKILL(&defender->unit,FNC,skill_121)){
+		UnitApplyBuff(&defender->unit, BUFF_REBOUND);
+	}
+}
+	
+
 void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* defender) {
     attacker->wexpMultiplier++;
 
@@ -360,6 +374,7 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
 		BattleWeaponStatusesEffects(attacker, defender);
 		if (IsBattleReallyReal()){
 			CombatArtBattleProcFuncWrapper(attacker, defender);
+			OnTakingDamageBuffs(attacker, defender);
 		}
     }
 

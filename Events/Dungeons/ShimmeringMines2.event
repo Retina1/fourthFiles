@@ -28,11 +28,11 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Chest(Bravant,9,1)
-Chest(Bravant,13,1)
-Chest(Bravant,8,8)
-Chest(Bravant,25,9)
-Chest(Bravant,25,16)
+Chest(RestoreScroll,9,1)
+Chest(DrainScroll,13,1)
+Chest(SerratedAxe,8,8)
+Chest(HandSpear,25,9)
+Chest(Medica,25,16)
 END_MAIN
 
 MiscBasedEvents:

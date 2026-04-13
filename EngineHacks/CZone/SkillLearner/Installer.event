@@ -477,7 +477,7 @@ SkillLabelTerminator
 
 ALIGN 4
 EfficiencyReq:
-ReqEntry(9,1)
+ReqEntry(9,3)
 ReqTerm
 ALIGN 4
 ElementMasterReq:

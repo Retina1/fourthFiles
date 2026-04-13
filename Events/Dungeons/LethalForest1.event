@@ -79,6 +79,19 @@ UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [16,9] 0x0 0x0 0x0 0x0 [VileCla
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [19,11] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT
+Encounter1EnemiesExpert:
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [15,11] DropItem 0x0 0x0 0x0 [FrigidBite,AriadneShard] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [16,9] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [19,11] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT
+Encounter1EnemiesHeroic:
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [15,11] DropItem 0x0 0x0 0x0 [FrigidBite,AriadneShard] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [16,9] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [18,10] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [19,11] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [19,10] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT
 
 Encounter2Units:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
@@ -90,11 +103,22 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 Encounter2Enemies:
-//air scales blind
-//make infliction weapons use weapon-dependent rates (byte 21? 23?)
 UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [23,0] 0x0 0x0 0x0 0x0 [AirScales] NoAI
 UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [24,1] 0x0 0x0 0x0 0x0 [AirScales] NoAI
 UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [22,2] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [17,2] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT
+Encounter2EnemiesExpert:
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [23,0] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [24,1] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [21,2] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [17,2] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT
+Encounter2EnemiesHeroic:
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [23,0] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [24,0] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [24,1] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [21,2] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [17,2] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT
 
@@ -113,6 +137,18 @@ UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [9,10] 0x0 0x0 0x0 0x0 [VileCla
 UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [10,11] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
 UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [11,10] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
 UNIT
+Encounter3EnemiesExpert:
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [8,11] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [9,10] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [11,11] 0x0 0x0 0x0 0x0 [FrigidBite] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [11,10] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT
+Encounter3EnemiesHeroic:
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [8,11] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [9,10] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(4,Enemy,1) [11,11] 0x0 0x0 0x0 0x0 [FrigidBite] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [11,10] 0x0 0x0 0x0 0x0 [FrigidBite] NoAI
+UNIT
 
 Encounter4Units:
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
@@ -126,10 +162,24 @@ UNIT
 Encounter4Enemies:
 UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [1,6] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
-//UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [2,7] 0x0 0x0 0x0 0x0 [AirScales] NoAI
 UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [1,10] 0x0 0x0 0x0 0x0 [AirScales] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(4,Enemy,1) [2,11] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [3,5] 0x0 0x0 0x0 0x0 [SharpBite] NoAI
+UNIT
+Encounter4EnemiesExpert:
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [1,6] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [1,10] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(4,Enemy,1) [2,11] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [3,5] 0x0 0x0 0x0 0x0 [FrigidBite] NoAI
+UNIT
+Encounter4EnemiesHeroic:
+UNIT MonsterGeneric Crawler 0x0 Level(3,Enemy,1) [0,7] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(4,Enemy,1) [1,6] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [2,7] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [1,10] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(4,Enemy,1) [2,11] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT MonsterGeneric Wolf 0x0 Level(3,Enemy,1) [3,5] 0x0 0x0 0x0 0x0 [FrigidBite] NoAI
 UNIT
 
 
@@ -153,12 +203,13 @@ FADU 16
 CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
 SystemText(DungeonTutorial)
 LABEL 9999
+ENUT 0x66
 EndEvent
 
 Encounter1:
 BeginCombatEncounter
 LOAD3 0x0 Encounter1Units; ENUN
-LOAD1 0x0 Encounter1Enemies; ENUN
+LoadUnitsByDifficulty(Encounter1Enemies,Encounter1EnemiesExpert,Encounter1EnemiesHeroic)
 CreateArenaBorders(13,8,21,15)
 FADU 16
 MUSC Song_InitialStrike
@@ -168,7 +219,7 @@ EndEvent
 Encounter2:
 BeginCombatEncounter
 LOAD3 0x0 Encounter2Units; ENUN
-LOAD1 0x0 Encounter2Enemies; ENUN
+LoadUnitsByDifficulty(Encounter2Enemies,Encounter2EnemiesExpert,Encounter2EnemiesHeroic)
 CreateArenaSingleCorner(14,8)
 FADU 16
 MUSC Song_InitialStrike
@@ -178,7 +229,7 @@ EndEvent
 Encounter3:
 BeginCombatEncounter
 LOAD3 0x0 Encounter3Units; ENUN
-LOAD1 0x0 Encounter3Enemies; ENUN
+LoadUnitsByDifficulty(Encounter3Enemies,Encounter3EnemiesExpert,Encounter3EnemiesHeroic)
 CreateArenaBorders(6,6,14,12)
 FADU 16
 MUSC Song_InitialStrike
@@ -188,7 +239,7 @@ EndEvent
 Encounter4:
 BeginCombatEncounter
 LOAD3 0x0 Encounter4Units; ENUN
-LOAD1 0x0 Encounter4Enemies; ENUN
+LoadUnitsByDifficulty(Encounter4Enemies,Encounter4EnemiesExpert,Encounter4EnemiesHeroic)
 CreateArenaSingleCorner(5,4)
 CreateArenaSingleCorner(5,15)
 FADU 16

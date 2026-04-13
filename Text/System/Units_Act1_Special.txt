@@ -87,6 +87,12 @@ Naomi[X]
 ##Desc_Naomi
 A young woman searching for a better[N]
 life. Her self-worth is lacking.[X]
+//lynn
+##Name_Phaedra
+Phaedra[X]
+##Desc_Phaedra
+A twisted lancer who finds herself[N]
+actively seeking out death's rush.[X]
 
 //Shīliăng by levin (get accented characters later, brawler)
 //eventually they're a [0xE3] and i [0xE5]

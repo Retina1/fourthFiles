@@ -82,8 +82,78 @@ UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [11,16] 0x0 0x0 0x0 0x0 [HandS
 UNIT FreelanceGeneric Encircler 0x0 Level(6,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll] NeverMoveAI
 UNIT FreelanceGeneric Priest 0x0 Level(6,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [Bluntblade] DelayedAI
 
-//unknown entries for endbringer bosses, replace with a small fry after turn 1
-//or just have the small fry spawned instantly
+UNIT BossSaewynn Priest 0x0 Level(8,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [Magebane] DelayedAI
+UNIT Harla Highlander 0x0 Level(26,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [9,1] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
+UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [10,1] 0x0 0x0 0x0 0x0 [BoltRifle] NeverMoveAI
+UNIT
+
+EnemyUnitsExpert:
+UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [10,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [1,3] 0x0 0x0 0x0 0x0 [Composite] AttackInRangeAI
+UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] DropItem 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
+UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
+UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [Caestus] NoAI
+UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [Caestus] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [0,12] 0x0 0x0 0x0 0x0 [VineWhip] DelayedAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [0,13] 0x0 0x0 0x0 0x0 [ThornWhip] DelayedAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [0,17] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [19,17] 0x0 0x0 0x0 0x0 [Pike] DelayedAI
+
+UNIT FreelanceGeneric Raider 0x0 Level(6,Enemy,1) [9,17] 0x0 0x0 0x0 0x0 [HandAxe] NoAI
+UNIT FreelanceGeneric Rider 0x0 Level(6,Enemy,1) [10,17] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [8,16] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [9,15] 0x0 0x0 0x0 0x0 [Scorpio] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [10,15] DropItem 0x0 0x0 0x0 [Scorpio] NoAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [11,16] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+
+UNIT FreelanceGeneric Encircler 0x0 Level(6,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll] NeverMoveAI
+UNIT FreelanceGeneric Priest 0x0 Level(6,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [Bluntblade] DelayedAI
+UNIT FreelanceGeneric Seeker 0x0 Level(6,Enemy,1) [0,0] 0x0 0x0 0x0 0x0 [GaleScroll] DelayedAI
+UNIT FreelanceGeneric Seeker 0x0 Level(6,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [GaleScroll] DelayedAI
+
+UNIT BossSaewynn Priest 0x0 Level(8,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [Magebane] DelayedAI
+UNIT Harla Highlander 0x0 Level(26,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [9,1] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
+UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [10,1] 0x0 0x0 0x0 0x0 [BoltRifle] NeverMoveAI
+UNIT
+
+EnemyUnitsHeroic:
+UNIT FreelanceGeneric Apothecary 0x0 Level(6,Enemy,1) [9,5] 0x0 0x0 0x0 0x0 [LegBinder] AttackInRangeAI
+UNIT FreelanceGeneric Apothecary 0x0 Level(6,Enemy,1) [10,5] 0x0 0x0 0x0 0x0 [ArmBinder] AttackInRangeAI
+UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [9,2] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [10,2] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
+UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [1,3] 0x0 0x0 0x0 0x0 [Composite] AttackInRangeAI
+UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] DropItem 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
+UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
+UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [Caestus] NoAI
+UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [Caestus] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [0,12] 0x0 0x0 0x0 0x0 [VineWhip] DelayedAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [0,13] 0x0 0x0 0x0 0x0 [ThornWhip] DelayedAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [0,17] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [19,17] 0x0 0x0 0x0 0x0 [Pike] DelayedAI
+
+UNIT FreelanceGeneric Raider 0x0 Level(6,Enemy,1) [9,17] 0x0 0x0 0x0 0x0 [HandAxe] NoAI
+UNIT FreelanceGeneric Rider 0x0 Level(6,Enemy,1) [10,17] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [8,16] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [9,15] 0x0 0x0 0x0 0x0 [Scorpio] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(6,Enemy,1) [10,15] DropItem 0x0 0x0 0x0 [Scorpio] NoAI
+UNIT FreelanceGeneric Lancer 0x0 Level(6,Enemy,1) [11,16] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+
+UNIT FreelanceGeneric Encircler 0x0 Level(6,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll] NeverMoveAI
+UNIT FreelanceGeneric Priest 0x0 Level(6,Enemy,1) [2,1] 0x0 0x0 0x0 0x0 [Bluntblade] DelayedAI
+UNIT FreelanceGeneric Seeker 0x0 Level(6,Enemy,1) [0,0] 0x0 0x0 0x0 0x0 [GaleScroll] DelayedAI
+UNIT FreelanceGeneric Seeker 0x0 Level(6,Enemy,1) [19,0] 0x0 0x0 0x0 0x0 [GaleScroll] DelayedAI
+
 UNIT BossSaewynn Priest 0x0 Level(8,Enemy,1) [17,1] 0x0 0x0 0x0 0x0 [Magebane] DelayedAI
 UNIT Harla Highlander 0x0 Level(26,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
 UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [9,1] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
@@ -206,7 +276,7 @@ Text(Chapter5_Opening_7)
 MOVE 10 Gerson [0,0]; MOVE 10 BossGuildmaster [0,1]; ENUN
 FADI 10
 CLEA 0; CLEN 0; CLEE 0
-LOAD1 0x1 EnemyUnits; ENUN
+LoadUnitsByDifficulty(EnemyUnits,EnemyUnitsExpert,EnemyUnitsHeroic)
 LOAD1 0x1 KrystJoin; ENUN
 //starting skills
 //kryst - level 1 soothing voice/bravery/shelter/mercury/insight
@@ -265,7 +335,7 @@ LABEL 0x4
 EndEvent
 
 EndingScene:
-SET_ACTIVE 0
+EndingSceneToggles
 ENUT Chapter5DoneFlag
 MUSC 0x0
 CleanTextNoMap(0x0,Chapter5_Ending_1)

@@ -1,5 +1,29 @@
 extern struct Unit * GetUnitStructFromEventParameter(s16 pid);
 
+extern char gCurrentTextString[];
+
+void DMATestASMC(struct EventEngineProc* proc) {
+    /*
+	thanks zane IHRD
+     * Returns whether an emulator simulates DMA transfers
+     * correctly. See: https://mgba.io/2018/03/09/holy-grail-bugs-revisited/#the-great-gba-dma-disaster
+     *
+     * Shout out to Leonarth who inspired me to make this, see https://github.com/minishmaker/randomizer/blob/master/RandomizerCore/Resources/Patches/asm/saveTypeCheck.s
+     */
+
+    // We're going to use `gCurrentTextString` as a random bit of free space.
+
+    DmaCopy16(3, 0x08000000, &gCurrentTextString, 16);
+    DmaCopy16(3, 0x00000000, &gCurrentTextString, 16);
+	
+	if (gCurrentTextString[0]) {
+		gEventSlots[0xc] = 1; //doesn't simulate properly
+	}
+	else {
+		gEventSlots[0xc] = 0;
+	}
+
+ }
 
 void DumpUnitItemsASMC(struct EventEngineProc* proc) {
 	struct Unit* unit = GetUnitFromCharId(gEventSlots[1]);

@@ -1,0 +1,94 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events19BID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [14,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [14,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+CutsceneUnits:
+UNIT
+
+EnemyUnits:
+UNIT Gerson Lancer 0x0 Level(1,Enemy,1) [14,6] DropItem 0x0 0x0 0x0 [Shortspear,RepairScroll] AttackInRangeAI
+UNIT BossGuildmaster Highlander 0x0 Level(26,Enemy,1) [14,1] 0x0 0x0 0x0 0x0 [Hopebringer] AttackInRangeAI
+UNIT FreelanceGeneric Landsknecht 0x0 Level(23,Enemy,1) [13,20] 0x0 0x0 0x0 0x0 [Zweihander] NoAI
+UNIT FreelanceGeneric Ronin 0x0 Level(23,Enemy,1) [14,19] 0x0 0x0 0x0 0x0 [Executor] NoAI
+UNIT FreelanceGeneric Landsknecht 0x0 Level(23,Enemy,1) [15,20] 0x0 0x0 0x0 0x0 [Zweihander] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+LOAD1 0x1 EnemyUnits; ENUN
+//SetUnitStatline(MonsterBoss,27,12,3,13,15,1,6,5)
+//SetUnitWEXP(MonsterBoss,0,0,0,0,0)
+//Text(Chapter3_Opening_1)
+CallPreps
+EndEvent
+
+EndingScene:
+EndingSceneToggles
+MUSC 0x0
+//CleanTextNoMap(0x18,Chapter3_Ending_1)
+MoveToChapter(Stratum5BF1)
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

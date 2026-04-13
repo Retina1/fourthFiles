@@ -424,7 +424,7 @@ Guess so. Well, lead[N]
 the way, Nathan.[AN][Clear][FarLeft]
 [...]Godspeed, Nathan.[AN][Clear][Right][EyesClose]
 I[...] I'll find a way through.[N]
-I'll still change the world.[A][X]
+I can and I must.[A][X]
 
 //ending 2 - maybe we finally hint at weber or stephen now
 ##C6Ending2

@@ -16,6 +16,8 @@
 7th Floor[X]
 ##FinalFloor
 Final Floor[X]
+##Name_Final
+Final[X]
 
 ##CityVisit02
 Note: When loading a save file[N]

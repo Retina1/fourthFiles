@@ -15,19 +15,79 @@ for rejecting a guildmate.[A][X]
 This dialogue is a placeholder[N]
 for talking a second time.[A][X]
 
+##Guild_Anhinga_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Anhinga]
+unit here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Anhinga]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Anhinga]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Anhinga]
+return here[A][X]
+
+##Guild_Ferris_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ferris]
+unit here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ferris]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ferris]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ferris]
+return here[A][X]
+
 
 ##Guild_Velissa_Dialogue
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Velissa]
-unit here[A][X]
+Hey there, sirs.[N]
+[...]Notice anything?[AN][FarLeft]
+Nope.[AN][Left]
+I'm sorry. I don't[N]
+know what you mean.[AN][MidRight]
+Not even[...] this?[N]
+This lovely blade?[AN][FarLeft]
+Hm. Not bad. Not the most[N]
+remarkable I've ever seen.[AN]
+But it's decent.[AN][MidRight]
+Decent? To me, this blade[N]
+is the stuff of legend![AN]
+My village's hopes and[N]
+dreams are staked upon it![AN][FarLeft]
+Good for it.[AN][Left]
+[...]I don't think I[N]
+got your name.[AN][MidRight]
+My bad. Velissa.[AN]
+Despite what that man[N]
+might try and say,[AN]
+this blade and the woman[N]
+who uses it are legendary.[AN]
+Take us with you, and let[N]
+me show you what I mean.[AN]
+We'll be able to change[N]
+the world, I'm certain.[A][X]
 ##
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Velissa]
-accept here[A][X]
+Good choice.[AN][Clear][FarLeft]
+Just so you know, kid,[AN]
+I've a dozen of that[N]
+sword in the storehouse.[A][X]
 ##
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Velissa]
-deny here[A][X]
+Must you trample[N]
+over my dreams?[AN][Clear][FarLeft]
+Trample's a bit harsh.[A][X]
 ##
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Velissa]
-return here[A][X]
+Have you changed your mind?[AN]
+I'm certain you won't regret[N]
+bringing me along.[AN][FarLeft]
+I'm not, but just[N]
+ignore my judgment.[A][X]
 
 ##Guild_Marag_Intro
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Marag]

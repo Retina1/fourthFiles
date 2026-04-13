@@ -180,3 +180,17 @@ Hausten[X]
 ##Desc_Hausten
 A former Belvarusi noble who wishes to[N]
 share her performances with the world.[X]
+
+//fatman
+##Name_Ludovic
+Ludovic[X]
+##Desc_Ludovic
+A highborn Asketan with a terminal[N]
+disease. He's justifiably impatient.[X]
+
+//rasta
+##Name_Ghevena
+Ghevena[X]
+##Desc_Ghevena
+A former Belvarusi duelist now seeking[N]
+underhanded revenge. She's haughty.[X]

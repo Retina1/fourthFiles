@@ -587,7 +587,7 @@ allies near.[X]
 Warp Scr.[X]
 ##Desc_WarpScroll ^
 A mighty scroll that rewrites reality.[N]
-Warps an adjacent ally to an afar space.[X]
+Warps an adjacent ally 1-5 spaces away.[X]
 ##Use_WarpScroll
 Warps near[N]
 allies afar.[X]

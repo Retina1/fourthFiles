@@ -37,7 +37,7 @@ natural charm help them along.[A][X]
 ##BenthusTutorial
 Benthus is a noble, a rapier-using[N]
 class focused on team support.[AN]
-His Rally is an extraordinarily buff,[N]
+His Rally is an extraordinary buff,[N]
 capable of bolstering several stats[N]
 for several allies all in one action![N]
 Note: the Rally lasts a single turn.[AN]

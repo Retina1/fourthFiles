@@ -1,4 +1,5 @@
 //include this under free space
+//include this under free space
 
 #include "EAstdlib.event"
 #include "Extensions/Hack Installation.txt"
@@ -26,6 +27,10 @@ ChTable:
 ALIGN 4
 //Final and Prologue.
 SpecialChapter:
+SHORT EndgameA Name_Final
+SHORT EndgameB Name_Final
+SHORT EndgameC Name_Final
+
 SHORT Stratum1F1 Name_St1
 SHORT Stratum1F2 Name_St1
 SHORT Stratum1F3 Name_St1

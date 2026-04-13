@@ -40,8 +40,9 @@
 #define SilentKillUnit(unit) "DISA_IF unit; DISA unit"
 #define SFXKillUnit(unit) "SET_SOMETHING unit; DISA unit"
 #define DisaIfDead(unit) "CHECK_ALIVE unit; BNE unit 0xc 0x0; DISA unit; LABEL unit"
-#define CallPreps "CALL $591FD8"
+#define CallPreps "ENUF HideIconsFlag; CALL $591FD8"
 #define RefreshLightRunes "ASMC 0x080271A1"
+#define EndingSceneToggles "ENUT HideIconsFlag; SET_ACTIVE 0"
 
 #define CreateArenaBorders(x1,y1,x2,y2) "SVAL 0x1 x1; SVAL 0x2 x2; SVAL 0x3 y1; SVAL 0x4 y2; ASMC TilemapBordersASMC|1;  AddTrap(LightRuneTrapID,x1,y1);AddTrap(LightRuneTrapID,x2,y1);AddTrap(LightRuneTrapID,x1,y2);AddTrap(LightRuneTrapID,x2,y2);RefreshLightRunes"
 #define CreateArenaSingleCorner(x,y) "SVAL 0x1 x; SVAL 0x2 y; ASMC TilemapBordersSingleCornerASMC|1;AddTrap(LightRuneTrapID,x,y);RefreshLightRunes"
@@ -52,11 +53,13 @@
 #define WarpNathan(x,y)	"SET_ACTIVE Nathan; SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX; CAM1 [x,y]; WM_WAITFORCAM; SVAL 0xB y*0x10000+x; WARP_IN; STAL 20; MOVE 0xFFFF Nathan [x,y]; ENUN; WM_WAITFORFX; STAL 12; NathanIsHere"
 #define SilentWarpNathan(x,y)	"SET_ACTIVE Nathan; FADI 16; CAM1 [x,y]; WM_WAITFORCAM; MOVE 0xFFFF Nathan [x,y]; ENUN; FADU 16"
 
-#define DifficultySwapper "EVBIT_MODIFY 4; CALL DifficultySwapEvent; ASMC RepairModeRefreshASMC|1; EVBIT_MODIFY 0"
+#define DifficultySwapper "ENUT HideIconsFlag; EVBIT_MODIFY 4; CALL DifficultySwapEvent; ASMC RepairModeRefreshASMC|1; EVBIT_MODIFY 0"
 
 #define LevelUpSkill(unitID,skillID) "SVAL 0x1 unitID; SVAL 0x2 skillID; ASMC LevelUpSkillASMC|1"
 #define DumpUnitItems(unit) "SVAL 0x1 unit; ASMC DumpUnitItemsASMC|1"
 
+//ending turncounts
+//ASMC 0xB8175
 
 #include "_BattleQuotes.event"
 #include "_DeathQuotes.event"
@@ -373,6 +376,9 @@ UNIT
 
 //start revolution playing in ch16 at the difficulty adjustment screen
 
+{
+#include "Chapters/Chapter19B.event"
+}
 {
 #include "Chapters/Chapter18C.event"
 }

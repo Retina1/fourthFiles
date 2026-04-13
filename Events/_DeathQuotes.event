@@ -81,8 +81,8 @@ AlwaysDeathQuote(Puzon,0x0,PuzonDeath)
 AlwaysDeathQuote(Cam,0x0,CamDeath)
 AlwaysDeathQuote(Marag,0x0,MaragDeath)
 AlwaysDeathQuote(Velissa,0x0,VelissaDeath)
-
-
+AlwaysDeathQuote(Ferris,0x0,FerrisDeath)
+AlwaysDeathQuote(Anhinga,0x0,AnhingaDeath)
 //knt
 AlwaysDeathQuote(Drogo,0x0,DrogoDeath)
 AlwaysDeathQuote(Gretchen,0x0,GretchenDeath)
@@ -97,7 +97,7 @@ AlwaysDeathQuote(Finn,0x0,FinnDeath)
 AlwaysDeathQuote(Eight,0x0,EightDeath)
 AlwaysDeathQuote(Randellan,0x0,RandellanDeath)
 AlwaysDeathQuote(Juniper,0x0,JuniperDeath)
-
+AlwaysDeathQuote(AuntAysu,0x0,AuntAysuDeath)
 
 //arc
 AlwaysDeathQuote(Hallie,0x0,HallieDeath)
@@ -184,8 +184,8 @@ AlwaysDeathQuote(Szess,0x0,SzessDeath)
 AlwaysDeathQuote(Zoe,0x0,ZoeDeath)
 AlwaysDeathQuote(Paul,0x0,PaulDeath)
 AlwaysDeathQuote(Hausten,0x0,HaustenDeath)
-
-
+AlwaysDeathQuote(Ludovic,0x0,LudovicDeath)
+AlwaysDeathQuote(Ghevena,0x0,GhevenaDeath)
 
 //dh
 AlwaysDeathQuote(Luis,0x0,LuisDeath)
@@ -202,7 +202,7 @@ AlwaysDeathQuote(Fourfinger,0x0,FourfingerDeath)
 AlwaysDeathQuote(Kelaino,0x0,KelainoDeath)
 AlwaysDeathQuote(Nelson,0x0,NelsonDeath)
 AlwaysDeathQuote(Naomi,0x0,NaomiDeath)
-
+AlwaysDeathQuote(Phaedra,0x0,PhaedraDeath)
 //braw
 AlwaysDeathQuote(Shiliang,0x0,ShiliangDeath)
 AlwaysDeathQuote(Feefasnan,0x0,FeefasnanDeath)
@@ -265,7 +265,7 @@ AlwaysDeathQuote(Ophelia,0x0,OpheliaDeath)
 AlwaysDeathQuote(Cherryl,0x0,CherrylDeath)
 AlwaysDeathQuote(Cato,0x0,CatoDeath)
 AlwaysDeathQuote(Yujin,0x0,YujinDeath)
-
+AlwaysDeathQuote(Ascella,0x0,AscellaDeath)
 
 //duel
 AlwaysDeathQuote(Francesca,0x0,FrancescaDeath)
@@ -290,7 +290,7 @@ AlwaysDeathQuote(Beepo,0x0,BeepoDeath)
 AlwaysDeathQuote(Subtilior,0x0,SubtiliorDeath)
 AlwaysDeathQuote(Awil,0x0,AwilDeath)
 AlwaysDeathQuote(Orion,0x0,OrionDeath)
-
+AlwaysDeathQuote(Almighty,0x0,AlmightyDeath)
 EndDeathQuote
 
 PUSH

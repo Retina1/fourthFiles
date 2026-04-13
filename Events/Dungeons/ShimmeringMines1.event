@@ -28,10 +28,10 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Chest(Bravant,4,11)
-Chest(Bravant,9,0)
-Chest(Bravant,29,13)
-Chest(Bravant,1,16)
+Chest(Staff,4,11)
+Chest(Shieldlance,9,0)
+Chest(Elixir,29,13)
+Chest(SleepGas,1,16)
 END_MAIN
 
 MiscBasedEvents:
@@ -143,6 +143,7 @@ CLEA 0
 InitializeNathan(1,2)
 //initialize flag so we don't have a first screen flash
 ENUT WaitEventTrapsFlag
+ENUT 0x66
 EndEvent
 
 Encounter1:

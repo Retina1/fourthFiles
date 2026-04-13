@@ -227,7 +227,7 @@ you're willing to part with it.[X]
 ##Name_SilkenWire
 Silken Wire[X]
 ##Desc_SilkenWire ^
-A coil of wire thin and fine as hair.[N]
+A hair-like coil of fine yellow wire.[N]
 It'll probably fetch a good price, if[N]
 you're willing to part with it.[X]
 ##Name_PurestOil

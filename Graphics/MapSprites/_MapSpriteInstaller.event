@@ -288,6 +288,9 @@ MovingMapSprite(Wolfking, AP1, WolfkingMMS)
 StandingMapSprite(Novistador,MapSprite16x16,NovistadorSMS)
 MovingMapSprite(Novistador, AP1, NovistadorMMS)
 
+StandingMapSprite(Woodrat,MapSprite16x16,WoodratSMS)
+MovingMapSprite(Woodrat, AP1, WoodratMMS)
+
 #define SigilTrapMapSprite 0x3c
 #define LightRuneMapSprite 0x3d
 
@@ -297,6 +300,13 @@ StandingMapSprite(LightRuneMapSprite,MapSprite16x16,LightRuneSMS)
 ALIGN 4
 LightRuneSMS:
 #incbin "Dmp/Save Points {serif}-stand.dmp"
+
+ALIGN 4
+WoodratSMS:
+#incbin "Dmp/Rat (U) {Squaresoft, RandomWizard}-stand.dmp"
+ALIGN 4
+WoodratMMS:
+#incbin "Dmp/Rat (U) {Squaresoft, RandomWizard}-walk.dmp"
 
 ALIGN 4
 NovistadorSMS:

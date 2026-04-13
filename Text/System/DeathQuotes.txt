@@ -175,6 +175,14 @@ Culled in his prime[...][A][EyesClose][X]
 [MidRight][Velissa]
 My weapon[...] Why won't[...][N]
 it do anything[...]?[A][EyesClose][X]
+##FerrisDeath
+[MidRight][Ferris]
+I wasn't strong enough[...][N]
+My blade wasn't[...] strong[...][A][EyesClose][X]
+##AnhingaDeath
+[MidRight][Anhinga]
+I[...] I'm flying at last[...][N]
+What a glorious[...] feeling[...][A][EyesClose][X]
 
 //knights
 ##DrogoDeath
@@ -228,6 +236,10 @@ damned[...] shame[...][N][A][EyesClose][X]
 [MidRight][Juniper]
 Useless pieces of[...][N]
 I can't[...] like this[...][A][EyesClose][X]
+##AuntAysuDeath
+[MidRight][AuntAysu]
+Had it comin'[...][N]
+Did my best, everyone[...][A][EyesClose][X]
 
 //archers
 ##HallieDeath
@@ -526,6 +538,14 @@ Robbing the world[...][N]
 of my splendor[...]?[AN]
 What more is there[...][N]
 for you to live for[...][A][EyesClose][X]
+##LudovicDeath
+[MidRight][Ludovic]
+No matter what[...] I can't[...][N]
+escape my fate[...][A][EyesClose][X]
+##GhevenaDeath
+[MidRight][Ghevena]
+Revenge[...] I only wanted[...][N]
+my vengeance[...][A][EyesClose][X]
 
 //dhunt
 ##LuisDeath
@@ -582,6 +602,10 @@ Not like this[...][A][EyesClose][X]
 [MidRight][Naomi]
 I[...] wanted to believe[...][N]
 I deserve[...] happiness[...][A][EyesClose][X]
+##PhaedraDeath
+[MidRight][Phaedra][ToggleSmile]
+This is what[...] I wanted[...][N]
+It's so[...] very good[...][A][EyesClose][X]
 
 //brawl
 ##ShiliangDeath
@@ -793,6 +817,10 @@ so interesting, too[...][A][EyesClose][X]
 [MidRight][Yujin]
 I'll[...] never make it[...][N]
 Never make it home[...][A][EyesClose][X]
+##AscellaDeath
+[MidRight][Ascella]
+Don't let this be forgotten[...][N]
+Let my house[...] be known[...][A][EyesClose][X]
 
 //duelist
 ##FrancescaDeath
@@ -872,4 +900,7 @@ made it this far.[A][EyesClose][X]
 ##OrionDeath
 [MidRight][Orion]
 I'm alive.[A][EyesClose][X]
+##AlmightyDeath
+[MidRight][Almighty]
+What am I fighting for?[A][EyesClose][X]
 

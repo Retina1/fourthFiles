@@ -308,6 +308,7 @@ EndEvent
 
 
 EndingScene:
+EndingSceneToggles
 EndingMapFlags
 //MovementUnsetter 
 //add route split logic

@@ -23,7 +23,7 @@ Make finer use of[N]
 casting resources.[N]
 Next: Spells cost 1[N]
 less durability (min 1).[N]
-Req: Frostfall 1[X]
+Req: Frostfall 3[X]
 ## ^
 Level: MAX (Passive)[N]
 Make finer use of[N]

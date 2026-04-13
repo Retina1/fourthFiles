@@ -78,4 +78,11 @@ OR-10-N[X]
 A war machine with a minimalistic and[N]
 binary worldview. Nuance eludes it.[X]
 
+//feier
+##Name_Almighty
+Almighty[X]
+##Desc_Almighty
+A mighty machine looking to raise[N]
+money for his disgraced inventor.[X]
+
 

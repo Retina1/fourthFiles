@@ -1,3 +1,16 @@
+##Guild_AuntAysu_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][AuntAysu]
+unit here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][AuntAysu]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][AuntAysu]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][AuntAysu]
+return here[A][X]
+
 ##Guild_Tristao_Intro
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Tristao]
 Heya, lad. Name's Tristao.[N]

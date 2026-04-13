@@ -58,6 +58,7 @@ extern u16 GenericAOEEvent;
 #include "UnitChooser/UnitChooser.c"
 
 #include "Misc/ConditionalChecks.c"
+#include "Misc/TurnRecords.c"
 
 #include "MiscASMCS.c"
 #include "ImportantFixes.c"

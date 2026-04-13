@@ -63,6 +63,19 @@ Velissa[X]
 An Asketan lady in search of treasure[N]
 and weapons. She's a bit insecure.[X]
 
+//jet
+##Name_Ferris
+Ferris[X]
+##Desc_Ferris
+A son of blacksmiths from Hirschring.[N]
+His truest passion is craftsmanship.[X]
+//generic
+##Name_Anhinga
+Anhinga[X]
+##Desc_Anhinga
+A winged one struck from the sky and[N]
+raised by hunters. She's a prankster.[X]
+
 //drogo by lorca (knight)
 ##Name_Drogo
 Drogo[X]
@@ -145,6 +158,13 @@ Juniper[X]
 ##Desc_Juniper
 A vain woman who joined the Guildleague[N]
 to build her reputation. Aims to please.[X]
+
+//rw
+##Name_AuntAysu
+Aunt Aysu[X]
+##Desc_AuntAysu
+A troublemaker local to Hirschring.[N]
+She'll dirty her hands for family.[X]
 
 //hannahkitty
 ##Name_Hallie

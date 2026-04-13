@@ -135,6 +135,19 @@ Panacea[X]
 Restore 20% HP[N]
 at turn's start.[X]
 
+##BloodFuryLabel
+Blood Fury[X]
+##BloodFuryDesc
+1.3x Atk.[X]
+##BloodrushLabel
+Bloodrush[X]
+##BloodrushDesc
++1 Mov.[X]
+
+##ReboundLabel
+Rebound[X]
+##ReboundDesc
+2.0x Avo.[X]
 
 ##StonardBuffLabel
 Stonard[X]
