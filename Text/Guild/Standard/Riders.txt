@@ -1,0 +1,77 @@
+##Guild_Aizen_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
+Aizen here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
+return here[A][X]
+
+##Guild_Johnnie_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Johnnie]
+Johnnie here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Johnnie]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Johnnie]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Johnnie]
+return here[A][X]
+
+##Guild_Kolette_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Kolette]
+Kolette here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Kolette]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Kolette]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Kolette]
+return here[A][X]
+
+##Guild_Pallas_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Pallas]
+Pallas here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Pallas]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Pallas]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Pallas]
+return here[A][X]
+
+##Guild_Emblem_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Emblem]
+Emblem here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Emblem]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Emblem]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Emblem]
+return here[A][X]
+
+##Guild_Meilie_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Meilie]
+Meilie here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Meilie]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Meilie]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Meilie]
+return here[A][X]

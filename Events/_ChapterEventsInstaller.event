@@ -89,17 +89,11 @@ ASMC ValueChooser_OnSelect|1
 ASMC AutoLevelAllASMC|1
 LABEL 0x2
 
-SystemText(DEBUGClassChangePrompt)
-IfNoSelectedGoto(0x3)
-ASMC ValueChooser_OnSelect|1
-ASMC ChangeAllClassASMC|1
-LABEL 0x3
+SystemText(DEBUGCharacterLoadPrompt)
+IfNoSelectedGoto(0x6)
+ASMC DebugUnitChooser_OnSelect|1
+LABEL 0x6
 
-SystemText(DEBUGCharacterChangePrompt)
-IfNoSelectedGoto(0x4)
-ASMC ValueChooser_OnSelect|1
-ASMC ChangeAllCharacterASMC|1
-LABEL 0x4
 
 SystemText(DEBUGClassUnlockPrompt)
 IfNoSelectedGoto(0x5)
@@ -111,6 +105,20 @@ ENUT LifeflowUnlockedFlag
 ENUT SenatusUnlockedFlag
 ENUT OtherUnlockedFlag
 LABEL 0x5
+
+/*
+SystemText(DEBUGClassChangePrompt)
+IfNoSelectedGoto(0x3)
+ASMC ValueChooser_OnSelect|1
+ASMC ChangeAllClassASMC|1
+LABEL 0x3
+
+SystemText(DEBUGCharacterChangePrompt)
+IfNoSelectedGoto(0x4)
+ASMC ValueChooser_OnSelect|1
+ASMC ChangeAllCharacterASMC|1
+LABEL 0x4
+*/
 
 LABEL 0x10
 FADI 16

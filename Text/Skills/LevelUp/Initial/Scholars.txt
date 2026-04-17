@@ -239,7 +239,7 @@ A wide, blazing spell.[N]
 Next: 5 Dur, 1-2 Rng,[N]
 +10 Mt, 10% Dmg dealt[N]
 to foes in 3 tiles.[N]
-Req: Fireball 3, Surge 2[X]
+Req: Firebolt 3, Surge 2[X]
 ## ^
 Level: 1 (Active)[N]
 A wide, blazing spell.[N]

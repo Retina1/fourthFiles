@@ -115,6 +115,10 @@ DEBUG: Change all units' character?[N]
 DEBUG: Unlock all class sets?[N]
 [No][X]
 
+##DEBUGCharacterLoadPrompt
+DEBUG: Load a character in?[N]
+[No][X]
+
 ##RTextExplanation
 Press the R button to get[N]
 an explanation of any of[N]

@@ -1,0 +1,78 @@
+##Guild_Esketit_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Esketit]
+Esketit here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Esketit]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Esketit]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Esketit]
+return here[A][X]
+
+##Guild_Gloria_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Gloria]
+Gloria here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Gloria]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Gloria]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Gloria]
+return here[A][X]
+
+##Guild_Pipsy_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Pipsy]
+Pipsy here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Pipsy]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Pipsy]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Pipsy]
+return here[A][X]
+
+##Guild_Son_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Son]
+Son here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Son]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Son]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Son]
+return here[A][X]
+
+##Guild_Hart_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hart]
+Hart here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hart]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hart]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hart]
+return here[A][X]
+
+##Guild_Campbell_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Campbell]
+Campbell here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Campbell]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Campbell]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Campbell]
+return here[A][X]
+

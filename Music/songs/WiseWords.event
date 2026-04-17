@@ -19,7 +19,7 @@
 
 WiseWords_001:
 //  #01 //000   ----------------------------------------
- BYTE   VOL   91*WiseWords_mvl/mxv
+ BYTE   VOL   110*WiseWords_mvl/mxv
  BYTE   KEYSH   WiseWords_key+0
 Label_F7AAF4:
  BYTE   TEMPO   90*WiseWords_tbs/2
@@ -112,7 +112,7 @@ Label_F7AAF4:
 
 WiseWords_002:
 //  #02 //000   ----------------------------------------
- BYTE   VOL   91*WiseWords_mvl/mxv
+ BYTE   VOL   110*WiseWords_mvl/mxv
  BYTE   KEYSH   WiseWords_key+0
 Label_F7AB6C:
  BYTE   VOICE   105

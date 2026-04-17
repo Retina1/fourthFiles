@@ -1,5 +1,11 @@
+#include "Credits.txt"
+
 ##GuideSectionMechanics
 Mechanics[X]
+
+##GuideFiller
+This entry has not[N]
+yet been written.[X]
 
 ##GuideChanges
 System Changes[X]
@@ -58,6 +64,9 @@ and negative alike) all[N]
 stack multiplicatively.[N]
 Any additive elements are[N]
 factored in first.[N]
+Multipliers to AS do not[N]
+impact Avo unless otherwise[N]
+explicitly stated.[N]
 [N]
 Growth display in this game[N]
 only displays letters. This[N]
@@ -177,11 +186,127 @@ drunkard. He'll probably show[N]
 up in a fight near Hirschring.[X]
 
 
-##GuideSectionUnits
-People[X]
+##GuideSectionRecap
+Recap[X]
+
+##GuideRecapHeader1
+Act 1: Catching at Dreams[X]
+##GuideRecap1
+A trio of hopeful youths[N]
+come to the Guildleague.[N]
+They seek a chance to leave[N]
+their mark, and through the[N]
+Guildmaster, they earn it.[N]
+The three become five, and[N]
+they seek to prove their[N]
+mettle through duties to[N]
+the League. Meanwhile, a[N]
+shadow looms over the[N]
+fledgling guild, poised[N]
+to swallow all in darkness...[N]
+It is the beginning of[N]
+the end, after all.[X]
+
+##GuideRecapHeader2
+Act 1: Proving Grounds[X]
+##GuideRecap2
+The hopefuls are challenged[N]
+to brave the Lethal Forest,[N]
+a test greater than any of[N]
+the five have ever known.[N]
+Through sheer force of will[N]
+and determination, they[N]
+press onwards and confront[N]
+a beast of corrupted visage,[N]
+though not before witnessing[N]
+the awakening of a sixth.[N]
+The six return to bask in[N]
+earned glory, only for the[N]
+End's harbingers to strike[N]
+with a terrifying fury.[N]
+Amidst the ashes and dusts[N]
+of that conflict, a young[N]
+woman reveals a truth of[N]
+a past strewn in shadow.[N]
+The die is cast once more.[X]
+
+##GuideRecapHeader3
+Act 1: The Tightrope[X]
+##GuideRecap3
+The hopefuls are tasked[N]
+with chasing after the End,[N]
+shaken by the revelation[N]
+of their numbers' collusion.[N]
+Another force conspires to[N]
+drive the hopefuls to the[N]
+edge of despair; as they[N]
+strike down numbers of their[N]
+enemy nation, the hopefuls[N]
+invite all-out war.[N]
+This vortex swallows one[N]
+of the hopefuls, and at[N]
+once six become five.[N]
+The five fall together, and[N]
+yet rise up again as one.[N]
+Even as their bonds are[N]
+forged in the fire of[N]
+mortal strife, the five know[N]
+not what trials await them,[N]
+nor the fate their nation[N]
+will lead them to.[X]
+
+##GuideRecapHeader4
+Act 2: Someday Just Began[X]
+##GuideRecap4
+lead up to wastes, the[N]
+belvarusi war, the george[N]
+incident, etc[X]
+
+##GuideRecapHeader5
+Act 2: A Forced Hand[X]
+##GuideRecap5
+the wastes, the infiltration,[N]
+the fall of belvarus and the[N]
+realization of their actions[X]
+
+##GuideRecapHeader6
+Act 2: The Precipice[X]
+##GuideRecap6
+the clash with and death[N]
+of the prince, the point[N]
+of no return for the five[X]
+
+##GuideRecapHeader7A
+Act 3: Dreams Don't Die[X]
+##GuideRecap7A
+At once five become three.[X]
+
+##GuideRecapHeader7B
+Act 3: Pick Yourself a Road[X]
+##GuideRecap7B
+At once five become three.[X]
+
+##GuideRecapHeader7C
+Act 3: Me and You[X]
+##GuideRecap7C
+At once five become four.[X]
+
+
 
 ##GuideSectionLore
 Lore[X]
+
+##GuideGuildleagueHeader
+The Guildleague[X]
+
+##GuideAsketaHeader
+The Asketan Empire[X]
+
+##GuideBelvarusHeader
+The Belvarus Republic[X]
+
+##GuideEndbringerHeader
+The Endbringers[X]
 
 ##GuideSectionCredits
 Credits[X]

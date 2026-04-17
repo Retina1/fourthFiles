@@ -1,0 +1,78 @@
+##Guild_Martin_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Martin]
+Martin here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Martin]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Martin]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Martin]
+return here[A][X]
+
+##Guild_Demico_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Demico]
+Demico here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Demico]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Demico]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Demico]
+return here[A][X]
+
+##Guild_Karl_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Karl]
+Karl here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Karl]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Karl]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Karl]
+return here[A][X]
+
+##Guild_Wasp_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Wasp]
+Wasp here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Wasp]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Wasp]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Wasp]
+return here[A][X]
+
+##Guild_Victoria_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Victoria]
+Victoria here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Victoria]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Victoria]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Victoria]
+return here[A][X]
+
+##Guild_Laiteuse_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Laiteuse]
+Laiteuse here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Laiteuse]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Laiteuse]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Laiteuse]
+return here[A][X]
+

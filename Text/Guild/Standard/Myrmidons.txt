@@ -1,0 +1,78 @@
+##Guild_Natsuki_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Natsuki]
+Natsuki here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Natsuki]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Natsuki]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Natsuki]
+return here[A][X]
+
+##Guild_Mikayla_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Mikayla]
+Mikayla here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Mikayla]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Mikayla]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Mikayla]
+return here[A][X]
+
+##Guild_Calliope_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Calliope]
+Calliope here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Calliope]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Calliope]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Calliope]
+return here[A][X]
+
+##Guild_Ghari_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ghari]
+Ghari here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ghari]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ghari]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ghari]
+return here[A][X]
+
+##Guild_Azaghal_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Azaghal]
+Azaghal here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Azaghal]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Azaghal]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Azaghal]
+return here[A][X]
+
+##Guild_Tachyon_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tachyon]
+Tachyon here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tachyon]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tachyon]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Tachyon]
+return here[A][X]
+

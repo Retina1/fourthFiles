@@ -103,6 +103,10 @@
 #define Quest1_5x_DoneFlag 0x10a
 #define Quest2_5x_Flag 0x10b
 #define Quest2_5x_DoneFlag 0x10c
+#define Quest1_8x_Flag 0x10d
+#define Quest1_8x_DoneFlag 0x10e
+#define Quest2_8x_Flag 0x10f
+#define Quest2_8x_DoneFlag 0x110
 
 
 #define NoRescuingFlag 0x120

@@ -400,7 +400,7 @@ setMugEntry(RodneyMug,RodneyDMP,2,5,2,3)
 ALIGN 4
 MeansDeathDMP:
 #incbin "dmps/abzinthianMeansDeath.dmp"
-setMugEntry(MeansDeathMug,MeansDeathDMP,4,4,4,2)
+setMugEntry(MeansDeathMug,MeansDeathDMP,4,6,4,4)
 
 ALIGN 4
 //hannah

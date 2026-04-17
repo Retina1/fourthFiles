@@ -69,19 +69,36 @@ GuideEntryTable:
 GuideEntry(1, 0, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
 GuideEntry(1, 0, GuideAilments, GuideAilmentDesc, Chapter2DoneFlag)
 //quests
-GuideEntry(2, 1, GuideQuestsGeneral, GuideQuestsGeneralDesc, Chapter2DoneFlag)
+GuideEntry(2, 1, GuideQuestsGeneral, GuideQuestsGeneralDesc, Chapter3DoneFlag)
 GuideEntry(2, 1, Quest1_3x, Quest1_3x_Guide, Quest1_3x_Flag)
 GuideEntry(2, 1, Quest2_3x, Quest2_3x_Guide, Quest2_3x_Flag)
 GuideEntry(2, 1, Quest1_S1x, Quest1_S1x_Guide, Quest1_S1x_Flag)
 GuideEntry(2, 1, Quest2_S1x, Quest2_S1x_Guide, Quest2_S1x_Flag)
 GuideEntry(2, 1, Quest1_5x, Quest1_5x_Guide, Quest1_5x_Flag)
 GuideEntry(2, 1, Quest2_5x, Quest2_5x_Guide, Quest2_5x_Flag)
-//units
-GuideEntry(3, 2, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
+//recap
+GuideEntry(3, 2, GuideRecapHeader1, GuideRecap1, Chapter3DoneFlag)
+GuideEntry(3, 2, GuideRecapHeader2, GuideRecap2, Chapter5DoneFlag)
+GuideEntry(3, 2, GuideRecapHeader3, GuideRecap3, Chapter8DoneFlag)
+GuideEntry(3, 2, GuideRecapHeader4, GuideRecap4, Chapter10DoneFlag)
+GuideEntry(3, 2, GuideRecapHeader5, GuideRecap5, Chapter13DoneFlag)
+GuideEntry(3, 2, GuideRecapHeader6, GuideRecap6, Chapter16DoneFlag)
+GuideEntry(3, 2, GuideRecapHeader7A, GuideRecap7A, Chapter18ADoneFlag)
+GuideEntry(3, 2, GuideRecapHeader7B, GuideRecap7B, Chapter18BDoneFlag)
+GuideEntry(3, 2, GuideRecapHeader7C, GuideRecap7C, Chapter18CDoneFlag)
 //lore
-GuideEntry(4, 3, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
+GuideEntry(4, 3, GuideGuildleagueHeader, GuideFiller, Chapter2DoneFlag)
+GuideEntry(4, 3, GuideAsketaHeader, GuideFiller, Chapter2DoneFlag)
+GuideEntry(4, 3, GuideBelvarusHeader, GuideFiller, Chapter3DoneFlag)
+GuideEntry(4, 3, GuideEndbringerHeader, GuideFiller, Chapter5DoneFlag)
 //credits
-GuideEntry(5, 4, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Units_Label, Credits_Units, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Units_Label2, Credits_Units2, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Units_Label3, Credits_Units3, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Mugs_Label, GuideFiller, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Anims_Label, GuideFiller, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Graphics_Label, GuideFiller, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Thanks_Label, GuideFiller, Chapter2DoneFlag)
 GuideEntry(0xC,0,0,0,0) //terminator?
 GuideTerminator
 
@@ -89,7 +106,7 @@ ALIGN 4
 GuideChapterTable:
 GuideChapterEntry(GuideSectionMechanics)
 GuideChapterEntry(GuideSectionQuests)
-GuideChapterEntry(GuideSectionUnits)
+GuideChapterEntry(GuideSectionRecap)
 GuideChapterEntry(GuideSectionLore)
 GuideChapterEntry(GuideSectionCredits)
 BYTE 0x0 0x0 0xC9 0x5 //terminator?
@@ -100,7 +117,7 @@ GuideCategoryTable:
 GuideCategoryEntry(0x0)
 GuideCategoryEntry(GuideSectionMechanics)
 GuideCategoryEntry(GuideSectionQuests)
-GuideCategoryEntry(GuideSectionUnits)
+GuideCategoryEntry(GuideSectionRecap)
 GuideCategoryEntry(GuideSectionLore)
 GuideCategoryEntry(GuideSectionCredits)
 GuideEntry(PageCount,0,0,0,0) //terminator?

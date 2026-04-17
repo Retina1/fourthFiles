@@ -56,6 +56,7 @@ extern u16 GenericAOEEvent;
 #include "WaitEventTraps/TilemapBorders.c"
 #include "DifficultyChooser/DifficultyChooser.c"
 #include "UnitChooser/UnitChooser.c"
+#include "DebugUnitChooser/DebugUnitChooser.c"
 
 #include "Misc/ConditionalChecks.c"
 #include "Misc/TurnRecords.c"
