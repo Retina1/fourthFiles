@@ -1,0 +1,123 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events14ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0x0,UndeployUnits,1)
+TurnEventPlayer(0x0,AlliesArrive,4)
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+//DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [8,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,26] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,27] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,27] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,27] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,27] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,27] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+InitialUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [9,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [11,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+//military is asketans
+UNIT MilitaryGeneric Landsknecht 0x0 Level(17,Enemy,1) [7,0] 0x0 0x0 0x0 0x0 [Magebane] AttackInRangeAI
+UNIT MilitaryGeneric Landsknecht 0x0 Level(17,Enemy,1) [13,0] 0x0 0x0 0x0 0x0 [Magebane] AttackInRangeAI
+UNIT MilitaryGeneric Landsknecht 0x0 Level(17,Enemy,1) [8,0] 0x0 0x0 0x0 0x0 [Muzzler] AttackInRangeAI
+UNIT MilitaryGeneric Landsknecht 0x0 Level(17,Enemy,1) [12,0] 0x0 0x0 0x0 0x0 [Muzzler] AttackInRangeAI
+//bosses
+UNIT First Landsknecht 0x0 Level(24,Enemy,1) [10,2] 0x0 0x0 0x0 0x0 [SuperiorBlade] AttackInRangeAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+
+LOAD1 0x1 EnemyUnits; ENUN
+LOAD1 0x1 InitialUnits; ENUN
+//SetUnitStatline(MonsterBoss,27,12,3,13,15,1,6,5)
+//SetUnitWEXP(MonsterBoss,0,0,0,0,0)
+//Text(Chapter3_Opening_1)
+//CallPreps
+
+EndEvent
+
+//yes this needs to be a turn 1 event it's stupid
+UndeployUnits:
+ASMC Ch14UndeployUnitsASMC|1
+EndEvent
+
+AlliesArrive:
+TurnNPC(Nathan)
+TurnNPC(Gore)
+TurnNPC(Astarte)
+CallPreps
+TurnAlly(Nathan)
+TurnAlly(Gore)
+TurnAlly(Astarte)
+//save
+ASMC 0x080790A4|1
+ASMC 0x080B5D5C|1
+//might need to figure this out
+ENUF 0x84
+EndEvent
+
+EndingScene:
+EndingSceneToggles
+ENUT Chapter13DoneFlag
+MUSC 0x0
+//CleanTextNoMap(0x18,Chapter3_Ending_1)
+MoveToChapter(HirschringSquare)
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

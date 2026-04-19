@@ -19,6 +19,13 @@ Final Floor[X]
 ##Name_Final
 Final[X]
 
+##NoSavingAllowed ^
+You cannot save your game at[N]
+this time. A free autosave will[N]
+be provided after you finish[N]
+your preparations.[N]
+Be certain of your choices.[X]
+
 ##CityVisit02
 Note: When loading a save file[N]
 in The City: Hirschring,[AN]

@@ -1,3 +1,6 @@
+#define Angelica 0xD0
+#define Iseau 0xD1
+#define Stephen 0xD2
 #define George 0xD5
 #define Astoria 0xD6
 #define Hitchcock 0xD7

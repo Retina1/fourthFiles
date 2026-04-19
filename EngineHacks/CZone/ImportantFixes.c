@@ -9,6 +9,17 @@ extern const int GoreEyepatchMugID;
 
 extern const struct FaceData NewPortraitTable[];
 
+
+u8 CanPrepScreenSave(void)
+{
+    u32 chapterIndex = gPlaySt.chapterIndex;
+
+	if (chapterIndex == 0xd) { return 0; }
+
+	return 1;
+}
+
+
 void FillWarpRangeMap(struct Unit *unit_act, struct Unit *unit_tar) {
     int x, y;
 

@@ -737,3 +737,6 @@ Select a unit to target.[X]
 
 # 0x04F1
 Type[.][X]
+
+# 0x0204
+Crystal[X]

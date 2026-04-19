@@ -307,6 +307,13 @@ PlayEmotionEffect(UpArrowEffect)
 SOUN 0xEF
 STAL 0x16
 EndEvent
+ALIGN 4
+GenericDebuffEvent:
+CAM1 0xFFFF
+PlayEmotionEffect(DownArrowEffect)
+SOUN 0x124
+STAL 0x16
+EndEvent
 
 ALIGN 4
 GenericMusicNoteEvent:
@@ -380,6 +387,12 @@ UNIT
 }
 {
 #include "Chapters/Chapter8.event"
+}
+{
+#include "Chapters/Chapter13.event"
+}
+{
+#include "Chapters/Chapter14.event"
 }
 
 //start revolution playing in ch16 at the difficulty adjustment screen

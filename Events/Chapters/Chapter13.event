@@ -1,0 +1,115 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events13ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [0,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [0,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [1,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [25,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [25,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [25,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [26,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [26,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [26,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+CutsceneUnits:
+UNIT
+
+EnemyUnits:
+//military is guards
+UNIT MilitaryGeneric Landsknecht 0x0 Level(16,Enemy,1) [4,9] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
+//freelance is senators
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [6,8] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [6,10] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [8,11] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [14,5] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [14,13] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [18,7] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [18,11] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [20,8] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [20,10] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [11,7] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [11,11] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [13,7] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [15,7] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT FreelanceGeneric Seeker 0x0 Level(16,Enemy,1) [15,11] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+//bosses
+UNIT Iseau Fencer 0x0 Level(18,Enemy,1) [9,1] 0x0 0x0 0x0 0x0 [JollyRoger,FrailtyAura,ShieldAura,HasteAura] NoAI
+UNIT Stephen Runemaster 0x0 Level(18,Enemy,1) [13,2] DropItem 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT Angelica Medic 0x0 Level(17,Enemy,1) [17,1] DropItem 0x0 0x0 0x0 [Asclepius] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+LOAD1 0x1 EnemyUnits; ENUN
+//SetUnitStatline(MonsterBoss,27,12,3,13,15,1,6,5)
+//SetUnitWEXP(MonsterBoss,0,0,0,0,0)
+//Text(Chapter3_Opening_1)
+CallPreps
+EndEvent
+
+EndingScene:
+EndingSceneToggles
+ENUT Chapter13DoneFlag
+MUSC 0x0
+//CleanTextNoMap(0x18,Chapter3_Ending_1)
+MoveToChapter(HirschringSquare)
+ENDA
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

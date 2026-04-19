@@ -152,6 +152,14 @@ Antimatter
 Divinity
 RootCyclone
 Hopebringer
+SappingAura
+FrailtyAura
+SluggishAura
+MistyAura
+FierceAura
+ShieldAura
+HasteAura
+PreciseAura
 Vulnerary 0xC8
 Elixir
 Medica

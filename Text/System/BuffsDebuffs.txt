@@ -189,9 +189,43 @@ Cripple Whip[X]
 
 ##BreakingPulseLabel
 Breaking Ps.[X]
-##BrerakingPulseDesc1
+##BreakingPulseDesc1
 0.9x Def.[X]
-##BrerakingPulseDesc2
+##BreakingPulseDesc2
 0.8x Def.[X]
-##BrerakingPulseDesc3
+##BreakingPulseDesc3
 0.7x Def.[X]
+
+##FierceAuraLabel
+Fierce Aura[X]
+##FierceAuraDesc
+1.5x Atk.[X]
+##ShieldAuraLabel
+Shield Aura[X]
+##ShieldAuraDesc
+1.5x Def.[X]
+##HasteAuraLabel
+Haste Aura[X]
+##HasteAuraDesc
+1.5x AS.[X]
+##PreciseAuraLabel
+Precise Aura[X]
+##PreciseAuraDesc
+1.5x Hit.[X]
+
+##SappingAuraLabel
+Sapping Aura[X]
+##SappingAuraDesc
+0.5x Atk.[X]
+##FrailtyAuraLabel
+Frailty Aura[X]
+##FrailtyAuraDesc
+0.5x Def.[X]
+##SluggishAuraLabel
+Sluggish Aura[X]
+##SluggishAuraDesc
+0.5x AS.[X]
+##MistyAuraLabel
+Misty Aura[X]
+##MistyAuraDesc
+0.5x Hit.[X]

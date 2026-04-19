@@ -7,6 +7,7 @@ extern struct PlaySt gChapterData; //! FE8U = (0x202BCF0)
 
 extern u16 GenericHealEvent;
 extern u16 GenericBuffEvent;
+extern u16 GenericDebuffEvent;
 extern u16 GenericMusicNoteEvent;
 extern u16 GenericMoneyEvent;
 extern u16 GenericAutomatonEvent;

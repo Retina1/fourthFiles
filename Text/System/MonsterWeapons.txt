@@ -140,6 +140,56 @@ Simple Ring[X]
 A basic ring that tempers the self.[N]
 The wearer cannot critically strike.[X]
 
+##Name_SappingAura
+Sapping[0xBC]Aura[X]
+##Desc_SappingAura ^
+A pervasive aura of weakness.[N]
+After attacking, foe and foes within[N]
+3 tiles Inf. with 0.5x Atk (3 turns).[X]
+##Name_FrailtyAura
+Frailty Aura[X]
+##Desc_FrailtyAura ^
+A pervasive aura of brittleness.[N]
+After attacking, foe and foes within[N]
+3 tiles Inf. with 0.5x Def (3 turns).[X]
+##Name_SluggishAura
+Slug. Aura[X]
+##Desc_SluggishAura ^
+A pervasive aura of lethargy.[N]
+After attacking, foe and foes within[N]
+3 tiles Inf. with 0.5x AS (3 turns).[X]
+##Name_MistyAura
+Misty Aura[X]
+##Desc_MistyAura ^
+A pervasive aura of disorientation.[N]
+After attacking, foe and foes within[N]
+3 tiles Inf. with 0.5x Hit (3 turns).[X]
+
+##Name_FierceAura
+Fierce Aura[X]
+##Desc_FierceAura ^
+A pervasive aura of sheer power.[N]
+After attacking, user and allies within[N]
+3 tiles Inf. with 1.5x Atk (3 turns).[X]
+##Name_ShieldAura
+Shield Aura[X]
+##Desc_ShieldAura ^
+A pervasive aura of guarding power.[N]
+After attacking, user and allies within[N]
+3 tiles Inf. with 1.5x Def (3 turns).[X]
+##Name_HasteAura
+Haste Aura[X]
+##Desc_HasteAura ^
+A pervasive aura of hastening power.[N]
+After attacking, user and allies within[N]
+3 tiles Inf. with 1.5x AS (3 turns).[X]
+##Name_PreciseAura
+Precise Aura[X]
+##Desc_PreciseAura ^
+A pervasive aura of focusing power.[N]
+After attacking, user and allies within[N]
+3 tiles Inf. with 1.5x Hit (3 turns).[X]
+
 ##Use_PassiveItem
 Grants a[N]
 passive boon.[X]

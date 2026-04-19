@@ -54,8 +54,11 @@ SappingStance3Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
 Ignition1Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
 Ignition2Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
 Ignition3Debuff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-BreakingPulse1Debuff,BreakingPulseLabel,BrerakingPulseDesc1,1,1,1,1,1,1,1,1,1,1,1,9,10,1,1,0
-BreakingPulse2Debuff,BreakingPulseLabel,BrerakingPulseDesc2,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
-BreakingPulse3Debuff,BreakingPulseLabel,BrerakingPulseDesc3,3,1,1,1,1,1,1,1,1,1,1,7,10,1,1,0
-OPEN,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+BreakingPulse1Debuff,BreakingPulseLabel,BreakingPulseDesc1,1,1,1,1,1,1,1,1,1,1,1,9,10,1,1,0
+BreakingPulse2Debuff,BreakingPulseLabel,BreakingPulseDesc2,2,1,1,1,1,1,1,1,1,1,1,4,5,1,1,0
+BreakingPulse3Debuff,BreakingPulseLabel,BreakingPulseDesc3,3,1,1,1,1,1,1,1,1,1,1,7,10,1,1,0
+SappingAuraDebuff,SappingAuraLabel,SappingAuraDesc,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,0
+FrailtyAuraDebuff,FrailtyAuraLabel,FrailtyAuraDesc,3,1,1,1,1,1,1,1,1,1,1,1,2,1,1,0
+SluggishAuraDebuff,SluggishAuraLabel,SluggishAuraDesc,3,1,1,1,1,1,1,1,1,1,2,1,1,1,1,0
+MistyAuraDebuff,MistyAuraLabel,MistyAuraDesc,3,1,1,1,2,1,1,1,1,1,1,1,1,1,1,0
 OPEN,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0

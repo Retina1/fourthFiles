@@ -40,6 +40,28 @@ int getUnitItemCrit(struct Unit *attacker, int item) {
 	return GetItemCrit(item) + GetUnitSkill(attacker) / 2;
 }
 
+
+bool UnitHasAnyBuff(struct Unit* unit) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	if (entry->buff1) return 1;
+	else return 0;
+};
+
+bool UnitHasAnyDebuff(struct Unit* unit) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	if (entry->debuff1) return 1;
+	else return 0;
+};
+
+bool unitHasAura(struct Unit* unit) {
+  for (int i = 0; i < 5; i += 1) {
+    int item = ITEM_INDEX(unit->items[i]);
+	if (item == 0) return FALSE;
+    if ((0xa4 <= item) && (item <= 0xab)) return TRUE;
+  }
+  return FALSE;
+}
+
 bool isCritty(struct Unit* attacker, int defLuc) {
   for (int i = 0; i < 5; i += 1) {
     int item = ITEM_INDEX(attacker->items[i]);
@@ -192,11 +214,13 @@ void PutUnitSpriteIconsOam(void)
     };
 
     s8 displayRescueIcon = (GetGameClock() % 32) < 20 ? 1 : 0;
+    s8 displayIcons = (GetGameClock() % 96) / 33; //gives 0, 1, 2
 
+/*
     int poisonIconFrame = GetGameClock() / 8 % ARRAY_COUNT(sPoisonIconSprites);
     int sleepIconFrame = GetGameClock() / 16 % ARRAY_COUNT(sSleepIconSprites);
     int berserkIconFrame = GetGameClock() / 8 % ARRAY_COUNT(sBerserkIconSprites);
-    int silenceIconFrame = GetGameClock() / 4 % ARRAY_COUNT(sSilenceIconSprites);
+*/
 
     if (CheckFlag(EVFLAG_HIDE_BLINKING_ICON) != 0)
         return;
@@ -215,6 +239,7 @@ void PutUnitSpriteIconsOam(void)
 
     for (i = 1; i < 0xc0; i++)
     {
+		//current bug - explodes if oam is full
         struct Unit * unit = GetUnit(i);
 
         if (!UNIT_IS_VALID(unit)) {
@@ -271,61 +296,75 @@ void PutUnitSpriteIconsOam(void)
 			}
 		}
 		
-        switch (unit->statusIndex) {
-			case UNIT_STATUS_POISON:
-				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x - 2), OAM0_Y(0x100+y - 4), sPoisonIconSprites[poisonIconFrame], 0);
-				break;
+		if (displayIcons == 0) {
+			switch (unit->statusIndex) {
+				case UNIT_STATUS_POISON:
+				//	CallARM_PushToSecondaryOAM(OAM1_X(0x200+x - 2), OAM0_Y(0x100+y - 4), sPoisonIconSprites[poisonIconFrame], 0);
+					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x864);
+					break;
 
-			case UNIT_STATUS_SILENCED:
-				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x - 2), OAM0_Y(0x100+y - 4), sSilenceIconSprites[silenceIconFrame], 0);
-				break;
+				case UNIT_STATUS_SLEEP:
+				//	CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + 2), OAM0_Y(0x100+y), sSleepIconSprites[sleepIconFrame], 0);
+					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x869);
+					break;
 
-			case UNIT_STATUS_SLEEP:
-				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + 2), OAM0_Y(0x100+y), sSleepIconSprites[sleepIconFrame], 0);
-				break;
+				case UNIT_STATUS_BERSERK:
+				//	CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + 1), OAM0_Y(0x100+y - 5), sBerserkIconSprites[berserkIconFrame], 0);
+					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x823);
+					break;
 
-			case UNIT_STATUS_BERSERK:
-				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + 1), OAM0_Y(0x100+y - 5), sBerserkIconSprites[berserkIconFrame], 0);
-				break;
-
-			case UNIT_STATUS_BLIND:
-				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + displayRescueIcon), OAM0_Y(0x100+y-2), gObject_8x8, 0x866);
-				break;
-			case UNIT_STATUS_PARALYZE:
-				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + displayRescueIcon), OAM0_Y(0x100+y-2), gObject_8x8, 0x847);
-				break;
-			case UNIT_STATUS_CURSE:
-				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + displayRescueIcon), OAM0_Y(0x100+y-2), gObject_8x8, 0x846);
-				break;
-
-        }
-		
-		if (UnitHasBind(unit)) {
-			CallARM_PushToSecondaryOAM(OAM1_X(0x200+x - displayRescueIcon), OAM0_Y(0x100+y + 7), gObject_8x8, 0x867);
+				case UNIT_STATUS_BLIND:
+					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x866);
+					break;
+				case UNIT_STATUS_PARALYZE:
+					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x847);
+					break;
+				case UNIT_STATUS_CURSE:
+					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x846);
+					break;
+			}
+		}
+		else if (displayIcons == 1) {
+			if (UnitHasBind(unit)) {
+				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x867);
+			}	
+		}		
+		else if (displayIcons == 2) {
+			u8 hasBuff = UnitHasAnyBuff(unit);
+			u8 hasDebuff = UnitHasAnyDebuff(unit);
+			
+			if (hasBuff && hasDebuff) {
+				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x868);
+			}
+			else if (hasBuff) {
+				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x848);
+			}
+			else if (hasDebuff) {
+				CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x849);
+			}
 		}
 				
 		switch (kd) {
 			case NOTHING:
 			  break;
 			case WARN_EFF:
-			  CallARM_PushToSecondaryOAM(
-				  OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), EffectiveWarningTileData, 0
-			  );
+			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), EffectiveWarningTileData, 0);
 			  break;
 			case WARN_CRIT:
-			  CallARM_PushToSecondaryOAM(
-				  OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), CritWarningTileData, 0
-			  );
+			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), CritWarningTileData, 0);
 			  break;
 			case CAN_TALK:
-			  CallARM_PushToSecondaryOAM(
-				  OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), TalkBubbleTileData, 0
-			  );
+			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), TalkBubbleTileData, 0);
 			  break;
+		}
+		
+		if (unitHasAura(unit) && displayRescueIcon) {
+			CallARM_PushToSecondaryOAM(OAM1_X(0x200+x), OAM0_Y(0x100+y + 7), gObject_8x8, 0x865);
 		}
 		
         if (!displayRescueIcon)
             continue;
+		
 
         if (unit->state & US_RESCUING)
         {

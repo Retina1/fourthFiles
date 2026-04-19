@@ -2,6 +2,31 @@ extern struct Unit * GetUnitStructFromEventParameter(s16 pid);
 
 extern char gCurrentTextString[];
 
+//ch14
+void Ch14UndeployUnitsASMC(struct EventEngineProc* proc) {
+	struct Unit* unit = NULL;
+	for (int j = 0; j < 0x40; j++) {
+		unit =  gUnitLookup[j];
+		if (!UNIT_IS_VALID(unit)) {
+			continue;
+		}
+		//if not nate astarte or gore
+		if (unit->pCharacterData->number > 3) {
+			unit->state = (unit->state) | (0x1|US_NOT_DEPLOYED);
+			SetUnitStatus(unit, UNIT_STATUS_NONE);
+			unit->isHeadBound = 0;
+			unit->isLegBound = 0;
+			unit->isArmBound = 0;
+			unit->bindDuration = 0;
+			unit->classSkillState = 0;
+			unit->rescue = 0;
+			unit->supportBits = 0;
+			SetUnitHp(unit, GetUnitMaxHp(unit));
+			SetActiveArt(unit, 0);
+		}
+	}
+}
+
 void DMATestASMC(struct EventEngineProc* proc) {
     /*
 	thanks zane IHRD

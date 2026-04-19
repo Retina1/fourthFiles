@@ -82,6 +82,22 @@ She descends from a military lineage.[X]
 A rising imperial driver of Asketa.[N]
 She's pragmatic about her duties.[X]
 
+##Name_Stephen
+Stephen[X]
+##Desc_Stephen
+The prime minister of Belvarus.[N]
+He's evenhanded and shrewd.[X]
+##Name_Iseau
+Iseau[X]
+##Desc_Iseau
+The commander of Belvarus's military.[N]
+She's a true strategic mastermind.[X]
+##Name_Angelica
+Angelica[X]
+##Desc_Angelica
+The head of Belvarus's agriculture and[N]
+health ministry. She's very no-nonsense.[X]
+
 ##Name_Swift
 Swift[X]
 ##Desc_Swift

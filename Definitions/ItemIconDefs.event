@@ -152,6 +152,14 @@
 #define DivinityIcon 0xA1
 #define RootCycloneIcon 0xA2
 #define HopebringerIcon 0xA3
+#define SappingAuraIcon 0xA4
+#define FrailtyAuraIcon 0xA5
+#define SluggishAuraIcon 0xA6
+#define MistyAuraIcon 0xA7
+#define FierceAuraIcon 0xA8
+#define ShieldAuraIcon 0xA9
+#define HasteAuraIcon 0xAA
+#define PreciseAuraIcon 0xAB
 #define VulneraryIcon 0xC8
 #define ElixirIcon 0xC9
 #define MedicaIcon 0xCA

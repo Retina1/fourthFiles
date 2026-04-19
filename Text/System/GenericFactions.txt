@@ -72,3 +72,15 @@ Benthus's[X]
 ##Desc_BenthusArmy
 A sellsword or something of the sort[N]
 fighting under Benthus's command.[X]
+
+##Name_BelvarusGuard
+Guardsman[X]
+##Desc_BelvarusGuard
+An esteemed guard posted in[N]
+the Belvarus Senate Hall.[X]
+
+##Name_Senator
+Senator[X]
+##Desc_Senator
+An elected official of Belvarus,[N]
+armed with words over steel.[X]

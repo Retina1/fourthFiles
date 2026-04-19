@@ -70,15 +70,15 @@ UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [
 UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
 UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [12,0] 0x0 0x0 0x0 0x0 [Boarblade] DelayedAI
 UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [1,14] 0x0 0x0 0x0 0x0 [Shortspear] DelayedAI
-UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [4,13] 0x0 0x0 0x0 0x0 [HandSpear] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [4,13] 0x0 0x0 0x0 0x0 [HandSpear,HasteAura] DelayedAI
 UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [13,13] 0x0 0x0 0x0 0x0 [Shieldlance] DelayedAI
-UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [HandSpear] ChaseOnceApproachedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [HandSpear,HasteAura] ChaseOnceApproachedAI
 UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [Pike] ChaseOnceApproachedAI
 UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [18,13] 0x0 0x0 0x0 0x0 [Recurve] ChaseOnceApproachedAI
 UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [19,12] 0x0 0x0 0x0 0x0 [Longbow] ChaseOnceApproachedAI
 UNIT FreelanceGeneric Rider 0x0 Level(8,Enemy,1) [20,15] 0x0 0x0 0x0 0x0 [Partizan] ChaseOnceApproachedAI
-UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [ThornWhip] NoAI
-UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [11,7] 0x0 0x0 0x0 0x0 [ThornWhip] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [ThornWhip,SappingAura] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [11,7] 0x0 0x0 0x0 0x0 [ThornWhip,FrailtyAura] NoAI
 
 UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [18,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
 UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [18,8] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI

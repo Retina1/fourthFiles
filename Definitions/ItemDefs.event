@@ -152,6 +152,14 @@
 #define Divinity 0xA1
 #define RootCyclone 0xA2
 #define Hopebringer 0xA3
+#define SappingAura 0xA4
+#define FrailtyAura 0xA5
+#define SluggishAura 0xA6
+#define MistyAura 0xA7
+#define FierceAura 0xA8
+#define ShieldAura 0xA9
+#define HasteAura 0xAA
+#define PreciseAura 0xAB
 #define Vulnerary 0xC8
 #define Elixir 0xC9
 #define Medica 0xCA

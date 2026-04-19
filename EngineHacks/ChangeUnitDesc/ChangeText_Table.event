@@ -8,6 +8,9 @@
 #define HallowedChapter(chapterid) "csvmacro000(Name_Monster,Name_Hallowed,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Monster,Desc_Hallowed,0x00, 0x00, chapterid,0xFF,0x00)"
 #define WorldcoreChapter(chapterid) "csvmacro000(Name_Monster,Name_Worldcore,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Monster,Desc_Worldcore,0x00, 0x00, chapterid,0xFF,0x00)"
 
+#define BelvarusGuardsChapter(chapterid) "csvmacro000(Name_Asketa,Name_BelvarusGuard,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Asketa,Desc_BelvarusGuard,0x00, 0x00, chapterid,0xFF,0x00)"
+#define SenateChapter(chapterid) "csvmacro000(Name_Guild,Name_Senator,0x00, 0x00, chapterid,0xFF,0x00); csvmacro000(Desc_Guild,Desc_Senator,0x00, 0x00, chapterid,0xFF,0x00)"
+
 
 
 ChangeStatusBGEachChapter_Table:
@@ -19,6 +22,9 @@ EndbringerChapter(Chapter6)
 BelvarusChapter(Chapter6)
 EndbringerChapter(Chapter7)
 BenthusArmyChapter(Chapter8)
+
+BelvarusGuardsChapter(Chapter13)
+SenateChapter(Chapter13)
 
 EndbringerChapter(Chapter18C)
 

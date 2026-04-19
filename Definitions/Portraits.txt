@@ -220,6 +220,9 @@ AnhingaMug
 AuntAysuMug
 PhaedraMug
 AscellaMug
+StephenMug
+IseauMug
+AngelicaMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

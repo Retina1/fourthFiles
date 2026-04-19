@@ -59,6 +59,24 @@ ItemIconEntry(StonardIcon)
 ItemIconEntry(InedibleLeafIcon)
 #incbin "Dmp/{Beansy} Herbs [F2E].dmp"
 
+//AURAS
+ItemIconEntry(FrailtyAuraIcon)
+#incbin "Dmp/FrailtyAura.dmp"
+ItemIconEntry(SappingAuraIcon)
+#incbin "Dmp/SappingAura.dmp"
+ItemIconEntry(SluggishAuraIcon)
+#incbin "Dmp/SluggishAura.dmp"
+ItemIconEntry(MistyAuraIcon)
+#incbin "Dmp/MistyAura.dmp"
+ItemIconEntry(FierceAuraIcon)
+#incbin "Dmp/FierceAura.dmp"
+ItemIconEntry(ShieldAuraIcon)
+#incbin "Dmp/ShieldAura.dmp"
+ItemIconEntry(HasteAuraIcon)
+#incbin "Dmp/HasteAura.dmp"
+ItemIconEntry(PreciseAuraIcon)
+#incbin "Dmp/PreciseAura.dmp"
+
 //GASES
 ItemIconEntry(BlindGasIcon)
 #incbin "Dmp/BlindGas.dmp"

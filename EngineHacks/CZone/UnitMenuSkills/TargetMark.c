@@ -51,6 +51,7 @@ void TargetMarkTargetInit(struct SelectTargetProc* targetProc) {
 
 int TargetMarkAction(struct MenuProc* menu) { 
 	gActiveUnit->state |= US_HAS_MOVED|US_CANTOING; 
+	CallEvent(&GenericDebuffEvent, 0x1);
 	//gActiveUnit->state &= ~US_CANTOING; 
 	struct Unit* targetUnit = GetUnit(gActionData.targetIndex);
 	

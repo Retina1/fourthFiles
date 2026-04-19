@@ -660,8 +660,8 @@ Curse to bow down and give items.[X]
 
 //dht
 ##MSS_Opportunistic
-Opportunistic: Double ailing[N]
-enemies before counterattacks.[X]
+Opportunistic: Double enemies[N]
+before counterattacks.[X]
 ##
 Limber: This unit's ailments and[N]
 binds last one fewer turn.[X]

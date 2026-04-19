@@ -13,6 +13,7 @@ void RunPostCombatSkills(void)
 		ApplyRichLiving(attacker,defender);
 		ApplyRallyingThrust(attacker,defender);
 		CombatArtPostbattleFuncWrapper(attacker, defender);
+		ApplyBuffDebuffAOEs(attacker, defender);
 		infoIconCache->hpCache[attacker->index] = GetUnitMaxHp(attacker);
 		infoIconCache->hpCache[defender->index] = GetUnitMaxHp(defender);
 	}

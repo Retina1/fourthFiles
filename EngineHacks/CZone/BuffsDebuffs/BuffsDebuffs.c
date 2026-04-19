@@ -342,3 +342,90 @@ void ExecBuffItem(ProcPtr proc) {
 
     return;
 }
+
+void ApplyBuffDebuffAOEs(struct Unit* actor, struct Unit* target){
+	u8 isBuffDebuff = 0; //0 - neither, 1 - buff, 2 - debuff
+	u8 buffIndex = 0;
+	if (GetUnitCurrentHp(actor) > 0) {
+		for(int j = 0; j < GetUnitItemCount(actor); j++) {
+			u16 curItem = actor->items[j];
+			//i'm sorry
+			switch(curItem) {
+				case 0xa4:
+					isBuffDebuff = 2;
+					buffIndex = DEBUFF_SAPPINGAURA;
+					break;
+				case 0xa5:
+					isBuffDebuff = 2;
+					buffIndex = DEBUFF_FRAILTYAURA;
+					break;
+				case 0xa6:
+					isBuffDebuff = 2;
+					buffIndex = DEBUFF_SLUGGISHAURA;
+					break;
+				case 0xa7:
+					isBuffDebuff = 2;
+					buffIndex = DEBUFF_MISTYAURA;
+					break;
+				case 0xa8:
+					isBuffDebuff = 1;
+					buffIndex = BUFF_FIERCEAURA;
+					break;
+				case 0xa9:
+					isBuffDebuff = 1;
+					buffIndex = BUFF_SHIELDAURA;
+					break;
+				case 0xaa:
+					isBuffDebuff = 1;
+					buffIndex = BUFF_HASTEAURA;
+					break;
+				case 0xab:
+					isBuffDebuff = 1;
+					buffIndex = BUFF_PRECISEAURA;
+					break;
+				default:
+					isBuffDebuff = 0;
+					buffIndex = 0;
+					break;
+			}
+			if (isBuffDebuff != 0) {
+				u8* unitBuffer;
+				int i = 0;
+				int index;
+				Unit* other;
+				switch(isBuffDebuff) {
+					case 1:
+						CallEvent(&GenericBuffEvent, 0x1);
+						UnitApplyBuff(actor,buffIndex);
+						unitBuffer = GetUnitsInRange(actor,1, 3);
+						if (unitBuffer == FALSE)
+							break;
+						while (unitBuffer[i]){
+							index = unitBuffer[i];
+							other = gUnitLookup[index];
+							UnitApplyBuff(other,buffIndex);
+							i++;
+						}
+						break;
+					case 2:
+						CallEvent(&GenericDebuffEvent, 0x1);
+						UnitApplyDebuff(target,buffIndex);
+						unitBuffer = GetUnitsInRange(target,1, 3);
+						if (unitBuffer == FALSE)
+							break;
+						while (unitBuffer[i]){
+							index = unitBuffer[i];
+							other = gUnitLookup[index];
+							UnitApplyDebuff(other,buffIndex);
+							i++;
+						}
+						break;
+					default:
+						break;
+				}
+			}
+		}
+		
+		
+	}
+}
