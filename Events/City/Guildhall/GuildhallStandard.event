@@ -46,6 +46,9 @@ UNIT
 Recruit_Meilie:
 UNIT Meilie 0x0 0x1 Level(4,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Shortspear,Vulnerary] NoAI
 UNIT
+Recruit_Shion:
+UNIT Shion 0x0 0x1 Level(5,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Shortspear,Medica] NoAI
+UNIT
 
 Recruit_Esketit:
 UNIT Esketit 0x0 0x1 Level(6,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace] NoAI
@@ -83,6 +86,9 @@ UNIT Victoria 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Arquebus] NoAI
 UNIT
 Recruit_Laiteuse:
 UNIT Laiteuse 0x0 0x1 Level(1,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Handgonne,Vulnerary] NoAI
+UNIT
+Recruit_Judy:
+UNIT Judy 0x0 0x1 Level(6,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Handgonne] NoAI
 UNIT
 
 //myrm
@@ -124,6 +130,9 @@ EndEvent
 Meilie_RecruitEvent:
 GuildRecruit(Meilie,Guild_Meilie_Dialogue,0x25)
 EndEvent
+Shion_RecruitEvent:
+GuildRecruit(Shion,Guild_Shion_Dialogue,0x26)
+EndEvent
 
 //raider
 Esketit_RecruitEvent:
@@ -164,11 +173,14 @@ EndEvent
 Laiteuse_RecruitEvent:
 GuildRecruit(Laiteuse,Guild_Laiteuse_Dialogue,0x25)
 EndEvent
+Judy_RecruitEvent:
+GuildRecruit(Judy,Guild_Judy_Dialogue,0x26)
+EndEvent
 
 GuildhallLoadMyrmidons:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
-GuildLoad(Natsuki,Recruit_Natsuki,0x1,Quest2_8x_Flag)
+GuildLoadQuest(Natsuki,Recruit_Natsuki,0x1,Quest2_8x_Flag)
 GuildLoad(Mikayla,Recruit_Mikayla,0x2)
 GuildLoad(Calliope,Recruit_Calliope,0x3)
 GuildLoad(Ghari,Recruit_Ghari,0x4,Chapter5DoneFlag)
@@ -186,6 +198,7 @@ GuildLoad(Kolette,Recruit_Kolette,0x3)
 GuildLoad(Pallas,Recruit_Pallas,0x4)
 GuildLoad(Emblem,Recruit_Emblem,0x5,Chapter8DoneFlag)
 GuildLoad(Meilie,Recruit_Meilie,0x6)
+GuildLoad(Shion,Recruit_Shion,0x7)
 FADU 10
 ENDA
 
@@ -205,11 +218,12 @@ GuildhallLoadGunners:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 GuildLoad(Martin,Recruit_Martin,0x1)
-GuildLoadQuest(Demico,Recruit_Demico,0x2,Quest2_S1x_Flag)
+GuildLoadQuest(Demico,Recruit_Demico,0x2,Quest2_S1x_DoneFlag)
 GuildLoad(Karl,Recruit_Karl,0x3)
 GuildLoad(Wasp,Recruit_Wasp,0x4,Chapter8DoneFlag)
 GuildLoad(Victoria,Recruit_Victoria,0x5)
 GuildLoad(Laiteuse,Recruit_Laiteuse,0x6)
+GuildLoad(Judy,Recruit_Judy,0x7)
 FADU 10
 ENDA
 

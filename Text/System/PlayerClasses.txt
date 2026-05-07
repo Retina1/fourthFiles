@@ -133,7 +133,7 @@ through their versatile runes.[X]
 ##Class_Priest
 Priest[X]
 ##ClassDesc_Priest
-Holy fighters who supplant their[N]
+Holy fighters who supplement their[N]
 swordplay with supportive magic.[X]
 ##Class_WarMagus
 War Magus[X]

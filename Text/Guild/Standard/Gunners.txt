@@ -76,3 +76,16 @@ deny here[A][X]
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Laiteuse]
 return here[A][X]
 
+##Guild_Judy_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Judy]
+Judy here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Judy]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Judy]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Judy]
+return here[A][X]
+

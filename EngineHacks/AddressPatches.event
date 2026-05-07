@@ -2,6 +2,17 @@
 //dat 0x0203E12A, gAnimRoundData
 //dat 0x0203E156, gEfxHpLut
 
+// AI to account for doubling 
+PUSH 
+ORG $3DF4A
+BYTE $72 $22 $D2 $18 $12 $78 $D8 $7C $12 $1A $C0 $46 $C0 $46 $C0 $46 $C0 $46
+POP 
+/*
+mov r2, #0x72; add r2, r3 @ dfdr + 0x72 (initial hp) 
+ldrb r2, [r2]; ldrb r0, [r3, #0x13] @ curr hp after battle 
+sub r2, r0 @ dmg dealt; nop; nop; nop; nop 
+*/
+
 //don't gameover if no untis exist
 PUSH
 ORG 0x019024

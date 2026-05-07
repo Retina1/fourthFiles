@@ -29,6 +29,18 @@ setMugEntryExtend(TychoMug,TychoDMP,2,5,2,3, 0,2, 0,0)
 
 
 ALIGN 4
+//ditto
+TachyonDMP:
+#incbin "dmps/dittoTachyon.dmp"
+setMugEntry(TachyonMug,TachyonDMP,3,6,3,4)
+
+ALIGN 4
+//t0w0mey
+WhirlDMP:
+#incbin "dmps/t0w0meyWhirl.dmp"
+setMugEntry(WhirlMug,WhirlDMP,3,5,3,3)
+
+ALIGN 4
 //generic
 AnhingaDMP:
 #incbin "dmps/genericAnhinga.dmp"

@@ -1,16 +1,3 @@
-##Guild_Aizen_Dialogue
-[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
-Aizen here[A][X]
-##
-[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
-accept here[A][X]
-##
-[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
-deny here[A][X]
-##
-[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
-return here[A][X]
-
 ##Guild_Johnnie_Dialogue
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Johnnie]
 Johnnie here[A][X]
@@ -75,3 +62,51 @@ deny here[A][X]
 ##
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Meilie]
 return here[A][X]
+
+##Guild_Shion_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Shion]
+Shion here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Shion]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Shion]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Shion]
+return here[A][X]
+
+##Guild_Aizen_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
+You need a lance? Well,[N]
+count yourself lucky.[AN]
+The name's Aizen, and I'm[N]
+not too bad, if do I say so.[AN][FarLeft]
+I'll be the judge of that.[AN]
+Hm[...][A][MoveFarLeft] You're solid.[A] Go on.[AN][MidRight]
+That's[...] That's about it, really.[AN]
+Just out here tryin' to make a[N]
+good name and good money.[AN]
+You ever hear of my brother,[N]
+Alphen?[A] He's the star of[N]
+our town guard.[AN][FarLeft]
+Can't say I have.[AN][MidRight]
+Fair. He's a local hero.[AN]
+And that's what I wanna[N]
+become one day too.[AN]
+So, what do you say?[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
+Thanks! I look forward[N]
+to beginning my legend.[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
+Well, alright.[AN][Clear][FarLeft]
+Guess you've never heard[N]
+of his brother, either.[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Aizen]
+You, again? Well, if you'll[N]
+have me, I'll gladly join.[AN]
+I know I have to start my[N]
+journey somewhere.[A][X]

@@ -214,7 +214,7 @@ void PutUnitSpriteIconsOam(void)
     };
 
     s8 displayRescueIcon = (GetGameClock() % 32) < 20 ? 1 : 0;
-    s8 displayIcons = (GetGameClock() % 96) / 33; //gives 0, 1, 2
+    s8 displayIcons = (GetGameClock() % 96) / 32; //gives 0, 1, 2
 
 /*
     int poisonIconFrame = GetGameClock() / 8 % ARRAY_COUNT(sPoisonIconSprites);
@@ -240,6 +240,7 @@ void PutUnitSpriteIconsOam(void)
     for (i = 1; i < 0xc0; i++)
     {
 		//current bug - explodes if oam is full
+		//almost solved - make cycling icons disappear if unit is selected?
         struct Unit * unit = GetUnit(i);
 
         if (!UNIT_IS_VALID(unit)) {
@@ -348,13 +349,13 @@ void PutUnitSpriteIconsOam(void)
 			case NOTHING:
 			  break;
 			case WARN_EFF:
-			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), EffectiveWarningTileData, 0);
+			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x - 2), OAM0_Y(0x100 + y - 18), EffectiveWarningTileData, 0);
 			  break;
 			case WARN_CRIT:
-			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), CritWarningTileData, 0);
+			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x - 2), OAM0_Y(0x100 + y - 18), CritWarningTileData, 0);
 			  break;
 			case CAN_TALK:
-			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x + 11), OAM0_Y(0x100 + y - 18), TalkBubbleTileData, 0);
+			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x - 2), OAM0_Y(0x100 + y - 18), TalkBubbleTileData, 0);
 			  break;
 		}
 		

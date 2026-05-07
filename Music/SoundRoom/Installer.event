@@ -71,6 +71,7 @@ SoundRoomEntry(Song_ModernDayOuroboros, SongTitle_ModernDayOuroboros, SourceTitl
 SoundRoomEntry(Song_Drift, SongTitle_Drift, SourceTitle_GuiltyGearStrive,84)
 SoundRoomEntry(Song_NoOneIsAlone, SongTitle_NoOneIsAlone, SourceTitle_IntoTheWoods,15)
 SoundRoomEntry(Song_Maps, SongTitle_Maps, SourceTitle_YeahYeahYeahs,48)
+SoundRoomEntry(Song_TheKeyWeveLost, SongTitle_TheKeyWeveLost, SourceTitle_XenobladeX,85)
 SoundRoomEntry(Song_GloriaFilio, SongTitle_GloriaFilio, SourceTitle_Antibirth,64)
 SoundRoomEntry(Song_Biggering, SongTitle_Biggering, SourceTitle_TheLorax,19)
 //city 

@@ -66,7 +66,7 @@
 #define Pallas 0x42
 #define Emblem 0x43
 #define Meilie 0x44
-#define RIDE7 0x45
+#define Shion 0x45
 #define Esketit 0x46
 #define Gloria 0x47
 #define Pipsy 0x48
@@ -80,7 +80,7 @@
 #define Wasp 0x50
 #define Victoria 0x51
 #define Laiteuse 0x52
-#define GUN7 0x53
+#define Judy 0x53
 #define Leonzio 0x54
 #define Gunther 0x55
 #define Jacqwil 0x56
@@ -108,7 +108,7 @@
 #define Hausten 0x6C
 #define Ludovic 0x6D
 #define Ghevena 0x6E
-#define HEX7 0x6F
+#define Whirl 0x6F
 #define Luis 0x70
 #define Notre 0x71
 #define Wund 0x72

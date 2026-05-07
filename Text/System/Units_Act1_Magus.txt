@@ -172,7 +172,7 @@ power by the void. She's amicable.[X]
 Paul[X]
 ##Desc_Paul
 A former curate who couldn't heal[N]
-himself. ...He went slightly mad.[X]
+himself. He went slightly mad.[X]
 
 //tezuka
 ##Name_Hausten
@@ -194,3 +194,10 @@ Ghevena[X]
 ##Desc_Ghevena
 A former Belvarusi duelist now seeking[N]
 underhanded revenge. She's haughty.[X]
+
+//t0w0
+##Name_Whirl
+Whirl[X]
+##Desc_Whirl
+An idealistic mage in search of justice.[N]
+She's good at making an impression.[X]

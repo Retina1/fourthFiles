@@ -84,6 +84,13 @@ Meilie[X]
 A friendly and brash wanderer. She[N]
 has an intense competitive spirit.[X]
 
+//think
+##Name_Shion
+Shion[X]
+##Desc_Shion
+A talented rider who believes it's[N]
+her divine purpose to help the world.[X]
+
 //rasta
 ##Name_Esketit
 Esketit[X]
@@ -124,7 +131,7 @@ for his mother and sister's sake.[X]
 ##Name_Campbell
 Campbell[X]
 ##Desc_Campbell
-A business-minded axe rider with[N]
+A business-minded axe rider. He has[N]
 a background in field research.[X]
 
 //mancalledm
@@ -168,3 +175,9 @@ Laiteuse[X]
 ##Desc_Laiteuse
 A confident Guildleague clerk forced to[N]
 serve to repay debt. She's a klutz.[X]
+//think
+##Name_Judy
+Judy[X]
+##Desc_Judy
+A former bandit who reformed for her[N]
+love. She fights out of necessity.[X]

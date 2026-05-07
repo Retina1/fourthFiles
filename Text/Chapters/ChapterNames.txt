@@ -215,7 +215,7 @@ Act 3: Me and You[X]
 ##Name_St5C
 Imperial Palace[X]
 ##Name_Ch17C
-Truth Unearthed[X]
+Ancient History[X]
 ##Name_Ch18C
 A Fading Dream[X]
 ##Label_St6

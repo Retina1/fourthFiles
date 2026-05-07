@@ -254,7 +254,7 @@ mellowed out since. He's relaxed.[X]
 Trish[X]
 ##Desc_Trish
 A Belvarusi medic who's down on[N]
-her luck. Kindly and well-kept.[X]
+her luck. She's kind and well-kept.[X]
 
 //yunnuyun6969
 ##Name_Amos

@@ -16,7 +16,7 @@ void BattleUnwind(void) {
 			// if the initial hit doesn't kill:
 			// get desperation effect skill
 //			if (BATTLE_UNIT_HAS_SKILL(attacker->unit,DOM,skill_111) && ((defender->unit.bindDuration > 0) || (defender->unit.statusDuration > 0))) {
-			if (BATTLE_UNIT_HAS_SKILL(attacker->unit,DOM,skill_111)) {
+			if (BATTLE_UNIT_HAS_SKILL(attacker->unit,DOM,skill_111) && (GetActiveArt(&attacker->unit) == 0)) {
 				int desperationEnds = false; // names? idk
 				if ((attacker->battleSpeed - defender->battleSpeed > 3)) {
 					gBattleHitIterator->attributes = BATTLE_HIT_ATTR_FOLLOWUP;

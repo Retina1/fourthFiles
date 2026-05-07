@@ -498,7 +498,12 @@ SongTable(Song_TheSubway,TheSubway,1)
 SongTable(Song_Drift,Drift,1)
 #include "songs/Drift.event"
 }
+#define Song_TheKeyWeveLost 0xbb
+{
+SongTable(Song_TheKeyWeveLost,TheKeyWeveLost,1)
+#include "songs/TheKeyWeveLost.event"
+}
 /* free numbers
-bb c0 c1 c2 c3 c4 c5 c6 d9 da db
+c0 c1 c2 c3 c4 c5 c6 d9 da db
 e0 e1 e4 e8 e9 ec ee f3 104 105 106 107
 */

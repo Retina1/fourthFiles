@@ -34,7 +34,7 @@
 
     GE_Name: { String(GORGON); BYTE 0; };
 
-//    RESERVE(UI1_Start, UI1_End);
+    //RESERVE(UI1_Start, UI1_End);
   POP;
 
 // Freespace components

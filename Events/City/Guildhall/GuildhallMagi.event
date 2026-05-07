@@ -85,6 +85,9 @@ UNIT
 Recruit_Ghevena:
 UNIT Ghevena 0x0 0x1 Level(3,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Wand,Shortspear] NoAI
 UNIT
+Recruit_Whirl:
+UNIT Whirl 0x0 0x1 Level(5,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Staff] NoAI
+UNIT
 
 //poet
 Leonzio_RecruitEvent:
@@ -175,6 +178,9 @@ EndEvent
 Ghevena_RecruitEvent:
 GuildRecruit(Ghevena,Guild_Test_Dialogue,0x25)
 EndEvent
+Whirl_RecruitEvent:
+GuildRecruit(Whirl,Guild_Test_Dialogue,0x26)
+EndEvent
 
 GuildhallLoadPoets:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
@@ -223,7 +229,9 @@ GuildLoad(Szess,Recruit_Szess,0x1)
 GuildLoad(Zoe,Recruit_Zoe,0x2)
 GuildLoad(Paul,Recruit_Paul,0x3)
 GuildLoad(Hausten,Recruit_Hausten,0x4,Chapter8DoneFlag)
-GuildLoad(Ghevena,Recruit_Ghevena,0x5)
+GuildLoad(Ludovic,Recruit_Ludovic,0x5)
+GuildLoad(Ghevena,Recruit_Ghevena,0x6)
+GuildLoad(Whirl,Recruit_Whirl,0x7)
 FADU 10
 ENDA
 

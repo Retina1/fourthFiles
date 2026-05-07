@@ -67,6 +67,11 @@ Miles Davis[X]
 ##SongTitle_BlueInGreen
 Blue in Green[X]
 
+##SourceTitle_XenobladeX
+Xenoblade Chronicles X[X]
+##SongTitle_TheKeyWeveLost
+The Key We've Lost[X]
+
 ##SourceTitle_PokemonGSC ^
 Pokemon Gold/Silver/Crystal[X]
 ##SongTitle_DarkCave

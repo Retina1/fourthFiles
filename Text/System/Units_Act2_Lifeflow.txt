@@ -89,7 +89,7 @@ Guildleague. His powers inspire awe.[X]
 Dread Jenny[X]
 ##Desc_DreadJenny
 An ambitious teenager who aspires to be[N]
-a villainous necromancer. ...She's trying.[X]
+a villainous necromancer. She's... trying.[X]
 
 //hope
 ##Name_Quinn

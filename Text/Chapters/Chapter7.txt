@@ -1,0 +1,58 @@
+##C7Opening1
+[MidLeft][Nathan]
+outside, about to enter[A][X]
+
+##C7Opening2
+[MidLeft][Astoria]
+talkin to xavens[A][X]
+
+##C7Opening3
+[MidLeft][Nathan]
+inside[A][X]
+
+##C7Opening4
+[MidLeft][Nathan]
+inside ft crisis music[A][X]
+
+##C7Ending1
+[MidLeft][Nathan]
+we did it i guess[A][X]
+
+##C7Ending2
+[MidLeft][Nathan]
+searching, crystal down[A][X]
+
+##C7Ending3
+[MidLeft][Nathan]
+buildup to betrayal[A][X]
+
+##C7Ending4
+[MidLeft][Benthus]
+betrayal[A][X]
+
+##C7Ending5
+...Well. Looks like you've[N]
+a loyal dog, dear leader.[AN]
+I'd say a piece on blind[N]
+obedience, but...[AN]
+Well, that's more than a[N]
+little played out.[AN]
+No matter. I suppose[N]
+this is my resignation.[AN]
+Or rather, my ascension.[AN]
+I return the sole Hedge[N]
+survivor. Claim the glory.[AN]
+It's not unreasonable a[N]
+tale you all perished.[AN]
+...I've talked too much.[N]
+I'll let action speak.[AN]
+Farewell, Hedge.[A][X]
+
+##C7Ending6
+[MidLeft][Nathan]
+despair[A][X]
+
+##C7Ending7
+[MidLeft][Stephen]
+belvarus action[A][X]
+

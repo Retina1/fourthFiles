@@ -223,6 +223,9 @@ AscellaMug
 StephenMug
 IseauMug
 AngelicaMug
+WhirlMug
+JudyMug
+ShionMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

@@ -375,6 +375,10 @@ Must keep[...] running[...][A][EyesClose][X]
 [MidRight][Meilie]
 I[...] did well[...][N]
 Didn't[...] I[...]?[A][EyesClose][X]
+##ShionDeath
+[MidRight][Shion]
+I thought this[...] was[N]
+my calling[...] Judy[...][A][EyesClose][X]
 
 //raiders
 ##EsketitDeath
@@ -427,6 +431,10 @@ So very far[...][A][EyesClose][X]
 [MidRight][Laiteuse]
 Whoopsie[...] Guess I[...][N]
 goofed again[...][A][EyesClose][X]
+##JudyDeath
+[MidRight][Judy]
+I wanted to be[...][N]
+good for you[...] Shion[...][A][EyesClose][X]
 
 //poet
 ##LeonzioDeath
@@ -546,6 +554,10 @@ escape my fate[...][A][EyesClose][X]
 [MidRight][Ghevena]
 Revenge[...] I only wanted[...][N]
 my vengeance[...][A][EyesClose][X]
+##WhirlDeath
+[MidRight][Whirl][ToggleSmile]
+I lived[...] as I wished[...][N]
+All[...] I could ask for[...][A][EyesClose][X]
 
 //dhunt
 ##LuisDeath

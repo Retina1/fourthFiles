@@ -4,9 +4,6 @@
   <Module Name="DrawVertical"/>
 
 <!-- 
-<Module Name="FullInventoryDroppable"/>
-<Definition Name="INVENTORY_ICON_X" Value="112"/>
-<Definition Name="INVENTORY_ICON_Y" Value="0"/>
 add another row for avo/dodge/min damage?
 -->
 
@@ -90,6 +87,9 @@ add another row for avo/dodge/min damage?
     <Definition Name="CRT_Y" Value="48"/>
 -->
 
+  <Module Name="FullInventoryStandard"/>
+	<Definition Name="INVENTORY_ICON_X" Value="8"/>
+	<Definition Name="INVENTORY_ICON_Y" Value="41"/>
 
   <Module Name="FixMinimugPalette"/>
   <Module Name="GetCursorQuadrant"/>

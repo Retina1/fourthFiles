@@ -138,7 +138,7 @@ AlwaysDeathQuote(Kolette,0x0,KoletteDeath)
 AlwaysDeathQuote(Pallas,0x0,PallasDeath)
 AlwaysDeathQuote(Emblem,0x0,EmblemDeath)
 AlwaysDeathQuote(Meilie,0x0,MeilieDeath)
-
+AlwaysDeathQuote(Shion,0x0,ShionDeath)
 //raid
 AlwaysDeathQuote(Esketit,0x0,EsketitDeath)
 AlwaysDeathQuote(Gloria,0x0,GloriaDeath)
@@ -154,7 +154,7 @@ AlwaysDeathQuote(Karl,0x0,KarlDeath)
 AlwaysDeathQuote(Wasp,0x0,WaspDeath)
 AlwaysDeathQuote(Victoria,0x0,VictoriaDeath)
 AlwaysDeathQuote(Laiteuse,0x0,LaiteuseDeath)
-
+AlwaysDeathQuote(Judy,0x0,JudyDeath)
 //poet
 AlwaysDeathQuote(Leonzio,0x0,LeonzioDeath)
 AlwaysDeathQuote(Gunther,0x0,GuntherDeath)
@@ -186,7 +186,7 @@ AlwaysDeathQuote(Paul,0x0,PaulDeath)
 AlwaysDeathQuote(Hausten,0x0,HaustenDeath)
 AlwaysDeathQuote(Ludovic,0x0,LudovicDeath)
 AlwaysDeathQuote(Ghevena,0x0,GhevenaDeath)
-
+AlwaysDeathQuote(Whirl,0x0,WhirlDeath)
 //dh
 AlwaysDeathQuote(Luis,0x0,LuisDeath)
 AlwaysDeathQuote(Notre,0x0,NotreDeath)

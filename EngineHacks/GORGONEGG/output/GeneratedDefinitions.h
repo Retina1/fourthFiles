@@ -2,7 +2,7 @@ extern u16 gPal_PlayerInterface_Blue[];
 extern u16 gPal_PlayerInterface_Red[];
 extern u16 gPal_PlayerInterface_Green[];
 #define GE_WIDTH 17
-#define GE_HEIGHT 6
+#define GE_HEIGHT 8
 #define GE_TILEMAP_PALETTE 3
 #define MINIMUG_WIDTH 4
 #define MINIMUG_HEIGHT 4
@@ -62,44 +62,53 @@ extern u16 gPal_PlayerInterface_Green[];
 #define RES_LABEL_PALETTE 2
 #define RES_X 120
 #define RES_Y 32
+#define INVENTORY_ICON_X 8
+#define INVENTORY_ICON_Y 41
+#define INVENTORY_ICON_BASE_TILE 0x0300
+#define INVENTORY_ICON_PALETTE 20
+#define ITEM_ICON_PAGE 0
 #define gMinimugTempBuffer ((u8*)(0x0201F148))
 
-void DefenseLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void ExperienceLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void ResistanceLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void AttackLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void TilemapRetina_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void MinimugStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void NameStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void LevelLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void MinimugStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void FullInventoryStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void NameStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void DefenseLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void ResistanceLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void AttackSpeedLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void AttackLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void ExperienceLabelStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void TilemapRetina_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 #define STATIC_CALLS \
-  DefenseLabelStandard_Static, \
-  ExperienceLabelStandard_Static, \
-  ResistanceLabelStandard_Static, \
-  AttackLabelStandard_Static, \
-  TilemapRetina_Static, \
-  MinimugStandard_Static, \
-  NameStandard_Static, \
   LevelLabelStandard_Static, \
+  MinimugStandard_Static, \
+  FullInventoryStandard_Static, \
+  NameStandard_Static, \
+  DefenseLabelStandard_Static, \
+  ResistanceLabelStandard_Static, \
   AttackSpeedLabelStandard_Static, \
+  AttackLabelStandard_Static, \
+  ExperienceLabelStandard_Static, \
+  TilemapRetina_Static, \
   NULL
 
-void HPOrStatus_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void ResistanceStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void ExperienceStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void AttackSpeedStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
-void LevelStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void HPOrStatus_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void AttackStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void FullInventoryStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void LevelStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void AttackSpeedStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 void DefenseStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
+void ResistanceStandard_Dynamic(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp);
 #define DYNAMIC_CALLS \
-  HPOrStatus_Dynamic, \
-  ResistanceStandard_Dynamic, \
   ExperienceStandard_Dynamic, \
-  AttackSpeedStandard_Dynamic, \
-  LevelStandard_Dynamic, \
+  HPOrStatus_Dynamic, \
   AttackStandard_Dynamic, \
+  FullInventoryStandard_Dynamic, \
+  LevelStandard_Dynamic, \
+  AttackSpeedStandard_Dynamic, \
   DefenseStandard_Dynamic, \
+  ResistanceStandard_Dynamic, \
   NULL
 
 struct Vec2 DrawVertical_TilemapDestination(struct PlayerInterfaceProc* proc, struct Vec2 coords);
@@ -122,17 +131,17 @@ void DrawVertical_Retract(struct PlayerInterfaceProc* proc);
   DrawVertical_Retract, \
   NULL
 
-void ResistanceLabelStandard_Init(struct PlayerInterfaceProc* proc);
-void AttackSpeedLabelStandard_Init(struct PlayerInterfaceProc* proc);
 void AttackLabelStandard_Init(struct PlayerInterfaceProc* proc);
+void ResistanceLabelStandard_Init(struct PlayerInterfaceProc* proc);
 void LevelLabelStandard_Init(struct PlayerInterfaceProc* proc);
 void DefenseLabelStandard_Init(struct PlayerInterfaceProc* proc);
 void ExperienceLabelStandard_Init(struct PlayerInterfaceProc* proc);
+void AttackSpeedLabelStandard_Init(struct PlayerInterfaceProc* proc);
 #define INIT_CALLS \
-  ResistanceLabelStandard_Init, \
-  AttackSpeedLabelStandard_Init, \
   AttackLabelStandard_Init, \
+  ResistanceLabelStandard_Init, \
   LevelLabelStandard_Init, \
   DefenseLabelStandard_Init, \
   ExperienceLabelStandard_Init, \
+  AttackSpeedLabelStandard_Init, \
   NULL
