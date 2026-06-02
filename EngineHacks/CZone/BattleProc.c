@@ -265,27 +265,38 @@ static const struct ProcCmd sProcScr_BattleAnimSimpleLock[] = {
     PROC_END
 };
 
-//both of these are durability stuff
-void BattleApplyItemEffect(struct Proc* proc) {
-    (++gBattleHitIterator)->info = BATTLE_HIT_INFO_END;
 
-    BattleApplyItemExpGains();
-
-    if (gBattleActor.canCounter) {
-        if (GetItemType(gBattleActor.weapon) & 0x6)
-            gBattleActor.weaponBroke = TRUE;
-
-		int allegiance = (gBattleActor.unit.index & 0xC0);
-		if (allegiance == FACTION_BLUE) {
-			gBattleActor.weapon = GetItemAfterUse(gBattleActor.weapon);
+//durability
+u16 ApplyRallyingCryThrift(struct Unit* unit, int cost) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	struct Unit* source = NULL;
+	u16 rallyLabel = RallyingCryBuffLabel_Link;
+	if ((BuffEffectsTable[entry->buff1].buffName == rallyLabel) || (BuffEffectsTable[entry->buff2].buffName == rallyLabel) || (BuffEffectsTable[entry->buff3].buffName == rallyLabel)) {
+		if (BuffEffectsTable[entry->buff1].buffName == rallyLabel) {
+			source = GetUnitFromRallyID(entry->buff1);
 		}
-        gBattleActor.unit.items[gBattleActor.weaponSlotIndex] = gBattleActor.weapon;
-
-        if (gBattleActor.weapon)
-            gBattleActor.weaponBroke = FALSE;
-    }
-
-    Proc_StartBlocking(sProcScr_BattleAnimSimpleLock, proc);
+		else if (BuffEffectsTable[entry->buff2].buffName == rallyLabel) {
+			source = GetUnitFromRallyID(entry->buff2);
+		}
+		else if (BuffEffectsTable[entry->buff3].buffName == rallyLabel) {
+			source = GetUnitFromRallyID(entry->buff3);
+		}
+		
+		if (UNIT_HAS_SKILL(source,SOV,skill_353)){
+			cost = cost - 3;
+		}
+		else if (UNIT_HAS_SKILL(source,SOV,skill_352)){
+			cost = cost - 2;
+		}
+		else if (UNIT_HAS_SKILL(source,SOV,skill_351)){
+			cost = cost - 1;
+		}
+		
+	}
+	if (cost < 1) {
+		cost = 1;
+	}
+	return cost;
 }
 
 extern u8 PerChapterItemsList[];
@@ -320,38 +331,44 @@ u16 GetItemAfterArtUse(int item, int cost) {
     return item; // return used item
 }
 
-//durability
-u16 ApplyRallyingCryThrift(struct BattleUnit* attacker, int cost) {
-	struct DebuffEntry* entry = GetUnitBuffsDebuffs(&attacker->unit);
-	struct Unit* source = NULL;
-	
-	if ((BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link)) {
-		if (BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) {
-			source = GetUnitFromRallyID(entry->buff1);
+//both of these are durability stuff
+void BattleApplyItemEffect(struct Proc* proc) {
+    (++gBattleHitIterator)->info = BATTLE_HIT_INFO_END;
+
+    BattleApplyItemExpGains();
+
+    if (gBattleActor.canCounter) {
+        if (GetItemType(gBattleActor.weapon) & 0x6)
+            gBattleActor.weaponBroke = TRUE;
+
+		int allegiance = (gBattleActor.unit.index & 0xC0);
+		if (allegiance == FACTION_BLUE) {
+			if (GetActiveArt(&gBattleActor.unit)) {
+				int artCost = CombatArtDurabilityList[GetActiveArt(&gBattleActor.unit)];
+				if (UNIT_HAS_SKILL(&gBattleActor.unit,WRK,skill_121)){
+					artCost = artCost - 1;
+					if (artCost == 0) {
+						artCost = 1;
+					}
+				}
+			//thrift rally
+			artCost = ApplyRallyingCryThrift(&gBattleActor.unit,artCost);
+			
+			gBattleActor.weapon = GetItemAfterArtUse(gBattleActor.weapon, artCost);
+			}
+			else gBattleActor.weapon = GetItemAfterUse(gBattleActor.weapon);
 		}
-		else if (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) {
-			source = GetUnitFromRallyID(entry->buff2);
-		}
-		else if (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link) {
-			source = GetUnitFromRallyID(entry->buff3);
-		}
-		
-		if (UNIT_HAS_SKILL(source,SOV,skill_353)){
-			cost = cost - 3;
-		}
-		else if (UNIT_HAS_SKILL(source,SOV,skill_352)){
-			cost = cost - 2;
-		}
-		else if (UNIT_HAS_SKILL(source,SOV,skill_351)){
-			cost = cost - 1;
-		}
-		
-	}
-	if (cost < 1) {
-		cost = 1;
-	}
-	return cost;
+        gBattleActor.unit.items[gBattleActor.weaponSlotIndex] = gBattleActor.weapon;
+
+        if (gBattleActor.weapon)
+            gBattleActor.weaponBroke = FALSE;
+    }
+
+    Proc_StartBlocking(sProcScr_BattleAnimSimpleLock, proc);
 }
+
+
+
 
 //BLOODFURY, BLOODRUSH, REBOUND
 void OnTakingDamageBuffs(struct BattleUnit* attacker, struct BattleUnit* defender)  {
@@ -393,7 +410,7 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
 				}
 			}
 			//thrift rally
-			artCost = ApplyRallyingCryThrift(attacker,artCost);
+			artCost = ApplyRallyingCryThrift(&attacker->unit,artCost);
 			
 			attacker->weapon = GetItemAfterArtUse(attacker->weapon, artCost);
 			attacker->multihitArtTracker = 1;
@@ -411,6 +428,102 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
 	
 }
 
+void ApplyDamageNullEffects(struct BattleUnit* attacker, struct BattleUnit* defender) {
+    if (gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS){
+        return;
+	}
+
+    if (gBattleHitIterator->attributes & BATTLE_HIT_ATTR_GREATSHLD) {
+        return;
+	}
+
+	if (GetActiveArt(&defender->unit) == 18) {
+		if (UNIT_HAS_SKILL(&defender->unit,HOP,skill_343)){
+			if (BattleRoll1RN(33, FALSE) == TRUE) {
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_GREATSHLD;
+				gBattleStats.damage = 0;
+				return;
+			}
+		}		
+		else if (UNIT_HAS_SKILL(&defender->unit,HOP,skill_342)){
+			if (BattleRoll1RN(20, FALSE) == TRUE) {
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_GREATSHLD;
+				gBattleStats.damage = 0;
+				return;
+			}
+		}		
+		else {
+			if (BattleRoll1RN(10, FALSE) == TRUE) {
+				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_GREATSHLD;
+				gBattleStats.damage = 0;
+				return;
+			}
+		}					
+	}
+	
+	u8* unitBuffer = GetUnitsInRange(&defender->unit, 1, 1);
+	if (unitBuffer == FALSE)
+		return;
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		if (GetActiveArt(other) == 18) {
+			if (UNIT_HAS_SKILL(other,HOP,skill_343)){
+				if (BattleRoll1RN(33, FALSE) == TRUE) {
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_GREATSHLD;
+					gBattleStats.damage = 0;
+					return;
+				}
+			}		
+			else if (UNIT_HAS_SKILL(other,HOP,skill_342)){
+				if (BattleRoll1RN(20, FALSE) == TRUE) {
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_GREATSHLD;
+					gBattleStats.damage = 0;
+					return;
+				}
+			}		
+			else {
+				if (BattleRoll1RN(10, FALSE) == TRUE) {
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_GREATSHLD;
+					gBattleStats.damage = 0;
+					return;
+				}
+			}					
+		}
+		i++;
+	}
+	int j = 0;
+	if (IsBattleReallyReal()){
+		while (unitBuffer[j]){
+			int index2 = unitBuffer[j];
+			Unit* other2 = gUnitLookup[index2];
+			if (GetActiveArt(other2) == 19) {
+				if (GetUnitCurrentHp(other2) >= (GetUnitMaxHp(other2)/4)) {
+					if (UNIT_HAS_SKILL(other2,HOP,skill_353)){
+						other2->curHP = other2->curHP - gBattleStats.damage/2;
+					}		
+					else if (UNIT_HAS_SKILL(other2,HOP,skill_352)){
+						other2->curHP = other2->curHP - gBattleStats.damage * 3/4;
+					}
+					else {
+						other2->curHP = other2->curHP - gBattleStats.damage;
+					}
+					if (other2->curHP < 1) {
+						other2->curHP = 1;
+					}
+					gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_GREATSHLD;
+					gBattleStats.damage = 0;
+					return;
+				}					
+			}
+			j++;
+		}
+	}
+		
+}
+
+
 void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit* defender) {
     short attack, defense;
 
@@ -425,6 +538,8 @@ void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit*
     defense = gBattleStats.defense;
 
     gBattleStats.damage = attack - defense;
+
+	ApplyDamageNullEffects(attacker,defender);
 
     if (BattleRoll1RN(gBattleStats.critRate, FALSE) == TRUE) {
         gBattleHitIterator->attributes = gBattleHitIterator->attributes | BATTLE_HIT_ATTR_CRIT;

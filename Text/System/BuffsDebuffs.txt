@@ -144,6 +144,12 @@ Bloodrush[X]
 ##BloodrushDesc
 +1 Mov.[X]
 
+##ScapegoatBuffLabel
+Scapegoat[X]
+##ScapegoatBuffDesc
+1.1x Avo. Unit will[N]
+draw all enemies.[X]
+
 ##ReboundLabel
 Rebound[X]
 ##ReboundDesc

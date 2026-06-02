@@ -10,6 +10,20 @@ int GetUnitKillExpBonus(struct Unit* actor, struct Unit* target);
 extern bool CanBattleUnitGainLevels(BattleUnit* bu);
 int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target);
 
+void BattleApplyItemExpGains(void) {
+    if (!(gPlaySt.chapterStateBits & PLAY_FLAG_EXTRA_MAP)) {
+        if ((gBattleActor.weaponAttributes & IA_STAFF) || GetActiveArt(&gBattleActor.unit)) {
+            if (UNIT_FACTION(&gBattleActor.unit) == FACTION_BLUE)
+                gBattleActor.wexpMultiplier++;
+
+            gBattleActor.expGain = GetBattleUnitStaffExp(&gBattleActor);
+            gBattleActor.unit.exp += gBattleActor.expGain;
+			
+            CheckBattleUnitLevelUp(&gBattleActor);
+        }
+    }
+}
+
 int CalculateAveragePartyLevel(void) {
 	int unitCount = 0;
 	int totalLevel = 0;

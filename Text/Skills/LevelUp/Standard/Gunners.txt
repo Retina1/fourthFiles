@@ -206,7 +206,7 @@ Power Snipe[X]
 Level: 0 (Active)[N]
 A mighty and accurate[N]
 shot with great range.[N]
-Next: 5 Dur, 2-5 Rng,[N]
+Next: 5 Dur, 3-5 Rng,[N]
 1.3x Atk, 1.3x Hit.[N]
 Req: H.Shot 1, V.Snipe 1[X]
 ## ^

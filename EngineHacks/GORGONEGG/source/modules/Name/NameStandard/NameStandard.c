@@ -24,6 +24,7 @@ const struct ProcInstruction ProcNameStandard[] = {
   PROC_END,
 };
 
+extern int GetActiveArtName(struct Unit* unit);
 
 void NameStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* udp)
 {
@@ -44,9 +45,16 @@ void NameStandard_Static(struct PlayerInterfaceProc* proc, struct UnitDataProc* 
 
   Text_Clear(&textProc->nameText);
 
-  nameString = GetStringFromIndex(unit->pCharacterData->nameTextId);
-  nameString = String_ExpandTactName();
+  int artTextID = GetActiveArtName(unit);
+  if (artTextID == 0) {
+	  nameString = GetStringFromIndex(unit->pCharacterData->nameTextId);
 
+  }
+  else {
+	  nameString = GetStringFromIndex(artTextID);
+  }
+
+  nameString = String_ExpandTactName();
   padding = Text_GetStringTextCenteredPos((NAME_WIDTH * 8), nameString);
 
   Text_SetParameters(&textProc->nameText, padding, NAME_COLOR);

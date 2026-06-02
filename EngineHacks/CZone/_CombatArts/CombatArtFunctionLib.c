@@ -3,6 +3,36 @@
 // Contains "helper" functions to be used in user code for combat arts
 void TryAddTrapsToTargetList();
 
+void GenericStanceItemSelectEffect(u16 artID, struct Unit* unit)
+{
+	ClearBg0Bg1();
+    EndFaceById(0);
+	HideMoveRangeGraphics();
+    BG_Fill(gBG2TilemapBuffer, 0);
+    BG_EnableSyncByMask(BG2_SYNC_BIT);
+    SetItemUseAction(unit);
+}
+
+void ExecGenericStanceArt(ProcPtr proc) {
+	struct Unit* unitPointer = GetUnit(gActionData.subjectIndex);
+	int itemSlot = gActionData.itemSlotIndex;
+	gBattleTarget.statusOut = -1;
+	BattleInitItemEffect(unitPointer,itemSlot);
+	BattleApplyItemEffect(proc);
+	BeginBattleAnimations();
+	PlaySoundEffect(0xEF);
+    return;
+}
+
+int HideRange(struct Unit* unit, int itemID, int rangeWord){
+	return Proc_Find((const struct ProcCmd*)0x0859AE88 /* gProcCmd_MenuItemPanel */) == NULL ? rangeWord : 0;
+}
+
+u8 PierceItemSelectUsability(u16 artID, u16 item)
+{
+	return (GetItemType(item) == 0x1) && CanUnitUseWeaponNow(gActiveUnit, item);
+}
+
 
 int Staff1_2Range(struct Unit* unit, int itemID, int rangeWord){
 	if (GetItemType(itemID) == 0x4) {
@@ -329,6 +359,24 @@ u8 CombatArtGeneralAttackingEffect(struct MenuProc* menu, struct MenuItemProc* m
     ResetIconGraphics();
     LoadIconPalettes(4);
     return StartUnitWeaponSelect(menu, menuItem);
+}
+
+u8 GeneralNonCombatMenuEffect(struct MenuProc* menu, struct MenuItemProc* menuItem)
+{
+    SetActiveArt(gActiveUnit, ART_ID_FROM_MENUDEF(menuItem->def));
+    StartUnitItemSelect(menu, menuItem);
+
+    return MENU_ACT_SKIPCURSOR | MENU_ACT_END | MENU_ACT_SND6A | MENU_ACT_CLEAR;
+}
+
+u8 ArtItemCheckInventory(struct Unit* unit, u16 artID)
+{
+    u8 valid = False;
+    for (int i = 0; i < UNIT_ITEM_COUNT; i++)
+    {
+        valid |= CombatArtList[artID].itemSelectUsability(artID, unit->items[i]);
+    }
+    return valid;
 }
 
 

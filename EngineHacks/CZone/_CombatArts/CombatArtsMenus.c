@@ -152,3 +152,43 @@ void CAMenu_ScrollMenuDefsDown(struct MenuProc* proc){
 
     }
 }
+
+extern const struct MenuDef CAS_ItemSelectMenuDef;
+
+void StartUnitItemSelect(struct MenuProc* menu, struct MenuItemProc* menuItem)
+{
+    ResetIconGraphics();
+    LoadIconPalettes(4);
+    StartFace(0, GetUnitPortraitId(gActiveUnit), 0xB0, 0xC, 2);
+    SetFaceBlinkControlById(0, 5);
+    ForceMenuItemPanel(StartOrphanMenu(&CAS_ItemSelectMenuDef), gActiveUnit, 15, 11);
+}
+
+u8 CAS_ItemSelectMenu_Usability(const struct MenuItemDef* def, int number)
+{
+    return CombatArtList[GetActiveArt(gActiveUnit)].itemSelectUsability(GetActiveArt(gActiveUnit), gActiveUnit->items[number]) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+int CAS_ItemSelectMenu_Draw(struct MenuProc* menu, struct MenuItemProc* menuItem)
+{
+    DrawItemMenuLine(
+        &menuItem->text,
+        gActiveUnit->items[menuItem->itemNumber],
+        CombatArtList[GetActiveArt(gActiveUnit)].itemSelectUsability(GetActiveArt(gActiveUnit), gActiveUnit->items[menuItem->itemNumber]),
+        gBG0TilemapBuffer + TILEMAP_INDEX(menuItem->xTile, menuItem->yTile)
+    );
+
+    return 0;
+}
+
+u8 CAS_ItemSelectMenu_Effect(struct MenuProc* menu, struct MenuItemProc* menuItem)
+{
+    EquipUnitItemSlot(gActiveUnit, menuItem->itemNumber);
+    gActionData.itemSlotIndex = 0;
+
+    ClearBg0Bg1();
+
+    CombatArtList[GetActiveArt(gActiveUnit)].itemSelectEffect(GetActiveArt(gActiveUnit), gActiveUnit);
+
+    return MENU_ACT_SKIPCURSOR | MENU_ACT_END | MENU_ACT_SND6A;
+}

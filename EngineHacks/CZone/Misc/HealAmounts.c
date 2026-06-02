@@ -140,16 +140,19 @@ int GetUnitItemHealAmount(struct Unit* unit, int item) {
     int result = 0;
 
 	//todo - check for combart, use that to get heal amount
-
-    result += GetItemMight(item);
-
+	if (GetActiveArt(unit)) {
+		result += CombatArtList[GetActiveArt(unit)].healAmountFunction(unit);
+	}
+	else {
+		result += GetItemMight(item);
+	}
+	
     if (GetItemAttributes(item) & IA_STAFF) {
-        result += unit->mag;
-
-        if (result > 99)
-            result = 99;
-    }
-
+        result += GetUnitMag(unit);
+	}
+    if (result > 99){
+        result = 99;
+	}
     return result;
 }
 

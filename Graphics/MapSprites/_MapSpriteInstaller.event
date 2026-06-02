@@ -765,14 +765,14 @@ PriestSMS:
 #incbin "Dmp/Dismounted (F) Sword {ArcherBias}-stand.dmp"
 ALIGN 4
 PriestMMS:
-#incbin "Dmp/Dismounted (F) Sword {ArcherBias}-walk.dmp"
+#incbin "Dmp/z224780956PriestMove.dmp"
 
 ALIGN 4
 WarMagusSMS:
 #incbin "Dmp/Sage (F) Battle Sage Sword {Leif, L95}-stand.dmp"
 ALIGN 4
 WarMagusMMS:
-#incbin "Dmp/Sage (F) Battle Sage Sword {Leif, L95}-walk.dmp"
+#incbin "Dmp/z224780956WarMagusMove.dmp"
 ALIGN 4
 DivineMagusSMS:
 #incbin "Dmp/appDivineMagusStand.dmp"

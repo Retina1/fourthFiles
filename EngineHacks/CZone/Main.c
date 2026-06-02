@@ -13,6 +13,11 @@ extern u16 GenericMoneyEvent;
 extern u16 GenericAutomatonEvent;
 extern u16 GenericAOEEvent;
 
+extern void BeginBattleAnimations();
+extern void BattleInitItemEffect(Unit*, int);
+extern void BattleInitItemEffectTarget(Unit*);
+extern void BeginLightRuneMapAnim(ProcPtr*, int, int);
+
 #include "SkillSystem/SkillHelpers.c"
 #include "SkillLearner/SkillLearner.c"
 #include "SkillLearner/SkillLearnerPreps.c"
@@ -59,6 +64,7 @@ extern u16 GenericAOEEvent;
 #include "UnitChooser/UnitChooser.c"
 #include "DebugUnitChooser/DebugUnitChooser.c"
 
+#include "EnemyAI/EnemyAI.c"
 #include "Misc/ConditionalChecks.c"
 #include "Misc/TurnRecords.c"
 
@@ -128,12 +134,6 @@ void ItemUseTrueWrapper() {
          bx r1; \
     ");    
 }
-
-extern void BeginBattleAnimations();
-extern void BattleInitItemEffect(Unit*, int);
-extern void BattleInitItemEffectTarget(Unit*);
-extern void BeginLightRuneMapAnim(ProcPtr*, int, int);
-
 
 //CallEvent(&SaveItemEvent, 1)
 //todo - diaplay game saved text somehow
@@ -235,6 +235,15 @@ void NewStatusWrapper() {
 void ExecBuffItemWrapper() {
     asm("     mov r0,r6; \
             bl ExecBuffItem; \
+            ldr r0,=#0x802FF77; \
+            bx r0; \
+    ");
+
+}
+
+void ExecGenericStanceArtWrapper() {
+    asm("     mov r0,r6; \
+            bl ExecGenericStanceArt; \
             ldr r0,=#0x802FF77; \
             bx r0; \
     ");

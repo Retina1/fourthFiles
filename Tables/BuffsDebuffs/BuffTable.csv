@@ -52,11 +52,9 @@ SpiritShield1Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,12,10,12,10,0
 SpiritShield2Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,15,10,15,10,0
 BloodyOffense1Buff,0,0,2,13,10,1,1,1,1,1,1,1,1,1,1,1,1,0
 BloodyOffense2Buff,0,0,2,15,10,1,1,1,1,1,1,1,1,1,1,1,1,0
-Scapegoat1Buff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-Scapegoat2Buff,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-Scapegoat3Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-Scapegoat4Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-Scapegoat5Buff,0,0,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+Scapegoat1Buff,ScapegoatBuffLabel,ScapegoatBuffDesc,1,1,1,1,1,11,10,1,1,1,1,1,1,1,1,0
+Scapegoat2Buff,ScapegoatBuffLabel,ScapegoatBuffDesc,2,1,1,1,1,11,10,1,1,1,1,1,1,1,1,0
+Scapegoat3Buff,ScapegoatBuffLabel,ScapegoatBuffDesc,3,1,1,1,1,11,10,1,1,1,1,1,1,1,1,0
 ResilientWings1Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,12,10,1,1,0
 ResilientWings2Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,14,10,1,1,0
 SwiftWings1Buff,0,0,2,1,1,1,1,12,10,1,1,12,10,1,1,1,1,0

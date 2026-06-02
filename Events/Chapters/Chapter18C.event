@@ -69,8 +69,8 @@ UNIT Rana Survivalist 0x0 Level(27,Enemy,1) [26,6] DropItem 0x0 0x0 0x0 [ArcDraw
 UNIT Harla Highlander 0x0 Level(26,Enemy,1) [24,6] DropItem 0x0 0x0 0x0 [Ron] AttackInRangeAI
 UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [25,5] DropItem 0x0 0x0 0x0 [Agneyastra] AttackInRangeAI
 UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [25,7] DropItem 0x0 0x0 0x0 [Kerykeion] AttackInRangeAI
-UNIT FreelanceGeneric Dominator 0x0 Level(23,Enemy,1) [18,8] 0x0 0x0 0x0 0x0 [RazorWhip] NoAI
-UNIT FreelanceGeneric Fencer 0x0 Level(23,Enemy,1) [19,9] 0x0 0x0 0x0 0x0 [JollyRoger] NoAI
+UNIT FreelanceGeneric Dominator 0x0 Level(23,Enemy,1) [18,8] 0x0 0x0 0x0 0x0 [RazorWhip,SappingAura,FrailtyAura,SluggishAura] NoAI
+UNIT FreelanceGeneric Fencer 0x0 Level(23,Enemy,1) [19,9] 0x0 0x0 0x0 0x0 [JollyRoger,FierceAura,ShieldAura,HasteAura] NoAI
 UNIT FreelanceGeneric Pugilist 0x0 Level(23,Enemy,1) [20,10] 0x0 0x0 0x0 0x0 [Katar] NoAI
 
 UNIT FreelanceGeneric WarMagus 0x0 Level(23,Enemy,1) [16,12] 0x0 0x0 0x0 0x0 [Bluntblade] NoAI
@@ -88,24 +88,24 @@ UNIT FreelanceGeneric Dragoon 0x0 Level(23,Enemy,1) [7,10] 0x0 0x0 0x0 0x0 [Ston
 UNIT FreelanceGeneric Dragoon 0x0 Level(23,Enemy,1) [8,11] 0x0 0x0 0x0 0x0 [Furybox] NoAI
 UNIT FreelanceGeneric Dragoon 0x0 Level(23,Enemy,1) [8,9] 0x0 0x0 0x0 0x0 [Stunshot] NoAI
 
-UNIT FreelanceGeneric Dominator 0x0 Level(23,Enemy,1) [21,6] 0x0 0x0 0x0 0x0 [RazorWhip] NoAI
-UNIT FreelanceGeneric Dominator 0x0 Level(23,Enemy,1) [22,7] 0x0 0x0 0x0 0x0 [HazeWhip] NoAI
+UNIT FreelanceGeneric Dominator 0x0 Level(23,Enemy,1) [21,6] 0x0 0x0 0x0 0x0 [RazorWhip,SappingAura,FrailtyAura,SluggishAura] NoAI
+UNIT FreelanceGeneric Dominator 0x0 Level(23,Enemy,1) [22,7] 0x0 0x0 0x0 0x0 [HazeWhip,SappingAura,FrailtyAura,SluggishAura] NoAI
 
 UNIT FreelanceGeneric Highlander 0x0 Level(23,Enemy,1) [15,6] 0x0 0x0 0x0 0x0 [Impaler] NoAI
 UNIT FreelanceGeneric Highlander 0x0 Level(23,Enemy,1) [16,5] 0x0 0x0 0x0 0x0 [Omiyari] NoAI
 
 UNIT FreelanceGeneric Hoplite 0x0 Level(23,Enemy,1) [10,11] 0x0 0x0 0x0 0x0 [Shieldlance] NeverMoveAI
 
-UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [9,17] 0x0 0x0 0x0 0x0 [Shieldlance] NoAI
-UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [10,16] 0x0 0x0 0x0 0x0 [Omiyari] NoAI
+UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [9,17] 0x0 0x0 0x0 0x0 [Shieldlance,FierceAura,ShieldAura,HasteAura] NoAI
+UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [10,16] 0x0 0x0 0x0 0x0 [Omiyari,FierceAura,ShieldAura,HasteAura] NoAI
 
 UNIT FreelanceGeneric Scalemaster 0x0 Level(23,Enemy,1) [24,15] 0x0 0x0 0x0 0x0 [Greataxe] NoAI
 UNIT FreelanceGeneric Scalemaster 0x0 Level(23,Enemy,1) [24,16] 0x0 0x0 0x0 0x0 [Khopesh] NoAI
 UNIT FreelanceGeneric Scalemaster 0x0 Level(23,Enemy,1) [23,16] 0x0 0x0 0x0 0x0 [HandAxe] NoAI
 
-UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [16,1] 0x0 0x0 0x0 0x0 [Pike] NoAI
-UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [17,2] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
-UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [Ahlspiess] NoAI
+UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [16,1] 0x0 0x0 0x0 0x0 [Pike,FierceAura,ShieldAura,HasteAura] NoAI
+UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [17,2] 0x0 0x0 0x0 0x0 [HandSpear,FierceAura,ShieldAura,HasteAura] NoAI
+UNIT FreelanceGeneric Seraph 0x0 Level(23,Enemy,1) [18,1] 0x0 0x0 0x0 0x0 [Ahlspiess,FierceAura,ShieldAura,HasteAura] NoAI
 
 UNIT FreelanceGeneric Scalemaster 0x0 Level(23,Enemy,1) [3,3] 0x0 0x0 0x0 0x0 [Broadaxe] NoAI
 UNIT FreelanceGeneric Scalemaster 0x0 Level(23,Enemy,1) [5,3] 0x0 0x0 0x0 0x0 [Labrys] NoAI

@@ -1,0 +1,17 @@
+//WAR MAGUS
+CA_Entry((Set2LastArt + 26), 2)
+	CA_Name(UM_WarHeal,UM_WarHealDesc)
+	CA_Usability(WarHealArtUsability,WarHealArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(WarMagusItemSelectUsability)
+	CA_ItemSelectEffect(WarHealItemSelectEffect)
+	CA_Range(WarHealRange) //range for support arts will be purely visual
+	CA_HealAmount(WarHealHealAmount)
+	CA_SpellAnim(0x29); CA_IER(0x1)
+	
+CA_Entry((Set2LastArt + 33), 25)
+	CA_Name(UM_WarPhase,UM_WarPhaseDesc)
+	CA_Usability(WarPhaseArtUsability,WarPhaseArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(WarMagusItemSelectUsability)
+	CA_ItemSelectEffect(WarPhaseItemSelectEffect)
+	CA_Range(StaffLock)
+	CA_SpellAnim(0x66); CA_IER(0xa)

@@ -68,6 +68,56 @@ CA_Entry((NullArt + 10), 6)
 	CA_Range(SlashLock)
 	
 //KNIGHT
+CA_Entry((NullArt + 12), 3)
+	CA_Name(UM_LongThrust,UM_LongThrustDesc)
+	CA_Usability(LongThrustArtUsability,LongThrustArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(LongThrustBothSides); CA_Prebattle(LongThrustPrebattle)
+	CA_Range(LongThrustRange); CA_SpellAnim(0x3)
+CA_Entry((NullArt + 13), 2)
+	CA_Name(UM_BoundingThrust,UM_BoundingThrustDesc)
+	CA_Usability(BoundingThrustArtUsability,BoundingThrustArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(BoundingThrustBothSides); CA_Postbattle(BoundingThrustPostbattle)
+	CA_Range(PierceLock)
+CA_Entry((NullArt + 14), 3)
+	CA_Name(UM_VitalityThrust,UM_VitalityThrustDesc)
+	CA_Usability(VitalityThrustArtUsability,VitalityThrustArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(VitalityThrustBothSides)
+	CA_Range(PierceLock); CA_ItemEffect(2); CA_SpellAnim(0x66)
+	
+CA_Entry((NullArt + 15), 3)
+	CA_Name(UM_PhysGuard,UM_PhysGuardDesc)
+	CA_Usability(PhysicalGuardArtUsability,PhysicalGuardArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_GenericStance
+CA_Entry((NullArt + 16), 3)
+	CA_Name(UM_MagicGuard,UM_MagicGuardDesc)
+	CA_Usability(MagicGuardArtUsability,MagicGuardArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_GenericStance
+CA_Entry((NullArt + 17), 3)
+	CA_Name(UM_Provocation,UM_ProvocationDesc)
+	CA_Usability(ProvocationArtUsability,ProvocationArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_GenericStance
+CA_Entry((NullArt + 18), 4)
+	CA_Name(UM_LuckyGuard,UM_LuckyGuardDesc)
+	CA_Usability(LuckyGuardArtUsability,LuckyGuardArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_GenericStance
+CA_Entry((NullArt + 19), 5)
+	CA_Name(UM_BraveGuard,UM_BraveGuardDesc)
+	CA_Usability(BraveGuardArtUsability,BraveGuardArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_GenericStance
+CA_Entry((NullArt + 20), 5)
+	CA_Name(UM_FullGuard,UM_FullGuardDesc)
+	CA_Usability(FullGuardArtUsability,FullGuardArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_GenericStance
+
 //AXEFIGHTER
 CA_Entry((NullArt + 23), 3)
 	CA_Name(UM_ArmCrush,UM_ArmCrushDesc)

@@ -16,6 +16,13 @@ ORG FreeSpaceBLRange //defined in custom definitions
 POP
 
 ALIGN 4
+RallyingCryBuffLabel_Link: 
+WORD RallyingCryBuffLabel
+ALIGN 4
+ScapegoatBuffLabel_Link: 
+WORD ScapegoatBuffLabel
+
+ALIGN 4
 NatsukiUnitID:
 WORD Natsuki
 NatsukiMugID:
@@ -30,7 +37,7 @@ WORD GoreMug
 GorePluckMugID:
 WORD GorePluckedMug
 GoreEyepatchMugID:
-WORD GoreEyepatchMug\
+WORD GoreEyepatchMug
 
 #include "EssentialFixes.event"
 #include "AddressPatches.event"

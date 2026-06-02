@@ -8,6 +8,8 @@
 
 //death quote events check for conditionals - maybe do it in C since it's easier to throughly check battle stuff in C
 
+
+
 ALIGN 4
 DeathQuoteTable:
 //c1
@@ -30,7 +32,8 @@ ChapterDeathQuote(BossSaewynn,Chapter5,0x0,C5SaewynnDefeat)
 //c6
 ChapterDeathQuote(Hitchcock,Chapter6,0x2,C6HitchcockDeath)
 //c7
-ChapterDeathQuote(Astoria,Chapter7,0x0,C5SaewynnDefeat)
+ChapterDeathQuote(Xavens,Chapter7,0x0,C7XavensDefeat)
+ChapterDeathQuote(Astoria,Chapter7,0x0,C7AstoriaDeath)
 //c8
 ChapterDeathQuote(Quarry,Chapter8,Quest2_5x_DoneFlag,Quest2_5x_Kill)
 EventDeathQuote(BossBenthus2,Chapter8,0x2,BenthusDeathEvent)
@@ -41,6 +44,7 @@ ChapterDeathQuote(George,Chapter10,0x2,BenthusDeath)
 AlwaysDeathQuote(BossGuildmaster,0x0,GuildmasterDeath)
 AlwaysDeathQuote(BossGore,0x0,BossGoreDeath)
 AlwaysDeathQuote(BossAstarte,0x0,BossAstarteDeath)
+ChapterDeathQuote(Rana,EndgameA,0x2,EndgameARanaDeath)
 
 AlwaysDeathQuote(Swift,0x0,SwiftDeath)
 AlwaysDeathQuote(Weber,0x0,WeberDeath)

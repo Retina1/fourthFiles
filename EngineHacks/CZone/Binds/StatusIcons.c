@@ -355,7 +355,7 @@ void PutUnitSpriteIconsOam(void)
 			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x - 2), OAM0_Y(0x100 + y - 18), CritWarningTileData, 0);
 			  break;
 			case CAN_TALK:
-			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x - 2), OAM0_Y(0x100 + y - 18), TalkBubbleTileData, 0);
+			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x + 10), OAM0_Y(0x100 + y - 18), TalkBubbleTileData, 0);
 			  break;
 		}
 		

@@ -116,17 +116,17 @@ OneLevelSkillLabel(IronWallSkill,NoReq)//0
 OneLevelSkillLabel(LeeringWallSkill,NoReq)
 OneLevelSkillLabel(WarinessSkill,WarinessReq)
 OneLevelSkillLabel(UnbreakableSkill,PromotedReq)
-TwoLevelSkillLabel(PlaceholderLabel,NoReq)//4
-TwoLevelSkillLabel(PlaceholderLabel,BoundingThrustReq)
-TwoLevelSkillLabel(PlaceholderLabel,VitalityThrustReq)
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)//7
-ThreeLevelSkillLabel(PlaceholderLabel,NoReq)
-ThreeLevelSkillLabel(PlaceholderLabel,ProvocationReq)
-ThreeLevelSkillLabel(PlaceholderLabel,LuckyGuardReq)
-ThreeLevelSkillLabel(PlaceholderLabel,BraveGuardReq)
-FiveLevelSkillLabel(PlaceholderLabel,FullGuardReq)//12
-FiveLevelSkillLabel(PlaceholderLabel,BlitzThrustReq)
-FiveLevelSkillLabel(PlaceholderLabel,AvengerThrustReq)
+TwoLevelSkillLabel(LongThrustSkill,NoReq)//4
+TwoLevelSkillLabel(BoundingThrustSkill,BoundingThrustReq)
+TwoLevelSkillLabel(VitalityThrustSkill,VitalityThrustReq)
+ThreeLevelSkillLabel(PhysGuardSkill,NoReq)//7
+ThreeLevelSkillLabel(MagicGuardSkill,NoReq)
+ThreeLevelSkillLabel(ProvocationSkill,ProvocationReq)
+ThreeLevelSkillLabel(LuckyGuardSkill,LuckyGuardReq)
+ThreeLevelSkillLabel(BraveGuardSkill,BraveGuardReq)
+FiveLevelSkillLabel(FullGuardSkill,FullGuardReq)//12
+FiveLevelSkillLabel(BlitzThrustSkill,BlitzThrustReq)
+FiveLevelSkillLabel(AvengerThrustSkill,AvengerThrustReq)
 SkillLabelTerminator
 
 ALIGN 4

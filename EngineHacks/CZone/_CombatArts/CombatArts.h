@@ -13,17 +13,20 @@ struct CombatArt {
     /* 08 */ u8   (*menuUsability)(const struct MenuItemDef*, int number);
     /* 0C */ int  (*menuDraw)(struct MenuProc* menu, struct MenuItemProc* menuItem);
     /* 10 */ u8   (*menuEffect)(struct MenuProc* menu, struct MenuItemProc* menuItem);
-    /* 14 */ void (*preBattleFunction)(struct BattleUnit* actor, struct BattleUnit* target);
-    /* 18 */ void (*bothSidesFunction)(struct BattleUnit* actor, struct BattleUnit* target);
-    /* 1c */ void (*postBattleFunction)(struct Unit* actor, struct Unit* target);
-    /* 20 */ void (*battleProcFunction)(struct BattleUnit* actor, struct BattleUnit* target);
-    /* 24 */ int  (*rangeFunction)(struct Unit* unit, int itemID, int rangeWord); // Returns modified rangeWord
-    /* 28 */ int  (*oddsFunction)(struct BattleUnit* actor, struct BattleUnit* target); // Returns modified rangeWord
-    /* 2c */ int  (*strikeCountFunction)(struct BattleUnit* actor); // Returns modified rangeWord
-	/* 30 */ u8   isMagic;
-	/* 31 */ u8   spellAnim;
-	/* 32 */ u8   itemEffect;
-	/* 33 */ u8   unk33;
+	/* 14 */ u8   (*itemSelectUsability)(u16 artID, u16 item);
+    /* 18 */ void (*itemSelectEffect)(u16 artID, struct Unit* unit);
+    /* 1c */ void (*preBattleFunction)(struct BattleUnit* actor, struct BattleUnit* target);
+    /* 20 */ void (*bothSidesFunction)(struct BattleUnit* actor, struct BattleUnit* target);
+    /* 24 */ void (*postBattleFunction)(struct Unit* actor, struct Unit* target);
+    /* 28 */ void (*battleProcFunction)(struct BattleUnit* actor, struct BattleUnit* target);
+    /* 2c */ int  (*rangeFunction)(struct Unit* unit, int itemID, int rangeWord); // Returns modified rangeWord
+    /* 30 */ int  (*oddsFunction)(struct BattleUnit* actor, struct BattleUnit* target); // Returns modified rangeWord
+    /* 34 */ int  (*strikeCountFunction)(struct BattleUnit* actor); // Returns modified rangeWord
+    /* 38 */ int  (*healAmountFunction)(struct Unit* unit); // Returns heal amount
+	/* 3c */ u8   isMagic;
+	/* 3d */ u8   spellAnim;
+	/* 3e */ u8   itemEffect;
+	/* 3f */ u8   ierByte;
 	
 
 };

@@ -729,6 +729,14 @@ ALIGN 4
 SharonDMP:
 #incbin "dmps/froshSharon.dmp"
 setMugEntry(SharonMug,SharonDMP,4,6,4,4)
+ALIGN 4
+JudyDMP:
+#incbin "dmps/thinkJudy.dmp"
+setMugEntry(JudyMug,JudyDMP,3,5,3,3)
+ALIGN 4
+ShionDMP:
+#incbin "dmps/thinkShion.dmp"
+setMugEntry(ShionMug,ShionDMP,3,5,3,3)
 
 ALIGN 4
 //john tezuka

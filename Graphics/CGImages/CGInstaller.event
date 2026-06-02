@@ -95,14 +95,23 @@ WORD 0x0 0x0 0x0                                    // 44 (add more if need be l
 //colors
 #define DecisionCG 0x38
 SetColorsBackground(DecisionCG,DecisionImage,DecisionPalette)
-
-//normals
-//SetConvoBackground(BlankCG,BlankImage,BlankTSA,BlankPalette)
-
-
 ALIGN 4
 DecisionImage:
 #incbin "MoreColors/gfx/BG/224Decision.dmp"
 ALIGN 4
 DecisionPalette:
 #incbin "MoreColors/gfx/BG/224DecisionPal.dmp"
+
+
+//normals
+#define CaveCG 0x39
+SetConvoBackground(CaveCG,CaveImage,CaveTSA,CavePalette)
+ALIGN 4
+CaveImage:
+#incbin "Cave.png.dmp"
+ALIGN 4
+CaveTSA:
+#incbin "Cave.png.tsa.dmp"
+ALIGN 4
+CavePalette:
+#incbin "Cave.png.pal.dmp"

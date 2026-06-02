@@ -1,6 +1,13 @@
 #include "CombatArts.h"
 // Main Combat Art internals
 
+inline int GetItemUseEffect(int item) {
+	if (GetActiveArt(gActiveUnit)) return  CombatArtList[GetActiveArt(gActiveUnit)].ierByte;
+    else return GetItemData(ITEM_INDEX(item))->useEffectId;
+}
+
+
+
 // bool
 u8 ArtTester(struct Unit* unit, u16 artID){
     return CombatArtList[artID].usability == NULL ? False : CombatArtList[artID].usability(unit, artID);
@@ -12,6 +19,16 @@ u16 __attribute__ ((noinline)) GetActiveArt(struct Unit* unit){
 	u16 artID = gActiveArts[unit->index];
 	if (artID > LastArtInTable) return 0;
     return  artID; 
+}
+
+int GetActiveArtName(struct Unit* unit) {
+	u16 artID = GetActiveArt(unit);
+	if (artID == 0) {
+		return 0;
+	}
+	else {
+		return CombatArtList[artID].nameTextID;
+	}
 }
 
 void SetActiveArt(struct Unit* unit, u16 artID){
@@ -78,7 +95,10 @@ s16 GetArtSpellAnimId(struct BattleUnit* bu, u16 weapon)
     ret = it->efx;
 	//if we wanna do javelin types, reference vanilla
 	if (GetActiveArt(&bu->unit) != 0) {
-		if (CombatArtList[GetActiveArt(&bu->unit)].spellAnim != 0) {
+		if (CombatArtList[GetActiveArt(&bu->unit)].spellAnim == 0x66) {
+			ret = -2;
+		}
+		else if (CombatArtList[GetActiveArt(&bu->unit)].spellAnim != 0) {
 			ret = CombatArtList[GetActiveArt(&bu->unit)].spellAnim;
 		}
 	}
@@ -105,6 +125,38 @@ void StartSpellAnimFunction(struct BattleUnit* bu1,struct BattleUnit* bu2,int va
 						gEkrSpellAnimIndex[POS_R] = 0xF;
 		}
 }
+
+/*
+struct ProcCmd *GetSpellAssocMapAnimProcScript(u16 item)
+{
+	if	(GetActiveArt(gActiveUnit)) {
+		switch (CombatArtList[GetActiveArt(gActiveUnit)].spellAnim) {
+			case 0x26:
+				return ProcScr_SpellAssocHeal;
+			case 0x27:
+				return ProcScr_SpellAssocMend;
+			case 0x28:
+				return ProcScr_SpellAssocRecover;
+			case 0x29:
+				return ProcScr_SpellAssocPhysic;
+			case 0x2a:
+				return ProcScr_SpellAssocLatona;
+			case 0x2c:
+				return ProcScr_SpellAssocRestore;
+			case 0x66:
+				return ProcScr_SpellAssocWarp;
+			case 0x2E:
+				return ProcScr_SpellAssocSleep;
+			default:
+				return NULL;
+		}
+	}
+	else {
+		return GetSpellAssocStructPtr(item)->pcmd_manim;
+	}
+}
+*/
+
 
 #include "ClassArts/1_Swordfighter.c"
 #include "ClassArts/2_Knight.c"
@@ -182,6 +234,68 @@ u8 ItemMenu_ButtonBPressed(struct MenuProc* menu, struct MenuItemProc* menuItem)
     HideMoveRangeGraphics();
 
     return MENU_ACT_SKIPCURSOR | MENU_ACT_END | MENU_ACT_SND6B | MENU_ACT_CLEAR | MENU_ACT_ENDFACE;
+}
+
+u8 GenericSelection_BackToUM(ProcPtr proc, struct SelectTarget * target) {
+    EndTargetSelection(proc);
+
+	SetActiveArt(gActiveUnit, 0);
+    BG_Fill(gBG2TilemapBuffer, 0);
+    BG_EnableSyncByMask(BG2_SYNC_BIT);
+
+    ResetTextFont();
+
+    HideMoveRangeGraphics();
+
+    EnsureCameraOntoPosition(
+        StartSemiCenteredOrphanMenu(&gUnitActionMenuDef, gBmSt.cursorTarget.x - gBmSt.camera.x, 1, 20),
+        gActiveUnit->xPos,
+        gActiveUnit->yPos
+    );
+
+    return MENU_ACT_SKIPCURSOR | MENU_ACT_SND6B | MENU_ACT_CLEAR;
+}
+
+void BackToUnitMenu_CamWatch(ProcPtr proc) {
+
+    if (IsCameraNotWatchingPosition(gActiveUnit->xPos, gActiveUnit->yPos)) {
+
+        int y = gActiveUnit->yPos;
+
+        Proc_EndEach(ProcScr_CamMove);
+
+        if (GetCameraAdjustedY(y << 4) > gBmSt.cameraMax.y) {
+            y = (gBmSt.cameraMax.y >> 4) + 2;
+        }
+
+        EnsureCameraOntoPosition(proc, gActiveUnit->xPos, y);
+    }
+
+    return;
+}
+
+void BackToUnitMenu_RestartMenu(void) {
+	SetActiveArt(gActiveUnit, 0);
+    StartSemiCenteredOrphanMenu(&gUnitActionMenuDef, gBmSt.cursorTarget.x - gBmSt.camera.x, 1, 20);
+
+    return;
+}
+
+u8 GenericSelection_BackToUM_CamWait(ProcPtr proc, struct SelectTarget * target) {
+
+    EndTargetSelection(proc);
+
+	SetActiveArt(gActiveUnit, 0);
+    BG_Fill(gBG2TilemapBuffer,0);
+    BG_EnableSyncByMask(BG2_SYNC_BIT);
+
+    HideMoveRangeGraphics();
+
+    ResetTextFont();
+
+    Proc_Start(gProcScr_BackToUnitMenu, PROC_TREE_3);
+
+    return MENU_ACT_SKIPCURSOR | MENU_ACT_SND6B | MENU_ACT_CLEAR;
 }
 
 // Replaces vanilla function - wasn't able to get it to work when trying to copy and edit menu code, maybe try later? idc too much

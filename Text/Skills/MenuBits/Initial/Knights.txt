@@ -1,0 +1,47 @@
+##UM_LongThrust
+ Long Thrust[X]
+##UM_LongThrustDesc
+A ranged lance thrust.[N]
+Cost: 3 Durability.[X]
+##UM_BoundingThrust
+ Bounding Thr.[X]
+##UM_BoundingThrustDesc
+A thrust that pivots.[N]
+Cost: 2 Durability.[X]
+##UM_VitalityThrust
+ Vit. Thrust[X]
+##UM_VitalityThrustDesc
+A sapping lance thrust.[N]
+Cost: 3 Durability.[X]
+
+
+##UM_PhysGuard
+ Phys. Guard[X]
+##UM_PhysGuardDesc
+Guard against physical attacks.[N]
+Cost: 3 Durability.[X]
+##UM_MagicGuard
+ Magic Guard[X]
+##UM_MagicGuardDesc
+Guard against magical attacks.[N]
+Cost: 3 Durability.[X]
+##UM_Provocation
+ Provocation[X]
+##UM_ProvocationDesc
+Drop guard to draw ire.[N]
+Cost: 3 Durability.[X]
+##UM_LuckyGuard
+ Lucky Grd.[X]
+##UM_LuckyGuardDesc
+Randomly null attacks.[N]
+Cost: 4 Durability.[X]
+##UM_BraveGuard
+ Brave Grd.[X]
+##UM_BraveGuardDesc
+Block attacks with your life.[N]
+Cost: 5 Durability.[X]
+##UM_FullGuard
+ Full Guard[X]
+##UM_FullGuardDesc
+Guard against all attacks.[N]
+Cost: 5 Durability.[X]

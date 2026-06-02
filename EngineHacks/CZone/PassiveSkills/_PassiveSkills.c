@@ -303,6 +303,7 @@ long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
 	stat = ApplySwordfighterWeaponParry(stat,unit);
 	//then multipliers
 	stat = ApplyKnightIronWall(stat,unit);
+	stat = ApplyKnightProvocationMod(stat,unit);
 	stat = ApplyMyrmidonClearStance(stat,unit);
 	stat = ApplySkyKnightSkySquadronDefense(stat,unit);
 	stat = ApplyDefBuff(stat,unit);

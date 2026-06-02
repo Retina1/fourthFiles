@@ -19,6 +19,13 @@ I'm the heart[...][A][N]
 of the end[...][AN][EyesClose]
 I[...] I am[...] inimitable[...][A][X]
 
+##C19AXavensDeath
+[MidLeft][Xavens]
+There will be rest[...][AN][EyesClose]
+For me[...] For all[...][N]
+The end[...] will come[...][AN]
+Don't you[...] forget[...][A][X]
+
 ##EgilDeath
 [MidLeft][Egil]
 Lady Rana[...][N]
@@ -30,6 +37,18 @@ My atonement[...][A][X]
 [MidLeft][Harla][EyesClose]
 Rana[...] I wasn't[...][N]
 I'm not[...] ready[...][A][X]
+
+##EndgameARanaDeath
+[MidLeft][Rana]
+[Guild][...] How can you[...][N]
+live like this[...]?[AN]
+Live without[...] fear[...][N]
+Holding onto hope[...][AN][EyesClose]
+I[...] I wish I could[...][N]
+understand you[...][AN]
+There is[...] no future[...][N]
+Not for[...] us[...][AN]
+Not[...] for[...] me[...][X]
 
 ##RanaDeath
 [MidLeft][Rana]

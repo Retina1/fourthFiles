@@ -79,10 +79,6 @@ UM_Play
 
 */
 
-ALIGN 4
-RallyingCryBuffLabel_Link: 
-WORD RallyingCryBuffLabel
-
 // thanks skillsys really awesome stuff you have here
 PUSH
 

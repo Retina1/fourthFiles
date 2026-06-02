@@ -231,9 +231,11 @@ CLEAN
 CAM1 [24,0]
 LoadUnitsByDifficulty(EnemyUnits,EnemyUnitsExpert,EnemyUnitsHeroic)
 FADU 10
+MUSC Song_DarkBattle
 Text(C6Opening2)
 MOVE 30 Anastas [14,0]; ENUN; SilentKillUnit(Anastas)
 CAM1 [0,14]
+MUSC AmbientSwoosh
 LOAD2 0x1 PlayerCutscene; ENUN
 MOVE 5 MilitaryGeneric [4,9]; ENUN
 Text(C6Opening3)

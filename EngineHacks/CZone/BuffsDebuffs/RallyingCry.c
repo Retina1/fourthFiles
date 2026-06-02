@@ -32,7 +32,7 @@ int GetUnitRallyIndex(struct Unit* unit) {
 //i hate this as much as you do
 struct Unit* GetUnitFromRallyID(int buffID) {
 	Unit* currentCheck = NULL;
-	int rallyIndex = buffID - 82;
+	int rallyIndex = buffID - BUFF_NOBLEBUFFSLOT1;
 	int unitCount = 0;
 	//starting unit id
 	for (int i = 0; i < 0x100; ++i) {
@@ -127,15 +127,16 @@ void ApplyRallyingCryFlatBuffs(struct BattleUnit* attacker, struct BattleUnit* d
 */
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(&attacker->unit);
 	struct Unit* source = NULL;
+	u16 rallyLabel = RallyingCryBuffLabel_Link;
 	
-	if ((BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link)) {
-		if (BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) {
+	if ((BuffEffectsTable[entry->buff1].buffName == rallyLabel) || (BuffEffectsTable[entry->buff2].buffName == rallyLabel) || (BuffEffectsTable[entry->buff3].buffName == rallyLabel)) {
+		if (BuffEffectsTable[entry->buff1].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff1);
 		}
-		else if (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff2].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff2);
 		}
-		else if (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff3].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff3);
 		}
 		
@@ -160,14 +161,15 @@ void ApplyRallyingCryBuffs(struct BattleUnit* attacker, struct BattleUnit* defen
 */
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(&attacker->unit);
 	struct Unit* source = NULL;
-	if ((BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link)) {
-		if (BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) {
+	u16 rallyLabel = RallyingCryBuffLabel_Link;
+	if ((BuffEffectsTable[entry->buff1].buffName == rallyLabel) || (BuffEffectsTable[entry->buff2].buffName == rallyLabel) || (BuffEffectsTable[entry->buff3].buffName == rallyLabel)) {
+		if (BuffEffectsTable[entry->buff1].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff1);
 		}
-		else if (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff2].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff2);
 		}
-		else if (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff3].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff3);
 		}
 		
@@ -192,14 +194,15 @@ void ApplyRallyingCryBuffsBothSides(struct BattleUnit* attacker, struct BattleUn
 */
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(&attacker->unit);
 	struct Unit* source = NULL;
-	if ((BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link)) {
-		if (BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) {
+	u16 rallyLabel = RallyingCryBuffLabel_Link;
+	if ((BuffEffectsTable[entry->buff1].buffName == rallyLabel) || (BuffEffectsTable[entry->buff2].buffName == rallyLabel) || (BuffEffectsTable[entry->buff3].buffName == rallyLabel)) {
+		if (BuffEffectsTable[entry->buff1].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff1);
 		}
-		else if (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff2].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff2);
 		}
-		else if (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff3].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff3);
 		}
 		
@@ -221,14 +224,15 @@ void ApplyRallyingCryBuffsBothSides(struct BattleUnit* attacker, struct BattleUn
 int ApplyRallyingCryLuck(u8 stat, struct Unit* unit) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	struct Unit* source = NULL;
-	if ((BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link)) {
-		if (BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) {
+	u16 rallyLabel = RallyingCryBuffLabel_Link;
+	if ((BuffEffectsTable[entry->buff1].buffName == rallyLabel) || (BuffEffectsTable[entry->buff2].buffName == rallyLabel) || (BuffEffectsTable[entry->buff3].buffName == rallyLabel)) {
+		if (BuffEffectsTable[entry->buff1].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff1);
 		}
-		else if (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff2].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff2);
 		}
-		else if (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff3].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff3);
 		}
 		
@@ -245,14 +249,15 @@ int ApplyRallyingCryLuck(u8 stat, struct Unit* unit) {
 int ApplyRallyingCryDef(u8 stat, struct Unit* unit) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	struct Unit* source = NULL;
-	if ((BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) || (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link)) {
-		if (BuffEffectsTable[entry->buff1].buffName == RallyingCryBuffLabel_Link) {
+	u16 rallyLabel = RallyingCryBuffLabel_Link;
+	if ((BuffEffectsTable[entry->buff1].buffName == rallyLabel) || (BuffEffectsTable[entry->buff2].buffName == rallyLabel) || (BuffEffectsTable[entry->buff3].buffName == rallyLabel)) {
+		if (BuffEffectsTable[entry->buff1].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff1);
 		}
-		else if (BuffEffectsTable[entry->buff2].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff2].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff2);
 		}
-		else if (BuffEffectsTable[entry->buff3].buffName == RallyingCryBuffLabel_Link) {
+		else if (BuffEffectsTable[entry->buff3].buffName == rallyLabel) {
 			source = GetUnitFromRallyID(entry->buff3);
 		}
 		

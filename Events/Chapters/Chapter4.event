@@ -246,7 +246,7 @@ CHECK_EVENTID Quest1_S1x_Flag
 BEQ 0x1 0xc 0x0
 LOAD1 0x1 QuestUnits; ENUN
 LABEL 0x1
-MUSC 0x0
+MUSC AmbientSwoosh
 CAM1 [0,0]
 CAM1 BeastKing
 FADU 10

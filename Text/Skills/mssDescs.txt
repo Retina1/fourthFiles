@@ -80,13 +80,13 @@ Provocation: Drop guard to[N]
 draw all enemy attacks.[X]
 ##
 Lucky Guard: Guard to potentially[N]
-nullify attacks in an area.[X]
+nullify attacks for adjacent allies.[X]
 ##
 Brave Guard: Guard to take damage[N]
-in the stead of low HP allies.[X]
+in the stead of adjacent allies.[X]
 ##
-Full Guard: Guard to somewhat[N]
-reduce all damage in an area.[X]
+Full Guard: Guard to slighty[N]
+reduce damage in a large area.[X]
 ##
 Blitz Thrust: A flurry of strikes[N]
 that continues until out of targets.[X]

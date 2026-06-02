@@ -1,0 +1,11 @@
+##UM_WarHeal
+ War Heal[X]
+##UM_WarHealDesc
+Recover an ally's HP.[N]
+Cost: 2 Durability.[X]
+
+##UM_WarPhase
+ War Phase[X]
+##UM_WarPhaseDesc
+Warp an ally far away.[N]
+Cost: 25 Durability.[X]

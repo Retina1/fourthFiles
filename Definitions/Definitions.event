@@ -117,6 +117,19 @@
 #define Recruited4Flag 0x12b
 #define Recruited5Flag 0x12c
 
+//ambient noises
+#define AmbientWind 0x47
+#define AmbientWindBirds 0x48
+#define AmbientLava 0x49
+#define AmbientNight 0x4a
+#define AmbientWater 0x4b
+#define AmbientBirds 0x4c
+#define AmbientSwoosh 0x4d
+#define AmbientWindGusts 0x4e
+#define AmbientShimmer 0x51
+#define AmbientBirds2 0x52
+#define AmbientRiver 0x53
+
 //movement types
 #define HeroMovement 0x880B808
 #define BrigandMovement 0x880b90c

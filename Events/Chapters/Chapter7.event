@@ -59,6 +59,15 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
+PlayerCutscene:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [0,4] 0x0 0x0 0x1 REDA3R4 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [0,4] 0x0 0x0 0x1 REDA2R4 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [0,5] 0x0 0x0 0x1 REDA3R5 [0x0] NoAI
+UNIT Benthus 0x0 0x1 Level(1,Ally,0) [0,6] 0x0 0x0 0x1 REDA3R6 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [0,5] 0x0 0x0 0x1 REDA2R5 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(1,Ally,0) [0,6] 0x0 0x0 0x1 REDA1R6 [0x0] NoAI
+UNIT
+
 EnemyUnits:
 UNIT FreelanceGeneric Scholar 0x0 Level(8,Enemy,1) [7,5] 0x0 0x0 0x0 0x0 [FlameScroll] AttackInRangeAI
 UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [6,4] 0x0 0x0 0x0 0x0 [SerratedAxe] AttackInRangeAI
@@ -91,7 +100,7 @@ UNIT FreelanceGeneric Lancer 0x0 Level(8,Enemy,1) [16,2] 0x0 0x0 0x0 0x0 [Pike] 
 UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
 
 UNIT FreelanceGeneric Sniper 0x0 Level(8,Enemy,1) [16,6] 0x0 0x0 0x0 0x0 [Shortbow,CompactBow] AttackInRangeAI
-UNIT Astoria Seeker 0x0 Level(10,Enemy,1) [16,10] DropItem 0x0 0x0 0x0 [ShineScroll] AttackInRangeAI
+UNIT Astoria Seeker 0x0 Level(10,Enemy,1) [8,9] DropItem 0x0 0x0 0x0 [ShineScroll] AttackInRangeAI
 UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [7,15] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
 
 UNIT
@@ -101,20 +110,48 @@ UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [8,14] 0x0 0x0 0x1 REDA7R13
 UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [8,14] 0x0 0x0 0x1 REDA9R13 [Shortspear] NoAI
 UNIT
 
+EndingSenate:
+//in universe, anastas
+UNIT Anastas SkyKnight 0x0 Level(8,Enemy,1) [13,6] 0x0 0x0 0x0 0x0 [Sarissa] NoAI
+//bosses
+UNIT Iseau Fencer 0x0 Level(18,Enemy,1) [10,3] 0x0 0x0 0x0 0x0 [JollyRoger,FrailtyAura,ShieldAura,HasteAura] NoAI
+UNIT Stephen Runemaster 0x0 Level(18,Enemy,1) [13,2] DropItem 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT Angelica Medic 0x0 Level(17,Enemy,1) [16,3] DropItem 0x0 0x0 0x0 [Asclepius] NoAI
+UNIT
+
 ALIGN 4
 
 BeginningScene:
 DifficultySwapper
-MUSC 0x0
+MUSC AmbientSwoosh
 //outline - scene outside of mines with hedge
-CleanTextNoMap(0x18,C7Opening1)
+CleanTextNoMap(0x1d,C7Opening1)
+REMA
+CLEAN
+MUSC 0
 //scene inside mines with astoria and xavens - in map
-CleanTextNoMap(0x18,C7Opening2)
-//scene inside mines with guild
-CleanTextNoMap(0x18,C7Opening3)
-//scene inside mines right before combat - all in map
-CleanTextNoMap(0x18,C7Opening4)
+//LoadUnitsByDifficulty(EnemyUnits,EnemyUnitsExpert,EnemyUnitsHeroic)
+
 LOAD1 0x1 EnemyUnits; ENUN
+CAM1 Xavens
+FADU 10
+FlashCursor(Xavens,60)
+FlashCursor(Astoria,60)
+MUSC Song_CherryTreesAndWings
+Text(C7Opening2)
+MOVE 15 Astoria [16,10]; ENUN
+STAL 5
+MUSC AmbientShimmer
+//scene inside mines with guild
+CleanTextNoMap(CaveCG,C7Opening3)
+REMA
+CLEAN
+//scene inside mines right before combat - all in map
+CAM1 [0,0]
+FADU 10
+LOAD2 0x1 PlayerCutscene; ENUN
+MUSC Song_PandemonicPlanet
+Text(C7Opening4)
 CallPreps
 EndEvent
 
@@ -124,7 +161,7 @@ CHECK_ALIVE Xavens
 BEQ 0x1 0xc 0x0
 CAM1 Xavens
 FlashCursor(Xavens,30)
-Text(FillerDialogue)
+Text(C7XavensLeaves)
 STAL 10
 CAM1 Xavens
 WARPOUT [7,15]
@@ -135,7 +172,7 @@ CHECK_ALIVE Astoria
 BEQ 0x4 0xc 0x0
 CAM1 Astoria
 FlashCursor(Astoria,30)
-Text(FillerDialogue)
+Text(C7AstoriaText)
 LABEL 0x4
 CAM1 [8,14]
 STAL 20
@@ -148,13 +185,14 @@ EndingScene:
 EndingSceneToggles
 MUSC 0x0
 //outline - scene inside of mines, victory yet doubt
-CleanTextNoMap(0x18,C7Ending1)
+CleanTextNoMap(CaveCG,C7Ending1)
 //scene inside mines searching for endbringer, maybe taking crystal down
-CleanTextNoMap(0x18,C7Ending2)
+CleanTextNoMap(CaveCG,C7Ending2)
 //scene inside mines after crystal, buildup to
-CleanTextNoMap(0x18,C7Ending3)
+CleanTextNoMap(CaveCG,C7Ending3)
 //scene of benthus betrayal, stab gore, epic cg, he leaves and shatters crystal on other side
-CleanTextNoMap(0x18,C7Ending4)
+MUSC Song_DevilsRoulette
+CleanTextNoMap(CaveCG,C7Ending4)
 SetBackground(DecisionCG)
 STAL 60
 SoloText(C7Ending5)
@@ -162,10 +200,19 @@ STAL 60
 FADI 10
 CLEAN
 //scene of despair
-CleanTextNoMap(0x18,C7Ending6)
+MUSC Song_UntilTheTwoPeopleFallInLove
+CleanTextNoMap(CaveCG,C7Ending6)
 //scene of belvarus (stephen, angelica, iseau) - in ch13 map
-CleanTextNoMap(0x18,C7Ending7)
-
+MUSC 0x0
+LOMA Chapter13
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingSenate; ENUN
+CAM1 [13,0]
+FADU 10
+STAL 30
+FlashCursor(Stephen,60)
+MUSC Song_DarkBattle
+Text(C7Ending7)
 DumpUnitItems(Benthus)
 SilentKillUnit(Benthus)
 ENUT GoreNoEyeFlag

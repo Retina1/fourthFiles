@@ -15,6 +15,6 @@ POIN ResistanceLabelStandard_Init
 POIN DefenseLabelStandard_Init
 POIN AttackLabelStandard_Init
 POIN AttackSpeedLabelStandard_Init
-POIN LevelLabelStandard_Init
 POIN ExperienceLabelStandard_Init
+POIN LevelLabelStandard_Init
 WORD $0
