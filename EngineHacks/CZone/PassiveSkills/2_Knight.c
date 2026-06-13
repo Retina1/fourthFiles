@@ -1,4 +1,4 @@
-int ApplyKnightIronWall(u8 stat, struct Unit* unit) {
+int ApplyKnightIronWall(int stat, struct Unit* unit) {
 	
 	u8* unitBuffer = GetUnitsInRange(unit, 1, 1);
 	if (unitBuffer == FALSE)
@@ -116,7 +116,7 @@ void ApplyKnightMagicGuard(struct BattleUnit* attacker, struct BattleUnit* defen
 	}
 }
 
-int ApplyKnightProvocationMod(u8 stat, struct Unit* unit) {
+int ApplyKnightProvocationMod(int stat, struct Unit* unit) {
 	
 	if (GetActiveArt(unit) == 17) {
 		if (UNIT_HAS_SKILL(unit,HOP,skill_333)){

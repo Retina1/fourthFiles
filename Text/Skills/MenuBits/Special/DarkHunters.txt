@@ -1,3 +1,9 @@
+##UM_Precision
+ Precision[X]
+##UM_PrecisionDesc
+Buff allied Hit and Crit.[N]
+Cost: 4 Durability.[X]
+
 ##UM_CuffsWhip
  Cuffs Whip[X]
 ##UM_CuffsWhipDesc

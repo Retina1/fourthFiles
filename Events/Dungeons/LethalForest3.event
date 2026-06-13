@@ -288,7 +288,7 @@ ENUT Stratum1DoneFlag
 ENUF WaitEventTrapsFlag
 ENUF 0x66
 MUSC Song_EditMode
-CleanTextNoMap(0x3,Dungeon1_Ending)
+CleanTextNoMap(0x1f,Dungeon1_Ending)
 MoveToChapter(HirschringSquare)
 GOTO 0x2
 LABEL 0x1

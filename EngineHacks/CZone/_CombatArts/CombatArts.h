@@ -20,7 +20,7 @@ struct CombatArt {
     /* 24 */ void (*postBattleFunction)(struct Unit* actor, struct Unit* target);
     /* 28 */ void (*battleProcFunction)(struct BattleUnit* actor, struct BattleUnit* target);
     /* 2c */ int  (*rangeFunction)(struct Unit* unit, int itemID, int rangeWord); // Returns modified rangeWord
-    /* 30 */ int  (*oddsFunction)(struct BattleUnit* actor, struct BattleUnit* target); // Returns modified rangeWord
+    /* 30 */ int  (*oddsFunction)(struct Unit* actor, struct Unit* target); // Returns modified rangeWord
     /* 34 */ int  (*strikeCountFunction)(struct BattleUnit* actor); // Returns modified rangeWord
     /* 38 */ int  (*healAmountFunction)(struct Unit* unit); // Returns heal amount
 	/* 3c */ u8   isMagic;

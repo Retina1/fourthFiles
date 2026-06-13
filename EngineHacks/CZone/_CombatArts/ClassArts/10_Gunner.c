@@ -1,3 +1,27 @@
+u8 WarningShotArtUsability(struct Unit* unit, u16 artID)
+{
+	if (UNIT_HAS_SKILL(unit,DRG,skill_221)) {
+		return HasSelectTarget(unit, MakeTargetListForDebuff5Rng) && ArtItemCheckInventory(unit, artID);
+	}
+	else return 0;
+}
+
+u8 WarningShotArtMenuUsability(const struct MenuItemDef* def, int number)
+{
+    return WarningShotArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+void WarningShotItemSelectEffect(u16 artID, struct Unit* unit)
+{
+    SetStaffUseAction(unit);
+	if (UNIT_HAS_SKILL(unit,DRG,skill_222)) {
+		ApplyDebuffToAlliesInRange(GetUnit(gActionData.targetIndex),DEBUFF_WARNINGSHOT2,1);
+	}
+	else{
+		ApplyDebuffToAlliesInRange(GetUnit(gActionData.targetIndex),DEBUFF_WARNINGSHOT1,1);
+	}
+}
+
 //ricochet
 u8 RicochetArtUsability(struct Unit* unit, u16 artID){
 	if (UNIT_HAS_SKILL(unit,DRG,skill_531)){

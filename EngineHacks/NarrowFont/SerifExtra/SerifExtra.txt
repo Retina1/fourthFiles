@@ -1,0 +1,120 @@
+//ASCII / straight-lookup only (FE8U)
+//Don't use 0x00-0x1F slots, used for dialogue functions
+//[0x80] is also unusable (forced - character), might be more
+
+
+Sglyph_Colon:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x2 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifcolon.img.bin"
+
+Sglyph_Dot:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x2 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifdot.img.bin"
+
+Sglyph_Comma:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x2 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifcomma.img.bin"
+
+Sglyph_Minus:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x4 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifminus.img.bin"
+
+Sglyph_Plus:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x4 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifplus.img.bin"
+
+Sglyph_Slash:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x4 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifslash.img.bin"
+
+Sglyph_LParen:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x4 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "seriflparen.img.bin"
+
+Sglyph_RParen:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x4 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifrparen.img.bin"
+
+Sglyph_Lock:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x8 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "seriflock.img.bin"
+
+Sglyph_Monster:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x11 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "monstericon.img.bin"
+
+Sglyph_SingleQuote:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x3 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifsquote.img.bin"
+
+Sglyph_DoubleQuote:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serifdquote.img.bin"
+
+//tGlyphEntry(0x2e, Sglyph_Dot)
+//tGlyphEntry(0x2c, Sglyph_Comma)
+//tGlyphEntry(0x3a, Sglyph_Colon)
+tGlyphEntry(0x2b, Sglyph_Plus)
+//tGlyphEntry(0x2d, Sglyph_Minus)
+tGlyphEntry(0x2f, Sglyph_Slash)
+tGlyphEntry(0x28, Sglyph_LParen)
+tGlyphEntry(0x29, Sglyph_RParen)
+//tGlyphEntry(0xD2, Sglyph_Lock)
+//tGlyphEntry(0xD3, Sglyph_Monster)
+//tGlyphEntry(0x27, Sglyph_SingleQuote)
+tGlyphEntry(0x91, Sglyph_SingleQuote)
+tGlyphEntry(0x92, Sglyph_SingleQuote)
+tGlyphEntry(0x22, Sglyph_DoubleQuote)
+tGlyphEntry(0x93, Sglyph_DoubleQuote)
+tGlyphEntry(0x94, Sglyph_DoubleQuote)
+
+
+

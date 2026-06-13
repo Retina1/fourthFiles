@@ -117,6 +117,19 @@ CA_Entry((NullArt + 20), 5)
 	CA_Usability(FullGuardArtUsability,FullGuardArtMenuUsability)
 	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
 	CA_GenericStance
+CA_Entry((NullArt + 21), 6)
+	CA_Name(UM_BlitzThrust,UM_BlitzThrustDesc)
+	CA_Usability(BlitzThrustArtUsability,BlitzThrustArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(BlitzThrustBothSides); CA_Postbattle(BlitzThrustPostbattle)
+	CA_Range(BlitzThrustRange)
+
+CA_Entry((NullArt + 22), 5)
+	CA_Name(UM_VengeanceThrust,UM_VengeanceThrustDesc)
+	CA_Usability(VengeanceThrustArtUsability,VengeanceThrustArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(VengeanceThrustBothSides); CA_Prebattle(VengeanceThrustPrebattle)
+	CA_Range(PierceLock)
 
 //AXEFIGHTER
 CA_Entry((NullArt + 23), 3)
@@ -159,7 +172,7 @@ CA_Entry((NullArt + 28), 3)
 	CA_Usability(BoomerangAxeArtUsability,BoomerangAxeArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(BoomerangAxeBothSides); CA_Prebattle(BoomerangAxePrebattle)
-	CA_Range(BoomerangAxeRange); CA_SpellAnim(0x1)
+	CA_Range(BoomerangAxeRange); CA_SpellAnimHandAxe
 
 CA_Entry((NullArt + 29), 5)
 	CA_Name(UM_VengeanceBash,UM_VengeanceBashDesc)
@@ -191,7 +204,13 @@ CA_Entry((NullArt + 33), 4)
 	CA_Range(BashLock)
 
 //ARHCER
-//sure hit eventually
+CA_Entry((NullArt + 34), 3)
+	CA_Name(UM_SureAim,UM_SureAimDesc)
+	CA_Usability(SureAimArtUsability,SureAimArtMenuUsability)
+	CA_ItemSelectUsability(RangedItemSelectUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectEffect(SureAimItemSelectEffect)
+	CA_Range(Generic1_2Range); CA_SpellAnim(0x66); CA_IER(0x3a)
+	
 CA_Entry((NullArt + 35), 3)
 	CA_Name(UM_DropShot,UM_DropShotDesc)
 	CA_Usability(DropShotArtUsability,DropShotArtMenuUsability)
@@ -339,3 +358,58 @@ CA_Entry((NullArt + 55), 16)
 	CA_Range(EschatonRange); CA_IsMagic(MagicArt); CA_SpellAnim(0x46)
 	
 //medic
+CA_Entry((NullArt + 57), 3)
+	CA_Name(UM_Curare,UM_CurareDesc)
+	CA_Usability(CurareArtUsability,CurareArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(StaffItemSelectUsability)
+	CA_ItemSelectEffect(CurareItemSelectEffect)
+	CA_PureAilment(CurareOdds,ParalyzeEffect)
+	CA_Range(Noncombat1to5Range)
+CA_Entry((NullArt + 58), 2)
+	CA_Name(UM_Cure,UM_CureDesc)
+	CA_Usability(CureArtUsability,CureArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(StaffItemSelectUsability)
+	CA_ItemSelectEffect(CureItemSelectEffect)
+	CA_Range(CureRange) //range for support arts will be purely visual
+	CA_HealAmount(CureHealAmount)
+	CA_SpellAnim(0x29); CA_IER(0x1)
+CA_Entry((NullArt + 59), 3)
+	CA_Name(UM_Refresh,UM_RefreshDesc)
+	CA_Usability(RefreshArtUsability,RefreshArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(StaffItemSelectUsability)
+	CA_ItemSelectEffect(RefreshItemSelectEffect)
+	CA_Range(RefreshRange) //range for support arts will be purely visual
+	CA_SpellAnim(0x2c); CA_IER(0x6)
+CA_Entry((NullArt + 60), 4)
+	CA_Name(UM_Toxin,UM_ToxinDesc)
+	CA_Usability(ToxinArtUsability,ToxinArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(StaffItemSelectUsability)
+	CA_ItemSelectEffect(ToxinItemSelectEffect)
+	CA_PureAilment(ToxinOdds,PoisonEffect)
+	CA_Range(ToxinRange)
+CA_Entry((NullArt + 61), 3)
+	CA_Name(UM_WrathStaff,UM_WrathStaffDesc)
+	CA_Usability(WrathStaffArtUsability,WrathStaffArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_Prebattle(WrathStaffPrebattle); CA_BothSides(WrathStaffBothSides)
+	CA_Range(StaffLock)
+CA_Entry((NullArt + 62), 6)
+	CA_Name(UM_Immunize,UM_ImmunizeDesc)
+	CA_Usability(ImmunizeArtUsability,ImmunizeArtMenuUsability)
+	CA_ItemSelectUsability(StaffItemSelectUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectEffect(ImmunizeItemSelectEffect)
+	CA_Range(Generic1Range); CA_SpellAnim(0x66); CA_IER(0x3a)
+CA_Entry((NullArt + 63), 10)
+	CA_Name(UM_HealingTouch,UM_HealingTouchDesc)
+	CA_Usability(HealingTouchArtUsability,HealingTouchArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(StaffItemSelectUsability)
+	CA_ItemSelectEffect(HealingTouchItemSelectEffect)
+	CA_Range(HealingTouchRange) //range for support arts will be purely visual
+	CA_HealAmount(HealingTouchHealAmount)
+	CA_SpellAnim(0x66); CA_IER(0x5)
+CA_Entry((NullArt + 64), 7)
+	CA_Name(UM_Caduceus,UM_CaduceusDesc)
+	CA_Usability(CaduceusArtUsability,CaduceusArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(CaduceusBothSides)
+	CA_Range(StaffLock)

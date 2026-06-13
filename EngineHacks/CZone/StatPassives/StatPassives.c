@@ -1,4 +1,4 @@
-/*long long SkillPointHPBoost(u8 stat, struct Unit* unit) {
+/*long long SkillPointHPBoost(int stat, struct Unit* unit) {
 	if (CheckBit(GetUnitDebuffEntry(unit), DivineTruthBitOffset_Link)) stat += DivineTruthBuffAmount_Link;
 	
 	union {
@@ -16,7 +16,7 @@
 	
 }*/
 
-long long SkillPointHPBoost(u8 stat, struct Unit* unit) {
+long long SkillPointHPBoost(int stat, struct Unit* unit) {
 	if (unit->skills.hpUp2){
 		stat += 9;
 		if (UNIT_HAS_SKILL(unit,BOT,skill_141)){
@@ -45,7 +45,7 @@ long long SkillPointHPBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long SkillPointStrBoost(u8 stat, struct Unit* unit) {
+long long SkillPointStrBoost(int stat, struct Unit* unit) {
 	if (unit->skills.strUp2){
 		stat += 5;
 		if (UNIT_HAS_SKILL(unit,BOT,skill_141)){
@@ -74,7 +74,7 @@ long long SkillPointStrBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long SkillPointMagBoost(u8 stat, struct Unit* unit) {
+long long SkillPointMagBoost(int stat, struct Unit* unit) {
 	if (unit->skills.magUp2){
 		stat += 5;
 		if (UNIT_HAS_SKILL(unit,BOT,skill_141)){
@@ -103,7 +103,7 @@ long long SkillPointMagBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long SkillPointSpdBoost(u8 stat, struct Unit* unit) {
+long long SkillPointSpdBoost(int stat, struct Unit* unit) {
 	if (unit->skills.spdUp2){
 		stat += 5;
 		if (UNIT_HAS_SKILL(unit,BOT,skill_141)){
@@ -132,7 +132,7 @@ long long SkillPointSpdBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long SkillPointDefBoost(u8 stat, struct Unit* unit) {
+long long SkillPointDefBoost(int stat, struct Unit* unit) {
 	if (unit->skills.defUp2){
 		stat += 5;
 		if (UNIT_HAS_SKILL(unit,BOT,skill_141)){
@@ -161,7 +161,7 @@ long long SkillPointDefBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long SkillPointSklBoost(u8 stat, struct Unit* unit) {
+long long SkillPointSklBoost(int stat, struct Unit* unit) {
 	if (unit->skills.sklUp2){
 		stat += 7;
 		if (UNIT_HAS_SKILL(unit,BOT,skill_141)){
@@ -190,7 +190,7 @@ long long SkillPointSklBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long SkillPointLucBoost(u8 stat, struct Unit* unit) {
+long long SkillPointLucBoost(int stat, struct Unit* unit) {
 	if (unit->skills.lucUp2){
 		stat += 7;
 		if (UNIT_HAS_SKILL(unit,BOT,skill_141)){
@@ -219,7 +219,7 @@ long long SkillPointLucBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long SkillPointResBoost(u8 stat, struct Unit* unit) {
+long long SkillPointResBoost(int stat, struct Unit* unit) {
 	if (unit->skills.resUp2){
 		stat += 7;
 		if (UNIT_HAS_SKILL(unit,BOT,skill_141)){

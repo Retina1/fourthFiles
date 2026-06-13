@@ -1,0 +1,57 @@
+##UM_RallyingFlag
+ Rallying Fl.[X]
+##UM_RallyingFlagDesc
+Stoke your allies' strength.[N]
+Cost: 3 Durability.[X]
+##UM_SurvivalFlag
+ Survival Fl.[X]
+##UM_SurvivalFlagDesc
+Stoke your allies' resolve.[N]
+Cost: 3 Durability.[X]
+##UM_ExpertiseFlag
+ Expertise Fl.[X]
+##UM_ExpertiseFlagDesc
+Stoke your allies' growth.[N]
+Cost: 3 Durability.[X]
+
+##UM_ChargingThrust
+ Chrg. Thrust[X]
+##UM_ChargingThrustDesc
+Strike with momentum.[N]
+Cost: 3 Durability.[X]
+##UM_ChargingThrow
+ Chrg. Throw[X]
+##UM_ChargingThrowDesc
+Throw with momentum.[N]
+Cost: 3 Durability.[X]
+##UM_HorseSlayer
+ Horse Slayer[X]
+##UM_HorseSlayerDesc
+Strike down mounts.[N]
+Cost: 2 Durability.[X]
+##UM_Heartpiercer
+ Heartpiercer[X]
+##UM_HeartpiercerDesc
+A decisive strike.[N]
+Cost: 4 Durability.[X]
+##UM_Archballista
+ Archballista[X]
+##UM_ArchballistaDesc
+Throw with focus.[N]
+Cost: 5 Durability.[X]
+##UM_FullForce
+ Full Force[X]
+##UM_FullForceDesc
+A forceful flurry.[N]
+Cost: 4 Durability.[X]
+##UM_ChargeCommand
+ Charge Cmd.[X]
+##UM_ChargeCommandDesc
+Command a unified front.[N]
+Cost: 7 Durability.[X]
+
+##UM_GaeBolg
+ Gae Bolg[X]
+##UM_GaeBolgDesc
+Shalt not resist.[N]
+Cost: 13 Durability.[X]

@@ -1,0 +1,57 @@
+##UM_WarCry
+ War Cry[X]
+##UM_WarCryDesc
+Dull your foes' strength.[N]
+Cost: 2 Durability.[X]
+##UM_HellishCry
+ Hellish Cry[X]
+##UM_HellishCryDesc
+Dull your foes' resolve.[N]
+Cost: 2 Durability.[X]
+##UM_DominantCry
+ Dominant Cry[X]
+##UM_DominantCryDesc
+Dull your foes' morale.[N]
+Cost: 2 Durability.[X]
+
+##UM_ChargingSmash
+ Chrg. Smash[X]
+##UM_ChargingSmashDesc
+Strike with momentum.[N]
+Cost: 3 Durability.[X]
+##UM_ChargingToss
+ Chrg. Toss[X]
+##UM_ChargingTossDesc
+Throw with momentum.[N]
+Cost: 3 Durability.[X]
+##UM_HitAndRun
+ Hit and Run[X]
+##UM_HitAndRunDesc
+Strike, then run.[N]
+Cost: 3 Durability.[X]
+##UM_Gallop
+ Gallop[X]
+##UM_GallopDesc
+Buff self's Mov.[N]
+Cost: 3 Durability.[X]
+##UM_CollectedFury
+ Collect. Fury[X]
+##UM_CollectedFuryDesc
+Smash with focus.[N]
+Cost: 5 Durability.[X]
+##UM_GreatCleave
+ Great Cleave[X]
+##UM_GreatCleaveDesc
+Cleave a massive area.[N]
+Cost: 6 Durability.[X]
+##UM_RaidCommand
+ Raid Cmd.[X]
+##UM_RaidCommandDesc
+Command a deadly front.[N]
+Cost: 5 Durability.[X]
+
+##UM_RegimentRave
+ Regiment Rv.[X]
+##UM_RegimentRaveDesc
+Become a raging storm.[N]
+Cost: ALL Durability.[X]

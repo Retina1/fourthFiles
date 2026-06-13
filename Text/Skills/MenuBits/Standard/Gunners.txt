@@ -3,6 +3,11 @@
 ##UM_VitalSnipeDesc
 Shoot to bind arms.[N]
 Cost: 2 Durability.[X]
+##UM_WarningShot
+ Warning Shot[X]
+##UM_WarningShotDesc
+Shoot to intimidate.[N]
+Cost: 2 Durability.[X]
 ##UM_FlareShot
  Flare Shot[X]
 ##UM_FlareShotDesc

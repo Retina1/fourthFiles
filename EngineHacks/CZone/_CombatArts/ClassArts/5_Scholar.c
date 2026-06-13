@@ -348,12 +348,12 @@ void FrostfallPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 	}
 	actor->battleAttack += mightBonus;
 }
-int FrostfallOdds(struct BattleUnit* actor, struct BattleUnit* target){
+int FrostfallOdds(struct Unit* actor, struct Unit* target){
 	int odds = 30;
-	if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_333)){
+	if (UNIT_HAS_SKILL(actor,WRK,skill_333)){
 		odds = 50;
 	}
-	if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_332)){
+	if (UNIT_HAS_SKILL(actor,WRK,skill_332)){
 		odds = 40;
 	}
 	return odds;

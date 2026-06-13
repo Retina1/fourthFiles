@@ -52,7 +52,7 @@ void ApplySwordfighterTenacity(struct BattleUnit* attacker, struct BattleUnit* d
 	}
 }
 
-int ApplySwordfighterWeaponParry(u8 stat, struct Unit* unit) {
+int ApplySwordfighterWeaponParry(int stat, struct Unit* unit) {
 	int count = 0;
 	int i;
 	for (i = 0; i < GetUnitItemCount(unit); i++){

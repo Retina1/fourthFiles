@@ -1,0 +1,41 @@
+##UM_Sapping
+ Sapping[X]
+##UM_SappingDesc
+A curse of weakness.[N]
+Cost: 2 Durability.[X]
+##UM_Frailty
+ Frailty[X]
+##UM_FrailtyDesc
+A curse of brittleness.[N]
+Cost: 2 Durability.[X]
+##UM_Leaden
+ Leaden[X]
+##UM_LeadenDesc
+A curse of slowness.[N]
+Cost: 2 Durability.[X]
+
+##UM_Torpor
+ Torpor[X]
+##UM_TorporDesc
+A curse of slumber.[N]
+Cost: 3 Durability.[X]
+##UM_Madness
+ Madness[X]
+##UM_MadnessDesc
+A curse of fury.[N]
+Cost: 4 Durability.[X]
+##UM_Binding
+ Binding[X]
+##UM_BindingDesc
+A curse of constriction.[N]
+Cost: 6 Durability.[X]
+##UM_Hex
+ Hex[X]
+##UM_HexDesc
+A curse of exploitation.[N]
+Cost: 2 Durability.[X]
+##UM_Stoning
+ Stoning[X]
+##UM_StoningDesc
+A curse of stillness.[N]
+Cost: 5 Durability.[X]

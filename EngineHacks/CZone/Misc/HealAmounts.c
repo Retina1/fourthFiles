@@ -66,6 +66,11 @@ void ChapterChangeUnitCleanup(void) {
 void ResetAllPlayerUnitState(void)
 {
     int i;
+	//outside of ch14, reset buffs/debuff
+	u32 chapterIndex = gPlaySt.chapterIndex;
+	if (chapterIndex != 0xd) {
+		ClearAllBuffsDebuffs();
+	}
     for (i = FACTION_BLUE + 1; i < FACTION_GREEN; i++)
     {
         struct Unit * unit = GetUnit(i);
@@ -195,6 +200,7 @@ void ExecStandardHeal(ProcPtr proc) {
     return;
 }
 
+void MakeTargetListForHealingTouch(struct Unit* unit);
 void ExecFortify(ProcPtr proc) {
     int i;
     int amount;
@@ -207,7 +213,13 @@ void ExecFortify(ProcPtr proc) {
         GetUnitFromCharId(GetPlayerLeaderUnitId())
     );
 
-    MakeTargetListForRangedHeal(GetUnit(gActionData.subjectIndex));
+	if (GetActiveArt(GetUnit(gActionData.subjectIndex)) == 63) { //update if we make other fortifies
+	//maybe not needed but eh why not
+		MakeTargetListForHealingTouch(GetUnit(gActionData.subjectIndex));
+	}
+	else {
+		MakeTargetListForRangedHeal(GetUnit(gActionData.subjectIndex));
+	}
 
     amount = GetUnitItemHealAmount(
         GetUnit(gActionData.subjectIndex),
@@ -227,7 +239,7 @@ void ExecFortify(ProcPtr proc) {
 	
 	if (UNIT_HAS_SKILL(GetUnit(gActionData.subjectIndex),MED,skill_131)){
 		for (i = 0; i < targetCount; i++) {
-			UnitApplyBuff(GetUnit(gActionData.targetIndex),8);
+			UnitApplyBuff(GetUnit(GetTarget(i)->uid),BUFF_PANACAEA);
 		}
     }
 	

@@ -102,6 +102,51 @@ u8* GetUnitsInRange(Unit* unit, int allyOption, int range) {
     return gUnitRangeBuffer;
 }
 
+
+u8* GetUnitsInLine(Unit* unit, Unit* unit2, int allyOption) {
+    const s8(*pAllegianceChecker)(int, int) = ((allyOption & 1) ? AreAllegiancesAllied : AreAllegiancesEqual);
+
+	u8 unitIndex = unit->index; //Loading as unsigned to prevent faulty comparisons
+    int count = 0;
+    int check = 0;
+
+    for (int i = 0; i < 0x100; ++i) {
+        Unit* other = gUnitLookup[i];
+
+        if (!IsUnitOnField(other) || unitIndex == i) {
+            continue;
+        }
+
+        //Check if other matches allyOption's criteria
+        if (allyOption & 2) {
+            check = !pAllegianceChecker(unit->index, other->index);
+        }
+        else {
+            check =  pAllegianceChecker(unit->index, other->index);
+        }
+
+        if (check || (allyOption & 4)) {
+            if (((unit->yPos == other->yPos) && (unit2->yPos == other->yPos))) {
+				if (((unit->xPos < unit2->xPos) && (unit2->xPos < other->xPos)) || ((unit->xPos > unit2->xPos) && (unit2->xPos > other->xPos))) {
+					gUnitRangeBuffer[count++] = i;
+				}
+			}
+			else if (((unit->xPos == other->xPos) && (unit2->xPos == other->xPos))) {
+				if (((unit->yPos < unit2->yPos) && (unit2->yPos < other->yPos)) || ((unit->yPos > unit2->yPos) && (unit2->yPos > other->yPos))) {
+					gUnitRangeBuffer[count++] = i;
+				}
+            }
+        }
+    }
+
+    //Terminator
+    gUnitRangeBuffer[count++] = 0;
+    if (!gUnitRangeBuffer[0])
+        return FALSE;
+
+    return gUnitRangeBuffer;
+}
+
 /*
 int GetUnitTotalSP(struct Unit* unit){
 	int level = unit->level;

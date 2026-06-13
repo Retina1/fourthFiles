@@ -136,7 +136,7 @@ void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defend
 	BothSidesRaiderPassiveSkills(attacker, defender);
 	BothSidesGunnerPassiveSkills(attacker, defender);
 	//troub
-//	BothSidesSeekerPassiveSkills(attacker, defender);
+	BothSidesSeekerPassiveSkills(attacker, defender);
 //	BothSidesPriestPassiveSkills(attacker, defender); all flat numbers
 //	BothSidesLurkerPassiveSkills(attacker, defender);
 	BothSidesDarkHunterPassiveSkills(attacker, defender);
@@ -156,7 +156,7 @@ void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defend
 	ApplySleepDamageBoost(attacker, defender);
 }
 
-int ApplyDevilAxeZero(u8 stat, struct Unit* unit) {
+int ApplyDevilAxeZero(int stat, struct Unit* unit) {
 	int weapon = GetItemIndex(GetUnitEquippedWeapon(unit));
 	//debiru axe
 	if (weapon == 0x3b){
@@ -165,14 +165,20 @@ int ApplyDevilAxeZero(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int Apply255Cap(u8 stat, struct Unit* unit) {
+int Apply255Cap(int stat, struct Unit* unit) {
 	if (stat > 255){
 		stat = 255;
 	}
 	return stat;
 }
+int Apply99Cap(int stat, struct Unit* unit) {
+	if (stat > 99){
+		stat = 99;
+	}
+	return stat;
+}
 
-int ApplyLucBuff(u8 stat, struct Unit* unit) {
+int ApplyLucBuff(int stat, struct Unit* unit) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	if (entry->buff1) {
 		stat = stat * BuffEffectsTable[entry->buff1].lucMul / BuffEffectsTable[entry->buff1].lucDiv;
@@ -196,7 +202,7 @@ int ApplyLucBuff(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int ApplyDefBuff(u8 stat, struct Unit* unit) {
+int ApplyDefBuff(int stat, struct Unit* unit) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	if (entry->buff1) {
 		stat = stat * BuffEffectsTable[entry->buff1].defMul / BuffEffectsTable[entry->buff1].defDiv;
@@ -220,7 +226,7 @@ int ApplyDefBuff(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int ApplyMovBuff(u8 stat, struct Unit* unit) {
+int ApplyMovBuff(int stat, struct Unit* unit) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	if (entry->buff1) {
 		stat = stat + BuffEffectsTable[entry->buff1].movMod;
@@ -243,25 +249,25 @@ int ApplyMovBuff(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int ApplyArmBind(u8 stat, struct Unit* unit) {
+int ApplyArmBind(int stat, struct Unit* unit) {
 	if (unit->isArmBound == 1){
 		stat = stat/2;
 	}
 	return stat;
 }
-int ApplyHeadBind(u8 stat, struct Unit* unit) {
+int ApplyHeadBind(int stat, struct Unit* unit) {
 	if (unit->isHeadBound == 1){
 		stat = stat/2;
 	}
 	return stat;
 }
-int ApplyLegBind(u8 stat, struct Unit* unit) {
+int ApplyLegBind(int stat, struct Unit* unit) {
 	if (unit->isLegBound == 1){
 		stat = 0;
 	}
 	return stat;
 }
-int ApplyCrinkleGloveSpd(u8 stat, struct Unit* unit) {
+int ApplyCrinkleGloveSpd(int stat, struct Unit* unit) {
 	for(int j = 0; j < GetUnitItemCount(unit); j++) {
 			u16 curItem = unit->items[j];
 			if(GetItemIndex(curItem) == 0xDA) {
@@ -274,7 +280,7 @@ int ApplyCrinkleGloveSpd(u8 stat, struct Unit* unit) {
 }
 
 
-long long ClassSkillLucBoost(u8 stat, struct Unit* unit) {
+long long ClassSkillLucBoost(int stat, struct Unit* unit) {
 	//add
 	
 	//mul
@@ -298,7 +304,7 @@ long long ClassSkillLucBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
+long long ClassSkillDefsBoost(int stat, struct Unit* unit) {
 	//flat boosts first
 	stat = ApplySwordfighterWeaponParry(stat,unit);
 	//then multipliers
@@ -332,7 +338,7 @@ long long ClassSkillDefsBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long ClassSkillResOnlyBoost(u8 stat, struct Unit* unit) {
+long long ClassSkillResOnlyBoost(int stat, struct Unit* unit) {
 	//flat boosts first
 
 	//then multipliers
@@ -356,7 +362,7 @@ long long ClassSkillResOnlyBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long ClassSkillSpdBoost(u8 stat, struct Unit* unit) {
+long long ClassSkillSpdBoost(int stat, struct Unit* unit) {
 	//add
 	stat = ApplyCrinkleGloveSpd(stat,unit);
 	stat = ApplyCurateCardio(stat,unit);
@@ -378,12 +384,12 @@ long long ClassSkillSpdBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long ClassSkillMaxHPBoost(u8 stat, struct Unit* unit) {
+long long ClassSkillMaxHPBoost(int stat, struct Unit* unit) {
 	//add
 	stat = ApplyCurateCardio(stat,unit);
 	//mul
 	
-	stat = Apply255Cap(stat,unit);
+	stat = Apply99Cap(stat,unit);
 	union {
 		long long asLongLong;
 		struct {
@@ -399,7 +405,7 @@ long long ClassSkillMaxHPBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long ClassSkillStrBoost(u8 stat, struct Unit* unit) {
+long long ClassSkillStrBoost(int stat, struct Unit* unit) {
 	//add
 	stat = ApplyCuratePhysAptitude(stat,unit);
 	//mul
@@ -421,7 +427,7 @@ long long ClassSkillStrBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long ClassSkillMagBoost(u8 stat, struct Unit* unit) {
+long long ClassSkillMagBoost(int stat, struct Unit* unit) {
 	//add
 
 	//mul
@@ -443,7 +449,7 @@ long long ClassSkillMagBoost(u8 stat, struct Unit* unit) {
 	
 }
 
-long long ClassSkillMovBoost(u8 stat, struct Unit* unit) {
+long long ClassSkillMovBoost(int stat, struct Unit* unit) {
 	//add
 	stat = ApplyCurateQuickFeet(stat,unit);
 	stat = ApplySkyKnightSaviorRush(stat,unit);

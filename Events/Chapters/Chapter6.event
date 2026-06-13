@@ -224,7 +224,7 @@ ALIGN 4
 
 BeginningScene:
 DifficultySwapper
-MUSC 0x0
+MUSC AmbientWindBirds
 CleanTextNoMap(0x3,C6Opening1)
 REMA
 CLEAN

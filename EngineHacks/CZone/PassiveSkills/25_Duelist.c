@@ -5,7 +5,7 @@ void ApplyDuelistUnburdened(struct BattleUnit* attacker){
 	}
 }
 
-int ApplyDuelistFleetfoot(u8 stat, struct Unit* unit) {
+int ApplyDuelistFleetfoot(int stat, struct Unit* unit) {
 	if (UNIT_HAS_SKILL(unit,FNC,skill_141)){
 		int emptySlots = 5 - GetUnitItemCount(unit);
 		stat = stat + emptySlots;
@@ -13,7 +13,7 @@ int ApplyDuelistFleetfoot(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int ApplyDuelistGaleDuelistMovement(u8 stat, struct Unit* unit) {
+int ApplyDuelistGaleDuelistMovement(int stat, struct Unit* unit) {
 	if (UNIT_HAS_SKILL(unit,FNC,skill_531)){
 		if ((unit->classSkillState & 0x10) == 0x10) {
 			stat = stat / 2;

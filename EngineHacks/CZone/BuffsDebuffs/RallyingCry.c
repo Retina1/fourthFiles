@@ -221,7 +221,7 @@ void ApplyRallyingCryBuffsBothSides(struct BattleUnit* attacker, struct BattleUn
 	}
 };
 
-int ApplyRallyingCryLuck(u8 stat, struct Unit* unit) {
+int ApplyRallyingCryLuck(int stat, struct Unit* unit) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	struct Unit* source = NULL;
 	u16 rallyLabel = RallyingCryBuffLabel_Link;
@@ -246,7 +246,7 @@ int ApplyRallyingCryLuck(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int ApplyRallyingCryDef(u8 stat, struct Unit* unit) {
+int ApplyRallyingCryDef(int stat, struct Unit* unit) {
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	struct Unit* source = NULL;
 	u16 rallyLabel = RallyingCryBuffLabel_Link;

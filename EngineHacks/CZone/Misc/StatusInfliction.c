@@ -9,8 +9,13 @@ int GetOffensiveStaffAccuracy(struct Unit* actor, struct Unit* target) {
 	int baseDef = defenderLuc + 10;
 	
 	int usedItem = actor->items[gActionData.itemSlotIndex];
-	int baseRate = GetItemData(ITEM_INDEX(usedItem))->ailmentRate;
-	
+	int baseRate = 0;
+	if (GetActiveArt(actor)) {
+		baseRate = CombatArtList[GetActiveArt(actor)].oddsFunction(actor, target);
+	}
+	else {
+		baseRate = GetItemData(ITEM_INDEX(usedItem))->ailmentRate;
+	}
 	int accuracy = baseRate * baseAtk / baseDef;
 	
 	for(int j = 0; j < GetUnitItemCount(target); j++) {
@@ -54,11 +59,19 @@ void TryAddUnitToSleepTargetList(struct Unit* unit) {
         return;
     }
 	
-	int usedItem = gSubjectUnit->items[gActionData.itemSlotIndex];
-	
+	int targetStatus = 0;
+
+	if (GetActiveArt(unit)) {
+		targetStatus = CombatArtList[GetActiveArt(unit)].itemEffect;
+	}
+	else {
+		int usedItem = gSubjectUnit->items[gActionData.itemSlotIndex];
+		targetStatus = GetItemWeaponEffect(usedItem);
+	}
+
 	int currentStatus = unit->statusIndex;
 	
-	switch (GetItemWeaponEffect(usedItem)) {
+	switch (targetStatus) {
 			case WPN_EFFECT_PETRIFY:
 			case WPN_EFFECT_HEADBIND:
 			case WPN_EFFECT_ARMBIND:
@@ -120,10 +133,18 @@ void NewExecStatusStaff(ProcPtr proc) {
 
 	int currentStatus = GetUnit(gActionData.targetIndex)->statusIndex;
 
+	int targetStatus = 0;
+	if (GetActiveArt(&gBattleActor.unit)) {
+		targetStatus = CombatArtList[GetActiveArt(&gBattleActor.unit)].itemEffect;
+	}
+	else {
+		targetStatus = GetItemWeaponEffect(gBattleActor.weaponBefore);
+	}
+
     if (!Roll1RN(accuracy)) {
         gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_MISS;
     } else {
-        switch (GetItemWeaponEffect(gBattleActor.weaponBefore)) {
+        switch (targetStatus) {
 			case WPN_EFFECT_PETRIFY:
                 gBattleTarget.statusOut = UNIT_STATUS_PETRIFY;
                 break;

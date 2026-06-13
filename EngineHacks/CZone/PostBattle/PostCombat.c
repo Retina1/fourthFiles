@@ -31,15 +31,18 @@ void MoveActiveUnit(int x, int y) {
     gActiveUnit->xPos = x;
     gActiveUnit->yPos = y;
 
-	if (!(UNIT_HAS_SKILL(gActiveUnit,FNC,skill_531))){
+	if (!((GetActiveArt(gActiveUnit) == (66+33)) || (UNIT_HAS_SKILL(gActiveUnit,FNC,skill_531)))){
 		gActiveUnit->state |= US_UNSELECTABLE;
 	}
 	//i am in turbo hell
-	else {
+	else if (UNIT_HAS_SKILL(gActiveUnit,FNC,skill_531)) {
 		gActiveUnit->state = gActiveUnit->state &~ US_CANTOING;
 		if ((gActiveUnit->classSkillState & 0x10) == 0) {
 			gActiveUnit->state |= US_UNSELECTABLE;
 		}
+	}
+	else if ((GetActiveArt(gActiveUnit) == (66+33))) {
+		SetActiveArt(gActiveUnit,0);
 	}
     PidStatsAddSquaresMoved(gActiveUnit->pCharacterData->number, gActionData.moveCount);
 
@@ -85,11 +88,10 @@ extern int prGotoMovGetter(struct Unit* unit);
 //eventually also add hit and runs from cavs
 bool TryMakeCantoUnit(ProcPtr proc)
 {
-	//this'll eventually check for all of fencer/
-    if (!(UNIT_HAS_SKILL(gActiveUnit,FNC,skill_131)))
-    {
-        return false;
-    }
+	//need every combat art with possible canto
+	if (!((GetActiveArt(gActiveUnit) == (66+28)) || (UNIT_HAS_SKILL(gActiveUnit,FNC,skill_131)))) {
+		return false;
+	}
 	
 	if (UNIT_HAS_SKILL(gActiveUnit,FNC,skill_531)){
 		if ((gActiveUnit->classSkillState & 0x10) != 0) {
@@ -135,7 +137,11 @@ bool TryMakeCantoUnit(ProcPtr proc)
 	if (gActionData.moveCount < 0) {
 		gActionData.moveCount = 0;
 	}
-
+	
+	if (GetActiveArt(gActiveUnit) == (66+28)) {
+		SetActiveArt(gActiveUnit, 0);
+	}
+	
     BmMapFill(gBmMapRange, 0);
 
     UnitBeginCantoAction(gActiveUnit);

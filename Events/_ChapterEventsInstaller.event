@@ -106,13 +106,13 @@ ENUT SenatusUnlockedFlag
 ENUT OtherUnlockedFlag
 LABEL 0x5
 
-/*
+
 SystemText(DEBUGClassChangePrompt)
 IfNoSelectedGoto(0x3)
 ASMC ValueChooser_OnSelect|1
 ASMC ChangeAllClassASMC|1
 LABEL 0x3
-
+/*
 SystemText(DEBUGCharacterChangePrompt)
 IfNoSelectedGoto(0x4)
 ASMC ValueChooser_OnSelect|1

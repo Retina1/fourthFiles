@@ -201,7 +201,7 @@ struct Unit
 
     /* 0A */ u8 aiFlags;
 
-    /* 0B */ s8 index;
+    /* 0B */ u8 index;
 
     /* 0C */ u32 state;
 

@@ -187,7 +187,8 @@ ALIGN 4
 
 BeginningScene:
 DifficultySwapper
-CleanTextNoMap(0x3,Dungeon1_Opening)
+MUSC AmbientWindBirds
+CleanTextNoMap(0x1f,Dungeon1_Opening)
 CallPreps
 CLEA 0
 //set all deployed units to be undeployed but with the not deployed last chapter thing unset

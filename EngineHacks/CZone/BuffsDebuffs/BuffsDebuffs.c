@@ -31,6 +31,13 @@ struct DebuffEntry* GetUnitBuffsDebuffs(struct Unit* unit) {
 	return entry;
 };
 
+int UnitHasSongBuff(struct Unit* unit) {
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	if ( ((BUFF_BRAVERY1 <= entry->buff1) && (entry->buff1 <= BUFF_FLEETING3)) || ((BUFF_BRAVERY1 <= entry->buff2) && (entry->buff2 <= BUFF_FLEETING3)) || ((BUFF_BRAVERY1 <= entry->buff3) && (entry->buff3 <= BUFF_FLEETING3)))
+		return 1;
+	else return 0;
+}
+
 void ApplyRallyingCryBuffs(struct BattleUnit* attacker, struct BattleUnit* defender);
 void ApplyRallyingCryBuffsBothSides(struct BattleUnit* attacker, struct BattleUnit* defender);
 
@@ -219,7 +226,46 @@ void UnitApplyBuff(struct Unit* unit,u8 buffID) {
 	entry->buff1dur = BuffEffectsTable[buffID].buffDuration;
 	
 };
+
+int TryNullIncomingStatus(struct Unit* unit);
+
 void UnitApplyDebuff(struct Unit* unit,u8 buffID) {
+	/* get buffs/debuffs
+	get buff id from table
+	if buff is already applied, refresh its timer
+	else, shift 2->3, 1->2, apply buff in slot 1
+	sim. function for debuffs
+*/
+	if (!(TryNullIncomingStatus(unit))) {
+		struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+		
+		if (DebuffEffectsTable[entry->debuff3].buffName == DebuffEffectsTable[buffID].buffName) {
+			entry->debuff3 = buffID;
+			entry->debuff3dur = DebuffEffectsTable[buffID].buffDuration;
+			return;
+		}
+		else if (DebuffEffectsTable[entry->debuff2].buffName == DebuffEffectsTable[buffID].buffName) {
+			entry->debuff2 = buffID;
+			entry->debuff2dur = DebuffEffectsTable[buffID].buffDuration;
+			return;
+		}
+		else if (DebuffEffectsTable[entry->debuff1].buffName == DebuffEffectsTable[buffID].buffName) {
+			entry->debuff1 = buffID;
+			entry->debuff1dur = DebuffEffectsTable[buffID].buffDuration;
+			return;
+		}
+		entry->debuff3 = entry->debuff2;
+		entry->debuff3dur = entry->debuff2dur;
+		entry->debuff2 = entry->debuff1;
+		entry->debuff2dur = entry->debuff1dur;
+		
+		entry->debuff1 = buffID;
+		entry->debuff1dur = DebuffEffectsTable[buffID].buffDuration;
+	}
+	
+};
+
+void UnitApplyBuffWithBonusDur(struct Unit* unit,u8 buffID, u8 bonusDuration) {
 	/* get buffs/debuffs
 	get buff id from table
 	if buff is already applied, refresh its timer
@@ -228,28 +274,28 @@ void UnitApplyDebuff(struct Unit* unit,u8 buffID) {
 */
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	
-	if (DebuffEffectsTable[entry->debuff3].buffName == DebuffEffectsTable[buffID].buffName) {
-		entry->debuff3 = buffID;
-		entry->debuff3dur = DebuffEffectsTable[buffID].buffDuration;
+	if (BuffEffectsTable[entry->buff3].buffName == BuffEffectsTable[buffID].buffName) {
+		entry->buff3 = buffID;
+		entry->buff3dur = BuffEffectsTable[buffID].buffDuration + bonusDuration;
 		return;
 	}
-	else if (DebuffEffectsTable[entry->debuff2].buffName == DebuffEffectsTable[buffID].buffName) {
-		entry->debuff2 = buffID;
-		entry->debuff2dur = DebuffEffectsTable[buffID].buffDuration;
+	else if (BuffEffectsTable[entry->buff2].buffName == BuffEffectsTable[buffID].buffName) {
+		entry->buff2 = buffID;
+		entry->buff2dur = BuffEffectsTable[buffID].buffDuration + bonusDuration;
 		return;
 	}
-	else if (DebuffEffectsTable[entry->debuff1].buffName == DebuffEffectsTable[buffID].buffName) {
-		entry->debuff1 = buffID;
-		entry->debuff1dur = DebuffEffectsTable[buffID].buffDuration;
+	else if (BuffEffectsTable[entry->buff1].buffName == BuffEffectsTable[buffID].buffName) {
+		entry->buff1 = buffID;
+		entry->buff1dur = BuffEffectsTable[buffID].buffDuration + bonusDuration;
 		return;
 	}
-	entry->debuff3 = entry->debuff2;
-	entry->debuff3dur = entry->debuff2dur;
-	entry->debuff2 = entry->debuff1;
-	entry->debuff2dur = entry->debuff1dur;
+	entry->buff3 = entry->buff2;
+	entry->buff3dur = entry->buff2dur;
+	entry->buff2 = entry->buff1;
+	entry->buff2dur = entry->buff1dur;
 	
-	entry->debuff1 = buffID;
-	entry->debuff1dur = DebuffEffectsTable[buffID].buffDuration;
+	entry->buff1 = buffID;
+	entry->buff1dur = BuffEffectsTable[buffID].buffDuration + bonusDuration;
 	
 };
 

@@ -33,6 +33,17 @@ WORD 0 0; BYTE 0 0x41; ALIGN 4; POIN CAS_ItemSelectMenu_Usability CAS_ItemSelect
 WORD 0 0; BYTE 0 0x42; ALIGN 4; POIN CAS_ItemSelectMenu_Usability CAS_ItemSelectMenu_Draw CAS_ItemSelectMenu_Effect 0 0x23C15 0x23C69
 WORD 0 0 0 0 0 0 0 0 0
 
+ALIGN 4; BUFFDEBUFF_CAS_ItemSelectMenuDef:
+BYTE 1 1 14 0; WORD 0; POIN BUFFDEBUFF_CAS_ItemSelectMenuItems; WORD 0 0 0; POIN 0x22861 0x4F521 0x24589
+
+ALIGN 4; BUFFDEBUFF_CAS_ItemSelectMenuItems:
+WORD 0 0; BYTE 0 0x3E; ALIGN 4; POIN CAS_ItemSelectMenu_Usability CAS_ItemSelectMenu_Draw BUFFDEBUFF_CAS_ItemSelectMenu_Effect 0 0x23C15 0x23C69
+WORD 0 0; BYTE 0 0x3F; ALIGN 4; POIN CAS_ItemSelectMenu_Usability CAS_ItemSelectMenu_Draw BUFFDEBUFF_CAS_ItemSelectMenu_Effect 0 0x23C15 0x23C69
+WORD 0 0; BYTE 0 0x40; ALIGN 4; POIN CAS_ItemSelectMenu_Usability CAS_ItemSelectMenu_Draw BUFFDEBUFF_CAS_ItemSelectMenu_Effect 0 0x23C15 0x23C69
+WORD 0 0; BYTE 0 0x41; ALIGN 4; POIN CAS_ItemSelectMenu_Usability CAS_ItemSelectMenu_Draw BUFFDEBUFF_CAS_ItemSelectMenu_Effect 0 0x23C15 0x23C69
+WORD 0 0; BYTE 0 0x42; ALIGN 4; POIN CAS_ItemSelectMenu_Usability CAS_ItemSelectMenu_Draw BUFFDEBUFF_CAS_ItemSelectMenu_Effect 0 0x23C15 0x23C69
+WORD 0 0 0 0 0 0 0 0 0
+
 #define CombatArt(id,name, desc, durabilityCost, usability, menu_usability, menu_draw, menu_effect, prebattle, bothsides, postbattle, battleproc, rangefunc, oddsfunc, hitcount, isMagic, spellAnim, itemEffect) \
 "PUSH; ORG CombatArtList+(id*0x40); \
 SHORT name desc; POIN usability menu_usability menu_draw menu_effect prebattle bothsides postbattle battleproc rangefunc oddsfunc hitcount; BYTE isMagic spellAnim itemEffect 0; \
@@ -44,6 +55,7 @@ ORG CombatArtDurabilityList+id; BYTE durabilityCost; POP"
 #define CA_Effect(effect) "PUSH; ORG CURRENTOFFSET + 16; POIN effect; POP"
 #define CA_GeneralAttackEffect "PUSH; ORG CURRENTOFFSET + 16; POIN CombatArtGeneralAttackingEffect; POP"
 #define CA_GeneralNonCombatEffect "PUSH; ORG CURRENTOFFSET + 16; POIN GeneralNonCombatMenuEffect; POP"
+#define CA_GeneralBuffDebuffEffect "PUSH; ORG CURRENTOFFSET + 16; POIN GeneralBuffDebuffMenuEffect; POP"
 #define CA_ItemSelectUsability(effect) "PUSH; ORG CURRENTOFFSET + 20; POIN effect; POP"
 #define CA_ItemSelectEffect(effect) "PUSH; ORG CURRENTOFFSET + 24; POIN effect; POP"
 #define CA_Prebattle(pointer) "PUSH; ORG CURRENTOFFSET + 28; POIN pointer; POP"
@@ -60,8 +72,12 @@ ORG CombatArtDurabilityList+id; BYTE durabilityCost; POP"
 #define CA_IER(value) "PUSH; ORG CURRENTOFFSET + 63; BYTE value; POP"
 
 #define CA_Ailment(pointer,value) "CA_Odds(pointer); CA_ItemEffect(value)"
+#define CA_PureAilment(pointer,value) "CA_Odds(pointer); CA_ItemEffect(value); CA_SpellAnim(0x2e); CA_IER(0x8)"
 #define CA_GenericStance "CA_Range(HideRange); CA_ItemSelectEffect(GenericStanceItemSelectEffect); CA_IER(0x3a); CA_SpellAnim(0x66)"
-
+#define CA_NoAnimNoIER "CA_IER(0x3a); CA_SpellAnim(0x66)"
+#define CA_Buff "CA_GeneralBuffDebuffEffect; CA_IsMagic(0); CA_IER(0x3a); CA_SpellAnim(0x66)"
+#define CA_Debuff "CA_GeneralBuffDebuffEffect; CA_IsMagic(2); CA_IER(0x3a); CA_SpellAnim(0x66)"
+#define CA_SpellAnimHandAxe "CA_SpellAnim(0x66)" //eventually make handaxe anims work?
 
 
 ALIGN 4; CombatArtList: FILL 0x40*0x181

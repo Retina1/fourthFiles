@@ -26,6 +26,24 @@ Rallying Cry[X]
 Bonuses based on source[N]
 Noble's skill levels.[X]
 
+##ChargeCommandLabel
+Charge Cmd.[X]
+##ChargeCommandDesc1
++1 Mov.[X]
+##ChargeCommandDesc2
++2 Mov.[X]
+##ChargeCommandDesc3
++3 Mov.[X]
+
+##RaidCommandLabel
+Raid Command[X]
+##RaidCommandDesc1
+1.1x Atk.[X]
+##RaidCommandDesc2
+1.3x Atk.[X]
+##RaidCommandDesc3
+1.5x Atk.[X]
+
 ##BraveryLabel
 Bravery Song[X]
 ##BraveryDesc1
@@ -70,6 +88,39 @@ Fleeting Song[X]
 +2 Mov.[X]
 ##FleetingDesc3
 +3 Mov.[X]
+
+##MisfortuneLabel
+Misfortune[X]
+##MisfortuneDesc
+0.5x Luc.[X]
+
+##WarningShotLabel
+Warning Shot[X]
+##WarningShotDesc1
+0.8x Atk/Luc.[X]
+##WarningShotDesc2
+0.5x Atk/Luc.[X]
+
+##WarCryLabel
+War Cry[X]
+##WarCryDesc1
+0.8x Atk/Crit.[X]
+##WarCryDesc2
+0.6x Atk/Crit.[X]
+
+##HellishCryLabel
+Hellish Cry[X]
+##HellishCryDesc1
+0.8x Avo/Def.[X]
+##HellishCryDesc2
+0.6x Avo/Def.[X]
+
+##DominantCryLabel
+Dominant Cry[X]
+##DominantCryDesc1
+0.8x AS/Luc.[X]
+##DominantCryDesc2
+0.6x AS/Luc.[X]
 
 ##RallyingFlagLabel
 Rallying Flag[X]
@@ -135,6 +186,15 @@ Panacea[X]
 Restore 20% HP[N]
 at turn's start.[X]
 
+##PrecisionLabel
+Precision[X]
+##PrecisionDesc1
+1.3x Hit/Crit.[X]
+##PrecisionDesc2
+1.5x Hit/Crit.[X]
+##PrecisionDesc3
+2.0x Hit/Crit.[X]
+
 ##BloodFuryLabel
 Blood Fury[X]
 ##BloodFuryDesc
@@ -155,6 +215,15 @@ Rebound[X]
 ##ReboundDesc
 2.0x Avo.[X]
 
+##GallopLabel
+Gallop[X]
+##GallopDesc1
++1 Mov.[X]
+##GallopDesc2
++2 Mov.[X]
+##GallopDesc3
++3 Mov.[X]
+
 ##StonardBuffLabel
 Stonard[X]
 ##StonardBuffDesc
@@ -164,6 +233,26 @@ Bravant[X]
 ##BravantBuffDesc
 1.5x Atk.[X]
 
+##SappingLabel
+Sapping[X]
+##SappingDesc1
+0.7x Atk.[X]
+##SappingDesc2
+0.5x Atk.[X]
+
+##FrailtyLabel
+Frailty[X]
+##FrailtyDesc1
+0.7x Def.[X]
+##FrailtyDesc2
+0.5x Def.[X]
+
+##LeadenLabel
+Leaden[X]
+##LeadenDesc1
+0.7x AS.[X]
+##LeadenDesc2
+0.5x AS.[X]
 
 ##PowerBreakLabel
 Power Break[X]

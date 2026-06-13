@@ -40,12 +40,12 @@ void PeerlessComboBothSides(struct BattleUnit* actor, struct BattleUnit* target)
 		target->battleDefense = target->battleDefense;
 	}
 }
-int PeerlessComboOdds(struct BattleUnit* actor, struct BattleUnit* target){
+int PeerlessComboOdds(struct Unit* actor, struct Unit* target){
 	int odds = 20;
-	if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_535)){
+	if (UNIT_HAS_SKILL(actor,RNI,skill_535)){
 		odds = 50;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_532)){
+	else if (UNIT_HAS_SKILL(actor,RNI,skill_532)){
 		odds = 30;
 	}
 	return odds;
@@ -137,18 +137,18 @@ void BeheadingBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 		target->battleDefense = target->battleDefense;
 	}
 }
-int BeheadingOdds(struct BattleUnit* actor, struct BattleUnit* target){
+int BeheadingOdds(struct Unit* actor, struct Unit* target){
 	int odds = 10;
-	if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_525)){
+	if (UNIT_HAS_SKILL(actor,RNI,skill_525)){
 		odds = 45;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_524)){
+	else if (UNIT_HAS_SKILL(actor,RNI,skill_524)){
 		odds = 35;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_523)){
+	else if (UNIT_HAS_SKILL(actor,RNI,skill_523)){
 		odds = 25;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_522)){
+	else if (UNIT_HAS_SKILL(actor,RNI,skill_522)){
 		odds = 15;
 	}
 	return odds;
@@ -293,12 +293,12 @@ void HazeslashBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 		target->battleDefense = target->battleDefense;
 	}
 }
-int HazeslashOdds(struct BattleUnit* actor, struct BattleUnit* target){
+int HazeslashOdds(struct Unit* actor, struct Unit* target){
 	int odds = 30;
-	if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_333)){
+	if (UNIT_HAS_SKILL(actor,RNI,skill_333)){
 		odds = 80;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,RNI,skill_332)){
+	else if (UNIT_HAS_SKILL(actor,RNI,skill_332)){
 		odds = 50;
 	}
 	return odds;

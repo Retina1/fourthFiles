@@ -1,3 +1,6 @@
+## BuffDebuffTargetBottomText
+Select a unit to target.[X]
+
 ## UM_Vanguard
  Vanguard[X]
 ## UM_VanguardDesc

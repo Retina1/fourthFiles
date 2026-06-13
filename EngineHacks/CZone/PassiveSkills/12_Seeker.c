@@ -25,6 +25,21 @@ void ApplySeekerPrismatic(struct BattleUnit* attacker){
 	}
 }
 
+void ApplySeekerRunicResonance(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (UNIT_HAS_SKILL(&attacker->unit,RNM,skill_131)){
+		//make if unit has seeker buff/debuff checkers?
+		struct DebuffEntry* entry = GetUnitBuffsDebuffs(&defender->unit);
+		if  ( ((DEBUFF_MAGUSRUNE1 <= entry->debuff1) && (entry->debuff1 <= DEBUFF_AGILITYRUNE2)) || ((DEBUFF_MAGUSRUNE1 <= entry->debuff2) && (entry->debuff2 <= DEBUFF_AGILITYRUNE2)) || ((DEBUFF_MAGUSRUNE1 <= entry->debuff3) && (entry->debuff3 <= DEBUFF_AGILITYRUNE2))){
+			attacker->battleCritRate  = attacker->battleCritRate * 13/10;
+		}
+	}
+}
+
 void ApplySeekerPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	ApplySeekerRunicRhythm(attacker);
+}
+void BothSidesSeekerPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (IsBattleReal()){
+		ApplySeekerRunicResonance(attacker,defender);
+	}
 }

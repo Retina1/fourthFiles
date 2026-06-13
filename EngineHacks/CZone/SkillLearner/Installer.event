@@ -13,10 +13,10 @@ POIN KnightSkillLabels
 POIN AxefighterSkillLabels
 POIN ArcherSkillLabels
 POIN ScholarSkillLabels
-POIN SkillLabels
+POIN MedicSkillLabels
 POIN MyrmidonSkillLabels
-POIN SkillLabels
-POIN SkillLabels
+POIN RiderSkillLabels
+POIN RaiderSkillLabels
 POIN GunnerSkillLabels
 POIN SkillLabels
 POIN SkillLabels
@@ -109,6 +109,195 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
 
+ALIGN 4
+RaiderSkillLabels:
+OneLevelSkillLabel(MenacingPresenceSkill,NoReq)//0
+OneLevelSkillLabel(PivotSkill,NoReq)
+OneLevelSkillLabel(OutriderSkill,OutriderReq)
+OneLevelSkillLabel(TrampleSkill,PromotedReq)
+TwoLevelSkillLabel(WarCrySkill,NoReq)//4
+TwoLevelSkillLabel(HellishCrySkill,NoReq)
+TwoLevelSkillLabel(DominantCrySkill,DominantCryReq)
+ThreeLevelSkillLabel(ChargingSmashSkill,NoReq)//7
+ThreeLevelSkillLabel(ChargingTossSkill,ChargingTossReq)
+ThreeLevelSkillLabel(HitAndRunSkill,HitAndRunReq)
+ThreeLevelSkillLabel(GallopSkill,GallopReq)
+ThreeLevelSkillLabel(CollectedFurySkill,CollectedFuryReq)
+FiveLevelSkillLabel(GreatCleaveSkill,GreatCleaveReq)//12
+FiveLevelSkillLabel(RaidCommandSkill,RaidCommandReq)
+FiveLevelSkillLabel(RegimentRaveSkill,RegimentRaveReq)
+SkillLabelTerminator
+
+ALIGN 4
+OutriderReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+DominantCryReq:
+ReqEntry(4,1)
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+ChargingTossReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+HitAndRunReq:
+ReqEntry(7,2)
+ReqTerm
+ALIGN 4
+GallopReq:
+ReqEntry(4,1)
+ReqEntry(5,1)
+ReqEntry(9,1)
+ReqTerm
+ALIGN 4
+CollectedFuryReq:
+ReqPromo
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+GreatCleaveReq:
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+RaidCommandReq:
+ReqEntry(6,2)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+RegimentRaveReq:
+ReqPromo
+ReqEntry(10,3)
+ReqEntry(12,5)
+ReqTerm
+
+ALIGN 4
+RiderSkillLabels:
+OneLevelSkillLabel(BattlefieldPresenceSkill,NoReq)//0
+OneLevelSkillLabel(SwapSkill,NoReq)
+OneLevelSkillLabel(FirmChargeSkill,FirmChargeReq)
+OneLevelSkillLabel(MountMasterSkill,PromotedReq)
+TwoLevelSkillLabel(RallyingFlagSkill,NoReq)//4
+TwoLevelSkillLabel(SurvivalFlagSkill,NoReq)
+TwoLevelSkillLabel(ExpertiseFlagSkill,ExpertiseFlagReq)
+ThreeLevelSkillLabel(ChargingThrustSkill,NoReq)//7
+ThreeLevelSkillLabel(ChargingThrowSkill,ChargingThrowReq)
+ThreeLevelSkillLabel(HorseSlayerSkill,HorseSlayerReq)
+ThreeLevelSkillLabel(HeartpiercerSkill,HeartpiercerReq)
+ThreeLevelSkillLabel(ArchballistaSkill,ArchballistaReq)
+FiveLevelSkillLabel(FullForceSkill,FullForceReq)//12
+FiveLevelSkillLabel(ChargeCommandSkill,ChargeCommandReq)
+FiveLevelSkillLabel(GaeBolgSkill,GaeBolgReq)
+SkillLabelTerminator
+
+ALIGN 4
+FirmChargeReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+ExpertiseFlagReq:
+ReqEntry(4,1)
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+ChargingThrowReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+HorseSlayerReq:
+ReqEntry(7,2)
+ReqTerm
+ALIGN 4
+HeartpiercerReq:
+ReqEntry(4,2)
+ReqEntry(9,1)
+ReqTerm
+ALIGN 4
+ArchballistaReq:
+ReqPromo
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+FullForceReq:
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+ChargeCommandReq:
+ReqEntry(4,2)
+ReqEntry(5,2)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+GaeBolgReq:
+ReqPromo
+ReqEntry(6,2)
+ReqEntry(10,3)
+ReqTerm
+
+ALIGN 4
+MedicSkillLabels:
+OneLevelSkillLabel(SelfCareSkill,NoReq)//0
+OneLevelSkillLabel(QuickFeetSkill,NoReq)
+OneLevelSkillLabel(PanaceaSkill,PanaceaReq)
+OneLevelSkillLabel(ScavengerSkill,PromotedReq)
+TwoLevelSkillLabel(CalmingPresenceSkill,NoReq)//4
+TwoLevelSkillLabel(CurareSkill,NoReq)
+TwoLevelSkillLabel(CardioSkill,CardioReq)
+ThreeLevelSkillLabel(CureSkill,NoReq)//7
+ThreeLevelSkillLabel(RefreshSkill,RefreshReq)
+ThreeLevelSkillLabel(ToxinSkill,ToxinReq)
+ThreeLevelSkillLabel(WrathStaffSkill,WrathStaffReq)
+ThreeLevelSkillLabel(ImmunizeSkill,ImmunizeReq)
+FiveLevelSkillLabel(HealingTouchSkill,HealingTouchReq)//12
+FiveLevelSkillLabel(PhysAptitudeSkill,PhysAptitudeReq)
+FiveLevelSkillLabel(CaduceusSkill,CaduceusReq)
+SkillLabelTerminator
+
+ALIGN 4
+PanaceaReq:
+ReqEntry(7,2)
+ReqTerm
+ALIGN 4
+CardioReq:
+ReqEntry(1,1)
+ReqTerm
+ALIGN 4
+RefreshReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+ToxinReq:
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+WrathStaffReq:
+ReqEntry(7,1)
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+ImmunizeReq:
+ReqPromo
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+HealingTouchReq:
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+PhysAptitudeReq:
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+CaduceusReq:
+ReqPromo
+ReqEntry(3,1)
+ReqEntry(10,3)
+ReqEntry(13,5)
+ReqTerm
 
 ALIGN 4
 KnightSkillLabels:

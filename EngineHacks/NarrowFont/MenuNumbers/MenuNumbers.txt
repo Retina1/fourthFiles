@@ -1,0 +1,98 @@
+//ASCII / straight-lookup only (FE8U)
+//Don't use 0x00-0x1F slots, used for dialogue functions
+//[0x80] is also unusable (forced - character), might be more
+
+Mglyph_0:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num0.img.bin"
+
+Mglyph_1:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x4 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num1.img.bin"
+
+Mglyph_2:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num2.img.bin"
+
+Mglyph_3:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num3.img.bin"
+
+Mglyph_4:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num4.img.bin"
+
+Mglyph_5:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num5.img.bin"
+
+Mglyph_6:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num6.img.bin"
+
+Mglyph_7:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num7.img.bin"
+
+Mglyph_8:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num8.img.bin"
+
+Mglyph_9:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "num9.img.bin"
+
+
+mGlyphEntry(0xC3, Mglyph_0)
+mGlyphEntry(0xC5, Mglyph_1)
+mGlyphEntry(0xC6, Mglyph_2)
+mGlyphEntry(0xd0, Mglyph_3)
+mGlyphEntry(0xd5, Mglyph_4)
+mGlyphEntry(0xd7, Mglyph_5)
+mGlyphEntry(0xd8, Mglyph_6)
+mGlyphEntry(0xdd, Mglyph_7)
+mGlyphEntry(0xde, Mglyph_8)
+mGlyphEntry(0xe3, Mglyph_9)
+
+
+

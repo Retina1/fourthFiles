@@ -1,25 +1,431 @@
 
+##SelfCareSkill
+Self Care[X]
+## ^
+Level: [_0] (Passive)[N]
+Treat yourself well[N]
+in all walks of life.[N]
+Next: Healing items/magic[N]
+always fully heal this unit.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Treat yourself well[N]
+in all walks of life.[N]
+Healing items/magic always[N]
+fully heal this unit.[N]
+[X]
+
+##QuickFeetSkill
+Quick Feet[X]
+## ^
+Level: [_0] (Passive)[N]
+Train yourself to keep[N]
+moving in a crisis.[N]
+Next: +[_1] Mov while at[N]
+or below [_5][_0]% HP.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Train yourself to keep[N]
+moving in a crisis.[N]
++[_1] Mov while at[N]
+or below [_5][_0]% HP.[N]
+[X]
+
+##PanaceaSkill
+Panacea[X]
+## ^
+Level: [_0] (Passive)[N]
+Your heals are lasting.[N]
+Next: Cure/H. Touch targets[N]
+granted [_2][_0]% HP recovery at[N]
+start of turn ([_3] turns).[N]
+Req: Cure [_2][X]
+## ^
+Level: MAX (Passive)[N]
+Your heals are lasting.[N]
+Cure/Healing Touch targets[N]
+granted [_2][_0]% HP recovery at[N]
+start of turn ([_3] turns).[N]
+[X]
+
+##ScavengerSkill
+Scavenger[X]
+## ^
+Level: [_0] (Passive)[N]
+A little formaldehyde[N]
+never hurt anybody.[N]
+Next: Unit always fulfills[N]
+boss conditionals.[N]
+Req: PROMO[X]
+## ^
+Level: MAX (Passive)[N]
+A little formaldehyde[N]
+never hurt anybody.[N]
+Unit always fulfills[N]
+boss conditionals.[N]
+Collect 'em all![X]
 
 ##CalmingPresenceSkill
 Calming Presence[X]
 ## ^
-Level: 0 (Passive)[N]
+Level: [_0] (Passive)[N]
 Bring your allies peace.[N]
 Next: Passively gives[N]
-1.1x Luc and Res to[N]
+[_1].[_1]x Luc and Res to[N]
 adjacent allies.[N]
 Req: None[X]
 ## ^
-Level: 1 (Passive)[N]
+Level: [_1] (Passive)[N]
 Bring your allies peace.[N]
-Passively gives 1.1x Luc,[N]
+Passively gives [_1].[_1]x Luc,[N]
 Res to adjacent allies.[N]
-Next: 1.2x Luc/Res to[N]
+Next: [_1].[_2]x Luc/Res to[N]
 allies within two tiles.[X]
 ## ^
 Level: MAX (Passive)[N]
 Bring your allies peace.[N]
-Passively gives 1.2x Luc[N]
+Passively gives [_1].[_2]x Luc[N]
 and Res to allies within[N]
 two tiles.[N]
 [X]
+
+
+##CurareSkill
+Curare[X]
+## ^
+Level: [_0] (Active)[N]
+A paralytic medicine[N]
+used for hunting.[N]
+Next: [_3] Dur, [_1]-[_5] Rng,[N]
+[_4][_0]% base Paralysis chance.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+A paralytic medicine[N]
+used for hunting.[N]
+[_3] Dur, [_1]-[_5] Rng,[N]
+[_4][_0]% base Paralysis chance.[N]
+Next: [_6][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+A paralytic medicine[N]
+used for hunting.[N]
+Next: [_3] Dur, [_1]-[_5] Rng,[N]
+[_6][_0]% base Paralysis chance.[N]
+[X]
+
+##CardioSkill
+Cardio[X]
+## ^
+Level: [_0] (Passive)[N]
+Your health is also[N]
+your patient's health.[N]
+Next: Passively grants the[N]
+user [_1].[_1]x Max HP and Spd.[N]
+Req: Quick Feet [_1][X]
+## ^
+Level: [_1] (Passive)[N]
+Your health is also[N]
+your patient's health.[N]
+Passively grants the[N]
+user [_1].[_1]x Max HP and Spd.[N]
+Next: [_1].[_2][_5]x Max HP/Spd.[X]
+## ^
+Level: MAX (Passive)[N]
+Your health is also[N]
+your patient's health.[N]
+Passively grants the[N]
+user [_1].[_2][_5]x Max HP and Spd.[N]
+[X]
+
+##CureSkill
+Cure[X]
+## ^
+Level: [_0] (Active)[N]
+A simple yet effective[N]
+single-target heal.[N]
+Next: [_2] Dur, [_1] Rng,[N]
+heals [_2][_0]+Mag/[_3] HP.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+A simple yet effective[N]
+single-target heal.[N]
+[_2] Dur, [_1] Rng,[N]
+heals [_2][_0]+Mag/[_3] HP.[N]
+Next: [_1]-[_2] Rng.[X]
+## ^
+Level: [_2] (Active)[N]
+A simple yet effective[N]
+single-target heal.[N]
+[_2] Dur, [_1]-[_2] Rng,[N]
+heals [_2][_0]+Mag/[_3] HP.[N]
+Next: [_1]-[_3] Rng.[X]
+## ^
+Level: MAX (Active)[N]
+A simple yet effective[N]
+single-target heal.[N]
+[_2] Dur, [_1]-[_3] Rng,[N]
+heals [_2][_0]+Mag/[_3] HP.[N]
+[X]
+
+##RefreshSkill
+Refresh[X]
+## ^
+Level: [_0] (Active)[N]
+For wounds that aren't[N]
+just skin-deep.[N]
+Next: [_3] Dur, [_1]-[_3] Rng,[N]
+heals ailments/binds.[N]
+Req: Cure [_1][X]
+## ^
+Level: [_1] (Active)[N]
+For wounds that aren't[N]
+just skin-deep.[N]
+[_3] Dur, [_1]-[_3] Rng,[N]
+heals ailments/binds.[N]
+Next: [_1]-[_5] Rng.[X]
+## ^
+Level: [_2] (Active)[N]
+For wounds that aren't[N]
+just skin-deep.[N]
+[_3] Dur, [_1]-[_5] Rng,[N]
+heals ailments/binds.[N]
+Next: [_1]-[_8] Rng.[X]
+## ^
+Level: MAX (Active)[N]
+For wounds that aren't[N]
+just skin-deep.[N]
+[_3] Dur, [_1]-[_8] Rng,[N]
+heals ailments/binds.[N]
+[X]
+
+##ToxinSkill
+Toxin[X]
+## ^
+Level: [_0] (Active)[N]
+A dangerous compound[N]
+used for euthanasia.[N]
+Next: [_4] Dur, [_1] Rng,[N]
+[_4][_0]% base Poison chance.[N]
+Req: Curare [_1][X]
+## ^
+Level: [_1] (Active)[N]
+A dangerous compound[N]
+used for euthanasia.[N]
+[_4] Dur, [_1] Rng,[N]
+[_4][_0]% base Poison chance.[N]
+Next: [_1]-[_3] Rng, [_5][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+A dangerous compound[N]
+used for euthanasia.[N]
+[_4] Dur, [_1]-[_3] Rng,[N]
+[_5][_0]% base Poison chance.[N]
+Next: [_1]-[_5] Rng, [_7][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+A dangerous compound[N]
+used for euthanasia.[N]
+[_4] Dur, [_1]-[_5] Rng,[N]
+[_7][_0]% base Poison chance.[N]
+[X]
+
+##WrathStaffSkill
+Wrath Staff[X]
+## ^
+Level: [_0] (Active)[N]
+Hit them with your[N]
+stick really hard.[N]
+Next: [_3] Dur, [_3].[_0]x Crit,[N]
+[_1].[_1]x Atk.[N]
+Req: Cure [_1], Cardio [_1][X]
+## ^
+Level: [_1] (Active)[N]
+Hit them with your[N]
+stick really hard.[N]
+[_3] Dur, [_3].[_0]x Crit,[N]
+[_1].[_1]x Atk.[N]
+Next: [_5].[_0]x Crit, [_1].[_3]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+Hit them with your[N]
+stick really hard.[N]
+[_3] Dur, [_5].[_0]x Crit,[N]
+[_1].[_3]x Atk.[N]
+Next: [_8].[_0]x Crit, [_1].[_5]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Hit them with your[N]
+stick really hard.[N]
+[_3] Dur, [_8].[_0]x Crit,[N]
+[_1].[_5]x Atk.[N]
+...We can do better.[X]
+
+##ImmunizeSkill
+Immunize[X]
+## ^
+Level: [_0] (Active)[N]
+Vaccinate allies against[N]
+all manner of harm.[N]
+Next: [_6] Dur, Burst [_1] (Ally),[N]
+Inf. [_1].[_3][_3]x Def ([_2] turns).[N]
+Req: PR, Cure [_3], Refresh [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Vaccinate allies against[N]
+all manner of harm.[N]
+[_6] Dur, Burst [_1] (Ally),[N]
+Inf. [_1].[_3][_3]x Def ([_2] turns).[N]
+Next: [_2].[_0]x Def.[X]
+## ^
+Level: [_2] (Active)[N]
+Vaccinate allies against[N]
+all manner of harm.[N]
+[_6] Dur, Burst [_1] (Ally),[N]
+Inf. [_2].[_0]x Def ([_2] turns).[N]
+Next: [_2].[_6][_6]x Def.[X]
+## ^
+Level: MAX (Active)[N]
+Vaccinate allies against[N]
+all manner of harm.[N]
+[_6] Dur, Burst [_1] (Ally),[N]
+Inf. [_2].[_6][_6]x Def ([_2] turns).[N]
+[X]
+
+##HealingTouchSkill
+Healing Touch[X]
+## ^
+Level: [_0] (Active)[N]
+A true medical miracle.[N]
+Next: [_1][_0] Dur, Burst [_3] (Ally),[N]
+heals Mag/[_4] HP for all[N]
+in range (besides user).[N]
+Req: Cure [_3][X]
+## ^
+Level: [_1] (Active)[N]
+A true medical miracle.[N]
+[_1][_0] Dur, Burst [_3] (Ally),[N]
+heals Mag/[_4] HP for all[N]
+in range (besides user).[N]
+Next: [_5]+Mag/[_4] HP.[X]
+## ^
+Level: [_2] (Active)[N]
+A true medical miracle.[N]
+[_1][_0] Dur, Burst [_3] (Ally),[N]
+heals [_5]+Mag/[_4] HP for all[N]
+in range (besides user).[N]
+Next: Burst [_4], [_1][_0]+M/[_4] HP.[X]
+## ^
+Level: [_3] (Active)[N]
+A true medical miracle.[N]
+[_1][_0] Dur, Burst [_4] (Ally),[N]
+heals [_1][_0]+Mag/[_4] HP for all[N]
+in range (besides user).[N]
+Next: [_1][_5]+Mag/[_4] HP.[X]
+## ^
+Level: [_4] (Active)[N]
+A true medical miracle.[N]
+[_1][_0] Dur, Burst [_4] (Ally),[N]
+heals [_1][_5]+Mag/[_4] HP for all[N]
+in range (besides user).[N]
+Next: Burst [_5], [_2][_0]+M/[_4] HP.[X]
+## ^
+Level: MAX (Active)[N]
+A true medical miracle.[N]
+[_1][_0] Dur, Burst [_5] (Ally),[N]
+heals [_2][_0]+Mag/[_4] HP for all[N]
+in range (besides user).[N]
+[X]
+
+##PhysAptitudeSkill
+Physical Aptitude[X]
+## ^
+Level: [_0] (Passive)[N]
+Practice the gospel[N]
+of health.[N]
+Next: Passively grants[N]
+the user [_1].[_2]x Str.[N]
+Req: Cardio [_2][X]
+## ^
+Level: [_1] (Passive)[N]
+Practice the gospel[N]
+of health.[N]
+Passively grants[N]
+the user [_1].[_2]x Str.[N]
+Next: [_1].[_5]x Str.[X]
+## ^
+Level: [_2] (Passive)[N]
+Practice the gospel[N]
+of health.[N]
+Passively grants[N]
+the user [_1].[_5]x Str.[N]
+Next: [_1].[_8]x Str.[X]
+## ^
+Level: [_3] (Passive)[N]
+Practice the gospel[N]
+of health.[N]
+Passively grants[N]
+the user [_1].[_8]x Str.[N]
+Next: [_2].[_2][_5]x Str.[X]
+## ^
+Level: [_4] (Passive)[N]
+Practice the gospel[N]
+of health.[N]
+Passively grants[N]
+the user [_2].[_2][_5]x Str.[N]
+Next: [_3].[_0]x Str.[X]
+## ^
+Level: MAX (Passive)[N]
+Practice the gospel[N]
+of health.[N]
+Passively grants[N]
+the user [_3].[_0]x Str.[N]
+...Have you gone too far?[X]
+
+##CaduceusSkill
+Caduceus[X]
+## ^
+Level: [_0] (Active)[N]
+These wounds will be[N]
+beyond healing. Alas.[N]
+Next: [_7] Dur, [_1].[_5]x Atk.[N]
+Req: PROMO, Scavenger [_1],[N]
+Wrath Staff [_3], Phys. Apt. [_5][X]
+## ^
+Level: [_1] (Active)[N]
+These wounds will be[N]
+beyond healing. Alas.[N]
+[_7] Dur, [_1].[_5]x Atk.[N]
+[N]
+Next: [_2].[_0]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+These wounds will be[N]
+beyond healing. Alas.[N]
+[_7] Dur, [_2].[_0]x Atk.[N]
+[N]
+Next: [_2].[_5]x Atk.[X]
+## ^
+Level: [_3] (Active)[N]
+These wounds will be[N]
+beyond healing. Alas.[N]
+[_7] Dur, [_2].[_5]x Atk.[N]
+[N]
+Next: [_3].[_5]x Atk.[X]
+## ^
+Level: [_4] (Active)[N]
+These wounds will be[N]
+beyond healing. Alas.[N]
+[_7] Dur, [_3].[_5]x Atk.[N]
+[N]
+Next: [_6].[_0]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+These wounds will be[N]
+beyond healing. Alas.[N]
+[_7] Dur, [_6].[_0]x Atk.[N]
+[N]
+There will be no salvation.[X]

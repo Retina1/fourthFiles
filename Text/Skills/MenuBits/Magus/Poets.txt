@@ -1,0 +1,29 @@
+##UM_Bravery
+ Bravery[X]
+##UM_BraveryDesc
+A song of strength.[N]
+Cost: 1 Durability.[X]
+
+##UM_Shelter
+ Shelter[X]
+##UM_ShelterDesc
+A song of survival.[N]
+Cost: 1 Durability.[X]
+
+##UM_Mercury
+ Mercury[X]
+##UM_MercuryDesc
+A song of haste.[N]
+Cost: 1 Durability.[X]
+
+##UM_Insight
+ Insight[X]
+##UM_InsightDesc
+A song of reliability.[N]
+Cost: 1 Durability.[X]
+
+##UM_Fleeting
+ Fleeting[X]
+##UM_FleetingDesc
+A song of mobility.[N]
+Cost: 2 Durability.[X]

@@ -318,9 +318,9 @@ void ArmCrushBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	actor->battleAttack = actor->battleAttack*atkMul/atkDiv;
 	target->battleDefense = target->battleDefense*atkMul/atkDiv;
 }
-int ArmCrushOdds(struct BattleUnit* actor, struct BattleUnit* target){
+int ArmCrushOdds(struct Unit* actor, struct Unit* target){
 	int odds = 20;
-	if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_212)){
+	if (UNIT_HAS_SKILL(actor,GLD,skill_212)){
 		odds = 35;
 	}
 	return odds;

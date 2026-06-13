@@ -78,3 +78,16 @@ u8 WarHealHealAmount(struct Unit* unit) {
 int WarHealRange(struct Unit* unit, int itemID, int rangeWord){
 	return 0x00010005;
 }
+
+u8 WarWallArtUsability(struct Unit* unit, u16 artID)
+{
+	if (UNIT_HAS_SKILL(unit,WMG,skill_321)) {
+		return ArtItemCheckInventory(unit, artID);
+	}
+	else return 0;
+}
+
+u8 WarWallArtMenuUsability(const struct MenuItemDef* def, int number)
+{
+    return WarWallArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}

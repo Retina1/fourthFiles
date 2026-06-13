@@ -119,8 +119,21 @@ WORD DrawBackTargetBottomText
 ALIGN 4
 TargetMarkTargetBottomText_Link: 
 WORD TargetMarkTargetBottomText
+ALIGN 4
+BuffDebuffTargetBottomText_Link: 
+WORD BuffDebuffTargetBottomText
 
 
+ALIGN 4
+gBuffDebuffTargetSelection: 
+POIN BuffDebuffTargetInit // Init
+POIN 0x0804E885 // End
+POIN 0x00000000 // Init Target
+POIN 0x080247D1 // Switch In
+POIN 0x00000000 // Switch Out
+POIN BuffDebuffTargetAPress // A Press
+POIN 0x08022749 // B Press
+POIN 0x00000000 // R Press
 ALIGN 4
 gTargetMarkTargetSelection: 
 POIN TargetMarkTargetInit // Init

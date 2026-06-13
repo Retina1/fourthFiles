@@ -42,7 +42,7 @@ void ApplySkyKnightSkySquadronDamage(struct BattleUnit* attacker, struct BattleU
 	}
 }
 
-int ApplySkyKnightSkySquadronDefense(u8 stat, struct Unit* unit) {
+int ApplySkyKnightSkySquadronDefense(int stat, struct Unit* unit) {
 	if (UNIT_HAS_SKILL(unit,SPH,skill_121)){
 		u8* unitBuffer = GetUnitsOfAllegiance(unit, 1);
 		if (unitBuffer == FALSE)
@@ -60,7 +60,7 @@ int ApplySkyKnightSkySquadronDefense(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int ApplySkyKnightSaviorRush(u8 stat, struct Unit* unit) {
+int ApplySkyKnightSaviorRush(int stat, struct Unit* unit) {
 	if (UNIT_HAS_SKILL(unit,SPH,skill_141)){
 		u8* unitBuffer = GetUnitsOfAllegiance(unit, 1);
 		if (unitBuffer == FALSE)

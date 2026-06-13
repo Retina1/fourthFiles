@@ -1,4 +1,4 @@
-int ApplyCurateQuickFeet(u8 stat, struct Unit* unit) {
+int ApplyCurateQuickFeet(int stat, struct Unit* unit) {
 	if (UNIT_HAS_SKILL(unit,MED,skill_121)){
 		if (2 * (unit->curHP) <= (GetUnitMaxHp(unit))){
 		stat = stat + 1;
@@ -7,7 +7,7 @@ int ApplyCurateQuickFeet(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int ApplyCurateCardio(u8 stat, struct Unit* unit) {
+int ApplyCurateCardio(int stat, struct Unit* unit) {
 	if	(UNIT_HAS_SKILL(unit,MED,skill_232)){
 		stat = stat * 5 / 4;
 	}
@@ -17,7 +17,8 @@ int ApplyCurateCardio(u8 stat, struct Unit* unit) {
 	return stat;
 }
 
-int ApplyCuratePhysAptitude(u8 stat, struct Unit* unit) {
+int ApplyCuratePhysAptitude(int stat, struct Unit* unit) {
+
 	if	(UNIT_HAS_SKILL(unit,MED,skill_525)){
 		stat = stat * 9 / 3;
 	}
@@ -33,12 +34,13 @@ int ApplyCuratePhysAptitude(u8 stat, struct Unit* unit) {
 	else if (UNIT_HAS_SKILL(unit,MED,skill_521)){
 		stat = stat * 6 / 5;
 	}
+
 	return stat;
 }
 
 
 //need a version without unit buffer for robots
-int ApplyCurateCalmingPresence(u8 stat, struct Unit* unit) {
+int ApplyCurateCalmingPresence(int stat, struct Unit* unit) {
 	int check = 0;
 	u8 unitIndex = unit->index; //Loading as unsigned to prevent faulty comparisons
 	for (int i = 0; i < 0x100; ++i) {
@@ -60,7 +62,7 @@ int ApplyCurateCalmingPresence(u8 stat, struct Unit* unit) {
 }
 
 /*
-int ApplyCurateCalmingPresence(u8 stat, struct Unit* unit) {
+int ApplyCurateCalmingPresence(int stat, struct Unit* unit) {
 	
 	u8* unitBuffer2 = GetUnitsInRange(unit, 1, 2);
 	if (!(unitBuffer2 == FALSE)) {

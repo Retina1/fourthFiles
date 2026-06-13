@@ -3,6 +3,48 @@
 // Contains "helper" functions to be used in user code for combat arts
 void TryAddTrapsToTargetList();
 
+void ApplyBuffToAlliesInRange(struct Unit* centralUnit, int buffID, int range){
+	UnitApplyBuff(centralUnit,buffID);
+	u8* unitBuffer = GetUnitsInRange(centralUnit, 1, range);
+	if (unitBuffer == FALSE) {
+		return;
+	}
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		UnitApplyBuff(other,buffID);
+		i++;
+	}
+}
+void ApplyDebuffToAlliesInRange(struct Unit* centralUnit, int buffID, int range){
+	UnitApplyDebuff(centralUnit,buffID);
+	u8* unitBuffer = GetUnitsInRange(centralUnit, 1, range);
+	if (unitBuffer == FALSE) {
+		return;
+	}
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		UnitApplyDebuff(other,buffID);
+		i++;
+	}
+}
+void ApplyDebuffToEnemiesInRange(struct Unit* centralUnit, int buffID, int range){
+	u8* unitBuffer = GetUnitsInRange(centralUnit, 2, range);
+	if (unitBuffer == FALSE) {
+		return;
+	}
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		UnitApplyDebuff(other,buffID);
+		i++;
+	}
+}
+
 void GenericStanceItemSelectEffect(u16 artID, struct Unit* unit)
 {
 	ClearBg0Bg1();
@@ -28,11 +70,38 @@ int HideRange(struct Unit* unit, int itemID, int rangeWord){
 	return Proc_Find((const struct ProcCmd*)0x0859AE88 /* gProcCmd_MenuItemPanel */) == NULL ? rangeWord : 0;
 }
 
+u8 SlashItemSelectUsability(u16 artID, u16 item)
+{
+	return (GetItemType(item) == 0x0) && CanUnitUseWeaponNow(gActiveUnit, item);
+}
 u8 PierceItemSelectUsability(u16 artID, u16 item)
 {
 	return (GetItemType(item) == 0x1) && CanUnitUseWeaponNow(gActiveUnit, item);
 }
-
+u8 BashItemSelectUsability(u16 artID, u16 item)
+{
+	return (GetItemType(item) == 0x2) && CanUnitUseWeaponNow(gActiveUnit, item);
+}
+u8 RangedItemSelectUsability(u16 artID, u16 item)
+{
+	return (GetItemType(item) == 0x3) && CanUnitUseWeaponNow(gActiveUnit, item);
+}
+u8 StaffItemSelectUsability(u16 artID, u16 item)
+{
+	return (GetItemType(item) == 0x4) && CanUnitUseWeaponNow(gActiveUnit, item);
+}
+int Generic1_3Range(struct Unit* unit, int itemID, int rangeWord){
+	return 0x00010003;
+}
+int Generic1_2Range(struct Unit* unit, int itemID, int rangeWord){
+	return 0x00010002;
+}
+int Generic1Range(struct Unit* unit, int itemID, int rangeWord){
+	return 0x00010001;
+}
+int GenericNoRange(struct Unit* unit, int itemID, int rangeWord){
+	return 0;
+}
 
 int Staff1_2Range(struct Unit* unit, int itemID, int rangeWord){
 	if (GetItemType(itemID) == 0x4) {

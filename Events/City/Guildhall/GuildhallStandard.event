@@ -218,7 +218,7 @@ GuildhallLoadGunners:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
 GuildLoadFlagReset
 GuildLoad(Martin,Recruit_Martin,0x1)
-GuildLoadQuest(Demico,Recruit_Demico,0x2,Quest2_S1x_DoneFlag)
+GuildLoadQuest(Demico,Recruit_Demico,0x2,Quest2_S1x_Flag)
 GuildLoad(Karl,Recruit_Karl,0x3)
 GuildLoad(Wasp,Recruit_Wasp,0x4,Chapter8DoneFlag)
 GuildLoad(Victoria,Recruit_Victoria,0x5)

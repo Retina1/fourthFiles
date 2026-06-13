@@ -54,11 +54,26 @@ int GetUnitSoloExpMultiplier(struct Unit* actor) {
 		mult = mult * 6;
 	}
 	
+	u8* troubBuffer = GetUnitsOfAllegiance(actor, 1);
+	int j = 0;
+	if (troubBuffer != FALSE) {
+		while (troubBuffer[j]){
+			int index2 = troubBuffer[j];
+			Unit* other2 = gUnitLookup[index2];
+			if (UNIT_HAS_SKILL(other2,TRB,skill_131)){
+				if (UnitHasSongBuff(actor)) {
+					mult = mult * 6;
+				}
+			}
+			j++;
+		}
+	}
+	
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
-	if ((entry->buff1 == 16)||(entry->buff2 == 16)||(entry->buff3 == 16)) {
+	if ((entry->buff1 == BUFF_EXPERTISEFLAG1)||(entry->buff2 == BUFF_EXPERTISEFLAG1)||(entry->buff3 == BUFF_EXPERTISEFLAG1)) {
 		mult = mult * 11;
 	}
-	if ((entry->buff1 == 17)||(entry->buff2 == 17)||(entry->buff3 == 17)) {
+	if ((entry->buff1 == BUFF_EXPERTISEFLAG2)||(entry->buff2 == BUFF_EXPERTISEFLAG2)||(entry->buff3 == BUFF_EXPERTISEFLAG2)) {
 		mult = mult * 13;
 	}
 		
@@ -72,12 +87,27 @@ int GetUnitSoloExpDivisor(struct Unit* actor) {
 	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
 		div = div * 5;
 	}
+	
+	u8* troubBuffer = GetUnitsOfAllegiance(actor, 1);
+	int j = 0;
+	if (troubBuffer != FALSE) {
+		while (troubBuffer[j]){
+			int index2 = troubBuffer[j];
+			Unit* other2 = gUnitLookup[index2];
+			if (UNIT_HAS_SKILL(other2,TRB,skill_131)){
+				if (UnitHasSongBuff(actor)) {
+					div = div * 5;
+				}
+			}
+			j++;
+		}
+	}
 
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
-	if ((entry->buff1 == 16)||(entry->buff2 == 16)||(entry->buff3 == 16)) {
+	if ((entry->buff1 == BUFF_EXPERTISEFLAG1)||(entry->buff2 == BUFF_EXPERTISEFLAG1)||(entry->buff3 == BUFF_EXPERTISEFLAG1)) {
 		div = div * 10;
 	}
-	if ((entry->buff1 == 17)||(entry->buff2 == 17)||(entry->buff3 == 17)) {
+	if ((entry->buff1 == BUFF_EXPERTISEFLAG2)||(entry->buff2 == BUFF_EXPERTISEFLAG2)||(entry->buff3 == BUFF_EXPERTISEFLAG2)) {
 		div = div * 10;
 	}
 		
@@ -95,7 +125,7 @@ void BattleApplyMiscActionExpGains(void) {
         return;
 	}
 	
-	int avgLevel = CalculateAveragePartyLevel();
+	int avgLevel = CalculateAveragePartyLevel() + 1;
 	
 	int levelDiff = avgLevel - GetUnitExpLevel(&gBattleActor.unit);
 	if (levelDiff < -3){
@@ -541,7 +571,7 @@ int GetBattleUnitStaffExp(struct BattleUnit* bu) {
     if (gBattleHitArray->attributes & BATTLE_HIT_ATTR_MISS)
 		result = 1;
 	
-	int avgLevel = CalculateAveragePartyLevel();
+	int avgLevel = CalculateAveragePartyLevel() + 1;
 	
 	int levelDiff = avgLevel - GetUnitExpLevel(&bu->unit);
 	if (levelDiff < -3){
@@ -652,6 +682,11 @@ int GetBattleUnitStaffExp(struct BattleUnit* bu) {
 					result = 25;
 					break;
 			 }
+	}
+	
+	if (GetActiveArt(&bu->unit)) {
+		int artCost = CombatArtDurabilityList[GetActiveArt(&bu->unit)];
+		result = result * artCost / 2;
 	}
 	
 	int mul = GetUnitSoloExpMultiplier(&bu->unit);

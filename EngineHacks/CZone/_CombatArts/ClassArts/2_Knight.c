@@ -1,3 +1,143 @@
+// VengeanceThrust
+u8 VengeanceThrustArtUsability(struct Unit* unit, u16 artID){
+	if (UNIT_HAS_SKILL(unit,HOP,skill_531)){
+		return CombatArtWeaponTypeAttackingUsability(1);
+	}
+	else return 0;
+}
+u8 VengeanceThrustArtMenuUsability(const struct MenuItemDef* def, int number){
+    return VengeanceThrustArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+void VengeanceThrustBothSides(struct BattleUnit* actor, struct BattleUnit* target){
+	int venCount = 0;
+	int venMult = 100;
+	u8* unitBuffer = GetUnitsOfAllegiance(&actor->unit, 1);
+	if (unitBuffer == FALSE)
+		return;
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		if (GetUnitCurrentHp(other) <= (GetUnitMaxHp(other)/2)){
+			venCount += 1;
+		}
+		i++;
+	}
+	if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_535)){
+		venMult = 150 + venCount * 80;;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_534)){
+		venMult = 150 + venCount * 50;;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_533)){
+		venMult = 120 + venCount * 40;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_532)){
+		venMult = 120 + venCount * 30;
+	}
+	else {
+		venMult = 100 + venCount * 20;
+	}
+	int venDiv = 100;
+
+	actor->battleAttack = actor->battleAttack*venMult/venDiv;
+	target->battleDefense = target->battleDefense*venMult/venDiv;
+}
+void VengeanceThrustPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
+	int venCount = 0;
+	int venMult = 0;
+	u8* unitBuffer = GetUnitsOfAllegiance(&actor->unit, 1);
+	if (unitBuffer == FALSE)
+		return;
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		if (GetUnitCurrentHp(other) <= (GetUnitMaxHp(other)/2)){
+			venCount += 1;
+		}
+		i++;
+	}
+	if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_535)){
+		venMult = 15;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_533)){
+		venMult = 10;
+	}
+	else {
+		venMult = 5;
+	}
+	
+	actor->battleCritRate = actor->battleCritRate + venCount * venMult;
+}
+
+// BlitzThrust
+u8 BlitzThrustArtUsability(struct Unit* unit, u16 artID){
+	if (UNIT_HAS_SKILL(unit,HOP,skill_521)){
+		return CombatArtRangeAttackingUsability(1,1,1);
+	}
+	else return 0;
+}
+u8 BlitzThrustArtMenuUsability(const struct MenuItemDef* def, int number){
+    return BlitzThrustArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+void BlitzThrustBothSides(struct BattleUnit* actor, struct BattleUnit* target){
+	if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_525)){
+		actor->battleAttack = actor->battleAttack*5/2;
+		target->battleDefense = target->battleDefense*5/2;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_525)){
+		actor->battleAttack = actor->battleAttack*21/10;
+		target->battleDefense = target->battleDefense*21/10;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_525)){
+		actor->battleAttack = actor->battleAttack*9/5;
+		target->battleDefense = target->battleDefense*9/5;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,HOP,skill_525)){
+		actor->battleAttack = actor->battleAttack*3/2;
+		target->battleDefense = target->battleDefense*3/2;
+	}
+	else {
+		actor->battleAttack = actor->battleAttack*13/10;
+		target->battleDefense = target->battleDefense*13/10;
+	}
+}
+
+void BlitzThrustPostbattle(struct Unit* actor, struct Unit* target){
+	CallEvent(&GenericAOEEvent, 0x1);
+	int damage = gBattleActor.battleAttack - gBattleTarget.battleDefense;
+	if (UNIT_HAS_SKILL(actor,HOP,skill_525)){
+		damage = damage/2;
+	}
+	else if (UNIT_HAS_SKILL(actor,HOP,skill_525)){
+		damage = damage/3;
+	}
+	else {
+		damage = damage/4;
+	}
+	u8* unitBuffer = GetUnitsInLine(actor, target, 2);
+	if (unitBuffer == FALSE)
+		return;
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		int tmpDamage = damage;
+		if (tmpDamage > other->curHP) {
+			tmpDamage = other->curHP - 1;
+		}
+		other->curHP = other->curHP - tmpDamage;
+		i++;
+	}
+	SetActiveArt(actor, 0);
+}
+int BlitzThrustRange(struct Unit* unit, int itemID, int rangeWord){
+	if (GetItemType(itemID) == 0x1) {
+		return 0x00010001;
+	}
+	else return 0;
+}
 
 
 
@@ -53,6 +193,8 @@ void BoundingThrustPostbattle(struct Unit* actor, struct Unit* target){
 	}
 	SetActiveArt(actor, 0);
 }
+
+
 
 
 // LongThrust

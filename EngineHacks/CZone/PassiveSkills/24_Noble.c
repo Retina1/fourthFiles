@@ -1,4 +1,4 @@
-int ApplyNobleProudNobility(u8 stat, struct Unit* unit) {
+int ApplyNobleProudNobility(int stat, struct Unit* unit) {
 	if (UNIT_HAS_SKILL(unit,SOV,skill_232)){
 		u8* unitBuffer = GetUnitsOfAllegiance(unit, 1);
 		if (unitBuffer == FALSE)

@@ -158,6 +158,8 @@ struct ProcCmd *GetSpellAssocMapAnimProcScript(u16 item)
 */
 
 
+#include "BuffDebuff.c"
+
 #include "ClassArts/1_Swordfighter.c"
 #include "ClassArts/2_Knight.c"
 #include "ClassArts/3_Axefighter.c"

@@ -1,0 +1,42 @@
+##UM_Curare
+ Curare[X]
+##UM_CurareDesc
+A paralytic medicine.[N]
+Cost: 3 Durability.[X]
+##UM_Cure
+ Cure[X]
+##UM_CureDesc
+A basic healing medicine.[N]
+Cost: 2 Durability.[X]
+##UM_Refresh
+ Refresh[X]
+##UM_RefreshDesc
+An ailment-curing medicine.[N]
+Cost: 3 Durability.[X]
+
+##UM_Toxin
+ Toxin[X]
+##UM_ToxinDesc
+A deadly [OpenQuote]medicine[CloseQuote].[N]
+Cost: 4 Durability.[X]
+##UM_WrathStaff
+ Wrath Staff[X]
+##UM_WrathStaffDesc
+A mighty staff hit.[N]
+Cost: 3 Durability.[X]
+##UM_Immunize
+ Immunize[X]
+##UM_ImmunizeDesc
+A fortifying medicine.[N]
+Cost: 6 Durability.[X]
+##UM_HealingTouch
+ Heal. Touch[X]
+##UM_HealingTouchDesc
+A miracle medicine.[N]
+Cost: 10 Durability.[X]
+
+##UM_Caduceus
+ Caduceus[X]
+##UM_CaduceusDesc
+A devastating staff hit.[N]
+Cost: 7 Durability.[X]

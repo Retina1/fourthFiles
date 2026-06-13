@@ -1,0 +1,430 @@
+##MenacingPresenceSkill
+Menacing Presence[X]
+## ^
+Level: [_0] (Passive)[N]
+Every good army needs[N]
+an intimidating presence.[N]
+Next: All enemies get a[N]
+passive -[_5] Avo.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Every good army needs[N]
+an intimidating presence.[N]
+All enemies get a[N]
+passive -[_5] Avo.[N]
+[X]
+
+##PivotSkill
+Pivot[X]
+## ^
+Level: [_0] (Active)[N]
+Apply your riding skill[N]
+in an aggressive way.[N]
+Next: Use Pivot to leap[N]
+ahead of an adjacent ally.[N]
+Req: None[X]
+## ^
+Level: MAX (Active)[N]
+Apply your riding skill[N]
+in an aggressive way.[N]
+Use Pivot to leap[N]
+ahead of an adjacent ally.[N]
+[X]
+
+##OutriderSkill
+Outrider[X]
+## ^
+Level: [_0] (Passive)[N]
+Your battle charge[N]
+amplifies all blows.[N]
+Next: When initiating,[N]
++[_5] Crit per Mov used.[N]
+Req: Charging Toss [_1][X]
+## ^
+Level: MAX (Passive)[N]
+Your battle charge[N]
+amplifies all blows.[N]
+When initiating,[N]
++[_5] Crit per Mov used.[N]
+[X]
+
+##TrampleSkill
+Trample[X]
+## ^
+Level: [_0] (Passive)[N]
+Crush the unworthy.[N]
+Next: Grants [_1].[_2]x Atk/AS[N]
+and [_0].[_9]x damage taken vs.[N]
+unmounted foes.[N]
+Req: PROMO[X]
+## ^
+Level: MAX (Passive)[N]
+Crush the unworthy.[N]
+Grants [_1].[_2]x Atk/AS[N]
+and [_0].[_9]x damage taken vs.[N]
+unmounted foes.[N]
+[X]
+
+##WarCrySkill
+War Cry[X]
+## ^
+Level: [_0] (Active)[N]
+Dampen your enemies'[N]
+combat instinct.[N]
+Next: [_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_8]x Atk/Crit ([_2] turns).[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+Dampen your enemies'[N]
+combat instinct.[N]
+[_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_8]x Atk/Crit ([_2] turns).[N]
+Next: [_0].[_6]x Atk/Crit.[X]
+## ^
+Level: MAX (Active)[N]
+Dampen your enemies'[N]
+combat instinct.[N]
+[_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_6]x Atk/Crit ([_2] turns).[N]
+[X]
+
+##HellishCrySkill
+Hellish Cry[X]
+## ^
+Level: [_0] (Active)[N]
+Dampen your enemies'[N]
+survival instinct.[N]
+Next: [_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_8]x Def/Avo ([_2] turns).[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+Dampen your enemies'[N]
+survival instinct.[N]
+[_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_8]x Def/Avo ([_2] turns).[N]
+Next: [_0].[_6]x Def/Avo.[X]
+## ^
+Level: MAX (Active)[N]
+Dampen your enemies'[N]
+survival instinct.[N]
+[_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_6]x Def/Avo ([_2] turns).[N]
+[X]
+
+##DominantCrySkill
+Dominant Cry[X]
+## ^
+Level: [_0] (Active)[N]
+Dampen your enemies'[N]
+overall morale.[N]
+Next: [_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_8]x AS/Luc ([_2] turns).[N]
+Req: War/Hellish Cry [_1][X]
+## ^
+Level: [_1] (Active)[N]
+Dampen your enemies'[N]
+overall morale.[N]
+[_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_8]x AS/Luc ([_2] turns).[N]
+Next: [_0].[_6]x AS/Luc.[X]
+## ^
+Level: MAX (Active)[N]
+Dampen your enemies'[N]
+overall morale.[N]
+[_2] Dur, Burst [_2] (Foe),[N]
+Inf. [_0].[_6]x AS/Luc ([_2] turns).[N]
+[X]
+
+##ChargingSmashSkill
+Charging Smash[X]
+## ^
+Level: [_0] (Active)[N]
+Let your momentum[N]
+bolster your strikes.[N]
+Next: [_3] Dur, +[_2] Mt[N]
+per Mov used.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+Let your momentum[N]
+bolster your strikes.[N]
+[_3] Dur, +[_2] Mt[N]
+per Mov used.[N]
+Next: +[_4] Mt.[X]
+## ^
+Level: [_2] (Active)[N]
+Let your momentum[N]
+bolster your strikes.[N]
+[_3] Dur, +[_4] Mt[N]
+per Mov used.[N]
+Next: +[_6] Mt.[X]
+## ^
+Level: MAX (Active)[N]
+Let your momentum[N]
+bolster your strikes.[N]
+[_3] Dur, +[_6] Mt[N]
+per Mov used.[N]
+[X]
+
+##ChargingTossSkill
+Charging Toss[X]
+## ^
+Level: [_0] (Active)[N]
+Let your momentum[N]
+bolster your reach.[N]
+Next: [_3] Dur, [_0].[_8]x Hit, [_1] Rng,[N]
++[_1] Rng per [_2] Mov used.[N]
+Req: Charging Smash [_1][X]
+## ^
+Level: [_1] (Active)[N]
+Let your momentum[N]
+bolster your reach.[N]
+[_3] Dur, [_0].[_8]x Hit, [_1] Rng,[N]
++[_1] Rng per [_2] Mov used.[N]
+Next: [_1].[_0]x Hit.[X]
+## ^
+Level: [_2] (Active)[N]
+Let your momentum[N]
+bolster your reach.[N]
+[_3] Dur, [_1].[_0]x Hit, [_1] Rng,[N]
++[_1] Rng per [_2] Mov used.[N]
+Next: [_1].[_2]x Hit.[X]
+## ^
+Level: MAX (Active)[N]
+Let your momentum[N]
+bolster your reach.[N]
+[_3] Dur, [_1].[_2]x Hit, [_1] Rng,[N]
++[_1] Rng per [_2] Mov used.[N]
+[X]
+
+
+##HitAndRunSkill
+Hit and Run[X]
+## ^
+Level: [_0] (Active)[N]
+Move as you strike.[N]
+Next: [_3] Dur, [_1].[_0]x Atk.[N]
+After combat, use any[N]
+unspent Movement.[N]
+Req: Charging Smash [_2][X]
+## ^
+Level: [_1] (Active)[N]
+Move as you strike.[N]
+[_3] Dur, [_1].[_0]x Atk.[N]
+After combat, use any[N]
+unspent Movement.[N]
+Next: [_1].[_2]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+Move as you strike.[N]
+[_3] Dur, [_1].[_2]x Atk.[N]
+After combat, use any[N]
+unspent Movement.[N]
+Next: [_1].[_5]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Move as you strike.[N]
+[_3] Dur, [_1].[_5]x Atk.[N]
+After combat, use any[N]
+unspent Movement.[N]
+[X]
+
+##GallopSkill
+Gallop[X]
+## ^
+Level: [_0] (Active)[N]
+Push yourself and your[N]
+mount to charge.[N]
+Next: [_3] Dur, grants self[N]
++[_1] Mov ([_2] turns).[N]
+Req: W/H.Cry [_1], Hit & Run [_1][X]
+## ^
+Level: [_1] (Active)[N]
+Push yourself and your[N]
+mount to charge.[N]
+[_3] Dur, grants self[N]
++[_1] Mov ([_2] turns).[N]
+Next: +[_2] Mov.[X]
+## ^
+Level: [_2] (Active)[N]
+Push yourself and your[N]
+mount to charge.[N]
+[_3] Dur, grants self[N]
++[_2] Mov ([_2] turns).[N]
+Next: +[_3] Mov.[X]
+## ^
+Level: MAX (Active)[N]
+Push yourself and your[N]
+mount to charge.[N]
+[_3] Dur, grants self[N]
++[_3] Mov ([_2] turns).[N]
+[X]
+
+##CollectedFurySkill
+Collected Fury[X]
+## ^
+Level: [_0] (Active)[N]
+Focus. Aim. Smash.[N]
+Hard as you can.
+Next: [_5] Dur, +[_1][_5] Mt, only[N]
+usable if [_0] Mov used.[N]
+Req: PR, Ch.Smash/Toss [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Focus. Aim. Smash.[N]
+Hard as you can.
+[_5] Dur, +[_1][_5] Mt, only[N]
+usable if [_0] Mov used.[N]
+Next: +[_3][_0] Mt.[X]
+## ^
+Level: [_2] (Active)[N]
+Focus. Aim. Smash.[N]
+Hard as you can.
+[_5] Dur, +[_3][_0] Mt, only[N]
+usable if [_0] Mov used.[N]
+Next: +[_5][_0] Mt.[X]
+## ^
+Level: MAX (Active)[N]
+Focus. Aim. Smash.[N]
+Hard as you can.
+[_5] Dur, +[_5][_0] Mt, only[N]
+usable if [_0] Mov used.[N]
+[X]
+
+##GreatCleaveSkill
+Great Cleave[X]
+## ^
+Level: [_0] (Active)[N]
+Cut down the masses.[N]
+Next: [_6] Dur, [_1].[_0]x Atk,[N]
+[_3][_3]% Dmg also dealt in[N]
+[_1]+(Mov used/[_2]) Rng.[N]
+Req: Charging Smash [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Cut down the masses.[N]
+[_6] Dur, [_1].[_0]x Atk,[N]
+[_3][_3]% Dmg also dealt in[N]
+[_1]+(Mov used/[_2]) Rng.[N]
+Next: [_1].[_2]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+Cut down the masses.[N]
+[_6] Dur, [_1].[_2]x Atk,[N]
+[_3][_3]% Dmg also dealt in[N]
+[_1]+(Mov used/[_2]) Rng.[N]
+Next: [_1].[_5]x Atk.[X]
+## ^
+Level: [_3] (Active)[N]
+Cut down the masses.[N]
+[_6] Dur, [_1].[_5]x Atk,[N]
+[_3][_3]% Dmg also dealt in[N]
+[_1]+(Mov used/[_2]) Rng.[N]
+Next: [_1].[_8]x Atk.[X]
+## ^
+Level: [_4] (Active)[N]
+Cut down the masses.[N]
+[_6] Dur, [_1].[_8]x Atk,[N]
+[_3][_3]% Dmg also dealt in[N]
+[_1]+(Mov used/[_2]) Rng.[N]
+Next: [_2].[_1]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Cut down the masses.[N]
+[_6] Dur, [_2].[_1]x Atk,[N]
+[_3][_3]% Dmg also dealt in[N]
+[_1]+(Mov used/[_2]) Rng.[N]
+Excellent cleavage.[X]
+
+##RaidCommandSkill
+Raid Command[X]
+## ^
+Level: [_0] (Active)[N]
+Strike as one.[N]
+Next: [_5] Dur, Burst [_3] (Ally),[N]
+Inf. [_1].[_1]x Atk ([_1] turn), only[N]
+usable if [_0] Mov used.[N]
+Req: Dom.Cry [_2], Ch.Toss [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Strike as one.[N]
+[_5] Dur, Burst [_3] (Ally),[N]
+Inf. [_1].[_1]x Atk ([_1] turn), only[N]
+usable if [_0] Mov used.[N]
+Next: [_2] turns.[X]
+## ^
+Level: [_2] (Active)[N]
+Strike as one.[N]
+[_5] Dur, Burst [_3] (Ally),[N]
+Inf. [_1].[_1]x Atk ([_2] turns), only[N]
+usable if [_0] Mov used.[N]
+Next: [_1].[_3]x Atk.[X]
+## ^
+Level: [_3] (Active)[N]
+Strike as one.[N]
+[_5] Dur, Burst [_3] (Ally),[N]
+Inf. [_1].[_3]x Atk ([_2] turns), only[N]
+usable if [_0] Mov used.[N]
+Next: [_3] turns.[X]
+## ^
+Level: [_4] (Active)[N]
+Strike as one.[N]
+[_5] Dur, Burst [_3] (Ally),[N]
+Inf. [_1].[_3]x Atk ([_3] turns), only[N]
+usable if [_0] Mov used.[N]
+Next: [_1].[_5]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Strike as one.[N]
+[_5] Dur, Burst [_3] (Ally),[N]
+Inf. [_1].[_5]x Atk ([_3] turns), only[N]
+usable if [_0] Mov used.[N]
+[X]
+
+##RegimentRaveSkill
+Regiment Rave[X]
+## ^
+Level: [_0] (Active)[N]
+Rage like a storm.[N]
+Next: [_1].[_0]x Atk. Grants[N]
+the user another turn.[N]
+Breaks weapon upon use.[N]
+Req: PR, G.Cleave [_5], Gal.[_3][X]
+## ^
+Level: [_1] (Active)[N]
+Rage like a storm.[N]
+[_1].[_0]x Atk. Grants[N]
+the user another turn.[N]
+Breaks weapon upon use.[N]
+Next: [_1].[_5]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+Rage like a storm.[N]
+[_1].[_5]x Atk. Grants[N]
+the user another turn.[N]
+Breaks weapon upon use.[N]
+Next: [_2].[_0]x Atk.[X]
+## ^
+Level: [_3] (Active)[N]
+Rage like a storm.[N]
+[_2].[_0]x Atk. Grants[N]
+the user another turn.[N]
+Breaks weapon upon use.[N]
+Next: [_2].[_5]x Atk.[X]
+## ^
+Level: [_4] (Active)[N]
+Rage like a storm.[N]
+[_2].[_5]x Atk. Grants[N]
+the user another turn.[N]
+Breaks weapon upon use.[N]
+Next: [_3].[_0]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Rage like a storm.[N]
+[_3].[_0]x Atk. Grants[N]
+the user another turn.[N]
+Breaks weapon upon use.[N]
+Strike them all down.[X]

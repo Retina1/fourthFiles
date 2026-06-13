@@ -23,6 +23,18 @@
 [Guild] = [Tact]
 [EyesClose] = [CloseEyes][CloseEyes][CloseEyes][CloseEyes]
 
+[_0] = [0xc3]
+[_1] = [0xc5]
+[_2] = [0xc6]
+[_3] = [0xd0]
+[_4] = [0xd5]
+[_5] = [0xd7]
+[_6] = [0xd8]
+[_7] = [0xdd]
+[_8] = [0xde]
+[_9] = [0xe3]
+
+
 [HorseIcon] = [0x7B]
 [PegIcon] = [0x7D]
 [ArmorIcon] = [0x7C]
@@ -35,7 +47,6 @@
 [LightIcon] = [0xB7]
 [DarkIcon] = [0xB9]
 [StaffIcon] = [0xBA]
-[DEVVY] = [0xc3]
 
 [FarFarLeft] = [OpenFarFarLeft]
 [FarLeft] = [OpenFarLeft]

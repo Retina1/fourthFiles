@@ -22,7 +22,7 @@ void ApplyMyrmidonDrawingStance(struct BattleUnit* attacker, struct BattleUnit* 
 	}
 }
 
-int ApplyMyrmidonClearStance(u8 stat, struct Unit* unit) {
+int ApplyMyrmidonClearStance(int stat, struct Unit* unit) {
 	if (unit->classSkillState > 0) {
 		if (UNIT_HAS_SKILL(unit,RNI,skill_222)){
 			stat = stat * 13/10;

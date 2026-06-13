@@ -24,8 +24,11 @@
 
 	#include "SerifLowercase/LowercaseSerif.txt" // includes text bubble icons and short space
 	#include "SerifUppercase/UppercaseSerif.txt"
+	#include "SerifNumbers/SerifNumbers.txt"
+	#include "SerifExtra/SerifExtra.txt"
 	#include "MenuLowercase/LowercaseMenu.txt"
 	#include "MenuUppercase/UppercaseMenu.txt"	
+	#include "MenuNumbers/MenuNumbers.txt"	
 		
 		
 		

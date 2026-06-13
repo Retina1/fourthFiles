@@ -1,3 +1,8 @@
+##UM_SureAim
+ Sure Aim[X]
+##UM_SureAimDesc
+Buff allied Hit and Luck.[N]
+Cost: 3 Durability.[X]
 ##UM_DropShot
  Drop Shot[X]
 ##UM_DropShotDesc

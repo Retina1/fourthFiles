@@ -88,8 +88,8 @@ in the stead of adjacent allies.[X]
 Full Guard: Guard to slighty[N]
 reduce damage in a large area.[X]
 ##
-Blitz Thrust: A flurry of strikes[N]
-that continues until out of targets.[X]
+Blitz Thrust: A mighty thrust[N]
+that damages all in a line.[X]
 ##
 Avenger Thrust: A thrust whose power[N]
 rises with more allies below 50% HP.[X]
@@ -262,7 +262,7 @@ Cure: Restores HP[N]
 to a nearby ally.[X]
 ##
 Refresh: Removes ailments[N]
-and debuffs from an ally.[X]
+and binds from an ally.[X]
 ##
 Toxin: Poison[N]
 a nearby enemy.[X]
@@ -367,14 +367,14 @@ with very high Crit.[X]
 Archballista: Stand still to toss[N]
 a lance an incredible distance.[X]
 ##
-Full Force: A thrust that strikes[N]
-twice if using full movement.[X]
+Full Force: A flurry of thrusts whose[N]
+hit count scales with tiles moved.[X]
 ##
-Charge Command: A command that boosts[N]
-ally Mov based on own unused Mov.[X]
+Charge Command: Stand still[N]
+to buff nearby ally Mov.[X]
 ##
-Gae Bolg: A thrust that[N]
-ignores all enemy defenses.[X]
+Gae Bolg: An almighty[N]
+thrust that pierces Def.[X]
 
 //rai
 ##MSS_MenacingPresence
@@ -417,8 +417,8 @@ smash with incredible might.[X]
 Great Cleave: A strike that damages[N]
 an area based on tiles moved.[X]
 ##
-Raid Command: A command that boosts[N]
-ally Atk based on own unused Mov.[X]
+Raid Command: Stand still[N]
+to buff nearby ally Atk.[X]
 ##
 Regiment Rave: A strike that breaks the[N]
 user's weapon to grant another turn.[X]
@@ -619,8 +619,8 @@ HP when using curse skills.[X]
 Guiding Force: Boosts Hit and[N]
 Crit for adjacent allies.[X]
 ##
-Misfortune: Curse skills also[N]
-debuff enemy Luc.[X]
+Misfortune: Debuff skills[N]
+also debuff enemy Luc.[X]
 ##
 Impure Reach: Adds a flat bonus[N]
 to status affliction rate.[X]
@@ -1182,7 +1182,7 @@ with halved Mov during the second.[X]
 //dri
 ##MSS_ImperialPride
 Imperial Pride: Boosts Atk[N]
-vs. non-Asketan factions.[X]
+against enemies with boss icons.[X]
 ##
 Heat Shield: Boosts Def[N]
 while Overheated.[X]

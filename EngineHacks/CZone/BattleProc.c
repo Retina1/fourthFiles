@@ -3,7 +3,7 @@ inline int GetItemStatusOdds(int item) {
 }
 int GetArtStatusOdds(struct BattleUnit* actor, struct BattleUnit* target){
 	if (CombatArtList[GetActiveArt(&actor->unit)].oddsFunction != NULL)
-		return CombatArtList[GetActiveArt(&actor->unit)].oddsFunction(actor, target);
+		return CombatArtList[GetActiveArt(&actor->unit)].oddsFunction(&actor->unit, &target->unit);
 	else return 0;
 }
 

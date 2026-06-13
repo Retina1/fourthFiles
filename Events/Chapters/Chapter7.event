@@ -90,11 +90,11 @@ UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [Th
 UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [11,7] 0x0 0x0 0x0 0x0 [ThornWhip,FrailtyAura] NoAI
 
 UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [18,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
-UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [18,8] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [18,9] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
 UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [16,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
 UNIT FreelanceGeneric Gunner 0x0 Level(8,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
 
-UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [15,2] 0x0 0x0 0x0 0x0 [ToxinBow] AttackInRangeAI
+UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [15,1] 0x0 0x0 0x0 0x0 [ToxinBow] AttackInRangeAI
 UNIT FreelanceGeneric Lancer 0x0 Level(8,Enemy,1) [15,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
 UNIT FreelanceGeneric Lancer 0x0 Level(8,Enemy,1) [16,2] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
 UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI

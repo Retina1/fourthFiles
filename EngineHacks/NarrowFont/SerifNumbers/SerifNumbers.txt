@@ -1,0 +1,112 @@
+//ASCII / straight-lookup only (FE8U)
+//Don't use 0x00-0x1F slots, used for dialogue functions
+//[0x80] is also unusable (forced - character), might be more
+
+Sglyph_0:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x4 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif0.img.bin"
+
+Sglyph_1:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif1.img.bin"
+
+Sglyph_2:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif2.img.bin"
+
+Sglyph_3:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif3.img.bin"
+
+Sglyph_4:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif4.img.bin"
+
+Sglyph_5:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif5.img.bin"
+
+Sglyph_6:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif6.img.bin"
+
+Sglyph_7:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif7.img.bin"
+
+Sglyph_8:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif8.img.bin"
+
+Sglyph_9:
+WORD 0x00000000 
+BYTE 0x00 //empty code-page # (no Shift-JIS)
+BYTE 0x5 //character width
+BYTE 0x00 //always zero
+BYTE 0x00
+#incbin "serif9.img.bin"
+
+
+tGlyphEntry(0xC3, Sglyph_0)
+tGlyphEntry(0xC5, Sglyph_1)
+tGlyphEntry(0xC6, Sglyph_2)
+tGlyphEntry(0xd0, Sglyph_3)
+tGlyphEntry(0xd5, Sglyph_4)
+tGlyphEntry(0xd7, Sglyph_5)
+tGlyphEntry(0xd8, Sglyph_6)
+tGlyphEntry(0xdd, Sglyph_7)
+tGlyphEntry(0xde, Sglyph_8)
+tGlyphEntry(0xe3, Sglyph_9)
+
+//maybe
+/*
+tGlyphEntry(0x30, Sglyph_0)
+tGlyphEntry(0x31, Sglyph_1)
+tGlyphEntry(0x32, Sglyph_2)
+tGlyphEntry(0x33, Sglyph_3)
+tGlyphEntry(0x34, Sglyph_4)
+tGlyphEntry(0x35, Sglyph_5)
+tGlyphEntry(0x36, Sglyph_6)
+tGlyphEntry(0x37, Sglyph_7)
+tGlyphEntry(0x38, Sglyph_8)
+tGlyphEntry(0x39, Sglyph_9)
+*/
+
+
+

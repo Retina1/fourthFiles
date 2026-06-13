@@ -3,6 +3,11 @@
 ##UM_WarHealDesc
 Recover an ally's HP.[N]
 Cost: 2 Durability.[X]
+##UM_WarWall
+ War Wall[X]
+##UM_WarWallDesc
+Attempt to block effects.[N]
+Cost: 4 Durability.[X]
 
 ##UM_WarPhase
  War Phase[X]

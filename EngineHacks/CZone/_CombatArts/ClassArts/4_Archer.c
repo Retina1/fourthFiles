@@ -1,3 +1,32 @@
+u8 SureAimArtUsability(struct Unit* unit, u16 artID)
+{
+	if (UNIT_HAS_SKILL(unit,SNP,skill_211)) {
+		return ArtItemCheckInventory(unit, artID);
+	}
+	else return 0;
+}
+
+u8 SureAimArtMenuUsability(const struct MenuItemDef* def, int number)
+{
+    return SureAimArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+void SureAimItemSelectEffect(u16 artID, struct Unit* unit)
+{
+	ClearBg0Bg1();
+    EndFaceById(0);
+	HideMoveRangeGraphics();
+    BG_Fill(gBG2TilemapBuffer, 0);
+    BG_EnableSyncByMask(BG2_SYNC_BIT);
+    SetStaffUseAction(unit);
+	if (UNIT_HAS_SKILL(unit,SNP,skill_212)) {
+		ApplyBuffToAlliesInRange(unit,BUFF_SUREAIM2,2);
+	}
+	else{
+		ApplyBuffToAlliesInRange(unit,BUFF_SUREAIM1,2);
+	}
+}
+
 //astralvolley
 u8 AstralVolleyArtUsability(struct Unit* unit, u16 artID){
 	if (UNIT_HAS_SKILL(unit,SNP,skill_531)){
@@ -197,12 +226,12 @@ void CloserBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	actor->battleAttack = actor->battleAttack*atkMul/atkDiv;
 	target->battleDefense = target->battleDefense*atkMul/atkDiv;
 }
-int CloserOdds(struct BattleUnit* actor, struct BattleUnit* target){
+int CloserOdds(struct Unit* actor, struct Unit* target){
 	int odds = 50;
-	if (UNIT_HAS_SKILL(&actor->unit,SNP,skill_353)){
+	if (UNIT_HAS_SKILL(actor,SNP,skill_353)){
 		odds = 80;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,SNP,skill_352)){
+	else if (UNIT_HAS_SKILL(actor,SNP,skill_352)){
 		odds = 60;
 	}
 	return odds;

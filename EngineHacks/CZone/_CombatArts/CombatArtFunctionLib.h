@@ -9,6 +9,10 @@ u8 VolleyAttackingUsability(int minRange, int maxRange);
 u8 CombatArtWeaponTypeAttackingUsability(int weaponType);
 u8 CombatArtGeneralAttackingEffect(struct MenuProc* menu, struct MenuItemProc* menuItem);
 u8 ArtItemCheckInventory(struct Unit* unit, u16 artID);
+void ApplyBuffToAlliesInRange(struct Unit* centralUnit, int buffID, int range);
+void ApplyDebuffToAlliesInRange(struct Unit* centralUnit, int buffID, int range);
+void ApplyDebuffToEnemiesInRange(struct Unit* centralUnit, int buffID, int range);
+
 
 void TargetOtherDef(struct BattleUnit* actor, struct BattleUnit* target);
 void TryDealEffectiveDamage(struct BattleUnit* actor, struct BattleUnit* target, const u8* effectivenessPtr);

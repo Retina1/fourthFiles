@@ -45,3 +45,14 @@ Cost: 5 Durability.[X]
 ##UM_FullGuardDesc
 Guard against all attacks.[N]
 Cost: 5 Durability.[X]
+
+##UM_BlitzThrust
+ Blitz Thrust[X]
+##UM_BlitzThrustDesc
+Strike all in a line.[N]
+Cost: 6 Durability.[X]
+##UM_VengeanceThrust
+ Aveng. Thrust[X]
+##UM_VengeanceThrustDesc
+Avenge your allies.[N]
+Cost: 5 Durability.[X]
