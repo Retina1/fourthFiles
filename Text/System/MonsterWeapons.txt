@@ -10,7 +10,7 @@ A monster's bite, fangs bared to shred.[X]
 Frigid Bite[X]
 ##Desc_FrigidBite ^
 A monster's bite, fangs cold as ice.[N]
-Add 25% of Mag to Atk, before mults.[X]
+Add [_2][_5]% of Mag to Atk, before mults.[X]
 ##Name_Tackle
 Tackle[X]
 ##Desc_Tackle ^
@@ -27,54 +27,54 @@ A monster's gaze, mighty as a spell.[X]
 Air Scales[X]
 ##Desc_AirScales ^
 Scattered and irritant monster scales.[N]
-Base Blind Affliction Rate: 60%.[X]
+Base Blind Affliction Rate: [_6][_0]%.[X]
 ##Name_VenomScales
 Venom Scls.[X]
 ##Desc_VenomScales ^
 Deadly monster scales coated in toxins.[N]
-Base Poison Affliction Rate: 70%.[X]
+Base Poison Affliction Rate: [_7][_0]%.[X]
 ##Name_WebTalon
 Web Talon[X]
 ##Desc_WebTalon ^
 A talon primed to snare its target.[N]
-Base Arm Bind Affliction Rate: 60%.[X]
+Base Arm Bind Affliction Rate: [_6][_0]%.[X]
 ##Name_RootGrasp
 Root Grasp[X]
 ##Desc_RootGrasp ^
 Wicked roots that strike from below.[N]
-Base Leg Bind Affliction Rate: 60%.[X]
+Base Leg Bind Affliction Rate: [_6][_0]%.[X]
 ##Name_Belladonna
 Belladonna[X]
 ##Desc_Belladonna ^
 A spell that forces a deep slumber.[N]
-Base Sleep Affliction Rate: 50%.[X]
+Base Sleep Affliction Rate: [_5][_0]%.[X]
 ##Name_ToxicClaw
 Toxic Claw[X]
 ##Desc_ToxicClaw ^
 A sharp claw dripping with venom.[N]
-Base Poison Affliction Rate: 60%.[X]
+Base Poison Affliction Rate: [_6][_0]%.[X]
 ##Name_Furysong
 Furysong[X]
 ##Desc_Furysong ^
 A hymn that shatters one's mind.[N]
-Base Berserk Affliction Rate: 50%.[X]
+Base Berserk Affliction Rate: [_5][_0]%.[X]
 ##Name_SealGleam
 Seal Gleam[X]
 ##Desc_SealGleam ^
 A cursed stare that silences magi.[N]
-Base Head Bind Affliction Rate: 60%.[X]
+Base Head Bind Affliction Rate: [_6][_0]%.[X]
 
 
 ##Name_Voltage
 Voltage[X]
 ##Desc_Voltage ^
 Crackling breath of electric doom.[N]
-Base Paralysis Affliction Rate: 80%.[X]
+Base Paralysis Affliction Rate: [_8][_0]%.[X]
 ##Name_Frigid
 Frigid[X]
 ##Desc_Frigid ^
 Bittercold breath that freezes all.[N]
-Base Sleep Affliction Rate: 80%.[X]
+Base Sleep Affliction Rate: [_8][_0]%.[X]
 ##Name_Searing
 Searing[X]
 ##Desc_Searing ^
@@ -86,27 +86,27 @@ Infernal breath that blazes eternal.[X]
 Divinity[X]
 ##Desc_Divinity ^
 Draconic breath that purges the impure.[N]
-Base Instakill Affliction Rate: 200%.[X]
+Base Instakill Affliction Rate: [_2][_0][_0]%.[X]
 
 ##Name_RootCyclone
 Root Cyclone[X]
 ##Desc_RootCyclone ^
 Abominable roots that fully ensnare.[N]
-Base Full Bind Affliction Rate: 80%.[X]
+Base Full Bind Affliction Rate: [_8][_0]%.[X]
 
 
 ##Name_AtrocityScales
 Atrocity Sc.[X]
 ##Desc_AtrocityScales ^
 Truly abominable monster scales.[N]
-Base Poison Affliction Rate: 250%.[X]
+Base Poison Affliction Rate: [_2][_5][_0]%.[X]
 
 ##Name_Hopebringer
 Hopebringer[X]
 ##Desc_Hopebringer ^
 A legendary spear of hope and light.[N]
-Grants +20 to all non-Mov/Con stats.[N]
-Base Full Bind Affliction Rate: 60%.[X]
+Grants +[_2][_0] to all non-Mov/Con stats.[N]
+Base Full Bind Affliction Rate: [_6][_0]%.[X]
 
 ##Name_ScissorWrath
 Scsr. Wrath[X]
@@ -124,14 +124,14 @@ halved chance to be afflicted with ailments.[X]
 Crinkle Glv.[X]
 ##Desc_CrinkleGlove ^
 An exceptionally bizarre glove.[N]
-Grants +1 Speed while using Slash[N]
+Grants +[_1] Speed while using Slash[N]
 weapons, but zeroes their might.[X]
 
 ##Name_KingBrooch
 King Brooch[X]
 ##Desc_KingBrooch ^
 A brooch made of lustrous wolf fur.[N]
-Grants 1.1x Hit. Add 20% of Mag to[N]
+Grants [_1].[_1]x Hit. Add [_2][_0]% of Mag to[N]
 Atk with phys. weapons, before mults.[X]
 
 ##Name_SimpleRing
@@ -145,50 +145,50 @@ Sapping[0xBC]Aura[X]
 ##Desc_SappingAura ^
 A pervasive aura of weakness.[N]
 After attacking, foe and foes within[N]
-3 tiles Inf. with 0.5x Atk (3 turns).[X]
+[_3] tiles Inf. with [_0].[_5]x Atk ([_3] turns).[X]
 ##Name_FrailtyAura
 Frailty Aura[X]
 ##Desc_FrailtyAura ^
 A pervasive aura of brittleness.[N]
 After attacking, foe and foes within[N]
-3 tiles Inf. with 0.5x Def (3 turns).[X]
+[_3] tiles Inf. with [_0].[_5]x Def ([_3] turns).[X]
 ##Name_SluggishAura
 Slug. Aura[X]
 ##Desc_SluggishAura ^
 A pervasive aura of lethargy.[N]
 After attacking, foe and foes within[N]
-3 tiles Inf. with 0.5x AS (3 turns).[X]
+[_3] tiles Inf. with [_0].[_5]x AS ([_3] turns).[X]
 ##Name_MistyAura
 Misty Aura[X]
 ##Desc_MistyAura ^
 A pervasive aura of disorientation.[N]
 After attacking, foe and foes within[N]
-3 tiles Inf. with 0.5x Hit (3 turns).[X]
+[_3] tiles Inf. with [_0].[_5]x Hit ([_3] turns).[X]
 
 ##Name_FierceAura
 Fierce Aura[X]
 ##Desc_FierceAura ^
 A pervasive aura of sheer power.[N]
 After attacking, user and allies within[N]
-3 tiles Inf. with 1.5x Atk (3 turns).[X]
+[_3] tiles Inf. with [_1].[_5]x Atk ([_3] turns).[X]
 ##Name_ShieldAura
 Shield Aura[X]
 ##Desc_ShieldAura ^
 A pervasive aura of guarding power.[N]
 After attacking, user and allies within[N]
-3 tiles Inf. with 1.5x Def (3 turns).[X]
+[_3] tiles Inf. with [_1].[_5]x Def ([_3] turns).[X]
 ##Name_HasteAura
 Haste Aura[X]
 ##Desc_HasteAura ^
 A pervasive aura of hastening power.[N]
 After attacking, user and allies within[N]
-3 tiles Inf. with 1.5x AS (3 turns).[X]
+[_3] tiles Inf. with [_1].[_5]x AS ([_3] turns).[X]
 ##Name_PreciseAura
 Precise Aura[X]
 ##Desc_PreciseAura ^
 A pervasive aura of focusing power.[N]
 After attacking, user and allies within[N]
-3 tiles Inf. with 1.5x Hit (3 turns).[X]
+[_3] tiles Inf. with [_1].[_5]x Hit ([_3] turns).[X]
 
 ##Use_PassiveItem
 Grants a[N]

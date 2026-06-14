@@ -56,7 +56,7 @@ struct SkillLeveler_Struct
 extern struct SkillLeveler_Struct* SkillsetEntry[0xff]; 
 
 
-
+/*
 struct Struct_SkillLevelerProc
 {
 	PROC_HEADER;
@@ -66,14 +66,29 @@ struct Struct_SkillLevelerProc
 	u8 unk2B;
 	struct Unit* activeUnit;
 	//for convenience put skillset byte in struct
-	/*0x2D*/u8 skillset;
+	u8 skillset; //2d
 	//menu stuff
-	/*0x2E*/u8 menuIndex; //what skill we're on
+	u8 menuIndex; //2e, what skill we're on
 	
 	u8 indexLevel[23];
 	u32 isMaxLevel;
 	u32 arePrereqsMet; 
 	
+	//end at 0x6B in theory
+};
+*/
+struct Struct_SkillLevelerProc
+{
+	PROC_HEADER;
+	u8 skillset; // 0x29.
+	u8 wasBPressed; // 0x2A.
+	u8 indexLevel[23]; // 0x2B.
+	u8 prepThemeThing; // 0x42. This needs to be set before exiting?
+	struct Unit* activeUnit;
+	u8 menuIndex;
+	u32 isMaxLevel;
+	u32 arePrereqsMet;
+	// Ends at 0x6b-ish i think. 
 	//end at 0x6B in theory
 };
 

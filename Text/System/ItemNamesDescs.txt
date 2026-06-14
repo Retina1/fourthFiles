@@ -35,37 +35,37 @@ A legendary sword that can cut through all.[X]
 Brightsword[X]
 ##Desc_Brightsword ^
 A blessed sword that smites evil.[N]
-3x might against monsters.[X]
+[_3]x might against monsters.[X]
 ##Name_Magebane
 Magebane[X]
 ##Desc_Magebane ^
 A warding blade that absorbs magic.[N]
-3x might against magic users.[X]
+[_3]x might against magic users.[X]
 ##Name_Bluntblade
 Bluntblade[X]
 ##Desc_Bluntblade ^
 A weighty blade that smashes points.[N]
-3x might against lances/rapiers.[X]
+[_3]x might against lances/rapiers.[X]
 ##Name_Roughslash
 Roughslash[X]
 ##Desc_Roughslash ^
 A rugged sword that deflects strikes.[N]
-3x might against axes/fists.[X]
+[_3]x might against axes/fists.[X]
 ##Name_Muzzler
 Muzzler[X]
 ##Desc_Muzzler ^
 A bizarre sword that seeks range equality.[N]
-3x might against bows/guns.[X]
+[_3]x might against bows/guns.[X]
 ##Name_Headhunter
 Headhunter[X]
 ##Desc_Headhunter ^
 A regal blade that craves the upper crust.[N]
-3x might against Noble/Driver classes.[X]
+[_3]x might against Noble/Driver classes.[X]
 ##Name_SuperiorBlade
 Superior Bld.[X]
 ##Desc_SuperiorBlade ^
 A mighty blade that cuts down competition.[N]
-3x might against swords/whips/drive blades.[X]
+[_3]x might against swords/whips/drive blades.[X]
 
 //WHIPS
 ##Name_VineWhip
@@ -100,17 +100,17 @@ A legendary whip that's said to fell angels.[X]
 Scorpio[X]
 ##Desc_Scorpio ^
 An underhanded whip coated in toxin.[N]
-Base Poison Affliction Rate: 60%.[X]
+Base Poison Affliction Rate: [_6][_0]%.[X]
 ##Name_HazeWhip
 Haze Whip[X]
 ##Desc_HazeWhip ^
 A cruel whip coated in anesthetic.[N]
-Base Sleep Affliction Rate: 50%.[X]
+Base Sleep Affliction Rate: [_5][_0]%.[X]
 ##Name_Stonesting
 Stonesting[X]
 ##Desc_Stonesting ^
 A baneful whip with a ruinous tip.[N]
-Base Petrification Affliction Rate: 30%.[X]
+Base Petrification Affliction Rate: [_3][_0]%.[X]
 
 //DRIVE BLADES
 ##Name_Type0
@@ -179,7 +179,7 @@ A spear designed to be thrown at nearby foes.[X]
 Shieldlance[X]
 ##Desc_Shieldlance ^
 A stalwart spear with an enduring sigil.[N]
-Grants +10 Defense.[X]
+Grants +[_1][_0] Defense.[X]
 ##Name_SoarSpear
 Soar Spear[X]
 ##Desc_SoarSpear ^
@@ -198,32 +198,32 @@ A massive, brutal, and brittle throwing spear.[X]
 Epee[X]
 ##Desc_Epee ^
 A simple thrusting sword used for sport.[N]
-Grants +1 Luck.[X]
+Grants +[_1] Luck.[X]
 ##Name_Sabre
 Sabre[X]
 ##Desc_Sabre ^
 A thin and defensive thrusting sword.[N]
-Grants +3 Defense and Resistance.[X]
+Grants +[_3] Defense and Resistance.[X]
 ##Name_Rapier
 Rapier[X]
 ##Desc_Rapier ^
 A sword with an extraordinary point.[N]
-Grants +10 Skill.[X]
+Grants +[_1][_0] Skill.[X]
 ##Name_Estoc
 Estoc[X]
 ##Desc_Estoc ^
 A curved sword used by agile fighters.[N]
-Grants +5 Speed.[X]
+Grants +[_5] Speed.[X]
 ##Name_JollyRoger
 Jolly Roger[X]
 ##Desc_JollyRoger ^
 A rapier once used by a famed captain.[N]
-Grants +40 Luck.[X]
+Grants +[_4][_0] Luck.[X]
 ##Name_TheFable
 The Fable[X]
 ##Desc_TheFable ^
 A legendary rapier forged by the fae.[N]
-Grants +5 to all stats besides HP.[X]
+Grants +[_5] to all stats besides HP.[X]
 
 //AXES
 ##Name_Shortmace
@@ -283,7 +283,7 @@ An axe that's almost too large to miss with.[X]
 Mindcrush[X]
 ##Desc_Mindcrush ^
 A curious axe with a furious curse.[N]
-Base Berserk Affliction Rate: 40%.[X]
+Base Berserk Affliction Rate: [_4][_0]%.[X]
 ##Name_Juggernaut
 Juggernaut[X]
 ##Desc_Juggernaut ^
@@ -325,7 +325,7 @@ A pair of legendary gloves imbued with prayers.[X]
 Shortbow[X]
 ##Desc_Shortbow ^
 A cheap and simple ranged weapon.[N]
-All bows have 3x might against fliers.[X]
+All bows have [_3]x might against fliers.[X]
 ##Name_Recurve
 Recurve[X]
 ##Desc_Recurve ^
@@ -366,7 +366,7 @@ A large bow that can fight at extended range.[X]
 Toxin Bow[X]
 ##Desc_ToxinBow ^
 A dangerous bow with venomous arrows.[N]
-Base Poison Affliction Rate: 60%.[X]
+Base Poison Affliction Rate: [_6][_0]%.[X]
 ##Name_Trickshot
 Trickshot[X]
 ##Desc_Trickshot ^
@@ -426,17 +426,17 @@ A covert gun with great accuracy and range.[X]
 Pepperbox[X]
 ##Desc_Pepperbox ^
 A gun with irritant-laced bullets.[N]
-Base Blind Affliction Rate: 60%.[X]
+Base Blind Affliction Rate: [_6][_0]%.[X]
 ##Name_Stunshot
 Stunshot[X]
 ##Desc_Stunshot ^
 A gun with paralytic-laced bullets.[N]
-Base Paralysis Affliction Rate: 50%.[X]
+Base Paralysis Affliction Rate: [_5][_0]%.[X]
 ##Name_Furybox
 Furybox[X]
 ##Desc_Furybox ^
 A gun with hallucinogenic-laced bullets.[N]
-Base Berserk Affliction Rate: 40%.[X]
+Base Berserk Affliction Rate: [_4][_0]%.[X]
 ##Name_Meisterkugel
 Meisterkugel[X]
 ##Desc_Meisterkugel ^
@@ -446,7 +446,7 @@ Doubles strikes in combat.[X]
 Stoneshot[X]
 ##Desc_Stoneshot ^
 An atrocious gun with baneful bullets.[N]
-Base Petrification Affliction Rate: 30%.[X]
+Base Petrification Affliction Rate: [_3][_0]%.[X]
 
 
 //STAVES
@@ -458,47 +458,47 @@ A basic wand for use in casting spells.[X]
 Staff[X]
 ##Desc_Staff ^
 A simple staff made of quality wood.[N]
-Grants +2 Magic.[X]
+Grants +[_2] Magic.[X]
 ##Name_DownStaff
 Down Staff[X]
 ##Desc_DownStaff ^
 A staff adorned with feathers.[N]
-Grants +5 Magic, +1 Skill.[X]
+Grants +[_5] Magic, +[_1] Skill.[X]
 ##Name_GemStaff
 Gem Staff[X]
 ##Desc_GemStaff ^
 A staff of beautiful crystals.[N]
-Grants +8 Magic, +5 Skill.[X]
+Grants +[_8] Magic, +[_5] Skill.[X]
 ##Name_Godendag
 Godendag[X]
 ##Desc_Godendag ^
 A sturdy staff for those who endure.[N]
-Grants +12 Magic, +3 Def/Res/Luc.[X]
+Grants +[_1][_2] Magic, +[_3] Def/Res/Luc.[X]
 ##Name_SageWand
 Sage Wand[X]
 ##Desc_SageWand ^
 A nigh-mythical wand of scholars.[N]
-Grants +15 Magic and Skill.[X]
+Grants +[_1][_5] Magic and Skill.[X]
 ##Name_Kerykeion
 Kerykeion[X]
 ##Desc_Kerykeion ^
 A legendary staff used by archsages.[N]
-Grants +25 Magic, +10 Skl/Res/Luc.[X]
+Grants +[_2][_5] Magic, +[_1][_0] Skl/Res/Luc.[X]
 ##Name_Shieldrod
 Shieldrod[X]
 ##Desc_Shieldrod ^
 A wand that protects its holder.[N]
-Grants +20 Defense.[X]
+Grants +[_2][_0] Defense.[X]
 ##Name_LuckStaff
 Luck Staff[X]
 ##Desc_LuckStaff ^
 A staff crafted under a lucky star.[N]
-Grants +30 Luck.[X]
+Grants +[_3][_0] Luck.[X]
 ##Name_Asclepius
 Asclepius[X]
 ##Desc_Asclepius ^
 A mighty staff that empowers the body.[N]
-Grants +30 Strength and Resistance.[X]
+Grants +[_3][_0] Strength and Resistance.[X]
 
 //SCROLLS
 ##Name_FlameScroll
@@ -555,7 +555,7 @@ A mighty scroll that calls upon hurricanes.[X]
 Heal Scr.[X]
 ##Desc_HealScroll ^
 A scroll that calls upon healing magics.[N]
-Restores Mag+10 HP to an ally.[X]
+Restores Mag+[_1][_0] HP to an ally.[X]
 ##Use_HealScroll
 Restores an[N]
 ally's HP.[X]
@@ -587,7 +587,7 @@ allies near.[X]
 Warp Scr.[X]
 ##Desc_WarpScroll ^
 A mighty scroll that rewrites reality.[N]
-Warps an adjacent ally 1-5 spaces away.[X]
+Warps an adjacent ally [_1]-[_5] spaces away.[X]
 ##Use_WarpScroll
 Warps near[N]
 allies afar.[X]
@@ -602,4 +602,4 @@ Inedible Leaf[X]
 ##Desc_InedibleLeaf ^
 A dry leaf of zero medicinal or[N]
 alchemical value. Can be eaten[N]
-to restore 1 HP in a pinch.[X]
+to restore [_1] HP in a pinch.[X]

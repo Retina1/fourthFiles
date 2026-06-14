@@ -437,7 +437,7 @@ Access the Custom menu for[N]
 a unit to invest their SP.[N]
 You can also do this during[N]
 battle, if you wish.[N]
-Currently unimplemented.[X]
+Use L and R to swap units.[X]
 
 # 0x0580 ^
 View the map and reposition[N]

@@ -1,4 +1,7 @@
 void ApplyRiderBattlefieldPresence(struct BattleUnit* attacker){
+	if (UNIT_HAS_SKILL(&attacker->unit,SDR,skill_111)){
+			attacker->battleHitRate = attacker->battleHitRate + 5;
+	}
 	u8* unitBuffer = GetUnitsOfAllegiance(&attacker->unit, 1);
 	if (unitBuffer == FALSE)
 		return;

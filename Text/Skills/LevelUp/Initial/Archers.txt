@@ -347,7 +347,7 @@ A breeze of arrows.[N]
 Next: [_6] Dur, [_3]-[_6] Rng,[N]
 [_0].[_4]x Hit, [_0].[_5]x Atk,[N]
 [_2]-[_6] strikes, Marked only.[N]
-Req: Tar. Mk.[_1], Pow. Sh.[_1][X]
+Req: Tar. Mk.[_1], Pow. Sh.[_2][X]
 ## ^
 Level: [_1] (Active)[N]
 A breeze of arrows.[N]

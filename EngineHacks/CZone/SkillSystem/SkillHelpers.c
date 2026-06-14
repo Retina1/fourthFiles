@@ -18,6 +18,15 @@ static bool IsUnitOnField(Unit* unit) {
 
     return TRUE;
 }
+static bool IsUnitInArmy(Unit* unit) {
+    if (!unit || !unit->pCharacterData)
+        return FALSE;
+
+    if (unit->state & (US_DEAD | 0x00010000))
+        return FALSE;
+
+    return TRUE;
+}
 
 static bool IsUnitAlive(Unit* unit) {
     if (!unit || !unit->pCharacterData)

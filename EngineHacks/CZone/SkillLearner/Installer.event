@@ -3,6 +3,32 @@
 // skill stuff
 // adapted from vesly's convo viewer, commed by me
 
+ALIGN 4
+		PrepsSkillLearnerProcMenu: // This is the proc that is called to build the prep screen support screen.
+		PROC_SLEEP(0) // Buffer
+		PROC_SET_NAME(PrepsSkillLearnerProcName) // Debug proc name.
+		PROC_SET_DESTRUCTOR(PrepsSkillLearnerProcDestructor)
+		PROC_LABEL(0)
+			//PROC_SLEEP(8)
+			PROC_CALL_ROUTINE(SetScrollingBackground) // The vanilla support screen is constructed at 0x080A1270.
+				// Apparently this also clears leftover menu graphics from the prep screen.
+			PROC_CALL_ROUTINE(0x08013D8D) // Fade out from black.
+			PROC_LOOP_ROUTINE(0x08014069) // Wait for fade out.
+			
+			PROC_CALL_ROUTINE(CallPrepsSkillLearnerMenu)
+			PROC_WHILE_ROUTINE(PrepsLearnerProcIdle) // Wait for b press
+				PROC_LABEL(1) // Jumped to on B press.
+				PROC_WHILE_ROUTINE(CheckToEnd) // Is the proc finsihed? Also handles waiting for a fade on B press to destruct the menu proc.
+		PROC_END
+		
+		ALIGN 4
+		PrepsSkillLearnerProcName: // Debug name for our custom proc.
+		String("PrepsSkills")
+		
+		PUSH
+		ORG $A1980
+		POIN PrepsSkillLearnerProcMenu // Call our custom proc instead of the vanila support viewer proc.
+POP
 ALIGN 4 
 SkillsetEntry: 
 FILL(4*0xFF) 

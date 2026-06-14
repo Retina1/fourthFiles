@@ -95,7 +95,7 @@ static u8 SkillLevelerIdle (MenuProc* menu, MenuItemProc* command) {
 			if (!UNIT_IS_VALID(other)) {
 				continue;
 			}
-			if (!IsUnitOnField(other)) {
+			if (!IsUnitInArmy(other)) {
 				continue;
 			}
 			nextIndex = j;
@@ -107,8 +107,8 @@ static u8 SkillLevelerIdle (MenuProc* menu, MenuItemProc* command) {
 				if (!UNIT_IS_VALID(other)) {
 					continue;
 				}
-				if (!IsUnitOnField(other)) {
-					continue;
+				if (!IsUnitInArmy(other)) {
+				continue;
 				}
 				nextIndex = j;
 				break;
@@ -138,7 +138,7 @@ static u8 SkillLevelerIdle (MenuProc* menu, MenuItemProc* command) {
 			if (!UNIT_IS_VALID(other)) {
 				continue;
 			}
-			if (!IsUnitOnField(other)) {
+			if (!IsUnitInArmy(other)) {
 				continue;
 			}
 			nextIndex = j;
@@ -150,8 +150,8 @@ static u8 SkillLevelerIdle (MenuProc* menu, MenuItemProc* command) {
 				if (!UNIT_IS_VALID(other)) {
 					continue;
 				}
-				if (!IsUnitOnField(other)) {
-					continue;
+				if (!IsUnitInArmy(other)) {
+				continue;
 				}
 				nextIndex = j;
 				break;

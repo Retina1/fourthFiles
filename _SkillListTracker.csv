@@ -124,7 +124,7 @@ Strider,Swap,None,Swap spaces with an ally.,1,Active (Support),X,
 ,Heartpiercer,"Rallying Flag 2, Horse Slayer 1",A deadly impale technique with high crit.,3,Attack,X,
 ,Archballista,"PROMO, Charging Thrust 3, Charging Throw 3",Stand still to throw a lance with incredible range.,3,Attack (Cond.),X,
 ,Full Force,Charging Thrust 3,A flurry whose hitcount scales with tiles moved.,5,Attack,X,
-,Charge Command,"Charging Throw 3, Rallying Flag 2, Survival Flag 2",Boost allied movement by standing still.,5,Active (Support),,redo?
+,Charge Command,"Charging Throw 3, Rallying Flag 2, Survival Flag 2",Boost allied movement by standing still.,5,Active (Support),X,
 ,Gae Bolg,"PROMO, Expertise Flag 2, Heartpiercer 3",An almighty charge that ignores defense.,5,Attack,X,
 ,,,,,,,
 Raider,Menacing Presence,None,All enemies get -5 flat Avoid.,1,Passive,X,
@@ -140,7 +140,7 @@ Trailblazer,Pivot,None,Move to the other side of an ally.,1,Active (Support),X,
 ,Gallop,"War Cry 1, Hellish Cry 1, Hit and Run 1",Buff self's Mov.,3,Active (State),X,
 ,Collected Fury,"PROMO, Charging Smash 3, Charging Toss 3",Stand still to swing an axe with incredible might.,3,Attack (Cond.),X,
 ,Great Cleave,Charging Smash 3,An AoE strike whose range scales with tiles moved.,5,Attack,X,PostBattle
-,Raid Command,"Dominant Cry 2, Charging Toss 3",Boost allied offenses by standing still.,5,Active (Support),,redo?
+,Raid Command,"Dominant Cry 2, Charging Toss 3",Boost allied offenses by standing still.,5,Active (Support),X,
 ,Regiment Rave,"PROMO, Great Cleave 5, Gallop 3",A strike that breaks the user's weapon to get another turn.,5,Attack,X,PostBattle
 ,,,,,,,
 Gunner,Quick Draw,None,"If at non-melee range against enemy that counters, 1.5x Atk/AS.",1,Passive,X,
@@ -240,7 +240,7 @@ lotta overlap,Slumber Whip,Toxin Whip 2,A whip strike that forces sleep.,3,Attac
 ,Liberation,"PROMO, Cripple Whip 3, Precision 3",Purges ailments/debuffs while dealing massive damage.,5,Attack (Ailment),X,
 ,,,,,,,
 Lancer,Morale Boost,None,Allies regain 10% HP upon user killing.,1,Passive,X,
-Highlander,Blood Fortune,None,User immune to being crit while not at full HP.,1,Passive,X,find where iron rune is applied
+Highlander,Blood Fortune,None,User immune to being crit while not at full HP.,1,Passive,X,
 ,Blood Fury,Bloody Offense 1,Grants 1.3x Atk after taking combat damage.,1,Passive (Buff),X,
 ,Bloodrush,PROMO,Grants +1 Movement after taking combat damage.,1,Passive (Buff),X,
 ,Clear Mind,None,Consume user HP to clear debuffs/ailments.,2,Active (Support),,

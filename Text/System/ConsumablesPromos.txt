@@ -3,7 +3,7 @@
 Vulnerary[X]
 ##Desc_Vulnerary ^
 A sack of simple healing herbs.[N]
-Restores 15 HP to the user.[X]
+Restores [_1][_5] HP to the user.[X]
 ##Name_Elixir
 Elixir[X]
 ##Desc_Elixir ^
@@ -13,13 +13,13 @@ Restores all HP to the user.[X]
 Medica[X]
 ##Desc_Medica ^
 A healing salve for use on allies.[N]
-Restores 15 HP to an ally within[N]
+Restores [_1][_5] HP to an ally within[N]
 three tiles of the user.[X]
 ##Name_Soma
 Soma[X]
 ##Desc_Soma ^
 A bountiful salve for use on allies.[N]
-Restores 15 HP to all allies within[N]
+Restores [_1][_5] HP to all allies within[N]
 three tiles of the user.[X]
 ##Use_SelfHeal
 Restores the[N]
@@ -32,12 +32,12 @@ ally's HP.[X]
 Bravant[X]
 ##Desc_Bravant ^
 A candied fruit of great might.[N]
-Grants user 1.5x Atk for 3 turns.[X]
+Grants user [_1].[_5]x Atk for [_3] turns.[X]
 ##Name_Stonard
 Stonard[X]
 ##Desc_Stonard ^
 A boiled fruit of great endurance.[N]
-Grants user 1.5x Def/Res for 3 turns.[X]
+Grants user [_1].[_5]x Def/Res for [_3] turns.[X]
 ##Use_BuffItem
 Boosts the user's[N]
 stats for a bit.[X]
@@ -49,62 +49,62 @@ status ailment.[X]
 Arm Binder[X]
 ##Desc_ArmBinder ^
 A quality spool of entangling threads.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Arm Bind Affliction Rate: 60%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Arm Bind Affliction Rate: [_6][_0]%.[X]
 ##Name_LegBinder
 Leg Binder[X]
 ##Desc_LegBinder ^
 A quality spool of ensnaring threads.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Leg Bind Affliction Rate: 70%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Leg Bind Affliction Rate: [_7][_0]%.[X]
 ##Name_HeadBinder
 Head Binder[X]
 ##Desc_HeadBinder ^
 A quality spool of ensilencing threads.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Head Bind Affliction Rate: 60%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Head Bind Affliction Rate: [_6][_0]%.[X]
 ##Name_BlindGas
 Blind Gas[X]
 ##Desc_BlindGas ^
 A throwing jar of highly irritating gas.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Blind Affliction Rate: 70%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Blind Affliction Rate: [_7][_0]%.[X]
 ##Name_StunGas
 Stun Gas[X]
 ##Desc_StunGas ^
 A throwing jar of highly paralytic gas.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Paralysis Affliction Rate: 60%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Paralysis Affliction Rate: [_6][_0]%.[X]
 ##Name_PoisonGas
 Poison Gas[X]
 ##Desc_PoisonGas ^
 A throwing jar of highly toxic gas.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Poison Affliction Rate: 70%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Poison Affliction Rate: [_7][_0]%.[X]
 ##Name_CurseGas
 Curse Gas[X]
 ##Desc_CurseGas ^
 A throwing jar of profoundly terrible gas.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Curse Affliction Rate: 70%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Curse Affliction Rate: [_7][_0]%.[X]
 ##Name_PanicGas
 Panic Gas[X]
 ##Desc_PanicGas ^
 A throwing jar of highly disorienting gas.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Berserk Affliction Rate: 60%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Berserk Affliction Rate: [_6][_0]%.[X]
 ##Name_StoningGas
 Stoning Gas[X]
 ##Desc_StoningGas ^
 A forbidden jar of truly baneful gas.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Petrification Affliction Rate: 50%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Petrification Affliction Rate: [_5][_0]%.[X]
 ##Name_SleepGas
 Sleep Gas[X]
 ##Desc_SleepGas ^
 A throwing jar of highly soporific gas.[N]
-Inflicts status on a foe within 5 tiles.[N]
-Base Sleep Affliction Rate: 50%.[X]
+Inflicts status on a foe within [_5] tiles.[N]
+Base Sleep Affliction Rate: [_5][_0]%.[X]
 
 
 ##Name_AriadneShard
@@ -120,7 +120,7 @@ progress.[X]
 //PROMO
 ##Use_PromoItem
 Promote units for[N]
-stats and +3 SP.[X]
+stats and +[_3] SP.[X]
 ##Name_HeroCrest
 Hero Crest[X]
 ##Desc_HeroCrest ^

@@ -268,28 +268,28 @@ Collected Fury[X]
 ## ^
 Level: [_0] (Active)[N]
 Focus. Aim. Smash.[N]
-Hard as you can.
+Hard as you can.[N]
 Next: [_5] Dur, +[_1][_5] Mt, only[N]
 usable if [_0] Mov used.[N]
 Req: PR, Ch.Smash/Toss [_3][X]
 ## ^
 Level: [_1] (Active)[N]
 Focus. Aim. Smash.[N]
-Hard as you can.
+Hard as you can.[N]
 [_5] Dur, +[_1][_5] Mt, only[N]
 usable if [_0] Mov used.[N]
 Next: +[_3][_0] Mt.[X]
 ## ^
 Level: [_2] (Active)[N]
 Focus. Aim. Smash.[N]
-Hard as you can.
+Hard as you can.[N]
 [_5] Dur, +[_3][_0] Mt, only[N]
 usable if [_0] Mov used.[N]
 Next: +[_5][_0] Mt.[X]
 ## ^
 Level: MAX (Active)[N]
 Focus. Aim. Smash.[N]
-Hard as you can.
+Hard as you can.[N]
 [_5] Dur, +[_5][_0] Mt, only[N]
 usable if [_0] Mov used.[N]
 [X]
