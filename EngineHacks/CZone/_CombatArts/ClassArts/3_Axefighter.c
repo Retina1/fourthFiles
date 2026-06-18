@@ -49,19 +49,19 @@ void SmashBarrageBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 int SmashBarrageHitCount(struct BattleUnit* actor){
 	int hitCount = 2;
 	if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_525)){
-		hitCount = hitCount + NextRN_N(5) + 2;
+		hitCount = hitCount + NextRN_N(6) + 2;
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_524)){
-		hitCount = hitCount + NextRN_N(5) + 1;
+		hitCount = hitCount + NextRN_N(6) + 1;
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_523)){
-		hitCount = hitCount + NextRN_N(3) + 1;
+		hitCount = hitCount + NextRN_N(4) + 1;
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,GLD,skill_522)){
-		hitCount = hitCount + NextRN_N(3);
+		hitCount = hitCount + NextRN_N(4);
 	}
 	else {
-		hitCount = hitCount + NextRN_N(1);
+		hitCount = hitCount + NextRN_N(2);
 	}
 	return hitCount;
 }

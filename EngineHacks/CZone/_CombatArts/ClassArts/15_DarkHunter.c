@@ -62,7 +62,7 @@ int GetWhipstormAilment(struct BattleUnit* actor) {
 	int rng;
 	int ailmentID = WPN_EFFECT_POISON;
 	if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_525)){
-		rng = NextRN_N(3);
+		rng = NextRN_N(4);
 		if (rng == 3) {
 			ailmentID = WPN_EFFECT_FULLBIND;
 		}
@@ -77,7 +77,7 @@ int GetWhipstormAilment(struct BattleUnit* actor) {
 		}
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_524)){
-		rng = NextRN_N(5);
+		rng = NextRN_N(6);
 		if (rng == 5) {
 			ailmentID = WPN_EFFECT_ARMBIND;
 		}	
@@ -98,7 +98,7 @@ int GetWhipstormAilment(struct BattleUnit* actor) {
 		}
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,DOM,skill_522)){
-		rng = NextRN_N(3);
+		rng = NextRN_N(4);
 		if (rng == 3) {
 			ailmentID = WPN_EFFECT_HEADBIND;
 		}
@@ -113,7 +113,7 @@ int GetWhipstormAilment(struct BattleUnit* actor) {
 		}
 	}
 	else {
-		rng = NextRN_N(1);
+		rng = NextRN_N(2);
 		if (rng == 1) {
 			ailmentID = WPN_EFFECT_HEADBIND;
 		}

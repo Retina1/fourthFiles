@@ -61,8 +61,12 @@ void TryAddUnitToSleepTargetList(struct Unit* unit) {
 	
 	int targetStatus = 0;
 
-	if (GetActiveArt(unit)) {
-		targetStatus = CombatArtList[GetActiveArt(unit)].itemEffect;
+	if (GetActiveArt(gSubjectUnit) == (110+29)) {
+		AddTarget(unit->xPos, unit->yPos, unit->index, 0);
+		return;
+	}
+	else if (GetActiveArt(gSubjectUnit)) {
+		targetStatus = CombatArtList[GetActiveArt(gSubjectUnit)].itemEffect;
 	}
 	else {
 		int usedItem = gSubjectUnit->items[gActionData.itemSlotIndex];
@@ -116,6 +120,17 @@ void TryAddUnitToSleepTargetList(struct Unit* unit) {
     return;
 }
 
+u8 GetRandomDisease(void){
+	int base = NextRN_N(11);
+	if (base == 0) { //0 is none, turn to fullbind
+		base = 12;
+	}
+	else if (base == 10) { //10 is recover, turn to petrify
+		base = 11;
+	}
+	return base;
+}
+
 void NewExecStatusStaff(ProcPtr proc) {
     int accuracy;
 
@@ -134,7 +149,10 @@ void NewExecStatusStaff(ProcPtr proc) {
 	int currentStatus = GetUnit(gActionData.targetIndex)->statusIndex;
 
 	int targetStatus = 0;
-	if (GetActiveArt(&gBattleActor.unit)) {
+	if (GetActiveArt(&gBattleActor.unit) == (110+29)) {
+		targetStatus = GetRandomDisease();
+	}
+	else if (GetActiveArt(&gBattleActor.unit)) {
 		targetStatus = CombatArtList[GetActiveArt(&gBattleActor.unit)].itemEffect;
 	}
 	else {

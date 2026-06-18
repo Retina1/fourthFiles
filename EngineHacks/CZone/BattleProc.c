@@ -238,6 +238,34 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
 				}
 			}
 		}
+		//war prayer 110+30
+		else {
+			int survivalThreshold = GetUnitMaxHp(&defender->unit)/2;
+			u8* unitBuffer = GetUnitsInRange(&defender->unit, 1, 2);
+			if (unitBuffer != FALSE) {
+				int i = 0;
+				while (unitBuffer[i]){
+					int index = unitBuffer[i];
+					Unit* other = gUnitLookup[index];
+					if (GetActiveArt(other) == (110+30)) {
+						if (UNIT_HAS_SKILL(other,WMG,skill_353)){
+							survivalThreshold = 2;
+						}
+						else if (UNIT_HAS_SKILL(other,WMG,skill_352)){
+							survivalThreshold = GetUnitMaxHp(&defender->unit)/4;
+						}
+						if (defender->unit.curHP >= survivalThreshold) {
+							if (gBattleStats.damage == defender->unit.curHP) {
+								gBattleStats.damage = defender->unit.curHP - 1;
+							}
+						}
+						break;
+					}
+					i++;
+				}
+				
+			}	
+		}
 		
         defender->unit.curHP -= gBattleStats.damage;
 
@@ -245,7 +273,7 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
             defender->unit.curHP = 0;
 		}
 
-        if ((GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_HPDRAIN) || (GetArtStatusEffect(attacker,defender) == WPN_EFFECT_HPDRAIN)) {
+        if ((GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_HPDRAIN) || (GetArtStatusEffect(attacker,defender) == WPN_EFFECT_HPDRAIN) || GetActiveWarDrain(attacker,defender)) {
             if (attacker->unit.maxHP < (attacker->unit.curHP + gBattleStats.damage))
                 attacker->unit.curHP = attacker->unit.maxHP;
             else

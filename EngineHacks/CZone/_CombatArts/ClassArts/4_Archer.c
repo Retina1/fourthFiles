@@ -115,19 +115,19 @@ void SquallVolleyBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 int SquallVolleyHitCount(struct BattleUnit* actor){
 	int hitCount = 2;
 	if (UNIT_HAS_SKILL(&actor->unit,SNP,skill_525)){
-		hitCount = hitCount + NextRN_N(10) + 4;
+		hitCount = hitCount + NextRN_N(11) + 4;
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,SNP,skill_524)){
-		hitCount = hitCount + NextRN_N(7) + 3;
+		hitCount = hitCount + NextRN_N(8) + 3;
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,SNP,skill_523)){
-		hitCount = hitCount + NextRN_N(6) + 2;
+		hitCount = hitCount + NextRN_N(7) + 2;
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,SNP,skill_522)){
-		hitCount = hitCount + NextRN_N(5) + 1;
+		hitCount = hitCount + NextRN_N(6) + 1;
 	}
 	else {
-		hitCount = hitCount + NextRN_N(4);
+		hitCount = hitCount + NextRN_N(5);
 	}
 	return hitCount;
 }

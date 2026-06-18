@@ -1,0 +1,15 @@
+##UM_MagusRune
+ Magus Rune[X]
+##UM_MagusRuneDesc
+Shift nearby Def.[N]
+Cost: 3 Durability.[X]
+##UM_RevolutionRune
+ Revol. Rune[X]
+##UM_RevolutionRuneDesc
+Shift nearby Crit.[N]
+Cost: 3 Durability.[X]
+##UM_AgilityRune
+ Agi. Rune[X]
+##UM_AgilityRuneDesc
+Shift nearby AS.[N]
+Cost: 3 Durability.[X]

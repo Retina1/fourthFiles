@@ -28,16 +28,32 @@ void TryAddUnitToRestoreTargetList(struct Unit* unit) {
 }
 
 int UnitHasSongBuff(struct Unit* unit);
+int EntryHasSongBuff(struct DebuffEntry* entry);
 
 int TryNullIncomingStatus(struct Unit* unit) {
+	
 	if ((unit->index & 0xC0) != FACTION_RED) {
-		u8* unitBuffer = GetUnitsInRange(unit, 1, 2);
-		int i = 0;
-		if (unitBuffer != FALSE) {
-			while (unitBuffer[i]){
-				int index = unitBuffer[i];
-				Unit* other = gUnitLookup[index];
-				//magus
+		if (GetActiveArt(unit) == (27+110)) {
+			int odds = 30;
+			if (UNIT_HAS_SKILL(unit,WMG,skill_323)){
+				odds = 80;
+			}
+			else if (UNIT_HAS_SKILL(unit,WMG,skill_322)){
+				odds = 50;
+			}
+			if (Roll1RN(odds)) {
+				return 1;
+				}
+		}
+		
+		for (int i = 0; i < 0x80; ++i) {
+			int unitIndex = unit->index; 
+			Unit* other = gUnitLookup[i];
+			if (!IsUnitOnField(other) || unitIndex == i) {
+				continue;
+			}
+			int check = AreUnitsAllied(unitIndex, other->index);
+			if (check && ((absolute(other->xPos - unit->xPos) + absolute(other->yPos - unit->yPos)) <= 2)) {
 				if (GetActiveArt(other) == (27+110)) {
 					int odds = 30;
 					if (UNIT_HAS_SKILL(other,WMG,skill_323)){
@@ -50,25 +66,30 @@ int TryNullIncomingStatus(struct Unit* unit) {
 							return 1;
 					}
 				}
-				i++;
 			}
 		}
 		
-		
-		u8* troubBuffer = GetUnitsOfAllegiance(unit, 1);
-		int j = 0;
-		if (troubBuffer != FALSE) {
-			while (troubBuffer[j]){
-				int index2 = troubBuffer[j];
-				Unit* other2 = gUnitLookup[index2];
-				if (UNIT_HAS_SKILL(other2,TRB,skill_121)){
-					if (UnitHasSongBuff(unit)) {
+		struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+		if (EntryHasSongBuff(entry)) {
+			if (UNIT_HAS_SKILL(unit,TRB,skill_121)){
+				if (Roll1RN(20)) {
+						return 1;
+				}
+			}
+			for (int j = 0; j < 0x80; ++j) {
+				int unitIndex2 = unit->index; 
+				Unit* other2 = gUnitLookup[j];
+				if (!IsUnitOnField(other2) || unitIndex2 == j) {
+					continue;
+				}
+				int check2 = AreUnitsAllied(unitIndex2, other2->index);
+				if (check2) {
+					if (UNIT_HAS_SKILL(other2,TRB,skill_121)){
 						if (Roll1RN(20)) {
 							return 1;
 						}
 					}
 				}
-				j++;
 			}
 		}
 	}

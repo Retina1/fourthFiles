@@ -26,6 +26,68 @@ Rallying Cry[X]
 Bonuses based on source[N]
 Noble's skill levels.[X]
 
+##ShiningForceLabel
+Shining Frc.[X]
+##ShiningForceDesc
+0.8x Hit.[X]
+
+##MoonriseLabel
+Moonrise[X]
+##MoonriseDesc1
+1.1x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc.[X]
+##MoonriseDesc2
+1.2x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc.[X]
+##MoonriseDesc3
+1.4x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc.[X]
+##MoonriseDesc4
+1.8x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc.[X]
+##MoonriseDesc5
+2.5x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc.[X]
+
+##MagusRuneLabel
+Magus Rune[X]
+##MagusRuneBuff1
+1.1x Def.[X]
+##MagusRuneBuff2
+1.2x Def.[X]
+##MagusRuneDebuff1
+0.9x Def.[X]
+##MagusRuneDebuff2
+0.8x Def.[X]
+
+##RevolutionRuneLabel
+Revol. Rune[X]
+##RevolutionRuneBuff1
+1.2x Crit.[X]
+##RevolutionRuneBuff2
+1.4x Crit.[X]
+##RevolutionRuneDebuff1
+0.8x Crit.[X]
+##RevolutionRuneDebuff2
+0.6x Crit.[X]
+
+##AgilityRuneLabel
+Agi. Rune[X]
+##AgilityRuneBuff1
+1.1x AS.[X]
+##AgilityRuneBuff2
+1.2x AS.[X]
+##AgilityRuneDebuff1
+0.9x AS.[X]
+##AgilityRuneDebuff2
+0.8x AS.[X]
+
+##WarSapLabel
+War Sap[X]
+##WarSapDesc
+0.8x Atk/Def/AS/[N]
+Hit/Crit/Avo/Luc.[X]
+
 ##ChargeCommandLabel
 Charge Cmd.[X]
 ##ChargeCommandDesc1

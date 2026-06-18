@@ -646,6 +646,10 @@ ALIGN 4
 LeviaDMP:
 #incbin "dmps/lynnLevia.dmp"
 setMugEntry(LeviaMug,LeviaDMP,2,5,3,3)
+ALIGN 4
+PhaedraDMP:
+#incbin "dmps/lynnPhaedra.dmp"
+setMugEntry(PhaedraMug,PhaedraDMP,4,6,4,4)
 
 ALIGN 4
 //muna

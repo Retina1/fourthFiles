@@ -107,9 +107,9 @@ StandingMapSprite(Dragoon,MapSprite16x16,DragoonSMS)
 MovingMapSprite(Dragoon, AP1, DragoonMMS)
 
 StandingMapSprite(Poet,MapSprite16x16,PoetSMS)
-MovingMapSprite(Poet, AP1, PoetMMS)
+MovingMapSprite(Poet, $81E8840, PoetMMS)
 StandingMapSprite(Troubadour,MapSprite16x16,TroubadourSMS)
-MovingMapSprite(Troubadour, AP1, TroubadourMMS)
+MovingMapSprite(Troubadour, $81E8840, TroubadourMMS)
 
 StandingMapSprite(Seeker,MapSprite16x16,SeekerSMS)
 MovingMapSprite(Seeker, AP1, SeekerMMS)

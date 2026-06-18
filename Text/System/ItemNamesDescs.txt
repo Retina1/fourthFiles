@@ -314,7 +314,7 @@ A pair of gauntlets fitted with embedded spikes.[X]
 ##Name_Katar
 Katar[X]
 ##Desc_Katar ^
-A pair of artisinal daggers with unique grips.[X]
+A pair of artisanal daggers with unique grips.[X]
 ##Name_Kirikindad
 Kirikindad[X]
 ##Desc_Kirikindad ^

@@ -49,24 +49,9 @@ int CalculateAveragePartyLevel(void) {
 int GetUnitSoloExpMultiplier(struct Unit* actor) {
 //exp mods from classes
 	int mult = 1;
-		
+	
 	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
 		mult = mult * 6;
-	}
-	
-	u8* troubBuffer = GetUnitsOfAllegiance(actor, 1);
-	int j = 0;
-	if (troubBuffer != FALSE) {
-		while (troubBuffer[j]){
-			int index2 = troubBuffer[j];
-			Unit* other2 = gUnitLookup[index2];
-			if (UNIT_HAS_SKILL(other2,TRB,skill_131)){
-				if (UnitHasSongBuff(actor)) {
-					mult = mult * 6;
-				}
-			}
-			j++;
-		}
 	}
 	
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
@@ -76,6 +61,26 @@ int GetUnitSoloExpMultiplier(struct Unit* actor) {
 	if ((entry->buff1 == BUFF_EXPERTISEFLAG2)||(entry->buff2 == BUFF_EXPERTISEFLAG2)||(entry->buff3 == BUFF_EXPERTISEFLAG2)) {
 		mult = mult * 13;
 	}
+	
+	if (EntryHasSongBuff(entry)) {
+		if (UNIT_HAS_SKILL(actor,TRB,skill_131)){
+			mult = mult * 6;
+		}
+		u8* troubBuffer = GetUnitsOfAllegiance(actor, 1);
+		int j = 0;
+		if (troubBuffer != FALSE) {
+			while (troubBuffer[j]){
+				int index2 = troubBuffer[j];
+				Unit* other2 = gUnitLookup[index2];
+				if (UNIT_HAS_SKILL(other2,TRB,skill_131)){
+					mult = mult * 6;
+				}
+				j++;
+			}
+		}
+	}
+	
+
 		
 
     return mult;
@@ -88,21 +93,6 @@ int GetUnitSoloExpDivisor(struct Unit* actor) {
 		div = div * 5;
 	}
 	
-	u8* troubBuffer = GetUnitsOfAllegiance(actor, 1);
-	int j = 0;
-	if (troubBuffer != FALSE) {
-		while (troubBuffer[j]){
-			int index2 = troubBuffer[j];
-			Unit* other2 = gUnitLookup[index2];
-			if (UNIT_HAS_SKILL(other2,TRB,skill_131)){
-				if (UnitHasSongBuff(actor)) {
-					div = div * 5;
-				}
-			}
-			j++;
-		}
-	}
-
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
 	if ((entry->buff1 == BUFF_EXPERTISEFLAG1)||(entry->buff2 == BUFF_EXPERTISEFLAG1)||(entry->buff3 == BUFF_EXPERTISEFLAG1)) {
 		div = div * 10;
@@ -110,9 +100,121 @@ int GetUnitSoloExpDivisor(struct Unit* actor) {
 	if ((entry->buff1 == BUFF_EXPERTISEFLAG2)||(entry->buff2 == BUFF_EXPERTISEFLAG2)||(entry->buff3 == BUFF_EXPERTISEFLAG2)) {
 		div = div * 10;
 	}
+	
+	if (EntryHasSongBuff(entry)) {
+		if (UNIT_HAS_SKILL(actor,TRB,skill_131)){
+			div = div * 5;
+		}
+		u8* troubBuffer = GetUnitsOfAllegiance(actor, 1);
+		int j = 0;
+		if (troubBuffer != FALSE) {
+			while (troubBuffer[j]){
+				int index2 = troubBuffer[j];
+				Unit* other2 = gUnitLookup[index2];
+				if (UNIT_HAS_SKILL(other2,TRB,skill_131)){
+					div = div * 5;
+				}
+				j++;
+			}
+		}
+	}
 		
     return div;
 }
+
+
+int GetUnitExpMultiplier(struct Unit* actor, struct Unit* target) {
+//exp mods from classes
+	int mult = 1;
+    if ((UNIT_CATTRIBUTES(target) & CA_BOSS)){
+		if (target->curHP == 0){
+			mult = mult * 3;
+		}
+	}
+		
+	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
+		mult = mult * 6;
+	}
+	
+	if (UNIT_HAS_SKILL(actor,SRV,skill_131)){
+		struct DebuffEntry* spoilsEntry = GetUnitBuffsDebuffs(target);
+		if (spoilsEntry->debuff1) {
+			mult = mult * 13;
+		}
+	}
+	
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
+	if ((entry->buff1 == BUFF_EXPERTISEFLAG1)||(entry->buff2 == BUFF_EXPERTISEFLAG1)||(entry->buff3 == BUFF_EXPERTISEFLAG1)) {
+		mult = mult * 11;
+	}
+	if ((entry->buff1 == BUFF_EXPERTISEFLAG2)||(entry->buff2 == BUFF_EXPERTISEFLAG2)||(entry->buff3 == BUFF_EXPERTISEFLAG2)) {
+		mult = mult * 13;
+	}
+	
+	if (EntryHasSongBuff(entry)) {
+		if (UNIT_HAS_SKILL(actor,TRB,skill_131)){
+			mult = mult * 6;
+		}
+		u8* troubBuffer = GetUnitsOfAllegiance(actor, 1);
+		int j = 0;
+		if (troubBuffer != FALSE) {
+			while (troubBuffer[j]){
+				int index2 = troubBuffer[j];
+				Unit* other2 = gUnitLookup[index2];
+				if (UNIT_HAS_SKILL(other2,TRB,skill_131)){
+					mult = mult * 6;
+				}
+				j++;
+			}
+		}
+	}
+		
+
+    return mult;
+}
+
+int GetUnitExpDivisor(struct Unit* actor, struct Unit* target) {
+//exp mods from classes
+	int div = 1;
+	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
+		div = div * 5;
+	}
+	if (UNIT_HAS_SKILL(actor,SRV,skill_131)){
+		struct DebuffEntry* spoilsEntry = GetUnitBuffsDebuffs(target);
+		if (spoilsEntry->debuff1) {
+			div = div * 10;
+		}
+	}
+	
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
+	if ((entry->buff1 == BUFF_EXPERTISEFLAG1)||(entry->buff2 == BUFF_EXPERTISEFLAG1)||(entry->buff3 == BUFF_EXPERTISEFLAG1)) {
+		div = div * 10;
+	}
+	if ((entry->buff1 == BUFF_EXPERTISEFLAG2)||(entry->buff2 == BUFF_EXPERTISEFLAG2)||(entry->buff3 == BUFF_EXPERTISEFLAG2)) {
+		div = div * 10;
+	}
+	
+	if (EntryHasSongBuff(entry)) {
+		if (UNIT_HAS_SKILL(actor,TRB,skill_131)){
+			div = div * 5;
+		}
+		u8* troubBuffer = GetUnitsOfAllegiance(actor, 1);
+		int j = 0;
+		if (troubBuffer != FALSE) {
+			while (troubBuffer[j]){
+				int index2 = troubBuffer[j];
+				Unit* other2 = gUnitLookup[index2];
+				if (UNIT_HAS_SKILL(other2,TRB,skill_131)){
+					div = div * 5;
+				}
+				j++;
+			}
+		}
+	}
+		
+    return div;
+}
+
 
 void BattleApplyMiscActionExpGains(void) {
     if ((gBattleActor.unit.index & 0xC0) != FACTION_BLUE)
@@ -241,6 +343,12 @@ void BattleApplyMiscActionExpGains(void) {
 			 }
 	}
 	
+	
+	if (GetActiveArt(&gBattleActor.unit)) {
+		int artCost = CombatArtDurabilityList[GetActiveArt(&gBattleActor.unit)];
+		result = result * artCost / 2;
+	}
+	
 	int mul = GetUnitSoloExpMultiplier(&gBattleActor.unit);
 	int div = GetUnitSoloExpDivisor(&gBattleActor.unit);
 	result = result * mul;
@@ -262,61 +370,6 @@ int GetUnitExpLevel(struct Unit* unit) {
     int result = unit->level;
 
     return result;
-}
-
-int GetUnitExpMultiplier(struct Unit* actor, struct Unit* target) {
-//exp mods from classes
-	int mult = 1;
-    if ((UNIT_CATTRIBUTES(target) & CA_BOSS)){
-		if (target->curHP == 0){
-			mult = mult * 3;
-		}
-	}
-		
-	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
-		mult = mult * 6;
-	}
-	
-	if (UNIT_HAS_SKILL(actor,SRV,skill_131)){
-		struct DebuffEntry* spoilsEntry = GetUnitBuffsDebuffs(target);
-		if (spoilsEntry->debuff1) {
-			mult = mult * 13;
-		}
-	}
-	
-	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
-	if ((entry->buff1 == 16)||(entry->buff2 == 16)||(entry->buff3 == 16)) {
-		mult = mult * 11;
-	}
-	if ((entry->buff1 == 17)||(entry->buff2 == 17)||(entry->buff3 == 17)) {
-		mult = mult * 13;
-	}
-		
-
-    return mult;
-}
-
-int GetUnitExpDivisor(struct Unit* actor, struct Unit* target) {
-//exp mods from classes
-	int div = 1;
-	if (UNIT_HAS_SKILL(actor,WRK,skill_111)){
-		div = div * 5;
-	}
-	if (UNIT_HAS_SKILL(actor,SRV,skill_131)){
-		struct DebuffEntry* spoilsEntry = GetUnitBuffsDebuffs(target);
-		if (spoilsEntry->debuff1) {
-			div = div * 10;
-		}
-	}
-	struct DebuffEntry* entry = GetUnitBuffsDebuffs(actor);
-	if ((entry->buff1 == 16)||(entry->buff2 == 16)||(entry->buff3 == 16)) {
-		div = div * 10;
-	}
-	if ((entry->buff1 == 17)||(entry->buff2 == 17)||(entry->buff3 == 17)) {
-		div = div * 10;
-	}
-		
-    return div;
 }
 
 int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {

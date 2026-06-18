@@ -115,3 +115,13 @@ CaveTSA:
 ALIGN 4
 CavePalette:
 #incbin "Cave.png.pal.dmp"
+
+//colors
+#define GoreCG 0x3a
+SetColorsBackground(GoreCG,GoreImage,GorePalette)
+ALIGN 4
+GoreImage:
+#incbin "MoreColors/gfx/BG/224Gore.dmp"
+ALIGN 4
+GorePalette:
+#incbin "MoreColors/gfx/BG/224GorePal.dmp"

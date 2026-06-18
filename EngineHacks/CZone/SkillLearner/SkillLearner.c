@@ -246,6 +246,9 @@ static int SkillLevelerDraw(MenuProc* menu, MenuItemProc* command) {
 	//righthand side
 	DrawUiFrame(gBG1TilemapBuffer, 17, 6, 11, 14, 0, 0);
 	
+	//name box
+	DrawUiFrame(gBG1TilemapBuffer, 17, 0, 11, 6, 0, 0);
+	
 	PutFaceChibi(GetUnitPortraitId(proc->activeUnit), TILEMAP_LOCATED(gBG0TilemapBuffer, 11, 1), 0x270, 2, 0);
 	
 	struct Text *texts = gPrepItemTexts;
@@ -259,7 +262,7 @@ static int SkillLevelerDraw(MenuProc* menu, MenuItemProc* command) {
 	
 	ResetText();
 	
-	for (int i = 0; i < 15; i++) {
+	for (int i = 0; i < 17; i++) {
 		ClearText(&texts[i]);
 	}
 	
@@ -278,6 +281,8 @@ static int SkillLevelerDraw(MenuProc* menu, MenuItemProc* command) {
 	InitText(&texts[12], 14);
 	InitText(&texts[13], 14);
 	InitText(&texts[14], 14);
+	InitText(&texts[15], 14);
+	InitText(&texts[16], 14);
 	
 	//menu button - getting its string'll be trickier
 	
@@ -296,7 +301,14 @@ static int SkillLevelerDraw(MenuProc* menu, MenuItemProc* command) {
 	PutDrawText(&texts[2], TILEMAP_LOCATED(gBG0TilemapBuffer, 6, 1),TEXT_COLOR_SYSTEM_GOLD, 0, 0, "/");
 	Text_InsertDrawNumberOrBlank(&texts[2], 20, TEXT_COLOR_SYSTEM_BLUE,budget);
 
+	PutDrawText(&texts[15], TILEMAP_LOCATED(gBG0TilemapBuffer, 18, 1),TEXT_COLOR_SYSTEM_WHITE, 0, 96, GetStringFromIndex(proc->activeUnit->pCharacterData->nameTextId));
 	
+	if (!(proc->activeUnit->state & US_NOT_DEPLOYED)) {
+		PutDrawText(&texts[16], TILEMAP_LOCATED(gBG0TilemapBuffer, 18, 3),TEXT_COLOR_SYSTEM_BLUE, 0, 96, "Deployed!");
+	}
+	else {
+		PutDrawText(&texts[16], TILEMAP_LOCATED(gBG0TilemapBuffer, 18, 3),TEXT_COLOR_SYSTEM_GRAY, 0, 96, "Not Deployed.");
+	}
 	//skill desc - also trickier
 	ParseSkillMenuDescTexts(texts,descText);
 	DrawSkillDescTexts(texts);

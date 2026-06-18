@@ -508,11 +508,11 @@ ally to boost Hit.[X]
 Fleeting Song: Buff an[N]
 ally to boost Mov.[X]
 ##
-Battlebond: Chase attacks[N]
-from Song-buffed allies.[X]
+Eerie Chorus: Extends ally buffs[N]
+and enemy debuffs/ailments/binds.[X]
 ##
-Crescendo: A massive attack fueled[N]
-by cancelling ally Song buffs.[X]
+Crescendo: Boosts Def/Mov if both[N]
+Resounding/Enduring Tune are active.[X]
 ##
 Awakening Voice: A song that[N]
 grants an ally another turn.[X]
@@ -531,8 +531,8 @@ against Rune-debuffed enemies.[X]
 Runic Pierce: Unit deals 4x[N]
 damage upon a critical hit.[X]
 ##
-Magus Rune: Buff ally Res and[N]
-debuff enemy Res in an area.[X]
+Magus Rune: Buff ally Def and[N]
+debuff enemy Def in an area.[X]
 ##
 Revolution Rune: Buff ally Crit and[N]
 debuff enemy Crit in an area.[X]
@@ -549,8 +549,8 @@ debuffs Hit and blinds foes.[X]
 Chalkydri: A spell that heals[N]
 nearby allies after striking.[X]
 ##
-Dusk Omen: A spell that debuffs[N]
-user's Def to strike twice.[X]
+Dusk Omen: A spell that nulls[N]
+user's Def while striking twice.[X]
 ##
 Solar Cleave: A spell that[N]
 halves enemy HP.[X]
@@ -602,8 +602,8 @@ ailment or bind.[X]
 War Prayer: Grant survival at 1 HP[N]
 for allies in an area.[X]
 ##
-War Mirror: Copy all ailments and[N]
-debuffs from one enemy to others.[X]
+War Mirror: Transfer negative effects[N]
+from one enemy to others nearby.[X]
 ##
 War Slash: A cut that deals massively[N]
 boosted damage to foes with ailments.[X]

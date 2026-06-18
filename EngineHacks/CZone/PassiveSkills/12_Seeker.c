@@ -24,12 +24,10 @@ void ApplySeekerPrismatic(struct BattleUnit* attacker){
 		i++;
 	}
 }
-
+int UnitHasRuneDebuff(struct Unit* unit);
 void ApplySeekerRunicResonance(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (UNIT_HAS_SKILL(&attacker->unit,RNM,skill_131)){
-		//make if unit has seeker buff/debuff checkers?
-		struct DebuffEntry* entry = GetUnitBuffsDebuffs(&defender->unit);
-		if  ( ((DEBUFF_MAGUSRUNE1 <= entry->debuff1) && (entry->debuff1 <= DEBUFF_AGILITYRUNE2)) || ((DEBUFF_MAGUSRUNE1 <= entry->debuff2) && (entry->debuff2 <= DEBUFF_AGILITYRUNE2)) || ((DEBUFF_MAGUSRUNE1 <= entry->debuff3) && (entry->debuff3 <= DEBUFF_AGILITYRUNE2))){
+		if  (UnitHasRuneDebuff(&defender->unit)){
 			attacker->battleCritRate  = attacker->battleCritRate * 13/10;
 		}
 	}

@@ -17,7 +17,7 @@ void RunPostCombatSkills(void)
 		infoIconCache->hpCache[attacker->index] = GetUnitMaxHp(attacker);
 		infoIconCache->hpCache[defender->index] = GetUnitMaxHp(defender);
 	}
-	if (gActionData.unitActionType == UNIT_ACTION_STAFF) {
+	if ((gActionData.unitActionType == UNIT_ACTION_STAFF) ||  (gActionData.unitActionType == UNIT_ACTION_DANCE)) {
 		//staves aren't gonna be stance arts
 		SetActiveArt(&gBattleActor.unit,0);
 	}

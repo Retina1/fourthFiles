@@ -372,7 +372,7 @@ CA_Entry((NullArt + 58), 2)
 	CA_ItemSelectEffect(CureItemSelectEffect)
 	CA_Range(CureRange) //range for support arts will be purely visual
 	CA_HealAmount(CureHealAmount)
-	CA_SpellAnim(0x29); CA_IER(0x1)
+	CA_SpellAnim(0x26); CA_IER(0x1)
 CA_Entry((NullArt + 59), 3)
 	CA_Name(UM_Refresh,UM_RefreshDesc)
 	CA_Usability(RefreshArtUsability,RefreshArtMenuUsability)

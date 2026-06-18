@@ -147,11 +147,11 @@ u8 WrathStaffArtMenuUsability(const struct MenuItemDef* def, int number){
     return WrathStaffArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
 }
 void WrathStaffBothSides(struct BattleUnit* actor, struct BattleUnit* target){
-	if (UNIT_HAS_SKILL(&actor->unit,MED,skill_323)){
+	if (UNIT_HAS_SKILL(&actor->unit,MED,skill_343)){
 		actor->battleAttack = actor->battleAttack*3/2;
 		target->battleDefense = target->battleDefense*3/2;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,MED,skill_322)){
+	else if (UNIT_HAS_SKILL(&actor->unit,MED,skill_342)){
 		actor->battleAttack = actor->battleAttack*13/10;
 		target->battleDefense = target->battleDefense*13/10;
 	}
@@ -162,10 +162,10 @@ void WrathStaffBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 }
 void WrathStaffPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 	int critMul = 3;
-	if (UNIT_HAS_SKILL(&actor->unit,LND,skill_343)){
+	if (UNIT_HAS_SKILL(&actor->unit,MED,skill_343)){
 		critMul = 8;
 	}
-	else if (UNIT_HAS_SKILL(&actor->unit,LND,skill_342)){
+	else if (UNIT_HAS_SKILL(&actor->unit,MED,skill_342)){
 		critMul = 5;
 	}
 	actor->battleCritRate = actor->battleCritRate * critMul;
@@ -246,10 +246,10 @@ void MakeTargetListForRefresh(struct Unit* unit) {
 
 	int range = 3;
 
-	if (UNIT_HAS_SKILL(unit,MED,skill_313)){
+	if (UNIT_HAS_SKILL(unit,MED,skill_323)){
 		range = 8;
 	}
-	else if (UNIT_HAS_SKILL(unit,MED,skill_312)){
+	else if (UNIT_HAS_SKILL(unit,MED,skill_322)){
 		range = 5;
 	}
 	

@@ -120,7 +120,7 @@ progress.[X]
 //PROMO
 ##Use_PromoItem
 Promote units for[N]
-stats and +[_3] SP.[X]
+stats and +3 SP.[X]
 ##Name_HeroCrest
 Hero Crest[X]
 ##Desc_HeroCrest ^

@@ -8,54 +8,54 @@ UNIT Natsuki 0x0 0x0 Level(9,NPC,0) [14,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 DuelingGroundsTier1Wave1:
-UNIT 0xFD Swordfighter 0x0 Level(3,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT 0xFD Swordfighter 0x0 Level(3,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Shortsword] NoAI
 UNIT
 DuelingGroundsTier1Wave2:
-UNIT 0xFD Lancer 0x0 Level(4,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Shortspear] NoAI
+UNIT 0xFD Lancer 0x0 Level(4,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Shortspear] NoAI
 UNIT
 DuelingGroundsTier1Wave3:
-UNIT 0xFD Scholar 0x0 Level(5,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
+UNIT 0xFD Scholar 0x0 Level(5,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [FlameScroll] NoAI
 UNIT
 DuelingGroundsTier1Wave4:
-UNIT 0xFD Knight 0x0 Level(6,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+UNIT 0xFD Knight 0x0 Level(6,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [HandSpear] NoAI
 UNIT
 DuelingGroundsTier1Wave5:
-UNIT 0xFD Dominator 0x0 Level(7,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [ChainWhip] NoAI
+UNIT 0xFD Dominator 0x0 Level(7,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [ChainWhip] NoAI
 UNIT
 
 DuelingGroundsTier2Wave1:
-UNIT 0xFD Archer 0x0 Level(11,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Sureshot] NoAI
+UNIT 0xFD Archer 0x0 Level(11,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Sureshot] NoAI
 UNIT
 DuelingGroundsTier2Wave2:
-UNIT 0xFD Gunner 0x0 Level(12,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Repeater] NoAI
+UNIT 0xFD Gunner 0x0 Level(12,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Repeater] NoAI
 UNIT
 DuelingGroundsTier2Wave3:
-UNIT 0xFD Strider 0x0 Level(13,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Sarissa] NoAI
+UNIT 0xFD Strider 0x0 Level(13,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Sarissa] NoAI
 UNIT
 DuelingGroundsTier2Wave4:
-UNIT 0xFD Pugilist 0x0 Level(14,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Claws] NoAI
+UNIT 0xFD Pugilist 0x0 Level(14,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Claws] NoAI
 UNIT
 DuelingGroundsTier2Wave5:
-UNIT 0xFD Gladiator 0x0 Level(15,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Labrys] NoAI
+UNIT 0xFD Gladiator 0x0 Level(15,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Labrys] NoAI
 UNIT
 
 DuelingGroundsTier3Wave1:
-UNIT 0xFD Scalemaster 0x0 Level(18,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [ImposingAxe] NoAI
+UNIT 0xFD Scalemaster 0x0 Level(18,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [ImposingAxe] NoAI
 UNIT
 DuelingGroundsTier3Wave2:
-UNIT 0xFD Seraph 0x0 Level(19,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Longinus] NoAI
+UNIT 0xFD Seraph 0x0 Level(19,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Longinus] NoAI
 UNIT
 DuelingGroundsTier3Wave3:
-UNIT 0xFD Survivalist 0x0 Level(20,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [FalconBow] NoAI
+UNIT 0xFD Survivalist 0x0 Level(20,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [FalconBow] NoAI
 UNIT
 DuelingGroundsTier3Wave4:
-UNIT 0xFD WarMagus 0x0 Level(21,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [Zweihander] NoAI
+UNIT 0xFD WarMagus 0x0 Level(21,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Zweihander] NoAI
 UNIT
 DuelingGroundsTier3Wave5:
-UNIT Ayda Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x0 0x0 [DvergrSword] NoAI
+UNIT Ayda Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x1 REDA12R5 [DvergrSword] NoAI
 UNIT
 DuelingGroundsTier3Wave5Alt:
-UNIT 0xFD Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x0 0x0 [DvergrSword] NoAI
+UNIT 0xFD Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x1 REDA12R5 [DvergrSword] NoAI
 UNIT
 
 AydaJoin:
@@ -262,6 +262,7 @@ SVAL 2 1
 BNE 0x100 0xc 2
 //load level 2 here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier1Wave2
 ENUN
 COUNTER_ADD 2 1
@@ -271,6 +272,7 @@ SVAL 2 2
 BNE 0x101 0xc 2
 //load level 3  here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier1Wave3
 ENUN
 COUNTER_ADD 2 1
@@ -280,6 +282,7 @@ SVAL 2 3
 BNE 0x102 0xc 2
 //load level 4 here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier1Wave4
 ENUN
 COUNTER_ADD 2 1
@@ -289,6 +292,7 @@ SVAL 2 4
 BNE 0x103 0xc 2
 //load level 5 here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier1Wave5
 ENUN
 COUNTER_ADD 2 1
@@ -309,7 +313,6 @@ LABEL 0x201
 CALL ResetDuelingGrounds
 GOTO 0x106
 LABEL 0x105
-CALL GroundsResetUnit
 FADU 10
 LABEL 0x106
 ENDA
@@ -321,6 +324,7 @@ SVAL 2 1
 BNE 0x100 0xc 2
 //load level 2 here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier2Wave2
 ENUN
 COUNTER_ADD 2 1
@@ -330,6 +334,7 @@ SVAL 2 2
 BNE 0x101 0xc 2
 //load level 3  here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier2Wave3
 ENUN
 COUNTER_ADD 2 1
@@ -339,6 +344,7 @@ SVAL 2 3
 BNE 0x102 0xc 2
 //load level 4 here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier2Wave4
 ENUN
 COUNTER_ADD 2 1
@@ -348,6 +354,7 @@ SVAL 2 4
 BNE 0x103 0xc 2
 //load level 5 here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier2Wave5
 ENUN
 COUNTER_ADD 2 1
@@ -368,7 +375,6 @@ LABEL 0x201
 CALL ResetDuelingGrounds
 GOTO 0x106
 LABEL 0x105
-CALL GroundsResetUnit
 FADU 10
 LABEL 0x106
 ENDA
@@ -380,6 +386,7 @@ SVAL 2 1
 BNE 0x100 0xc 2
 //load level 2 here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier3Wave2
 ENUN
 COUNTER_ADD 2 1
@@ -389,6 +396,7 @@ SVAL 2 2
 BNE 0x101 0xc 2
 //load level 3  here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier3Wave3
 ENUN
 COUNTER_ADD 2 1
@@ -398,6 +406,7 @@ SVAL 2 3
 BNE 0x102 0xc 2
 //load level 4 here
 FADI 10
+CALL GroundsResetUnit
 LOAD1 0 DuelingGroundsTier3Wave4
 ENUN
 COUNTER_ADD 2 1
@@ -407,6 +416,7 @@ SVAL 2 4
 BNE 0x103 0xc 2
 //load level 5 here
 FADI 10
+CALL GroundsResetUnit
 CHECK_EVENTID Arena3DoneFlag
 BNE 0x66 0xc 0x0
 	LOAD1 0 DuelingGroundsTier3Wave5
@@ -434,7 +444,6 @@ LABEL 0x201
 CALL ResetDuelingGrounds
 GOTO 0x106
 LABEL 0x105
-CALL GroundsResetUnit
 FADU 10
 LABEL 0x106
 ENDA

@@ -31,6 +31,33 @@ void ApplyDebuffToAlliesInRange(struct Unit* centralUnit, int buffID, int range)
 		i++;
 	}
 }
+
+void WarMirrorDebuff(struct Unit* centralUnit, int buffID, int range){
+	u8* unitBuffer = GetUnitsInRange(centralUnit, 1, range);
+	if (unitBuffer == FALSE) {
+		return;
+	}
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		UnitApplyDebuff(other,buffID);
+		i++;
+	}
+}
+void WarMirrorStatus(struct Unit* centralUnit, int statusID, int range){
+	u8* unitBuffer = GetUnitsInRange(centralUnit, 1, range);
+	if (unitBuffer == FALSE) {
+		return;
+	}
+	int i = 0;
+	while (unitBuffer[i]){
+		int index = unitBuffer[i];
+		Unit* other = gUnitLookup[index];
+		SetUnitStatus(other,statusID);
+		i++;
+	}
+}
 void ApplyDebuffToEnemiesInRange(struct Unit* centralUnit, int buffID, int range){
 	u8* unitBuffer = GetUnitsInRange(centralUnit, 2, range);
 	if (unitBuffer == FALSE) {
@@ -292,6 +319,54 @@ void MakeTargetListForWeaponRange(struct Unit* unit, int minRange, int maxRange)
     TryAddTrapsToTargetList();
 
     return;
+}
+
+u8 CombatArtWarMagusAttackingUsability(void) {
+    
+    // AttackCommandUsability but modified
+    if (gActiveUnit->state & US_HAS_MOVED) {
+        return FALSE;
+    }
+
+    if (gActiveUnit->state & US_IN_BALLISTA) {
+        return FALSE;
+    }
+
+    for (int i = 0; i < UNIT_ITEM_COUNT; i++) {
+        int item = gActiveUnit->items[i];
+
+        if (item == 0) {
+            break;
+        }
+
+        if (!(GetItemAttributes(item) & IA_WEAPON)) {
+            continue;
+        }
+		
+		if (UNIT_HAS_SKILL(gActiveUnit,WMG,skill_121)) {
+			if (!((GetItemType(item) == 0x0) || (GetItemType(item) == 0x4)))  {
+				continue;
+			}
+		}
+		else if (!(GetItemType(item) == 0x0)) {
+			continue;
+		}
+
+        if (!CanUnitUseWeaponNow(gActiveUnit, item)) {
+            continue;
+        }
+        // Durability cost check for art
+        //if (CombatArtDurabilityList[gActiveArtID] > ITEM_USES(item)){}
+
+        MakeTargetListForWeapon(gActiveUnit, item);
+        if (GetSelectTargetCount() == 0) {
+            continue;
+        }
+
+        return TRUE;
+    }
+
+    return FALSE;
 }
 
 u8 CombatArtWeaponTypeAttackingUsability(int weaponType) {

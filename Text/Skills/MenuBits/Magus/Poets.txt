@@ -1,3 +1,22 @@
+##UM_Erasure
+ Erasure[X]
+##UM_ErasureDesc
+Clear ally debuffs[N]
+and enemy buffs.[N]
+Cost: 3 Durability.[X]
+
+##UM_EnduringTune
+ Enduring Tn.[X]
+##UM_EnduringTuneDesc
+Prepare a lasting song.[N]
+Cost: 2 Durability.[X]
+
+##UM_ResoundingTune
+ Resound. Tn.[X]
+##UM_ResoundingTuneDesc
+Prepare a resonant song.[N]
+Cost: 3 Durability.[X]
+
 ##UM_Bravery
  Bravery[X]
 ##UM_BraveryDesc
@@ -27,3 +46,15 @@ Cost: 1 Durability.[X]
 ##UM_FleetingDesc
 A song of mobility.[N]
 Cost: 2 Durability.[X]
+
+##UM_EerieChorus
+ Eerie Chorus[X]
+##UM_EerieChorusDesc
+A song of extension.[N]
+Cost: 3 Durability.[X]
+
+##UM_AwakeningVoice
+ Awakening[X]
+##UM_AwakeningVoiceDesc
+A song of rebirth.[N]
+Cost: 9 Durability.[X]

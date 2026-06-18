@@ -44,9 +44,9 @@ POIN MyrmidonSkillLabels
 POIN RiderSkillLabels
 POIN RaiderSkillLabels
 POIN GunnerSkillLabels
+POIN PoetSkillLabels
 POIN SkillLabels
-POIN SkillLabels
-POIN SkillLabels
+POIN PriestSkillLabels
 POIN SkillLabels
 POIN DarkHunterSkillLabels
 POIN SkillLabels
@@ -134,6 +134,126 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
+
+ALIGN 4
+PoetSkillLabels:
+OneLevelSkillLabel(SoothingVoiceSkill,NoReq)//0
+OneLevelSkillLabel(LiberatingVoiceSkill,NoReq)
+OneLevelSkillLabel(DivineVoiceSkill,DivineVoiceReq)
+OneLevelSkillLabel(EchoingVoiceSkill,PromotedReq)
+TwoLevelSkillLabel(ErasureSkill,ErasureReq)//4
+TwoLevelSkillLabel(EnduringTuneSkill,EnduringTuneReq)
+TwoLevelSkillLabel(ResoundingTuneSkill,ResoundingTuneReq)
+ThreeLevelSkillLabel(BraverySongSkill,NoReq)//7
+ThreeLevelSkillLabel(ShelterSongSkill,NoReq)
+ThreeLevelSkillLabel(MercurySongSkill,NoReq)
+ThreeLevelSkillLabel(InsightSongSkill,NoReq)
+ThreeLevelSkillLabel(FleetingSongSkill,FleetingSongReq)
+FiveLevelSkillLabel(EerieChorusSkill,EerieChorusReq)//12
+FiveLevelSkillLabel(CrescendoSkill,CrescendoReq)
+FiveLevelSkillLabel(AwakeningVoiceSkill,AwakeningVoiceReq)
+SkillLabelTerminator
+
+ALIGN 4
+DivineVoiceReq:
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+ErasureReq:
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+EnduringTuneReq:
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+ResoundingTuneReq:
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+FleetingSongReq:
+ReqPromo
+ReqEntry(9,3)
+ReqEntry(10,3)
+ReqTerm
+ALIGN 4
+EerieChorusReq:
+ReqEntry(7,3)
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+CrescendoReq:
+ReqEntry(5,2)
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+AwakeningVoiceReq:
+ReqPromo
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqEntry(11,3)
+ReqTerm
+
+ALIGN 4
+PriestSkillLabels:
+OneLevelSkillLabel(WarFortuneSkill,NoReq)//0
+OneLevelSkillLabel(WarEdgeSkill,NoReq)
+OneLevelSkillLabel(WarImbueSkill,WarImbueReq)
+OneLevelSkillLabel(WarPierceSkill,PromotedReq)
+TwoLevelSkillLabel(WarBindSkill,NoReq)//4
+TwoLevelSkillLabel(WarSapSkill,NoReq)
+TwoLevelSkillLabel(WarDrainSkill,WarDrainReq)
+ThreeLevelSkillLabel(WarHealSkill,NoReq)//7
+ThreeLevelSkillLabel(WarWallSkill,WarWallReq)
+ThreeLevelSkillLabel(WarGraspSkill,WarGraspReq)
+ThreeLevelSkillLabel(WarDiseaseSkill,WarDiseaseReq)
+ThreeLevelSkillLabel(WarPrayerSkill,WarPrayerReq)
+FiveLevelSkillLabel(WarMirrorSkill,NoReq)//12
+FiveLevelSkillLabel(WarSlashSkill,WarSlashReq)
+FiveLevelSkillLabel(WarPhaseSkill,WarPhaseReq)
+SkillLabelTerminator
+
+ALIGN 4
+WarImbueReq:
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+WarDrainReq:
+ReqEntry(4,1)
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+WarWallReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+WarGraspReq:
+ReqEntry(0,1)
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+WarDiseaseReq:
+ReqEntry(4,2)
+ReqEntry(5,2)
+ReqTerm
+ALIGN 4
+WarPrayerReq:
+ReqPromo
+ReqEntry(0,1)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+WarSlashReq:
+ReqEntry(4,2)
+ReqEntry(5,2)
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+WarPhaseReq:
+ReqPromo
+ReqEntry(9,3)
+ReqEntry(11,3)
+ReqTerm
 
 ALIGN 4
 RaiderSkillLabels:

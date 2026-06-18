@@ -31,13 +31,6 @@ struct DebuffEntry* GetUnitBuffsDebuffs(struct Unit* unit) {
 	return entry;
 };
 
-int UnitHasSongBuff(struct Unit* unit) {
-	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
-	if ( ((BUFF_BRAVERY1 <= entry->buff1) && (entry->buff1 <= BUFF_FLEETING3)) || ((BUFF_BRAVERY1 <= entry->buff2) && (entry->buff2 <= BUFF_FLEETING3)) || ((BUFF_BRAVERY1 <= entry->buff3) && (entry->buff3 <= BUFF_FLEETING3)))
-		return 1;
-	else return 0;
-}
-
 void ApplyRallyingCryBuffs(struct BattleUnit* attacker, struct BattleUnit* defender);
 void ApplyRallyingCryBuffsBothSides(struct BattleUnit* attacker, struct BattleUnit* defender);
 
@@ -473,5 +466,124 @@ void ApplyBuffDebuffAOEs(struct Unit* actor, struct Unit* target){
 		}
 		
 		
+	}
+}
+
+int UnitHasSongBuff(struct Unit* unit) {
+    struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	int buff1 = entry->buff1;
+	int buff2 = entry->buff2;
+	int buff3 = entry->buff3;
+    if ((BUFF_BRAVERY1 <= buff1) && (buff1 <= BUFF_FLEETING3))
+		return 1;
+	if ((BUFF_BRAVERY1 <= buff2) && (buff2 <= BUFF_FLEETING3))
+		return 1;
+	if ((BUFF_BRAVERY1 <= buff3) && (buff3 <= BUFF_FLEETING3))
+        return 1;
+    return 0;
+}
+int UnitHasRuneBuff(struct Unit* unit) {
+    struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	int buff1 = entry->buff1;
+	int buff2 = entry->buff2;
+	int buff3 = entry->buff3;
+    if ((BUFF_MAGUSRUNE1 <= buff1) && (buff1 <= BUFF_AGILITYRUNE2))
+		return 1;
+	if ((BUFF_MAGUSRUNE1 <= buff2) && (buff2 <= BUFF_AGILITYRUNE2))
+		return 1;
+	if ((BUFF_MAGUSRUNE1 <= buff3) && (buff3 <= BUFF_AGILITYRUNE2))
+        return 1;
+    return 0;
+}
+int UnitHasRuneDebuff(struct Unit* unit) {
+    struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	int buff1 = entry->debuff1;
+	int buff2 = entry->debuff2;
+	int buff3 = entry->debuff3;
+    if ((DEBUFF_MAGUSRUNE1 <= buff1) && (buff1 <= DEBUFF_AGILITYRUNE2))
+		return 1;
+	if ((DEBUFF_MAGUSRUNE1 <= buff2) && (buff2 <= DEBUFF_AGILITYRUNE2))
+		return 1;
+	if ((DEBUFF_MAGUSRUNE1 <= buff3) && (buff3 <= DEBUFF_AGILITYRUNE2))
+        return 1;
+    return 0;
+}
+
+int EntryHasSongBuff(struct DebuffEntry* entry) {
+	int buff1 = entry->buff1;
+	int buff2 = entry->buff2;
+	int buff3 = entry->buff3;
+    if ((BUFF_BRAVERY1 <= buff1) && (buff1 <= BUFF_FLEETING3))
+		return 1;
+	if ((BUFF_BRAVERY1 <= buff2) && (buff2 <= BUFF_FLEETING3))
+		return 1;
+	if ((BUFF_BRAVERY1 <= buff3) && (buff3 <= BUFF_FLEETING3))
+        return 1;
+    return 0;
+}
+int EntryHasABuff(struct DebuffEntry* entry) {
+	int buff1 = entry->buff1;
+	int buff2 = entry->buff2;
+	int buff3 = entry->buff3;
+    if (buff1||buff2||buff3)
+        return 1;
+    return 0;
+}
+int UnitHasABuff(struct Unit* unit) {
+    struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	int buff1 = entry->buff1;
+	int buff2 = entry->buff2;
+	int buff3 = entry->buff3;
+    if (buff1||buff2||buff3)
+        return 1;
+    return 0;
+}
+
+
+void UnitExtendBuffs(struct Unit* unit) {
+    struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	if (entry->buff1) {
+		if (entry->buff1dur < 3) {
+			entry->buff1dur += 1;
+		}
+	}
+	if (entry->buff2) {
+		if (entry->buff2dur < 3) {
+			entry->buff2dur += 1;
+		}
+	}
+	if (entry->buff3) {
+		if (entry->buff3dur < 3) {
+			entry->buff3dur += 1;
+		}
+	}
+}
+
+void UnitExtendDebuffs(struct Unit* unit) {
+    struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	if (entry->debuff1) {
+		if (entry->debuff1dur < 3) {
+			entry->debuff1dur += 1;
+		}
+	}
+	if (entry->debuff2) {
+		if (entry->debuff2dur < 3) {
+			entry->debuff2dur += 1;
+		}
+	}
+	if (entry->debuff3) {
+		if (entry->debuff3dur < 3) {
+			entry->debuff3dur += 1;
+		}
+	}
+	if (unit->statusDuration) {
+		if (unit->statusDuration < 9) {
+			unit->statusDuration += 1;
+		}
+	}
+	if (unit->bindDuration) {
+		if (unit->bindDuration < 9) {
+			unit->bindDuration += 1;
+		}
 	}
 }

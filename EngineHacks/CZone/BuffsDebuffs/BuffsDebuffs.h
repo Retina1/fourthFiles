@@ -3,6 +3,8 @@ typedef struct BuffDebuff_Struct BuffDebuff_Struct;
 
 void UnitApplyBuff(struct Unit* unit,u8 buffID);
 void UnitApplyDebuff(struct Unit* unit,u8 buffID);
+void UnitClearBuffs(struct Unit* unit);
+void UnitClearDebuffs(struct Unit* unit);
 void UnitApplyBuffWithBonusDur(struct Unit* unit,u8 buffID,u8 bonusDuration);
 struct DebuffEntry* GetUnitBuffsDebuffs(struct Unit* unit);
 

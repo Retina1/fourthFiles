@@ -121,7 +121,7 @@ Smiting Smash[X]
 Level: [_0] (Active)[N]
 A swing that knocks[N]
 the target backwards.[N]
-Next: [_3] Dur, [_1] Rn, [_1].[_2]x Atk,[N]
+Next: [_3] Dur, [_1] Rng, [_1].[_2]x Atk,[N]
 pushes target [_1] tile away.[N]
 Req: Heavy Swing [_3][X]
 ## ^

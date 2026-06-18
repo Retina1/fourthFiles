@@ -30,6 +30,11 @@ WORD NatsukiMug
 NatsubunMugID:
 WORD NatsubunMug
 
+WundMugID:
+WORD WundClothedMug
+WundUnclothedMugID:
+WORD WundMug
+
 GoreUnitID:
 WORD Gore
 GoreMugID:

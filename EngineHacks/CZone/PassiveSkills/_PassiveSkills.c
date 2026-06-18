@@ -1,5 +1,3 @@
-
-
 #include "1_Swordfighter.c"
 #include "2_Knight.c"
 #include "3_Axefighter.c"
@@ -21,6 +19,8 @@
 #include "19_SkyKnight.c"
 #include "20_ScaleKnight.c"
 #include "21_Apothecary.c"
+#include "22_Encircler.c"
+#include "23_Caller.c"
 #include "24_Noble.c"
 #include "25_Duelist.c"
 #include "26_Driver.c"
@@ -285,6 +285,7 @@ long long ClassSkillLucBoost(int stat, struct Unit* unit) {
 	
 	//mul
 	stat = ApplyCurateCalmingPresence(stat,unit);
+	stat = ApplyPoetCrescendo(stat,unit);
 	//apply debiru axe last
 	stat = ApplyLucBuff(stat,unit);
 	stat = ApplyDevilAxeZero(stat,unit);
@@ -312,6 +313,7 @@ long long ClassSkillDefsBoost(int stat, struct Unit* unit) {
 	stat = ApplyKnightProvocationMod(stat,unit);
 	stat = ApplyMyrmidonClearStance(stat,unit);
 	stat = ApplySkyKnightSkySquadronDefense(stat,unit);
+	stat = ApplyPoetCrescendo(stat,unit);
 	stat = ApplyDefBuff(stat,unit);
 	
 	//picnic
@@ -455,6 +457,7 @@ long long ClassSkillMovBoost(int stat, struct Unit* unit) {
 	stat = ApplySkyKnightSaviorRush(stat,unit);
 	stat = ApplyNobleProudNobility(stat,unit);
 	stat = ApplyDuelistFleetfoot(stat,unit);
+	stat = ApplyPoetCrescendoMov(stat,unit);
 	stat = ApplyMovBuff(stat,unit);
 	//mul
 	stat = ApplyDuelistGaleDuelistMovement(stat,unit);

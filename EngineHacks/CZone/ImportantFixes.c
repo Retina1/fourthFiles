@@ -6,6 +6,8 @@ extern const int GoreUnitID;
 extern const int GoreMugID;
 extern const int GorePluckMugID;
 extern const int GoreEyepatchMugID;
+extern const int WundMugID;
+extern const int WundUnclothedMugID;
 
 extern const struct FaceData NewPortraitTable[];
 
@@ -123,6 +125,12 @@ const struct FaceData* GetPortraitData(int fid) {
 			if (GetUnitFromCharId(NatsukiUnitID)->classSkillState != 0) {
 				fid = NatsubunMugID;
 			}
+		}
+	}
+	//WUNDCLOTHES
+	if (fid == WundMugID){
+		if (NextRN_N(776) == 0) {
+			fid = WundUnclothedMugID;
 		}
 	}
 	if (fid == GoreMugID) {

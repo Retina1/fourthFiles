@@ -193,7 +193,7 @@ CleanTextNoMap(CaveCG,C7Ending3)
 //scene of benthus betrayal, stab gore, epic cg, he leaves and shatters crystal on other side
 MUSC Song_DevilsRoulette
 CleanTextNoMap(CaveCG,C7Ending4)
-SetBackground(DecisionCG)
+SetBackground(GoreCG)
 STAL 60
 SoloText(C7Ending5)
 STAL 60

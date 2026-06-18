@@ -1,3 +1,20 @@
+##UM_WarBind
+ War Bind[X]
+##UM_WarBindDesc
+Bind a debuffed target.[N]
+Cost: 3 Durability.[X]
+##UM_WarSap
+ War Sap[X]
+##UM_WarSapDesc
+Debuff an ailing or[N]
+bound target.[N]
+Cost: 3 Durability.[X]
+##UM_WarDrain
+ War Drain[X]
+##UM_WarDrainDesc
+Drain a suffering target.[N]
+Cost: 3 Durability.[X]
+
 ##UM_WarHeal
  War Heal[X]
 ##UM_WarHealDesc
@@ -8,7 +25,32 @@ Cost: 2 Durability.[X]
 ##UM_WarWallDesc
 Attempt to block effects.[N]
 Cost: 4 Durability.[X]
-
+##UM_WarGrasp
+ War Grasp[X]
+##UM_WarGraspDesc
+Bring a far ally near.[N]
+Cost: 10 Durability.[X]
+##UM_WarDisease
+ War Disease[X]
+##UM_WarDiseaseDesc
+Inflict... something.[N]
+Cost: 4 Durability.[X]
+##UM_WarPrayer
+ War Prayer[X]
+##UM_WarPrayerDesc
+Bestow a miracle.[N]
+Cost: 5 Durability.[X]
+##UM_WarMirror
+ War Mirror[X]
+##UM_WarMirrorDesc
+Refract their weakness.[N]
+Cost: 4 Durability.[X]
+##UM_WarSlash
+ War Slash[X]
+##UM_WarSlashDesc
+Obliterate an ailing[N]
+or bound target.[N]
+Cost: 5 Durability.[X]
 ##UM_WarPhase
  War Phase[X]
 ##UM_WarPhaseDesc

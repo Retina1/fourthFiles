@@ -12,8 +12,8 @@ DominantCry1Debuff,DominantCryLabel,DominantCryDesc1,2,1,1,1,1,1,1,1,1,4,5,1,1,4
 DominantCry2Debuff,DominantCryLabel,DominantCryDesc2,2,1,1,1,1,1,1,1,1,3,5,1,1,3,5,0
 WarningShot1Debuff,WarningShotLabel,WarningShotDesc1,3,4,5,1,1,1,1,1,1,1,1,1,1,4,5,0
 WarningShot2Debuff,WarningShotLabel,WarningShotDesc2,3,1,2,1,1,1,1,1,1,1,1,1,1,1,2,0
-ShiningForceDebuff,0,0,3,1,1,4,5,1,1,1,1,1,1,1,1,1,1,0
-WarSapDebuff,0,0,3,4,5,4,5,4,5,4,5,4,5,4,5,4,5,0
+ShiningForceDebuff,ShiningForceLabel,ShiningForceDesc,3,1,1,4,5,1,1,1,1,1,1,1,1,1,1,0
+WarSapDebuff,WarSapLabel,WarSapDesc,3,4,5,4,5,4,5,4,5,4,5,4,5,4,5,0
 MisfortuneDebuff,MisfortuneLabel,MisfortuneDesc,3,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0
 Sapping1Debuff,SappingLabel,SappingDesc1,2,7,10,1,1,1,1,1,1,1,1,1,1,1,1,0
 Sapping2Debuff,SappingLabel,SappingDesc2,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,0
@@ -61,10 +61,10 @@ SappingAuraDebuff,SappingAuraLabel,SappingAuraDesc,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1
 FrailtyAuraDebuff,FrailtyAuraLabel,FrailtyAuraDesc,3,1,1,1,1,1,1,1,1,1,1,1,2,1,1,0
 SluggishAuraDebuff,SluggishAuraLabel,SluggishAuraDesc,3,1,1,1,1,1,1,1,1,1,2,1,1,1,1,0
 MistyAuraDebuff,MistyAuraLabel,MistyAuraDesc,3,1,1,1,2,1,1,1,1,1,1,1,1,1,1,0
-MagusRune1Debuff,0,0,2,1,1,1,1,1,1,1,1,1,1,9,10,1,1,0
-MagusRune2Debuff,0,0,2,1,1,1,1,1,1,1,1,1,1,8,10,1,1,0
-RevolutionRune1Debuff,0,0,2,1,1,1,1,1,1,8,10,1,1,1,1,1,1,0
-RevolutionRune2Debuff,0,0,2,1,1,1,1,1,1,6,10,1,1,1,1,1,1,0
-AgilityRune1Debuff,0,0,2,1,1,1,1,1,1,1,1,9,10,1,1,1,1,0
-AgilityRune2Debuff,0,0,2,1,1,1,1,1,1,1,1,8,10,1,1,1,1,0
+MagusRune1Debuff,MagusRuneLabel,MagusRuneDebuff1,2,1,1,1,1,1,1,1,1,1,1,9,10,1,1,0
+MagusRune2Debuff,MagusRuneLabel,MagusRuneDebuff2,2,1,1,1,1,1,1,1,1,1,1,8,10,1,1,0
+RevolutionRune1Debuff,RevolutionRuneLabel,RevolutionRuneDebuff1,2,1,1,1,1,1,1,8,10,1,1,1,1,1,1,0
+RevolutionRune2Debuff,RevolutionRuneLabel,RevolutionRuneDebuff2,2,1,1,1,1,1,1,6,10,1,1,1,1,1,1,0
+AgilityRune1Debuff,AgilityRuneLabel,AgilityRuneDebuff1,2,1,1,1,1,1,1,1,1,9,10,1,1,1,1,0
+AgilityRune2Debuff,AgilityRuneLabel,AgilityRuneDebuff2,2,1,1,1,1,1,1,1,1,8,10,1,1,1,1,0
 OPEN,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0

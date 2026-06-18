@@ -1,0 +1,8 @@
+// Allow heal to animate at any range (taily-flicker-less physic pretty much)
+PUSH
+ORG 0x5D68C8
+POIN RangedHealAnim
+POP
+
+ALIGN 4; PUSH; ORG CURRENTOFFSET+1; RangedHealAnim: POP
+#incbin "RangedHealAnim.bin"

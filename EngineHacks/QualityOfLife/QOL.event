@@ -18,3 +18,4 @@
 #include "EventWriter\EventWriter.event"
 #include "CHAI_Fix\CHAI_Fix.event"
 #include "CantoFix\Installer.event"
+#include "RangedHealAnim\RangedHealAnim.event"

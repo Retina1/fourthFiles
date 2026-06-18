@@ -246,13 +246,13 @@ int RapidFireRange(struct Unit* unit, int itemID, int rangeWord){
 int RapidFireHitCount(struct BattleUnit* actor){
 	int hitCount = 3;
 	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_343)){
-		hitCount = hitCount + NextRN_N(3) + 1;
+		hitCount = hitCount + NextRN_N(4) + 1;
 	}
 	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_342)){
-		hitCount = hitCount + NextRN_N(3);
+		hitCount = hitCount + NextRN_N(4);
 	}
 	else {
-		hitCount = hitCount + NextRN_N(2);
+		hitCount = hitCount + NextRN_N(3);
 	}
 	return hitCount;
 }
