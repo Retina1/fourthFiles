@@ -26,7 +26,6 @@ a lethal hit from full HP.[N]
 Req: None[X]
 ## ^
 Level: MAX (Passive)[N]
-Level: [_0] (Passive)[N]
 Stand strong against[N]
 even mighty blows.[N]
 Unit will survive a[N]

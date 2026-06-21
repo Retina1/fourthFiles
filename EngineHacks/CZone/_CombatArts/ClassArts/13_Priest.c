@@ -39,15 +39,15 @@ void WarMirrorItemSelectEffect(u16 artID, struct Unit* unit)
 	}
 	if (UNIT_HAS_SKILL(unit,WMG,skill_513)) {
 		if (legBind) {
-			WarMirrorStatus(targetUnit,legBind,aoe);
+			WarMirrorStatus(targetUnit,UNIT_STATUS_LEGBIND,aoe);
 			targetUnit->isLegBound = 0;
 		}
 		if (armBind) {
-			WarMirrorStatus(targetUnit,armBind,aoe);
+			WarMirrorStatus(targetUnit,UNIT_STATUS_ARMBIND,aoe);
 			targetUnit->isArmBound = 0;
 		}
 		if (headBind) {
-			WarMirrorStatus(targetUnit,headBind,aoe);
+			WarMirrorStatus(targetUnit,UNIT_STATUS_HEADBIND,aoe);
 			targetUnit->isHeadBound = 0;
 		}
 		targetUnit->bindDuration = 0;

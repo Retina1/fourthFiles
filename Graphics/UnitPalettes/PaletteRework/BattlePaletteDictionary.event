@@ -1,0 +1,8 @@
+
+//This file assumes you have installed palette data in another file. It is just a dictionary linking a palette index to a pointer where the actual color information is installed.
+
+//The letters are optional identifiers, you can leave them blank if you don't care.
+
+PaletteIdentifier($00,LukasSoldierPalette)
+PaletteIdentifier($01,LukasArmorPalette)
+PaletteIdentifier($02,LukasBaronPalette)

@@ -16,6 +16,10 @@ int GetOffensiveStaffAccuracy(struct Unit* actor, struct Unit* target) {
 	else {
 		baseRate = GetItemData(ITEM_INDEX(usedItem))->ailmentRate;
 	}
+	if (UNIT_HAS_SKILL(actor,HEX,skill_111)){
+			baseRate = baseRate + (GetUnitMaxHp(actor) - GetUnitCurrentHp(actor)) * 3;
+	}
+	
 	int accuracy = baseRate * baseAtk / baseDef;
 	
 	for(int j = 0; j < GetUnitItemCount(target); j++) {

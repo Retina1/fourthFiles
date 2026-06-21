@@ -38,6 +38,8 @@ Trailblazer_Handaxe
 Trailblazer_Unarmed
 Gunner_Gun
 Gunner_Unarmed
+Dragoon_Gun
+Dragoon_Unarmed
 Poet_Magic
 Troubadour_Magic
 Troubadour_Refresh
@@ -131,6 +133,8 @@ Female_Gunner_Gun
 Female_Gunner_Unarmed
 CoastKid_Swordfighter_Sword
 CoastKid_Swordfighter_Unarmed
+Anhinga_Swordfighter_Sword
+Anhinga_Swordfighter_Unarmed
 CoastKid_Landsknecht_Sword
 CoastKid_Landsknecht_Unarmed
 Female_Axefighter_Axe

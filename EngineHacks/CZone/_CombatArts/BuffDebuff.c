@@ -110,9 +110,42 @@ void MakeTargetListForBuff5Rng(struct Unit* unit) {
     return;
 }
 
+void TryAddUnitToExploitationTargetList(struct Unit* unit) {
+
+    if (AreUnitsAllied(gSubjectUnit->index, unit->index)) {
+        return;
+    }
+
+    if (unit->statusIndex != UNIT_STATUS_CURSE) {
+        return;
+    }
+
+    AddTarget(unit->xPos, unit->yPos, unit->index, 0);
+
+    return;
+}
+
+
+void MakeTargetListForExploitation(struct Unit* unit) {
+    int x = unit->xPos;
+    int y = unit->yPos;
+    gSubjectUnit = unit;
+    InitTargets(x, y);
+    BmMapFill(gBmMapRange, 0);
+
+    MapAddInRange(x, y, 5, 1);
+    MapAddInRange(x, y, 0, (-1));
+
+    ForEachUnitInRange(TryAddUnitToExploitationTargetList);
+    return;
+}
+
 int BuffDebuffEffect(struct MenuProc* menu) {
-	if (CombatArtList[GetActiveArt(gActiveUnit)].isMagic) {
+	if (CombatArtList[GetActiveArt(gActiveUnit)].isMagic == 2) {
 		MakeTargetListForDebuff5Rng(gActiveUnit); 
+	}
+	else if (CombatArtList[GetActiveArt(gActiveUnit)].isMagic == 3) {
+		MakeTargetListForExploitation(gActiveUnit); 
 	}
 	else {
 		MakeTargetListForBuff5Rng(gActiveUnit); 

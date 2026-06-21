@@ -33,6 +33,10 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 	
 	int baseAtk = attackerLuc + 10;
 	int baseDef = defenderLuc + 10;
+
+	if (UNIT_HAS_SKILL(&attacker->unit,HEX,skill_111)){
+			baseRate = baseRate + (GetUnitMaxHp(&attacker->unit) - GetUnitCurrentHp(&attacker->unit)) * 3;
+	}
 	
 	int accuracy = baseRate * baseAtk / baseDef;
 	
@@ -295,7 +299,14 @@ static const struct ProcCmd sProcScr_BattleAnimSimpleLock[] = {
 
 
 //durability
-u16 ApplyRallyingCryThrift(struct Unit* unit, int cost) {
+u16 ApplyDurabilityCostMods(struct Unit* unit, int cost) {
+
+	if (UNIT_HAS_SKILL(unit,WRK,skill_121)){
+		cost = cost - 1;
+		if (cost == 0) {
+			cost = 1;
+		}
+	}
 	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
 	struct Unit* source = NULL;
 	u16 rallyLabel = RallyingCryBuffLabel_Link;
@@ -373,16 +384,11 @@ void BattleApplyItemEffect(struct Proc* proc) {
 		if (allegiance == FACTION_BLUE) {
 			if (GetActiveArt(&gBattleActor.unit)) {
 				int artCost = CombatArtDurabilityList[GetActiveArt(&gBattleActor.unit)];
-				if (UNIT_HAS_SKILL(&gBattleActor.unit,WRK,skill_121)){
-					artCost = artCost - 1;
-					if (artCost == 0) {
-						artCost = 1;
-					}
-				}
-			//thrift rally
-			artCost = ApplyRallyingCryThrift(&gBattleActor.unit,artCost);
+				
+				//cost mods
+				artCost = ApplyDurabilityCostMods(&gBattleActor.unit,artCost);
 			
-			gBattleActor.weapon = GetItemAfterArtUse(gBattleActor.weapon, artCost);
+				gBattleActor.weapon = GetItemAfterArtUse(gBattleActor.weapon, artCost);
 			}
 			else gBattleActor.weapon = GetItemAfterUse(gBattleActor.weapon);
 		}
@@ -431,14 +437,8 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
 	if ((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) {
 		if (attacker->multihitArtTracker == 0) {
 			int artCost = CombatArtDurabilityList[GetActiveArt(&attacker->unit)];
-			if (UNIT_HAS_SKILL(&attacker->unit,WRK,skill_121)){
-				artCost = artCost - 1;
-				if (artCost == 0) {
-					artCost = 1;
-				}
-			}
-			//thrift rally
-			artCost = ApplyRallyingCryThrift(&attacker->unit,artCost);
+			//cost mods
+			artCost = ApplyDurabilityCostMods(&attacker->unit,artCost);
 			
 			attacker->weapon = GetItemAfterArtUse(attacker->weapon, artCost);
 			attacker->multihitArtTracker = 1;

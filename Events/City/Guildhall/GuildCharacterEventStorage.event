@@ -60,6 +60,7 @@ GuildRecruitEvent(Calliope_RecruitEvent,Calliope)
 GuildRecruitEvent(Ghari_RecruitEvent,Ghari)
 GuildRecruitEvent(Azaghal_RecruitEvent,Azaghal)
 GuildRecruitEvent(Tachyon_RecruitEvent,Tachyon)
+GuildRecruitEvent(Vaughn_RecruitEvent,Vaughn)
 //riders
 GuildRecruitEvent(Aizen_RecruitEvent,Aizen)
 GuildRecruitEvent(Johnnie_RecruitEvent,Johnnie)
@@ -146,4 +147,5 @@ GuildRecruitEvent(Yasaki_RecruitEvent,Yasaki)
 GuildRecruitEvent(Ammi_RecruitEvent,Ammi)
 GuildRecruitEvent(Sarina_RecruitEvent,Sarina)
 GuildRecruitEvent(Alexandra_RecruitEvent,Alexandra)
+GuildRecruitEvent(Cor_RecruitEvent,Cor)
 

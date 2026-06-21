@@ -42,6 +42,13 @@ Tachyon[X]
 An excitable Asketan swordswoman who[N]
 thinks she's the fastest in the land.[X]
 
+//eel
+##Name_Vaughn
+Vaughn[X]
+##Desc_Vaughn
+A wandering survivor of the Old War.[N]
+He's never adjusted to peace.[X]
+
 //striker
 ##Name_Aizen
 Aizen[X]

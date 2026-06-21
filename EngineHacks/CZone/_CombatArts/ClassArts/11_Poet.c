@@ -109,7 +109,7 @@ void MakeTargetListForAwakeningVoice(struct Unit* unit) {
     return;
 }
 
-u16 ApplyRallyingCryThrift(struct Unit* unit, int cost);
+u16 ApplyDurabilityCostMods(struct Unit* unit, int cost);
 u16 GetItemAfterArtUse(int item, int cost);
 
 s8 ActionDance(ProcPtr proc) {
@@ -130,16 +130,10 @@ s8 ActionDance(ProcPtr proc) {
 		if (allegiance == FACTION_BLUE) {
 			if (GetActiveArt(&gBattleActor.unit)) {
 				int artCost = CombatArtDurabilityList[GetActiveArt(&gBattleActor.unit)];
-				if (UNIT_HAS_SKILL(&gBattleActor.unit,WRK,skill_121)){
-					artCost = artCost - 1;
-					if (artCost == 0) {
-						artCost = 1;
-					}
-				}
-			//thrift rally
-			artCost = ApplyRallyingCryThrift(&gBattleActor.unit,artCost);
+
+				artCost = ApplyDurabilityCostMods(&gBattleActor.unit,artCost);
 			
-			gBattleActor.weapon = GetItemAfterArtUse(gBattleActor.weapon, artCost);
+				gBattleActor.weapon = GetItemAfterArtUse(gBattleActor.weapon, artCost);
 			}
 			else gBattleActor.weapon = GetItemAfterUse(gBattleActor.weapon);
 		}

@@ -1,15 +1,430 @@
-##UM_MagusRune
- Magus Rune[X]
-##UM_MagusRuneDesc
-Shift nearby Def.[N]
-Cost: 3 Durability.[X]
-##UM_RevolutionRune
- Revol. Rune[X]
-##UM_RevolutionRuneDesc
-Shift nearby Crit.[N]
-Cost: 3 Durability.[X]
-##UM_AgilityRune
- Agi. Rune[X]
-##UM_AgilityRuneDesc
-Shift nearby AS.[N]
-Cost: 3 Durability.[X]
+
+##RunicRhythmSkill
+Runic Rhythm[X]
+## ^
+Level: [_0] (Passive)[N]
+Live with the pulse.[N]
+Next: On even turns,[N]
+[_1].[_2]x Avo. On odd[N]
+turns, [_1].[_2]x Crit.
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Live with the pulse.[N]
+On even turns,[N]
+[_1].[_2]x Avo. On odd[N]
+turns, [_1].[_2]x Crit.
+[X]
+
+##PrismaticSkill
+Prismatic[X]
+## ^
+Level: [_0] (Passive)[N]
+Shine brightly for[N]
+your allies.[N]
+Next: Adjacent allies[N]
+have +[_2][_5] Crit.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Shine brightly for[N]
+your allies.[N]
+Adjacent allies[N]
+have +[_2][_5] Crit.[N]
+[X]
+
+##RunicResonanceSkill
+Runic Resonance[X]
+## ^
+Level: [_0] (Passive)[N]
+Your runes amplify[N]
+your radiance.[N]
+Next: [_1].[_3]x Crit against[N]
+Rune-debuffed enemies.[N]
+Req: Revolution Rune [_1][X]
+## ^
+Level: MAX (Passive)[N]
+Your runes amplify[N]
+your radiance.[N]
+[_1].[_3]x Crit against[N]
+Rune-debuffed enemies.[N]
+[X]
+
+##RunicPierceSkill
+Runic Pierce[X]
+## ^
+Level: [_0] (Passive)[N]
+The light shall shine[N]
+a path to victory.[N]
+Next: Crits deal [_4]x[N]
+damage (instead of [_3]x).[N]
+Req: PROMO[X]
+## ^
+Level: MAX (Passive)[N]
+The light shall shine[N]
+a path to victory.[N]
+Crits deal [_4]x damage[N]
+(instead of [_3]x).[N]
+[X]
+
+##MagusRuneSkill
+Magus Rune[X]
+## ^
+Level: [_0] (Active)[N]
+A rune of resistance.[N]
+Next: [_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_1]x Def for allies,[N]
+[_0].[_9]x Def for enemies ([_2] turns).[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+A rune of resistance.[N]
+[_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_1]x Def for allies,[N]
+[_0].[_9]x Def for enemies ([_2] turns).[N]
+Next: [_1].[_2]x/[_0].[_8]x Def.[X]
+## ^
+Level: MAX (Active)[N]
+A rune of resistance.[N]
+[_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_2]x Def for allies,[N]
+[_0].[_8]x Def for enemies ([_2] turns).[N]
+[X]
+
+##RevolutionRuneSkill
+Revolution Rune[X]
+## ^
+Level: [_0] (Active)[N]
+A rune of intensity.[N]
+Next: [_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_2]x Crit for allies,[N]
+[_0].[_8]x Crit for enemies ([_2] turns).[N]
+Req: Magus Rune [_1][X]
+## ^
+Level: [_1] (Active)[N]
+A rune of intensity.[N]
+Next: [_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_2]x Crit for allies,[N]
+[_0].[_8]x Crit for enemies ([_2] turns).[N]
+Next: [_1].[_4]x/[_0].[_6]x Crit.[X]
+## ^
+Level: MAX (Active)[N]
+A rune of intensity.[N]
+Next: [_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_4]x Crit for allies,[N]
+[_0].[_6]x Crit for enemies ([_2] turns).[N]
+[X]
+
+##AgilityRuneSkill
+Agility Rune[X]
+## ^
+Level: [_0] (Active)[N]
+A rune of alacrity.[N]
+Next: [_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_1]x AS for allies,[N]
+[_0].[_9]x AS for enemies ([_2] turns).[N]
+Req: Revolution Rune [_1][X]
+## ^
+Level: [_1] (Active)[N]
+A rune of alacrity.[N]
+[_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_1]x AS for allies,[N]
+[_0].[_9]x AS for enemies ([_2] turns).[N]
+Next: [_1].[_2]x/[_0].[_8]x AS.[X]
+## ^
+Level: MAX (Active)[N]
+A rune of alacrity.[N]
+[_3] Dur, Burst [_2] (All),[N]
+Inf. [_1].[_2]x AS for allies,[N]
+[_0].[_8]x AS for enemies ([_2] turns).[N]
+[X]
+
+##DivineLightningSkill
+Divine Lightning[X]
+## ^
+Level: [_0] (Active)[N]
+Pierce the skies[N]
+with glorious light.[N]
+Next: [_2] Dur, [_1]-[_2] Rng,[N]
++[_3] Mt, +[_1][_5] Hit, +[_1][_0] Crit.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+Pierce the skies[N]
+with glorious light.[N]
+[_2] Dur, [_1]-[_2] Rng,[N]
++[_3] Mt, +[_1][_5] Hit, +[_1][_0] Crit.[N]
+Next: +[_4] Mt, +[_2][_0] Crit.[X]
+## ^
+Level: [_2] (Active)[N]
+Pierce the skies[N]
+with glorious light.[N]
+[_2] Dur, [_1]-[_2] Rng,[N]
++[_4] Mt, +[_1][_5] Hit, +[_2][_0] Crit.[N]
+Next: +[_6] Mt, +[_3][_0] Crit.[X]
+## ^
+Level: MAX (Active)[N]
+Pierce the skies[N]
+with glorious light.[N]
+[_2] Dur, [_1]-[_2] Rng,[N]
++[_6] Mt, +[_1][_5] Hit, +[_3][_0] Crit.[N]
+[X]
+
+##ShiningForceSkill
+Shining Force[X]
+## ^
+Level: [_0] (Active)[N]
+Next: [_4] Dur, [_1]-[_2] Rng, +[_7] Mt,[N]
++[_1][_5] Hit, [_4][_0]% base Blind[N]
+chance, Inf [_0].[_8]x Hit on[N]
+foes in [_2] tiles ([_3] turns).[N]
+Req: Divine Lightning [_1][X]
+## ^
+Level: [_1] (Active)[N]
+[_4] Dur, [_1]-[_2] Rng, +[_7] Mt,[N]
++[_1][_5] Hit, [_4][_0]% base Blind[N]
+chance, Inf [_0].[_8]x Hit on[N]
+foes in [_2] tiles ([_3] turns).[N]
+Next: +[_8] Mt, [_6][_0]% chance.[X]
+## ^
+Level: [_2] (Active)[N]
+[_4] Dur, [_1]-[_2] Rng, +[_8] Mt,[N]
++[_1][_5] Hit, [_6][_0]% base Blind[N]
+chance, Inf [_0].[_8]x Hit on[N]
+foes in [_2] tiles ([_3] turns).[N]
+Next: +[_1][_0] Mt, [_8][_0]% chance.[X]
+## ^
+Level: MAX (Active)[N]
+A light of great intention.[N]
+[_4] Dur, [_1]-[_2] Rng, +[_1][_0] Mt,[N]
++[_1][_5] Hit, [_8][_0]% base Blind[N]
+chance, Inf [_0].[_8]x Hit on[N]
+foes in [_2] tiles ([_3] turns).[X]
+
+##ChalkydriSkill
+Chalkydri[X]
+## ^
+Level: [_0] (Active)[N]
+A soothing searing light.[N]
+Next: [_4] Dur, [_1]-[_3] Rng,[N]
++[_1][_0] Mt, +[_2][_5] Hit, heals[N]
+[_2][_0]% HP of allies in [_2] Rng.[N]
+Req: Shining Force [_1][X]
+## ^
+Level: [_1] (Active)[N]
+A soothing searing light.[N]
+[_4] Dur, [_1]-[_3] Rng,[N]
++[_1][_0] Mt, +[_2][_5] Hit, heals[N]
+[_2][_0]% HP of allies in [_2] Rng.[N]
+Next: +[_1][_1] Mt, [_2][_5]% HP.[X]
+## ^
+Level: [_2] (Active)[N]
+A soothing searing light.[N]
+[_4] Dur, [_1]-[_3] Rng,[N]
++[_1][_1] Mt, +[_2][_5] Hit, heals[N]
+[_2][_5]% HP of allies in [_2] Rng.[N]
+Next: +[_1][_3] Mt, [_3][_3]% HP.[X]
+## ^
+Level: MAX (Active)[N]
+A soothing searing light.[N]
+[_4] Dur, [_1]-[_3] Rng,[N]
++[_1][_3] Mt, +[_2][_5] Hit, heals[N]
+[_3][_3]% HP of allies in [_2] Rng.[N]
+[X]
+
+##DuskOmenSkill
+Dusk Omen[X]
+## ^
+Level: [_0] (Active)[N]
+A doubled nihil.[N]
+Next: [_5] Dur, [_1] Rng, +[_5] Mt,[N]
++[_5] Hit, strikes twice,[N]
+sets user Def to [_0].[N]
+Req: D. Light. [_1], Rev. Rune [_1][X]
+## ^
+Level: [_1] (Active)[N]
+A doubled nihil.[N]
+[_5] Dur, [_1] Rng, +[_5] Mt,[N]
++[_5] Hit, strikes twice,[N]
+sets user Def to [_0].[N]
+Next: +[_8] Mt, +[_1][_0] Hit.[X]
+## ^
+Level: [_2] (Active)[N]
+A doubled nihil.[N]
+[_5] Dur, [_1] Rng, +[_8] Mt,[N]
++[_1][_0] Hit, strikes twice,[N]
+sets user Def to [_0].[N]
+Next: +[_1][_2] Mt, +[_1][_5] Hit.[X]
+## ^
+Level: MAX (Active)[N]
+A doubled nihil.[N]
+[_5] Dur, [_1] Rng, +[_1][_2] Mt,[N]
++[_1][_5] Hit, strikes twice,[N]
+sets user Def to [_0].[N]
+[X]
+
+##SolarCleaveSkill
+Solar Cleave[X]
+## ^
+Level: [_0] (Active)[N]
+A radiant burst of[N]
+glorious division.[N]
+Next: [_7] Dur, [_4]-[_5] Rng,[N]
++[_0] Hit, halves enemy HP.[N]
+Req: PR, Ag.Rune [_2], S.Force [_3][X]
+## ^
+Level: [_1] (Active)[N]
+A radiant burst of[N]
+glorious division.[N]
+[_7] Dur, [_4]-[_5] Rng,[N]
++[_0] Hit, halves enemy HP.[N]
+Next: [_3]-[_6] Rng, +[_1][_0] Hit.[X]
+## ^
+Level: [_2] (Active)[N]
+A radiant burst of[N]
+glorious division.[N]
+[_7] Dur, [_3]-[_6] Rng,[N]
++[_1][_0] Hit, halves enemy HP.[N]
+Next: [_1]-[_8] Rng, +[_2][_0] Hit.[X]
+## ^
+Level: MAX (Active)[N]
+A radiant burst of[N]
+glorious division.[N]
+[_7] Dur, [_1]-[_8] Rng,[N]
++[_2][_0] Hit, halves enemy HP.[N]
+[X]
+
+##DaybreakSkill
+Daybreak[X]
+## ^
+Level: [_0] (Active)[N]
+A new day rises.[N]
+Next: [_3] Dur, [_1]-[_3] Rng, +[_5] Mt,[N]
++[_2][_0] Hit/Crit, requires and[N]
+cancels active Rune buffs.[N]
+Req: Magus Rune [_2], Chalk.[_3][X]
+## ^
+Level: [_1] (Active)[N]
+A new day rises.[N]
+[_3] Dur, [_1]-[_3] Rng, +[_5] Mt,[N]
++[_2][_0] Hit/Crit, requires and[N]
+cancels active Rune buffs.[N]
+Next: +[_1][_0] Mt, +[_2][_5] Hit/Crit.[X]
+## ^
+Level: [_2] (Active)[N]
+A new day rises.[N]
+[_3] Dur, [_1]-[_3] Rng, +[_1][_0] Mt,[N]
++[_2][_5] Hit/Crit, requires and[N]
+cancels active Rune buffs.[N]
+Next: +[_1][_5] Mt, +[_3][_0] Hit/Crit.[X]
+## ^
+Level: [_3] (Active)[N]
+A new day rises.[N]
+[_3] Dur, [_1]-[_3] Rng, +[_1][_5] Mt,[N]
++[_3][_0] Hit/Crit, requires and[N]
+cancels active Rune buffs.[N]
+Next: +[_2][_0] Mt, +[_4][_0] Hit/Crit.[X]
+## ^
+Level: [_4] (Active)[N]
+A new day rises.[N]
+[_3] Dur, [_1]-[_3] Rng, +[_2][_0] Mt,[N]
++[_4][_0] Hit/Crit, requires and[N]
+cancels active Rune buffs.[N]
+Next: +[_2][_5] Mt, +[_5][_0] Hit/Crit.[X]
+## ^
+Level: MAX (Active)[N]
+A new day rises.[N]
+[_3] Dur, [_1]-[_3] Rng, +[_2][_5] Mt,[N]
++[_5][_0] Hit/Crit, requires and[N]
+cancels active Rune buffs.[N]
+[X]
+
+##MoonriseSkill
+Moonrise[X]
+## ^
+Level: [_0] (Active)[N]
+Nighttime sharpens.[N]
+Next: [_5] Dur, expends Rune[N]
+debuffs, Inf. self [_1].[_1]x At/Df/[N]
+AS/Ht/Av/Cr/Luc ([_2] turns).[N]
+Req: Magus Rune [_2], Dusk O.[_3][X]
+## ^
+Level: [_1] (Active)[N]
+Nighttime sharpens.[N]
+[_5] Dur, expends Rune debuffs,[N]
+Inf. self [_1].[_1]x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc ([_2] turns).[N]
+Next: [_1].[_2]x boost.[X]
+## ^
+Level: [_2] (Active)[N]
+Nighttime sharpens.[N]
+[_5] Dur, expends Rune debuffs,[N]
+Inf. self [_1].[_2]x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc ([_2] turns).[N]
+Next: [_1].[_4]x boost.[X]
+## ^
+Level: [_3] (Active)[N]
+Nighttime sharpens.[N]
+[_5] Dur, expends Rune debuffs,[N]
+Inf. self [_1].[_4]x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc ([_2] turns).[N]
+Next: [_1].[_8]x boost.[X]
+## ^
+Level: [_4] (Active)[N]
+Nighttime sharpens.[N]
+[_5] Dur, expends Rune debuffs,[N]
+Inf. self [_1].[_8]x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc ([_2] turns).[N]
+Next: [_2].[_5]x boost.[X]
+## ^
+Level: MAX (Active)[N]
+Nighttime sharpens.[N]
+[_5] Dur, expends Rune debuffs,[N]
+Inf. self [_2].[_5]x Atk/Def/AS/[N]
+Hit/Avo/Crit/Luc ([_2] turns).[N]
+[X]
+
+##TwilightBurstSkill
+Twilight Burst[X]
+## ^
+Level: [_0] (Active)[N]
+A duality of infinity.[N]
+Next: [_7] Dur, [_1] Rng, +[_0] Mt,[N]
++[_2][_0] Hit, +[_2][_0][_0] Crit, expends[N]
+Rune buffs and debuffs.[N]
+Req: PR, Daybr.[_3], Moonrise [_3][X]
+## ^
+Level: [_1] (Active)[N]
+A duality of infinity.[N]
+[_7] Dur, [_1] Rng, +[_0] Mt,[N]
++[_2][_0] Hit, +[_2][_0][_0] Crit, expends[N]
+Rune buffs and debuffs.[N]
+Next: +[_1][_0] Mt, +[_4][_0] Hit.[X]
+## ^
+Level: [_2] (Active)[N]
+A duality of infinity.[N]
+[_7] Dur, [_1] Rng, +[_1][_0] Mt,[N]
++[_4][_0] Hit, +[_2][_0][_0] Crit, expends[N]
+Rune buffs and debuffs.[N]
+Next: +[_2][_0] Mt, +[_6][_0] Hit.[X]
+## ^
+Level: [_3] (Active)[N]
+A duality of infinity.[N]
+[_7] Dur, [_1] Rng, +[_2][_0] Mt,[N]
++[_6][_0] Hit, +[_2][_0][_0] Crit, expends[N]
+Rune buffs and debuffs.[N]
+Next: +[_3][_0] Mt, +[_8][_0] Hit.[X]
+## ^
+Level: [_4] (Active)[N]
+A duality of infinity.[N]
+[_7] Dur, [_1] Rng, +[_3][_0] Mt,[N]
++[_8][_0] Hit, +[_2][_0][_0] Crit, expends[N]
+Rune buffs and debuffs.[N]
+Next: +[_4][_0] Mt, +[_1][_0][_0] Hit.[X]
+## ^
+Level: MAX (Active)[N]
+A duality of infinity.[N]
+[_7] Dur, [_1] Rng, +[_4][_0] Mt,[N]
++[_1][_0][_0] Hit, +[_2][_0][_0] Crit, expends[N]
+Rune buffs and debuffs.[N]
+[X]

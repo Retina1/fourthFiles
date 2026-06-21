@@ -134,7 +134,7 @@ AlwaysDeathQuote(Calliope,0x0,CalliopeDeath)
 AlwaysDeathQuote(Ghari,0x0,GhariDeath)
 AlwaysDeathQuote(Azaghal,0x0,AzaghalDeath)
 AlwaysDeathQuote(Tachyon,0x0,TachyonDeath)
-
+AlwaysDeathQuote(Vaughn,0x0,VaughnDeath)
 //rid
 AlwaysDeathQuote(Aizen,0x0,AizenDeath)
 AlwaysDeathQuote(Johnnie,0x0,JohnnieDeath)
@@ -222,7 +222,7 @@ AlwaysDeathQuote(Yasaki,0x0,YasakiDeath)
 AlwaysDeathQuote(Ammi,0x0,AmmiDeath)
 AlwaysDeathQuote(Sarina,0x0,SarinaDeath)
 AlwaysDeathQuote(Alexandra,0x0,AlexandraDeath)
-
+AlwaysDeathQuote(Cor,0x0,CorDeath)
 //sky
 AlwaysDeathQuote(June,0x0,JuneDeath)
 AlwaysDeathQuote(Eneida,0x0,EneidaDeath)

@@ -1,3 +1,15 @@
+##Guild_Vaughn_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Vaughn]
+Vaughn here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Vaughn]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Vaughn]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Vaughn]
+return here[A][X]
 
 ##Guild_Azaghal_Dialogue
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Azaghal]

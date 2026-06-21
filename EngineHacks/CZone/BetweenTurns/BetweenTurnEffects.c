@@ -19,6 +19,12 @@ void TickUnitStateTimer(struct Unit* unit) {
 			//maybe try to add a state tracker to mss
 		}
 	}
+	//clear muting
+	if (UNIT_HAS_SKILL(unit,HEX,skill_511)) {
+		if (unit->classSkillState != 0) {
+			unit->classSkillState = 0;
+		}
+	}
 }
 
 void TickActiveFactionTurn(void) {

@@ -21,6 +21,10 @@ Marag_Swordfighter
 Marag_Landsknecht
 Velissa_Swordfighter
 Velissa_Landsknecht
+Ferris_Swordfighter
+Ferris_Landsknecht
+Anhinga_Swordfighter
+Anhinga_Landsknecht
 Drogo_Knight
 Drogo_Hoplite
 Gretchen_Knight
@@ -45,6 +49,8 @@ Randellan_Axefighter
 Randellan_Gladiator
 Juniper_Axefighter
 Juniper_Gladiator
+AuntAysu_Axefighter
+AuntAysu_Gladiator
 Hallie_Archer
 Hallie_Sniper
 Anjelica_Archer

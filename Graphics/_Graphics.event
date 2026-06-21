@@ -6,7 +6,10 @@
 #include "ItemIcons/IconInstaller.event"
 #include "Supply/SupplyIcons.event"
 #include "Animation/AnimationPointers.event"
-#include "UnitPalettes/_Installer.event"
+
+//#include "UnitPalettes/_Installer.event"
+#include "UnitPalettes/BattlePaletteReworkFE8.event"
+
 #include "SystemMenus/MenuInstaller.event"
 #include "MinimugBoxNumbers/Installer.event"
 #include "TitleBG/titlebackgroundinstaller.event"

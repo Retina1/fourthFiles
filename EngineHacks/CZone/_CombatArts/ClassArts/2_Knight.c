@@ -143,7 +143,7 @@ int BlitzThrustRange(struct Unit* unit, int itemID, int rangeWord){
 
 // VitalityThrust
 u8 VitalityThrustArtUsability(struct Unit* unit, u16 artID){
-	if (UNIT_HAS_SKILL(unit,HOP,skill_211)){
+	if (UNIT_HAS_SKILL(unit,HOP,skill_231)){
 		return CombatArtWeaponTypeAttackingUsability(1);
 	}
 	else return 0;

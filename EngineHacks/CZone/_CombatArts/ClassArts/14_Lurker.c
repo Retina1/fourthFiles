@@ -1,3 +1,101 @@
+u8 DeitysWordArtUsability(struct Unit* unit, u16 artID){
+	if (UNIT_HAS_SKILL(unit,HEX,skill_531)) {
+		return HasSelectTarget(unit, MakeTargetListForExploitation) && ArtItemCheckInventory(unit, artID);
+	}
+	else return 0;
+}
+
+u8 DeitysWordArtMenuUsability(const struct MenuItemDef* def, int number)
+{
+    return DeitysWordArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+void DeitysWordItemSelectEffect(u16 artID, struct Unit* unit)
+{
+    SetStaffUseAction(unit);
+	CallEvent(&GenericMoneyEvent, 0x1);
+	struct Unit* enemy = GetUnit(gActionData.targetIndex);
+	int goldMult = 5;
+	if (UNIT_HAS_SKILL(unit,HEX,skill_535)){
+		goldMult = 15;
+	}
+	else if (UNIT_HAS_SKILL(unit,HEX,skill_534)){
+		goldMult = 12;
+	}
+	else if (UNIT_HAS_SKILL(unit,HEX,skill_533)){
+		goldMult = 10;
+	}
+	else if (UNIT_HAS_SKILL(unit,HEX,skill_532)){
+		goldMult = 8;
+	}
+	int goldBonus = enemy->level * goldMult;
+	gChapterData.partyGoldAmount = gChapterData.partyGoldAmount + goldBonus;
+}
+
+u8 SuicideWordArtUsability(struct Unit* unit, u16 artID){
+	if (UNIT_HAS_SKILL(unit,HEX,skill_521)) {
+		return HasSelectTarget(unit, MakeTargetListForExploitation) && ArtItemCheckInventory(unit, artID);
+	}
+	else return 0;
+}
+
+u8 SuicideWordArtMenuUsability(const struct MenuItemDef* def, int number)
+{
+    return SuicideWordArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+void SuicideWordItemSelectEffect(u16 artID, struct Unit* unit)
+{
+    SetStaffUseAction(unit);
+	CallEvent(&SuicideWordEvent, 0x1);
+	struct Unit* enemy = GetUnit(gActionData.targetIndex);
+	int damage = GetUnitPower(enemy);
+	if (UNIT_HAS_SKILL(unit,HEX,skill_525)){
+		damage = damage * 3;
+	}
+	else if (UNIT_HAS_SKILL(unit,HEX,skill_524)){
+		damage = damage * 2;
+	}
+	else if (UNIT_HAS_SKILL(unit,HEX,skill_523)){
+		damage = damage * 3/2;
+	}
+	else if (UNIT_HAS_SKILL(unit,HEX,skill_522)){
+		damage = damage;
+	}
+	else {
+		damage = damage / 2;
+	}
+
+	if (damage > enemy->curHP) {
+		damage = enemy->curHP - 1;
+	}
+	enemy->curHP = enemy->curHP - damage;
+	enemy->state |= US_UNSELECTABLE; 
+}
+
+u8 MutingWordArtUsability(struct Unit* unit, u16 artID)
+{
+	if (UNIT_HAS_SKILL(unit,HEX,skill_511)) {
+		return HasSelectTarget(unit, MakeTargetListForExploitation) && ArtItemCheckInventory(unit, artID);
+	}
+	else return 0;
+}
+
+u8 MutingWordArtMenuUsability(const struct MenuItemDef* def, int number)
+{
+    return MutingWordArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
+
+void MutingWordItemSelectEffect(u16 artID, struct Unit* unit)
+{
+    SetStaffUseAction(unit);
+	CallEvent(&GenericDebuffEvent, 0x1);
+	unit->classSkillState = gActionData.targetIndex; //idea - check if a hexer has a matching target index
+}
+
+
+
 u8 SappingArtUsability(struct Unit* unit, u16 artID)
 {
 	if (UNIT_HAS_SKILL(unit,HEX,skill_211)) {

@@ -1,6 +1,0 @@
-//endbringers
-setPalette(Xavens_Warlock, Xavens_WarlockDMP)
-CharPalette(Xavens,0x0,0x0,Xavens_Warlock,Warlock)
-ALIGN 4
-Xavens_WarlockDMP:
-#incbin "paletteFiles/NPCs/Xavens_Warlock.dmp"

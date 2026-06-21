@@ -61,6 +61,7 @@ CustomAnimationSet(Victoria,Gunner,Female_GunnerAnims)
 CustomAnimationSet(Laiteuse,Gunner,Female_GunnerAnims)
 //more one offs
 CustomAnimationSet(CoastKid,Swordfighter,CoastKid_SwordfighterAnims)
+CustomAnimationSet(Anhinga,Swordfighter,Anhinga_SwordfighterAnims)
 CustomAnimationSet(CoastKid,Landsknecht,CoastKid_LandsknechtAnims)
 
 BYTE 0x00  //Unit: term data

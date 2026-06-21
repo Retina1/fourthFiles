@@ -1,0 +1,19 @@
+//skyknight
+ALIGN 4
+SkyKnightPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+SeraphPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+
+//scaleknight
+ALIGN 4
+ScaleKnightPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+ScalemasterPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0

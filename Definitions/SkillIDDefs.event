@@ -25,5 +25,6 @@
 #define FNC 0x19
 #define IMP 0x1A
 #define ATM 0x1B
-#define SOU 0x1C
-#define GNC 0x1D
+#define ANS 0x1C
+#define SOU 0x1D
+#define GNC 0x1E

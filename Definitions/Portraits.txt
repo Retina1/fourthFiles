@@ -226,6 +226,8 @@ AngelicaMug
 WhirlMug
 JudyMug
 ShionMug
+VaughnMug
+CorMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

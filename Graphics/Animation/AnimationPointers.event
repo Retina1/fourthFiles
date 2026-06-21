@@ -40,6 +40,16 @@ GunnerAnims:
 RangedAnim(Gunner_Gun)
 UnarmedAnim(Gunner_Unarmed) //todo replace
 EndAnim
+//Dragoon
+{
+#include "ClassAnims/Dragoon/Gun Installer.event"
+#include "ClassAnims/Dragoon/Unarmed Installer.event"
+}
+ALIGN 4
+DragoonAnims:
+RangedAnim(Dragoon_Gun)
+UnarmedAnim(Dragoon_Unarmed) //todo replace
+EndAnim
 
 //Swordfighter
 {

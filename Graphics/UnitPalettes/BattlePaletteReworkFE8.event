@@ -1,0 +1,74 @@
+/*
+Battle palette rework, by hypergammaspaces
+
+Implements custom palettes as a list of members that can be in each class.
+
+A .nmm is included to generate a table linking each class to this list of palettes (a pre-generated CSV is also included).
+*/
+
+#define EXPAND_PALETTE_TABLE True
+#include "Extensions/Hack Installation.txt"
+
+#include "PaletteDefs.event"
+
+#define PaletteIdentifier(index,letter1,letter2,letter3,pointer) "BYTE letter1 letter2 letter3 0;  WORD 0 0; POIN pointer "
+#define PaletteIdentifier(index,pointer) "PUSH; ORG (BattlePaletteDictionary) + (index*$10); BYTE 0 0 0 0;  WORD 0 0; POIN pointer; POP"
+#define PaletteEntry(index) "(BattlePaletteDictionary) + (index*$10)"
+#define PaletteAssociationEntry(charID, index) "BYTE charID; BYTE $00 $00 $00; POIN PaletteEntry(index)"
+
+	ALIGN 4
+	//This is a list of palette pointers by ID. It can be expanded as needed.
+
+	BattlePaletteDictionary:
+	FILL 0x1ff*0x10
+
+
+PUSH
+	ORG $5742C
+	callHack_r7(PaletteLoadReworkPt2)
+	
+	ORG $5746A
+	ALIGN 4
+	callHack_r7(PaletteLoadReworkPt1)
+
+	ORG $59BFC
+	POIN BattlePaletteDictionary
+	
+	ORG $CD108
+	callHack_r5(PaletteLoadReworkPromoBranch)
+POP
+
+ALIGN 4
+PaletteLoadReworkPt1:
+#incbin "PaletteRework/PaletteLoadReworkPart1.dmp"
+POIN MapClassIdToPalettes
+POIN BattlePaletteDictionary
+ALIGN 4
+
+PaletteLoadReworkPt2:
+#incbin "PaletteRework/PaletteLoadReworkPart2.dmp"
+POIN MapClassIdToPalettes
+POIN BattlePaletteDictionary
+ALIGN 4
+
+PaletteLoadReworkPromoBranch:
+#incbin "PaletteRework/PaletteLoadReworkPromoBranch.dmp"
+POIN MapClassIdToPalettes
+POIN BattlePaletteDictionary
+ALIGN 4
+
+ALIGN 4
+#include "_InitialPalettes.event"
+#include "_StandardPalettes.event"
+#include "_MagusPalettes.event"
+#include "_SpecialPalettes.event"
+#include "_SkyshroudPalettes.event"
+#include "_LifeflowPalettes.event"
+#include "_SenatusPalettes.event"
+#include "_ImpAutoPalettes.event"
+ALIGN 4
+#include "PaletteRework/ClassPaletteList.event" //list of which palettes in the dictionary map to which classes
+ALIGN 4
+
+//#include "PaletteRework/PaletteViewerTables.event" //convenience table for looking at palettes in builder
+

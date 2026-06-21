@@ -39,3 +39,19 @@ Cost: 2 Durability.[X]
 ##UM_StoningDesc
 A curse of stillness.[N]
 Cost: 5 Durability.[X]
+
+##UM_MutingWord
+ Muting Word[X]
+##UM_MutingWordDesc
+A hex of true pain.[N]
+Cost: 3 Durability.[X]
+##UM_SuicideWord
+ Suicide Word[X]
+##UM_SuicideWordDesc
+A hex of mortal fear.[N]
+Cost: 4 Durability.[X]
+##UM_DeitysWord
+ Deity's Word[X]
+##UM_DeitysWordDesc
+A hex of ascendance.[N]
+Cost: 5 Durability.[X]

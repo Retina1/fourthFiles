@@ -53,9 +53,9 @@ AgilityRune1Buff,AgilityRuneLabel,AgilityRuneBuff1,2,1,1,1,1,1,1,1,1,11,10,1,1,1
 AgilityRune2Buff,AgilityRuneLabel,AgilityRuneBuff2,2,1,1,1,1,1,1,1,1,12,10,1,1,1,1,0
 Moonrise1Buff,MoonriseLabel,MoonriseDesc1,2,11,10,11,10,11,10,11,10,11,10,11,10,11,10,0
 Moonrise2Buff,MoonriseLabel,MoonriseDesc2,2,12,10,12,10,12,10,12,10,12,10,12,10,12,10,0
-Moonrise3Buff,MoonriseLabel,MoonriseDesc3,2,14,10,14,10,14,10,14,10,14,10,14,10,14,10,1
-Moonrise4Buff,MoonriseLabel,MoonriseDesc4,2,18,10,18,10,18,10,18,10,18,10,18,10,18,10,1
-Moonrise5Buff,MoonriseLabel,MoonriseDesc5,2,25,10,25,10,25,10,25,10,25,10,25,10,25,10,2
+Moonrise3Buff,MoonriseLabel,MoonriseDesc3,2,14,10,14,10,14,10,14,10,14,10,14,10,14,10,0
+Moonrise4Buff,MoonriseLabel,MoonriseDesc4,2,18,10,18,10,18,10,18,10,18,10,18,10,18,10,0
+Moonrise5Buff,MoonriseLabel,MoonriseDesc5,2,25,10,25,10,25,10,25,10,25,10,25,10,25,10,0
 Precision1Buff,PrecisionLabel,PrecisionDesc1,2,1,1,13,10,1,1,13,10,1,1,1,1,1,1,0
 Precision2Buff,PrecisionLabel,PrecisionDesc2,2,1,1,15,10,1,1,15,10,1,1,1,1,1,1,0
 Precision3Buff,PrecisionLabel,PrecisionDesc3,2,1,1,20,10,1,1,20,10,1,1,1,1,1,1,0

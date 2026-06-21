@@ -150,6 +150,16 @@ CoastKid_SwordfighterAnims:
 SlashAnim(CoastKid_Swordfighter_Sword)
 UnarmedAnim(CoastKid_Swordfighter_Unarmed)
 EndAnim
+//Anhinga_Swordfighter
+{
+#include "CharAnims/Anhinga_Swordfighter/Sword Installer.event"
+#include "CharAnims/Anhinga_Swordfighter/Unarmed Installer.event"
+}
+ALIGN 4
+Anhinga_SwordfighterAnims:
+SlashAnim(Anhinga_Swordfighter_Sword)
+UnarmedAnim(Anhinga_Swordfighter_Unarmed)
+EndAnim
 
 //CoastKid_Landsknecht
 {

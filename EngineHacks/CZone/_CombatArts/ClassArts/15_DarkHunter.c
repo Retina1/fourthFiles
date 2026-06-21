@@ -382,9 +382,9 @@ void CuffsWhipBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	target->battleDefense = target->battleDefense*atkMul/atkDiv;
 }
 int CuffsWhipOdds(struct Unit* actor, struct Unit* target){
-	int odds = 30;
+	int odds = 40;
 	if (UNIT_HAS_SKILL(actor,DOM,skill_212)){
-		odds = 50;
+		odds = 70;
 	}
 	return odds;
 }
@@ -411,9 +411,9 @@ void ShackleWhipBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	target->battleDefense = target->battleDefense*atkMul/atkDiv;
 }
 int ShackleWhipOdds(struct Unit* actor, struct Unit* target){
-	int odds = 30;
+	int odds = 40;
 	if (UNIT_HAS_SKILL(actor,DOM,skill_222)){
-		odds = 50;
+		odds = 70;
 	}
 	return odds;
 }
@@ -440,9 +440,9 @@ void MuteWhipBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	target->battleDefense = target->battleDefense*atkMul/atkDiv;
 }
 int MuteWhipOdds(struct Unit* actor, struct Unit* target){
-	int odds = 30;
+	int odds = 40;
 	if (UNIT_HAS_SKILL(actor,DOM,skill_232)){
-		odds = 50;
+		odds = 70;
 	}
 	return odds;
 }

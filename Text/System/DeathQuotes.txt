@@ -368,6 +368,10 @@ Better by the blade[...][A][EyesClose][X]
 [MidRight][Tachyon]
 Whoopsie[...][N]
 That's it for me[...][A][EyesClose][X]
+##VaughnDeath
+[MidRight][Vaughn]
+I spent so long[...][N]
+ready for anything[...][A][EyesClose][X]
 
 //riders
 ##AizenDeath
@@ -693,6 +697,10 @@ You'll make it without me[...][A][EyesClose][X]
 [MidRight][Alexandra]
 I'll gladly[...] let this[N]
 land reclaim me[...][A][EyesClose][X]
+##CorDeath
+[MidRight][Cor]
+Nat[...] I did it[...][N]
+all for you[...][A][EyesClose][X]
 
 //sky
 ##JuneDeath

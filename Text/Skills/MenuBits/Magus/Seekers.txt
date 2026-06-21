@@ -1,0 +1,59 @@
+##UM_MagusRune
+ Magus Rune[X]
+##UM_MagusRuneDesc
+Shift nearby Def.[N]
+Cost: 3 Durability.[X]
+##UM_RevolutionRune
+ Revol. Rune[X]
+##UM_RevolutionRuneDesc
+Shift nearby Crit.[N]
+Cost: 3 Durability.[X]
+##UM_AgilityRune
+ Agi. Rune[X]
+##UM_AgilityRuneDesc
+Shift nearby AS.[N]
+Cost: 3 Durability.[X]
+
+##UM_DivineLightning
+ Div. Lightning[X]
+##UM_DivineLightningDesc
+Strike with brilliant light.[N]
+Cost: 2 Durability.[X]
+##UM_ShiningForce
+ Shining Force[X]
+##UM_ShiningForceDesc
+Strike with blinding might.[N]
+Cost: 4 Durability.[X]
+##UM_Chalkydri
+ Chalkydri[X]
+##UM_ChalkydriDesc
+Strike and heal allies.[N]
+Cost: 4 Durability.[X]
+##UM_DuskOmen
+ Dusk Omen[X]
+##UM_DuskOmenDesc
+Strike with twin void.[N]
+Cost: 5 Durability.[X]
+##UM_SolarCleave
+ Solar Cleave[X]
+##UM_SolarCleaveDesc
+Strike and halve HP.[N]
+Cost: 7 Durability.[X]
+##UM_Daybreak
+ Daybreak[X]
+##UM_DaybreakDesc
+Purge ally runes to[N]
+unleash glorious light.[N]
+Cost: 3 Durability.[X]
+##UM_Moonrise
+ Moonrise[X]
+##UM_MoonriseDesc
+Purge enemy runes to[N]
+channel glorious night.[N]
+Cost: 5 Durability.[X]
+##UM_TwilightBurst
+ Twilight Brs.[X]
+##UM_TwilightBurstDesc
+Purge all runes to[N]
+purge the impure.[N]
+Cost: 8 Durability.[X]

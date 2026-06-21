@@ -59,7 +59,7 @@
 #define Ghari 0x3B
 #define Azaghal 0x3C
 #define Tachyon 0x3D
-#define MYRM7 0x3E
+#define Vaughn 0x3E
 #define Aizen 0x3F
 #define Johnnie 0x40
 #define Kolette 0x41
@@ -136,7 +136,7 @@
 #define Ammi 0x88
 #define Sarina 0x89
 #define Alexandra 0x8A
-#define HUNT7 0x8B
+#define Cor 0x8B
 #define June 0x8C
 #define Eneida 0x8D
 #define Patrice 0x8E

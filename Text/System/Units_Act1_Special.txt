@@ -184,3 +184,10 @@ Alexandra[X]
 A fierce young hunter who's survived[N]
 alone in the wilds. She's a bit feral.[X]
 
+//eel
+##Name_Cor
+Cor[X]
+##Desc_Cor
+A widower clinging to dreams of[N]
+adventure. He's a dedicated man.[X]
+

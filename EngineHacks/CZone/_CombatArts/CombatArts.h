@@ -64,6 +64,7 @@ void CAS_EMS_WriteActiveArts(void* target, u32 size);
 void CAS_EMS_ReadActiveArts(void* target, u32 size);
 
 // CombatArtMenus.c functions
+int CAMenu_ItemDefaultDraw(struct MenuProc* menu, struct MenuItemProc* item);
 u8 UM_CombatArtsMenuUsability(const struct MenuItemDef* def, int number);
 u8 UM_CombatArtsMenuEffect(struct MenuProc* menu, struct MenuItemProc* menuItem);
 void BuildCombatArtsMenuItemDef(u8 usableArtIndex, struct MenuItemDef* loc);

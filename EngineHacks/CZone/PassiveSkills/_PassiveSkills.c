@@ -138,7 +138,7 @@ void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defend
 	//troub
 	BothSidesSeekerPassiveSkills(attacker, defender);
 //	BothSidesPriestPassiveSkills(attacker, defender); all flat numbers
-//	BothSidesLurkerPassiveSkills(attacker, defender);
+	BothSidesLurkerPassiveSkills(attacker, defender);
 	BothSidesDarkHunterPassiveSkills(attacker, defender);
 	//lancer - blood fortune in effective crit calc
 //	BothSidesBrawlerPassiveSkills(attacker, defender);

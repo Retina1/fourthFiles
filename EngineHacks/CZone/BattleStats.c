@@ -214,7 +214,7 @@ void ComputeBattleUnitStatusBonuses(struct BattleUnit* bu) {
     } // switch (bu->unit.statusIndex)
 	*/
 }
-
+u8 GetArtStatusEffect(struct BattleUnit* actor, struct BattleUnit* target);
 void ComputeBattleUnitSpecialWeaponStats(struct BattleUnit* attacker, struct BattleUnit* defender) {
     if (attacker->weaponAttributes & IA_MAGICDAMAGE) {
         switch (GetItemIndex(attacker->weapon)) {
@@ -227,7 +227,7 @@ void ComputeBattleUnitSpecialWeaponStats(struct BattleUnit* attacker, struct Bat
 
         } // switch (GetItemIndex(attacker->weapon))
     } else {
-        if (GetItemWeaponEffect(attacker->weaponBefore) == WPN_EFFECT_HPHALVE) {
+        if ((GetItemWeaponEffect(attacker->weaponBefore) == WPN_EFFECT_HPHALVE) || (GetArtStatusEffect(attacker,defender) == WPN_EFFECT_HPHALVE)) {
             attacker->battleAttack = (defender->unit.curHP + 1) >> 1;
 
             if (attacker->battleAttack == 0)

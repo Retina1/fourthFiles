@@ -30,7 +30,7 @@ Make finer use of[N]
 casting resources.[N]
 Spells cost [_1] less[N]
 durability (min [_1]).[N]
-Not reflected in menus.[X]
+Not shown in levelup menu.[X]
 
 ##ElementMasterSkill
 Element Master[X]

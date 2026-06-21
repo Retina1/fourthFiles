@@ -1,0 +1,45 @@
+//darkhunt
+ALIGN 4
+DarkHunterPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+DominatorPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+
+//lancer
+PaletteIdentifier(Guildmaster_Highlander, Guildmaster_HighlanderDMP)
+ALIGN 4
+Guildmaster_HighlanderDMP:
+#incbin "paletteFiles/MainStory/Guildmaster_Highlander.dmp"
+
+ALIGN 4
+LancerPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+HighlanderPaletteList:
+PaletteAssociationEntry(Guildmaster,Guildmaster_Highlander)
+PaletteAssociationEntry(BossGuildmaster,Guildmaster_Highlander)
+WORD 0 0
+
+//brawler
+ALIGN 4
+BrawlerPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+PugilistPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+
+//hunter
+ALIGN 4
+HunterPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+SurvivalistPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0

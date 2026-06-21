@@ -1,12 +1,41 @@
 //nob
+PaletteIdentifier(Benthus_Noble, Benthus_NobleDMP)
+PaletteIdentifier(Benthus_Sovereign, Benthus_SovereignDMP)
+ALIGN 4
+Benthus_NobleDMP:
+#incbin "paletteFiles/MainStory/Benthus_Noble.dmp"
+ALIGN 4
+Benthus_SovereignDMP:
+#incbin "paletteFiles/MainStory/Benthus_Sovereign.dmp"
+
+ALIGN 4
+NoblePaletteList:
+PaletteAssociationEntry(Benthus,Benthus_Noble)
+PaletteAssociationEntry(BossBenthus,Benthus_Noble)
+PaletteAssociationEntry(BossBenthus2,Benthus_Noble)
+WORD 0 0
+ALIGN 4
+SovereignPaletteList:
+PaletteAssociationEntry(Benthus,Benthus_Sovereign)
+PaletteAssociationEntry(BossBenthus,Benthus_Sovereign)
+PaletteAssociationEntry(BossBenthus2,Benthus_Sovereign)
+WORD 0 0
 
 //fen
-setPalette(Francesca_Duelist, Francesca_DuelistDMP)
-setPalette(Francesca_Fencer, Francesca_FencerDMP)
-CharPalette(Francesca,Francesca_Duelist,Duelist,Francesca_Fencer,Fencer)
+PaletteIdentifier(Francesca_Duelist, Francesca_DuelistDMP)
+PaletteIdentifier(Francesca_Fencer, Francesca_FencerDMP)
 ALIGN 4
 Francesca_DuelistDMP:
 #incbin "paletteFiles/Senatus/Francesca_Duelist.dmp"
 ALIGN 4
 Francesca_FencerDMP:
 #incbin "paletteFiles/Senatus/Francesca_Fencer.dmp"
+
+ALIGN 4
+DuelistPaletteList:
+PaletteAssociationEntry(Francesca,Francesca_Duelist)
+WORD 0 0
+ALIGN 4
+FencerPaletteList:
+PaletteAssociationEntry(Francesca,Francesca_Fencer)
+WORD 0 0

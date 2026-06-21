@@ -1,0 +1,89 @@
+
+NO_PALETTE: //point here for anything that doesnt need custom palettes (lords included)
+WORD 0 0
+
+ALIGN 4
+PaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+
+ALIGN 4
+
+BYTE $FF $FF $FF $FF $FF $FF $FF $FF
+ALIGN 4
+
+
+/*
+ *
+ * Now to hook these groups up to classIDs
+ *
+ */
+
+#define SetClassPaletteTable(classID,palette) "PUSH; ORG MapClassIdToPalettes+(classID*4); POIN palette; POP"
+
+MapClassIdToPalettes:
+WORD 0
+POIN NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE //NO_PALETTExNO_PALETTE
+POIN NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE //NO_PALETTEx1
+POIN NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE //NO_PALETTEx2
+POIN NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE //NO_PALETTEx3
+POIN NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE //NO_PALETTEx4
+POIN NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE //NO_PALETTEx5
+POIN NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE //NO_PALETTEx6
+POIN NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE NO_PALETTE //NO_PALETTEx7
+WORD 0 0
+
+    SetClassPaletteTable(Swordfighter,SwordfighterPaletteList)
+    SetClassPaletteTable(Landsknecht,LandsknechtPaletteList)
+    SetClassPaletteTable(Knight,KnightPaletteList)
+    SetClassPaletteTable(Hoplite,HoplitePaletteList)
+    SetClassPaletteTable(Axefighter,AxefighterPaletteList)
+    SetClassPaletteTable(Gladiator,GladiatorPaletteList)
+    SetClassPaletteTable(Archer,ArcherPaletteList)
+    SetClassPaletteTable(Sniper,SniperPaletteList)
+    SetClassPaletteTable(Scholar,ScholarPaletteList)
+    SetClassPaletteTable(Warlock,WarlockPaletteList)
+    SetClassPaletteTable(Curate,CuratePaletteList)
+    SetClassPaletteTable(Medic,MedicPaletteList)
+    SetClassPaletteTable(Myrmidon,MyrmidonPaletteList)
+    SetClassPaletteTable(Ronin,RoninPaletteList)
+    SetClassPaletteTable(Rider,RiderPaletteList)
+    SetClassPaletteTable(Strider,StriderPaletteList)
+    SetClassPaletteTable(Raider,RaiderPaletteList)
+    SetClassPaletteTable(Trailblazer,TrailblazerPaletteList)
+    SetClassPaletteTable(Gunner,GunnerPaletteList)
+    SetClassPaletteTable(Dragoon,DragoonPaletteList)
+    SetClassPaletteTable(Poet,PoetPaletteList)
+    SetClassPaletteTable(Troubadour,TroubadourPaletteList)
+    SetClassPaletteTable(Seeker,SeekerPaletteList)
+    SetClassPaletteTable(Runemaster,RunemasterPaletteList)
+    SetClassPaletteTable(Priest,PriestPaletteList)
+    SetClassPaletteTable(WarMagus,WarMagusPaletteList)
+    SetClassPaletteTable(Lurker,LurkerPaletteList)
+    SetClassPaletteTable(Hexer,HexerPaletteList)
+    SetClassPaletteTable(DarkHunter,DarkHunterPaletteList)
+    SetClassPaletteTable(Dominator,DominatorPaletteList)
+    SetClassPaletteTable(Lancer,LancerPaletteList)
+    SetClassPaletteTable(Highlander,HighlanderPaletteList)
+    SetClassPaletteTable(Brawler,BrawlerPaletteList)
+    SetClassPaletteTable(Pugilist,PugilistPaletteList)
+    SetClassPaletteTable(Hunter,HunterPaletteList)
+    SetClassPaletteTable(Survivalist,SurvivalistPaletteList)
+    SetClassPaletteTable(SkyKnight,SkyKnightPaletteList)
+    SetClassPaletteTable(Seraph,SeraphPaletteList)
+    SetClassPaletteTable(ScaleKnight,ScaleKnightPaletteList)
+    SetClassPaletteTable(Scalemaster,ScalemasterPaletteList)
+    SetClassPaletteTable(Apothecary,ApothecaryPaletteList)
+    SetClassPaletteTable(Botanist,BotanistPaletteList)
+    SetClassPaletteTable(Encircler,EncirclerPaletteList)
+    SetClassPaletteTable(Arcanist,ArcanistPaletteList)
+    SetClassPaletteTable(Caller,CallerPaletteList)
+    SetClassPaletteTable(Necromancer,NecromancerPaletteList)
+    SetClassPaletteTable(Noble,NoblePaletteList)
+    SetClassPaletteTable(Sovereign,SovereignPaletteList)
+    SetClassPaletteTable(Duelist,DuelistPaletteList)
+    SetClassPaletteTable(Fencer,FencerPaletteList)
+    SetClassPaletteTable(Driver,DriverPaletteList)
+    SetClassPaletteTable(Imperial,ImperialPaletteList)
+    SetClassPaletteTable(Artifice,ArtificePaletteList)
+    SetClassPaletteTable(Automaton,AutomatonPaletteList)

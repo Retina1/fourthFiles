@@ -1,0 +1,50 @@
+//myrm
+ALIGN 4
+MyrmidonPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+RoninPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+
+
+//rider
+ALIGN 4
+RiderPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+StriderPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+
+//raider
+ALIGN 4
+RaiderPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+ALIGN 4
+TrailblazerPaletteList:
+PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+WORD 0 0
+
+//gunner
+PaletteIdentifier(Gore_Gunner, Gore_GunnerDMP)
+PaletteIdentifier(Gore_Dragoon, Gore_DragoonDMP)
+ALIGN 4
+Gore_GunnerDMP:
+#incbin "paletteFiles/MainStory/Gore_Gunner.dmp"
+ALIGN 4
+Gore_DragoonDMP:
+#incbin "paletteFiles/MainStory/Gore_Dragoon.dmp"
+
+ALIGN 4
+GunnerPaletteList:
+PaletteAssociationEntry(Gore,Gore_Gunner)
+WORD 0 0
+ALIGN 4
+DragoonPaletteList:
+PaletteAssociationEntry(Gore,Gore_Dragoon)
+PaletteAssociationEntry(BossGore,Gore_Dragoon)
+WORD 0 0

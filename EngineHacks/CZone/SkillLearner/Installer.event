@@ -45,9 +45,9 @@ POIN RiderSkillLabels
 POIN RaiderSkillLabels
 POIN GunnerSkillLabels
 POIN PoetSkillLabels
-POIN SkillLabels
+POIN SeekerSkillLabels
 POIN PriestSkillLabels
-POIN SkillLabels
+POIN LurkerSkillLabels
 POIN DarkHunterSkillLabels
 POIN SkillLabels
 POIN SkillLabels
@@ -58,12 +58,13 @@ POIN SkillLabels
 POIN SkillLabels
 POIN SkillLabels
 POIN NobleSkillLabels
-POIN SkillLabels
-POIN SkillLabels
-POIN SkillLabels
-POIN SkillLabels
-POIN SkillLabels
-POIN SkillLabels
+POIN SkillLabels //duel
+POIN SkillLabels //drive
+POIN SkillLabels //automaton
+POIN SkillLabels //ans
+POIN SkillLabels //others
+POIN SkillLabels //
+POIN SkillLabels //
 POIN 0 
 
 
@@ -136,6 +137,135 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
 
 ALIGN 4
+LurkerSkillLabels:
+OneLevelSkillLabel(UnjustRewardSkill,NoReq)//0
+OneLevelSkillLabel(GuidingForceSkill,NoReq)
+OneLevelSkillLabel(MisfortuneSkill,MisfortuneReq)
+OneLevelSkillLabel(ImpureReachSkill,PromotedReq)
+TwoLevelSkillLabel(SappingSkill,NoReq)//4
+TwoLevelSkillLabel(FrailtySkill,NoReq)
+TwoLevelSkillLabel(LeadenSkill,NoReq)
+ThreeLevelSkillLabel(TorporSkill,NoReq)//7
+ThreeLevelSkillLabel(MadnessSkill,MadnessReq)
+ThreeLevelSkillLabel(BindingSkill,BindingReq)
+ThreeLevelSkillLabel(HexSkill,HexReq)
+ThreeLevelSkillLabel(StoningSkill,StoningReq)
+FiveLevelSkillLabel(MutingWordSkill,MutingWordReq)//12
+FiveLevelSkillLabel(SuicideWordSkill,SuicideWordReq)
+FiveLevelSkillLabel(DeitysWordSkill,DeitysWordReq)
+SkillLabelTerminator
+
+ALIGN 4
+MisfortuneReq:
+ReqEntry(4,1)
+ReqEntry(5,1)
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+MadnessReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+BindingReq:
+ReqEntry(4,2)
+ReqEntry(5,2)
+ReqEntry(6,2)
+ReqTerm
+ALIGN 4
+HexReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+StoningReq:
+ReqPromo
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+MutingWordReq:
+ReqEntry(10,2)
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+SuicideWordReq:
+ReqEntry(10,3)
+ReqEntry(8,2)
+ReqTerm
+ALIGN 4
+DeitysWordReq:
+ReqPromo
+ReqEntry(10,3)
+ReqEntry(9,3)
+ReqTerm
+
+ALIGN 4
+SeekerSkillLabels:
+OneLevelSkillLabel(RunicRhythmSkill,NoReq)//0
+OneLevelSkillLabel(PrismaticSkill,NoReq)
+OneLevelSkillLabel(RunicResonanceSkill,RunicResonanceReq)
+OneLevelSkillLabel(RunicPierceSkill,PromotedReq)
+TwoLevelSkillLabel(MagusRuneSkill,NoReq)//4
+TwoLevelSkillLabel(RevolutionRuneSkill,RevolutionRuneReq)
+TwoLevelSkillLabel(AgilityRuneSkill,AgilityRuneReq)
+ThreeLevelSkillLabel(DivineLightningSkill,NoReq)//7
+ThreeLevelSkillLabel(ShiningForceSkill,ShiningForceReq)
+ThreeLevelSkillLabel(ChalkydriSkill,ChalkydriReq)
+ThreeLevelSkillLabel(DuskOmenSkill,DuskOmenReq)
+ThreeLevelSkillLabel(SolarCleaveSkill,SolarCleaveReq)
+FiveLevelSkillLabel(DaybreakSkill,DaybreakReq)//12
+FiveLevelSkillLabel(MoonriseSkill,MoonriseReq)
+FiveLevelSkillLabel(TwilightBurstSkill,TwilightBurstReq)
+SkillLabelTerminator
+
+ALIGN 4
+RunicResonanceReq:
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+RevolutionRuneReq:
+ReqEntry(4,1)
+ReqTerm
+ALIGN 4
+AgilityRuneReq:
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+ShiningForceReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+ChalkydriReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+DuskOmenReq:
+ReqEntry(7,1)
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+SolarCleaveReq:
+ReqPromo
+ReqEntry(6,2)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+DaybreakReq:
+ReqEntry(4,2)
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+MoonriseReq:
+ReqEntry(4,2)
+ReqEntry(10,3)
+ReqTerm
+ALIGN 4
+TwilightBurstReq:
+ReqPromo
+ReqEntry(12,3)
+ReqEntry(13,3)
+ReqTerm
+
+ALIGN 4
 PoetSkillLabels:
 OneLevelSkillLabel(SoothingVoiceSkill,NoReq)//0
 OneLevelSkillLabel(LiberatingVoiceSkill,NoReq)
@@ -168,7 +298,7 @@ ReqEntry(8,3)
 ReqTerm
 ALIGN 4
 ResoundingTuneReq:
-ReqEntry(9,3)
+ReqEntry(10,3)
 ReqTerm
 ALIGN 4
 FleetingSongReq:
@@ -178,7 +308,6 @@ ReqEntry(10,3)
 ReqTerm
 ALIGN 4
 EerieChorusReq:
-ReqEntry(7,3)
 ReqEntry(9,3)
 ReqTerm
 ALIGN 4

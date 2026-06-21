@@ -415,9 +415,9 @@ void VitalSnipePrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 
 }
 int VitalSnipeOdds(struct BattleUnit* actor, struct BattleUnit* target){
-	int odds = 20;
+	int odds = 30;
 	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_212)){
-		odds = 30;
+		odds = 60;
 	}
 	return odds;
 }

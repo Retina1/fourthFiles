@@ -350,6 +350,13 @@ STAL 0x16
 SOUN 0xD5
 STAL 0x16
 EndEvent
+ALIGN 4
+SuicideWordEvent:
+CAM1 0xFFFF
+PlayEmotionEffect(AngryEffect)
+SOUN 0xD5
+STAL 0x16
+EndEvent
 
 ALIGN 4
 GenericTrappedEvent:

@@ -12,6 +12,7 @@ extern u16 GenericMusicNoteEvent;
 extern u16 GenericMoneyEvent;
 extern u16 GenericAutomatonEvent;
 extern u16 GenericAOEEvent;
+extern u16 SuicideWordEvent;
 
 extern void BeginBattleAnimations();
 extern void BattleInitItemEffect(Unit*, int);

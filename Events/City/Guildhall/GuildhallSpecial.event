@@ -93,6 +93,9 @@ UNIT
 Recruit_Alexandra:
 UNIT Alexandra 0x0 0x1 Level(9,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [ToxinBow] NoAI
 UNIT
+Recruit_Cor:
+UNIT Cor 0x0 0x1 Level(12,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Composite] NoAI
+UNIT
 
 //DH
 Luis_RecruitEvent:
@@ -182,6 +185,9 @@ EndEvent
 Alexandra_RecruitEvent:
 GuildRecruit(Alexandra,Guild_Test_Dialogue,0x25)
 EndEvent
+Cor_RecruitEvent:
+GuildRecruit(Cor,Guild_Test_Dialogue,0x26)
+EndEvent
 
 GuildhallLoadDarkHunters:
 FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
@@ -231,6 +237,7 @@ GuildLoad(Yasaki,Recruit_Yasaki,0x3,Chapter10DoneFlag)
 GuildLoad(Ammi,Recruit_Ammi,0x4)
 GuildLoad(Sarina,Recruit_Sarina,0x5)
 GuildLoad(Alexandra,Recruit_Alexandra,0x6)
+GuildLoad(Cor,Recruit_Cor,0x7)
 FADU 10
 ENDA
 

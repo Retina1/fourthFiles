@@ -587,3 +587,76 @@ void UnitExtendDebuffs(struct Unit* unit) {
 		}
 	}
 }
+
+
+void UnitPurgeRuneBuffs(struct Unit* unit) {
+	/* get buffs/debuffs
+	for each real buff, reduce its timer by 1
+	if timer is zero, shift next buffs up slots
+*/
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	int buff1 = entry->buff1;
+	int buff2 = entry->buff2;
+	int buff3 = entry->buff3;
+    if ((BUFF_MAGUSRUNE1 <= buff1) && (buff1 <= BUFF_AGILITYRUNE2)) {
+		entry->buff1dur = 0;
+		entry->buff1 = 0;
+	}
+    if ((BUFF_MAGUSRUNE1 <= buff2) && (buff2 <= BUFF_AGILITYRUNE2)) {
+		entry->buff2dur = 0;
+		entry->buff2 = 0;
+	}
+    if ((BUFF_MAGUSRUNE1 <= buff3) && (buff3 <= BUFF_AGILITYRUNE2)) {
+		entry->buff3dur = 0;
+		entry->buff3 = 0;
+	}
+	
+	//now, cleanup
+	if (entry->buff1 == 0) {
+		entry->buff1 = entry->buff2;
+		entry->buff1dur = entry->buff2dur;
+		entry->buff2 = entry->buff3;
+		entry->buff2dur = entry->buff3dur;
+	}
+	if (entry->buff2 == 0) {
+		entry->buff2 = entry->buff3;
+		entry->buff2dur = entry->buff3dur;
+	}
+	
+};
+
+void UnitPurgeRuneDebuffs(struct Unit* unit) {
+	/* get buffs/debuffs
+	for each real buff, reduce its timer by 1
+	if timer is zero, shift next buffs up slots
+*/
+	struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	int buff1 = entry->debuff1;
+	int buff2 = entry->debuff2;
+	int buff3 = entry->debuff3;
+    if ((DEBUFF_MAGUSRUNE1 <= buff1) && (buff1 <= DEBUFF_AGILITYRUNE2)) {
+		entry->debuff1dur = 0;
+		entry->debuff1 = 0;
+	}
+    if ((DEBUFF_MAGUSRUNE1 <= buff2) && (buff2 <= DEBUFF_AGILITYRUNE2)) {
+		entry->debuff2dur = 0;
+		entry->debuff2 = 0;
+	}
+    if ((DEBUFF_MAGUSRUNE1 <= buff3) && (buff3 <= DEBUFF_AGILITYRUNE2)) {
+		entry->debuff3dur = 0;
+		entry->debuff3 = 0;
+	}
+	
+	//now, cleanup
+	if (entry->debuff1 == 0) {
+		entry->debuff1 = entry->debuff2;
+		entry->debuff1dur = entry->debuff2dur;
+		entry->debuff2 = entry->debuff3;
+		entry->debuff2dur = entry->debuff3dur;
+	}
+	if (entry->debuff2 == 0) {
+		entry->debuff2 = entry->debuff3;
+		entry->debuff2dur = entry->debuff3dur;
+	}
+	
+};

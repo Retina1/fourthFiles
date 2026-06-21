@@ -2,6 +2,12 @@
 //dat 0x0203E12A, gAnimRoundData
 //dat 0x0203E156, gEfxHpLut
 
+//eliwood shing
+PUSH
+ORG $225AF4
+WORD 0x00080008
+POP
+
 // AI to account for doubling 
 PUSH 
 ORG $3DF4A

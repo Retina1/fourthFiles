@@ -20,6 +20,35 @@ u8 UM_CombatArtsMenuUsability(const struct MenuItemDef* def, int number){
     return MENU_NOTSHOWN;
 }
 
+u16 ApplyDurabilityCostMods(struct Unit* unit, int cost);
+int CAMenu_ItemDefaultDraw(struct MenuProc* menu, struct MenuItemProc* item)
+{
+    u8 cost = CombatArtDurabilityList[(u16)(u32)(item->def->name)];
+
+	cost = ApplyDurabilityCostMods(gActiveUnit,cost);
+
+    Text_DrawString(&item->text, GetStringFromIndex(item->def->nameMsgId));
+
+    if (cost == 0xFF)
+    {   
+        Text_Skip(&item->text, 36);
+        Text_SetColor(&item->text, TEXT_COLOR_SYSTEM_GOLD);
+        Text_DrawString(&item->text, "ALL\0");
+    }
+
+    PutText(&item->text, TILEMAP_LOCATED(BG_GetMapBuffer(menu->frontBg), item->xTile, item->yTile));
+    
+    if (cost != 0xFF)
+    {
+        PutNumberOrBlank(TILEMAP_LOCATED(BG_GetMapBuffer(menu->frontBg), item->xTile, item->yTile) + 8,
+                         TEXT_COLOR_SYSTEM_GOLD, 
+                         cost
+                        );
+    }
+
+    return 0;
+}
+
 u8 UM_CombatArtsMenuEffect(struct MenuProc* menu, struct MenuItemProc* menuItem){
 
     BuildUsableArtsList();
@@ -43,7 +72,7 @@ u8 UM_CombatArtsMenuEffect(struct MenuProc* menu, struct MenuItemProc* menuItem)
     }
 
     if (CAMenuDef.menuItems[0].nameMsgId){ // Checking that there is at least one menu item present
-        StartSemiCenteredOrphanMenu(&CAMenuDef, gBmSt.cursorTarget.x - gBmSt.camera.x, 1, 20);
+        StartSemiCenteredOrphanMenu(&CAMenuDef, gBmSt.cursorTarget.x - gBmSt.camera.x, 1, 19);
     }
 
     return MENU_ACT_SKIPCURSOR | MENU_ACT_END | MENU_ACT_SND6A | MENU_ACT_CLEAR | MENU_ACT_ENDFACE;
@@ -60,7 +89,7 @@ void BuildCombatArtsMenuItemDef(u8 usableArtIndex, struct MenuItemDef* loc){
         .color = 0,
         .overrideId = 0,
         .isAvailable = x.menuUsability,
-        .onDraw = x.menuDraw,
+        .onDraw = (x.menuDraw == NULL ? CAMenu_ItemDefaultDraw : x.menuDraw),
         .onSelected = x.menuEffect,
         .onIdle = NULL,
         .onSwitchIn = NULL,

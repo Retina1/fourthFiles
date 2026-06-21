@@ -274,7 +274,7 @@ Immunize: Buff allies to[N]
 significantly boost Def.[X]
 ##
 Healing Touch: Restores HP[N]
-to all allies at once.[X]
+to all allies in range.[X]
 ##
 Phys. Aptitude: Massively[N]
 boosts the user's Str.[X]
@@ -613,8 +613,8 @@ ally to a distant tile.[X]
 
 //lur
 ##MSS_UnjustReward
-Unjust Reward: User recovers[N]
-HP when using curse skills.[X]
+Unjust Reward: Boosts base status[N]
+affliction rate with missing HP.[X]
 ##
 Guiding Force: Boosts Hit and[N]
 Crit for adjacent allies.[X]
@@ -656,7 +656,7 @@ Suicide Word: Command enemies with[N]
 Curse to attack self.[X]
 ##
 Deity's Word: Command enemies with[N]
-Curse to bow down and give items.[X]
+Curse to bow down and give gold.[X]
 
 //dht
 ##MSS_Opportunistic

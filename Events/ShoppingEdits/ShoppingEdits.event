@@ -147,7 +147,7 @@ POIN PrepShop1
 WORD 0; WORD 0
 
 //shimmering
-POIN PrepShopCity
+POIN PrepShop1
 WORD 0; WORD 0
 
 //clouded

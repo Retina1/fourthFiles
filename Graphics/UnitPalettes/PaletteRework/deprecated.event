@@ -35,82 +35,18 @@ FILL 0xFF * 0x07 // Allocate 0xFF entries for the CharClassTable.
 
 //also put bosses here
 
-setPalette(Nathan_Scholar, Nathan_ScholarDMP)
-setPalette(Nathan_Warlock, Nathan_WarlockDMP)
-CharPalette(Nathan,Nathan_Scholar,Scholar,Nathan_Warlock,Warlock)
-ALIGN 4
-Nathan_ScholarDMP:
-#incbin "paletteFiles/MainStory/Nathan_Scholar.dmp"
-ALIGN 4
-Nathan_WarlockDMP:
-#incbin "paletteFiles/MainStory/Nathan_Warlock.dmp"
 
-setPalette(Gore_Gunner, Gore_GunnerDMP)
-//change to dragoon eventually
-setPalette(Gore_Dragoon, Gore_GunnerDMP)
-CharPalette(Gore,Gore_Gunner,Gunner,Gore_Gunner,Dragoon)
-ALIGN 4
-Gore_GunnerDMP:
-#incbin "paletteFiles/MainStory/Gore_Gunner.dmp"
 
-setPalette(Astarte_Priest, Astarte_PriestDMP)
-setPalette(Astarte_WarMagus, Astarte_WarMagusDMP)
-CharPalette(Astarte,Astarte_Priest,Priest,Astarte_WarMagus,WarMagus)
-CharPalette(BossAstarte,Astarte_Priest,Priest,Astarte_WarMagus,WarMagus)
-ALIGN 4
-Astarte_PriestDMP:
-#incbin "paletteFiles/MainStory/Astarte_Priest.dmp"
-ALIGN 4
-Astarte_WarMagusDMP:
-#incbin "paletteFiles/MainStory/Astarte_WarMagus.dmp"
 
-setPalette(Rat_Lurker, Rat_LurkerDMP)
-setPalette(Rat_Hexer, Rat_HexerDMP)
-CharPalette(Rat,Rat_Lurker,Lurker,Rat_Hexer,Hexer)
-ALIGN 4
-Rat_LurkerDMP:
-#incbin "paletteFiles/MainStory/Rat_Lurker.dmp"
-ALIGN 4
-Rat_HexerDMP:
-#incbin "paletteFiles/MainStory/Rat_Hexer.dmp"
 
-setPalette(Benthus_Noble, Benthus_NobleDMP)
-setPalette(Benthus_Sovereign, Benthus_SovereignDMP)
-CharPalette(Benthus,Benthus_Noble,Noble,Benthus_Sovereign,Sovereign)
-CharPalette(BossBenthus,Benthus_Noble,Noble,Benthus_Sovereign,Sovereign)
-CharPalette(BossBenthus2,Benthus_Noble,Noble,Benthus_Sovereign,Sovereign)
-ALIGN 4
-Benthus_NobleDMP:
-#incbin "paletteFiles/MainStory/Benthus_Noble.dmp"
-ALIGN 4
-Benthus_SovereignDMP:
-#incbin "paletteFiles/MainStory/Benthus_Sovereign.dmp"
 
-setPalette(Helman_Knight, Helman_KnightDMP)
-setPalette(Helman_Hoplite, Helman_HopliteDMP)
-CharPalette(Helman,Helman_Knight,Knight,Helman_Hoplite,Hoplite)
-ALIGN 4
-Helman_KnightDMP:
-#incbin "paletteFiles/MainStory/Helman_Knight.dmp"
-ALIGN 4
-Helman_HopliteDMP:
-#incbin "paletteFiles/MainStory/Helman_Hoplite.dmp"
 
-setPalette(Guildmaster_Highlander, Guildmaster_HighlanderDMP)
-CharPalette(Guildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)
-CharPalette(BossGuildmaster,0x0,0x0,Guildmaster_Highlander,Highlander)
-ALIGN 4
-Guildmaster_HighlanderDMP:
-#incbin "paletteFiles/MainStory/Guildmaster_Highlander.dmp"
 
-#include "_InitialPalettes.event"
-#include "_StandardPalettes.event"
-#include "_MagusPalettes.event"
-#include "_SpecialPalettes.event"
-#include "_SkyshroudPalettes.event"
-#include "_LifeflowPalettes.event"
-#include "_SenatusPalettes.event"
-#include "_ImpAutoPalettes.event"
+
+
+
+
+
 #include "_NPCPalettes.event"
 
 PUSH
