@@ -854,6 +854,10 @@ ALIGN 4
 ClaireDMP:
 #incbin "dmps/goldClaire.dmp"
 setMugEntry(ClaireMug,ClaireDMP,3,6,3,4)
+ALIGN 4
+LeviDMP:
+#incbin "dmps/goldLevi.dmp"
+setMugEntry(LeviMug,LeviDMP,3,5,3,3)
 
 ALIGN 4
 //lorca

@@ -61,10 +61,10 @@ Precision2Buff,PrecisionLabel,PrecisionDesc2,2,1,1,15,10,1,1,15,10,1,1,1,1,1,1,0
 Precision3Buff,PrecisionLabel,PrecisionDesc3,2,1,1,20,10,1,1,20,10,1,1,1,1,1,1,0
 BloodFuryBuff,BloodFuryLabel,BloodFuryDesc,2,13,10,1,1,1,1,1,1,1,1,1,1,1,1,0
 BloodrushBuff,BloodrushLabel,BloodrushDesc,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-SpiritShield1Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,12,10,12,10,0
-SpiritShield2Buff,0,0,2,1,1,1,1,1,1,1,1,1,1,15,10,15,10,0
-BloodyOffense1Buff,0,0,2,13,10,1,1,1,1,1,1,1,1,1,1,1,1,0
-BloodyOffense2Buff,0,0,2,15,10,1,1,1,1,1,1,1,1,1,1,1,1,0
+SpiritShield1Buff,SpiritShieldLabel,SpiritShieldDesc1,2,1,1,1,1,1,1,1,1,1,1,12,10,12,10,0
+SpiritShield2Buff,SpiritShieldLabel,SpiritShieldDesc2,2,1,1,1,1,1,1,1,1,1,1,15,10,15,10,0
+BloodyOffense1Buff,BloodyOffenseLabel,BloodyOffenseDesc1,2,13,10,1,1,1,1,1,1,1,1,1,1,1,1,0
+BloodyOffense2Buff,BloodyOffenseLabel,BloodyOffenseDesc2,2,16,10,1,1,1,1,1,1,1,1,1,1,1,1,0
 Scapegoat1Buff,ScapegoatBuffLabel,ScapegoatBuffDesc,1,1,1,1,1,11,10,1,1,1,1,1,1,1,1,0
 Scapegoat2Buff,ScapegoatBuffLabel,ScapegoatBuffDesc,2,1,1,1,1,11,10,1,1,1,1,1,1,1,1,0
 Scapegoat3Buff,ScapegoatBuffLabel,ScapegoatBuffDesc,3,1,1,1,1,11,10,1,1,1,1,1,1,1,1,0

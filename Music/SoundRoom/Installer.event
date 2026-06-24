@@ -124,6 +124,7 @@ SoundRoomEntry(Song_FlyingBattle, SongTitle_FlyingBattle, SourceTitle_PokemonCon
 SoundRoomEntry(Song_DarkBattle, SongTitle_DarkBattle, SourceTitle_PokemonConquest,76)
 SoundRoomEntry(Song_UntilTheTwoPeopleFallInLove, SongTitle_UntilTheTwoPeopleFallInLove, SourceTitle_Danganronpa3,53)
 SoundRoomEntry(Song_UntilTheTwoPeopleFallInLoveAlt, SongTitle_UntilTheTwoPeopleFallInLoveAlt, SourceTitle_Danganronpa3,54)
+SoundRoomEntry(Song_LivingOnTheEdge, SongTitle_LivingOnTheEdge, SourceTitle_Lagoon,79)
 SoundRoomEntry(Song_FinaleMHE, SongTitle_FinaleMHE, SourceTitle_MaybeHappyEnding,39)
 //death and game over
 SoundRoomEntry(Song_NameEntry, SongTitle_NameEntry, SourceTitle_Persona,20)
@@ -131,7 +132,6 @@ SoundRoomEntry(Song_NoMore, SongTitle_NoMore, SourceTitle_IntoTheWoods,21)
 //tbd
 SoundRoomEntry(Song_BareFangsAtGod, SongTitle_BareFangsAtGod, SourceTitle_Xenogears,75)
 SoundRoomEntry(Song_Incidental3B, SongTitle_Incidental3B, SourceTitle_MerrilyWeRollAlong,78)
-SoundRoomEntry(Song_LivingOnTheEdge, SongTitle_LivingOnTheEdge, SourceTitle_Lagoon,79)
 SoundRoomEntry(Song_OneSlipTooLate, SongTitle_OneSlipTooLate, SourceTitle_RhythmDoctor,80)
 SoundRoomEntry(Song_SignOfTheTimes, SongTitle_SignOfTheTimes, SourceTitle_HarryStyles,82)
 SoundRoomEntry(Song_TheSubway, SongTitle_TheSubway, SourceTitle_ChappellRoan,83)

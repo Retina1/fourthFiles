@@ -246,7 +246,7 @@ My[...] home[...][A][EyesClose][X]
 ##EightDeath
 [MidRight][Eight]
 Fortune's wheel has[...][N]
-passed[...] me by[...][A][EyesClose]][X]
+passed[...] me by[...][A][EyesClose][X]
 ##RandellanDeath
 [MidRight][Randellan]
 It's a[...] gods[N]
@@ -342,6 +342,10 @@ it worth[...] your while[...][A][EyesClose][X]
 [MidRight][Lily]
 This[...] This can't be[...][N]
 This simply[...] isn't right[...][A][EyesClose][X]
+##QuintonDeath
+[MidRight][Quinton][ToggleSmile]
+Vervoia[...] Take me into[...][N]
+your warm embrace[...][A][EyesClose][X]
 
 //myrmidons
 ##NatsukiRetreat
@@ -368,10 +372,10 @@ Better by the blade[...][A][EyesClose][X]
 [MidRight][Tachyon]
 Whoopsie[...][N]
 That's it for me[...][A][EyesClose][X]
-##VaughnDeath
-[MidRight][Vaughn]
-I spent so long[...][N]
-ready for anything[...][A][EyesClose][X]
+##HelenaDeath
+[MidRight][Helena]
+This won't do[...][N]
+Naomi[...][A][EyesClose][X]
 
 //riders
 ##AizenDeath
@@ -775,6 +779,10 @@ make my way[...] to you[...][A][EyesClose][X]
 [MidRight][Etto]
 Aw, man[...] I really[N]
 beefed it[...][A][EyesClose][X]
+##AlexandrusDeath
+[MidRight][Alexandrus]
+I should've known this[...][N]
+a losing battle[...][A][EyesClose][X]
 
 //circ
 ##CompassDeath
@@ -888,6 +896,10 @@ carry out your will[...][A][EyesClose][X]
 [MidRight][Halloran]
 Better things can happen[...][N]
 I'm sure of it[...][A][EyesClose][X]
+##VaughnDeath
+[MidRight][Vaughn]
+Someone[...] Tell my story[...][N]
+Pass down[...] my legacy[...][A][EyesClose][X]
 
 //drive
 ##BertramDeath

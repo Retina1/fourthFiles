@@ -334,7 +334,7 @@ Next: Transfer ailments.[X]
 Level: MAX (Active)[N]
 Mounting weakness.[N]
 [_4] Dur, [_1]-[_5] Rng, transfers[N]
-target's debuffs/binds/ailments[N]
+targ. debuffs/binds/ailm.[N]
 to other enemies in [_4] Rng.[N]
 Initial target is cured.[X]
 

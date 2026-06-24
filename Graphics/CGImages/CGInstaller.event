@@ -125,3 +125,11 @@ GoreImage:
 ALIGN 4
 GorePalette:
 #incbin "MoreColors/gfx/BG/224GorePal.dmp"
+#define GoreEyeCG 0x3b
+SetColorsBackground(GoreEyeCG,GoreEyeImage,GoreEyePalette)
+ALIGN 4
+GoreEyeImage:
+#incbin "MoreColors/gfx/BG/224GoreEye.dmp"
+ALIGN 4
+GoreEyePalette:
+#incbin "MoreColors/gfx/BG/224GoreEyePal.dmp"

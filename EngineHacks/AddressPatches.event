@@ -2,6 +2,12 @@
 //dat 0x0203E12A, gAnimRoundData
 //dat 0x0203E156, gEfxHpLut
 
+//prep menu formation
+PUSH
+ORG 0x33686 
+BYTE 0x00 0x22
+POP
+
 //eliwood shing
 PUSH
 ORG $225AF4

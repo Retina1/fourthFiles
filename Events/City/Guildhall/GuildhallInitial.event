@@ -120,6 +120,9 @@ UNIT
 Recruit_Lily:
 UNIT Lily 0x0 0x1 Level(4,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Staff,Vulnerary] NoAI
 UNIT
+Recruit_Quinton:
+UNIT Quinton 0x0 0x1 Level(6,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Wand] NoAI
+UNIT
 
 //swd
 CoastKid_RecruitEvent:
@@ -244,7 +247,10 @@ Tycho_RecruitEvent:
 GuildRecruit(Tycho,Guild_Tycho_Intro,0x24)
 EndEvent
 Lily_RecruitEvent:
-GuildRecruit(Lily,Guild_Lily_Intro,0x24)
+GuildRecruit(Lily,Guild_Lily_Intro,0x25)
+EndEvent
+Quinton_RecruitEvent:
+GuildRecruit(Quinton,Guild_Quinton_Dialogue,0x26)
 EndEvent
 
 
@@ -320,6 +326,7 @@ GuildLoadQuest(Roslin,Recruit_Roslin,0x3,Quest2_S1x_Flag)
 GuildLoad(Witerico,Recruit_Witerico,0x4)
 GuildLoad(Tycho,Recruit_Tycho,0x5)
 GuildLoad(Lily,Recruit_Lily,0x6)
+GuildLoad(Quinton,Recruit_Quinton,0x7)
 FADU 10
 ENDA
 

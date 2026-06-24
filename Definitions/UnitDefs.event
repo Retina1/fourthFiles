@@ -52,14 +52,14 @@
 #define Witerico 0x34
 #define Tycho 0x35
 #define Lily 0x36
-#define CURE7 0x37
+#define Quinton 0x37
 #define Natsuki 0x38
 #define Mikayla 0x39
 #define Calliope 0x3A
 #define Ghari 0x3B
 #define Azaghal 0x3C
 #define Tachyon 0x3D
-#define Vaughn 0x3E
+#define Helena 0x3E
 #define Aizen 0x3F
 #define Johnnie 0x40
 #define Kolette 0x41
@@ -156,7 +156,7 @@
 #define Jim 0x9C
 #define Dalai 0x9D
 #define Etto 0x9E
-#define APOT6 0x9F
+#define Alexandrus 0x9F
 #define APOT7 0xA0
 #define Compass 0xA1
 #define Katrin 0xA2
@@ -185,7 +185,7 @@
 #define Anna 0xB9
 #define Revati 0xBA
 #define Halloran 0xBB
-#define DUEL7 0xBC
+#define Vaughn 0xBC
 #define Moomfie 0xBD
 #define Bertram 0xBE
 #define Frost 0xBF

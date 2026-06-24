@@ -25,6 +25,15 @@ void TickUnitStateTimer(struct Unit* unit) {
 			unit->classSkillState = 0;
 		}
 	}
+	//buildCharge
+	if (UNIT_HAS_SKILL(unit,HLD,skill_521)) {
+		if (unit->classSkillState != 0) {
+			unit->classSkillState += 1;
+			if (unit->classSkillState > 10) {
+				unit->classSkillState = 10;
+			}
+		}
+	}
 }
 
 void TickActiveFactionTurn(void) {

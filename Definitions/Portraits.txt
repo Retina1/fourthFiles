@@ -228,6 +228,9 @@ JudyMug
 ShionMug
 VaughnMug
 CorMug
+HelenaMug
+QuintonMug
+AlexandrusMug
 SwordfighterCard
 LandsknechtCard
 KnightCard
@@ -329,3 +332,4 @@ VenomflyCard
 MaulMoleCard
 NovistadorCard
 IronCrabCard
+GolemCard

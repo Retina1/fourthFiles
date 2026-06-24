@@ -26,6 +26,32 @@ Rallying Cry[X]
 Bonuses based on source[N]
 Noble's skill levels.[X]
 
+##SpiritShieldLabel
+Spirit Shield[X]
+##SpiritShieldDesc1
+1.2x Def/Luc.[X]
+##SpiritShieldDesc2
+1.5x Def/Luc.[X]
+
+##BloodyOffenseLabel
+Bloody Off.[X]
+##BloodyOffenseDesc1
+1.3x Atk.[X]
+##BloodyOffenseDesc2
+1.6x Atk.[X]
+
+##StigmataLabel
+Stigmata[X]
+##StigmataDesc1
+0.9x Atk/AS/[N]
+Hit/Avo/Crit.[X]
+##StigmataDesc2
+0.7x Atk/AS/[N]
+Hit/Avo/Crit.[X]
+##StigmataDesc3
+0.5x Atk/AS/[N]
+Hit/Avo/Crit.[X]
+
 ##ShiningForceLabel
 Shining Frc.[X]
 ##ShiningForceDesc

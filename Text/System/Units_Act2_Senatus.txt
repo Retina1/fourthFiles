@@ -86,3 +86,9 @@ Halloran[X]
 An ex-Belvarusi politician and current[N]
 revolutionaire for hire. He's just.[X]
 
+//eel
+##Name_Vaughn
+Vaughn[X]
+##Desc_Vaughn
+A formerly poor boy who's led quite[N]
+a turbulent life. He's a bit prideful.[X]

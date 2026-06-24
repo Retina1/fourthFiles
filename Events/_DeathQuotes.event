@@ -126,7 +126,7 @@ AlwaysDeathQuote(Roslin,0x0,RoslinDeath)
 AlwaysDeathQuote(Witerico,0x0,WitericoDeath)
 AlwaysDeathQuote(Tycho,0x0,TychoDeath)
 AlwaysDeathQuote(Lily,0x0,LilyDeath)
-
+AlwaysDeathQuote(Quinton,0x0,QuintonDeath)
 //myrm
 AlwaysDeathQuote(Natsuki,0x0,NatsukiRetreat)
 AlwaysDeathQuote(Mikayla,0x0,MikaylaDeath)
@@ -134,7 +134,7 @@ AlwaysDeathQuote(Calliope,0x0,CalliopeDeath)
 AlwaysDeathQuote(Ghari,0x0,GhariDeath)
 AlwaysDeathQuote(Azaghal,0x0,AzaghalDeath)
 AlwaysDeathQuote(Tachyon,0x0,TachyonDeath)
-AlwaysDeathQuote(Vaughn,0x0,VaughnDeath)
+AlwaysDeathQuote(Helena,0x0,HelenaDeath)
 //rid
 AlwaysDeathQuote(Aizen,0x0,AizenDeath)
 AlwaysDeathQuote(Johnnie,0x0,JohnnieDeath)
@@ -245,7 +245,7 @@ AlwaysDeathQuote(Wendy,0x0,WendyDeath)
 AlwaysDeathQuote(Jim,0x0,JimDeath)
 AlwaysDeathQuote(Dalai,0x0,DalaiDeath)
 AlwaysDeathQuote(Etto,0x0,EttoDeath)
-
+AlwaysDeathQuote(Alexandrus,0x0,AlexandrusDeath)
 
 //circ
 AlwaysDeathQuote(Compass,0x0,CompassDeath)
@@ -278,7 +278,7 @@ AlwaysDeathQuote(Cardam,0x0,CardamDeath)
 AlwaysDeathQuote(Anna,0x0,AnnaDeath)
 AlwaysDeathQuote(Revati,0x0,RevatiDeath)
 AlwaysDeathQuote(Halloran,0x0,HalloranDeath)
-
+AlwaysDeathQuote(Vaughn,0x0,VaughnDeath)
 //drive
 AlwaysDeathQuote(Bertram,0x0,BertramDeath)
 AlwaysDeathQuote(Moomfie,0x0,MoomfieDeath)

@@ -159,8 +159,14 @@ a truly horrific bite.[X]
 ##Class_MaulMole
 Maul Mole[X]
 ##Desc_MaulMole
-A burrowing rodent with deadly[N]
-claws of true cause for concern.[X]
+A hardy burrowing rodent with[N]
+massive and deadly claws.[X]
+
+##Class_Golem
+Golem[X]
+##Desc_Golem
+A hulking construct with strength[N]
+far beyond any normal human.[X]
 
 ##Class_Faerie
 Faerie[X]

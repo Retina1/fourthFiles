@@ -110,6 +110,27 @@ UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [8,14] 0x0 0x0 0x1 REDA7R13
 UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [8,14] 0x0 0x0 0x1 REDA9R13 [Shortspear] NoAI
 UNIT
 
+EndingCutscene1:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [5,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [8,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [9,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Benthus 0x0 0x1 Level(1,Ally,0) [7,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [8,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(1,Ally,0) [6,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+EndingCutscene2:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [6,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [4,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Benthus 0x0 0x1 Level(1,Ally,0) [10,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [5,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(1,Ally,0) [8,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+EndingCutscene3:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [1,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
 EndingSenate:
 //in universe, anastas
 UNIT Anastas SkyKnight 0x0 Level(8,Enemy,1) [13,6] 0x0 0x0 0x0 0x0 [Sarissa] NoAI
@@ -183,26 +204,100 @@ EndEvent
 
 EndingScene:
 EndingSceneToggles
-MUSC 0x0
+DumpUnitItems(Benthus)
+MUSC AmbientShimmer
+//map events
 //outline - scene inside of mines, victory yet doubt
 CleanTextNoMap(CaveCG,C7Ending1)
+REMA
+CLEAN
+CLEA 0
+CLEE 0
+CLEN 0
 //scene inside mines searching for endbringer, maybe taking crystal down
-CleanTextNoMap(CaveCG,C7Ending2)
-//scene inside mines after crystal, buildup to
-CleanTextNoMap(CaveCG,C7Ending3)
-//scene of benthus betrayal, stab gore, epic cg, he leaves and shatters crystal on other side
+TILECHANGE 0x0
+LOAD2 0x1 EndingCutscene1;ENUN
+FADU 10
+Text(C7Ending2)
+REMA
+STAL 10
+MOVE 2 Nathan [7,4]; ENUN
+STAL 5
+SVAL 0x2 Nathan; CALL 0x9EE51C; WM_WAITFORFX;
+STAL 10
+FADI 10
+CLEA 0
+TILEREVERSE 0x0
+TILECHANGE 0x1
+LOAD2 0x1 EndingCutscene2;ENUN
+SOUN 0xB4; STAL 60
+SOUN 0xB4; STAL 60
+SOUN 0xB4; STAL 60
+SOUN 0xB4; STAL 90
+FADU 15
+SVAL 0xB 2*0x10000+6; WARP_IN; STAL 40
+NathanIsHere
+MOVE 10 Gore [8,5]; ENUN
+//buildup to betrayal
+Text(C7Ending3)
+REMA
+STAL 10
+MOVE 2 Benthus [7,3]; ENUN
 MUSC Song_DevilsRoulette
-CleanTextNoMap(CaveCG,C7Ending4)
+TurnEnemy(Benthus)
+STAL 10
+//scene of benthus betrayal, stab gore, epic cg, he leaves and shatters crystal on other side
+Text(C7Ending4)
+REMA
+MOVE 5 Benthus [7,4]; ENUN
+MOVE 20 Gore [7,5]; ENUN
+StartBattle
+CriticalHit(0,18)
+EndAttack
+FIG1 Benthus Gore Sabre
+STAL 2
+MOVE 5 Gore [7,6]; ENUN
+STAL 2
+MOVE 2 Gore [7,7]; ENUN
+STAL 10
+SetBackground(GoreEyeCG)
+SoloText(C7GoreEyeText)
+STAL 30
 SetBackground(GoreCG)
 STAL 60
 SoloText(C7Ending5)
+SOUN 0xB4
 STAL 60
 FADI 10
 CLEAN
+CLEE 0
+FADU 10
 //scene of despair
+Text(C7Ending6)
+STAL 10
+MOVE 3 Nathan [9,11]; ENUN; STAL 30
+MOVE 5 Cleone [8,11]; ENUN; STAL 20
+MUSC AmbientShimmer
+MOVE 10 Astarte [6,5]; MOVE 3 Gore [7,5]; ; STAL 10
+Text(C7EndingGoreEyeRemoval)
+FADI 10
+LOMA Stratum2F1
+CLEA 0
+CAM1 [0,0]
+LOAD2 0x1 EndingCutscene3;ENUN
+FADU 10
+MOVE 5 Cleone [2,4]; ENUN; STAL 50
 MUSC Song_UntilTheTwoPeopleFallInLove
-CleanTextNoMap(CaveCG,C7Ending6)
+TEXTSTART
+TEXTSHOW C7EndingCleoneNathanScene
+TEXTEND
+MUSC Song_LivingOnTheEdge
+TEXTCONT
+TEXTEND
+REMA
 //scene of belvarus (stephen, angelica, iseau) - in ch13 map
+STAL 20
+FADI 10
 MUSC 0x0
 LOMA Chapter13
 CLEA 0; CLEN 0; CLEE 0
@@ -213,8 +308,8 @@ STAL 30
 FlashCursor(Stephen,60)
 MUSC Song_DarkBattle
 Text(C7Ending7)
-DumpUnitItems(Benthus)
-SilentKillUnit(Benthus)
+MOVE 20 Anastas [2,8]; ENUN; STAL 20
+Text(C7Ending8)
 ENUT GoreNoEyeFlag
 MoveToChapter(Stratum2F1)
 ENDA

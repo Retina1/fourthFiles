@@ -65,6 +65,7 @@ void TryAddUnitToSleepTargetList(struct Unit* unit);
 #include "DifficultyChooser/DifficultyChooser.c"
 #include "UnitChooser/UnitChooser.c"
 #include "DebugUnitChooser/DebugUnitChooser.c"
+#include "LeagueUnitViewer/UnitViewer.c"
 
 #include "EnemyAI/EnemyAI.c"
 #include "Misc/ConditionalChecks.c"

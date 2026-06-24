@@ -592,7 +592,8 @@ void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit*
 	}
 	
 	if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS)) {
-		if (effect == WPN_EFFECT_INSTANTDEATH) {
+		//head pierce check
+		if ((effect == WPN_EFFECT_INSTANTDEATH) || (GetActiveArt(&attacker->unit) == 154+17)){
 			if (StatusOddsRollBattle(attacker, defender, odds)){
 				gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_SILENCER;
 				gBattleStats.damage = BATTLE_MAX_DAMAGE;

@@ -49,7 +49,7 @@ POIN SeekerSkillLabels
 POIN PriestSkillLabels
 POIN LurkerSkillLabels
 POIN DarkHunterSkillLabels
-POIN SkillLabels
+POIN LancerSkillLabels
 POIN SkillLabels
 POIN SkillLabels
 POIN SkillLabels
@@ -135,6 +135,63 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
+
+ALIGN 4
+LancerSkillLabels:
+OneLevelSkillLabel(MoraleBoostSkill,NoReq)//0
+OneLevelSkillLabel(BloodFortuneSkill,NoReq)
+OneLevelSkillLabel(BloodFurySkill,BloodFuryReq)
+OneLevelSkillLabel(BloodrushSkill,PromotedReq)
+TwoLevelSkillLabel(ClearMindSkill,NoReq)//4
+TwoLevelSkillLabel(SpiritShieldSkill,NoReq)
+TwoLevelSkillLabel(BloodyOffenseSkill,BloodyOffenseReq)
+ThreeLevelSkillLabel(FarThrustSkill,NoReq)//7
+ThreeLevelSkillLabel(SpearAssistSkill,SpearAssistReq)
+ThreeLevelSkillLabel(HeadPierceSkill,HeadPierceReq)
+ThreeLevelSkillLabel(StigmataSkill,StigmataReq)
+ThreeLevelSkillLabel(LegionThrustSkill,LegionThrustReq)
+FiveLevelSkillLabel(CrossChargeSkill,NoReq)//12
+FiveLevelSkillLabel(SpearDelaySkill,SpearDelayReq)
+FiveLevelSkillLabel(SpearReversalSkill,SpearReversalReq)
+SkillLabelTerminator
+
+ALIGN 4
+BloodFuryReq:
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+BloodyOffenseReq:
+ReqEntry(10,2)
+ReqTerm
+ALIGN 4
+SpearAssistReq:
+ReqEntry(7,2)
+ReqTerm
+ALIGN 4
+HeadPierceReq:
+ReqEntry(8,2)
+ReqTerm
+ALIGN 4
+StigmataReq:
+ReqEntry(5,2)
+ReqTerm
+ALIGN 4
+LegionThrustReq:
+ReqPromo
+ReqEntry(8,2)
+ReqEntry(13,5)
+ReqTerm
+ALIGN 4
+SpearDelayReq:
+ReqEntry(12,1)
+ReqTerm
+ALIGN 4
+SpearReversalReq:
+ReqPromo
+ReqEntry(10,3)
+ReqEntry(8,3)
+ReqEntry(6,2)
+ReqTerm
 
 ALIGN 4
 LurkerSkillLabels:

@@ -1,79 +1,142 @@
 //DARK HUNTER
-
 CA_Entry((Set3LastArt + 1), 2)
 	CA_Name(UM_CuffsWhip,UM_CuffsWhipDesc)
 	CA_Usability(CuffsWhipArtUsability,CuffsWhipArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(CuffsWhipBothSides); CA_Ailment(CuffsWhipOdds,ArmBindEffect)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 2), 2)
 	CA_Name(UM_ShackleWhip,UM_ShackleWhipDesc)
 	CA_Usability(ShackleWhipArtUsability,ShackleWhipArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(ShackleWhipBothSides); CA_Ailment(ShackleWhipOdds,LegBindEffect)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 3), 2)
 	CA_Name(UM_MuteWhip,UM_MuteWhipDesc)
 	CA_Usability(MuteWhipArtUsability,MuteWhipArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(MuteWhipBothSides); CA_Ailment(MuteWhipOdds,HeadBindEffect)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 4), 3)
 	CA_Name(UM_ToxinWhip,UM_ToxinWhipDesc)
 	CA_Usability(ToxinWhipArtUsability,ToxinWhipArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(ToxinWhipBothSides); CA_Ailment(ToxinWhipOdds,PoisonEffect)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 5), 4)
 	CA_Name(UM_SlumberWhip,UM_SlumberWhipDesc)
 	CA_Usability(SlumberWhipArtUsability,SlumberWhipArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(SlumberWhipBothSides); CA_Ailment(SlumberWhipOdds,SleepEffect)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 6), 5)
 	CA_Name(UM_MirageWhip,UM_MirageWhipDesc)
 	CA_Usability(MirageWhipArtUsability,MirageWhipArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(MirageWhipBothSides); CA_Ailment(MirageWhipOdds,BerserkEffect)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 7), 4)
 	CA_Name(UM_Precision,UM_PrecisionDesc)
 	CA_Usability(PrecisionArtUsability,PrecisionArtMenuUsability)
 	CA_ItemSelectUsability(SlashItemSelectUsability)
 	CA_GeneralNonCombatEffect; CA_ItemSelectEffect(PrecisionItemSelectEffect)
 	CA_Range(Generic1Range); CA_NoAnimNoIER
-
 CA_Entry((Set3LastArt + 8), 3)
 	CA_Name(UM_ClimaxWhip,UM_ClimaxWhipDesc)
 	CA_Usability(ClimaxWhipArtUsability,ClimaxWhipArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(ClimaxWhipBothSides); CA_Ailment(ClimaxWhipOdds,InstantDeathEffect)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 9), 4)
 	CA_Name(UM_CrippleWhip,UM_CrippleWhipDesc)
 	CA_Usability(CrippleWhipArtUsability,CrippleWhipArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(CrippleWhipBothSides); CA_BattleProc(CrippleWhipBattleProc)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 10), 6)
 	CA_Name(UM_Whipstorm,UM_WhipstormDesc)
 	CA_Usability(WhipstormArtUsability,WhipstormArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_HitCount(WhipstormHitCount); CA_Ailment(WhipstormOdds,69)
 	CA_Range(SlashLock)
-
 CA_Entry((Set3LastArt + 11), 4)
 	CA_Name(UM_Ecstasy,UM_EcstasyDesc)
 	CA_Usability(EcstasyArtUsability,EcstasyArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(EcstasyBothSides)
 	CA_Range(SlashLock)
+//lancer
+CA_Entry((Set3LastArt + 12), 2)
+	CA_Name(UM_ClearMind,UM_ClearMindDesc)
+	CA_Usability(ClearMindArtUsability,ClearMindArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_ItemSelectEffect(ClearMindItemSelectEffect)
+	CA_Range(ClearMindRange); CA_SpellAnim(0x66); CA_IER(0x3a)
+CA_Entry((Set3LastArt + 13), 3)
+	CA_Name(UM_SpiritShield,UM_SpiritShieldDesc)
+	CA_Usability(SpiritShieldArtUsability,SpiritShieldArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_ItemSelectEffect(SpiritShieldItemSelectEffect)
+	CA_Range(Generic1_2Range); CA_SpellAnim(0x66); CA_IER(0x3a)
+CA_Entry((Set3LastArt + 14), 3)
+	CA_Name(UM_BloodyOffense,UM_BloodyOffenseDesc)
+	CA_Usability(BloodyOffenseArtUsability,BloodyOffenseArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_ItemSelectEffect(BloodyOffenseItemSelectEffect)
+	CA_Range(Generic1_2Range); CA_SpellAnim(0x66); CA_IER(0x3a)
+CA_Entry((Set3LastArt + 15), 3)
+	CA_Name(UM_FarThrust,UM_FarThrustDesc)
+	CA_Usability(FarThrustArtUsability,FarThrustArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(FarThrustBothSides)
+	CA_Range(FarThrustRange); CA_SpellAnim(0x3)
+CA_Entry((Set3LastArt + 16), 3)
+	CA_Name(UM_SpearAssist,UM_SpearAssistDesc)
+	CA_Usability(SpearAssistArtUsability,SpearAssistArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(SpearAssistBothSides); CA_Postbattle(SpearAssistPostbattle)
+	CA_Range(PierceLock)
+CA_Entry((Set3LastArt + 17), 5)
+	CA_Name(UM_HeadPierce,UM_HeadPierceDesc)
+	CA_Usability(HeadPierceArtUsability,HeadPierceArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(HeadPierceBothSides); CA_Postbattle(HeadPiercePostbattle)
+	CA_Ailment(HeadPierceOdds,HeadBindEffect)
+	CA_Range(PierceLock)
+CA_Entry((Set3LastArt + 18), 4)
+	CA_Name(UM_Stigmata,UM_StigmataDesc)
+	CA_Usability(StigmataArtUsability,StigmataArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_ItemSelectEffect(StigmataItemSelectEffect)
+	CA_Range(Generic1_3Range); CA_SpellAnim(0x66); CA_IER(0x3a)
+CA_Entry((Set3LastArt + 19), 5)
+	CA_Name(UM_LegionThrust,UM_LegionThrustDesc)
+	CA_Usability(LegionThrustArtUsability,LegionThrustArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(LegionThrustBothSides); CA_Prebattle(LegionThrustPrebattle)
+	CA_Postbattle(LegionThrustPostbattle)
+	CA_Range(PierceLock)
+CA_Entry((Set3LastArt + 20), 4)
+	CA_Name(UM_CrossCharge,UM_CrossChargeDesc)
+	CA_Usability(CrossChargeArtUsability,CrossChargeArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(CrossChargeBothSides); CA_Prebattle(CrossChargePrebattle)
+	CA_Postbattle(CrossChargePostbattle)
+	CA_Range(PierceLock)
+CA_Entry((Set3LastArt + 21), 1)
+	CA_Name(UM_SpearDelay,UM_SpearDelayDesc)
+	CA_Usability(SpearDelayArtUsability,SpearDelayArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_ItemSelectEffect(SpearDelayItemSelectEffect)
+	CA_Range(HideRange); CA_SpellAnim(0x66); CA_IER(0x3a)
+CA_Entry((Set3LastArt + 22), 8)
+	CA_Name(UM_SpearReversal,UM_SpearReversalDesc)
+	CA_Usability(SpearReversalArtUsability,SpearReversalArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(SpearReversalBothSides)
+	CA_Postbattle(SpearReversalPostbattle)
+	CA_Range(PierceLock)
+//brawler
+
+//hunter
 

@@ -1,0 +1,66 @@
+##UM_ClearMind
+ Clear Mind[X]
+##UM_ClearMindDesc
+Spend HP to clear[N]
+ally negative effects.[N]
+Cost: 2 Durability.[X]
+
+##UM_SpiritShield
+ Sprt. Shield[X]
+##UM_SpiritShieldDesc
+Spend HP to buff[N]
+Def/Luc in area.[N]
+Cost: 3 Durability.[X]
+##UM_BloodyOffense
+ Bloody Off.[X]
+##UM_BloodyOffenseDesc
+Spend self and ally HP[N]
+to buff Atk in area.[N]
+Cost: 3 Durability.[X]
+
+##UM_FarThrust
+ Far Thrust[X]
+##UM_FarThrustDesc
+A simple ranged thrust.[N]
+Cost: 3 Durability.[X]
+##UM_SpearAssist
+ Spear Assist[X]
+##UM_SpearAssistDesc
+Spend HP for an imbued thrust.[N]
+Cost: 3 Durability.[X]
+##UM_HeadPierce
+ Head Pierce[X]
+##UM_HeadPierceDesc
+Spend HP to strike and[N]
+bind heads/instakill.[N]
+Cost: 5 Durability.[X]
+##UM_Stigmata
+ Stigmata[X]
+##UM_StigmataDesc
+Spend HP and bind self[N]
+to cripple nearby foes.[N]
+Cost: 4 Durability.[X]
+##UM_LegionThrust
+ Legion Thr.[X]
+##UM_LegionThrustDesc
+Spend self and ally HP[N]
+for a mighty thrust.[N]
+Cost: 5 Durability.[X]
+##UM_CrossCharge
+ Cross Charge[X]
+##UM_CrossChargeDesc
+Spend HP for a thrust[N]
+empowered by a delay.[N]
+Cost: 4 Durability.[X]
+##UM_SpearDelay
+ Spear Delay[X]
+##UM_SpearDelayDesc
+Spend HP to begin storing[N]
+power for Cross Charge.[N]
+Cost: 1 Durability.[X]
+##UM_SpearReversal
+ Spr. Reversal[X]
+##UM_SpearReversalDesc
+Empower your spear with[N]
+lost HP, then fully heal.[N]
+Cost: 8 Durability.[X]

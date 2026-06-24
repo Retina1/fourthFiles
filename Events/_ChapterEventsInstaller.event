@@ -415,6 +415,10 @@ UNIT
 //bertram?
 //item based things in calc loops
 //bitter fang - cold magic (add 25% of mag to might)
+//move this out here for reasons
+ALIGN 4
+RecruitUnlocks:
+FILL 0xff*0x4
 {
 #include "City/HirschringSquare.event"
 }

@@ -253,7 +253,7 @@ CA_Entry((Set1LastArt + 43), 255)
 	CA_Range(ShootLock)
 
 CA_Entry((Set1LastArt + 44), 10)
-	CA_Name(UM_Ricochet,UM_UnloadDesc)
+	CA_Name(UM_Ricochet,UM_RicochetDesc)
 	CA_Usability(RicochetArtUsability,RicochetArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(RicochetBothSides); CA_HitCount(RicochetHitCount)

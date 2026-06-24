@@ -418,7 +418,7 @@ Next: [_0].[_8]x Atk.[X]
 Level: [_4] (Active)[N]
 Ultimate trickshot.[N]
 [_1][_0] Dur, [_1]-[_8][_0] Rng, [_0].[_8]x[N]
- Atk, strikes [_1][_0] times, Hit[N]
+Atk, strikes [_1][_0] times, Hit[N]
 divided by dist. to target.[N]
 Next: [_1].[_2]x Atk.[X]
 

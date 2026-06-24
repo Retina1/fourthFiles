@@ -26,6 +26,22 @@ ALIGN 4
 MapData:
   #incbin "Chapter7_data.dmp"
 
-SetChapterData(Chapter7, Caves1OBJ, 0, Caves1PAL, CavesCONFIG, Map7ID, MapData, 0, 0, 0)
+SetChapterData(Chapter7, Caves1OBJ, 0, Caves1PAL, CavesCONFIG, Map7ID, MapData, 0, 0, MapChange7ID)
+
+ALIGN 4
+Map_Change_0:
+  SHORT $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $12C $12C $12C $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $130 $1A8 $1AC $1B0 $128 $AC $AC $AC $AC $AC $AC $AC $AC $AC $B0 $1B0 $228 $22C $230 $1A8 $A8 $AC $AC $AC $AC $AC $AC $AC $AC $B0 $260 $2B8 $2CC $2D0 $258 $A8 $AC $AC $AC $AC $AC $AC $AC $AC $B0 $15C $15C $248 $15C $768 $A8 $AC $AC $AC $AC $AC $AC $AC $AC $B0 $760 $15C $2C8 $15C $15C $A8 $AC $AC $AC $AC $AC $AC $AC $AC $AC $3C $15C $15C $15C $34 $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $B0 $15C $15C $768 $A8 $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $B0 $760 $15C $768 $A8 $AC $AC $AC $AC $AC
+
+ALIGN 4
+Map_Change_1:
+  SHORT $AC $AC $AC $12C $12C $12C $12C $12C $12C $12C $AC $AC $AC $AC $AC $AC $AC $B0 $514 $484 $484 $484 $484 $484 $518 $128 $12C $AC $AC $AC $AC $AC $B0 $390 $B0C $B8C $B8C $B8C $B8C $480 $484 $518 $A8 $AC $AC $AC $AC $B0 $390 $B04 $A84 $248 $A84 $A84 $B8C $B8C $38C $A8 $AC $AC $AC $AC $B0 $390 $B04 $A84 $3D4 $B04 $A84 $3C8 $B04 $38C $A8 $AC $AC $AC $AC $B0 $484 $408 $B04 $B8C $A84 $A84 $448 $404 $484 $A8 $AC $AC $AC $AC $AC $30 $480 $484 $490 $B04 $A84 $480 $490 $28 $AC $AC $AC $AC $AC $AC $AC $2C $2C $30 $B04 $768 $28 $2C $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $B0 $760 $A84 $A8 $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $AC $B0 $15C $15C $A8 $AC $AC $AC $AC $AC $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C $15C
+
+ALIGN 4
+MapChangesData:
+  TileMap(0, 0, 0, 15, 10, Map_Change_0)
+  TileMap(1, 0, 0, 15, 12, Map_Change_1)
+  TileMapEnd
+
+EventPointerTable(MapChange7ID, MapChangesData)
 
 }

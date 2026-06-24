@@ -184,7 +184,8 @@ Enable Autorepair Mode.[X]
 ##RepairModeRText
 Weapons will have 40% of their[N]
 max uses, but automatically be[N]
-repaired after every map.[X]
+repaired after every map or[N]
+encounter within a dungeon.[X]
 ##RepairModeConfirm
 Activate Autorepair Mode?[N]
 [No][X]

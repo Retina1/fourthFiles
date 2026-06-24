@@ -289,3 +289,9 @@ Lily[X]
 ##Desc_Lily
 A young noblewoman drawn to a life of[N]
 wandering. She's outgrown her snobbiness.[X]
+//breadbug
+##Name_Quinton
+Quinton[X]
+##Desc_Quinton
+An aged and personable cult leader.[N]
+He's self-absorbed but means well.[X]

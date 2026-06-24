@@ -141,6 +141,7 @@ Belladonna
 ToxicClaw
 Furysong
 SealGleam
+MaulClaw
 ScissorWrath 0x99
 EnemyWatching
 AtrocityScales

@@ -290,6 +290,8 @@ MovingMapSprite(Novistador, AP1, NovistadorMMS)
 
 StandingMapSprite(Woodrat,MapSprite16x16,WoodratSMS)
 MovingMapSprite(Woodrat, AP1, WoodratMMS)
+StandingMapSprite(Golem,MapSprite16x32,GolemSMS)
+MovingMapSprite(Golem, AP1, GolemMMS)
 
 #define SigilTrapMapSprite 0x3c
 #define LightRuneMapSprite 0x3d
@@ -300,6 +302,13 @@ StandingMapSprite(LightRuneMapSprite,MapSprite16x16,LightRuneSMS)
 ALIGN 4
 LightRuneSMS:
 #incbin "Dmp/Save Points {serif}-stand.dmp"
+
+ALIGN 4
+GolemSMS:
+#incbin "Dmp/Blast Golem (U) {Alexsplode}-stand.dmp"
+ALIGN 4
+GolemMMS:
+#incbin "Dmp/Blast Golem (U) {Alexsplode}-walk.dmp"
 
 ALIGN 4
 WoodratSMS:

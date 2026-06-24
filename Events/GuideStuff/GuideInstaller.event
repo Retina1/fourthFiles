@@ -67,6 +67,7 @@ ALIGN 4
 GuideEntryTable:
 //mechanical stuff
 GuideEntry(1, 0, GuideChanges, GuideChangesDesc, Chapter2DoneFlag)
+GuideEntry(1, 0, GuideDictionary, GuideDictionaryDesc, Chapter2DoneFlag)
 GuideEntry(1, 0, GuideAilments, GuideAilmentDesc, Chapter2DoneFlag)
 //quests
 GuideEntry(2, 1, GuideQuestsGeneral, GuideQuestsGeneralDesc, Chapter3DoneFlag)

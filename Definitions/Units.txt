@@ -52,14 +52,14 @@ Roslin
 Witerico
 Tycho
 Lily
-CURE7
+Quinton
 Natsuki
 Mikayla
 Calliope
 Ghari
 Azaghal
 Tachyon
-Vaughn
+Helena
 Aizen
 Johnnie
 Kolette
@@ -156,7 +156,7 @@ Wendy
 Jim
 Dalai
 Etto
-APOT6
+Alexandrus
 APOT7
 Compass
 Katrin
@@ -185,7 +185,7 @@ Cardam
 Anna
 Revati
 Halloran
-DUEL7
+Vaughn
 Moomfie
 Bertram
 Frost

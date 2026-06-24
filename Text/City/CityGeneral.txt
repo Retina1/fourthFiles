@@ -328,6 +328,12 @@ Exotic Classes[X]
 Rare and unusual classes[N]
 not within other labels.[X]
 
+##UnitCatalogLabel
+Unit Catalog[X]
+##UnitCatalogRText
+Quickly browse through base[N]
+stats of every unlocked unit.[X]
+
 ##ErrorHandlerText
 If you see this, I screwed[N]
 up the eventing. Tell me![A][X]

@@ -27,8 +27,8 @@ UNIT
 Recruit_Tachyon:
 UNIT Tachyon 0x0 0x1 Level(3,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
 UNIT
-Recruit_Vaughn:
-UNIT Vaughn 0x0 0x1 Level(6,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Claymore] NoAI
+Recruit_Helena:
+UNIT Helena 0x0 0x1 Level(6,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Claymore] NoAI
 UNIT
 
 Recruit_Aizen:
@@ -113,8 +113,8 @@ EndEvent
 Tachyon_RecruitEvent:
 GuildRecruit(Tachyon,Guild_Tachyon_Dialogue,0x25)
 EndEvent
-Vaughn_RecruitEvent:
-GuildRecruit(Vaughn,Guild_Vaughn_Dialogue,0x26)
+Helena_RecruitEvent:
+GuildRecruit(Helena,Guild_Helena_Dialogue,0x26)
 EndEvent
 
 //riders
@@ -192,7 +192,7 @@ GuildLoad(Calliope,Recruit_Calliope,0x3)
 GuildLoad(Ghari,Recruit_Ghari,0x4,Chapter5DoneFlag)
 GuildLoad(Azaghal,Recruit_Azaghal,0x5)
 GuildLoad(Tachyon,Recruit_Tachyon,0x6)
-GuildLoad(Vaughn,Recruit_Vaughn,0x7)
+GuildLoad(Helena,Recruit_Helena,0x7)
 FADU 10
 ENDA
 

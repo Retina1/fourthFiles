@@ -723,14 +723,14 @@ after losing HP in combat.[X]
 Clear Mind: Consume user's HP[N]
 to purge debuffs and ailments.[X]
 ##
-Spirit Shield: Consume user's HP to[N]
-buff allied Def and Luc in an area.[X]
+Spirit Shield: Consume user's HP[N]
+to buff Def and Luc in an area.[X]
 ##
-Bloody Offense: Consume HP in an area[N]
-to buff allied Atk for self and area.[X]
+Bloody Offense: Consume user/ally[N]
+HP in area to buff Atk in area.[X]
 ##
-Far Thrust: A simple thrust[N]
-with good power and range.[X]
+Far Thrust: A simple lance[N]
+thrust with good range.[X]
 ##
 Spear Assist: Consume HP to thrust[N]
 scaling off of nearby ally Mag.[X]
@@ -744,8 +744,8 @@ to massively debuff nearby foes.[X]
 Legion Thrust: A mighty thrust that[N]
 consumes HP in an large area.[X]
 ##
-Cross Charge: Consume HP for a combo[N]
-strike with a stored Spear Delay.[X]
+Cross Charge: Consume HP for a[N]
+strike boosted by Spear Delay.[X]
 ##
 Spear Delay: Consume HP to begin[N]
 charging a powerful Cross Charge.[X]

@@ -63,8 +63,8 @@ UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [DrainSc
 UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [10,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
 UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [1,3] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
 UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
-UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
-UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] DropItem 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] DropItem 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [BrassKnuckles] NoAI
@@ -93,8 +93,8 @@ UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [DrainSc
 UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [10,4] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
 UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [1,3] 0x0 0x0 0x0 0x0 [Composite] AttackInRangeAI
 UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
-UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
-UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] DropItem 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] DropItem 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [Caestus] NoAI
@@ -130,8 +130,8 @@ UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [9,2] 0x0 0x0 0x0 0x0 [DrainSc
 UNIT FreelanceGeneric Caller 0x0 Level(6,Enemy,1) [10,2] 0x0 0x0 0x0 0x0 [DrainScroll] AttackInRangeAI
 UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [1,3] 0x0 0x0 0x0 0x0 [Composite] AttackInRangeAI
 UNIT FreelanceGeneric Hunter 0x0 Level(6,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
-UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
-UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] DropItem 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [17,3] DropItem 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(6,Enemy,1) [18,3] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT FreelanceGeneric Scholar 0x0 Level(6,Enemy,1) [14,0] 0x0 0x0 0x0 0x0 [FlameScroll] NoAI
 UNIT FreelanceGeneric Brawler 0x0 Level(6,Enemy,1) [19,7] 0x0 0x0 0x0 0x0 [Caestus] NoAI

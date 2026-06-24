@@ -63,6 +63,11 @@ Seal Gleam[X]
 ##Desc_SealGleam ^
 A cursed stare that silences magi.[N]
 Base Head Bind Affliction Rate: [_6][_0]%.[X]
+##Name_MaulClaw
+Maul Claw[X]
+##Desc_MaulClaw ^
+A swift and vicious pair of claws.[N]
+Doubles strikes in combat.[X]
 
 
 ##Name_Voltage

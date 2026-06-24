@@ -1,15 +1,31 @@
-##Guild_Vaughn_Dialogue
-[FarLeft][Guildmaster][Left][Nathan][MidRight][Vaughn]
-Vaughn here[A][X]
+##Guild_Helena_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Helena]
+Greetings, good sir![N]
+Mine name is Helena, and[N]
+it is but a pleasure.[AN][FarLeft]
+You seem a bit refined[N]
+for a swordfighter.[AN][MidRight]
+Perhaps. It is only[N]
+who I am, good sir.[AN]
+I quite assure you that[N]
+my skills are legitimate.[AN]
+Mine one wish is to protect[N]
+those I love,[A] and so my[N]
+swordplay reflects that.[AN]
+Shall you hire me, then?[A][X]
 ##
-[FarLeft][Guildmaster][Left][Nathan][MidRight][Vaughn]
-accept here[A][X]
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Helena]
+Unending gratitudes![N]
+You shant regret this![A][X]
 ##
-[FarLeft][Guildmaster][Left][Nathan][MidRight][Vaughn]
-deny here[A][X]
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Helena]
+W-What? [...]Alright.[A][X]
 ##
-[FarLeft][Guildmaster][Left][Nathan][MidRight][Vaughn]
-return here[A][X]
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Helena]
+Have you come to reconsider?[AN]
+I truly would appreciate it[N]
+more than anything else.[AN]
+[...]Except for her, of course.[A][X]
 
 ##Guild_Azaghal_Dialogue
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Azaghal]

@@ -35,6 +35,12 @@ Etto[X]
 A housekeeper with a talent for botany[N]
 and birdkeeping. She's empty-headed.[X]
 
+##Name_Alexandrus
+Alexandrus[X]
+##Desc_Alexandrus
+An egocentric Asketan herbalist.[N]
+He has a bad habit of monologuing.[X]
+
 //compass by roxas (encircler)
 ##Name_Compass
 Compass[X]
