@@ -503,7 +503,17 @@ SongTable(Song_Drift,Drift,1)
 SongTable(Song_TheKeyWeveLost,TheKeyWeveLost,1)
 #include "songs/TheKeyWeveLost.event"
 }
+#define Song_DespairSearching 0xc0
+{
+SongTable(Song_DespairSearching,DespairSearching,0)
+#include "songs/DespairSearching.event"
+}
+#define Song_FlowerMan 0xc1
+{
+SongTable(Song_FlowerMan,FlowerMan,1)
+#include "songs/FlowerMan.event"
+}
 /* free numbers
-c0 c1 c2 c3 c4 c5 c6 d9 da db
+c2 c3 c4 c5 c6 d9 da db
 e0 e1 e4 e8 e9 ec ee f3 104 105 106 107
 */

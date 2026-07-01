@@ -141,13 +141,13 @@ void ApplyRallyingCryFlatBuffs(struct BattleUnit* attacker, struct BattleUnit* d
 		}
 		
 		if (UNIT_HAS_SKILL(source,SOV,skill_343)){
-			attacker->battleAttack = attacker->battleAttack + attacker->unit.mag * 4/5;
+			attacker->battleAttack = attacker->battleAttack + attacker->unit.mag * 3/10;
 		}
 		else if (UNIT_HAS_SKILL(source,SOV,skill_342)){
-			attacker->battleAttack = attacker->battleAttack + attacker->unit.mag * 1/2;
+			attacker->battleAttack = attacker->battleAttack + attacker->unit.mag * 1/5;
 		}
 		else if (UNIT_HAS_SKILL(source,SOV,skill_341)){
-			attacker->battleAttack = attacker->battleAttack + attacker->unit.mag * 3/10;
+			attacker->battleAttack = attacker->battleAttack + attacker->unit.mag * 1/10;
 		}
 		
 	}

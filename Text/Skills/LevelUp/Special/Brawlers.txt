@@ -1,0 +1,429 @@
+
+##IntimidationSkill
+Intimidation[X]
+## ^
+Level: [_0] (Passive)[N]
+Your fierce nature[N]
+unnerves your foes.[N]
+Next: Adjacent enemies[N]
+have [_0].[_9]x Hit/Avo.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Your fierce nature[N]
+unnerves your foes.[N]
+Adjacent enemies[N]
+have [_0].[_9]x Hit/Avo.[N]
+[X]
+
+##SmiteSkill
+Smite[X]
+## ^
+Level: [_0] (Active)[N]
+Brute force can have[N]
+its own utility too.[N]
+Next: Use Smite to shove an[N]
+adjacent unit [_2] tiles.[N]
+Req: Corkscrew [_3][X]
+## ^
+Level: MAX (Active)[N]
+Brute force can have[N]
+its own utility too.[N]
+Use Smite to shove an[N]
+adjacent unit [_2] tiles.[N]
+[X]
+
+##WrathSkill
+Wrath[X]
+## ^
+Level: [_0] (Passive)[N]
+Lash out in kind when[N]
+you're wounded badly.[N]
+Next: [_1].[_0]-[_2].[_0]x Crit, scales[N]
+inversely with current HP%.[N]
+Req: Close Combat [_1][X]
+## ^
+Level: MAX (Passive)[N]
+Lash out in kind when[N]
+you're wounded badly.[N]
+Get [_1].[_0]-[_2].[_0]x Crit, scales[N]
+inversely with curr. HP%.[N]
+[X]
+
+##AdrenalineRushSkill
+Adrenaline Rush[X]
+## ^
+Level: [_0] (Passive)[N]
+Another punch never hurts.[N]
+Next: Upon successful bind[N]
+or ailment infliction,[N]
+strike again in combat.[N]
+Req: PROMO[X]
+## ^
+Level: MAX (Passive)[N]
+Another punch never hurts.[N]
+Upon successful bind[N]
+or ailment infliction,[N]
+strike again in combat.[N]
+Doesn't increase Art cost.[X]
+
+##BreatherSkill
+Breather[X]
+## ^
+Level: [_0] (Active)[N]
+Take a moment to breathe.[N]
+Next: [_3] Dur, requires/heals[N]
+debuffs/ailm./binds,[N]
+restores [_2][_0]% HP.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+Take a moment to breathe.[N]
+[_3] Dur, requires/heals[N]
+debuffs/ailm./binds,[N]
+restores [_2][_0]% HP.[N]
+Next: [_3][_3]% HP.[X]
+## ^
+Level: MAX (Active)[N]
+[_3] Dur, requires/heals[N]
+debuffs/ailm./binds,[N]
+restores [_3][_3]% HP.[N]
+[X]
+
+##DrainPunchSkill
+Drain Punch[X]
+## ^
+Level: [_0] (Active)[N]
+Hit 'em so hard that[N]
+it's almost refreshing.[N]
+Next: [_3] Dur, [_1].[_5]x Atk,[N]
+steals HP for the user.[N]
+Req: Leg Render [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Hit 'em so hard that[N]
+it's almost refreshing.[N]
+[_3] Dur, [_1].[_5]x Atk,[N]
+steals HP for the user.[N]
+Next: [_2].[_0]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Hit 'em so hard that[N]
+it's almost refreshing.[N]
+[_3] Dur, [_2].[_0]x Atk,[N]
+steals HP for the user.[N]
+[X]
+
+##VortexJabSkill
+Vortex Jab[X]
+## ^
+Level: [_0] (Active)[N]
+Jab hard enough to send[N]
+out a massive shockwave.[N]
+Next: [_5] Dur, [_1]-[_3] Rng,[N]
+[_1].[_8]x Atk.[N]
+Req: Skull Cracker [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Jab hard enough to send[N]
+out a massive shockwave.[N]
+[_5] Dur, [_1]-[_3] Rng,[N]
+[_1].[_8]x Atk.[N]
+Next: [_2].[_1]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Jab hard enough to send[N]
+out a massive shockwave.[N]
+[_5] Dur, [_1]-[_3] Rng,[N]
+[_2].[_1]x Atk.[N]
+[X]
+
+##ArmBreakerSkill
+Arm Breaker[X]
+## ^
+Level: [_0] (Active)[N]
+A punch that goes[N]
+right for the arms.[N]
+Next: [_1] Dur, [_0].[_8]x Atk,[N]
+[_4][_0]% base Arm Bind chance.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+A punch that goes[N]
+right for the arms.[N]
+[_1] Dur, [_0].[_8]x Atk,[N]
+[_4][_0]% base Arm Bind chance.[N]
+Next: [_1].[_0]x Atk, [_5][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+A punch that goes[N]
+right for the arms.[N]
+[_1] Dur, [_1].[_0]x Atk,[N]
+[_5][_0]% base Arm Bind chance.[N]
+Next: [_1].[_2]x Atk, [_7][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+A punch that goes[N]
+right for the arms.[N]
+[_1] Dur, [_1].[_2]x Atk,[N]
+[_7][_0]% base Arm Bind chance.[N]
+[X]
+
+##LegRenderSkill
+Leg Render[X]
+## ^
+Level: [_0] (Active)[N]
+A punch that goes[N]
+right for the legs.[N]
+Next: [_1] Dur, [_0].[_8]x Atk,[N]
+[_4][_0]% base Leg Bind chance.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+A punch that goes[N]
+right for the legs.[N]
+[_1] Dur, [_0].[_8]x Atk,[N]
+[_4][_0]% base Leg Bind chance.[N]
+Next: [_1].[_0]x Atk, [_5][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+A punch that goes[N]
+right for the legs.[N]
+[_1] Dur, [_1].[_0]x Atk,[N]
+[_5][_0]% base Leg Bind chance.[N]
+Next: [_1].[_2]x Atk, [_7][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+A punch that goes[N]
+right for the legs.[N]
+[_1] Dur, [_1].[_2]x Atk,[N]
+[_7][_0]% base Leg Bind chance.[N]
+[X]
+
+##SkullCrackerSkill
+Skull Cracker[X]
+## ^
+Level: [_0] (Active)[N]
+A punch that goes[N]
+right for the head.[N]
+Next: [_1] Dur, [_0].[_8]x Atk,[N]
+[_4][_0]% base Head Bind chance.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+A punch that goes[N]
+right for the head.[N]
+[_1] Dur, [_0].[_8]x Atk,[N]
+[_4][_0]% base Head Bind chance.[N]
+Next: [_1].[_0]x Atk, [_5][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+A punch that goes[N]
+right for the head.[N]
+[_1] Dur, [_1].[_0]x Atk,[N]
+[_5][_0]% base Head Bind chance.[N]
+Next: [_1].[_2]x Atk, [_7][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+A punch that goes[N]
+right for the head.[N]
+[_1] Dur, [_1].[_2]x Atk,[N]
+[_7][_0]% base Head Bind chance.[N]
+[X]
+
+##CorkscrewSkill
+Corkscrew[X]
+## ^
+Level: [_0] (Active)[N]
+A tackle that goes[N]
+right for the core.[N]
+Next: [_2] Dur, [_1].[_2]x Atk,[N]
+[_3][_0]% base Paralyze chance.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+A tackle that goes[N]
+right for the core.[N]
+[_2] Dur, [_1].[_2]x Atk,[N]
+[_3][_0]% base Paralyze chance.[N]
+Next: [_1].[_5]x Atk, [_4][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+A tackle that goes[N]
+right for the core.[N]
+[_2] Dur, [_1].[_5]x Atk,[N]
+[_4][_0]% base Paralyze chance.[N]
+Next: [_1].[_8]x Atk, [_6][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+A tackle that goes[N]
+right for the core.[N]
+[_2] Dur, [_1].[_8]x Atk,[N]
+[_6][_0]% base Paralyze chance.[N]
+[X]
+
+##CrossCounterSkill
+Cross Counter[X]
+## ^
+Level: [_0] (Active)[N]
+Strike a fierce pose.[N]
+Next: [_4] Dur, this turn[N]
+counterattacks have[N]
+[_5][_0]% base Full Bind chance.[N]
+Req: PR, Arm/Leg/Skull [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Strike a fierce pose.[N]
+[_4] Dur, this turn[N]
+counterattacks have[N]
+[_5][_0]% base Full Bind chance.[N]
+Next: [_7][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+Strike a fierce pose.[N]
+[_4] Dur, this turn[N]
+counterattacks have[N]
+[_7][_0]% base Full Bind chance.[N]
+Next: [_1][_0][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+Strike a fierce pose.[N]
+[_4] Dur, this turn[N]
+counterattacks have[N]
+[_1][_0][_0]% base Full Bind chance.[N]
+[X]
+
+##CloseCombatSkill
+Close Combat[X]
+## ^
+Level: [_0] (Active)[N]
+Caution to the wind.[N]
+Next: [_4] Dur, [_1].[_5]x Atk,[N]
+Inf. the user with[N]
+[_0].[_5]x Atk/Def ([_3] turns).[N]
+Req: Breath. [_2], Arm [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Caution to the wind.[N]
+[_4] Dur, [_1].[_5]x Atk,[N]
+Inf. the user with[N]
+[_0].[_5]x Atk/Def ([_3] turns).[N]
+Next: [_1].[_8]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+Caution to the wind.[N]
+[_4] Dur, [_1].[_8]x Atk,[N]
+Inf. the user with[N]
+[_0].[_5]x Atk/Def ([_3] turns).[N]
+Next: [_2].[_1]x Atk.[X]
+## ^
+Level: [_3] (Active)[N]
+Caution to the wind.[N]
+[_4] Dur, [_2].[_1]x Atk,[N]
+Inf. the user with[N]
+[_0].[_5]x Atk/Def ([_3] turns).[N]
+Next: [_2].[_5]x Atk.[X]
+## ^
+Level: [_4] (Active)[N]
+Caution to the wind.[N]
+[_4] Dur, [_2].[_5]x Atk,[N]
+Inf. the user with[N]
+[_0].[_5]x Atk/Def ([_3] turns).[N]
+Next: [_3].[_5]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Caution to the wind.[N]
+[_4] Dur, [_3].[_5]x Atk,[N]
+Inf. the user with[N]
+[_0].[_5]x Atk/Def ([_3] turns).[N]
+[X]
+
+##FullComboSkill
+Full Combo[X]
+## ^
+Level: [_0] (Active)[N]
+Keep on punching.[N]
+Next: [_4] Dur, [_0].[_5]x Atk,[N]
+strikes an extra time[N]
+per target bind/ailment.[N]
+Req: Arm/Leg/Skull/Cork [_2][X]
+## ^
+Level: [_1] (Active)[N]
+Keep on punching.[N]
+[_4] Dur, [_0].[_5]x Atk,[N]
+strikes an extra time[N]
+per target bind/ailment.[N]
+Next: [_0].[_6]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+Keep on punching.[N]
+[_4] Dur, [_0].[_6]x Atk,[N]
+strikes an extra time[N]
+per target bind/ailment.[N]
+Next: [_0].[_8]x Atk.[X]
+## ^
+Level: [_3] (Active)[N]
+Keep on punching.[N]
+[_4] Dur, [_0].[_8]x Atk,[N]
+strikes an extra time[N]
+per target bind/ailment.[N]
+Next: [_1].[_0]x Atk.[X]
+## ^
+Level: [_4] (Active)[N]
+Keep on punching.[N]
+[_4] Dur, [_1].[_0]x Atk,[N]
+strikes an extra time[N]
+per target bind/ailment.[N]
+Next: [_1].[_2]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Keep on punching.[N]
+[_4] Dur, [_1].[_2]x Atk,[N]
+strikes an extra time[N]
+per target bind/ailment.[N]
+[X]
+
+##ShindeiruSkill
+Shindeiru[X]
+## ^
+Level: [_0] (Active)[N]
+Next: [_5] Dur, [_1]-[_5] Rng,[N]
+[_0].[_0]x Atk vs unbound,[N]
+[_0].[_5]x Atk/skips target's[N]
+next turn vs bound.[N]
+Req: PR, Cork. [_3], F.Com. [_5][X]
+## ^
+Level: [_1] (Active)[N]
+[_5] Dur, [_1]-[_5] Rng,[N]
+[_0].[_0]x Atk vs unbound,[N]
+[_0].[_5]x Atk/skips target's[N]
+next turn vs bound.[N]
+Next: [_1].[_0]x Atk vs bound.[X]
+## ^
+Level: [_2] (Active)[N]
+[_5] Dur, [_1]-[_5] Rng,[N]
+[_0].[_0]x Atk vs unbound,[N]
+[_1].[_0]x Atk/skips target's[N]
+next turn vs bound.[N]
+Next: [_1].[_5]x Atk vs bound.[X]
+## ^
+Level: [_3] (Active)[N]
+[_5] Dur, [_1]-[_5] Rng,[N]
+[_0].[_0]x Atk vs unbound,[N]
+[_1].[_5]x Atk/skips target's[N]
+next turn vs bound.[N]
+Next: [_2].[_0]x Atk vs bound.[X]
+## ^
+Level: [_4] (Active)[N]
+[_5] Dur, [_1]-[_5] Rng,[N]
+[_0].[_0]x Atk vs unbound,[N]
+[_2].[_0]x Atk/skips target's[N]
+next turn vs bound.[N]
+Next: [_3].[_0]x Atk vs bound.[X]
+## ^
+Level: MAX (Active)[N]
+A delayed undoing.[N]
+[_5] Dur, [_1]-[_5] Rng,[N]
+[_0].[_0]x Atk vs unbound,[N]
+[_3].[_0]x Atk/skips target's[N]
+next turn vs bound.[X]

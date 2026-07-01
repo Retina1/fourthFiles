@@ -42,6 +42,7 @@ AreaEvent(0x0,EndingScene,0,4,0,5)
 AreaEvent(0x9,Encounter1,0,14,0,14)
 AreaEvent(0xa,Encounter2,12,18,12,18)
 AreaEvent(0xd,Quest1_5x_Event,1,2,2,2)
+AreaEvent(0x10,Quest1_5x_Reminder,6,3)
 AreaEvent(0xf,EncounterWyvern,14,14,17,18)
 AreaEvent(0x0,Warp5_0,5,0)
 AreaEvent(0x0,Warp16_0,16,0)
@@ -143,6 +144,8 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 EncounterWyvernEnemies:
 UNIT Dragon Wyvern 0x0 Level(11,Enemy,1) [16,16] DropItem 0x0 0x0 0x0 [Voltage,HolyCloak] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(9,Enemy,1) [17,14] 0x0 0x0 0x0 0x0 [Longbow] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(9,Enemy,1) [17,18] 0x0 0x0 0x0 0x0 [Longbow] NoAI
 UNIT
 
 ALIGN 4
@@ -153,8 +156,17 @@ ENUT WaitEventTrapsFlag
 CHECK_EVENTID Quest1_5x_Flag
 BNE 0x1 0xc 0x0
 ENUT 0xd
+ENUT 0x10
 LABEL 0x1
+CHECK_TUTORIAL
+BNE 0x2 0xc 0x0
+ENUT 0x10
+LABEL 0x2
 ENUT 0xf
+EndEvent
+
+Quest1_5x_Reminder:
+SystemText(Quest1_5x_ReminderText)
 EndEvent
 
 Encounter1:
@@ -196,7 +208,7 @@ ClearArenaBorders
 CLEA 0
 ResetNathan
 FADU 16
-MUSC 0
+MUSC Song_CursedCathedral
 SetMapBGM(Song_CursedCathedral)
 EndEvent
 

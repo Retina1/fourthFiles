@@ -771,8 +771,8 @@ successfully inflicting a disable.[X]
 Breather: Restore own HP[N]
 and heal any debuffs.[X]
 ##
-Drain Punch: A punch that heals[N]
-user based on enemy's Atk.[X]
+Drain Punch: A punch that[N]
+steals enemy HP for the user.[X]
 ##
 Vortex Jab: A mighty punch that[N]
 utilizes a ranged shockwave.[X]
@@ -795,11 +795,11 @@ to bind when countering.[X]
 Close Combat: A mighty attack[N]
 that debuffs the user's Atk/Def.[X]
 ##
-Full Combo: String together three[N]
-bind punches at reduced power.[X]
+Full Combo: Strike an extra time[N]
+per bind/ailment your enemy has.[X]
 ##
-Knockout Finisher: A finishing[N]
-blow that devastates bound foes.[X]
+Shindeiru: Strike and stun[N]
+a bound target from a range.[X]
 
 //hun
 ##MSS_CoverFighter
@@ -840,7 +840,7 @@ Scapegoat: Grant an ally a[N]
 massive boost to aggro.[X]
 ##
 Illusion Step: Take a bow/gun[N]
-chasing stance to boost Avo.[X]
+boosting stance and boost Avo.[X]
 ##
 Hazy Arrow: A mighty arrow that[N]
 requires a prior dodge to use.[X]

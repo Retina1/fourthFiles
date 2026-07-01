@@ -25,8 +25,6 @@ void BattleApplyStatus(struct BattleUnit* battleUnit, u8 status) {
 }
 
 // skills to use
-// war fortune - 1.05x odds per magus with 111
-// impure reach - big odds bump for hexers with 141 (additive passive like ailment boost? after resistances?)
 s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender, u8 baseRate) {
 	int attackerLuc = GetUnitLuck(&attacker->unit);
 	int defenderLuc = GetUnitLuck(&defender->unit);
@@ -83,7 +81,7 @@ s8 StatusOddsRollBattle(struct BattleUnit* attacker, struct BattleUnit* defender
 void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	int currentStatus = defender->unit.statusIndex;
 	int effect,odds;
-	if ((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) {
+	if (((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) || (GetActiveArt(&attacker->unit) == (154+30))) {
 		effect = GetArtStatusEffect(attacker,defender);
 		odds = GetArtStatusOdds(attacker,defender);
 	}
@@ -201,7 +199,7 @@ void BattleWeaponStatuses(struct BattleUnit* attacker, struct BattleUnit* defend
 }
 
 
-
+extern u8 gHitCountRAMAddress;
 void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit* defender) {
 		//if foe asleep and attack didn't miss, wake
 		if (defender->unit.statusIndex == UNIT_STATUS_SLEEP){
@@ -211,6 +209,11 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
 		}
 	    if (defender->statusOut <= 0){
 			BattleWeaponStatuses(attacker, defender);
+		}
+		
+		if ((defender->statusOut > 0) && ((attacker->multihitArtTracker & 2) == 0) && (UNIT_HAS_SKILL(&attacker->unit,PUG,skill_141))){
+			gHitCountRAMAddress += 1;
+			attacker->multihitArtTracker |= 2;
 		}
 
 		//replace devil with curse
@@ -435,13 +438,13 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
 	
 	//todo - make durability deplete once
 	if ((attacker == &gBattleActor) && (GetActiveArt(&attacker->unit) != 0x0)) {
-		if (attacker->multihitArtTracker == 0) {
+		if ((attacker->multihitArtTracker & 1) == 0) {
 			int artCost = CombatArtDurabilityList[GetActiveArt(&attacker->unit)];
 			//cost mods
 			artCost = ApplyDurabilityCostMods(&attacker->unit,artCost);
 			
 			attacker->weapon = GetItemAfterArtUse(attacker->weapon, artCost);
-			attacker->multihitArtTracker = 1;
+			attacker->multihitArtTracker += 1;
 			if (!attacker->weapon)
 				attacker->weaponBroke = TRUE;
 		}
@@ -559,6 +562,11 @@ void BattleGenerateHitAttributes(struct BattleUnit* attacker, struct BattleUnit*
 
     if (!BattleRoll2RN(gBattleStats.hitRate, TRUE)) {
         gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_MISS;
+		
+		if (UNIT_HAS_SKILL(&defender->unit,SRV,skill_521)) {
+			GetUnit(defender->unit.index)->classSkillState |= 2; //store hazy arrow
+		}
+		
         return;
     }
 

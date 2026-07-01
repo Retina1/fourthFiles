@@ -93,11 +93,15 @@ CharacterEvent(MagusUnlockedFlag,UnlockMagusClasses,Nathan,Lucien)
 END_MAIN
 
 LocationBasedEvents:
+//shadesong door
+Door(0x7,5,7)
 END_MAIN
 
 MiscBasedEvents:
 //give nathan infinite moves
 AFEV 0x0 MoveResetter Chapter2DoneFlag
+//yell about door
+AFEV 0x0 ShadesongDoor 0x7
 //in square
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToGuildhall,4,3)
 AreaEvent(LocationFlagHirschringSquare,SquareMoveToBlacksmith,14,5)

@@ -186,6 +186,10 @@ void RewarpSelect_OnIdle(struct RewarpSelectProc* proc)
 
             gActionData.xOther = gBmSt.playerCursor.x;
             gActionData.yOther = gBmSt.playerCursor.y;
+            gActionData.targetIndex = gActiveUnit->index;
+            gActionData.subjectIndex = gActiveUnit->index;
+			gBattleTarget.changeHP =  gActionData.xOther;
+			gBattleTarget.changePow =  gActionData.yOther;
 
             SetStaffUseAction(gActiveUnit);
 

@@ -190,15 +190,10 @@ BeginningScene:
 DifficultySwapper
 MUSC AmbientShimmer
 //scene of gore no eye, resolve to survive
-CleanTextNoMap(CaveCG,FillerDialogue)
-
-
+CleanTextNoMap(CaveCG,Dungeon2_Opening)
 CallPreps
 CLEA 0
-//set all deployed units to be undeployed but with the not deployed last chapter thing unset
-//that'll clean it up
 InitializeNathan(1,2)
-//initialize flag so we don't have a first screen flash
 ENUT WaitEventTrapsFlag
 ENUT 0x66
 EndEvent

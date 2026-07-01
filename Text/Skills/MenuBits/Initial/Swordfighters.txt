@@ -36,7 +36,7 @@ Cost: 4 Durability.[X]
 ##UM_Spellchaser
  Spellchaser[X]
 ##UM_SpellchaserDesc
-Ready up to chase magic.[N]
+Ready up to boost magic.[N]
 Cost: 3 Durability.[X]
 ##UM_FullBreak
  Full Break[X]

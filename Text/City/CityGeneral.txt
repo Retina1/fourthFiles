@@ -1,3 +1,12 @@
+##PleaseDontOpenThatDoor
+[MidLeft][Nathan][FarFarRight]
+Sir! That door's for[N]
+staff only.[AN]
+Please don't open it.[AN][MidLeft]
+My bad.[AN][CloseEyes]
+[...]Maybe one day[N]
+it'll work.[A][X]
+
 ##FillerDialogue
 [MidLeft][Nathan]
 This is a placeholder.[N]

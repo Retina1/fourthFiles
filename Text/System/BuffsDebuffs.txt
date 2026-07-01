@@ -26,6 +26,27 @@ Rallying Cry[X]
 Bonuses based on source[N]
 Noble's skill levels.[X]
 
+##TrickeryLabel
+Trickery[X]
+##TrickeryDesc1
+0.7x Hit.[X]
+##TrickeryDesc2
+0.5x Hit.[X]
+##SappingArrowLabel
+Sap. Arrow[X]
+##SappingArrowDesc
+0.8x Atk/AS.[X]
+##PredatorsArrowLabel
+Pred. Arrow[X]
+##PredatorsArrowDesc
+0.6x Atk/Def/AS/Hit/[N]
+Avo/Crit/Luc, -1 Mov.[X]
+
+##CloseCombatLabel
+Close Cmbt.[X]
+##CloseCombatDesc
+0.5x Atk/Def.[X]
+
 ##SpiritShieldLabel
 Spirit Shield[X]
 ##SpiritShieldDesc1

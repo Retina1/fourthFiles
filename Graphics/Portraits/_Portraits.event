@@ -35,6 +35,12 @@ TachyonDMP:
 setMugEntry(TachyonMug,TachyonDMP,3,6,3,4)
 
 ALIGN 4
+//breadbug
+QuintonDMP:
+#incbin "dmps/breadbugQuinton.dmp"
+setMugEntry(QuintonMug,QuintonDMP,2,4,2,2)
+
+ALIGN 4
 //t0w0mey
 WhirlDMP:
 #incbin "dmps/t0w0meyWhirl.dmp"
@@ -51,6 +57,10 @@ ALIGN 4
 NaomiDMP:
 #incbin "dmps/theaNaomi.dmp"
 setMugEntry(NaomiMug,NaomiDMP,2,6,3,4)
+ALIGN 4
+HelenaDMP:
+#incbin "dmps/theaHelena.dmp"
+setMugEntry(HelenaMug,HelenaDMP,2,5,3,3)
 ALIGN 4
 //citrus
 AscellaDMP:

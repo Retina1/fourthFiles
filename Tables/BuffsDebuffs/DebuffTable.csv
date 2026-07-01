@@ -29,11 +29,11 @@ CrippleWhip5Debuff,CrippleWhipLabel,CrippleWhipDesc1,3,3,5,1,1,1,1,1,1,3,5,3,5,1
 Stigmata1Debuff,StigmataLabel,StigmataDesc1,2,4,5,4,5,4,5,4,5,4,5,1,1,1,1,0
 Stigmata2Debuff,StigmataLabel,StigmataDesc2,2,7,10,7,10,7,10,7,10,7,10,1,1,1,1,0
 Stigmata3Debuff,StigmataLabel,StigmataDesc3,2,1,2,1,2,1,2,1,2,1,2,1,1,1,1,0
-CloseCombatDebuff,0,0,3,1,2,1,1,1,1,1,1,1,1,1,2,1,1,0
-Trickery1Debuff,0,0,3,1,1,7,10,1,1,1,1,1,1,1,1,1,1,0
-Trickery2Debuff,0,0,3,1,1,1,2,1,1,1,1,1,1,1,1,1,1,0
-SappingArrowDebuff,0,0,2,4,5,1,1,1,1,1,1,4,5,1,1,1,1,0
-PredatorsArrowDebuff,0,0,3,3,5,3,5,3,5,3,5,3,5,3,5,3,5,1
+CloseCombatDebuff,CloseCombatLabel,CloseCombatDesc,3,1,2,1,1,1,1,1,1,1,1,1,2,1,1,0
+Trickery1Debuff,TrickeryLabel,TrickeryDesc1,3,1,1,7,10,1,1,1,1,1,1,1,1,1,1,0
+Trickery2Debuff,TrickeryLabel,TrickeryDesc2,3,1,1,1,2,1,1,1,1,1,1,1,1,1,1,0
+SappingArrowDebuff,SappingArrowLabel,SappingArrowDesc,2,4,5,1,1,1,1,1,1,4,5,1,1,1,1,0
+PredatorsArrowDebuff,PredatorsArrowLabel,PredatorsArrowDesc,3,3,5,3,5,3,5,3,5,3,5,3,5,3,5,1
 ResonantRoar1Debuff,0,0,2,1,1,1,1,1,1,1,1,1,1,4,5,4,5,0
 ResonantRoar2Debuff,0,0,3,1,1,1,1,1,1,1,1,1,1,4,5,4,5,0
 SluggishHerb1Debuff,0,0,2,1,1,1,1,1,1,1,1,9,10,1,1,1,1,1

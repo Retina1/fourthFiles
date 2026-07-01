@@ -1,0 +1,71 @@
+##UM_Camouflage
+ Stealth[X]
+##UM_CamouflageDesc
+Increase Atk/Avo and decrease[N]
+targeting priority until you[N]
+enter combat again.[X]
+
+##UM_Trickery
+ Trickery[X]
+##UM_TrickeryDesc
+Sharply debuff enemy Hit[N]
+in a small area.[N]
+Cost: 3 Durability.[X]
+##UM_FlameArrow
+ Flame Arrow[X]
+##UM_FlameArrowDesc
+Shoot an arrow that[N]
+targets enemy Res.[N]
+Cost: 3 Durability.[X]
+##UM_SappingArrow
+ Sapping Arrow[X]
+##UM_SappingArrowDesc
+Shoot an arrow that[N]
+debuffs Atk and AS.[N]
+Cost: 3 Durability.[X]
+
+##UM_BlindArrow
+ Blind Arrow[X]
+##UM_BlindArrowDesc
+Shoot a blinding arrow.[N]
+Cost: 2 Durability.[X]
+##UM_SleepArrow
+ Sleep Arrow[X]
+##UM_SleepArrowDesc
+Shoot an enslumbering arrow.[N]
+Cost: 4 Durability.[X]
+##UM_ToxinArrow
+ Toxin Arrow[X]
+##UM_ToxinArrowDesc
+Shoot a venomous arrow.[N]
+Cost: 3 Durability.[X]
+##UM_NumbingArrow
+ Numbing Arrow[X]
+##UM_NumbingArrowDesc
+Shoot a paralytic arrow.[N]
+Cost: 4 Durability.[X]
+
+##UM_Scapegoat
+ Scapegoat[X]
+##UM_ScapegoatDesc
+Grant an ally extra[N]
+Avo and aggro.[N]
+Cost: 5 Durability.[X]
+
+##UM_IllusionStep
+ Illusion Step[X]
+##UM_IllusionStepDesc
+Boost Avo and bolster[N]
+nearby bow/gun attacks.[N]
+Cost: 5 Durability.[X]
+
+##UM_HazyArrow
+ Hazy Arrow[X]
+##UM_HazyArrowDesc
+An arrow for the avoidant.[N]
+Cost: 1 Durability.[X]
+##UM_PredatorsArrow
+ Pred. Arrow[X]
+##UM_PredatorsArrowDesc
+They won't see it coming.[N]
+Cost: 4 Durability.[X]

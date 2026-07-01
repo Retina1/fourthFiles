@@ -205,6 +205,7 @@ EndEvent
 EndingScene:
 EndingSceneToggles
 DumpUnitItems(Benthus)
+ASMC FullyHealGoreCh7|1
 MUSC AmbientShimmer
 //map events
 //outline - scene inside of mines, victory yet doubt
@@ -216,6 +217,7 @@ CLEE 0
 CLEN 0
 //scene inside mines searching for endbringer, maybe taking crystal down
 TILECHANGE 0x0
+CAM1 [0,0]
 LOAD2 0x1 EndingCutscene1;ENUN
 FADU 10
 Text(C7Ending2)

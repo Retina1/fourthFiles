@@ -37,7 +37,7 @@
 #define Rodney 0x25
 #define Gamon 0x26
 #define Jane 0x27
-#define ARCH6 0x28
+#define Eliza 0x28
 #define ARCH7 0x29
 #define Cassandra 0x2A
 #define Waves 0x2B

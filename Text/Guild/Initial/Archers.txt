@@ -1,3 +1,38 @@
+##Guild_Eliza_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eliza]
+Not in the mood for talk,[N]
+so I'll make this quick.[AN]
+Eliza Lee. Contract killer.[AN]
+Hire me if there is something[N]
+that you would like dead.[AN][Left]
+Contract kill-[AN][MidRight]
+I said no talk, robes.[AN][FarLeft]
+[...][AN][MidRight]
+Don't even think about[N]
+chiming in, eyepatch.[AN][FarLeft]
+[...][AN][MidRight][Smile]
+Good answer.[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eliza]
+Use me well. This better[N]
+not be beneath me.[AN][Clear][Left]
+[...]Contract killer?[N]
+Like an assassin?[AN][FarLeft]
+We get all sorts here.[N]
+Aren't you used to it?[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eliza]
+Stop wasting my[N]
+time, then.[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eliza]
+[...][AN][FarLeft]
+If looks could kill.[AN][MidRight]
+For your sake, be glad[N]
+they don't, eyepatch.[AN]
+[...]Well, robes? Spit it out.[N]
+Have you changed your mind?[A][X]
+
 ##Guild_Jane_Dialogue
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Jane]
 Oh! Hi! Hi hello hi there![N]

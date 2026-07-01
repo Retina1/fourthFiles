@@ -1,45 +1,45 @@
 //darkhunt
 ALIGN 4
 DarkHunterPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 DominatorPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 //lancer
-PaletteIdentifier(Guildmaster_Highlander, Guildmaster_HighlanderDMP)
+PaletteIdentifier(Highlander_Guildmaster, Highlander_GuildmasterDMP)
 ALIGN 4
-Guildmaster_HighlanderDMP:
-#incbin "paletteFiles/MainStory/Guildmaster_Highlander.dmp"
+Highlander_GuildmasterDMP:
+#incbin "paletteFiles/MainStory/Highlander_Guildmaster.dmp"
 
 ALIGN 4
 LancerPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 HighlanderPaletteList:
-PaletteAssociationEntry(Guildmaster,Guildmaster_Highlander)
-PaletteAssociationEntry(BossGuildmaster,Guildmaster_Highlander)
+PaletteAssociationEntry(Guildmaster,Highlander_Guildmaster)
+PaletteAssociationEntry(BossGuildmaster,Highlander_Guildmaster)
 WORD 0 0
 
 //brawler
 ALIGN 4
 BrawlerPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 PugilistPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 //hunter
 ALIGN 4
 HunterPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 SurvivalistPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0

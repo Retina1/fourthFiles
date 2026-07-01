@@ -1,0 +1,62 @@
+##UM_Breather
+ Breather[X]
+##UM_BreatherDesc
+Purge debuffs/ailments/[N]
+binds to restore HP.[N]
+Cost: 3 Durability.[X]
+
+##UM_DrainPunch
+ Drain Punch[X]
+##UM_DrainPunchDesc
+Punch to steal HP.[N]
+Cost: 3 Durability.[X]
+##UM_VortexJab
+ Vortex Jab[X]
+##UM_VortexJabDesc
+Punch with great range.[N]
+Cost: 5 Durability.[X]
+
+##UM_ArmBreaker
+ Arm Breaker[X]
+##UM_ArmBreakerDesc
+Punch to bind arms.[N]
+Cost: 1 Durability.[X]
+##UM_LegRender
+ Leg Render[X]
+##UM_LegRenderDesc
+Punch to bind legs.[N]
+Cost: 1 Durability.[X]
+##UM_SkullCracker
+ Skull Cracker[X]
+##UM_SkullCrackerDesc
+Punch to bind head.[N]
+Cost: 1 Durability.[X]
+##UM_Corkscrew
+ Corkscrew[X]
+##UM_CorkscrewDesc
+Punch to paralyze.[N]
+Cost: 2 Durability.[X]
+##UM_CrossCounter
+ Crs. Counter[X]
+##UM_CrossCounterDesc
+Take a stance to fully[N]
+bind when countering.[N]
+Cost: 4 Durability.[X]
+##UM_CloseCombat
+ Close Combat[X]
+##UM_CloseCombatDesc
+A mighty strike that[N]
+debuffs user Atk/Def.[N]
+Cost: 4 Durability.[X]
+##UM_FullCombo
+ Full Combo[X]
+##UM_FullComboDesc
+A combo that strikes more[N]
+times against bound foes.[N]
+Cost: 4 Durability.[X]
+##UM_Shindeiru
+ Shindeiru[X]
+##UM_ShindeiruDesc
+There is no escape.[N]
+They are already dead.[N]
+Cost: 5 Durability.[X]

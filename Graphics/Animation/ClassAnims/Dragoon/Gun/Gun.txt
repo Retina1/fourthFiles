@@ -1,5 +1,5 @@
 #######################################################
-#D3 Gun Dragoon Handgonne
+#29 Dragoon Bow
 #
 #When importing to FEditorAdv delete # and after each line.
 #######################################################

@@ -50,8 +50,8 @@ POIN PriestSkillLabels
 POIN LurkerSkillLabels
 POIN DarkHunterSkillLabels
 POIN LancerSkillLabels
-POIN SkillLabels
-POIN SkillLabels
+POIN BrawlerSkillLabels
+POIN HunterSkillLabels
 POIN SkillLabels
 POIN SkillLabels
 POIN SkillLabels
@@ -135,6 +135,135 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
+
+ALIGN 4
+HunterSkillLabels:
+OneLevelSkillLabel(CoverFighterSkill,NoReq)//0
+OneLevelSkillLabel(LoneWolfSkill,NoReq)
+OneLevelSkillLabel(HuntersSpoilsSkill,HuntersSpoilsReq)
+OneLevelSkillLabel(CamouflageSkill,PromotedReq)
+TwoLevelSkillLabel(TrickerySkill,NoReq)//4
+TwoLevelSkillLabel(FlameArrowSkill,FlameArrowReq)
+TwoLevelSkillLabel(SappingArrowSkill,SappingArrowReq)
+ThreeLevelSkillLabel(BlindArrowSkill,NoReq)//7
+ThreeLevelSkillLabel(SleepArrowSkill,SleepArrowReq)
+ThreeLevelSkillLabel(ToxinArrowSkill,ToxinArrowReq)
+ThreeLevelSkillLabel(NumbingArrowSkill,NumbingArrowReq)
+ThreeLevelSkillLabel(ScapegoatSkill,ScapegoatReq)
+FiveLevelSkillLabel(IllusionStepSkill,IllusionStepReq)//12
+FiveLevelSkillLabel(HazyArrowSkill,HazyArrowReq)
+FiveLevelSkillLabel(PredatorsArrowSkill,PredatorsArrowReq)
+SkillLabelTerminator
+
+ALIGN 4
+HuntersSpoilsReq:
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+FlameArrowReq:
+ReqEntry(9,2)
+ReqTerm
+ALIGN 4
+SappingArrowReq:
+ReqEntry(5,2)
+ReqTerm
+ALIGN 4
+SleepArrowReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+ToxinArrowReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+NumbingArrowReq:
+ReqEntry(8,2)
+ReqTerm
+ALIGN 4
+ScapegoatReq:
+ReqPromo
+ReqEntry(4,2)
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+IllusionStepReq:
+ReqEntry(5,2)
+ReqEntry(10,3)
+ReqTerm
+ALIGN 4
+HazyArrowReq:
+ReqEntry(4,2)
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+PredatorsArrowReq:
+ReqPromo
+ReqEntry(3,1)
+ReqEntry(6,2)
+ReqEntry(9,3)
+ReqTerm
+
+ALIGN 4
+BrawlerSkillLabels:
+OneLevelSkillLabel(IntimidationSkill,NoReq)//0
+OneLevelSkillLabel(SmiteSkill,SmiteReq)
+OneLevelSkillLabel(WrathSkill,WrathReq)
+OneLevelSkillLabel(AdrenalineRushSkill,PromotedReq)
+TwoLevelSkillLabel(BreatherSkill,NoReq)//4
+TwoLevelSkillLabel(DrainPunchSkill,DrainPunchReq)
+TwoLevelSkillLabel(VortexJabSkill,VortexJabReq)
+ThreeLevelSkillLabel(ArmBreakerSkill,NoReq)//7
+ThreeLevelSkillLabel(LegRenderSkill,NoReq)
+ThreeLevelSkillLabel(SkullCrackerSkill,NoReq)
+ThreeLevelSkillLabel(CorkscrewSkill,NoReq)
+ThreeLevelSkillLabel(CrossCounterSkill,CrossCounterReq)
+FiveLevelSkillLabel(CloseCombatSkill,CloseCombatReq)//12
+FiveLevelSkillLabel(FullComboSkill,FullComboReq)
+FiveLevelSkillLabel(ShindeiruSkill,ShindeiruReq)
+SkillLabelTerminator
+
+ALIGN 4
+SmiteReq:
+ReqEntry(10,3)
+ReqTerm
+ALIGN 4
+WrathReq:
+ReqEntry(12,1)
+ReqTerm
+ALIGN 4
+DrainPunchReq:
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+VortexJabReq:
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+CrossCounterReq:
+ReqPromo
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqEntry(9,3)
+ReqTerm
+ALIGN 4
+CloseCombatReq:
+ReqEntry(4,2)
+ReqEntry(7,3)
+ReqTerm
+ALIGN 4
+FullComboReq:
+ReqEntry(7,2)
+ReqEntry(8,2)
+ReqEntry(9,2)
+ReqEntry(10,2)
+ReqTerm
+ALIGN 4
+ShindeiruReq:
+ReqPromo
+ReqEntry(10,3)
+ReqEntry(13,5)
+ReqTerm
 
 ALIGN 4
 LancerSkillLabels:
@@ -861,7 +990,7 @@ SkillLabelTerminator
 
 ALIGN 4
 AnatomyReq:
-ReqEntry(10,3)
+ReqEntry(10,1)
 ReqTerm
 ALIGN 4
 SlumberWhipReq:
@@ -873,7 +1002,7 @@ ReqEntry(8,2)
 ReqTerm
 ALIGN 4
 PrecisionReq:
-ReqEntry(12,2)
+ReqEntry(12,1)
 ReqTerm
 ALIGN 4
 ClimaxWhipReq:

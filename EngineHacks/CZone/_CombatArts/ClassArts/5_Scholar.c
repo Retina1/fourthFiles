@@ -187,7 +187,7 @@ u8 EarthspikeArtMenuUsability(const struct MenuItemDef* def, int number){
 void EarthspikePrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 	int mightBonus = 16;
 	int hitMul = 3;
-	if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_222)){
+	if (UNIT_HAS_SKILL(&actor->unit,WRK,skill_232)){
 		mightBonus = 28;
 		hitMul = 2;
 	}

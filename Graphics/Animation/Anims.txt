@@ -157,3 +157,15 @@ Female_Curate_Magic
 Female_Curate_Unarmed
 Female_Medic_Magic
 Female_Medic_Unarmed
+Female_Myrmidon_Sword
+Female_Myrmidon_Unarmed
+Female_Rider_Lance
+Female_Rider_Unarmed
+Female_Strider_Lance
+Female_Strider_Unarmed
+Female_Raider_Axe
+Female_Raider_Handaxe
+Female_Raider_Unarmed
+Female_Trailblazer_Axe
+Female_Trailblazer_Handaxe
+Female_Trailblazer_Unarmed

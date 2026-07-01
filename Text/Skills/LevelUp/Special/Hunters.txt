@@ -1,0 +1,430 @@
+
+##CoverFighterSkill
+Cover Fighter[X]
+## ^
+Level: [_0] (Passive)[N]
+Hunting is about[N]
+knowing the land.[N]
+Next: [_1].[_2]x Atk/Crit/Avo if[N]
+on terrain with bonuses.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Hunting is about[N]
+knowing the land.[N]
+[_1].[_2]x Atk/Crit/Avo while[N]
+on terrain with bonuses.[N]
+[X]
+
+##LoneWolfSkill
+Lone Wolf[X]
+## ^
+Level: [_0] (Passive)[N]
+Dodge more effectively[N]
+with few distractions.[N]
+Next: [_1].[_5]x Avo if no[N]
+allies within [_2] tiles.[N]
+Req: None[X]
+## ^
+Level: MAX (Passive)[N]
+Dodge more effectively[N]
+with few distractions.[N]
+[_1].[_5]x Avo if no allies[N]
+within [_2] tiles.[N]
+[X]
+
+##HuntersSpoilsSkill
+Hunter's Spoils[X]
+## ^
+Level: [_0] (Passive)[N]
+Reap greater rewards[N]
+from your quarry.[N]
+Next: Gain [_1].[_3]x Exp from[N]
+debuffed foes.[N]
+Req: Sapping Arrow [_1][X]
+## ^
+Level: MAX (Passive)[N]
+Reap greater rewards[N]
+from your quarry.[N]
+Gain [_1].[_3]x Exp from[N]
+debuffed foes.[N]
+[X]
+
+##CamouflageSkill
+Camouflage[X]
+## ^
+Level: [_0] (Active)[N]
+Next: Use Stealth to gain[N]
+[_1].[_5]x Atk/Avo and lower[N]
+targeting priority until[N]
+next initiated attack.[N]
+Req: PROMO[X]
+## ^
+Level: MAX (Active)[N]
+Hide in plain sight.[N]
+Use Stealth to gain[N]
+[_1].[_5]x Atk/Avo and lower[N]
+targeting priority until[N]
+next initiated attack.[X]
+
+##TrickerySkill
+Trickery[X]
+## ^
+Level: [_0] (Active)[N]
+Use your keen wits to[N]
+befuddle your foes.[N]
+Next: [_3] Dur, Blast [_5]/[_1] (Foe),[N]
+Inf. [_0].[_7]x Hit ([_3] turns).[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+Use your keen wits to[N]
+befuddle your foes.[N]
+[_3] Dur, Blast [_5]/[_1] (Foe),[N]
+Inf. [_0].[_7]x Hit ([_3] turns).[N]
+Next: [_0].[_5]x Hit.[X]
+## ^
+Level: MAX (Active)[N]
+Use your keen wits to[N]
+befuddle your foes.[N]
+[_3] Dur, Blast [_5]/[_1] (Foe),[N]
+Inf. [_0].[_5]x Hit ([_3] turns).[N]
+[X]
+
+##FlameArrowSkill
+Flame Arrow[X]
+## ^
+Level: [_0] (Active)[N]
+An arrow enchanted to[N]
+light when striking.[N]
+Next: [_3] Dur, [_1].[_0]x Atk,[N]
+target Res instead of Def.[N]
+Req: Toxin Arrow [_2][X]
+## ^
+Level: [_1] (Active)[N]
+An arrow enchanted to[N]
+light when striking.[N]
+[_3] Dur, [_1].[_0]x Atk,[N]
+target Res instead of Def.[N]
+Next: [_1].[_3]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+An arrow enchanted to[N]
+light when striking.[N]
+[_3] Dur, [_1].[_3]x Atk,[N]
+target Res instead of Def.[N]
+[X]
+
+##SappingArrowSkill
+Sapping Arrow[X]
+## ^
+Level: [_0] (Active)[N]
+An arrow with an[N]
+unpleasant aura.[N]
+Next: [_3] Dur, [_1].[_0]x Atk,[N]
+Inf. [_0].[_8]x Atk/AS ([_2] turns).[N]
+Req: Flame Arrow [_2][X]
+## ^
+Level: [_1] (Active)[N]
+An arrow with an[N]
+unpleasant aura.[N]
+[_3] Dur, [_1].[_0]x Atk,[N]
+Inf. [_0].[_8]x Atk/AS ([_2] turns).[N]
+Next: [_1].[_3]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+An arrow with an[N]
+unpleasant aura.[N]
+[_3] Dur, [_1].[_3]x Atk,[N]
+Inf. [_0].[_8]x Atk/AS ([_2] turns).[N]
+[X]
+
+##BlindArrowSkill
+Blind Arrow[X]
+## ^
+Level: [_0] (Active)[N]
+An arrow dipped[N]
+in irritants.[N]
+Next: [_2] Dur, [_0].[_8]x Atk,[N]
+[_3][_5]% base Blind chance.[N]
+Req: None[X]
+## ^
+Level: [_1] (Active)[N]
+An arrow dipped[N]
+in irritants.[N]
+[_2] Dur, [_0].[_8]x Atk,[N]
+[_3][_5]% base Blind chance.[N]
+Next: [_1].[_0]x Atk, [_5][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+An arrow dipped[N]
+in irritants.[N]
+[_2] Dur, [_1].[_0]x Atk,[N]
+[_5][_0]% base Blind chance.[N]
+Next: [_1].[_2]x Atk, [_7][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+An arrow dipped[N]
+in irritants.[N]
+[_2] Dur, [_1].[_2]x Atk,[N]
+[_7][_0]% base Blind chance.[N]
+[X]
+
+##SleepArrowSkill
+Sleep Arrow[X]
+## ^
+Level: [_0] (Active)[N]
+An arrow dipped[N]
+in soporifics.[N]
+Next: [_4] Dur, [_1].[_2]x Atk,[N]
+[_3][_0]% base Sleep chance.[N]
+Req: Blind Arrow [_1][X]
+## ^
+Level: [_1] (Active)[N]
+An arrow dipped[N]
+in soporifics.[N]
+[_4] Dur, [_1].[_2]x Atk,[N]
+[_3][_0]% base Sleep chance.[N]
+Next: [_1].[_5]x Atk, [_4][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+An arrow dipped[N]
+in soporifics.[N]
+[_4] Dur, [_1].[_5]x Atk,[N]
+[_4][_0]% base Sleep chance.[N]
+Next: [_1].[_8]x Atk, [_5][_5]% base.[X]
+## ^
+Level: MAX (Active)[N]
+An arrow dipped[N]
+in soporifics.[N]
+[_4] Dur, [_1].[_8]x Atk,[N]
+[_5][_5]% base Sleep chance.[N]
+[X]
+
+##ToxinArrowSkill
+Toxin Arrow[X]
+## ^
+Level: [_0] (Active)[N]
+An arrow dipped[N]
+in venom.[N]
+Next: [_3] Dur, [_1].[_0]x Atk,[N]
+[_6][_0]% base Poison chance.[N]
+Req: Sleep Arrow [_1][X]
+## ^
+Level: [_1] (Active)[N]
+An arrow dipped[N]
+in venom.[N]
+[_3] Dur, [_1].[_0]x Atk,[N]
+[_6][_0]% base Poison chance.[N]
+Next: [_1].[_3]x Atk, [_7][_0]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+An arrow dipped[N]
+in venom.[N]
+[_3] Dur, [_1].[_3]x Atk,[N]
+[_7][_0]% base Poison chance.[N]
+Next: [_1].[_5]x Atk, [_9][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+An arrow dipped[N]
+in venom.[N]
+[_3] Dur, [_1].[_5]x Atk,[N]
+[_9][_0]% base Poison chance.[N]
+[X]
+
+##NumbingArrowSkill
+Numbing Arrow[X]
+## ^
+Level: [_0] (Active)[N]
+An arrow dipped[N]
+in paralytics.[N]
+Next: [_4] Dur, [_1].[_2]x Atk,[N]
+[_4][_5]% base Paralysis chance.[N]
+Req: Sleep Arrow [_2][X]
+## ^
+Level: [_1] (Active)[N]
+An arrow dipped[N]
+in paralytics.[N]
+[_4] Dur, [_1].[_2]x Atk,[N]
+[_4][_5]% base Paralysis chance.[N]
+Next: [_1].[_5]x Atk, [_5][_5]% base.[X]
+## ^
+Level: [_2] (Active)[N]
+An arrow dipped[N]
+in paralytics.[N]
+[_4] Dur, [_1].[_5]x Atk,[N]
+[_5][_5]% base Paralysis chance.[N]
+Next: [_1].[_8]x Atk, [_7][_5]% base.[X]
+## ^
+Level: MAX (Active)[N]
+An arrow dipped[N]
+in paralytics.[N]
+[_4] Dur, [_1].[_8]x Atk,[N]
+[_7][_5]% base Paralysis chance.[N]
+[X]
+
+##ScapegoatSkill
+Scapegoat[X]
+## ^
+Level: [_0] (Active)[N]
+They started it.[N]
+Next: [_5] Dur, [_1]-[_5] Rng,[N]
+Inf. [_1].[_1]x Avo and target[N]
+draws all attacks ([_1] turn).[N]
+Req: PR, Trick. [_2], Toxin A. [_3][X]
+## ^
+Level: [_1] (Active)[N]
+They started it.[N]
+[_5] Dur, [_1]-[_5] Rng,[N]
+Inf. [_1].[_1]x Avo and target[N]
+draws all attacks ([_1] turn).[N]
+Next: [_2] turns.[X]
+## ^
+Level: [_2] (Active)[N]
+They started it.[N]
+[_5] Dur, [_1]-[_5] Rng,[N]
+Inf. [_1].[_1]x Avo and target[N]
+draws all attacks ([_2] turns).[N]
+Next: [_3] turns.[X]
+## ^
+Level: MAX (Active)[N]
+They started it.[N]
+[_5] Dur, [_1]-[_5] Rng,[N]
+Inf. [_1].[_1]x Avo and target[N]
+draws all attacks ([_3] turns).[N]
+[X]
+
+##IllusionStepSkill
+Illusion Step[X]
+## ^
+Level: [_0] (Active)[N]
+Become a wondrous blur.[N]
+Next: [_5] Dur, [_1].[_5]x Avo, allied[N]
+Bow/Gun attacks within [_2][N]
+tiles get [_1].[_3]x Atk this turn.[N]
+Req: Flame A. [_2], Numb A. [_3][X]
+## ^
+Level: [_1] (Active)[N]
+Become a wondrous blur.[N]
+[_5] Dur, [_1].[_5]x Avo, allies using[N]
+Bow/Gun attacks within [_2][N]
+tiles get [_1].[_3]x Atk this turn.[N]
+Next: [_1].[_5]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+Become a wondrous blur.[N]
+[_5] Dur, [_1].[_5]x Avo, allies using[N]
+Bow/Gun attacks within [_2][N]
+tiles get [_1].[_5]x Atk this turn.[N]
+Next: [_3] tiles.[X]
+## ^
+Level: [_3] (Active)[N]
+Become a wondrous blur.[N]
+[_5] Dur, [_1].[_5]x Avo, allies using[N]
+Bow/Gun attacks within [_3][N]
+tiles get [_1].[_5]x Atk this turn.[N]
+Next: [_1].[_8]x Atk.[X]
+## ^
+Level: [_4] (Active)[N]
+Become a wondrous blur.[N]
+[_5] Dur, [_1].[_5]x Avo, allies using[N]
+Bow/Gun attacks within [_3][N]
+tiles get [_1].[_8]x Atk this turn.[N]
+Next: [_5] tiles.[X]
+## ^
+Level: MAX (Active)[N]
+Become a wondrous blur.[N]
+[_5] Dur, [_1].[_5]x Avo, allies using[N]
+Bow/Gun attacks within [_5][N]
+tiles get [_1].[_8]x Atk this turn.[N]
+[X]
+
+##HazyArrowSkill
+Hazy Arrow[X]
+## ^
+Level: [_0] (Active)[N]
+Strike like a blur.[N]
+Next: [_1] Dur, [_1]-[_4] Rng,[N]
+[_1].[_0]x Atk, only usable[N]
+after dodging.[N]
+Req: Trck. [_2], Bli/Slp A. [_3], [X]
+## ^
+Level: [_1] (Active)[N]
+Strike like a blur.[N]
+[_1] Dur, [_1]-[_4] Rng,[N]
+[_1].[_0]x Atk, only usable[N]
+after dodging.[N]
+Next: [_1].[_2]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+Strike like a blur.[N]
+[_1] Dur, [_1]-[_4] Rng,[N]
+[_1].[_2]x Atk, only usable[N]
+after dodging.[N]
+Next: [_1].[_5]x Atk.[X]
+## ^
+Level: [_3] (Active)[N]
+Strike like a blur.[N]
+[_1] Dur, [_1]-[_4] Rng,[N]
+[_1].[_5]x Atk, only usable[N]
+after dodging.[N]
+Next: [_1].[_8]x Atk.[X]
+## ^
+Level: [_4] (Active)[N]
+Strike like a blur.[N]
+[_1] Dur, [_1]-[_4] Rng,[N]
+[_1].[_8]x Atk, only usable[N]
+after dodging.[N]
+Next: [_2].[_5]x Atk.[X]
+## ^
+Level: MAX (Active)[N]
+Strike like a blur.[N]
+[_1] Dur, [_1]-[_4] Rng,[N]
+[_2].[_5]x Atk, only usable[N]
+after dodging.[N]
+[X]
+
+##PredatorsArrowSkill
+Predator's Arrow[X]
+## ^
+Level: [_0] (Active)[N]
+Next: [_4] Dur, [_1].[_3]x Atk,[N]
+[_8][_0]% base Poison chance,[N]
+Inf. [_0].[_6]x All/-[_1] Mov[N]
+([_3] turns), needs Stealth.[N]
+R: PR, Camo [_1], Sap. [_2], Tox. [_3][X]
+## ^
+Level: [_1] (Active)[N]
+[_4] Dur, [_1].[_3]x Atk,[N]
+[_8][_0]% base Poison chance,[N]
+Inf. [_0].[_6]x All/-[_1] Mov[N]
+([_3] turns), needs Stealth.[N]
+Next: [_1].[_5]x Atk.[X]
+## ^
+Level: [_2] (Active)[N]
+[_4] Dur, [_1].[_5]x Atk,[N]
+[_8][_0]% base Poison chance,[N]
+Inf. [_0].[_6]x All/-[_1] Mov[N]
+([_3] turns), needs Stealth.[N]
+Next: [_1].[_8]x Atk, [_1][_1][_0]% base.[X]
+## ^
+Level: [_3] (Active)[N]
+[_4] Dur, [_1].[_8]x Atk,[N]
+[_1][_1][_0]% base Poison chance,[N]
+Inf. [_0].[_6]x All/-[_1] Mov[N]
+([_3] turns), needs Stealth.[N]
+Next: [_2].[_4]x Atk.[X]
+## ^
+Level: [_4] (Active)[N]
+[_4] Dur, [_2].[_4]x Atk,[N]
+[_1][_1][_0]% base Poison chance,[N]
+Inf. [_0].[_6]x All/-[_1] Mov[N]
+([_3] turns), needs Stealth.[N]
+Next: [_3].[_0]x Atk, [_1][_5][_0]% base.[X]
+## ^
+Level: MAX (Active)[N]
+Hunt to kill.[N]
+[_4] Dur, [_3].[_0]x Atk,[N]
+[_1][_5][_0]% base Poison chance,[N]
+Inf. [_0].[_6]x All/-[_1] Mov[N]
+([_3] turns), needs Stealth.[X]

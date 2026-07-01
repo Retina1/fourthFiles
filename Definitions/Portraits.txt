@@ -231,6 +231,7 @@ CorMug
 HelenaMug
 QuintonMug
 AlexandrusMug
+ElizaMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

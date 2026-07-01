@@ -32,6 +32,10 @@ SkillDescsTableEntry(MSS_ImperialPride) //dri
 SkillDescsTableEntry(MSS_Reboot) //art
 SkillDescsTableEntry(MSS_Filler) //soul
 SkillDescsTableEntry(MSS_Filler) //generic
+SkillDescsTableEntry(MSS_Filler) //generic
+SkillDescsTableEntry(MSS_Filler) //generic
+SkillDescsTableEntry(MSS_Filler) //generic
+SkillDescsTableEntry(MSS_Filler) //generic just do it a few times okay
 
 #include "SkillDescGetter0.lyn.event"
 #include "SkillDescGetter1.lyn.event"

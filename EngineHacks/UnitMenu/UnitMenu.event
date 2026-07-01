@@ -33,6 +33,7 @@ UnitMenuTable:
   MenuCommand(UM_Swap, UM_SwapDesc, OrangeText, Swap_Usability, Swap_Effect)
   MenuCommand(UM_Pivot, UM_PivotDesc, OrangeText, Pivot_Usability, Pivot_Effect)
   MenuCommand(UM_Smite, UM_SmiteDesc, OrangeText, Smite_Usability, Smite_Effect)
+  MenuCommand(UM_Camouflage, UM_CamouflageDesc, OrangeText, Camouflage_Usability, Camouflage_Effect)
   MenuCommand(UM_Reposition, UM_RepositionDesc, OrangeText, Reposition_Usability, Reposition_Effect)
   MenuCommand(UM_DrawBack, UM_DrawBackDesc, OrangeText, DrawBack_Usability, DrawBack_Effect)
   MenuCommand(UM_RallyingCry, UM_RallyingCryDesc, OrangeText, RallyingCry_Usability, RallyingCry_Effect)

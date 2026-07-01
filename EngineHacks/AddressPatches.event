@@ -12,6 +12,8 @@ POP
 PUSH
 ORG $225AF4
 WORD 0x00080008
+ORG $224ACC
+WORD 0x00070007
 POP
 
 // AI to account for doubling 

@@ -4,16 +4,17 @@ C07
 1 p- Gun_000.png
 3 p- Gun_001.png
 3 p- Gun_002.png
+C42
 6 p- Gun_003.png
 6 p- Gun_004.png
 C23
 3 p- Gun_005.png
 9 p- Gun_006.png
 3 p- Gun_007.png
-3 p- Gun_008.png
-3 p- Gun_009.png
 C15
 C05
+3 p- Gun_008.png
+3 p- Gun_009.png
 1 p- Gun_010.png
 C01
 3 p- Gun_011.png
@@ -72,6 +73,7 @@ C23
 3 p- Gun_045.png
 3 p- Gun_046.png
 C23
+S02D0
 3 p- Gun_047.png
 3 p- Gun_048.png
 C23
@@ -87,13 +89,14 @@ C24
 3 p- Gun_055.png
 C15
 3 p- Gun_056.png
+SD8
 3 p- Gun_057.png
 3 p- Gun_058.png
 3 p- Gun_059.png
 3 p- Gun_007.png
+C05
 3 p- Gun_008.png
 3 p- Gun_009.png
-C05
 1 p- Gun_010.png
 C01
 3 p- Gun_060.png
@@ -134,16 +137,17 @@ C07
 1 p- Gun_000.png
 3 p- Gun_001.png
 3 p- Gun_002.png
+C42
 6 p- Gun_003.png
 6 p- Gun_004.png
 C23
 3 p- Gun_005.png
 9 p- Gun_006.png
 3 p- Gun_007.png
-3 p- Gun_008.png
-3 p- Gun_009.png
 C15
 C05
+3 p- Gun_008.png
+3 p- Gun_009.png
 1 p- Gun_010.png
 C01
 3 p- Gun_011.png
@@ -202,6 +206,7 @@ C23
 3 p- Gun_045.png
 3 p- Gun_046.png
 C23
+S02D0
 3 p- Gun_047.png
 3 p- Gun_048.png
 C23
@@ -217,13 +222,14 @@ C24
 3 p- Gun_055.png
 C15
 3 p- Gun_056.png
+SD8
 3 p- Gun_057.png
 3 p- Gun_058.png
 3 p- Gun_059.png
 3 p- Gun_007.png
+C05
 3 p- Gun_008.png
 3 p- Gun_009.png
-C05
 1 p- Gun_010.png
 C01
 3 p- Gun_060.png

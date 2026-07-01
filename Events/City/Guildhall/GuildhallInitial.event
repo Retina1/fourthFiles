@@ -79,6 +79,9 @@ UNIT
 Recruit_Jane:
 UNIT Jane 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortbow,Medica] NoAI
 UNIT
+Recruit_Eliza:
+UNIT Eliza 0x0 0x1 Level(5,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [ToxinBow] NoAI
+UNIT
 
 Recruit_Cassandra:
 UNIT Cassandra 0x0 0x1 Level(3,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Wand] NoAI
@@ -206,6 +209,9 @@ EndEvent
 Jane_RecruitEvent:
 GuildRecruit(Jane,Guild_Jane_Dialogue,0x24)
 EndEvent
+Eliza_RecruitEvent:
+GuildRecruit(Eliza,Guild_Eliza_Dialogue,0x25)
+EndEvent
 
 //sch
 Cassandra_RecruitEvent:
@@ -301,6 +307,7 @@ GuildLoad(Anjelica,Recruit_Anjelica,0x2)
 GuildLoad(Rodney,Recruit_Rodney,0x3)
 GuildLoad(Gamon,Recruit_Gamon,0x4)
 GuildLoad(Jane,Recruit_Jane,0x5)
+GuildLoad(Eliza,Recruit_Eliza,0x6)
 FADU 10
 ENDA
 

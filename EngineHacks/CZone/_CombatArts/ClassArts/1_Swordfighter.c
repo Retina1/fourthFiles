@@ -1,3 +1,14 @@
+// Spellchaser
+u8 SpellchaserArtUsability(struct Unit* unit, u16 artID){
+	if (UNIT_HAS_SKILL(unit,LND,skill_511)){
+		return ArtItemCheckInventory(unit, artID);
+	}
+	else return 0;
+}
+u8 SpellchaserArtMenuUsability(const struct MenuItemDef* def, int number){
+    return SpellchaserArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+
 // tempest
 u8 TempestArtUsability(struct Unit* unit, u16 artID){
 	if (UNIT_HAS_SKILL(unit,LND,skill_531)){

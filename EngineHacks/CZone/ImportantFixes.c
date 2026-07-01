@@ -11,6 +11,66 @@ extern const int WundUnclothedMugID;
 
 extern const struct FaceData NewPortraitTable[];
 
+void BattleForecastHitCountUpdate(struct BattleUnit * battleUnit, u8 * hitsCounter, int * usesCounter)
+{
+
+    if (*usesCounter > 0) {
+        *hitsCounter = *hitsCounter + 1;
+        *usesCounter = *usesCounter - 1;
+
+        if ((battleUnit->weaponAttributes & IA_BRAVE) && (GetActiveArt(&battleUnit->unit) == 0)) {
+            *hitsCounter = *hitsCounter + 1;
+            *usesCounter = *usesCounter - 1;
+        }
+    }
+}
+
+s8 ShouldCallBattleQuote(u8 pidA, u8 pidB) {
+    if (!((gActionData.unitActionType == UNIT_ACTION_COMBAT)||(gActionData.unitActionType == UNIT_ACTION_STAFF))) {
+        return 0;
+    }
+
+    if (GetBattleQuoteEntry(pidA, pidB)) {
+        return 1;
+    }
+
+    if (GetBattleQuoteEntry(pidA, 0)) {
+        return 1;
+    }
+
+    if (GetBattleQuoteEntry(0, pidB)) {
+        return 1;
+    }
+
+    return 0;
+}
+
+
+void CallBattleQuoteEventsIfAny(u8 pidA, u8 pidB) {
+    struct BattleTalkExtEnt* ent;
+
+    if (!((gActionData.unitActionType == UNIT_ACTION_COMBAT)||(gActionData.unitActionType == UNIT_ACTION_STAFF))) {
+        return;
+    }
+
+    if ((ent = GetBattleQuoteEntry(pidA, pidB), ent != NULL) ||
+        (ent = GetBattleQuoteEntry(pidA, 0), ent != NULL) ||
+        (ent = GetBattleQuoteEntry(0, pidB), ent != NULL) ) {
+
+        if (ent->msg) {
+            CallBattleQuoteEventInBattle(ent->msg);
+        } else {
+            if (ent->event != 0) {
+                EventEngine_CreateBattle((u16 *)ent->event);
+            }
+        }
+
+        SetFlag(ent->flag);
+    }
+
+    return;
+}
+
 
 u8 CanPrepScreenSave(void)
 {

@@ -4,7 +4,7 @@
 	#define	ArmorCladFaith_grp  voicegroup000
 	#define	ArmorCladFaith_pri  0
 	#define	ArmorCladFaith_rev  0
-	#define	ArmorCladFaith_mvl  127
+	#define	ArmorCladFaith_mvl  160
 	#define	ArmorCladFaith_key  0
 	#define	ArmorCladFaith_tbs  1
 	#define	ArmorCladFaith_exg  0

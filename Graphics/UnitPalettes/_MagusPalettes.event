@@ -1,58 +1,58 @@
 //poet
 ALIGN 4
 PoetPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 TroubadourPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 //seeker
 ALIGN 4
 SeekerPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 RunemasterPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 //priest
-PaletteIdentifier(Astarte_Priest, Astarte_PriestDMP)
-PaletteIdentifier(Astarte_WarMagus, Astarte_WarMagusDMP)
+PaletteIdentifier(Priest_Astarte, Priest_AstarteDMP)
+PaletteIdentifier(WarMagus_Astarte, WarMagus_AstarteDMP)
 ALIGN 4
-Astarte_PriestDMP:
-#incbin "paletteFiles/MainStory/Astarte_Priest.dmp"
+Priest_AstarteDMP:
+#incbin "paletteFiles/MainStory/Priest_Astarte.dmp"
 ALIGN 4
-Astarte_WarMagusDMP:
-#incbin "paletteFiles/MainStory/Astarte_WarMagus.dmp"
+WarMagus_AstarteDMP:
+#incbin "paletteFiles/MainStory/WarMagus_Astarte.dmp"
 
 ALIGN 4
 PriestPaletteList:
-PaletteAssociationEntry(Astarte,Astarte_Priest)
+PaletteAssociationEntry(Astarte,Priest_Astarte)
 WORD 0 0
 ALIGN 4
 WarMagusPaletteList:
-PaletteAssociationEntry(Astarte,Astarte_WarMagus)
-PaletteAssociationEntry(BossAstarte,Astarte_WarMagus)
+PaletteAssociationEntry(Astarte,WarMagus_Astarte)
+PaletteAssociationEntry(BossAstarte,WarMagus_Astarte)
 WORD 0 0
 
 //lurker
-PaletteIdentifier(Rat_Lurker, Rat_LurkerDMP)
-PaletteIdentifier(Rat_Hexer, Rat_HexerDMP)
+PaletteIdentifier(Lurker_Rat, Lurker_RatDMP)
+PaletteIdentifier(Hexer_Rat, Hexer_RatDMP)
 ALIGN 4
-Rat_LurkerDMP:
-#incbin "paletteFiles/MainStory/Rat_Lurker.dmp"
+Lurker_RatDMP:
+#incbin "paletteFiles/MainStory/Lurker_Rat.dmp"
 ALIGN 4
-Rat_HexerDMP:
-#incbin "paletteFiles/MainStory/Rat_Hexer.dmp"
+Hexer_RatDMP:
+#incbin "paletteFiles/MainStory/Hexer_Rat.dmp"
 
 ALIGN 4
 LurkerPaletteList:
-PaletteAssociationEntry(Rat,Rat_Lurker)
+PaletteAssociationEntry(Rat,Lurker_Rat)
 WORD 0 0
 ALIGN 4
 HexerPaletteList:
-PaletteAssociationEntry(Rat,Rat_Hexer)
+PaletteAssociationEntry(Rat,Hexer_Rat)
 WORD 0 0

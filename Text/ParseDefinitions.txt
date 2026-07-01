@@ -322,6 +322,7 @@
 [Helena] = [LoadFace][0xe7][0x1]
 [Quinton] = [LoadFace][0xe8][0x1]
 [Alexandrus] = [LoadFace][0xe9][0x1]
+[Eliza] = [LoadFace][0xea][0x1]
 
 [Landsknecht] = [LoadFace][0x9d][0x1]
 [Necromancer] = [LoadFace][0x9e][0x1]

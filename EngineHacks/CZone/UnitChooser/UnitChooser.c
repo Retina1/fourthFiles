@@ -125,7 +125,7 @@ static u8 UnitChooserEffect(MenuProc* menu, MenuItemProc* command) {
 	return MENU_ACT_END | MENU_ACT_SND6A | MENU_ACT_CLEAR;
 }
 
-
+void ClearAllBuffsDebuffs();
 void PlaceSlotCUnitAtCoordsASMC(struct EventEngineProc* proc) {
     struct Unit* unit = GetUnitFromCharId(gEventSlots[0x3]);
     unit->xPos = gEventSlots[0x1];
@@ -141,6 +141,7 @@ void PlaceSlotCUnitAtCoordsASMC(struct EventEngineProc* proc) {
 	unit->supportBits = 0;
 	SetUnitHp(unit, GetUnitMaxHp(unit));
 	SetActiveArt(unit, 0);
+	ClearAllBuffsDebuffs();
     RefreshEntityBmMaps(); //maybe not needed?
 	RefreshUnitSprites();
 	RenderBmMap();
@@ -186,6 +187,7 @@ void DuelingGroundsResetDeployedUnitASMC(struct EventEngineProc* proc) {
 	unit->supportBits = 0;
 	SetActiveArt(unit, 0);
     unit->state &= ~(0x42 | 0x1);
+	ClearAllBuffsDebuffs();
     RefreshEntityBmMaps(); //maybe not needed?
 	RefreshUnitSprites();
 	RenderBmMap();
@@ -215,6 +217,7 @@ void DuelingGroundsBackToNathan(struct EventEngineProc* proc) {
 	unit->supportBits = 0;
 	SetUnitHp(unit, GetUnitMaxHp(unit));
 	SetActiveArt(unit, 0);
+	ClearAllBuffsDebuffs();
     struct Unit* nathan = GetUnitFromCharId(1);
     nathan->xPos = 9;
     nathan->yPos = 15;

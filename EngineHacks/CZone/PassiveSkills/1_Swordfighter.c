@@ -72,12 +72,54 @@ int ApplySwordfighterWeaponParry(int stat, struct Unit* unit) {
 	return stat;
 }
 
+void ApplySwordfighterSpellchaser(struct BattleUnit* attacker, struct BattleUnit* defender) {
+	if (((GetItemAttributes(attacker->weapon) & IA_MAGICDAMAGE)||(GetItemAttributes(attacker->weapon) & IA_MAGIC))||(CombatArtList[GetActiveArt(&attacker->unit)].isMagic == 1)) {
+		u8* unitBuffer = GetUnitsInRange(&attacker->unit, 1, 5);
+		Unit* unit = &attacker->unit;
+		if (unitBuffer != FALSE) {
+			int i = 0;
+			while (unitBuffer[i]){
+				int index = unitBuffer[i];
+				Unit* other = gUnitLookup[index];
+				if (GetActiveArt(other) == 8) {
+					if (UNIT_HAS_SKILL(other,LND,skill_515)){
+						attacker->battleAttack = attacker->battleAttack * 9/5;
+						defender->battleDefense = defender->battleDefense * 9/5;
+					}
+					else if ((absolute(other->xPos - unit->xPos) + absolute(other->yPos - unit->yPos)) <= 3) {
+						if (UNIT_HAS_SKILL(other,LND,skill_514)){
+							attacker->battleAttack = attacker->battleAttack * 9/5;
+							defender->battleDefense = defender->battleDefense * 9/5;
+						}
+						else if (UNIT_HAS_SKILL(other,LND,skill_513)){
+							attacker->battleAttack = attacker->battleAttack * 3/2;
+							defender->battleDefense = defender->battleDefense * 3/2;
+						}
+						else if ((absolute(other->xPos - unit->xPos) + absolute(other->yPos - unit->yPos)) <= 2) {
+							if (UNIT_HAS_SKILL(other,LND,skill_512)){
+								attacker->battleAttack = attacker->battleAttack * 3/2;
+								defender->battleDefense = defender->battleDefense * 3/2;
+							} 
+							else {
+								attacker->battleAttack = attacker->battleAttack * 13/10;
+								defender->battleDefense = defender->battleDefense * 13/10;
+							}
+						}
+					}
+				}
+				i++;
+			}
+		}
+	}
+}
+
 void ApplySwordfighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 }
 void BothSidesSwordfighterPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplySwordfighterInitiative(attacker,defender);
 		ApplySwordfighterTenacity(attacker,defender);
+		ApplySwordfighterSpellchaser(attacker,defender);
 	}
 // weapon parry applied to raw stats
 //	ApplySwordfighterWeaponParry(attacker,defender);

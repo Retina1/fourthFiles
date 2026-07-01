@@ -538,6 +538,15 @@ int UnitHasABuff(struct Unit* unit) {
         return 1;
     return 0;
 }
+int UnitHasADebuff(struct Unit* unit) {
+    struct DebuffEntry* entry = GetUnitBuffsDebuffs(unit);
+	int buff1 = entry->debuff1;
+	int buff2 = entry->debuff2;
+	int buff3 = entry->debuff3;
+    if (buff1||buff2||buff3)
+        return 1;
+    return 0;
+}
 
 
 void UnitExtendBuffs(struct Unit* unit) {

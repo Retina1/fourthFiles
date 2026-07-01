@@ -4,7 +4,7 @@ WORD 0 0
 
 ALIGN 4
 PaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 ALIGN 4

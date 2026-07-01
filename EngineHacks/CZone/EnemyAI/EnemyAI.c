@@ -44,6 +44,10 @@ void AiComputeCombatScore(struct AiCombatSimulationSt * st)
 	if ((GetActiveArt(&gBattleTarget.unit) == 17) || (CheckForScapegoat(&gBattleTarget.unit))) {
 		score = 0xFFFFFFFF;
 	}
+	//stealth apply here - check if unit knows stealth and if class skill state is on
+	if (UNIT_HAS_SKILL(&gBattleTarget.unit,SRV,skill_141) && (gBattleTarget.unit.classSkillState & 1)) {
+		score = 0;
+	}
 
     st->score = score;
 

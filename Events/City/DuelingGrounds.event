@@ -40,10 +40,11 @@ UNIT 0xFD Gladiator 0x0 Level(15,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Labrys] N
 UNIT
 
 DuelingGroundsTier3Wave1:
-UNIT 0xFD Scalemaster 0x0 Level(18,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [ImposingAxe] NoAI
+UNIT 0xFD Runemaster 0x0 Level(18,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [ShineScroll] NoAI
 UNIT
 DuelingGroundsTier3Wave2:
-UNIT 0xFD Seraph 0x0 Level(19,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Longinus] NoAI
+UNIT 0xFD Seraph 0x0 Level(19,Enemy,1) [12,4] 0x0 0x0 0x1 REDA12R4 [Longinus] NoAI
+UNIT 0xFD Scalemaster 0x0 Level(19,Enemy,1) [12,6] 0x0 0x0 0x1 REDA12R6 [ImposingAxe] NoAI
 UNIT
 DuelingGroundsTier3Wave3:
 UNIT 0xFD Survivalist 0x0 Level(20,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [FalconBow] NoAI

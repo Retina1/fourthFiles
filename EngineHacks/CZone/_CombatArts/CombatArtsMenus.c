@@ -7,6 +7,10 @@ u8 UM_CombatArtsMenuUsability(const struct MenuItemDef* def, int number){
 	if (gActiveUnit->isHeadBound) {
 		return MENU_NOTSHOWN;
 	}
+	
+	if (CheckEventId_(0x120)) {
+		return MENU_NOTSHOWN;
+	}
 
     for (int i = 0; (int)CombatArtList[i].usability != (-1); i++){
 

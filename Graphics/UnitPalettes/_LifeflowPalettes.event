@@ -1,29 +1,29 @@
 //apothecary
 ALIGN 4
 ApothecaryPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 BotanistPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 //encircler
 ALIGN 4
 EncirclerPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 ArcanistPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 //caller
 ALIGN 4
 CallerPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 NecromancerPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0

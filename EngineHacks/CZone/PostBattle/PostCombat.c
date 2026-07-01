@@ -14,6 +14,12 @@ void RunPostCombatSkills(void)
 		ApplyRallyingThrust(attacker,defender);
 		CombatArtPostbattleFuncWrapper(attacker, defender);
 		ApplyBuffDebuffAOEs(attacker, defender);
+		
+		//hunter breaks stealth here
+		if (UNIT_HAS_SKILL(gActiveUnit,SRV,skill_141) && (gActiveUnit->classSkillState & 1)) {
+			gActiveUnit->classSkillState = gActiveUnit->classSkillState ^ 1;
+		}
+		
 		infoIconCache->hpCache[attacker->index] = GetUnitMaxHp(attacker);
 		infoIconCache->hpCache[defender->index] = GetUnitMaxHp(defender);
 	}

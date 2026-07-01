@@ -31,6 +31,18 @@ Look, just find a nice crystal[N]
 and bring it back, please.[AN]
 [...]Good luck.[A][X]
 
+##Quest1_5x_ReminderText
+As you proceed through the[N]
+harrowing labyrinth,[AN]
+recollection swells within[N]
+your exhausted mind.[AN]
+You vaguely recall Bobby's[N]
+request to gather crystals.[AN]
+The teleportation crystals are[N]
+not viable to take with you,[AN]
+but perhaps there is a viable[N]
+source of crystal somewhere.[A][X]
+
 ##Quest1_5x_System
 You notice a large pile of[N]
 crystal near the stairs up.[AN]

@@ -57,6 +57,11 @@ Etrian Odyssey V[X]
 ##SongTitle_UntamedGarden
 Untamed Garden[X]
 
+##SourceTitle_DanganronpaV3
+Danganronpa V3[X]
+##SongTitle_DespairSearching
+Despair Searching[X]
+
 ##SourceTitle_BerwickSaga
 Berwick Saga[X]
 ##SongTitle_HeavyArmoredCorps
@@ -171,6 +176,8 @@ Arcana[X]
 Deltarune[X]
 ##SongTitle_WiseWords
 Wise Words[X]
+##SongTitle_FlowerMan
+Flower Man[X]
 
 
 ##SourceTitle_Persona5

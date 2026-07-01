@@ -157,3 +157,15 @@
 #define Female_Curate_Unarmed 0x9D
 #define Female_Medic_Magic 0x9E
 #define Female_Medic_Unarmed 0x9F
+#define Female_Myrmidon_Sword 0xA0
+#define Female_Myrmidon_Unarmed 0xA1
+#define Female_Rider_Lance 0xA2
+#define Female_Rider_Unarmed 0xA3
+#define Female_Strider_Lance 0xA4
+#define Female_Strider_Unarmed 0xA5
+#define Female_Raider_Axe 0xA6
+#define Female_Raider_Handaxe 0xA7
+#define Female_Raider_Unarmed 0xA8
+#define Female_Trailblazer_Axe 0xA9
+#define Female_Trailblazer_Handaxe 0xAA
+#define Female_Trailblazer_Unarmed 0xAB

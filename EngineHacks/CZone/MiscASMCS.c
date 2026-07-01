@@ -27,6 +27,12 @@ void Ch14UndeployUnitsASMC(struct EventEngineProc* proc) {
 	}
 }
 
+//ch7
+void FullyHealGoreCh7(struct EventEngineProc* proc) {
+	struct Unit* unit = GetUnitFromCharId(3);
+	SetUnitHp(unit, GetUnitMaxHp(unit));
+}
+
 void DMATestASMC(struct EventEngineProc* proc) {
     /*
 	thanks zane IHRD

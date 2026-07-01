@@ -1,41 +1,41 @@
 //nob
-PaletteIdentifier(Benthus_Noble, Benthus_NobleDMP)
-PaletteIdentifier(Benthus_Sovereign, Benthus_SovereignDMP)
+PaletteIdentifier(Noble_Benthus, Noble_BenthusDMP)
+PaletteIdentifier(Sovereign_Benthus, Sovereign_BenthusDMP)
 ALIGN 4
-Benthus_NobleDMP:
-#incbin "paletteFiles/MainStory/Benthus_Noble.dmp"
+Noble_BenthusDMP:
+#incbin "paletteFiles/MainStory/Noble_Benthus.dmp"
 ALIGN 4
-Benthus_SovereignDMP:
-#incbin "paletteFiles/MainStory/Benthus_Sovereign.dmp"
+Sovereign_BenthusDMP:
+#incbin "paletteFiles/MainStory/Sovereign_Benthus.dmp"
 
 ALIGN 4
 NoblePaletteList:
-PaletteAssociationEntry(Benthus,Benthus_Noble)
-PaletteAssociationEntry(BossBenthus,Benthus_Noble)
-PaletteAssociationEntry(BossBenthus2,Benthus_Noble)
+PaletteAssociationEntry(Benthus,Noble_Benthus)
+PaletteAssociationEntry(BossBenthus,Noble_Benthus)
+PaletteAssociationEntry(BossBenthus2,Noble_Benthus)
 WORD 0 0
 ALIGN 4
 SovereignPaletteList:
-PaletteAssociationEntry(Benthus,Benthus_Sovereign)
-PaletteAssociationEntry(BossBenthus,Benthus_Sovereign)
-PaletteAssociationEntry(BossBenthus2,Benthus_Sovereign)
+PaletteAssociationEntry(Benthus,Sovereign_Benthus)
+PaletteAssociationEntry(BossBenthus,Sovereign_Benthus)
+PaletteAssociationEntry(BossBenthus2,Sovereign_Benthus)
 WORD 0 0
 
 //fen
-PaletteIdentifier(Francesca_Duelist, Francesca_DuelistDMP)
-PaletteIdentifier(Francesca_Fencer, Francesca_FencerDMP)
+PaletteIdentifier(Duelist_Francesca, Duelist_FrancescaDMP)
+PaletteIdentifier(Fencer_Francesca, Fencer_FrancescaDMP)
 ALIGN 4
-Francesca_DuelistDMP:
-#incbin "paletteFiles/Senatus/Francesca_Duelist.dmp"
+Duelist_FrancescaDMP:
+#incbin "paletteFiles/Senatus/Duelist_Francesca.dmp"
 ALIGN 4
-Francesca_FencerDMP:
-#incbin "paletteFiles/Senatus/Francesca_Fencer.dmp"
+Fencer_FrancescaDMP:
+#incbin "paletteFiles/Senatus/Fencer_Francesca.dmp"
 
 ALIGN 4
 DuelistPaletteList:
-PaletteAssociationEntry(Francesca,Francesca_Duelist)
+PaletteAssociationEntry(Francesca,Duelist_Francesca)
 WORD 0 0
 ALIGN 4
 FencerPaletteList:
-PaletteAssociationEntry(Francesca,Francesca_Fencer)
+PaletteAssociationEntry(Francesca,Fencer_Francesca)
 WORD 0 0

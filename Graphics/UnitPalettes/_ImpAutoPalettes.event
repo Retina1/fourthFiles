@@ -1,19 +1,19 @@
 //imp
 ALIGN 4
 DriverPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 ImperialPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 //auto
 ALIGN 4
 ArtificePaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 ALIGN 4
 AutomatonPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0

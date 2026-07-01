@@ -1,3 +1,60 @@
+//Raider
+{
+#include "CharAnims/Female_Raider/Axe Installer.event"
+#include "CharAnims/Female_Raider/Handaxe Installer.event"
+#include "CharAnims/Female_Raider/Unarmed Installer.event"
+}
+ALIGN 4
+Female_RaiderAnims:
+BashAnim(Female_Raider_Axe)
+HandaxeAnim(Female_Raider_Handaxe)
+UnarmedAnim(Female_Raider_Unarmed)
+EndAnim
+//Trailblazer
+{
+#include "CharAnims/Female_Trailblazer/Axe Installer.event"
+#include "CharAnims/Female_Trailblazer/Handaxe Installer.event"
+#include "CharAnims/Female_Trailblazer/Unarmed Installer.event"
+}
+ALIGN 4
+Female_TrailblazerAnims:
+BashAnim(Female_Trailblazer_Axe)
+HandaxeAnim(Female_Trailblazer_Handaxe)
+UnarmedAnim(Female_Trailblazer_Unarmed)
+EndAnim
+
+//Rider
+{
+#include "CharAnims/Female_Rider/Lance Installer.event"
+#include "CharAnims/Female_Rider/Unarmed Installer.event"
+}
+ALIGN 4
+Female_RiderAnims:
+PierceAnim(Female_Rider_Lance)
+UnarmedAnim(Female_Rider_Unarmed)
+EndAnim
+//Strider
+{
+#include "CharAnims/Female_Strider/Lance Installer.event"
+#include "CharAnims/Female_Strider/Unarmed Installer.event"
+}
+ALIGN 4
+Female_StriderAnims:
+PierceAnim(Female_Strider_Lance)
+UnarmedAnim(Female_Strider_Unarmed)
+EndAnim
+
+//Myrmidon
+{
+#include "CharAnims/Female_Myrmidon/Sword Installer.event"
+#include "CharAnims/Female_Myrmidon/Unarmed Installer.event"
+}
+ALIGN 4
+Female_MyrmidonAnims:
+SlashAnim(Female_Myrmidon_Sword)
+UnarmedAnim(Female_Myrmidon_Unarmed)
+EndAnim
+
 //F!Scholar
 {
 #include "CharAnims/Female_Scholar/Magic Installer.event"
@@ -16,7 +73,6 @@ Female_WarlockAnims:
 SupportAnim(Female_Warlock_Magic)
 UnarmedAnim(Female_Warlock_Magic)
 EndAnim
-
 
 //Axefighter
 {

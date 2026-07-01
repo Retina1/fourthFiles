@@ -200,6 +200,12 @@ Jane[X]
 ##Desc_Jane
 A wandering young archer with,[N]
 frankly, nothing on her mind.[X]
+//guard
+##Name_Eliza
+Eliza[X]
+##Desc_Eliza
+A snide Belvarusi assassin who detests[N]
+nobility. She's generally unpleasant.[X]
 
 
 //cassandra by zappy (scholar)

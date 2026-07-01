@@ -146,6 +146,32 @@ UNIT MonsterGeneric Golem 0x0 Level(9,Enemy,1) [15,0] 0x0 0x0 0x0 0x0 [Pike,Bell
 UNIT MonsterGeneric Golem 0x0 Level(9,Enemy,1) [16,0] 0x0 0x0 0x0 0x0 [HandSpear,Furysong] NoAI
 UNIT
 
+EndingCutscene:
+UNIT BossGuildmaster 0x0 0x1 Level(26,NPC,0) [9,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Benthus 0x0 0x1 Level(1,Enemy,0) [9,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EndingCutscene2:
+UNIT FreelanceGeneric Noble 0x0 Level(10,Enemy,1) [8,3] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT FreelanceGeneric Noble 0x0 Level(10,Enemy,1) [10,3] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT FreelanceGeneric Duelist 0x0 Level(10,Enemy,1) [9,4] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT
+
+EndingCutscene3:
+UNIT FreelanceGeneric Noble 0x0 Level(10,Enemy,1) [9,9] 0x0 0x0 0x0 0x0 [Sabre] AttackInRangeAI
+UNIT FreelanceGeneric Poet 0x0 Level(10,Enemy,1) [2,1] DropItem 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT FreelanceGeneric Poet 0x0 Level(10,Enemy,1) [16,1] DropItem 0x0 0x0 0x0 [SparkScroll,Soma] AttackInRangeAI
+UNIT FreelanceGeneric Archer 0x0 Level(10,Enemy,1) [2,7] 0x0 0x0 0x0 0x0 [Longbow] ChaseOnceApproachedAI
+UNIT FreelanceGeneric Archer 0x0 Level(10,Enemy,1) [16,7] 0x0 0x0 0x0 0x0 [Longbow] ChaseOnceApproachedAI
+UNIT FreelanceGeneric Lancer 0x0 Level(10,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [Shieldlance] ChaseOnceApproachedAI
+UNIT FreelanceGeneric Lancer 0x0 Level(10,Enemy,1) [12,6] 0x0 0x0 0x0 0x0 [Partizan] ChaseOnceApproachedAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(10,Enemy,1) [5,8] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(10,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [Boarblade] AttackInRangeAI
+UNIT FreelanceGeneric Rider 0x0 Level(10,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT FreelanceGeneric Rider 0x0 Level(10,Enemy,1) [10,7] 0x0 0x0 0x0 0x0 [Partizan] AttackInRangeAI
+UNIT FreelanceGeneric Strider 0x0 Level(10,Enemy,1) [9,6] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
+UNIT
+
 ALIGN 4
 
 
@@ -157,10 +183,39 @@ ENUF WaitEventTrapsFlag
 ENUF 0x66
 MUSC AmbientShimmer
 //triumph and reclamation march
-CleanTextNoMap(CaveCG,FillerDialogue)
+CleanTextNoMap(CaveCG,Dungeon2_Ending1)
 //guild scene with benthus
+LOMA Chapter8
+CLEA 0
+CAM1 [9,0]
+LOAD2 0x1 EndingCutscene;ENUN
+WEATHER 0
+FADU 10
 MUSC Song_DevilsRoulette
-CleanTextNoMap(0x1,FillerDialogue)
+MOVE 5 Benthus [9,4]; ENUN; STAL 30
+Text(Dungeon2_Ending2)
+STAL 40
+MOVE 3 BossGuildmaster [9,0]; ENUN; SilentKillUnit(BossGuildmaster); STAL 30
+Text(Dungeon2_Ending3)
+STAL 60
+FADI 5
+STAL 60
+MOVE 0xffff Benthus [9,2]; ENUN; 
+RECLASS Benthus Sovereign
+FADU 5
+STAL 60
+FADI 5
+STAL 60
+LOAD2 0x1 EndingCutscene2; ENUN
+FADU 5
+STAL 60
+FADI 5
+STAL 60
+WEATHER 4
+LOAD2 0x1 EndingCutscene3; ENUN
+FADU 5
+STAL 60
+FADI 5
 MoveToChapter(Chapter8)
 GOTO 0x2
 LABEL 0x1
@@ -230,7 +285,7 @@ ClearArenaBorders
 CLEA 0
 ResetNathan
 FADU 16
-MUSC 0
+MUSC Song_CursedCathedral
 SetMapBGM(Song_CursedCathedral)
 EndEvent
 

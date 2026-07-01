@@ -112,13 +112,33 @@ QuestUnits:
 UNIT Quarry Brawler 0x0 Level(10,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [SpikedFist] NoAI
 UNIT
 
+PlayerCutscene:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,23] 0x0 0x0 0x1 REDA9R19 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [8,23] 0x0 0x0 0x1 REDA8R20 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [9,23] 0x0 0x0 0x1 REDA9R20 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [10,23] 0x0 0x0 0x1 REDA10R20 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(1,Ally,0) [10,23] 0x0 0x0 0x1 REDA10R22 [0x0] NoAI
+UNIT
+
 ALIGN 4
 
 BeginningScene:
 DifficultySwapper
+MUSC AmbientWind
+CleanTextNoMap(0x3,FillerDialogue)
 MUSC 0x0
-Text(FillerDialogue)
+CAM1 [10,22]
+REMA
+CLEAN
 LOAD1 0x1 EnemyUnits; ENUN
+FADU 10
+LOAD2 0x1 PlayerCutscene; ENUN; STAL 30
+MUSC Song_DevilsRoulette
+MOVE 8 BossBenthus2 [9,15]; ENUN
+FlashCursor(BossBenthus2,60)
+Text(FillerDialogue)
+MOVE 8 BossBenthus2 [9,2]; ENUN
+Text(FillerDialogue)
 CHECK_EVENTID Quest2_5x_Flag
 BEQ 0x1 0xc 0x0
 LOAD1 0x1 QuestUnits; ENUN

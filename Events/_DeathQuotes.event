@@ -109,7 +109,7 @@ AlwaysDeathQuote(Anjelica,0x0,AnjelicaDeath)
 AlwaysDeathQuote(Rodney,0x0,RodneyDeath)
 AlwaysDeathQuote(Gamon,0x0,GamonDeath)
 AlwaysDeathQuote(Jane,0x0,JaneDeath)
-
+AlwaysDeathQuote(Eliza,0x0,ElizaDeath)
 
 //sch
 AlwaysDeathQuote(Cassandra,0x0,CassandraDeath)

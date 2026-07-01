@@ -27,3 +27,8 @@ MUSC Song_VastLands
 LoadRowUnits
 FADU 10
 EndEvent
+
+ShadesongDoor:
+Text(PleaseDontOpenThatDoor)
+ENUF 0x7
+EndEvent

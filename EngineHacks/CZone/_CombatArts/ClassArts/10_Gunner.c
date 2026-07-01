@@ -272,7 +272,7 @@ void PowerSnipePrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_333)){
 		hitMul = 18;
 	}
-	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_332)){
+	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_332)){
 		hitMul = 15;
 	}
 	actor->battleHitRate = actor->battleHitRate * hitMul / 10;
@@ -281,11 +281,11 @@ void PowerSnipePrebattle(struct BattleUnit* actor, struct BattleUnit* target){
 void PowerSnipeBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	int atkMul = 13;
 	int atkDiv = 10;
-	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_323)){
-		atkMul = 15;
-	}
-	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_322)){
+	if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_333)){
 		atkMul = 18;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,DRG,skill_332)){
+		atkMul = 15;
 	}
 	actor->battleAttack = actor->battleAttack*atkMul/atkDiv;
 	target->battleDefense = target->battleDefense*atkMul/atkDiv;

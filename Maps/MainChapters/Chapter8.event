@@ -34,7 +34,7 @@ Map_Change_0:
 
 ALIGN 4
 Map_Change_1:
-  SHORT $EB0 $DB4
+  SHORT $EB0 $EB0
 
 ALIGN 4
 Map_Change_2:

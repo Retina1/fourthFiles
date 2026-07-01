@@ -1,50 +1,233 @@
 //myrm
+PaletteIdentifier(Myrmidon_Natsuki, Myrmidon_NatsukiDMP)
+PaletteIdentifier(Ronin_Natsuki, Ronin_NatsukiDMP)
+ALIGN 4
+Myrmidon_NatsukiDMP:
+#incbin "paletteFiles/Standard/Myrmidon_Natsuki.dmp"
+ALIGN 4
+Ronin_NatsukiDMP:
+#incbin "paletteFiles/Standard/Ronin_Natsuki.dmp"
+
+PaletteIdentifier(Myrmidon_Mikayla, Myrmidon_MikaylaDMP)
+PaletteIdentifier(Ronin_Mikayla, Ronin_MikaylaDMP)
+ALIGN 4
+Myrmidon_MikaylaDMP:
+#incbin "paletteFiles/Standard/Myrmidon_Mikayla.dmp"
+ALIGN 4
+Ronin_MikaylaDMP:
+#incbin "paletteFiles/Standard/Ronin_Mikayla.dmp"
+
+PaletteIdentifier(Myrmidon_Ghari, Myrmidon_GhariDMP)
+PaletteIdentifier(Ronin_Ghari, Ronin_GhariDMP)
+ALIGN 4
+Myrmidon_GhariDMP:
+#incbin "paletteFiles/Standard/Myrmidon_Ghari.dmp"
+ALIGN 4
+Ronin_GhariDMP:
+#incbin "paletteFiles/Standard/Ronin_Ghari.dmp"
+
+PaletteIdentifier(Myrmidon_Azaghal, Myrmidon_AzaghalDMP)
+PaletteIdentifier(Ronin_Azaghal, Ronin_AzaghalDMP)
+ALIGN 4
+Myrmidon_AzaghalDMP:
+#incbin "paletteFiles/Standard/Myrmidon_Azaghal.dmp"
+ALIGN 4
+Ronin_AzaghalDMP:
+#incbin "paletteFiles/Standard/Ronin_Azaghal.dmp"
+
+PaletteIdentifier(Myrmidon_Tachyon, Myrmidon_TachyonDMP)
+PaletteIdentifier(Ronin_Tachyon, Ronin_TachyonDMP)
+ALIGN 4
+Myrmidon_TachyonDMP:
+#incbin "paletteFiles/Standard/Myrmidon_Tachyon.dmp"
+ALIGN 4
+Ronin_TachyonDMP:
+#incbin "paletteFiles/Standard/Ronin_Tachyon.dmp"
+
+PaletteIdentifier(Myrmidon_Helena, Myrmidon_HelenaDMP)
+PaletteIdentifier(Ronin_Helena, Ronin_HelenaDMP)
+ALIGN 4
+Myrmidon_HelenaDMP:
+#incbin "paletteFiles/Standard/Myrmidon_Helena.dmp"
+ALIGN 4
+Ronin_HelenaDMP:
+#incbin "paletteFiles/Standard/Ronin_Helena.dmp"
+
+
 ALIGN 4
 MyrmidonPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(Natsuki,Myrmidon_Natsuki)
+PaletteAssociationEntry(Mikayla,Myrmidon_Mikayla)
+PaletteAssociationEntry(Ghari,Myrmidon_Ghari)
+PaletteAssociationEntry(Azaghal,Myrmidon_Azaghal)
+PaletteAssociationEntry(Tachyon,Myrmidon_Tachyon)
+PaletteAssociationEntry(Helena,Myrmidon_Helena)
 WORD 0 0
 ALIGN 4
 RoninPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(Natsuki,Ronin_Natsuki)
+PaletteAssociationEntry(Mikayla,Ronin_Mikayla)
+PaletteAssociationEntry(Ghari,Ronin_Ghari)
+PaletteAssociationEntry(Azaghal,Ronin_Azaghal)
+PaletteAssociationEntry(Tachyon,Ronin_Tachyon)
+PaletteAssociationEntry(Helena,Ronin_Helena)
 WORD 0 0
 
-
 //rider
+PaletteIdentifier(Rider_Aizen, Rider_AizenDMP)
+PaletteIdentifier(Strider_Aizen, Strider_AizenDMP)
+ALIGN 4
+Rider_AizenDMP:
+#incbin "paletteFiles/Standard/Rider_Aizen.dmp"
+ALIGN 4
+Strider_AizenDMP:
+#incbin "paletteFiles/Standard/Strider_Aizen.dmp"
+
+PaletteIdentifier(Rider_Kolette, Rider_KoletteDMP)
+PaletteIdentifier(Strider_Kolette, Strider_KoletteDMP)
+ALIGN 4
+Rider_KoletteDMP:
+#incbin "paletteFiles/Standard/Rider_Kolette.dmp"
+ALIGN 4
+Strider_KoletteDMP:
+#incbin "paletteFiles/Standard/Strider_Kolette.dmp"
+
+PaletteIdentifier(Rider_Pallas, Rider_PallasDMP)
+PaletteIdentifier(Strider_Pallas, Strider_PallasDMP)
+ALIGN 4
+Rider_PallasDMP:
+#incbin "paletteFiles/Standard/Rider_Pallas.dmp"
+ALIGN 4
+Strider_PallasDMP:
+#incbin "paletteFiles/Standard/Strider_Pallas.dmp"
+
+PaletteIdentifier(Rider_Emblem, Rider_EmblemDMP)
+PaletteIdentifier(Strider_Emblem, Strider_EmblemDMP)
+ALIGN 4
+Rider_EmblemDMP:
+#incbin "paletteFiles/Standard/Rider_Emblem.dmp"
+ALIGN 4
+Strider_EmblemDMP:
+#incbin "paletteFiles/Standard/Strider_Emblem.dmp"
+
+PaletteIdentifier(Rider_Meilie, Rider_MeilieDMP)
+PaletteIdentifier(Strider_Meilie, Strider_MeilieDMP)
+ALIGN 4
+Rider_MeilieDMP:
+#incbin "paletteFiles/Standard/Rider_Meilie.dmp"
+ALIGN 4
+Strider_MeilieDMP:
+#incbin "paletteFiles/Standard/Strider_Meilie.dmp"
+
+PaletteIdentifier(Rider_Shion, Rider_ShionDMP)
+PaletteIdentifier(Strider_Shion, Strider_ShionDMP)
+ALIGN 4
+Rider_ShionDMP:
+#incbin "paletteFiles/Standard/Rider_Shion.dmp"
+ALIGN 4
+Strider_ShionDMP:
+#incbin "paletteFiles/Standard/Strider_Shion.dmp"
+
+
 ALIGN 4
 RiderPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(Aizen,Rider_Aizen)
+PaletteAssociationEntry(Kolette,Rider_Kolette)
+PaletteAssociationEntry(Pallas,Rider_Pallas)
+PaletteAssociationEntry(Emblem,Rider_Emblem)
+PaletteAssociationEntry(Meilie,Rider_Meilie)
+PaletteAssociationEntry(Shion,Rider_Shion)
 WORD 0 0
 ALIGN 4
 StriderPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(Aizen,Strider_Aizen)
+PaletteAssociationEntry(Kolette,Strider_Kolette)
+PaletteAssociationEntry(Pallas,Strider_Pallas)
+PaletteAssociationEntry(Emblem,Strider_Emblem)
+PaletteAssociationEntry(Meilie,Strider_Meilie)
+PaletteAssociationEntry(Shion,Strider_Shion)
 WORD 0 0
 
 //raider
+PaletteIdentifier(Raider_Esketit, Raider_EsketitDMP)
+PaletteIdentifier(Trailblazer_Esketit, Trailblazer_EsketitDMP)
+ALIGN 4
+Raider_EsketitDMP:
+#incbin "paletteFiles/Standard/Raider_Esketit.dmp"
+ALIGN 4
+Trailblazer_EsketitDMP:
+#incbin "paletteFiles/Standard/Trailblazer_Esketit.dmp"
+
+PaletteIdentifier(Raider_Pipsy, Raider_PipsyDMP)
+PaletteIdentifier(Trailblazer_Pipsy, Trailblazer_PipsyDMP)
+ALIGN 4
+Raider_PipsyDMP:
+#incbin "paletteFiles/Standard/Raider_Pipsy.dmp"
+ALIGN 4
+Trailblazer_PipsyDMP:
+#incbin "paletteFiles/Standard/Trailblazer_Pipsy.dmp"
+
+PaletteIdentifier(Raider_Son, Raider_SonDMP)
+PaletteIdentifier(Trailblazer_Son, Trailblazer_SonDMP)
+ALIGN 4
+Raider_SonDMP:
+#incbin "paletteFiles/Standard/Raider_Son.dmp"
+ALIGN 4
+Trailblazer_SonDMP:
+#incbin "paletteFiles/Standard/Trailblazer_Son.dmp"
+
+PaletteIdentifier(Raider_Hart, Raider_HartDMP)
+PaletteIdentifier(Trailblazer_Hart, Trailblazer_HartDMP)
+ALIGN 4
+Raider_HartDMP:
+#incbin "paletteFiles/Standard/Raider_Hart.dmp"
+ALIGN 4
+Trailblazer_HartDMP:
+#incbin "paletteFiles/Standard/Trailblazer_Hart.dmp"
+
+PaletteIdentifier(Raider_Campbell, Raider_CampbellDMP)
+PaletteIdentifier(Trailblazer_Campbell, Trailblazer_CampbellDMP)
+ALIGN 4
+Raider_CampbellDMP:
+#incbin "paletteFiles/Standard/Raider_Campbell.dmp"
+ALIGN 4
+Trailblazer_CampbellDMP:
+#incbin "paletteFiles/Standard/Trailblazer_Campbell.dmp"
+
+
 ALIGN 4
 RaiderPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(Esketit,Raider_Esketit)
+PaletteAssociationEntry(Pipsy,Raider_Pipsy)
+PaletteAssociationEntry(Son,Raider_Son)
+PaletteAssociationEntry(Hart,Raider_Hart)
+PaletteAssociationEntry(Campbell,Raider_Campbell)
 WORD 0 0
 ALIGN 4
 TrailblazerPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
+PaletteAssociationEntry(Esketit,Trailblazer_Esketit)
+PaletteAssociationEntry(Pipsy,Trailblazer_Pipsy)
+PaletteAssociationEntry(Son,Trailblazer_Son)
+PaletteAssociationEntry(Hart,Trailblazer_Hart)
+PaletteAssociationEntry(Campbell,Trailblazer_Campbell)
 WORD 0 0
 
 //gunner
-PaletteIdentifier(Gore_Gunner, Gore_GunnerDMP)
-PaletteIdentifier(Gore_Dragoon, Gore_DragoonDMP)
+PaletteIdentifier(Gunner_Gore, Gunner_GoreDMP)
+PaletteIdentifier(Dragoon_Gore, Dragoon_GoreDMP)
 ALIGN 4
-Gore_GunnerDMP:
-#incbin "paletteFiles/MainStory/Gore_Gunner.dmp"
+Gunner_GoreDMP:
+#incbin "paletteFiles/MainStory/Gunner_Gore.dmp"
 ALIGN 4
-Gore_DragoonDMP:
-#incbin "paletteFiles/MainStory/Gore_Dragoon.dmp"
+Dragoon_GoreDMP:
+#incbin "paletteFiles/MainStory/Dragoon_Gore.dmp"
 
 ALIGN 4
 GunnerPaletteList:
-PaletteAssociationEntry(Gore,Gore_Gunner)
+PaletteAssociationEntry(Gore,Gunner_Gore)
 WORD 0 0
 ALIGN 4
 DragoonPaletteList:
-PaletteAssociationEntry(Gore,Gore_Dragoon)
-PaletteAssociationEntry(BossGore,Gore_Dragoon)
+PaletteAssociationEntry(Gore,Dragoon_Gore)
+PaletteAssociationEntry(BossGore,Dragoon_Gore)
 WORD 0 0

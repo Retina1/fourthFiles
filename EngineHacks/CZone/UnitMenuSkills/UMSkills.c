@@ -2,6 +2,25 @@
 #include "TargetMark.c"
 #include "MagnetPulse.c"
 
+int Camouflage_Usability(struct MenuProc* menu) { 
+	if (gActiveUnit->state & US_CANTOING) { 
+		return 3; // false 
+	} 
+	if (UNIT_HAS_SKILL(gActiveUnit,SRV,skill_141) & !(gActiveUnit->classSkillState & 1)) {
+		return 1; // usable 
+	}
+	return 3; // not usable
+} 
+
+u8 Camouflage_Effect (struct MenuProc* menu, struct MenuItemProc* menuItem) {
+	CallEvent(&GenericBuffEvent, 0x1);
+	gActiveUnit->classSkillState |= 1; 
+	gActiveUnit->state |= US_HAS_MOVED|US_CANTOING; 
+    gActionData.unitActionType = UNIT_ACTION_WAIT;
+    return MENU_ACT_SKIPCURSOR | MENU_ACT_END | MENU_ACT_SND6A | MENU_ACT_CLEAR;
+	
+}
+
 int Vanguard_Usability(struct MenuProc* menu) { 
 	if (gActiveUnit->state & US_CANTOING) { 
 		return 3; // false 

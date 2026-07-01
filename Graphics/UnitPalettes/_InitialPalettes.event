@@ -1,452 +1,463 @@
 //swd
 ALIGN 4
-CoastKid_SwordfighterDMP:
-#incbin "paletteFiles/Initial/CoastKid_Swordfighter.dmp"
+Swordfighter_CoastKidDMP:
+#incbin "paletteFiles/Initial/Swordfighter_CoastKid.dmp"
 ALIGN 4
-CoastKid_LandsknechtDMP:
-#incbin "paletteFiles/Initial/CoastKid_Landsknecht.dmp"
+Landsknecht_CoastKidDMP:
+#incbin "paletteFiles/Initial/Landsknecht_CoastKid.dmp"
 
 ALIGN 4
-Puzon_SwordfighterDMP:
-#incbin "paletteFiles/Initial/Puzon_Swordfighter.dmp"
+Swordfighter_PuzonDMP:
+#incbin "paletteFiles/Initial/Swordfighter_Puzon.dmp"
 ALIGN 4
-Puzon_LandsknechtDMP:
-#incbin "paletteFiles/Initial/Puzon_Landsknecht.dmp"
+Landsknecht_PuzonDMP:
+#incbin "paletteFiles/Initial/Landsknecht_Puzon.dmp"
 
 ALIGN 4
-Cam_SwordfighterDMP:
-#incbin "paletteFiles/Initial/Cam_Swordfighter.dmp"
+Swordfighter_CamDMP:
+#incbin "paletteFiles/Initial/Swordfighter_Cam.dmp"
 ALIGN 4
-Cam_LandsknechtDMP:
-#incbin "paletteFiles/Initial/Cam_Landsknecht.dmp"
+Landsknecht_CamDMP:
+#incbin "paletteFiles/Initial/Landsknecht_Cam.dmp"
 
 ALIGN 4
-Marag_SwordfighterDMP:
-#incbin "paletteFiles/Initial/Marag_Swordfighter.dmp"
+Swordfighter_MaragDMP:
+#incbin "paletteFiles/Initial/Swordfighter_Marag.dmp"
 ALIGN 4
-Marag_LandsknechtDMP:
-#incbin "paletteFiles/Initial/Marag_Landsknecht.dmp"
+Landsknecht_MaragDMP:
+#incbin "paletteFiles/Initial/Landsknecht_Marag.dmp"
 
 ALIGN 4
-Anhinga_SwordfighterDMP:
-#incbin "paletteFiles/Initial/Anhinga_Swordfighter.dmp"
+Swordfighter_AnhingaDMP:
+#incbin "paletteFiles/Initial/Swordfighter_Anhinga.dmp"
 ALIGN 4
-Anhinga_LandsknechtDMP:
-#incbin "paletteFiles/Initial/Anhinga_Landsknecht.dmp"
+Landsknecht_AnhingaDMP:
+#incbin "paletteFiles/Initial/Landsknecht_Anhinga.dmp"
 
 ALIGN 4
-Ferris_SwordfighterDMP:
-#incbin "paletteFiles/Initial/Ferris_Swordfighter.dmp"
+Swordfighter_FerrisDMP:
+#incbin "paletteFiles/Initial/Swordfighter_Ferris.dmp"
 ALIGN 4
-Ferris_LandsknechtDMP:
-#incbin "paletteFiles/Initial/Ferris_Landsknecht.dmp"
+Landsknecht_FerrisDMP:
+#incbin "paletteFiles/Initial/Landsknecht_Ferris.dmp"
 
 ALIGN 4
-PaletteIdentifier(CoastKid_Swordfighter,CoastKid_SwordfighterDMP)
-PaletteIdentifier(CoastKid_Landsknecht,CoastKid_LandsknechtDMP)
-PaletteIdentifier(Puzon_Swordfighter,Puzon_SwordfighterDMP)
-PaletteIdentifier(Puzon_Landsknecht,Puzon_LandsknechtDMP)
-PaletteIdentifier(Cam_Swordfighter,Cam_SwordfighterDMP)
-PaletteIdentifier(Cam_Landsknecht,Cam_LandsknechtDMP)
-PaletteIdentifier(Marag_Swordfighter,Marag_SwordfighterDMP)
-PaletteIdentifier(Marag_Landsknecht,Marag_LandsknechtDMP)
-PaletteIdentifier(Anhinga_Swordfighter,Anhinga_SwordfighterDMP)
-PaletteIdentifier(Anhinga_Landsknecht,Anhinga_LandsknechtDMP)
-PaletteIdentifier(Ferris_Swordfighter,Ferris_SwordfighterDMP)
-PaletteIdentifier(Ferris_Landsknecht,Ferris_LandsknechtDMP)
+PaletteIdentifier(Swordfighter_CoastKid,Swordfighter_CoastKidDMP)
+PaletteIdentifier(Landsknecht_CoastKid,Landsknecht_CoastKidDMP)
+PaletteIdentifier(Swordfighter_Puzon,Swordfighter_PuzonDMP)
+PaletteIdentifier(Landsknecht_Puzon,Landsknecht_PuzonDMP)
+PaletteIdentifier(Swordfighter_Cam,Swordfighter_CamDMP)
+PaletteIdentifier(Landsknecht_Cam,Landsknecht_CamDMP)
+PaletteIdentifier(Swordfighter_Marag,Swordfighter_MaragDMP)
+PaletteIdentifier(Landsknecht_Marag,Landsknecht_MaragDMP)
+PaletteIdentifier(Swordfighter_Anhinga,Swordfighter_AnhingaDMP)
+PaletteIdentifier(Landsknecht_Anhinga,Landsknecht_AnhingaDMP)
+PaletteIdentifier(Swordfighter_Ferris,Swordfighter_FerrisDMP)
+PaletteIdentifier(Landsknecht_Ferris,Landsknecht_FerrisDMP)
 
 SwordfighterPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Swordfighter)
-PaletteAssociationEntry(Puzon,Puzon_Swordfighter)
-PaletteAssociationEntry(Cam,Cam_Swordfighter)
-PaletteAssociationEntry(Marag,Marag_Swordfighter)
-PaletteAssociationEntry(Anhinga,Anhinga_Swordfighter)
-PaletteAssociationEntry(Ferris,Ferris_Swordfighter)
+PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(Puzon,Swordfighter_Puzon)
+PaletteAssociationEntry(Cam,Swordfighter_Cam)
+PaletteAssociationEntry(Marag,Swordfighter_Marag)
+PaletteAssociationEntry(Anhinga,Swordfighter_Anhinga)
+PaletteAssociationEntry(Ferris,Swordfighter_Ferris)
 WORD 0 0
 ALIGN 4
 LandsknechtPaletteList:
-PaletteAssociationEntry(CoastKid,CoastKid_Landsknecht)
-PaletteAssociationEntry(Puzon,Puzon_Landsknecht)
-PaletteAssociationEntry(Cam,Cam_Landsknecht)
-PaletteAssociationEntry(Marag,Marag_Landsknecht)
-PaletteAssociationEntry(Anhinga,Anhinga_Landsknecht)
-PaletteAssociationEntry(Ferris,Ferris_Landsknecht)
+PaletteAssociationEntry(CoastKid,Landsknecht_CoastKid)
+PaletteAssociationEntry(Puzon,Landsknecht_Puzon)
+PaletteAssociationEntry(Cam,Landsknecht_Cam)
+PaletteAssociationEntry(Marag,Landsknecht_Marag)
+PaletteAssociationEntry(Anhinga,Landsknecht_Anhinga)
+PaletteAssociationEntry(Ferris,Landsknecht_Ferris)
 WORD 0 0
 
 //kn
-PaletteIdentifier(Helman_Knight, Helman_KnightDMP)
-PaletteIdentifier(Helman_Hoplite, Helman_HopliteDMP)
+PaletteIdentifier(Knight_Helman, Knight_HelmanDMP)
+PaletteIdentifier(Hoplite_Helman, Hoplite_HelmanDMP)
 ALIGN 4
-Helman_KnightDMP:
-#incbin "paletteFiles/MainStory/Helman_Knight.dmp"
+Knight_HelmanDMP:
+#incbin "paletteFiles/MainStory/Knight_Helman.dmp"
 ALIGN 4
-Helman_HopliteDMP:
-#incbin "paletteFiles/MainStory/Helman_Hoplite.dmp"
+Hoplite_HelmanDMP:
+#incbin "paletteFiles/MainStory/Hoplite_Helman.dmp"
 
-PaletteIdentifier(Drogo_Knight, Drogo_KnightDMP)
-PaletteIdentifier(Drogo_Hoplite, Drogo_HopliteDMP)
+PaletteIdentifier(Knight_Drogo, Knight_DrogoDMP)
+PaletteIdentifier(Hoplite_Drogo, Hoplite_DrogoDMP)
 ALIGN 4
-Drogo_KnightDMP:
-#incbin "paletteFiles/Initial/Drogo_Knight.dmp"
+Knight_DrogoDMP:
+#incbin "paletteFiles/Initial/Knight_Drogo.dmp"
 ALIGN 4
-Drogo_HopliteDMP:
-#incbin "paletteFiles/Initial/Drogo_Hoplite.dmp"
+Hoplite_DrogoDMP:
+#incbin "paletteFiles/Initial/Hoplite_Drogo.dmp"
 
-PaletteIdentifier(Allbringer_Knight, Allbringer_KnightDMP)
-PaletteIdentifier(Allbringer_Hoplite, Allbringer_HopliteDMP)
+PaletteIdentifier(Knight_Allbringer, Knight_AllbringerDMP)
+PaletteIdentifier(Hoplite_Allbringer, Hoplite_AllbringerDMP)
 ALIGN 4
-Allbringer_KnightDMP:
-#incbin "paletteFiles/Initial/Allbringer_Knight.dmp"
+Knight_AllbringerDMP:
+#incbin "paletteFiles/Initial/Knight_Allbringer.dmp"
 ALIGN 4
-Allbringer_HopliteDMP:
-#incbin "paletteFiles/Initial/Allbringer_Hoplite.dmp"
+Hoplite_AllbringerDMP:
+#incbin "paletteFiles/Initial/Hoplite_Allbringer.dmp"
 
-PaletteIdentifier(Hopf_Knight, Hopf_KnightDMP)
-PaletteIdentifier(Hopf_Hoplite, Hopf_HopliteDMP)
+PaletteIdentifier(Knight_Hopf, Knight_HopfDMP)
+PaletteIdentifier(Hoplite_Hopf, Hoplite_HopfDMP)
 ALIGN 4
-Hopf_KnightDMP:
-#incbin "paletteFiles/Initial/Hopf_Knight.dmp"
+Knight_HopfDMP:
+#incbin "paletteFiles/Initial/Knight_Hopf.dmp"
 ALIGN 4
-Hopf_HopliteDMP:
-#incbin "paletteFiles/Initial/Hopf_Hoplite.dmp"
+Hoplite_HopfDMP:
+#incbin "paletteFiles/Initial/Hoplite_Hopf.dmp"
 
-PaletteIdentifier(SlynSpire_Knight, SlynSpire_KnightDMP)
-PaletteIdentifier(SlynSpire_Hoplite, SlynSpire_HopliteDMP)
+PaletteIdentifier(Knight_SlynSpire, Knight_SlynSpireDMP)
+PaletteIdentifier(Hoplite_SlynSpire, Hoplite_SlynSpireDMP)
 ALIGN 4
-SlynSpire_KnightDMP:
-#incbin "paletteFiles/Initial/SlynSpire_Knight.dmp"
+Knight_SlynSpireDMP:
+#incbin "paletteFiles/Initial/Knight_SlynSpire.dmp"
 ALIGN 4
-SlynSpire_HopliteDMP:
-#incbin "paletteFiles/Initial/SlynSpire_Hoplite.dmp"
+Hoplite_SlynSpireDMP:
+#incbin "paletteFiles/Initial/Hoplite_SlynSpire.dmp"
 
-PaletteIdentifier(Alfonso_Knight, Alfonso_KnightDMP)
-PaletteIdentifier(Alfonso_Hoplite, Alfonso_HopliteDMP)
+PaletteIdentifier(Knight_Alfonso, Knight_AlfonsoDMP)
+PaletteIdentifier(Hoplite_Alfonso, Hoplite_AlfonsoDMP)
 ALIGN 4
-Alfonso_KnightDMP:
-#incbin "paletteFiles/Initial/Alfonso_Knight.dmp"
+Knight_AlfonsoDMP:
+#incbin "paletteFiles/Initial/Knight_Alfonso.dmp"
 ALIGN 4
-Alfonso_HopliteDMP:
-#incbin "paletteFiles/Initial/Alfonso_Hoplite.dmp"
+Hoplite_AlfonsoDMP:
+#incbin "paletteFiles/Initial/Hoplite_Alfonso.dmp"
 
-PaletteIdentifier(Simon_Knight, Simon_KnightDMP)
-PaletteIdentifier(Simon_Hoplite, Simon_HopliteDMP)
+PaletteIdentifier(Knight_Simon, Knight_SimonDMP)
+PaletteIdentifier(Hoplite_Simon, Hoplite_SimonDMP)
 ALIGN 4
-Simon_KnightDMP:
-#incbin "paletteFiles/Initial/Simon_Knight.dmp"
+Knight_SimonDMP:
+#incbin "paletteFiles/Initial/Knight_Simon.dmp"
 ALIGN 4
-Simon_HopliteDMP:
-#incbin "paletteFiles/Initial/Simon_Hoplite.dmp"
+Hoplite_SimonDMP:
+#incbin "paletteFiles/Initial/Hoplite_Simon.dmp"
 
 ALIGN 4
 KnightPaletteList:
-PaletteAssociationEntry(Helman,Helman_Knight)
-PaletteAssociationEntry(Drogo,Drogo_Knight)
-PaletteAssociationEntry(Allbringer,Allbringer_Knight)
-PaletteAssociationEntry(Hopf,Hopf_Knight)
-PaletteAssociationEntry(Alfonso,Alfonso_Knight)
-PaletteAssociationEntry(Simon,Simon_Knight)
-PaletteAssociationEntry(SlynSpire,SlynSpire_Knight)
+PaletteAssociationEntry(Helman,Knight_Helman)
+PaletteAssociationEntry(Drogo,Knight_Drogo)
+PaletteAssociationEntry(Allbringer,Knight_Allbringer)
+PaletteAssociationEntry(Hopf,Knight_Hopf)
+PaletteAssociationEntry(Alfonso,Knight_Alfonso)
+PaletteAssociationEntry(Simon,Knight_Simon)
+PaletteAssociationEntry(SlynSpire,Knight_SlynSpire)
 WORD 0 0
 ALIGN 4
 HoplitePaletteList:
-PaletteAssociationEntry(Helman,Helman_Hoplite)
-PaletteAssociationEntry(Drogo,Drogo_Hoplite)
-PaletteAssociationEntry(Allbringer,Allbringer_Hoplite)
-PaletteAssociationEntry(Hopf,Hopf_Hoplite)
-PaletteAssociationEntry(Alfonso,Alfonso_Hoplite)
-PaletteAssociationEntry(Simon,Simon_Hoplite)
-PaletteAssociationEntry(SlynSpire,SlynSpire_Hoplite)
+PaletteAssociationEntry(Helman,Hoplite_Helman)
+PaletteAssociationEntry(Drogo,Hoplite_Drogo)
+PaletteAssociationEntry(Allbringer,Hoplite_Allbringer)
+PaletteAssociationEntry(Hopf,Hoplite_Hopf)
+PaletteAssociationEntry(Alfonso,Hoplite_Alfonso)
+PaletteAssociationEntry(Simon,Hoplite_Simon)
+PaletteAssociationEntry(SlynSpire,Hoplite_SlynSpire)
 WORD 0 0
 
 //axe
-PaletteIdentifier(Tristao_Axefighter, Tristao_AxefighterDMP)
-PaletteIdentifier(Tristao_Gladiator, Tristao_GladiatorDMP)
+PaletteIdentifier(Axefighter_Tristao, Axefighter_TristaoDMP)
+PaletteIdentifier(Gladiator_Tristao, Gladiator_TristaoDMP)
 ALIGN 4
-Tristao_AxefighterDMP:
-#incbin "paletteFiles/Initial/Tristao_Axefighter.dmp"
+Axefighter_TristaoDMP:
+#incbin "paletteFiles/Initial/Axefighter_Tristao.dmp"
 ALIGN 4
-Tristao_GladiatorDMP:
-#incbin "paletteFiles/Initial/Tristao_Gladiator.dmp"
+Gladiator_TristaoDMP:
+#incbin "paletteFiles/Initial/Gladiator_Tristao.dmp"
 
-PaletteIdentifier(Finn_Axefighter, Finn_AxefighterDMP)
-PaletteIdentifier(Finn_Gladiator, Finn_GladiatorDMP)
+PaletteIdentifier(Axefighter_Finn, Axefighter_FinnDMP)
+PaletteIdentifier(Gladiator_Finn, Gladiator_FinnDMP)
 ALIGN 4
-Finn_AxefighterDMP:
-#incbin "paletteFiles/Initial/Finn_Axefighter.dmp"
+Axefighter_FinnDMP:
+#incbin "paletteFiles/Initial/Axefighter_Finn.dmp"
 ALIGN 4
-Finn_GladiatorDMP:
-#incbin "paletteFiles/Initial/Finn_Gladiator.dmp"
+Gladiator_FinnDMP:
+#incbin "paletteFiles/Initial/Gladiator_Finn.dmp"
 
-PaletteIdentifier(Eight_Axefighter, Eight_AxefighterDMP)
-PaletteIdentifier(Eight_Gladiator, Eight_GladiatorDMP)
+PaletteIdentifier(Axefighter_Eight, Axefighter_EightDMP)
+PaletteIdentifier(Gladiator_Eight, Gladiator_EightDMP)
 ALIGN 4
-Eight_AxefighterDMP:
-#incbin "paletteFiles/Initial/Eight_Axefighter.dmp"
+Axefighter_EightDMP:
+#incbin "paletteFiles/Initial/Axefighter_Eight.dmp"
 ALIGN 4
-Eight_GladiatorDMP:
-#incbin "paletteFiles/Initial/Eight_Gladiator.dmp"
+Gladiator_EightDMP:
+#incbin "paletteFiles/Initial/Gladiator_Eight.dmp"
 
-PaletteIdentifier(Randellan_Axefighter, Randellan_AxefighterDMP)
-PaletteIdentifier(Randellan_Gladiator, Randellan_GladiatorDMP)
+PaletteIdentifier(Axefighter_Randellan, Axefighter_RandellanDMP)
+PaletteIdentifier(Gladiator_Randellan, Gladiator_RandellanDMP)
 ALIGN 4
-Randellan_AxefighterDMP:
-#incbin "paletteFiles/Initial/Randellan_Axefighter.dmp"
+Axefighter_RandellanDMP:
+#incbin "paletteFiles/Initial/Axefighter_Randellan.dmp"
 ALIGN 4
-Randellan_GladiatorDMP:
-#incbin "paletteFiles/Initial/Randellan_Gladiator.dmp"
+Gladiator_RandellanDMP:
+#incbin "paletteFiles/Initial/Gladiator_Randellan.dmp"
 
-PaletteIdentifier(Juniper_Axefighter, Juniper_AxefighterDMP)
-PaletteIdentifier(Juniper_Gladiator, Juniper_GladiatorDMP)
+PaletteIdentifier(Axefighter_Juniper, Axefighter_JuniperDMP)
+PaletteIdentifier(Gladiator_Juniper, Gladiator_JuniperDMP)
 ALIGN 4
-Juniper_AxefighterDMP:
-#incbin "paletteFiles/Initial/Juniper_Axefighter.dmp"
+Axefighter_JuniperDMP:
+#incbin "paletteFiles/Initial/Axefighter_Juniper.dmp"
 ALIGN 4
-Juniper_GladiatorDMP:
-#incbin "paletteFiles/Initial/Juniper_Gladiator.dmp"
+Gladiator_JuniperDMP:
+#incbin "paletteFiles/Initial/Gladiator_Juniper.dmp"
 
 ALIGN 4
 AxefighterPaletteList:
-PaletteAssociationEntry(Finn,Finn_Axefighter)
-PaletteAssociationEntry(Tristao,Tristao_Axefighter)
-PaletteAssociationEntry(Eight,Eight_Axefighter)
-PaletteAssociationEntry(Juniper,Juniper_Axefighter)
-PaletteAssociationEntry(Randellan,Randellan_Axefighter)
+PaletteAssociationEntry(Finn,Axefighter_Finn)
+PaletteAssociationEntry(Tristao,Axefighter_Tristao)
+PaletteAssociationEntry(Eight,Axefighter_Eight)
+PaletteAssociationEntry(Juniper,Axefighter_Juniper)
+PaletteAssociationEntry(Randellan,Axefighter_Randellan)
 WORD 0 0
 ALIGN 4
 GladiatorPaletteList:
-PaletteAssociationEntry(Finn,Finn_Gladiator)
-PaletteAssociationEntry(Tristao,Tristao_Gladiator)
-PaletteAssociationEntry(Eight,Eight_Gladiator)
-PaletteAssociationEntry(Juniper,Juniper_Gladiator)
-PaletteAssociationEntry(Randellan,Randellan_Gladiator)
+PaletteAssociationEntry(Finn,Gladiator_Finn)
+PaletteAssociationEntry(Tristao,Gladiator_Tristao)
+PaletteAssociationEntry(Eight,Gladiator_Eight)
+PaletteAssociationEntry(Juniper,Gladiator_Juniper)
+PaletteAssociationEntry(Randellan,Gladiator_Randellan)
 WORD 0 0
 
 //bow
-PaletteIdentifier(Hallie_Archer, Hallie_ArcherDMP)
-PaletteIdentifier(Hallie_Sniper, Hallie_SniperDMP)
+PaletteIdentifier(Archer_Hallie, Archer_HallieDMP)
+PaletteIdentifier(Sniper_Hallie, Sniper_HallieDMP)
 ALIGN 4
-Hallie_ArcherDMP:
-#incbin "paletteFiles/Initial/Hallie_Archer.dmp"
+Archer_HallieDMP:
+#incbin "paletteFiles/Initial/Archer_Hallie.dmp"
 ALIGN 4
-Hallie_SniperDMP:
-#incbin "paletteFiles/Initial/Hallie_Sniper.dmp"
+Sniper_HallieDMP:
+#incbin "paletteFiles/Initial/Sniper_Hallie.dmp"
 
-PaletteIdentifier(Anjelica_Archer, Anjelica_ArcherDMP)
-PaletteIdentifier(Anjelica_Sniper, Anjelica_SniperDMP)
+PaletteIdentifier(Archer_Anjelica, Archer_AnjelicaDMP)
+PaletteIdentifier(Sniper_Anjelica, Sniper_AnjelicaDMP)
 ALIGN 4
-Anjelica_ArcherDMP:
-#incbin "paletteFiles/Initial/Anjelica_Archer.dmp"
+Archer_AnjelicaDMP:
+#incbin "paletteFiles/Initial/Archer_Anjelica.dmp"
 ALIGN 4
-Anjelica_SniperDMP:
-#incbin "paletteFiles/Initial/Anjelica_Sniper.dmp"
+Sniper_AnjelicaDMP:
+#incbin "paletteFiles/Initial/Sniper_Anjelica.dmp"
 
-PaletteIdentifier(Rodney_Archer, Rodney_ArcherDMP)
-PaletteIdentifier(Rodney_Sniper, Rodney_SniperDMP)
+PaletteIdentifier(Archer_Rodney, Archer_RodneyDMP)
+PaletteIdentifier(Sniper_Rodney, Sniper_RodneyDMP)
 ALIGN 4
-Rodney_ArcherDMP:
-#incbin "paletteFiles/Initial/Rodney_Archer.dmp"
+Archer_RodneyDMP:
+#incbin "paletteFiles/Initial/Archer_Rodney.dmp"
 ALIGN 4
-Rodney_SniperDMP:
-#incbin "paletteFiles/Initial/Rodney_Sniper.dmp"
+Sniper_RodneyDMP:
+#incbin "paletteFiles/Initial/Sniper_Rodney.dmp"
 
-PaletteIdentifier(Gamon_Archer, Gamon_ArcherDMP)
-PaletteIdentifier(Gamon_Sniper, Gamon_SniperDMP)
+PaletteIdentifier(Archer_Gamon, Archer_GamonDMP)
+PaletteIdentifier(Sniper_Gamon, Sniper_GamonDMP)
 ALIGN 4
-Gamon_ArcherDMP:
-#incbin "paletteFiles/Initial/Gamon_Archer.dmp"
+Archer_GamonDMP:
+#incbin "paletteFiles/Initial/Archer_Gamon.dmp"
 ALIGN 4
-Gamon_SniperDMP:
-#incbin "paletteFiles/Initial/Gamon_Sniper.dmp"
+Sniper_GamonDMP:
+#incbin "paletteFiles/Initial/Sniper_Gamon.dmp"
 
-PaletteIdentifier(Jane_Archer, Jane_ArcherDMP)
-PaletteIdentifier(Jane_Sniper, Jane_SniperDMP)
+PaletteIdentifier(Archer_Jane, Archer_JaneDMP)
+PaletteIdentifier(Sniper_Jane, Sniper_JaneDMP)
 ALIGN 4
-Jane_ArcherDMP:
-#incbin "paletteFiles/Initial/Jane_Archer.dmp"
+Archer_JaneDMP:
+#incbin "paletteFiles/Initial/Archer_Jane.dmp"
 ALIGN 4
-Jane_SniperDMP:
-#incbin "paletteFiles/Initial/Jane_Sniper.dmp"
+Sniper_JaneDMP:
+#incbin "paletteFiles/Initial/Sniper_Jane.dmp"
 
 ALIGN 4
 ArcherPaletteList:
-PaletteAssociationEntry(Hallie,Hallie_Archer)
-PaletteAssociationEntry(Anjelica,Anjelica_Archer)
-PaletteAssociationEntry(Rodney,Rodney_Archer)
-PaletteAssociationEntry(Gamon,Gamon_Archer)
-PaletteAssociationEntry(Jane,Jane_Archer)
+PaletteAssociationEntry(Hallie,Archer_Hallie)
+PaletteAssociationEntry(Anjelica,Archer_Anjelica)
+PaletteAssociationEntry(Rodney,Archer_Rodney)
+PaletteAssociationEntry(Gamon,Archer_Gamon)
+PaletteAssociationEntry(Jane,Archer_Jane)
 WORD 0 0
 ALIGN 4
 SniperPaletteList:
-PaletteAssociationEntry(Hallie,Hallie_Sniper)
-PaletteAssociationEntry(Anjelica,Anjelica_Sniper)
-PaletteAssociationEntry(Rodney,Rodney_Sniper)
-PaletteAssociationEntry(Gamon,Gamon_Sniper)
-PaletteAssociationEntry(Jane,Jane_Sniper)
+PaletteAssociationEntry(Hallie,Sniper_Hallie)
+PaletteAssociationEntry(Anjelica,Sniper_Anjelica)
+PaletteAssociationEntry(Rodney,Sniper_Rodney)
+PaletteAssociationEntry(Gamon,Sniper_Gamon)
+PaletteAssociationEntry(Jane,Sniper_Jane)
 WORD 0 0
 
 //schola
-PaletteIdentifier(Nathan_Scholar, Nathan_ScholarDMP)
-PaletteIdentifier(Nathan_Warlock, Nathan_WarlockDMP)
+PaletteIdentifier(Scholar_Nathan, Scholar_NathanDMP)
+PaletteIdentifier(Warlock_Nathan, Warlock_NathanDMP)
 ALIGN 4
-Nathan_ScholarDMP:
-#incbin "paletteFiles/MainStory/Nathan_Scholar.dmp"
+Scholar_NathanDMP:
+#incbin "paletteFiles/MainStory/Scholar_Nathan.dmp"
 ALIGN 4
-Nathan_WarlockDMP:
-#incbin "paletteFiles/MainStory/Nathan_Warlock.dmp"
+Warlock_NathanDMP:
+#incbin "paletteFiles/MainStory/Warlock_Nathan.dmp"
 
-PaletteIdentifier(Cassandra_Scholar, Cassandra_ScholarDMP)
-PaletteIdentifier(Cassandra_Warlock, Cassandra_WarlockDMP)
+PaletteIdentifier(Scholar_Cassandra, Scholar_CassandraDMP)
+PaletteIdentifier(Warlock_Cassandra, Warlock_CassandraDMP)
 ALIGN 4
-Cassandra_ScholarDMP:
-#incbin "paletteFiles/Initial/Cassandra_Scholar.dmp"
+Scholar_CassandraDMP:
+#incbin "paletteFiles/Initial/Scholar_Cassandra.dmp"
 ALIGN 4
-Cassandra_WarlockDMP:
-#incbin "paletteFiles/Initial/Cassandra_Warlock.dmp"
+Warlock_CassandraDMP:
+#incbin "paletteFiles/Initial/Warlock_Cassandra.dmp"
 
-PaletteIdentifier(Waves_Scholar, Waves_ScholarDMP)
-PaletteIdentifier(Waves_Warlock, Waves_WarlockDMP)
+PaletteIdentifier(Scholar_Waves, Scholar_WavesDMP)
+PaletteIdentifier(Warlock_Waves, Warlock_WavesDMP)
 ALIGN 4
-Waves_ScholarDMP:
-#incbin "paletteFiles/Initial/Waves_Scholar.dmp"
+Scholar_WavesDMP:
+#incbin "paletteFiles/Initial/Scholar_Waves.dmp"
 ALIGN 4
-Waves_WarlockDMP:
-#incbin "paletteFiles/Initial/Waves_Warlock.dmp"
+Warlock_WavesDMP:
+#incbin "paletteFiles/Initial/Warlock_Waves.dmp"
 
-PaletteIdentifier(Cyanne_Scholar, Cyanne_ScholarDMP)
-PaletteIdentifier(Cyanne_Warlock, Cyanne_WarlockDMP)
+PaletteIdentifier(Scholar_Cyanne, Scholar_CyanneDMP)
+PaletteIdentifier(Warlock_Cyanne, Warlock_CyanneDMP)
 ALIGN 4
-Cyanne_ScholarDMP:
-#incbin "paletteFiles/Initial/Cyanne_Scholar.dmp"
+Scholar_CyanneDMP:
+#incbin "paletteFiles/Initial/Scholar_Cyanne.dmp"
 ALIGN 4
-Cyanne_WarlockDMP:
-#incbin "paletteFiles/Initial/Cyanne_Warlock.dmp"
+Warlock_CyanneDMP:
+#incbin "paletteFiles/Initial/Warlock_Cyanne.dmp"
 
-PaletteIdentifier(Lonsdale_Scholar, Lonsdale_ScholarDMP)
-PaletteIdentifier(Lonsdale_Warlock, Lonsdale_WarlockDMP)
+PaletteIdentifier(Scholar_Lonsdale, Scholar_LonsdaleDMP)
+PaletteIdentifier(Warlock_Lonsdale, Warlock_LonsdaleDMP)
 ALIGN 4
-Lonsdale_ScholarDMP:
-#incbin "paletteFiles/Initial/Lonsdale_Scholar.dmp"
+Scholar_LonsdaleDMP:
+#incbin "paletteFiles/Initial/Scholar_Lonsdale.dmp"
 ALIGN 4
-Lonsdale_WarlockDMP:
-#incbin "paletteFiles/Initial/Lonsdale_Warlock.dmp"
+Warlock_LonsdaleDMP:
+#incbin "paletteFiles/Initial/Warlock_Lonsdale.dmp"
 
-PaletteIdentifier(Hugo_Scholar, Hugo_ScholarDMP)
-PaletteIdentifier(Hugo_Warlock, Hugo_WarlockDMP)
+PaletteIdentifier(Scholar_Hugo, Scholar_HugoDMP)
+PaletteIdentifier(Warlock_Hugo, Warlock_HugoDMP)
 ALIGN 4
-Hugo_ScholarDMP:
-#incbin "paletteFiles/Initial/Hugo_Scholar.dmp"
+Scholar_HugoDMP:
+#incbin "paletteFiles/Initial/Scholar_Hugo.dmp"
 ALIGN 4
-Hugo_WarlockDMP:
-#incbin "paletteFiles/Initial/Hugo_Warlock.dmp"
+Warlock_HugoDMP:
+#incbin "paletteFiles/Initial/Warlock_Hugo.dmp"
 
-PaletteIdentifier(Lyud_Scholar, Lyud_ScholarDMP)
-PaletteIdentifier(Lyud_Warlock, Lyud_WarlockDMP)
+PaletteIdentifier(Scholar_Lyud, Scholar_LyudDMP)
+PaletteIdentifier(Warlock_Lyud, Warlock_LyudDMP)
 ALIGN 4
-Lyud_ScholarDMP:
-#incbin "paletteFiles/Initial/Lyud_Scholar.dmp"
+Scholar_LyudDMP:
+#incbin "paletteFiles/Initial/Scholar_Lyud.dmp"
 ALIGN 4
-Lyud_WarlockDMP:
-#incbin "paletteFiles/Initial/Lyud_Warlock.dmp"
+Warlock_LyudDMP:
+#incbin "paletteFiles/Initial/Warlock_Lyud.dmp"
 
 //endbringers
-PaletteIdentifier(Xavens_Warlock, Xavens_WarlockDMP)
+PaletteIdentifier(Warlock_Xavens, Warlock_XavensDMP)
 ALIGN 4
-Xavens_WarlockDMP:
-#incbin "paletteFiles/NPCs/Xavens_Warlock.dmp"
+Warlock_XavensDMP:
+#incbin "paletteFiles/NPCs/Warlock_Xavens.dmp"
 
 ALIGN 4
 ScholarPaletteList:
-PaletteAssociationEntry(Nathan,Nathan_Scholar)
-PaletteAssociationEntry(Cassandra,Cassandra_Scholar)
-PaletteAssociationEntry(Waves,Waves_Scholar)
-PaletteAssociationEntry(Cyanne,Cyanne_Scholar)
-PaletteAssociationEntry(Lonsdale,Lonsdale_Scholar)
-PaletteAssociationEntry(Hugo,Hugo_Scholar)
-PaletteAssociationEntry(Lyud,Lyud_Scholar)
+PaletteAssociationEntry(Nathan,Scholar_Nathan)
+PaletteAssociationEntry(Cassandra,Scholar_Cassandra)
+PaletteAssociationEntry(Waves,Scholar_Waves)
+PaletteAssociationEntry(Cyanne,Scholar_Cyanne)
+PaletteAssociationEntry(Lonsdale,Scholar_Lonsdale)
+PaletteAssociationEntry(Hugo,Scholar_Hugo)
+PaletteAssociationEntry(Lyud,Scholar_Lyud)
 WORD 0 0
 ALIGN 4
 WarlockPaletteList:
-PaletteAssociationEntry(Nathan,Nathan_Warlock)
-PaletteAssociationEntry(Cassandra,Cassandra_Warlock)
-PaletteAssociationEntry(Waves,Waves_Warlock)
-PaletteAssociationEntry(Cyanne,Cyanne_Warlock)
-PaletteAssociationEntry(Lonsdale,Lonsdale_Warlock)
-PaletteAssociationEntry(Hugo,Hugo_Warlock)
-PaletteAssociationEntry(Lyud,Lyud_Warlock)
-PaletteAssociationEntry(Xavens,Xavens_Warlock)
+PaletteAssociationEntry(Nathan,Warlock_Nathan)
+PaletteAssociationEntry(Cassandra,Warlock_Cassandra)
+PaletteAssociationEntry(Waves,Warlock_Waves)
+PaletteAssociationEntry(Cyanne,Warlock_Cyanne)
+PaletteAssociationEntry(Lonsdale,Warlock_Lonsdale)
+PaletteAssociationEntry(Hugo,Warlock_Hugo)
+PaletteAssociationEntry(Lyud,Warlock_Lyud)
+PaletteAssociationEntry(Xavens,Warlock_Xavens)
 WORD 0 0
 
 
 //medi
-PaletteIdentifier(Trish_Curate, Trish_CurateDMP)
-PaletteIdentifier(Trish_Medic, Trish_MedicDMP)
+PaletteIdentifier(Curate_Trish, Curate_TrishDMP)
+PaletteIdentifier(Medic_Trish, Medic_TrishDMP)
 ALIGN 4
-Trish_CurateDMP:
-#incbin "paletteFiles/Initial/Trish_Curate.dmp"
+Curate_TrishDMP:
+#incbin "paletteFiles/Initial/Curate_Trish.dmp"
 ALIGN 4
-Trish_MedicDMP:
-#incbin "paletteFiles/Initial/Trish_Medic.dmp"
+Medic_TrishDMP:
+#incbin "paletteFiles/Initial/Medic_Trish.dmp"
 
-PaletteIdentifier(Amos_Curate, Amos_CurateDMP)
-PaletteIdentifier(Amos_Medic, Amos_MedicDMP)
+PaletteIdentifier(Curate_Amos, Curate_AmosDMP)
+PaletteIdentifier(Medic_Amos, Medic_AmosDMP)
 ALIGN 4
-Amos_CurateDMP:
-#incbin "paletteFiles/Initial/Amos_Curate.dmp"
+Curate_AmosDMP:
+#incbin "paletteFiles/Initial/Curate_Amos.dmp"
 ALIGN 4
-Amos_MedicDMP:
-#incbin "paletteFiles/Initial/Amos_Medic.dmp"
+Medic_AmosDMP:
+#incbin "paletteFiles/Initial/Medic_Amos.dmp"
 
-PaletteIdentifier(Roslin_Curate, Roslin_CurateDMP)
-PaletteIdentifier(Roslin_Medic, Roslin_MedicDMP)
+PaletteIdentifier(Curate_Roslin, Curate_RoslinDMP)
+PaletteIdentifier(Medic_Roslin, Medic_RoslinDMP)
 ALIGN 4
-Roslin_CurateDMP:
-#incbin "paletteFiles/Initial/Roslin_Curate.dmp"
+Curate_RoslinDMP:
+#incbin "paletteFiles/Initial/Curate_Roslin.dmp"
 ALIGN 4
-Roslin_MedicDMP:
-#incbin "paletteFiles/Initial/Roslin_Medic.dmp"
+Medic_RoslinDMP:
+#incbin "paletteFiles/Initial/Medic_Roslin.dmp"
 
-PaletteIdentifier(Witerico_Curate, Witerico_CurateDMP)
-PaletteIdentifier(Witerico_Medic, Witerico_MedicDMP)
+PaletteIdentifier(Curate_Witerico, Curate_WitericoDMP)
+PaletteIdentifier(Medic_Witerico, Medic_WitericoDMP)
 ALIGN 4
-Witerico_CurateDMP:
-#incbin "paletteFiles/Initial/Witerico_Curate.dmp"
+Curate_WitericoDMP:
+#incbin "paletteFiles/Initial/Curate_Witerico.dmp"
 ALIGN 4
-Witerico_MedicDMP:
-#incbin "paletteFiles/Initial/Witerico_Medic.dmp"
+Medic_WitericoDMP:
+#incbin "paletteFiles/Initial/Medic_Witerico.dmp"
 
-PaletteIdentifier(Tycho_Curate, Tycho_CurateDMP)
-PaletteIdentifier(Tycho_Medic, Tycho_MedicDMP)
+PaletteIdentifier(Curate_Tycho, Curate_TychoDMP)
+PaletteIdentifier(Medic_Tycho, Medic_TychoDMP)
 ALIGN 4
-Tycho_CurateDMP:
-#incbin "paletteFiles/Initial/Tycho_Curate.dmp"
+Curate_TychoDMP:
+#incbin "paletteFiles/Initial/Curate_Tycho.dmp"
 ALIGN 4
-Tycho_MedicDMP:
-#incbin "paletteFiles/Initial/Tycho_Medic.dmp"
+Medic_TychoDMP:
+#incbin "paletteFiles/Initial/Medic_Tycho.dmp"
 
-PaletteIdentifier(Lily_Curate, Lily_CurateDMP)
-PaletteIdentifier(Lily_Medic, Lily_MedicDMP)
+PaletteIdentifier(Curate_Lily, Curate_LilyDMP)
+PaletteIdentifier(Medic_Lily, Medic_LilyDMP)
 ALIGN 4
-Lily_CurateDMP:
-#incbin "paletteFiles/Initial/Lily_Curate.dmp"
+Curate_LilyDMP:
+#incbin "paletteFiles/Initial/Curate_Lily.dmp"
 ALIGN 4
-Lily_MedicDMP:
-#incbin "paletteFiles/Initial/Lily_Medic.dmp"
+Medic_LilyDMP:
+#incbin "paletteFiles/Initial/Medic_Lily.dmp"
+
+PaletteIdentifier(Curate_Quinton, Curate_QuintonDMP)
+PaletteIdentifier(Medic_Quinton, Medic_QuintonDMP)
+ALIGN 4
+Curate_QuintonDMP:
+#incbin "paletteFiles/Initial/Curate_Quinton.dmp"
+ALIGN 4
+Medic_QuintonDMP:
+#incbin "paletteFiles/Initial/Medic_Quinton.dmp"
 
 ALIGN 4
 CuratePaletteList:
-PaletteAssociationEntry(Trish,Trish_Curate)
-PaletteAssociationEntry(Amos,Amos_Curate)
-PaletteAssociationEntry(Roslin,Roslin_Curate)
-PaletteAssociationEntry(Witerico,Witerico_Curate)
-PaletteAssociationEntry(Tycho,Tycho_Curate)
-PaletteAssociationEntry(Lily,Lily_Curate)
+PaletteAssociationEntry(Trish,Curate_Trish)
+PaletteAssociationEntry(Amos,Curate_Amos)
+PaletteAssociationEntry(Roslin,Curate_Roslin)
+PaletteAssociationEntry(Witerico,Curate_Witerico)
+PaletteAssociationEntry(Tycho,Curate_Tycho)
+PaletteAssociationEntry(Lily,Curate_Lily)
+PaletteAssociationEntry(Quinton,Curate_Quinton)
 WORD 0 0
 ALIGN 4
 MedicPaletteList:
-PaletteAssociationEntry(Trish,Trish_Medic)
-PaletteAssociationEntry(Amos,Amos_Medic)
-PaletteAssociationEntry(Roslin,Roslin_Medic)
-PaletteAssociationEntry(Witerico,Witerico_Medic)
-PaletteAssociationEntry(Tycho,Tycho_Medic)
-PaletteAssociationEntry(Lily,Lily_Medic)
+PaletteAssociationEntry(Trish,Medic_Trish)
+PaletteAssociationEntry(Amos,Medic_Amos)
+PaletteAssociationEntry(Roslin,Medic_Roslin)
+PaletteAssociationEntry(Witerico,Medic_Witerico)
+PaletteAssociationEntry(Tycho,Medic_Tycho)
+PaletteAssociationEntry(Lily,Medic_Lily)
+PaletteAssociationEntry(Quinton,Medic_Quinton)
 WORD 0 0

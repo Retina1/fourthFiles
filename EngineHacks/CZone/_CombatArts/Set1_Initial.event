@@ -51,6 +51,12 @@ CA_Entry((NullArt + 7), 4)
 	CA_HitCount(SwiftStrikesHitCount); CA_BothSides(SwiftStrikesBothSides)
 	CA_Range(SlashLock)
 
+CA_Entry((NullArt + 8), 3)
+	CA_Name(UM_Spellchaser,UM_SpellchaserDesc)
+	CA_Usability(SpellchaserArtUsability,SpellchaserArtMenuUsability)
+	CA_GeneralNonCombatEffect; CA_ItemSelectUsability(SlashItemSelectUsability)
+	CA_GenericStance
+
 //NULL+8 is spellchaser eventually tm
 
 CA_Entry((NullArt + 9), 3)

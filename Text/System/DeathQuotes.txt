@@ -283,6 +283,10 @@ be this way[...][A][X]
 [MidRight][Jane]
 Aw[...] Is this the best[...][N]
 I really[...] could've[...]?[A][EyesClose][X]
+##ElizaDeath
+[MidRight][Eliza][Smile]
+Sloppy work, dumbass[...][N]
+Left me[...] to bleed[...][A][EyesClose][X]
 
 //scholars
 ##CassandraDeath
@@ -673,8 +677,8 @@ The weak fall[...][N]
 That's the way of it[...][A][EyesClose][X]
 ##BulagDeath
 [MidRight][Bulag]
-My friend[...] I did it[N]
-all[...] for you[...][A][EyesClose][X]
+My friend[...] I am[N]
+sorry[...] I couldn't[...][A][EyesClose][X]
 
 //hunt
 ##PhilmoreDeath
