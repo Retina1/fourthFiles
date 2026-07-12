@@ -62,6 +62,11 @@ Danganronpa V3[X]
 ##SongTitle_DespairSearching
 Despair Searching[X]
 
+##SourceTitle_Amnesia ^
+Amnesia: The Dark Descent[X]
+##SongTitle_BackHall
+Back Hall[X]
+
 ##SourceTitle_BerwickSaga
 Berwick Saga[X]
 ##SongTitle_HeavyArmoredCorps

@@ -15,6 +15,9 @@
 #include "TitleBG/titlebackgroundinstaller.event"
 #include "CGImages/CGInstaller.event"
 
+#define BattleSpriteTable ClassAnimTable
+#include "GenericPalettes/Palette Setup.event"
+
 //TODO
 //https://feuniverse.us/t/custom-ui-graphics-tutorial/25292
 //preps missing use tiles

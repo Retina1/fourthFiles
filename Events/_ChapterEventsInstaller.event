@@ -408,6 +408,9 @@ UNIT
 #include "Chapters/Chapter19B.event"
 }
 {
+#include "Chapters/EndgameB.event"
+}
+{
 #include "Chapters/Chapter18C.event"
 }
 //special city recruit possibilities

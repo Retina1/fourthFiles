@@ -125,12 +125,6 @@ Gargoyle_Lance
 Gargoyle_Unarmed
 Gargantoyle_Lance
 Gargantoyle_Unarmed
-MaleNoHelmet_Gunner_Gun
-MaleNoHelmet_Gunner_Unarmed
-Mask_Gunner_Gun
-Mask_Gunner_Unarmed
-Female_Gunner_Gun
-Female_Gunner_Unarmed
 CoastKid_Swordfighter_Sword
 CoastKid_Swordfighter_Unarmed
 Anhinga_Swordfighter_Sword
@@ -169,3 +163,10 @@ Female_Raider_Unarmed
 Female_Trailblazer_Axe
 Female_Trailblazer_Handaxe
 Female_Trailblazer_Unarmed
+MaleNoHelmet_Gunner_Gun
+MaleNoHelmet_Gunner_Unarmed
+Mask_Gunner_Gun
+Mask_Gunner_Unarmed
+Female_Gunner_Gun
+Female_Gunner_Unarmed
+Female_Poet_Magic

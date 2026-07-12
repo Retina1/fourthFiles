@@ -1,3 +1,14 @@
+//Poet
+{
+#include "CharAnims/Female_Poet/Magic Installer.event"
+}
+ALIGN 4
+Female_PoetAnims:
+BashAnim(Female_Poet_Magic)
+SupportAnim(Female_Poet_Magic)
+UnarmedAnim(Female_Poet_Magic)
+EndAnim
+
 //Raider
 {
 #include "CharAnims/Female_Raider/Axe Installer.event"

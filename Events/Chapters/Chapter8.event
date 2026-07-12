@@ -120,12 +120,49 @@ UNIT Cleone 0x0 0x1 Level(1,Ally,0) [10,23] 0x0 0x0 0x1 REDA10R20 [0x0] NoAI
 UNIT Rat 0x0 0x1 Level(1,Ally,0) [10,23] 0x0 0x0 0x1 REDA10R22 [0x0] NoAI
 UNIT
 
+EndScenePlayer:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [8,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [10,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [9,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(1,Ally,0) [11,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+EndSceneGuildmaster:
+UNIT BossGuildmaster 0x0 0x1 Level(26,NPC,0) [9,0] 0x0 0x0 0x1 REDA9R2 [0x0] NoAI
+UNIT
+
+EndingEndbringer:
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [12,17] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
+UNIT Egil Dragoon 0x0 Level(24,Enemy,1) [11,18] 0x0 0x0 0x0 0x0 [BoltRifle] NeverMoveAI
+UNIT Harla Highlander 0x0 Level(26,Enemy,1) [9,18] 0x0 0x0 0x0 0x0 [Ron] NeverMoveAI
+UNIT Rana Survivalist 0x0 Level(27,Enemy,1) [10,17] 0x0 0x0 0x0 0x0 [ArcDrawer] NeverMoveAI
+UNIT
+EndingImperials:
+UNIT Weber Imperial 0x0 Level(23,NPC,0) [10,2] 0x0 0x0 0x0 0x0 [RagingWave] AttackInRangeAI
+UNIT MilitaryGeneric Hoplite 0x0 Level(20,NPC,0) [9,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
+UNIT MilitaryGeneric Driver 0x0 Level(20,NPC,0) [10,8] 0x0 0x0 0x0 0x0 [Dominance] AttackInRangeAI
+UNIT MilitaryGeneric Hoplite 0x0 Level(20,NPC,0) [11,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
+UNIT MilitaryGeneric Sniper 0x0 Level(20,NPC,0) [4,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT MilitaryGeneric Warlock 0x0 Level(20,NPC,0) [5,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT MilitaryGeneric Sniper 0x0 Level(20,NPC,0) [16,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT MilitaryGeneric Warlock 0x0 Level(20,NPC,0) [15,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT
+EndingSenate:
+UNIT Iseau Fencer 0x0 Level(18,Enemy,1) [12,5] 0x0 0x0 0x0 0x0 [JollyRoger,FrailtyAura,ShieldAura,HasteAura] NoAI
+UNIT Stephen Runemaster 0x0 Level(18,Enemy,1) [14,5] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT
+ALIGN 4
+EndingNathanCleone:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [2,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
 ALIGN 4
 
 BeginningScene:
 DifficultySwapper
 MUSC AmbientWind
-CleanTextNoMap(0x3,FillerDialogue)
+CleanTextNoMap(0x3,C8Opening1)
 MUSC 0x0
 CAM1 [10,22]
 REMA
@@ -136,9 +173,9 @@ LOAD2 0x1 PlayerCutscene; ENUN; STAL 30
 MUSC Song_DevilsRoulette
 MOVE 8 BossBenthus2 [9,15]; ENUN
 FlashCursor(BossBenthus2,60)
-Text(FillerDialogue)
+Text(C8Opening2)
 MOVE 8 BossBenthus2 [9,2]; ENUN
-Text(FillerDialogue)
+Text(C8Opening3)
 CHECK_EVENTID Quest2_5x_Flag
 BEQ 0x1 0xc 0x0
 LOAD1 0x1 QuestUnits; ENUN
@@ -148,9 +185,73 @@ EndEvent
 
 EndingScene:
 EndingSceneToggles
+FADI 10
+CLEA 0
+CLEN 0
+CLEE 0
+LOAD2 0x1 EndScenePlayer; ENUN
+CAM1 [9,0]
+FADU 10
+MUSC AmbientWind
+STAL 30
+Text(C8Ending1)
+LOAD2 0x1 EndSceneGuildmaster; ENUN; STAL 30
+Text(C8Ending2)
+STAL 10
+MOVE 3 BossGuildmaster [9,0]; ENUN; SilentKillUnit(BossGuildmaster); STAL 30
+Text(C8Ending2Part2)
+STAL 45
+MUSC 0
 ENUT Chapter8DoneFlag
+FADI 10
+//endbringer scene
+LOMA Stratum1F1
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingEndbringer; ENUN
+CAM1 [11,19]
+FADU 10
+STAL 20
+MUSC Song_CherryTreesAndWings
+Text(C8Ending3)
+STAL 20
+FADI 10
+//asketa scene
+LOMA Chapter14
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingImperials; ENUN
+CAM1 [10,0]
+FADU 10
+STAL 20
+Text(C8Ending4)
+STAL 20
+FADI 10
+//belvarus scene
+LOMA Chapter13
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingSenate; ENUN
+CAM1 [13,0]
+FADU 10
+STAL 30
+Text(C8Ending5)
+FADI 10
+//nathan cleone scene
 MUSC 0x0
-CleanTextNoMap(0x18,FillerDialogue)
+LOMA HirschringSquare
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 EndingNathanCleone; ENUN
+CAM1 [0,0]
+FADU 10
+STAL 30
+MUSC Song_UntilTheTwoPeopleFallInLove
+Text(C8Ending6)
+STAL 30
+MOVE 3 Cleone [3,5]; ENUN; STAL 60
+MOVE 2 Cleone [4,5]; ENUN; STAL 60
+Text(C8Ending7)
+MOVE 1 Cleone [5,5]; ENUN; STAL 60
+Text(C8Ending8)
+STAL 60
+//SetBackground(EndOfAct1CG)
 MoveToChapter(HirschringSquare)
 ENDA
 

@@ -75,6 +75,11 @@ CustomAnimationSet(Karl,Gunner,MaleNoHelmet_GunnerAnims)
 CustomAnimationSet(Wasp,Gunner,MaleNoHelmet_GunnerAnims)
 CustomAnimationSet(Victoria,Gunner,Female_GunnerAnims)
 CustomAnimationSet(Laiteuse,Gunner,Female_GunnerAnims)
+CustomAnimationSet(Jacqwil,Poet,Female_PoetAnims)
+CustomAnimationSet(Polymnia,Poet,Female_PoetAnims)
+CustomAnimationSet(Juliette,Poet,Female_PoetAnims)
+CustomAnimationSet(Yosepha,Poet,Female_PoetAnims)
+
 //more one offs
 CustomAnimationSet(CoastKid,Swordfighter,CoastKid_SwordfighterAnims)
 CustomAnimationSet(Anhinga,Swordfighter,Anhinga_SwordfighterAnims)

@@ -222,12 +222,68 @@ ALIGN 4
 Dragoon_GoreDMP:
 #incbin "paletteFiles/MainStory/Dragoon_Gore.dmp"
 
+PaletteIdentifier(Gunner_Demico, Gunner_DemicoDMP)
+PaletteIdentifier(Dragoon_Demico, Dragoon_DemicoDMP)
+ALIGN 4
+Gunner_DemicoDMP:
+#incbin "paletteFiles/Standard/Gunner_Demico.dmp"
+ALIGN 4
+Dragoon_DemicoDMP:
+#incbin "paletteFiles/Standard/Dragoon_Demico.dmp"
+
+PaletteIdentifier(Gunner_Karl, Gunner_KarlDMP)
+PaletteIdentifier(Dragoon_Karl, Dragoon_KarlDMP)
+ALIGN 4
+Gunner_KarlDMP:
+#incbin "paletteFiles/Standard/Gunner_Karl.dmp"
+ALIGN 4
+Dragoon_KarlDMP:
+#incbin "paletteFiles/Standard/Dragoon_Karl.dmp"
+
+PaletteIdentifier(Gunner_Wasp, Gunner_WaspDMP)
+PaletteIdentifier(Dragoon_Wasp, Dragoon_WaspDMP)
+ALIGN 4
+Gunner_WaspDMP:
+#incbin "paletteFiles/Standard/Gunner_Wasp.dmp"
+ALIGN 4
+Dragoon_WaspDMP:
+#incbin "paletteFiles/Standard/Dragoon_Wasp.dmp"
+
+PaletteIdentifier(Gunner_Laiteuse, Gunner_LaiteuseDMP)
+PaletteIdentifier(Dragoon_Laiteuse, Dragoon_LaiteuseDMP)
+ALIGN 4
+Gunner_LaiteuseDMP:
+#incbin "paletteFiles/Standard/Gunner_Laiteuse.dmp"
+ALIGN 4
+Dragoon_LaiteuseDMP:
+#incbin "paletteFiles/Standard/Dragoon_Laiteuse.dmp"
+
+PaletteIdentifier(Gunner_Judy, Gunner_JudyDMP)
+PaletteIdentifier(Dragoon_Judy, Dragoon_JudyDMP)
+ALIGN 4
+Gunner_JudyDMP:
+#incbin "paletteFiles/Standard/Gunner_Judy.dmp"
+ALIGN 4
+Dragoon_JudyDMP:
+#incbin "paletteFiles/Standard/Dragoon_Judy.dmp"
+
+
 ALIGN 4
 GunnerPaletteList:
 PaletteAssociationEntry(Gore,Gunner_Gore)
+PaletteAssociationEntry(Demico,Gunner_Demico)
+PaletteAssociationEntry(Karl,Gunner_Karl)
+PaletteAssociationEntry(Wasp,Gunner_Wasp)
+PaletteAssociationEntry(Laiteuse,Gunner_Laiteuse)
+PaletteAssociationEntry(Judy,Gunner_Judy)
 WORD 0 0
 ALIGN 4
 DragoonPaletteList:
 PaletteAssociationEntry(Gore,Dragoon_Gore)
+PaletteAssociationEntry(Demico,Dragoon_Demico)
+PaletteAssociationEntry(Karl,Dragoon_Karl)
+PaletteAssociationEntry(Wasp,Dragoon_Wasp)
+PaletteAssociationEntry(Laiteuse,Dragoon_Laiteuse)
+PaletteAssociationEntry(Judy,Dragoon_Judy)
 PaletteAssociationEntry(BossGore,Dragoon_Gore)
 WORD 0 0

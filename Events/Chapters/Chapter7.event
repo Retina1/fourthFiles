@@ -136,8 +136,8 @@ EndingSenate:
 UNIT Anastas SkyKnight 0x0 Level(8,Enemy,1) [13,6] 0x0 0x0 0x0 0x0 [Sarissa] NoAI
 //bosses
 UNIT Iseau Fencer 0x0 Level(18,Enemy,1) [10,3] 0x0 0x0 0x0 0x0 [JollyRoger,FrailtyAura,ShieldAura,HasteAura] NoAI
-UNIT Stephen Runemaster 0x0 Level(18,Enemy,1) [13,2] DropItem 0x0 0x0 0x0 [ShineScroll] NoAI
-UNIT Angelica Medic 0x0 Level(17,Enemy,1) [16,3] DropItem 0x0 0x0 0x0 [Asclepius] NoAI
+UNIT Stephen Runemaster 0x0 Level(18,Enemy,1) [13,2] 0x0 0x0 0x0 0x0 [ShineScroll] NoAI
+UNIT Angelica Medic 0x0 Level(17,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Asclepius] NoAI
 UNIT
 
 ALIGN 4

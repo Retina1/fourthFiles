@@ -806,6 +806,10 @@ ALIGN 4
 JuneDMP:
 #incbin "dmps/ruJune.dmp"
 setMugEntry(JuneMug,JuneDMP,5,6,5,4)
+ALIGN 4
+TaftDMP:
+#incbin "dmps/ruTaft.dmp"
+setMugEntry(TaftMug,TaftDMP,4,6,4,4)
 
 ALIGN 4
 //Rivian
