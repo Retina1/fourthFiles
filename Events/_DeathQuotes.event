@@ -41,17 +41,17 @@ EventDeathQuote(BossBenthus2,Chapter8,0x2,BenthusDeathEvent)
 ChapterDeathQuote(George,Chapter10,0x2,BenthusDeath)
 
 //major bosses
-AlwaysDeathQuote(BossGuildmaster,0x0,GuildmasterDeath)
-AlwaysDeathQuote(BossGore,0x0,BossGoreDeath)
-AlwaysDeathQuote(BossAstarte,0x0,BossAstarteDeath)
-ChapterDeathQuote(Rana,EndgameA,0x2,EndgameARanaDeath)
+EventDeathQuote(BossGuildmaster,EndgameB,0x0,GuildmasterDeathEvent)
+EventDeathQuote(BossGore,Chapter20A,0x0,GoreDeathEvent)
+EventDeathQuote(BossAstarte,Chapter20B,0x0,AstarteDeathEvent)
+EventDeathQuote(Rana,EndgameA,0x2,RanaDeathEvent)
+EventDeathQuote(Weber,EndgameA,0x2,WeberDeathEvent)
 
 AlwaysDeathQuote(Swift,0x0,SwiftDeath)
-AlwaysDeathQuote(Weber,0x0,WeberDeath)
 AlwaysDeathQuote(Xavens,0x0,XavensDeath)
 AlwaysDeathQuote(Egil,0x0,EgilDeath)
 AlwaysDeathQuote(Harla,0x0,HarlaDeath)
-AlwaysDeathQuote(Rana,0x0,RanaDeath)
+EventDeathQuote(Rana,Chapter18C,0x0,CRouteRanaDeathEvent)
 
 //the vermin
 ChapterDeathQuote(Ratatoskr,Stratum1F2,RatatoskrWin1,Ratatoskr_Defeat1)

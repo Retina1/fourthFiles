@@ -171,7 +171,7 @@ void LegionThrustBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	if (UNIT_HAS_SKILL(&actor->unit,HLD,skill_353)){
 		mult = 4;
 	}
-	if (UNIT_HAS_SKILL(&actor->unit,HLD,skill_353)){
+	else if (UNIT_HAS_SKILL(&actor->unit,HLD,skill_352)){
 		mult = 3;
 	}
 	actor->battleAttack = actor->battleAttack*mult/div;

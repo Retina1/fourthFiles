@@ -79,7 +79,7 @@ UNIT FreelanceGeneric Hunter 0x0 Level(7,Enemy,1) [0,2] 0x0 0x0 0x0 0x0 [Longbow
 UNIT FreelanceGeneric Hunter 0x0 Level(7,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
 UNIT FreelanceGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
 UNIT FreelanceGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
-UNIT FreelanceGeneric Encircler 0x0 Level(7,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
+UNIT FreelanceGeneric Encircler 0x0 Level(8,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
 UNIT FreelanceGeneric Gunner 0x0 Level(7,Enemy,1) [6,1] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 
 //this lancer cannot be moved
@@ -119,7 +119,7 @@ UNIT FreelanceGeneric Hunter 0x0 Level(7,Enemy,1) [0,2] 0x0 0x0 0x0 0x0 [Longbow
 UNIT FreelanceGeneric Hunter 0x0 Level(7,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
 UNIT FreelanceGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
 UNIT FreelanceGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
-UNIT FreelanceGeneric Encircler 0x0 Level(7,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
+UNIT FreelanceGeneric Encircler 0x0 Level(8,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
 UNIT FreelanceGeneric Gunner 0x0 Level(7,Enemy,1) [6,1] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 UNIT FreelanceGeneric Apothecary 0x0 Level(7,Enemy,1) [1,6] 0x0 0x0 0x0 0x0 [LegBinder] NeverMoveAI
 
@@ -165,7 +165,7 @@ UNIT FreelanceGeneric Hunter 0x0 Level(7,Enemy,1) [0,2] 0x0 0x0 0x0 0x0 [Longbow
 UNIT FreelanceGeneric Hunter 0x0 Level(7,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [Recurve] AttackInRangeAI
 UNIT FreelanceGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
 UNIT FreelanceGeneric Myrmidon 0x0 Level(7,Enemy,1) [2,4] 0x0 0x0 0x0 0x0 [Shortsword] DelayedAI
-UNIT FreelanceGeneric Encircler 0x0 Level(7,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
+UNIT FreelanceGeneric Encircler 0x0 Level(8,Enemy,1) [1,1] DropItem 0x0 0x0 0x0 [CleaveScroll,HealScroll] NeverMoveAI
 UNIT FreelanceGeneric Gunner 0x0 Level(7,Enemy,1) [6,1] 0x0 0x0 0x0 0x0 [Handgonne] AttackInRangeAI
 UNIT FreelanceGeneric Apothecary 0x0 Level(7,Enemy,1) [1,6] 0x0 0x0 0x0 0x0 [LegBinder] NeverMoveAI
 

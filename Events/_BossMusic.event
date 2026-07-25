@@ -24,7 +24,8 @@ BossBGMEntry(Swift,Song_Castle)
 BossBGMEntry(NPCFourth,Song_Castle)
 //personal boss music?
 BossBGMEntry(Rana,Song_EverythingIntoTheDark)
-BossBGMEntry(BossGuildmaster,Song_BattleB6)
+//eventing handles this
+//BossBGMEntry(BossGuildmaster,Song_BattleB6)
 BossBGMTerminator
 
 PUSH

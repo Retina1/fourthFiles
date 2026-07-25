@@ -58,7 +58,7 @@ You have [G] gold. Want this?[N]
 ##NotEnoughMoney
 [MidLeft][Nathan][MidRight][Monk]
 You have [G] gold.[N]
-[...]That's not enough. Sorry![A][X]
+That's not enough. Sorry![A][X]
 
 ##VisitAllMarket1 ^
 Sun-Dried Lettuce (50 Gold)[X]

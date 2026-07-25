@@ -1,0 +1,90 @@
+##Guild_Szess_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Szess]
+Szess here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Szess]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Szess]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Szess]
+return here[A][X]
+
+##Guild_Zoe_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Zoe]
+Zoe here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Zoe]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Zoe]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Zoe]
+return here[A][X]
+
+##Guild_Paul_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Paul]
+Paul here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Paul]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Paul]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Paul]
+return here[A][X]
+
+##Guild_Hausten_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hausten]
+Hausten here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hausten]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hausten]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hausten]
+return here[A][X]
+
+##Guild_Ludovic_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ludovic]
+Ludovic here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ludovic]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ludovic]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ludovic]
+return here[A][X]
+
+##Guild_Ghevena_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ghevena]
+Ghevena here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ghevena]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ghevena]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Ghevena]
+return here[A][X]
+
+##Guild_Whirl_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Whirl]
+Whirl here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Whirl]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Whirl]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Whirl]
+return here[A][X]

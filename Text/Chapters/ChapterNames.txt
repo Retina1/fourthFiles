@@ -203,11 +203,11 @@ The Weapon[X]
 ##Name_St5B
 Hallowed Armory[X]
 ##Name_Ch20B
-No One is Alone[X]
+Someone Else is Not[X]
 ##Name_Ch21B
 Countdown[X]
 ##Name_FinalB
-Yesterday is Done[X]
+We Can Make It So[X]
 
 ##Name_Act3C
 Act 3: Me and You[X]
@@ -223,4 +223,4 @@ A Fading Dream[X]
 ##Name_St6C
 Drowning Hollows[X]
 ##Name_FinalC
-Yesterday is Done[X]
+Our Time[X]

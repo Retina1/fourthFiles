@@ -123,12 +123,12 @@ void HealPlayersASMC(ProcPtr* proc) {
         curUnit->classSkillState = 0;
 		curUnit->rescue = 0;
 		curUnit->supportBits = 0;
-		UnitClearBuffsDebuffs(curUnit);
 		curUnit->state = curUnit->state &~ (US_UNSELECTABLE | US_HAS_MOVED | US_HAS_MOVED_AI);
 		int amount = GetUnitMaxHp(curUnit)/3;
 		AddUnitHp(curUnit, amount);
 		unitID++;
 	}
+	ClearAllBuffsDebuffs();
 }
 
 void LimitCurrentHPToMax(void) {

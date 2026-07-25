@@ -60,14 +60,16 @@ int ApplySwordfighterWeaponParry(int stat, struct Unit* unit) {
 			count += 1;
 		}
 	}
-	if (UNIT_HAS_SKILL(unit,LND,skill_333)){
-		stat = stat + 3 * count;
-	}
-	else if	(UNIT_HAS_SKILL(unit,LND,skill_332)){
-		stat = stat + 2 * count;
-	}
-	else if (UNIT_HAS_SKILL(unit,LND,skill_331)){
-		stat = stat + 1 * count;
+	if (count > 0) {
+		if (UNIT_HAS_SKILL(unit,LND,skill_333)){
+			stat = stat * (10 +  count * 2) / 10 ;
+		}
+		else if	(UNIT_HAS_SKILL(unit,LND,skill_332)){
+			stat = stat * (10 +  count) / 10 ;
+		}
+		else if (UNIT_HAS_SKILL(unit,LND,skill_331)){
+			stat = stat * (20 +  count) / 20 ;
+		}
 	}
 	return stat;
 }

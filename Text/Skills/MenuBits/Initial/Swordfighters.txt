@@ -1,7 +1,7 @@
 ##UM_GuardBreak
  Guard Break[X]
 ##UM_GuardBreakDesc
-Strike to debuff Def.[N]
+Strike to debuff Prt.[N]
 Cost: 2 Durability.[X]
 ##UM_PowerBreak
  Power Break[X]

@@ -204,6 +204,15 @@ ALIGN 4
 Gladiator_JuniperDMP:
 #incbin "paletteFiles/Initial/Gladiator_Juniper.dmp"
 
+PaletteIdentifier(Axefighter_AuntAysu, Axefighter_AuntAysuDMP)
+PaletteIdentifier(Gladiator_AuntAysu, Gladiator_AuntAysuDMP)
+ALIGN 4
+Axefighter_AuntAysuDMP:
+#incbin "paletteFiles/Initial/Axefighter_AuntAysu.dmp"
+ALIGN 4
+Gladiator_AuntAysuDMP:
+#incbin "paletteFiles/Initial/Gladiator_AuntAysu.dmp"
+
 ALIGN 4
 AxefighterPaletteList:
 PaletteAssociationEntry(Finn,Axefighter_Finn)
@@ -211,6 +220,7 @@ PaletteAssociationEntry(Tristao,Axefighter_Tristao)
 PaletteAssociationEntry(Eight,Axefighter_Eight)
 PaletteAssociationEntry(Juniper,Axefighter_Juniper)
 PaletteAssociationEntry(Randellan,Axefighter_Randellan)
+PaletteAssociationEntry(AuntAysu,Axefighter_AuntAysu)
 WORD 0 0
 ALIGN 4
 GladiatorPaletteList:
@@ -219,6 +229,7 @@ PaletteAssociationEntry(Tristao,Gladiator_Tristao)
 PaletteAssociationEntry(Eight,Gladiator_Eight)
 PaletteAssociationEntry(Juniper,Gladiator_Juniper)
 PaletteAssociationEntry(Randellan,Gladiator_Randellan)
+PaletteAssociationEntry(AuntAysu,Gladiator_AuntAysu)
 WORD 0 0
 
 //bow

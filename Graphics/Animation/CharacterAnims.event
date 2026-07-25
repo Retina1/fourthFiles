@@ -1,3 +1,22 @@
+//Seeker
+{
+#include "CharAnims/Shorthair_Seeker/Magic Installer.event"
+}
+ALIGN 4
+Shorthair_SeekerAnims:
+SupportAnim(Shorthair_Seeker_Magic)
+UnarmedAnim(Shorthair_Seeker_Magic)
+EndAnim
+//Runemaster
+{
+#include "CharAnims/Shorthair_Runemaster/Magic Installer.event"
+}
+ALIGN 4
+Shorthair_RunemasterAnims:
+SupportAnim(Shorthair_Runemaster_Magic)
+UnarmedAnim(Shorthair_Runemaster_Magic)
+EndAnim
+
 //Poet
 {
 #include "CharAnims/Female_Poet/Magic Installer.event"

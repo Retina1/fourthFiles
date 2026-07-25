@@ -711,6 +711,10 @@ ALIGN 4
 YujinDMP:
 #incbin "dmps/rwYujin.dmp"
 setMugEntry(YujinMug,YujinDMP,3,6,3,4)
+ALIGN 4
+AuntAysuDMP:
+#incbin "dmps/rwAuntAysu.dmp"
+setMugEntry(AuntAysuMug,AuntAysuDMP,3,6,3,4)
 
 ALIGN 4
 //scraiza

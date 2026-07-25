@@ -170,3 +170,5 @@
 #define Female_Gunner_Gun 0xAA
 #define Female_Gunner_Unarmed 0xAB
 #define Female_Poet_Magic 0xAC
+#define Shorthair_Seeker_Magic 0xAD
+#define Shorthair_Runemaster_Magic 0xAE

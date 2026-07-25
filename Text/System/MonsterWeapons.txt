@@ -156,7 +156,7 @@ Frailty Aura[X]
 ##Desc_FrailtyAura ^
 A pervasive aura of brittleness.[N]
 After attacking, foe and foes within[N]
-[_3] tiles Inf. with [_0].[_5]x Def ([_3] turns).[X]
+[_3] tiles Inf. with [_0].[_5]x Prt ([_3] turns).[X]
 ##Name_SluggishAura
 Slug. Aura[X]
 ##Desc_SluggishAura ^
@@ -181,7 +181,7 @@ Shield Aura[X]
 ##Desc_ShieldAura ^
 A pervasive aura of guarding power.[N]
 After attacking, user and allies within[N]
-[_3] tiles Inf. with [_1].[_5]x Def ([_3] turns).[X]
+[_3] tiles Inf. with [_1].[_5]x Prt ([_3] turns).[X]
 ##Name_HasteAura
 Haste Aura[X]
 ##Desc_HasteAura ^

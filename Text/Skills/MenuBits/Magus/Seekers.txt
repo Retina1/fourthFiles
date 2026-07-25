@@ -1,7 +1,7 @@
 ##UM_MagusRune
  Magus Rune[X]
 ##UM_MagusRuneDesc
-Shift nearby Def.[N]
+Shift nearby Prt.[N]
 Cost: 3 Durability.[X]
 ##UM_RevolutionRune
  Revol. Rune[X]

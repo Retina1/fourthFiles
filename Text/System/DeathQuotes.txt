@@ -77,6 +77,17 @@ All on your head[...][AN]
 Ask yourselves[...] if it[N]
 was all worth it[...][A][X]
 
+##EndgameBGuildmasterBattle
+[MidLeft][Guildmaster]
+It is my proud duty to[N]
+preserve the world.[AN]
+The League is our one[N]
+true hope for stability.[AN]
+If you wish to tear it[N]
+down, so be it.[AN]
+I will simply have to[N]
+at last take action.[AN]
+[...]No more games.[A][X]
 
 ##GuildmasterDeath
 [MidLeft][Guildmaster]

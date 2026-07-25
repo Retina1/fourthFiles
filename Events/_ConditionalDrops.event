@@ -29,3 +29,32 @@ LABEL 0x1 //no poison
 Text(BenthusDeath)
 LABEL 0x2
 ENDA
+
+RanaDeathEvent:
+MUSCSLOW 0x7fff
+Text(EndgameARanaDeath)
+ENDA
+CRouteRanaDeathEvent:
+MUSCSLOW 0x7fff
+Text(RanaDeath)
+ENDA
+
+GuildmasterDeathEvent:
+MUSCSLOW 0x7fff
+Text(GuildmasterDeath)
+ENDA
+
+GoreDeathEvent:
+MUSCSLOW 0x7fff
+Text(BossGoreDeath)
+ENDA
+
+AstarteDeathEvent:
+MUSCSLOW 0x7fff
+Text(BossAstarteDeath)
+ENDA
+
+WeberDeathEvent:
+MUSCSLOW 0x7fff
+Text(WeberDeath)
+ENDA

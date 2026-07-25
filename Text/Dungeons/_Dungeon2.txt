@@ -84,7 +84,7 @@ For sure.[A][X]
 
 ##Dungeon2_Ending3
 [MidLeft][Benthus]
-[...]The old man's not fooled[N]
+The old man's not fooled[N]
 for a moment.[AN]
 And I'm sure he believes that[N]
 Hedge'll escape the mines.[AN]

@@ -46,7 +46,7 @@ Cost: 4 Durability.[X]
  Close Combat[X]
 ##UM_CloseCombatDesc
 A mighty strike that[N]
-debuffs user Atk/Def.[N]
+debuffs user Atk/Prt.[N]
 Cost: 4 Durability.[X]
 ##UM_FullCombo
  Full Combo[X]

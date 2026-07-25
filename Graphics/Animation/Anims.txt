@@ -170,3 +170,5 @@ Mask_Gunner_Unarmed
 Female_Gunner_Gun
 Female_Gunner_Unarmed
 Female_Poet_Magic
+Shorthair_Seeker_Magic
+Shorthair_Runemaster_Magic

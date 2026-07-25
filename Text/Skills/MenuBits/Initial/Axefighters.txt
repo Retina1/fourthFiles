@@ -7,7 +7,7 @@ Cost: 3 Durability.[X]
 ##UM_ShieldCrush
  Shield Crush[X]
 ##UM_ShieldCrushDesc
-Strike to debuff Def.[N]
+Strike to debuff Prt.[N]
 Cost: 3 Durability.[X]
 
 ##UM_SmitingSmash

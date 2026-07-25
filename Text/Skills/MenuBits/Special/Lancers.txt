@@ -9,7 +9,7 @@ Cost: 2 Durability.[X]
  Sprt. Shield[X]
 ##UM_SpiritShieldDesc
 Spend HP to buff[N]
-Def/Luc in area.[N]
+Prt/Luc in area.[N]
 Cost: 3 Durability.[X]
 ##UM_BloodyOffense
  Bloody Off.[X]

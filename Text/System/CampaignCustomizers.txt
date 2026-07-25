@@ -174,7 +174,7 @@ Enable Picnic Mode.[X]
 ##PicnicModeRText
 Player units will have 1.5x[N]
 applied to most combat stats.[N]
-(Atk/Def/Spd/Hit/Crit/Avo/C.Avo)[X]
+(Atk/Prt/Spd/Hit/Crit/Avo/C.Avo)[X]
 ##PicnicModeConfirm
 Activate Picnic Mode?[N]
 [No][X]

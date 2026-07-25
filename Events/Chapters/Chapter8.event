@@ -21,6 +21,9 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0x0,BenthusWarning,3)
+TurnEventPlayer(0x0,C8Reinforcements,4)
+TurnEventPlayer(0x0,C8Reinforcements2,6)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -158,6 +161,41 @@ UNIT Cleone 0x0 0x1 Level(1,Ally,0) [2,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 ALIGN 4
+Turn5Spawns1:
+UNIT FreelanceGeneric Swordfighter 0x0 Level(10,Enemy,1) [7,0] 0x0 0x0 0x1 REDA7R1 [Boarblade] NoAI
+UNIT FreelanceGeneric Lancer 0x0 Level(10,Enemy,1) [8,0] 0x0 0x0 0x1 REDA8R2 [Partizan] NoAI
+UNIT FreelanceGeneric Lancer 0x0 Level(10,Enemy,1) [10,0] 0x0 0x0 0x1 REDA10R2 [Partizan] NoAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(10,Enemy,1) [11,0] 0x0 0x0 0x1 REDA11R1 [Boarblade] NoAI
+UNIT
+Turn5Spawns2_1:
+UNIT FreelanceGeneric Rider 0x0 Level(10,Enemy,1) [1,23] 0x0 0x0 0x1 REDA1R22 [Partizan] NoAI
+UNIT FreelanceGeneric Raider 0x0 Level(10,Enemy,1) [3,23] 0x0 0x0 0x1 REDA3R22 [Yue] NoAI
+UNIT
+Turn5Spawns2_2:
+UNIT FreelanceGeneric Raider 0x0 Level(10,Enemy,1) [15,23] 0x0 0x0 0x1 REDA15R22 [Yue] NoAI
+UNIT FreelanceGeneric Rider 0x0 Level(10,Enemy,1) [17,23] 0x0 0x0 0x1 REDA17R22 [Partizan] NoAI
+UNIT
+Turn5Spawns2_3:
+UNIT FreelanceGeneric ScaleKnight 0x0 Level(10,Enemy,1) [8,23] 0x0 0x0 0x1 REDA8R22 [HandAxe] NoAI
+UNIT FreelanceGeneric ScaleKnight 0x0 Level(10,Enemy,1) [11,23] 0x0 0x0 0x1 REDA11R22 [HandAxe] NoAI
+UNIT
+
+ALIGN 4
+
+C8Reinforcements:
+Reinforcements(Turn5Spawns1)
+EndEvent
+C8Reinforcements2:
+Reinforcements(Turn5Spawns2_1)
+Reinforcements(Turn5Spawns2_2)
+Reinforcements(Turn5Spawns2_3)
+EndEvent
+
+BenthusWarning:
+CAM1 BossBenthus2
+FlashCursor(BossBenthus2,30)
+Text(C8BenthusWarning)
+EndEvent
 
 BeginningScene:
 DifficultySwapper
@@ -184,6 +222,7 @@ CallPreps
 EndEvent
 
 EndingScene:
+MUSC 0
 EndingSceneToggles
 FADI 10
 CLEA 0

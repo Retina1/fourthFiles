@@ -1,0 +1,90 @@
+##Guild_Leonzio_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Leonzio]
+Leonzio here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Leonzio]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Leonzio]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Leonzio]
+return here[A][X]
+
+##Guild_Gunther_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Gunther]
+Gunther here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Gunther]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Gunther]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Gunther]
+return here[A][X]
+
+##Guild_Jacqwil_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Jacqwil]
+Jacqwil here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Jacqwil]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Jacqwil]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Jacqwil]
+return here[A][X]
+
+##Guild_Polymnia_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Polymnia]
+Polymnia here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Polymnia]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Polymnia]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Polymnia]
+return here[A][X]
+
+##Guild_Lucien_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lucien]
+Lucien here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lucien]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lucien]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Lucien]
+return here[A][X]
+
+##Guild_Juliette_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Juliette]
+Juliette here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Juliette]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Juliette]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Juliette]
+return here[A][X]
+
+##Guild_Yosepha_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Yosepha]
+Yosepha here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Yosepha]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Yosepha]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Yosepha]
+return here[A][X]

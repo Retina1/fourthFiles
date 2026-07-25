@@ -1,21 +1,149 @@
 //poet
+PaletteIdentifier(Poet_Leonzio, Poet_LeonzioDMP)
+PaletteIdentifier(Troubadour_Leonzio, Troubadour_LeonzioDMP)
+ALIGN 4
+Poet_LeonzioDMP:
+#incbin "paletteFiles/Magus/Poet_Leonzio.dmp"
+ALIGN 4
+Troubadour_LeonzioDMP:
+#incbin "paletteFiles/Magus/Troubadour_Leonzio.dmp"
+
+PaletteIdentifier(Poet_Gunther, Poet_GuntherDMP)
+PaletteIdentifier(Troubadour_Gunther, Troubadour_GuntherDMP)
+ALIGN 4
+Poet_GuntherDMP:
+#incbin "paletteFiles/Magus/Poet_Gunther.dmp"
+ALIGN 4
+Troubadour_GuntherDMP:
+#incbin "paletteFiles/Magus/Troubadour_Gunther.dmp"
+
+PaletteIdentifier(Poet_Lucien, Poet_LucienDMP)
+PaletteIdentifier(Troubadour_Lucien, Troubadour_LucienDMP)
+ALIGN 4
+Poet_LucienDMP:
+#incbin "paletteFiles/Magus/Poet_Lucien.dmp"
+ALIGN 4
+Troubadour_LucienDMP:
+#incbin "paletteFiles/Magus/Troubadour_Lucien.dmp"
+
+PaletteIdentifier(Poet_Jacqwil, Poet_JacqwilDMP)
+PaletteIdentifier(Troubadour_Jacqwil, Troubadour_JacqwilDMP)
+ALIGN 4
+Poet_JacqwilDMP:
+#incbin "paletteFiles/Magus/Poet_Jacqwil.dmp"
+ALIGN 4
+Troubadour_JacqwilDMP:
+#incbin "paletteFiles/Magus/Troubadour_Jacqwil.dmp"
+
+PaletteIdentifier(Poet_Juliette, Poet_JulietteDMP)
+PaletteIdentifier(Troubadour_Juliette, Troubadour_JulietteDMP)
+ALIGN 4
+Poet_JulietteDMP:
+#incbin "paletteFiles/Magus/Poet_Juliette.dmp"
+ALIGN 4
+Troubadour_JulietteDMP:
+#incbin "paletteFiles/Magus/Troubadour_Juliette.dmp"
+
 ALIGN 4
 PoetPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(Leonzio,Poet_Leonzio)
+PaletteAssociationEntry(Gunther,Poet_Gunther)
+PaletteAssociationEntry(Lucien,Poet_Lucien)
+PaletteAssociationEntry(Jacqwil,Poet_Jacqwil)
+PaletteAssociationEntry(Juliette,Poet_Juliette)
 WORD 0 0
 ALIGN 4
 TroubadourPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(Leonzio,Troubadour_Leonzio)
+PaletteAssociationEntry(Gunther,Troubadour_Gunther)
+PaletteAssociationEntry(Lucien,Troubadour_Lucien)
+PaletteAssociationEntry(Jacqwil,Troubadour_Jacqwil)
+PaletteAssociationEntry(Juliette,Troubadour_Juliette)
 WORD 0 0
 
 //seeker
+PaletteIdentifier(Seeker_Phespher, Seeker_PhespherDMP)
+PaletteIdentifier(Runemaster_Phespher, Runemaster_PhespherDMP)
+ALIGN 4
+Seeker_PhespherDMP:
+#incbin "paletteFiles/Magus/Seeker_Phespher.dmp"
+ALIGN 4
+Runemaster_PhespherDMP:
+#incbin "paletteFiles/Magus/Runemaster_Phespher.dmp"
+
+PaletteIdentifier(Seeker_Nadja, Seeker_NadjaDMP)
+PaletteIdentifier(Runemaster_Nadja, Runemaster_NadjaDMP)
+ALIGN 4
+Seeker_NadjaDMP:
+#incbin "paletteFiles/Magus/Seeker_Nadja.dmp"
+ALIGN 4
+Runemaster_NadjaDMP:
+#incbin "paletteFiles/Magus/Runemaster_Nadja.dmp"
+
+PaletteIdentifier(Seeker_Levia, Seeker_LeviaDMP)
+PaletteIdentifier(Runemaster_Levia, Runemaster_LeviaDMP)
+ALIGN 4
+Seeker_LeviaDMP:
+#incbin "paletteFiles/Magus/Seeker_Levia.dmp"
+ALIGN 4
+Runemaster_LeviaDMP:
+#incbin "paletteFiles/Magus/Runemaster_Levia.dmp"
+
+PaletteIdentifier(Seeker_Vasily, Seeker_VasilyDMP)
+PaletteIdentifier(Runemaster_Vasily, Runemaster_VasilyDMP)
+ALIGN 4
+Seeker_VasilyDMP:
+#incbin "paletteFiles/Magus/Seeker_Vasily.dmp"
+ALIGN 4
+Runemaster_VasilyDMP:
+#incbin "paletteFiles/Magus/Runemaster_Vasily.dmp"
+
+PaletteIdentifier(Seeker_Jebet, Seeker_JebetDMP)
+PaletteIdentifier(Runemaster_Jebet, Runemaster_JebetDMP)
+ALIGN 4
+Seeker_JebetDMP:
+#incbin "paletteFiles/Magus/Seeker_Jebet.dmp"
+ALIGN 4
+Runemaster_JebetDMP:
+#incbin "paletteFiles/Magus/Runemaster_Jebet.dmp"
+
+PaletteIdentifier(Seeker_Wont, Seeker_WontDMP)
+PaletteIdentifier(Runemaster_Wont, Runemaster_WontDMP)
+ALIGN 4
+Seeker_WontDMP:
+#incbin "paletteFiles/Magus/Seeker_Wont.dmp"
+ALIGN 4
+Runemaster_WontDMP:
+#incbin "paletteFiles/Magus/Runemaster_Wont.dmp"
+
+PaletteIdentifier(Seeker_Wren, Seeker_WrenDMP)
+PaletteIdentifier(Runemaster_Wren, Runemaster_WrenDMP)
+ALIGN 4
+Seeker_WrenDMP:
+#incbin "paletteFiles/Magus/Seeker_Wren.dmp"
+ALIGN 4
+Runemaster_WrenDMP:
+#incbin "paletteFiles/Magus/Runemaster_Wren.dmp"
+
 ALIGN 4
 SeekerPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(Phespher,Seeker_Phespher)
+PaletteAssociationEntry(Nadja,Seeker_Nadja)
+PaletteAssociationEntry(Levia,Seeker_Levia)
+PaletteAssociationEntry(Vasily,Seeker_Vasily)
+PaletteAssociationEntry(Jebet,Seeker_Jebet)
+PaletteAssociationEntry(Wont,Seeker_Wont)
+PaletteAssociationEntry(Wren,Seeker_Wren)
 WORD 0 0
 ALIGN 4
 RunemasterPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(Phespher,Runemaster_Phespher)
+PaletteAssociationEntry(Nadja,Runemaster_Nadja)
+PaletteAssociationEntry(Levia,Runemaster_Levia)
+PaletteAssociationEntry(Vasily,Runemaster_Vasily)
+PaletteAssociationEntry(Jebet,Runemaster_Jebet)
+PaletteAssociationEntry(Wont,Runemaster_Wont)
+PaletteAssociationEntry(Wren,Runemaster_Wren)
 WORD 0 0
 
 //priest

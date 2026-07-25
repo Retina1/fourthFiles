@@ -39,20 +39,20 @@ Sap. Arrow[X]
 ##PredatorsArrowLabel
 Pred. Arrow[X]
 ##PredatorsArrowDesc
-0.6x Atk/Def/AS/Hit/[N]
+0.6x Atk/Prt/AS/Hit/[N]
 Avo/Crit/Luc, -1 Mov.[X]
 
 ##CloseCombatLabel
 Close Cmbt.[X]
 ##CloseCombatDesc
-0.5x Atk/Def.[X]
+0.5x Atk/Prt.[X]
 
 ##SpiritShieldLabel
 Spirit Shield[X]
 ##SpiritShieldDesc1
-1.2x Def/Luc.[X]
+1.2x Prt/Luc.[X]
 ##SpiritShieldDesc2
-1.5x Def/Luc.[X]
+1.5x Prt/Luc.[X]
 
 ##BloodyOffenseLabel
 Bloody Off.[X]
@@ -81,31 +81,31 @@ Shining Frc.[X]
 ##MoonriseLabel
 Moonrise[X]
 ##MoonriseDesc1
-1.1x Atk/Def/AS/[N]
+1.1x Atk/Prt/AS/[N]
 Hit/Avo/Crit/Luc.[X]
 ##MoonriseDesc2
-1.2x Atk/Def/AS/[N]
+1.2x Atk/Prt/AS/[N]
 Hit/Avo/Crit/Luc.[X]
 ##MoonriseDesc3
-1.4x Atk/Def/AS/[N]
+1.4x Atk/Prt/AS/[N]
 Hit/Avo/Crit/Luc.[X]
 ##MoonriseDesc4
-1.8x Atk/Def/AS/[N]
+1.8x Atk/Prt/AS/[N]
 Hit/Avo/Crit/Luc.[X]
 ##MoonriseDesc5
-2.5x Atk/Def/AS/[N]
+2.5x Atk/Prt/AS/[N]
 Hit/Avo/Crit/Luc.[X]
 
 ##MagusRuneLabel
 Magus Rune[X]
 ##MagusRuneBuff1
-1.1x Def.[X]
+1.1x Prt.[X]
 ##MagusRuneBuff2
-1.2x Def.[X]
+1.2x Prt.[X]
 ##MagusRuneDebuff1
-0.9x Def.[X]
+0.9x Prt.[X]
 ##MagusRuneDebuff2
-0.8x Def.[X]
+0.8x Prt.[X]
 
 ##RevolutionRuneLabel
 Revol. Rune[X]
@@ -132,7 +132,7 @@ Agi. Rune[X]
 ##WarSapLabel
 War Sap[X]
 ##WarSapDesc
-0.8x Atk/Def/AS/[N]
+0.8x Atk/Prt/AS/[N]
 Hit/Crit/Avo/Luc.[X]
 
 ##ChargeCommandLabel
@@ -165,11 +165,11 @@ Bravery Song[X]
 ##ShelterLabel
 Shelter Song[X]
 ##ShelterDesc1
-1.3x Def.[X]
+1.3x Prt.[X]
 ##ShelterDesc2
-1.5x Def.[X]
+1.5x Prt.[X]
 ##ShelterDesc3
-1.8x Def.[X]
+1.8x Prt.[X]
 
 ##MercuryLabel
 Mercury Song[X]
@@ -220,9 +220,9 @@ War Cry[X]
 ##HellishCryLabel
 Hellish Cry[X]
 ##HellishCryDesc1
-0.8x Avo/Def.[X]
+0.8x Avo/Prt.[X]
 ##HellishCryDesc2
-0.6x Avo/Def.[X]
+0.6x Avo/Prt.[X]
 
 ##DominantCryLabel
 Dominant Cry[X]
@@ -241,9 +241,9 @@ Rallying Flag[X]
 ##SurvivalFlagLabel
 Survival Flag[X]
 ##SurvivalFlagDesc1
-1.1x Avo/Def.[X]
+1.1x Avo/Prt.[X]
 ##SurvivalFlagDesc2
-1.3x Avo/Def.[X]
+1.3x Avo/Prt.[X]
 
 ##ExpertiseFlagLabel
 Expertise Flag[X]
@@ -256,17 +256,17 @@ Expertise Flag[X]
 ##ImmunizeBuffLabel
 Immunize[X]
 ##ImmunizeBuffDesc1
-1.33x Def.[X]
+1.33x Prt.[X]
 ##ImmunizeBuffDesc2
-2.0x Def.[X]
+2.0x Prt.[X]
 ##ImmunizeBuffDesc3
-2.66x Def.[X]
+2.66x Prt.[X]
 
 ##VanguardBuffLabel
 Vanguard[X]
 ##VanguardBuffDesc
 1.2x Atk/AS,[N]
-0.8x Def.[X]
+0.8x Prt.[X]
 
 ##NaturalLeaderBuffLabel
 Natural Ldr.[X]
@@ -336,7 +336,7 @@ Gallop[X]
 ##StonardBuffLabel
 Stonard[X]
 ##StonardBuffDesc
-1.5x Def.[X]
+1.5x Prt.[X]
 ##BravantBuffLabel
 Bravant[X]
 ##BravantBuffDesc
@@ -352,9 +352,9 @@ Sapping[X]
 ##FrailtyLabel
 Frailty[X]
 ##FrailtyDesc1
-0.7x Def.[X]
+0.7x Prt.[X]
 ##FrailtyDesc2
-0.5x Def.[X]
+0.5x Prt.[X]
 
 ##LeadenLabel
 Leaden[X]
@@ -372,7 +372,7 @@ Guard Break[X]
 ##ShieldCrushLabel
 Shield Crush[X]
 ##GuardBreakDesc
-0.8x Def.[X]
+0.8x Prt.[X]
 ##AgilityBreakLabel
 Agility Break[X]
 ##AgilityBreakDesc
@@ -381,24 +381,24 @@ Agility Break[X]
 ##CrippleWhipLabel
 Cripple Whip[X]
 ##CrippleWhipDesc1
-0.9x Atk/AS/Def, -1 Mov.[X]
+0.9x Atk/AS/Prt, -1 Mov.[X]
 ##CrippleWhipDesc2
-0.8x Atk/AS/Def, -2 Mov.[X]
+0.8x Atk/AS/Prt, -2 Mov.[X]
 ##CrippleWhipDesc3
-0.8x Atk/AS/Def, -2 Mov.[X]
+0.8x Atk/AS/Prt, -2 Mov.[X]
 ##CrippleWhipDesc4
-0.7x Atk/AS/Def, -3 Mov.[X]
+0.7x Atk/AS/Prt, -3 Mov.[X]
 ##CrippleWhipDesc5
-0.6x Atk/AS/Def, -3 Mov.[X]
+0.6x Atk/AS/Prt, -3 Mov.[X]
 
 ##BreakingPulseLabel
 Breaking Ps.[X]
 ##BreakingPulseDesc1
-0.9x Def.[X]
+0.9x Prt.[X]
 ##BreakingPulseDesc2
-0.8x Def.[X]
+0.8x Prt.[X]
 ##BreakingPulseDesc3
-0.7x Def.[X]
+0.7x Prt.[X]
 
 ##FierceAuraLabel
 Fierce Aura[X]
@@ -407,7 +407,7 @@ Fierce Aura[X]
 ##ShieldAuraLabel
 Shield Aura[X]
 ##ShieldAuraDesc
-1.5x Def.[X]
+1.5x Prt.[X]
 ##HasteAuraLabel
 Haste Aura[X]
 ##HasteAuraDesc
@@ -424,7 +424,7 @@ Sapping Aura[X]
 ##FrailtyAuraLabel
 Frailty Aura[X]
 ##FrailtyAuraDesc
-0.5x Def.[X]
+0.5x Prt.[X]
 ##SluggishAuraLabel
 Sluggish Aura[X]
 ##SluggishAuraDesc

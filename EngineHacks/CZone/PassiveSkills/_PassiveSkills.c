@@ -53,23 +53,14 @@ void ApplyItemFlatPassives(struct BattleUnit* attacker, struct BattleUnit* defen
 }
 
 void ApplyItemPassives(struct BattleUnit* attacker, struct BattleUnit* defender) {
-	
-
 	//soul shield
-	if (IsBattleReal()){
-		for(int j = 0; j < GetUnitItemCount(&attacker->unit); j++) {
-			u16 curItem = attacker->unit.items[j];
-			if(GetItemAttributes(curItem) & IA_SOUL_SHIELD) {
-				attacker->battleDefense = attacker->battleDefense * 1/2;
-			}
-
-		}
+	if (IsBattleReallyReal()){
 		for(int j = 0; j < GetUnitItemCount(&defender->unit); j++) {
 			u16 curItem = defender->unit.items[j];
 			if(GetItemAttributes(curItem) & IA_SOUL_SHIELD) {
+				defender->battleDefense = defender->battleDefense * 1/2;
 				attacker->battleAttack = attacker->battleAttack * 1/2;
 			}
-
 		}
 	}
 }
@@ -307,8 +298,8 @@ long long ClassSkillLucBoost(int stat, struct Unit* unit) {
 
 long long ClassSkillDefsBoost(int stat, struct Unit* unit) {
 	//flat boosts first
-	stat = ApplySwordfighterWeaponParry(stat,unit);
 	//then multipliers
+	stat = ApplySwordfighterWeaponParry(stat,unit);
 	stat = ApplyKnightIronWall(stat,unit);
 	stat = ApplyKnightProvocationMod(stat,unit);
 	stat = ApplyMyrmidonClearStance(stat,unit);

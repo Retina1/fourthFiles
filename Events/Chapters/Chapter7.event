@@ -22,6 +22,7 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0x0,XavensLeaves,2)
+TurnEventPlayer(0x0,CrystalChaos,4)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -102,12 +103,101 @@ UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Sh
 UNIT FreelanceGeneric Sniper 0x0 Level(8,Enemy,1) [16,6] 0x0 0x0 0x0 0x0 [Shortbow,CompactBow] AttackInRangeAI
 UNIT Astoria Seeker 0x0 Level(10,Enemy,1) [8,9] DropItem 0x0 0x0 0x0 [ShineScroll] AttackInRangeAI
 UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [7,15] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
-
 UNIT
+
+
+EnemyUnitsExpert:
+UNIT FreelanceGeneric Scholar 0x0 Level(8,Enemy,1) [7,5] 0x0 0x0 0x0 0x0 [FlameScroll] AttackInRangeAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [6,4] 0x0 0x0 0x0 0x0 [HandAxe,SerratedAxe] AttackInRangeAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT FreelanceGeneric Apothecary 0x0 Level(8,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [SleepGas] NeverMoveAI
+UNIT FreelanceGeneric Apothecary 0x0 Level(8,Enemy,1) [15,6] 0x0 0x0 0x0 0x0 [SleepGas] NeverMoveAI
+UNIT FreelanceGeneric Apothecary 0x0 Level(8,Enemy,1) [11,5] 0x0 0x0 0x0 0x0 [ArmBinder] NeverMoveAI
+UNIT FreelanceGeneric Scholar 0x0 Level(8,Enemy,1) [11,3] 0x0 0x0 0x0 0x0 [FreezeScroll] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [12,0] 0x0 0x0 0x0 0x0 [Boarblade] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [1,14] 0x0 0x0 0x0 0x0 [Shortspear,HasteAura] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [4,13] 0x0 0x0 0x0 0x0 [HandSpear,HasteAura] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [13,13] 0x0 0x0 0x0 0x0 [Shieldlance,HasteAura] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [HandSpear,HasteAura] ChaseOnceApproachedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [Pike,HasteAura] ChaseOnceApproachedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [HandSpear,HasteAura] DelayedAI
+UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [18,13] 0x0 0x0 0x0 0x0 [Recurve] ChaseOnceApproachedAI
+UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [19,12] 0x0 0x0 0x0 0x0 [Longbow] ChaseOnceApproachedAI
+UNIT FreelanceGeneric Rider 0x0 Level(8,Enemy,1) [20,15] 0x0 0x0 0x0 0x0 [Partizan] ChaseOnceApproachedAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [ThornWhip,SappingAura] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [11,7] 0x0 0x0 0x0 0x0 [ThornWhip,FrailtyAura] NoAI
+
+UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [18,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [18,9] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [16,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(8,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [Pepperbox] AttackInRangeAI
+
+UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [15,1] 0x0 0x0 0x0 0x0 [ToxinBow] AttackInRangeAI
+UNIT FreelanceGeneric Lancer 0x0 Level(8,Enemy,1) [15,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT FreelanceGeneric Lancer 0x0 Level(8,Enemy,1) [16,2] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+
+UNIT FreelanceGeneric Sniper 0x0 Level(8,Enemy,1) [16,6] 0x0 0x0 0x0 0x0 [Shortbow,CompactBow] AttackInRangeAI
+UNIT Astoria Seeker 0x0 Level(10,Enemy,1) [8,9] DropItem 0x0 0x0 0x0 [ShineScroll] AttackInRangeAI
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [7,15] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
+UNIT
+
+EnemyUnitsHeroic:
+UNIT FreelanceGeneric Scholar 0x0 Level(8,Enemy,1) [7,5] 0x0 0x0 0x0 0x0 [FlameScroll] AttackInRangeAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [6,4] 0x0 0x0 0x0 0x0 [HandAxe,SerratedAxe] AttackInRangeAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [6,6] 0x0 0x0 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT FreelanceGeneric Apothecary 0x0 Level(8,Enemy,1) [8,7] 0x0 0x0 0x0 0x0 [SleepGas] NeverMoveAI
+UNIT FreelanceGeneric Apothecary 0x0 Level(8,Enemy,1) [15,6] 0x0 0x0 0x0 0x0 [SleepGas] NeverMoveAI
+UNIT FreelanceGeneric Apothecary 0x0 Level(8,Enemy,1) [11,5] 0x0 0x0 0x0 0x0 [ArmBinder] NeverMoveAI
+UNIT FreelanceGeneric Scholar 0x0 Level(8,Enemy,1) [11,3] 0x0 0x0 0x0 0x0 [FreezeScroll] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [Scramasax] NoAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [12,0] 0x0 0x0 0x0 0x0 [Boarblade] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [1,14] 0x0 0x0 0x0 0x0 [Shortspear,HasteAura] DelayedAI
+UNIT FreelanceGeneric ScaleKnight 0x0 Level(8,Enemy,1) [2,12] 0x0 0x0 0x0 0x0 [HandAxe,FierceAura] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [4,13] 0x0 0x0 0x0 0x0 [HandSpear,HasteAura] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [13,13] 0x0 0x0 0x0 0x0 [Shieldlance,HasteAura] DelayedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [19,1] 0x0 0x0 0x0 0x0 [HandSpear,HasteAura] ChaseOnceApproachedAI
+UNIT FreelanceGeneric ScaleKnight 0x0 Level(8,Enemy,1) [14,11] 0x0 0x0 0x0 0x0 [HandAxe,FierceAura] ChaseOnceApproachedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [20,2] 0x0 0x0 0x0 0x0 [Pike,HasteAura] ChaseOnceApproachedAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [13,8] 0x0 0x0 0x0 0x0 [HandSpear,HasteAura] DelayedAI
+UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [18,13] 0x0 0x0 0x0 0x0 [Recurve,FrailtyAura] ChaseOnceApproachedAI
+UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [19,12] 0x0 0x0 0x0 0x0 [Longbow,SappingAura] ChaseOnceApproachedAI
+UNIT FreelanceGeneric Rider 0x0 Level(8,Enemy,1) [20,15] 0x0 0x0 0x0 0x0 [Partizan] ChaseOnceApproachedAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [10,8] 0x0 0x0 0x0 0x0 [ThornWhip,SappingAura] NoAI
+UNIT FreelanceGeneric DarkHunter 0x0 Level(8,Enemy,1) [11,7] 0x0 0x0 0x0 0x0 [ThornWhip,FrailtyAura] NoAI
+
+UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [18,7] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [18,9] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT FreelanceGeneric Swordfighter 0x0 Level(8,Enemy,1) [16,7] 0x0 0x0 0x0 0x0 [Scramasax] AttackInRangeAI
+UNIT FreelanceGeneric Gunner 0x0 Level(8,Enemy,1) [19,8] 0x0 0x0 0x0 0x0 [Pepperbox,MistyAura] AttackInRangeAI
+
+UNIT FreelanceGeneric Hunter 0x0 Level(8,Enemy,1) [15,1] 0x0 0x0 0x0 0x0 [ToxinBow] AttackInRangeAI
+UNIT FreelanceGeneric Lancer 0x0 Level(8,Enemy,1) [15,0] 0x0 0x0 0x0 0x0 [Shortspear] AttackInRangeAI
+UNIT FreelanceGeneric Lancer 0x0 Level(8,Enemy,1) [16,2] 0x0 0x0 0x0 0x0 [Pike] AttackInRangeAI
+UNIT FreelanceGeneric Axefighter 0x0 Level(8,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Shortmace] AttackInRangeAI
+
+UNIT FreelanceGeneric Sniper 0x0 Level(8,Enemy,1) [16,6] 0x0 0x0 0x0 0x0 [Shortbow,CompactBow] AttackInRangeAI
+UNIT Astoria Seeker 0x0 Level(10,Enemy,1) [8,9] DropItem 0x0 0x0 0x0 [ShineScroll] AttackInRangeAI
+UNIT Xavens Warlock 0x0 Level(23,Enemy,1) [7,15] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
+UNIT
+
+
 
 Turn2Spawns:
 UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [8,14] 0x0 0x0 0x1 REDA7R13 [Shortspear] NoAI
 UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [8,14] 0x0 0x0 0x1 REDA9R13 [Shortspear] NoAI
+UNIT
+
+Turn4Spawns:
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [16,1] 0x0 0x0 0x1 REDA14R0 [HandSpear] NoAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [16,1] 0x0 0x0 0x1 REDA14R2 [Partizan] NoAI
+UNIT
+Turn4Spawns2:
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [17,11] 0x0 0x0 0x1 REDA15R10 [Partizan] NoAI
+UNIT FreelanceGeneric SkyKnight 0x0 Level(8,Enemy,1) [17,11] 0x0 0x0 0x1 REDA15R12 [HandSpear] NoAI
 UNIT
 
 EndingCutscene1:
@@ -151,9 +241,7 @@ REMA
 CLEAN
 MUSC 0
 //scene inside mines with astoria and xavens - in map
-//LoadUnitsByDifficulty(EnemyUnits,EnemyUnitsExpert,EnemyUnitsHeroic)
-
-LOAD1 0x1 EnemyUnits; ENUN
+LoadUnitsByDifficulty(EnemyUnits,EnemyUnitsExpert,EnemyUnitsHeroic)
 CAM1 Xavens
 FADU 10
 FlashCursor(Xavens,60)
@@ -200,6 +288,23 @@ STAL 20
 WARPIN [8,14]
 Reinforcements(Turn2Spawns)
 ENDWARP
+EndEvent
+
+CrystalChaos:
+CHECK_TUTORIAL
+BNE 0x1 0xc 0x0
+CAM1 [16,1]
+STAL 20
+WARPIN [16,1]
+Reinforcements(Turn4Spawns)
+ENDWARP
+STAL 20
+CAM1 [17,11]
+STAL 20
+WARPIN [17,11]
+Reinforcements(Turn4Spawns2)
+ENDWARP
+LABEL 0x1
 EndEvent
 
 EndingScene:

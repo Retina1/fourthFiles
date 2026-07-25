@@ -37,7 +37,7 @@ Grants user [_1].[_5]x Atk for [_3] turns.[X]
 Stonard[X]
 ##Desc_Stonard ^
 A boiled fruit of great endurance.[N]
-Grants user [_1].[_5]x Def/Res for [_3] turns.[X]
+Grants user [_1].[_5]x Prt for [_3] turns.[X]
 ##Use_BuffItem
 Boosts the user's[N]
 stats for a bit.[X]

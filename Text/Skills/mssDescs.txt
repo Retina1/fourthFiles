@@ -6,7 +6,7 @@ Initiative: Boosts Atk when[N]
 no other units have moved.[X]
 ##
 Vanguard: Use Vanguard to boost[N]
-Atk/AS while dropping defense.[X]
+Atk/AS while dropping Prt.[X]
 ##
 Tenacity: Boosts Atk/AS if[N]
 user Atk/AS lower than enemy.[X]
@@ -15,7 +15,7 @@ Natural Leader: At start of turn,[N]
 nearby allies get an Atk/AS boost.[X]
 ##
 Guard Break: A glancing hit[N]
-that debuffs enemy Def.[X]
+that debuffs enemy Prt.[X]
 ##
 Power Break: A glancing hit[N]
 that debuffs enemy Atk.[X]
@@ -29,7 +29,7 @@ powerful sword strike.[X]
 Sword Glint: A sword strike[N]
 that utilizes the user's Mag.[X]
 ##
-Weapon Parry: Boosts Def based[N]
+Weapon Parry: Boosts Prt based[N]
 on number of swords in inventory.[X]
 ##
 Falcon Slash: A sword slash that[N]
@@ -49,7 +49,7 @@ per sword in inventory.[X]
 
 //knt
 ##MSS_IronWall
-Iron Wall: Boosts Def[N]
+Iron Wall: Boosts Prt[N]
 for adjacent allies.[X]
 ##
 Leering Wall: Lowers Atk[N]
@@ -112,7 +112,7 @@ Arm Crush: An axe swing[N]
 that can bind arms.[X]
 ##
 Shield Crush: An axe swing[N]
-that debuffs enemy Def.[X]
+that debuffs enemy Prt.[X]
 ##
 Smiting Smash: A mighty axe[N]
 swing that knocks back targets.[X]
@@ -174,7 +174,7 @@ Flank Shot: A shot that's stronger[N]
 when allies are next to the enemy.[X]
 ##
 Armor Piercer: A shot with reduced[N]
-Atk that completely ignores Def.[X]
+Atk that completely ignores Prt.[X]
 ##
 Closer: A leg-binding shot[N]
 with incredible range.[X]
@@ -271,7 +271,7 @@ Wrath Staff: A rod strike[N]
 with high power and Crit.[X]
 ##
 Immunize: Buff allies to[N]
-significantly boost Def.[X]
+significantly boost Prt.[X]
 ##
 Healing Touch: Restores HP[N]
 to all allies in range.[X]
@@ -300,7 +300,7 @@ Upper Stance: Stance boosts[N]
 user's Atk while active.[X]
 ##
 Clear Stance: Stance boosts[N]
-user's Def while active.[X]
+user's Prt while active.[X]
 ##
 Drawing Stance: Stance boosts[N]
 user's AS while active.[X]
@@ -338,7 +338,7 @@ Swap: Use Swap to switch[N]
 places with adjacent ally.[X]
 ##
 Firm Charge: Boosts user's[N]
-Def based on tiles moved.[X]
+Prt based on tiles moved.[X]
 ##
 Mount Master: Boosts Atk/AS and[N]
 reduces damage taken vs. mounts.[X]
@@ -347,7 +347,7 @@ Rallying Flag: Buff allies to[N]
 boost Atk and Crit.[X]
 ##
 Survival Flag: Buff allies to[N]
-boost Def and Avo.[X]
+boost Prt and Avo.[X]
 ##
 Expertise Flag: Buff allies to[N]
 boost their EXP gains.[X]
@@ -374,7 +374,7 @@ Charge Command: Stand still[N]
 to buff nearby ally Mov.[X]
 ##
 Gae Bolg: An almighty[N]
-thrust that pierces Def.[X]
+thrust that pierces Prt.[X]
 
 //rai
 ##MSS_MenacingPresence
@@ -394,7 +394,7 @@ War Cry: Debuff enemies to[N]
 reduce Atk and Crit.[X]
 ##
 Hellish Cry: Debuff enemies to[N]
-reduce Def and Avo.[X]
+reduce Prt and Avo.[X]
 ##
 Dominant Cry: Debuff enemies to[N]
 reduce AS and Luc.[X]
@@ -497,7 +497,7 @@ Bravery Song: Buff an[N]
 ally to boost Atk.[X]
 ##
 Shelter Song: Buff an[N]
-ally to boost Def.[X]
+ally to boost Prt.[X]
 ##
 Mercury Song: Buff an[N]
 ally to boost AS.[X]
@@ -511,7 +511,7 @@ ally to boost Mov.[X]
 Eerie Chorus: Extends ally buffs[N]
 and enemy debuffs/ailments/binds.[X]
 ##
-Crescendo: Boosts Def/Mov if both[N]
+Crescendo: Boosts Prt/Mov if both[N]
 Resounding/Enduring Tune are active.[X]
 ##
 Awakening Voice: A song that[N]
@@ -531,8 +531,8 @@ against Rune-debuffed enemies.[X]
 Runic Pierce: Unit deals 4x[N]
 damage upon a critical hit.[X]
 ##
-Magus Rune: Buff ally Def and[N]
-debuff enemy Def in an area.[X]
+Magus Rune: Buff ally Prt and[N]
+debuff enemy Prt in an area.[X]
 ##
 Revolution Rune: Buff ally Crit and[N]
 debuff enemy Crit in an area.[X]
@@ -550,7 +550,7 @@ Chalkydri: A spell that heals[N]
 nearby allies after striking.[X]
 ##
 Dusk Omen: A spell that nulls[N]
-user's Def while striking twice.[X]
+user's Prt while striking twice.[X]
 ##
 Solar Cleave: A spell that[N]
 halves enemy HP.[X]
@@ -629,7 +629,7 @@ Sapping: Debuff enemies[N]
 to reduce Atk.[X]
 ##
 Frailty: Debuff enemies[N]
-to reduce Def.[X]
+to reduce Prt.[X]
 ##
 Leaden: Debuff enemies[N]
 to reduce AS.[X]
@@ -697,7 +697,7 @@ Climax Whip: Instakill a foe with[N]
 odds that improve at lower foe HP.[X]
 ##
 Cripple Whip: A whip strike that[N]
-debuffs Atk, AS, Def, and Mov.[X]
+debuffs Atk, AS, Prt, and Mov.[X]
 ##
 Whipstorm: A flurry of strikes that[N]
 inflicts a random bind/ailment.[X]
@@ -724,7 +724,7 @@ Clear Mind: Consume user's HP[N]
 to purge debuffs and ailments.[X]
 ##
 Spirit Shield: Consume user's HP[N]
-to buff Def and Luc in an area.[X]
+to buff Prt and Luc in an area.[X]
 ##
 Bloody Offense: Consume user/ally[N]
 HP in area to buff Atk in area.[X]
@@ -793,7 +793,7 @@ Cross Counter: Take a stance[N]
 to bind when countering.[X]
 ##
 Close Combat: A mighty attack[N]
-that debuffs the user's Atk/Def.[X]
+that debuffs the user's Atk/Prt.[X]
 ##
 Full Combo: Strike an extra time[N]
 per bind/ailment your enemy has.[X]
@@ -863,7 +863,7 @@ Savior Rush: Boosts Mov per[N]
 ally at half HP or lower.[X]
 ##
 Resilent Wings: Buff to[N]
-increase user's Def.[X]
+increase user's Prt.[X]
 ##
 Swift Wings: Buff to[N]
 increase user's AS/Avo.[X]
@@ -910,7 +910,7 @@ Executor: User's Atk scales[N]
 with enemy missing HP%.[X]
 ##
 Resonant Roar: Debuff enemies[N]
-to reduce Def and Luc.[X]
+to reduce Prt and Luc.[X]
 ##
 Cleansing Rage: Purge user's[N]
 buffs and debuffs.[X]
@@ -960,7 +960,7 @@ Sluggish Herb: Debuff enemy[N]
 to reduce AS and Mov.[X]
 ##
 Fragile Herb: Debuff enemy[N]
-to reduce Atk and Def.[X]
+to reduce Atk and Prt.[X]
 ##
 Knockout Herb: Inflict[N]
 sleep on an enemy.[X]
@@ -991,7 +991,7 @@ ailments and debuffs in an area.[X]
 
 //enc
 ##MSS_FocusedDefense
-Focused Defense: Boosts Def[N]
+Focused Defense: Boosts Prt[N]
 while channeling a Circle.[X]
 ##
 Life's Flow: Allies in Circle[N]
@@ -1007,7 +1007,7 @@ Charming Circle: Channel to[N]
 debuff enemy Atk/Hit/Crit/AS.[X]
 ##
 Atrophic Circle: Channel to[N]
-debuff enemy Def/Luc/Mov.[X]
+debuff enemy Prt/Luc/Mov.[X]
 ##
 Draining Circle: Channel to[N]
 drain enemy HP into user.[X]
@@ -1051,7 +1051,7 @@ Greater Spirit: Call now[N]
 sumoons mighty Souldiers.[X]
 ##
 Soul Barrier: Destroy a soul[N]
-to buff ally Def/Luc.[X]
+to buff ally Prt/Luc.[X]
 ##
 Soul Charge: Destroy a soul[N]
 to buff ally Atk/Hit/Crit.[X]
@@ -1110,7 +1110,7 @@ Attack Rally: Rally[N]
 buffs ally Atk.[X]
 ##
 Guard Rally: Rally[N]
-buffs ally Def.[X]
+buffs ally Prt.[X]
 ##
 Haste Rally: Rally[N]
 buffs ally AS.[X]
@@ -1184,7 +1184,7 @@ with halved Mov during the second.[X]
 Imperial Pride: Boosts Atk[N]
 against enemies with boss icons.[X]
 ##
-Heat Shield: Boosts Def[N]
+Heat Shield: Boosts Prt[N]
 while Overheated.[X]
 ##
 Marching Orders: Matches user's[N]
@@ -1214,7 +1214,7 @@ up blade cooldown.[X]
 Burst Drive: A ranged drive that[N]
 Overheats more than average.[X]
 ##
-Ignition: Shed Def to cool blade[N]
+Ignition: Shed Prt to cool blade[N]
 off instantly, once a map.[X]
 ##
 Charge Edge: Follow Great Edge[N]
@@ -1250,7 +1250,7 @@ Rocket Headbutt: Bind head[N]
 to attack and paralyze.[X]
 ##
 Breaking Pulse: Pulses[N]
-also debuff Def.[X]
+also debuff Prt.[X]
 ##
 Grating Pulse: Pulses[N]
 also bind heads.[X]

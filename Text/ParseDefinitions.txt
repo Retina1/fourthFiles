@@ -22,6 +22,7 @@
 [Smile] = [ToggleSmile]
 [Guild] = [Tact]
 [EyesClose] = [CloseEyes][CloseEyes][CloseEyes][CloseEyes]
+[EyesOpen] = [OpenEyes][OpenEyes][OpenEyes][OpenEyes]
 
 [_0] = [0xc3]
 [_1] = [0xc5]

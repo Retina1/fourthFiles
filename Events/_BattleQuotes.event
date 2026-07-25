@@ -5,6 +5,7 @@ POP
 
 #define SpecifiedBattleConvo(Character1,Character2,Chapter,EventID,TextID) "SHORT Character1 Character2 Chapter EventID TextID 0x0 0x0 0x0; SHORT Character2 Character1 Chapter EventID TextID 0x0 0x0 0x0"
 #define UnspecifiedBattleConvo(Character,Chapter,EventID,TextID) "SHORT Character 0x0 Chapter EventID TextID 0x0 0x0 0x0; SHORT 0x0 Character Chapter EventID TextID 0x0 0x0 0x0"
+#define UnspecifiedBattleEvent(Character,Chapter,EventID,EventPointer) "SHORT Character 0x0 Chapter EventID 0x0 0x0; POIN EventPointer; SHORT 0x0 Character Chapter EventID 0x0 0x0; POIN EventPointer"
 
 ALIGN 4
 BattleQuoteTable:
@@ -87,8 +88,13 @@ SpecifiedBattleConvo(Nathan,BossBenthus2,Chapter8,0x10,C8NathanBenthusBattle)
 SpecifiedBattleConvo(Astarte,BossBenthus2,Chapter8,0x11,C8AstarteBenthusBattle)
 SpecifiedBattleConvo(Gore,BossBenthus2,Chapter8,0x12,C8GoreBenthusBattle)
 SpecifiedBattleConvo(Cleone,BossBenthus2,Chapter8,0x13,C8CleoneBenthusBattle)
+SpecifiedBattleConvo(Rat,BossBenthus2,Chapter8,0x14,C8RatBenthusBattle)
+SpecifiedBattleConvo(Helman,BossBenthus2,Chapter8,0x15,C8HelmanBenthusBattle)
+SpecifiedBattleConvo(Kryst,BossBenthus2,Chapter8,0x16,C8KrystBenthusBattle)
 //rat, helman, kryst, maybe others?
 UnspecifiedBattleConvo(BossBenthus2,Chapter8,0x14,C8BenthusBattle)
+
+UnspecifiedBattleEvent(BossGuildmaster,EndgameB,0x10,EndgameBGuildmasterBattleEvent)
 
 //the vermin
 UnspecifiedBattleConvo(Ratatoskr,Stratum1F2,0x28,Ratatoskr_Battle1)
@@ -100,3 +106,11 @@ UnspecifiedBattleConvo(Ratatoskr,Stratum5BF2,0x28,Ratatoskr_Battle1)
 UnspecifiedBattleConvo(Ratatoskr,Stratum5CF2,0x28,Ratatoskr_Battle1)
 UnspecifiedBattleConvo(Ratatoskr,Stratum6F8,0x28,Ratatoskr_Battle1)
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 
+
+//polish timing
+ALIGN 4
+EndgameBGuildmasterBattleEvent:
+SetMapBGM(Song_BattleB6)
+MUSC Song_BattleB6
+Text(EndgameBGuildmasterBattle)
+ENDA
