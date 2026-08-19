@@ -172,3 +172,15 @@ Female_Gunner_Unarmed
 Female_Poet_Magic
 Shorthair_Seeker_Magic
 Shorthair_Runemaster_Magic
+Male_Priest_Sword
+Male_Priest_Unarmed
+Male_WarMagus_Sword
+Male_WarMagus_Magic
+Female_Lurker_Magic
+Female_Hexer_Magic
+Female_Lancer_Lance
+Female_Lancer_Unarmed
+Female_Hunter_Bow
+Female_Hunter_Unarmed
+Female_Survivalist_Bow
+Female_Survivalist_Unarmed

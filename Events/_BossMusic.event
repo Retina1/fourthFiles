@@ -22,6 +22,7 @@ BossBGMEntry(First,Song_Castle)
 BossBGMEntry(Second,Song_Castle)
 BossBGMEntry(Swift,Song_Castle)
 BossBGMEntry(NPCFourth,Song_Castle)
+BossBGMEntry(Weber,Song_Deicide)
 //personal boss music?
 BossBGMEntry(Rana,Song_EverythingIntoTheDark)
 //eventing handles this

@@ -41,7 +41,7 @@ EventDeathQuote(BossBenthus2,Chapter8,0x2,BenthusDeathEvent)
 ChapterDeathQuote(George,Chapter10,0x2,BenthusDeath)
 
 //major bosses
-EventDeathQuote(BossGuildmaster,EndgameB,0x0,GuildmasterDeathEvent)
+EventDeathQuote(BossGuildmaster,EndgameB,0x2,GuildmasterDeathEvent)
 EventDeathQuote(BossGore,Chapter20A,0x0,GoreDeathEvent)
 EventDeathQuote(BossAstarte,Chapter20B,0x0,AstarteDeathEvent)
 EventDeathQuote(Rana,EndgameA,0x2,RanaDeathEvent)
@@ -55,13 +55,21 @@ EventDeathQuote(Rana,Chapter18C,0x0,CRouteRanaDeathEvent)
 
 //the vermin
 ChapterDeathQuote(Ratatoskr,Stratum1F2,RatatoskrWin1,Ratatoskr_Defeat1)
+KillerDeathQuote(Ratatoskr,Feefasnan,Stratum1F2,RatatoskrWin1,Ratatoskr_Defeat1Feefasnan)
 ChapterDeathQuote(Ratatoskr,Stratum2F1,RatatoskrWin2,Ratatoskr_Defeat2)
+KillerDeathQuote(Ratatoskr,Feefasnan,Stratum2F1,RatatoskrWin2,Ratatoskr_Defeat2Feefasnan)
 ChapterDeathQuote(Ratatoskr,Stratum3F2,RatatoskrWin3,Ratatoskr_Defeat1)
+KillerDeathQuote(Ratatoskr,Feefasnan,Stratum3F2,RatatoskrWin3,Ratatoskr_Defeat3Feefasnan)
 ChapterDeathQuote(Ratatoskr,Stratum4F2,RatatoskrWin4,Ratatoskr_Defeat1)
+KillerDeathQuote(Ratatoskr,Feefasnan,Stratum4F2,RatatoskrWin4,Ratatoskr_Defeat4Feefasnan)
 ChapterDeathQuote(Ratatoskr,Stratum5AF2,RatatoskrWin5,Ratatoskr_Defeat1)
+KillerDeathQuote(Ratatoskr,Feefasnan,Stratum5AF2,RatatoskrWin5,Ratatoskr_Defeat5AFeefasnan)
 ChapterDeathQuote(Ratatoskr,Stratum5BF2,RatatoskrWin5,Ratatoskr_Defeat1)
+KillerDeathQuote(Ratatoskr,Feefasnan,Stratum5BF2,RatatoskrWin5,Ratatoskr_Defeat5BFeefasnan)
 ChapterDeathQuote(Ratatoskr,Stratum5CF2,RatatoskrWin5,Ratatoskr_Defeat1)
+KillerDeathQuote(Ratatoskr,Feefasnan,Stratum5CF2,RatatoskrWin5,Ratatoskr_Defeat5CFeefasnan)
 ChapterDeathQuote(Ratatoskr,Stratum6F8,RatatoskrWin6,Ratatoskr_Defeat1)
+KillerDeathQuote(Ratatoskr,Feefasnan,Stratum6F8,RatatoskrWin6,Ratatoskr_Defeat6Feefasnan)
 
 //generic - story units
 AlwaysDeathQuote(Nathan,GameOverFlag,NathanDeath)
@@ -77,6 +85,8 @@ AlwaysDeathQuote(Ioria,0x0,IoriaDeath)
 AlwaysDeathQuote(Fourth,0x0,FourthDeath)
 AlwaysDeathQuote(Guildmaster,0x0,GuildmasterRetreat)
 AlwaysDeathQuote(Answerer,0x0,AnswererDeath)
+EventDeathQuote(Ayda,HirschringSquare,0x0,AydaDeathEvent)
+EventDeathQuote(Ayda,DuelingGrounds,0x0,AydaDeathEvent)
 AlwaysDeathQuote(Ayda,0x0,AydaDeath)
 
 //swd

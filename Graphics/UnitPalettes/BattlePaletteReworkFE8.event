@@ -4,6 +4,15 @@ Battle palette rework, by hypergammaspaces
 Implements custom palettes as a list of members that can be in each class.
 
 A .nmm is included to generate a table linking each class to this list of palettes (a pre-generated CSV is also included).
+
+PaletteIdentifier(, DMP)
+PaletteIdentifier(, DMP)
+ALIGN 4
+DMP:
+#incbin "paletteFiles/Magus/.dmp"
+ALIGN 4
+DMP:
+#incbin "paletteFiles/Magus/.dmp"
 */
 
 #define EXPAND_PALETTE_TABLE True

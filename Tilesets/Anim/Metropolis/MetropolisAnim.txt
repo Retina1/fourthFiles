@@ -1,0 +1,17 @@
+//wait	filename
+27	MetropolisAnim_000.png	4096
+27	MetropolisAnim_001.png	4096
+27	MetropolisAnim_002.png	4096
+27	MetropolisAnim_003.png	4096
+27	MetropolisAnim_004.png	4096
+27	MetropolisAnim_005.png	4096
+27	MetropolisAnim_006.png	4096
+27	MetropolisAnim_007.png	4096
+27	MetropolisAnim_008.png	4096
+27	MetropolisAnim_009.png	4096
+27	MetropolisAnim_010.png	4096
+27	MetropolisAnim_011.png	4096
+27	MetropolisAnim_012.png	4096
+27	MetropolisAnim_013.png	4096
+27	MetropolisAnim_014.png	4096
+27	MetropolisAnim_015.png	4096

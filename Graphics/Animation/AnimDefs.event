@@ -172,3 +172,15 @@
 #define Female_Poet_Magic 0xAC
 #define Shorthair_Seeker_Magic 0xAD
 #define Shorthair_Runemaster_Magic 0xAE
+#define Male_Priest_Sword 0xAF
+#define Male_Priest_Unarmed 0xB0
+#define Male_WarMagus_Sword 0xB1
+#define Male_WarMagus_Magic 0xB2
+#define Female_Lurker_Magic 0xB3
+#define Female_Hexer_Magic 0xB4
+#define Female_Lancer_Lance 0xB5
+#define Female_Lancer_Unarmed 0xB6
+#define Female_Hunter_Bow 0xB7
+#define Female_Hunter_Unarmed 0xB8
+#define Female_Survivalist_Bow 0xB9
+#define Female_Survivalist_Unarmed 0xBA

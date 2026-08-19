@@ -13,7 +13,7 @@ POIN TurnBasedEvents
 POIN CharacterBasedEvents
 POIN LocationBasedEvents
 POIN MiscBasedEvents
-POIN Dunno Dunno Dunno
+POIN UnitSelectEvents Dunno Dunno
 POIN Tutorial
 POIN TrapData TrapData
 POIN Units Units
@@ -41,8 +41,14 @@ END_MAIN
 Dunno:
 END_MAIN
 
+UnitSelectEvents:
+ASME 0x21 NathanActiveUnitTutorial NathanActiveUnitCheck|1
+ASME 0x22 AstarteActiveUnitTutorial AstarteActiveUnitCheck|1
+ASME 0x23 GoreActiveUnitTutorial GoreActiveUnitCheck|1
+END_MAIN
+
 Tutorial:
-POIN UnitSelectEvent
+//POIN UnitSelectEvent
 END_MAIN
 
 TrapData:
@@ -154,6 +160,30 @@ ENDA
 EnableUnitSelectEvents:
 	QUEUETUTORIAL 0x02 UnitSelectEvent
 EndEvent
+
+ALIGN 4
+NathanActiveUnitCheck:
+ActiveUnitCheck(Nathan)
+ALIGN 4
+AstarteActiveUnitCheck:
+ActiveUnitCheck(Astarte)
+ALIGN 4
+GoreActiveUnitCheck:
+ActiveUnitCheck(Gore)
+
+ALIGN 4
+NathanActiveUnitTutorial:
+Text(Ch1SelectQuote_Nathan); SystemText(NathanTutorial)
+EndEvent
+ALIGN 4
+AstarteActiveUnitTutorial:
+Text(Ch1SelectQuote_Astarte); SystemText(AstarteTutorial)
+EndEvent
+ALIGN 4
+GoreActiveUnitTutorial:
+Text(Ch1SelectQuote_Gore); SystemText(GoreTutorial)
+EndEvent
+
 
 UnitSelectEvent:
 	CHECK_ACTIVE
@@ -290,8 +320,14 @@ Text(C1_Opening_5)
 LevelUpSkill(Nathan,7)
 //astarte - level 1 war heal
 LevelUpSkill(Astarte,7)
+ENUT 0x21
+ENUT 0x22
+ENUT 0x23
 CHECK_TUTORIAL ; BEQ 9999 0xC 0x0
-CALL EnableUnitSelectEvents
+//CALL EnableUnitSelectEvents
+ENUF 0x21
+ENUF 0x22
+ENUF 0x23
 SystemText(TutorialsTutorial)
 LABEL 9999
 ASMC 0x080790A4|1
@@ -347,7 +383,13 @@ TurnEnemy(Rat); STAL 30
 FlashCursor(Nathan,30)
 //FlashCursor(Astarte,30);FlashCursor(Gore,30)
 //FlashCursor(Cleone,30);FlashCursor(Rat,30)
-SoloText(C1_Premonition_Ending); FADI 10; CLEE 0
+SoloText(C1_Premonition_Ending); STAL 120; CLEE 0
+SetBackground(DecisionCG)
+STAL 300
+SetBackground(DecisionSoloCG)
+STAL 240
+FADI 10
+CLEAN
 FADU 10
 FlashCursor(Nathan,30); SoloText(C1_Premonition_Silence); STAL 30
 FADI 4

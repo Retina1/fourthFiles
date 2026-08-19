@@ -1,0 +1,7 @@
+#define FieldsANI 0x1
+#define FrontierANI 0x2
+#define CastleANI 0x3
+#define VillageANI 0x4
+#define CavesANI 0x5
+#define MetropolisANI 0x6
+#define MineshaftANI 0x7

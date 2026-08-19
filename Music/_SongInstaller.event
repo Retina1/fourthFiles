@@ -518,7 +518,22 @@ SongTable(Song_FlowerMan,FlowerMan,1)
 SongTable(Song_BackHall,BackHall,0)
 #include "songs/BackHall.event"
 }
+#define Song_Deicide 0xc3
+{
+SongTable(Song_Deicide,Deicide,0)
+#include "songs/Deicide.event"
+}
+#define Song_CosmicWall 0xc4
+{
+SongTable(Song_CosmicWall,CosmicWall,1)
+#include "songs/CosmicWall.event"
+}
+#define Song_HavanaSmooth 0xc5
+{
+SongTable(Song_HavanaSmooth,HavanaSmooth,1)
+#include "songs/HavanaSmooth.event"
+}
 /* free numbers
-c2 c3 c4 c5 c6 d9 da db
+c6 d9 da db
 e0 e1 e4 e8 e9 ec ee f3 104 105 106 107
 */

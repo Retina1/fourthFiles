@@ -54,7 +54,7 @@ void ApplyItemFlatPassives(struct BattleUnit* attacker, struct BattleUnit* defen
 
 void ApplyItemPassives(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	//soul shield
-	if (IsBattleReallyReal()){
+	if (IsBattleReal()){
 		for(int j = 0; j < GetUnitItemCount(&defender->unit); j++) {
 			u16 curItem = defender->unit.items[j];
 			if(GetItemAttributes(curItem) & IA_SOUL_SHIELD) {

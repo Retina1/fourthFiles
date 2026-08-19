@@ -72,6 +72,16 @@ Berwick Saga[X]
 ##SongTitle_HeavyArmoredCorps
 Heavy Armored Corps (Rubenio)[X]
 
+##SourceTitle_RiseOfTheTriad
+Rise of the Triad[X]
+##SongTitle_HavanaSmooth
+Havana Smooth[X]
+
+##SourceTitle_SonicAdventure2
+Sonic Adventure 2[X]
+##SongTitle_CosmicWall
+Cosmic Wall[X]
+
 ##SourceTitle_MilesDavis
 Miles Davis[X]
 ##SongTitle_BlueInGreen
@@ -116,6 +126,11 @@ Shin Megami Tensei IV[X]
 Excavation Worker's Quarters[X]
 ##SongTitle_BattleB6
 Battle - B6[X]
+
+##SourceTitle_SMT4A ^
+Shin Megami Tensei IV: Apocalypse[X]
+##SongTitle_Deicide
+Battle - F6 - Deicide[X]
 
 ##SourceTitle_OrderOfEcclesia ^
 Castlevania: Order of Ecclesia[X]

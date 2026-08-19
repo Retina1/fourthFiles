@@ -283,11 +283,11 @@ RecruitCond(Naomi,SpecialUnlockedFlag,0x0)
 RecruitCond(Phaedra,SpecialUnlockedFlag,0x0)
 //bra
 RecruitCond(Shiliang,SpecialUnlockedFlag,Chapter8DoneFlag)
-RecruitCond(Feefasnan,SpecialUnlockedFlag,Chapter10DoneFlag)
+RecruitCond(Feefasnan,SpecialUnlockedFlag,0x0)
 RecruitCond(Brie,SpecialUnlockedFlag,0x0)
 RecruitCond(Arsof,SpecialUnlockedFlag,0x0)
 RecruitCond(Mylo,SpecialUnlockedFlag,0x0)
-RecruitCond(Leovetus,SpecialUnlockedFlag,0x0)
+RecruitCond(Leovetus,SpecialUnlockedFlag,Chapter10DoneFlag)
 RecruitCond(Bulag,SpecialUnlockedFlag,0x0)
 //hun
 RecruitCond(Philmore,SpecialUnlockedFlag,0x0)

@@ -156,14 +156,69 @@ ALIGN 4
 WarMagus_AstarteDMP:
 #incbin "paletteFiles/MainStory/WarMagus_Astarte.dmp"
 
+PaletteIdentifier(Priest_Selene, Priest_SeleneDMP)
+PaletteIdentifier(WarMagus_Selene, WarMagus_SeleneDMP)
+ALIGN 4
+Priest_SeleneDMP:
+#incbin "paletteFiles/Magus/Priest_Selene.dmp"
+ALIGN 4
+WarMagus_SeleneDMP:
+#incbin "paletteFiles/Magus/WarMagus_Selene.dmp"
+
+PaletteIdentifier(Priest_Nina, Priest_NinaDMP)
+PaletteIdentifier(WarMagus_Nina, WarMagus_NinaDMP)
+ALIGN 4
+Priest_NinaDMP:
+#incbin "paletteFiles/Magus/Priest_Nina.dmp"
+ALIGN 4
+WarMagus_NinaDMP:
+#incbin "paletteFiles/Magus/WarMagus_Nina.dmp"
+
+PaletteIdentifier(Priest_Levi, Priest_LeviDMP)
+PaletteIdentifier(WarMagus_Levi, WarMagus_LeviDMP)
+ALIGN 4
+Priest_LeviDMP:
+#incbin "paletteFiles/Magus/Priest_Levi.dmp"
+ALIGN 4
+WarMagus_LeviDMP:
+#incbin "paletteFiles/Magus/WarMagus_Levi.dmp"
+
+PaletteIdentifier(Priest_Taft, Priest_TaftDMP)
+PaletteIdentifier(WarMagus_Taft, WarMagus_TaftDMP)
+ALIGN 4
+Priest_TaftDMP:
+#incbin "paletteFiles/Magus/Priest_Taft.dmp"
+ALIGN 4
+WarMagus_TaftDMP:
+#incbin "paletteFiles/Magus/WarMagus_Taft.dmp"
+
+PaletteIdentifier(Priest_Lantom, Priest_LantomDMP)
+PaletteIdentifier(WarMagus_Lantom, WarMagus_LantomDMP)
+ALIGN 4
+Priest_LantomDMP:
+#incbin "paletteFiles/Magus/Priest_Lantom.dmp"
+ALIGN 4
+WarMagus_LantomDMP:
+#incbin "paletteFiles/Magus/WarMagus_Lantom.dmp"
+
 ALIGN 4
 PriestPaletteList:
 PaletteAssociationEntry(Astarte,Priest_Astarte)
+PaletteAssociationEntry(Selene,Priest_Selene)
+PaletteAssociationEntry(Nina,Priest_Nina)
+PaletteAssociationEntry(Levi,Priest_Levi)
+PaletteAssociationEntry(Taft,Priest_Taft)
+PaletteAssociationEntry(Lantom,Priest_Lantom)
 WORD 0 0
 ALIGN 4
 WarMagusPaletteList:
 PaletteAssociationEntry(Astarte,WarMagus_Astarte)
 PaletteAssociationEntry(BossAstarte,WarMagus_Astarte)
+PaletteAssociationEntry(Selene,WarMagus_Selene)
+PaletteAssociationEntry(Nina,WarMagus_Nina)
+PaletteAssociationEntry(Levi,WarMagus_Levi)
+PaletteAssociationEntry(Taft,WarMagus_Taft)
+PaletteAssociationEntry(Lantom,WarMagus_Lantom)
 WORD 0 0
 
 //lurker
@@ -176,11 +231,66 @@ ALIGN 4
 Hexer_RatDMP:
 #incbin "paletteFiles/MainStory/Hexer_Rat.dmp"
 
+PaletteIdentifier(Lurker_Szess, Lurker_SzessDMP)
+PaletteIdentifier(Hexer_Szess, Hexer_SzessDMP)
+ALIGN 4
+Lurker_SzessDMP:
+#incbin "paletteFiles/Magus/Lurker_Szess.dmp"
+ALIGN 4
+Hexer_SzessDMP:
+#incbin "paletteFiles/Magus/Hexer_Szess.dmp"
+
+PaletteIdentifier(Lurker_Zoe, Lurker_ZoeDMP)
+PaletteIdentifier(Hexer_Zoe, Hexer_ZoeDMP)
+ALIGN 4
+Lurker_ZoeDMP:
+#incbin "paletteFiles/Magus/Lurker_Zoe.dmp"
+ALIGN 4
+Hexer_ZoeDMP:
+#incbin "paletteFiles/Magus/Hexer_Zoe.dmp"
+
+PaletteIdentifier(Lurker_Paul, Lurker_PaulDMP)
+PaletteIdentifier(Hexer_Paul, Hexer_PaulDMP)
+ALIGN 4
+Lurker_PaulDMP:
+#incbin "paletteFiles/Magus/Lurker_Paul.dmp"
+ALIGN 4
+Hexer_PaulDMP:
+#incbin "paletteFiles/Magus/Hexer_Paul.dmp"
+
+PaletteIdentifier(Lurker_Hausten, Lurker_HaustenDMP)
+PaletteIdentifier(Hexer_Hausten, Hexer_HaustenDMP)
+ALIGN 4
+Lurker_HaustenDMP:
+#incbin "paletteFiles/Magus/Lurker_Hausten.dmp"
+ALIGN 4
+Hexer_HaustenDMP:
+#incbin "paletteFiles/Magus/Hexer_Hausten.dmp"
+
+PaletteIdentifier(Lurker_Whirl, Lurker_WhirlDMP)
+PaletteIdentifier(Hexer_Whirl, Hexer_WhirlDMP)
+ALIGN 4
+Lurker_WhirlDMP:
+#incbin "paletteFiles/Magus/Lurker_Whirl.dmp"
+ALIGN 4
+Hexer_WhirlDMP:
+#incbin "paletteFiles/Magus/Hexer_Whirl.dmp"
+
 ALIGN 4
 LurkerPaletteList:
 PaletteAssociationEntry(Rat,Lurker_Rat)
+PaletteAssociationEntry(Szess,Lurker_Szess)
+PaletteAssociationEntry(Zoe,Lurker_Zoe)
+PaletteAssociationEntry(Paul,Lurker_Paul)
+PaletteAssociationEntry(Hausten,Lurker_Hausten)
+PaletteAssociationEntry(Whirl,Lurker_Whirl)
 WORD 0 0
 ALIGN 4
 HexerPaletteList:
 PaletteAssociationEntry(Rat,Hexer_Rat)
+PaletteAssociationEntry(Szess,Hexer_Szess)
+PaletteAssociationEntry(Zoe,Hexer_Zoe)
+PaletteAssociationEntry(Paul,Hexer_Paul)
+PaletteAssociationEntry(Hausten,Hexer_Hausten)
+PaletteAssociationEntry(Whirl,Hexer_Whirl)
 WORD 0 0

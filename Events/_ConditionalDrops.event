@@ -58,3 +58,13 @@ WeberDeathEvent:
 MUSCSLOW 0x7fff
 Text(WeberDeath)
 ENDA
+
+AydaDeathEvent:
+CHECK_ALLEGIANCE Ayda
+BEQ 0x1 0xc 0x0
+Text(AydaDuelingGroundsWin)
+GOTO 0x2
+LABEL 0x1
+Text(AydaDeath)
+LABEL 0x2
+ENDA

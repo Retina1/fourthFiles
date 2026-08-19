@@ -339,6 +339,7 @@ EndingSceneToggles
 ENUT Chapter5DoneFlag
 MUSC 0x0
 CleanTextNoMap(0x0,Chapter5_Ending_1)
+REMA
 //endbringer map event
 LOMA Stratum1F1
 CLEA 0; CLEN 0; CLEE 0

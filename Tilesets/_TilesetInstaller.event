@@ -1,4 +1,7 @@
 // split plist
+#ifndef tilesetAnimation
+    #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+#endif
 
 PUSH
 ORG 0x19900
@@ -15,8 +18,6 @@ POIN TileAnimPLIST
 
 ORG 0x30C78
 POIN TileAnimPLIST
-
-
 
 //we don't actually need to split the map plist i think
 /*ORG 0x34680
@@ -75,7 +76,7 @@ Castle1Tiles:
 TileConfigPointerTable(CastleCONFIG, Castle1Tiles)
 ObjTypePalettePointerTable(Castle1OBJ, CastleObjects)
 ObjTypePalettePointerTable(Castle1PAL, Castle1Palette)
-
+TileAnimPointerTable(CastleANI,CastleAnims)
 
 ALIGN 4
 VillageObjects:
@@ -97,6 +98,8 @@ TileConfigPointerTable(GuildhallCONFIG, GuildhallTiles)
 ObjTypePalettePointerTable(Village1OBJ, VillageObjects)
 ObjTypePalettePointerTable(Village1PAL, Village1Palette)
 ObjTypePalettePointerTable(Village2PAL, Village2Palette)
+TileAnimPointerTable(VillageANI,VillageAnims)
+
 
 ALIGN 4
 FieldsObjects:
@@ -110,6 +113,7 @@ Fields1Tiles:
 TileConfigPointerTable(FieldsCONFIG, Fields1Tiles)
 ObjTypePalettePointerTable(Fields1OBJ, FieldsObjects)
 ObjTypePalettePointerTable(Fields1PAL, Fields1Palette)
+TileAnimPointerTable(FieldsANI,FieldsAnims)
 
 ALIGN 4
 CityObjects:
@@ -149,6 +153,7 @@ Metropolis1Tiles:
 TileConfigPointerTable(MetropolisCONFIG, Metropolis1Tiles)
 ObjTypePalettePointerTable(Metropolis1OBJ, MetropolisObjects)
 ObjTypePalettePointerTable(Metropolis1PAL, Metropolis1Palette)
+TileAnimPointerTable(MetropolisANI,MetropolisAnims)
 
 ALIGN 4
 MineshaftObjects:
@@ -162,6 +167,7 @@ Mineshaft1Tiles:
 TileConfigPointerTable(MineshaftCONFIG, Mineshaft1Tiles)
 ObjTypePalettePointerTable(Mineshaft1OBJ, MineshaftObjects)
 ObjTypePalettePointerTable(Mineshaft1PAL, Mineshaft1Palette)
+TileAnimPointerTable(MineshaftANI,MineshaftAnims)
 
 ALIGN 4
 CavesObjects:
@@ -175,6 +181,7 @@ Caves1Tiles:
 TileConfigPointerTable(CavesCONFIG, Caves1Tiles)
 ObjTypePalettePointerTable(Caves1OBJ, CavesObjects)
 ObjTypePalettePointerTable(Caves1PAL, Caves1Palette)
+TileAnimPointerTable(CavesANI,CavesAnims)
 
 ALIGN 4
 FrontierObjects:
@@ -188,6 +195,7 @@ Frontier1Tiles:
 TileConfigPointerTable(FrontierCONFIG, Frontier1Tiles)
 ObjTypePalettePointerTable(Frontier1OBJ, FrontierObjects)
 ObjTypePalettePointerTable(Frontier1PAL, Frontier1Palette)
+TileAnimPointerTable(FrontierANI,FrontierAnims)
 
 ALIGN 4
 DesertObjects:
@@ -201,3 +209,448 @@ Desert1Tiles:
 TileConfigPointerTable(DesertCONFIG, Desert1Tiles)
 ObjTypePalettePointerTable(Desert1OBJ, DesertObjects)
 ObjTypePalettePointerTable(Desert1PAL, Desert1Palette)
+
+
+ALIGN 4
+VillageFrame1:
+#incbin "Anim/Village/villageanims_000.dmp"
+ALIGN 4
+VillageFrame2:
+#incbin "Anim/Village/villageanims_001.dmp"
+ALIGN 4
+VillageFrame3:
+#incbin "Anim/Village/villageanims_002.dmp"
+ALIGN 4
+VillageFrame4:
+#incbin "Anim/Village/villageanims_003.dmp"
+ALIGN 4
+VillageFrame5:
+#incbin "Anim/Village/villageanims_004.dmp"
+ALIGN 4
+VillageFrame6:
+#incbin "Anim/Village/villageanims_005.dmp"
+ALIGN 4
+VillageFrame7:
+#incbin "Anim/Village/villageanims_006.dmp"
+ALIGN 4
+VillageFrame8:
+#incbin "Anim/Village/villageanims_007.dmp"
+ALIGN 4
+VillageAnims:
+tilesetAnimation(16,4096,VillageFrame1)
+tilesetAnimation(16,4096,VillageFrame2)
+tilesetAnimation(16,4096,VillageFrame3)
+tilesetAnimation(16,4096,VillageFrame4)
+tilesetAnimation(16,4096,VillageFrame5)
+tilesetAnimation(16,4096,VillageFrame6)
+tilesetAnimation(16,4096,VillageFrame7)
+tilesetAnimation(16,4096,VillageFrame8)
+WORD 0 0
+
+ALIGN 4
+CastleFrame1:
+#incbin "Anim/Castle/CastleFrame1.dmp"
+ALIGN 4
+CastleFrame2:
+#incbin "Anim/Castle/CastleFrame2.dmp"
+ALIGN 4
+CastleFrame3:
+#incbin "Anim/Castle/CastleFrame3.dmp"
+ALIGN 4
+CastleFrame4:
+#incbin "Anim/Castle/CastleFrame4.dmp"
+ALIGN 4
+CastleFrame5:
+#incbin "Anim/Castle/CastleFrame5.dmp"
+ALIGN 4
+CastleFrame6:
+#incbin "Anim/Castle/CastleFrame6.dmp"
+ALIGN 4
+CastleFrame7:
+#incbin "Anim/Castle/CastleFrame7.dmp"
+ALIGN 4
+CastleFrame8:
+#incbin "Anim/Castle/CastleFrame8.dmp"
+ALIGN 4
+CastleAnims:
+tilesetAnimation(0xB,0x800,CastleFrame1)
+tilesetAnimation(0xB,0x800,CastleFrame2)
+tilesetAnimation(0xB,0x800,CastleFrame3)
+tilesetAnimation(0xB,0x800,CastleFrame4)
+tilesetAnimation(0xB,0x800,CastleFrame5)
+tilesetAnimation(0xB,0x800,CastleFrame6)
+tilesetAnimation(0xB,0x800,CastleFrame7)
+tilesetAnimation(0xB,0x800,CastleFrame8)
+WORD 0 0
+
+ALIGN 4
+FrontierFrame1:
+#incbin "Anim/Frontier/frontieranims.mapanime1_000.dmp"
+ALIGN 4
+FrontierFrame2:
+#incbin "Anim/Frontier/frontieranims.mapanime1_001.dmp"
+ALIGN 4
+FrontierFrame3:
+#incbin "Anim/Frontier/frontieranims.mapanime1_002.dmp"
+ALIGN 4
+FrontierFrame4:
+#incbin "Anim/Frontier/frontieranims.mapanime1_003.dmp"
+ALIGN 4
+FrontierFrame5:
+#incbin "Anim/Frontier/frontieranims.mapanime1_004.dmp"
+ALIGN 4
+FrontierFrame6:
+#incbin "Anim/Frontier/frontieranims.mapanime1_005.dmp"
+ALIGN 4
+FrontierFrame7:
+#incbin "Anim/Frontier/frontieranims.mapanime1_006.dmp"
+ALIGN 4
+FrontierFrame8:
+#incbin "Anim/Frontier/frontieranims.mapanime1_007.dmp"
+ALIGN 4
+FrontierAnims:
+tilesetAnimation(0xf,0x1000,FrontierFrame1)
+tilesetAnimation(0xf,0x1000,FrontierFrame2)
+tilesetAnimation(0xf,0x1000,FrontierFrame3)
+tilesetAnimation(0xf,0x1000,FrontierFrame4)
+tilesetAnimation(0xf,0x1000,FrontierFrame5)
+tilesetAnimation(0xf,0x1000,FrontierFrame6)
+tilesetAnimation(0xf,0x1000,FrontierFrame7)
+tilesetAnimation(0xf,0x1000,FrontierFrame8)
+WORD 0 0
+
+ALIGN 4
+FieldFrame1:
+#incbin "Anim/Field/FieldAnimation.mapanime1_000.dmp"
+ALIGN 4
+FieldFrame2:
+#incbin "Anim/Field/FieldAnimation.mapanime1_001.dmp"
+ALIGN 4
+FieldFrame3:
+#incbin "Anim/Field/FieldAnimation.mapanime1_002.dmp"
+ALIGN 4
+FieldFrame4:
+#incbin "Anim/Field/FieldAnimation.mapanime1_003.dmp"
+ALIGN 4
+FieldFrame5:
+#incbin "Anim/Field/FieldAnimation.mapanime1_004.dmp"
+ALIGN 4
+FieldFrame6:
+#incbin "Anim/Field/FieldAnimation.mapanime1_005.dmp"
+ALIGN 4
+FieldFrame7:
+#incbin "Anim/Field/FieldAnimation.mapanime1_006.dmp"
+ALIGN 4
+FieldFrame8:
+#incbin "Anim/Field/FieldAnimation.mapanime1_007.dmp"
+ALIGN 4
+FieldFrame9:
+#incbin "Anim/Field/FieldAnimation.mapanime1_008.dmp"
+ALIGN 4
+FieldFrame10:
+#incbin "Anim/Field/FieldAnimation.mapanime1_009.dmp"
+ALIGN 4
+FieldFrame11:
+#incbin "Anim/Field/FieldAnimation.mapanime1_010.dmp"
+ALIGN 4
+FieldFrame12:
+#incbin "Anim/Field/FieldAnimation.mapanime1_011.dmp"
+ALIGN 4
+FieldFrame13:
+#incbin "Anim/Field/FieldAnimation.mapanime1_012.dmp"
+ALIGN 4
+FieldFrame14:
+#incbin "Anim/Field/FieldAnimation.mapanime1_013.dmp"
+ALIGN 4
+FieldFrame15:
+#incbin "Anim/Field/FieldAnimation.mapanime1_014.dmp"
+ALIGN 4
+FieldFrame16:
+#incbin "Anim/Field/FieldAnimation.mapanime1_015.dmp"
+ALIGN 4
+FieldsAnims:
+tilesetAnimation(0x1a,0x1000,FieldFrame1)
+tilesetAnimation(0x1a,0x1000,FieldFrame2)
+tilesetAnimation(0x1a,0x1000,FieldFrame3)
+tilesetAnimation(0x1a,0x1000,FieldFrame4)
+tilesetAnimation(0x1a,0x1000,FieldFrame5)
+tilesetAnimation(0x1a,0x1000,FieldFrame6)
+tilesetAnimation(0x1a,0x1000,FieldFrame7)
+tilesetAnimation(0x1a,0x1000,FieldFrame8)
+tilesetAnimation(0x1a,0x1000,FieldFrame9)
+tilesetAnimation(0x1a,0x1000,FieldFrame10)
+tilesetAnimation(0x1a,0x1000,FieldFrame11)
+tilesetAnimation(0x1a,0x1000,FieldFrame12)
+tilesetAnimation(0x1a,0x1000,FieldFrame13)
+tilesetAnimation(0x1a,0x1000,FieldFrame14)
+tilesetAnimation(0x1a,0x1000,FieldFrame15)
+tilesetAnimation(0x1a,0x1000,FieldFrame16)
+WORD 0 0
+
+ALIGN 4
+CaveFrame1:
+#incbin "Anim/Caves/CaveAnim_000.dmp"
+ALIGN 4
+CaveFrame2:
+#incbin "Anim/Caves/CaveAnim_001.dmp"
+ALIGN 4
+CaveFrame3:
+#incbin "Anim/Caves/CaveAnim_002.dmp"
+ALIGN 4
+CaveFrame4:
+#incbin "Anim/Caves/CaveAnim_003.dmp"
+ALIGN 4
+CaveFrame5:
+#incbin "Anim/Caves/CaveAnim_004.dmp"
+ALIGN 4
+CaveFrame6:
+#incbin "Anim/Caves/CaveAnim_005.dmp"
+ALIGN 4
+CaveFrame7:
+#incbin "Anim/Caves/CaveAnim_006.dmp"
+ALIGN 4
+CaveFrame8:
+#incbin "Anim/Caves/CaveAnim_007.dmp"
+ALIGN 4
+CaveFrame9:
+#incbin "Anim/Caves/CaveAnim_008.dmp"
+ALIGN 4
+CaveFrame10:
+#incbin "Anim/Caves/CaveAnim_009.dmp"
+ALIGN 4
+CaveFrame11:
+#incbin "Anim/Caves/CaveAnim_010.dmp"
+ALIGN 4
+CaveFrame12:
+#incbin "Anim/Caves/CaveAnim_011.dmp"
+ALIGN 4
+CaveFrame13:
+#incbin "Anim/Caves/CaveAnim_012.dmp"
+ALIGN 4
+CaveFrame14:
+#incbin "Anim/Caves/CaveAnim_013.dmp"
+ALIGN 4
+CaveFrame15:
+#incbin "Anim/Caves/CaveAnim_014.dmp"
+ALIGN 4
+CaveFrame16:
+#incbin "Anim/Caves/CaveAnim_015.dmp"
+ALIGN 4
+CavesAnims:
+tilesetAnimation(28,4096,CaveFrame1)
+tilesetAnimation(28,4096,CaveFrame2)
+tilesetAnimation(28,4096,CaveFrame3)
+tilesetAnimation(28,4096,CaveFrame4)
+tilesetAnimation(28,4096,CaveFrame5)
+tilesetAnimation(28,4096,CaveFrame6)
+tilesetAnimation(28,4096,CaveFrame7)
+tilesetAnimation(28,4096,CaveFrame8)
+tilesetAnimation(28,4096,CaveFrame9)
+tilesetAnimation(28,4096,CaveFrame10)
+tilesetAnimation(28,4096,CaveFrame11)
+tilesetAnimation(28,4096,CaveFrame12)
+tilesetAnimation(28,4096,CaveFrame13)
+tilesetAnimation(28,4096,CaveFrame14)
+tilesetAnimation(28,4096,CaveFrame15)
+tilesetAnimation(28,4096,CaveFrame16)
+WORD 0 0
+
+ALIGN 4
+MetropolisFrame1:
+#incbin "Anim/Metropolis/MetropolisAnim_000.dmp"
+ALIGN 4
+MetropolisFrame2:
+#incbin "Anim/Metropolis/MetropolisAnim_001.dmp"
+ALIGN 4
+MetropolisFrame3:
+#incbin "Anim/Metropolis/MetropolisAnim_002.dmp"
+ALIGN 4
+MetropolisFrame4:
+#incbin "Anim/Metropolis/MetropolisAnim_003.dmp"
+ALIGN 4
+MetropolisFrame5:
+#incbin "Anim/Metropolis/MetropolisAnim_004.dmp"
+ALIGN 4
+MetropolisFrame6:
+#incbin "Anim/Metropolis/MetropolisAnim_005.dmp"
+ALIGN 4
+MetropolisFrame7:
+#incbin "Anim/Metropolis/MetropolisAnim_006.dmp"
+ALIGN 4
+MetropolisFrame8:
+#incbin "Anim/Metropolis/MetropolisAnim_007.dmp"
+ALIGN 4
+MetropolisFrame9:
+#incbin "Anim/Metropolis/MetropolisAnim_008.dmp"
+ALIGN 4
+MetropolisFrame10:
+#incbin "Anim/Metropolis/MetropolisAnim_009.dmp"
+ALIGN 4
+MetropolisFrame11:
+#incbin "Anim/Metropolis/MetropolisAnim_010.dmp"
+ALIGN 4
+MetropolisFrame12:
+#incbin "Anim/Metropolis/MetropolisAnim_011.dmp"
+ALIGN 4
+MetropolisFrame13:
+#incbin "Anim/Metropolis/MetropolisAnim_012.dmp"
+ALIGN 4
+MetropolisFrame14:
+#incbin "Anim/Metropolis/MetropolisAnim_013.dmp"
+ALIGN 4
+MetropolisFrame15:
+#incbin "Anim/Metropolis/MetropolisAnim_014.dmp"
+ALIGN 4
+MetropolisFrame16:
+#incbin "Anim/Metropolis/MetropolisAnim_015.dmp"
+ALIGN 4
+MetropolisFrame17:
+#incbin "Anim/Metropolis/MetropolisAnim_016.dmp"
+ALIGN 4
+MetropolisFrame18:
+#incbin "Anim/Metropolis/MetropolisAnim_017.dmp"
+ALIGN 4
+MetropolisFrame19:
+#incbin "Anim/Metropolis/MetropolisAnim_018.dmp"
+ALIGN 4
+MetropolisFrame20:
+#incbin "Anim/Metropolis/MetropolisAnim_019.dmp"
+ALIGN 4
+MetropolisFrame21:
+#incbin "Anim/Metropolis/MetropolisAnim_020.dmp"
+ALIGN 4
+MetropolisFrame22:
+#incbin "Anim/Metropolis/MetropolisAnim_021.dmp"
+ALIGN 4
+MetropolisFrame23:
+#incbin "Anim/Metropolis/MetropolisAnim_022.dmp"
+ALIGN 4
+MetropolisFrame24:
+#incbin "Anim/Metropolis/MetropolisAnim_023.dmp"
+ALIGN 4
+MetropolisFrame25:
+#incbin "Anim/Metropolis/MetropolisAnim_024.dmp"
+ALIGN 4
+MetropolisFrame26:
+#incbin "Anim/Metropolis/MetropolisAnim_025.dmp"
+ALIGN 4
+MetropolisFrame27:
+#incbin "Anim/Metropolis/MetropolisAnim_026.dmp"
+ALIGN 4
+MetropolisFrame28:
+#incbin "Anim/Metropolis/MetropolisAnim_027.dmp"
+ALIGN 4
+MetropolisFrame29:
+#incbin "Anim/Metropolis/MetropolisAnim_028.dmp"
+ALIGN 4
+MetropolisFrame30:
+#incbin "Anim/Metropolis/MetropolisAnim_029.dmp"
+ALIGN 4
+MetropolisFrame31:
+#incbin "Anim/Metropolis/MetropolisAnim_030.dmp"
+ALIGN 4
+MetropolisFrame32:
+#incbin "Anim/Metropolis/MetropolisAnim_031.dmp"
+ALIGN 4
+MetropolisAnims:
+tilesetAnimation(13,4096,MetropolisFrame1)
+tilesetAnimation(13,4096,MetropolisFrame2)
+tilesetAnimation(13,4096,MetropolisFrame3)
+tilesetAnimation(13,4096,MetropolisFrame4)
+tilesetAnimation(13,4096,MetropolisFrame5)
+tilesetAnimation(13,4096,MetropolisFrame6)
+tilesetAnimation(13,4096,MetropolisFrame7)
+tilesetAnimation(13,4096,MetropolisFrame8)
+tilesetAnimation(13,4096,MetropolisFrame9)
+tilesetAnimation(13,4096,MetropolisFrame10)
+tilesetAnimation(13,4096,MetropolisFrame11)
+tilesetAnimation(13,4096,MetropolisFrame12)
+tilesetAnimation(13,4096,MetropolisFrame13)
+tilesetAnimation(13,4096,MetropolisFrame14)
+tilesetAnimation(13,4096,MetropolisFrame15)
+tilesetAnimation(13,4096,MetropolisFrame16)
+tilesetAnimation(13,4096,MetropolisFrame17)
+tilesetAnimation(13,4096,MetropolisFrame18)
+tilesetAnimation(13,4096,MetropolisFrame19)
+tilesetAnimation(13,4096,MetropolisFrame20)
+tilesetAnimation(13,4096,MetropolisFrame21)
+tilesetAnimation(13,4096,MetropolisFrame22)
+tilesetAnimation(13,4096,MetropolisFrame23)
+tilesetAnimation(13,4096,MetropolisFrame24)
+tilesetAnimation(13,4096,MetropolisFrame25)
+tilesetAnimation(13,4096,MetropolisFrame26)
+tilesetAnimation(13,4096,MetropolisFrame13)
+tilesetAnimation(13,4096,MetropolisFrame28)
+tilesetAnimation(13,4096,MetropolisFrame29)
+tilesetAnimation(13,4096,MetropolisFrame30)
+tilesetAnimation(13,4096,MetropolisFrame31)
+tilesetAnimation(13,4096,MetropolisFrame32)
+WORD 0 0
+
+ALIGN 4
+MineshaftFrame1:
+#incbin "Anim/Mineshaft/MineshaftAnim_000.dmp"
+ALIGN 4
+MineshaftFrame2:
+#incbin "Anim/Mineshaft/MineshaftAnim_001.dmp"
+ALIGN 4
+MineshaftFrame3:
+#incbin "Anim/Mineshaft/MineshaftAnim_002.dmp"
+ALIGN 4
+MineshaftFrame4:
+#incbin "Anim/Mineshaft/MineshaftAnim_003.dmp"
+ALIGN 4
+MineshaftFrame5:
+#incbin "Anim/Mineshaft/MineshaftAnim_004.dmp"
+ALIGN 4
+MineshaftFrame6:
+#incbin "Anim/Mineshaft/MineshaftAnim_005.dmp"
+ALIGN 4
+MineshaftFrame7:
+#incbin "Anim/Mineshaft/MineshaftAnim_006.dmp"
+ALIGN 4
+MineshaftFrame8:
+#incbin "Anim/Mineshaft/MineshaftAnim_007.dmp"
+ALIGN 4
+MineshaftFrame9:
+#incbin "Anim/Mineshaft/MineshaftAnim_008.dmp"
+ALIGN 4
+MineshaftFrame10:
+#incbin "Anim/Mineshaft/MineshaftAnim_009.dmp"
+ALIGN 4
+MineshaftFrame11:
+#incbin "Anim/Mineshaft/MineshaftAnim_010.dmp"
+ALIGN 4
+MineshaftFrame12:
+#incbin "Anim/Mineshaft/MineshaftAnim_011.dmp"
+ALIGN 4
+MineshaftFrame13:
+#incbin "Anim/Mineshaft/MineshaftAnim_012.dmp"
+ALIGN 4
+MineshaftFrame14:
+#incbin "Anim/Mineshaft/MineshaftAnim_013.dmp"
+ALIGN 4
+MineshaftFrame15:
+#incbin "Anim/Mineshaft/MineshaftAnim_014.dmp"
+ALIGN 4
+MineshaftFrame16:
+#incbin "Anim/Mineshaft/MineshaftAnim_015.dmp"
+ALIGN 4
+MineshaftAnims:
+tilesetAnimation(27,4096,MineshaftFrame1)
+tilesetAnimation(27,4096,MineshaftFrame2)
+tilesetAnimation(27,4096,MineshaftFrame3)
+tilesetAnimation(27,4096,MineshaftFrame4)
+tilesetAnimation(27,4096,MineshaftFrame5)
+tilesetAnimation(27,4096,MineshaftFrame6)
+tilesetAnimation(27,4096,MineshaftFrame7)
+tilesetAnimation(27,4096,MineshaftFrame8)
+tilesetAnimation(27,4096,MineshaftFrame9)
+tilesetAnimation(27,4096,MineshaftFrame10)
+tilesetAnimation(27,4096,MineshaftFrame11)
+tilesetAnimation(27,4096,MineshaftFrame12)
+tilesetAnimation(27,4096,MineshaftFrame13)
+tilesetAnimation(27,4096,MineshaftFrame14)
+tilesetAnimation(27,4096,MineshaftFrame15)
+tilesetAnimation(27,4096,MineshaftFrame16)
+WORD 0 0

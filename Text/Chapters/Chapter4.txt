@@ -113,11 +113,16 @@ Someone threw a scrap[N]
 of paper at me.[AN]
 [...]What's it say, anyway?[A][X]
 
+##C4RatAuraText
+...[A][X]
+
+##C4RatAuraText2
+Rat!? What did[N]
+you just...?[A][X]
+
 ##Chapter4_RatJoin
-[MidLeft][Nathan][MidRight][Rat]
-[...][AN][MidLeft]
-Rat!? What[...] did you just[...][AN][MoveLeft][FarLeft][Benthus]
-What do we have here[...]?[N]
+[Left][Nathan][MidRight][Rat][FarLeft][Benthus]
+What do we have here?[N]
 [...]That's a lurker's magic.[AN]
 You've got quite the power.[AN][Smile]
 Impressive.[AN][Left]

@@ -14,14 +14,79 @@ ALIGN 4
 Highlander_GuildmasterDMP:
 #incbin "paletteFiles/MainStory/Highlander_Guildmaster.dmp"
 
+PaletteIdentifier(Lancer_Heri, Lancer_HeriDMP)
+PaletteIdentifier(Highlander_Heri, Highlander_HeriDMP)
+ALIGN 4
+Lancer_HeriDMP:
+#incbin "paletteFiles/Special/Lancer_Heri.dmp"
+ALIGN 4
+Highlander_HeriDMP:
+#incbin "paletteFiles/Special/Highlander_Heri.dmp"
+
+PaletteIdentifier(Lancer_Radagast, Lancer_RadagastDMP)
+PaletteIdentifier(Highlander_Radagast, Highlander_RadagastDMP)
+ALIGN 4
+Lancer_RadagastDMP:
+#incbin "paletteFiles/Special/Lancer_Radagast.dmp"
+ALIGN 4
+Highlander_RadagastDMP:
+#incbin "paletteFiles/Special/Highlander_Radagast.dmp"
+
+PaletteIdentifier(Lancer_Fourfinger, Lancer_FourfingerDMP)
+PaletteIdentifier(Highlander_Fourfinger, Highlander_FourfingerDMP)
+ALIGN 4
+Lancer_FourfingerDMP:
+#incbin "paletteFiles/Special/Lancer_Fourfinger.dmp"
+ALIGN 4
+Highlander_FourfingerDMP:
+#incbin "paletteFiles/Special/Highlander_Fourfinger.dmp"
+
+PaletteIdentifier(Lancer_Nelson, Lancer_NelsonDMP)
+PaletteIdentifier(Highlander_Nelson, Highlander_NelsonDMP)
+ALIGN 4
+Lancer_NelsonDMP:
+#incbin "paletteFiles/Special/Lancer_Nelson.dmp"
+ALIGN 4
+Highlander_NelsonDMP:
+#incbin "paletteFiles/Special/Highlander_Nelson.dmp"
+
+PaletteIdentifier(Lancer_Naomi, Lancer_NaomiDMP)
+PaletteIdentifier(Highlander_Naomi, Highlander_NaomiDMP)
+ALIGN 4
+Lancer_NaomiDMP:
+#incbin "paletteFiles/Special/Lancer_Naomi.dmp"
+ALIGN 4
+Highlander_NaomiDMP:
+#incbin "paletteFiles/Special/Highlander_Naomi.dmp"
+
+PaletteIdentifier(Lancer_Phaedra, Lancer_PhaedraDMP)
+PaletteIdentifier(Highlander_Phaedra, Highlander_PhaedraDMP)
+ALIGN 4
+Lancer_PhaedraDMP:
+#incbin "paletteFiles/Special/Lancer_Phaedra.dmp"
+ALIGN 4
+Highlander_PhaedraDMP:
+#incbin "paletteFiles/Special/Highlander_Phaedra.dmp"
+
 ALIGN 4
 LancerPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(Heri,Lancer_Heri)
+PaletteAssociationEntry(Radagast,Lancer_Radagast)
+PaletteAssociationEntry(Fourfinger,Lancer_Fourfinger)
+PaletteAssociationEntry(Nelson,Lancer_Nelson)
+PaletteAssociationEntry(Naomi,Lancer_Naomi)
+PaletteAssociationEntry(Phaedra,Lancer_Phaedra)
 WORD 0 0
 ALIGN 4
 HighlanderPaletteList:
 PaletteAssociationEntry(Guildmaster,Highlander_Guildmaster)
 PaletteAssociationEntry(BossGuildmaster,Highlander_Guildmaster)
+PaletteAssociationEntry(Heri,Highlander_Heri)
+PaletteAssociationEntry(Radagast,Highlander_Radagast)
+PaletteAssociationEntry(Fourfinger,Highlander_Fourfinger)
+PaletteAssociationEntry(Nelson,Highlander_Nelson)
+PaletteAssociationEntry(Naomi,Highlander_Naomi)
+PaletteAssociationEntry(Phaedra,Highlander_Phaedra)
 WORD 0 0
 
 //brawler
@@ -35,11 +100,65 @@ PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
 WORD 0 0
 
 //hunter
+
+PaletteIdentifier(Hunter_Yajirushi, Hunter_YajirushiDMP)
+PaletteIdentifier(Survivalist_Yajirushi, Survivalist_YajirushiDMP)
+ALIGN 4
+Hunter_YajirushiDMP:
+#incbin "paletteFiles/Special/Hunter_Yajirushi.dmp"
+ALIGN 4
+Survivalist_YajirushiDMP:
+#incbin "paletteFiles/Special/Survivalist_Yajirushi.dmp"
+
+PaletteIdentifier(Hunter_Yasaki, Hunter_YasakiDMP)
+PaletteIdentifier(Survivalist_Yasaki, Survivalist_YasakiDMP)
+ALIGN 4
+Hunter_YasakiDMP:
+#incbin "paletteFiles/Special/Hunter_Yasaki.dmp"
+ALIGN 4
+Survivalist_YasakiDMP:
+#incbin "paletteFiles/Special/Survivalist_Yasaki.dmp"
+
+PaletteIdentifier(Hunter_Ammi, Hunter_AmmiDMP)
+PaletteIdentifier(Survivalist_Ammi, Survivalist_AmmiDMP)
+ALIGN 4
+Hunter_AmmiDMP:
+#incbin "paletteFiles/Special/Hunter_Ammi.dmp"
+ALIGN 4
+Survivalist_AmmiDMP:
+#incbin "paletteFiles/Special/Survivalist_Ammi.dmp"
+
+PaletteIdentifier(Hunter_Sarina, Hunter_SarinaDMP)
+PaletteIdentifier(Survivalist_Sarina, Survivalist_SarinaDMP)
+ALIGN 4
+Hunter_SarinaDMP:
+#incbin "paletteFiles/Special/Hunter_Sarina.dmp"
+ALIGN 4
+Survivalist_SarinaDMP:
+#incbin "paletteFiles/Special/Survivalist_Sarina.dmp"
+
+PaletteIdentifier(Hunter_Alexandra, Hunter_AlexandraDMP)
+PaletteIdentifier(Survivalist_Alexandra, Survivalist_AlexandraDMP)
+ALIGN 4
+Hunter_AlexandraDMP:
+#incbin "paletteFiles/Special/Hunter_Alexandra.dmp"
+ALIGN 4
+Survivalist_AlexandraDMP:
+#incbin "paletteFiles/Special/Survivalist_Alexandra.dmp"
+
 ALIGN 4
 HunterPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(Yajirushi,Hunter_Yajirushi)
+PaletteAssociationEntry(Yasaki,Hunter_Yasaki)
+PaletteAssociationEntry(Ammi,Hunter_Ammi)
+PaletteAssociationEntry(Sarina,Hunter_Sarina)
+PaletteAssociationEntry(Alexandra,Hunter_Alexandra)
 WORD 0 0
 ALIGN 4
 SurvivalistPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(Yajirushi,Survivalist_Yajirushi)
+PaletteAssociationEntry(Yasaki,Survivalist_Yasaki)
+PaletteAssociationEntry(Ammi,Survivalist_Ammi)
+PaletteAssociationEntry(Sarina,Survivalist_Sarina)
+PaletteAssociationEntry(Alexandra,Survivalist_Alexandra)
 WORD 0 0

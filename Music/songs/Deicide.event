@@ -1,0 +1,6116 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	Deicide_grp  voicegroup000
+	#define	Deicide_pri  0
+	#define	Deicide_rev  0
+	#define	Deicide_mvl  50
+	#define	Deicide_key  0
+	#define	Deicide_tbs  1
+	#define	Deicide_exg  0
+	#define	Deicide_cmp  1
+
+	// .rodata
+	//	Deicide
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+Deicide_001:
+//  #01 //000   ----------------------------------------
+ BYTE   KEYSH   Deicide_key+0
+ BYTE   TEMPO   90*Deicide_tbs/2
+Label_013C2D28:
+ BYTE   VOICE   52
+ BYTE   BENDR  12
+ BYTE   N96  Fn4  v100
+ BYTE   N96  Cn4
+ BYTE   N96  Fn3
+ BYTE   N96  Gs3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-60
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-36
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+36
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+60
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   W01
+//  #01 //001   ----------------------------------------
+Label_013C2E61:
+ BYTE   N96  Gn3  v100
+ BYTE   N96  Ds4
+ BYTE   N96  As3
+ BYTE   N96  Ds3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+60
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+36
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-36
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-60
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+ BYTE   PEND 
+//  #01 //002   ----------------------------------------
+Label_013C2F97:
+ BYTE   N96  Ds4  v100
+ BYTE   N96  Fn4
+ BYTE   N96  As4
+ BYTE   N96  As3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-60
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-36
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   BEND   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   BEND   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   BEND   c_v+3
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   BEND   c_v+4
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+36
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   BEND   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   BEND   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   BEND   c_v+7
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   BEND   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   BEND   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+60
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   BEND   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   BEND   c_v+2
+ BYTE   W01
+ BYTE   PEND 
+//  #01 //003   ----------------------------------------
+Label_013C30E9:
+ BYTE   N96  Fn4  v100
+ BYTE   N96  Gn4
+ BYTE   N96  Cn5
+ BYTE   N96  Cn4
+ BYTE   BEND   c_v+0
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+60
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+36
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-36
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-60
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+ BYTE   PEND 
+//  #01 //004   ----------------------------------------
+ BYTE   N96  Fn4
+ BYTE   N96  Cn4
+ BYTE   N96  Fn3
+ BYTE   N96  Gs3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+36
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+60
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   W01
+//  #01 //005   ----------------------------------------
+ BYTE   N96  Gn3
+ BYTE   N96  Ds4
+ BYTE   N96  As3
+ BYTE   N96  Ds3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+//  #01 //006   ----------------------------------------
+ BYTE   N96  Ds4
+ BYTE   N96  Fn4
+ BYTE   N96  As4
+ BYTE   N96  As3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   BEND   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   BEND   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   BEND   c_v+3
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   BEND   c_v+4
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   BEND   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   BEND   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   BEND   c_v+7
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   BEND   c_v+8
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   BEND   c_v+9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   BEND   c_v+10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   BEND   c_v+2
+ BYTE   W01
+//  #01 //007   ----------------------------------------
+ BYTE   N96  Fn4
+ BYTE   N96  Gn4
+ BYTE   N96  Cn5
+ BYTE   N96  Cn4
+ BYTE   BEND   c_v+0
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+//  #01 //008   ----------------------------------------
+ BYTE   N96  Fn4
+ BYTE   N96  Cn4
+ BYTE   N96  Fn3
+ BYTE   N96  Gs3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   W01
+//  #01 //009   ----------------------------------------
+ BYTE   N96  Gn3
+ BYTE   N96  Ds4
+ BYTE   N96  As3
+ BYTE   N96  Ds3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+60
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+36
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-36
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-60
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+//  #01 //010   ----------------------------------------
+ BYTE   N96  Ds4
+ BYTE   N96  Fn4
+ BYTE   N96  As4
+ BYTE   N96  As3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-60
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-36
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   BEND   c_v+1
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   BEND   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   BEND   c_v+3
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   BEND   c_v+4
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   BEND   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   BEND   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   BEND   c_v+7
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   BEND   c_v+8
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   BEND   c_v+9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   BEND   c_v+10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   BEND   c_v+2
+ BYTE   W01
+//  #01 //011   ----------------------------------------
+ BYTE   N96  Fn4
+ BYTE   N96  Gn4
+ BYTE   N96  Cn5
+ BYTE   N96  Cn4
+ BYTE   BEND   c_v+0
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+60
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+36
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-36
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-60
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+//  #01 //012   ----------------------------------------
+Label_013C3BF9:
+ BYTE   N96  Fn4  v100
+ BYTE   N96  Cn4
+ BYTE   N96  Fn3
+ BYTE   N96  Gs3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   W01
+ BYTE   PEND 
+//  #01 //013   ----------------------------------------
+Label_013C3D2F:
+ BYTE   N96  Gn3  v100
+ BYTE   N96  Ds4
+ BYTE   N96  As3
+ BYTE   N96  Ds3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+ BYTE   PEND 
+//  #01 //014   ----------------------------------------
+ BYTE   N96  Ds4
+ BYTE   N96  Fn4
+ BYTE   N96  As4
+ BYTE   N96  As3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   BEND   c_v+1
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   BEND   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   BEND   c_v+3
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   BEND   c_v+4
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   BEND   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   BEND   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   BEND   c_v+7
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   BEND   c_v+8
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   BEND   c_v+9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   BEND   c_v+10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   BEND   c_v+2
+ BYTE   W01
+//  #01 //015   ----------------------------------------
+ BYTE   N96  Fn4
+ BYTE   N96  Gn4
+ BYTE   N96  Cn5
+ BYTE   N96  Cn4
+ BYTE   BEND   c_v+0
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+//  #01 //016   ----------------------------------------
+Label_013C40E9:
+ BYTE   N96  Fn4  v100
+ BYTE   N96  Cn4
+ BYTE   N96  Fn3
+ BYTE   N96  Gs3
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-60
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-36
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-28
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-4
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+4
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+8
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+12
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+16
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+20
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+24
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+28
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+36
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+40
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+44
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+48
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+52
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+56
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+60
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   W01
+ BYTE   PEND 
+//  #01 //017   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C2E61
+//  #01 //018   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C2F97
+//  #01 //019   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C30E9
+//  #01 //020   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C40E9
+//  #01 //021   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C2E61
+//  #01 //022   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C2F97
+//  #01 //023   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C30E9
+//  #01 //024   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C3BF9
+//  #01 //025   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C3D2F
+//  #01 //026   ----------------------------------------
+ BYTE   N96  Ds4  v100
+ BYTE   N96  Fn4
+ BYTE   N96  As4
+ BYTE   N96  As3
+ BYTE   BEND   c_v-11
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-2
+ BYTE   BEND   c_v-10
+ BYTE   W01
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   BEND   c_v-9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+2
+ BYTE   BEND   c_v-8
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   BEND   c_v-7
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   BEND   c_v-6
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   BEND   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   BEND   c_v-4
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   BEND   c_v-3
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   BEND   c_v-2
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   BEND   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   BEND   c_v+0
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+29
+ BYTE   BEND   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+33
+ BYTE   BEND   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   BEND   c_v+3
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   BEND   c_v+4
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   BEND   c_v+5
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   BEND   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   BEND   c_v+7
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   BEND   c_v+8
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   BEND   c_v+9
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   BEND   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   BEND   c_v+5
+ BYTE   W01
+ BYTE   BEND   c_v+0
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+63
+ BYTE   W01
+//  #01 //027   ----------------------------------------
+ BYTE   N96  Fn4
+ BYTE   N96  Gn4
+ BYTE   N96  Cn5
+ BYTE   N96  Cn4
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+62
+ BYTE   W01
+ BYTE   PAN   c_v+61
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+60
+ BYTE   W01
+ BYTE   PAN   c_v+58
+ BYTE   W01
+ BYTE   PAN   c_v+57
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+56
+ BYTE   W01
+ BYTE   PAN   c_v+54
+ BYTE   W01
+ BYTE   PAN   c_v+53
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+52
+ BYTE   W01
+ BYTE   PAN   c_v+50
+ BYTE   W01
+ BYTE   PAN   c_v+49
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+48
+ BYTE   W01
+ BYTE   PAN   c_v+46
+ BYTE   W01
+ BYTE   PAN   c_v+45
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+44
+ BYTE   W01
+ BYTE   PAN   c_v+42
+ BYTE   W01
+ BYTE   PAN   c_v+41
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+40
+ BYTE   W01
+ BYTE   PAN   c_v+38
+ BYTE   W01
+ BYTE   PAN   c_v+37
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+36
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+34
+ BYTE   W01
+ BYTE   PAN   c_v+33
+ BYTE   W01
+ BYTE   PAN   c_v+32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+30
+ BYTE   W01
+ BYTE   PAN   c_v+29
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+28
+ BYTE   W01
+ BYTE   PAN   c_v+26
+ BYTE   W01
+ BYTE   PAN   c_v+25
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+24
+ BYTE   W01
+ BYTE   PAN   c_v+22
+ BYTE   W01
+ BYTE   PAN   c_v+21
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+20
+ BYTE   W01
+ BYTE   PAN   c_v+18
+ BYTE   W01
+ BYTE   PAN   c_v+17
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+16
+ BYTE   W01
+ BYTE   PAN   c_v+14
+ BYTE   W01
+ BYTE   PAN   c_v+13
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+12
+ BYTE   W01
+ BYTE   PAN   c_v+10
+ BYTE   W01
+ BYTE   PAN   c_v+9
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v+8
+ BYTE   W01
+ BYTE   PAN   c_v+6
+ BYTE   W01
+ BYTE   PAN   c_v+5
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v+4
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v+2
+ BYTE   W01
+ BYTE   PAN   c_v+1
+ BYTE   W01
+ BYTE   PAN   c_v+0
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-1
+ BYTE   W01
+ BYTE   PAN   c_v-2
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-4
+ BYTE   W01
+ BYTE   PAN   c_v-5
+ BYTE   W01
+ BYTE   PAN   c_v-6
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-8
+ BYTE   W01
+ BYTE   PAN   c_v-9
+ BYTE   W01
+ BYTE   PAN   c_v-10
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-12
+ BYTE   W01
+ BYTE   PAN   c_v-13
+ BYTE   W01
+ BYTE   PAN   c_v-14
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-16
+ BYTE   W01
+ BYTE   PAN   c_v-17
+ BYTE   W01
+ BYTE   PAN   c_v-18
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-20
+ BYTE   W01
+ BYTE   PAN   c_v-21
+ BYTE   W01
+ BYTE   PAN   c_v-22
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-24
+ BYTE   W01
+ BYTE   PAN   c_v-25
+ BYTE   W01
+ BYTE   PAN   c_v-26
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-28
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-29
+ BYTE   W01
+ BYTE   PAN   c_v-30
+ BYTE   W01
+ BYTE   PAN   c_v-32
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-33
+ BYTE   W01
+ BYTE   PAN   c_v-34
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-36
+ BYTE   W01
+ BYTE   PAN   c_v-37
+ BYTE   W01
+ BYTE   PAN   c_v-38
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-40
+ BYTE   W01
+ BYTE   PAN   c_v-41
+ BYTE   W01
+ BYTE   PAN   c_v-42
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-44
+ BYTE   W01
+ BYTE   PAN   c_v-45
+ BYTE   W01
+ BYTE   PAN   c_v-46
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-48
+ BYTE   W01
+ BYTE   PAN   c_v-49
+ BYTE   W01
+ BYTE   PAN   c_v-50
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-52
+ BYTE   W01
+ BYTE   PAN   c_v-53
+ BYTE   W01
+ BYTE   PAN   c_v-54
+ BYTE   W01
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-56
+ BYTE   W01
+ BYTE   PAN   c_v-57
+ BYTE   W01
+ BYTE   PAN   c_v-58
+ BYTE   W01
+ BYTE   VOL   57*Deicide_mvl/mxv
+ BYTE   PAN   c_v-60
+ BYTE   W01
+ BYTE   VOL   41*Deicide_mvl/mxv
+ BYTE   PAN   c_v-61
+ BYTE   W01
+ BYTE   PAN   c_v-62
+ BYTE   W01
+ BYTE   PAN   c_v-64
+ BYTE   W01
+//  #01 //028   ----------------------------------------
+ BYTE   VOL   88*Deicide_mvl/mxv
+ BYTE   PAN   c_v-62
+ BYTE   GoTo
+  POIN2 Label_013C2D28
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+Deicide_002:
+//  #02 //000   ----------------------------------------
+ BYTE   KEYSH   Deicide_key+0
+Label_01188386:
+ BYTE   VOICE   81
+ BYTE   BENDR  12
+ BYTE   PAN   c_v+35
+ BYTE   VOL   127*Deicide_mvl/mxv
+ BYTE   N06  Cn1  v100
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Ds2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   N12  Gs1
+ BYTE   W12
+//  #02 //001   ----------------------------------------
+Label_011883AF:
+ BYTE   N06  Cn1  v100
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Ds2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   W06
+ BYTE   N18  Gs1
+ BYTE   W18
+ BYTE   PEND 
+//  #02 //002   ----------------------------------------
+Label_011883CF:
+ BYTE   N06  Cn1  v100
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Ds2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   N12  Gs1
+ BYTE   W12
+ BYTE   PEND 
+//  #02 //003   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #02 //004   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #02 //005   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #02 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #02 //007   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #02 //008   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #02 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #02 //010   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #02 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #02 //012   ----------------------------------------
+Label_0118841E:
+ BYTE   N06  Fn1  v100
+ BYTE   W06
+ BYTE   Ds2
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Fn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Fn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   W06
+ BYTE   N12  Fn1
+ BYTE   W12
+ BYTE   N06  Ds2
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Fn1
+ BYTE   W06
+ BYTE   Gs1
+ BYTE   W06
+ BYTE   Fn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   W06
+ BYTE   Fn1
+ BYTE   W06
+ BYTE   PEND 
+//  #02 //013   ----------------------------------------
+Label_01188441:
+ BYTE   N06  Fn1  v100
+ BYTE   W06
+ BYTE   Ds2
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Fn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Fn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   W06
+ BYTE   N12  Fn1
+ BYTE   W12
+ BYTE   N06  Ds2
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Fn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   N18  As1
+ BYTE   W18
+ BYTE   PEND 
+//  #02 //014   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #02 //015   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #02 //016   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #02 //017   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #02 //018   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #02 //019   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #02 //020   ----------------------------------------
+Label_0118847F:
+ BYTE   N96  Cn1  v100
+ BYTE   W19
+ BYTE   BEND   c_v+1
+ BYTE   W02
+ BYTE   BEND   c_v+2
+ BYTE   W02
+ BYTE   BEND   c_v+3
+ BYTE   W02
+ BYTE   BEND   c_v+4
+ BYTE   W02
+ BYTE   BEND   c_v+5
+ BYTE   W02
+ BYTE   BEND   c_v+6
+ BYTE   W02
+ BYTE   BEND   c_v+7
+ BYTE   W01
+ BYTE   BEND   c_v+8
+ BYTE   W02
+ BYTE   BEND   c_v+9
+ BYTE   W01
+ BYTE   BEND   c_v+10
+ BYTE   W02
+ BYTE   BEND   c_v+11
+ BYTE   W01
+ BYTE   BEND   c_v+12
+ BYTE   W02
+ BYTE   BEND   c_v+13
+ BYTE   W01
+ BYTE   BEND   c_v+14
+ BYTE   W01
+ BYTE   BEND   c_v+15
+ BYTE   W01
+ BYTE   BEND   c_v+16
+ BYTE   W01
+ BYTE   BEND   c_v+17
+ BYTE   W02
+ BYTE   BEND   c_v+18
+ BYTE   W01
+ BYTE   BEND   c_v+19
+ BYTE   W01
+ BYTE   BEND   c_v+20
+ BYTE   W01
+ BYTE   BEND   c_v+21
+ BYTE   W01
+ BYTE   BEND   c_v+22
+ BYTE   W01
+ BYTE   BEND   c_v+23
+ BYTE   W01
+ BYTE   BEND   c_v+24
+ BYTE   W01
+ BYTE   BEND   c_v+25
+ BYTE   W01
+ BYTE   BEND   c_v+27
+ BYTE   W01
+ BYTE   BEND   c_v+28
+ BYTE   W01
+ BYTE   BEND   c_v+29
+ BYTE   W01
+ BYTE   BEND   c_v+30
+ BYTE   W01
+ BYTE   BEND   c_v+32
+ BYTE   W01
+ BYTE   BEND   c_v+33
+ BYTE   W01
+ BYTE   BEND   c_v+34
+ BYTE   W01
+ BYTE   BEND   c_v+36
+ BYTE   W01
+ BYTE   BEND   c_v+37
+ BYTE   W01
+ BYTE   BEND   c_v+38
+ BYTE   W01
+ BYTE   BEND   c_v+40
+ BYTE   W01
+ BYTE   BEND   c_v+42
+ BYTE   W01
+ BYTE   BEND   c_v+43
+ BYTE   W01
+ BYTE   BEND   c_v+45
+ BYTE   W01
+ BYTE   BEND   c_v+46
+ BYTE   W01
+ BYTE   BEND   c_v+48
+ BYTE   W01
+ BYTE   BEND   c_v+50
+ BYTE   W01
+ BYTE   BEND   c_v+52
+ BYTE   W01
+ BYTE   BEND   c_v+54
+ BYTE   W01
+ BYTE   BEND   c_v+56
+ BYTE   W01
+ BYTE   BEND   c_v+58
+ BYTE   W01
+ BYTE   BEND   c_v+60
+ BYTE   W01
+ BYTE   BEND   c_v+62
+ BYTE   W01
+ BYTE   BEND   c_v+63
+ BYTE   W07
+ BYTE   BEND   c_v+59
+ BYTE   W01
+ BYTE   BEND   c_v+52
+ BYTE   W01
+ BYTE   BEND   c_v+43
+ BYTE   W01
+ BYTE   BEND   c_v+30
+ BYTE   W01
+ BYTE   BEND   c_v+14
+ BYTE   W01
+ BYTE   BEND   c_v-7
+ BYTE   W02
+ BYTE   BEND   c_v-6
+ BYTE   W01
+ BYTE   BEND   c_v-5
+ BYTE   W01
+ BYTE   BEND   c_v-4
+ BYTE   W01
+ BYTE   BEND   c_v-2
+ BYTE   W01
+ BYTE   BEND   c_v+0
+ BYTE   W01
+ BYTE   PEND 
+//  #02 //021   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #02 //022   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #02 //023   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #02 //024   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #02 //025   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #02 //026   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #02 //027   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #02 //028   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_01188386
+ BYTE   FINE
+
+//**************** Track 3 (Midi-Chn.2) ****************//
+
+Deicide_003:
+//  #03 //000   ----------------------------------------
+ BYTE   KEYSH   Deicide_key+0
+Label_0118779A:
+ BYTE   VOICE   28
+ BYTE   BENDR  12
+ BYTE   VOL   98*Deicide_mvl/mxv
+ BYTE   N06  Cn1  v100
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Ds2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   N12  Gs1
+ BYTE   W12
+//  #03 //001   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #03 //002   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #03 //003   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #03 //004   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #03 //005   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #03 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #03 //007   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #03 //008   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #03 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #03 //010   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #03 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #03 //012   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #03 //013   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #03 //014   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #03 //015   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #03 //016   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #03 //017   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #03 //018   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #03 //019   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #03 //020   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #03 //021   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #03 //022   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #03 //023   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #03 //024   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #03 //025   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #03 //026   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #03 //027   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118847F
+//  #03 //028   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_0118779A
+ BYTE   FINE
+
+//**************** Track 4 (Midi-Chn.3) ****************//
+
+Deicide_004:
+//  #04 //000   ----------------------------------------
+ BYTE   KEYSH   Deicide_key+0
+Label_01187852:
+ BYTE   VOICE   81
+ BYTE   BENDR  12
+ BYTE   PAN   c_v-37
+ BYTE   VOL   127*Deicide_mvl/mxv
+ BYTE   BEND   c_v+1
+ BYTE   N06  Cn1  v100
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cs2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Ds2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   Cn2
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   W06
+ BYTE   N12  Gs1
+ BYTE   W12
+//  #04 //001   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #04 //002   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #04 //003   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #04 //004   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #04 //005   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #04 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #04 //007   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #04 //008   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #04 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #04 //010   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883CF
+//  #04 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011883AF
+//  #04 //012   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #04 //013   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #04 //014   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #04 //015   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #04 //016   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #04 //017   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #04 //018   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118841E
+//  #04 //019   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01188441
+//  #04 //020   ----------------------------------------
+Label_011878DC:
+ BYTE   N96  Cn1  v100
+ BYTE   W19
+ BYTE   BEND   c_v+2
+ BYTE   W02
+ BYTE   BEND   c_v+3
+ BYTE   W02
+ BYTE   BEND   c_v+4
+ BYTE   W02
+ BYTE   BEND   c_v+5
+ BYTE   W02
+ BYTE   BEND   c_v+6
+ BYTE   W02
+ BYTE   BEND   c_v+7
+ BYTE   W01
+ BYTE   BEND   c_v+8
+ BYTE   W02
+ BYTE   BEND   c_v+9
+ BYTE   W02
+ BYTE   BEND   c_v+10
+ BYTE   W01
+ BYTE   BEND   c_v+11
+ BYTE   W01
+ BYTE   BEND   c_v+12
+ BYTE   W02
+ BYTE   BEND   c_v+13
+ BYTE   W01
+ BYTE   BEND   c_v+14
+ BYTE   W01
+ BYTE   BEND   c_v+15
+ BYTE   W01
+ BYTE   BEND   c_v+16
+ BYTE   W01
+ BYTE   BEND   c_v+17
+ BYTE   W02
+ BYTE   BEND   c_v+18
+ BYTE   W01
+ BYTE   BEND   c_v+19
+ BYTE   W01
+ BYTE   BEND   c_v+20
+ BYTE   W01
+ BYTE   BEND   c_v+21
+ BYTE   W01
+ BYTE   BEND   c_v+22
+ BYTE   W01
+ BYTE   BEND   c_v+23
+ BYTE   W01
+ BYTE   BEND   c_v+25
+ BYTE   W01
+ BYTE   BEND   c_v+26
+ BYTE   W01
+ BYTE   BEND   c_v+27
+ BYTE   W01
+ BYTE   BEND   c_v+28
+ BYTE   W01
+ BYTE   BEND   c_v+29
+ BYTE   W01
+ BYTE   BEND   c_v+30
+ BYTE   W01
+ BYTE   BEND   c_v+32
+ BYTE   W01
+ BYTE   BEND   c_v+33
+ BYTE   W01
+ BYTE   BEND   c_v+34
+ BYTE   W01
+ BYTE   BEND   c_v+36
+ BYTE   W01
+ BYTE   BEND   c_v+37
+ BYTE   W01
+ BYTE   BEND   c_v+39
+ BYTE   W01
+ BYTE   BEND   c_v+40
+ BYTE   W01
+ BYTE   BEND   c_v+42
+ BYTE   W01
+ BYTE   BEND   c_v+44
+ BYTE   W01
+ BYTE   BEND   c_v+45
+ BYTE   W01
+ BYTE   BEND   c_v+47
+ BYTE   W01
+ BYTE   BEND   c_v+49
+ BYTE   W01
+ BYTE   BEND   c_v+51
+ BYTE   W01
+ BYTE   BEND   c_v+52
+ BYTE   W01
+ BYTE   BEND   c_v+54
+ BYTE   W01
+ BYTE   BEND   c_v+56
+ BYTE   W01
+ BYTE   BEND   c_v+58
+ BYTE   W01
+ BYTE   BEND   c_v+60
+ BYTE   W01
+ BYTE   BEND   c_v+63
+ BYTE   W11
+ BYTE   BEND   c_v+56
+ BYTE   W01
+ BYTE   BEND   c_v+45
+ BYTE   W01
+ BYTE   BEND   c_v+32
+ BYTE   W01
+ BYTE   BEND   c_v+13
+ BYTE   W01
+ BYTE   BEND   c_v-11
+ BYTE   W01
+ BYTE   BEND   c_v-10
+ BYTE   W01
+ BYTE   BEND   c_v-9
+ BYTE   W01
+ BYTE   BEND   c_v-7
+ BYTE   W01
+ BYTE   BEND   c_v-5
+ BYTE   W01
+ BYTE   BEND   c_v-3
+ BYTE   W01
+ BYTE   BEND   c_v+1
+ BYTE   W01
+ BYTE   PEND 
+//  #04 //021   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011878DC
+//  #04 //022   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011878DC
+//  #04 //023   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011878DC
+//  #04 //024   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011878DC
+//  #04 //025   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011878DC
+//  #04 //026   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011878DC
+//  #04 //027   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011878DC
+//  #04 //028   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_01187852
+ BYTE   FINE
+
+//**************** Track 5 (Midi-Chn.4) ****************//
+
+Deicide_005:
+//  #05 //000   ----------------------------------------
+ BYTE   KEYSH   Deicide_key+0
+Label_01187982:
+ BYTE   VOICE   30
+ BYTE   BENDR  12
+ BYTE   PAN   c_v-36
+ BYTE   VOL   127*Deicide_mvl/mxv
+ BYTE   W96
+//  #05 //001   ----------------------------------------
+ BYTE   W96
+//  #05 //002   ----------------------------------------
+ BYTE   W96
+//  #05 //003   ----------------------------------------
+Label_0118798D:
+ BYTE   W84
+ BYTE   N12  Fn3  v100
+ BYTE   W12
+ BYTE   PEND 
+//  #05 //004   ----------------------------------------
+Label_01187993:
+ BYTE   N06  As3  v100
+ BYTE   W06
+ BYTE   N12  Fn3
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   N06  Cn3
+ BYTE   W06
+ BYTE   Ds3
+ BYTE   W06
+ BYTE   Cn3
+ BYTE   W06
+ BYTE   Ds3
+ BYTE   W06
+ BYTE   Cn3
+ BYTE   W06
+ BYTE   Ds3
+ BYTE   W06
+ BYTE   N18  Fn3
+ BYTE   W18
+ BYTE   PEND 
+//  #05 //005   ----------------------------------------
+Label_011879AF:
+ BYTE   N06  As3  v100
+ BYTE   W06
+ BYTE   N12  Fn3
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   Ds3
+ BYTE   W12
+ BYTE   N06  Cn3
+ BYTE   W06
+ BYTE   Ds3
+ BYTE   W06
+ BYTE   Cn3
+ BYTE   W06
+ BYTE   Ds3
+ BYTE   W06
+ BYTE   Cn3
+ BYTE   W06
+ BYTE   N24  Cs3
+ BYTE   W24
+ BYTE   PEND 
+//  #05 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01187993
+//  #05 //007   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011879AF
+//  #05 //008   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01187993
+//  #05 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011879AF
+//  #05 //010   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01187993
+//  #05 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011879AF
+//  #05 //012   ----------------------------------------
+ BYTE   W96
+//  #05 //013   ----------------------------------------
+ BYTE   W96
+//  #05 //014   ----------------------------------------
+ BYTE   W96
+//  #05 //015   ----------------------------------------
+ BYTE   W96
+//  #05 //016   ----------------------------------------
+ BYTE   W96
+//  #05 //017   ----------------------------------------
+ BYTE   W96
+//  #05 //018   ----------------------------------------
+ BYTE   W96
+//  #05 //019   ----------------------------------------
+ BYTE   W96
+//  #05 //020   ----------------------------------------
+ BYTE   W96
+//  #05 //021   ----------------------------------------
+ BYTE   W96
+//  #05 //022   ----------------------------------------
+ BYTE   W96
+//  #05 //023   ----------------------------------------
+ BYTE   W96
+//  #05 //024   ----------------------------------------
+ BYTE   W96
+//  #05 //025   ----------------------------------------
+ BYTE   W96
+//  #05 //026   ----------------------------------------
+ BYTE   W96
+//  #05 //027   ----------------------------------------
+ BYTE   W96
+//  #05 //028   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_01187982
+ BYTE   FINE
+
+//**************** Track 6 (Midi-Chn.5) ****************//
+
+Deicide_006:
+//  #06 //000   ----------------------------------------
+ BYTE   KEYSH   Deicide_key+0
+Label_01187A02:
+ BYTE   VOICE   30
+ BYTE   BENDR  12
+ BYTE   PAN   c_v+37
+ BYTE   VOL   127*Deicide_mvl/mxv
+ BYTE   BEND   c_v+1
+ BYTE   W96
+//  #06 //001   ----------------------------------------
+ BYTE   W96
+//  #06 //002   ----------------------------------------
+ BYTE   W96
+//  #06 //003   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_0118798D
+//  #06 //004   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01187993
+//  #06 //005   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011879AF
+//  #06 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01187993
+//  #06 //007   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011879AF
+//  #06 //008   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01187993
+//  #06 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011879AF
+//  #06 //010   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_01187993
+//  #06 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011879AF
+//  #06 //012   ----------------------------------------
+ BYTE   W96
+//  #06 //013   ----------------------------------------
+ BYTE   W96
+//  #06 //014   ----------------------------------------
+ BYTE   W96
+//  #06 //015   ----------------------------------------
+ BYTE   W96
+//  #06 //016   ----------------------------------------
+ BYTE   W96
+//  #06 //017   ----------------------------------------
+ BYTE   W96
+//  #06 //018   ----------------------------------------
+ BYTE   W96
+//  #06 //019   ----------------------------------------
+ BYTE   W96
+//  #06 //020   ----------------------------------------
+ BYTE   W96
+//  #06 //021   ----------------------------------------
+ BYTE   W96
+//  #06 //022   ----------------------------------------
+ BYTE   W96
+//  #06 //023   ----------------------------------------
+ BYTE   W96
+//  #06 //024   ----------------------------------------
+ BYTE   W96
+//  #06 //025   ----------------------------------------
+ BYTE   W96
+//  #06 //026   ----------------------------------------
+ BYTE   W96
+//  #06 //027   ----------------------------------------
+ BYTE   W96
+//  #06 //028   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_01187A02
+ BYTE   FINE
+
+//**************** Track 7 (Midi-Chn.6) ****************//
+
+Deicide_007:
+//  #07 //000   ----------------------------------------
+ BYTE   KEYSH   Deicide_key+0
+Label_013C4EA2:
+ BYTE   VOICE   124
+ BYTE   BENDR  12
+ BYTE   VOL   100*Deicide_mvl/mxv
+ BYTE   N06  Cs2  v100
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+//  #07 //001   ----------------------------------------
+Label_013C4EE0:
+ BYTE   N06  Fs1  v100
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   PEND 
+//  #07 //002   ----------------------------------------
+Label_013C4F19:
+ BYTE   N06  Fs1  v100
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   PEND 
+//  #07 //003   ----------------------------------------
+Label_013C4F52:
+ BYTE   N06  Fs1  v100
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fn2
+ BYTE   W06
+ BYTE   En2
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   PEND 
+//  #07 //004   ----------------------------------------
+Label_013C4F8B:
+ BYTE   N06  Cs2  v100
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   W06
+ BYTE   PEND 
+//  #07 //005   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C4EE0
+//  #07 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C4F19
+//  #07 //007   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C4F52
+//  #07 //008   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C4F8B
+//  #07 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C4EE0
+//  #07 //010   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C4F19
+//  #07 //011   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C4F52
+//  #07 //012   ----------------------------------------
+Label_013C4FE7:
+ BYTE   N03  Cs2  v100
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   N03  Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   N03  Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   N03  As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   N03  Fs1
+ BYTE   W06
+ BYTE   N06  Cn1
+ BYTE   N03  Fs1
+ BYTE   W06
+ BYTE   N06  Dn1
+ BYTE   N03  As1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N03  Fs1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Cn1
+ BYTE   N03  Fs1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Cn1
+ BYTE   N03  Fs1
+ BYTE   W06
+ BYTE   N06  Cs2
+ BYTE   N06  En2
+ BYTE   N06  Dn1
+ BYTE   W12
+ BYTE   PEND 
+//  #07 //013   ----------------------------------------
+Label_013C503B:
+ BYTE   N03  Fs1  v100
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   N03  Fs1
+ BYTE   W06
+ BYTE   As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   N03  Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   N03  As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   N03  Fs1
+ BYTE   W06
+ BYTE   Fs1
+ BYTE   N06  Cn1
+ BYTE   W06
+ BYTE   N03  As1
+ BYTE   N06  Dn1
+ BYTE   W06
+ BYTE   N03  Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W03
+ BYTE   Fs1
+ BYTE   N03  Cn1
+ BYTE   W06
+ BYTE   N06  Cs2
+ BYTE   N06  En2
+ BYTE   N06  Dn1
+ BYTE   W12
+ BYTE   PEND 
+//  #07 //014   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C503B
+//  #07 //015   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C503B
+//  #07 //016   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C4FE7
+//  #07 //017   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C503B
+//  #07 //018   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C503B
+//  #07 //019   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C503B
+//  #07 //020   ----------------------------------------
+ BYTE   N06  An4  v100
+ BYTE   N06  En2
+ BYTE   N06  Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   N06  As4
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W12
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W12
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W12
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W18
+//  #07 //021   ----------------------------------------
+Label_013C50ED:
+ BYTE   N06  As4  v100
+ BYTE   N06  An4
+ BYTE   N06  Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   As4
+ BYTE   N06  An4
+ BYTE   W12
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   As4
+ BYTE   N06  An4
+ BYTE   W12
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   As4
+ BYTE   N06  An4
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W12
+ BYTE   As4
+ BYTE   N06  An4
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  Bn0
+ BYTE   N06  An1
+ BYTE   W06
+ BYTE   As4
+ BYTE   N06  An4
+ BYTE   W18
+ BYTE   PEND 
+//  #07 //022   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C50ED
+//  #07 //023   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C50ED
+//  #07 //024   ----------------------------------------
+ BYTE   N06  An2  v100
+ BYTE   N06  An4
+ BYTE   N06  En2
+ BYTE   N06  Cn1
+ BYTE   N06  An1
+ BYTE   N06  As4
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  An1
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W12
+ BYTE   Cs2
+ BYTE   N06  Cn1
+ BYTE   N06  An1
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W12
+ BYTE   Cn1
+ BYTE   N06  An1
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  An1
+ BYTE   N06  Bn0
+ BYTE   W12
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W06
+ BYTE   En2
+ BYTE   N06  Cn1
+ BYTE   N06  An1
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W18
+//  #07 //025   ----------------------------------------
+Label_013C517C:
+ BYTE   N06  An1  v100
+ BYTE   N06  Cn1
+ BYTE   N06  An4
+ BYTE   N06  As4
+ BYTE   N06  En2
+ BYTE   N06  An2
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   Cn1
+ BYTE   N06  An1
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W12
+ BYTE   An1
+ BYTE   N06  Cn1
+ BYTE   N06  Cs2
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W12
+ BYTE   An1
+ BYTE   N06  Cn1
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W06
+ BYTE   An1
+ BYTE   N06  Cn1
+ BYTE   N06  Bn0
+ BYTE   W12
+ BYTE   As4
+ BYTE   N06  An4
+ BYTE   W06
+ BYTE   An1
+ BYTE   N06  Cn1
+ BYTE   N06  En2
+ BYTE   N06  Bn0
+ BYTE   W06
+ BYTE   An4
+ BYTE   N06  As4
+ BYTE   W18
+ BYTE   PEND 
+//  #07 //026   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_013C517C
+//  #07 //027   ----------------------------------------
+ BYTE   W96
+//  #07 //028   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_013C4EA2
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+Deicide:
+	BYTE	7	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	Deicide_pri	// Priority
+	BYTE	Deicide_rev	// Reverb.
+    
+	POIN2	Deicide_grp
+    
+	POIN2	Deicide_001
+	POIN2	Deicide_002
+	POIN2	Deicide_003
+	POIN2	Deicide_004
+	POIN2	Deicide_005
+	POIN2	Deicide_006
+	POIN2	Deicide_007
+
+	

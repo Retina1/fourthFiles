@@ -183,6 +183,10 @@ endless sky[...][A][EyesClose][X]
 [MidRight][Ayda]
 This feeling[...] It's no[N]
 real escape[...][A][EyesClose][X]
+##AydaDuelingGroundsWin
+[MidLeft][Ayda]
+You've bested me[...][N]
+I commend you.[A][X]
 
 //swordfighters
 ##CoastKidDeath

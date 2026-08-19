@@ -1,0 +1,17 @@
+//wait	filename
+28	FF5 - Caves 01.mapanime 1_000.bmp	4096
+28	FF5 - Caves 01.mapanime 1_001.bmp	4096
+28	FF5 - Caves 01.mapanime 1_002.bmp	4096
+28	FF5 - Caves 01.mapanime 1_003.bmp	4096
+28	FF5 - Caves 01.mapanime 1_004.bmp	4096
+28	FF5 - Caves 01.mapanime 1_005.bmp	4096
+28	FF5 - Caves 01.mapanime 1_006.bmp	4096
+28	FF5 - Caves 01.mapanime 1_007.bmp	4096
+28	FF5 - Caves 01.mapanime 1_008.bmp	4096
+28	FF5 - Caves 01.mapanime 1_009.bmp	4096
+28	FF5 - Caves 01.mapanime 1_010.bmp	4096
+28	FF5 - Caves 01.mapanime 1_011.bmp	4096
+28	FF5 - Caves 01.mapanime 1_012.bmp	4096
+28	FF5 - Caves 01.mapanime 1_013.bmp	4096
+28	FF5 - Caves 01.mapanime 1_014.bmp	4096
+28	FF5 - Caves 01.mapanime 1_015.bmp	4096 

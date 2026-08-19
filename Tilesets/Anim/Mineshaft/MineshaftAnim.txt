@@ -1,0 +1,17 @@
+//wait	filename
+27	MineshaftAnim_000.png	4096
+27	MineshaftAnim_001.png	4096
+27	MineshaftAnim_002.png	4096
+27	MineshaftAnim_003.png	4096
+27	MineshaftAnim_004.png	4096
+27	MineshaftAnim_005.png	4096
+27	MineshaftAnim_006.png	4096
+27	MineshaftAnim_007.png	4096
+27	MineshaftAnim_008.png	4096
+27	MineshaftAnim_009.png	4096
+27	MineshaftAnim_010.png	4096
+27	MineshaftAnim_011.png	4096
+27	MineshaftAnim_012.png	4096
+27	MineshaftAnim_013.png	4096
+27	MineshaftAnim_014.png	4096
+27	MineshaftAnim_015.png	4096

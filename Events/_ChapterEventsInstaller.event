@@ -11,7 +11,7 @@
 #define SetUnitStatline(unit,mhp,str,mag,skl,spd,luk,def,res) "SetUnitStatus(unit,MaxHP,mhp);SetUnitStatus(unit,CurrentHP,mhp);SetUnitStatus(unit,Strength,str);SetUnitStatus(unit,Magic,mag);SetUnitStatus(unit,Skill,skl);SetUnitStatus(unit,Speed,spd);SetUnitStatus(unit,LuckStat,luk);SetUnitStatus(unit,Defence,def);SetUnitStatus(unit,Resistance,res)"
 #define SetUnitWEXP(unit,swd,lnc,axe,bow,stf) "SetUnitStatus(unit,SwordExp,swd);SetUnitStatus(unit,LanceExp,lnc);SetUnitStatus(unit,AxeExp,axe);SetUnitStatus(unit,BowExp,bow);SetUnitStatus(unit,StaffExp,stf)"
 
-	
+
 #define AreaEvent(eventID,EventPointer,corner1x,corner1y,corner2x,corner2y)   "AREA eventID EventPointer [corner1x,corner1y] [corner2x,corner2y]" 
 #define AreaEvent(flag,label,x,y) "AreaEvent(flag,label,x,y,x,y)"
 	
@@ -69,7 +69,12 @@
 #include "WorldMapEvents.event"
 #include "LordSplitMenus/LordSplitMenuPlus.event"
 
+#define ActiveUnitCheck(id) "SHORT 0xB500; BYTE id 0x20; SHORT 0x4901 0x468E 0xF800 0xBD00; POIN EventPrereq_ActiveUnitCheck"
 
+PUSH; ORG CURRENTOFFSET+1; EventPrereq_ActiveUnitCheck: POP
+SHORT 0x4904 0x6809 0x6809 0x7909 0x4281 0xD101 0x2001 0x4770 0x2000 0x4770; WORD 0x03004E50
+	
+ALIGN 4
 DifficultySwapEvent:
 SetBackground(0x35)
 

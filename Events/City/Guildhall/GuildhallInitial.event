@@ -307,7 +307,7 @@ GuildLoad(Anjelica,Recruit_Anjelica,0x2)
 GuildLoad(Rodney,Recruit_Rodney,0x3)
 GuildLoad(Gamon,Recruit_Gamon,0x4)
 GuildLoad(Jane,Recruit_Jane,0x5)
-GuildLoad(Eliza,Recruit_Eliza,0x6)
+GuildLoad(Eliza,Recruit_Eliza,0x6,Chapter5DoneFlag)
 FADU 10
 ENDA
 

@@ -1,0 +1,7 @@
+FieldsANI
+FrontierANI
+CastleANI
+VillageANI
+CavesANI
+MetropolisANI
+MineshaftANI

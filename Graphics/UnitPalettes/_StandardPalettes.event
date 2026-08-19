@@ -53,6 +53,11 @@ ALIGN 4
 Ronin_HelenaDMP:
 #incbin "paletteFiles/Standard/Ronin_Helena.dmp"
 
+PaletteIdentifier(Ronin_Ayda, Ronin_AydaDMP)
+ALIGN 4
+Ronin_AydaDMP:
+#incbin "paletteFiles/NPCs/Ronin_Ayda.dmp"
+
 
 ALIGN 4
 MyrmidonPaletteList:
@@ -71,6 +76,7 @@ PaletteAssociationEntry(Ghari,Ronin_Ghari)
 PaletteAssociationEntry(Azaghal,Ronin_Azaghal)
 PaletteAssociationEntry(Tachyon,Ronin_Tachyon)
 PaletteAssociationEntry(Helena,Ronin_Helena)
+PaletteAssociationEntry(Ayda,Ronin_Ayda)
 WORD 0 0
 
 //rider

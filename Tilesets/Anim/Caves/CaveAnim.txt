@@ -1,0 +1,17 @@
+//wait	filename
+28	CaveAnim_000.png	4096
+28	CaveAnim_001.png	4096
+28	CaveAnim_002.png	4096
+28	CaveAnim_003.png	4096
+28	CaveAnim_004.png	4096
+28	CaveAnim_005.png	4096
+28	CaveAnim_006.png	4096
+28	CaveAnim_007.png	4096
+28	CaveAnim_008.png	4096
+28	CaveAnim_009.png	4096
+28	CaveAnim_010.png	4096
+28	CaveAnim_011.png	4096
+28	CaveAnim_012.png	4096
+28	CaveAnim_013.png	4096
+28	CaveAnim_014.png	4096
+28	CaveAnim_015.png	4096

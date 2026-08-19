@@ -61,6 +61,16 @@ Hiyaaaaaaaah![A][X]
 ##Ratatoskr_Defeat1
 [MidLeft][Ratatoskr]
 Zuh! I'm sent flying![A][X]
+##Ratatoskr_Defeat1Feefasnan
+[MidLeft][Ratatoskr]
+You shouldn't yet be[N]
+here.[A] From where[N]
+have you come?[AN]
+Has the overseer torn[N]
+asunder time's flow?[AN]
+No matter. My role is[N]
+still unchanging.[AN]
+[...]Zuh! I'm sent flying![A][X]
 
 ##Dungeon1_Ending
 [FarLeft][Gore][Left][Nathan][MidRight][Astarte][Left]

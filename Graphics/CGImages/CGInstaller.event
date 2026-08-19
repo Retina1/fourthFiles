@@ -133,3 +133,21 @@ GoreEyeImage:
 ALIGN 4
 GoreEyePalette:
 #incbin "MoreColors/gfx/BG/224GoreEyePal.dmp"
+#define RatAuraCG 0x3c
+SetColorsBackground(RatAuraCG,RatAuraImage,RatAuraPalette)
+ALIGN 4
+RatAuraImage:
+#incbin "MoreColors/gfx/BG/224Rat.dmp"
+ALIGN 4
+RatAuraPalette:
+#incbin "MoreColors/gfx/BG/224RatPal.dmp"
+
+#define DecisionSoloCG 0x3d
+SetColorsBackground(DecisionSoloCG,DecisionSoloImage,DecisionSoloPalette)
+ALIGN 4
+DecisionSoloImage:
+#incbin "MoreColors/gfx/BG/224DecisionSolo.dmp"
+ALIGN 4
+DecisionSoloPalette:
+#incbin "MoreColors/gfx/BG/224DecisionSoloPal.dmp"
+

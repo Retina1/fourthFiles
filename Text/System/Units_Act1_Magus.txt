@@ -33,7 +33,7 @@ adoptive father. She's softspoken.[X]
 Lucien[X]
 ##Desc_Lucien
 A Belvarusi statesman who seeks peace[N]
-among the nations. ...He's suspicious.[X]
+among the nations. He's... suspicious.[X]
 
 //space
 ##Name_Juliette

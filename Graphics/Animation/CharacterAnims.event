@@ -1,3 +1,82 @@
+
+//Lancer
+{
+#include "CharAnims/Female_Lancer/Lance Installer.event"
+#include "CharAnims/Female_Lancer/Unarmed Installer.event"
+}
+ALIGN 4
+Female_LancerAnims:
+PierceAnim(Female_Lancer_Lance)
+UnarmedAnim(Female_Lancer_Unarmed)
+EndAnim
+//Hunter
+{
+#include "CharAnims/Female_Hunter/Bow Installer.event"
+#include "CharAnims/Female_Hunter/Unarmed Installer.event"
+}
+ALIGN 4
+Female_HunterAnims:
+RangedAnim(Female_Hunter_Bow)
+UnarmedAnim(Female_Hunter_Unarmed)
+EndAnim
+//Survivalist
+{
+#include "CharAnims/Female_Survivalist/Bow Installer.event"
+#include "CharAnims/Female_Survivalist/Unarmed Installer.event"
+}
+ALIGN 4
+Female_SurvivalistAnims:
+RangedAnim(Female_Survivalist_Bow)
+UnarmedAnim(Female_Survivalist_Unarmed)
+EndAnim
+
+
+//Female_Lurker
+{
+#include "CharAnims/Female_Lurker/Magic Installer.event"
+}
+ALIGN 4
+Female_LurkerAnims:
+PierceAnim(Female_Lurker_Magic)
+SupportAnim(Female_Lurker_Magic)
+UnarmedAnim(Female_Lurker_Magic)
+EndAnim
+//Hexer
+{
+#include "CharAnims/Female_Hexer/Magic Installer.event"
+}
+ALIGN 4
+Female_HexerAnims:
+PierceAnim(Female_Hexer_Magic)
+SupportAnim(Female_Hexer_Magic)
+UnarmedAnim(Female_Hexer_Magic)
+EndAnim
+
+//Priest
+{
+#include "CharAnims/Male_Priest/Sword Installer.event"
+#include "CharAnims/Male_Priest/Unarmed Installer.event"
+}
+ALIGN 4
+Male_PriestAnims:
+SlashAnim(Male_Priest_Sword)
+RodAnim(Male_Priest_Sword)
+RodAnim(Male_Priest_Sword)
+UnarmedAnim(Male_Priest_Unarmed)
+EndAnim
+//Male_WarMagus
+{
+#include "CharAnims/Male_WarMagus/Sword Installer.event"
+#include "CharAnims/Male_WarMagus/Magic Installer.event"
+}
+ALIGN 4
+Male_WarMagusAnims:
+SlashAnim(Male_WarMagus_Sword)
+RodAnim(Male_WarMagus_Sword)
+NonRodAnim(Male_WarMagus_Magic)
+UnarmedAnim(Male_WarMagus_Magic)
+EndAnim
+
 //Seeker
 {
 #include "CharAnims/Shorthair_Seeker/Magic Installer.event"

@@ -31,7 +31,7 @@ LocationBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
-DefeatAll(EndingScene)
+DefeatBoss(EndingScene)
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -107,6 +107,9 @@ EndEvent
 EndingScene:
 EndingSceneToggles
 MUSC 0x0
+FADI 2
+STAL 120
+MNTS 0x1
 //CleanTextNoMap(0x18,Chapter3_Ending_1)
 //epilogue?
 //MoveToChapter(Stratum5BF1)

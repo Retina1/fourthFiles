@@ -109,10 +109,25 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 Encounter1Enemies:
-UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [3,6] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
 UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [3,7] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
 UNIT MonsterGeneric Bigle 0x0 Level(9,Enemy,1) [2,10] 0x0 0x0 0x0 0x0 [EvilEye] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(9,Enemy,1) [1,9] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(9,Enemy,1) [3,9] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT
+Encounter1EnemiesExpert:
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [3,7] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric Bigle 0x0 Level(9,Enemy,1) [2,10] 0x0 0x0 0x0 0x0 [EvilEye] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(9,Enemy,1) [1,9] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(9,Enemy,1) [3,9] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
+UNIT
+Encounter1EnemiesHeroic:
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [3,7] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric Bigle 0x0 Level(9,Enemy,1) [2,10] 0x0 0x0 0x0 0x0 [EvilEye] NoAI
+UNIT MonsterGeneric Bigle 0x0 Level(9,Enemy,1) [3,11] 0x0 0x0 0x0 0x0 [SealGleam] NoAI
+UNIT MonsterGeneric Crawler 0x0 Level(9,Enemy,1) [1,9] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(9,Enemy,1) [3,9] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
 UNIT
 
@@ -127,11 +142,27 @@ UNIT
 
 Encounter2Enemies:
 UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [10,15] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+//UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [17,14] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [17,18] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric Gargoyle 0x0 Level(8,Enemy,1) [16,15] 0x0 0x0 0x0 0x0 [Pike] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(8,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [Longbow] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(8,Enemy,1) [15,18] 0x0 0x0 0x0 0x0 [Recurve] NoAI
+UNIT
+Encounter2EnemiesExpert:
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [10,15] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
 UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [17,14] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
 UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [17,18] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
 UNIT MonsterGeneric Gargoyle 0x0 Level(8,Enemy,1) [16,15] 0x0 0x0 0x0 0x0 [Pike] NoAI
 UNIT MonsterGeneric BowWight 0x0 Level(8,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [Longbow] NoAI
 UNIT MonsterGeneric BowWight 0x0 Level(8,Enemy,1) [15,18] 0x0 0x0 0x0 0x0 [Recurve] NoAI
+UNIT
+Encounter2EnemiesHeroic:
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [13,15] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [17,14] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [17,18] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterGeneric Gargoyle 0x0 Level(8,Enemy,1) [16,15] 0x0 0x0 0x0 0x0 [Shieldlance] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(8,Enemy,1) [12,13] 0x0 0x0 0x0 0x0 [Longbow] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(8,Enemy,1) [15,18] 0x0 0x0 0x0 0x0 [Longbow] NoAI
 UNIT
 
 EncounterWyvernUnits:
@@ -146,6 +177,17 @@ EncounterWyvernEnemies:
 UNIT Dragon Wyvern 0x0 Level(11,Enemy,1) [16,16] DropItem 0x0 0x0 0x0 [Voltage,HolyCloak] NoAI
 UNIT MonsterGeneric BowWight 0x0 Level(9,Enemy,1) [17,14] 0x0 0x0 0x0 0x0 [Longbow] NoAI
 UNIT MonsterGeneric BowWight 0x0 Level(9,Enemy,1) [17,18] 0x0 0x0 0x0 0x0 [Longbow] NoAI
+UNIT
+EncounterWyvernEnemiesExpert:
+UNIT Dragon Wyvern 0x0 Level(11,Enemy,1) [16,16] DropItem 0x0 0x0 0x0 [Voltage,SoulShield,HolyCloak] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(9,Enemy,1) [17,14] 0x0 0x0 0x0 0x0 [Longbow] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(9,Enemy,1) [17,18] 0x0 0x0 0x0 0x0 [Longbow] NoAI
+UNIT
+EncounterWyvernEnemiesHeroic:
+UNIT Dragon Wyvern 0x0 Level(11,Enemy,1) [16,16] DropItem 0x0 0x0 0x0 [Voltage,SoulShield,HolyCloak] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(9,Enemy,1) [17,14] 0x0 0x0 0x0 0x0 [Longbow] NoAI
+UNIT MonsterGeneric BowWight 0x0 Level(9,Enemy,1) [17,18] 0x0 0x0 0x0 0x0 [Longbow] NoAI
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [10,15] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
 UNIT
 
 ALIGN 4
@@ -174,7 +216,7 @@ CHECK_EVENTID WaitEventTrapsFlag
 BEQ 0x1 0xc 0x0
 BeginCombatEncounter
 LOAD3 0x0 Encounter1Units; ENUN
-LOAD1 0x0 Encounter1Enemies; ENUN
+LoadUnitsByDifficulty(Encounter1Enemies,Encounter1EnemiesExpert,Encounter1EnemiesHeroic)
 CreateArenaSingleCorner(5,5)
 CreateArenaSingleCorner(5,15)
 FADU 16
@@ -191,7 +233,7 @@ CHECK_EVENTID WaitEventTrapsFlag
 BEQ 0x1 0xc 0x0
 BeginCombatEncounter
 LOAD3 0x0 Encounter2Units; ENUN
-LOAD1 0x0 Encounter2Enemies; ENUN
+LoadUnitsByDifficulty(Encounter2Enemies,Encounter2EnemiesExpert,Encounter2EnemiesHeroic)
 CreateArenaBorders(9,12,18,21)
 FADU 16
 MUSC Song_InitialStrike
@@ -225,7 +267,7 @@ IfNoSelectedGoto(0x1)
 SystemText(Wyvern_Encounter)
 BeginCombatEncounter
 LOAD3 0x0 EncounterWyvernUnits; ENUN
-LOAD1 0x0 EncounterWyvernEnemies; ENUN
+LoadUnitsByDifficulty(EncounterWyvernEnemies,EncounterWyvernEnemiesExpert,EncounterWyvernEnemiesHeroic)
 SetUnitStatline(Dragon,55,16,12,18,16,10,15,16)
 CreateArenaSingleCorner(9,12)
 FADU 16
