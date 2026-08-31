@@ -106,9 +106,10 @@ draw_aid_icon_at 18, 13
 draw_status_text_at 21, 11
 
 
-ldr r0,=TalkTextIDLink
-ldrh r0,[r0]
-draw_talk_text_at 21, 13
+@ldr r0,=TalkTextIDLink
+@ldrh r0,[r0]
+@draw_talk_text_at 21, 13
+draw_trv_text_at 21, 13
 
 Nexty:
 

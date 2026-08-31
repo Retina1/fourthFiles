@@ -51,6 +51,8 @@ WarMagus_Sword
 WarMagus_Magic
 Lurker_Magic
 Hexer_Magic
+DarkHunter_Whip
+DarkHunter_Unarmed
 Lancer_Lance
 Lancer_Unarmed
 Highlander_Lance
@@ -178,6 +180,8 @@ Male_WarMagus_Sword
 Male_WarMagus_Magic
 Female_Lurker_Magic
 Female_Hexer_Magic
+Male_DarkHunter_Whip
+Male_DarkHunter_Unarmed
 Female_Lancer_Lance
 Female_Lancer_Unarmed
 Female_Hunter_Bow

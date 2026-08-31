@@ -27,6 +27,11 @@ void Ch14UndeployUnitsASMC(struct EventEngineProc* proc) {
 	}
 }
 
+//generally helpful
+void ClearAllBuffsDebuffsASMC(struct EventEngineProc* proc) {
+	ClearAllBuffsDebuffs();
+}
+
 //ch7
 void FullyHealGoreCh7(struct EventEngineProc* proc) {
 	struct Unit* unit = GetUnitFromCharId(3);

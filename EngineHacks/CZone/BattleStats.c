@@ -390,6 +390,10 @@ s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** o
 			if ((gBattleTarget.unit.curHP) <= (GetUnitMaxHp(&gBattleTarget.unit)/2)){
 				return FALSE;
 			}
+			else {
+				*outAttacker = &gBattleActor;
+				*outDefender = &gBattleTarget;
+			}
 		}
 		else {
 			*outAttacker = &gBattleActor;
@@ -401,10 +405,14 @@ s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** o
 			if ((gBattleActor.unit.curHP) <= (GetUnitMaxHp(&gBattleActor.unit)/2)){
 				return FALSE;
 			}
+			else {
+				*outAttacker = &gBattleTarget;
+				*outDefender = &gBattleActor;
+		}
 		}
 		else {
-        *outAttacker = &gBattleTarget;
-        *outDefender = &gBattleActor;
+			*outAttacker = &gBattleTarget;
+			*outDefender = &gBattleActor;
 		}
     }
 

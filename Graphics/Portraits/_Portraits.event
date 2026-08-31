@@ -27,6 +27,38 @@ TychoDMP:
 //do exceed math
 setMugEntryExtend(TychoMug,TychoDMP,2,5,2,3, 0,2, 0,0)
 
+ALIGN 4
+//tastapasta
+RikkiaDMP:
+#incbin "dmps/tastapastaRikkia.dmp"
+setMugEntry(RikkiaMug,RikkiaDMP,2,6,2,4)
+
+ALIGN 4
+//neen
+NaoDMP:
+#incbin "dmps/neenscrameNao.dmp"
+setMugEntry(NaoMug,NaoDMP,3,6,3,4)
+
+ALIGN 4
+//augenis mugged
+VelissaDMP:
+#incbin "dmps/augenisVelissa.dmp"
+setMugEntry(VelissaMug,VelissaDMP,3,6,3,4)
+ALIGN 4
+//augenis
+WitoldDMP:
+#incbin "dmps/augenisWitold.dmp"
+setMugEntry(WitoldMug,WitoldDMP,3,5,3,3)
+
+ALIGN 4
+//admrl and mugged
+GloriaDMP:
+#incbin "dmps/admrlGloria.dmp"
+setMugEntry(GloriaMug,GloriaDMP,3,5,3,3)
+ALIGN 4
+EdithDMP:
+#incbin "dmps/admrlEdith.dmp"
+setMugEntry(EdithMug,EdithDMP,3,5,3,3)
 
 ALIGN 4
 //ditto
@@ -39,6 +71,10 @@ ALIGN 4
 QuintonDMP:
 #incbin "dmps/breadbugQuinton.dmp"
 setMugEntry(QuintonMug,QuintonDMP,2,4,2,2)
+ALIGN 4
+HocanteDMP:
+#incbin "dmps/breadbugHocante.dmp"
+setMugEntry(HocanteMug,HocanteDMP,2,4,2,2)
 
 ALIGN 4
 //t0w0mey
@@ -456,6 +492,10 @@ ALIGN 4
 SzessDMP:
 #incbin "dmps/guardSzess.dmp"
 setMugEntry(SzessMug,SzessDMP,3,5,3,3)
+ALIGN 4
+ElizaDMP:
+#incbin "dmps/guardEliza.dmp"
+setMugEntry(ElizaMug,ElizaDMP,3,5,3,3)
 ALIGN 4
 AlvaDMP:
 #incbin "dmps/guardAlva.dmp"

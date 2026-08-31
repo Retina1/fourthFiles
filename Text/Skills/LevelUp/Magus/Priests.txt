@@ -22,14 +22,14 @@ Level: [_0] (Passive)[N]
 Strap a blade to a rod[N]
 and a rod to a blade.[N]
 Next: Swords and staves can[N]
-both used for all arts.[N]
+both be used for all arts.[N]
 Req: None[X]
 ## ^
 Level: MAX (Passive)[N]
 Strap a blade to a rod[N]
 and a rod to a blade.[N]
 Swords and staves can[N]
-both used for all arts.[N]
+both be used for all arts.[N]
 [X]
 
 ##WarImbueSkill

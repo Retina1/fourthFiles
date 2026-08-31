@@ -4,7 +4,7 @@
 	#define	TilDeathRimsala_grp  voicegroup000
 	#define	TilDeathRimsala_pri  0
 	#define	TilDeathRimsala_rev  0
-	#define	TilDeathRimsala_mvl  127
+	#define	TilDeathRimsala_mvl  150
 	#define	TilDeathRimsala_key  0
 	#define	TilDeathRimsala_tbs  1
 	#define	TilDeathRimsala_exg  0

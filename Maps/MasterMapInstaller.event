@@ -29,4 +29,5 @@
 #include "MainChapters\Chapter6.event"
 #include "MainChapters\Chapter7.event"
 #include "MainChapters\Chapter8.event"
+#include "MainChapters\Chapter9.event"
 #include "MainChapters\EndgameB.event"

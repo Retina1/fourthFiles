@@ -43,7 +43,7 @@ AreaEvent(0x9,Encounter1,0,14,0,14)
 AreaEvent(0xa,Encounter2,12,18,12,18)
 AreaEvent(0xd,Quest1_5x_Event,1,2,2,2)
 AreaEvent(0x10,Quest1_5x_Reminder,6,3)
-AreaEvent(0xf,EncounterWyvern,14,14,17,18)
+AreaEvent(0xf,EncounterWyvern,13,14,17,18)
 AreaEvent(0x0,Warp5_0,5,0)
 AreaEvent(0x0,Warp16_0,16,0)
 AreaEvent(0x0,Warp23_0,23,0)
@@ -65,6 +65,7 @@ AreaEvent(0x0,Warp12_10,12,10)
 AreaEvent(0x0,Warp15_11,15,11)
 AreaEvent(0x0,Warp12_12,12,12)
 AreaEvent(0x0,Warp25_12,25,12)
+AreaEvent(0x0,Warp29_12,29,12)
 AreaEvent(0x0,Warp6_13,6,13)
 AreaEvent(0x0,Warp26_13,26,13)
 AreaEvent(0x0,Warp2_17,2,17)
@@ -109,8 +110,8 @@ UNIT Nathan 0x0 0x1 Level(1,Ally,0) [2,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 Encounter1Enemies:
+UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [4,6] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
 UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [3,6] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
-UNIT MonsterGeneric MaulMole 0x0 Level(9,Enemy,1) [3,7] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
 UNIT MonsterGeneric Bigle 0x0 Level(9,Enemy,1) [2,10] 0x0 0x0 0x0 0x0 [EvilEye] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(9,Enemy,1) [1,9] 0x0 0x0 0x0 0x0 [VileClaw] NoAI
 UNIT MonsterGeneric Crawler 0x0 Level(9,Enemy,1) [3,9] 0x0 0x0 0x0 0x0 [ToxicClaw] NoAI
@@ -338,6 +339,9 @@ WarpNathan(8,13)
 EndEvent
 Warp25_12:
 WarpNathan(25,21)
+EndEvent
+Warp29_12:
+WarpNathan(29,2)
 EndEvent
 Warp12_12:
 WarpNathan(20,12)

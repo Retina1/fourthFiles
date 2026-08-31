@@ -57,7 +57,18 @@ void TickActiveFactionTurn(void) {
 		unit->state = (unit->state) &~ US_BIT_ALREADY_REFRESHED;
 
         if (unit->bindDuration != 0) {
-            unit->bindDuration--;
+			
+			//thorn crown
+			for(int j = 0; j < GetUnitItemCount(unit); j++) {
+				u16 curItem = unit->items[j];
+				if(GetItemIndex(curItem) == 0xDE) {
+					unit->bindDuration = 0;
+				}
+			}
+			
+			if (unit->bindDuration > 0) {
+				unit->bindDuration--;
+			}
 			if (unit->bindDuration == 0) {
 				 unit->isHeadBound    = 0;
 				 unit->isArmBound    = 0;
@@ -71,8 +82,19 @@ void TickActiveFactionTurn(void) {
 		TickUnitStateTimer(unit);
 
         if (unit->statusDuration != 0) {
-            if (unit->statusIndex != UNIT_STATUS_RECOVER)
-                unit->statusDuration--;
+            if (unit->statusIndex != UNIT_STATUS_RECOVER) {
+                //thorn crown
+				for(int j = 0; j < GetUnitItemCount(unit); j++) {
+					u16 curItem = unit->items[j];
+					if(GetItemIndex(curItem) == 0xDE) {
+						unit->statusDuration = 0;
+					}
+				}
+				
+				if (unit->statusDuration > 0) {
+					unit->statusDuration--;
+				}
+			}
 
             if (unit->statusDuration == 0)
                 AddTarget(unit->xPos, unit->yPos, unit->index, 0);
@@ -89,6 +111,16 @@ void TickActiveFactionTurn(void) {
 			if (unit->classSkillState & (1 << 1)) {
 				unit->state = (unit->state)|US_UNSELECTABLE;
 				unit->classSkillState = unit->classSkillState ^ (1 << 1);
+			}
+		}
+		 //thorn crown
+		for(int j = 0; j < GetUnitItemCount(unit); j++) {
+			u16 curItem = unit->items[j];
+			if(GetItemIndex(curItem) == 0xDE) {
+				unit->curHP = unit->curHP/2;
+				if (unit->curHP == 0) {
+					unit->curHP = 1;
+				}
 			}
 		}
 

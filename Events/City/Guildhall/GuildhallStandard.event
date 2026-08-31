@@ -71,6 +71,9 @@ UNIT
 Recruit_Campbell:
 UNIT Campbell 0x0 0x1 Level(4,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Yue] NoAI
 UNIT
+Recruit_Edith:
+UNIT Edith 0x0 0x1 Level(3,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Labrys] NoAI
+UNIT
 
 Recruit_Martin:
 UNIT Martin 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Handgonne] NoAI
@@ -159,6 +162,9 @@ EndEvent
 Campbell_RecruitEvent:
 GuildRecruit(Campbell,Guild_Campbell_Dialogue,0x25)
 EndEvent
+Edith_RecruitEvent:
+GuildRecruit(Edith,Guild_Edith_Dialogue,0x26)
+EndEvent
 
 //gunner
 Martin_RecruitEvent:
@@ -218,6 +224,7 @@ GuildLoad(Pipsy,Recruit_Pipsy,0x3,Chapter8DoneFlag)
 GuildLoad(Son,Recruit_Son,0x4)
 GuildLoad(Hart,Recruit_Hart,0x5)
 GuildLoad(Campbell,Recruit_Campbell,0x6)
+GuildLoad(Edith,Recruit_Edith,0x7,Chapter5DoneFlag)
 FADU 10
 ENDA
 

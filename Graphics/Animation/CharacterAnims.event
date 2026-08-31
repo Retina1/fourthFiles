@@ -1,3 +1,13 @@
+//Male_DarkHunter
+{
+#include "CharAnims/Male_DarkHunter/Whip Installer.event"
+#include "CharAnims/Male_DarkHunter/Unarmed Installer.event"
+}
+ALIGN 4
+Male_DarkHunterAnims:
+SlashAnim(Male_DarkHunter_Whip)
+UnarmedAnim(Male_DarkHunter_Unarmed)
+EndAnim
 
 //Lancer
 {

@@ -4,7 +4,7 @@
 	#define	InspectingTheResoundingWeapons_grp  voicegroup000
 	#define	InspectingTheResoundingWeapons_pri  0
 	#define	InspectingTheResoundingWeapons_rev  0
-	#define	InspectingTheResoundingWeapons_mvl  127
+	#define	InspectingTheResoundingWeapons_mvl  150
 	#define	InspectingTheResoundingWeapons_key  0
 	#define	InspectingTheResoundingWeapons_tbs  1
 	#define	InspectingTheResoundingWeapons_exg  0

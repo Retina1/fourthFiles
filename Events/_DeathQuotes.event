@@ -112,7 +112,7 @@ AlwaysDeathQuote(Eight,0x0,EightDeath)
 AlwaysDeathQuote(Randellan,0x0,RandellanDeath)
 AlwaysDeathQuote(Juniper,0x0,JuniperDeath)
 AlwaysDeathQuote(AuntAysu,0x0,AuntAysuDeath)
-
+AlwaysDeathQuote(Marcel,0x0,MarcelDeath)
 //arc
 AlwaysDeathQuote(Hallie,0x0,HallieDeath)
 AlwaysDeathQuote(Anjelica,0x0,AnjelicaDeath)
@@ -120,7 +120,7 @@ AlwaysDeathQuote(Rodney,0x0,RodneyDeath)
 AlwaysDeathQuote(Gamon,0x0,GamonDeath)
 AlwaysDeathQuote(Jane,0x0,JaneDeath)
 AlwaysDeathQuote(Eliza,0x0,ElizaDeath)
-
+AlwaysDeathQuote(Temira,0x0,TemiraDeath)
 //sch
 AlwaysDeathQuote(Cassandra,0x0,CassandraDeath)
 AlwaysDeathQuote(Waves,0x0,WavesDeath)
@@ -160,7 +160,7 @@ AlwaysDeathQuote(Pipsy,0x0,PipsyDeath)
 AlwaysDeathQuote(Son,0x0,SonDeath)
 AlwaysDeathQuote(Hart,0x0,HartDeath)
 AlwaysDeathQuote(Campbell,0x0,CampbellDeath)
-
+AlwaysDeathQuote(Edith,0x0,EdithDeath)
 //gun
 AlwaysDeathQuote(Martin,0x0,MartinDeath)
 AlwaysDeathQuote(Demico,0x0,DemicoDeath)
@@ -247,8 +247,8 @@ AlwaysDeathQuote(Celeste,0x0,CelesteDeath)
 AlwaysDeathQuote(Merilee,0x0,MerileeDeath)
 AlwaysDeathQuote(Shasso,0x0,ShassoDeath)
 AlwaysDeathQuote(River,0x0,RiverDeath)
-
-
+AlwaysDeathQuote(Hocante,0x0,HocanteDeath)
+AlwaysDeathQuote(Witold,0x0,WitoldDeath)
 //apoth
 AlwaysDeathQuote(Leize,0x0,LeizeDeath)
 AlwaysDeathQuote(Wendy,0x0,WendyDeath)
@@ -256,7 +256,7 @@ AlwaysDeathQuote(Jim,0x0,JimDeath)
 AlwaysDeathQuote(Dalai,0x0,DalaiDeath)
 AlwaysDeathQuote(Etto,0x0,EttoDeath)
 AlwaysDeathQuote(Alexandrus,0x0,AlexandrusDeath)
-
+AlwaysDeathQuote(Nao,0x0,NaoDeath)
 //circ
 AlwaysDeathQuote(Compass,0x0,CompassDeath)
 AlwaysDeathQuote(Katrin,0x0,KatrinDeath)
@@ -280,7 +280,7 @@ AlwaysDeathQuote(Cherryl,0x0,CherrylDeath)
 AlwaysDeathQuote(Cato,0x0,CatoDeath)
 AlwaysDeathQuote(Yujin,0x0,YujinDeath)
 AlwaysDeathQuote(Ascella,0x0,AscellaDeath)
-
+AlwaysDeathQuote(Clarisse,0x0,ClarisseDeath)
 //duel
 AlwaysDeathQuote(Francesca,0x0,FrancescaDeath)
 AlwaysDeathQuote(Felicity,0x0,FelicityDeath)
@@ -296,7 +296,7 @@ AlwaysDeathQuote(Frost,0x0,FrostDeath)
 AlwaysDeathQuote(Alva,0x0,AlvaDeath)
 AlwaysDeathQuote(Dai,0x0,DaiDeath)
 AlwaysDeathQuote(Auri,0x0,AuriDeath)
-
+AlwaysDeathQuote(Rikkia,0x0,RikkiaDeath)
 //arti
 AlwaysDeathQuote(Subtractron,0x0,SubtractronDeath)
 AlwaysDeathQuote(Ambrose,0x0,AmbroseDeath)

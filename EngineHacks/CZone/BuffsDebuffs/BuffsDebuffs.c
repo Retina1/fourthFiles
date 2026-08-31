@@ -143,6 +143,20 @@ void TickUnitBuffTimer(struct Unit* unit) {
 			entry->buff3 = 0;
 		}
 	}
+	
+	//thorn crown
+	for(int j = 0; j < GetUnitItemCount(unit); j++) {
+		u16 curItem = unit->items[j];
+		if(GetItemIndex(curItem) == 0xDE) {
+			entry->debuff1 = 0;
+			entry->debuff1dur = 0;
+			entry->debuff2 = 0;
+			entry->debuff2dur = 0;
+			entry->debuff3 = 0;
+			entry->debuff3dur = 0;
+		}
+	}
+	
 	if (entry->debuff1dur > 0) {
 		entry->debuff1dur = entry->debuff1dur-1;
 		if (entry->debuff1dur == 0) {

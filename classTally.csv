@@ -1,28 +1,28 @@
-Classline,Main Story Units,Total,Subs,Written,Unit,(#) is Ch.#,(!) is quest,i will forget,to track that,,CAP: 7
-Priest,Astarte,8,7,0,Saewynn,Ellie (10),Selene,Nina,Levi,Taft,Lantom (8)
-Scholar,Nathan,8,7,DONE,Cassandra,Waves,Cyanne,Victor,Lonsdale (5),Hugo,Lyud
-Dark Hunter,Cleone,8,7,0,Luis,Saoirse,Wund,Peabody,Dalman,Noelle,Yasmine
-Poet,Kryst,8,7,0,Leonzio,Gunther,Jacqwil,Polymnia,Lucien,Juliette (8),Yosepha
-Knight,Helman,8,7,DONE,Drogo,Gretchen (5),Allbringer,Hopf,Slyn & Spire,Alfonso (8),Simon
-Lurker,Rat,8,7,0,S'zess,Zoe,Paul,Hausten (8),Ludovic,Ghevena,Whirl
-Gunner,Gore,8,7,0,Martin,Demico (!),Karl,Wasp (8),Victoria,Laiteuse,Judy
-Brawler,-,7,7,0,Shiliang,Feefasnan,Brie,Arsof,Mylo,Leovetus,Bulag
-Encircler,-,7,7,0,Compass,Katrin,Sharon,Ember,Brugaris,Tenney,Vitruvius
-Caller,-,7,7,0,Dread Jenny,Quinn,Margitte,Damien,Means Death,The Unexpected,Mimi
-Seeker,-,7,7,0,Phespher,Nadja,Levia (8),Vasily,Jebet,Won't,Wren
-Sky Knight,-,7,7,0,June,Eneida,Patrice,Melody,Anastas,Peregrine,Mervyn
-Artifice,-,7,7,0,Subtractron,AMBR-053,BEEP-o,Subtilior,Awil,OR-10-N,Almighty
-Lancer,-,7,7,0,Heri,Radagast,Fourfinger,Kelaino,Nelson,Naomi,Phaedra
-Swordfighter,-,7,7,DONE,Coast Kid,Puzon,Cam,Marag (5),Velissa,Ferris,Anhinga
-Rider,-,7,7,0,Aizen,Johnnie,Kolette,Pallas,Emblem (8),Meilie,Shion
-Hunter,-,7,7,0,Philmore,Yajirushi,Yasaki,Ammi,Sarina,Alexandra,Cor
-Myrmidon,-,7,7,vaughn,Natsuki (!),Mikayla,Calliope,Ghari (5),Azaghal,Tachyon,Helena
-Duelist,-,7,7,0,Francesca,Felicity,Cardam,Anna,Revati,Halloran,Vaughn
-Curate,-,7,7,quin,Trish,Amos (5),Roslin (!),Witerico,Tycho,Lily,Quinton
-Driver,Fourth,7,6,0,Bertram,Moomfie,Frost,Alva,Dai,Auri,
-Noble,Benthus,7,6,0,Marleni,Ophelia,Cheryll,Cato,Yu-jin,Ascella,
-Apothecary,Ioria,7,6,0,Leize,Wendy,Jim,Dalai,Etto,Alexandrus,
-Raider,-,6,6,0,Esketit,Gloria,Pipsy (8),Son,Hart,Campbell,
-Axefighter,-,6,6,DONE,Tristao (5),Finn,Eight,Randellan,Juniper,Aunt Aysu,
-Archer,Galvin,6,5,DONE,Hallie,Anjelica,Rodney,Gamon,Jane,,
-Scale Knight,-,5,5,0,Atilius,Celeste,Merilee,Shasso,River,,
+Classline,Main Story Units,Written,Unit,,,,,,
+Swordfighter,-,X,Coast Kid,Puzon,Cam,Marag,Velissa,Ferris,Anhinga
+Knight,Helman,X,Drogo,Gretchen,Allbringer,Hopf,Slyn & Spire,Alfonso,Simon
+Axefighter,-,X,Tristao,Finn,Eight,Randellan,Juniper,Aunt Aysu,Marcel
+Archer,Galvin,X,Hallie,Anjelica,Rodney,Gamon,Jane,Eliza,Temira
+Scholar,Nathan,X,Cassandra,Waves,Cyanne,Victor,Lonsdale,Hugo,Lyud
+Curate,-,X,Trish,Amos,Roslin,Witerico,Tycho,Lily,Quinton
+Myrmidon,-,X,Natsuki,Mikayla,Calliope,Ghari,Azaghal,Tachyon,Helena
+Rider,-,X,Aizen,Johnnie,Kolette,Pallas,F. Emblem,Meilie,Shion
+Raider,-,X,Esketit,Gloria,Pipsy,Son,Hart,Campbell,Edith
+Gunner,Gore,X,Martin,Demico,Karl,Wasp,Victoria,Laiteuse,Judy
+Poet,Kryst,X,Leonzio,Gunther,Jacqwil,Polymnia,Lucien,Juliette,Yosepha
+Seeker,-,X,Phespher,Nadja,Levia,Vasily,Jebet,Won't,Wren
+Priest,Astarte,X,Saewynn,Ellie,Selene,Nina,Levi,Taft,Lantom
+Lurker,Rat,X,S'zess,Zoe,Paul,Hausten,Ludovic,Ghevena,Whirl
+Dark Hunter,Cleone,X,Luis,Notre,Wund,Peabody,Dalman,Noelle,Yasmine
+Lancer,-,X,Heri,Radagast,Fourfinger,Kelaino,Nelson,Naomi,Phaedra
+Brawler,-,X,Shiliang,Feefasnan,Brie,Arsof,Mylo,Leovetus,Bulag
+Hunter,-,X,Philmore,Yajirushi,Yasaki,Ammi,Sarina,Alexandra,Cor
+Sky Knight,-,,June,Eneida,Patrice,Melody,Anastas,Peregrine,Mervyn
+Scale Knight,-,,Atilius,Celeste,Merilee,Shasso,River,Hocante,Witold
+Apothecary,Ioria,,Leize,Wendy,Jim,Dalai,Etto,Alexandrus,Nao
+Encircler,-,,Compass,Katrin,Sharon,Ember,Brugaris,Tenney,Vitruvius
+Caller,-,,Dread Jenny,Quinn,Margitte,Damien,Means Death,The Unexpected,Mimi
+Noble,Benthus,,Marleni,Ophelia,Cheryll,Cato,Yu-jin,Ascella,Clarisse
+Duelist,-,,Francesca,Felicity,Cardam,Anna,Revati,Halloran,Vaughn
+Driver,Fourth,,Bertram,Moomfie,Frost,Alva,Dai,Auri,Rikkia
+Artifice,-,,Subtractron,AMBR-053,BEEP-o,Subtilior,Awil,OR-10-N,Almighty

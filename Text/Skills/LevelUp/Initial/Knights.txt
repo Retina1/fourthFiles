@@ -47,7 +47,7 @@ Fight cautiously to[N]
 preserve advantage.[N]
 Can't be doubled while[N]
 at [_5][_0]% HP or less.[N]
-[X]
+Applies effect mid-combat.[X]
 
 ##UnbreakableSkill
 Unbreakable[X]

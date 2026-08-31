@@ -8,12 +8,13 @@ void ApplyGunnerQuickDraw(struct BattleUnit* attacker, struct BattleUnit* defend
 	}
 }
 
-void ApplyGunnerSteadySighting(struct BattleUnit* attacker){
+void ApplyGunnerSteadySighting(struct BattleUnit* attacker, struct BattleUnit* defender){
 	if (UNIT_HAS_SKILL(&attacker->unit,DRG,skill_121)){
 		if (attacker->unit.index == gBattleActor.unit.index){
 			int tilesMoved = gActionData.moveCount;
 			if (tilesMoved == 0) {
-				attacker->battleHitRate  = attacker->battleHitRate * 3/2;
+				attacker->battleAttack = attacker->battleAttack * 3/2;
+				defender->battleDefense = defender->battleDefense * 3/2;
 			}
 		}
 	}
@@ -36,6 +37,7 @@ void ApplyGunnerPointBlank(struct BattleUnit* attacker){
 		if (attacker->unit.index == gBattleActor.unit.index){
 			if (gBattleStats.range == 1){
 				attacker->battleSpeed = attacker->battleSpeed * 3;
+				attacker->battleAvoidRate = attacker->battleAvoidRate * 3;
 			}
 		}
 	}
@@ -43,7 +45,6 @@ void ApplyGunnerPointBlank(struct BattleUnit* attacker){
 
 void ApplyGunnerPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
-		ApplyGunnerSteadySighting(attacker);
 		ApplyGunnerFirefight(attacker);
 		ApplyGunnerPointBlank(attacker);
 	}
@@ -51,5 +52,6 @@ void ApplyGunnerPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* de
 void BothSidesGunnerPassiveSkills(struct BattleUnit* attacker, struct BattleUnit* defender) {
 	if (IsBattleReal()){
 		ApplyGunnerQuickDraw(attacker,defender);
+		ApplyGunnerSteadySighting(attacker,defender);
 	}
 }

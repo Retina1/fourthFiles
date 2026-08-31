@@ -29,15 +29,17 @@ int CAMenu_ItemDefaultDraw(struct MenuProc* menu, struct MenuItemProc* item)
 {
     u8 cost = CombatArtDurabilityList[(u16)(u32)(item->def->name)];
 
-	cost = ApplyDurabilityCostMods(gActiveUnit,cost);
-
+	if (cost != 0xFF) {
+		cost = ApplyDurabilityCostMods(gActiveUnit,cost);
+	}
+	
     Text_DrawString(&item->text, GetStringFromIndex(item->def->nameMsgId));
 
     if (cost == 0xFF)
     {   
         Text_Skip(&item->text, 36);
         Text_SetColor(&item->text, TEXT_COLOR_SYSTEM_GOLD);
-        Text_DrawString(&item->text, "ALL\0");
+        Text_DrawString(&item->text, "!\0");
     }
 
     PutText(&item->text, TILEMAP_LOCATED(BG_GetMapBuffer(menu->frontBg), item->xTile, item->yTile));

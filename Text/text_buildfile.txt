@@ -5,8 +5,8 @@
 Talk[X]
 
 ##SS_TalkRText
-Talk: Units that this unit can[N]
-initiate a conversation with.[X]
+Traveler: The name of the unit[N]
+with whom this unit is traveling.[X]
 
 ## PersonalDataDesc1
 Press Select to toggle[N]
@@ -59,6 +59,7 @@ between stats and growths.[X]
 #include "City/CityChapter03.txt"
 #include "City/CityStratum1.txt"
 #include "City/CityChapter05.txt"
+#include "City/CityChapter08.txt"
 
 #include "City/CityGeneral.txt"
 #include "City/Market.txt"

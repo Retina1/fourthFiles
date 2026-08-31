@@ -58,10 +58,10 @@ void WarMirrorItemSelectEffect(u16 artID, struct Unit* unit)
 		WarMirrorDebuff(targetUnit,debuff1,aoe);
 	}
 	if (debuff2) {
-		WarMirrorDebuff(targetUnit,debuff1,aoe);
+		WarMirrorDebuff(targetUnit,debuff2,aoe);
 	}
 	if (debuff3) {
-		WarMirrorDebuff(targetUnit,debuff1,aoe);
+		WarMirrorDebuff(targetUnit,debuff3,aoe);
 	}
 	UnitClearDebuffs(targetUnit);
 	

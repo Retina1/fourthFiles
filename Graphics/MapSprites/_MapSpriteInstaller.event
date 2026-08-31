@@ -290,6 +290,8 @@ MovingMapSprite(Novistador, AP1, NovistadorMMS)
 
 StandingMapSprite(Woodrat,MapSprite16x16,WoodratSMS)
 MovingMapSprite(Woodrat, AP1, WoodratMMS)
+StandingMapSprite(MaulMole,MapSprite16x16,MaulMoleSMS)
+MovingMapSprite(MaulMole, AP1, MaulMoleMMS)
 StandingMapSprite(Golem,MapSprite16x32,GolemSMS)
 MovingMapSprite(Golem, AP1, GolemMMS)
 
@@ -309,6 +311,14 @@ GolemSMS:
 ALIGN 4
 GolemMMS:
 #incbin "Dmp/Blast Golem (U) {Alexsplode}-walk.dmp"
+
+ALIGN 4
+MaulMoleSMS:
+#incbin "Dmp/feierMoleStand.dmp"
+ALIGN 4
+MaulMoleMMS:
+#incbin "Dmp/feierMoleMove.dmp"
+
 
 ALIGN 4
 WoodratSMS:

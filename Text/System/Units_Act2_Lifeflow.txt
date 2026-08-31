@@ -41,6 +41,12 @@ Alexandrus[X]
 An egocentric Asketan herbalist.[N]
 He has a bad habit of monologuing.[X]
 
+##Name_Nao
+Nao[X]
+##Desc_Nao
+An observant and proficient apothecary.[N]
+She's blunt and rigidly logical.[X]
+
 //compass by roxas (encircler)
 ##Name_Compass
 Compass[X]

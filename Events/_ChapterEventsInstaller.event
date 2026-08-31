@@ -257,6 +257,7 @@ UNIT
 
 NewGameOverEvent:
 EVBIT_MODIFY 4
+ASMC ClearAllBuffsDebuffsASMC|1
 FADI 10
 CLEA 0; CLEN 0; CLEE 0
 LOMA Chapter1
@@ -278,6 +279,7 @@ ENDA
 PiorinGameOver:
 MUSC 0x0
 EVBIT_MODIFY 4
+ASMC ClearAllBuffsDebuffsASMC|1
 FADI 10
 CLEA 0; CLEN 0; CLEE 0
 LOMA Chapter1
@@ -399,6 +401,9 @@ UNIT
 }
 {
 #include "Chapters/Chapter8.event"
+}
+{
+#include "Chapters/Chapter9.event"
 }
 {
 #include "Chapters/Chapter13.event"

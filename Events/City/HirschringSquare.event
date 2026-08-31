@@ -204,6 +204,9 @@ UNIT
 Chapter5SquareUnits:
 UNIT Benthus 0x0 0x0 Level(1,Ally,0) [13,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
+Chapter8SquareUnits:
+UNIT Cleone 0x0 0x0 Level(1,Ally,0) [6,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
 
 TownVendorSecondUnit:
 UNIT Second 0x0 0x0 Level(22,NPC,0) [1,4] 0x0 0x0 0x0 0x0 [Shieldlance,Longinus] NoAI
@@ -316,12 +319,12 @@ EndingSceneToggles
 EndingMapFlags
 //MovementUnsetter 
 //add route split logic
-RunEventByVisit(Chapter2CityEnd,Chapter3CityEnd,Stratum1CityEnd,Chapter5CityEnd,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(Chapter2CityEnd,Chapter3CityEnd,Stratum1CityEnd,Chapter5CityEnd,Chapter8CityEnd,0,0,0,0,0,0,0,0,0)
 MoveToNextChapter(Chapter3,Stratum1F1,Chapter4,Chapter6,Chapter9,Chapter10,Stratum3F1,Chapter11,Chapter14,Chapter16)
 ENDA
 
 LoadPostPrepsUnits:
-LoadUnitsByVisit(Chapter2SquareUnitsBlues,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,DummyUnits,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(Chapter2SquareUnitsBlues,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,Chapter8SquareUnits,0,0,0,0,0,0,0,0,0)
 LoadVendorSecond
 ENDA
 
@@ -337,7 +340,7 @@ SwapToMap(Blacksmith,7,8)
 CALL LoadBlacksmithSigils
 //SetMapBGM(Song_DrawHeroes)
 MUSC Song_DrawHeroes
-LoadUnitsByVisit(BlacksmithUnitsC2,BlacksmithUnitsC3,BlacksmithUnitsS1,BlacksmithUnitsC5,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(BlacksmithUnitsC2,BlacksmithUnitsC3,BlacksmithUnitsS1,BlacksmithUnitsC5,BlacksmithUnitsC8,0,0,0,0,0,0,0,0,0)
 FADU 10
 EndEvent
 
@@ -346,7 +349,7 @@ SwapToMap(Tavern,2,8)
 CALL LoadTavernSigils
 //SetMapBGM(Song_DrawHeroes)
 MUSC Song_DrawHeroes
-LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,TavernUnitsS1,TavernUnitsC5,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,TavernUnitsS1,TavernUnitsC5,TavernUnitsC8,0,0,0,0,0,0,0,0,0)
 LoadMagusUnlocker
 FADU 10
 CALL QuestEndChecker
@@ -422,41 +425,41 @@ imperial courtyard - meet with the prince
 #include "EndEvents.event"
 
 TownGuildmasterTalk:
-RunTextByVisit(City02_Guildmaster,City03_Guildmaster,CityS1_Guildmaster,FillerDialogue,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Guildmaster,City03_Guildmaster,CityS1_Guildmaster,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0)
 EndEvent
 
 TownAstarteTalk:
-RunTextByVisit(City02_Astarte,City03_Astarte,CityS1_Astarte,City05_Astarte,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Astarte,City03_Astarte,CityS1_Astarte,City05_Astarte,FillerDialogue,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownGoreTalk:
-RunTextByVisit(City02_Gore,City03_Gore,CityS1_Gore,City05_Gore,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Gore,City03_Gore,CityS1_Gore,City05_Gore,FillerDialogue,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownCleoneTalk:
-RunTextByVisit(City02_Cleone,City03_Cleone,CityS1_Cleone,City05_Cleone,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Cleone,City03_Cleone,CityS1_Cleone,City05_Cleone,FillerDialogue,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownBenthusTalk:
 RunTextByVisit(City02_Benthus,City03_Benthus,CityS1_Benthus,City05_Benthus,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownHelmanTalk:
-RunTextByVisit(FillerDialogue,City03_Helman,CityS1_Helman,City05_Helman,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,City03_Helman,CityS1_Helman,City05_Helman,FillerDialogue,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownRatTalk:
-RunEventByVisit(DummyEvent,DummyEvent,DummyEvent,City5RatEvent,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,DummyEvent,DummyEvent,City5RatEvent,FillerDialogue,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownKrystTalk:
-RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,City05_Kryst,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,0,0,City05_Kryst,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
 EndEvent
 TownGalvinTalk:
-RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,0,0,0,0,0,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
 EndEvent
 TownIoriaTalk:
-RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,0,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,0,0,0,0,0,0,0,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
 EndEvent
 //call also via event point in imperial post
 TownFourthTalk:
 CHECK_EVENTID 0x13
 BNE 0xAAA 0xC 0x0
-RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,City05_Fourth,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,0,0,City05_Fourth,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
 ENUT 0x13
 LABEL 0xAAA
 ENUF LocationFlagImperialPost
@@ -473,7 +476,7 @@ DummyEvent:
 ENDA
 
 TownBertramTalk:
-RunTextByVisit(City02_Bertram,City03_Bertram,CityS1_Bertram,City05_Bertram,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Bertram,City03_Bertram,CityS1_Bertram,City05_Bertram,FillerDialogue,0,0,0,0,0,0,0,0,0)
 EndEvent
 
 BuyStandardClasses:

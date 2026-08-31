@@ -1,0 +1,297 @@
+#######################################################
+#01 Swordfighter Sword
+#
+#When importing to FEditorAdv delete # and after each line.
+#######################################################
+/// - Mode 1               #Melee Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Whip_000.png
+3 p- Whip_001.png
+3 p- Whip_002.png
+3 p- Whip_003.png
+15 p- Whip_004.png
+3 p- Whip_005.png
+6 p- Whip_006.png
+3 p- Whip_007.png
+6 p- Whip_008.png
+6 p- Whip_009.png
+3 p- Whip_010.png
+12 p- Whip_011.png
+3 p- Whip_012.png
+3 p- Whip_013.png
+C24                               #Play sword slashing air SFE
+3 p- Whip_014.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C1A                               #Normal hit
+C1F                               #Play hit SFE (sounds like Eliwood with sword's hit)
+C15                               #Slight vibration of screen
+3 p- Whip_015.png
+3 p- Whip_016.png
+6 p- Whip_017.png
+6 p- Whip_018.png
+3 p- Whip_019.png
+21 p- Whip_020.png
+C01                               #NOP
+6 p- Whip_021.png
+3 p- Whip_022.png
+3 p- Whip_023.png
+3 p- Whip_024.png
+3 p- Whip_025.png
+3 p- Whip_026.png
+9 p- Whip_027.png
+6 p- Whip_028.png
+3 p- Whip_029.png
+3 p- Whip_030.png
+3 p- Whip_031.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 3               #Melee Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Whip_000.png
+3 p- Whip_032.png
+3 p- Whip_033.png
+6 p- Whip_034.png
+6 p- Whip_035.png
+6 p- Whip_036.png
+6 p- Whip_037.png
+6 p- Whip_034.png
+6 p- Whip_035.png
+6 p- Whip_036.png
+6 p- Whip_037.png
+6 p- Whip_034.png
+6 p- Whip_035.png
+6 p- Whip_036.png
+6 p- Whip_037.png
+6 p- Whip_034.png
+3 p- Whip_033.png
+3 p- Whip_032.png
+3 p- Whip_038.png
+3 p- Whip_039.png
+15 p- Whip_040.png
+3 p- Whip_041.png
+6 p- Whip_042.png
+3 p- Whip_043.png
+6 p- Whip_044.png
+6 p- Whip_045.png
+3 p- Whip_046.png
+3 p- Whip_047.png
+3 p- Whip_048.png
+21 p- Whip_049.png
+3 p- Whip_050.png
+3 p- Whip_051.png
+C24                               #Play sword slashing air SFE
+3 p- Whip_052.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C09                               #Critical hit
+C1F                               #Play hit SFE (sounds like Eliwood with sword's hit)
+C14                               #Heavy vibration of screen
+3 p- Whip_053.png
+6 p- Whip_054.png
+6 p- Whip_055.png
+6 p- Whip_018.png
+3 p- Whip_019.png
+21 p- Whip_020.png
+C01                               #NOP
+6 p- Whip_021.png
+3 p- Whip_022.png
+3 p- Whip_023.png
+3 p- Whip_024.png
+3 p- Whip_025.png
+3 p- Whip_026.png
+9 p- Whip_027.png
+6 p- Whip_028.png
+3 p- Whip_029.png
+3 p- Whip_030.png
+3 p- Whip_031.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 5               #Ranged Animation 
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Whip_000.png
+3 p- Whip_001.png
+3 p- Whip_002.png
+3 p- Whip_003.png
+15 p- Whip_004.png
+3 p- Whip_005.png
+6 p- Whip_006.png
+3 p- Whip_007.png
+6 p- Whip_008.png
+6 p- Whip_009.png
+3 p- Whip_010.png
+12 p- Whip_011.png
+3 p- Whip_012.png
+3 p- Whip_013.png
+C24                               #Play sword slashing air SFE
+3 p- Whip_014.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C05                               #Call spell associated with equipped weapon
+C15                               #Slight vibration of screen
+3 p- Whip_015.png
+3 p- Whip_016.png
+6 p- Whip_017.png
+6 p- Whip_018.png
+3 p- Whip_019.png
+21 p- Whip_020.png
+C01                               #NOP
+6 p- Whip_021.png
+3 p- Whip_022.png
+3 p- Whip_023.png
+3 p- Whip_024.png
+3 p- Whip_025.png
+3 p- Whip_026.png
+9 p- Whip_027.png
+6 p- Whip_028.png
+3 p- Whip_029.png
+3 p- Whip_030.png
+3 p- Whip_031.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 6               #Ranged Critical Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Whip_000.png
+3 p- Whip_032.png
+3 p- Whip_033.png
+6 p- Whip_034.png
+6 p- Whip_035.png
+6 p- Whip_036.png
+6 p- Whip_037.png
+6 p- Whip_034.png
+6 p- Whip_035.png
+6 p- Whip_036.png
+6 p- Whip_037.png
+6 p- Whip_034.png
+6 p- Whip_035.png
+6 p- Whip_036.png
+6 p- Whip_037.png
+6 p- Whip_034.png
+3 p- Whip_033.png
+3 p- Whip_032.png
+3 p- Whip_038.png
+3 p- Whip_039.png
+15 p- Whip_040.png
+3 p- Whip_041.png
+6 p- Whip_042.png
+3 p- Whip_043.png
+6 p- Whip_044.png
+6 p- Whip_045.png
+3 p- Whip_046.png
+3 p- Whip_047.png
+3 p- Whip_048.png
+21 p- Whip_049.png
+3 p- Whip_050.png
+3 p- Whip_051.png
+C24                               #Play sword slashing air SFE
+3 p- Whip_052.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C05                               #Call spell associated with equipped weapon
+C14                               #Heavy vibration of screen
+3 p- Whip_053.png
+6 p- Whip_054.png
+6 p- Whip_055.png
+6 p- Whip_018.png
+3 p- Whip_019.png
+21 p- Whip_020.png
+C01                               #NOP
+6 p- Whip_021.png
+3 p- Whip_022.png
+3 p- Whip_023.png
+3 p- Whip_024.png
+3 p- Whip_025.png
+3 p- Whip_026.png
+9 p- Whip_027.png
+6 p- Whip_028.png
+3 p- Whip_029.png
+3 p- Whip_030.png
+3 p- Whip_031.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 7               #Dodge Melee Attack
+C02                               #Start of dodge
+1 p- Whip_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+3 p- Whip_056.png
+3 p- Whip_057.png
+3 p- Whip_058.png
+1 p- Whip_059.png
+C01                               #NOP
+3 p- Whip_058.png
+3 p- Whip_057.png
+3 p- Whip_056.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 8               #Dodge Ranged Attack
+C02                               #Start of dodge
+1 p- Whip_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+3 p- Whip_056.png
+3 p- Whip_057.png
+3 p- Whip_058.png
+1 p- Whip_059.png
+C01                               #NOP
+3 p- Whip_058.png
+3 p- Whip_057.png
+3 p- Whip_056.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - Mode 9               #Equiped with Melee Weapon
+1 p- Whip_000.png
+C01                               #NOP
+~~~
+/// - Mode 10               #Standing motions
+1 p- Whip_000.png
+C01                               #NOP
+~~~
+/// - Mode 11               #Equiped with Ranged weapon
+1 p- Whip_000.png
+C01                               #NOP
+~~~
+/// - Mode 12               #Attack Missed Animation
+C03                               #Start attack animation; need 07 right after this.
+C07                               #Start attack animation; need 03 right before this.
+1 p- Whip_000.png
+3 p- Whip_001.png
+3 p- Whip_002.png
+3 p- Whip_003.png
+15 p- Whip_004.png
+3 p- Whip_005.png
+6 p- Whip_006.png
+3 p- Whip_007.png
+6 p- Whip_008.png
+6 p- Whip_009.png
+3 p- Whip_010.png
+12 p- Whip_011.png
+3 p- Whip_012.png
+3 p- Whip_013.png
+C24                               #Play sword slashing air SFE
+3 p- Whip_014.png
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
+3 p- Whip_015.png
+3 p- Whip_016.png
+6 p- Whip_017.png
+6 p- Whip_018.png
+3 p- Whip_019.png
+21 p- Whip_020.png
+C01                               #NOP
+6 p- Whip_021.png
+3 p- Whip_022.png
+3 p- Whip_023.png
+3 p- Whip_024.png
+3 p- Whip_025.png
+3 p- Whip_026.png
+9 p- Whip_027.png
+6 p- Whip_028.png
+3 p- Whip_029.png
+3 p- Whip_030.png
+3 p- Whip_031.png
+C06                               #Begin opponent's turn after hit.next code 0D.
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - End of animation

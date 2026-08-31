@@ -37,7 +37,7 @@ LABEL 0x20
 SetGtoMoney
 CallMenu(BlackMarketMenu)
 BlackMarketHandler(HandAxe,555,0)
-BlackMarketHandler(SparkScroll,250,1)
+BlackMarketHandler(SparkScroll,3600,1)
 BlackMarketHandler(StoningGas,800,2)
 BlackMarketHandler(Fengyan,1950,3)
 BlackMarketHandlerUses(DvergrSword,1,250,4)

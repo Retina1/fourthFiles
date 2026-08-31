@@ -30,6 +30,17 @@
 #include "AnimDefs.event"
 #include "RepointedTable.event"
 
+//DarkHunter
+{
+#include "ClassAnims/DarkHunter/Whip Installer.event"
+#include "ClassAnims/DarkHunter/Unarmed Installer.event"
+}
+ALIGN 4
+DarkHunterAnims:
+SlashAnim(DarkHunter_Whip)
+UnarmedAnim(DarkHunter_Unarmed)
+EndAnim
+
 //Gunner
 {
 #include "ClassAnims/Gunner/Gun Installer.event"

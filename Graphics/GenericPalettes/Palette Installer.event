@@ -3,6 +3,9 @@
 
 ALIGN 4
 
+PAL_DarkHunter:
+	#incbin "./_palettes/PAL_DarkHunter.lzpal" 
+
 PAL_Gunner:
 	#incbin "./_palettes/PAL_Gunner.lzpal" 
 

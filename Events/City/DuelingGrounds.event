@@ -56,7 +56,7 @@ DuelingGroundsTier3Wave5:
 UNIT Ayda Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x1 REDA12R5 [DvergrSword] NoAI
 UNIT
 DuelingGroundsTier3Wave5Alt:
-UNIT 0xFD Ronin 0x0 Level(22,Enemy,0) [12,5] 0x0 0x0 0x1 REDA12R5 [DvergrSword] NoAI
+UNIT 0xFD Ronin 0x0 Level(22,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [DvergrSword] NoAI
 UNIT
 
 AydaJoin:
@@ -68,7 +68,7 @@ DuelingGroundsBegin:
 //aaaaa
 CHECK_EVENTID 0x15
 BNE 0x1 0xc 0x0
-RunTextByVisit(FillerDialogue,FillerDialogue,FillerDialogue,City05_Ayda,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,0,0,City05_Ayda,FillerDialogue,0,0,0,0,0,0,0,0,0)
 ENUT 0x15
 LABEL 0x1
 CallMenu(ArenaMenu)
@@ -246,6 +246,8 @@ CLEN 0
 CLEE 0
 SVAL 0x1 0x8
 SET_CONDITION Nathan
+SVAL 0x1 0x8
+SET_CONDITION Ayda
 SVAL 0x1 6
 SVAL 0x2 5
 ASMC PlaceSlotCUnitAtCoordsASMC|1

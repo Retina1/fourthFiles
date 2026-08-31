@@ -152,10 +152,16 @@ CHECK_EVENTID Recruited1Flag
 BEQ 0x1000 0xc 0x0
 CHECK_EXISTS BossGuildmaster
 BNE 0x1002 0xc 0x0
+CHECK_EVENTID 0x14 //if 14 not on, first time checking this city visit
+BEQ 0x1004 0xc 0x0
 Text(MoreRecruits)
 GOTO 0x1003
 LABEL 0x1002
 Text(MoreRecruitsGuildmasterOut)
+GOTO 0x1003
+LABEL 0x1004
+RunTextByVisit(MoreRecruits,MoreRecruits,MoreRecruits,MoreRecruitsCh5,MoreRecruitsCh8,MoreRecruitsCh9,MoreRecruitsCh10,0,0,0,0,0,0,0)
+ENUT 0x14
 LABEL 0x1003
 CALL GuildhallRecruitmentMenuEvent
 GOTO 0x1001

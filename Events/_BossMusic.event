@@ -17,6 +17,10 @@ BossBGMEntry(George,Song_Fracas)
 BossBGMEntry(Xavens,Song_DesperateAssault)
 BossBGMEntry(Egil,Song_DesperateAssault)
 BossBGMEntry(Harla,Song_DesperateAssault)
+//belvarusi
+BossBGMEntry(Angelica,Song_Castle)
+BossBGMEntry(Iseau,Song_Deicide)
+BossBGMEntry(Stephen,Song_Castle)
 //imperials
 BossBGMEntry(First,Song_Castle)
 BossBGMEntry(Second,Song_Castle)

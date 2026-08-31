@@ -115,7 +115,7 @@ Slyn feels remorse for Spire's deeds.[X]
 Alfonso[X]
 ##Desc_Alfonso
 A minor nobleman and well-studied[N]
-academic. He's a bistory buff.[X]
+academic. He's a history buff.[X]
 //samson
 ##Name_Simon
 Simon[X]
@@ -166,6 +166,13 @@ Aunt Aysu[X]
 A troublemaker local to Hirschring.[N]
 She'll dirty her hands for family.[X]
 
+//mak
+##Name_Marcel
+Marcel[X]
+##Desc_Marcel
+A talented and ambitious cooper.[N]
+She was press-ganged by pirates.[X]
+
 //hannahkitty
 ##Name_Hallie
 Hallie[X]
@@ -206,6 +213,13 @@ Eliza[X]
 ##Desc_Eliza
 A snide Belvarusi assassin who detests[N]
 nobility. She's generally unpleasant.[X]
+
+//velthomer
+##Name_Temira
+Temira[X]
+##Desc_Temira
+A Belvarusi wanderer who's led a[N]
+rough life. She bears a deep pride.[X]
 
 
 //cassandra by zappy (scholar)

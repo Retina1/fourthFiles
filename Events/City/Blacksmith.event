@@ -20,6 +20,11 @@ UNIT Helman 0x0 0x0 Level(1,Ally,0) [9,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Benjamin Gladiator 0x0 Level(19,NPC,0) [7,1] 0x0 0x0 0x0 0x0 [HandAxe,RepairScroll] NeverMoveAI
 UNIT Johanna Curate 0x0 Level(1,NPC,0) [1,1] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
+BlacksmithUnitsC8:
+UNIT Karl 0x0 0x0 Level(5,NPC,0) [13,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Benjamin Gladiator 0x0 Level(19,NPC,0) [1,3] 0x0 0x0 0x0 0x0 [HandAxe,RepairScroll] NeverMoveAI
+UNIT Johanna Curate 0x0 Level(1,NPC,0) [7,1] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
@@ -48,6 +53,11 @@ SHLI Recurve Sakaloz HeadBinder AriadneShard Shortsword VineWhip Shortspear Epee
 BYTE 0x0 0x0
 
 ALIGN 4
+Ch8Shop:
+SHLI BoltScroll RestoreScroll AriadneShard Shortsword Scramasax Boarblade VineWhip ThornWhip Shortspear Pike Partizan Epee Sabre Shortmace Broadaxe Yue BrassKnuckles Caestus Shortbow Recurve Composite Handgonne Arquebus Sakaloz Wand Staff Vulnerary Medica
+BYTE 0x0 0x0
+
+ALIGN 4
 LoadBlacksmithSigils:
 ENUF LocationFlagBlacksmith
 AddSigil(6,9)
@@ -71,7 +81,7 @@ EndEvent
 BlacksmithShopBegin:
 CHECK_EVENTID 0x1e
 BNE 0x1 0xc 0x0
-RunTextByVisit(City02_BenjaminIntro,City03_Benjamin,CityS1_Benjamin,City05_Benjamin,0,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_BenjaminIntro,City03_Benjamin,CityS1_Benjamin,City05_Benjamin,City08_Benjamin,0,0,0,0,0,0,0,0,0)
 //conditionals
 CHECK_EVENTID BeastKingConditionalFlag
 BEQ 0x2 0xc 0x0
@@ -79,11 +89,17 @@ BEQ 0x2 0xc 0x0
 	GiveItem(KingBrooch,Nathan)
 	ENUF BeastKingConditionalFlag
 LABEL 0x2
+CHECK_EVENTID BenthusConditionalFlag
+BEQ 0x3 0xc 0x0
+	Text(City_BenjaminCh8BossConditional)
+	GiveItem(ThornCrown,Nathan)
+	ENUF BenthusConditionalFlag
+LABEL 0x3
 
 ENUT 0x1e
 LABEL 0x1
 //johanna runs it for c3x, c8x, s3x, 18Cx
-LoadShopByVisit(Ch2Shop,Ch3Shop,S1Shop,Ch5Shop,0,0,0,0,0,0,0,0,0,0)
+LoadShopByVisit(Ch2Shop,Ch3Shop,S1Shop,Ch5Shop,Ch8Shop,0,0,0,0,0,0,0,0,0)
 ENUF LocationFlagBlacksmith
 EndEvent
 

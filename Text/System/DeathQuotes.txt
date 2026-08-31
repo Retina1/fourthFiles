@@ -274,6 +274,10 @@ I can't[...] like this[...][A][EyesClose][X]
 [MidRight][AuntAysu]
 Had it comin'[...][N]
 Did my best, everyone[...][A][EyesClose][X]
+##MarcelDeath
+[MidRight][Marcel]
+I wanted so much more[...][N]
+out of my life[...][A][EyesClose][X]
 
 //archers
 ##HallieDeath
@@ -302,6 +306,10 @@ I really[...] could've[...]?[A][EyesClose][X]
 [MidRight][Eliza][Smile]
 Sloppy work, dumbass[...][N]
 Left me[...] to bleed[...][A][EyesClose][X]
+##TemiraDeath
+[MidRight][Temira]
+I just wanted[...] to be[...][N]
+a better person[...][A][EyesClose][X]
 
 //scholars
 ##CassandraDeath
@@ -451,6 +459,11 @@ I'm sorry[...][A][EyesClose][X]
 [MidRight][Campbell]
 Damn it[...] Not like this[...][N]
 He tried[...] to warn me[...][A][EyesClose][X]
+##EdithDeath
+[MidRight][Edith]
+Please[...] My daughter[...][N]
+Christine[...][A][EyesClose] Make sure[...][N]
+she'll be okay[...][A][X]
 
 //gunners
 ##MartinDeath
@@ -776,6 +789,15 @@ I feel a second[...] wind[...][A][EyesClose][X]
 [MidRight][River]
 Why must[...] it come to[N]
 an end[...] like this[...]?[A][EyesClose][X]
+##HocanteDeath
+[MidRight][Hocante]
+You'd better[...] bury me[...][N]
+with all my gold[...][A][EyesClose][X]
+##WitoldDeath
+[MidRight][Witold]
+Doesn't matter[...] if I[...][N]
+die now[...][A][EyesClose] Wyverns[...][N]
+are still[...] superior[...][A][X]
 
 //apoth
 ##LeizeDeath
@@ -802,6 +824,10 @@ beefed it[...][A][EyesClose][X]
 [MidRight][Alexandrus]
 I should've known this[...][N]
 a losing battle[...][A][EyesClose][X]
+##NaoDeath
+[MidRight][Nao]
+Was my analysis[...] wrong[...]?[N]
+Has it[...] always been[...]?[A][EyesClose][X]
 
 //circ
 ##CompassDeath
@@ -836,7 +862,7 @@ You got the wrong guy[...][A][EyesClose][X]
 //call
 ##DreadJennyDeath
 [MidRight][DreadJenny]
-Owie[...] My minions[...][N]
+Owie! My minions[...][N]
 Smite them[...] Please[...][A][EyesClose][X]
 ##QuinnDeath
 [MidRight][Quinn][ToggleSmile]
@@ -860,7 +886,7 @@ die with me[...][A][EyesClose][X]
 ##MimiDeath
 [MidRight][Mimi]
 Yikes[...] Guess that's[N]
-it for Mi[...]mi[...][A][EyesClose][X]
+it[...] for Mimi[...][A][EyesClose][X]
 
 //nobl
 ##MarleniDeath
@@ -887,6 +913,10 @@ Never make it home[...][A][EyesClose][X]
 [MidRight][Ascella]
 Don't let this be forgotten[...][N]
 Let my house[...] be known[...][A][EyesClose][X]
+##ClarisseDeath
+[MidRight][Clarisse]
+My lot in life[...][N]
+It's never[...] changed[...][A][EyesClose][X]
 
 //duelist
 ##FrancescaDeath
@@ -945,6 +975,11 @@ lived[...] I liked it[...][A][EyesClose][X]
 [MidRight][Auri]
 I'm[...] dying[...]?[N]
 No, that can't[...] be[...][A][EyesClose][X]
+##RikkiaDeath
+[MidRight][Rikkia]
+It's not[...] shotput[...]?[AN][EyesClose]
+I thought[...] the skills[...][N]
+would transfer[...][A][X]
 
 //arti
 ##SubtractronDeath

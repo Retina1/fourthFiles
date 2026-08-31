@@ -4,6 +4,9 @@
 #include "Palette Definitions.txt"
 #include "Palette Installer.event"
 
+// PAL_DarkHunter
+	setGenericPalette(DarkHunter_Whip,PAL_DarkHunter)
+
 // PAL_Gunner
 	setGenericPalette(Gunner_Gun,PAL_Gunner)
 

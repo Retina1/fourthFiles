@@ -200,6 +200,24 @@ ALIGN 4
 Trailblazer_CampbellDMP:
 #incbin "paletteFiles/Standard/Trailblazer_Campbell.dmp"
 
+PaletteIdentifier(Raider_Gloria, Raider_GloriaDMP)
+PaletteIdentifier(Trailblazer_Gloria, Trailblazer_GloriaDMP)
+ALIGN 4
+Raider_GloriaDMP:
+#incbin "paletteFiles/Standard/Raider_Gloria.dmp"
+ALIGN 4
+Trailblazer_GloriaDMP:
+#incbin "paletteFiles/Standard/Trailblazer_Gloria.dmp"
+
+PaletteIdentifier(Raider_Edith, Raider_EdithDMP)
+PaletteIdentifier(Trailblazer_Edith, Trailblazer_EdithDMP)
+ALIGN 4
+Raider_EdithDMP:
+#incbin "paletteFiles/Standard/Raider_Edith.dmp"
+ALIGN 4
+Trailblazer_EdithDMP:
+#incbin "paletteFiles/Standard/Trailblazer_Edith.dmp"
+
 
 ALIGN 4
 RaiderPaletteList:
@@ -208,6 +226,8 @@ PaletteAssociationEntry(Pipsy,Raider_Pipsy)
 PaletteAssociationEntry(Son,Raider_Son)
 PaletteAssociationEntry(Hart,Raider_Hart)
 PaletteAssociationEntry(Campbell,Raider_Campbell)
+PaletteAssociationEntry(Gloria,Raider_Gloria)
+PaletteAssociationEntry(Edith,Raider_Edith)
 WORD 0 0
 ALIGN 4
 TrailblazerPaletteList:
@@ -216,6 +236,8 @@ PaletteAssociationEntry(Pipsy,Trailblazer_Pipsy)
 PaletteAssociationEntry(Son,Trailblazer_Son)
 PaletteAssociationEntry(Hart,Trailblazer_Hart)
 PaletteAssociationEntry(Campbell,Trailblazer_Campbell)
+PaletteAssociationEntry(Gloria,Trailblazer_Gloria)
+PaletteAssociationEntry(Edith,Trailblazer_Edith)
 WORD 0 0
 
 //gunner

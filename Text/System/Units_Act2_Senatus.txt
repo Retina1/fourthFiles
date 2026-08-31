@@ -43,6 +43,12 @@ Ascella[X]
 ##Desc_Ascella
 A rash noble from a lesser Belvarusi[N]
 house. She's seeking familial clout.[X]
+//vileplume
+##Name_Clarisse
+Clarisse[X]
+##Desc_Clarisse
+A Belvarusi noble clouded in dire[N]
+rumor. He's actually pretty normal.[X]
 
 //francesca by retina (duelist)
 ##Name_Francesca

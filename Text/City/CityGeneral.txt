@@ -289,6 +289,48 @@ Who'd you wanna see?[A][X]
 Sure thing, Nathan.[N]
 Who else do you want?[A][X]
 
+##MoreRecruitsCh5
+[MidLeft][Nathan][MidRight][Gerson]
+Sure thing, Nathan.[AN]
+By the way, we've got some new[N]
+adventurers ready for review.[AN]
+Check out swordfighters, knights,[N]
+axefighters, archers, scholars,[AN]
+curates, myrmidons, raiders,[N]
+or priests if you're interested.[AN]
+With that, who do you want?[A][X]
+
+##MoreRecruitsCh8
+[MidLeft][Nathan][MidRight][Gerson]
+Sure thing, Nathan.[AN]
+By the way, we've got some new[N]
+adventurers ready for review.[AN]
+Check out swordfighters, knights,[N]
+axefighters, archers, riders,[AN]
+raiders, gunners, poets, seekers,[N]
+priests, hexers, lancers,[A] or[N]
+brawlers if you're interested.[AN]
+With that, who do you want?[A][X]
+
+##MoreRecruitsCh9
+[MidLeft][Nathan][MidRight][Gerson]
+Sure thing, Nathan.[AN]
+By the way, we've got a new[N]
+adventurer ready for review.[AN]
+Check out the dark hunters if[N]
+you're at all interested.[AN]
+With that, who do you want?[A][X]
+
+##MoreRecruitsCh10
+[MidLeft][Nathan][MidRight][Gerson]
+Sure thing, Nathan.[AN]
+By the way, we've got some new[N]
+adventurers ready for review.[AN]
+Check out poets, priests,[N]
+lancers, brawlers,[A] or[N]
+hunters if you're interested.[AN]
+With that, who do you want?[A][X]
+
 ##InitialRecruitLabel
 Basic Adventurers[X]
 ##InitialRecruitRText

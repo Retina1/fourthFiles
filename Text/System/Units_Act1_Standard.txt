@@ -142,6 +142,12 @@ Campbell[X]
 ##Desc_Campbell
 A business-minded axe rider. He has[N]
 a background in field research.[X]
+//admrl
+##Name_Edith
+Edith[X]
+##Desc_Edith
+A Belvarusi smith turned mercenary.[N]
+Her family met a nobleman's scorn.[X]
 
 
 //mancalledm

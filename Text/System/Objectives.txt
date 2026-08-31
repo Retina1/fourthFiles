@@ -52,6 +52,9 @@ Endbringers![X]
 ##Ch8KillDesc
 Take your[N]
 revenge.[X]
+##Ch9RoutDesc
+Defeat monsters[N]
+and Belvarusi![X]
 ##Ch10KillDesc
 Defeat George,[N]
 the false driver![X]

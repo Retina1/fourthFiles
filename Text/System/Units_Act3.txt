@@ -34,6 +34,13 @@ Auri[X]
 A reckless yet loyal adventurer taken[N]
 in by Asketa. She's eager to destroy.[X]
 
+//tastapasta
+##Name_Rikkia
+Rikkia[X]
+##Desc_Rikkia
+A brash shotput champion convinced that[N]
+she can also become a mighty driver.[X]
+
 // secret lock - automata unit: artifice
 
 //subtractron by retina (artifice)

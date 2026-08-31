@@ -1,7 +1,56 @@
 //darkhunt
+
+PaletteIdentifier(DarkHunter_Cleone, DarkHunter_CleoneDMP)
+ALIGN 4
+DarkHunter_CleoneDMP:
+#incbin "paletteFiles/MainStory/DarkHunter_Cleone.dmp"
+
+PaletteIdentifier(DarkHunter_Luis, DarkHunter_LuisDMP)
+ALIGN 4
+DarkHunter_LuisDMP:
+#incbin "paletteFiles/Special/DarkHunter_Luis.dmp"
+
+PaletteIdentifier(DarkHunter_Notre, DarkHunter_NotreDMP)
+ALIGN 4
+DarkHunter_NotreDMP:
+#incbin "paletteFiles/Special/DarkHunter_Notre.dmp"
+
+PaletteIdentifier(DarkHunter_Wund, DarkHunter_WundDMP)
+ALIGN 4
+DarkHunter_WundDMP:
+#incbin "paletteFiles/Special/DarkHunter_Wund.dmp"
+
+PaletteIdentifier(DarkHunter_Peabody, DarkHunter_PeabodyDMP)
+ALIGN 4
+DarkHunter_PeabodyDMP:
+#incbin "paletteFiles/Special/DarkHunter_Peabody.dmp"
+
+PaletteIdentifier(DarkHunter_Dalman, DarkHunter_DalmanDMP)
+ALIGN 4
+DarkHunter_DalmanDMP:
+#incbin "paletteFiles/Special/DarkHunter_Dalman.dmp"
+
+PaletteIdentifier(DarkHunter_Noelle, DarkHunter_NoelleDMP)
+ALIGN 4
+DarkHunter_NoelleDMP:
+#incbin "paletteFiles/Special/DarkHunter_Noelle.dmp"
+
+PaletteIdentifier(DarkHunter_Yasmine, DarkHunter_YasmineDMP)
+ALIGN 4
+DarkHunter_YasmineDMP:
+#incbin "paletteFiles/Special/DarkHunter_Yasmine.dmp"
+
 ALIGN 4
 DarkHunterPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(BossCleone,DarkHunter_Cleone)
+PaletteAssociationEntry(Cleone,DarkHunter_Cleone)
+PaletteAssociationEntry(Luis,DarkHunter_Luis)
+PaletteAssociationEntry(Notre,DarkHunter_Notre)
+PaletteAssociationEntry(Wund,DarkHunter_Wund)
+PaletteAssociationEntry(Peabody,DarkHunter_Peabody)
+PaletteAssociationEntry(Dalman,DarkHunter_Dalman)
+PaletteAssociationEntry(Noelle,DarkHunter_Noelle)
+PaletteAssociationEntry(Yasmine,DarkHunter_Yasmine)
 WORD 0 0
 ALIGN 4
 DominatorPaletteList:

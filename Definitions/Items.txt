@@ -183,6 +183,7 @@ CrinkleGlove
 KingBrooch
 SleepGas
 SimpleRing
+ThornCrown
 HeroCrest 0xe6
 KnightProof
 OrionsBolt

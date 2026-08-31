@@ -79,6 +79,7 @@ AreaEvent(0x0,Warp18_22,18,22)
 AreaEvent(0x0,Warp29_22,29,22)
 AreaEvent(0x0,Warp1_23,1,23)
 AreaEvent(0x0,Warp28_23,28,23)
+AreaEvent(0x0,FloorReset,13,15)
 AFEV WaitEventTrapsFlag UnitCleanup 0x6
 CauseGameOverIfLordDies
 END_MAIN
@@ -209,6 +210,17 @@ UNIT FreelanceGeneric Strider 0x0 Level(10,Enemy,1) [9,6] 0x0 0x0 0x0 0x0 [Pike]
 UNIT
 
 ALIGN 4
+
+FloorReset:
+EVBIT_MODIFY 3
+SystemText(FloorResetWarning)
+IfNoSelectedGoto(0x1)
+FADI 16; InitializeNathan(1,4); FADU 16
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(14,15); FADU 16
+LABEL 0x2
+EndEvent
 
 
 EndingScene:

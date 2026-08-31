@@ -151,3 +151,11 @@ ALIGN 4
 DecisionSoloPalette:
 #incbin "MoreColors/gfx/BG/224DecisionSoloPal.dmp"
 
+#define DecisionCorruptedCG 0x3e
+SetColorsBackground(DecisionCorruptedCG,DecisionCorruptedImage,DecisionCorruptedPalette)
+ALIGN 4
+DecisionCorruptedImage:
+#incbin "MoreColors/gfx/BG/224DecisionCorrupted.dmp"
+ALIGN 4
+DecisionCorruptedPalette:
+#incbin "MoreColors/gfx/BG/224DecisionCorruptedPal.dmp"

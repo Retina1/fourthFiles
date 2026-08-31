@@ -63,6 +63,9 @@ UNIT
 Recruit_AuntAysu:
 UNIT AuntAysu 0x0 0x1 Level(14,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [HandAxe] NoAI
 UNIT
+Recruit_Marcel:
+UNIT Marcel 0x0 0x1 Level(4,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Shortmace,Medica] NoAI
+UNIT
 
 Recruit_Hallie:
 UNIT Hallie 0x0 0x1 Level(2,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [CompactBow] NoAI
@@ -81,6 +84,9 @@ UNIT Jane 0x0 0x1 Level(2,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Shortbow,Medica] NoAI
 UNIT
 Recruit_Eliza:
 UNIT Eliza 0x0 0x1 Level(5,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [ToxinBow] NoAI
+UNIT
+Recruit_Temira:
+UNIT Temira 0x0 0x1 Level(8,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Recurve] NoAI
 UNIT
 
 Recruit_Cassandra:
@@ -192,6 +198,9 @@ EndEvent
 AuntAysu_RecruitEvent:
 GuildRecruit(AuntAysu,Guild_AuntAysu_Dialogue,0x25)
 EndEvent
+Marcel_RecruitEvent:
+GuildRecruit(Marcel,Guild_Marcel_Dialogue,0x26)
+EndEvent
 
 //arch
 Hallie_RecruitEvent:
@@ -211,6 +220,9 @@ GuildRecruit(Jane,Guild_Jane_Dialogue,0x24)
 EndEvent
 Eliza_RecruitEvent:
 GuildRecruit(Eliza,Guild_Eliza_Dialogue,0x25)
+EndEvent
+Temira_RecruitEvent:
+GuildRecruit(Temira,Guild_Temira_Dialogue,0x26)
 EndEvent
 
 //sch
@@ -296,6 +308,7 @@ GuildLoad(Eight,Recruit_Eight,0x3)
 GuildLoad(Randellan,Recruit_Randellan,0x4)
 GuildLoad(Juniper,Recruit_Juniper,0x5)
 GuildLoad(AuntAysu,Recruit_AuntAysu,0x6,Chapter8DoneFlag)
+GuildLoad(Marcel,Recruit_Marcel,0x7)
 FADU 10
 ENDA
 
@@ -308,6 +321,7 @@ GuildLoad(Rodney,Recruit_Rodney,0x3)
 GuildLoad(Gamon,Recruit_Gamon,0x4)
 GuildLoad(Jane,Recruit_Jane,0x5)
 GuildLoad(Eliza,Recruit_Eliza,0x6,Chapter5DoneFlag)
+GuildLoad(Temira,Recruit_Temira,0x7,Chapter8DoneFlag)
 FADU 10
 ENDA
 

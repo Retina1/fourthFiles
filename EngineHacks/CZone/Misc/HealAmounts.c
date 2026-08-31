@@ -56,6 +56,8 @@ void ChapterChangeUnitCleanup(void) {
 
             unit->rescue = 0;
             unit->supportBits = 0;
+			
+			SetActiveArt(unit, 0);
         }
     }
 
@@ -103,6 +105,8 @@ void ResetAllPlayerUnitState(void)
         unit->state |= US_HIDDEN;
         unit->rescue = 0;
         unit->supportBits = 0;
+		
+		SetActiveArt(unit, 0);
     }
 
     RefreshEntityBmMaps();
@@ -126,6 +130,7 @@ void HealPlayersASMC(ProcPtr* proc) {
 		curUnit->state = curUnit->state &~ (US_UNSELECTABLE | US_HAS_MOVED | US_HAS_MOVED_AI);
 		int amount = GetUnitMaxHp(curUnit)/3;
 		AddUnitHp(curUnit, amount);
+		SetActiveArt(curUnit, 0);
 		unitID++;
 	}
 	ClearAllBuffsDebuffs();

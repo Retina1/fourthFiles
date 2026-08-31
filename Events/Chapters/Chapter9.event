@@ -1,0 +1,110 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events9ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x10,Chapter9_House1,16,10)
+Village(0x11,Chapter9_House2,4,6)
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,18] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [14,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+
+EnemyUnits:
+UNIT MonsterGeneric Cyclops 0x0 Level(11,Enemy,1) [14,12] 0x0 0x0 0x0 0x0 [Broadaxe] NoAI
+UNIT MonsterGeneric MaulMole 0x0 Level(11,Enemy,1) [7,19] 0x0 0x0 0x0 0x0 [MaulClaw] NoAI
+UNIT MonsterBoss Biclops 0x0 Level(12,Enemy,1) [1,17] 0x0 0x0 0x0 0x0 [Greataxe] NoAI
+//belvarus riders
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [9,1] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [10,1] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [11,1] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [9,2] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [10,2] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [11,2] 0x0 0x0 0x0 0x0 [Partizan] NoAI
+//boss cameos
+UNIT George Driver 0x0 Level(13,Enemy,1) [17,1] DropItem 0x0 0x0 0x0 [Dominance,KnightProof] NoAI
+UNIT Iseau Fencer 0x0 Level(18,Enemy,1) [18,2] 0x0 0x0 0x0 0x0 [JollyRoger] NoAI
+UNIT
+
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+MUSC AmbientWindBirds
+CleanTextNoMap(0x3,FillerDialogue)
+LoadUnitsByDifficulty(EnemyUnits,EnemyUnits,EnemyUnits)
+SetUnitStatline(MonsterBoss,60,25,2,10,9,1,18,8)
+SetUnitWEXP(MonsterBoss,0,0,181,0,0)
+CallPreps
+EndEvent
+
+EndingScene:
+ENUT Chapter9DoneFlag
+MUSC Song_EditMode
+CleanTextNoMap(0x18,FillerDialogue)
+MoveToChapter(HirschringSquare)
+ENDA
+
+Chapter9_House1:
+VillageEventItem(FillerDialogue, 0x0, HandSpear)
+Chapter9_House2:
+VillageEventItem(FillerDialogue, 0x0, DevilAxe)
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

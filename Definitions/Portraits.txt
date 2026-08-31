@@ -232,6 +232,14 @@ HelenaMug
 QuintonMug
 AlexandrusMug
 ElizaMug
+HocanteMug
+EdithMug
+RikkiaMug
+TemiraMug
+ClarisseMug
+NaoMug
+WitoldMug
+MarcelMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

@@ -183,6 +183,7 @@
 #define KingBrooch 0xDB
 #define SleepGas 0xDC
 #define SimpleRing 0xDD
+#define ThornCrown 0xDE
 #define HeroCrest 0xE6
 #define KnightProof 0xE7
 #define OrionsBolt 0xE8

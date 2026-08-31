@@ -56,3 +56,124 @@ Chapter5CityEnd:
 MUSC Song_DevilsRoulette
 CleanTextNoMap(0x0, City05_EndText)
 ENDA
+
+Chapter8CityEnd:
+EVBIT_MODIFY 3
+FADI 10
+CLEA 0
+CLEE 0
+CLEN 0
+LOMA Chapter1
+TILECHANGE 0x0
+MUSC Song_OohWilfre
+SetBackground(0x0)
+SetDefaultName(HedgeName)
+Text(FillerDialogue)
+MUSC Song_Incidental3B
+LABEL 0x1
+FADI 10
+CLEAN
+ASMC2 0x48281
+FADI 10
+CLEAN
+
+CheckName(PiorinName)
+BEQ 0x3 0xc 0x0
+	CALL PiorinGameOver
+LABEL 0x3
+
+CheckName(RivianName)
+BEQ 0x10 0xc 0x0
+	SetBackground(DecisionCorruptedCG)
+	ASMC 0x21
+	GOTO 0x20
+LABEL 0x10
+
+SetBackground(0x0)
+CheckName(HedgeName)
+BEQ 0x2 0xc 0x0
+	Text(City08_NameGuildHedge)
+	GOTO 0x20
+LABEL 0x2
+
+CheckName(GuildName)
+BEQ 0x4 0xc 0x0
+	Text(City08_NameGuildGuild)
+	GOTO 0x20
+LABEL 0x4
+
+CheckName(Name_Nathan)
+BEQ 0x5 0xc 0x0
+	Text(City08_NameGuildNathan)
+	GOTO 0x20
+LABEL 0x5
+
+CheckName(Name_Astarte)
+BEQ 0x6 0xc 0x0
+	Text(City08_NameGuildAstarte)
+	GOTO 0x20
+LABEL 0x6
+
+CheckName(Name_Gore)
+BEQ 0x7 0xc 0x0
+	Text(City08_NameGuildGore)
+	GOTO 0x20
+LABEL 0x7
+
+CheckName(Name_Cleone)
+BEQ 0x8 0xc 0x0
+	Text(City08_NameGuildCleone)
+	GOTO 0x20
+LABEL 0x8
+
+CheckName(Name_Benthus)
+BEQ 0x9 0xc 0x0
+	Text(City08_NameGuildBenthus)
+	GOTO 0x1
+LABEL 0x9
+
+CheckName(Name_Rat)
+BEQ 0xa 0xc 0x0
+	Text(City08_NameGuildRat)
+	GOTO 0x20
+LABEL 0xa
+
+CheckName(Name_Helman)
+BEQ 0xb 0xc 0x0
+	Text(City08_NameGuildHelman)
+	GOTO 0x20
+LABEL 0xb
+
+CheckName(Name_Kryst)
+BEQ 0xc 0xc 0x0
+	Text(City08_NameGuildFourth)
+	GOTO 0x20
+LABEL 0xc
+
+CheckName(Name_Fourth)
+BEQ 0xd 0xc 0x0
+	Text(City08_NameGuildFourth)
+	GOTO 0x20
+LABEL 0xd
+
+CheckName(RetinaName)
+BEQ 0xe 0xc 0x0
+	Text(City08_NameGuildRetina)
+	GOTO 0x20
+LABEL 0xe
+
+CheckName(OverspillName)
+BEQ 0xf 0xc 0x0
+	Text(City08_NameGuildOverspill)
+	GOTO 0x20
+LABEL 0xf
+
+
+
+Text(City08_NameGuildGeneric)
+
+LABEL 0x20 //confirm name
+SystemText(NameAcceptPrompt)
+IfNoSelectedGoto(0x1)
+Text(FillerDialogue)
+ENDA

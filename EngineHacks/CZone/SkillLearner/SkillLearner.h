@@ -116,7 +116,7 @@ static const struct MenuDef SkillLeveler_MenuDef =
     .rect = { 1, 4, 15 },
     .menuItems = MenuCommands_SkillLeveler, 
 
-    .onBPress = (void*) (0x08022809), // Goes back to main game loop
+	.onBPress = (void*) (0x080152F4+1), // Goes back to main game loop
 };
 
 //draw desc at 16,5,14

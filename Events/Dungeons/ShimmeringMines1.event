@@ -74,6 +74,7 @@ AreaEvent(0x0,Warp1_21,1,21)
 AreaEvent(0x0,Warp7_21,7,21)
 AreaEvent(0x0,Warp18_21,18,21)
 AreaEvent(0x0,Warp17_22,17,22)
+AreaEvent(0x0,FloorReset,21,22)
 AFEV WaitEventTrapsFlag UnitCleanup 0x6
 CauseGameOverIfLordDies
 END_MAIN
@@ -271,6 +272,17 @@ CLEA 0
 InitializeNathan(1,2)
 ENUT WaitEventTrapsFlag
 ENUT 0x66
+EndEvent
+
+FloorReset:
+EVBIT_MODIFY 3
+SystemText(FloorResetWarning)
+IfNoSelectedGoto(0x1)
+FADI 16; InitializeNathan(1,2); FADU 16
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(22,22); FADU 16
+LABEL 0x2
 EndEvent
 
 Encounter1:

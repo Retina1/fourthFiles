@@ -96,10 +96,13 @@ GuideEntry(4, 3, GuideEndbringerHeader, GuideFiller, Chapter5DoneFlag)
 GuideEntry(5, 4, Credits_Units_Label, Credits_Units, Chapter2DoneFlag)
 GuideEntry(5, 4, Credits_Units_Label2, Credits_Units2, Chapter2DoneFlag)
 GuideEntry(5, 4, Credits_Units_Label3, Credits_Units3, Chapter2DoneFlag)
-GuideEntry(5, 4, Credits_Mugs_Label, GuideFiller, Chapter2DoneFlag)
-GuideEntry(5, 4, Credits_Anims_Label, GuideFiller, Chapter2DoneFlag)
-GuideEntry(5, 4, Credits_Graphics_Label, GuideFiller, Chapter2DoneFlag)
-GuideEntry(5, 4, Credits_Thanks_Label, GuideFiller, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Mugs_Label, Credits_Mugs, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Anims_Label, Credits_Anims, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Anims2_Label, Credits_Anims2, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Anims3_Label, Credits_Anims3, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Graphics_Label, Credits_Graphics, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Code_Label, Credits_Code, Chapter2DoneFlag)
+GuideEntry(5, 4, Credits_Thanks_Label, Credits_Thanks, Chapter2DoneFlag)
 GuideEntry(0xC,0,0,0,0) //terminator?
 GuideTerminator
 

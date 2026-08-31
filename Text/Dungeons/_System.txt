@@ -20,6 +20,13 @@ ahead. It's not too late to turn back.[N]
 ...Proceed on ahead anyway?[N]
 [No][X]
 
+##FloorResetWarning
+Space distorts around your feet.[N]
+Would you like to return to the[N]
+floor's start? This doesn't reset[N]
+enemy encounters or opened chests.[N]
+[No][X]
+
 
 
 ##Ratatoskr_Battle3

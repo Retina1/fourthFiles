@@ -1,0 +1,347 @@
+
+
+##City08_EndText
+[MidLeft][Guildmaster][MidRight][Nathan]
+text[A][X]
+
+##City08_PrePreps
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+text[A][X]
+
+##City08_PostPreps
+[MidLeft][Nathan]
+check for new guildmembers[N]
+possibly say this in st1/ch5[A][X]
+
+
+##City08_Cleone
+[MidLeft][Nathan][MidRight][Cleone][MidLeft]
+text[A][X]
+
+
+##City08_Helman
+[MidLeft][Nathan][MidRight][Helman]
+text[A][X]
+
+##City08_Kryst
+[MidLeft][Nathan][MidRight][Kryst][MidLeft]
+text[A][X]
+
+##City08_Rat
+[MidLeft][Nathan][MidRight][Rat][MidLeft]
+text[A][X]
+##City08_Rat2
+text[A][X]
+
+
+##City08_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+text[A][X]
+
+
+##City08_Ayda
+[MidLeft][Nathan][MidRight][Ayda]
+text[A][X]
+
+##City08_Fourth
+[MidLeft][Nathan][MidRight][Fourth]
+text[A][X]
+
+##City08_Claire
+[MidLeft][Nathan][MidRight][Claire]
+Good to see you made[N]
+it back safe again.[AN]
+You were gone a bit,[N]
+and I got worried.[AN]
+[...]Is that a bit silly[N]
+and sentimental of me?[AN]
+I know you're all out[N]
+risking your lives.[AN]
+If you don't come back,[AN]
+that's just the way it[N]
+has to be sometimes.[AN]
+But it still[...] It scares[N]
+me to think about.[AN]
+A lot of people here[N]
+might be like that.[AN]
+Wondering why one day[N]
+you're just[...] gone.[AN][MidLeft]
+I[...] never thought[N]
+of it like that.[AN][MidRight]
+I try not to.[AN]
+[...]Wow, I'm a real[N]
+bummer today.[AN]
+Well, let's fix that.[AN]
+As a reward for your[N]
+triumphant return,[AN]
+your museum admission's[N]
+free for the day.[AN][MidLeft]
+[...]It's always free.[AN][MidRight]
+Damn it. Well, I'm[N]
+right anyway.[AN]
+It's sure free.[A][X]
+
+
+
+##City08_Astarte
+[MidLeft][Nathan][MidRight][Astarte]
+Heya, Nate. I've enjoyed[N]
+our little vacation,[AN]
+but honestly I wouldn't[N]
+mind getting back to it.[AN]
+Adventuring, I mean.[AN][MidLeft]
+Even after our trials[...][N]
+I have to agree.[AN]
+We've well and truly proven[N]
+our guild's resolve,[AN]
+but I still think we can[N]
+do ever more.[AN][MidRight]
+I'm glad you think[N]
+so highly of us.[AN]
+I always knew that[N]
+we'd do great things.[AN]
+But, well[...][A] I know you[N]
+had your doubts.[AN]
+At least, at first.[AN]
+Smart man, growing out[N]
+of those doubts.[AN][MidLeft]
+I wouldn't say[...][N]
+Not fully[...] doubts.[AN][MidRight]
+Sure, sure.[AN]
+Either way, you're the one[N]
+who'll lead us to greatness.[AN]
+So I'm glad we're both on the[N]
+same page about the guild.[A][X]
+
+##City08_Gore
+[MidLeft][Nathan][MidRight][Gore]
+Hey, Nathan.[AN][MidLeft]
+Used to the eyepatch[N]
+yet, Gore?[AN][MidRight]
+Eh. Honestly, were it not[N]
+for the looks I'd get,[AN]
+I'd probably go without.[AN]
+[...]At least Guildmaster[N]
+didn't make me pay for it.[AN][MidLeft]
+Still can't believe he owns enough[N]
+eyepatches to give hand-me-downs.[AN]
+Always would've thought he had[N]
+just the one.[A] More frugal and[N]
+practical that way.[AN][MidRight]
+Hm. I wouldn't think about any[N]
+of those details myself.[AN]
+But, then again, I'm not you.[N]
+Only the guy that shoots.[AN]
+[...]Might go and get some[N]
+rest real quick.[AN]
+Make sure we're prepared.[AN][MidLeft]
+I'll do my best, Gore.[A][X]
+
+##City08_Benjamin
+[MidLeft][Johanna][MidRight][Nathan]
+I see you're running the[N]
+shop again, Johanna.[AN][MidLeft]
+Don't worry, Daddy's right in[N]
+the back if you need 'im.[AN][FarFarLeft][Benjamin]
+That I am, kid. I'll be[N]
+up in a moment.[AN][Close][MoveFarLeft][MidLeft][MoveLeft][FarLeft]
+Good to see you, kid.[AN]
+I heard your guild got[N]
+stuck in the mines.[AN]
+Gossip gets round fast.[AN]
+Johanna was worried sick[N]
+for Hedge, you know.[AN][Left]
+But I knew you'd make it![AN]
+And now, I can sell you[N]
+more stuff, right?[AN][MidRight]
+We could absolutely use[N]
+some more supplies.[AN]
+I see your selection's[N]
+quite a bit bigger.[AN][FarLeft]
+Yup. Finally had some real[N]
+luck with our suppliers.[AN]
+Still. Times are hard and[N]
+gettin' harder all the time.[AN]
+All I can do is cling to Lucy's[N]
+hopes of a brighter future.[AN][MidRight]
+Lucy?[AN][FarLeft]
+Don't worry about it.[N]
+If there's nothin' else,[AN]
+Johanna looks about ready[N]
+to combust,[A] if you don't[N]
+let her help you shop.[AN][Left][Smile]
+Daddy's right![AN][MidRight]
+Don't worry. I'm just[N]
+about ready to buy.[A][X]
+
+##City_BenjaminCh8BossConditional
+[MidLeft][Nathan][MidRight][Benjamin][MidLeft]
+Ah, right! One more thing.[N]
+Got this from[...][A] Well,[N]
+I'm not quite sure where.[AN][MidRight]
+That's quite the gemstone.[AN]
+[...]Hm[...] Let me see it for[N]
+a moment, please.[AN][MidLeft]
+Of course.[AN][MidRight]
+And if I just take it[N]
+to the back for a bit[...][AN][Close][MoveFarFarRight]
+[...]I do that[...] and that[...][N]
+Give it one of these[...][AN]
+Finished![AN][Close][MoveMidRight]
+Here you go, kid.[AN][MidLeft]
+That was fast.[AN][MidRight]
+Simply a true craftsman's[N]
+inspiration shining through.[AN]
+This diadem should similarly[N]
+inspire you if you wear it.[AN]
+Do please try not to lose it.[A][X]
+
+
+##City08_Bertram
+[MidLeft][Nathan][MidRight][Bertram]
+[...]Heard you killed one[N]
+of your guildmates.[AN]
+Didn't think you had[N]
+it in you, worm.[AN][MidLeft]
+[...][AN][MidRight]
+What, not gonna tell me it[N]
+was [OpenQuote]justified[CloseQuote] or anything?[AN]
+Hmph. Don't go thinking that[N]
+you'll impress me.[AN]
+It's just fun to know that[N]
+you're scum like us.[AN][MidLeft]
+[...][Clear][MidRight]
+Damn. He's not[N]
+fun anymore.[A][X]
+
+##HedgeName
+Hedge[X]
+##PiorinName
+Piorin[X]
+##GuildName
+Guild[X]
+##RetinaName
+Retina[X]
+##OverspillName
+Overspill[X]
+##RivianName
+Rivian[X]
+
+
+//banned guild names include piorin, benthus, rivian (crashes game)
+//guild names with special responses include nathan, astarte, gore, cleone, rat, (guild) master
+//hedge, returner, overspill, retina, fucker, morrow, aercolyn, etrian, guild, endbringe, slop
+
+##City08_NameGuildHedge
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+So, you wanna stick[N]
+with [Guild] after all?[A][X]
+
+##City08_NameGuildGuild
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Clever.[N]
+Well, if you say so.[A][X]
+
+##City08_NameGuildNathan
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Sounds a bit[N]
+egotistical. You sure?[A][X]
+
+##City08_NameGuildAstarte
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. I mean, I[N]
+guess she'd like it.[A][X]
+
+##City08_NameGuildGore
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. In honor of him,[N]
+I suppose. Sure, why not.[A][X]
+
+##City08_NameGuildCleone
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Sure thing,[N]
+lover boy. If you want.[A][X]
+
+##City08_NameGuildBenthus
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. What in[N]
+the fuck is wrong with you?[AN]
+You know what, no.[N]
+Pick another name.[A][X]
+
+##City08_NameGuildRat
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Honestly, it[N]
+works well. Not bad, kid.[A][X]
+
+##City08_NameGuildHelman
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. You mean[N]
+the bald armored man?[AN]
+I mean, if you insist,[N]
+I won't stop you.[A][X]
+
+##City08_NameGuildKryst
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Was her[N]
+music really that good?[AN]
+If you think so, sure.[A][X]
+
+##City08_NameGuildFourth
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. I like it.[N]
+No other notes.[A][X]
+
+##City08_NameGuildRetina
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Damn, that[N]
+one's got real panache.[AN]
+If you don't stick with it,[N]
+I think I'm taking it.[A][X]
+
+##City08_NameGuildOverspill
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Fills[N]
+me with a seething fury.[AN]
+I can't explain why, so I[N]
+guess you can use it.[A][X]
+
+##City08_NameGuildGeneric
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild [Guild]. Hm. That could[N]
+work. You cool with it?[A][X]
+
+##NameAcceptPrompt
+Is Guild [Guild][N]
+an acceptable name?[N]
+[No][X]
+
+##City08_Premonition
+You will know pain.[N]
+You will know sorrow.[AN]
+But, for a brief, shining,[N]
+transcendent moment,[AN]
+you will also know what[N]
+it is to be truly free.[A][X]
+
+##City08_Premonition2
+The world is changing.[N]
+Treasure what you have.[AN]
+Hold fast your friends.[N]
+Hold fast your dreams.[A][X]
+
+##City08_Premonition3
+Nobody can hold the[N]
+changing world still.[AN]
+Every day is one step[N]
+closer towards the end.[A][X]
+
+##City08_Premonition4
+No matter what, the[N]
+past is in the past.[AN]
+You can never go back[N]
+to a simpler time.[A][X]
+
+##City08_Premonition5
+Yesterday is done.[N]
+Never look back.[A][X]

@@ -4,7 +4,7 @@
 	#define	Akrillic_grp  voicegroup000
 	#define	Akrillic_pri  0
 	#define	Akrillic_rev  0
-	#define	Akrillic_mvl  127
+	#define	Akrillic_mvl  100
 	#define	Akrillic_key  0
 	#define	Akrillic_tbs  1
 	#define	Akrillic_exg  0

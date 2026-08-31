@@ -138,6 +138,12 @@ King Brooch[X]
 A brooch made of lustrous wolf fur.[N]
 Grants [_1].[_1]x Hit. Add [_2][_0]% of Mag to[N]
 Atk with phys. weapons, before mults.[X]
+##Name_ThornCrown
+Thorn Crown[X]
+##Desc_ThornCrown ^
+A radiantly shining yet painful crown.[N]
+At start of turn, halves the holder's[N]
+HP and purges ailments/debuffs/binds.[X]
 
 ##Name_SimpleRing
 Simple Ring[X]

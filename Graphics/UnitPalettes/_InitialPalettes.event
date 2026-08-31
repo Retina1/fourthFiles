@@ -42,6 +42,13 @@ Landsknecht_FerrisDMP:
 #incbin "paletteFiles/Initial/Landsknecht_Ferris.dmp"
 
 ALIGN 4
+Swordfighter_VelissaDMP:
+#incbin "paletteFiles/Initial/Swordfighter_Velissa.dmp"
+ALIGN 4
+Landsknecht_VelissaDMP:
+#incbin "paletteFiles/Initial/Landsknecht_Velissa.dmp"
+
+ALIGN 4
 PaletteIdentifier(Swordfighter_CoastKid,Swordfighter_CoastKidDMP)
 PaletteIdentifier(Landsknecht_CoastKid,Landsknecht_CoastKidDMP)
 PaletteIdentifier(Swordfighter_Puzon,Swordfighter_PuzonDMP)
@@ -54,6 +61,8 @@ PaletteIdentifier(Swordfighter_Anhinga,Swordfighter_AnhingaDMP)
 PaletteIdentifier(Landsknecht_Anhinga,Landsknecht_AnhingaDMP)
 PaletteIdentifier(Swordfighter_Ferris,Swordfighter_FerrisDMP)
 PaletteIdentifier(Landsknecht_Ferris,Landsknecht_FerrisDMP)
+PaletteIdentifier(Swordfighter_Velissa,Swordfighter_VelissaDMP)
+PaletteIdentifier(Landsknecht_Velissa,Landsknecht_VelissaDMP)
 
 SwordfighterPaletteList:
 PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
@@ -62,6 +71,7 @@ PaletteAssociationEntry(Cam,Swordfighter_Cam)
 PaletteAssociationEntry(Marag,Swordfighter_Marag)
 PaletteAssociationEntry(Anhinga,Swordfighter_Anhinga)
 PaletteAssociationEntry(Ferris,Swordfighter_Ferris)
+PaletteAssociationEntry(Velissa,Swordfighter_Velissa)
 WORD 0 0
 ALIGN 4
 LandsknechtPaletteList:
@@ -71,6 +81,7 @@ PaletteAssociationEntry(Cam,Landsknecht_Cam)
 PaletteAssociationEntry(Marag,Landsknecht_Marag)
 PaletteAssociationEntry(Anhinga,Landsknecht_Anhinga)
 PaletteAssociationEntry(Ferris,Landsknecht_Ferris)
+PaletteAssociationEntry(Velissa,Landsknecht_Velissa)
 WORD 0 0
 
 //kn
@@ -278,6 +289,15 @@ ALIGN 4
 Sniper_JaneDMP:
 #incbin "paletteFiles/Initial/Sniper_Jane.dmp"
 
+PaletteIdentifier(Archer_Eliza, Archer_ElizaDMP)
+PaletteIdentifier(Sniper_Eliza, Sniper_ElizaDMP)
+ALIGN 4
+Archer_ElizaDMP:
+#incbin "paletteFiles/Initial/Archer_Eliza.dmp"
+ALIGN 4
+Sniper_ElizaDMP:
+#incbin "paletteFiles/Initial/Sniper_Eliza.dmp"
+
 ALIGN 4
 ArcherPaletteList:
 PaletteAssociationEntry(Hallie,Archer_Hallie)
@@ -285,6 +305,7 @@ PaletteAssociationEntry(Anjelica,Archer_Anjelica)
 PaletteAssociationEntry(Rodney,Archer_Rodney)
 PaletteAssociationEntry(Gamon,Archer_Gamon)
 PaletteAssociationEntry(Jane,Archer_Jane)
+PaletteAssociationEntry(Eliza,Archer_Eliza)
 WORD 0 0
 ALIGN 4
 SniperPaletteList:
@@ -293,6 +314,7 @@ PaletteAssociationEntry(Anjelica,Sniper_Anjelica)
 PaletteAssociationEntry(Rodney,Sniper_Rodney)
 PaletteAssociationEntry(Gamon,Sniper_Gamon)
 PaletteAssociationEntry(Jane,Sniper_Jane)
+PaletteAssociationEntry(Eliza,Sniper_Eliza)
 WORD 0 0
 
 //schola

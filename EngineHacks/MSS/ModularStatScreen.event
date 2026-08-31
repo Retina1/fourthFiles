@@ -12,8 +12,8 @@
   #define Skl_Arrow_Y 0x38
   #define Spd_Arrow_X 0x78
   #define Spd_Arrow_Y 0x48
-  #define Trv_Icon_X 0xC0
-  #define Trv_Icon_Y 0x2E
+  #define Trv_Icon_X 184
+  #define Trv_Icon_Y 108
   
   #include "DisplayGrowthsOptions/DisplayGrowthsOptions.event"
   #include "WeaponRankStatScreen/WeaponRankStatScreen.event"

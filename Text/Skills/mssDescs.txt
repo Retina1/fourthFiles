@@ -428,13 +428,13 @@ user's weapon to grant another turn.[X]
 Quick Draw: Boosts Atk and AS at[N]
 2+ range if enemy can counter.[X]
 ##
-Steady Sighting: Boosts Hit[N]
+Steady Sighting: Boosts Atk[N]
 if user has moved no tiles.[X]
 ##
 Firefight: Boosts user's[N]
 Avo per tile moved.[X]
 ##
-Point Blank: Massively boosts AS[N]
+Point Blank: Triples AS/Avo[N]
 if user initiates at 1 range.[X]
 ##
 Vital Snipe: An accurate shot[N]
@@ -765,8 +765,8 @@ adjacent unit two tiles away.[X]
 Wrath: Boosts Crit proportionally[N]
 to this unit's missing HP.[X]
 ##
-Adrenaline Rush: Attack again after[N]
-successfully inflicting a disable.[X]
+Adrenaline Rush: Strike again after[N]
+successful bind/ailment infliction.[X]
 ##
 Breather: Restore own HP[N]
 and heal any debuffs.[X]
