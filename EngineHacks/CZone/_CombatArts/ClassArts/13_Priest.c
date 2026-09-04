@@ -136,6 +136,7 @@ void WarDiseaseItemSelectEffect(u16 artID, struct Unit* unit)
 }
 
 void TryAddUnitToRescueStaffTargetList(struct Unit* unit);
+
 void MakeTargetListForWarGrasp(struct Unit* unit) {
 	int x = unit->xPos;
     int y = unit->yPos;

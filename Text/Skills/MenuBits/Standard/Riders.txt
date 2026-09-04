@@ -54,4 +54,4 @@ Cost: 7 Durability.[X]
  Gae Bolg[X]
 ##UM_GaeBolgDesc
 Shalt not resist.[N]
-Cost: 13 Durability.[X]
+Cost: 30 Durability.[X]

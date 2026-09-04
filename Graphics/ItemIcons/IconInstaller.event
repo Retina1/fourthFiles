@@ -36,10 +36,38 @@ ItemIconEntry(AtrocityScalesIcon)
 #incbin "Dmp/atrocityScale.dmp"
 ItemIconEntry(HopebringerIcon)
 #incbin "Dmp/Hopebringer.dmp"
+ItemIconEntry(VoltageIcon)
+#incbin "Dmp\{XVI} Thunderstorm.dmp"
+ItemIconEntry(FrigidIcon)
+#incbin "Dmp\{XVI} Glaciate.dmp"
+ItemIconEntry(SearingIcon)
+#incbin "Dmp\{XVI} Inferno.dmp"
+ItemIconEntry(NovaIcon)
+#incbin "Dmp\{XVI} Void.dmp"
+ItemIconEntry(AntimatterIcon)
+#incbin "Dmp\{XVI} Dark Sun.dmp"
+ItemIconEntry(DivinityIcon)
+#incbin "Dmp\{XVI} Judge.dmp"
+ItemIconEntry(BelladonnaIcon)
+#incbin "Dmp\{2WB} (Vanilla + Blitz) Nightmare.dmp"
+ItemIconEntry(FurysongIcon)
+#incbin "Dmp\{Zarg} Magic 2 [F2E].dmp"
+ItemIconEntry(SealGleamIcon)
+#incbin "Dmp\{Seal} (SacredWar) Demon Surge.dmp"
+ItemIconEntry(MaulClawIcon)
+#incbin "Dmp\maulClaw.dmp"
 
 //passive
 ItemIconEntry(SimpleRingIcon)
 #incbin "Dmp/{Beansy} Ring White [F2E].dmp"
+ItemIconEntry(KingBroochIcon)
+#incbin "Dmp\{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Necklace of Resist.dmp"
+ItemIconEntry(CrinkleGloveIcon)
+#incbin "Dmp\{Tactics Ogre LUCT, EldritchAbo, serebii01} Daedalus Knuckles.dmp"
+ItemIconEntry(ThornCrownIcon)
+#incbin "Dmp\{Beansy} Angel Crown [F2E].dmp"
+ItemIconEntry(SoulShieldIcon)
+#incbin "Dmp\{Dark} (Succubus) Monster 1.dmp"
 
 //CONSUMABLES
 ItemIconEntry(VulneraryIcon)
@@ -124,6 +152,28 @@ ItemIconEntry(HolyCloakIcon)
 #incbin "Dmp/{SMITHYGCN} Goods 8.dmp"
 ItemIconEntry(DriveGearIcon)
 #incbin "Dmp/appDriveGear.dmp"
+ItemIconEntry(HippokosIcon)
+#incbin "Dmp\{XVI} Warp.dmp"
+ItemIconEntry(OutlandShieldIcon)
+#incbin "Dmp\{Tactics Ogre LUCT, EldritchAbo, serebii01} Baldur Shield.dmp"
+ItemIconEntry(SpiritWrapIcon)
+#incbin "Dmp\{Tactics Ogre LUCT, EldritchAbo, serebii01} Linen.dmp"
+ItemIconEntry(SightingLensIcon)
+#incbin "Dmp\{Rootrick, Zarg} (Secret of Evermore) Amulet of Annihilation.dmp"
+
+ItemIconEntry(ParadoxCoreIcon)
+#incbin "Dmp\{Batima} Second Seal (Alt).dmp"
+ItemIconEntry(GuildSealIcon)
+#incbin "Dmp\{Celice} [Master Seal].dmp"
+
+ItemIconEntry(BlankCogIcon)
+#incbin "Dmp\{Cardcafe} (FE15) Cog [F2E].dmp"
+ItemIconEntry(CrimsonTapeIcon)
+#incbin "Dmp\{GabrielKnight} (3) Stat Booster 9.dmp"
+ItemIconEntry(SilkenWireIcon)
+#incbin "Dmp\{Windsweep} Gold Scroll.dmp"
+ItemIconEntry(PurestOilIcon)
+#incbin "Dmp\{Beansy} Yellow Tonic [F2E].dmp"
 
 //SCROLLS
 ItemIconEntry(FlameScrollIcon)
@@ -214,6 +264,10 @@ ItemIconEntry(HeavensfallIcon)
 #incbin "Dmp/{EldritchA, Indogutsu Tenbuki} (Tactics Ogre) Whip 3.dmp"
 ItemIconEntry(ScorpioIcon)
 #incbin "Dmp/scorpio.dmp"
+ItemIconEntry(HazeWhipIcon)
+#incbin "Dmp\{Tactics Ogre LUCT, EldritchAbo, serebii01} Supple Whip.dmp"
+ItemIconEntry(StonestingIcon)
+#incbin "Dmp\{Tactics Ogre LUCT, EldritchAbo, serebii01} Cursed Whip.dmp"
 
 //DRIVE BLADES
 ItemIconEntry(Type0Icon)

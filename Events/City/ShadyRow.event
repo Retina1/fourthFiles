@@ -13,6 +13,17 @@ UNIT MilitaryGeneric Gunner 0x0 Level(9,NPC,1) [1,1] 0x0 0x0 0x0 0x0 [Vulnerary]
 UNIT MilitaryGeneric Sniper 0x0 Level(15,NPC,1) [3,6] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT Xavens Warlock 0x0 Level(23,NPC,1) [1,2] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
 UNIT
+ShadyRowUnitsC8:
+//marketplpace npc, generics
+UNIT MilitaryGeneric Axefighter 0x0 Level(7,NPC,1) [5,12] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Hunter 0x0 Level(12,NPC,1) [1,1] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Survivalist 0x0 Level(13,NPC,1) [2,2] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Scholar 0x0 Level(5,NPC,1) [20,1] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Scholar 0x0 Level(7,NPC,1) [22,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Seeker 0x0 Level(9,NPC,1) [12,6] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Seeker 0x0 Level(15,NPC,1) [14,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Revati 0x0 0x0 Level(15,NPC,1) [18,3] 0x0 0x0 0x0 0x0 [ThorScroll] NeverMoveAI
+UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
@@ -51,7 +62,7 @@ FADU 10
 EndEvent
 
 LoadDuelingGroundsUnits:
-LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DuelingGroundsUnitsC5,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DuelingGroundsUnitsC5,DuelingGroundsUnitsC8,0,0,0,0,0,0,0,0,0)
 ENDA
 
 ShadyRowMoveToShadesong:
@@ -60,7 +71,7 @@ CALL LoadShadesongSigils
 //eventual song
 MUSC Song_BlueInGreen
 //4th is C5
-LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ShadesongUnitsC5,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ShadesongUnitsC5,ShadesongUnitsC8,0,0,0,0,0,0,0,0,0)
 FADU 10
 EndEvent
 
@@ -68,6 +79,6 @@ ShadyRowMoveToImperialPost:
 SwapToMap(ImperialPost,1,5)
 CALL LoadImperialPostSigils
 //4th is C5
-LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ImperialPostUnitsC5,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ImperialPostUnitsC5,ImperialPostUnitsC8,0,0,0,0,0,0,0,0,0)
 FADU 10
 EndEvent

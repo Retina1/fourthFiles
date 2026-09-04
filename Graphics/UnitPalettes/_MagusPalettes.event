@@ -276,6 +276,15 @@ ALIGN 4
 Hexer_WhirlDMP:
 #incbin "paletteFiles/Magus/Hexer_Whirl.dmp"
 
+PaletteIdentifier(Lurker_Ghevena, Lurker_GhevenaDMP)
+PaletteIdentifier(Hexer_Ghevena, Hexer_GhevenaDMP)
+ALIGN 4
+Lurker_GhevenaDMP:
+#incbin "paletteFiles/Magus/Lurker_Ghevena.dmp"
+ALIGN 4
+Hexer_GhevenaDMP:
+#incbin "paletteFiles/Magus/Hexer_Ghevena.dmp"
+
 ALIGN 4
 LurkerPaletteList:
 PaletteAssociationEntry(Rat,Lurker_Rat)
@@ -284,6 +293,7 @@ PaletteAssociationEntry(Zoe,Lurker_Zoe)
 PaletteAssociationEntry(Paul,Lurker_Paul)
 PaletteAssociationEntry(Hausten,Lurker_Hausten)
 PaletteAssociationEntry(Whirl,Lurker_Whirl)
+PaletteAssociationEntry(Ghevena,Lurker_Ghevena)
 WORD 0 0
 ALIGN 4
 HexerPaletteList:
@@ -293,4 +303,5 @@ PaletteAssociationEntry(Zoe,Hexer_Zoe)
 PaletteAssociationEntry(Paul,Hexer_Paul)
 PaletteAssociationEntry(Hausten,Hexer_Hausten)
 PaletteAssociationEntry(Whirl,Hexer_Whirl)
+PaletteAssociationEntry(Ghevena,Hexer_Ghevena)
 WORD 0 0

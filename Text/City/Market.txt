@@ -120,6 +120,28 @@ enchantment. It's seen a fair bit[N]
 of use, and is on its last legs.[X]
 
 
+//snipistol
+##Visit8xMarket1 ^
+Aftermarket Pistol (800 Gold)[X]
+##Visit8xMarket1Desc
+A pistol with a dozen mods[N]
+that probably should have[N]
+been outlawed ages ago.[X]
+//claymore
+##Visit8xMarket2 ^
+Bastard's Sword (580 Gold)[X]
+##Visit8xMarket2Desc
+Not a bastard sword. Rather,[N]
+a sword stolen from some poor[N]
+bastard. Just clarifying.[X]
+//cute doll - give to johanna
+##Visit8xMarket3 ^
+Vintage Children's Toy (1000 Gold)[X]
+##Visit8xMarket3Desc
+A stuffed doll produced around[N]
+the founding of Asketa. It's in[N]
+alarmingly good condition.[X]
+
 //inedible leaf
 ##Visit10xMarket1 ^
 Lifeflow Salad (550 Gold)[X]

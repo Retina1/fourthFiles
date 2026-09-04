@@ -454,6 +454,9 @@ FILL 0xff*0x4
 {
 #include "Dungeons/ShimmeringMines3.event"
 }
+{
+#include "Dungeons/DrowningHollows8.event"
+}
 
 //dungeon FOES
 //dungeon fights use initial strike/resounding weapons/shiver

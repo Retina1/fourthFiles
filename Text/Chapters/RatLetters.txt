@@ -20,7 +20,12 @@ Especially if you do too.[AN]
 [N]
 - Rat[A][X]
 
-##Rat8xLetter
+##RatCh8xLetter
+hi nathan[AN]
+[N]
+- Rat[A][X]
+
+##RatUnknownxLetter
 kill yourself[N]
 [N]
 [A]- Rat[A][X]

@@ -32,6 +32,16 @@ UNIT MilitaryGeneric Rider 0x0 Level(14,NPC,1) [14,2] 0x0 0x0 0x0 0x0 [Vulnerary
 UNIT Gore 0x0 0x0 Level(1,Ally,0) [16,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
+NorthernPassUnitsC8:
+//marketplpace npc, generics
+UNIT Monk Priest 0x0 Level(1,NPC,0) [9,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Scholar 0x0 Level(6,NPC,1) [8,12] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Scholar 0x0 Level(8,NPC,1) [12,14] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Hunter 0x0 Level(10,NPC,1) [14,11] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Rider 0x0 Level(14,NPC,1) [6,10] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Kryst 0x0 0x0 Level(1,Ally,0) [12,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
 //MESSAGE Events end at offset CURRENTOFFSET
 
 
@@ -40,7 +50,7 @@ ALIGN 4
 MarketLoopBegin:
 EVBIT_MODIFY 3
 Text(MarketIntro)
-RunEventByVisit(DummyEvent,Chapter3Market,ChapterS1Market,Chapter5Market,0,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,Chapter3Market,ChapterS1Market,Chapter5Market,Chapter8Market,0,0,0,0,0,0,0,0,0)
 Text(MarketEnd)
 ENUF LocationFlagNorthernPass
 EndEvent
@@ -56,6 +66,24 @@ EndEvent
 #define MarketHandler(item,uses,cost,choice,flag) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(PurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItemWithDurability(item,uses,Nathan); ENUT flag; COUNTER_SET 1 0; GOTO 0x20; LABEL choice"
 #define BrokeHander "LABEL 0x10; SetGtoMoney; Text(NotEnoughMoney); GOTO 0x20; LABEL 0x30"
 
+
+Chapter8Market:
+LABEL 0x20
+COUNTER_CHECK 1
+SVAL 1 5
+BNE 0x600 0xc 0x1
+CALL UnlockBlackMarketEvent
+LABEL 0x600
+SetGtoMoney
+CallMenu(Market8xMenu)
+MarketHandler(Snipistol,800,0,0x1a)
+MarketHandler(Claymore,580,1,0x1b)
+MarketHandler(CuteDoll,1000,2,0x1c)
+LeafHandler(4)
+FictionHandler(5)
+GOTO 0x30
+BrokeHander
+ENDA
 
 Chapter5Market:
 LABEL 0x20
@@ -103,7 +131,7 @@ NorthernPassMoveToMuseum:
 SwapToMap(Museum,6,16)
 CALL LoadMuseumSigils
 MUSC Song_WhyLove
-LoadUnitsByVisit(DummyUnits,MuseumUnitsC3,MuseumUnitsS1,MuseumUnitsC5,0,0,0,0,0,0,0,0,0,0)
+LoadUnitsByVisit(DummyUnits,MuseumUnitsC3,MuseumUnitsS1,MuseumUnitsC5,MuseumUnitsC8,0,0,0,0,0,0,0,0,0)
 FADU 10
 CALL Quest1_3x_Event
 EndEvent

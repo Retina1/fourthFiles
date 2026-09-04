@@ -28,6 +28,12 @@ TychoDMP:
 setMugEntryExtend(TychoMug,TychoDMP,2,5,2,3, 0,2, 0,0)
 
 ALIGN 4
+//vileplume
+ClarisseDMP:
+#incbin "dmps/vileplumeClarisse.dmp"
+setMugEntry(ClarisseMug,ClarisseDMP,3,4,3,2)
+
+ALIGN 4
 //tastapasta
 RikkiaDMP:
 #incbin "dmps/tastapastaRikkia.dmp"
@@ -427,6 +433,10 @@ ALIGN 4
 EsketitDMP:
 #incbin "dmps/rastaEsketit.dmp"
 setMugEntry(EsketitMug,EsketitDMP,3,5,3,3)
+ALIGN 4
+GhevenaDMP:
+#incbin "dmps/rastaGhevena.dmp"
+setMugEntry(GhevenaMug,GhevenaDMP,3,6,3,4)
 
 ALIGN 4
 //shinzen

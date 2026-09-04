@@ -102,7 +102,7 @@ CA_Entry((Set1LastArt + 21), 7)
 	CA_ItemSelectUsability(PierceItemSelectUsability)
 	CA_GeneralNonCombatEffect; CA_ItemSelectEffect(ChargeCommandItemSelectEffect)
 	CA_Range(Generic1_3Range); CA_SpellAnim(0x66); CA_IER(0x3a)
-CA_Entry((Set1LastArt + 22), 13)
+CA_Entry((Set1LastArt + 22), 30)
 	CA_Name(UM_GaeBolg,UM_GaeBolgDesc)
 	CA_Usability(GaeBolgArtUsability,GaeBolgArtMenuUsability)
 	CA_GeneralAttackEffect

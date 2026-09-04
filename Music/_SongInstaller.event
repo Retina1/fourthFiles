@@ -533,6 +533,11 @@ SongTable(Song_CosmicWall,CosmicWall,1)
 SongTable(Song_HavanaSmooth,HavanaSmooth,1)
 #include "songs/HavanaSmooth.event"
 }
+#define Song_SinSpreadsInOurHearts 0xc6
+{
+SongTable(Song_SinSpreadsInOurHearts,SinSpreadsInOurHearts,1)
+#include "songs/SinSpreadsInOurHearts.event"
+}
 /* free numbers
 c6 d9 da db
 e0 e1 e4 e8 e9 ec ee f3 104 105 106 107

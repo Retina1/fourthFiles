@@ -206,3 +206,5 @@ BlankCog
 CrimsonTape
 SilkenWire
 PurestOil
+CuteDoll
+PrimeBait

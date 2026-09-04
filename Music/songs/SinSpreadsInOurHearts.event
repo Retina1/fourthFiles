@@ -1,0 +1,717 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	SinSpreadsInOurHearts_grp  voicegroup000
+	#define	SinSpreadsInOurHearts_pri  0
+	#define	SinSpreadsInOurHearts_rev  0
+	#define	SinSpreadsInOurHearts_mvl  127
+	#define	SinSpreadsInOurHearts_key  0
+	#define	SinSpreadsInOurHearts_tbs  1
+	#define	SinSpreadsInOurHearts_exg  0
+	#define	SinSpreadsInOurHearts_cmp  1
+
+	// .rodata
+	//	SinSpreadsInOurHearts
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+SinSpreadsInOurHearts_001:
+//  #01 //000   ----------------------------------------
+ BYTE   KEYSH   SinSpreadsInOurHearts_key+0
+Label_011B727E:
+ BYTE   TEMPO   140*SinSpreadsInOurHearts_tbs/2
+ BYTE   VOICE   109
+ BYTE   VOL   64*SinSpreadsInOurHearts_mvl/mxv
+ BYTE   PAN   c_v+0
+ BYTE   N48  An2  v092
+ BYTE   N48  Dn3
+ BYTE   W48
+ BYTE   Gn2
+ BYTE   N48  Cn3
+ BYTE   W48
+//  #01 //001   ----------------------------------------
+ BYTE   N24  An2
+ BYTE   N24  Dn3
+ BYTE   W24
+ BYTE   An2
+ BYTE   N24  Dn3
+ BYTE   W24
+ BYTE   N48  Fs2
+ BYTE   N48  Bn2
+ BYTE   W48
+//  #01 //002   ----------------------------------------
+ BYTE   Gs2
+ BYTE   N48  Cs3
+ BYTE   W48
+ BYTE   Fs2
+ BYTE   N48  Bn2
+ BYTE   W48
+//  #01 //003   ----------------------------------------
+ BYTE   N24  Gs2
+ BYTE   N24  Cs3
+ BYTE   W24
+ BYTE   Gs2
+ BYTE   N24  Cs3
+ BYTE   W24
+ BYTE   N48  Fn2
+ BYTE   N48  As2
+ BYTE   W48
+//  #01 //004   ----------------------------------------
+ BYTE   Gn2
+ BYTE   N48  Cn3
+ BYTE   W48
+ BYTE   Fn2
+ BYTE   N48  As2
+ BYTE   W48
+//  #01 //005   ----------------------------------------
+ BYTE   N24  Gn2
+ BYTE   N24  Cn3
+ BYTE   W24
+ BYTE   Gn2
+ BYTE   N24  Cn3
+ BYTE   W24
+ BYTE   N48  En2
+ BYTE   N48  An2
+ BYTE   W48
+//  #01 //006   ----------------------------------------
+ BYTE   Fs2
+ BYTE   N48  Bn2
+ BYTE   W48
+ BYTE   En2
+ BYTE   N48  An2
+ BYTE   W48
+//  #01 //007   ----------------------------------------
+ BYTE   N24  Fs2
+ BYTE   N24  Bn2
+ BYTE   W24
+ BYTE   Fs2
+ BYTE   N24  Bn2
+ BYTE   W24
+ BYTE   N48  Ds2
+ BYTE   N48  Gs2
+ BYTE   W48
+//  #01 //008   ----------------------------------------
+ BYTE   Fn2
+ BYTE   N48  As2
+ BYTE   W48
+ BYTE   Ds2
+ BYTE   N48  Gs2
+ BYTE   W48
+//  #01 //009   ----------------------------------------
+ BYTE   N24  Fn2
+ BYTE   N24  As2
+ BYTE   W24
+ BYTE   Fn2
+ BYTE   N24  As2
+ BYTE   W24
+ BYTE   N48  Dn2
+ BYTE   N48  Gn2
+ BYTE   W48
+//  #01 //010   ----------------------------------------
+ BYTE   En2
+ BYTE   N48  An2
+ BYTE   W48
+ BYTE   Dn2
+ BYTE   N48  Gn2
+ BYTE   W48
+//  #01 //011   ----------------------------------------
+ BYTE   N24  En2
+ BYTE   N24  An2
+ BYTE   W24
+ BYTE   En2
+ BYTE   N24  An2
+ BYTE   W24
+ BYTE   N48  Cs2
+ BYTE   N48  Fs2
+ BYTE   W48
+//  #01 //012   ----------------------------------------
+ BYTE   Ds2
+ BYTE   N48  Gs2
+ BYTE   W48
+ BYTE   Cs2
+ BYTE   N48  Fs2
+ BYTE   W48
+//  #01 //013   ----------------------------------------
+ BYTE   N24  Ds2
+ BYTE   N24  Gs2
+ BYTE   W24
+ BYTE   Ds2
+ BYTE   N24  Gs2
+ BYTE   W24
+ BYTE   N48  Cn2
+ BYTE   N48  Fn2
+ BYTE   W48
+//  #01 //014   ----------------------------------------
+ BYTE   Dn2
+ BYTE   N48  Gn2
+ BYTE   W48
+ BYTE   Cn2
+ BYTE   N48  Fn2
+ BYTE   W48
+//  #01 //015   ----------------------------------------
+ BYTE   N24  Dn2
+ BYTE   N24  Gn2
+ BYTE   W24
+ BYTE   Dn2
+ BYTE   N24  Gn2
+ BYTE   W24
+ BYTE   N48  Bn1
+ BYTE   N48  En2
+ BYTE   W48
+//  #01 //016   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_011B727E
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+SinSpreadsInOurHearts_002:
+//  #02 //000   ----------------------------------------
+ BYTE   KEYSH   SinSpreadsInOurHearts_key+0
+Label_011B7342:
+ BYTE   VOICE   30
+ BYTE   VOL   92*SinSpreadsInOurHearts_mvl/mxv
+ BYTE   PAN   c_v+0
+ BYTE   N72  Fn0  v092
+ BYTE   W96
+//  #02 //001   ----------------------------------------
+ BYTE   N72
+ BYTE   W96
+//  #02 //002   ----------------------------------------
+ BYTE   Fs0
+ BYTE   W96
+//  #02 //003   ----------------------------------------
+ BYTE   N72
+ BYTE   W96
+//  #02 //004   ----------------------------------------
+ BYTE   Gn0
+ BYTE   W96
+//  #02 //005   ----------------------------------------
+ BYTE   N72
+ BYTE   W96
+//  #02 //006   ----------------------------------------
+ BYTE   Gs0
+ BYTE   W96
+//  #02 //007   ----------------------------------------
+ BYTE   N72
+ BYTE   W96
+//  #02 //008   ----------------------------------------
+ BYTE   N36  An0
+ BYTE   W36
+ BYTE   N36
+ BYTE   W60
+//  #02 //009   ----------------------------------------
+ BYTE   N36
+ BYTE   W36
+ BYTE   N36
+ BYTE   W60
+//  #02 //010   ----------------------------------------
+ BYTE   As0
+ BYTE   W36
+ BYTE   N36
+ BYTE   W60
+//  #02 //011   ----------------------------------------
+ BYTE   N36
+ BYTE   W36
+ BYTE   N36
+ BYTE   W60
+//  #02 //012   ----------------------------------------
+ BYTE   N24  Cn1
+ BYTE   W24
+ BYTE   N24
+ BYTE   W24
+ BYTE   N24
+ BYTE   W48
+//  #02 //013   ----------------------------------------
+ BYTE   N24
+ BYTE   W24
+ BYTE   N24
+ BYTE   W24
+ BYTE   N24
+ BYTE   W48
+//  #02 //014   ----------------------------------------
+ BYTE   N12  Dn1
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   Ds0
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+//  #02 //015   ----------------------------------------
+ BYTE   Dn1
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+ BYTE   Ds0
+ BYTE   W12
+ BYTE   N12
+ BYTE   W12
+//  #02 //016   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_011B7342
+ BYTE   FINE
+
+//**************** Track 3 (Midi-Chn.2) ****************//
+
+SinSpreadsInOurHearts_003:
+//  #03 //000   ----------------------------------------
+ BYTE   KEYSH   SinSpreadsInOurHearts_key+0
+Label_011B73A2:
+ BYTE   VOICE   116
+ BYTE   VOL   92*SinSpreadsInOurHearts_mvl/mxv
+ BYTE   PAN   c_v+0
+ BYTE   N48  Cn3  v092
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   Cn2
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+//  #03 //001   ----------------------------------------
+ BYTE   Cn3
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   Cn2
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+//  #03 //002   ----------------------------------------
+Label_011B746E:
+ BYTE   N48  Cn3  v092
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   Cn2
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+//  #03 //003   ----------------------------------------
+ BYTE   Cn3
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   Cn2
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   W01
+ BYTE   PEND 
+//  #03 //004   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011B746E
+//  #03 //005   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011B746E
+//  #03 //006   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011B746E
+//  #03 //007   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011B746E
+//  #03 //008   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011B746E
+//  #03 //009   ----------------------------------------
+ BYTE   PATT
+  POIN2 Label_011B746E
+//  #03 //010   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_011B73A2
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+SinSpreadsInOurHearts:
+	BYTE	3	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	SinSpreadsInOurHearts_pri	// Priority
+	BYTE	SinSpreadsInOurHearts_rev	// Reverb.
+    
+	POIN2	SinSpreadsInOurHearts_grp
+    
+	POIN2	SinSpreadsInOurHearts_001
+	POIN2	SinSpreadsInOurHearts_002
+	POIN2	SinSpreadsInOurHearts_003
+
+	

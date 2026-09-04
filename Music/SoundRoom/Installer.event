@@ -100,6 +100,7 @@ SoundRoomEntry(Song_UntamedGarden, SongTitle_UntamedGarden, SourceTitle_EtrianOd
 SoundRoomEntry(Song_FinalCastle, SongTitle_FinalCastle, SourceTitle_BowsersInsideStory,77)
 SoundRoomEntry(Song_CyclopeanHaunt, SongTitle_CyclopeanHaunt, SourceTitle_EtrianOdyssey3,35)
 SoundRoomEntry(Song_MurderousPuppets, SongTitle_MurderousPuppets, SourceTitle_FE12,47)
+SoundRoomEntry(Song_SinSpreadsInOurHearts, SongTitle_SinSpreadsInOurHearts, SourceTitle_LegendOfJohn,92)
 //combat
 SoundRoomEntry(Song_InitialStrike, SongTitle_InitialStrike, SourceTitle_EtrianOdyssey,25)
 SoundRoomEntry(Song_InspectingTheResoundingWeapons, SongTitle_InspectingTheResoundingWeapons, SourceTitle_EtrianOdyssey2,32)

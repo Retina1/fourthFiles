@@ -35,14 +35,14 @@ Bitter Horizon[X]
 Courage Amidst[N]
 the Flames[X]
 ##Floor_S4F2
-Dark at the End[N]
-of the Tunnel[X]
+Darkness at the[N]
+End of the Tunnel[X]
 ##Floor_S4F3
-A Salvation[N]
-Forever Denied[X]
+Metropolis of[N]
+Silent Shadows[X]
 ##Floor_S4F4
-Loyalties of a[N]
-Decayed Lineage[X]
+The City at the[N]
+End of the World[X]
 
 ##Floor_S5AF1
 A Paradise[N]
@@ -80,8 +80,8 @@ That Fells Hope[X]
 Secrets of[N]
 the Fallen[X]
 ##Floor_S5CF2
-Echoing Hall[N]
-of Nullity[X]
+A Watchtower[N]
+for Despair[X]
 ##Floor_S5CF3
 Collapsed Bastion[N]
 of Purpose[X]

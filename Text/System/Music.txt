@@ -57,6 +57,11 @@ Etrian Odyssey V[X]
 ##SongTitle_UntamedGarden
 Untamed Garden[X]
 
+##SourceTitle_LegendOfJohn
+Legend of John[X]
+##SongTitle_SinSpreadsInOurHearts
+Sin Spreads in Our Hearts[X]
+
 ##SourceTitle_DanganronpaV3
 Danganronpa V3[X]
 ##SongTitle_DespairSearching

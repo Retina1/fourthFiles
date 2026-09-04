@@ -82,6 +82,7 @@ PortraitUpshift(TachyonMug)
 PortraitUpshift(TaftMug)
 PortraitUpshift(AuntAysuMug)
 PortraitUpshift(ElizaMug)
+PortraitUpshift(GhevenaMug)
 //PortraitUpshift(RatatoskrMug)
 //shift plus exceed doesn't work nice
 //PortraitUpshift(WendyMug)

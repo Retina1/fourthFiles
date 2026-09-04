@@ -17,6 +17,7 @@
 #include "DungeonMaps\Stratum2\ShimmeringMines3.event"
 #include "DungeonMaps\Stratum6\DrowningHollows1.event"
 #include "DungeonMaps\Stratum6\DrowningHollows2.event"
+#include "DungeonMaps\Stratum6\DrowningHollows8.event"
 #include "MainChapters\Chapter1.event"
 #include "MainChapters\Chapter13.event"
 #include "MainChapters\Chapter14.event"

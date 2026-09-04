@@ -216,26 +216,42 @@ your incredible deeds. Promotes all classes.[X]
 Blank Cog[X]
 ##Desc_BlankCog ^
 A machine part with a pure white sheen.[N]
-It'll probably fetch a good price, if[N]
-you're willing to part with it.[X]
+It'll probably fetch a good price,[N]
+if you're willing to part with it.[X]
 ##Name_CrimsonTape
 Crmsn. Tape[X]
 ##Desc_CrimsonTape ^
 A spool of tape with a blood-red coat.[N]
-It'll probably fetch a good price, if[N]
-you're willing to part with it.[X]
+It'll probably fetch a good price,[N]
+if you're willing to part with it.[X]
 ##Name_SilkenWire
 Silken Wire[X]
 ##Desc_SilkenWire ^
 A hair-like coil of fine yellow wire.[N]
-It'll probably fetch a good price, if[N]
-you're willing to part with it.[X]
+It'll probably fetch a good price,[N]
+if you're willing to part with it.[X]
 ##Name_PurestOil
 Purest Oil[X]
 ##Desc_PurestOil ^
 A bottle of oil that shines like gold.[N]
-It'll probably fetch a good price, if[N]
-you're willing to part with it.[X]
+It'll probably fetch a good price,[N]
+if you're willing to part with it.[X]
 ##Use_RoboPart
 The choice is made.[N]
 The task is set.[X]
+
+##Name_CuteDoll
+Cute Doll[X]
+##Desc_CuteDoll ^
+A cute plush modeled after a bigle.[N]
+It'll probably fetch a good price,[N]
+if you're willing to part with it.[X]
+##Use_QuestItem
+Perhaps somebody[N]
+may want this.[X]
+##Name_PrimeBait
+Prime Bait[X]
+##Desc_PrimeBait ^
+A jar of high-quality fishing bait.[N]
+It'll probably fetch a good price,[N]
+if you're willing to part with it.[X]

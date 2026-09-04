@@ -251,9 +251,9 @@ UNIT
 #define MovementSetter "SetUnitStatus(Nathan,MovBonus,15); SetUnitStatusAll(0x2*0x100+0xff , MovBonus, (-15), AnyDeployed, PlayerArmy,AnyClass,AnyRange,AnyItem)"
 #define MovementUnsetter "SetUnitStatusAll(0x1*0x100+0xff , MovBonus, 0, AnyDeployed, PlayerArmy,AnyClass,AnyRange,AnyItem)"
 
-#define LoadSquareUnits "LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,DummyUnits,0,0,0,0,0,0,0,0,0)"
-#define LoadPassUnits "LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,NorthernPassUnitsS1,NorthernPassUnitsC5,DummyUnits,0,0,0,0,0,0,0,0,0)"
-#define LoadRowUnits "LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ShadyRowUnitsC5,DummyUnits,0,0,0,0,0,0,0,0,0)"
+#define LoadSquareUnits "LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,Chapter8SquareUnits,0,0,0,0,0,0,0,0,0)"
+#define LoadPassUnits "LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,NorthernPassUnitsS1,NorthernPassUnitsC5,NorthernPassUnitsC8,0,0,0,0,0,0,0,0,0)"
+#define LoadRowUnits "LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ShadyRowUnitsC5,ShadyRowUnitsC8,0,0,0,0,0,0,0,0,0)"
 
 ALIGN 4
 
@@ -304,8 +304,8 @@ CALL LoadHirschringSigils
 CallPreps
 CALL LoadPostPrepsUnits
 FADU 10
-RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,City05_PostPreps,FillerDialogue,0,0,0,0,0,0,0,0,0)
-GiveMoneyByVisit(2000,2500,1500,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
+RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,City05_PostPreps,City08_PostPreps,0,0,0,0,0,0,0,0,0)
+GiveMoneyByVisit(2000,2500,1500,3000,5000,4000,5000,6000,10000,8000,15000,20000,20000,25000)
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x1 0xc 0x0
 CHECK_TUTORIAL ; BEQ 0x1 0xC 0x0
@@ -429,25 +429,25 @@ RunTextByVisit(City02_Guildmaster,City03_Guildmaster,CityS1_Guildmaster,FillerDi
 EndEvent
 
 TownAstarteTalk:
-RunTextByVisit(City02_Astarte,City03_Astarte,CityS1_Astarte,City05_Astarte,FillerDialogue,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Astarte,City03_Astarte,CityS1_Astarte,City05_Astarte,City08_Astarte,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownGoreTalk:
-RunTextByVisit(City02_Gore,City03_Gore,CityS1_Gore,City05_Gore,FillerDialogue,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Gore,City03_Gore,CityS1_Gore,City05_Gore,City08_Gore,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownCleoneTalk:
-RunTextByVisit(City02_Cleone,City03_Cleone,CityS1_Cleone,City05_Cleone,FillerDialogue,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Cleone,City03_Cleone,CityS1_Cleone,City05_Cleone,City08_Cleone,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownBenthusTalk:
 RunTextByVisit(City02_Benthus,City03_Benthus,CityS1_Benthus,City05_Benthus,0,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownHelmanTalk:
-RunTextByVisit(0,City03_Helman,CityS1_Helman,City05_Helman,FillerDialogue,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,City03_Helman,CityS1_Helman,City05_Helman,City08_Helman,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownRatTalk:
-RunEventByVisit(DummyEvent,DummyEvent,DummyEvent,City5RatEvent,FillerDialogue,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,DummyEvent,DummyEvent,City5RatEvent,City8RatEvent,0,0,0,0,0,0,0,0,0)
 EndEvent
 TownKrystTalk:
-RunTextByVisit(0,0,0,City05_Kryst,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
+RunTextByVisit(0,0,0,City05_Kryst,City08_Kryst,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
 EndEvent
 TownGalvinTalk:
 RunTextByVisit(0,0,0,0,0,0,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
@@ -459,7 +459,7 @@ EndEvent
 TownFourthTalk:
 CHECK_EVENTID 0x13
 BNE 0xAAA 0xC 0x0
-RunTextByVisit(0,0,0,City05_Fourth,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
+RunTextByVisit(0,0,0,City05_Fourth,City08_Fourth,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
 ENUT 0x13
 LABEL 0xAAA
 ENUF LocationFlagImperialPost
@@ -471,12 +471,18 @@ Text(City05_Rat)
 SystemText(RatCh5xLetter)
 Text(City05_Rat2)
 ENDA
+City8RatEvent:
+//todo - event
+Text(City08_Rat)
+SystemText(RatCh8xLetter)
+Text(City08_Rat2)
+ENDA
 
 DummyEvent:
 ENDA
 
 TownBertramTalk:
-RunTextByVisit(City02_Bertram,City03_Bertram,CityS1_Bertram,City05_Bertram,FillerDialogue,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_Bertram,City03_Bertram,CityS1_Bertram,City05_Bertram,City08_Bertram,0,0,0,0,0,0,0,0,0)
 EndEvent
 
 BuyStandardClasses:

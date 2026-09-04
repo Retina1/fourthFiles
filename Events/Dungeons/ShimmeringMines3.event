@@ -322,7 +322,7 @@ MUSC Song_IsThatBloodThine
 SetMapBGM(Song_IsThatBloodThine)
 GOTO 0x2
 LABEL 0x1
-FADI 16; InitializeNathan(27,9); FADU 16
+FADI 16; InitializeNathan(14,0); FADU 16
 ENUF 0xd
 LABEL 0x2
 EndEvent

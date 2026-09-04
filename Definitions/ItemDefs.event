@@ -206,3 +206,5 @@
 #define CrimsonTape 0xF9
 #define SilkenWire 0xFA
 #define PurestOil 0xFB
+#define CuteDoll 0xFC
+#define PrimeBait 0xFD

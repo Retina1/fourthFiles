@@ -1,0 +1,174 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Stratum6F8EventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+AFEV 0x0 MoveResetter 0x6
+AreaEvent(0x0,EndingScene,16,0,18,1)
+AreaEvent(0x9,Encounter1,12,25)
+//AreaEvent(0xa,Encounter2,19,5)
+//AreaEvent(0xd,EncounterFOE,15,0)
+AreaEvent(0x0,Warp0_10,0,10)
+AreaEvent(0x0,Warp0_11,0,11)
+AreaEvent(0x0,Warp34_10,34,10)
+AreaEvent(0x0,Warp34_11,34,11)
+AreaEvent(0x0,Warp0_1,0,1)
+AreaEvent(0x0,Warp0_2,0,2)
+AreaEvent(0x0,Warp34_1,34,1)
+AreaEvent(0x0,Warp34_2,34,2)
+AreaEvent(0x0,Warp9_0,9,0)
+AreaEvent(0x0,Warp12_0,12,0)
+AreaEvent(0x0,Warp9_29,9,29)
+AreaEvent(0x0,Warp12_29,12,29)
+AFEV WaitEventTrapsFlag UnitCleanup 0x6
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,28] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,24] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,24] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [9,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,25] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Enemies:
+UNIT MonsterGeneric Venomfly 0x0 Level(29,Enemy,1) [9,22] 0x0 0x0 0x0 0x0 [AtrocityScales] NoAI
+UNIT MonsterGeneric IronCrab 0x0 Level(29,Enemy,1) [10,22] 0x0 0x0 0x0 0x0 [ScissorWrath] NoAI
+UNIT MonsterGeneric IronCrab 0x0 Level(29,Enemy,1) [11,22] 0x0 0x0 0x0 0x0 [ScissorWrath] NoAI
+UNIT MonsterGeneric Venomfly 0x0 Level(29,Enemy,1) [12,22] 0x0 0x0 0x0 0x0 [AtrocityScales] NoAI
+UNIT
+
+
+ALIGN 4
+
+
+
+EndingScene:
+SystemText(CompleteDungeonSys)
+IfNoSelectedGoto(0x1)
+EndingSceneToggles
+ENUF WaitEventTrapsFlag
+ENUF 0x66
+MoveToChapter(EndgameC)
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(17,3); FADU 16
+LABEL 0x2
+EndEvent
+
+BeginningScene:
+InitializeNathan(17,28)
+ENUT WaitEventTrapsFlag
+EndEvent
+
+Encounter1:
+CHECK_EVENTID WaitEventTrapsFlag
+BEQ 0x1 0xc 0x0
+BeginCombatEncounter
+LOAD3 0x0 Encounter1Units; ENUN
+LoadUnitsByDifficulty(Encounter1Enemies,Encounter1Enemies,Encounter1Enemies)
+CreateArenaBorders(8,21,13,26)
+FADU 16
+//MUSC Song_SinSpreadsInOurHearts
+//SetMapBGM(Song_SinSpreadsInOurHearts)
+GOTO 0x2
+LABEL 0x1
+ENUF 0x9
+LABEL 0x2
+EndEvent
+
+UnitCleanup:
+FADI 16
+ClearArenaBorders
+CLEA 0
+ResetNathan
+FADU 16
+//MUSC Song_SinSpreadsInOurHearts
+//SetMapBGM(Song_SinSpreadsInOurHearts)
+EndEvent
+
+
+Warp0_10:
+WarpNathan(33,10)
+EndEvent
+Warp0_11:
+WarpNathan(33,11)
+EndEvent
+Warp34_10:
+WarpNathan(1,10)
+EndEvent
+Warp34_11:
+WarpNathan(1,11)
+EndEvent
+Warp0_1:
+WarpNathan(33,1)
+EndEvent
+Warp0_2:
+WarpNathan(33,2)
+EndEvent
+Warp34_1:
+WarpNathan(1,1)
+EndEvent
+Warp34_2:
+WarpNathan(1,1)
+EndEvent
+Warp9_0:
+WarpNathan(9,28)
+EndEvent
+Warp12_0:
+WarpNathan(12,28)
+EndEvent
+Warp9_29:
+WarpNathan(9,1)
+EndEvent
+Warp12_29:
+WarpNathan(12,1)
+EndEvent
+
+
+//MESSAGE Events end at offset CURRENTOFFSET
