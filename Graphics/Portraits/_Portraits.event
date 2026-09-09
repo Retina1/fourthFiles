@@ -65,6 +65,10 @@ ALIGN 4
 EdithDMP:
 #incbin "dmps/admrlEdith.dmp"
 setMugEntry(EdithMug,EdithDMP,3,5,3,3)
+ALIGN 4
+HitchcockDMP:
+#incbin "dmps/admrlHitchcock.dmp"
+setMugEntry(HitchcockMug,HitchcockDMP,3,5,3,3)
 
 ALIGN 4
 //ditto
@@ -960,6 +964,7 @@ ALIGN 4
 FeefasnanDMP:
 #incbin "dmps/vylandFeefasnan.dmp"
 setMugEntry(FeefasnanMug,FeefasnanDMP,3,6,5,3)
+setMugEntry(BackupFeefasnanMug,FeefasnanDMP,3,6,5,3)
 ALIGN 4
 SonDMP:
 #incbin "dmps/arinSon.dmp"

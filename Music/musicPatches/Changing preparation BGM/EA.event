@@ -1,6 +1,8 @@
+//dmps are new versions we're attempting
+
 ALIGN 4
 c0p:
-#incbin "New_c0p.dmp"
+#incbin "New_c0p.bin"
 
 ALIGN 4
 c1p:

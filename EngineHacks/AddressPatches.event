@@ -2,6 +2,24 @@
 //dat 0x0203E12A, gAnimRoundData
 //dat 0x0203E156, gEfxHpLut
 
+//demon king hardcoding - put on a slot that's doing nothing
+PUSH
+ORG 0x727a0
+BYTE 0x2
+ORG 0x2cd22
+BYTE 0x3c
+ORG 0x2b62c
+BYTE 0x3c
+ORG 0x2c3fe
+BYTE 0x3c
+ORG 0x2cd3c
+BYTE 0x3c
+ORG 0x2c514
+BYTE 0x3c
+ORG 0x57bb6
+SHORT 0x283c
+POP
+
 //prep menu formation
 PUSH
 ORG 0x33686 

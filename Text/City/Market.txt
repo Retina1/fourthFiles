@@ -61,13 +61,13 @@ You have [G] gold.[N]
 That's not enough. Sorry![A][X]
 
 ##VisitAllMarket1 ^
-Sun-Dried Lettuce (50 Gold)[X]
+Sun-Dried Lettuce ([_5][_0] Gold)[X]
 ##VisitAllMarket1Desc
 If you can sun-dry a tomato,[N]
 surely this'll work too...?[N]
 The market won't run out of this.[X]
 ##VisitAllMarket2 ^
-Tomorrow's Silver Nation (70 Gold)[X]
+Tomorrow's Silver Nation ([_7][_0] Gold)[X]
 ##VisitAllMarket2Desc
 An overly long-winded work of fiction.[N]
 Its title evokes... feelings within.[N]
@@ -76,14 +76,14 @@ The market won't run out of this.[X]
 
 //shortbow
 ##Visit3xMarket1 ^
-Child's First Bow (900 Gold)[X]
+Child's First Bow ([_9][_0][_0] Gold)[X]
 ##Visit3xMarket1Desc
 It styles itself as perfect for[N]
 all ages, and just as lethal as[N]
 any other bow on the market.[X]
 //2 use medica
 ##Visit3xMarket2 ^
-Secondhand Medica (250 Gold)[X]
+Secondhand Medica ([_2][_5][_0] Gold)[X]
 ##Visit3xMarket2Desc
 From an already-dead adventurer,[N]
 for half market price. ...Don't[N]
@@ -91,14 +91,14 @@ ask how many doses it has left.[X]
 
 //4 use heal scroll
 ##VisitS1xMarket1 ^
-Theoretical First Aid (750 Gold)[X]
+Theoretical First Aid ([_7][_5][_0] Gold)[X]
 ##VisitS1xMarket1Desc
 An essay examining battlefield aid[N]
 from a conceptualized point of view.[N]
 ...Whatever the hell that means.[X]
 //broadaxe
 ##VisitS1xMarket2 ^
-The Lopper (410 Gold)[X]
+The Lopper ([_4][_1][_0] Gold)[X]
 ##VisitS1xMarket2Desc
 One of two in a set of prized axes.[N]
 Its brother, the Chopper, has long[N]
@@ -106,14 +106,14 @@ since been missing in action.[X]
 
 //poison jar
 ##Visit5xMarket1 ^
-A Jar of Poison (150 Gold)[X]
+A Jar of Poison ([_1][_5][_0] Gold)[X]
 ##Visit5xMarket1Desc
 It's a jar of poison.[N]
 ...At least it's nice[N]
 and straightfoward.[X]
 //broadaxe
 ##Visit5xMarket2 ^
-Worn-Out Rod (400 Gold)[X]
+Worn-Out Rod ([_4][_0][_0] Gold)[X]
 ##Visit5xMarket2Desc
 A resilient rod with a mighty[N]
 enchantment. It's seen a fair bit[N]
@@ -122,21 +122,21 @@ of use, and is on its last legs.[X]
 
 //snipistol
 ##Visit8xMarket1 ^
-Aftermarket Pistol (800 Gold)[X]
+Aftermarket Pistol ([_8][_0][_0] Gold)[X]
 ##Visit8xMarket1Desc
 A pistol with a dozen mods[N]
 that probably should have[N]
 been outlawed ages ago.[X]
 //claymore
 ##Visit8xMarket2 ^
-Bastard's Sword (580 Gold)[X]
+Bastard's Sword ([_5][_8][_0] Gold)[X]
 ##Visit8xMarket2Desc
 Not a bastard sword. Rather,[N]
 a sword stolen from some poor[N]
 bastard. Just clarifying.[X]
 //cute doll - give to johanna
 ##Visit8xMarket3 ^
-Vintage Children's Toy (1000 Gold)[X]
+Vintage Children's Toy ([_1][_0][_0][_0] Gold)[X]
 ##Visit8xMarket3Desc
 A stuffed doll produced around[N]
 the founding of Asketa. It's in[N]
@@ -144,7 +144,7 @@ alarmingly good condition.[X]
 
 //inedible leaf
 ##Visit10xMarket1 ^
-Lifeflow Salad (550 Gold)[X]
+Lifeflow Salad ([_5][_5][_0] Gold)[X]
 ##Visit10xMarket1Desc
 A healthy salad prepared by and for[N]
 the Lifeflow League, primarily made[N]
@@ -152,7 +152,7 @@ up of high-quality dried vegetables.[X]
 
 //fiction scroll
 ##VisitS3xMarket1 ^
-Signed Novella (700 Gold)[X]
+Signed Novella ([_7][_0][_0] Gold)[X]
 ##VisitS3xMarket1Desc
 Written and signed by an author local[N]
 to Hirschring. The back cover styles[N]
@@ -160,7 +160,7 @@ the work as a fictional tale of woe.[X]
 
 //idk scroll
 ##Visit16xMarket1 ^
-Worp Scroll (2500 Gold)[X]
+Worp Scroll ([_2][_5][_0][_0] Gold)[X]
 ##Visit16xMarket1Desc
 One of the greatest magical scrolls[N]
 in all the land. Is this too good to[N]
@@ -170,56 +170,56 @@ be true? ...Wait, does that say Worp?[X]
 
 //hand axe
 ##BlackMarketItem1 ^
-Regular Hand Axe (555 Gold)[X]
+Regular Hand Axe ([_5][_5][_5] Gold)[X]
 ##BlackMarketItem1Desc
 Sold here by popular demand.[N]
 Everyone's gotta have a hand axe.[N]
 The market won't run out of this.[X]
 //spark scroll
 ##BlackMarketItem2 ^
-Seditious Electricity (3600 Gold)[X]
+Seditious Electricity ([_3][_6][_0][_0] Gold)[X]
 ##BlackMarketItem2Desc
 Confiscated thunder scrolls deemed too[N]
 dangerous for society to understand.[N]
 The market won't run out of this.[X]
 //stoning gas
 ##BlackMarketItem3 ^
-Really Scary Jar (800 Gold)[X]
+Really Scary Jar ([_8][_0][_0] Gold)[X]
 ##BlackMarketItem3Desc
 An unmarked jar, save for a skull[N]
 drawn on its label. ...Spooky.[N]
 The market won't run out of this.[X]
 //fengyan
 ##BlackMarketItem4 ^
-Foreign Spear (1950 Gold)[X]
+Foreign Spear ([_1][_9][_5][_0] Gold)[X]
 ##BlackMarketItem4Desc
 A spear made in some distant land.[N]
 Probably the nicest thing here.[N]
 The market won't run out of this.[X]
 //1 use dvergr sword
 ##BlackMarketItem5 ^
-Legendary Sword As Is (250 Gold)[X]
+Legendary Sword As Is ([_2][_5][_0] Gold)[X]
 ##BlackMarketItem5Desc
 One in a line of legendary swords.[N]
 ...It's seen better days, for sure.[N]
 The market won't run out of this.[X]
 //omega arch
 ##BlackMarketItem6 ^
-The Contraption (6300 Gold)[X]
+The Contraption ([_6][_3][_0][_0] Gold)[X]
 ##BlackMarketItem6Desc
 Despite its title, it's not actually[N]
 unique, and the market won't run out.[N]
 ...No room here to explain WHAT it is.[X]
 //hippokos
 ##BlackMarketItem7 ^
-Ceremonial Rod (2500 Gold)[X]
+Ceremonial Rod ([_2][_5][_0][_0] Gold)[X]
 ##BlackMarketItem7Desc
 A fancy rod used in the bestowing[N]
 of medical licenses. You too, can[N]
 give away degrees like candy.[X]
 //hippokos
 ##BlackMarketItem8 ^
-Hopes and Dreams (65000 Gold)[X]
+Hopes and Dreams ([_6][_5][_0][_0][_0] Gold)[X]
 ##BlackMarketItem8Desc
 Yes. They sell those now, too.[N]
 ...Good god, that's expensive.[N]

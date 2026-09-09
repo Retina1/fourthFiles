@@ -103,19 +103,25 @@ EndEvent
 Chapter8Quests:
 //soon
 LABEL 0x1
-CallMenu(Quests5xMenu)
+CallMenu(Quests8xMenu)
 SVAL 0x1 0
 BNE 0x10 0xc 0x1
-Text(Quest1_5x_Bobby)
-ENUT Quest1_5x_Flag
+Text(Quest1_8x_Bobby)
+ENUT Quest1_8x_Flag
 GOTO 0x1
 LABEL 0x10
 SVAL 0x1 1
 BNE 0x11 0xc 0x1
-Text(Quest2_5x_Bobby)
-ENUT Quest2_5x_Flag
+Text(Quest2_8x_Bobby)
+ENUT Quest2_8x_Flag
 GOTO 0x1
 LABEL 0x11
+SVAL 0x1 2
+BNE 0x12 0xc 0x1
+Text(Quest3_8x_Bobby)
+ENUT Quest3_8x_Flag
+GOTO 0x1
+LABEL 0x12
 ENDA
 
 
@@ -187,4 +193,7 @@ QuestEndCheck(Quest1_S1x_Flag,Quest1_S1x_DoneFlag,Quest1_S1x_Done,Claymore)
 QuestEndCheckSystext(Quest2_S1x_Flag,Quest2_S1x_DoneFlag,Quest2_S1x_Done,Quest2_S1x_RewardText)
 QuestEndCheck(Quest1_5x_Flag,Quest1_5x_DoneFlag,Quest1_5x_Done,RescueScroll)
 QuestEndCheckGold(Quest2_5x_Flag,Quest2_5x_DoneFlag,Quest2_5x_Done,1500)
+QuestEndCheckGold(Quest1_8x_Flag,Quest1_8x_DoneFlag,Quest1_8x_Done,2000)
+QuestEndCheckSystext(Quest2_8x_Flag,Quest2_8x_DoneFlag,Quest2_8x_Done,Quest2_8x_RewardText)
+QuestEndCheckSystext(Quest3_8x_Flag,Quest3_8x_DoneFlag,Quest3_8x_Done,Quest3_8x_RewardText)
 ENDA

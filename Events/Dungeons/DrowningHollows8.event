@@ -36,6 +36,7 @@ AreaEvent(0x0,EndingScene,16,0,18,1)
 AreaEvent(0x9,Encounter1,12,25)
 //AreaEvent(0xa,Encounter2,19,5)
 //AreaEvent(0xd,EncounterFOE,15,0)
+AreaEvent(0xe,EncounterRatatoskr,16,2,18,2)
 AreaEvent(0x0,Warp0_10,0,10)
 AreaEvent(0x0,Warp0_11,0,11)
 AreaEvent(0x0,Warp34_10,34,10)
@@ -83,6 +84,23 @@ UNIT MonsterGeneric IronCrab 0x0 Level(29,Enemy,1) [11,22] 0x0 0x0 0x0 0x0 [Scis
 UNIT MonsterGeneric Venomfly 0x0 Level(29,Enemy,1) [12,22] 0x0 0x0 0x0 0x0 [AtrocityScales] NoAI
 UNIT
 
+EncounterRatatoskrUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EncounterRatatoskrEnemies:
+UNIT Ratatoskr Squirrel 0x0 Level(30,Enemy,1) [17,4] 0x0 0x0 0x0 0x0 [RootCyclone,FierceAura,ShieldAura,SoulShield] NoAI
+UNIT MonsterGeneric Squirrel 0x0 Level(28,Enemy,1) [16,3] 0x0 0x0 0x0 0x0 [Voltage,Frigid,Searing] NoAI
+UNIT MonsterGeneric Squirrel 0x0 Level(28,Enemy,1) [18,3] 0x0 0x0 0x0 0x0 [Furysong,MistyAura,FrailtyAura,SappingAura] NoAI
+UNIT MonsterGeneric Squirrel 0x0 Level(28,Enemy,1) [15,5] 0x0 0x0 0x0 0x0 [AtrocityScales,SoulShield,SoulShield,SoulShield] NoAI
+UNIT MonsterGeneric Squirrel 0x0 Level(28,Enemy,1) [19,5] 0x0 0x0 0x0 0x0 [Agneyastra,KingBrooch,KingBrooch,KingBrooch] NoAI
+UNIT
+
 
 ALIGN 4
 
@@ -114,13 +132,35 @@ LOAD3 0x0 Encounter1Units; ENUN
 LoadUnitsByDifficulty(Encounter1Enemies,Encounter1Enemies,Encounter1Enemies)
 CreateArenaBorders(8,21,13,26)
 FADU 16
-//MUSC Song_SinSpreadsInOurHearts
-//SetMapBGM(Song_SinSpreadsInOurHearts)
+MUSC Song_DaatVengeance
+SetMapBGM(Song_DaatVengeance)
 GOTO 0x2
 LABEL 0x1
 ENUF 0x9
 LABEL 0x2
 EndEvent
+
+
+EncounterRatatoskr:
+EVBIT_MODIFY 3
+SystemText(MandatorySuperbossWarning)
+IfNoSelectedGoto(0x1)
+SystemText(Ratatoskr_Encounter6)
+BeginCombatEncounter
+LOAD3 0x0 EncounterRatatoskrUnits; ENUN
+LoadUnitsByDifficulty(EncounterRatatoskrEnemies,EncounterRatatoskrEnemies,EncounterRatatoskrEnemies)
+SetUnitStatline(Ratatoskr,67,61,67,78,99,99,21,21)
+CreateArenaSingleCorner(12,1)
+FADU 16
+MUSC Song_EndOfRagingWaves
+SetMapBGM(Song_EndOfRagingWaves)
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(17,5); FADU 16
+ENUF 0xe
+LABEL 0x2
+EndEvent
+
 
 UnitCleanup:
 FADI 16
@@ -128,8 +168,8 @@ ClearArenaBorders
 CLEA 0
 ResetNathan
 FADU 16
-//MUSC Song_SinSpreadsInOurHearts
-//SetMapBGM(Song_SinSpreadsInOurHearts)
+MUSC Song_SinSpreadsInOurHearts
+SetMapBGM(Song_SinSpreadsInOurHearts)
 EndEvent
 
 

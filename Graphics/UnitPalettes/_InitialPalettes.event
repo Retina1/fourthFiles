@@ -148,6 +148,11 @@ ALIGN 4
 Hoplite_SimonDMP:
 #incbin "paletteFiles/Initial/Hoplite_Simon.dmp"
 
+PaletteIdentifier(Knight_Hitchcock, Knight_HitchcockDMP)
+ALIGN 4
+Knight_HitchcockDMP:
+#incbin "paletteFiles/NPCs/Knight_Hitchcock.dmp"
+
 ALIGN 4
 KnightPaletteList:
 PaletteAssociationEntry(Helman,Knight_Helman)
@@ -157,6 +162,7 @@ PaletteAssociationEntry(Hopf,Knight_Hopf)
 PaletteAssociationEntry(Alfonso,Knight_Alfonso)
 PaletteAssociationEntry(Simon,Knight_Simon)
 PaletteAssociationEntry(SlynSpire,Knight_SlynSpire)
+PaletteAssociationEntry(Hitchcock,Knight_Hitchcock)
 WORD 0 0
 ALIGN 4
 HoplitePaletteList:

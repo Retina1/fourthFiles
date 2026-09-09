@@ -137,6 +137,11 @@ Shin Megami Tensei IV: Apocalypse[X]
 ##SongTitle_Deicide
 Battle - F6 - Deicide[X]
 
+##SourceTitle_SMTVV ^
+Shin Megami Tensei V: Vengeance[X]
+##SongTitle_DaatVengeance
+Battle - Da'at - Vengeance[X]
+
 ##SourceTitle_OrderOfEcclesia ^
 Castlevania: Order of Ecclesia[X]
 ##SongTitle_Rhapsody ^

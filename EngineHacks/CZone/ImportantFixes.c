@@ -8,6 +8,8 @@ extern const int GorePluckMugID;
 extern const int GoreEyepatchMugID;
 extern const int WundMugID;
 extern const int WundUnclothedMugID;
+extern const int FeefasnanMugID;
+extern const int RatatoskrMugID;
 
 extern const struct FaceData NewPortraitTable[];
 
@@ -191,6 +193,12 @@ const struct FaceData* GetPortraitData(int fid) {
 	if (fid == WundMugID){
 		if (NextRN_N(776) == 0) {
 			fid = WundUnclothedMugID;
+		}
+	}
+	//FEEF
+	if (fid == FeefasnanMugID){
+		if (CheckEventId_(0xb6)) {
+			fid = RatatoskrMugID;
 		}
 	}
 	if (fid == GoreMugID) {
@@ -391,3 +399,9 @@ inline int GetItemUses(int item) {
         return ITEM_USES(item);
 }
 */
+
+//archer hardcoding nonsense
+int GetBanimPalette(int banim_id, enum ekr_battle_unit_position pos)
+{
+    return banim_id;
+}

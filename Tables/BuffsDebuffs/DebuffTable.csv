@@ -14,7 +14,7 @@ WarningShot1Debuff,WarningShotLabel,WarningShotDesc1,3,4,5,1,1,1,1,1,1,1,1,1,1,4
 WarningShot2Debuff,WarningShotLabel,WarningShotDesc2,3,1,2,1,1,1,1,1,1,1,1,1,1,1,2,0
 ShiningForceDebuff,ShiningForceLabel,ShiningForceDesc,3,1,1,4,5,1,1,1,1,1,1,1,1,1,1,0
 WarSapDebuff,WarSapLabel,WarSapDesc,3,4,5,4,5,4,5,4,5,4,5,4,5,4,5,0
-MisfortuneDebuff,MisfortuneLabel,MisfortuneDesc,3,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0
+MisfortuneDebuff,MisfortuneLabel,MisfortuneDesc,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0
 Sapping1Debuff,SappingLabel,SappingDesc1,2,7,10,1,1,1,1,1,1,1,1,1,1,1,1,0
 Sapping2Debuff,SappingLabel,SappingDesc2,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,0
 Frailty1Debuff,FrailtyLabel,FrailtyDesc1,2,1,1,1,1,1,1,1,1,1,1,7,10,1,1,0

@@ -240,6 +240,7 @@ ClarisseMug
 NaoMug
 WitoldMug
 MarcelMug
+BackupFeefasnanMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

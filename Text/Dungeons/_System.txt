@@ -14,10 +14,22 @@ It's not too late to turn back.[N]
 ...Proceed on ahead anyway?[N]
 [No][X]
 
+##MandatoryFOEWarning
+You feel your life is at risk.[N]
+And yet, there is no other way.[N]
+...Proceed on ahead?[N]
+[No][X]
+
 ##SuperbossWarning
 An immensely dangerous presence lies[N]
 ahead. It's not too late to turn back.[N]
 ...Proceed on ahead anyway?[N]
+[No][X]
+
+##MandatorySuperbossWarning
+An immensely dangerous presence lies[N]
+ahead. And yet, there is no other way.[N]
+...Proceed on ahead?[N]
 [No][X]
 
 ##FloorResetWarning
@@ -218,7 +230,7 @@ Zuh! Zuh! Zuh![N]
 Zuh! Zuh! Zuh![A][X]
 ##Ratatoskr_Defeat6Feefasnan
 [MidLeft][Ratatoskr]
-Zuh![AN][Clear][MidRight][Feefasnan]
+Zuh![AN][Clear][MidRight][BackupFeefasnan]
 It's[...] over.[N]
 [...]It's over?[AN]
 The nightmare's at[N]
@@ -248,7 +260,7 @@ Struggle like I have[N]
 for eternity.[AN]
 It is the answer you[N]
 have sought,[A] and[N]
-your just reward.[AN][Close][Clear][Feefasnan]
+your just reward.[AN][Close][Clear][BackupFeefasnan]
 [...]Zuh![A][X]
 
 ##Ratatoskr_Encounter3

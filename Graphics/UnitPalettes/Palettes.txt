@@ -265,3 +265,15 @@ _Artifice
 _Automaton
 Ronin_Ayda
 Warlock_Xavens
+Dragoon_Egil
+Highlander_Harla
+Survivalist_Rana
+Knight_Hitchcock
+Seeker_Astoria
+Driver_George
+Landsknecht_First
+Strider_Second
+Imperial_Weber
+Fencer_Iseau
+Medic_Angelica
+Runemaster_Stephen

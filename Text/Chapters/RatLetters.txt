@@ -21,9 +21,28 @@ Especially if you do too.[AN]
 - Rat[A][X]
 
 ##RatCh8xLetter
-hi nathan[AN]
+I have to assume the Lethal[N]
+Forest wasn't anything like[N]
+what I saw in the mines.[AN]
+Perhaps it was a bit more[N]
+than I was prepared to handle.[N]
+Probably true for you, too.[AN]
+But it is simply a reality I[N]
+must become familiar with, if[N]
+I wish my plans to be realized.[AN]
+What of my plans, you may ask?[N]
+Perhaps I've already said too[N]
+much. Far too much.[AN]
+But I've always believed in[N]
+dangling threads of intrigue.[N]
+Use your imagination, friend.[AN]
 [N]
 - Rat[A][X]
+
+##RatCh8xLetter2
+It will all be okay.[N]
+[N]
+[A]- Rat.[A][X]
 
 ##RatUnknownxLetter
 kill yourself[N]

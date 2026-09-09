@@ -110,11 +110,11 @@ POIN PrepShop1
 POIN PrepShop1
 
 //chapter 9
-POIN 0
-POIN 0
-POIN 0
-POIN 0
-POIN 0
+POIN PrepShop2
+POIN PrepShop2
+POIN PrepShop2
+POIN PrepShop2
+POIN PrepShop2
 
 //14 - the fall - no prep shop
 WORD 0

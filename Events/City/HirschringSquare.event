@@ -305,7 +305,7 @@ CallPreps
 CALL LoadPostPrepsUnits
 FADU 10
 RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,City05_PostPreps,City08_PostPreps,0,0,0,0,0,0,0,0,0)
-GiveMoneyByVisit(2000,2500,1500,3000,5000,4000,5000,6000,10000,8000,15000,20000,20000,25000)
+GiveMoneyByVisit(2000,2500,1500,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x1 0xc 0x0
 CHECK_TUTORIAL ; BEQ 0x1 0xC 0x0
@@ -473,8 +473,9 @@ Text(City05_Rat2)
 ENDA
 City8RatEvent:
 //todo - event
-Text(City08_Rat)
 SystemText(RatCh8xLetter)
+Text(City08_Rat)
+SystemText(RatCh8xLetter2)
 Text(City08_Rat2)
 ENDA
 

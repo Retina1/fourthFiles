@@ -33,6 +33,7 @@ Village(0x11,Chapter9_House2,4,6)
 END_MAIN
 
 MiscBasedEvents:
+AreaEvent(0x9,Quest1_8x_Event,8,6,10,7)
 DefeatAll(EndingScene)
 CauseGameOverIfLordDies
 END_MAIN
@@ -92,6 +93,12 @@ LoadUnitsByDifficulty(EnemyUnits,EnemyUnits,EnemyUnits)
 SetUnitStatline(MonsterBoss,60,25,2,10,9,1,18,8)
 SetUnitWEXP(MonsterBoss,0,0,181,0,0)
 CallPreps
+
+//disable area event if not doing quest
+CHECK_EVENTID Quest1_8x_Flag
+BNE 0x2 0xc 0x0
+ENUT 0x9
+LABEL 0x2
 EndEvent
 
 EndingScene:
@@ -105,6 +112,11 @@ Chapter9_House1:
 VillageEventItem(FillerDialogue, 0x0, HandSpear)
 Chapter9_House2:
 VillageEventItem(FillerDialogue, 0x0, DevilAxe)
+
+Quest1_8x_Event:
+SystemText(Quest1_8x_System)
+ENUT Quest1_8x_DoneFlag
+EndEvent
 
 
 //MESSAGE Events end at offset CURRENTOFFSET

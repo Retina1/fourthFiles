@@ -107,6 +107,8 @@
 #define Quest1_8x_DoneFlag 0x10e
 #define Quest2_8x_Flag 0x10f
 #define Quest2_8x_DoneFlag 0x110
+#define Quest3_8x_Flag 0x111
+#define Quest3_8x_DoneFlag 0x112
 
 
 #define NoRescuingFlag 0x120

@@ -69,7 +69,7 @@ void LoadUnit_800F704(const struct UnitDefinition * def, u16 b, s8 quiet, s8 d)
         if ((d == 1) && (def->allegiance == FACTION_ID_BLUE))
             unit->state |= US_BIT22;
     }
-    else if (def->allegiance == FACTION_ID_BLUE)
+    else if ((def->allegiance == FACTION_ID_BLUE) || (UNIT_FACTION(unit) == FACTION_BLUE))
     {
         s8 x, y;
 
@@ -119,4 +119,11 @@ void LoadUnit_800F704(const struct UnitDefinition * def, u16 b, s8 quiet, s8 d)
 	infoIconCache->hpCache[unit->index] = GetUnitMaxHp(unit);
 
     sub_800F8A8(unit, def, b, quiet);
+	
+	if (d != 1) {
+		if (unit->state & US_DEAD) {
+			unit->state |= US_HIDDEN;
+			unit->state |= US_NOT_DEPLOYED;
+		}
+	}
 }

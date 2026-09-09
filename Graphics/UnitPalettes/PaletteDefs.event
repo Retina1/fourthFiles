@@ -265,3 +265,15 @@
 #define _Automaton 0x109
 #define Ronin_Ayda 0x10A
 #define Warlock_Xavens 0x10B
+#define Dragoon_Egil 0x10C
+#define Highlander_Harla 0x10D
+#define Survivalist_Rana 0x10E
+#define Knight_Hitchcock 0x10F
+#define Seeker_Astoria 0x110
+#define Driver_George 0x111
+#define Landsknecht_First 0x112
+#define Strider_Second 0x113
+#define Imperial_Weber 0x114
+#define Fencer_Iseau 0x115
+#define Medic_Angelica 0x116
+#define Runemaster_Stephen 0x117

@@ -159,32 +159,3 @@ Not as security guards.[AN][MidRight]
 Just as well. I can't[N]
 actually afford to hire.[A][X]
 
-
-##Quest2_8x
-The Swordmaster[X]
-
-##Quest2_8x_Desc
-Rumors abound of a swordfighter[N]
-who takes an unusual form. Try to[N]
-verify them. Danger lies ahead.[X]
-
-##Quest2_8x_Bobby
-[MidLeft][Nathan][MidRight][Bobby]
-That one's real simple.[AN]
-
-[...]Good luck.[A][X]
-
-
-##Quest2_8x_Kill
-[MidLeft][Natsubun]
-(Hmph. Impressive.)[A][X]
-
-##Quest2_8x_Done
-[MidLeft][Nathan][MidRight][Bobby]
-g.[A][X]
-
-##Quest2_8x_RewardText
-Natsuki (Myrmidon) is now[N]
-available for recruitment![AN]
-Check her out next time you have[N]
-openings for new guild members.[A][X]

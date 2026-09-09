@@ -105,6 +105,7 @@ SoundRoomEntry(Song_SinSpreadsInOurHearts, SongTitle_SinSpreadsInOurHearts, Sour
 SoundRoomEntry(Song_InitialStrike, SongTitle_InitialStrike, SourceTitle_EtrianOdyssey,25)
 SoundRoomEntry(Song_InspectingTheResoundingWeapons, SongTitle_InspectingTheResoundingWeapons, SourceTitle_EtrianOdyssey2,32)
 SoundRoomEntry(Song_Shiver, SongTitle_Shiver, SourceTitle_EtrianOdyssey2,33)
+SoundRoomEntry(Song_DaatVengeance, SongTitle_DaatVengeance, SourceTitle_SMTVV,93)
 SoundRoomEntry(Song_IsThatBloodThine, SongTitle_IsThatBloodThine, SourceTitle_EtrianOdyssey3,30)
 SoundRoomEntry(Song_EndOfRagingWaves, SongTitle_EndOfRagingWaves, SourceTitle_EtrianOdyssey3,31)
 SoundRoomEntry(Song_ScatterAbout, SongTitle_ScatterAbout, SourceTitle_EtrianOdyssey3,81)

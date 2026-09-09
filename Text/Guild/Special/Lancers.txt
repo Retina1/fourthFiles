@@ -251,7 +251,7 @@ I need that again.[AN]
 And I heard you got through[N]
 the Lethal Forest,[A] and'll[N]
 surely do so much more.[AN]
-[...]So, came I come? Please?[N]
+[...]So, can I come? Please?[N]
 Can you say no to this face?[A][X]
 ##
 [FarLeft][Guildmaster][Left][Nathan][MidRight][Phaedra]

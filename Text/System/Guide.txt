@@ -247,6 +247,22 @@ Knock some sense into the[N]
 drunkard. He'll probably show[N]
 up in a fight near Hirschring.[X]
 
+##Quest1_8x_Guide
+Find signs of an adventurer[N]
+with a deep purple scarf[N]
+near the Belvarusi border.[X]
+
+##Quest2_8x_Guide
+Locate and defeat the errant[N]
+swordfighter, wherever they[N]
+may show themselves.[X]
+
+##Quest3_8x_Guide
+The cog as white as milk.[N]
+The tape as red as blood.[N]
+The wire as yellow as corn.[N]
+The oil as pure as gold.[X]
+
 
 ##GuideSectionRecap
 Recap[X]

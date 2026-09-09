@@ -79,8 +79,8 @@ CallMenu(Market8xMenu)
 MarketHandler(Snipistol,800,0,0x1a)
 MarketHandler(Claymore,580,1,0x1b)
 MarketHandler(CuteDoll,1000,2,0x1c)
-LeafHandler(4)
-FictionHandler(5)
+LeafHandler(3)
+FictionHandler(4)
 GOTO 0x30
 BrokeHander
 ENDA

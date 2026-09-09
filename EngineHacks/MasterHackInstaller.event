@@ -35,6 +35,11 @@ WORD WundClothedMug
 WundUnclothedMugID:
 WORD WundMug
 
+FeefasnanMugID:
+WORD FeefasnanMug
+RatatoskrMugID:
+WORD RatatoskrMug
+
 GoreUnitID:
 WORD Gore
 GoreMugID:

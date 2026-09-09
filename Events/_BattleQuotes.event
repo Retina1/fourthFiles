@@ -104,7 +104,7 @@ UnspecifiedBattleConvo(Ratatoskr,Stratum4F2,0x28,Ratatoskr_Battle1)
 UnspecifiedBattleConvo(Ratatoskr,Stratum5AF2,0x28,Ratatoskr_Battle1)
 UnspecifiedBattleConvo(Ratatoskr,Stratum5BF2,0x28,Ratatoskr_Battle1)
 UnspecifiedBattleConvo(Ratatoskr,Stratum5CF2,0x28,Ratatoskr_Battle1)
-UnspecifiedBattleConvo(Ratatoskr,Stratum6F8,0x28,Ratatoskr_Battle1)
+UnspecifiedBattleConvo(Ratatoskr,Stratum6F8,0x28,Ratatoskr_Battle6)
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 
 
 //polish timing

@@ -19,4 +19,5 @@
 #include "CHAI_Fix\CHAI_Fix.event"
 #include "CantoFix\Installer.event"
 #include "RangedHealAnim\RangedHealAnim.event"
+#include "DeathQuotes\Installer.event"
 #include "RegisterDataFix.event"
