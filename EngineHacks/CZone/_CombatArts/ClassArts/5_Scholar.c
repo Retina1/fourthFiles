@@ -21,6 +21,11 @@ u8 EtherShotAttackingUsability() {
         if (GetItemType(item) == 0x5) {
             continue;
         }
+		
+		if (GetItemUses(item) == 0x0) {
+            continue;
+        }
+		
         MakeTargetListForWeapon(gActiveUnit, item);
         if (GetSelectTargetCount() == 0) {
             continue;

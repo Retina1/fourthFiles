@@ -214,7 +214,7 @@ UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [15,6] 0x0 0x0 0x0 0x0 [VenomSca
 UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
 UNIT
 EncounterRatatoskrEnemiesHeroic:
-UNIT Ratatoskr Squirrel 0x0 Level(5,Enemy,1) [13,12] 0x0 0x0 0x0 0x0 [FrigidBite,StunGas,SoulShield] NoAI
+UNIT Ratatoskr Squirrel 0x0 Level(5,Enemy,1) [13,12] 0x0 0x0 0x0 0x0 [FrigidBite,SoulShield] NoAI
 UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [10,12] 0x0 0x0 0x0 0x0 [AirScales,FrailtyAura] NoAI
 UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [11,11] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
 UNIT MonsterGeneric Airfly 0x0 Level(3,Enemy,1) [6,12] 0x0 0x0 0x0 0x0 [AirScales,SappingAura] NoAI

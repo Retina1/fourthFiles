@@ -32,6 +32,16 @@ UnitDescTable(Desc_Cleone2,Cleone,0x0,0xFF,Chapter16DoneFlag)
 UnitDescTable(Desc_Gore2,Gore,0x0,0xFF,Chapter16DoneFlag)
 UnitDescTable(Desc_Astarte2,Astarte,0x0,0xFF,Chapter16DoneFlag)
 UnitDescTable(Desc_Rat2,Rat,0x0,0xFF,Chapter16DoneFlag)
+
+UnitDescTable(Desc_NathanAct2,Nathan,0x0,Chapter9,0x0)
+UnitDescTable(Desc_NathanAct2,Nathan,0x0,0xff,Chapter9DoneFlag)
+UnitDescTable(Desc_AstarteAct2,Astarte,0x0,Chapter9,0x0)
+UnitDescTable(Desc_AstarteAct2,Astarte,0x0,0xff,Chapter9DoneFlag)
+UnitDescTable(Desc_GoreAct2,Gore,0x0,Chapter9,0x0)
+UnitDescTable(Desc_GoreAct2,Gore,0x0,0xff,Chapter9DoneFlag)
+UnitDescTable(Desc_CleoneAct2,Cleone,0x0,Chapter9,0x0)
+UnitDescTable(Desc_CleoneAct2,Cleone,0x0,0xff,Chapter9DoneFlag)
+
 SHORT 0x0; BYTE 0x0 0x0 0x0 0x0; SHORT 0x0  // term
 //@struct ChangeUnitDesc_Table
 //@{

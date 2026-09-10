@@ -143,6 +143,12 @@ int Staff1_3Range(struct Unit* unit, int itemID, int rangeWord){
 	else return 0;
 }
 
+int Whip1_2Range(struct Unit* unit, int itemID, int rangeWord){
+	if (GetItemType(itemID) == 0x0) {
+		return 0x00010002;
+	}
+	return 0;
+}
 int SlashLock(struct Unit* unit, int itemID, int rangeWord){
 	if (GetItemType(itemID) == 0x0) {
 		return rangeWord;

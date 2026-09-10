@@ -15,15 +15,24 @@ Nathan[X]
 ##Desc_Nathan
 A young Asketan scholar. Dreams[N]
 of leaving his mark on the world.[X]
+##Desc_NathanAct2
+The young leader of Guild [Guild].[N]
+He dreams of changing the world.[X]
 ##Name_Gore
 Gore[X]
 ##Desc_Gore
 A stoic Asketan gunner. Keeps[N]
 his plans close to his chest.[X]
+##Desc_GoreAct2
+A stoic founder of Guild [Guild].[N]
+Keeps his plans close to his chest.[X]
 ##Name_Astarte
 Astarte[X]
 ##Desc_Astarte
 A fervant Asketan priestess.[N]
+Her force of will is unstoppable.[X]
+##Desc_AstarteAct2
+A fervant founder of Guild [Guild].[N]
 Her force of will is unstoppable.[X]
 
 // ch 2
@@ -32,6 +41,9 @@ Cleone[X]
 ##Desc_Cleone
 A timid huntress with a checkered past.[N]
 Values her friends more than herself.[X]
+##Desc_CleoneAct2
+A timid founder of Guild [Guild].[N]
+She's finding her place in the world.[X]
 ##Name_Benthus
 Benthus[X]
 ##Desc_Benthus

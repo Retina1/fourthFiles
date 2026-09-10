@@ -1,8 +1,71 @@
 
 
 ##City08_EndText
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Heya, kid. So, that[N]
+surprise of yours.[AN][MoveMidLeft]
+Catch.[AN][MidRight][MoveMidRight]
+What's this? [...]Oh! It's the[N]
+naming paperwork![AN][MidLeft]
+Yup. All you gotta do is[N]
+pick your name,[A] and it'll[N]
+be official.[A] You've more[N]
+than earned it by now,[AN]
+and the paperwork got done a[N]
+bit after your departure.[AN][MidRight]
+So[...] What should I[N]
+call the guild?[AN][MidLeft]
+That's all your choice.[AN]
+I'll let you go with almost[N]
+anything, really.[AN]
+Very little I'll strike down.[N]
+That being said,[A] do try and[N]
+take it pretty seriously.[AN]
+You don't want to be stuck[N]
+with a name you'll regret.[AN]
+And I WILL let you be stuck[N]
+with that kinda name.[AN]
+You can also always stick to[N]
+Guild Hedge, I suppose.[AN]
+If it's grown on you.[AN][MidRight]
+And what about the[N]
+rest of the guild?[AN][MidLeft]
+I'll be honest, I met with[N]
+them a moment before you.[AN]
+They all said it's your call.[N]
+They'll assent to anything.[AN]
+[...]Try not to abuse that.[AN][MidRight]
+Don't worry.[AN][MidLeft]
+Well, if you're ready.[AN]
+They say the name paves[N]
+the road on which you walk.[AN]
+[...]Pick yourself a road.[A][X]
+
+##City08_EndText2
 [MidLeft][Guildmaster][MidRight][Nathan]
-text[A][X]
+Guild [Guild]. That's who[N]
+we are, Guildmaster.[AN][MidLeft]
+Fits you well.[AN]
+Well, [Guild]. Saddle up[N]
+for your new task.[AN]
+Shouldn't be anything[N]
+you can't handle.[AN]
+[...]Might be the last[N]
+easy job for a while.[AN][MidRight]
+Pardon?[AN][MidLeft]
+Don't mind me.[AN]
+Just[...] I've heard rumors.[AN]
+About what Belvarus may[N]
+plan to do real soon.[AN]
+Things might get a bit[N]
+tense, we'll say.[AN]
+I don't think anything'll[N]
+boil over quite yet,[AN]
+but[...] Just be careful.[AN][MidRight]
+[...]Alright. Thank you.[AN]
+I won't let [Guild] down.[AN][MidLeft]
+I can't see you ever[N]
+doing that, kid.[A][X]
 
 ##City08_PrePreps
 [MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
@@ -40,8 +103,19 @@ It's just another day.[A][X]
 
 
 ##City08_Cleone
-[MidLeft][Nathan][MidRight][Cleone][MidLeft]
-text[A][X]
+[Smile][MidLeft][Nathan][MidRight][Cleone]
+It's[...] nice to[N]
+think about.[AN]
+Getting back to[N]
+adventuring.[AN][MidLeft]
+Yeah.[AN][MidRight]
+[...]I don't want to hold[N]
+you up too long.[AN]
+You've got[...] important[N]
+things to do for Hedge.[AN][MidLeft]
+I can spare a[N]
+moment with you.[AN][MidRight][EyesClose]
+[...]Good.[A][X]
 
 
 ##City08_Helman
@@ -366,9 +440,8 @@ Overspill[X]
 Rivian[X]
 
 
-//banned guild names include piorin, benthus, rivian (crashes game)
-//guild names with special responses include nathan, astarte, gore, cleone, rat, (guild) master
-//hedge, returner, overspill, retina, fucker, morrow, aercolyn, etrian, guild, endbringe, slop
+//guild names with special responses include master
+//returner, fucker, morrow, aercolyn, etrian, endbringe, slop
 
 ##City08_NameGuildHedge
 [MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
@@ -443,6 +516,13 @@ Guild[...] [Guild]. Fills[N]
 me with a seething fury.[AN]
 I can't explain why, so I[N]
 guess you can use it.[A][X]
+
+##City08_NameGuildHitchcock
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Ain't that[N]
+the Belvarusi you killed?[AN]
+I won't stop you, but[...][N]
+Weird choice, bud.[A][X]
 
 ##City08_NameGuildGeneric
 [MidLeft][Guildmaster][MidRight][Nathan][MidLeft]

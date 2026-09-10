@@ -68,7 +68,7 @@ TILECHANGE 0x0
 MUSC Song_OohWilfre
 SetBackground(0x0)
 SetDefaultName(HedgeName)
-Text(FillerDialogue)
+Text(City08_EndText)
 MUSC Song_Incidental3B
 LABEL 0x1
 FADI 10
@@ -169,11 +169,18 @@ BEQ 0xf 0xc 0x0
 LABEL 0xf
 
 
+CheckName(Name_Hitchcock)
+BEQ 0x10 0xc 0x0
+	Text(City08_NameGuildHitchcock)
+	GOTO 0x20
+LABEL 0x10
+
+
 
 Text(City08_NameGuildGeneric)
 
 LABEL 0x20 //confirm name
 SystemText(NameAcceptPrompt)
 IfNoSelectedGoto(0x1)
-Text(FillerDialogue)
+Text(City08_EndText2)
 ENDA

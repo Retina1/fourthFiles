@@ -72,6 +72,7 @@ UNIT
 
 DuelingGroundsBegin:
 //aaaaa
+EVBIT_MODIFY 3
 CHECK_ALIVE Ayda
 BEQ 0x1 0xc 0x0
 CHECK_EVENTID 0x15

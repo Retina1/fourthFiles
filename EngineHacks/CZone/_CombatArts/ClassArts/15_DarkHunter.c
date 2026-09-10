@@ -363,7 +363,7 @@ int ToxinWhipOdds(struct Unit* actor, struct Unit* target){
 //cuffswhip
 u8 CuffsWhipArtUsability(struct Unit* unit, u16 artID){
 	if (UNIT_HAS_SKILL(unit,DOM,skill_211)){
-		return CombatArtWeaponTypeAttackingUsability(0);
+		return CombatArtRangeAttackingUsability(1,2,0);
 	}
 	else return 0;
 }
@@ -392,7 +392,7 @@ int CuffsWhipOdds(struct Unit* actor, struct Unit* target){
 //shacklewhip
 u8 ShackleWhipArtUsability(struct Unit* unit, u16 artID){
 	if (UNIT_HAS_SKILL(unit,DOM,skill_221)){
-		return CombatArtWeaponTypeAttackingUsability(0);
+		return CombatArtRangeAttackingUsability(1,2,0);
 	}
 	else return 0;
 }
@@ -421,7 +421,7 @@ int ShackleWhipOdds(struct Unit* actor, struct Unit* target){
 //mutewhip
 u8 MuteWhipArtUsability(struct Unit* unit, u16 artID){
 	if (UNIT_HAS_SKILL(unit,DOM,skill_231)){
-		return CombatArtWeaponTypeAttackingUsability(0);
+		return CombatArtRangeAttackingUsability(1,2,0);
 	}
 	else return 0;
 }
