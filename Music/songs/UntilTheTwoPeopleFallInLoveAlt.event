@@ -21,7 +21,7 @@ UntilTheTwoPeopleFallInLoveAlt_001:
 //  #01 //000   ----------------------------------------
  BYTE   KEYSH   UntilTheTwoPeopleFallInLoveAlt_key+0
 Label_01189702:
- BYTE   TEMPO   102*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   85*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   VOICE   1
  BYTE   VOL   62*UntilTheTwoPeopleFallInLoveAlt_mvl/mxv
  BYTE   PAN   c_v+0

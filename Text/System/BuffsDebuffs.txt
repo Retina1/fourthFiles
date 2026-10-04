@@ -26,6 +26,64 @@ Rallying Cry[X]
 Bonuses based on source[N]
 Noble's skill levels.[X]
 
+##ResonantRoarLabel
+Resonant Roar[X]
+##ResonantRoarDesc
+0.8x Prt/Luc.[X]
+
+##DraconicFuryLabel
+Draco. Fury[X]
+##DraconicFuryDesc1
+1.3x Atk, +1 Mov.[X]
+##DraconicFuryDesc2
+1.6x Atk, +2 Mov.[X]
+
+
+##MercysWingsLabel
+Mercy's Wings[X]
+##MercysWingsDesc1
+1.1x Atk/Prt/AS/[N]
+Hit/Avo/Crit/Luc.[X]
+##MercysWingsDesc2
+1.3x Atk/Prt/AS/[N]
+Hit/Avo/Crit/Luc.[X]
+##MercysWingsDesc3
+1.5x Atk/Prt/AS/[N]
+Hit/Avo/Crit/Luc.[X]
+
+##ResilientWingsLabel
+Resil. Wings[X]
+##ResilientWingsDesc1
+1.2x Prt.[X]
+##ResilientWingsDesc2
+1.4x Prt.[X]
+
+##SwiftWingsLabel
+Swift Wings[X]
+##SwiftWingsDesc1
+1.2x Avo/AS.[X]
+##SwiftWingsDesc2
+1.4x Avo/AS.[X]
+
+##WingedGallopLabel
+Winged Gallop[X]
+##WingedGallopDesc1
++2 Mov.[X]
+##WingedGallopDesc2
++3 Mov.[X]
+
+##IgnitionLabel
+Ignition[X]
+##IgnitionDesc1
+0.0x Prt. Blade[N]
+will not Overheat.[X]
+##IgnitionDesc2
+0.2x Prt. Blade[N]
+will not Overheat.[X]
+##IgnitionDesc3
+0.33x Prt. Blade[N]
+will not Overheat.[X]
+
 ##TrickeryLabel
 Trickery[X]
 ##TrickeryDesc1

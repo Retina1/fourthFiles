@@ -8,6 +8,7 @@
 #include "ItemIconDefs.event"
 
 #define ColorblindFlag 0x7e
+#define ZeroEXPFlag 0x7f
 //idk about triattacks or dk
 #define RepairModeFlag 0x83
 #define HideIconsFlag 0x84
@@ -109,6 +110,10 @@
 #define Quest2_8x_DoneFlag 0x110
 #define Quest3_8x_Flag 0x111
 #define Quest3_8x_DoneFlag 0x112
+#define Quest1_9x_Flag 0x113
+#define Quest1_9x_DoneFlag 0x114
+#define Quest2_9x_Flag 0x115
+#define Quest2_9x_DoneFlag 0x116
 
 
 #define NoRescuingFlag 0x120

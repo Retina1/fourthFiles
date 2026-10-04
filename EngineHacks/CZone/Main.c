@@ -19,6 +19,8 @@ extern void BattleInitItemEffect(Unit*, int);
 extern void BattleInitItemEffectTarget(Unit*);
 extern void BeginLightRuneMapAnim(ProcPtr*, int, int);
 void TryAddUnitToSleepTargetList(struct Unit* unit);
+void TryAddUnitToStatusArtTargetList(struct Unit* unit, int targetStatus);
+void ForEachUnitInRangeStatus(void(*func)(struct Unit* unit, int targetStatus), int status);
 
 #include "SkillSystem/SkillHelpers.c"
 #include "SkillLearner/SkillLearner.c"

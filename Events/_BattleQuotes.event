@@ -91,8 +91,11 @@ SpecifiedBattleConvo(Cleone,BossBenthus2,Chapter8,0x13,C8CleoneBenthusBattle)
 SpecifiedBattleConvo(Rat,BossBenthus2,Chapter8,0x14,C8RatBenthusBattle)
 SpecifiedBattleConvo(Helman,BossBenthus2,Chapter8,0x15,C8HelmanBenthusBattle)
 SpecifiedBattleConvo(Kryst,BossBenthus2,Chapter8,0x16,C8KrystBenthusBattle)
-//rat, helman, kryst, maybe others?
 UnspecifiedBattleConvo(BossBenthus2,Chapter8,0x14,C8BenthusBattle)
+
+//c9
+UnspecifiedBattleConvo(Iseau,Chapter9,0x12,C9IseauBattle)
+
 
 UnspecifiedBattleEvent(BossGuildmaster,EndgameB,0x10,EndgameBGuildmasterBattleEvent)
 

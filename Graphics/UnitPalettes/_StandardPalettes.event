@@ -295,6 +295,15 @@ ALIGN 4
 Dragoon_JudyDMP:
 #incbin "paletteFiles/Standard/Dragoon_Judy.dmp"
 
+PaletteIdentifier(Gunner_Victoria, Gunner_VictoriaDMP)
+PaletteIdentifier(Dragoon_Victoria, Dragoon_VictoriaDMP)
+ALIGN 4
+Gunner_VictoriaDMP:
+#incbin "paletteFiles/Standard/Gunner_Victoria.dmp"
+ALIGN 4
+Dragoon_VictoriaDMP:
+#incbin "paletteFiles/Standard/Dragoon_Victoria.dmp"
+
 
 ALIGN 4
 GunnerPaletteList:
@@ -304,6 +313,7 @@ PaletteAssociationEntry(Karl,Gunner_Karl)
 PaletteAssociationEntry(Wasp,Gunner_Wasp)
 PaletteAssociationEntry(Laiteuse,Gunner_Laiteuse)
 PaletteAssociationEntry(Judy,Gunner_Judy)
+PaletteAssociationEntry(Victoria,Gunner_Victoria)
 WORD 0 0
 ALIGN 4
 DragoonPaletteList:
@@ -313,5 +323,6 @@ PaletteAssociationEntry(Karl,Dragoon_Karl)
 PaletteAssociationEntry(Wasp,Dragoon_Wasp)
 PaletteAssociationEntry(Laiteuse,Dragoon_Laiteuse)
 PaletteAssociationEntry(Judy,Dragoon_Judy)
+PaletteAssociationEntry(Victoria,Dragoon_Victoria)
 PaletteAssociationEntry(BossGore,Dragoon_Gore)
 WORD 0 0

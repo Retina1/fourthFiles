@@ -285,6 +285,15 @@ ALIGN 4
 Hexer_GhevenaDMP:
 #incbin "paletteFiles/Magus/Hexer_Ghevena.dmp"
 
+PaletteIdentifier(Lurker_Ludovic, Lurker_LudovicDMP)
+PaletteIdentifier(Hexer_Ludovic, Hexer_LudovicDMP)
+ALIGN 4
+Lurker_LudovicDMP:
+#incbin "paletteFiles/Magus/Lurker_Ludovic.dmp"
+ALIGN 4
+Hexer_LudovicDMP:
+#incbin "paletteFiles/Magus/Hexer_Ludovic.dmp"
+
 ALIGN 4
 LurkerPaletteList:
 PaletteAssociationEntry(Rat,Lurker_Rat)
@@ -294,6 +303,7 @@ PaletteAssociationEntry(Paul,Lurker_Paul)
 PaletteAssociationEntry(Hausten,Lurker_Hausten)
 PaletteAssociationEntry(Whirl,Lurker_Whirl)
 PaletteAssociationEntry(Ghevena,Lurker_Ghevena)
+PaletteAssociationEntry(Ludovic,Lurker_Ludovic)
 WORD 0 0
 ALIGN 4
 HexerPaletteList:
@@ -304,4 +314,5 @@ PaletteAssociationEntry(Paul,Hexer_Paul)
 PaletteAssociationEntry(Hausten,Hexer_Hausten)
 PaletteAssociationEntry(Whirl,Hexer_Whirl)
 PaletteAssociationEntry(Ghevena,Hexer_Ghevena)
+PaletteAssociationEntry(Ludovic,Hexer_Ludovic)
 WORD 0 0

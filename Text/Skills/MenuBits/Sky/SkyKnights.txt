@@ -1,0 +1,36 @@
+##UM_ResilientWings
+ Resil. Wings[X]
+##UM_ResilientWingsDesc
+Buff self's Prt.[N]
+Cost: 2 Durability.[X]
+##UM_SwiftWings
+ Swift Wings[X]
+##UM_SwiftWingsDesc
+Buff self's AS/Avo.[N]
+Cost: 2 Durability.[X]
+##UM_WingedGallop
+ Winged Gallop[X]
+##UM_WingedGallopDesc
+Buff self's Mov.[N]
+Cost: 3 Durability.[X]
+
+##UM_TempestLance
+ Tempest Lnc.[X]
+##UM_TempestLanceDesc
+A truly swift strike.[N]
+Cost: 4 Durability.[X]
+##UM_FrozenLance
+ Frozen Lnc.[X]
+##UM_FrozenLanceDesc
+A chilling magic strike.[N]
+Cost: 3 Durability.[X]
+##UM_HolyLance
+ Holy Lance[X]
+##UM_HolyLanceDesc
+A strike of salvation.[N]
+Cost: 2 Durability.[X]
+##UM_LungingLance
+ Lunging Lnc.[X]
+##UM_LungingLanceDesc
+A swapping strike.[N]
+Cost: 3 Durability.[X]

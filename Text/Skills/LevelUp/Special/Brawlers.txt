@@ -85,6 +85,7 @@ restores [_2][_0]% HP.[N]
 Next: [_3][_3]% HP.[X]
 ## ^
 Level: MAX (Active)[N]
+Take a moment to breathe.[N]
 [_3] Dur, requires/heals[N]
 debuffs/ailm./binds,[N]
 restores [_3][_3]% HP.[N]

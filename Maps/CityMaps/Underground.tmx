@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="10" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="0E000F08" tilewidth="16" tileheight="16">
+  <image source="0E000F08.png" trans="ffffff"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="0"/>
+   <property name="Anims2" value="0"/>
+   <property name="ChapterID" value="Underground"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="0"/>
+   <property name="MapID" value="UndergroundMapID"/>
+   <property name="ObjectType" value="Caves1OBJ"/>
+   <property name="PaletteID" value="Caves1PAL"/>
+   <property name="TileConfig" value="CavesCONFIG"/>
+  </properties>
+  <data>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="76"/>
+  <tile gid="76"/>
+  <tile gid="76"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="77"/>
+  <tile gid="143"/>
+  <tile gid="271"/>
+  <tile gid="245"/>
+  <tile gid="75"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="213"/>
+  <tile gid="149"/>
+  <tile gid="88"/>
+  <tile gid="277"/>
+  <tile gid="214"/>
+  <tile gid="43"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="16"/>
+  <tile gid="88"/>
+  <tile gid="88"/>
+  <tile gid="311"/>
+  <tile gid="89"/>
+  <tile gid="43"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="45"/>
+  <tile gid="87"/>
+  <tile gid="88"/>
+  <tile gid="88"/>
+  <tile gid="14"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="16"/>
+  <tile gid="88"/>
+  <tile gid="88"/>
+  <tile gid="43"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="15"/>
+  <tile gid="15"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  <tile gid="44"/>
+  </data>
+ </layer>
+</map>

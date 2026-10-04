@@ -259,7 +259,7 @@ Next: [_0].[_5]x debuff.[X]
 Level: MAX (Active)[N]
 A baneful blood curse.[N]
 [_4] Dur, Burst [_3] (Foe),[N]
-Inf. [_0].[_9]x Atk/AS/Hit/[N]
+Inf. [_0].[_5]x Atk/AS/Hit/[N]
 Avo/Crit ([_2] turns), fully[N]
 binds user/expends [_5][_0]% HP.[X]
 

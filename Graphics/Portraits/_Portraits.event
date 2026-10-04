@@ -28,6 +28,24 @@ TychoDMP:
 setMugEntryExtend(TychoMug,TychoDMP,2,5,2,3, 0,2, 0,0)
 
 ALIGN 4
+//augnenismade
+VictoriaDMP:
+#incbin "dmps/augenisVictoria.dmp"
+setMugEntry(VictoriaMug,VictoriaDMP,3,5,3,3)
+
+ALIGN 4
+//bobby
+DalaiDMP:
+#incbin "dmps/bobbyDalai.dmp"
+setMugEntry(DalaiMug,DalaiDMP,2,5,2,3)
+
+ALIGN 4
+//fatman
+LudovicDMP:
+#incbin "dmps/fatmanLudovic.dmp"
+setMugEntry(LudovicMug,LudovicDMP,3,4,3,2)
+
+ALIGN 4
 //vileplume
 ClarisseDMP:
 #incbin "dmps/vileplumeClarisse.dmp"
@@ -356,7 +374,7 @@ ALIGN 4
 //lotus
 AmmiDMP:
 #incbin "dmps/lotusAmmi.dmp"
-setMugEntry(AmmiMug,AmmiDMP,4,6,4,4)
+setMugEntry(AmmiMug,AmmiDMP,2,6,3,4)
 
 ALIGN 4
 //devvy
@@ -468,7 +486,7 @@ ALIGN 4
 //abzinthian
 RodneyDMP:
 #incbin "dmps/abzinthianRodney.dmp"
-setMugEntry(RodneyMug,RodneyDMP,2,5,2,3)
+setMugEntry(RodneyMug,RodneyDMP,4,6,4,4)
 ALIGN 4
 MeansDeathDMP:
 #incbin "dmps/abzinthianMeansDeath.dmp"

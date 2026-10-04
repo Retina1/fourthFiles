@@ -85,7 +85,7 @@ CA_Entry((Set2LastArt + 15), 2)
 	CA_GeneralAttackEffect
 	CA_Prebattle(DivineLightningPrebattle)
 	CA_Range(Staff1_2Range); CA_IsMagic(MagicArt); CA_SpellAnim(0x1f)
-CA_Entry((Set2LastArt + 16), 4)
+CA_Entry((Set2LastArt + 16), 3)
 	CA_Name(UM_ShiningForce,UM_ShiningForceDesc)
 	CA_Usability(ShiningForceArtUsability,ShiningForceArtMenuUsability)
 	CA_GeneralAttackEffect

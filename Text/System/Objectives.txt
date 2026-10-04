@@ -27,6 +27,8 @@ End this[X]
 
 ##PrepareLabel
 Prepare![X]
+##GamingLabel
+Drowning.[X]
 
 ##Ch1RoutDesc
 Prove your[N]

@@ -1,0 +1,151 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Events10ID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x10,Chapter9_House1,16,10)
+Village(0x11,Chapter9_House2,4,6)
+END_MAIN
+
+MiscBasedEvents:
+AreaEvent(0x9,Quest1_8x_Event,8,6,10,7)
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,18] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [14,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+CutsceneUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,16] 0x0 0x0 0x1 REDA15R16 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [19,16] 0x0 0x0 0x1 REDA17R16 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [19,17] 0x0 0x0 0x1 REDA16R15 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [19,17] 0x0 0x0 0x1 REDA16R17 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(1,Ally,0) [19,18] 0x0 0x0 0x1 REDA18R17 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [9,0] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [10,0] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [11,0] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [9,1] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [10,1] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [11,1] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [9,2] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [10,2] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric Rider 0x0 Level(11,Enemy,1) [11,2] 0x0 0x0 0x0 0x0 [Partizan] DelayedAI
+UNIT MilitaryGeneric ScaleKnight 0x0 Level(11,Enemy,1) [2,3] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
+UNIT MilitaryGeneric ScaleKnight 0x0 Level(11,Enemy,1) [4,2] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
+UNIT MilitaryGeneric ScaleKnight 0x0 Level(11,Enemy,1) [6,1] 0x0 0x0 0x0 0x0 [Yue] ChaseOnceApproachedAI
+UNIT MilitaryGeneric ScaleKnight 0x0 Level(11,Enemy,1) [15,5] 0x0 0x0 0x0 0x0 [Yue] NoAI
+UNIT MilitaryGeneric ScaleKnight 0x0 Level(11,Enemy,1) [17,5] 0x0 0x0 0x0 0x0 [Yue] NoAI
+UNIT George Driver 0x0 Level(13,Enemy,1) [17,3] DropItem 0x0 0x0 0x0 [Dominance,KnightProof] NoAI
+//boss cameo
+UNIT Iseau Fencer 0x0 Level(18,Enemy,1) [18,4] 0x0 0x0 0x0 0x0 [JollyRoger] NoAI
+UNIT Angelica Medic 0x0 Level(17,Enemy,1) [18,4] 0x0 0x0 0x0 0x0 [Asclepius] NoAI
+UNIT
+
+GalvinJoin:
+UNIT Galvin 0x0 0x1 Level(18,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Warbow,Sureshot,Elixir] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+DifficultySwapper
+CHECK_EXISTS Galvin
+BNE 0x1 0xc 0x0
+LOAD1 0x1 GalvinJoin
+//lv 1 in all passives and 9, lv2 in skill 4/6, lv3 in 7/8/10, lv5 in 12,
+LevelUpSkill(Galvin,0)
+LevelUpSkill(Galvin,1)
+LevelUpSkill(Galvin,2)
+LevelUpSkill(Galvin,3)
+LevelUpSkill(Galvin,4)
+LevelUpSkill(Galvin,4)
+LevelUpSkill(Galvin,6)
+LevelUpSkill(Galvin,6)
+LevelUpSkill(Galvin,7)
+LevelUpSkill(Galvin,7)
+LevelUpSkill(Galvin,7)
+LevelUpSkill(Galvin,8)
+LevelUpSkill(Galvin,8)
+LevelUpSkill(Galvin,8)
+LevelUpSkill(Galvin,9)
+LevelUpSkill(Galvin,10)
+LevelUpSkill(Galvin,10)
+LevelUpSkill(Galvin,10)
+LevelUpSkill(Galvin,12)
+LevelUpSkill(Galvin,12)
+LevelUpSkill(Galvin,12)
+LevelUpSkill(Galvin,12)
+LevelUpSkill(Galvin,12)
+LABEL 0x1
+CleanTextNoMap(0x3,FillerDialogue)
+LoadUnitsByDifficulty(EnemyUnits,EnemyUnits,EnemyUnits)
+
+CAM1 [19,19]
+CLEAN
+FADU 10
+LOAD2 0x1 CutsceneUnits
+ENUN
+MUSC Song_PandemonicPlanet
+Text(FillerDialogue)
+CallPreps
+EndEvent
+
+
+EndingScene:
+ENUT Chapter10DoneFlag
+MUSC Song_EditMode
+CleanTextNoMap(0x18,FillerDialogue)
+MoveToChapter(HirschringSquare)
+ENDA
+
+//MESSAGE Events end at offset CURRENTOFFSET

@@ -188,7 +188,7 @@ void MakeTargetListForStoning(struct Unit* unit) {
     MapAddInRange(x, y, 5, 1);
     MapAddInRange(x, y, 0, (-1));
 
-    ForEachUnitInRange(TryAddUnitToSleepTargetList);
+    ForEachUnitInRangeStatus(TryAddUnitToStatusArtTargetList,WPN_EFFECT_PETRIFY);
     return;
 }
 
@@ -233,7 +233,7 @@ void MakeTargetListForHex(struct Unit* unit) {
     MapAddInRange(x, y, 5, 1);
     MapAddInRange(x, y, 0, (-1));
 
-    ForEachUnitInRange(TryAddUnitToSleepTargetList);
+    ForEachUnitInRangeStatus(TryAddUnitToStatusArtTargetList,WPN_EFFECT_CURSE);
     return;
 }
 
@@ -278,7 +278,7 @@ void MakeTargetListForBinding(struct Unit* unit) {
     MapAddInRange(x, y, 5, 1);
     MapAddInRange(x, y, 0, (-1));
 
-    ForEachUnitInRange(TryAddUnitToSleepTargetList);
+    ForEachUnitInRangeStatus(TryAddUnitToStatusArtTargetList,WPN_EFFECT_FULLBIND);
     return;
 }
 
@@ -323,7 +323,7 @@ void MakeTargetListForMadness(struct Unit* unit) {
     MapAddInRange(x, y, 5, 1);
     MapAddInRange(x, y, 0, (-1));
 
-    ForEachUnitInRange(TryAddUnitToSleepTargetList);
+    ForEachUnitInRangeStatus(TryAddUnitToStatusArtTargetList,WPN_EFFECT_BERSERK);
     return;
 }
 
@@ -368,7 +368,7 @@ void MakeTargetListForTorpor(struct Unit* unit) {
     MapAddInRange(x, y, 5, 1);
     MapAddInRange(x, y, 0, (-1));
 
-    ForEachUnitInRange(TryAddUnitToSleepTargetList);
+    ForEachUnitInRangeStatus(TryAddUnitToStatusArtTargetList,WPN_EFFECT_SLEEP);
     return;
 }
 

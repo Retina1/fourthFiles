@@ -543,8 +543,37 @@ SongTable(Song_SinSpreadsInOurHearts,SinSpreadsInOurHearts,1)
 SongTable(Song_DaatVengeance,DaatVengeance,1)
 #include "songs/DaatVengeance.event"
 }
+#define Song_EmeraldGrove 0xdb
+{
+SongTable(Song_EmeraldGrove,EmeraldGroveSong,1)
+#include "songs/EmeraldGrove.event"
+}
+
+#define Song_Ecstasy 0xe0
+{
+SongTable(Song_Ecstasy,Ecstasy,1)
+#include "songs/Ecstasy.event"
+}
+#define Song_VengeanceForReclamation 0xe1
+{
+SongTable(Song_VengeanceForReclamation,VengeanceForReclamation,1)
+#include "songs/VengeanceForReclamation.event"
+}
+#define Song_LivingOnTheEdgeAlt 0xe4
+{
+SongTable(Song_LivingOnTheEdgeAlt,LivingOnTheEdgeAlt,0)
+#include "songs/LivingOnTheEdgeAlt.event"
+}
+
 // 0xda is astarte lategame preps
+
+
+
 /* free numbers
-db
-e0 e1 e4 e8 e9 ec ee f3 104 105 106 107
+e8 e9 ec ee f3 104 105 106 107
 */
+
+{
+#include "songs/MapIntro.event"
+SongTable(0x316,MapIntro,6)
+}

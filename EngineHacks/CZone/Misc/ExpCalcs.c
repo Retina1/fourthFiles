@@ -217,13 +217,22 @@ int GetUnitExpDivisor(struct Unit* actor, struct Unit* target) {
 
 
 void BattleApplyMiscActionExpGains(void) {
-    if ((gBattleActor.unit.index & 0xC0) != FACTION_BLUE)
+    if ((gBattleActor.unit.index & 0xC0) != FACTION_BLUE){
         return;
-
-    if (!CanBattleUnitGainLevels(&gBattleActor))
+	}
+	
+    if (!CanBattleUnitGainLevels(&gBattleActor)){
         return;
+	}
 
     if (gChapterData.chapterStateBits & PLAY_FLAG_EXTRA_MAP){
+        return;
+	}
+	
+	if (CheckEventId_(0x120)){
+        return;
+	}
+	if (CheckEventId_(0x7f)){
         return;
 	}
 	
@@ -382,6 +391,9 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
         return 0;
 
     if (!actor->nonZeroDamage){
+        return 0;
+	}
+	if (CheckEventId_(0x7f)){
         return 0;
 	}
 	//normal
@@ -618,8 +630,17 @@ int GetBattleUnitExpGain(struct BattleUnit* actor, struct BattleUnit* target) {
 int GetBattleUnitStaffExp(struct BattleUnit* bu) {
     int result;
 
-    if (!CanBattleUnitGainLevels(bu))
+    if (!CanBattleUnitGainLevels(bu)){
         return 0;
+	}
+	
+	if (CheckEventId_(0x120)){
+        return 0;
+	}
+	if (CheckEventId_(0x7f)){
+        return 0;
+	}
+	
 
     if (gBattleHitArray->attributes & BATTLE_HIT_ATTR_MISS)
 		result = 1;

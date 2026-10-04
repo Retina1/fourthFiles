@@ -1,0 +1,34 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+
+LoadEmeraldGroveSigils:
+ENUF LocationFlagEmeraldGrove
+AddSigil(0,0)
+AddSigil(1,0)
+AddSigil(2,0)
+ENDA
+
+EmeraldGroveMoveToRiver:
+SwapToMap(RiverHirsch,13,8)
+CALL LoadRiverHirschSigils
+CALL LoadRiverHirschUnits
+MUSC AmbientRiver
+FADU 10
+EndEvent
+
+EmeraldGroveMoveToUnderground:
+SwapToMap(Underground,4,2)
+CALL LoadUndergroundSigils
+//eventual song
+MUSC AmbientShimmer
+CALL LoadUndergroundUnits
+FADU 10
+EndEvent
+
+
+
+//todo - driver training

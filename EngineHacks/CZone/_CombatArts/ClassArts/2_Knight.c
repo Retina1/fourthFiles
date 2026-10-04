@@ -176,13 +176,42 @@ void BoundingThrustBothSides(struct BattleUnit* actor, struct BattleUnit* target
 	}
 }
 
+struct Vec2u GetBoundingCoord(int x1, int x2, int y1, int y2) { 
+	struct Vec2u result;
+	result.x = x1; 
+	result.y = y1; 
+	//int dir = 0; 
+	if (x1 != x2) { 
+		if (x1 > x2) { 
+		//dir = MU_COMMAND_MOVE_RIGHT; // actor is on the right side of target, so move actor left 
+		result.x = x1 - 2 * (x1-x2); 
+		}
+		else if (x1 < x2) { 
+		//dir = MU_COMMAND_MOVE_LEFT; 
+		result.x = x1 + 2 * (x2-x1); 
+		} 
+	} 
+	if (y1 != y2) { 
+		if (y1 > y2) { 
+		//dir = MU_COMMAND_MOVE_DOWN; 
+		result.y = y1 - 2 * (y1-y2); 
+		}
+		else if (y1 < y2) { 
+		//dir = MU_COMMAND_MOVE_UP;
+		result.y = y1 + 2 * (y2-y1); 
+		}
+	} 
+	return result; 
+
+} 
+
 void BoundingThrustPostbattle(struct Unit* actor, struct Unit* target){
 	if (GetUnitCurrentHp(actor) > 0) {
 		int x1 = actor->xPos; 
 		int y1 = actor->yPos; 	
 		int x2 = target->xPos; 
 		int y2 = target->yPos; 
-		struct Vec2u dest = GetPivotCoord(x1, x2, y1, y2);
+		struct Vec2u dest = GetBoundingCoord(x1, x2, y1, y2);
 		if ((CanUnitCrossTerrain(actor, gBmMapTerrain[dest.y][dest.x])) && (!(gBmMapUnit[dest.y][dest.x])) && (!(gBmMapHidden[dest.y][dest.x] & 1)))  {
 			actor->xPos = dest.x;
 			actor->yPos = dest.y;

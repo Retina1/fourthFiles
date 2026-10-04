@@ -1,0 +1,94 @@
+##Quest1_9x
+The Missing Cargo[X]
+
+##Quest1_9x_Desc
+Asketa's seeking to establish some[N]
+international trade, but some vital[N]
+goods for that have gone missing.[X]
+
+##Quest1_9x_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+That one's real simple.[AN]
+Asketa's not doin' too hot.[N]
+We all know that much.[AN]
+They're trying to fight against[N]
+that,[A] and part of that is trying[N]
+to get more trade going.[AN]
+Issue is, thanks to a truly[N]
+mind-boggling clerical error,[AN]
+our first shipment of goods has[N]
+gone completely missing.[AN][MidLeft]
+How[...] How does that[...]?[AN][MidRight]
+Beats me. They've got a foreign[N]
+dignitary here,[A] the dignitary's[N]
+losing his patience,[A] and they're[N]
+pressing me for help.[AN]
+Saying that they need all hands[N]
+on deck finding the cargo.[AN]
+So[...] Find it. God knows where it[N]
+might be,[A] but given the imperials[N]
+can't find it,[A] I wouldn't be[N]
+shocked if it's not in Asketa.[AN]
+[...]Good luck.[AN][Clear][MidLeft]
+[...]You can't just say good[N]
+luck and leave like that![AN][MidRight][Bobby]
+Yes, I can.[A][X]
+
+##Quest1_9x_System
+quest[A][X]
+
+##Quest1_9x_Done
+[MidLeft][Nathan][MidRight][Bobby]
+Thanks for gettin' back that[N]
+cargo.[A] The imperials'll be[N]
+real happy about that.[AN][MidLeft]
+Still wonder why they made[N]
+a guild do it.[A] Then again,[N]
+that seems to be a habit.[AN][MidRight]
+Would it make you feel better[N]
+if I spilt some gossip?[AN][MidLeft]
+No. [...]It looks like[N]
+you wanna anyway.[AN][MidRight]
+While you were out, they took[N]
+the dignitary to dinner here.[AN]
+Think they wanted to try and[N]
+keep his mood in check.[AN]
+Or to booze 'im up. One of the[N]
+two, really.[A] Anyway, I heard[N]
+all about this trade deal.[AN]
+You ever hear of this continent[N]
+across the sea, Ulmaron?[AN][MidLeft]
+Nope.[AN][MidRight]
+Me neither. Apparently there's[N]
+this kingdom there, Mevion.[AN][MidLeft]
+Riveting.[AN][MidRight]
+And the dignitary's some big[N]
+shot count. Count Lirel.[AN][MidLeft]
+I don't think you get how[N]
+little that name means to me.[AN][MidRight]
+Just play along, please.[N]
+[...]Fine. Have your reward.[AN]
+You'll regret taking my[N]
+gossip for granted.[A][X]
+
+
+##Quest2_9x
+Something's Fishy[X]
+
+##Quest2_9x_Desc
+A local fisherman feels his hauls are[N]
+shrinking, and wishes for someone to[N]
+figure out why. Danger lies ahead.[X]
+
+##Quest2_9x_Bobby
+[MidLeft][Nathan][MidRight][Bobby]
+That one's real simple.[AN]
+
+[...]Good luck.[A][X]
+
+##Quest2_9x_System
+quest[A][X]
+
+##Quest2_9x_Done
+[MidLeft][Nathan][MidRight][Bobby]
+done[A][X]

@@ -228,10 +228,10 @@ void StigmataItemSelectEffect(u16 artID, struct Unit* unit)
 	if (unit->curHP == 0) {
 		unit->curHP = 1;
 	}
-	if (UNIT_HAS_SKILL(unit,HLD,skill_333)) {
+	if (UNIT_HAS_SKILL(unit,HLD,skill_343)) {
 		ApplyDebuffToEnemiesInRange(unit,DEBUFF_STIGMATA3,3);
 	}
-	else if (UNIT_HAS_SKILL(unit,HLD,skill_332)) {
+	else if (UNIT_HAS_SKILL(unit,HLD,skill_342)) {
 		ApplyDebuffToEnemiesInRange(unit,DEBUFF_STIGMATA2,3);
 	}
 	else{

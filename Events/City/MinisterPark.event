@@ -1,0 +1,42 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+MinisterParkUnitsC9:
+UNIT MilitaryGeneric Survivalist 0x0 Level(12,NPC,1) [13,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Survivalist 0x0 Level(14,NPC,1) [7,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT MilitaryGeneric Driver 0x0 Level(28,NPC,1) [1,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+
+LoadMinisterParkSigils:
+ENUF LocationFlagMinisterPark
+AddSigil(0,0)
+AddSigil(0,1)
+AddSigil(0,2)
+AddGreenSigil(1,5)
+AddSigil(14,9)
+AddSigil(14,10)
+ENDA
+
+MinisterParkMoveToSquare:
+SwapToMap(HirschringSquare,19,8)
+CALL LoadHirschringSigils
+LoadSquareUnits
+LoadVendorSecond
+FADU 10
+EndEvent
+
+MinisterParkMoveToRiverHirsch:
+SwapToMap(RiverHirsch,6,1)
+CALL LoadRiverHirschSigils
+//eventual song
+MUSC AmbientRiver
+CALL LoadRiverHirschUnits
+FADU 10
+EndEvent
+
+
+//todo - driver training

@@ -1,0 +1,44 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+RiverHirschUnitsC9:
+UNIT BossGuildmaster Highlander 0x0 Level(26,NPC,1) [7,7] 0x0 0x0 0x0 0x0 [Fengyan,OutlandShield] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+
+
+LoadRiverHirschUnits:
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DummyUnits,DummyUnits,RiverHirschUnitsC9,0,0,0,0,0,0,0,0)
+ENDA
+
+LoadRiverHirschSigils:
+ENUF LocationFlagRiverHirsch
+AddSigil(5,0)
+AddSigil(6,0)
+AddSigil(7,0)
+AddSigil(14,7)
+AddSigil(14,8)
+AddSigil(14,9)
+ENDA
+
+RiverHirschMoveToPark:
+SwapToMap(MinisterPark,13,9)
+CALL LoadMinisterParkSigils
+LoadParkUnits
+MUSC Song_VastLands
+FADU 10
+EndEvent
+
+RiverHirschMoveToGrove:
+SwapToMap(EmeraldGrove,1,1)
+CALL LoadEmeraldGroveSigils
+//eventual song
+MUSC Song_EmeraldGrove
+//CALL LoadEmeraldGroveUnits
+FADU 10
+EndEvent
+
+//todo - driver training

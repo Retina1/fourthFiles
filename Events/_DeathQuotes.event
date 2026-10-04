@@ -37,6 +37,10 @@ ChapterDeathQuote(Astoria,Chapter7,0x0,C7AstoriaDeath)
 //c8
 ChapterDeathQuote(Quarry,Chapter8,Quest2_5x_DoneFlag,Quest2_5x_Kill)
 EventDeathQuote(BossBenthus2,Chapter8,0x2,BenthusDeathEvent)
+//c9
+ChapterDeathQuote(FreelanceGeneric,Chapter9,0x20,0x0)
+ChapterDeathQuote(Iseau,Chapter9,0x0,C9IseauDefeat)
+
 //c10
 ChapterDeathQuote(George,Chapter10,0x2,BenthusDeath)
 

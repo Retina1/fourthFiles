@@ -57,6 +57,22 @@ MUSC Song_DevilsRoulette
 CleanTextNoMap(0x0, City05_EndText)
 ENDA
 
+Chapter9CityEnd:
+MUSC Song_OohWilfre
+CleanTextNoMap(0x0, City09_EndText)
+ENDA
+
+
+
+
+
+
+
+
+
+
+
+
 Chapter8CityEnd:
 EVBIT_MODIFY 3
 FADI 10
@@ -83,11 +99,11 @@ BEQ 0x3 0xc 0x0
 LABEL 0x3
 
 CheckName(RivianName)
-BEQ 0x10 0xc 0x0
+BEQ 0x1f 0xc 0x0
 	SetBackground(DecisionCorruptedCG)
 	ASMC 0x21
 	GOTO 0x20
-LABEL 0x10
+LABEL 0x1f
 
 SetBackground(0x0)
 CheckName(HedgeName)
@@ -168,12 +184,147 @@ BEQ 0xf 0xc 0x0
 	GOTO 0x20
 LABEL 0xf
 
-
 CheckName(Name_Hitchcock)
 BEQ 0x10 0xc 0x0
 	Text(City08_NameGuildHitchcock)
 	GOTO 0x20
 LABEL 0x10
+
+CheckName(CloserName)
+BEQ 0x11 0xc 0x0
+	Text(City08_NameGuildCloser)
+	GOTO 0x20
+LABEL 0x11
+
+CheckName(ReturnerName)
+BEQ 0x12 0xc 0x0
+	Text(City08_NameGuildReturner)
+	GOTO 0x20
+LABEL 0x12
+
+CheckName(FuckerName)
+BEQ 0x13 0xc 0x0
+	Text(City08_NameGuildFucker)
+	GOTO 0x20
+LABEL 0x13
+
+CheckName(MorrowName)
+BEQ 0x14 0xc 0x0
+	Text(City08_NameGuildMorrow)
+	GOTO 0x20
+LABEL 0x14
+
+CheckName(AercolynName)
+BEQ 0x15 0xc 0x0
+	Text(City08_NameGuildAercolyn)
+	GOTO 0x20
+LABEL 0x15
+
+CheckName(EtrianName)
+BEQ 0x16 0xc 0x0
+	Text(City08_NameGuildEtrian)
+	GOTO 0x20
+LABEL 0x16
+
+CheckName(EndbringeName)
+BEQ 0x17 0xc 0x0
+	Text(City08_NameGuildEndbringe)
+	GOTO 0x20
+LABEL 0x17
+
+CheckName(SlopName)
+BEQ 0x18 0xc 0x0
+	Text(City08_NameGuildSlop)
+	GOTO 0x20
+LABEL 0x18
+
+CheckName(MasterName)
+BEQ 0x19 0xc 0x0
+	Text(City08_NameGuildMaster)
+	GOTO 0x20
+LABEL 0x19
+
+CheckName(ViridianName)
+BEQ 0x1a 0xc 0x0
+	Text(City08_NameGuildViridian)
+	GOTO 0x20
+LABEL 0x1a
+
+CheckName(CeruleanName)
+BEQ 0x1b 0xc 0x0
+	Text(City08_NameGuildCerulean)
+	GOTO 0x20
+LABEL 0x1b
+
+CheckName(AAAAAAAAAName)
+BEQ 0x1c 0xc 0x0
+	Text(City08_NameGuildAAAAAAAAA)
+	GOTO 0x20
+LABEL 0x1c
+
+CheckName(GwaName)
+BEQ 0x1d 0xc 0x0
+	Text(City08_NameGuildGwa)
+	GOTO 0x20
+LABEL 0x1d
+
+CheckName(BlairName)
+BEQ 0x1e 0xc 0x0
+	Text(City08_NameGuildBlair)
+	GOTO 0x20
+LABEL 0x1e
+
+CheckName(BlankName)
+BEQ 0x21 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x21
+CheckName(BlankName2)
+BEQ 0x22 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x22
+CheckName(BlankName3)
+BEQ 0x23 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x23
+CheckName(BlankName4)
+BEQ 0x24 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x24
+CheckName(BlankName5)
+BEQ 0x25 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x25
+CheckName(BlankName6)
+BEQ 0x26 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x26
+CheckName(BlankName7)
+BEQ 0x27 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x27
+CheckName(BlankName8)
+BEQ 0x28 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x28
+CheckName(BlankName9)
+BEQ 0x29 0xc 0x0
+	Text(City08_NameGuildBlank)
+	GOTO 0x1
+LABEL 0x29
+
+CheckName(TMGCName)
+BEQ 0x2a 0xc 0x0
+	Text(City08_NameGuildTMGC)
+	GOTO 0x1
+LABEL 0x2a
 
 
 

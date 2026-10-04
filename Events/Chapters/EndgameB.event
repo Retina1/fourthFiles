@@ -67,7 +67,7 @@ CutsceneUnits:
 UNIT
 
 EnemyUnits:
-UNIT BossGuildmaster Highlander 0x0 Level(30,Enemy,1) [10,9] 0x0 0x0 0x0 0x0 [Hopebringer,SoulShield] AttackInRangeAI
+UNIT BossGuildmaster Highlander 0x0 Level(30,Enemy,1) [10,9] 0x0 0x0 0x0 0x0 [Hopebringer,SoulShield,SoulShield,SoulShield] AttackInRangeAI
 UNIT FreelanceGeneric Sovereign 0x0 Level(30,Enemy,1) [10,15] 0x0 0x0 0x0 0x0 [TheFable] AttackInRangeAI
 UNIT FreelanceGeneric Dragoon 0x0 Level(30,Enemy,1) [10,22] 0x0 0x0 0x0 0x0 [Agneyastra] AttackInRangeAI
 UNIT FreelanceGeneric Hoplite 0x0 Level(27,Enemy,1) [0,20] 0x0 0x0 0x0 0x0 [Omiyari] NoAI

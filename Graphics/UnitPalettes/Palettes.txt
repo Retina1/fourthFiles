@@ -53,6 +53,8 @@ Axefighter_Juniper
 Gladiator_Juniper
 Axefighter_AuntAysu
 Gladiator_AuntAysu
+Axefighter_Marcel
+Gladiator_Marcel
 Archer_Hallie
 Sniper_Hallie
 Archer_Anjelica
@@ -65,6 +67,8 @@ Archer_Jane
 Sniper_Jane
 Archer_Eliza
 Sniper_Eliza
+Archer_Temira
+Sniper_Temira
 Scholar_Cassandra
 Warlock_Cassandra
 Scholar_Waves
@@ -159,6 +163,10 @@ Poet_Jacqwil
 Troubadour_Jacqwil
 Poet_Juliette
 Troubadour_Juliette
+Poet_Polymnia
+Troubadour_Polymnia
+Poet_Yosepha
+Troubadour_Yosepha
 Seeker_Phespher
 Runemaster_Phespher
 Seeker_Nadja

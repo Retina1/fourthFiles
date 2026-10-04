@@ -1,0 +1,30 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+UndergroundUnitsCh9:
+UNIT Swift Scalemaster 0x0 Level(25,NPC,1) [5,5] 0x0 0x0 0x0 0x0 [Juggernaut] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+
+LoadUndergroundUnits:
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DummyUnits,DummyUnits,UndergroundUnitsCh9,0,0,0,0,0,0,0,0)
+ENDA
+
+LoadUndergroundSigils:
+ENUF LocationFlagUnderground
+AddSigil(4,1)
+ENDA
+
+UndergroundMoveToGrove:
+SwapToMap(EmeraldGrove,10,5)
+CALL LoadEmeraldGroveSigils
+//eventual song
+MUSC Song_EmeraldGrove
+//CALL LoadEmeraldGroveUnits
+FADU 10
+EndEvent
+
+//todo - driver training

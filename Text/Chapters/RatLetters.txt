@@ -44,6 +44,11 @@ It will all be okay.[N]
 [N]
 [A]- Rat.[A][X]
 
+##RatCh9xLetter
+hi[AN]
+[N]
+- Rat[A][X]
+
 ##RatUnknownxLetter
 kill yourself[N]
 [N]

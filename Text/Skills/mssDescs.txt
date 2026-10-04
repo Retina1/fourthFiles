@@ -9,7 +9,7 @@ Vanguard: Use Vanguard to boost[N]
 Atk/AS while dropping Prt.[X]
 ##
 Tenacity: Boosts Atk/AS if[N]
-user Atk/AS lower than enemy.[X]
+user Str/Spd lower than enemy.[X]
 ##
 Natural Leader: At start of turn,[N]
 nearby allies get an Atk/AS boost.[X]
@@ -862,7 +862,7 @@ move an ally to opposite side.[X]
 Savior Rush: Boosts Mov per[N]
 ally at half HP or lower.[X]
 ##
-Resilent Wings: Buff to[N]
+Resilient Wings: Buff to[N]
 increase user's Prt.[X]
 ##
 Swift Wings: Buff to[N]
@@ -1155,8 +1155,8 @@ that cannot be countered.[X]
 Retreat Stab: Thrust, then[N]
 move a tile away from foe.[X]
 ##
-Predict: Boosts Avo and[N]
-aggro for a turn.[X]
+Predict: Boosts Avo and aggro[N]
+and lowers hit floor for a turn.[X]
 ##
 Haze Curtain: Debuff enemies[N]
 in a wide area to reduce Hit.[X]

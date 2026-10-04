@@ -11,12 +11,12 @@ UnitMenuTable:
   //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
   MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020) // UM_Seize
   UM_Attack //MenuCommand(0x67b, 0x6c0, NormalText, $249ac, AttackEffect, $22c31, $22c99) //to clear flags
+  UM_Visit
+  MenuCommand(0x680, 0x6c9, GreenText, 0x23c81, 0x23cc5) // UM_Talk
   MenuCommand(UM_CombatArtsMenuName,UM_CombatArtsMenuDesc,BlueText,UM_CombatArtsMenuUsability,UM_CombatArtsMenuEffect)
   UM_Attack_B //MenuCommand(0x67b, 0x6c0, NormalText, $24a28, AttackEffect, $22c31, $22c99)
   UM_Staff
   UM_Pick
-  MenuCommand(0x680, 0x6c9, GreenText, 0x23c81, 0x23cc5) // UM_Talk
-  UM_Visit 
   UM_Rescue
   UM_Give
   UM_Take

@@ -143,7 +143,6 @@ void ApplyBothSidesSkills(struct BattleUnit* attacker, struct BattleUnit* defend
 	//BothSidesDuelistPassiveSkills(attacker, defender);
 	BothSidesDriverPassiveSkills(attacker, defender);
 	//ApplyArtificePassiveSkills(attacker, defender);
-	ApplyItemPassives(attacker, defender);
 	ApplySleepDamageBoost(attacker, defender);
 }
 

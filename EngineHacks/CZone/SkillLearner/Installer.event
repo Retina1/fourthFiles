@@ -52,7 +52,7 @@ POIN DarkHunterSkillLabels
 POIN LancerSkillLabels
 POIN BrawlerSkillLabels
 POIN HunterSkillLabels
-POIN SkillLabels
+POIN SkyKnightSkillLabels
 POIN SkillLabels
 POIN SkillLabels
 POIN SkillLabels
@@ -135,6 +135,69 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
+
+ALIGN 4
+SkyKnightSkillLabels:
+OneLevelSkillLabel(AlertWingsSkill,NoReq)//0
+OneLevelSkillLabel(SkySquadronSkill,NoReq)
+OneLevelSkillLabel(RepositionSkill,RepositionReq)
+OneLevelSkillLabel(SaviorRushSkill,PromotedReq)
+TwoLevelSkillLabel(ResilientWingsSkill,NoReq)//4
+TwoLevelSkillLabel(SwiftWingsSkill,NoReq)
+TwoLevelSkillLabel(WingedGallopSkill,WingedGallopReq)
+ThreeLevelSkillLabel(TempestLanceSkill,NoReq)//7
+ThreeLevelSkillLabel(FrozenLanceSkill,FrozenLanceReq)
+ThreeLevelSkillLabel(HolyLanceSkill,HolyLanceReq)
+ThreeLevelSkillLabel(LungingLanceSkill,LungingLanceReq)
+ThreeLevelSkillLabel(MercysWingsSkill,MercysWingsReq)
+FiveLevelSkillLabel(JavelinOfLightSkill,JavelinOfLightReq)//12
+FiveLevelSkillLabel(SoaringStrikeSkill,SoaringStrikeReq)
+FiveLevelSkillLabel(HopesLanceSkill,HopesLanceReq)
+SkillLabelTerminator
+
+ALIGN 4
+RepositionReq:
+ReqEntry(10,1)
+ReqTerm
+ALIGN 4
+WingedGallopReq:
+ReqEntry(4,1)
+ReqEntry(5,1)
+ReqTerm
+ALIGN 4
+FrozenLanceReq:
+ReqEntry(7,1)
+ReqTerm
+ALIGN 4
+HolyLanceReq:
+ReqEntry(8,1)
+ReqTerm
+ALIGN 4
+LungingLanceReq:
+ReqEntry(6,1)
+ReqTerm
+ALIGN 4
+MercysWingsReq:
+ReqEntry(4,2)
+ReqEntry(9,3)
+ReqPromo
+ReqTerm
+ALIGN 4
+JavelinOfLightReq:
+ReqEntry(7,3)
+ReqEntry(8,3)
+ReqTerm
+ALIGN 4
+SoaringStrikeReq:
+ReqEntry(5,2)
+ReqEntry(10,3)
+ReqTerm
+ALIGN 4
+HopesLanceReq:
+ReqEntry(11,3)
+ReqEntry(13,5)
+ReqPromo
+ReqTerm
 
 ALIGN 4
 HunterSkillLabels:

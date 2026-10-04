@@ -75,8 +75,8 @@ She's only around to make a quick buck.[X]
 ##Name_Galvin
 Galvin[X]
 ##Desc_Galvin
-An Asketan hitman forced into the[N]
-wastes expedition. He's resentful.[X]
+An Asketan hitman hired by the imperials.[N]
+He resents his talents being wasted.[X]
 
 // ch 12
 ##Name_Ioria

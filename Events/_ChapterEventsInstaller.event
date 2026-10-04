@@ -183,6 +183,7 @@ LABEL 0x2000
 ENUT 0x8
 ENUT 0x9
 ENUT 0xa
+ENUT 0xb
 LABEL 0x2001
 CallMenu(CustomizersMenu)
 	SVAL 0x1 0x0
@@ -211,17 +212,30 @@ CallMenu(CustomizersMenu)
 		ENUF 0xa
 		GOTO 0x2001
 	LABEL 0x12
-
+	
 	SVAL 0x1 0x3
+	BNE 0x14 0xc 0x1
+		SystemText(ZeroEXPConfirm)
+		IfNoSelectedGoto(0x2001)
+		ENUT ZeroEXPFlag
+		ENUF 0xb
+		GOTO 0x2001
+	LABEL 0x14
+
+	SVAL 0x1 0x4
 	BNE 0x13 0xc 0x1
 		SystemText(ClearModifiers)
 		ENUF PicnicModeFlag
 		ENUF RepairModeFlag
 		ENUF ColorblindFlag
+		ENUF ZeroEXPFlag
 		GOTO 0x2000
 	LABEL 0x13
 LABEL 0x3000
 ENUF 0x8
+ENUF 0x9
+ENUF 0xa
+ENUF 0xb
 ENDA
 
 //GAME OVER STUFF
@@ -254,11 +268,20 @@ UNIT FreelanceGeneric Swordfighter 0x1 Level(1,NPC,0) [7,2] 0x0 0x0 0x0 0x0 [0x0
 UNIT FreelanceGeneric Gunner 0x1 Level(1,NPC,0) [8,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT FreelanceGeneric Lancer 0x1 Level(1,NPC,0) [9,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
+GamerspaceGameOverUnit:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Soul1 Seeker 0x1 Level(1,NPC,0) [6,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Soul2 Scholar 0x1 Level(1,NPC,0) [7,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Soul3 Lurker 0x1 Level(1,NPC,0) [8,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
 
 NewGameOverEvent:
 EVBIT_MODIFY 4
 ASMC ClearAllBuffsDebuffsASMC|1
 FADI 10
+SET_ACTIVE 1
+SVAL 0x1 0xff
+UNSET_CONDITION 0xffff
 CLEA 0; CLEN 0; CLEE 0
 LOMA Chapter1
 TILECHANGE 0x0
@@ -290,6 +313,23 @@ SET_HP Nathan
 FADU 5
 STAL 45
 SoloText(PiorinGameOverText); STAL 30; SFXKillUnit(Nathan); STAL 30
+ASMC $8085375
+ENDA
+
+GamerspaceGameOver:
+MUSC 0x0
+EVBIT_MODIFY 4
+ASMC ClearAllBuffsDebuffsASMC|1
+FADI 10
+CLEA 0; CLEN 0; CLEE 0
+LOMA Chapter1
+TILECHANGE 0x0
+LOAD1 0x1 GamerspaceGameOverUnit; ENUN
+SVAL 0x1 99
+SET_HP Nathan
+FADU 5
+STAL 45
+SoloText(GamerspaceGameOverText); STAL 30; SFXKillUnit(Nathan); STAL 30
 ASMC $8085375
 ENDA
 

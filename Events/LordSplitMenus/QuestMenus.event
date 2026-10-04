@@ -1,4 +1,15 @@
 ALIGN 4
+Quests9xMenu:
+MenuDefinition(6, 7, 18, 0, 1, Quests9xMenuOptions)
+
+ALIGN 4
+Quests9xMenuOptions:
+QuestMenuOption(Quest1_9x, Quest1_9x_Desc, Quest1_9x_Flag)
+QuestMenuOption(Quest2_9x, Quest2_9x_Desc, Quest2_9x_Flag)
+MenuOption(NoQuestLabel, NoQuestDesc, 0)
+MenuTerminator
+
+ALIGN 4
 Quests8xMenu:
 MenuDefinition(6, 6, 18, 0, 1, Quests8xMenuOptions)
 

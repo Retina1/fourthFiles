@@ -368,12 +368,12 @@ int ShiningForceOdds(struct Unit* actor, struct Unit* target){
 }
 void ShiningForcePostbattle(struct Unit* actor, struct Unit* target){
 	CallEvent(&GenericAOEEvent, 0x1);
-	int range = 1;
+	int range = 2;
 	if (UNIT_HAS_SKILL(actor,RNM,skill_323)){
-		range = 3;
+		range = 4;
 	}
 	else if (UNIT_HAS_SKILL(actor,RNM,skill_322)) {
-		range = 2;
+		range = 3;
 	}
 	UnitApplyDebuff(target,DEBUFF_SHININGFORCE);
 	u8* unitBuffer = GetUnitsInRange(target, 1, range);

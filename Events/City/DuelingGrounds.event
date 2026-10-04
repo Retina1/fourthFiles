@@ -13,6 +13,12 @@ UNIT Helman 0x0 0x0 Level(1,Ally,0) [6,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Natsuki 0x0 0x0 Level(9,NPC,0) [8,17] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
+DuelingGroundsUnitsC9:
+UNIT Ayda 0x0 0x0 Level(22,NPC,0) [9,13] 0x0 0x0 0x0 0x0 [Shortsword] NeverMoveAI
+UNIT Astarte 0x0 0x0 Level(1,Ally,0) [12,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Natsuki 0x0 0x0 Level(9,NPC,0) [1,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
 DuelingGroundsTier1Wave1:
 UNIT 0xFD Swordfighter 0x0 Level(3,Enemy,1) [12,5] 0x0 0x0 0x1 REDA12R5 [Shortsword] NoAI
 UNIT
@@ -70,6 +76,11 @@ UNIT Ayda Ronin 0x0 Level(22,Ally,0) [18,18] 0x0 0x0 0x0 0x0 [DvergrSword] NoAI
 UNIT
 //MESSAGE Events end at offset CURRENTOFFSET
 
+
+LoadDuelingGroundsUnits:
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DuelingGroundsUnitsC5,DuelingGroundsUnitsC8,DuelingGroundsUnitsC9,0,0,0,0,0,0,0,0)
+ENDA
+
 DuelingGroundsBegin:
 //aaaaa
 EVBIT_MODIFY 3
@@ -77,7 +88,7 @@ CHECK_ALIVE Ayda
 BEQ 0x1 0xc 0x0
 CHECK_EVENTID 0x15
 BNE 0x1 0xc 0x0
-RunTextByVisit(0,0,0,City05_Ayda,City08_Ayda,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,0,0,City05_Ayda,City08_Ayda,City09_Ayda,0,0,0,0,0,0,0,0)
 ENUT 0x15
 LABEL 0x1
 CallMenu(ArenaMenu)

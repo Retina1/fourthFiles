@@ -104,11 +104,28 @@ void ComputeBattleUnitEffectiveHitRate(struct BattleUnit* attacker, struct Battl
 		hitRate = 0;
 	}
 	
+	int skillStat = attacker->unit.skl;
+	
+	// hit floor reduced during predict
+	/*
+	if (GetActiveArt(&defender->unit) == predict number idk) {
+		if (UNIT_HAS_SKILL(&defender->unit,FNC,skill_313)){
+			skillStat = 1;
+		}
+		else if (UNIT_HAS_SKILL(&defender->unit,FNC,skill_312)){
+			skillStat = skillStat / 4;
+		}
+		else {
+			skillStat = skillStat / 2;
+		}
+	}
+	*/
+	
 	attacker->battleEffectiveHitRate = hitRate;
 	//takedown ignores hit floor
 	if (GetActiveArt(&attacker->unit) != 33) {
-		if (attacker->battleEffectiveHitRate < attacker->unit.skl)
-			attacker->battleEffectiveHitRate = attacker->unit.skl;
+		if (attacker->battleEffectiveHitRate < skillStat)
+			attacker->battleEffectiveHitRate = skillStat;
 	}
 
 	if (attacker->battleEffectiveHitRate > 100) {
@@ -325,6 +342,8 @@ void ComputeBattleUnitEffectiveStats(struct BattleUnit* attacker, struct BattleU
 	ApplyArcherKillerAim(attacker,defender);
 	ApplyPicnicModeDamage(attacker, defender);
 	FloorDamage(attacker, defender);
+	//soul shield is after floor
+	ApplyItemPassives(attacker, defender);
 }
 
 void BattleUpdateBattleStats(struct BattleUnit* attacker, struct BattleUnit* defender) {

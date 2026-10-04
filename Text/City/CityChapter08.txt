@@ -438,10 +438,137 @@ Retina[X]
 Overspill[X]
 ##RivianName
 Rivian[X]
+##CloserName
+Closer[X]
+##ReturnerName
+Returner[X]
+##FuckerName
+Fucker[X]
+##MorrowName
+Morrow[X]
+##AercolynName
+Aercolyn[X]
+##EtrianName
+Etrian[X]
+##EndbringeName
+Endbringe[X]
+##SlopName
+Slop[X]
+##MasterName
+Master[X]
+##ViridianName
+Viridian[X]
+##CeruleanName
+Cerulean[X]
+##AAAAAAAAAName
+AAAAAAAAA[X]
+##GwaName
+Gwa[X]
+##BlairName
+Blair[X]
+##TMGCName
+TMGC[X]
 
+##BlankName
+ [X]
+##BlankName2
+  [X]
+##BlankName3
+   [X]
+##BlankName4
+    [X]
+##BlankName5
+     [X]
+##BlankName6
+      [X]
+##BlankName7
+       [X]
+##BlankName8
+        [X]
+##BlankName9
+         [X]
 
-//guild names with special responses include master
-//returner, fucker, morrow, aercolyn, etrian, endbringe, slop
+##City08_NameGuildBlank
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+I need a name, not blank[N]
+space. Come on, kid.[A][X]
+
+##City08_NameGuildTMGC
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. What,[N]
+two milkmen go comedy?[AN]
+What's that even mean?[A][X]
+
+##City08_NameGuildViridian
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Not bad.[N]
+[Guild]'s a nice color.[A][X]
+
+##City08_NameGuildCerulean
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Hm.[N]
+Not a fan of [Guild].[AN]
+The color, I mean.[A][X]
+
+##City08_NameGuildAAAAAAAAA
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. That's[N]
+not a name. That's a scream.[A][X]
+
+##City08_NameGuildGwa
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. That's not[N]
+a name. That's a syllable.[A][X]
+
+##City08_NameGuildBlair
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. [...][Guild]![N]
+I like it, kid. [...][Guild]![A][X]
+
+##City08_NameGuildMaster
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. I get it.[N]
+You're a real charmer.[AN][Smile]
+Heh. Guild [Guild]. That's me.[A][X]
+
+##City08_NameGuildReturner
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. I get it.[N]
+Because you returned. Ha.[A][X]
+
+##City08_NameGuildFucker
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. I won't stop[N]
+you. Just know this is on you.[A][X]
+
+##City08_NameGuildMorrow
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Feels a[N]
+bit forced, I think.[AN]
+But you do you.[A][X]
+
+##City08_NameGuildAercolyn
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. Hm.[N]
+Sounds foreign.[AN]
+And a bit queer.[A][X]
+
+##City08_NameGuildEtrian
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. It's got[N]
+a good ring to it.[AN]
+Screams that you're good at[N]
+navigating dungeons.[A][X]
+
+##City08_NameGuildEndbringe
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild]. You're on[N]
+thin fucking ice, there.[A][X]
+
+##City08_NameGuildSlop
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild].[N]
+I rather like it.[A][X]
 
 ##City08_NameGuildHedge
 [MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
@@ -523,6 +650,13 @@ Guild[...] [Guild]. Ain't that[N]
 the Belvarusi you killed?[AN]
 I won't stop you, but[...][N]
 Weird choice, bud.[A][X]
+
+##City08_NameGuildCloser
+[MidLeft][Guildmaster][MidRight][Nathan][MidLeft]
+Guild[...] [Guild].[N]
+[...]How did you[...]?[AN]
+[...]I'll allow it.[N]
+For now, at least.[A][X]
 
 ##City08_NameGuildGeneric
 [MidLeft][Guildmaster][MidRight][Nathan][MidLeft]

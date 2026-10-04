@@ -103,5 +103,11 @@ FADI 4
 STAL 30
 LOMA HirschringSquare
 MUSC Song_OohWilfre
+CleanTextNoMap(0x0, City08_PrePreps)
+ENDA
+
+Chapter9CityOpen:
+MUSC Song_OohWilfre
 CleanTextNoMap(0x0, FillerDialogue)
+//visit palace either in intro or ending
 ENDA

@@ -64,8 +64,30 @@ UNIT Yasmine 0x0 0x0 Level(7,NPC,0) [4,5] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveA
 UNIT Feefasnan 0x0 0x0 Level(5,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
 
+TavernUnitsC9:
+UNIT Bobby 0x0 0x0 Level(14,NPC,0) [5,1] 0x0 0x0 0x0 0x0 [Elixir] NeverMoveAI
+UNIT Bertram 0x0 0x0 Level(18,NPC,0) [12,8] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT CoastKid 0x0 0x0 Level(4,NPC,0) [1,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Anhinga 0x0 0x0 Level(6,NPC,0) [3,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Puzon 0x0 0x0 Level(2,NPC,0) [6,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Velissa 0x0 0x0 Level(2,NPC,0) [7,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Cam 0x0 0x0 Level(1,NPC,0) [4,5] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Ferris 0x0 0x0 Level(3,NPC,0) [12,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
 //MESSAGE Events end at offset CURRENTOFFSET
 
+ALIGN 4
+SquareMoveToTavern:
+SwapToMap(Tavern,2,8)
+CALL LoadTavernSigils
+//SetMapBGM(Song_DrawHeroes)
+MUSC Song_DrawHeroes
+LoadUnitsByVisit(TavernUnitsC2,TavernUnitsC3,TavernUnitsS1,TavernUnitsC5,TavernUnitsC8,TavernUnitsC9,0,0,0,0,0,0,0,0)
+LoadMagusUnlocker
+FADU 10
+CALL QuestEndChecker
+EndEvent
 
 ALIGN 4
 LoadTavernSigils:
@@ -93,12 +115,29 @@ TavernQuestBegin:
 EVBIT_MODIFY 3
 CHECK_EVENTID 0x1f
 BNE 0x1 0xc 0x0
-RunTextByVisit(City02_BobbyIntro,City03_Bobby,CityS1_Bobby,City05_Bobby,City08_Bobby,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_BobbyIntro,City03_Bobby,CityS1_Bobby,City05_Bobby,City08_Bobby,City09_Bobby,0,0,0,0,0,0,0,0)
 ENUT 0x1f
 LABEL 0x1
-RunEventByVisit(DummyEvent,Chapter3Quests,ChapterS1Quests,Chapter5Quests,Chapter8Quests,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,Chapter3Quests,ChapterS1Quests,Chapter5Quests,Chapter8Quests,Chapter9Quests,0,0,0,0,0,0,0,0)
 ENUF LocationFlagTavern
 EndEvent
+
+Chapter9Quests:
+LABEL 0x1
+CallMenu(Quests9xMenu)
+SVAL 0x1 0
+BNE 0x10 0xc 0x1
+Text(Quest1_9x_Bobby)
+ENUT Quest1_9x_Flag
+GOTO 0x1
+LABEL 0x10
+SVAL 0x1 1
+BNE 0x11 0xc 0x1
+Text(Quest2_9x_Bobby)
+ENUT Quest2_9x_Flag
+GOTO 0x1
+LABEL 0x11
+ENDA
 
 Chapter8Quests:
 //soon
@@ -196,4 +235,6 @@ QuestEndCheckGold(Quest2_5x_Flag,Quest2_5x_DoneFlag,Quest2_5x_Done,1500)
 QuestEndCheckGold(Quest1_8x_Flag,Quest1_8x_DoneFlag,Quest1_8x_Done,2000)
 QuestEndCheckSystext(Quest2_8x_Flag,Quest2_8x_DoneFlag,Quest2_8x_Done,Quest2_8x_RewardText)
 QuestEndCheckSystext(Quest3_8x_Flag,Quest3_8x_DoneFlag,Quest3_8x_Done,Quest3_8x_RewardText)
+QuestEndCheck(Quest1_9x_Flag,Quest1_9x_DoneFlag,Quest1_9x_Done,HazeWhip)
+QuestEndCheck(Quest2_9x_Flag,Quest2_9x_DoneFlag,Quest2_9x_Done,PrimeBait)
 ENDA

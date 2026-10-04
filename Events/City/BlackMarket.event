@@ -50,6 +50,20 @@ Text(BlackMarketEnd)
 ENUF LocationFlagBlackMarket
 EndEvent
 
+NorthernPassMoveToBlackMarket:
+CHECK_EVENTID BlackMarketUnlockedFlag
+BEQ 0x1 0xc 0x0
+SwapToMap(BlackMarket,1,2)
+CALL LoadBlackMarketSigils
+MUSC Song_DarkCave
+LOAD1 0x0 BlackMarketUnits
+//LoadUnitsByVisit(DummyUnits,BlackMarketUnitsC3,0,0,0,0,0,0,0,0,0,0,0,0)
+FADU 10
+GOTO 0x2
+LABEL 0x1
+ENUF LocationFlagNorthernPass
+LABEL 0x2
+EndEvent
 
 BlackMarketMoveToNorthernPass:
 SwapToMap(NorthernPass,15,17)

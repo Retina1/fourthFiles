@@ -104,6 +104,7 @@ WORD GoreEyepatchMug
 #include "ChangeUnitDesc/Installer.event"
 
 #include "RNGRandomizer/RNGRandomizerInstaller.event"
+#include "Standalones/HPGaugeMaxTo99.event"
 
 //TODO - remove/edit eventually
 //#include "_Debugger/Installer.event"

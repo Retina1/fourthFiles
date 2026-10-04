@@ -201,6 +201,15 @@ Activate the Colorblind Palette?[N]
 This will make enemies [ToggleRed]yellow[ToggleRed].[N]
 [No][X]
 
+##ZeroEXPLabel
+Enable Zero Experience.[X]
+##ZeroEXPRText
+Units will gain no EXP.[N]
+For true masters only.[X]
+##ZeroEXPConfirm
+Activate Zero Experience?[N]
+[No][X]
+
 ##ClearModifiersLabel
 Clear Modifiers.[X]
 ##ClearModifiersLabelRText

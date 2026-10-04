@@ -26,6 +26,17 @@ ALIGN 4
 MapData:
   #incbin "HirschringSquare_data.dmp"
 
-SetChapterData(HirschringSquare, City1OBJ, 0, City1PAL, CityCONFIG, HirschringSquareMapID, MapData, 0, 0, 0)
+SetChapterData(HirschringSquare, City1OBJ, 0, City1PAL, CityCONFIG, HirschringSquareMapID, MapData, 0, 0, HirschringSquareMapChangeID)
+
+ALIGN 4
+Map_Change_0:
+  SHORT $A54
+
+ALIGN 4
+MapChangesData:
+  TileMap(0, 9, 1, 1, 1, Map_Change_0)
+  TileMapEnd
+
+EventPointerTable(HirschringSquareMapChangeID, MapChangesData)
 
 }

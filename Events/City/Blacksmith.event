@@ -25,6 +25,11 @@ UNIT Karl 0x0 0x0 Level(5,NPC,0) [13,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Benjamin Gladiator 0x0 Level(19,NPC,0) [1,3] 0x0 0x0 0x0 0x0 [HandAxe,RepairScroll] NeverMoveAI
 UNIT Johanna Curate 0x0 Level(1,NPC,0) [7,1] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
+BlacksmithUnitsC9:
+UNIT Yajirushi 0x0 0x0 Level(5,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Benjamin Gladiator 0x0 Level(19,NPC,0) [7,1] 0x0 0x0 0x0 0x0 [HandAxe,RepairScroll] NeverMoveAI
+UNIT Johanna Curate 0x0 Level(1,NPC,0) [13,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
@@ -59,6 +64,21 @@ SHLI BoltScroll RestoreScroll AriadneShard Shortsword Scramasax Boarblade VineWh
 BYTE 0x0 0x0
 
 ALIGN 4
+Ch9Shop:
+SHLI Magebane HandSpear Longbow AriadneShard Shortsword Scramasax Boarblade VineWhip ThornWhip Shortspear Pike Partizan Epee Sabre Shortmace Broadaxe Yue BrassKnuckles Caestus Shortbow Recurve Composite Handgonne Arquebus Sakaloz Wand Staff Vulnerary Medica
+BYTE 0x0 0x0
+
+ALIGN 4
+SquareMoveToBlacksmith:
+SwapToMap(Blacksmith,7,8)
+CALL LoadBlacksmithSigils
+//SetMapBGM(Song_DrawHeroes)
+MUSC Song_DrawHeroes
+LoadUnitsByVisit(BlacksmithUnitsC2,BlacksmithUnitsC3,BlacksmithUnitsS1,BlacksmithUnitsC5,BlacksmithUnitsC8,BlacksmithUnitsC9,0,0,0,0,0,0,0,0)
+FADU 10
+EndEvent
+
+ALIGN 4
 LoadBlacksmithSigils:
 ENUF LocationFlagBlacksmith
 AddSigil(6,9)
@@ -82,7 +102,7 @@ EndEvent
 BlacksmithShopBegin:
 CHECK_EVENTID 0x1e
 BNE 0x1 0xc 0x0
-RunTextByVisit(City02_BenjaminIntro,City03_Benjamin,CityS1_Benjamin,City05_Benjamin,City08_Benjamin,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_BenjaminIntro,City03_Benjamin,CityS1_Benjamin,City05_Benjamin,City08_Benjamin,City09_Benjamin,0,0,0,0,0,0,0,0)
 //conditionals
 CHECK_EVENTID BeastKingConditionalFlag
 BEQ 0x2 0xc 0x0
@@ -100,7 +120,7 @@ LABEL 0x3
 ENUT 0x1e
 LABEL 0x1
 //johanna runs it for c3x, c8x, s3x, 18Cx
-LoadShopByVisit(Ch2Shop,Ch3Shop,S1Shop,Ch5Shop,Ch8Shop,0,0,0,0,0,0,0,0,0)
+LoadShopByVisit(Ch2Shop,Ch3Shop,S1Shop,Ch5Shop,Ch8Shop,Ch9Shop,0,0,0,0,0,0,0,0)
 ENUF LocationFlagBlacksmith
 EndEvent
 

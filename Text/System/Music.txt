@@ -4,8 +4,12 @@ Etrian Odyssey[X]
 Spinning the Tale[X]
 ##SongTitle_EO1Guild ^
 Name Engraved Into the 100th Volume![X]
+##SongTitle_Ecstasy
+Ecstasy[X]
 ##SongTitle_InitialStrike
 Initial Strike (PacoScarso)[X]
+##SongTitle_EmeraldGrove
+Emerald Grove (PacoScarso)[X]
 ##SongTitle_DyedInBlood
 Dyed in Blood (PacoScarso)[X]
 ##SongTitle_SandyBarrens
@@ -141,6 +145,8 @@ Battle - F6 - Deicide[X]
 Shin Megami Tensei V: Vengeance[X]
 ##SongTitle_DaatVengeance
 Battle - Da'at - Vengeance[X]
+##SongTitle_VengeanceForReclamation ^
+Battle - [OpenQuote]Vengeance[CloseQuote] for Reclamation[X]
 
 ##SourceTitle_OrderOfEcclesia ^
 Castlevania: Order of Ecclesia[X]
@@ -297,6 +303,8 @@ Lagoon[X]
 Premonition (Scraiza)[X]
 ##SongTitle_LivingOnTheEdge
 Living on the Edge[X]
+##SongTitle_LivingOnTheEdgeAlt
+Living on the Edge (Alt.)[X]
 
 ##SourceTitle_RednGreeen
 RednGreeen[X]

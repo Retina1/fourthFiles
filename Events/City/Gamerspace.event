@@ -1,0 +1,51 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+GamerspaceUnitsC9:
+UNIT Soul1 Seeker 0x0 Level(21,NPC,1) [5,3] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Soul2 Scholar 0x0 Level(21,NPC,1) [4,6] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Soul3 Lurker 0x0 Level(21,NPC,1) [10,6] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
+//MESSAGE Events end at offset CURRENTOFFSET
+
+
+ALIGN 4
+
+LoadGamerspaceSigils:
+ENUF LocationFlagGamerspace
+AddSigil(6,9)
+AddSigil(7,9)
+AddSigil(8,9)
+AddGreenSigil(9,3)
+ENDA
+
+GamerspaceMoveToSquare:
+SwapToMap(HirschringSquare,11,1)
+CALL LoadHirschringSigils
+LoadSquareUnits
+LoadVendorSecond
+MUSC Song_VastLands
+FADU 10
+EndEvent
+
+LoadGamerspaceUnits:
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DummyUnits,DummyUnits,GamerspaceUnitsC9,0,0,0,0,0,0,0,0)
+ENDA
+
+GamerspaceDoor:
+Text(YouShouldNotOpenThisDoor)
+SystemText(DoorOpenPrompt)
+IfNoSelectedGoto(0x1)
+Text(DoorOpened)
+STAL 30
+SFXKillUnit(Nathan)
+STAL 30
+CALL GamerspaceGameOver
+GOTO 0x2
+LABEL 0x1
+Text(DoorDenied)
+ENUF 0x1
+LABEL 0x2
+EndEvent
+
+//todo - the game

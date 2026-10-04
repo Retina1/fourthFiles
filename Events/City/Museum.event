@@ -23,10 +23,26 @@ UNIT Claire 0x0 0x0 Level(17,NPC,0) [5,8] 0x0 0x0 0x0 0x0 [LuckStaff] NeverMoveA
 UNIT Astarte 0x0 0x0 Level(1,Ally,0) [11,7] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT
 
+MuseumUnitsC9:
+UNIT Claire 0x0 0x0 Level(17,NPC,0) [5,8] 0x0 0x0 0x0 0x0 [LuckStaff] NeverMoveAI
+UNIT Cleone 0x0 0x0 Level(1,Ally,0) [2,11] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT Fourfinger 0x0 0x0 Level(1,NPC,0) [10,8] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
 
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
+
+ALIGN 4
+NorthernPassMoveToMuseum:
+SwapToMap(Museum,6,16)
+CALL LoadMuseumSigils
+MUSC Song_WhyLove
+LoadUnitsByVisit(DummyUnits,MuseumUnitsC3,MuseumUnitsS1,MuseumUnitsC5,MuseumUnitsC8,MuseumUnitsC9,0,0,0,0,0,0,0,0)
+FADU 10
+CALL Quest1_3x_Event
+EndEvent
 
 
 ALIGN 4
@@ -52,7 +68,7 @@ MuseumEventBegin:
 EVBIT_MODIFY 3
 CHECK_EVENTID 0x1d
 BNE 0x1 0xc 0x0
-RunTextByVisit(0,City03_Claire,CityS1_Claire,City05_Claire,City08_Claire,0,0,0,0,0,0,0,0,0)
+RunTextByVisit(0,City03_Claire,CityS1_Claire,City05_Claire,City08_Claire,City09_Claire,0,0,0,0,0,0,0,0)
 ENUT 0x1d
 LABEL 0x1
 //what does the museum even do

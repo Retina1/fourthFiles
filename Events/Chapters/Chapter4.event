@@ -253,8 +253,14 @@ LABEL 0x1
 EndEvent
 
 Quest2_S1x_Event:
+CHECK_ALLEGIANCE 0xFFFF
+BNE 0x1 0xC 0x0
 SystemText(Quest2_S1x_System)
 ENUT Quest2_S1x_DoneFlag
+GOTO 0x2
+LABEL 0x1
+ENUF 0x9
+LABEL 0x2
 EndEvent
 
 BeginningScene:

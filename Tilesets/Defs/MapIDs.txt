@@ -92,6 +92,7 @@ Map19CID
 MapChange19CID
 Events19CID
 HirschringSquareMapID
+HirschringSquareMapChangeID
 GuildhallMapID
 BlacksmithMapID
 TavernMapID

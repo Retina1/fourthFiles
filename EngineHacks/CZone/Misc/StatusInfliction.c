@@ -92,27 +92,27 @@ void TryAddUnitToSleepTargetList(struct Unit* unit) {
 				}
                 break;
 			case WPN_EFFECT_POISON:
-				if (unit->statusIndex == UNIT_STATUS_PETRIFY || currentStatus ==  UNIT_STATUS_CURSE) {
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus ==  UNIT_STATUS_CURSE) {
 					return;
 				}
                 break;
 			case WPN_EFFECT_SLEEP:
-				if (unit->statusIndex == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON) {
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON) {
 					return;
 				}
                 break;
 			case WPN_EFFECT_BERSERK:
-				if (unit->statusIndex == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP) {
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP) {
 					return;
 				}
                 break;
 			case WPN_EFFECT_PARALYZE:
-				if (unit->statusIndex == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP || currentStatus == UNIT_STATUS_BERSERK) {
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP || currentStatus == UNIT_STATUS_BERSERK) {
 					return;
 				}
                 break;
 			case WPN_EFFECT_BLIND:
-				if (unit->statusIndex == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP || currentStatus == UNIT_STATUS_BERSERK || currentStatus == UNIT_STATUS_PARALYZE) {
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP || currentStatus == UNIT_STATUS_BERSERK || currentStatus == UNIT_STATUS_PARALYZE) {
 					return;
 				}
                 break;
@@ -123,6 +123,90 @@ void TryAddUnitToSleepTargetList(struct Unit* unit) {
 
     return;
 }
+
+
+void TryAddUnitToStatusArtTargetList(struct Unit* unit, int targetStatus) {
+	
+    if (AreUnitsAllied(gSubjectUnit->index, unit->index)) {
+        return;
+    }
+	
+	if (GetActiveArt(gSubjectUnit) == (110+29)) {
+		AddTarget(unit->xPos, unit->yPos, unit->index, 0);
+		return;
+	}
+
+	int currentStatus = unit->statusIndex;
+	
+	switch (targetStatus) {
+			case WPN_EFFECT_PETRIFY:
+			case WPN_EFFECT_HEADBIND:
+			case WPN_EFFECT_ARMBIND:
+			case WPN_EFFECT_LEGBIND:
+			case WPN_EFFECT_FULLBIND:
+                break;
+			case WPN_EFFECT_CURSE:
+				if (currentStatus == UNIT_STATUS_PETRIFY) {
+					return;
+				}
+                break;
+			case WPN_EFFECT_POISON:
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus ==  UNIT_STATUS_CURSE) {
+					return;
+				}
+                break;
+			case WPN_EFFECT_SLEEP:
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON) {
+					return;
+				}
+                break;
+			case WPN_EFFECT_BERSERK:
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP) {
+					return;
+				}
+                break;
+			case WPN_EFFECT_PARALYZE:
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP || currentStatus == UNIT_STATUS_BERSERK) {
+					return;
+				}
+                break;
+			case WPN_EFFECT_BLIND:
+				if (currentStatus == UNIT_STATUS_PETRIFY || currentStatus == UNIT_STATUS_CURSE || currentStatus == UNIT_STATUS_POISON || currentStatus == UNIT_STATUS_SLEEP || currentStatus == UNIT_STATUS_BERSERK || currentStatus == UNIT_STATUS_PARALYZE) {
+					return;
+				}
+                break;
+			
+        }
+
+    AddTarget(unit->xPos, unit->yPos, unit->index, 0);
+
+    return;
+}
+
+
+void ForEachUnitInRangeStatus(void(*func)(struct Unit* unit, int targetStatus), int status) {
+    int ix;
+    int iy;
+
+    for (iy = gBmMapSize.y - 1; iy >= 0; iy--) {
+        for (ix = gBmMapSize.x - 1; ix >= 0; ix--) {
+
+            if (gMapRangeSigned[iy][ix] == 0) {
+                continue;
+            }
+
+            if (gBmMapUnit[iy][ix] == 0) {
+                continue;
+            }
+
+            func(GetUnit(gBmMapUnit[iy][ix]), status);
+        }
+    }
+
+    return;
+}
+
+
 
 u8 GetRandomDisease(void){
 	int base = NextRN_N(11);

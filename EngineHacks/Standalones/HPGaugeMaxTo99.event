@@ -1,0 +1,38 @@
+#define ChangeGaugeColorLimit // Comment this out if you don't want the gauge color to match the new numerical cap
+#define MaxHPGaugeNumber 99 // Max value is 99, >99 will not function correctly
+
+PUSH
+
+ORG 0x514D8
+BYTE MaxHPGaugeNumber
+
+ORG 0x514E8
+BYTE MaxHPGaugeNumber
+
+#ifdef ChangeGaugeColorLimit
+ORG 0x50F34
+BYTE MaxHPGaugeNumber
+
+ORG 0x50F76
+BYTE MaxHPGaugeNumber
+
+ORG 0x544AC
+BYTE MaxHPGaugeNumber
+
+ORG 0x544DA
+BYTE MaxHPGaugeNumber
+
+ORG 0x54540
+BYTE MaxHPGaugeNumber
+
+ORG 0x54572
+BYTE MaxHPGaugeNumber
+
+ORG 0x54728
+BYTE MaxHPGaugeNumber
+
+ORG 0x54776
+BYTE MaxHPGaugeNumber
+#endif
+
+POP

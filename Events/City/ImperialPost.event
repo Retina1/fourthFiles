@@ -10,9 +10,23 @@ ImperialPostUnitsC8:
 UNIT NPCFourth 0x0 0x0 Level(17,NPC,0) [5,5] 0x0 0x0 0x0 0x0 [Dominance] NeverMoveAI
 UNIT Gore 0x0 0x0 Level(1,Ally,0) [9,1] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT
+ImperialPostUnitsC9:
+//marketplpace npc, generics
+UNIT NPCFourth 0x0 0x0 Level(17,NPC,0) [5,5] 0x0 0x0 0x0 0x0 [Dominance] NeverMoveAI
+UNIT Kryst 0x0 0x0 Level(1,Ally,0) [16,8] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
+ALIGN 4
+
+ShadyRowMoveToImperialPost:
+SwapToMap(ImperialPost,1,5)
+CALL LoadImperialPostSigils
+//4th is C5
+LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ImperialPostUnitsC5,ImperialPostUnitsC8,ImperialPostUnitsC9,0,0,0,0,0,0,0,0)
+FADU 10
+EndEvent
 
 ALIGN 4
 LoadImperialPostSigils:

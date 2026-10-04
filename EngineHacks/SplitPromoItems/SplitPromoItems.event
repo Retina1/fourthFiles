@@ -85,6 +85,22 @@ PromoListEntry(Noble,Sovereign)
 PromoListEntry(Duelist,Fencer)
 PromoListEntry(Driver,Imperial)
 PromoListEntry(Artifice,Automaton)
+PromoListEntry(Soul,Souldier)
+PromoListEntry(Woodrat,Archrat)
+PromoListEntry(Airfly,Archfly)
+PromoListEntry(Archfly,Venomfly)
+PromoListEntry(Crawler,Shambler)
+PromoListEntry(Wight,Wightsworn)
+PromoListEntry(BowWight,Archrypt)
+PromoListEntry(Wolf,Triwolf)
+PromoListEntry(Bigle,Bigerle)
+PromoListEntry(Spider,Entwiner)
+PromoListEntry(Cyclops,Biclops)
+PromoListEntry(Gorgon,Gassergon)
+PromoListEntry(Gargoyle,Gargantoyle)
+PromoListEntry(Centaur,Centinel)
+PromoListEntry(Wolfskin,Wolfking)
+PromoListEntry(Ironskin,Ironking)
 PromoListEnd
 
 ALIGN 4
@@ -161,6 +177,7 @@ BYTE Swordfighter Knight Axefighter Archer Scholar Curate
 BYTE Myrmidon Rider Raider Gunner Poet Seeker Lurker Priest
 BYTE DarkHunter Lancer Brawler Hunter SkyKnight ScaleKnight
 BYTE Apothecary Encircler Caller Noble Duelist Driver Artifice
+BYTE Soul Woodrat Airfly Archfly Crawler Wight BowWight Wolf Bigle Spider Cyclops Gorgon Gargoyle Centaur Wolfskin Ironskin
 BYTE 0x00 0x00
 
 

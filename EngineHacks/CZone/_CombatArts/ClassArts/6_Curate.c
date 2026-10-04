@@ -188,7 +188,7 @@ void WrathStaffPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
     MapAddInRange(x, y, range, 1);
     MapAddInRange(x, y, 0, (-1));
 
-    ForEachUnitInRange(TryAddUnitToSleepTargetList);
+    ForEachUnitInRangeStatus(TryAddUnitToStatusArtTargetList,WPN_EFFECT_POISON);
     return;
 }
 
@@ -365,7 +365,7 @@ int CureRange(struct Unit* unit, int itemID, int rangeWord){
     MapAddInRange(x, y, 5, 1);
     MapAddInRange(x, y, 0, (-1));
 
-    ForEachUnitInRange(TryAddUnitToSleepTargetList);
+    ForEachUnitInRangeStatus(TryAddUnitToStatusArtTargetList,WPN_EFFECT_PARALYZE);
     return;
 }
 
