@@ -140,12 +140,42 @@ void MakeTargetListForExploitation(struct Unit* unit) {
     return;
 }
 
+void MercysWingsTargetList(struct Unit* unit) {
+
+    if (AreUnitsAllied(gSubjectUnit->index, unit->index) == 0) {
+        return;
+    }
+	if (2 * unit->curHP > GetUnitMaxHp(unit)) {
+		return;
+	}
+
+    AddTarget(unit->xPos, unit->yPos, unit->index, 0);
+
+    return;
+}
+void MakeTargetListForMercysWings(struct Unit* unit) {
+    int x = unit->xPos;
+    int y = unit->yPos;
+    gSubjectUnit = unit;
+    InitTargets(x, y);
+    BmMapFill(gBmMapRange, 0);
+
+    MapAddInRange(x, y, 5, 1);
+    MapAddInRange(x, y, 0, (-1));
+
+    ForEachUnitInRange(MercysWingsTargetList);
+    return;
+}
+
 int BuffDebuffEffect(struct MenuProc* menu) {
 	if (CombatArtList[GetActiveArt(gActiveUnit)].isMagic == 2) {
 		MakeTargetListForDebuff5Rng(gActiveUnit); 
 	}
 	else if (CombatArtList[GetActiveArt(gActiveUnit)].isMagic == 3) {
 		MakeTargetListForExploitation(gActiveUnit); 
+	}
+	else if (CombatArtList[GetActiveArt(gActiveUnit)].isMagic == 4) {
+		MakeTargetListForMercysWings(gActiveUnit); 
 	}
 	else {
 		MakeTargetListForBuff5Rng(gActiveUnit); 

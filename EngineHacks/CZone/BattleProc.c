@@ -246,6 +246,7 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
 			}
 		}
 		//war prayer 110+30
+		//hope's lance 198+11
 		else {
 			int survivalThreshold = GetUnitMaxHp(&defender->unit)/2;
 			u8* unitBuffer = GetUnitsInRange(&defender->unit, 1, 2);
@@ -259,6 +260,20 @@ void BattleWeaponStatusesEffects(struct BattleUnit* attacker, struct BattleUnit*
 							survivalThreshold = 2;
 						}
 						else if (UNIT_HAS_SKILL(other,WMG,skill_352)){
+							survivalThreshold = GetUnitMaxHp(&defender->unit)/4;
+						}
+						if (defender->unit.curHP >= survivalThreshold) {
+							if (gBattleStats.damage == defender->unit.curHP) {
+								gBattleStats.damage = defender->unit.curHP - 1;
+							}
+						}
+						break;
+					}
+					else if (GetActiveArt(other) == (198+11)) {
+						if (UNIT_HAS_SKILL(other,SPH,skill_535)){
+							survivalThreshold = 2;
+						}
+						else if (UNIT_HAS_SKILL(other,SPH,skill_533)){
 							survivalThreshold = GetUnitMaxHp(&defender->unit)/4;
 						}
 						if (defender->unit.curHP >= survivalThreshold) {

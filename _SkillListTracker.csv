@@ -298,8 +298,8 @@ Seraph,Sky Squadron,None,1.2x Atk/AS/Hit/Avo/Def per deployed flier.,1,Passive,X
 ,Frozen Lance,Tempest Lance 1,A lance strike that targets Res.,3,Attack,X,
 ,Holy Lance,Frozen Lance 1,A lance strike that heals allies after combat.,3,Attack,X,
 ,Lunging Lance,Winged Gallop 1,"Strike, then swap with your target.",3,Attack,X,PostBattle
-,Mercy's Wings,"PROMO, Holy Lance 3, Resilient Wings 2","Give HP to a critically low ally, then buff all stats.",3,Active (Buff),,
-,Javelin of Light,"Tempest Lance 3, Frozen Lance 3",An unerring ranged attack.,5,Attack,,
+,Mercy's Wings,"PROMO, Holy Lance 3, Resilient Wings 2","Give HP to a critically low ally, then buff all stats.",3,Active (Buff),X,
+,Javelin of Light,"Tempest Lance 3, Frozen Lance 3",An unerring ranged attack.,5,Attack,X,
 ,Soaring Strike,"Swift Wings 2, Lunging Lance 3","Attack, then become untargetable by enemies until next PP.",5,Attack (State),,PostBattle
 ,Hope's Lance,"PROMO, Mercy's Wings 3, Soaring Strike 5",Attack and give nearby allies a miracle effect.,5,Attack (State),,PostBattle
 ,,,,,,,

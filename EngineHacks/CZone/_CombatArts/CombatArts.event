@@ -78,6 +78,7 @@ ORG CombatArtDurabilityList+id; BYTE durabilityCost; POP"
 #define CA_Buff "CA_GeneralBuffDebuffEffect; CA_IsMagic(0); CA_IER(0x3a); CA_SpellAnim(0x66)"
 #define CA_Debuff "CA_GeneralBuffDebuffEffect; CA_IsMagic(2); CA_IER(0x3a); CA_SpellAnim(0x66)"
 #define CA_Exploit "CA_GeneralBuffDebuffEffect; CA_IsMagic(3); CA_IER(0x3a); CA_SpellAnim(0x66)"
+#define CA_Mercy "CA_GeneralBuffDebuffEffect; CA_IsMagic(4); CA_IER(0x3a); CA_SpellAnim(0x66)"
 #define CA_SpellAnimHandAxe "CA_SpellAnim(0x66)" //eventually make handaxe anims work?
 
 

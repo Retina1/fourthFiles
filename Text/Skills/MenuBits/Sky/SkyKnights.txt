@@ -34,3 +34,27 @@ Cost: 2 Durability.[X]
 ##UM_LungingLanceDesc
 A swapping strike.[N]
 Cost: 3 Durability.[X]
+##UM_MercysWings
+ Mercy's Wings[X]
+##UM_MercysWingsDesc
+Virtue's just reward.[N]
+Cost: 3 Durability.[X]
+
+
+##UM_JavelinOfLight
+ Jav. of Light[X]
+##UM_JavelinOfLightDesc
+An unerring projectile.[N]
+Cost: 4 Durability.[X]
+
+##UM_SoaringStrike
+ Soaring St.[X]
+##UM_SoaringStrikeDesc
+Rise above it all.[N]
+Cost: 6 Durability.[X]
+
+##UM_HopesLance
+ Hope's Lnc.[X]
+##UM_HopesLanceDesc
+Breed hope undying.[N]
+Cost: 5 Durability.[X]

@@ -22654,52 +22654,84 @@ __TEXTPROCESS1F1E:
 setText($1F1E, __TEXTPROCESS1F1E)
 
 __TEXTPROCESS1F1F:
-#incbin ".TextEntries\text_buildfilePlaceholderLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUM_MercysWings.fetxt.dmp"
 setText($1F1F, __TEXTPROCESS1F1F)
 
 __TEXTPROCESS1F20:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc0.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUM_MercysWingsDesc.fetxt.dmp"
 setText($1F20, __TEXTPROCESS1F20)
 
 __TEXTPROCESS1F21:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc1.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUM_JavelinOfLight.fetxt.dmp"
 setText($1F21, __TEXTPROCESS1F21)
 
 __TEXTPROCESS1F22:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc2.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUM_JavelinOfLightDesc.fetxt.dmp"
 setText($1F22, __TEXTPROCESS1F22)
 
 __TEXTPROCESS1F23:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc3.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUM_SoaringStrike.fetxt.dmp"
 setText($1F23, __TEXTPROCESS1F23)
 
 __TEXTPROCESS1F24:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc4.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUM_SoaringStrikeDesc.fetxt.dmp"
 setText($1F24, __TEXTPROCESS1F24)
 
 __TEXTPROCESS1F25:
-#incbin ".TextEntries\text_buildfilePlaceholderDesc5.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUM_HopesLance.fetxt.dmp"
 setText($1F25, __TEXTPROCESS1F25)
 
 __TEXTPROCESS1F26:
-#incbin ".TextEntries\text_buildfileStaffExpLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileUM_HopesLanceDesc.fetxt.dmp"
 setText($1F26, __TEXTPROCESS1F26)
 
 __TEXTPROCESS1F27:
-#incbin ".TextEntries\text_buildfileStaffWexpLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePlaceholderLabel.fetxt.dmp"
 setText($1F27, __TEXTPROCESS1F27)
 
 __TEXTPROCESS1F28:
-#incbin ".TextEntries\text_buildfileRankCurrentLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePlaceholderDesc0.fetxt.dmp"
 setText($1F28, __TEXTPROCESS1F28)
 
 __TEXTPROCESS1F29:
-#incbin ".TextEntries\text_buildfileRankNextLabel.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePlaceholderDesc1.fetxt.dmp"
 setText($1F29, __TEXTPROCESS1F29)
 
 __TEXTPROCESS1F2A:
-#incbin ".TextEntries\text_buildfileHealArrowText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePlaceholderDesc2.fetxt.dmp"
 setText($1F2A, __TEXTPROCESS1F2A)
+
+__TEXTPROCESS1F2B:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc3.fetxt.dmp"
+setText($1F2B, __TEXTPROCESS1F2B)
+
+__TEXTPROCESS1F2C:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc4.fetxt.dmp"
+setText($1F2C, __TEXTPROCESS1F2C)
+
+__TEXTPROCESS1F2D:
+#incbin ".TextEntries\text_buildfilePlaceholderDesc5.fetxt.dmp"
+setText($1F2D, __TEXTPROCESS1F2D)
+
+__TEXTPROCESS1F2E:
+#incbin ".TextEntries\text_buildfileStaffExpLabel.fetxt.dmp"
+setText($1F2E, __TEXTPROCESS1F2E)
+
+__TEXTPROCESS1F2F:
+#incbin ".TextEntries\text_buildfileStaffWexpLabel.fetxt.dmp"
+setText($1F2F, __TEXTPROCESS1F2F)
+
+__TEXTPROCESS1F30:
+#incbin ".TextEntries\text_buildfileRankCurrentLabel.fetxt.dmp"
+setText($1F30, __TEXTPROCESS1F30)
+
+__TEXTPROCESS1F31:
+#incbin ".TextEntries\text_buildfileRankNextLabel.fetxt.dmp"
+setText($1F31, __TEXTPROCESS1F31)
+
+__TEXTPROCESS1F32:
+#incbin ".TextEntries\text_buildfileHealArrowText.fetxt.dmp"
+setText($1F32, __TEXTPROCESS1F32)
 
 __TEXTPROCESS094:
 #incbin ".TextEntries\text_buildfile094.fetxt.dmp"

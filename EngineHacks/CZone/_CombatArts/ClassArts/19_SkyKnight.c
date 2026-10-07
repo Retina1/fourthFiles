@@ -1,5 +1,135 @@
 
 
+// HopesLance
+u8 HopesLanceArtUsability(struct Unit* unit, u16 artID){
+	if (UNIT_HAS_SKILL(unit,SPH,skill_531)){
+		return CombatArtWeaponTypeAttackingUsability(1);
+	}
+	else return 0;
+}
+u8 HopesLanceArtMenuUsability(const struct MenuItemDef* def, int number){
+    return HopesLanceArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+void HopesLanceBothSides(struct BattleUnit* actor, struct BattleUnit* target){
+	if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_534)){
+		actor->battleAttack = actor->battleAttack*2;
+		target->battleDefense = target->battleDefense*2;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_532)){
+		actor->battleAttack = actor->battleAttack*3/2;
+		target->battleDefense = target->battleDefense*3/2;
+	}
+}
+
+// SoaringStrike
+u8 SoaringStrikeArtUsability(struct Unit* unit, u16 artID){
+	if (UNIT_HAS_SKILL(unit,SPH,skill_521)){
+		return CombatArtWeaponTypeAttackingUsability(1);
+	}
+	else return 0;
+}
+u8 SoaringStrikeArtMenuUsability(const struct MenuItemDef* def, int number){
+    return SoaringStrikeArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+void SoaringStrikeBothSides(struct BattleUnit* actor, struct BattleUnit* target){
+	if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_525)){
+		actor->battleAttack = actor->battleAttack*3/1;
+		target->battleDefense = target->battleDefense*3/1;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_524)){
+		actor->battleAttack = actor->battleAttack*5/2;
+		target->battleDefense = target->battleDefense*5/2;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_523)){
+		actor->battleAttack = actor->battleAttack*2/1;
+		target->battleDefense = target->battleDefense*2/1;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_522)){
+		actor->battleAttack = actor->battleAttack*3/2;
+		target->battleDefense = target->battleDefense*3/2;
+	}
+
+}
+
+void SkyKnightFunnyPostbattle(struct Unit* actor, struct Unit* target){
+	CallEvent(&GenericBuffEvent, 0x1);
+	//SetActiveArt(actor, 0);
+}
+
+//MercysWings
+u8 MercysWingsArtUsability(struct Unit* unit, u16 artID)
+{
+	if (UNIT_HAS_SKILL(unit,SPH,skill_351)) {
+		return HasSelectTarget(unit, MakeTargetListForMercysWings) && ArtItemCheckInventory(unit, artID);
+	}
+	else return 0;
+}
+u8 MercysWingsArtMenuUsability(const struct MenuItemDef* def, int number)
+{
+    return MercysWingsArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+void MercysWingsItemSelectEffect(u16 artID, struct Unit* unit)
+{
+    SetStaffUseAction(unit);
+	
+	struct Unit* other = GetUnit(gActionData.targetIndex);
+	other->curHP = GetUnitMaxHp(other);
+	unit->curHP = 1;
+	
+	if (UNIT_HAS_SKILL(unit,SPH,skill_353)) {
+		UnitApplyBuff(unit,BUFF_MERCYSWINGS3);
+	}
+	else if (UNIT_HAS_SKILL(unit,TRB,skill_342)) {
+		UnitApplyBuff(unit,BUFF_MERCYSWINGS2);
+	}
+	else{
+		UnitApplyBuff(unit,BUFF_MERCYSWINGS1);
+	}
+}
+
+// JavelinOfLight
+u8 JavelinOfLightArtUsability(struct Unit* unit, u16 artID){
+	if (UNIT_HAS_SKILL(unit,SPH,skill_511)){
+		int range = 3;
+		if (UNIT_HAS_SKILL(unit,SPH,skill_515)) {
+			range = 5;
+		}
+		else if (UNIT_HAS_SKILL(unit,SPH,skill_513)) {
+			range = 4;
+		}
+		return CombatArtRangeAttackingUsability(1,range,1);
+	}
+	else return 0;
+}
+u8 JavelinOfLightArtMenuUsability(const struct MenuItemDef* def, int number){
+    return JavelinOfLightArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+}
+void JavelinOfLightPrebattle(struct BattleUnit* actor, struct BattleUnit* target){
+	actor->battleHitRate = actor->battleHitRate*3/2;
+}
+void JavelinOfLightBothSides(struct BattleUnit* actor, struct BattleUnit* target){
+	if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_514)){
+		actor->battleAttack = actor->battleAttack*9/5;
+		target->battleDefense = target->battleDefense*9/5;
+	}
+	else if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_512)){
+		actor->battleAttack = actor->battleAttack*13/10;
+		target->battleDefense = target->battleDefense*13/10;
+	}
+}
+int JavelinOfLightRange(struct Unit* unit, int itemID, int rangeWord){
+	if (GetItemType(itemID) == 0x1) {
+		if (UNIT_HAS_SKILL(unit,SPH,skill_313)) {
+			return 0x00010005;
+		}
+		else if (UNIT_HAS_SKILL(unit,SPH,skill_313)) {
+			return 0x00010004;
+		}
+		else return 0x00010003;
+	}
+	else return 0;
+}
+
 // LungingLance
 u8 LungingLanceArtUsability(struct Unit* unit, u16 artID){
 	if (UNIT_HAS_SKILL(unit,SPH,skill_341)){
@@ -8,7 +138,7 @@ u8 LungingLanceArtUsability(struct Unit* unit, u16 artID){
 	else return 0;
 }
 u8 LungingLanceArtMenuUsability(const struct MenuItemDef* def, int number){
-    return BoundingThrustArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
+    return LungingLanceArtUsability(gActiveUnit, ART_ID_FROM_MENUDEF(def)) ? MENU_ENABLED : MENU_NOTSHOWN;
 }
 void LungingLanceBothSides(struct BattleUnit* actor, struct BattleUnit* target){
 	if (UNIT_HAS_SKILL(&actor->unit,SPH,skill_343)){

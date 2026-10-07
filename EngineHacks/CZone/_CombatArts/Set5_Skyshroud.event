@@ -35,10 +35,38 @@ CA_Entry((Set4LastArt + 6), 2)
 	CA_GeneralAttackEffect
 	CA_BothSides(HolyLanceBothSides); CA_Postbattle(HolyLancePostbattle)
 	CA_Range(PierceLock)
-CA_Entry((Set4LastArt + 6), 3)
+CA_Entry((Set4LastArt + 7), 3)
 	CA_Name(UM_LungingLance,UM_LungingLanceDesc)
 	CA_Usability(LungingLanceArtUsability,LungingLanceArtMenuUsability)
 	CA_GeneralAttackEffect
 	CA_BothSides(LungingLanceBothSides); CA_Postbattle(LungingLancePostbattle)
 	CA_Range(PierceLock)
+CA_Entry((Set4LastArt + 8), 3)
+	CA_Name(UM_MercysWings,UM_MercysWingsDesc)
+	CA_Usability(MercysWingsArtUsability,MercysWingsArtMenuUsability)
+	CA_Mercy; CA_ItemSelectUsability(PierceItemSelectUsability)
+	CA_ItemSelectEffect(MercysWingsItemSelectEffect)
+	CA_Range(Noncombat1to5Range)
+CA_Entry((Set4LastArt + 9), 4)
+	CA_Name(UM_JavelinOfLight,UM_JavelinOfLightDesc)
+	CA_Usability(JavelinOfLightArtUsability,JavelinOfLightArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(JavelinOfLightBothSides); CA_Prebattle(JavelinOfLightPrebattle)
+	CA_Range(JavelinOfLightRange)
+CA_Entry((Set4LastArt + 10), 6)
+	CA_Name(UM_SoaringStrike,UM_SoaringStrikeDesc)
+	CA_Usability(SoaringStrikeArtUsability,SoaringStrikeArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(SoaringStrikeBothSides); CA_Postbattle(SkyKnightFunnyPostbattle)
+	CA_Range(PierceLock)
+CA_Entry((Set4LastArt + 11), 5)
+	CA_Name(UM_HopesLance,UM_HopesLanceDesc)
+	CA_Usability(HopesLanceArtUsability,HopesLanceArtMenuUsability)
+	CA_GeneralAttackEffect
+	CA_BothSides(HopesLanceBothSides); CA_Postbattle(SkyKnightFunnyPostbattle)
+	CA_Range(PierceLock)
+
+//shade on 198+10	
+//miracle on 198+11	
+
 //SCM

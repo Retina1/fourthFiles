@@ -10,6 +10,21 @@ int CheckForScapegoat(struct Unit* unit) {
 	}
 	else return 0;
 };
+
+s8 AiReachesByBirdsEyeDistance(struct Unit* unit, struct Unit* other, u16 item) {
+
+    int distance = RECT_DISTANCE(unit->xPos, unit->yPos, other->xPos, other->yPos);
+
+	if ((GetActiveArt(other) == 198+10)) {
+		return 0;
+	}	
+
+    if (distance <= UNIT_MOV(unit) + GetItemMaxRange(item)) {
+        return 1;
+    }
+
+    return 0;
+}
 	
 
 static const struct AiCombatScoreCoefficients * sCombatScoreCoefficients;
@@ -46,6 +61,10 @@ void AiComputeCombatScore(struct AiCombatSimulationSt * st)
 	}
 	//stealth apply here - check if unit knows stealth and if class skill state is on
 	if (UNIT_HAS_SKILL(&gBattleTarget.unit,SRV,skill_141) && (gBattleTarget.unit.classSkillState & 1)) {
+		score = 0;
+	}
+	//or if they're soaring
+	if ((GetActiveArt(&gBattleTarget.unit) == 198+10)) {
 		score = 0;
 	}
 
