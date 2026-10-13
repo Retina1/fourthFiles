@@ -66,6 +66,7 @@ void ForEachUnitInRangeStatus(void(*func)(struct Unit* unit, int targetStatus), 
 #include "WaitEventTraps/TilemapBorders.c"
 #include "DifficultyChooser/DifficultyChooser.c"
 #include "UnitChooser/UnitChooser.c"
+#include "UnitChooserAutolevel/UnitChooser.c"
 #include "DebugUnitChooser/DebugUnitChooser.c"
 #include "LeagueUnitViewer/UnitViewer.c"
 

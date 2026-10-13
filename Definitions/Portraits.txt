@@ -241,6 +241,7 @@ NaoMug
 WitoldMug
 MarcelMug
 BackupFeefasnanMug
+AlharMug
 SwordfighterCard
 LandsknechtCard
 KnightCard

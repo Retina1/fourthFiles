@@ -63,6 +63,12 @@ raving spokesman of the organization.[X]
 An apparent leader of the unknown force.[N]
 He's loud, talkative, and prideful.[X]
 
+##Name_Alhar
+Alhar[X]
+##Desc_Alhar
+A mysterious combat instructor for hire.[N]
+They're hard to get a true read on.[X]
+
 ##Name_Weber
 Weber[X]
 ##Desc_Weber

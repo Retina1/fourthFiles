@@ -10,6 +10,8 @@ extern const int WundMugID;
 extern const int WundUnclothedMugID;
 extern const int FeefasnanMugID;
 extern const int RatatoskrMugID;
+extern const int HarlaMugID;
+extern const int AlharMugID;
 
 extern const struct FaceData NewPortraitTable[];
 
@@ -273,6 +275,12 @@ const struct FaceData* GetPortraitData(int fid) {
 	if (fid == FeefasnanMugID){
 		if (CheckEventId_(0xb6)) {
 			fid = RatatoskrMugID;
+		}
+	}
+	//ALHAR
+	if (fid == HarlaMugID){
+		if (CheckEventId_(0xe0)) {
+			fid = AlharMugID;
 		}
 	}
 	if (fid == GoreMugID) {

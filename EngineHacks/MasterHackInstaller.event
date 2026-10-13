@@ -49,6 +49,11 @@ WORD GorePluckedMug
 GoreEyepatchMugID:
 WORD GoreEyepatchMug
 
+HarlaMugID:
+WORD HarlaMug
+AlharMugID:
+WORD AlharMug
+
 #include "EssentialFixes.event"
 #include "AddressPatches.event"
 #include "VariousASM/ASM.event"

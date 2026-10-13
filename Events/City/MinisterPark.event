@@ -3,13 +3,26 @@
 MinisterParkUnitsC9:
 UNIT MilitaryGeneric Survivalist 0x0 Level(12,NPC,1) [13,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT MilitaryGeneric Survivalist 0x0 Level(14,NPC,1) [7,7] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
-UNIT MilitaryGeneric Driver 0x0 Level(28,NPC,1) [1,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT Harla Highlander 0x0 Level(26,NPC,1) [1,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
 
 //MESSAGE Events end at offset CURRENTOFFSET
 
 
 ALIGN 4
+
+MinisterParkTraining:
+ENUF LocationFlagMinisterPark
+CHECK_EVENTID 0x16
+BNE 0x1 0xc 0x0
+RunTextByVisit(0,0,0,0,0,City09_Alhar,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue,FillerDialogue)
+ENUT 0x16
+CHECK_EVENTID Chapter10DoneFlag
+BNE 0x1 0xc 0x0
+SystemText(AutolevelTutorial)
+LABEL 0x1
+ASMC UnitChooserAutolevel_OnSelect|1
+EndEvent
 
 LoadMinisterParkSigils:
 ENUF LocationFlagMinisterPark

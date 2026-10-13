@@ -43,7 +43,7 @@ EventPointerTable(HirschringSquareEventsID,ThisChapter)
 #define Recruited4Flag 0x12b
 #define Recruited5Flag 0x12c
 */
-
+// 16 for alhar
 //flags 0x1a to 0x1c for market
 
 ALIGN 4
@@ -165,7 +165,7 @@ AreaEvent(LocationFlagImperialPost,TownFourthTalk,3,5)
 //in minister park
 AreaEvent(LocationFlagMinisterPark,MinisterParkMoveToSquare,0,0,0,2)
 AreaEvent(LocationFlagMinisterPark,MinisterParkMoveToRiverHirsch,14,9,14,10)
-//AreaEvent(LocationFlagMinisterPark,MinisterParkTraining,1,5)
+AreaEvent(LocationFlagMinisterPark,MinisterParkTraining,1,5)
 
 //in river hirsch
 AreaEvent(LocationFlagRiverHirsch,RiverHirschMoveToPark,5,0,7,0)

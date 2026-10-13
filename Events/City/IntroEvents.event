@@ -108,6 +108,6 @@ ENDA
 
 Chapter9CityOpen:
 MUSC Song_OohWilfre
-CleanTextNoMap(0x0, FillerDialogue)
+CleanTextNoMap(0x0, City09_PrePreps)
 //visit palace either in intro or ending
 ENDA

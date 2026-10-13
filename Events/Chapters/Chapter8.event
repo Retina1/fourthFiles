@@ -382,8 +382,10 @@ MOVE 2 Cleone [4,5]; ENUN; STAL 60
 Text(C8Ending7)
 MOVE 1 Cleone [5,5]; ENUN; STAL 60
 Text(C8Ending8)
-STAL 60
-//SetBackground(EndOfAct1CG)
+STAL 30
+SetBackground(HetgemCG)
+STAL 600
+FADI 5
 MoveToChapter(HirschringSquare)
 ENDA
 

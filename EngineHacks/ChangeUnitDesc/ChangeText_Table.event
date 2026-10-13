@@ -30,6 +30,8 @@ SenateChapter(Chapter13)
 EndbringerChapter(Chapter18C)
 
 UnknownChapter(BlackMarket)
+csvmacro000(Name_Harla,Name_Alhar,0x00,0x00,MinisterPark,0xFF,0x00)
+csvmacro000(Desc_Harla,Desc_Alhar,0x00,0x00,MinisterPark,0xFF,0x00)
 csvmacro000(0x00,0x00,0x00,0x00,0x00,0x00,0x00)  // term
 
 /*

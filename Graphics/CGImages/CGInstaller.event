@@ -159,3 +159,13 @@ DecisionCorruptedImage:
 ALIGN 4
 DecisionCorruptedPalette:
 #incbin "MoreColors/gfx/BG/224DecisionCorruptedPal.dmp"
+
+
+#define HetgemCG 0x3f
+SetColorsBackground(HetgemCG,HetgemImage,HetgemPalette)
+ALIGN 4
+HetgemImage:
+#incbin "MoreColors/gfx/BG/224Hetgem.dmp"
+ALIGN 4
+HetgemPalette:
+#incbin "MoreColors/gfx/BG/224HetgemPal.dmp"
