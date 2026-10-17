@@ -24,6 +24,7 @@
 #include "DungeonMaps\Stratum6\DrowningHollows2.event"
 #include "DungeonMaps\Stratum6\DrowningHollows8.event"
 #include "MainChapters\Chapter1.event"
+#include "MainChapters\Chapter10.event"
 #include "MainChapters\Chapter13.event"
 #include "MainChapters\Chapter14.event"
 #include "MainChapters\Chapter18C.event"

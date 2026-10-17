@@ -180,7 +180,7 @@ AreaEvent(LocationFlagUnderground,UndergroundMoveToGrove,4,1)
 
 //in gamerspace
 AreaEvent(LocationFlagGamerspace,GamerspaceMoveToSquare,6,9,8,9)
-//AreaEvent(LocationFlagGamerspace,GamerspaceGaming,9,3)
+AreaEvent(LocationFlagGamerspace,GamerspaceGaming,9,3)
 
 
 CauseGameOverIfLordDies

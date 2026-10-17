@@ -11,6 +11,27 @@ UNIT
 
 ALIGN 4
 
+GamerspaceGaming:
+ENUF LocationFlagGamerspace
+ASMC GetNathanMaxHP|1
+SVAL 1 1
+BEQ 0x2 0xc 0x1
+SystemText(GamingPrompt)
+IfNoSelectedGoto(0x1)
+LABEL 0x3
+ASMC DrainNathanMaxHP|1
+ASMC Gambling_OnSelect|1
+ASMC GetNathanMaxHP|1
+SVAL 1 1
+BEQ 0x2 0xc 0x1
+SystemText(ReGamingPrompt)
+IfNoSelectedGoto(0x1)
+GOTO 0x3
+LABEL 0x2
+SystemText(TooWeakToGaming)
+LABEL 0x1
+EndEvent
+
 LoadGamerspaceSigils:
 ENUF LocationFlagGamerspace
 AddSigil(6,9)

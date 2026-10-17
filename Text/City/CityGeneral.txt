@@ -23,6 +23,17 @@ No. I'm[...] not ready.[A][X]
 Throw yourself unto[N]
 the stirring abyss.[A][X]
 
+##GamingPrompt
+Engage in [ToggleRed]gaming[ToggleRed]?[N]
+[No][X]
+##ReGamingPrompt
+Another round of [ToggleRed]gaming[ToggleRed]?[N]
+[Yes][X]
+
+##TooWeakToGaming
+You do not have the[N]
+lifeforce to [ToggleRed]game[ToggleRed].[A][X]
+
 ##FillerDialogue
 [MidLeft][Nathan]
 This is a placeholder.[N]
