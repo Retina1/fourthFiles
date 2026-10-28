@@ -32,7 +32,7 @@ Another round of [ToggleRed]gaming[ToggleRed]?[N]
 
 ##TooWeakToGaming
 You do not have the[N]
-lifeforce to [ToggleRed]game[ToggleRed].[A][X]
+lifeforce for [ToggleRed]gaming[ToggleRed].[A][X]
 
 ##FillerDialogue
 [MidLeft][Nathan]
@@ -101,6 +101,67 @@ at last act.[AN]
 My sword is yours, Nathan.[AN]
 Let it be that which pierces the[N]
 veil and ends the cycle.[A][X]
+
+##GiveUpYourAxes
+Give him every axe[N]
+Nathan's holding?[N]
+[No][X]
+
+##UnlockSkyClassesMaybe
+[MidLeft][Witold][MidRight][Nathan][MidLeft]
+Hey, bud. I'm lookin' to[N]
+prove a point 'bout wyverns.[AN]
+And I see you've got a wide[N]
+array of axes.[A] Almost like[N]
+you believe in wyverns too.[AN]
+If you really believe in 'em,[N]
+you'll give me those axes, no?[AN]
+I'll make it worth your while.[A][X]
+
+##UnlockSkyClassesYes
+[MidLeft][Witold][MidRight][Nathan]
+I suppose I'll humor you.[AN][MidLeft]
+Good call, bud. Investing[N]
+in the future of warfare.[AN]
+And now, I'll invest in your[N]
+future as thanks.[A] Take this[N]
+little medallion.[A] It's the[N]
+emblem of the Skyshroud.[AN]
+Bring it to the Guildleague[N]
+and you can grab some wyverns.[AN]
+[...]Or some pegasi, I guess.[N]
+But you've finer taste.[AN]
+Hope to see you there, pal.[AN][MidRight]
+Just like that? [...]Thanks![AN][MidLeft]
+You recognize the mighty[N]
+wyvern. You deserve it.[A][X]
+
+##DoNotGiveUpAxes
+[MidLeft][Witold][MidRight][Nathan]
+I don't think I will.[AN][MidLeft]
+Hmph. Did those cavalier[N]
+purists get to you?[AN]
+Well, if you ever see the[N]
+light of the wyvern,[AN]
+I'll be right here.[A][X]
+
+##UnlockSkyClassesNo
+[MidLeft][Witold][MidRight][Nathan][MidLeft]
+Hey, bud. I'm lookin' to[N]
+prove a point 'bout wyverns.[AN]
+Hm[...] Can you bring me some[N]
+axes? Trust me on this.[AN]
+They're the prime weapon of[N]
+wyvern riders, after all.[AN]
+However many you can carry.[N]
+And make 'em all different.[AN]
+I'd be willing to participate[N]
+in a little trade for 'em.[AN]
+But first, go find some axes.[AN][MidRight]
+That sounds like a lot.[AN][MidLeft]
+Wyverns are the future of all[N]
+combat, friend.[A] This price[N]
+is nothing compared to that.[A][X]
 
 
 ##IntroBuyStandardClasses
@@ -275,6 +336,11 @@ to check them out.[A][X]
 ##UnlockSpecialClassesSys
 The Special Ops have been[N]
 unlocked for recruitment![AN]
+Head over to the Guildhall[N]
+to check them out.[A][X]
+##UnlockSkyClassesYesSys
+The Skyshroud Division has[N]
+been unlocked for recruitment![AN]
 Head over to the Guildhall[N]
 to check them out.[A][X]
 

@@ -1,0 +1,60 @@
+##UM_ResonantRoar
+ Reson. Roar[X]
+##UM_ResonantRoarDesc
+Debuff nearby Prt/Luc.[N]
+Cost: 3 Durability.[X]
+
+##UM_CleansingRage
+ Cleans. Rage[X]
+##UM_CleansingRageDesc
+Purge buffs, debuffs,[N]
+and status effects.[N]
+Cost: 2 Durability.[X]
+
+##UM_DraconicFury
+ Draco. Fury[X]
+##UM_DraconicFuryDesc
+Cut HP for Atk/Mov.[N]
+Cost: 3 Durability.[X]
+
+##UM_HammerDown
+ Hammer Down[X]
+##UM_HammerDownDesc
+A brutal, simple swing.[N]
+Cost: 4 Durability.[X]
+##UM_MalignantStrike
+ Malig. Strike[X]
+##UM_MalignantStrikeDesc
+A hateful, toxic swing.[N]
+Cost: 4 Durability.[X]
+##UM_FlameSmash
+ Flame Smash[X]
+##UM_FlameSmashDesc
+A flame-imbued swing.[N]
+Cost: 5 Durability.[X]
+##UM_SmitefulSmash
+ Smiteful Sm.[X]
+##UM_SmitefulSmashDesc
+A swing that knocks back.[N]
+Cost: 4 Durability.[X]
+##UM_CalamitousSmash
+ Calamity Sm.[X]
+##UM_CalamitousSmashDesc
+A swing of pure madness.[N]
+Cost: 7 Durability.[X]
+
+##UM_Clawbinder
+ Clawbinder[X]
+##UM_ClawbinderDesc
+Invoke your wyvern's claws.[N]
+Cost: 5 Durability.[X]
+##UM_Firebreathing
+ Firebreathing[X]
+##UM_FirebreathingDesc
+Invoke your wyvern's flame.[N]
+Cost: 8 Durability.[X]
+##UM_Devour
+ Devour[X]
+##UM_DevourDesc
+Invoke your wyvern's jaws.[N]
+Cost: 10 Durability.[X]

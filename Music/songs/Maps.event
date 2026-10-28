@@ -21,7 +21,7 @@ Maps_001:
 //  #01 //000   ----------------------------------------
  BYTE   VOL   71*Maps_mvl/mxv
  BYTE   KEYSH   Maps_key+0
- BYTE   TEMPO   120*Maps_tbs/2
+ BYTE   TEMPO   130*Maps_tbs/2
  BYTE   VOICE   30
  BYTE   N03  Dn4  v024
  BYTE   W03

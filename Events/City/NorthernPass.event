@@ -59,7 +59,7 @@ ALIGN 4
 MarketLoopBegin:
 EVBIT_MODIFY 3
 Text(MarketIntro)
-RunEventByVisit(DummyEvent,Chapter3Market,ChapterS1Market,Chapter5Market,Chapter8Market,0,0,0,0,0,0,0,0,0)
+RunEventByVisit(DummyEvent,Chapter3Market,ChapterS1Market,Chapter5Market,Chapter8Market,Chapter9Market,0,0,0,0,0,0,0,0)
 Text(MarketEnd)
 ENUF LocationFlagNorthernPass
 EndEvent
@@ -75,6 +75,24 @@ EndEvent
 #define MarketHandler(item,uses,cost,choice,flag) "SVAL 0x1 choice; BNE choice 0xC 0x1; CHECK_MONEY; SVAL 0x1 cost; BLT 0x10 0xc 0x1; SetGtoMoney; Text(PurchaseConfirm); IfNoSelectedGoto(0x20); SVAL 0x3 cost; TAKEMONEY; GiveItemWithDurability(item,uses,Nathan); ENUT flag; COUNTER_SET 1 0; GOTO 0x20; LABEL choice"
 #define BrokeHander "LABEL 0x10; SetGtoMoney; Text(NotEnoughMoney); GOTO 0x20; LABEL 0x30"
 
+
+Chapter9Market:
+LABEL 0x20
+COUNTER_CHECK 1
+SVAL 1 5
+BNE 0x600 0xc 0x1
+CALL UnlockBlackMarketEvent
+LABEL 0x600
+SetGtoMoney
+CallMenu(Market9xMenu)
+MarketHandler(Shortmace,50,500,0,0x1a)
+MarketHandler(SpiritWrap,999,1,0x1b)
+MarketHandler(Ahlspiess,1000,2,0x1c)
+LeafHandler(3)
+FictionHandler(4)
+GOTO 0x30
+BrokeHander
+ENDA
 
 Chapter8Market:
 LABEL 0x20

@@ -1,0 +1,90 @@
+##Guild_Atilius_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Atilius]
+Atilius here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Atilius]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Atilius]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Atilius]
+return here[A][X]
+
+##Guild_Celeste_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Celeste]
+Celeste here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Celeste]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Celeste]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Celeste]
+return here[A][X]
+
+##Guild_Merilee_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Merilee]
+Merilee here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Merilee]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Merilee]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Merilee]
+return here[A][X]
+
+##Guild_Shasso_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Shasso]
+Shasso here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Shasso]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Shasso]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Shasso]
+return here[A][X]
+
+##Guild_River_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][River]
+River here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][River]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][River]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][River]
+return here[A][X]
+
+##Guild_Hocante_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hocante]
+Hocante here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hocante]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hocante]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Hocante]
+return here[A][X]
+
+##Guild_Witold_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Witold]
+Witold here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Witold]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Witold]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Witold]
+return here[A][X]

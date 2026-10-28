@@ -2,6 +2,32 @@ extern struct Unit * GetUnitStructFromEventParameter(s16 pid);
 
 extern char gCurrentTextString[];
 
+//witold
+void GetUniqueAxesOnHand(struct EventEngineProc* proc) {
+	struct Unit* unit = GetUnitFromCharId(1);
+	u8 itemArray[5];
+	for (int j = 0; j < 5; j++) {
+		itemArray[j] = GetItemIndex(unit->items[j]);
+		if ((GetItemType(itemArray[j]) != 2) || (!(GetItemAttributes(itemArray[j]) & IA_LOCK_1)))  {
+			gEventSlots[0xc] = 0;
+			return;
+		}
+		for (int i = 0; i < j; i++) {
+			if (itemArray[j] == itemArray[i]) {
+				gEventSlots[0xc] = 0;
+				return;
+			}
+		}
+	}
+	gEventSlots[0xc] = 1;
+}
+void GoodbyeAxes(struct EventEngineProc* proc) {
+	struct Unit* unit = GetUnitFromCharId(1);
+	for (int j = 0; j < 5; j++) {
+		unit->items[j] = 0;
+	}
+}
+
 //ch14
 void Ch14UndeployUnitsASMC(struct EventEngineProc* proc) {
 	struct Unit* unit = NULL;

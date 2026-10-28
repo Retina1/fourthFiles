@@ -53,7 +53,7 @@ POIN LancerSkillLabels
 POIN BrawlerSkillLabels
 POIN HunterSkillLabels
 POIN SkyKnightSkillLabels
-POIN SkillLabels
+POIN ScaleKnightSkillLabels
 POIN SkillLabels
 POIN SkillLabels
 POIN SkillLabels
@@ -135,6 +135,80 @@ FiveLevelSkillLabel(PlaceholderLabel,NoReq)//12
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 FiveLevelSkillLabel(PlaceholderLabel,NoReq)
 SkillLabelTerminator
+
+ALIGN 4
+ScaleKnightSkillLabels:
+OneLevelSkillLabel(RetaliatoryWingsSkill,NoReq)//0
+OneLevelSkillLabel(FlyingFortressSkill,NoReq)
+OneLevelSkillLabel(DrawBackSkill,DrawBackReq)
+OneLevelSkillLabel(ExecutorSkill,PromotedReq)
+TwoLevelSkillLabel(ResonantRoarSkill,NoReq)//4
+TwoLevelSkillLabel(CleansingRageSkill,CleansingRageReq)
+TwoLevelSkillLabel(DraconicFurySkill,DraconicFuryReq)
+ThreeLevelSkillLabel(HammerDownSkill,NoReq)//7
+ThreeLevelSkillLabel(MalignantStrikeSkill,MalignantStrikeReq)
+ThreeLevelSkillLabel(FlameSmashSkill,FlameSmashReq)
+ThreeLevelSkillLabel(SmitefulSmashSkill,SmitefulSmashReq)
+ThreeLevelSkillLabel(CalamitousSmashSkill,CalamitousSmashReq)
+FiveLevelSkillLabel(ClawbinderSkill,ClawbinderReq)//12
+FiveLevelSkillLabel(FirebreathingSkill,FirebreathingReq)
+FiveLevelSkillLabel(DevourSkill,DevourReq)
+SkillLabelTerminator
+
+ALIGN 4
+DrawBackReq:
+ReqEntry(10,1)
+ReqTerm
+
+ALIGN 4
+CleansingRageReq:
+ReqEntry(4,1)
+ReqTerm
+
+ALIGN 4
+DraconicFuryReq:
+ReqEntry(5,1)
+ReqTerm
+
+ALIGN 4
+MalignantStrikeReq:
+ReqEntry(7,1)
+ReqTerm
+
+ALIGN 4
+FlameSmashReq:
+ReqEntry(7,2)
+ReqTerm
+
+ALIGN 4
+SmitefulSmashReq:
+ReqEntry(7,3)
+ReqTerm
+
+ALIGN 4
+CalamitousSmashReq:
+ReqPromo
+ReqEntry(10,3)
+ReqTerm
+
+ALIGN 4
+ClawbinderReq:
+ReqEntry(5,2)
+ReqEntry(8,3)
+ReqTerm
+
+ALIGN 4
+FirebreathingReq:
+ReqEntry(6,2)
+ReqEntry(9,3)
+ReqTerm
+
+ALIGN 4
+DevourReq:
+ReqPromo
+ReqEntry(12,5)
+ReqEntry(13,5)
+ReqTerm
 
 ALIGN 4
 SkyKnightSkillLabels:

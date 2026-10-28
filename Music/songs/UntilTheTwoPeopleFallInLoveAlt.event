@@ -21,7 +21,7 @@ UntilTheTwoPeopleFallInLoveAlt_001:
 //  #01 //000   ----------------------------------------
  BYTE   KEYSH   UntilTheTwoPeopleFallInLoveAlt_key+0
 Label_01189702:
- BYTE   TEMPO   85*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   82*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   VOICE   1
  BYTE   VOL   62*UntilTheTwoPeopleFallInLoveAlt_mvl/mxv
  BYTE   PAN   c_v+0
@@ -72,19 +72,19 @@ Label_0118971C:
  BYTE   W12
  BYTE   As3
  BYTE   W12
- BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   57*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   As4
  BYTE   W12
  BYTE   As3
  BYTE   W12
- BYTE   TEMPO   42*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   33*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   Ds4
  BYTE   W12
  BYTE   As4
  BYTE   W12
 //  #01 //004   ----------------------------------------
 Label_0118974A:
- BYTE   TEMPO   102*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   82*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   N11  As3  v052
  BYTE   W12
  BYTE   Ds4
@@ -134,12 +134,12 @@ Label_01189777:
  BYTE   W12
  BYTE   As3
  BYTE   W12
- BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   57*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   As4
  BYTE   W12
  BYTE   As3
  BYTE   W12
- BYTE   TEMPO   42*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   33*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   Ds4
  BYTE   W12
  BYTE   As4
@@ -158,7 +158,7 @@ Label_01189777:
  BYTE   PATT
   POIN2 Label_01189777
 //  #01 //012   ----------------------------------------
- BYTE   TEMPO   102*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   82*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   N11  As3  v052
  BYTE   W12
  BYTE   Ds4
@@ -190,21 +190,21 @@ Label_01189777:
  BYTE   W12
  BYTE   As3
  BYTE   W12
- BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   57*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   As4
  BYTE   W12
  BYTE   As3
  BYTE   W12
- BYTE   TEMPO   42*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   33*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   Ds4
  BYTE   W12
- BYTE   TEMPO   20*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   16*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   As4
  BYTE   W11
- BYTE   TEMPO   42*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   33*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   W01
 //  #01 //016   ----------------------------------------
- BYTE   TEMPO   90*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   N32  Fs2
  BYTE   N32  Bn2
  BYTE   N32  Ds3
@@ -489,7 +489,7 @@ Label_01189777:
  BYTE   Cs3
  BYTE   W12
 //  #01 //032   ----------------------------------------
- BYTE   TEMPO   78*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   62*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   N32  Fs2
  BYTE   N32  Bn2
  BYTE   N32  Ds3
@@ -600,7 +600,7 @@ Label_01189777:
  BYTE   W08
  BYTE   Bn2
  BYTE   W08
- BYTE   TEMPO   72*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   57*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   N11  Ds3
  BYTE   W12
  BYTE   Fs3
@@ -615,19 +615,19 @@ Label_01189777:
  BYTE   N44  As1
  BYTE   N44  Ds2
  BYTE   W12
- BYTE   TEMPO   64*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   51*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   W36
  BYTE   N11  As1
  BYTE   W12
  BYTE   Ds2
  BYTE   W12
- BYTE   TEMPO   60*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   48*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   Gn2
  BYTE   W12
- BYTE   TEMPO   20*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   16*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   As2
  BYTE   W11
- BYTE   TEMPO   60*UntilTheTwoPeopleFallInLoveAlt_tbs/2
+ BYTE   TEMPO   48*UntilTheTwoPeopleFallInLoveAlt_tbs/2
  BYTE   W01
 //  #01 //041   ----------------------------------------
  BYTE   N92  Ds2

@@ -6,6 +6,10 @@ UNIT MilitaryGeneric Survivalist 0x0 Level(14,NPC,1) [7,7] 0x0 0x0 0x0 0x0 [Vuln
 UNIT Harla Highlander 0x0 Level(26,NPC,1) [1,4] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
 UNIT
 
+MinisterParkWitold:
+UNIT Witold ScaleKnight 0x0 Level(10,NPC,0) [4,12] 0x0 0x0 0x0 0x0 [Vulnerary] NeverMoveAI
+UNIT
+
 //MESSAGE Events end at offset CURRENTOFFSET
 
 

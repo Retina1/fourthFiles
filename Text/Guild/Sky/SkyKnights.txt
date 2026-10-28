@@ -1,0 +1,90 @@
+##Guild_June_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][June]
+June here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][June]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][June]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][June]
+return here[A][X]
+
+##Guild_Eneida_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eneida]
+Eneida here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eneida]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eneida]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Eneida]
+return here[A][X]
+
+##Guild_Patrice_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Patrice]
+Patrice here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Patrice]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Patrice]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Patrice]
+return here[A][X]
+
+##Guild_Melody_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Melody]
+Melody here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Melody]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Melody]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Melody]
+return here[A][X]
+
+##Guild_Anastas_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Anastas]
+Anastas here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Anastas]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Anastas]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Anastas]
+return here[A][X]
+
+##Guild_Peregrine_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Peregrine]
+Peregrine here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Peregrine]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Peregrine]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Peregrine]
+return here[A][X]
+
+##Guild_Mervyn_Dialogue
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Mervyn]
+Mervyn here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Mervyn]
+accept here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Mervyn]
+deny here[A][X]
+##
+[FarLeft][Guildmaster][Left][Nathan][MidRight][Mervyn]
+return here[A][X]

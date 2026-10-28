@@ -4,6 +4,7 @@ typedef struct BuffDebuff_Struct BuffDebuff_Struct;
 void UnitApplyBuff(struct Unit* unit,u8 buffID);
 void UnitApplyDebuff(struct Unit* unit,u8 buffID);
 void UnitClearBuffs(struct Unit* unit);
+void UnitClearBuffsDebuffs(struct Unit* unit);
 int UnitHasABuff(struct Unit* unit);
 int UnitHasADebuff(struct Unit* unit);
 void UnitClearDebuffs(struct Unit* unit);

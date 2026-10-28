@@ -214,9 +214,7 @@ UNIT MilitaryGeneric Hoplite 0x0 Level(20,NPC,0) [9,8] 0x0 0x0 0x0 0x0 [Ahlspies
 UNIT MilitaryGeneric Driver 0x0 Level(20,NPC,0) [10,8] 0x0 0x0 0x0 0x0 [Dominance] AttackInRangeAI
 UNIT MilitaryGeneric Hoplite 0x0 Level(20,NPC,0) [11,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
 UNIT MilitaryGeneric Sniper 0x0 Level(20,NPC,0) [4,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
-UNIT MilitaryGeneric Warlock 0x0 Level(20,NPC,0) [5,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
 UNIT MilitaryGeneric Sniper 0x0 Level(20,NPC,0) [16,3] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
-UNIT MilitaryGeneric Warlock 0x0 Level(20,NPC,0) [15,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
 UNIT
 
 

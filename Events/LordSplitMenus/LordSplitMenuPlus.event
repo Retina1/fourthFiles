@@ -126,5 +126,15 @@ MenuOption(Class_Brawler, ClassDesc_Brawler, 0)
 MenuOption(Class_Hunter, ClassDesc_Hunter, 0)
 MenuTerminator
 
+ALIGN 4
+RecruitSkyMenu:
+MenuDefinition(8, 8, 14, 0, 1, RecruitSkyMenuOptions)
+
+ALIGN 4
+RecruitSkyMenuOptions:
+MenuOption(Class_SkyKnight, ClassDesc_SkyKnight, 0)
+MenuOption(Class_ScaleKnight, ClassDesc_ScaleKnight, 0)
+MenuTerminator
+
 
 #include "LordSplitMenuPlus.lyn.event"

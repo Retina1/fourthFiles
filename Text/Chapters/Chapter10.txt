@@ -1,0 +1,45 @@
+
+##C10GeorgeDeath
+[MidLeft][George]
+Are[...] Are you proud[N]
+of me[...] Belvarus[...]?[AN][EyesClose]
+I[...] I did what[...][N]
+no man[...] before[...][AN]
+I am[...] your proud[...] driver[...][N]
+Your[...] trail[...] blazer[...][A][X]
+
+##C10FourthRetreat
+[MidRight][Fourth]
+I overextended[...][AN]
+Apologies, but I[N]
+must fall back.[A][X]
+
+##C10SecondRetreat
+[MidRight][Second]
+A truly unthinkable[N]
+oversight[...][AN]
+How very unbecoming[N]
+of Asketa's finest.[AN]
+Shame as it is,[N]
+I must retreat.[A][X]
+
+##C10FirstRetreat
+[MidRight][First]
+This is but a[N]
+minor setback.[AN]
+Next I meet you,[N]
+heads will roll.[A][X]
+
+##C10AlvaRetreat
+[MidRight][Alva]
+Impressive. I can't[N]
+let you kill me,[AN]
+but you came closer[N]
+than most could.[A][X]
+
+##C10AuriRetreat
+[MidRight][Auri]
+I wasn't done[...][AN]
+Well, I don't wanna[N]
+die here or now.[AN]
+You win this round.[A][X]

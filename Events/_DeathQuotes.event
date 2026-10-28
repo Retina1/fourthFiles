@@ -42,7 +42,18 @@ ChapterDeathQuote(FreelanceGeneric,Chapter9,0x20,0x0)
 ChapterDeathQuote(Iseau,Chapter9,0x0,C9IseauDefeat)
 
 //c10
-ChapterDeathQuote(George,Chapter10,0x2,BenthusDeath)
+ChapterDeathQuote(George,Chapter10,0x2,C10GeorgeDeath)
+ChapterDeathQuote(NPCFourth,Chapter10,0x0,C10FourthRetreat)
+ChapterDeathQuote(Second,Chapter10,0x0,C10SecondRetreat)
+ChapterDeathQuote(First,Chapter10,0x0,C10FirstRetreat)
+ChapterDeathQuote(Alva,Chapter10,0x0,C10AlvaRetreat)
+ChapterDeathQuote(Auri,Chapter10,0x0,C10AuriRetreat)
+KillerDeathQuote(Natsuki,NPCFourth,Chapter10,0x0,Quest2_8x_KillBad)
+KillerDeathQuote(Natsuki,Second,Chapter10,0x0,Quest2_8x_KillBad)
+KillerDeathQuote(Natsuki,First,Chapter10,0x0,Quest2_8x_KillBad)
+KillerDeathQuote(Natsuki,Alva,Chapter10,0x0,Quest2_8x_KillBad)
+KillerDeathQuote(Natsuki,Auri,Chapter10,0x0,Quest2_8x_KillBad)
+ChapterDeathQuote(Natsuki,Chapter10,Quest2_8x_DoneFlag,Quest2_8x_Kill)
 //natsuki here, killer quotes for imperials beating natsuki (she won't join)
 
 //major bosses

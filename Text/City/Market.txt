@@ -142,6 +142,28 @@ A stuffed doll produced around[N]
 the founding of Asketa. It's in[N]
 alarmingly good condition.[X]
 
+//50 use shortmace
+##Visit9xMarket1 ^
+Longmace ([_5][_0][_0] Gold)[X]
+##Visit9xMarket1Desc
+That's a real long shortmace.[N]
+Like, wow. It's the longest[N]
+you've ever seen. Wild.[X]
+//spirit wrap
+##Visit9xMarket2 ^
+The Paper ([_9][_9][_9] Gold)[X]
+##Visit9xMarket2Desc
+An ordinary piece of paper,[N]
+given gravitas only through[N]
+mankind's understanding.[X]
+//alhspeiss
+##Visit9xMarket3 ^
+All the Spice ([_1][_0][_0][_0] Gold)[X]
+##Visit9xMarket3Desc
+I think you probably misheard[N]
+that. This is a lance, not some[N]
+kind of spice. Just clarifying.[X]
+
 //inedible leaf
 ##Visit10xMarket1 ^
 Lifeflow Salad ([_5][_5][_0] Gold)[X]

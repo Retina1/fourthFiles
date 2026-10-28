@@ -22,8 +22,8 @@ Destiny[X]
 Haven of[N]
 Seared Prayers[X]
 ##Floor_S3F2
-Cliffsides of[N]
-Contrition[X]
+A Ruined Maze[N]
+of White Sand[X]
 ##Floor_S3F3
 Hailstorm of[N]
 Empty Dreams[X]

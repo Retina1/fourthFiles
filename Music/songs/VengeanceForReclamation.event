@@ -21,7 +21,7 @@ VengeanceForReclamation_001:
 //  #01 //000   ----------------------------------------
  BYTE   KEYSH   VengeanceForReclamation_key+0
  BYTE   TEMPO   68*VengeanceForReclamation_tbs/2
- BYTE   VOICE   81
+ BYTE   VOICE   30
  BYTE   PAN   c_v-17
  BYTE   VOL   39*VengeanceForReclamation_mvl/mxv
  BYTE   PAN   c_v-17

@@ -26,6 +26,13 @@ ORG 0x33686
 BYTE 0x00 0x22
 POP
 
+//bishop shine
+PUSH
+ORG $225B68
+POIN $858352C
+WORD 0x00060006
+POP
+
 //eliwood shing
 PUSH
 ORG $225AF4

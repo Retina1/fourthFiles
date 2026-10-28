@@ -1,5 +1,6 @@
 #include "Config.event"
 
+#define MagVsDefArt 3
 #define StrVsResArt 2
 #define MagicArt 1
 #define PhysArt 0

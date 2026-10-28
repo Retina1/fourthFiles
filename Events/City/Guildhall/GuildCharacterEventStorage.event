@@ -153,6 +153,29 @@ GuildRecruitEvent(Ammi_RecruitEvent,Ammi)
 GuildRecruitEvent(Sarina_RecruitEvent,Sarina)
 GuildRecruitEvent(Alexandra_RecruitEvent,Alexandra)
 GuildRecruitEvent(Cor_RecruitEvent,Cor)
+//sky knights
+GuildRecruitEvent(June_RecruitEvent,June)
+GuildRecruitEvent(Eneida_RecruitEvent,Eneida)
+GuildRecruitEvent(Patrice_RecruitEvent,Patrice)
+GuildRecruitEvent(Melody_RecruitEvent,Melody)
+GuildRecruitEvent(Anastas_RecruitEvent,Anastas)
+GuildRecruitEvent(Peregrine_RecruitEvent,Peregrine)
+GuildRecruitEvent(Mervyn_RecruitEvent,Mervyn)
+//scale knights
+GuildRecruitEvent(Atilius_RecruitEvent,Atilius)
+GuildRecruitEvent(Celeste_RecruitEvent,Celeste)
+GuildRecruitEvent(Merilee_RecruitEvent,Merilee)
+GuildRecruitEvent(Shasso_RecruitEvent,Shasso)
+GuildRecruitEvent(River_RecruitEvent,River)
+GuildRecruitEvent(Hocante_RecruitEvent,Hocante)
+GuildRecruitEvent(Witold_RecruitEvent,Witold)
+//apothecary
+//encircler
+//caller
+//noble
+//duelist
+//driver
+//automaton
 
 #define RecruitCond(unit,flag1,flag2) "PUSH; ORG RecruitUnlocks+(unit*4); SHORT flag1 flag2; POP"
 //rat 6 flag hides units that don't exist
@@ -301,9 +324,9 @@ RecruitCond(Sarina,SpecialUnlockedFlag,0x0)
 RecruitCond(Alexandra,SpecialUnlockedFlag,0x0)
 RecruitCond(Cor,SpecialUnlockedFlag,0x0)
 //sky
-RecruitCond(June,SkyUnlockedFlag,0x0)
+RecruitCond(June,SkyUnlockedFlag,Stratum3DoneFlag)
 RecruitCond(Eneida,SkyUnlockedFlag,0x0)
-RecruitCond(Patrice,SkyUnlockedFlag,0x0)
+RecruitCond(Patrice,SkyUnlockedFlag,Chapter10DoneFlag)
 RecruitCond(Melody,SkyUnlockedFlag,0x0)
 RecruitCond(Anastas,SkyUnlockedFlag,0x0)
 RecruitCond(Peregrine,SkyUnlockedFlag,0x0)
@@ -311,9 +334,9 @@ RecruitCond(Mervyn,SkyUnlockedFlag,0x0)
 //scl
 RecruitCond(Atilius,SkyUnlockedFlag,0x0)
 RecruitCond(Celeste,SkyUnlockedFlag,0x0)
-RecruitCond(Merilee,SkyUnlockedFlag,0x0)
+RecruitCond(Merilee,SkyUnlockedFlag,Stratum3DoneFlag)
 RecruitCond(Shasso,SkyUnlockedFlag,0x0)
-RecruitCond(River,SkyUnlockedFlag,0x0)
+RecruitCond(River,SkyUnlockedFlag,Chapter10DoneFlag)
 RecruitCond(Hocante,SkyUnlockedFlag,0x0)
 RecruitCond(Witold,SkyUnlockedFlag,0x0)
 //apo

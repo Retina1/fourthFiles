@@ -927,7 +927,7 @@ swing that poisons.[X]
 Flame Smash: A swing[N]
 that targets Res.[X]
 ##
-Smiting Smash: Strike, then[N]
+Smiteful Smash: Strike, then[N]
 push target away a space.[X]
 ##
 Calamitous Smash: A swing[N]

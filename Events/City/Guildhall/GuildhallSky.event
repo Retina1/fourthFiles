@@ -1,9 +1,133 @@
 ﻿//Made by Camtech075 of SerenesForest
 //Modified by Nintenlord
 
-Recruit_Atilius:
-UNIT Atilius 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortsword] NoAI
+Recruit_June:
+UNIT June 0x0 0x1 Level(15,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Omiyari] NoAI
+UNIT
+Recruit_Eneida:
+UNIT Eneida 0x0 0x1 Level(12,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [Sarissa] NoAI
+UNIT
+Recruit_Patrice:
+UNIT Patrice 0x0 0x1 Level(13,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [HandSpear] NoAI
+UNIT
+Recruit_Melody:
+UNIT Melody 0x0 0x1 Level(7,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [Shortspear,Bravant] NoAI
+UNIT
+Recruit_Anastas:
+UNIT Anastas 0x0 0x1 Level(10,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Pike] NoAI
+UNIT
+Recruit_Peregrine:
+UNIT Peregrine 0x0 0x1 Level(5,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Shieldlance] NoAI
+UNIT
+Recruit_Mervyn:
+UNIT Mervyn 0x0 0x1 Level(8,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Partizan] NoAI
 UNIT
 
+Recruit_Atilius:
+UNIT Atilius 0x0 0x1 Level(4,NPC,0) [3,8] 0x0 0x0 0x0 0x0 [Shortmace,FlameScroll] NoAI
+UNIT
+Recruit_Celeste:
+UNIT Celeste 0x0 0x1 Level(11,NPC,0) [7,10] 0x0 0x0 0x0 0x0 [HandAxe] NoAI
+UNIT
+Recruit_Merilee:
+UNIT Merilee 0x0 0x1 Level(16,NPC,0) [10,6] 0x0 0x0 0x0 0x0 [Greataxe] NoAI
+UNIT
+Recruit_Shasso:
+UNIT Shasso 0x0 0x1 Level(12,NPC,0) [11,12] 0x0 0x0 0x0 0x0 [SerratedAxe] NoAI
+UNIT
+Recruit_River:
+UNIT River 0x0 0x1 Level(9,NPC,0) [1,12] 0x0 0x0 0x0 0x0 [Yue,Medica] NoAI
+UNIT
+Recruit_Hocante:
+UNIT Hocante 0x0 0x1 Level(7,NPC,0) [13,10] 0x0 0x0 0x0 0x0 [Broadaxe] NoAI
+UNIT
+Recruit_Witold:
+UNIT Witold 0x0 0x1 Level(10,NPC,0) [5,7] 0x0 0x0 0x0 0x0 [Yue,Vulnerary] NoAI
+UNIT
+
+
+June_RecruitEvent:
+GuildRecruit(June,Guild_June_Dialogue,0x20)
+EndEvent
+Eneida_RecruitEvent:
+GuildRecruit(Eneida,Guild_Eneida_Dialogue,0x21)
+EndEvent
+Patrice_RecruitEvent:
+GuildRecruit(Patrice,Guild_Patrice_Dialogue,0x22)
+EndEvent
+Melody_RecruitEvent:
+GuildRecruit(Melody,Guild_Melody_Dialogue,0x23)
+EndEvent
+Anastas_RecruitEvent:
+GuildRecruit(Anastas,Guild_Anastas_Dialogue,0x24)
+EndEvent
+Peregrine_RecruitEvent:
+GuildRecruit(Peregrine,Guild_Peregrine_Dialogue,0x25)
+EndEvent
+Mervyn_RecruitEvent:
+GuildRecruit(Mervyn,Guild_Mervyn_Dialogue,0x26)
+EndEvent
+
+Atilius_RecruitEvent:
+GuildRecruit(Atilius,Guild_Atilius_Dialogue,0x20)
+EndEvent
+Celeste_RecruitEvent:
+GuildRecruit(Celeste,Guild_Celeste_Dialogue,0x21)
+EndEvent
+Merilee_RecruitEvent:
+GuildRecruit(Merilee,Guild_Merilee_Dialogue,0x22)
+EndEvent
+Shasso_RecruitEvent:
+GuildRecruit(Shasso,Guild_Shasso_Dialogue,0x23)
+EndEvent
+River_RecruitEvent:
+GuildRecruit(River,Guild_River_Dialogue,0x24)
+EndEvent
+Hocante_RecruitEvent:
+GuildRecruit(Hocante,Guild_Hocante_Dialogue,0x25)
+EndEvent
+Witold_RecruitEvent:
+GuildRecruit(Witold,Guild_Witold_Dialogue,0x26)
+EndEvent
+
+GuildhallLoadSkyKnights:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(June,Recruit_June,0x1,Stratum3DoneFlag)
+GuildLoad(Eneida,Recruit_Eneida,0x2)
+GuildLoad(Patrice,Recruit_Patrice,0x3,Chapter10DoneFlag)
+GuildLoad(Melody,Recruit_Melody,0x4)
+GuildLoad(Anastas,Recruit_Anastas,0x5)
+GuildLoad(Peregrine,Recruit_Peregrine,0x6)
+GuildLoad(Mervyn,Recruit_Mervyn,0x7)
+FADU 10
+ENDA
+GuildhallLoadScaleKnights:
+FADI 10; CLEN 0; LOAD1 0x0 BehindCounterGerson; LOAD1 0x0 GuildmasterCalledIn
+GuildLoadFlagReset
+GuildLoad(Atilius,Recruit_Atilius,0x1)
+GuildLoad(Celeste,Recruit_Celeste,0x2)
+GuildLoad(Merilee,Recruit_Merilee,0x3,Stratum3DoneFlag)
+GuildLoad(Shasso,Recruit_Shasso,0x4)
+GuildLoad(River,Recruit_River,0x5,Chapter10DoneFlag)
+GuildLoad(Hocante,Recruit_Hocante,0x6)
+GuildLoad(Witold,Recruit_Witold,0x7)
+FADU 10
+ENDA
+
 GuildhallSkyMenuEvent:
+CallMenu(RecruitSkyMenu)
+SVAL 0x1 0
+BNE 0x2000 0xc 0x1
+CALL GuildhallLoadSkyKnights
+GOTO 0x2008
+LABEL 0x2000
+SVAL 0x1 1
+BNE 0x2001 0xc 0x1
+CALL GuildhallLoadScaleKnights
+LABEL 0x2001
+GOTO 0x2008
+LABEL 0x2003
+SystemText(ErrorHandlerText)
+LABEL 0x2008
 ENDA

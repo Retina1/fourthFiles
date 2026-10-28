@@ -88,6 +88,7 @@ CharacterEvent(0x12,TownIoriaTalk,Nathan,Ioria)
 CharacterEvent(StandardUnlockedFlag,BuyStandardClasses,Nathan,Second)
 //this should be fine
 CharacterEvent(MagusUnlockedFlag,UnlockMagusClasses,Nathan,Lucien)
+CharacterEvent(SkyUnlockedFlag,UnlockSkyshroudClasses,Nathan,Witold)
 //yeah i'm not making this take up space here
 #include "Guildhall/GuildCharacterEventStorage.event"
 END_MAIN
@@ -257,6 +258,7 @@ UNIT
 
 #define LoadVendorSecond "CHECK_EVENTID Chapter15DoneFlag; BNE 0x3333 0xc 0x0; CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3333 0xc 0x0; CHECK_EVENTID StandardUnlockedFlag; BNE 0x3333 0xc 0x0; LOAD1 0x0 TownVendorSecondUnit; ENUN; LABEL 0x3333"
 #define LoadMagusUnlocker "CHECK_EVENTID Chapter3DoneFlag; BEQ 0x3334 0xc 0x0; CHECK_EVENTID MagusUnlockedFlag; BNE 0x3334 0xc 0x0; LOAD1 0x0 MagusUnlockerUnit; ENUN; LABEL 0x3334"
+#define LoadSkyshroudUnlocker "CHECK_EVENTID SkyUnlockedFlag; BNE 0x3335 0xc 0x0; LOAD1 0x0 MinisterParkWitold; ENUN; LABEL 0x3335"
 
 //#define LoadAtChapterIfAlive(unit,flagID,unitGroup,label) "CHECK_ALIVE unit; BEQ label 0xc 0x0; CHECK_EVENTID flagID; BEQ label 0xc 0x0; CHECK_EVENTID flagID+1; BNE label 0xc 0x0; LOAD1 0x0 unitGroup; LABEL label"
 #define AddSigil(x,y) "AddTrap(SigilTrapID,x,y)"
@@ -283,7 +285,7 @@ UNIT
 #define LoadSquareUnits "LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,Chapter8SquareUnits,Chapter9SquareUnits,0,0,0,0,0,0,0,0)"
 #define LoadPassUnits "LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,NorthernPassUnitsS1,NorthernPassUnitsC5,NorthernPassUnitsC8,NorthernPassUnitsC9,0,0,0,0,0,0,0,0)"
 #define LoadRowUnits "LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ShadyRowUnitsC5,ShadyRowUnitsC8,ShadyRowUnitsC9,0,0,0,0,0,0,0,0)"
-#define LoadParkUnits "LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DummyUnits,DummyUnits,MinisterParkUnitsC9,0,0,0,0,0,0,0,0)"
+#define LoadParkUnits "LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DummyUnits,DummyUnits,MinisterParkUnitsC9,0,0,0,0,0,0,0,0); LoadSkyshroudUnlocker"
 
 ALIGN 4
 
@@ -564,6 +566,28 @@ MUSC Song_FaithIsMyPillar
 Text(UnlockMagusClassesPity)
 SystemText(UnlockMagusClassesYesSys)
 MUSC Song_DrawHeroes
+LABEL 0x2
+EndEvent
+
+UnlockSkyshroudClasses:
+ASMC GetUniqueAxesOnHand|1
+BEQ 0x1 0xc 0x0
+Text(UnlockSkyClassesMaybe)
+SystemText(GiveUpYourAxes)
+IfNoSelectedGoto(0x3)
+ASMC GoodbyeAxes|1
+MUSC Song_FaithIsMyPillar
+Text(UnlockSkyClassesYes)
+SystemText(UnlockSkyClassesYesSys)
+MUSC Song_VastLands
+GOTO 0x2
+LABEL 0x1
+Text(UnlockSkyClassesNo)
+GOTO 0x4
+LABEL 0x3
+Text(DoNotGiveUpAxes)
+LABEL 0x4
+ENUF SkyUnlockedFlag
 LABEL 0x2
 EndEvent
 
