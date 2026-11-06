@@ -26,6 +26,22 @@ ALIGN 4
 MapData:
   #incbin "CloudedWastes3_data.dmp"
 
-SetChapterData(Stratum3F3, Frontier1OBJ, 0, Frontier1PAL, FrontierCONFIG, Stratum3F3MapID, MapData, 0, 0, 0)
+SetChapterData(Stratum3F3, Frontier1OBJ, 0, Frontier1PAL, FrontierCONFIG, Stratum3F3MapID, MapData, 0, 0, Stratum3F3MapChangeID)
+
+ALIGN 4
+Map_Change_0:
+  SHORT $4
+
+ALIGN 4
+Map_Change_1:
+  SHORT $4
+
+ALIGN 4
+MapChangesData:
+  TileMap(0, 1, 6, 1, 1, Map_Change_0)
+  TileMap(1, 15, 22, 1, 1, Map_Change_1)
+  TileMapEnd
+
+EventPointerTable(Stratum3F3MapChangeID, MapChangesData)
 
 }

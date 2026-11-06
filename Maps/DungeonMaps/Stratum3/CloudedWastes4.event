@@ -26,6 +26,37 @@ ALIGN 4
 MapData:
   #incbin "CloudedWastes4_data.dmp"
 
-SetChapterData(Stratum3F4, Frontier1OBJ, 0, Frontier1PAL, FrontierCONFIG, Stratum3F4MapID, MapData, 0, 0, 0)
+SetChapterData(Stratum3F4, Frontier1OBJ, 0, Frontier1PAL, FrontierCONFIG, Stratum3F4MapID, MapData, 0, 0, Stratum3F4MapChangeID)
+
+ALIGN 4
+Map_Change_0:
+  SHORT $0 $2B0 $2B0 $2B0 $2B0 $2B0 $0 $2B0 $248 $2B0 $248 $2B0 $2B0 $2B0 $2C8 $2B0 $2C8 $2B0 $2B0 $2B0 $2B0 $248 $2B0 $2B0 $0 $2B0 $2B0 $2C8 $2B0 $2B0 $0 $2B0 $2B0 $2B0 $2B0 $2B0 $0 $0 $0 $0 $2B0 $2B0 $0 $0 $0 $0 $2B0 $2B0
+
+ALIGN 4
+Map_Change_1:
+  SHORT $0 $2B0 $0 $0 $2B0 $0 $2B0 $2B0 $2B0 $2B0 $2B0 $2B0 $2B0 $2B0 $0 $2B0 $2B0 $0 $2B0 $2B0 $0 $2B0 $2B0 $2B0 $2B0 $248 $2B0 $2B0 $2C8 $2B0 $2B0 $248 $2B0 $2B0 $2C8 $2B0 $2B0 $248 $2B0 $2B0 $2C8 $2B0 $2B0 $2B0 $0 $2B0 $0 $0 $2B0 $2B0 $2B0 $2B0 $2B0 $2B0 $2B0 $0 $0
+
+ALIGN 4
+Map_Change_2:
+  SHORT $2AC $84 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $0 $2B0 $0 $2B0 $2B0 $0 $2B0 $2B0 $2B0 $2B0
+
+ALIGN 4
+Map_Change_3:
+  SHORT $4
+
+ALIGN 4
+Map_Change_4:
+  SHORT $4
+
+ALIGN 4
+MapChangesData:
+  TileMap(0, 4, 1, 6, 8, Map_Change_0)
+  TileMap(1, 2, 1, 3, 19, Map_Change_1)
+  TileMap(2, 0, 1, 3, 22, Map_Change_2)
+  TileMap(3, 1, 1, 1, 1, Map_Change_3)
+  TileMap(4, 13, 3, 1, 1, Map_Change_4)
+  TileMapEnd
+
+EventPointerTable(Stratum3F4MapChangeID, MapChangesData)
 
 }

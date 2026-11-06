@@ -1,4 +1,5 @@
 //postcombat hooks here in skillsys
+void ApplyAilmentAOEs(struct Unit* actor, struct Unit* target);
 void RunPostCombatSkills(void)
 {
 	if (gActionData.unitActionType == UNIT_ACTION_COMBAT) {
@@ -14,6 +15,7 @@ void RunPostCombatSkills(void)
 		ApplyRallyingThrust(attacker,defender);
 		CombatArtPostbattleFuncWrapper(attacker, defender);
 		ApplyBuffDebuffAOEs(attacker, defender);
+		ApplyAilmentAOEs(attacker, defender);
 		
 		//hunter breaks stealth here
 		if (UNIT_HAS_SKILL(gActiveUnit,SRV,skill_141) && (gActiveUnit->classSkillState & 1)) {

@@ -142,6 +142,8 @@ ToxicClaw
 Furysong
 SealGleam
 MaulClaw
+Petrigaze
+Petrigas
 ScissorWrath 0x99
 EnemyWatching
 AtrocityScales

@@ -237,6 +237,9 @@ UNIT
 Chapter9SquareUnits:
 UNIT Helman 0x0 0x0 Level(1,Ally,0) [3,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
+Chapter10SquareUnits:
+UNIT Galvin 0x0 0x0 Level(1,Ally,0) [3,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
 
 TownVendorSecondUnit:
 UNIT Second 0x0 0x0 Level(22,NPC,0) [1,4] 0x0 0x0 0x0 0x0 [Shieldlance,Longinus] NoAI
@@ -282,7 +285,7 @@ UNIT
 #define MovementSetter "SetUnitStatus(Nathan,MovBonus,15); SetUnitStatusAll(0x2*0x100+0xff , MovBonus, (-15), AnyDeployed, PlayerArmy,AnyClass,AnyRange,AnyItem)"
 #define MovementUnsetter "SetUnitStatusAll(0x1*0x100+0xff , MovBonus, 0, AnyDeployed, PlayerArmy,AnyClass,AnyRange,AnyItem)"
 
-#define LoadSquareUnits "LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,Chapter8SquareUnits,Chapter9SquareUnits,0,0,0,0,0,0,0,0)"
+#define LoadSquareUnits "LoadUnitsByVisit(Chapter2SquareUnits,Chapter3SquareUnits,Stratum1SquareUnits,Chapter5SquareUnits,Chapter8SquareUnits,Chapter9SquareUnits,Chapter10SquareUnits,0,0,0,0,0,0,0)"
 #define LoadPassUnits "LoadUnitsByVisit(DummyUnits,NorthernPassUnitsC3,NorthernPassUnitsS1,NorthernPassUnitsC5,NorthernPassUnitsC8,NorthernPassUnitsC9,0,0,0,0,0,0,0,0)"
 #define LoadRowUnits "LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,ShadyRowUnitsC5,ShadyRowUnitsC8,ShadyRowUnitsC9,0,0,0,0,0,0,0,0)"
 #define LoadParkUnits "LoadUnitsByVisit(DummyUnits,DummyUnits,DummyUnits,DummyUnits,DummyUnits,MinisterParkUnitsC9,0,0,0,0,0,0,0,0); LoadSkyshroudUnlocker"
@@ -314,7 +317,7 @@ LABEL 0x3
 ENDA
 
 IntroTexts:
-RunEventByVisit(Chapter2CityOpen,Chapter3CityOpen,Stratum1CityOpen,Chapter5CityOpen,Chapter8CityOpen,Chapter9CityOpen,0,0,0,0,0,0,0,0)
+RunEventByVisit(Chapter2CityOpen,Chapter3CityOpen,Stratum1CityOpen,Chapter5CityOpen,Chapter8CityOpen,Chapter9CityOpen,Chapter10CityOpen,0,0,0,0,0,0,0)
 ENDA
 
 DisplayCurrentCityVisit:
@@ -342,7 +345,7 @@ CALL LoadHirschringSigils
 CallPreps
 CALL LoadPostPrepsUnits
 FADU 10
-RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,City05_PostPreps,City08_PostPreps,City09_PostPreps,0,0,0,0,0,0,0,0)
+RunTextByVisit(City02_PostPreps,City03_PostPreps,CityS1_PostPreps,City05_PostPreps,City08_PostPreps,City09_PostPreps,FillerDialogue,0,0,0,0,0,0,0)
 GiveMoneyByVisit(2000,2500,1500,3000,5000,3000,4000,6000,10000,8000,15000,20000,20000,25000)
 CHECK_EVENTID Chapter3DoneFlag
 BNE 0x1 0xc 0x0
@@ -357,7 +360,7 @@ EndingSceneToggles
 EndingMapFlags
 //MovementUnsetter 
 //add route split logic
-RunEventByVisit(Chapter2CityEnd,Chapter3CityEnd,Stratum1CityEnd,Chapter5CityEnd,Chapter8CityEnd,Chapter9CityEnd,0,0,0,0,0,0,0,0)
+RunEventByVisit(Chapter2CityEnd,Chapter3CityEnd,Stratum1CityEnd,Chapter5CityEnd,Chapter8CityEnd,Chapter9CityEnd,Chapter10CityEnd,0,0,0,0,0,0,0)
 MoveToNextChapter(Chapter3,Stratum1F1,Chapter4,Chapter6,Chapter9,Chapter10,Stratum3F1,Chapter11,Chapter14,Chapter16)
 ENDA
 

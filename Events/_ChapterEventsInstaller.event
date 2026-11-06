@@ -497,6 +497,68 @@ FILL 0xff*0x4
 {
 #include "Dungeons/ShimmeringMines3.event"
 }
+
+//use location and recruitment flags to track between f1/2
+//11 f1->f2 transitions
+//18 f2->f1 transitions
+//2 f1 chests
+//6 f2 chests
+#define WastesFloorSwapFlagTrue 0xe0
+#define WastesFloorSwapFlag1 0xe1
+#define WastesFloorSwapFlag2 0xe2
+#define WastesFloorSwapFlag3 0xe3
+#define WastesFloorSwapFlag4 0xe4
+#define WastesFloorSwapFlag5 0xe5
+#define WastesFloorSwapFlag6 0xe6
+#define WastesFloorSwapFlag7 0xe7
+#define WastesFloorSwapFlag8 0xe8
+#define WastesFloorSwapFlag9 0xe9
+#define WastesFloorSwapFlag10 0xea
+#define WastesFloorSwapFlag11 0xeb
+#define WastesFloorSwapFlag12 0xf0
+#define WastesFloorSwapFlag13 0xf1
+#define WastesFloorSwapFlag14 0xf2
+#define WastesFloorSwapFlag15 0xf3
+#define WastesFloorSwapFlag16 0xf4
+#define WastesFloorSwapFlag17 0xf5
+#define WastesFloorSwapFlag18 0x128
+
+#define WastesChestFlag1 0xd0
+#define WastesChestFlag2 0xd1
+#define WastesChestFlag3 0xd2
+#define WastesChestFlag4 0xd3
+#define WastesChestFlag5 0xd4
+#define WastesChestFlag6 0xd5
+#define WastesChestFlag7 0xd6
+#define WastesChestFlag8 0xd7
+
+#define WastesEncounterFlag1 0xd8
+#define WastesEncounterFlag2 0xd9
+#define WastesEncounterFlag3 0xda
+#define WastesEncounterFlag4 0xdb
+#define WastesEncounterFlag5 0xdc
+#define WastesEncounterFlag6 0xdd
+#define WastesEncounterFlag7 0xde
+
+#define ResetWastesFloorSwapFlags "ENUF WastesFloorSwapFlag1; ENUF WastesFloorSwapFlag2; ENUF WastesFloorSwapFlag3; ENUF WastesFloorSwapFlag4; ENUF WastesFloorSwapFlag5; ENUF WastesFloorSwapFlag6; ENUF WastesFloorSwapFlag7; ENUF WastesFloorSwapFlag8; ENUF WastesFloorSwapFlag9; ENUF WastesFloorSwapFlag10; ENUF WastesFloorSwapFlag11; ENUF WastesFloorSwapFlag12; ENUF WastesFloorSwapFlag13; ENUF WastesFloorSwapFlag14; ENUF WastesFloorSwapFlag15; ENUF WastesFloorSwapFlag16; ENUF WastesFloorSwapFlag17; ENUF WastesFloorSwapFlag18" 
+#define ResetWastesProgressFlags "ENUF WastesChestFlag1; ENUF WastesChestFlag2; ENUF WastesChestFlag3; ENUF WastesChestFlag4; ENUF WastesChestFlag5; ENUF WastesChestFlag6; ENUF WastesChestFlag7; ENUF WastesChestFlag8; ENUF WastesEncounterFlag1; ENUF WastesEncounterFlag2; ENUF WastesEncounterFlag3; ENUF WastesEncounterFlag4; ENUF WastesEncounterFlag5; ENUF WastesEncounterFlag6; ENUF WastesEncounterFlag7"
+#define InitializeNathanByFlag(flag,x,y) "CHECK_EVENTID flag; BEQ flag 0xc 0x0; InitializeNathan(x,y); ENUF flag; LABEL flag"
+#define WastesChest(flag,chest) "CHECK_EVENTID flag; BEQ flag 0xc 0x0; TILECHANGE chest; LABEL flag"
+
+{
+#include "Dungeons/CloudedWastes1.event"
+}
+{
+#include "Dungeons/CloudedWastes2.event"
+}
+{
+#include "Dungeons/CloudedWastes3.event"
+}
+{
+#include "Dungeons/CloudedWastes4.event"
+}
+
+
 {
 #include "Dungeons/DrowningHollows8.event"
 }

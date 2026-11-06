@@ -68,7 +68,17 @@ Maul Claw[X]
 ##Desc_MaulClaw ^
 A swift and vicious pair of claws.[N]
 Doubles strikes in combat.[X]
-
+##Name_Petrigaze
+Petrigaze[X]
+##Desc_Petrigaze ^
+A baneful stare that calcifies flesh.[N]
+Base Petrify Affliction Rate: [_5][_5]%.[X]
+##Name_Petrigas
+Petrigas[X]
+##Desc_Petrigas ^
+A baneful gas that calcifies flesh.[N]
+Base Petrify Affliction Rate: [_5][_5]%.[N]
+AOE Inf. in 3 Rng of foe on initiation.[X]
 
 ##Name_Voltage
 Voltage[X]

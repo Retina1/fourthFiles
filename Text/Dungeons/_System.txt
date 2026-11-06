@@ -3,6 +3,18 @@ Proceed to next floor?[N]
 There's no turning back.[N]
 [No][X]
 
+##PitfallTrapMessage
+As you step forward,[N]
+the floor gives way![A][X]
+
+##CloudedWastesTileChange
+As you step forward, the[N]
+ground beneath you shifts.[AN]
+An arrangement of floating[N]
+tiles appears underfoot,[AN]
+inviting you to cross over[N]
+the white abyss below.[A][X]
+
 ##CompleteDungeonSys
 Finish the current stratum[N]
 and proceed with the story?[N]

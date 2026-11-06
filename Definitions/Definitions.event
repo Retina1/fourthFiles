@@ -52,6 +52,8 @@
 #define RatatoskrWin5 0xb5
 #define RatatoskrWin6 0xb6
 
+//0xd0-0xdf tentatively for dungeons
+
 #define LocationFlagHirschringSquare 0xe0
 #define LocationFlagGuildhall 0xe1
 #define LocationFlagBlacksmith 0xe2

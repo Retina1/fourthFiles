@@ -142,6 +142,8 @@
 #define Furysong 0x8E
 #define SealGleam 0x8F
 #define MaulClaw 0x90
+#define Petrigaze 0x91
+#define Petrigas 0x92
 #define ScissorWrath 0x99
 #define EnemyWatching 0x9A
 #define AtrocityScales 0x9B

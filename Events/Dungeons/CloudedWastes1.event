@@ -1,0 +1,349 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Stratum3F1EventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene Stairs2_4
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(HealScroll,0,12,WastesChestFlag1)
+Chest(Bluntblade,7,5,WastesChestFlag2)
+END_MAIN
+
+
+MiscBasedEvents:
+AFEV 0x0 MoveResetter 0x6
+AreaEvent(0x0,Stairs2_15,2,15)
+AreaEvent(0x0,Stairs13_13,13,13)
+AreaEvent(0x0,Stairs15_12,15,12)
+AreaEvent(0x0,Stairs17_13,17,13)
+AreaEvent(0x0,Stairs6_10,6,10)
+AreaEvent(0x0,Stairs8_10,8,10)
+AreaEvent(0x0,Stairs2_7,2,7)
+AreaEvent(0x0,Stairs14_6,14,6)
+AreaEvent(0x0,Stairs2_4,2,4)
+AreaEvent(0x0,Stairs16_3,16,3)
+AreaEvent(0x0,Stairs6_0,6,0)
+AreaEvent(WastesEncounterFlag1,Encounter1,3,19,3,21)
+AreaEvent(WastesEncounterFlag2,Encounter2,14,0,14,1)
+AreaEvent(WastesEncounterFlag3,EncounterFOE,7,5)
+AFEV WaitEventTrapsFlag UnitCleanup 0x6
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,20] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [5,20] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,21] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [5,21] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [4,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [5,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Enemies:
+UNIT MonsterGeneric Airfly 0x0 Level(12,Enemy,1) [0,20] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(12,Enemy,1) [1,19] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(12,Enemy,1) [2,18] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Gorgon 0x0 Level(12,Enemy,1) [0,18] 0x0 0x0 0x0 0x0 [Petrigaze] NoAI
+UNIT
+
+Encounter2Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [14,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [13,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [14,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter2Enemies:
+UNIT MonsterGeneric Airfly 0x0 Level(12,Enemy,1) [11,1] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(12,Enemy,1) [12,1] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT MonsterGeneric Airfly 0x0 Level(12,Enemy,1) [18,2] 0x0 0x0 0x0 0x0 [AirScales] NoAI
+UNIT MonsterGeneric Gorgon 0x0 Level(13,Enemy,1) [10,2] 0x0 0x0 0x0 0x0 [Petrigaze] NoAI
+UNIT MonsterGeneric Gorgon 0x0 Level(13,Enemy,1) [19,3] 0x0 0x0 0x0 0x0 [Petrigaze] NoAI
+UNIT
+
+EncounterFOEUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EncounterFOEEnemies:
+UNIT FOEUnit Gassergon 0x0 Level(15,Enemy,1) [7,4] 0x0 0x0 0x0 0x0 [Petrigas,SappingAura,FrailtyAura] NoAI
+UNIT MonsterGeneric Wightsworn 0x0 Level(13,Enemy,1) [6,5] 0x0 0x0 0x0 0x0 [Longinus] NoAI
+UNIT MonsterGeneric Wightsworn 0x0 Level(13,Enemy,1) [8,5] 0x0 0x0 0x0 0x0 [Longinus] NoAI
+UNIT MonsterGeneric Archrypt 0x0 Level(13,Enemy,1) [7,2] 0x0 0x0 0x0 0x0 [Greatbow] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+CHECK_EVENTID WastesFloorSwapFlagTrue
+BNE 0x1 0xc 0x0
+DifficultySwapper
+MUSC AmbientWindBirds
+ResetWastesFloorSwapFlags
+ResetWastesProgressFlags
+CleanTextNoMap(0x1f,FillerDialogue)
+CallPreps
+CLEA 0
+InitializeNathan(11,22)
+ENUT WaitEventTrapsFlag
+ENUT WastesFloorSwapFlagTrue
+ENUT 0x66
+GOTO 0x2
+LABEL 0x1
+ENUT WaitEventTrapsFlag
+WastesChest(WastesChestFlag1,0)
+WastesChest(WastesChestFlag2,1)
+InitializeNathanByFlag(WastesFloorSwapFlag1,18,22)
+InitializeNathanByFlag(WastesFloorSwapFlag2,7,20)
+InitializeNathanByFlag(WastesFloorSwapFlag3,5,17)
+InitializeNathanByFlag(WastesFloorSwapFlag4,1,13)
+InitializeNathanByFlag(WastesFloorSwapFlag5,8,12)
+InitializeNathanByFlag(WastesFloorSwapFlag6,11,12)
+InitializeNathanByFlag(WastesFloorSwapFlag7,6,11)
+InitializeNathanByFlag(WastesFloorSwapFlag8,0,10)
+InitializeNathanByFlag(WastesFloorSwapFlag9,15,10)
+InitializeNathanByFlag(WastesFloorSwapFlag10,17,9)
+InitializeNathanByFlag(WastesFloorSwapFlag11,7,7)
+InitializeNathanByFlag(WastesFloorSwapFlag12,11,7)
+InitializeNathanByFlag(WastesFloorSwapFlag13,0,6)
+InitializeNathanByFlag(WastesFloorSwapFlag14,4,6)
+InitializeNathanByFlag(WastesFloorSwapFlag15,9,5)
+InitializeNathanByFlag(WastesFloorSwapFlag16,12,5)
+InitializeNathanByFlag(WastesFloorSwapFlag17,7,3)
+InitializeNathanByFlag(WastesFloorSwapFlag18,4,2)
+LABEL 0x2
+EndEvent
+
+Encounter1:
+BeginCombatEncounter
+LOAD3 0x0 Encounter1Units; ENUN
+LoadUnitsByDifficulty(Encounter1Enemies,Encounter1Enemies,Encounter1Enemies)
+CreateArenaSingleCorner(7,15)
+FADU 16
+MUSC Song_InspectingTheResoundingWeapons
+SetMapBGM(Song_InspectingTheResoundingWeapons)
+EndEvent
+
+Encounter2:
+BeginCombatEncounter
+LOAD3 0x0 Encounter2Units; ENUN
+LoadUnitsByDifficulty(Encounter2Enemies,Encounter2Enemies,Encounter2Enemies)
+CreateArenaSingleCorner(8,4)
+FADU 16
+MUSC Song_InspectingTheResoundingWeapons
+SetMapBGM(Song_InspectingTheResoundingWeapons)
+EndEvent
+
+EncounterFOE:
+EVBIT_MODIFY 3
+SystemText(FOEWarning)
+IfNoSelectedGoto(0x1)
+BeginCombatEncounter
+LOAD3 0x0 EncounterFOEUnits; ENUN
+LoadUnitsByDifficulty(EncounterFOEEnemies,EncounterFOEEnemies,EncounterFOEEnemies)
+CreateArenaBorders(3,1,11,9)
+FADU 16
+MUSC Song_IsThatBloodThine
+SetMapBGM(Song_IsThatBloodThine)
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(8,5); FADU 16
+ENUF WastesEncounterFlag3
+LABEL 0x2
+EndEvent
+
+
+UnitCleanup:
+FADI 16
+ClearArenaBorders
+CLEA 0
+ResetNathan
+FADU 16
+MUSC Song_SandyBarrens
+SetMapBGM(Song_SandyBarrens)
+EndEvent
+
+Stairs2_15:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag1
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(2,16); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs13_13:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag2
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(13,14); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs15_12:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag3
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(15,13); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs17_13:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag4
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(17,14); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs6_10:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag5
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(6,11); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs8_10:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag6
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(8,11); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs2_7:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag7
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(2,8); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs14_6:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag8
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(14,7); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs2_4:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag9
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(2,5); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs16_3:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag10
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(16,4); FADU 16
+LABEL 0x2
+EndEvent
+
+Stairs6_0:
+EVBIT_MODIFY 3
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ENUT WastesFloorSwapFlag11
+MNC3 Stratum3F2
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(6,1); FADU 16
+LABEL 0x2
+EndEvent
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

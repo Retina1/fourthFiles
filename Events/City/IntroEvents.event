@@ -111,3 +111,8 @@ MUSC Song_OohWilfre
 CleanTextNoMap(0x0, City09_PrePreps)
 //visit palace either in intro or ending
 ENDA
+
+Chapter10CityOpen:
+MUSC Song_OohWilfre
+CleanTextNoMap(0x0, FillerDialogue)
+ENDA

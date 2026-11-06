@@ -87,6 +87,10 @@ MUSC Song_FlyingBattle
 Text(City09_EndText2)
 ENDA
 
+Chapter10CityEnd:
+MUSC Song_OohWilfre
+CleanTextNoMap(0x0, FillerDialogue)
+ENDA
 
 
 

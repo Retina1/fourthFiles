@@ -22,11 +22,11 @@ Destiny[X]
 Haven of[N]
 Seared Prayers[X]
 ##Floor_S3F2
-A Ruined Maze[N]
-of White Sand[X]
+A Step Into[N]
+Glassy Abyss[X]
 ##Floor_S3F3
-Hailstorm of[N]
-Empty Dreams[X]
+Growing Numb[N]
+in the Cold[X]
 ##Floor_S3F4
 The Boundless[N]
 Bitter Horizon[X]

@@ -86,6 +86,7 @@
 #define Vendor(offset,shopX,shopY)              "SHOP 0 offset [shopX,shopY] 0x17"
 #define SecretShop(offset,shopX,shopY)          "SHOP 0 offset [shopX,shopY] 0x18"
 #define Chest(item,chestX,chestY)               "CHES 0 item [chestX,chestY] 0x14"
+#define Chest(item,chestX,chestY,flag)          "CHES flag item [chestX,chestY] 0x14"
 #define ChestMoney(amountOfMoney,chestX,chestY)     "CHES 0 0x77+amountOfMoney*0x10000 [chestX,chestY] 0x14"
 #define Door(doorX,doorY)                       "DOOR 0 [doorX,doorY] 0x12"
 #define Door(eventID,doorX,doorY)               "DOOR eventID [doorX,doorY] 0x12"

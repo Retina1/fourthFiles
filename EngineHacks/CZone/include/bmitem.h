@@ -76,14 +76,14 @@ enum {
     IA_LOCK_4         = (1 << 18),
     IA_LOCK_5         = (1 << 19),
     IA_LOCK_6         = (1 << 20),
-    IA_LOCK_7         = (1 << 21),
+    IA_AOE_AILMENT    = (1 << 21),
     IA_SOUL_SHIELD    = (1 << 22),
 //    IA_PASSIVE_BOOSTS    = (1 << 23), idk maybe use it
     IA_SCALE_MAGIC    = (1 << 24),
 
     // Helpers
     IA_REQUIRES_WEXP = (IA_WEAPON | IA_STAFF),
-    IA_LOCK_ANY = (IA_LOCK_0 | IA_LOCK_1 | IA_LOCK_2 | IA_LOCK_3 | IA_LOCK_4 | IA_LOCK_5 | IA_LOCK_6 | IA_LOCK_7 | IA_UNUSABLE)
+    IA_LOCK_ANY = (IA_LOCK_0 | IA_LOCK_1 | IA_LOCK_2 | IA_LOCK_3 | IA_LOCK_4 | IA_LOCK_5 | IA_LOCK_6 | IA_UNUSABLE)
 };
 
 enum {

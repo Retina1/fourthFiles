@@ -1,0 +1,148 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Stratum3F4EventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(SightingLens,1,1)
+Chest(Bluntblade,13,3)
+END_MAIN
+
+
+MiscBasedEvents:
+AFEV 0x0 MoveResetter 0x6
+AreaEvent(0x0,EndingScene,19,4,19,5)
+AreaEvent(0x10,TileChangeEvent1,8,9,9,9)
+AreaEvent(0x11,TileChangeEvent2,4,3,4,4)
+AreaEvent(0x12,TileChangeEvent3,2,19)
+//AreaEvent(WastesEncounterFlag1,Encounter1,14,8,20,14)
+AFEV WaitEventTrapsFlag UnitCleanup 0x6
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [20,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Enemies:
+UNIT MonsterGeneric Archfly 0x0 Level(13,Enemy,1) [15,11] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+InitializeNathan(8,11)
+ENUT WaitEventTrapsFlag
+LABEL 0x2
+EndEvent
+
+Encounter1:
+BeginCombatEncounter
+LOAD3 0x0 Encounter1Units; ENUN
+LoadUnitsByDifficulty(Encounter1Enemies,Encounter1Enemies,Encounter1Enemies)
+CreateArenaBorders(13,8,21,15)
+FADU 16
+MUSC Song_InspectingTheResoundingWeapons
+SetMapBGM(Song_InspectingTheResoundingWeapons)
+EndEvent
+
+
+UnitCleanup:
+FADI 16
+ClearArenaBorders
+CLEA 0
+ResetNathan
+FADU 16
+MUSC Song_FrozenGrounds
+SetMapBGM(Song_FrozenGrounds)
+EndEvent
+
+TileChangeEvent1:
+SystemText(CloudedWastesTileChange)
+FADI 5
+TILECHANGE 0x0
+FADU 5
+EndEvent
+TileChangeEvent2:
+SystemText(CloudedWastesTileChange)
+FADI 5
+TILECHANGE 0x1
+FADU 5
+EndEvent
+TileChangeEvent3:
+SystemText(CloudedWastesTileChange)
+FADI 5
+TILECHANGE 0x2
+FADU 5
+EndEvent
+
+EndingScene:
+EVBIT_MODIFY 3
+SystemText(CompleteDungeonSys)
+IfNoSelectedGoto(0x1)
+EndingSceneToggles
+ENUT Stratum3DoneFlag
+ENUF WaitEventTrapsFlag
+ENUF 0x66
+MUSC Song_EditMode
+CleanTextNoMap(0x1f,FillerDialogue)
+MoveToChapter(HirschringSquare)
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(18,5); FADU 16
+LABEL 0x2
+EndEvent
+
+
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

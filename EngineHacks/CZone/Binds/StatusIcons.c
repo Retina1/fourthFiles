@@ -216,12 +216,6 @@ void PutUnitSpriteIconsOam(void)
     s8 displayRescueIcon = (GetGameClock() % 32) < 20 ? 1 : 0;
     s8 displayIcons = (GetGameClock() % 96) / 32; //gives 0, 1, 2
 
-/*
-    int poisonIconFrame = GetGameClock() / 8 % ARRAY_COUNT(sPoisonIconSprites);
-    int sleepIconFrame = GetGameClock() / 16 % ARRAY_COUNT(sSleepIconSprites);
-    int berserkIconFrame = GetGameClock() / 8 % ARRAY_COUNT(sBerserkIconSprites);
-*/
-
     if (CheckFlag(EVFLAG_HIDE_BLINKING_ICON) != 0)
         return;
 
@@ -291,26 +285,21 @@ void PutUnitSpriteIconsOam(void)
 		if (!(gPlaySt.config.noSubtitleHelp)) {
 			if (currHP != 0 && currHP < maxHP) {
 			  int length = ((maxHP - currHP) * 11) / maxHP;
-			  CallARM_PushToSecondaryOAM(
-				  OAM1_X(0x201 + x), OAM0_Y(0x100 + y - 5), HPFramePointers[length], 0
-			  );
+			  CallARM_PushToSecondaryOAM(OAM1_X(0x201 + x), OAM0_Y(0x100 + y - 5), HPFramePointers[length], 0);
 			}
 		}
 		
 		if (displayIcons == 0) {
 			switch (unit->statusIndex) {
 				case UNIT_STATUS_POISON:
-				//	CallARM_PushToSecondaryOAM(OAM1_X(0x200+x - 2), OAM0_Y(0x100+y - 4), sPoisonIconSprites[poisonIconFrame], 0);
 					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x864);
 					break;
 
 				case UNIT_STATUS_SLEEP:
-				//	CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + 2), OAM0_Y(0x100+y), sSleepIconSprites[sleepIconFrame], 0);
 					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x869);
 					break;
 
 				case UNIT_STATUS_BERSERK:
-				//	CallARM_PushToSecondaryOAM(OAM1_X(0x200+x + 1), OAM0_Y(0x100+y - 5), sBerserkIconSprites[berserkIconFrame], 0);
 					CallARM_PushToSecondaryOAM(OAM1_X(0x200+x+10), OAM0_Y(0x100+y-1), gObject_8x8, 0x823);
 					break;
 

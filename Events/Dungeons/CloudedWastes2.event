@@ -1,0 +1,308 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(Stratum3F2EventsID,ThisChapter)
+
+
+ALIGN 4
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Chest(Shortspear,4,19,WastesChestFlag3)
+Chest(Shortsword,18,16,WastesChestFlag4)
+Chest(AriadneShard,5,13,WastesChestFlag5)
+Chest(Shortmace,17,11,WastesChestFlag6)
+Chest(Soma,7,5,WastesChestFlag7)
+Chest(TheFeller,16,1,WastesChestFlag8)
+END_MAIN
+
+
+MiscBasedEvents:
+AFEV 0x0 MoveResetter 0x6
+AreaEvent(0x0,Pitfall18_22,18,22)
+AreaEvent(0x0,Pitfall7_20,7,20)
+AreaEvent(0x0,Pitfall5_17,5,17)
+AreaEvent(0x0,Pitfall1_13,1,13)
+AreaEvent(0x0,Pitfall8_12,8,12)
+AreaEvent(0x0,Pitfall11_12,11,12)
+AreaEvent(0x0,Pitfall6_11,6,11)
+AreaEvent(0x0,Pitfall0_10,0,10)
+AreaEvent(0x0,Pitfall15_10,15,10)
+AreaEvent(0x0,Pitfall17_9,17,9)
+AreaEvent(0x0,Pitfall7_7,7,7)
+AreaEvent(0x0,Pitfall11_7,11,7)
+AreaEvent(0x0,Pitfall0_6,0,6)
+AreaEvent(0x0,Pitfall4_6,4,6)
+AreaEvent(0x0,Pitfall9_5,9,5)
+AreaEvent(0x0,Pitfall12_5,12,5)
+AreaEvent(0x0,Pitfall7_3,7,3)
+AreaEvent(0x0,Pitfall4_2,4,2)
+AreaEvent(0x0,EndingScene,1,0,2,1)
+AreaEvent(WastesEncounterFlag4,Encounter1,2,21)
+AreaEvent(WastesEncounterFlag5,Encounter2,15,17,16,17)
+AreaEvent(WastesEncounterFlag6,Encounter3,10,16,10,17)
+AreaEvent(WastesEncounterFlag7,EncounterFOE,15,0,17,1)
+//AreaEvent(WastesEncounterFlag1,Encounter1,14,8,20,14)
+AFEV WaitEventTrapsFlag UnitCleanup 0x6
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [10,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [11,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [12,23] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Units:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [15,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [16,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [17,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [18,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [19,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [20,14] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Encounter1Enemies:
+UNIT MonsterGeneric Archfly 0x0 Level(13,Enemy,1) [15,11] 0x0 0x0 0x0 0x0 [VenomScales] NoAI
+UNIT
+
+EncounterFOEUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [6,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [7,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [8,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EncounterFOEEnemies:
+UNIT FOEUnit Gassergon 0x0 Level(15,Enemy,1) [7,4] 0x0 0x0 0x0 0x0 [Petrigas,SappingAura,FrailtyAura] NoAI
+UNIT MonsterGeneric Wightsworn 0x0 Level(13,Enemy,1) [6,5] 0x0 0x0 0x0 0x0 [Longinus] NoAI
+UNIT MonsterGeneric Wightsworn 0x0 Level(13,Enemy,1) [8,5] 0x0 0x0 0x0 0x0 [Longinus] NoAI
+UNIT MonsterGeneric Archrypt 0x0 Level(13,Enemy,1) [7,2] 0x0 0x0 0x0 0x0 [Greatbow] NoAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+InitializeNathan(11,22)
+ENUT WaitEventTrapsFlag
+WastesChest(WastesChestFlag3,0)
+WastesChest(WastesChestFlag4,1)
+WastesChest(WastesChestFlag5,2)
+WastesChest(WastesChestFlag6,3)
+WastesChest(WastesChestFlag7,4)
+WastesChest(WastesChestFlag8,5)
+InitializeNathanByFlag(WastesFloorSwapFlag1,2,15)
+InitializeNathanByFlag(WastesFloorSwapFlag2,13,13)
+InitializeNathanByFlag(WastesFloorSwapFlag3,15,12)
+InitializeNathanByFlag(WastesFloorSwapFlag4,17,13)
+InitializeNathanByFlag(WastesFloorSwapFlag5,6,10)
+InitializeNathanByFlag(WastesFloorSwapFlag6,8,10)
+InitializeNathanByFlag(WastesFloorSwapFlag7,2,7)
+InitializeNathanByFlag(WastesFloorSwapFlag8,14,6)
+InitializeNathanByFlag(WastesFloorSwapFlag9,2,4)
+InitializeNathanByFlag(WastesFloorSwapFlag10,16,3)
+InitializeNathanByFlag(WastesFloorSwapFlag11,6,0)
+LABEL 0x2
+EndEvent
+
+UnitCleanup:
+FADI 16
+ClearArenaBorders
+CLEA 0
+ResetNathan
+FADU 16
+MUSC Song_SandyBarrens
+SetMapBGM(Song_SandyBarrens)
+EndEvent
+
+Encounter1:
+BeginCombatEncounter
+LOAD3 0x0 Encounter1Units; ENUN
+LoadUnitsByDifficulty(Encounter1Enemies,Encounter1Enemies,Encounter1Enemies)
+CreateArenaSingleCorner(7,15)
+FADU 16
+MUSC Song_InspectingTheResoundingWeapons
+SetMapBGM(Song_InspectingTheResoundingWeapons)
+EndEvent
+
+Encounter2:
+BeginCombatEncounter
+LOAD3 0x0 Encounter1Units; ENUN
+LoadUnitsByDifficulty(Encounter1Enemies,Encounter1Enemies,Encounter1Enemies)
+CreateArenaSingleCorner(7,15)
+FADU 16
+MUSC Song_InspectingTheResoundingWeapons
+SetMapBGM(Song_InspectingTheResoundingWeapons)
+EndEvent
+
+Encounter3:
+BeginCombatEncounter
+LOAD3 0x0 Encounter1Units; ENUN
+LoadUnitsByDifficulty(Encounter1Enemies,Encounter1Enemies,Encounter1Enemies)
+CreateArenaSingleCorner(7,15)
+FADU 16
+MUSC Song_InspectingTheResoundingWeapons
+SetMapBGM(Song_InspectingTheResoundingWeapons)
+EndEvent
+
+EncounterFOE:
+EVBIT_MODIFY 3
+SystemText(FOEWarning)
+IfNoSelectedGoto(0x1)
+BeginCombatEncounter
+LOAD3 0x0 EncounterFOEUnits; ENUN
+LoadUnitsByDifficulty(EncounterFOEEnemies,EncounterFOEEnemies,EncounterFOEEnemies)
+CreateArenaBorders(3,1,11,9)
+FADU 16
+MUSC Song_IsThatBloodThine
+SetMapBGM(Song_IsThatBloodThine)
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(8,5); FADU 16
+ENUF WastesEncounterFlag7
+LABEL 0x2
+EndEvent
+
+
+EndingScene:
+SystemText(NextFloorOneWay)
+IfNoSelectedGoto(0x1)
+ResetWastesFloorSwapFlags
+ResetWastesProgressFlags
+MNC3 Stratum3F3
+GOTO 0x2
+LABEL 0x1
+FADI 16; InitializeNathan(2,2); FADU 16
+LABEL 0x2
+EndEvent
+
+
+Pitfall18_22:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag1
+MNC3 Stratum3F1
+EndEvent
+Pitfall7_20:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag2
+MNC3 Stratum3F1
+EndEvent
+Pitfall5_17:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag3
+MNC3 Stratum3F1
+EndEvent
+Pitfall1_13:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag4
+MNC3 Stratum3F1
+EndEvent
+Pitfall8_12:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag5
+MNC3 Stratum3F1
+EndEvent
+Pitfall11_12:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag6
+MNC3 Stratum3F1
+EndEvent
+Pitfall6_11:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag7
+MNC3 Stratum3F1
+EndEvent
+Pitfall0_10:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag8
+MNC3 Stratum3F1
+EndEvent
+Pitfall15_10:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag9
+MNC3 Stratum3F1
+EndEvent
+Pitfall17_9:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag10
+MNC3 Stratum3F1
+EndEvent
+Pitfall7_7:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag11
+MNC3 Stratum3F1
+EndEvent
+Pitfall11_7:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag12
+MNC3 Stratum3F1
+EndEvent
+Pitfall0_6:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag13
+MNC3 Stratum3F1
+EndEvent
+Pitfall4_6:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag14
+MNC3 Stratum3F1
+EndEvent
+Pitfall9_5:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag15
+MNC3 Stratum3F1
+EndEvent
+Pitfall12_5:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag16
+MNC3 Stratum3F1
+EndEvent
+Pitfall7_3:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag17
+MNC3 Stratum3F1
+EndEvent
+Pitfall4_2:
+SystemText(PitfallTrapMessage)
+ENUT WastesFloorSwapFlag18
+MNC3 Stratum3F1
+EndEvent
+
+
+//MESSAGE Events end at offset CURRENTOFFSET

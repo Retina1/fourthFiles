@@ -315,3 +315,120 @@ void DrawUnitResUnkText(struct Text* text, struct Unit* unit, int unused) {
 
     return;
 }
+
+
+int GetOffensiveStaffAccuracyWithItem(struct Unit* actor, struct Unit* target,int usedItem) {
+	int attackerLuc = GetUnitLuck(actor);
+	int defenderLuc = GetUnitLuck(target);
+	
+	int baseAtk = attackerLuc + 10;
+	int baseDef = defenderLuc + 10;
+
+	int baseRate = GetItemData(ITEM_INDEX(usedItem))->ailmentRate;
+	
+	if (UNIT_HAS_SKILL(actor,HEX,skill_111)){
+			baseRate = baseRate + (GetUnitMaxHp(actor) - GetUnitCurrentHp(actor)) * 3;
+	}
+	
+	int accuracy = baseRate * baseAtk / baseDef;
+	
+	for(int j = 0; j < GetUnitItemCount(target); j++) {
+		u16 curItem = target->items[j];
+		if(GetItemAttributes(curItem) & IA_SOUL_SHIELD) {
+			accuracy = accuracy / 2;
+		}
+
+	}
+	
+	// be for real
+/* u8* unitBuffer = GetUnitsOfAllegiance(actor, 1);
+	int i = 0;
+	if (unitBuffer != FALSE) {
+		while (unitBuffer[i]){
+			int index = unitBuffer[i];
+			Unit* other = gUnitLookup[index];
+			if (UNIT_HAS_SKILL(other,WMG,skill_111)){
+				accuracy = accuracy * 21/20;
+			}
+			i++;
+		}
+	}*/
+	
+	if (UNIT_HAS_SKILL(actor,HEX,skill_141)){
+			accuracy = accuracy + 25;
+	}
+	
+	if (accuracy < 5){
+		accuracy = 5;
+	}
+	if (accuracy > 100){
+		accuracy = 100;
+	}
+	
+	return accuracy;
+}
+
+
+void ApplyAilmentAOEs(struct Unit* actor, struct Unit* target){
+	if (GetUnitCurrentHp(actor) > 0) {
+		for(int j = 0; j < GetUnitItemCount(actor); j++) {
+			u16 curItem = actor->items[j];
+			if (GetItemAttributes(curItem) & IA_AOE_AILMENT) {
+				int effect = 0;
+				switch (GetItemWeaponEffect(curItem)) {
+					case WPN_EFFECT_PETRIFY:
+						effect = UNIT_STATUS_PETRIFY;
+						break;
+					case WPN_EFFECT_CURSE:
+						effect = UNIT_STATUS_CURSE;
+						break;
+					case WPN_EFFECT_POISON:
+						effect = UNIT_STATUS_POISON;
+						break;
+					case WPN_EFFECT_SLEEP:
+						effect = UNIT_STATUS_SLEEP;
+						break;
+					case WPN_EFFECT_BERSERK:
+						effect = UNIT_STATUS_BERSERK;
+						break;
+					case WPN_EFFECT_PARALYZE:
+						effect = UNIT_STATUS_PARALYZE;
+						break;
+					case WPN_EFFECT_BLIND:
+						effect = UNIT_STATUS_BLIND;
+						break;
+					case WPN_EFFECT_HEADBIND:
+						effect = UNIT_STATUS_HEADBIND;
+						break;
+					case WPN_EFFECT_ARMBIND:
+						effect = UNIT_STATUS_ARMBIND;
+						break;
+					case WPN_EFFECT_LEGBIND:
+						effect = UNIT_STATUS_LEGBIND;
+						break;
+					case WPN_EFFECT_FULLBIND:
+						effect = UNIT_STATUS_FULLBIND;
+						break;
+				}
+				u8* unitBuffer;
+				int i = 0;
+				int index;
+				Unit* other;
+				CallEvent(&GenericDebuffEvent, 0x1);
+				unitBuffer = GetUnitsInRange(target,1, 3);
+				if (unitBuffer == FALSE)
+					break;
+				while (unitBuffer[i]){
+					index = unitBuffer[i];
+					other = gUnitLookup[index];
+					int accuracy = GetOffensiveStaffAccuracyWithItem(actor,other,curItem);
+					if (Roll1RN(accuracy)) {
+						SetUnitStatus(other, effect);
+					}
+					i++;
+				}
+				break;
+			}
+		}		
+	}
+}
