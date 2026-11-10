@@ -41,7 +41,7 @@ void Gambling_OnSelect(void* parent) {
 
 static u8 GamblingIdle (MenuProc* menu, MenuItemProc* command) {
     Struct_GamblingProc* const proc = (void*) menu->proc_parent;
-	if (gKeyStatusPtr->repeatedKeys & DPAD_RIGHT  || gKeyStatusPtr->repeatedKeys & DPAD_DOWN || gKeyStatusPtr->repeatedKeys & DPAD_LEFT || gKeyStatusPtr->repeatedKeys & DPAD_RIGHT) {
+	if (gKeyStatusPtr->repeatedKeys & DPAD_UP  || gKeyStatusPtr->repeatedKeys & DPAD_DOWN || gKeyStatusPtr->repeatedKeys & DPAD_LEFT || gKeyStatusPtr->repeatedKeys & DPAD_RIGHT) {
 		if (proc->keepGambling == 0 && proc->gameWon == 0) {
 			proc->keepGambling = 1;
 			PlaySfx(0x66);

@@ -8,6 +8,15 @@ ALIGN 4
 Troubadour_LeonzioDMP:
 #incbin "paletteFiles/Magus/Troubadour_Leonzio.dmp"
 
+PaletteIdentifier(Poet_Kryst, Poet_KrystDMP)
+PaletteIdentifier(Troubadour_Kryst, Troubadour_KrystDMP)
+ALIGN 4
+Poet_KrystDMP:
+#incbin "paletteFiles/MainStory/Poet_Kryst.dmp"
+ALIGN 4
+Troubadour_KrystDMP:
+#incbin "paletteFiles/MainStory/Troubadour_Kryst.dmp"
+
 PaletteIdentifier(Poet_Gunther, Poet_GuntherDMP)
 PaletteIdentifier(Troubadour_Gunther, Troubadour_GuntherDMP)
 ALIGN 4
@@ -46,6 +55,7 @@ Troubadour_JulietteDMP:
 
 ALIGN 4
 PoetPaletteList:
+PaletteAssociationEntry(Kryst,Poet_Kryst)
 PaletteAssociationEntry(Leonzio,Poet_Leonzio)
 PaletteAssociationEntry(Gunther,Poet_Gunther)
 PaletteAssociationEntry(Lucien,Poet_Lucien)
@@ -54,6 +64,7 @@ PaletteAssociationEntry(Juliette,Poet_Juliette)
 WORD 0 0
 ALIGN 4
 TroubadourPaletteList:
+PaletteAssociationEntry(Kryst,Troubadour_Kryst)
 PaletteAssociationEntry(Leonzio,Troubadour_Leonzio)
 PaletteAssociationEntry(Gunther,Troubadour_Gunther)
 PaletteAssociationEntry(Lucien,Troubadour_Lucien)

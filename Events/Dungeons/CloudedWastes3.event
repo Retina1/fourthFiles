@@ -28,8 +28,8 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Chest(HealScroll,1,6)
-Chest(Bluntblade,15,22)
+Chest(Estoc,1,6)
+Chest(Elixir,15,22)
 END_MAIN
 
 

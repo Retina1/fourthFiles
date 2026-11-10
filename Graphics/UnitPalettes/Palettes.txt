@@ -12,6 +12,8 @@ Knight_Helman
 Hoplite_Helman
 Lurker_Rat
 Hexer_Rat
+Poet_Kryst
+Troubadour_Kryst
 Highlander_Guildmaster
 Swordfighter_CoastKid
 Landsknecht_CoastKid

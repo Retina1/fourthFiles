@@ -112,7 +112,32 @@ CleanTextNoMap(0x0, City09_PrePreps)
 //visit palace either in intro or ending
 ENDA
 
+ALIGN 4
+City10OpenUnits:
+UNIT Nathan 0x0 0x0 Level(1,Ally,0) [10,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Astarte 0x0 0x0 Level(1,Ally,0) [9,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Gore 0x0 0x0 Level(1,Ally,0) [11,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Weber Imperial 0x0 Level(23,NPC,0) [10,2] 0x0 0x0 0x0 0x0 [RagingWave] AttackInRangeAI
+UNIT MilitaryGeneric Hoplite 0x0 Level(20,NPC,0) [9,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
+UNIT MilitaryGeneric Driver 0x0 Level(20,NPC,0) [10,8] 0x0 0x0 0x0 0x0 [Dominance] AttackInRangeAI
+UNIT MilitaryGeneric Hoplite 0x0 Level(20,NPC,0) [11,8] 0x0 0x0 0x0 0x0 [Ahlspiess] AttackInRangeAI
+UNIT MilitaryGeneric Warlock 0x0 Level(20,NPC,0) [5,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT MilitaryGeneric Warlock 0x0 Level(20,NPC,0) [15,4] 0x0 0x0 0x0 0x0 [SparkScroll] AttackInRangeAI
+UNIT
+
 Chapter10CityOpen:
+LOMA Chapter14
+CLEA 0; CLEN 0; CLEE 0
+LOAD1 0x1 City10OpenUnits; ENUN
+CAM1 [10,0]
+FADU 10
+STAL 30
+FlashCursor(Weber,60)
+MUSC Song_FlyingBattle
+Text(FillerDialogue)
+FADI 10
+LOMA HirschringSquare
+CLEA 0; CLEE 0; CLEN 0
 MUSC Song_OohWilfre
 CleanTextNoMap(0x0, FillerDialogue)
 ENDA

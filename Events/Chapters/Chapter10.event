@@ -117,12 +117,20 @@ UNIT Angelica Medic 0x0 Level(17,Enemy,1) [10,2] 0x0 0x0 0x0 0x0 [Asclepius] NoA
 UNIT
 
 GreenUnits:
-UNIT First 0x0 0x0 Level(24,NPC,0) [16,23] 0x0 0x0 0x0 0x0 [SuperiorBlade] NeverMoveAI
-UNIT Second 0x0 0x0 Level(22,NPC,0) [15,24] 0x0 0x0 0x0 0x0 [Shieldlance,Longinus] NeverMoveAI
-UNIT NPCFourth 0x0 0x0 Level(17,NPC,0) [15,22] 0x0 0x0 0x0 0x0 [Type0] NoAI
-UNIT Alva 0x0 0x0 Level(17,NPC,0) [14,23] 0x0 0x0 0x0 0x0 [Type0] NoAI
-UNIT Auri 0x0 0x0 Level(14,NPC,0) [16,21] 0x0 0x0 0x0 0x0 [Type0] NoAI
+UNIT First 0x0 0x0 Level(24,NPC,0) [17,24] 0x0 0x0 0x1 REDA16R23 [SuperiorBlade] NeverMoveAI
+UNIT Second 0x0 0x0 Level(22,NPC,0) [17,24] 0x0 0x0 0x1 REDA15R24 [Shieldlance,Longinus] NeverMoveAI
+UNIT NPCFourth 0x0 0x0 Level(17,NPC,0) [17,23] 0x0 0x0 0x1 REDA15R22 [Type0] NoAI
+UNIT Alva 0x0 0x0 Level(17,NPC,0) [17,23] 0x0 0x0 0x1 REDA14R23 [Type0] NoAI
+UNIT Auri 0x0 0x0 Level(14,NPC,0) [17,23] 0x0 0x0 0x1 REDA16R21 [Type0] NoAI
 UNIT
+
+CutsceneUnits:
+UNIT Nathan 0x0 0x1 Level(1,Ally,0) [3,26] 0x0 0x0 0x1 REDA3R21 [0x0] NoAI
+UNIT Galvin 0x0 0x1 Level(1,Ally,0) [4,26] 0x0 0x0 0x1 REDA4R21 [0x0] NoAI
+UNIT Astarte 0x0 0x1 Level(1,Ally,0) [3,26] 0x0 0x0 0x1 REDA2R21 [0x0] NoAI
+UNIT Rat 0x0 0x1 Level(1,Ally,0) [3,26] 0x0 0x0 0x1 REDA3R22 [0x0] NoAI
+UNIT Gore 0x0 0x1 Level(1,Ally,0) [4,26] 0x0 0x0 0x1 REDA4R22 [0x0] NoAI
+UNIT Cleone 0x0 0x1 Level(1,Ally,0) [4,26] 0x0 0x0 0x1 REDA5R22 [0x0] NoAI
 
 QuestUnits:
 UNIT Natsuki Myrmidon 0x0 Level(9,Enemy,0) [17,0] 0x0 0x0 0x0 0x0 [Scramasax,SoulShield,SoulShield] NoAI
@@ -190,18 +198,29 @@ LevelUpSkill(Galvin,12)
 LevelUpSkill(Galvin,12)
 LevelUpSkill(Galvin,12)
 LABEL 0x1
-CleanTextNoMap(0x3,FillerDialogue)
+SetBackground(0x3)
+TEXTSTART; TEXTSHOW C10Opening1; TEXTEND
+MUSC Song_FaithIsMyPillar
+TEXTCONT; TEXTEND; FADI 16
+MUSC 0
 LoadUnitsByDifficulty(EnemyUnits,EnemyUnits,EnemyUnits)
-LOAD1 0x1 GreenUnits; ENUN
 CHECK_EVENTID Quest2_8x_Flag
 BEQ 0x2 0xc 0x0
 LOAD1 0x1 QuestUnits; ENUN
 LABEL 0x2
-CAM1 [4,26]
+CAM1 [9,0]
 CLEAN
 FADU 10
+MUSC Song_DarkBattle
+Text(C10Opening3)
+MUSC 0
+CAM1 [17,24]
 MUSC Song_PandemonicPlanet
-Text(FillerDialogue)
+LOAD1 0x1 GreenUnits; ENUN
+Text(C10Opening4)
+CAM1 [0,24]
+LOAD2 0x1 CutsceneUnits; ENUN
+Text(C10Opening5)
 
 CallPreps
 EndEvent
@@ -210,7 +229,9 @@ EndEvent
 EndingScene:
 ENUT Chapter10DoneFlag
 MUSC Song_EditMode
-CleanTextNoMap(0x18,FillerDialogue)
+CleanTextNoMap(0x18,C10Ending1)
+MUSC Song_FlyingBattle
+CleanTextNoMap(0x18,C10Ending2)
 MoveToChapter(HirschringSquare)
 ENDA
 
@@ -220,7 +241,7 @@ CAM1 Iseau
 FlashCursor(Angelica,30)
 FlashCursor(Iseau,30)
 FlashCursor(George,30)
-Text(FillerDialogue)
+Text(C10OpeningLeave)
 STAL 30
 MOVE 10 Iseau [8,0]
 MOVE 10 Angelica [10,0]

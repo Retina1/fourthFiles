@@ -29,7 +29,7 @@ END_MAIN
 
 LocationBasedEvents:
 Chest(SightingLens,1,1)
-Chest(Bluntblade,13,3)
+Chest(LuckStaff,13,3)
 END_MAIN
 
 
