@@ -287,3 +287,4 @@
 #define Fencer_Iseau 0x11F
 #define Medic_Angelica 0x120
 #define Runemaster_Stephen 0x121
+#define Lancer_Gerson 0x122

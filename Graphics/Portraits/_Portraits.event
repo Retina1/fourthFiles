@@ -207,6 +207,10 @@ ALIGN 4
 GersonDMP:
 #incbin "dmps/retinaGerson.dmp"
 setMugEntry(GersonMug,GersonDMP,3,6,3,4)
+ALIGN 4
+FirstDMP:
+#incbin "dmps/retinaFirst.dmp"
+setMugEntry(FirstMug,FirstDMP,3,5,3,3)
 
 ALIGN 4
 //slatergenerics

@@ -287,3 +287,4 @@ Imperial_Weber
 Fencer_Iseau
 Medic_Angelica
 Runemaster_Stephen
+Lancer_Gerson

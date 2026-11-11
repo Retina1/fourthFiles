@@ -49,6 +49,10 @@ Landsknecht_VelissaDMP:
 #incbin "paletteFiles/Initial/Landsknecht_Velissa.dmp"
 
 ALIGN 4
+Landsknecht_FirstDMP:
+#incbin "paletteFiles/NPCs/Landsknecht_First.dmp"
+
+ALIGN 4
 PaletteIdentifier(Swordfighter_CoastKid,Swordfighter_CoastKidDMP)
 PaletteIdentifier(Landsknecht_CoastKid,Landsknecht_CoastKidDMP)
 PaletteIdentifier(Swordfighter_Puzon,Swordfighter_PuzonDMP)
@@ -63,6 +67,7 @@ PaletteIdentifier(Swordfighter_Ferris,Swordfighter_FerrisDMP)
 PaletteIdentifier(Landsknecht_Ferris,Landsknecht_FerrisDMP)
 PaletteIdentifier(Swordfighter_Velissa,Swordfighter_VelissaDMP)
 PaletteIdentifier(Landsknecht_Velissa,Landsknecht_VelissaDMP)
+PaletteIdentifier(Landsknecht_First,Landsknecht_FirstDMP)
 
 SwordfighterPaletteList:
 PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
@@ -82,6 +87,7 @@ PaletteAssociationEntry(Marag,Landsknecht_Marag)
 PaletteAssociationEntry(Anhinga,Landsknecht_Anhinga)
 PaletteAssociationEntry(Ferris,Landsknecht_Ferris)
 PaletteAssociationEntry(Velissa,Landsknecht_Velissa)
+PaletteAssociationEntry(First,Landsknecht_First)
 WORD 0 0
 
 //kn

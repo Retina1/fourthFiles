@@ -63,6 +63,11 @@ ALIGN 4
 Highlander_GuildmasterDMP:
 #incbin "paletteFiles/MainStory/Highlander_Guildmaster.dmp"
 
+PaletteIdentifier(Lancer_Gerson, Lancer_GersonDMP)
+ALIGN 4
+Lancer_GersonDMP:
+#incbin "paletteFiles/NPCs/Lancer_Gerson.dmp"
+
 PaletteIdentifier(Lancer_Heri, Lancer_HeriDMP)
 PaletteIdentifier(Highlander_Heri, Highlander_HeriDMP)
 ALIGN 4
@@ -125,6 +130,7 @@ PaletteAssociationEntry(Fourfinger,Lancer_Fourfinger)
 PaletteAssociationEntry(Nelson,Lancer_Nelson)
 PaletteAssociationEntry(Naomi,Lancer_Naomi)
 PaletteAssociationEntry(Phaedra,Lancer_Phaedra)
+PaletteAssociationEntry(Gerson,Lancer_Gerson)
 WORD 0 0
 ALIGN 4
 HighlanderPaletteList:

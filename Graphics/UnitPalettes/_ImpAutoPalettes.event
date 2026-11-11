@@ -1,7 +1,13 @@
 //imp
+
+//bosses
+PaletteIdentifier(Driver_George, Driver_GeorgeDMP)
+ALIGN 4
+Driver_GeorgeDMP:
+#incbin "paletteFiles/NPCs/Driver_George.dmp"
 ALIGN 4
 DriverPaletteList:
-PaletteAssociationEntry(CoastKid,Swordfighter_CoastKid)
+PaletteAssociationEntry(George,Driver_George)
 WORD 0 0
 ALIGN 4
 ImperialPaletteList:

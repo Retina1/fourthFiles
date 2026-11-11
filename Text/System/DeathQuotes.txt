@@ -77,6 +77,41 @@ All on your head[...][AN]
 Ask yourselves[...] if it[N]
 was all worth it[...][A][X]
 
+##FirstDeath
+[MidLeft][First]
+Damned rats[...] Asketa will[...][N]
+not fall to you[...][AN][EyesClose]
+You will not[...] rob me[...][N]
+of my life's meaning[...][A][X]
+
+##SecondDeath
+[MidLeft][Second]
+I can't[...] accept this[...][N]
+Undone by[...] you[...][AN][EyesClose]
+I thought Asketa[...] so much[N]
+stronger[...] than you[...][A][X]
+
+##IseauDeath
+[MidLeft][Iseau]
+To be lain so low[...][N]
+And by you, no less[...][AN][EyesClose]
+Still[...] All I can do[...][N]
+is face it with[...] dignity[...][A][X]
+
+##AngelicaDeath
+[MidLeft][Angelica]
+I wasn't made for this[...][N]
+I was made for[...] peace[...][AN][EyesClose]
+Let me live[...] in times[N]
+of peace[...] at last[...][A][X]
+
+##StephenDeath
+[MidLeft][Stephen]
+So it ends[...] The future[N]
+is in[...] your hands[...][AN][EyesClose]
+What path[...] shall you[N]
+lead them all down[...]?[A][X]
+
 ##EndgameBGuildmasterBattle
 [MidLeft][Guildmaster]
 It is my proud duty to[N]
@@ -111,6 +146,7 @@ To hell[...] with you all[...][N]
 To hell[...] with dreams[...][AN][EyesClose]
 To hell with[...] all this[N]
 damnable land[...][A][X]
+
 ##BossGoreDeath
 [MidLeft][GoreEyepatch]
 I thought I was[...] so close[...][N]
